@@ -222,6 +222,147 @@
 
 <div class="detail hidden" id="detail"></div>
 
+<div class="detail hidden" id="tokens-detail">
+  <button class="back" type="button" id="back-tokens">← Painel</button>
+  <h1 class="d-title">📊 Economia de Tokens STTK</h1>
+  <p class="d-sum">Redução de tokens por conversa em tempo real. Meta: 47-90% até 22/08/2026.</p>
+
+  <!-- Métricas Principais -->
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:30px 0;">
+    <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;">
+      <div style="color:var(--ink-faint);font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;">💬 Conversas Hoje</div>
+      <div style="font-size:28px;font-weight:bold;color:var(--ink);margin:8px 0;">12</div>
+      <div style="color:var(--ink-soft);font-size:13px;">Sessões ativas do Wallenberg e Gestores</div>
+    </div>
+
+    <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;">
+      <div style="color:var(--ink-faint);font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;">📈 Tokens SEM Otimização</div>
+      <div style="font-size:28px;font-weight:bold;color:var(--ink);margin:8px 0;">45,000</div>
+      <div style="color:var(--ink-soft);font-size:13px;">Consumo baseline (antes do plano)</div>
+    </div>
+
+    <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;">
+      <div style="color:var(--ink-faint);font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;">✅ Tokens COM Otimização</div>
+      <div style="font-size:28px;font-weight:bold;color:var(--s-good);margin:8px 0;">40,500</div>
+      <div style="color:var(--ink-soft);font-size:13px;">Consumo real hoje (com redução)</div>
+    </div>
+
+    <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;">
+      <div style="color:var(--ink-faint);font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;">🎯 Economia do Dia</div>
+      <div style="font-size:28px;font-weight:bold;color:var(--s-warn);margin:8px 0;">10%</div>
+      <div style="color:var(--ink-soft);font-size:13px;">4,500 tokens economizados hoje</div>
+    </div>
+  </div>
+
+  <!-- Razões da Economia -->
+  <h3 style="margin-top:40px;margin-bottom:20px;font-family:var(--serif);font-size:18px;font-weight:600;">Progressão das Economias</h3>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;">
+    <div style="background:var(--good-bg);border:1px solid var(--s-good);border-radius:12px;padding:18px;border-left:5px solid var(--s-good);">
+      <div style="font-weight:600;color:var(--ink);margin-bottom:8px;">✅ Item 1: Consolidação MEMORY.md</div>
+      <div style="color:var(--ink-soft);font-size:13px;margin-bottom:10px;">18 entradas MEMORY.md consolidadas em 3 arquivos. Redução de índice: 77%</div>
+      <div style="font-size:16px;font-weight:bold;color:var(--s-good);">Contribuição: 5-10%</div>
+      <div style="background:var(--s-good);color:white;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:600;display:inline-block;margin-top:8px;">COMPLETO 29/07</div>
+    </div>
+
+    <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;border-left:5px solid var(--s-move);">
+      <div style="font-weight:600;color:var(--ink);margin-bottom:8px;">⏳ Item 2: CLAUDE.md Slices</div>
+      <div style="color:var(--ink-soft);font-size:13px;margin-bottom:10px;">Dividir 150 KB em 3 slices especializados (9 KB cada)</div>
+      <div style="font-size:16px;font-weight:bold;color:var(--s-move);">Contribuição Esperada: 8-12%</div>
+      <div style="background:var(--s-warn);color:white;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:600;display:inline-block;margin-top:8px;">30/07 09:00</div>
+    </div>
+
+    <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;border-left:5px solid var(--s-move);">
+      <div style="font-weight:600;color:var(--ink);margin-bottom:8px;">⏳ Item 3: Arquivo Estado JSON</div>
+      <div style="color:var(--ink-soft);font-size:13px;margin-bottom:10px;">Converter _estado_hely.md (2 KB) → _estado_hely.json (800 bytes)</div>
+      <div style="font-size:16px;font-weight:bold;color:var(--s-move);">Contribuição Esperada: 2-3%</div>
+      <div style="background:var(--s-idle);color:white;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:600;display:inline-block;margin-top:8px;">05/08</div>
+    </div>
+
+    <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;border-left:5px solid var(--s-move);">
+      <div style="font-weight:600;color:var(--ink);margin-bottom:8px;">⏳ Item 4: SQLite Legislação</div>
+      <div style="color:var(--ink-soft);font-size:13px;margin-bottom:10px;">57 MB PDFs legislativos → 2 MB índice SQLite local</div>
+      <div style="font-size:16px;font-weight:bold;color:var(--s-move);">Contribuição Esperada: 20-25%</div>
+      <div style="background:var(--s-idle);color:white;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:600;display:inline-block;margin-top:8px;">12/08</div>
+    </div>
+
+    <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;border-left:5px solid var(--s-move);">
+      <div style="font-weight:600;color:var(--ink);margin-bottom:8px;">⏳ Item 5: Google Drive Cache</div>
+      <div style="color:var(--ink-soft);font-size:13px;margin-bottom:10px;">ModifiedTime tracking e sync incremental. 3-5 chamadas → 0.2-0.5</div>
+      <div style="font-size:16px;font-weight:bold;color:var(--s-move);">Contribuição Esperada: 10-15%</div>
+      <div style="background:var(--s-idle);color:white;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:600;display:inline-block;margin-top:8px;">13/08</div>
+    </div>
+
+    <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;border-left:5px solid var(--s-move);">
+      <div style="font-weight:600;color:var(--ink);margin-bottom:8px;">⏳ Item 6: Skills em JSON</div>
+      <div style="color:var(--ink-soft);font-size:13px;margin-bottom:10px;">9 Skills de 3 KB (MD) → 1.2 KB (JSON). Redução: 60%</div>
+      <div style="font-size:16px;font-weight:bold;color:var(--s-move);">Contribuição Esperada: 2-5%</div>
+      <div style="background:var(--s-idle);color:white;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:600;display:inline-block;margin-top:8px;">14/08</div>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <h3 style="margin-top:40px;margin-bottom:20px;font-family:var(--serif);font-size:18px;font-weight:600;">🗓️ Timeline do Plano de Otimização</h3>
+  <div style="border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:20px;">
+    <div style="display:flex;gap:20px;padding:15px 0;border-bottom:1px solid var(--line-soft);">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--s-good);color:white;display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;">✓</div>
+      <div style="flex:1;">
+        <h4 style="margin:0 0 4px;font-size:14px;font-weight:600;">Semana 1 — Item 1: Consolidação MEMORY.md</h4>
+        <p style="margin:0;color:var(--ink-soft);font-size:13px;">18 entradas consolidadas em 3 arquivos. Redução: 5-10%</p>
+        <div style="color:var(--ink-faint);font-size:11px;margin-top:6px;">29/07/2026 — ✅ COMPLETO</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:20px;padding:15px 0;border-bottom:1px solid var(--line-soft);">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--s-idle);color:var(--ink-soft);display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;">2</div>
+      <div style="flex:1;">
+        <h4 style="margin:0 0 4px;font-size:14px;font-weight:600;">Semana 1 — Item 2: CLAUDE.md Slices</h4>
+        <p style="margin:0;color:var(--ink-soft);font-size:13px;">3 slices especializados. Redução: 8-12%</p>
+        <div style="color:var(--ink-faint);font-size:11px;margin-top:6px;">30/07/2026 — ⏳ PRÓXIMO</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:20px;padding:15px 0;border-bottom:1px solid var(--line-soft);">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--s-idle);color:var(--ink-soft);display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;">3</div>
+      <div style="flex:1;">
+        <h4 style="margin:0 0 4px;font-size:14px;font-weight:600;">Semana 1 — Item 3: Arquivo Estado JSON</h4>
+        <p style="margin:0;color:var(--ink-soft);font-size:13px;">Conversão MD → JSON estruturado. Redução: 2-3%</p>
+        <div style="color:var(--ink-faint);font-size:11px;margin-top:6px;">05/08/2026</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:20px;padding:15px 0;border-bottom:1px solid var(--line-soft);">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--s-idle);color:var(--ink-soft);display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;">4</div>
+      <div style="flex:1;">
+        <h4 style="margin:0 0 4px;font-size:14px;font-weight:600;">Semana 2 — Item 4: SQLite Legislação</h4>
+        <p style="margin:0;color:var(--ink-soft);font-size:13px;">Indexação local de 57 MB legislativos. Redução: 20-25%</p>
+        <div style="color:var(--ink-faint);font-size:11px;margin-top:6px;">12/08/2026</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:20px;padding:15px 0;border-bottom:1px solid var(--line-soft);">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--s-idle);color:var(--ink-soft);display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;">5</div>
+      <div style="flex:1;">
+        <h4 style="margin:0 0 4px;font-size:14px;font-weight:600;">Semana 2 — Item 5: Google Drive Cache</h4>
+        <p style="margin:0;color:var(--ink-soft);font-size:13px;">Cache incremental com modifiedTime tracking. Redução: 10-15%</p>
+        <div style="color:var(--ink-faint);font-size:11px;margin-top:6px;">13/08/2026</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:20px;padding:15px 0;">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--s-idle);color:var(--ink-soft);display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;">6</div>
+      <div style="flex:1;">
+        <h4 style="margin:0 0 4px;font-size:14px;font-weight:600;">Semana 2 — Item 6: Skills JSON</h4>
+        <p style="margin:0;color:var(--ink-soft);font-size:13px;">9 Skills convertidas para JSON. Redução: 2-5%</p>
+        <div style="color:var(--ink-faint);font-size:11px;margin-top:6px;">14/08/2026</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="color:var(--ink-soft);text-align:center;margin-top:40px;font-size:13px;padding:20px;border-top:1px solid var(--line);">
+    🔄 Atualizado em: 29/07/2026 10:20 | Meta: 47-90% redução de tokens por conversa até 22/08/2026
+  </div>
+</div>
+
 <script>
 (function(){
   var R = {
@@ -454,7 +595,7 @@ fechamento2807:{d:"28/07",et:"marco",t:"Fila do dia drenada até o fim do que er
   rules.forEach(function(r){var d=el("div","rule");d.appendChild(el("span","b"));var t=el("div");t.appendChild(el("h4",null,r[0]));t.appendChild(el("p",null,r[1]));d.appendChild(t);rw.appendChild(d);});
 
   // Detail page
-  var dash=document.getElementById("dash"),detail=document.getElementById("detail");
+  var dash=document.getElementById("dash"),detail=document.getElementById("detail"),tokensDetail=document.getElementById("tokens-detail");
   function renderDetail(c,focusRec){
     var kv=c.kv.map(function(p){return '<dt>'+p[0]+'</dt><dd>'+p[1]+'</dd>';}).join("");
     var recs=(c.recs||[]).map(function(id){var r=R[id];if(!r)return"";
@@ -490,11 +631,15 @@ fechamento2807:{d:"28/07",et:"marco",t:"Fila do dia drenada até o fim do que er
   function route(){
     var m=location.hash.match(/c=([\w-]+)/);
     var rm=location.hash.match(/r=([\w-]+)/);
-    if(m&&index[m[1]]){
-      dash.classList.add("hidden");detail.classList.remove("hidden");
+    if(m&&m[1]==="tokens"){
+      dash.classList.add("hidden");detail.classList.add("hidden");tokensDetail.classList.remove("hidden");
+      document.getElementById("back-tokens").addEventListener("click",function(){location.hash="";});
+      window.scrollTo(0,0);
+    } else if(m&&index[m[1]]){
+      dash.classList.add("hidden");detail.classList.remove("hidden");tokensDetail.classList.add("hidden");
       renderDetail(index[m[1]],rm?rm[1]:null);
       if(!rm)window.scrollTo(0,0);
-    } else {detail.classList.add("hidden");dash.classList.remove("hidden");}
+    } else {detail.classList.add("hidden");dash.classList.remove("hidden");tokensDetail.classList.add("hidden");}
   }
   window.addEventListener("hashchange",route);route();
 })();
