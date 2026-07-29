@@ -1,3 +1,4 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 <style>
   :root{
     --paper:#F1EEE6; --surface:#FBFAF5; --surface-2:#F6F3EC;
@@ -252,6 +253,12 @@
       <div style="font-size:28px;font-weight:bold;color:var(--s-warn);margin:8px 0;">10%</div>
       <div style="color:var(--ink-soft);font-size:13px;">4,500 tokens economizados hoje</div>
     </div>
+  </div>
+
+  <!-- Gráfico de Evolução -->
+  <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;margin:30px 0;">
+    <h3 style="margin:0 0 20px;font-family:var(--serif);font-size:16px;font-weight:600;">📈 Evolução da Redução de Tokens (Projeção)</h3>
+    <canvas id="evolutionChart" style="max-height:300px;"></canvas>
   </div>
 
   <!-- Razões da Economia -->
@@ -628,12 +635,65 @@ fechamento2807:{d:"28/07",et:"marco",t:"Fila do dia drenada até o fim do que er
       if(node){node.classList.add("hl");node.scrollIntoView({behavior:"smooth",block:"start"});}
     }
   }
+  function renderTokensChart(){
+    var chartElement=document.getElementById("evolutionChart");
+    if(!chartElement)return;
+    var ctx=chartElement.getContext("2d");
+    new Chart(ctx,{
+      type:"line",
+      data:{
+        labels:["27/07","29/07","30/07","31/07","05/08","12/08","13/08","14/08","19/08","22/08"],
+        datasets:[
+          {
+            label:"Redução de Tokens (%)",
+            data:[0,5,13,15,15,35,45,47,62,70],
+            borderColor:"var(--s-move)",
+            backgroundColor:"rgba(63,107,140,.1)",
+            borderWidth:3,
+            fill:true,
+            tension:0.4,
+            pointRadius:6,
+            pointBackgroundColor:"var(--s-move)",
+            pointBorderColor:"#fff",
+            pointBorderWidth:2
+          },
+          {
+            label:"Meta: 45-55%",
+            data:[45,45,45,45,45,45,45,45,45,45],
+            borderColor:"var(--s-good)",
+            borderDash:[5,5],
+            borderWidth:2,
+            fill:false,
+            pointRadius:0
+          }
+        ]
+      },
+      options:{
+        responsive:true,
+        maintainAspectRatio:true,
+        plugins:{
+          legend:{
+            labels:{font:{size:12},usePointStyle:true}
+          }
+        },
+        scales:{
+          y:{
+            beginAtZero:true,
+            max:100,
+            ticks:{callback:function(value){return value+"%";}}
+          }
+        }
+      }
+    });
+  }
+
   function route(){
     var m=location.hash.match(/c=([\w-]+)/);
     var rm=location.hash.match(/r=([\w-]+)/);
     if(m&&m[1]==="tokens"){
       dash.classList.add("hidden");detail.classList.add("hidden");tokensDetail.classList.remove("hidden");
       document.getElementById("back-tokens").addEventListener("click",function(){location.hash="";});
+      setTimeout(renderTokensChart,100);
       window.scrollTo(0,0);
     } else if(m&&index[m[1]]){
       dash.classList.add("hidden");detail.classList.remove("hidden");tokensDetail.classList.add("hidden");
