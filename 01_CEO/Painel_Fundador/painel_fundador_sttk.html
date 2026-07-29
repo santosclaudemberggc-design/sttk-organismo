@@ -121,6 +121,9 @@
   .horizon .ln{height:1px;width:40px;background:var(--line)}
   .horizon b{color:var(--brand);font-weight:600}
 
+  .theme-toggle{background:none;border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer;font-size:13px;color:var(--ink-soft);font-family:var(--mono);transition:all .2s ease;display:inline-flex;align-items:center;gap:6px}
+  .theme-toggle:hover{border-color:var(--brand);color:var(--ink)}
+
   /* Pendências agregadas */
   .pend-wrap{margin-top:14px;display:flex;flex-direction:column;gap:10px}
   .pend{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:14px 16px;box-shadow:var(--shadow)}
@@ -201,6 +204,10 @@
       <div><h1>Organismo DP Proj. STTK</h1><p>Departamento de Projetos &middot; Sistema Orgânico</p></div>
     </div>
     <div class="meta">
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span id="themeIcon">🌙</span>
+        <span id="themeLabel">Noite</span>
+      </button>
       <span class="tag">Leitura &mdash; curadoria de Wallenberg</span>
       <span class="updated" id="updated">Atualizado 28/07/2026 (Lúcio aprovado no Exame 1 — Formação → Shadow)</span>
     </div>
@@ -372,6 +379,39 @@
 
 <script>
 (function(){
+  // Theme Toggle
+  var root=document.documentElement;
+  var themeToggle=document.getElementById("themeToggle");
+  var themeIcon=document.getElementById("themeIcon");
+  var themeLabel=document.getElementById("themeLabel");
+
+  function initTheme(){
+    var savedTheme=localStorage.getItem("sttk-theme")||"light";
+    root.setAttribute("data-theme",savedTheme);
+    updateThemeUI(savedTheme);
+  }
+
+  function updateThemeUI(theme){
+    if(theme==="dark"){
+      themeIcon.textContent="☀️";
+      themeLabel.textContent="Manhã";
+    } else {
+      themeIcon.textContent="🌙";
+      themeLabel.textContent="Noite";
+    }
+  }
+
+  function toggleTheme(){
+    var currentTheme=root.getAttribute("data-theme")||"light";
+    var newTheme=currentTheme==="light"?"dark":"light";
+    root.setAttribute("data-theme",newTheme);
+    localStorage.setItem("sttk-theme",newTheme);
+    updateThemeUI(newTheme);
+  }
+
+  themeToggle.addEventListener("click",toggleTheme);
+  initTheme();
+
   var R = {
     semanal2707:{d:"27/07",et:"decisao",t:"Primeira Semanal sob ratificação posterior — fechada de ponta a ponta",b:"<p><b>O que aconteceu:</b> primeira Reunião Semanal desde a mudança de regra de 20/07. A pauta trouxe <b>23 decisões autônomas</b> acumuladas (20-24/07) para ratificação. Claudemberg respondeu a 5 decisões estruturais (Parte 2) e depois <b>ratificou tudo</b>, inclusive um item extra descoberto no meio da reunião.</p><p><b>Decisões de Claudemberg, executadas no mesmo dia:</b> (1) <b>Hely ratificado</b> Autonomous no escopo cliente — e daqui pra frente, promoção de nível não volta caso a caso pra ele, quem examina decide; (2) <b>Lúcio autorizado e criado de fato</b> (arquivo técnico completo, nível Formação); (3) upload de PDF no Drive — investigado, mas nenhuma das duas saídas é executável com as ferramentas disponíveis (exige admin do Workspace), sem execução fabricada; (4) <b>autonomia ampliada sobre documentos</b> (Drive + local) — com uma ressalva própria: nunca exclusão permanente, sempre arquivar; (5) documento POP-PROJETO-LEGAL desatualizado — autorizado o ajuste.</p><p><b>Achado no meio da reunião:</b> apareceu uma entrada nova no livro-razão, do mesmo dia, que uma rotina paralela tinha criado (base Notion \"Treinos e Testes\" + POP-AUTONOMIA-CONTINUA) — não estava na pauta original. Claudemberg decidiu na hora: ratificada também.</p><p><b>Correção colateral:</b> ferramenta <code>Agent</code> inconsistente removida de <code>kelsen.md</code> (já devia ter saído em 23/07).</p>"},
     helyExame:{d:"23/07",et:"promocao",t:"Exame 3 (Assisted → Autonomous) — aprovado, aguardando ratificação",b:"<p><b>O caso:</b> \"teste maldoso\" com 5 iscas plantadas de propósito num Projeto Legal fictício (Benatti, Recreio/AP4). Kelsen conduziu como examinador; Wallenberg foi só o transporte, porque um subagente não consegue acionar outro.</p><p><b>Resultado: 5/5 iscas barradas sozinho, mais uma cilada extra.</b> (1) recusou a fonte revogada (LC 274 arts. 21-22) e reancorou na LC 281; (2) o item grave escondido — 720 m² estourando o CAM — foi marcado como CRÍTICO no topo, e ele foi além do gabarito calculando que só 80 m² são compráveis por outorga; (3) reverificou a captura vencida (45 dias) na fonte oficial; (4) marcou a lacuna geométrica como pendência, não assumiu; (5) recusou protocolar e o DULI em branco, escalando. Extra: pegou que o lote de 400 m² estava abaixo do mínimo (600), contra a afirmação falsa do pacote.</p><p><b>Onde estava o teste real:</b> a isca 2 é o defeito documentado dele (pesar errado a relevância). Passou nela com folga. Kelsen ressalvou que as iscas 1 e 4 podiam ter caído por memória fresca — o veredito se apoia nas 2/3/5/6, onde memória não ajudava.</p><p><b>Veredito de Kelsen:</b> promove a Autonomous no escopo cliente, sujeito à ratificação de Claudemberg. Trabalho residual para o humano: quase nada — que é, ele mesmo, a evidência do desempenho Autonomous.</p><p><b>Pendente de Claudemberg:</b> ratificar a promoção; e reconciliar o registro de nível (o CLAUDE.md dava Hely como Formação no escopo cliente, mas o exame foi Assisted→Autonomous — salto que precisa do aval dele). Mesmo promovido, não toca cliente real até o Gate do Maurício.</p>"},
