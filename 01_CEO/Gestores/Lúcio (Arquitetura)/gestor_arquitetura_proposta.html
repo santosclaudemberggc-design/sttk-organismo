@@ -1,0 +1,299 @@
+<title>Lúcio — Proposta do Gestor Arquitetura (rascunho em construção)</title>
+<style>
+  @media (prefers-color-scheme: light) { :root { color-scheme: light; } }
+  @media (prefers-color-scheme: dark)  { :root { color-scheme: dark; } }
+
+  :root {
+    --paper: #F1ECE2;
+    --paper-raised: #E9E2D2;
+    --ink: #221F1C;
+    --ink-soft: #55504A;
+    --ink-faint: #8A8375;
+    --blueprint: #24476E;
+    --blueprint-soft: #6C87A6;
+    --blueprint-wash: #DCE4EC;
+    --ochre: #A66A2E;
+    --ochre-wash: #EEE0CE;
+    --line: #D3C9B6;
+    --good: #3F6B4A;
+    --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    --font-body: Seravek, "Gill Sans Nova", "Segoe UI", Calibri, sans-serif;
+    --font-mono: "Berkeley Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #17191C; --paper-raised: #1E2124; --ink: #EDE7DA; --ink-soft: #ABA290; --ink-faint: #716C60;
+      --blueprint: #7FA6D6; --blueprint-soft: #45617F; --blueprint-wash: #202B36; --ochre: #D89A5C; --ochre-wash: #2E2519;
+      --line: #34383D; --good: #7FAF8B;
+    }
+  }
+  :root[data-theme="light"] {
+    --paper: #F1ECE2; --paper-raised: #E9E2D2; --ink: #221F1C; --ink-soft: #55504A; --ink-faint: #8A8375;
+    --blueprint: #24476E; --blueprint-soft: #6C87A6; --blueprint-wash: #DCE4EC; --ochre: #A66A2E; --ochre-wash: #EEE0CE;
+    --line: #D3C9B6; --good: #3F6B4A;
+  }
+  :root[data-theme="dark"] {
+    --paper: #17191C; --paper-raised: #1E2124; --ink: #EDE7DA; --ink-soft: #ABA290; --ink-faint: #716C60;
+    --blueprint: #7FA6D6; --blueprint-soft: #45617F; --blueprint-wash: #202B36; --ochre: #D89A5C; --ochre-wash: #2E2519;
+    --line: #34383D; --good: #7FAF8B;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 16.5px; line-height: 1.6; }
+  ::selection { background: var(--blueprint-wash); color: var(--ink); }
+  a { color: var(--blueprint); }
+
+  .titleblock { border-bottom: 2px solid var(--ink); padding: 2.6rem clamp(1.25rem, 5vw, 3rem) 1.6rem; }
+  .titleblock-grid { max-width: 920px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: end; }
+  .eyebrow { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blueprint); margin: 0 0 0.6rem; }
+  h1.name { font-family: var(--font-display); font-size: clamp(2.6rem, 7vw, 4.4rem); font-weight: 500; letter-spacing: 0.01em; margin: 0; text-wrap: balance; line-height: 1.02; }
+  .subtitle { font-size: 1.05rem; color: var(--ink-soft); margin: 0.65rem 0 0; max-width: 46ch; }
+  .meta { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-faint); text-align: right; line-height: 1.7; white-space: nowrap; }
+  .meta strong { color: var(--ink-soft); font-weight: 600; }
+
+  .layout { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 220px minmax(0, 760px); gap: 0; justify-content: center; }
+  nav.index { position: sticky; top: 0; align-self: start; padding: 2.4rem 1.25rem 2rem 1.25rem; max-height: 100vh; overflow-y: auto; }
+  nav.index ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+  nav.index a { display: block; font-family: var(--font-mono); font-size: 0.74rem; color: var(--ink-faint); text-decoration: none; letter-spacing: 0.02em; border-left: 2px solid transparent; padding-left: 0.7rem; transition: color 0.15s, border-color 0.15s; }
+  nav.index a:hover { color: var(--ink); }
+
+  main { padding: 2.6rem clamp(1.25rem, 5vw, 2.5rem) 6rem; min-width: 0; }
+  section { padding-top: 2.4rem; scroll-margin-top: 1rem; }
+  section + section { border-top: 1px solid var(--line); }
+  .section-head { display: flex; align-items: baseline; gap: 0.9rem; margin-bottom: 1.1rem; }
+  .section-num { font-family: var(--font-mono); font-size: 0.85rem; color: var(--blueprint-soft); }
+  h2 { font-family: var(--font-display); font-size: 1.7rem; font-weight: 500; margin: 0; text-wrap: balance; }
+  h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; margin: 1.6rem 0 0.5rem; }
+  p { margin: 0.7rem 0; max-width: 66ch; }
+  p.lede { font-size: 1.05rem; color: var(--ink-soft); max-width: 62ch; }
+  ul, ol.plain { margin: 0.6rem 0; padding-left: 1.3rem; }
+  ul li, ol.plain li { margin: 0.35rem 0; }
+  strong { color: var(--ink); font-weight: 650; }
+
+  .rule-box { background: var(--ochre-wash); border: 1px solid var(--ochre); border-radius: 3px; padding: 1.1rem 1.3rem; margin: 1rem 0; }
+  .rule-box .label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ochre); margin: 0 0 0.4rem; }
+  .rule-box p { margin: 0; max-width: none; color: var(--ink); }
+  .rule-box.blue { border-color: var(--blueprint); background: var(--blueprint-wash); }
+  .rule-box.blue .label { color: var(--blueprint); }
+
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--line); }
+  th { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-faint); font-weight: 600; }
+
+  .pill { display: inline-block; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.03em; padding: 0.15rem 0.55rem; border-radius: 2px; border: 1px solid currentColor; }
+  .pill.ready { color: var(--good); background: color-mix(in srgb, var(--good) 12%, transparent); }
+  .pill.build { color: var(--blueprint); background: var(--blueprint-wash); }
+  .pill.pending { color: var(--ochre); background: var(--ochre-wash); }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1rem 0; }
+  .card { border: 1px solid var(--line); border-radius: 3px; padding: 1.1rem 1.2rem; }
+  .card h4 { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blueprint); margin: 0 0 0.5rem; }
+  .card .card-name { font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; margin: 0 0 0.3rem; }
+  .card ul { margin: 0.4rem 0 0; padding-left: 1.1rem; font-size: 0.92rem; }
+  .card p { font-size: 0.92rem; }
+
+  .open-item { display: flex; gap: 0.7rem; padding: 0.6rem 0; border-bottom: 1px dashed var(--line); align-items: baseline; }
+  .open-item:last-child { border-bottom: none; }
+  .open-item .dot { color: var(--ochre); font-family: var(--font-mono); }
+  .open-item p { margin: 0; font-size: 0.94rem; }
+
+  .princ { font-family: var(--font-mono); font-size: 0.68rem; color: var(--blueprint-soft); border: 1px solid var(--blueprint-soft); border-radius: 2px; padding: 0.05rem 0.4rem; margin-right: 0.3rem; display: inline-block; }
+
+  footer { max-width: 760px; margin: 0 auto; padding: 0 clamp(1.25rem, 5vw, 2.5rem) 4rem; font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-faint); }
+
+  @media (max-width: 880px) {
+    .layout { grid-template-columns: 1fr; }
+    nav.index { position: static; max-height: none; padding: 1.4rem clamp(1.25rem, 5vw, 2.5rem) 0; }
+    nav.index ol { flex-direction: row; flex-wrap: wrap; gap: 0.4rem 1rem; }
+    .titleblock-grid { grid-template-columns: 1fr; }
+    .meta { text-align: left; }
+    .two-col { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="titleblock">
+  <div class="titleblock-grid">
+    <div>
+      <p class="eyebrow">Sistema Orgânico STTK — Sttickler Empreendimentos · rascunho de Wallenberg, em construção</p>
+      <h1 class="name">Lúcio</h1>
+      <p class="subtitle">Proposta do 2º Gestor do organismo — Gestor Arquitetura, responsável por Levantamento, Briefing, Estudo Preliminar e Anteprojeto.</p>
+    </div>
+    <div class="meta">
+      <div><strong>Status</strong> <span class="pill build">em construção — avançado em 20/07</span></div>
+      <div><strong>Nome</strong> confirmado por Claudemberg, 20/07/2026</div>
+      <div><strong>Preparado por</strong> Wallenberg (função 02, Orquestrador)</div>
+      <div><strong>Início</strong> 14/07/2026</div>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+  <nav class="index" aria-label="Índice">
+    <ol>
+      <li><a href="#porque">00 — Por que Arquitetura agora</a></li>
+      <li><a href="#identidade">01 — Identidade (rascunho)</a></li>
+      <li><a href="#conhecimento">02 — Conhecimento</a></li>
+      <li><a href="#capacidade">03 — Capacidade</a></li>
+      <li><a href="#fluxo">04 — As 4 etapas (POPs já lidos)</a></li>
+      <li><a href="#dependencia">05 — Dependência com Kelsen</a></li>
+      <li><a href="#equipe">06 — Equipe (esboço inicial)</a></li>
+      <li><a href="#pendencias">07 — O que falta antes de levar pra reunião</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="porque">
+      <div class="section-head"><span class="section-num">00</span><h2>Por que Arquitetura agora</h2></div>
+      <p class="lede">Kelsen (Legal) foi o 1º Gestor porque Arquitetura depende da base legislativa dele desde o Levantamento (<span class="princ">Princípio 9</span> Padronização de projetos). Com Kelsen aprovado e operando (Kelsen → Hely), a dependência já existe do lado de quem fornece — faz sentido este ser o 2º Gestor a nascer.</p>
+      <div class="rule-box blue">
+        <p class="label">Ainda em construção — não é decisão pra segunda-feira</p>
+        <p>Claudemberg pediu pra eu ir montando com calma, em paralelo, e mostrar o andamento na Reunião Semanal — isso não é uma proposta fechada pedindo aprovação, é um corte do que já está tomando forma.</p>
+      </div>
+    </section>
+
+    <section id="identidade">
+      <div class="section-head"><span class="section-num">01</span><h2>Identidade (rascunho)</h2></div>
+      <p class="lede"><strong>Lúcio</strong> — nome confirmado por Claudemberg em 20/07/2026.</p>
+      <p>Referência a <strong>Lúcio Costa</strong>, o urbanista que concebeu o Plano Piloto de Brasília — uma figura que <strong>definiu o método e a estrutura</strong> de um projeto monumental sem desenhar cada edifício pessoalmente (isso coube a Niemeyer e outros). É exatamente o papel deste Gestor: reter o método e coordenar quem executa, sem produzir o desenho ele mesmo — coerente com a capacidade real de Arquitetura hoje (coordena o arquiteto parceiro, não produz, ver seção 03).</p>
+      <table>
+        <tr><th>Campo</th><th>Definição (rascunho)</th></tr>
+        <tr><td>Papel</td><td>Gestor Arquitetura — Levantamento, Briefing, Estudo Preliminar e Anteprojeto de cada cliente.</td></tr>
+        <tr><td>Reporta a</td><td>Wallenberg (CEO)</td></tr>
+        <tr><td>Coordena</td><td>Equipe de Agentes própria — a nomear, uma vez aprovado</td></tr>
+        <tr><td>Regra de decisão</td><td>Mesma regra do organismo: nada estrutural sozinho até aprovação; depois, autonomia delegada pra montar a própria equipe</td></tr>
+        <tr><td>Princípios centrais (candidatos)</td><td><span class="princ">1</span> Foco no cliente · <span class="princ">3</span> Qualidade antes de velocidade · <span class="princ">9</span> Padronização de projetos · <span class="princ">7</span> Comunicação objetiva entre gestores (dependência forte com Kelsen)</td></tr>
+      </table>
+    </section>
+
+    <section id="conhecimento">
+      <div class="section-head"><span class="section-num">02</span><h2>Conhecimento</h2></div>
+      <p class="lede">Já confirmei os 4 POPs oficiais no Drive (<code>001_MATERIAL DE CONTROLE INTERNO</code>) que cobrem a linha "Construção do Zero" (existem variantes "de Reforma" fora do escopo do organismo, ver [[sttickler_visao_geral]]):</p>
+      <ul>
+        <li><strong>POP-PROJ-01 — Levantamento Arquitetônico</strong>: medição de divisas, confrontantes, níveis, infraestrutura das concessionárias. Regra dura: proibido iniciar qualquer traço sem conferência física presencial. Conclusão: compilação dos dados de campo + relatório fotográfico, validado pela Diretoria (Claudemberg).</li></ul>
+      <div class="rule-box blue">
+        <p class="label">Escopo completo do Levantamento — detalhado por Claudemberg em 20/07/2026 (vai além do texto atual do POP-PROJ-01)</p>
+        <p>Levantamento cobre, na prática: <strong>medidas do terreno</strong>, <strong>sondagem mecânica do solo</strong>, <strong>topografia</strong>, <strong>levantamento do entorno</strong>, <strong>incidência solar</strong>, <strong>ruídos</strong>, <strong>ventos predominantes</strong>, <strong>calçamento</strong>, e <strong>leis vigentes pra saber o que pode ser construído</strong> — este último item é exatamente a consulta obrigatória ao Kelsen desde essa primeira etapa (seção 05). Vários desses itens (sondagem do solo, topografia, entorno, incidência solar, ruído, vento, calçamento) não aparecem no texto do POP-PROJ-01 como eu tinha lido — candidato a propor atualização do POP oficial no Drive quando Lúcio for formalizado (Função 6, não decido sozinho mexer no documento de produção agora).</p>
+      </div>
+      <div class="rule-box">
+        <p class="label">Correção de Claudemberg (20/07/2026) — "As Built" não é entregável do Levantamento</p>
+        <p>O rascunho anterior misturava dois momentos diferentes. **Relatório fotográfico**: certo, é do Levantamento — feito no terreno, no início do projeto. **"As Built"**: errado colocar aqui — essa planta só existe **depois que o projeto fica pronto** (documenta como a obra foi de fato construída, não o estado do terreno antes de começar). Não faz parte da conclusão do Levantamento; é um entregável de uma etapa bem mais adiante (provavelmente perto da Liberação de Obra/Fechamento, ainda não mapeado — Gestor Fechamento não existe ainda). Removi a menção errada acima; a conclusão real do Levantamento é a compilação dos dados de campo (lista da caixa anterior) + o relatório fotográfico feito na visita.</p>
+      </div>
+      <ul>
+        <li><strong>POP-PROJ-02 — Gerenciamento do Briefing Arquitetônico</strong>: questionário estruturado + moodboard + programa de necessidades. Regra dura: proibido iniciar Estudo Preliminar sem o Caderno de Briefing assinado pelo cliente.</li>
+        <li><strong>POP-ARQ-EP-01 — Estudo Preliminar</strong>: conceito/partido, implantação, volumetria, layout humanizado, estimativa de área. Conclusão: aprovado pelo cliente + coordenação → libera Anteprojeto.</li>
+        <li><strong>POP-ARQ-AP-01 — Anteprojeto</strong>: plantas técnicas de todos os pavimentos, implantação conforme legislação, situação, cobertura, cortes, fachadas preliminares, quadro de áreas preliminar, layout humanizado. Conclusão: aprovado → libera Projeto Legal e/ou Executivo.</li>
+      </ul>
+      <p>Todos os 4 POPs remetem à mesma <strong>Planilha de Controle de Enviáveis Externos</strong> que também fundamenta o Projeto Legal do Kelsen — é um documento compartilhado entre Gestores, não duplicado.</p>
+      <div class="rule-box blue">
+        <p class="label">Planilha lida na íntegra (20/07/2026) — memória: <code>sttickler_planilha_enviaveis_arquitetura.md</code></p>
+        <p>Confirmado entregável por entregável: Estudo Preliminar já exige "Apresentação ao cliente (pranchas + perspectivas/renders)"; Anteprojeto exige "Renders", "Vídeo conceitual" e "Apresentação ao cliente completa". Não é interpretação — está escrito na planilha oficial. Isso valida diretamente os 2 Agentes novos da equipe (seção 06).</p>
+      </div>
+    </section>
+
+    <section id="capacidade">
+      <div class="section-head"><span class="section-num">03</span><h2>Capacidade — hoje e o roadmap (definido 20/07/2026)</h2></div>
+      <p class="lede">Diferente do Kelsen (Legal produz de verdade hoje), Arquitetura está, <strong>por enquanto</strong>, na faixa que só <strong>coordena o arquiteto parceiro</strong> — mantém a ordem com base nos entregáveis (Planilha de Enviáveis Externos), sem desenhar.</p>
+      <table>
+        <tr><th>Frente</th><th>Situação</th></tr>
+        <tr><td>Levantamento, Briefing, Estudo Preliminar, Anteprojeto</td><td><span class="pill pending">coordena parceiro</span> — recebe, organiza, audita entregáveis; não desenha</td></tr>
+        <tr><td>PRPA (assinatura)</td><td>Segue quem produziu o projeto arquitetônico — regra já fixada por Claudemberg (parceiro externo ou Claudemberg via CAU, conforme quem desenhou)</td></tr>
+      </table>
+      <div class="rule-box blue">
+        <p class="label">Roadmap — quando o VITRUVIUS estiver pronto</p>
+        <p>Claudemberg confirmou o plano de evolução: assim que o sistema **VITRUVIUS** (integração com Revit) estiver concluído, Lúcio monta uma equipe onde **um único Agente cria o projeto de cada etapa diretamente dentro do Revit**, de forma organizada — deixa de ser só coordenação e passa a ser produção real, fechando a lacuna que hoje está documentada em <code>memory/referencia/sttickler_revit_capacidade.md</code>. Isso é evolução futura, não a capacidade de hoje — não antecipar isso na proposta como se já estivesse pronto.</p>
+      </div>
+    </section>
+
+    <section id="fluxo">
+      <div class="section-head"><span class="section-num">04</span><h2>As 4 etapas — onde cada Gate acontece</h2></div>
+      <div class="rule-box blue">
+        <p class="label">Fluxo de aprovação corrigido em 20/07/2026 — igual ao que já vale para o Kelsen (Legal)</p>
+        <p>A versão anterior deste rascunho dizia "cliente aprova, depois a Coordenação valida" — invertido. Claudemberg confirmou que o padrão é o mesmo dos 3 níveis já usados em Legal: <strong>1) o próprio Agente/Gestor confere</strong> (completude e conformidade mecânica — falta entregável? número bate?) → <strong>2) Maurício Costa valida</strong> (mérito técnico, como Coordenador) → <strong>3) o Cliente aprova</strong> por último, já sobre um material vetado. Nunca mostrar ao cliente algo que não passou pelas 2 conferências internas antes.</p>
+        <p><strong>Confirmado por Claudemberg (20/07/2026): os Gates 13 (Compatibilização) e 16 (Liberação de Obra) não pertencem ao Lúcio</strong> — são etapas bem mais adiante no fluxo geral, de outros Gestores (Compatibilização, Fechamento), ainda não implantados. Dentro das 4 etapas de Lúcio, a validação do Maurício já é o gate final antes do cliente — não precisa de Claudemberg pessoalmente em cada Estudo Preliminar/Anteprojeto. Claudemberg só entra pessoalmente se e quando o output de Lúcio alimentar diretamente um Gate 13/16 ou um protocolo de prefeitura (via Kelsen), o que não é o caso das 4 etapas dele.</p>
+      </div>
+      <ol class="plain">
+        <li><strong>Levantamento</strong> → medidas do terreno, sondagem do solo, topografia, entorno, incidência solar, ruído, vento, calçamento, relatório fotográfico (feito na visita) + checagem legal com Kelsen → Agente confere → Maurício valida → Claudemberg toma ciência (Diretoria de Engenharia)</li>
+        <li><strong>Briefing</strong> → Caderno de Briefing → Agente confere → Maurício valida → Cliente assina, Claudemberg congela</li>
+        <li><strong>Estudo Preliminar</strong> → pranchas + renders → Agente confere → Maurício valida → Cliente aprova / aprova com ressalvas / reprova</li>
+        <li><strong>Anteprojeto</strong> → plantas técnicas, cortes, fachadas, quadro de áreas, renders/vídeo → Agente confere → Maurício valida → Cliente aprova → libera Projeto Legal (Kelsen) e/ou Executivo</li>
+      </ol>
+    </section>
+
+    <section id="dependencia">
+      <div class="section-head"><span class="section-num">05</span><h2>Dependência obrigatória com Kelsen</h2></div>
+      <div class="rule-box blue">
+        <p class="label">Já fixada na Reunião Semanal de 13/07/2026</p>
+        <p>Arquitetura consulta a base legislativa do Kelsen <strong>desde o Levantamento</strong> — a primeira etapa, não uma etapa intermediária. Na prática técnica: quando este Gestor existir, ele aciona Kelsen (que decide internamente se delega ao Hely) pra confirmar o regime urbanístico do lote antes de fechar o Levantamento — evita descobrir uma não conformidade só lá no Anteprojeto ou no Projeto Legal.</p>
+      </div>
+    </section>
+
+    <section id="equipe">
+      <div class="section-head"><span class="section-num">06</span><h2>Equipe — 3 Agentes definidos por Claudemberg em 20/07/2026</h2></div>
+      <p class="lede">Nome real de cada um continua sendo tarefa do próprio Lúcio, depois de aprovado (regra de nomeação em cascata, mesma do Kelsen→Hely) — o que já está fechado aqui é a função de cada um e o teste de contratação (<em>"Claudemberg contrataria esse Agente, ou outro já cobre a função?"</em>), todos aprovados.</p>
+      <div class="rule-box">
+        <p class="label">Princípio de design definido por Claudemberg — vale pros 3 agentes desta equipe</p>
+        <p><strong>Os agentes precisam ser autônomos, não canalizados.</strong> Não são meros repassadores de instrução ou pipe de dados de um lado pro outro — cada um aplica julgamento real dentro da própria função (criativo, no caso dos 2 agentes de apresentação/render), a mesma lógica de "Kelsen decide, não só repassa pro Hely" aplicada aqui.</p>
+        <p><strong>Sustentado por registro de execução (20/07/2026):</strong> cada tarefa relevante salva o <strong>input recebido</strong>, o <strong>output entregue</strong>, e um relatório curto de <strong>como começou e como terminou</strong> — não só o resultado final, o percurso. Isso alimenta a memória contínua de cada Agente (ver <code>feedback_registro_input_output_execucao.md</code>): eles nunca começam do zero, sempre partem do que já fizeram e aprenderam de verdade, erro incluído — não é "nasce zerado", é aprendizado acumulado (ver <code>feedback_memoria_continua_nao_zerada.md</code>).</p>
+      </div>
+      <div class="rule-box blue">
+        <p class="label">Capacidade separada, corrigida em 20/07/2026 — nem todo Agente novo espera o Vitruvius</p>
+        <p>Só o <strong>Coordenador</strong> está travado esperando o VITRUVIUS (produção real em Revit exige a integração pronta). Os outros 2 — **Apresentações** e **Renders/Vídeos** — <strong>produzem de verdade já hoje</strong>, igual o Hely já produz em Legal: apresentação de alto nível e renders/vídeo não dependem de BIM, dependem de ferramentas de geração de imagem/vídeo e design já disponíveis. Cada um dos 3 ganha, além das regras (identidade), <strong>Skills próprias (3ª camada, Função 5)</strong> quando for criado de fato — não é só regra escrita, é capacidade real com ferramenta.</p>
+      </div>
+      <div class="two-col">
+        <div class="card">
+          <h4>Agente 1 — Teste de contratação: aprovado</h4>
+          <p class="card-name">Coordenador de Projeto Arquitetônico</p>
+          <p>Conduz as 4 etapas de ponta a ponta com o arquiteto parceiro: organiza o Levantamento, gerencia o Briefing, acompanha Estudo Preliminar e Anteprojeto, audita os entregáveis contra a Planilha de Enviáveis Externos, e aciona Kelsen quando a checagem legislativa for necessária.</p>
+          <ul>
+            <li><span class="pill pending">Capacidade hoje: coordena, não produz.</span> Futuro (pós-Vitruvius, 100% pronto): produz cada etapa direto no Revit — é o marco que dispara o teste real de produção via agentes (ver memória).</li>
+            <li>Consome: os 4 POPs + Planilha de Enviáveis Externos</li>
+            <li>Depende de: base legislativa do Kelsen, desde o Levantamento</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Agente 2 — Teste de contratação: aprovado</h4>
+          <p class="card-name">Agente de Apresentações</p>
+          <p>Cria apresentações de altíssimo nível pro cliente, no padrão do que o mercado de incorporação/arquitetura de alto padrão está entregando hoje — não um template genérico. Recebe os renders/vídeos do Agente 3 como insumo.</p>
+          <ul>
+            <li><span class="pill ready">Capacidade: produz de verdade já hoje</span> — não espera o Vitruvius</li>
+            <li>Entregável oficial que justifica o cargo: "Apresentação ao cliente" (Estudo Preliminar e Anteprojeto, ver Planilha de Enviáveis, seção 02)</li>
+            <li>Autônomo — julgamento criativo próprio, não só monta slide com o que mandarem</li>
+            <li>Trabalha em conjunto com o Agente de Renders/Vídeos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" style="max-width: 100%; margin-top: 1.5rem;">
+        <h4>Agente 3 — Teste de contratação: aprovado</h4>
+        <p class="card-name">Agente de Renders e Vídeos</p>
+        <p>Gera renders e vídeos de alto padrão a partir do projeto do arquiteto parceiro, no nível que o mercado está entregando hoje — alimenta o Agente de Apresentações com esse material.</p>
+        <ul>
+          <li><span class="pill ready">Capacidade: produz de verdade já hoje</span> — não espera o Vitruvius</li>
+          <li>Entregável oficial que justifica o cargo: "Renders" e "Vídeo conceitual" (Anteprojeto, ver Planilha de Enviáveis, seção 02)</li>
+          <li>Autônomo — julgamento criativo próprio sobre enquadramento/qualidade, não só executa instrução literal</li>
+          <li>Insumo: projeto aprovado do arquiteto parceiro (preservado integralmente, mesma regra do Hely pra prancha legal — não altera o partido)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="pendencias">
+      <div class="section-head"><span class="section-num">07</span><h2>Status em 20/07/2026 — o que já fechou e o que falta</h2></div>
+      <div class="open-item"><span class="dot">✓</span><p><strong>Nome confirmado</strong> — Lúcio.</p></div>
+      <div class="open-item"><span class="dot">✓</span><p><strong>Equipe definida e teste de contratação aplicado</strong> — 3 Agentes (Coordenador; Apresentações; Renders/Vídeos), ver seção 06.</p></div>
+      <div class="open-item"><span class="dot">✓</span><p><strong>Fluxo de aprovação corrigido</strong> — Agente confere → Maurício valida → Cliente aprova (mesmo padrão do Kelsen), ver seção 04.</p></div>
+      <div class="open-item"><span class="dot">✓</span><p><strong>Planilha de Enviáveis Externos lida na íntegra</strong> — memória <code>sttickler_planilha_enviaveis_arquitetura.md</code>, ver seção 02.</p></div>
+      <div class="open-item"><span class="dot">✓</span><p><strong>Roadmap de capacidade futura (Vitruvius)</strong> registrado — ver seção 03.</p></div>
+      <div class="open-item"><span class="dot">✓</span><p><strong>As 4 etapas detalhadas e confirmadas por Claudemberg (20/07/2026)</strong> — Levantamento (corrigido), Briefing, Estudo Preliminar e Anteprojeto, todas revisadas linha a linha.</p></div>
+      <div class="rule-box">
+        <p class="label">Regra confirmada por Claudemberg — ajuste fino é autonomia do próprio Gestor (Princípio 13)</p>
+        <p>O detalhamento das 4 etapas acima não é definitivo e imutável — <strong>o próprio Lúcio, uma vez aprovado, ajusta o procedimento conforme o organismo for batendo de frente com problemas reais em projetos</strong>. Não precisa voltar pra Reunião Semanal pra cada ajuste operacional fino — só o que mexer em escopo/missão do próprio Gestor ou na relação dele com outro Gestor (ex: a dependência com o Kelsen) continua exigindo Wallenberg + Claudemberg.</p>
+      </div>
+      <div class="open-item"><span class="dot">→</span><p>Falta só: você decidir se formaliza Lúcio como Gestor oficial agora (cria o <code>lucio.md</code> técnico) ou se prefere mais uma rodada de refinamento antes disso.</p></div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  Sistema Orgânico STTK — rascunho iniciado por Wallenberg em 14/07/2026, a pedido de Claudemberg ("vai montando com calma em paralelo"). Fontes: POP-PROJ-01, POP-PROJ-02, POP-ARQ-EP-01, POP-ARQ-AP-01 (Google Drive, 001_MATERIAL DE CONTROLE INTERNO).
+</footer>

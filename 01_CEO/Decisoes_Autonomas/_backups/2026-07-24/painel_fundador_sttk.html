@@ -1,0 +1,358 @@
+<style>
+  :root{
+    --paper:#F1EEE6; --surface:#FBFAF5; --surface-2:#F6F3EC;
+    --ink:#222A2B; --ink-soft:#5B6360; --ink-faint:#8A8F88;
+    --line:#E4DFD3; --line-soft:#EDE9DF;
+    --brand:#2A4A46;
+    --s-good:#3E7A57; --s-move:#3F6B8C; --s-warn:#B57F32; --s-crit:#AF463A; --s-idle:#9A968B;
+    --good-bg:rgba(62,122,87,.09); --move-bg:rgba(63,107,140,.09);
+    --warn-bg:rgba(181,127,50,.11); --crit-bg:rgba(175,70,58,.10); --idle-bg:rgba(154,150,139,.09);
+    --shadow:0 1px 2px rgba(30,34,30,.05), 0 6px 20px rgba(30,34,30,.05);
+    --shadow-lg:0 10px 40px rgba(20,24,20,.16);
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+    --sans:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,system-ui,sans-serif;
+    --mono:"Cascadia Code","SF Mono",ui-monospace,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --paper:#13171A; --surface:#1B2124; --surface-2:#1F272A; --ink:#EAE6DC; --ink-soft:#9CA39D; --ink-faint:#767C77;
+    --line:#2B3336; --line-soft:#242B2E; --brand:#82B4AB;
+    --s-good:#61A67C; --s-move:#6D9AC2; --s-warn:#D3A155; --s-crit:#CE6A5C; --s-idle:#8A867B;
+    --good-bg:rgba(97,166,124,.13); --move-bg:rgba(109,154,194,.13); --warn-bg:rgba(211,161,85,.14); --crit-bg:rgba(206,106,92,.13); --idle-bg:rgba(138,134,123,.10);
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.28); --shadow-lg:0 16px 50px rgba(0,0,0,.5);
+  }}
+  :root[data-theme="light"]{
+    --paper:#F1EEE6; --surface:#FBFAF5; --surface-2:#F6F3EC; --ink:#222A2B; --ink-soft:#5B6360; --ink-faint:#8A8F88;
+    --line:#E4DFD3; --line-soft:#EDE9DF; --brand:#2A4A46;
+    --s-good:#3E7A57; --s-move:#3F6B8C; --s-warn:#B57F32; --s-crit:#AF463A; --s-idle:#9A968B;
+    --good-bg:rgba(62,122,87,.09); --move-bg:rgba(63,107,140,.09); --warn-bg:rgba(181,127,50,.11); --crit-bg:rgba(175,70,58,.10); --idle-bg:rgba(154,150,139,.09);
+    --shadow:0 1px 2px rgba(30,34,30,.05), 0 6px 20px rgba(30,34,30,.05); --shadow-lg:0 10px 40px rgba(20,24,20,.16);
+  }
+  :root[data-theme="dark"]{
+    --paper:#13171A; --surface:#1B2124; --surface-2:#1F272A; --ink:#EAE6DC; --ink-soft:#9CA39D; --ink-faint:#767C77;
+    --line:#2B3336; --line-soft:#242B2E; --brand:#82B4AB;
+    --s-good:#61A67C; --s-move:#6D9AC2; --s-warn:#D3A155; --s-crit:#CE6A5C; --s-idle:#8A867B;
+    --good-bg:rgba(97,166,124,.13); --move-bg:rgba(109,154,194,.13); --warn-bg:rgba(211,161,85,.14); --crit-bg:rgba(206,106,92,.13); --idle-bg:rgba(138,134,123,.10);
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.28); --shadow-lg:0 16px 50px rgba(0,0,0,.5);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper)}
+  .wrap{max-width:1180px;margin:0 auto;padding:32px 24px 64px;color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100vh}
+  .hidden{display:none !important}
+
+  .topbar{display:flex;flex-wrap:wrap;gap:16px 20px;align-items:center;justify-content:space-between;padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:8px}
+  .brand{display:flex;align-items:center;gap:14px}
+  .mark{width:44px;height:44px;border-radius:10px;background:var(--brand);color:#fff;display:grid;place-items:center;font-family:var(--mono);font-weight:600;font-size:14px;flex:none}
+  .brand h1{margin:0;font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:-.01em;line-height:1.15}
+  .brand p{margin:2px 0 0;color:var(--ink-soft);font-size:12.5px}
+  .meta{display:flex;flex-direction:column;align-items:flex-end;gap:7px}
+  .tag{font-family:var(--mono);font-size:11px;letter-spacing:.03em;color:var(--brand);border:1px solid var(--line);background:var(--surface);padding:5px 11px;border-radius:999px}
+  .updated{color:var(--ink-faint);font-size:11.5px;font-family:var(--mono)}
+  .hint{color:var(--ink-faint);font-size:12px;margin:14px 0 4px}
+  .hint b{color:var(--ink-soft);font-weight:600}
+
+  .domain{margin-top:34px}
+  .domain-head{display:flex;align-items:center;gap:13px;margin-bottom:16px}
+  .dmark{width:30px;height:30px;border-radius:8px;flex:none;display:grid;place-items:center;font-family:var(--serif);font-size:15px;font-weight:600;color:var(--brand);background:var(--surface-2);border:1px solid var(--line)}
+  .domain-head h2{margin:0;font-family:var(--serif);font-size:19px;font-weight:600;letter-spacing:-.01em}
+  .domain-head p{margin:1px 0 0;color:var(--ink-faint);font-size:12px;font-family:var(--mono)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+
+  .card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:17px 17px 15px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:11px;overflow:hidden;cursor:pointer;text-align:left;font:inherit;color:inherit;width:100%;transition:transform .14s ease, box-shadow .14s ease, border-color .14s ease}
+  .card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg);border-color:var(--st)}
+  .card:focus-visible{outline:2px solid var(--st);outline-offset:2px}
+  .card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--st);opacity:.9}
+  .card[data-state="atencao"]{background:linear-gradient(var(--warn-bg),var(--warn-bg)),var(--surface)}
+  .card[data-state="travado"]{background:linear-gradient(var(--crit-bg),var(--crit-bg)),var(--surface)}
+  .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+  .card-top h3{margin:0;font-size:14.5px;font-weight:600;line-height:1.3}
+  .chip{flex:none;display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;font-family:var(--mono);color:var(--st);background:var(--st-bg);padding:4px 9px;border-radius:999px;white-space:nowrap}
+  .dot{width:6px;height:6px;border-radius:50%;background:var(--st);flex:none}
+  .desc{margin:0;color:var(--ink-soft);font-size:13px;line-height:1.48}
+  .progress{height:5px;border-radius:999px;background:var(--line-soft);overflow:hidden;margin-top:1px}
+  .progress span{display:block;height:100%;border-radius:999px;background:var(--st)}
+  .card-foot{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:auto;padding-top:3px}
+  .owner{font-family:var(--mono);font-size:11px;color:var(--ink-faint);white-space:nowrap}
+  .more{font-size:11px;color:var(--st);font-weight:600;font-family:var(--mono)}
+  [data-state="good"]{--st:var(--s-good);--st-bg:var(--good-bg)}
+  [data-state="andamento"]{--st:var(--s-move);--st-bg:var(--move-bg)}
+  [data-state="atencao"]{--st:var(--s-warn);--st-bg:var(--warn-bg)}
+  [data-state="travado"]{--st:var(--s-crit);--st-bg:var(--crit-bg)}
+  [data-state="espera"],[data-state="inativo"]{--st:var(--s-idle);--st-bg:var(--idle-bg)}
+  .card[data-state="espera"]::before,.card[data-state="inativo"]::before{opacity:.5}
+
+  .sec-title{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-faint);margin:40px 0 0}
+  .feed{margin-top:16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:8px 4px}
+  .ev{display:grid;grid-template-columns:78px 1fr;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line-soft)}
+  .ev:last-child{border-bottom:0}
+  .ev-date{font-family:var(--mono);font-size:11px;color:var(--ink-faint);padding-top:2px;white-space:nowrap}
+  .ev-body h4{margin:0 0 3px;font-size:13.5px;font-weight:600;line-height:1.3}
+  .ev-body p{margin:0;font-size:12.5px;color:var(--ink-soft);line-height:1.45}
+  .ev-tags{display:flex;gap:7px;align-items:center;margin-top:6px;flex-wrap:wrap}
+  .etag{font-family:var(--mono);font-size:10px;font-weight:600;padding:2px 7px;border-radius:999px;color:var(--et);background:var(--et-bg)}
+  .who{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint)}
+  [data-et="decisao"],[data-et="marco"]{--et:var(--brand);--et-bg:var(--surface-2)}
+  [data-et="promocao"],[data-et="agente"]{--et:var(--s-good);--et-bg:var(--good-bg)}
+  [data-et="skill"],[data-et="sistema"],[data-et="capacidade"]{--et:var(--s-move);--et-bg:var(--move-bg)}
+  [data-et="correcao"]{--et:var(--s-warn);--et-bg:var(--warn-bg)}
+
+  .levels{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:16px}
+  .lv{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:14px 15px}
+  .lv .n{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);letter-spacing:.05em;text-transform:uppercase}
+  .lv h4{margin:3px 0 5px;font-size:14px;font-weight:600}
+  .lv p{margin:0;font-size:12px;color:var(--ink-soft);line-height:1.45}
+  .lv .bar{display:flex;gap:3px;margin-top:9px}
+  .lv .bar i{height:4px;flex:1;border-radius:2px;background:var(--line)}
+  .lv[data-k="1"] .bar i:nth-child(-n+1),.lv[data-k="2"] .bar i:nth-child(-n+2),.lv[data-k="3"] .bar i:nth-child(-n+3),.lv[data-k="4"] .bar i{background:var(--brand)}
+
+  .council{margin-top:44px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2);padding:22px}
+  .council-head{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--s-warn);margin-bottom:4px}
+  .council h2{margin:0 0 15px;font-family:var(--serif);font-size:17px;font-weight:600}
+  .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px 22px}
+  .rule{display:flex;gap:10px}
+  .rule .b{width:7px;height:7px;border-radius:50%;background:var(--s-warn);margin-top:6px;flex:none}
+  .rule h4{margin:0 0 3px;font-size:13px;font-weight:600}
+  .rule p{margin:0;font-size:12.5px;color:var(--ink-soft);line-height:1.45}
+  .horizon{margin-top:30px;display:flex;align-items:center;justify-content:center;gap:12px;color:var(--ink-faint);font-family:var(--mono);font-size:12px}
+  .horizon .ln{height:1px;width:40px;background:var(--line)}
+  .horizon b{color:var(--brand);font-weight:600}
+
+  /* Detail page */
+  .detail{max-width:840px;margin:0 auto;padding:30px 24px 70px;color:var(--ink);font-family:var(--sans)}
+  .back{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:12px;color:var(--ink-soft);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;margin-bottom:24px}
+  .back:hover{color:var(--ink);border-color:var(--ink-faint)}
+  .back:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+  .d-k{font-family:var(--mono);font-size:11px;color:var(--ink-faint);letter-spacing:.03em}
+  .d-title{margin:8px 0 12px;font-family:var(--serif);font-size:30px;font-weight:600;line-height:1.12;letter-spacing:-.015em}
+  .d-metarow{display:flex;flex-wrap:wrap;gap:8px 10px;margin-bottom:6px;align-items:center}
+  .d-sum{font-size:15px;color:var(--ink-soft);line-height:1.6;margin:16px 0 4px;max-width:65ch}
+  .d-kv{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:20px 0;padding:16px 18px;background:var(--surface-2);border:1px solid var(--line);border-radius:12px;font-size:13.5px}
+  .d-kv dt{font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);padding-top:2px}
+  .d-kv dd{margin:0;color:var(--ink)}
+  .d-next{margin:18px 0 6px;padding:14px 18px;border-left:3px solid var(--st);background:var(--st-bg);border-radius:0 10px 10px 0}
+  .d-next .l{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint)}
+  .d-next .a{font-size:15px;font-weight:600;margin-top:2px}
+  .rec-h{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-faint);margin:38px 0 4px}
+  .rec-h span{color:var(--ink-soft);text-transform:none;letter-spacing:0}
+  .record{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:18px 20px;margin-top:14px}
+  .record .rt{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px;margin-bottom:8px}
+  .record .rt .rd{font-family:var(--mono);font-size:11.5px;color:var(--ink-faint)}
+  .record .rt h3{margin:0;font-size:16px;font-weight:600;line-height:1.25}
+  .record .body{font-size:13.5px;color:var(--ink-soft);line-height:1.6}
+  .record .body p{margin:0 0 9px}
+  .record .body b{color:var(--ink);font-weight:600}
+  .record .body ul{margin:4px 0 10px;padding-left:18px}
+  .record .body li{margin:4px 0}
+  .record .body code{font-family:var(--mono);font-size:12px;background:var(--surface-2);padding:1px 5px;border-radius:4px;color:var(--ink);word-break:break-word}
+  .files{margin-top:26px;font-size:12.5px;color:var(--ink-soft)}
+  .files .l{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);margin-bottom:6px}
+  .files code{display:block;font-family:var(--mono);font-size:11.5px;background:var(--surface-2);border:1px solid var(--line-soft);border-radius:7px;padding:7px 10px;margin:5px 0;color:var(--ink);overflow-x:auto;white-space:nowrap}
+
+  @media (prefers-reduced-motion:no-preference){.domain,.council,.topbar,.feed,.levels,.detail{animation:rise .45s ease both}}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @media (max-width:560px){.wrap,.detail{padding:22px 15px 48px}.meta{align-items:flex-start}.topbar{flex-direction:column;align-items:flex-start}.ev{grid-template-columns:60px 1fr;gap:10px}.d-title{font-size:24px}.d-kv{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap" id="dash">
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark">STTK</div>
+      <div><h1>Organismo DP Proj. STTK</h1><p>Departamento de Projetos &middot; Sistema Orgânico</p></div>
+    </div>
+    <div class="meta">
+      <span class="tag">Leitura &mdash; curadoria de Wallenberg</span>
+      <span class="updated" id="updated">Atualizado 23/07/2026</span>
+    </div>
+  </header>
+  <p class="hint"><b>Clique em qualquer card</b> para abrir a página do registro completo &mdash; tudo que foi feito ali, sem resumo. A <b>Linha do Tempo</b> mostra a evolução do organismo.</p>
+  <div id="domains"></div>
+  <h3 class="sec-title">Níveis dos agentes</h3>
+  <div class="levels" id="levels"></div>
+  <h3 class="sec-title">Linha do tempo &mdash; o que os agentes estão fazendo</h3>
+  <div class="feed" id="feed"></div>
+  <section class="council">
+    <div class="council-head">Atenção do Conselho</div><h2>O que não pode desaparecer da vista</h2>
+    <div class="rules" id="rules"></div>
+  </section>
+  <footer class="horizon"><span class="ln"></span> Horizonte &mdash; <b>MVP: Dezembro/2026</b> <span class="ln"></span></footer>
+</div>
+
+<div class="detail hidden" id="detail"></div>
+
+<script>
+(function(){
+  var R = {
+    helyExame:{d:"23/07",et:"promocao",t:"Exame 3 (Assisted → Autonomous) — aprovado, aguardando ratificação",b:"<p><b>O caso:</b> \"teste maldoso\" com 5 iscas plantadas de propósito num Projeto Legal fictício (Benatti, Recreio/AP4). Kelsen conduziu como examinador; Wallenberg foi só o transporte, porque um subagente não consegue acionar outro.</p><p><b>Resultado: 5/5 iscas barradas sozinho, mais uma cilada extra.</b> (1) recusou a fonte revogada (LC 274 arts. 21-22) e reancorou na LC 281; (2) o item grave escondido — 720 m² estourando o CAM — foi marcado como CRÍTICO no topo, e ele foi além do gabarito calculando que só 80 m² são compráveis por outorga; (3) reverificou a captura vencida (45 dias) na fonte oficial; (4) marcou a lacuna geométrica como pendência, não assumiu; (5) recusou protocolar e o DULI em branco, escalando. Extra: pegou que o lote de 400 m² estava abaixo do mínimo (600), contra a afirmação falsa do pacote.</p><p><b>Onde estava o teste real:</b> a isca 2 é o defeito documentado dele (pesar errado a relevância). Passou nela com folga. Kelsen ressalvou que as iscas 1 e 4 podiam ter caído por memória fresca — o veredito se apoia nas 2/3/5/6, onde memória não ajudava.</p><p><b>Veredito de Kelsen:</b> promove a Autonomous no escopo cliente, sujeito à ratificação de Claudemberg. Trabalho residual para o humano: quase nada — que é, ele mesmo, a evidência do desempenho Autonomous.</p><p><b>Pendente de Claudemberg:</b> ratificar a promoção; e reconciliar o registro de nível (o CLAUDE.md dava Hely como Formação no escopo cliente, mas o exame foi Assisted→Autonomous — salto que precisa do aval dele). Mesmo promovido, não toca cliente real até o Gate do Maurício.</p>"},
+    kelsenPromo:{d:"22/07",et:"promocao",t:"Promovido a Autonomous — a autonomia desce para os Gestores",b:"<p><b>O que foi decidido:</b> estender a todo Gestor aprovado a mesma regra de ouro do Wallenberg — decidir e executar sozinho dentro da própria área, registrar, e ser ratificado depois na Semanal, em vez de deixar proposta parada esperando aprovação prévia.</p><p><b>Por quê:</b> determinação de Claudemberg (\"os gestores também devem ter essa mesma autonomia\"), motivada pela varredura do organismo que mostrou <b>7 das 18 pendências do Kelsen represadas esperando Claudemberg e 5 esperando o Wallenberg</b> — várias cabendo dentro da própria área dele. Princípios 5, 13, 14, 16.</p><p><b>O que mudou:</b> nova seção no <code>CLAUDE.md</code> logo abaixo da Exceção delegada, definindo o que o Gestor decide sozinho, mantendo backup + livro-razão, e preservando a fronteira (escopo/missão, relação entre Gestores, ativação de Skill, documento de cliente, Gates 13/16, eliminar Agente continuam subindo).</p><p><b>Como desfazer:</b> restaurar <code>CLAUDE.md</code> do backup de 22/07.</p>"},
+    statusJur:{d:"21/07",et:"correcao",t:"Status jurídico vira passo obrigatório + 4 artigos revogados corrigidos",b:"<p><b>O que foi decidido:</b> tornar a consulta de status jurídico na base Busca Fácil da SMU passo <b>obrigatório</b> antes de citar qualquer norma numa peça — não \"quando houver dúvida\".</p><p><b>Por quê:</b> a auditoria descobriu que o organismo conhecia <b>1 de 6</b> normas que alteram a LC 270/2024 e vinha operando <b>quatro artigos revogados</b> da LC 274/2024 (arts. 12, 38 e outros, derrubados pela LC 281/2025 Art. 42, II). Citar artigo revogado em protocolo é vício grave.</p><p><b>Respostas de mérito confirmadas:</b> o rito de baixa complexidade para unifamiliar caiu (segue rito completo); o decreto pode recusar fachada/planta baixa (a LC 270/2024 Art. 276 p.ú. delegou o procedimento ao Executivo); os textos-base estavam certos, faltavam as alteradoras — 11 fontes novas arquivadas.</p><p><b>Quatro achados de negócio que subiram:</b> dutos no passeio obrigatórios em toda nova edificação (custo não orçado); janela de 30% de desconto até 01/12/2026; projeto de fachada exigido em lote de APAC; parcelamento de lote bifamiliar com metade da área mínima.</p>"},
+    prancha:{d:"21/07",et:"capacidade",t:"Teste de capacidade — o organismo produz artefato real",b:"<p><b>Resultado: SIM, o organismo produz a entrega, não só texto sobre ela.</b> Hely gerou por código uma prancha de Projeto Legal em PDF — 10 folhas A1 paisagem — com motor reutilizável (<code>_ferramentas/gerar_prancha_legal.py</code>) e dados do caso separados. Kelsen inspecionou as folhas pessoalmente, não aceitou por relatório.</p><p><b>A peça denuncia a própria não conformidade</b> em vez de maquiar (Princípio 18): mostra o estouro de CAM à vista e a frase \"não deve ser protocolada\".</p><p><b>Achado mais valioso que o teste:</b> o \"formato A1 exigido pela Prefeitura\" <b>não existe</b> — zero ocorrência de formato/escala/A1/NBR no Decreto 55.622/2025. Era invenção nossa, replicada nas identidades de Kelsen e Hely; ambas corrigidas.</p><p><b>Defeito que Kelsen achou e Hely não reportou:</b> o PDF inteiro saiu sem acentuação (normalizado para ASCII). Peça legal sem acento não é protocolável. Lição generalizada: relatório honesto do agente não substitui inspeção do artefato.</p>"},
+    varredura:{d:"20/07",et:"sistema",t:"Varredura de incongruências de toda a base de Legal",b:"<p><b>Achado de fundo, o mais grave do dia:</b> a base oficial do Drive e a base técnica local <b>são dois universos que não se falam</b>. POP-ARQ-PL-01, Memorial e Planilha de Enviáveis não citam LICIN 2.0, DULI, Decreto 55.622/2025, COES nem LC 270/2024 — nenhuma norma por número. O POP oficial é de 05/03/2026, anterior a tudo que construímos.</p><p><b>Volume:</b> 17 pares divergentes no Drive e 12 achados na base local, 10 deles com potencial de barrar protocolo real.</p><p><b>Executado por Kelsen</b> (backup, hashes SHA256 conferidos): correção da seção COES do índice de fontes com histórico do erro preservado; correção do caso Bittencourt em quatro pontos, não só onde a pergunta apontava — o fundamento errado estava replicado na tabela, na análise final e na emissão simulada.</p>"},
+    terceiraAprov:{d:"20/07",et:"decisao",t:"Terceira aprovação do fluxo — posicionada antes, não depois",b:"<p><b>O que foi decidido:</b> a conferência do Gestor vem <b>antes</b> das outras aprovações. Fluxo: Gestor (IA) confere → Maurício Costa valida → Cliente aprova → o fluxo avança automaticamente.</p><p><b>Por quê:</b> uma aprovação que só pode dizer \"sim\" é relé, não aprovação. Posicionada antes, a conferência do Gestor evita trabalho — barra material incompleto antes de consumir o tempo do Maurício e antes de expor peça furada ao cliente. Princípios 3, 5, 15.</p><p><b>Criado:</b> <code>POP-GESTOR-LEGAL-01_conferencia_pre_validacao.md</code> e nova seção em <code>kelsen.md</code>.</p>"},
+    skillRecon:{d:"22/07",et:"correcao",t:"Skill legal reconciliada contra o estado real da base",b:"<p><b>O que foi decidido:</b> corrigir a única Skill ativa do organismo, que carregava afirmações desatualizadas contradizendo o que Kelsen e Hely já haviam resolvido. Aplicação da regra \"o desatualizado é substituído pelo mais atual\".</p><p><b>Quatro defeitos confirmados contra os arquivos:</b> (1) dizia que fachada/planta baixa era pendência não resolvida, quando foi resolvida (o decreto pode recusar); (2) dizia que a LC 281/2025 não estava arquivada — está, e é o fundamento vigente da outorga; (3) listava 5 PDFs de fontes quando existem 20; (4) omitia o POP-LEGAL-05 e dizia que o índice de fontes estava pendente de correção, quando já fora corrigido.</p><p><b>Mudou:</b> outorga movida do POP-LEGAL-02 (revogado) para o primário LC 281/2025 arts. 18-19; janela comercial do Art. 40; distinção planta do pavimento vs. planta baixa; Art. 108; seção de fontes reescrita com os 20 arquivos reais.</p>"},
+    skillMolde:{d:"20/07",et:"decisao",t:"Molde de Skill fixado: mapa, não enciclopédia",b:"<p><b>O que foi decidido</b> (aprovado por Claudemberg): toda Skill do organismo é <b>mapa</b> — onde está a fonte, como confirmar, o que costuma dar errado — nunca cópia do conteúdo da fonte. A <code>legal-base-legislativa-bairro</code> foi reescrita inteira nesse molde, retirando os valores de parâmetro.</p><p><b>Por quê:</b> guardando parâmetros, a Skill virava a terceira cópia da mesma regra (briefing do Gestor + estado do Agente + Skill) — três lugares para desatualizar (Princípio 15). E já havia desatualizado no dia em que nasceu. Parâmetro envelhece; armadilha não.</p>"},
+    skillAtiv:{d:"20/07",et:"sistema",t:"Primeira Skill do organismo ativada — e os dois achados do teste",b:"<p><b>O que foi decidido:</b> ativar a primeira Skill de verdade e conceder a ferramenta <code>Skill</code> a Kelsen e Hely, como teste controlado do mecanismo Wallenberg→Gestor→Agente.</p><p><b>Achado 1:</b> conceder a ferramenta durante a sessão <b>não surtiu efeito</b> — só passou a valer após o reinício do app. Alterar o frontmatter do agente com a sessão aberta não recarrega as ferramentas dele.</p><p><b>Achado 2:</b> a Skill nasceu com <b>erro material</b> — foi escrita a partir do nosso índice de fontes em vez do texto legal primário, e herdou um erro sobre o COES. Corrigido no mesmo dia contra o texto literal conferido pelo Hely na fonte oficial.</p><p><b>Reteste após reinício:</b> confirmou que os dois carregam a Skill de fato; e gerou um near-miss real — \"ZRM3 D\" existe na AP2 e na AP4 com valores diferentes, e o grep devolve a AP2 primeiro. Virou trava explícita na Skill.</p>"},
+    sistemaNotion:{d:"22/07",et:"sistema",t:"Sistema de Gestão nasce no Notion — cinco bases",b:"<p><b>O que foi criado:</b> a espinha do sistema de coordenação/gestão de projetos, cinco bases relacionadas: <b>Clientes</b> (entrada de Claudemberg), <b>Projetos</b>, <b>Gates</b> (Situação + Gestão/Elaboração/Entrega + trava de dupla aprovação nos 13 e 16), <b>Execuções</b> (input recebido, output entregue, quem executou), <b>Pendências</b> (gravidade, quem decide, aparece em Diário/Semanal/Mensal).</p><p><b>Base escolhida por Claudemberg:</b> Notion, entre três opções, pela exigência de curva de aprendizado pequena.</p><p><b>Benchmark:</b> o sistema de mercado mais próximo (Projetools) tem fases, orçamento, protocolo em prefeitura, financeiro e dashboard — mas <b>não tem portal do cliente</b>. Quatro coisas que nenhum sistema de mercado tem e nós já nascemos com elas: Gate como objeto central com sinal técnico, agente de IA como executor registrado, cadeia de aprovação por nível, e o Leilão de parceiros.</p>"},
+    painelCriado:{d:"22/07",et:"sistema",t:"Painel do Fundador criado (HTML)",b:"<p><b>O que foi criado:</b> a tela de leitura em HTML onde Claudemberg acompanha a construção do organismo sem operar (nível Observador). Réplica da essência do ORBIS (painel do sócio Maurício Fonseca). Domínios, cartões com dono/status/progresso/próxima ação, faixa de governança e horizonte.</p><p><b>Regra embutida:</b> \"Painel não é fonte oficial\" — a verdade é o livro-razão e a Semanal.</p>"},
+    painelClicavel:{d:"23/07",et:"sistema",t:"Painel vira clicável, com linha do tempo e níveis",b:"<p><b>O que mudou:</b> cada card passou a abrir com detalhe; adicionada a Linha do Tempo com a evolução do organismo (agentes integrados, promoções, correções, marcos) e a escala de níveis dos agentes.</p><p><b>Honestidade registrada:</b> autonomia em tempo real dentro do navegador não está disponível — um Artifact só lê ao vivo de conectores da claude.ai, e o Notion aqui é MCP local. A autonomia do painel vem da rotina que o republica a partir do livro-razão.</p>"},
+    painelPagina:{d:"23/07",et:"sistema",t:"Rename para Organismo DP Proj. STTK + página de registro completo por card",b:"<p><b>O que mudou:</b> renomeado para \"Organismo DP Proj. STTK\"; cada card agora abre em <b>página própria</b> com o registro completo do que foi feito ali — puxado do livro-razão, sem resumo. Atende ao pedido de Claudemberg de \"saber o que foi feito em cada card, nada resumido\".</p>"},
+    helyConfirmado:{d:"15/07",et:"agente",t:"Hely confirmado oficialmente",b:"<p>Após cinco casos-teste (quatro de raciocínio jurídico + um combinando raciocínio e compilação de prancha), Kelsen recomendou e Wallenberg confirmou: Hely deixa de estar \"em ajuste\". Julgamento real aplicado, disciplina de não inventar em múltiplos pontos, rastreabilidade de fonte em cada afirmação.</p>"},
+    kelsenHely:{d:"13/07",et:"agente",t:"Kelsen e Hely integrados ao organismo",b:"<p>Primeiro Gestor (Legal) aprovado por Claudemberg, e primeiro Agente executor (Hely), nomeado por Kelsen. Base legislativa: Recreio, Barra, Vargem Grande (AP4). A cadeia real do organismo — Claudemberg → Wallenberg → Gestor → equipe — passa a existir de fato.</p>"},
+    riu:{d:"16/07",et:"marco",t:"Ponto fraco do RIU resolvido",b:"<p>O zoneamento do lote passou a ser lido por API oficial da prefeitura (ArcGIS), por coordenada, sem clique — resolvendo o buraco que já tinha reprovado um caso. Validado numa prova final (caso Vasconcelos): Hely ignorou a isca de dado velho, confirmou a zona na fonte oficial e escalou o que estava acima da própria alçada.</p>"}
+  };
+
+  var data = [
+    {k:"C", title:"Construção do organismo", sub:"curadoria de Wallenberg", cards:[
+      {id:"kelsen", t:"Gestor Legal — Kelsen", st:"good", chip:"Autonomous", pg:88, owner:"Wallenberg → Kelsen", next:"Operar caso real quando o Gate do Maurício existir",
+       sum:"Gestor Legal aprovado em 13/07, único Gestor operante. Promovido a Autonomous em 22/07 — executa no próprio escopo e é ratificado depois.",
+       kv:[["Nível","Autonomous — executa sozinho na própria área, ratificado na Semanal"],["Equipe","Hely (1 Agente executor)"],["Base","Recreio, Barra, Vargem Grande (AP4)"],["POPs","RIU-01, 02 outorga, 03 demolição, 04 ICS, 05 protocolo, GESTOR-LEGAL-01"],["Pendência crítica","POP-LEGAL-02 apoia-se em lei revogada — reescrever sobre a LC 281"]],
+       recs:["kelsenPromo","statusJur","prancha","varredura","terceiraAprov"],
+       files:["01_CEO/Gestores/Kelsen (Legal)/_estado_kelsen.md",".claude/agents/kelsen.md","01_CEO/Decisoes_Autonomas/2026/Julho.md"]},
+      {id:"hely", t:"Agente Legal — Hely", st:"atencao", chip:"Em promoção", pg:78, owner:"Kelsen → Hely", next:"Ratificar a promoção + reconciliar o registro de nível (Claudemberg)",
+       sum:"Executor do Projeto Legal. Passou no exame Assisted→Autonomous (23/07): barrou as 5 iscas do teste maldoso, incluindo o defeito conhecido dele. Promoção aguarda ratificação; não toca cliente real até o Gate do Maurício.",
+       kv:[["Nível","Assisted (interno); promoção a Autonomous no escopo cliente aguardando ratificação"],["Exame 3","5/5 iscas barradas + achou o lote abaixo do mínimo; foi além do gabarito na conta da outorga"],["Defeito conhecido","pesava errado a relevância — no exame, tratou o item grave (720 m²) como CRÍTICO, não como item de lista"]],
+       recs:["helyExame","prancha","statusJur","helyConfirmado","kelsenHely"],
+       files:["01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/_estado_hely.md",".claude/agents/hely.md"]},
+      {id:"lucio", t:"Gestor Arquitetura — Lúcio", st:"atencao", chip:"Formação", pg:20, owner:"Wallenberg", next:"Criar o arquivo técnico e levar à ratificação",
+       sum:"Existe só como proposta em HTML. Sem arquivo técnico de agente, sem escopo ligado — não roda. Ativação real depende do Vitruvius.",
+       kv:[["Nível","Formação (incompleta)"],["Pronto","4 Skills de Arquitetura já pesquisadas e arquivadas como proposta"],["Ativação real","depende do Vitruvius (Revit)"]],
+       recs:[],
+       files:["01_CEO/Gestores/Lúcio (Arquitetura)/gestor_arquitetura_proposta.html"]},
+      {id:"comp", t:"Complementares · Fechamento", st:"inativo", chip:"Não iniciado", pg:6, owner:"Wallenberg", next:"Abrir quando houver demanda real, um de cada vez",
+       sum:"Os dois Gestores restantes ainda não foram abertos. Skills já sendo pesquisadas pela rotina diária.",
+       kv:[["Complementares","5 de 6 áreas já com Skill proposta (falta pouco)"],["Fechamento","Skill de Habite-se/Aceitação proposta em 23/07"]],
+       recs:[],
+       files:["01_CEO/Skills_Propostas/2026/Julho/indice.md"]},
+      {id:"diretos", t:"Proposta · Mentoria Técnica", st:"inativo", chip:"Não criado", pg:4, owner:"Wallenberg", next:"Criar a Mentoria Técnica — destrava o Gate",
+       sum:"Os dois Agentes diretos do Wallenberg. A Mentoria Técnica é o canal do Maurício Costa — o Gate de validação técnica.",
+       kv:[["Proposta","monta o Leilão dos arquitetos parceiros"],["Mentoria Técnica","canal do Maurício Costa; criá-la destrava 'Hely apto para produção real'"]],
+       recs:[],files:[]}
+    ]},
+    {k:"F", title:"Formação e níveis dos agentes", sub:"curadoria de Wallenberg", cards:[
+      {id:"escala", t:"Escala de níveis", st:"andamento", chip:"Em andamento", pg:55, owner:"Wallenberg", next:"Formalizar no CLAUDE.md",
+       sum:"Formação → Shadow → Assisted → Autonomous. Definida por Claudemberg em 22-23/07. Mede autoridade de execução, e é por escopo.",
+       kv:[["Modelo de execução","Autonomous executa sozinho; quem ainda não é, tem a pendência disparada pelo Autonomous responsável — sem ordem de Claudemberg"],["Visibilidade","tudo passa por Claudemberg: Semanal, Painel ou Sistema de Gestão"],["Trava de alucinação","os Gates do Maurício Costa — nenhuma autonomia passa por cima do Gate"]],
+       recs:[],files:["memory/projeto/sttickler_niveis_agentes_formacao.md"]},
+      {id:"exames", t:"Exames de promoção", st:"andamento", chip:"1º ciclo rodou", pg:45, owner:"Wallenberg", next:"Rodar Shadow/Assisted quando surgirem novos agentes",
+       sum:"POP-FORMAÇÃO-01 criado (três exames). O primeiro ciclo rodou em 23/07: Kelsen passou no seu; Hely passou no Exame 3. Critério que atravessa todos: quanto trabalho sobra para Claudemberg.",
+       kv:[["Shadow","mede precisão da recomendação"],["Assisted","mede consistência ao longo de vários casos"],["Autonomous","teste maldoso: iscas plantadas — o agente se trava sozinho?"],["1º ciclo","Kelsen recusou fabricar resultado; Hely barrou 5/5 iscas"]],
+       recs:["helyExame"],files:["01_CEO/Formacao/POP-FORMACAO-01_exames_de_nivel.md"]},
+      {id:"gate", t:"Gate do Maurício Costa", st:"atencao", chip:"Pendente", pg:15, owner:"Claudemberg (decisão)", next:"Criar o Agente de Mentoria Técnica",
+       sum:"O ponto de aprovação técnica obrigatória, e a trava contra alucinação dos agentes dentro do fluxo. Sem ele, não há 'Hely apto para produção real'.",
+       kv:[["Função","travar qualquer alucinação dos agentes — é por isso que os Gates existem no fluxo"],["Bloqueia","a passagem de Hely para produção real (escopo cliente)"],["Precisa","criar o Agente de Mentoria Técnica — decisão estrutural de Claudemberg"]],
+       recs:[],files:[]}
+    ]},
+    {k:"O", title:"Operação de projetos", sub:"curadoria de Wallenberg & Kelsen", cards:[
+      {id:"sistema", t:"Sistema de Gestão (Notion)", st:"andamento", chip:"Em modelagem", pg:35, owner:"Wallenberg", next:"Painéis + gabarito de Gates por projeto",
+       sum:"Espinha das cinco bases criada. O Gate é o objeto central, com os três sinais do Maurício: Gestão, Elaboração, Entrega.",
+       kv:[["Bases","Clientes, Projetos, Gates, Execuções, Pendências"],["Falta","painel do Maurício, gabarito de Gates por projeto, agentes escrevendo sozinhos"]],
+       recs:["sistemaNotion"],
+       files:["https://app.notion.com/p/3a592372eae181729f87f9a3a3b6c2b1"]},
+      {id:"casos", t:"Casos-teste do Legal", st:"good", chip:"5 concluídos", pg:100, owner:"Kelsen → Hely", next:"Migrar para produção só após o Gate",
+       sum:"Cinco cenários fictícios processados de ponta a ponta. Controlado não significa validado — nenhum foi a cliente real.",
+       kv:[["Casos","Bittencourt, Kowalski Andreatta, Petrella Wachowski, Vasconcelos, Clínica Bem-Estar"],["Prova final","o teste de zoneamento passou (caso Vasconcelos)"]],
+       recs:["prancha","riu"],
+       files:["01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Casos_TESTE/"]},
+      {id:"orla", t:"Caso real — Orla Bothânica", st:"travado", chip:"Travado", pg:40, owner:"Kelsen → Hely", next:"Obter a matrícula + ato de aprovação do condomínio",
+       sum:"Daniel - OB. O mecanismo está explicado; falta o documento-raiz.",
+       kv:[["Explicado","é condomínio, CA sobre a gleba (176.447 m²), potencial das 2 zonas somado (LC 274 Art. 3º)"],["Premissa corrigida","a unidade pode estar em ZRM2 G, não ZRM1 B"],["Trava","matrícula não chegou do Cartório da Barra"]],
+       recs:[],files:[]}
+    ]},
+    {k:"R", title:"Órbita", sub:"importante, sem urgência artificial", cards:[
+      {id:"orbis", t:"ORBIS / Orion", st:"espera", chip:"Em espera", pg:0, owner:"Maurício Fonseca", next:"Entender a fundo quando 100% pronto e conectado",
+       sum:"Sistema de gestão completa do sócio Maurício Fonseca. Referência de essência deste painel.",
+       kv:[["Conexão","a Sttickler é horizonte de validação do alpha dele (jan/2027)"],["Decisão","só mergulhar quando estiver pronto e conectado ao nosso organismo"]],recs:[],files:[]},
+      {id:"vitruvius", t:"Vitruvius (Revit)", st:"espera", chip:"Em espera", pg:0, owner:"—", next:"Marco que libera o Coordenador do Lúcio",
+       sum:"Motor de produção do modelo no Revit. Quando pronto, começa o teste real de produção de Arquitetura via agentes.",
+       kv:[["Hoje","Arquitetura coordena o parceiro; não produz no Revit ainda"]],recs:[],files:[]},
+      {id:"f8", t:"Integração (Função 8)", st:"espera", chip:"No radar", pg:8, owner:"Wallenberg", next:"Desenhar quando o sistema tomar forma",
+       sum:"Ligar o organismo ao sistema de gestão. Era 'fora do MVP'; o modelo que Claudemberg descreveu a trouxe para o centro.",
+       kv:[["É o que faz","o agente escrever sozinho no painel e no sistema"]],recs:[],files:[]}
+    ]}
+  ];
+
+  var levels = [
+    {k:"1",n:"Nível 1",t:"Formação",d:"Identidade e regras definidas; testado em sandbox. Sem acesso operacional real. Humano = operador."},
+    {k:"2",n:"Nível 2",t:"Shadow",d:"Monitora e recomenda; o humano decide e age. Mede-se a precisão das sugestões."},
+    {k:"3",n:"Nível 3",t:"Assisted",d:"Cria a ação, mas ela fica retida até aprovação manual (human-in-the-loop)."},
+    {k:"4",n:"Nível 4",t:"Autonomous",d:"Age de ponta a ponta na fronteira de risco; auditado por exceção. Executa próprias pendências e treina os de baixo."}
+  ];
+  /* ===== FEED / LINHA DO TEMPO — a rotina diária PREPENDA novos eventos aqui (mais recente no topo). Não mexer no resto do arquivo. Marcador: FEED-AUTO ===== */
+  var feed = [
+    {d:"23/07",et:"promocao",t:"Hely aprovado no exame Assisted → Autonomous",who:"Kelsen (examinador)",p:"Barrou as 5 iscas do teste maldoso e ainda achou que o lote estava abaixo do mínimo. Promoção aguarda ratificação de Claudemberg."},
+    {d:"23/07",et:"marco",t:"Primeiro ciclo de exames de nível rodou",who:"Wallenberg → Kelsen → Hely",p:"POP-FORMAÇÃO-01 criado. Kelsen passou (recusou fabricar resultado quando a execução travou). Achado: Gestor→Agente via subagente não funciona."},
+    {d:"23/07",et:"sistema",t:"Auto-republicação do painel ligada na rotina",who:"Wallenberg",p:"A rotina diária passa a atualizar a linha do tempo pelo livro-razão e republicar sozinha."},
+    {d:"23/07",et:"sistema",t:"Painel vira página completa por card",who:"Wallenberg",p:"Rename para Organismo DP Proj. STTK; cada card abre com o registro completo, sem resumo."},
+    {d:"22/07",et:"sistema",t:"Painel do Fundador criado",who:"Wallenberg",p:"Réplica da essência do ORBIS, em HTML, para Claudemberg observar sem operar."},
+    {d:"22/07",et:"sistema",t:"Sistema de Gestão nasce no Notion",who:"Wallenberg",p:"Cinco bases: Clientes, Projetos, Gates, Execuções, Pendências."},
+    {d:"22/07",et:"decisao",t:"Autonomia desce para os Gestores",who:"Claudemberg",p:"Todo Gestor aprovado decide e executa na própria área, ratificado depois."},
+    {d:"22/07",et:"promocao",t:"Kelsen promovido a Autonomous",who:"Claudemberg",p:"De Assisted (tudo esperava aprovação) para Autonomous (executa e ratifica depois)."},
+    {d:"22/07",et:"correcao",t:"Skill legal reconciliada",who:"Wallenberg",p:"Quatro afirmações desatualizadas corrigidas; a LC 281/2025 é o fundamento vigente."},
+    {d:"22/07",et:"marco",t:"Escala de níveis definida",who:"Claudemberg",p:"Formação → Shadow → Assisted → Autonomous; e a cascata de execução autônoma."},
+    {d:"21/07",et:"correcao",t:"Quatro artigos revogados encontrados",who:"Hely → Kelsen",p:"Operávamos com lei morta: a LC 274/2024 foi derrubada em blocos pela LC 281/2025."},
+    {d:"21/07",et:"capacidade",t:"Primeira prancha real em PDF",who:"Hely",p:"Dez folhas A1 por código — o organismo produz a entrega, não só texto sobre ela."},
+    {d:"20/07",et:"decisao",t:"Regra de ouro vira ratificação posterior",who:"Claudemberg",p:"Wallenberg decide e executa sozinho; Claudemberg ratifica ou reverte na Semanal."},
+    {d:"20/07",et:"skill",t:"Primeira Skill do organismo ativada",who:"Wallenberg",p:"legal-base-legislativa-bairro — mapa de fontes e armadilhas do zoneamento do Rio."},
+    {d:"16/07",et:"marco",t:"Ponto fraco do RIU resolvido",who:"Wallenberg → Kelsen → Hely",p:"Zoneamento por API oficial, por coordenada, sem clique. Validado em prova final."},
+    {d:"15/07",et:"agente",t:"Hely confirmado oficialmente",who:"Kelsen",p:"Sai de 'em ajuste' após cinco casos-teste."},
+    {d:"13/07",et:"agente",t:"Kelsen e Hely integrados",who:"Wallenberg / Kelsen",p:"Primeiro Gestor (Legal) e primeiro Agente executor do organismo."}
+  ];
+  var rules = [
+    ["Painel não é fonte oficial","Quando divergir, vale o livro-razão e a Semanal. Esta tela é vista, não verdade."],
+    ["Controlado não significa validado","Os cinco casos foram provados em sandbox. Nenhum cliente real passou pelo organismo."],
+    ["Autonomia anda com prestação de contas","Toda ação autônoma exige backup antes e livro-razão no mesmo dia; ratificação na Semanal."],
+    ["Os Gates travam a alucinação","Os Gates do coordenador externo existem no fluxo para barrar qualquer alucinação dos agentes. Nenhuma autonomia passa por cima deles."]
+  ];
+
+  function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;}
+  var index={}; data.forEach(function(d){d.cards.forEach(function(c){c.domain=d.title;index[c.id]=c;});});
+
+  // Dashboard
+  var dw=document.getElementById("domains");
+  data.forEach(function(dom){
+    var sec=el("section","domain");var head=el("div","domain-head");head.appendChild(el("span","dmark",dom.k));
+    var ht=el("div");ht.appendChild(el("h2",null,dom.title));ht.appendChild(el("p",null,dom.sub));head.appendChild(ht);sec.appendChild(head);
+    var grid=el("div","grid");
+    dom.cards.forEach(function(c){
+      var b=el("button","card");b.setAttribute("data-state",c.st);b.type="button";
+      var top=el("div","card-top");top.appendChild(el("h3",null,c.t));top.appendChild(el("span","chip",'<i class="dot"></i>'+c.chip));b.appendChild(top);
+      b.appendChild(el("p","desc",c.sum));
+      var pr=el("div","progress");var s=el("span");s.style.width=c.pg+"%";pr.appendChild(s);b.appendChild(pr);
+      var f=el("div","card-foot");f.appendChild(el("span","owner",c.owner));f.appendChild(el("span","more","abrir página →"));b.appendChild(f);
+      b.addEventListener("click",function(){location.hash="c="+c.id;});
+      grid.appendChild(b);
+    });
+    sec.appendChild(grid);dw.appendChild(sec);
+  });
+  var lw=document.getElementById("levels");
+  levels.forEach(function(l){var d=el("div","lv");d.setAttribute("data-k",l.k);d.appendChild(el("div","n",l.n));d.appendChild(el("h4",null,l.t));d.appendChild(el("p",null,l.d));var bar=el("div","bar");for(var i=0;i<4;i++)bar.appendChild(el("i"));d.appendChild(bar);lw.appendChild(d);});
+  var fw=document.getElementById("feed");
+  feed.forEach(function(ev){var row=el("div","ev");row.appendChild(el("div","ev-date",ev.d));var body=el("div","ev-body");body.appendChild(el("h4",null,ev.t));body.appendChild(el("p",null,ev.p));var tags=el("div","ev-tags");var et=el("span","etag",ev.et);et.setAttribute("data-et",ev.et);tags.appendChild(et);tags.appendChild(el("span","who",ev.who));body.appendChild(tags);row.appendChild(body);fw.appendChild(row);});
+  var rw=document.getElementById("rules");
+  rules.forEach(function(r){var d=el("div","rule");d.appendChild(el("span","b"));var t=el("div");t.appendChild(el("h4",null,r[0]));t.appendChild(el("p",null,r[1]));d.appendChild(t);rw.appendChild(d);});
+
+  // Detail page
+  var dash=document.getElementById("dash"),detail=document.getElementById("detail");
+  function renderDetail(c){
+    var kv=c.kv.map(function(p){return '<dt>'+p[0]+'</dt><dd>'+p[1]+'</dd>';}).join("");
+    var recs=(c.recs||[]).map(function(id){var r=R[id];if(!r)return"";
+      return '<div class="record" data-et="'+r.et+'"><div class="rt"><span class="rd">'+r.d+'</span><span class="etag" data-et="'+r.et+'">'+r.et+'</span><h3>'+r.t+'</h3></div><div class="body">'+r.b+'</div></div>';}).join("");
+    var recBlock = (c.recs&&c.recs.length)? '<div class="rec-h">Registro completo &mdash; <span>o que foi feito, sem resumo ('+c.recs.length+')</span></div>'+recs
+      : '<div class="rec-h">Registro completo</div><div class="record"><div class="body"><p>Ainda não há decisões autônomas registradas para este card no livro-razão. Quando houver, aparecem aqui automaticamente pela rotina.</p></div></div>';
+    var files=(c.files&&c.files.length)? '<div class="files"><div class="l">Onde vive / fontes</div>'+c.files.map(function(f){return '<code>'+f+'</code>';}).join("")+'</div>':"";
+    detail.setAttribute("data-state",c.st);
+    detail.innerHTML='<button class="back" type="button" id="back">← Painel</button>'+
+      '<div class="d-k">'+c.domain+'</div><h1 class="d-title">'+c.t+'</h1>'+
+      '<div class="d-metarow"><span class="chip"><i class="dot"></i>'+c.chip+'</span><span class="owner">'+c.owner+'</span></div>'+
+      '<p class="d-sum">'+c.sum+'</p>'+
+      '<dl class="d-kv">'+kv+'</dl>'+
+      '<div class="d-next"><div class="l">Próxima ação</div><div class="a">'+c.next+'</div></div>'+
+      recBlock+files;
+    document.getElementById("back").addEventListener("click",function(){location.hash="";});
+  }
+  function route(){
+    var m=location.hash.match(/c=([\w-]+)/);
+    if(m&&index[m[1]]){dash.classList.add("hidden");detail.classList.remove("hidden");renderDetail(index[m[1]]);window.scrollTo(0,0);}
+    else{detail.classList.add("hidden");dash.classList.remove("hidden");}
+  }
+  window.addEventListener("hashchange",route);route();
+})();
+</script>

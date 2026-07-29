@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "sttickler-organismo-ia",
+  "private_key_id": "d4d3cc36b965b2d39a5803b6c108faa3eca51536",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDucbU5jZfC4mQU\nw3Rjf3wyyl2hhhA5auOSJwKKX04F5RycyOeJzpQZSV1uBInZRx8Rqt8lg/U0ihxA\niKmRfl7+p4+Q6eLr/Mtw9xxES5QE82i8g7knawCk5pCu0qUUCYiwOSf8fofNJv8z\nP685HsO5ZSdLF8VnRGflaNyw9pLQqvLs2ILXiU0EWb2KxOLK/ZjE0UebLGpnO90f\nq0745V/eBB9gw3iBeHlsZ6TcxMwSx4s3JIbePB95X7mFGBxNyiDH1LWkmu4H4jP5\nz4GtQes54eLtRYnglRixxvPBYyXF1mDSFd/SUFYfwjYlZ0PrnzlymjJ6r5n6meAl\nBbZUxoh1AgMBAAECggEARpmDU52hdDIM+PrgQL+T+gPiEju8HQwRgoorXeYXF3a9\ncIypxatVPWF0GOmeGSfOQrBprtVx6lMER3VPY8VbgiIBx6IArufkIrf/9ha8pnSd\nq8eCsHGluK2N5D15ZEPoZWke9ktOkUc9I6L1EkASKpgRONI6gDeIXawdQAZZ9Q8+\nVP2EXZJ06xl/wTXqJ81PAR1I9E0PYemNMvG3ICjzqJN73qoEj/A4xTwvZXOee0Ef\nZPRUjR9v/nXKz5PrZYoFLxGlbTXAJHzyLRfh+gxnNue8Xs9+bZN7YwzPeM3qV4yB\n1WOJPPbka77x1wbe1vJFygaa7tGD8B4gWEg56xB1twKBgQD8E/mfJIudqwSClW2v\ntAabVh8LzRIoZEEHZOrFEmaR+lfC5NQPn3RijZ/KDG1shPqgz1v2hddlGn9oVyMN\nPJEPYn40uahvRFuc0vBuVwolVAD5vdCZZx+w+SagAtO+ZF+vpjSZD+dhRob0e80/\n4mje8TS4fFngjuRYnAn8/JvLgwKBgQDyJ23lFwBerJSoHOq10ICgZ37n805d97Nq\nAp1QHGMP6ZTwKZ0OoaNMKBZPiRSBoEMuQUpazYhaihKEz7K5yGmxmFST1pGQGkLA\nNRX7rSdMX/ctPWqlU8ZHEYzDC0cjZFrX9awkAnCJh59bGT/pHKMjbZhqH6CrV52X\ncLNzfA9CpwKBgET5/ksyx9Vr737//pSekVQ+G56yDa7px/WLAsbMQy7crtkQnopr\n2oABOuEhx2tzc9U/CG4Lr6Xlu0lE1r2Pfi4UiG5LAzD3Jo5iFhJLVOZj9yRfcU4Y\nrs5RTuVoAKLPenNo6mmbtXejwdfybHZ3sLSYkhGNTVaqIwewIveL8+GbAoGAeqck\nD7SN2GZbyacT71GTxSuG6R+g4xGyy5BVdB1cw9ORP/AkACQ5HTr0ygZp35p4TLZ/\nXezbEtj6tlCpe1aaynyY4mT9R9s1UjvRTbAPxqyY+04vdVwwgxDNloFg3/lV1is2\nrOqba93JBpCMgZuiujAp0h8A96iiRvGrw2PkKuMCgYEAmIKm/QmChnAzetK2Y1yf\nNupccqQyjw3P3ENvbUCPpd/G3LNJrafqPLvwXUz2WwLCSCCFz2bx3k6rkz35LwIm\njytLkPHVspV6DZDIP87mhy5sKb2Yty349k7Xw0YSmOSCN9OzhSUNpNJVqHAYVt3k\n2N6YIF12HkIKphkmnEyGhkI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sttickler-ceo-bot@sttickler-organismo-ia.iam.gserviceaccount.com",
+  "client_id": "115907611860369576921",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sttickler-ceo-bot%40sttickler-organismo-ia.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,122 @@
+---
+data: 2026-07-27
+tipo: Pauta — Reunião Semanal
+horario: 10:30 (segunda-feira)
+preparado_por: Wallenberg
+participantes: Claudemberg, Wallenberg
+---
+
+# Pauta — Reunião Semanal de 27/07/2026
+
+**Nota de abertura:** esta é a **primeira Semanal sob o modelo de ratificação posterior** (regra de ouro reescrita em 20/07/2026, na própria reunião passada). Por isso a Parte 1 está incomum — carrega **23 decisões autônomas** acumuladas entre 20/07 (depois da reunião) e 24/07, nenhuma delas trazida antes porque não houve reunião nesse intervalo. A partir de hoje o fluxo normaliza: cada Semanal ratifica só a semana corrente.
+
+**Verificação da fronteira (passo 6 da rotina):** nenhuma das decisões abaixo tocou Gates 13/16, documento de projeto de cliente ou protocolo em prefeitura. O único artefato tipo-prancha produzido (teste de capacidade, 21/07) foi sobre caso fictício, marcado "TESTE — NÃO PROTOCOLAR" e ficou local — não é violação da regra de ouro.
+
+---
+
+## PARTE 1 — RATIFICAÇÃO
+
+Peço que responda item a item: **ratifica** ou **manda reverter**. Ordem cronológica. Detalhe completo de cada uma em `01_CEO/Decisoes_Autonomas/2026/Julho.md`.
+
+### 20/07/2026 (mesmo dia da última Semanal, depois da mudança de regra)
+
+1. **Implantação do protocolo de arquivo de estado** — criei `_estado_wallenberg.md`, `_estado_kelsen.md`, `_estado_hely.md` + seção nova no `CLAUDE.md`. Por quê: sem isso, todo subagente nascia zerado e perdia aprendizado (Princípio 8). Backup: ❌ não feito (falha assumida). Desfazer: apagar os 3 arquivos de estado e a seção "Arquivo de estado" do `CLAUDE.md`.
+
+2. **Arquivo de estado passa a ser exceção à regra de PDF** — não gera `.pdf` gêmeo, por ser reescrito a cada execução. Por quê: Princípio 19 (uso eficiente de recursos). Desfazer: apagar a linha da exceção no `CLAUDE.md` e gerar os 3 PDFs correspondentes.
+
+3. **Correção da Skill recém-ativada contra texto primário** — reescrevi o trecho de afastamento lateral da `legal-base-legislativa-bairro` (estava errado, herdado do nosso próprio índice). Por quê: Skill ativa com erro é pior que Skill nenhuma (Princípio 18). Desfazer: irrelevante isolado — reverter junto com o item 4.
+
+4. **Ativação da primeira Skill do organismo** (`legal-base-legislativa-bairro`) + ferramenta `Skill` concedida a Kelsen e Hely. Por quê: regra de ouro de 20/07 já permite ativar Skill sem aprovação prévia; sem Skill ativa, conhecimento pesquisado não chega a ninguém. Backup em `_backups/2026-07-20/`. Desfazer: apagar `.claude/skills/legal-base-legislativa-bairro/` e remover `Skill` da linha `tools:` dos dois agentes.
+
+5. **Reteste da Skill após reinício do app** — confirmado que Kelsen e Hely carregam a Skill de fato. Achado de segurança: "ZRM3 D" existe em AP2 e AP4 com parâmetros diferentes — virou armadilha nova na Skill. Desfazer: remover essa armadilha específica da Skill.
+
+6. **Molde de Skill fixado: mapa, não enciclopédia** — Skill reescrita sem valores de parâmetro, só endereço de artigo + método de verificação + armadilha. Aprovado por Claudemberg antes da execução (não é item de ratificação retroativa, registro por completude). Consequência: as 12 propostas antigas não serão convertidas no molde velho.
+
+7. **Terceira aprovação do fluxo, posicionada antes (não depois)** — Gestor confere → Maurício valida → Cliente aprova → avanço automático. Claudemberg aprovou a inversão antes da execução (idem, registro por completude). Criado `POP-GESTOR-LEGAL-01`.
+
+8. **Varredura de incongruências da base de Legal, delegada a Kelsen** — achado grave: base oficial do Drive e base técnica local são "dois universos que não se falam" (POPs oficiais não citam LICIN 2.0/DULI/Decreto 55.622). 17 divergências no Drive, 12 na base local (10 com risco de barrar protocolo). Corrigido: seção COES do índice de fontes e caso Bittencourt (4 pontos). Backup em `_backups/2026-07-20/`. Desfazer: restaurar `_indice_fontes.md` e `processo_legal_teste.md` do backup; reverter 2 linhas da Skill. **Vários achados aqui dependem de decisão sua** (ver Parte 2 — documento do Drive `POP – PROJETO LEGAL`).
+
+### 21/07/2026
+
+9. **Teste de capacidade: o organismo produz artefato real** — Hely gerou prancha PDF de 10 folhas A1 (caso fictício Clínica Bem-Estar), motor reutilizável em `_ferramentas/gerar_prancha_legal.py`. Achado colateral maior: "formato A1 exigido pela Prefeitura" **não existe** no Decreto 55.622/2025 — era invenção nossa, já corrigida nos dois agentes. Defeitos achados: PDF sem acentuação, metade das folhas vazia, marca d'água mal distribuída. Dois achados de conteúdo sobem à Parte 2 (Planilha de Enviáveis pode prometer fachadas que a Prefeitura recusa; Anexo III tem 3 subtabelas sem critério de escolha). Desfazer: apagar o PDF de teste, `caso_prancha.json` e o script; restaurar os 2 agentes do backup.
+
+10. **Checagem de status jurídico vira passo obrigatório da Skill** — descoberto que o organismo operava **4 artigos revogados** (LC 274/2024 arts. 38 e 12§2º, revogados pela LC 281/2025 art. 42,II). Consulta à base Busca Fácil da SMU agora é obrigatória antes de citar qualquer norma. 4 achados de negócio sobem à Parte 2 (dutos no passeio obrigatórios/custo não orçado; janela de 30% de desconto até 01/12/2026; fachada exigida em lote de APAC; parcelamento de lote bifamiliar). Desfazer: reverter as 3 seções acrescentadas à Skill.
+
+11. **Skill proposta: NBR 5410 (instalações elétricas)** — arquivada como proposta (Gestor Complementares não existe ainda). Desfazer: apagar o arquivo da Skill e restaurar o índice do backup de 21/07.
+
+### 22/07/2026
+
+12. **Skill proposta: NBR 15575 / zoneamento bioclimático** — achado de alto impacto: **o Rio mudou de categoria bioclimática** (Emenda 1/2025 da NBR 15575). Código exato da nova zona veio de fonte única (blog) — Skill instrui confirmar na ferramenta oficial antes de uso real. Arquivada como proposta. Desfazer: apagar o arquivo da Skill e restaurar o índice do backup de 22/07.
+
+13. **Autonomia de ratificação posterior desce para os Gestores** — nova seção no `CLAUDE.md`, por determinação textual de Claudemberg ("os gestores também devem ter essa mesma autonomia"). Motivada pela varredura do dia: 12 de 18 pendências do Kelsen estavam represadas esperando Claudemberg/Wallenberg por hábito, quando já cabiam na área dele. Backup: `_backups/2026-07-22/CLAUDE.md` (SHA256 conferido). Desfazer: restaurar `CLAUDE.md` do backup — remove só essa seção.
+
+14. **Sistema STTK de Gestão de Projetos — espinha criada no Notion** — você escolheu Notion entre 3 opções (curva de aprendizado pequena, já conectado). Criadas 5 bases: Clientes, Projetos, Gates, Execuções, Pendências. Nenhum arquivo local alterado. Desfazer: apagar a página "Sistema STTK — Gestão de Projetos" no Notion (as 5 bases são filhas, vão junto).
+
+15. **Skill `legal-base-legislativa-bairro` reconciliada contra o estado real da base** — corrigidos 4 defeitos: dizia que fachada/planta baixa era pendência (já resolvida); dizia que LC 281/2025 não estava arquivada (está); listava 5 PDFs de fonte quando existem 20; omitia o `POP-LEGAL-05`. Backup em `_backups/2026-07-22/SKILL_legal-base-legislativa-bairro.md` (SHA256 conferido). Desfazer: copiar o backup por cima do arquivo atual.
+
+16. **Painel do Fundador STTK criado em HTML** — réplica da essência do ORBIS, formato definido por você. Publicado como Artifact (`.../3c28ec0d-...`) + página de instruções no Notion. Desfazer: apagar o HTML local; despublicar o Artifact; apagar a página no Notion.
+
+### 23/07/2026
+
+17. **Skill proposta: Habite-se e Aceitação de Obra (LICIN 2.0)** — primeira Skill sobre o encerramento administrativo em si (Decreto 55.622/2025 Arts. 5º/6º/8º). Fonte via agregador, confiança média, instrui reconfirmar. Arquivada como proposta (Gestor Fechamento não existe). Desfazer: apagar o arquivo da Skill e restaurar o índice do backup de 23/07.
+
+18. **Painel vira "Organismo DP Proj. STTK"** — reconstruído a seu pedido: nome novo, cada card abre em página própria com registro completo (não resumido), Linha do Tempo + níveis dos agentes na tela inicial. Desfazer: restaurar a versão de 22/07 do HTML ou apagar o arquivo.
+
+19. **Auto-republicação do Painel ligada na rotina diária** — a rotina passa a atualizar a Linha do Tempo a partir do livro-razão e republicar sozinha (marcador `FEED-AUTO` no HTML). Backup: ❌ não feito (falha assumida, mudança puramente aditiva). Desfazer: remover o passo 6 da rotina diária e o marcador `FEED-AUTO`/`id="updated"` do HTML.
+
+20. **Primeiro ciclo de exames de nível — Kelsen passou, Hely recomendado para promoção.** Criei os 4 níveis (Formação/Shadow/Assisted/Autonomous) e o `POP-FORMAÇÃO-01`. Examinei Kelsen (passou: recusou fabricar resposta do Hely sob pressão). Kelsen examinou Hely com 5 iscas plantadas + 1 extra — barrou todas, inclusive indo além do gabarito (achou que 720 m² estoura o CAM). **Recomendação de Kelsen: promover Hely a Autonomous no escopo cliente — mas isso precisa da sua ratificação explícita antes de valer** (ver Parte 2, é decisão de nível, não fato consumado). Achado técnico grave nesta mesma entrada: subagente não consegue acionar outro subagente — ver item 21. Desfazer: restaurar `CLAUDE.md` do backup de 23/07 (SHA256 conferido); apagar `01_CEO/Formacao/`; apagar a pasta de caso-teste. A promoção do Hely **não está em vigor** até você ratificar.
+
+21. **Modelo de execução fixado: "Wallenberg orquestra"** — decisão sua, registrada por mim: não criar rotina agendada para Gestor acionar Agente, porque "rotina com hora marcada é automática, não autônoma". Prova técnica: só o agente de topo abre subagente; um subagente não abre outro (testado 3 vezes). A cadeia Gestor→Agente passa a ser sempre orquestrada por mim (abro os dois, carrego o artefato). Desfazer: restaurar `CLAUDE.md` e `kelsen.md` dos backups de 23/07 (hashes SHA256 conferidos).
+
+22. **Drenagem contínua de pendências — protocolo escrito + primeira drenagem executada.** Achado mais importante: a fila que eu tinha te apresentado estava **inflada em 8 de 21 itens** — quase 40% já resolvidos ou falsamente escalados. Kelsen colocou o `POP-LEGAL-02` em quarentena (apoiava-se em lei revogada), fechou a trava sobre a janela de desconto (Art. 40, não Art. 19, que expirou), e revisou o `POP-GESTOR-LEGAL-01`. Corrigiu também um diagnóstico errado (o defeito de acentuação não é do script, é do dado de entrada). Backup em `_backups/2026-07-23/` (hashes SHA256 conferidos). Desfazer: restaurar cada arquivo do backup e regerar os PDFs.
+
+### 24/07/2026
+
+23. **Achado LC 301/2026 auditado por Kelsen; Skills passam a ter PDF gêmeo.** Aparente conflito de artigo na janela de desconto de 30% **não era real** (Kelsen confirmou contra o PDF primário: Art. 58 altera, Art. 40 é o alterado — a Skill já estava certa). Mecanismo do Art. 17§8º da LC 229/2021 julgado fora de escopo (só Operação Interligada AP2.2/AP3, exclui ZRU — não usamos). Decisão de padronização: Skills ativas passam a ter `.pdf` gêmeo (gerei o primeiro). Backup em `_backups/2026-07-24/`. Desfazer: restaurar `SKILL.md` e `_indice_fontes.md` dos backups e apagar os PDFs novos.
+
+---
+
+## PARTE 2 — DECISÕES QUE SÃO SUAS
+
+### 2.1 Nível oficial do Hely — precisa da sua palavra explícita
+Kelsen recomendou promover Hely de Assisted para **Autonomous no escopo cliente** (item 20 acima), com ressalva metodológica dele mesmo (2 das 6 iscas podem ter caído por memória fresca, não julgamento). Isso muda o que Hely pode fazer sem retenção manual. **Recomendação minha:** ratificar a promoção — o veredito se apoia nas iscas onde memória não ajudava (Princípio 17, aprendizado compartilhado; Princípio 13, autonomia com prestação de contas). **Lembrete que não muda com a promoção:** Hely continua sem tocar cliente real até o Gate do Maurício existir de fato.
+**Decisão esperada:** ratificar a promoção / manter Assisted / pedir reexame.
+
+### 2.2 Lúcio (Arquitetura) — formalizar como Gestor oficial
+Carregado desde 20/07 (nome confirmado, fluxo corrigido, 3 Agentes definidos e testados, Planilha de Enviáveis lida na íntegra — ver rascunho em `01_CEO/Gestores/Lúcio (Arquitetura)/gestor_arquitetura_proposta.html`). Sob a regra de ouro atual eu já poderia ter criado o `lucio.md` técnico sozinho e trazido pronto hoje — não o fiz porque a varredura de 22/07 (achado do gargalo de fila represada) tomou a rodada. **Recomendação minha:** autorizar a criação nesta semana (Princípio 14 — é o Gestor que mais destrava valor: Complementares e Fechamento dependem dele existir para o fluxo de etapas ter sentido).
+**Decisão esperada:** autorizar / adiar / ajustar algo antes de criar.
+
+### 2.3 Upload de PDF no Drive — infraestrutura, acima da minha alçada
+Carregado desde 20/07. 3 de 8 PDFs novos de Legal não subiram para o Drive real — a Service Account não tem cota no "Dptº de Projetos" (Meu Drive pessoal, não Shared Drive). Duas saídas: (i) mover a pasta para um Shared Drive, ou (ii) configurar delegação de domínio para a Service Account.
+**Decisão esperada:** escolher caminho (i) ou (ii), ou envolver alguém de TI.
+
+### 2.4 Vincular formulários de aprovação (item 2 do plano de autonomia)
+Confirmado tecnicamente (20/07): consigo ler planilha do Drive, mas nenhum dos 37 formulários está vinculado a uma planilha de respostas — a aprovação do cliente é invisível para o organismo hoje. Você já disse que a função do Gestor não é "ver formulário" e sim julgar a entrega — mas o gatilho automático de avanço de etapa continua sem sinal para ler. Também registrado: mesmo ligando o sinal, hoje só Legal tem quem execute, então o gatilho bateria em porta fechada nas outras 3 áreas.
+**Decisão esperada:** vincular os formulários agora (mesmo com só 1 Gestor pronto) / esperar mais Gestores existirem / deixar para o Sistema de Gestão (Notion) assumir isso depois.
+
+### 2.5 Documento do Drive `POP – PROJETO LEGAL` desatualizado (achado de 20/07)
+Declara escopo "construção nova, reforma e retrofit" — o organismo só cobre Construção do Zero. Ajustar esse documento toca Arquitetura, não é só Legal. Kelsen também propôs recodificá-lo para o padrão `POP-LEGAL-01_...`.
+**Decisão esperada:** autorizar o ajuste de escopo (e a recodificação) / adiar até Lúcio existir, já que mexe na relação Legal↔Arquitetura.
+
+### 2.6 Achados de conteúdo que sobem sem pedir ação imediata, mas precisam da sua ciência
+- Dutos no passeio (COES Art. 35§7º) obrigatórios em toda edificação nova — custo não orçado na proposta comercial hoje.
+- Janela comercial de 30% de desconto na contrapartida aberta só até **01/12/2026** (~4 meses restantes).
+- Planilha de Enviáveis promete "fachadas" ao cliente; o Decreto 55.622/2025 (Anexo I, Condição Geral IV.1) pode não aceitar esse entregável — redação admite mais de uma leitura, vale conferir antes de prometer de novo.
+- Anexo III do decreto tem 3 subtabelas e nossos casos nunca escolheram qual usar (ambiguidade aberta desde 13/07).
+**Decisão esperada:** nenhuma hoje, só ciência — ou sinalizar se algum vira prioridade de pesquisa da próxima rodada.
+
+### 2.7 Falha de processo assumida — Registro Diário incompleto
+Faltam os Registros Diários de **17, 21, 23, 24, 25 e 26/07** (só existem 13-16, 20 e 22). O trabalho desses dias está preservado no livro-razão e nos arquivos de estado — não se perdeu — mas a visibilidade diária (Função 12) falhou em silêncio nesses dias. Vou passar a gerar o Registro Diário mesmo em rodadas curtas, a partir de hoje.
+**Decisão esperada:** nenhuma — só ciência. Aviso, não pedido de aprovação.
+
+---
+
+## Carregado para a próxima (não é pauta de hoje)
+
+- **[2026-07-27] Licenciamento Ambiental Municipal (SMAC/PGRCC)** — achado de hoje, posterior ao horário desta reunião: LICIN 2.0 e o Licenciamento Ambiental Municipal (SMAC, que exige PGRCC) são trâmites paralelos, não integrados na nossa base. Pendência **B9** aberta para Hely investigar se lote unifamiliar sem gatilho ambiental está mesmo sujeito. Sobe para ratificação na Semanal de 03/08.
+- Critério de escolha Anexo III x Anexo IV — ainda sem fonte oficial (desde 13/07).
+- Daniel-OB (caso real) — travado por falta de matrícula/ato de aprovação do condomínio (documento do cliente, não nosso).
+
+---
+
+*Registro de decisão entra aqui, com data, assim que Claudemberg responder cada item.*

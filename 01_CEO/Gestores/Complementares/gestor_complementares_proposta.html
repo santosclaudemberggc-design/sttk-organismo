@@ -1,0 +1,275 @@
+<title>Cardozo — Proposta do Gestor Complementares (rascunho em construção)</title>
+<style>
+  @media (prefers-color-scheme: light) { :root { color-scheme: light; } }
+  @media (prefers-color-scheme: dark)  { :root { color-scheme: dark; } }
+
+  :root {
+    --paper: #F1ECE2;
+    --paper-raised: #E9E2D2;
+    --ink: #221F1C;
+    --ink-soft: #55504A;
+    --ink-faint: #8A8375;
+    --blueprint: #24476E;
+    --blueprint-soft: #6C87A6;
+    --blueprint-wash: #DCE4EC;
+    --ochre: #A66A2E;
+    --ochre-wash: #EEE0CE;
+    --line: #D3C9B6;
+    --good: #3F6B4A;
+    --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    --font-body: Seravek, "Gill Sans Nova", "Segoe UI", Calibri, sans-serif;
+    --font-mono: "Berkeley Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #17191C; --paper-raised: #1E2124; --ink: #EDE7DA; --ink-soft: #ABA290; --ink-faint: #716C60;
+      --blueprint: #7FA6D6; --blueprint-soft: #45617F; --blueprint-wash: #202B36; --ochre: #D89A5C; --ochre-wash: #2E2519;
+      --line: #34383D; --good: #7FAF8B;
+    }
+  }
+  :root[data-theme="light"] {
+    --paper: #F1ECE2; --paper-raised: #E9E2D2; --ink: #221F1C; --ink-soft: #55504A; --ink-faint: #8A8375;
+    --blueprint: #24476E; --blueprint-soft: #6C87A6; --blueprint-wash: #DCE4EC; --ochre: #A66A2E; --ochre-wash: #EEE0CE;
+    --line: #D3C9B6; --good: #3F6B4A;
+  }
+  :root[data-theme="dark"] {
+    --paper: #17191C; --paper-raised: #1E2124; --ink: #EDE7DA; --ink-soft: #ABA290; --ink-faint: #716C60;
+    --blueprint: #7FA6D6; --blueprint-soft: #45617F; --blueprint-wash: #202B36; --ochre: #D89A5C; --ochre-wash: #2E2519;
+    --line: #34383D; --good: #7FAF8B;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 16.5px; line-height: 1.6; }
+  ::selection { background: var(--blueprint-wash); color: var(--ink); }
+  a { color: var(--blueprint); }
+
+  .titleblock { border-bottom: 2px solid var(--ink); padding: 2.6rem clamp(1.25rem, 5vw, 3rem) 1.6rem; }
+  .titleblock-grid { max-width: 920px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: end; }
+  .eyebrow { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blueprint); margin: 0 0 0.6rem; }
+  h1.name { font-family: var(--font-display); font-size: clamp(2.6rem, 7vw, 4.4rem); font-weight: 500; letter-spacing: 0.01em; margin: 0; text-wrap: balance; line-height: 1.02; }
+  .subtitle { font-size: 1.05rem; color: var(--ink-soft); margin: 0.65rem 0 0; max-width: 46ch; }
+  .meta { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-faint); text-align: right; line-height: 1.7; white-space: nowrap; }
+  .meta strong { color: var(--ink-soft); font-weight: 600; }
+
+  .layout { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 220px minmax(0, 760px); gap: 0; justify-content: center; }
+  nav.index { position: sticky; top: 0; align-self: start; padding: 2.4rem 1.25rem 2rem 1.25rem; max-height: 100vh; overflow-y: auto; }
+  nav.index ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+  nav.index a { display: block; font-family: var(--font-mono); font-size: 0.74rem; color: var(--ink-faint); text-decoration: none; letter-spacing: 0.02em; border-left: 2px solid transparent; padding-left: 0.7rem; transition: color 0.15s, border-color 0.15s; }
+  nav.index a:hover { color: var(--ink); }
+
+  main { padding: 2.6rem clamp(1.25rem, 5vw, 2.5rem) 6rem; min-width: 0; }
+  section { padding-top: 2.4rem; scroll-margin-top: 1rem; }
+  section + section { border-top: 1px solid var(--line); }
+  .section-head { display: flex; align-items: baseline; gap: 0.9rem; margin-bottom: 1.1rem; }
+  .section-num { font-family: var(--font-mono); font-size: 0.85rem; color: var(--blueprint-soft); }
+  h2 { font-family: var(--font-display); font-size: 1.7rem; font-weight: 500; margin: 0; text-wrap: balance; }
+  h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; margin: 1.6rem 0 0.5rem; }
+  p { margin: 0.7rem 0; max-width: 66ch; }
+  p.lede { font-size: 1.05rem; color: var(--ink-soft); max-width: 62ch; }
+  ul, ol.plain { margin: 0.6rem 0; padding-left: 1.3rem; }
+  ul li, ol.plain li { margin: 0.35rem 0; }
+  strong { color: var(--ink); font-weight: 650; }
+
+  .rule-box { background: var(--ochre-wash); border: 1px solid var(--ochre); border-radius: 3px; padding: 1.1rem 1.3rem; margin: 1rem 0; }
+  .rule-box .label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ochre); margin: 0 0 0.4rem; }
+  .rule-box p { margin: 0; max-width: none; color: var(--ink); }
+  .rule-box.blue { border-color: var(--blueprint); background: var(--blueprint-wash); }
+  .rule-box.blue .label { color: var(--blueprint); }
+
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--line); }
+  th { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-faint); font-weight: 600; }
+
+  .pill { display: inline-block; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.03em; padding: 0.15rem 0.55rem; border-radius: 2px; border: 1px solid currentColor; }
+  .pill.ready { color: var(--good); background: color-mix(in srgb, var(--good) 12%, transparent); }
+  .pill.build { color: var(--blueprint); background: var(--blueprint-wash); }
+  .pill.pending { color: var(--ochre); background: var(--ochre-wash); }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1rem 0; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; margin: 1rem 0; }
+  .card { border: 1px solid var(--line); border-radius: 3px; padding: 1.1rem 1.2rem; }
+  .card h4 { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blueprint); margin: 0 0 0.5rem; }
+  .card .card-name { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin: 0 0 0.3rem; }
+  .card ul { margin: 0.4rem 0 0; padding-left: 1.1rem; font-size: 0.9rem; }
+  .card p { font-size: 0.9rem; }
+
+  .open-item { display: flex; gap: 0.7rem; padding: 0.6rem 0; border-bottom: 1px dashed var(--line); align-items: baseline; }
+  .open-item:last-child { border-bottom: none; }
+  .open-item .dot { color: var(--ochre); font-family: var(--font-mono); }
+  .open-item p { margin: 0; font-size: 0.94rem; }
+
+  .princ { font-family: var(--font-mono); font-size: 0.68rem; color: var(--blueprint-soft); border: 1px solid var(--blueprint-soft); border-radius: 2px; padding: 0.05rem 0.4rem; margin-right: 0.3rem; display: inline-block; }
+
+  footer { max-width: 760px; margin: 0 auto; padding: 0 clamp(1.25rem, 5vw, 2.5rem) 4rem; font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-faint); }
+
+  @media (max-width: 880px) {
+    .layout { grid-template-columns: 1fr; }
+    nav.index { position: static; max-height: none; padding: 1.4rem clamp(1.25rem, 5vw, 2.5rem) 0; }
+    nav.index ol { flex-direction: row; flex-wrap: wrap; gap: 0.4rem 1rem; }
+    .titleblock-grid { grid-template-columns: 1fr; }
+    .meta { text-align: left; }
+    .two-col, .grid3 { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="titleblock">
+  <div class="titleblock-grid">
+    <div>
+      <p class="eyebrow">Sistema Orgânico STTK — Sttickler Empreendimentos · rascunho de Wallenberg, em construção</p>
+      <h1 class="name">Cardozo</h1>
+      <p class="subtitle">Proposta do 3º Gestor do organismo — Gestor Complementares: os 6 técnicos (Estrutural, Elétrico, Hidrossanitário, Automação, Paisagismo, Interiores), Compatibilização, Projeto Executivo e Orçamento Executivo.</p>
+    </div>
+    <div class="meta">
+      <div><strong>Status</strong> <span class="pill build">rascunho — iniciado 29/07</span></div>
+      <div><strong>Nome</strong> candidato, ainda não confirmado por Claudemberg</div>
+      <div><strong>Preparado por</strong> Wallenberg (função 02, Orquestrador)</div>
+      <div><strong>Autorização</strong> "pode começar a planejar" — 29/07/2026</div>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+  <nav class="index" aria-label="Índice">
+    <ol>
+      <li><a href="#porque">00 — Por que Complementares agora</a></li>
+      <li><a href="#identidade">01 — Identidade (rascunho)</a></li>
+      <li><a href="#escopo">02 — Escopo: 6 técnicos + Compatibilização + Executivo</a></li>
+      <li><a href="#conhecimento">03 — Conhecimento — o que já está pesquisado</a></li>
+      <li><a href="#capacidade">04 — Capacidade — quem coordena, quem já produz</a></li>
+      <li><a href="#fluxo">05 — Fluxo e dependências</a></li>
+      <li><a href="#equipe">06 — Equipe (esboço inicial — 7 Agentes candidatos)</a></li>
+      <li><a href="#pendencias">07 — Perguntas em aberto antes de formalizar</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="porque">
+      <div class="section-head"><span class="section-num">00</span><h2>Por que Complementares agora</h2></div>
+      <p class="lede">Claudemberg autorizou "começar a planejar o outro Gestor" em 29/07/2026, logo depois de Lúcio (Arquitetura) ser formalizado (27/07) e passar no primeiro exame de nível (28/07). Dos dois Gestores que faltam — Complementares e Fechamento — <strong>Complementares é quem tem mais chão andado</strong>: 8 Skills já pesquisadas e arquivadas cobrindo as 6 áreas técnicas + Compatibilização + um método de verificação (ACC/RASE), contra 2 Skills de Fechamento. Faz sentido puxar este primeiro.</p>
+      <div class="rule-box blue">
+        <p class="label">Ainda em construção — não é decisão pra já</p>
+        <p>Isto é planejamento, não proposta fechada pedindo aprovação. Segue o mesmo molde que funcionou para o Lúcio: rascunho em paralelo, mostrado quando fizer sentido (Semanal ou quando Claudemberg pedir), formalizado só depois de alinhar nome, equipe e fluxo com ele.</p>
+      </div>
+    </section>
+
+    <section id="identidade">
+      <div class="section-head"><span class="section-num">01</span><h2>Identidade (rascunho)</h2></div>
+      <p class="lede"><strong>Cardozo</strong> — nome candidato, ainda não confirmado.</p>
+      <p>Referência a <strong>Joaquim Cardozo</strong>, o engenheiro estrutural (e poeta) que calculou as estruturas de Oscar Niemeyer e Lúcio Costa em Brasília e no Ibirapuera — a curva impossível do Congresso Nacional, as cúpulas, os pilares finos. Cardozo não desenhava o partido arquitetônico; ele traduzia a visão de Niemeyer/Costa em algo que ficava de pé, resolvendo estrutura, e por extensão toda a engenharia complementar por trás da forma. É exatamente o papel deste Gestor: pegar o que Lúcio aprova no Anteprojeto e resolver tudo que faz aquilo funcionar de verdade — estrutura, elétrica, hidráulica, automação, paisagismo, interiores — sem mexer no partido.</p>
+      <table>
+        <tr><th>Campo</th><th>Definição (rascunho)</th></tr>
+        <tr><td>Papel</td><td>Gestor Complementares — os 6 técnicos, Compatibilização, Projeto Executivo, Orçamento Executivo e Premissas.</td></tr>
+        <tr><td>Reporta a</td><td>Wallenberg (CEO)</td></tr>
+        <tr><td>Coordena</td><td>Equipe de Agentes própria — a nomear, uma vez aprovado (cascata de nomeação, como Kelsen→Hely e Lúcio)</td></tr>
+        <tr><td>Recebe de</td><td>Lúcio (Anteprojeto aprovado) e, indiretamente, Kelsen (parâmetros legais que travam solução técnica, ex. recuos/afastamentos que interferem em tubulação)</td></tr>
+        <tr><td>Entrega para</td><td>Gate 16 (Liberação de Obra), junto com o Habite-se do Kelsen</td></tr>
+        <tr><td>Princípios centrais (candidatos)</td><td><span class="princ">3</span> Qualidade antes de velocidade (é o Gestor mais técnico/normativo de todos) · <span class="princ">9</span> Padronização · <span class="princ">7</span> Comunicação objetiva entre gestores (recebe de Lúcio, entrega ao Gate 16) · <span class="princ">15</span> Redundância zero (6 disciplinas, risco real de retrabalho triplicado)</td></tr>
+      </table>
+    </section>
+
+    <section id="escopo">
+      <div class="section-head"><span class="section-num">02</span><h2>Escopo — segundo o fluxograma oficial da Sttickler</h2></div>
+      <p class="lede">Confirmado por Claudemberg em 13/07/2026 (<code>memory/referencia/sttickler_fluxograma_oficial.md</code>): depois do Anteprojeto de Lúcio, o fluxo bifurca em duas linhas paralelas e independentes — Projeto Legal (Kelsen, vai direto pra prefeitura) e <strong>os 6 Complementares</strong>, que convergem em Compatibilização → Projeto Executivo → Orçamento Executivo e Premissas. As duas linhas só se encontram no Gate 16.</p>
+      <ol class="plain">
+        <li><strong>Estrutural</strong> — cálculo estrutural (NBR 6118, classes de consequência CC1/CC2/CC3)</li>
+        <li><strong>Elétrico</strong> — instalações de baixa tensão (NBR 5410, em revisão)</li>
+        <li><strong>Hidrossanitário</strong> — água/esgoto, reuso (NBR 16783)</li>
+        <li><strong>Automação</strong> — automação residencial</li>
+        <li><strong>Paisagismo</strong> — projeto paisagístico, drenagem sustentável</li>
+        <li><strong>Interiores</strong> — projeto de interiores (já produz de verdade, ver seção 04)</li>
+      </ol>
+      <p>As 6 linhas convergem em <strong>Compatibilização</strong> (checagem de interferência entre modelos — clash detection), depois <strong>Projeto Executivo</strong>, depois <strong>Orçamento Executivo e Premissas</strong>. Todas alimentam o Gate 16.</p>
+      <div class="rule-box">
+        <p class="label">Pergunta em aberto — ver seção 07</p>
+        <p>O índice de Skills do mês categorizou "IA para Orçamento Executivo de Obra" (19/07) como Skill do <strong>Gestor Fechamento</strong>, mas o fluxograma oficial coloca "Orçamento Executivo e Premissas" como etapa <strong>dentro</strong> da linha dos Complementares, antes de convergir no Gate 16. Pode ser sobreposição de responsabilidade, ou os dois Gestores tratam de orçamento em momentos diferentes (executivo vs. fechamento de obra) — não resolvo isso sozinho, é decisão de Claudemberg.</p>
+      </div>
+    </section>
+
+    <section id="conhecimento">
+      <div class="section-head"><span class="section-num">03</span><h2>Conhecimento — 8 Skills já pesquisadas e arquivadas</h2></div>
+      <p class="lede">Todas em <code>01_CEO/Skills_Propostas/2026/Julho/</code>, prefixo <code>complementares_</code> — arquivadas como proposta desde que o Gestor não existe, prontas para ativar quando ele for criado (Função 5).</p>
+      <table>
+        <tr><th>Área</th><th>Skill</th><th>Data</th></tr>
+        <tr><td>Estrutural</td><td>NBR 6118:2026 (Emenda 1) — classes CC1/CC2/CC3, ATP, armadura de segurança</td><td>19/07</td></tr>
+        <tr><td>Elétrico</td><td>Revisão da NBR 5410 (ainda em consulta pública)</td><td>21/07</td></tr>
+        <tr><td>Hidrossanitário</td><td>NBR 16783 — reuso de água / fontes alternativas</td><td>20/07</td></tr>
+        <tr><td>Automação</td><td>Tendências de automação residencial 2026</td><td>20/07</td></tr>
+        <tr><td>Paisagismo</td><td>Jardim de chuva — drenagem sustentável</td><td>20/07</td></tr>
+        <tr><td>Interiores</td><td>Tendências de materiais e interiores 2026</td><td>20/07</td></tr>
+        <tr><td>Compatibilização</td><td>NBR ISO 19650/15965, clash detection + avoidance, matriz GUT</td><td>16/07</td></tr>
+        <tr><td>Compatibilização (complementar)</td><td>Verificação Automática de Conformidade (ACC — metodologia RASE/openBIM IDS)</td><td>29/07</td></tr>
+      </table>
+      <p>Nenhuma dessas 8 Skills foi ainda auditada contra um caso real (o mesmo cuidado que Kelsen aplicou à Skill de Legal em 20-22/07) — isso é trabalho pra depois que o Gestor existir e tiver equipe, não antes.</p>
+    </section>
+
+    <section id="capacidade">
+      <div class="section-head"><span class="section-num">04</span><h2>Capacidade — bem mais heterogênea que Legal ou Arquitetura</h2></div>
+      <p class="lede">Diferente de Lúcio (que hoje só coordena, uniformemente, até o Vitruvius), Complementares já nasce com <strong>capacidade desigual entre as 6 áreas</strong> — alguns Agentes já produziriam de verdade hoje, outros dependem de infraestrutura que ainda está sendo montada.</p>
+      <table>
+        <tr><th>Frente</th><th>Situação</th></tr>
+        <tr><td>Interiores</td><td><span class="pill ready">já produz de verdade</span> — mesmo padrão dos Agentes de Apresentações/Renders do Lúcio, não depende de BIM pronto</td></tr>
+        <tr><td>Compatibilização</td><td><span class="pill ready">já produz de verdade</span> — segundo a proposta de Skill de 16/07, o Agente já teria o MCP oficial da Autodesk pronto (leitura/análise de modelo)</td></tr>
+        <tr><td>Estrutural, Elétrico, Hidrossanitário, Automação, Paisagismo</td><td><span class="pill pending">coordena parceiro técnico</span> — nível de maturidade ainda a confirmar por área, provavelmente análogo ao Coordenador de Projeto Arquitetônico do Lúcio até integração plena com o Vitruvius</td></tr>
+      </table>
+      <div class="rule-box blue">
+        <p class="label">Achado verificado agora (29/07/2026) — Vitruvius já tem ponte técnica construída</p>
+        <p>Testei a conexão com o Revit nesta sessão: as ferramentas MCP do Vitruvius <strong>já existem e respondem</strong> (criar parede, ambiente, porta, janela, nível, cotas, tags — um conjunto bem maior do que eu esperava), mas o Revit não estava aberto no momento do teste (<code>revit_status</code> retornou "não foi possível conectar"). Isso muda o horizonte: o roadmap "só depois que o Vitruvius estiver pronto" (registrado pra Lúcio em 20/07) pode estar mais perto do que o organismo assumia — vale testar com o Revit aberto antes da próxima Semanal, tanto para Complementares quanto para o Coordenador do Lúcio.</p>
+      </div>
+    </section>
+
+    <section id="fluxo">
+      <div class="section-head"><span class="section-num">05</span><h2>Fluxo e dependências</h2></div>
+      <div class="rule-box blue">
+        <p class="label">Mesmo padrão de aprovação já usado em Legal e Arquitetura</p>
+        <p><strong>Agente confere</strong> (completude e conformidade mecânica) → <strong>Maurício Costa valida</strong> (mérito técnico) → <strong>Cliente aprova</strong>. Ponto de atenção: com 6 disciplinas técnicas diferentes, o Maurício provavelmente precisa validar por área antes de validar a Compatibilização como um todo — a ser confirmado, não decidido aqui.</p>
+      </div>
+      <ol class="plain">
+        <li><strong>Recebe</strong> o Anteprojeto aprovado de Lúcio (plantas técnicas, implantação, cortes, fachadas, quadro de áreas)</li>
+        <li><strong>6 áreas técnicas</strong> desenvolvem em paralelo, cada uma sob o próprio Agente</li>
+        <li><strong>Compatibilização</strong> — Agente de Compatibilização roda clash detection entre as 6 disciplinas + a base do Anteprojeto; prioriza conflitos por matriz GUT</li>
+        <li><strong>Projeto Executivo</strong> — consolida tudo compatibilizado</li>
+        <li><strong>Orçamento Executivo e Premissas</strong> — ver pendência sobre sobreposição com Fechamento, seção 07</li>
+        <li>Alimenta o <strong>Gate 16</strong> (Liberação de Obra), junto com o Habite-se do Kelsen</li>
+      </ol>
+      <p><strong>Dependência com Kelsen (a confirmar):</strong> parâmetros legais (recuos, afastamentos, gabarito) podem travar solução técnica das 6 áreas — ex. tubulação hidrossanitária precisa respeitar afastamento de divisa. Provavelmente Complementares consulta a base do Kelsen no mesmo modelo que Lúcio já consulta desde o Levantamento, mas isso não estava explícito em nenhum documento revisado até agora — candidato a confirmar com Claudemberg.</p>
+    </section>
+
+    <section id="equipe">
+      <div class="section-head"><span class="section-num">06</span><h2>Equipe — esboço inicial, 7 Agentes candidatos (nenhum testado ainda)</h2></div>
+      <p class="lede">Diferente de Lúcio (3 Agentes já com teste de contratação aplicado por Claudemberg em 20/07), <strong>nenhum destes 7 passou pelo teste de contratação ainda</strong> — é um primeiro esboço meu, a partir do escopo confirmado no fluxograma oficial. Nome humanizado de cada um é tarefa do próprio Cardozo, quando aprovado (cascata de nomeação).</p>
+      <div class="grid3">
+        <div class="card"><h4>Candidato 1</h4><p class="card-name">Agente Estrutural</p><p>Cálculo estrutural, classes CC1/CC2/CC3 (NBR 6118). Assina RRT — pode envolver Claudemberg diretamente em CC2/CC3 (achado de 19/07).</p></div>
+        <div class="card"><h4>Candidato 2</h4><p class="card-name">Agente Elétrico</p><p>Instalações de baixa tensão (NBR 5410, em revisão).</p></div>
+        <div class="card"><h4>Candidato 3</h4><p class="card-name">Agente Hidrossanitário</p><p>Água/esgoto, reuso (NBR 16783).</p></div>
+        <div class="card"><h4>Candidato 4</h4><p class="card-name">Agente de Automação</p><p>Automação residencial.</p></div>
+        <div class="card"><h4>Candidato 5</h4><p class="card-name">Agente de Paisagismo</p><p>Projeto paisagístico, drenagem sustentável.</p></div>
+        <div class="card"><h4>Candidato 6</h4><p class="card-name">Agente de Interiores</p><p><span class="pill ready">já produz de verdade</span> — mesmo padrão do Agente de Apresentações do Lúcio.</p></div>
+      </div>
+      <div class="card" style="max-width: 100%; margin-top: 1.1rem;">
+        <h4>Candidato 7 — provavelmente o mais crítico</h4>
+        <p class="card-name">Agente de Compatibilização</p>
+        <p><span class="pill ready">já teria MCP Autodesk pronto</span> (achado de 16/07) — roda clash detection/avoidance entre as 6 disciplinas + Projeto Executivo + Orçamento. É quem faz a convergência acontecer; sem ele as 6 áreas produzem em silos.</p>
+      </div>
+      <div class="rule-box">
+        <p class="label">Pergunta em aberto — 7 Agentes é o número certo?</p>
+        <p>Pode ser 1 Agente por disciplina (7 no total) ou menos, se alguma dupla de disciplinas tiver julgamento parecido o suficiente pra caber num Agente só (mesmo teste que reduziu "Executor + Guardião da Base" a um único Hely em 13/07). Só decido isso rodando o teste de contratação de verdade, com Claudemberg — não nesta rodada de planejamento.</p>
+      </div>
+    </section>
+
+    <section id="pendencias">
+      <div class="section-head"><span class="section-num">07</span><h2>Perguntas em aberto antes de formalizar</h2></div>
+      <div class="open-item"><span class="dot">?</span><p><strong>Nome:</strong> "Cardozo" é candidato meu, não confirmado. Alternativas possíveis se Claudemberg preferir outra referência (ex. um nome ligado a sistemas/integração em vez de estrutura pura).</p></div>
+      <div class="open-item"><span class="dot">?</span><p><strong>Orçamento Executivo — Complementares ou Fechamento?</strong> O fluxograma oficial põe "Orçamento Executivo e Premissas" dentro da linha dos Complementares; o índice de Skills categorizou uma Skill de orçamento (19/07) como sendo de Fechamento. Precisa de decisão de Claudemberg antes de fechar o escopo definitivo.</p></div>
+      <div class="open-item"><span class="dot">?</span><p><strong>7 Agentes ou menos?</strong> Nenhum passou pelo teste de contratação ainda (diferente do Lúcio, que já chegou pronto nesse ponto em 20/07). Precisa rodar o teste com Claudemberg antes de formalizar a equipe.</p></div>
+      <div class="open-item"><span class="dot">?</span><p><strong>Dependência com Kelsen:</strong> provável, não confirmada em documento. Precisa perguntar/confirmar antes de escrever na identidade oficial.</p></div>
+      <div class="open-item"><span class="dot">?</span><p><strong>Vitruvius:</strong> ponte técnica já existe (testada agora, 29/07) mas Revit não estava aberto — vale um teste real com o Revit aberto antes de travar o roadmap de capacidade de Estrutural/Compatibilização.</p></div>
+      <div class="open-item"><span class="dot">→</span><p>Isto é planejamento, não uma proposta pronta pra virar Gestor — segue em paralelo até fazer sentido trazer pra decisão (Semanal, ou quando Claudemberg pedir).</p></div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  Sistema Orgânico STTK — rascunho iniciado por Wallenberg em 29/07/2026, a pedido de Claudemberg ("você já pode começar a planejar o outro gestor"). Fontes: 8 Skills propostas de Complementares (01_CEO/Skills_Propostas/2026/Julho/), memory/referencia/sttickler_fluxograma_oficial.md, teste ao vivo do Vitruvius (mcp__vitruvius__revit_status).
+</footer>

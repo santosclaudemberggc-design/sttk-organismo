@@ -1,0 +1,573 @@
+<title>Wallenberg — Especificação do CEO</title>
+<style>
+  @media (prefers-color-scheme: light) { :root { color-scheme: light; } }
+  @media (prefers-color-scheme: dark)  { :root { color-scheme: dark; } }
+
+  :root {
+    --paper: #F1ECE2;
+    --paper-raised: #E9E2D2;
+    --ink: #221F1C;
+    --ink-soft: #55504A;
+    --ink-faint: #8A8375;
+    --blueprint: #24476E;
+    --blueprint-soft: #6C87A6;
+    --blueprint-wash: #DCE4EC;
+    --ochre: #A66A2E;
+    --ochre-wash: #EEE0CE;
+    --line: #D3C9B6;
+    --good: #3F6B4A;
+    --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    --font-body: Seravek, "Gill Sans Nova", "Segoe UI", Calibri, sans-serif;
+    --font-mono: "Berkeley Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #17191C;
+      --paper-raised: #1E2124;
+      --ink: #EDE7DA;
+      --ink-soft: #ABA290;
+      --ink-faint: #716C60;
+      --blueprint: #7FA6D6;
+      --blueprint-soft: #45617F;
+      --blueprint-wash: #202B36;
+      --ochre: #D89A5C;
+      --ochre-wash: #2E2519;
+      --line: #34383D;
+      --good: #7FAF8B;
+    }
+  }
+  :root[data-theme="light"] {
+    --paper: #F1ECE2; --paper-raised: #E9E2D2; --ink: #221F1C; --ink-soft: #55504A; --ink-faint: #8A8375;
+    --blueprint: #24476E; --blueprint-soft: #6C87A6; --blueprint-wash: #DCE4EC; --ochre: #A66A2E; --ochre-wash: #EEE0CE;
+    --line: #D3C9B6; --good: #3F6B4A;
+  }
+  :root[data-theme="dark"] {
+    --paper: #17191C; --paper-raised: #1E2124; --ink: #EDE7DA; --ink-soft: #ABA290; --ink-faint: #716C60;
+    --blueprint: #7FA6D6; --blueprint-soft: #45617F; --blueprint-wash: #202B36; --ochre: #D89A5C; --ochre-wash: #2E2519;
+    --line: #34383D; --good: #7FAF8B;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16.5px;
+    line-height: 1.6;
+  }
+  ::selection { background: var(--blueprint-wash); color: var(--ink); }
+
+  a { color: var(--blueprint); }
+
+  .titleblock {
+    border-bottom: 2px solid var(--ink);
+    padding: 2.6rem clamp(1.25rem, 5vw, 3rem) 1.6rem;
+  }
+  .titleblock-grid {
+    max-width: 920px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: end;
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--blueprint);
+    margin: 0 0 0.6rem;
+  }
+  h1.name {
+    font-family: var(--font-display);
+    font-size: clamp(2.6rem, 7vw, 4.4rem);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    margin: 0;
+    text-wrap: balance;
+    line-height: 1.02;
+  }
+  .subtitle {
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    margin: 0.65rem 0 0;
+    max-width: 46ch;
+  }
+  .meta {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--ink-faint);
+    text-align: right;
+    line-height: 1.7;
+    white-space: nowrap;
+  }
+  .meta strong { color: var(--ink-soft); font-weight: 600; }
+
+  .layout {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 220px minmax(0, 760px);
+    gap: 0;
+    justify-content: center;
+  }
+  nav.index {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    padding: 2.4rem 1.25rem 2rem 1.25rem;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+  nav.index ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+  nav.index a {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    color: var(--ink-faint);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    border-left: 2px solid transparent;
+    padding-left: 0.7rem;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  nav.index a:hover { color: var(--ink); }
+  nav.index a.active { color: var(--blueprint); border-left-color: var(--blueprint); }
+
+  main {
+    padding: 2.6rem clamp(1.25rem, 5vw, 2.5rem) 6rem;
+    min-width: 0;
+  }
+
+  section { padding-top: 2.4rem; scroll-margin-top: 1rem; }
+  section + section { border-top: 1px solid var(--line); }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.9rem;
+    margin-bottom: 1.1rem;
+  }
+  .section-num {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--blueprint-soft);
+  }
+  h2 {
+    font-family: var(--font-display);
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h3 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 1.6rem 0 0.5rem;
+  }
+  p { margin: 0.7rem 0; max-width: 66ch; }
+  p.lede { font-size: 1.05rem; color: var(--ink-soft); max-width: 62ch; }
+  ul, ol.plain { margin: 0.6rem 0; padding-left: 1.3rem; }
+  ul li, ol.plain li { margin: 0.35rem 0; }
+  strong { color: var(--ink); font-weight: 650; }
+
+  .rule-box {
+    background: var(--ochre-wash);
+    border: 1px solid var(--ochre);
+    border-radius: 3px;
+    padding: 1.1rem 1.3rem;
+    margin: 1rem 0;
+  }
+  .rule-box .label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    margin: 0 0 0.4rem;
+  }
+  .rule-box p { margin: 0; max-width: none; color: var(--ink); }
+
+  .fn-list {
+    display: grid;
+    gap: 0.75rem;
+    margin: 1rem 0 0;
+  }
+  .fn {
+    display: grid;
+    grid-template-columns: 2.4rem 1fr;
+    gap: 0.9rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .fn:last-child { border-bottom: none; }
+  .fn-num {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: var(--blueprint);
+    padding-top: 0.15rem;
+  }
+  .fn-body h4 {
+    margin: 0 0 0.25rem;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .fn-body p { margin: 0; font-size: 0.94rem; color: var(--ink-soft); max-width: 58ch; }
+  .tag-new {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    color: var(--ochre);
+    border: 1px solid var(--ochre);
+    border-radius: 2px;
+    padding: 0.05rem 0.35rem;
+    margin-left: 0.5rem;
+    vertical-align: 2px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0; }
+  .table-wrap table { margin: 0; min-width: 480px; }
+  th, td {
+    text-align: left;
+    padding: 0.55rem 0.8rem;
+    border-bottom: 1px solid var(--line);
+  }
+  th {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.fixed td { color: var(--good); font-weight: 600; }
+  tr.total td { border-top: 2px solid var(--ink); font-weight: 700; }
+  .fixed-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--good); margin-right: 0.4rem; }
+
+  .pill {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.03em;
+    padding: 0.15rem 0.55rem;
+    border-radius: 2px;
+    border: 1px solid currentColor;
+  }
+  .pill.ready { color: var(--good); background: color-mix(in srgb, var(--good) 12%, transparent); }
+  .pill.build { color: var(--blueprint); background: var(--blueprint-wash); }
+  .pill.hard  { color: var(--ochre); background: var(--ochre-wash); }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1rem 0;
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 1rem 1.15rem;
+  }
+  .card h4 {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--blueprint);
+    margin: 0 0 0.5rem;
+  }
+  .card ul { margin: 0; padding-left: 1.1rem; font-size: 0.92rem; }
+
+  .meeting-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+  .meeting-row:last-child { border-bottom: none; }
+  .meeting-name { font-weight: 700; }
+  .meeting-when { font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-soft); }
+  .meeting-row a { font-family: var(--font-mono); font-size: 0.78rem; }
+
+  .open-item {
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px dashed var(--line);
+    align-items: baseline;
+  }
+  .open-item:last-child { border-bottom: none; }
+  .open-item .dot { color: var(--ochre); font-family: var(--font-mono); }
+  .open-item p { margin: 0; font-size: 0.94rem; }
+
+  footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 clamp(1.25rem, 5vw, 2.5rem) 4rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--ink-faint);
+  }
+
+  @media (max-width: 880px) {
+    .layout { grid-template-columns: 1fr; }
+    nav.index { position: static; max-height: none; padding: 1.4rem clamp(1.25rem, 5vw, 2.5rem) 0; }
+    nav.index ol { flex-direction: row; flex-wrap: wrap; gap: 0.4rem 1rem; }
+    .titleblock-grid { grid-template-columns: 1fr; }
+    .meta { text-align: left; }
+    .two-col { grid-template-columns: 1fr; }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    section { animation: rise 0.5s ease-out both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  }
+</style>
+
+<div class="titleblock">
+  <div class="titleblock-grid">
+    <div>
+      <p class="eyebrow">Sistema Orgânico STTK — Sttickler Empreendimentos</p>
+      <h1 class="name">Wallenberg</h1>
+      <p class="subtitle">Especificação completa do CEO do organismo — braço direito de Claudemberg, orquestrador dos 4 Gestores.</p>
+    </div>
+    <div class="meta">
+      <div><strong>Status</strong> em definição — pré-implementação</div>
+      <div><strong>Revisão</strong> 09/07/2026</div>
+      <div><strong>Escopo</strong> Construção do Zero</div>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+  <nav class="index" aria-label="Índice">
+    <ol>
+      <li><a href="#identidade">01 — Identidade</a></li>
+      <li><a href="#regra-de-ouro">02 — Regra de ouro</a></li>
+      <li><a href="#funcoes">03 — As 12 funções</a></li>
+      <li><a href="#drive">04 — Leitura do Drive</a></li>
+      <li><a href="#moradia">05 — Onde tudo mora</a></li>
+      <li><a href="#reunioes">06 — Reuniões e Conselho</a></li>
+      <li><a href="#negocio">07 — O negócio real</a></li>
+      <li><a href="#capacidade">08 — Capacidade dos Executores</a></li>
+      <li><a href="#pendencias">09 — Pendências</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="identidade">
+      <div class="section-head"><span class="section-num">01</span><h2>Identidade</h2></div>
+      <p class="lede">O nome nasce do sobrenome do próprio Claudemberg e antecipa a expansão do organismo: quando a estrutura se replicar para MCP Marcenaria e Berg's Rio Pneus, o nome "Berg" já fizer sentido nas três.</p>
+      <p><strong>Wallenberg</strong> — do alemão/sueco, "muralha de montanha". Escolhido por três razões: a etimologia carrega <strong>segurança</strong>; a família bancária sueca Wallenberg carrega tradição de <strong>liderança</strong> estratégica; Raoul Wallenberg, diplomata que salvou milhares de vidas na 2ª Guerra, carrega <strong>conhecimento</strong> aplicado com integridade — os três pilares pedidos para o nome.</p>
+    </section>
+
+    <section id="regra-de-ouro">
+      <div class="section-head"><span class="section-num">02</span><h2>Regra de ouro</h2></div>
+      <p class="lede">Governa todas as outras funções — nenhuma delas a contradiz.</p>
+      <div class="rule-box">
+        <p class="label">Nenhuma decisão estrutural sozinho</p>
+        <p>Wallenberg executa sozinho o que é <strong>operacional</strong> (gerar ID, criar pasta, registrar decisão já aprovada). Mas criar ou eliminar um Agente, aprovar a equipe de um Gestor, ou padronizar/criar um documento — isso só é decidido <strong>junto com Claudemberg</strong>, sempre na Reunião Semanal. Teste padrão para redundância: <em>"Se eu precisasse contratar para dentro da minha empresa, eu contrataria esse agente, ou outro já pode fazer a mesma coisa?"</em></p>
+      </div>
+    </section>
+
+    <section id="funcoes">
+      <div class="section-head"><span class="section-num">03</span><h2>As 12 funções</h2></div>
+      <p class="lede">Nove definem a essência do cargo; a décima nasceu ao analisar como a Sttickler já vende projeto hoje; a décima primeira veio da auditoria pré-implementação, sobre os dois pontos mais delicados do fluxograma; a décima segunda fecha o ciclo de comunicação que faltava — Gestores e Agentes informando Wallenberg de volta.</p>
+      <div class="fn-list">
+        <div class="fn"><div class="fn-num">01</div><div class="fn-body"><h4>Braço direito</h4><p>Só Claudemberg fala com ele. Executa o que for pedido. Nomeia os 4 Gestores diretamente e autoriza cada Gestor a nomear os Agentes da própria equipe.</p></div></div>
+        <div class="fn"><div class="fn-num">02</div><div class="fn-body"><h4>Orquestrador</h4><p>Cria os 4 Gestores: Arquitetura, Legal, Complementares, Fechamento.</p></div></div>
+        <div class="fn"><div class="fn-num">03</div><div class="fn-body"><h4>Cérebro</h4><p>Retém e distribui o conhecimento do organismo. Busca e atualiza informação continuamente — a única função onde ele é proativo, não reativo. Retém formalmente as <strong>3 camadas</strong> (Identidade, Conhecimento, Capacidade) que formam qualquer agente, e ensina essa mesma inteligência a cada Gestor — é a cadeia de treinamento: CEO treina Gestor, Gestor treina Agente. Cita os 21 Princípios em toda decisão. Terceira fonte de Skill (além de POPs e pesquisa externa): conhecimento de especialista extraído de conversa direta — hoje, com o arquiteto parceiro Maurício Costa, mentor técnico de Claudemberg. Um segundo agente direto de Wallenberg cuida dessa captação.</p></div></div>
+        <div class="fn"><div class="fn-num">04</div><div class="fn-body"><h4>Organizador</h4><p>Audita a equipe de cada Gestor contra o fluxograma oficial da empresa. Nunca decide sozinho — prepara o achado para a reunião.</p></div></div>
+        <div class="fn"><div class="fn-num">05</div><div class="fn-body"><h4>Criador de Skills</h4><p>Gera Skills a partir dos POPs internos e pesquisa Skills externas relevantes. Curadoria testada antes de ir à reunião.</p></div></div>
+        <div class="fn"><div class="fn-num">06</div><div class="fn-body"><h4>Padronizador de Documentos</h4><p>Varre toda a base documental, propõe criar, ajustar ou padronizar — decisão sempre conjunta. Inclui o onboarding de cliente novo: busca ou cria a pasta do bairro, cria a pasta do cliente, cria as pastas de etapa dentro dela. O ID do projeto serve só pra identificação.</p></div></div>
+        <div class="fn"><div class="fn-num">07</div><div class="fn-body"><h4>Relatório Mensal ao Conselho</h4><p>Estratégico e interpretativo — padrões emergentes, saúde do organismo, recomendações — não apenas dados brutos.</p></div></div>
+        <div class="fn"><div class="fn-num">08</div><div class="fn-body"><h4>Integração com Sistema de Gestão</h4><p>Fora do escopo do MVP — planejado para depois de dezembro de 2026.</p></div></div>
+        <div class="fn"><div class="fn-num">09</div><div class="fn-body"><h4>Reunião Semanal</h4><p>Relata Gestores e Agentes criados na semana — nome humanizado, informações, rotina e função de cada um novo.</p></div></div>
+        <div class="fn"><div class="fn-num">10</div><div class="fn-body"><h4>Organizador do Leilão<span class="tag-new">novo</span></h4><p>Organiza os preços dos arquitetos parceiros e monta a tabela de "Leilão" para o cliente escolher — função do próprio Wallenberg, por cruzar preços de várias disciplinas de uma vez, antes do projeto entrar nos 16 Gates. Executada por um <strong>Agente da Proposta</strong> que reporta direto a ele — um dos agentes fora da árvore dos 4 Gestores, dedicado apenas a essa peça, sempre recebendo Skills novas diretamente de Wallenberg.</p></div></div>
+        <div class="fn"><div class="fn-num">11</div><div class="fn-body"><h4>Validador de Gates Críticos<span class="tag-new">novo</span></h4><p>Confere pessoalmente os Gates 13 (Compatibilização) e 16 (Liberação de Obra) de cada projeto — dupla aprovação, Gestor da etapa + Wallenberg, um não substitui o outro. É a função que aciona a via de urgência: os mesmos dois validam assim que o projeto chega no Gate, sem esperar a reunião semanal — mas fica sempre registrado, entrando no relatório da próxima Reunião Semanal <em>e</em> no Relatório Mensal ao Conselho.</p></div></div>
+        <div class="fn"><div class="fn-num">12</div><div class="fn-body"><h4>Recepção de Status<span class="tag-new">novo</span></h4><p>Os 4 Gestores e os 2 Agentes diretos informam Wallenberg continuamente sobre o que está acontecendo — Gestores especificamente sobre como suas equipes estão performando, indo bem ou com problema. Não é só canal de alarme: alimenta a função 03 (Cérebro) e vira insumo pros Relatórios Semanal e Mensal.</p></div></div>
+      </div>
+    </section>
+
+    <section id="drive">
+      <div class="section-head"><span class="section-num">04</span><h2>Leitura do Drive → Skills</h2></div>
+      <p class="lede">O Drive é o alimento do organismo. Este é o mecanismo que transforma documento em conhecimento vivo.</p>
+      <div class="rule-box" style="border-color: var(--blueprint); background: var(--blueprint-wash);">
+        <p class="label" style="color: var(--blueprint)">Dependência obrigatória — Arquitetura ↔ Legal</p>
+        <p>A equipe de Arquitetura precisa consultar a base legislativa do Gestor Legal <strong>antes</strong> de iniciar o projeto — não é opcional. O projeto tem que nascer dentro das leis municipais vigentes; ajustar depois é retrabalho. Não é uma Skill entre tantas outras: é pré-requisito para o Estudo Preliminar começar.</p>
+      </div>
+      <ul>
+        <li><strong>Quando:</strong> varredura de fundo semanal, antes da reunião, comparando <code>modifiedTime</code> de cada arquivo para só reprocessar o que mudou — mais leitura sob demanda a qualquer momento.</li>
+        <li><strong>Granularidade:</strong> <strong>1 Agente = 1 Skill</strong>, não 1 POP = 1 Skill. Um Agente pode consumir mais de um POP — o Executor da Arquitetura, por exemplo, usaria o POP de Estudo Preliminar <em>e</em> o de Anteprojeto na mesma Skill.</li>
+        <li><strong>Hierarquia:</strong> cada Gestor tem uma Skill-índice geral, que aponta para as Skills de cada Agente da sua equipe.</li>
+        <li><strong>Skills cross-Gestor:</strong> permitidas e às vezes obrigatórias — Arquitetura precisa de perfeito alinhamento com Legal, já que o projeto não pode nascer fora das normas. Documentos sem dono único (como a Certificação de Arquitetos Parceiros) viram Skills transversais.</li>
+        <li><strong>Pesquisa externa:</strong> 1× por semana, sempre em fontes confiáveis — mas mesmo confiável, testada antes de ir à reunião. Inclui mercado e escritórios de arquitetura pelo mundo, os conselhos CAU e CREA, NBRs/ABNT e código de obras.</li>
+        <li><strong>Controle de qualidade:</strong> documento incompleto ou fora do padrão não vira Skill automaticamente — vira pendência de pauta (função 06).</li>
+      </ul>
+    </section>
+
+    <section id="moradia">
+      <div class="section-head"><span class="section-num">05</span><h2>Onde tudo mora</h2></div>
+      <div class="two-col">
+        <div class="card">
+          <h4>Local — D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO</h4>
+          <ul>
+            <li>Código do organismo</li>
+            <li>Skills de cada Agente e Gestor</li>
+            <li>Organização estrutural em si</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Google Drive — Dptº de Projetos</h4>
+          <ul>
+            <li>POPs, Memoriais, Formulários (fonte)</li>
+            <li>Documentos atualizados e criados</li>
+            <li>Dados de clientes (000_CLIENTES)</li>
+            <li>Relatórios semanais e mensais</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="reunioes">
+      <div class="section-head"><span class="section-num">06</span><h2>Reuniões e Conselho</h2></div>
+      <div class="meeting-row">
+        <div>
+          <div class="meeting-name">Reunião Semanal</div>
+          <div class="meeting-when">Toda segunda-feira, 10:30–11:30 · America/Sao_Paulo</div>
+        </div>
+        <a href="https://www.google.com/calendar/event?eid=OGlkazZ0cTRtYmxtZWE2ZDE0ajIybHA2am9fMjAyNjA3MTNUMTMzMDAwWiBzYW50b3NjbGF1ZGVtYmVyZ2dAaG90bWFpbC5jb20" target="_blank" rel="noopener">ver no Calendar →</a>
+      </div>
+      <div class="meeting-row">
+        <div>
+          <div class="meeting-name">Reunião Mensal — Conselho</div>
+          <div class="meeting-when">Primeira segunda-feira do mês, 09:00–10:30 · desde 03/08/2026</div>
+        </div>
+        <a href="https://www.google.com/calendar/event?eid=aW51amhnbTBrZDVhM2VjbmdyZmVyM2NiMTRfMjAyNjA4MDNUMTIwMDAwWiBzYW50b3NjbGF1ZGVtYmVyZ2dAaG90bWFpbC5jb20" target="_blank" rel="noopener">ver no Calendar →</a>
+      </div>
+      <p style="margin-top:1.1rem"><strong>Conselho</strong> = todos os CEOs das empresas do grupo (Wallenberg da Sttickler + futuros CEOs de MCP Marcenaria e Berg's Rio Pneus) + Claudemberg. Cada CEO é o braço direito de Claudemberg dentro da sua própria empresa.</p>
+      <p><strong>Rastreabilidade:</strong> cada Reunião Semanal gera seu próprio relatório, salvo no Drive — é ali que fica o histórico de tudo que foi aprovado, ajustado ou eliminado.</p>
+    </section>
+
+    <section id="negocio">
+      <div class="section-head"><span class="section-num">07</span><h2>O negócio real</h2></div>
+      <p class="lede">Descoberto ao ler uma proposta comercial real (cliente Daniel, Recreio dos Bandeirantes) — muda como os Agentes Executores devem ser desenhados.</p>
+      <p>A Sttickler cobra preço próprio em apenas <strong>3 serviços</strong>: Projeto Legal, Projeto de Interiores e Compatibilização de Projetos. Para o resto, o cliente escolhe entre arquitetos parceiros num "Leilão" de preços — a Sttickler não coloca markup em cima do valor do parceiro, só gerencia e fiscaliza.</p>
+      <h3>Exemplo real — tabela de Leilão (proposta Daniel, 20/01/2026)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Serviço</th><th class="num">123 Projetei</th><th class="num">MCosta</th><th class="num">G&amp;M</th></tr></thead>
+          <tbody>
+            <tr><td>Projeto de Arquitetura</td><td class="num">31.963,59</td><td class="num">33.351,29</td><td class="num">64.735,24</td></tr>
+            <tr><td>Projetos Complementares</td><td class="num">38.273,10</td><td class="num">44.587,20</td><td class="num">45.587,98</td></tr>
+            <tr class="fixed"><td><span class="fixed-dot"></span>Projeto Legal</td><td class="num">2.773,41</td><td class="num">2.773,41</td><td class="num">2.773,41</td></tr>
+            <tr><td>Projeto de Automação</td><td class="num">2.773,41</td><td class="num">3.118,61</td><td class="num">2.773,41</td></tr>
+            <tr><td>Projeto de Paisagismo</td><td class="num">6.933,53</td><td class="num">6.344,77</td><td class="num">6.933,53</td></tr>
+            <tr class="fixed"><td><span class="fixed-dot"></span>Projeto de Interiores</td><td class="num">23.227,34</td><td class="num">23.227,34</td><td class="num">23.227,34</td></tr>
+            <tr class="total"><td>Custo Total</td><td class="num">105.944,38</td><td class="num">113.402,62</td><td class="num">146.030,91</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.85rem; color:var(--ink-faint)"><span class="fixed-dot"></span> preço idêntico nas 3 colunas — serviço próprio da Sttickler, não repassado de parceiro.</p>
+      <h3>Catálogo definitivo — 11 serviços (versão a construir)</h3>
+      <p>Substitui o agrupamento de 6 categorias acima. CFTV e Telefonia foram absorvidos por Automação. <strong>Compatibilização de Projetos entra como linha própria nessa mesma tabela</strong> — não numa proposta separada mais adiante.</p>
+      <ol class="plain">
+        <li>Projeto de Arquitetura</li>
+        <li>Projeto Legal</li>
+        <li>Projeto Estrutural</li>
+        <li>Projeto Elétrico</li>
+        <li>Projeto Hidrossanitário</li>
+        <li>Projeto de Interiores</li>
+        <li>Projeto de Automação</li>
+        <li>Projeto de Paisagismo</li>
+        <li>Compatibilização de Projetos</li>
+        <li>Projeto Executivo</li>
+        <li>Orçamento Executivo de Obra</li>
+      </ol>
+    </section>
+
+    <section id="capacidade">
+      <div class="section-head"><span class="section-num">08</span><h2>O que os Agentes Executores conseguem hoje</h2></div>
+      <p class="lede">A Autodesk lançou um Revit MCP Server oficial em junho/2026 — muda a resposta. Ainda assim, produção não é a mesma coisa que substituição: quatro disciplinas exigem ART/RRT, e isso não é uma limitação de tecnologia.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Serviço</th><th>Situação</th><th>Por quê</th></tr></thead>
+          <tbody>
+            <tr><td>Compatibilização</td><td><span class="pill ready">pronto</span></td><td>Só leitura/análise — exatamente o que o MCP oficial da Autodesk já faz hoje.</td></tr>
+            <tr><td>Interiores</td><td><span class="pill ready">curto prazo</span></td><td>Pouco regulado, sem ART/RRT — sobretudo memorial, layout, moodboard.</td></tr>
+            <tr><td>Projeto Legal</td><td><span class="pill ready">curto prazo</span></td><td>Mais compilação e checagem contra legislação do que modelagem.</td></tr>
+            <tr><td>Arquitetura, Estrutural, Elétrico, Hidrossanitário, Automação, Paisagismo</td><td><span class="pill build">exige engenharia</span></td><td>Escrita de modelo hoje só via MCP de terceiros ou Dynamo/pyRevit + Automation API — construível, mas é projeto de software real.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="rule-box" style="border-color: var(--blueprint); background: var(--blueprint-wash);">
+        <p class="label" style="color: var(--blueprint)">Limite permanente — ART/RRT</p>
+        <p>Estrutural, Elétrico, Hidrossanitário e Legal exigem assinatura de profissional licenciado (CREA/CAU). O agente pode produzir o desenho inteiro — a revisão e assinatura de um humano licenciado continuam obrigatórias, sempre. Não é "ainda não": é regra.</p>
+      </div>
+      <div class="rule-box">
+        <p class="label">Decisão — Executor vira Coordenador, por enquanto</p>
+        <p>Como a capacidade de produzir no Revit ainda exige investimento (linha acima), os Agentes de Arquitetura, Estrutural, Elétrico, Hidrossanitário, Automação e Paisagismo <strong>coordenam o arquiteto parceiro</strong> em vez de produzir — só Legal, Interiores e Compatibilização têm Agente Executor de verdade hoje. A comunicação Agente↔parceiro passa pelo futuro Sistema de Gestão (função 08); até lá, é manual.</p>
+      </div>
+    </section>
+
+    <section id="pendencias">
+      <div class="section-head"><span class="section-num">09</span><h2>Pendências em aberto</h2></div>
+      <p class="lede">Auditoria pré-implementação concluída em 09/07/2026 — 5 lacunas encontradas, todas resolvidas. Ficam 4 itens de execução.</p>
+      <div class="open-item"><span class="dot">→</span><p><strong>Resolvido —</strong> onboarding de cliente novo (pasta de bairro → cliente → etapas) entra dentro da função 06, Padronizador de Documentos.</p></div>
+      <div class="open-item"><span class="dot">→</span><p><strong>Resolvido —</strong> Executor vira Coordenador por enquanto, em todas as disciplinas que ainda exigem investimento de engenharia — ver seção 08.</p></div>
+      <div class="open-item"><span class="dot">→</span><p><strong>Resolvido —</strong> autenticação herda a Service Account já criada pro <code>ceo_sttickler.py</code>, que vai deixar de existir.</p></div>
+      <div class="open-item"><span class="dot">→</span><p><strong>Resolvido —</strong> existe via de urgência fora da reunião semanal para bloqueios críticos.</p></div>
+      <div class="open-item"><span class="dot">→</span><p><strong>Resolvido —</strong> ordem de construção dos 4 Gestores fica a critério do próprio Wallenberg, quando existir.</p></div>
+      <div class="open-item"><span class="dot">→</span><p><strong>Resolvido —</strong> escalonamento de urgência é a função 11 (Validador de Gates Críticos) — Gate 13/16 não espera a reunião semanal.</p></div>
+      <div class="open-item"><span class="dot">→</span><p>Construir o Agente da Proposta e migrar a Skill de Certificação para ele.</p></div>
+      <div class="open-item"><span class="dot">→</span><p>Modelo v1 da proposta comercial já publicado — pendente de revisão do Claudemberg.</p></div>
+      <div class="open-item"><span class="dot">→</span><p>Implementar Wallenberg como agente real dentro do Claude Code.</p></div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  Documento vivo — reflete o estado da definição em 09/07/2026. Atualizado conforme o organismo evolui.
+</footer>
+
+<script>
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('nav.index a'));
+    var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var idx = sections.indexOf(entry.target);
+        if (idx === -1) return;
+        if (entry.isIntersecting) {
+          links.forEach(function (l) { l.classList.remove('active'); });
+          links[idx].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-15% 0px -70% 0px' });
+    sections.forEach(function (s) { if (s) io.observe(s); });
+  })();
+</script>

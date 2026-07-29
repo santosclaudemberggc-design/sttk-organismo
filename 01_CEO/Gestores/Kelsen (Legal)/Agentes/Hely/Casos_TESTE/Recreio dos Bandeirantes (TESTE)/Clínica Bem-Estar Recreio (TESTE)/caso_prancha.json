@@ -1,0 +1,223 @@
+{
+  "_aviso": "CENÁRIO DE TESTE. Requerente, matrícula, alvará, ARTs e número de processo são FICTÍCIOS. Nunca copiar para 000_CLIENTES real.",
+  "formato": "A1",
+  "escritorio": "STTICKLER EMPREENDIMENTOS",
+  "escritorio_cnpj": "CNPJ 39.520.415/0001-21  |  Departamento de Projetos",
+  "obra": "CLÍNICA BEM-ESTAR RECREIO (TESTE) - EDIFICAÇÃO NOVA, USO SERVIÇOS II (SAÚDE)",
+  "endereco": "Rua Escritor Elie Wiesel, n. 215 - Recreio dos Bandeirantes - Rio de Janeiro/RJ - CEP 22790-672",
+  "lote_matricula": "CL 476218 | Matrícula RGI 000.002-TESTE | Quadra: PENDENTE",
+  "requerente": "Clínica TESTE-QA Bem-Estar Recreio Serviços Médicos LTDA.",
+  "tipo_projeto": "PROJETO LEGAL - LICIN 2.0 - DEMOLIÇÃO TOTAL + CONSTRUÇÃO NOVA",
+  "prpa": "Arqto. Fábio Noronha Salgueiro - CAU A000001-1-TESTE",
+  "rrt": "ART-TESTE-2026-0031 (emitida) | PREO: PENDENTE",
+  "revisao": "R00",
+  "data": "21/07/2026",
+  "marca_dagua": "TESTE - NÃO PROTOCOLAR",
+  "subtitulo_folha": "MATERIAL DE TESTE DO ORGANISMO STTK - DADOS FICTÍCIOS - NÃO PROTOCOLAR",
+
+  "escalas": {
+    "situacao": "1:500",
+    "implantacao": "1:200",
+    "plantas": "1:100",
+    "cortes": "1:100",
+    "fachadas": "1:100"
+  },
+
+  "quadro_lote": [
+    ["DADO", "VALOR", "FONTE"],
+    ["Área do terreno", "500,00 m2", "Título/RGI (caso)"],
+    ["Dimensões do lote", "16,00 x 31,25 m", "Título/RGI (caso)"],
+    ["Testada", "16,00 m", "Título/RGI (caso)"],
+    ["Código do logradouro (CL)", "476218", "RIU oficial"],
+    ["Matrícula RGI", "000.002-TESTE", "Título (fictício)"],
+    ["Quadra / n. do PAA", "PENDENTE - não fornecido", "-"],
+    ["Zona / Subzona / AP", "ZRM2 subzona G / AP4", "RIU oficial"],
+    ["Uso pretendido", "Serviços II (S-II), CNAE 86.3", "Dec. 56.561/2025"],
+    ["Área pretendida (bruta)", "980,00 m2", "Pacote do Anteprojeto"],
+    ["Edificação a demolir", "140,00 m2 - Alvará 00000-TESTE/2005", "Averbação"],
+    ["Gabarito pretendido", "11,80 m", "Pacote do Anteprojeto"],
+    ["Área de projeção do térreo", "PENDENTE - não fornecida", "-"],
+    ["Áreas por pavimento", "PENDENTE - só há o total", "-"],
+    ["N. de vagas", "PENDENTE - análise PGV/CET-Rio", "-"]
+  ],
+
+  "quadro_parametros": [
+    ["PARÂMETRO", "EXIGIDO", "PROJETO", "SITUAÇÃO", "FONTE"],
+    ["CAB - Coef. Aprov. Básico", "0,6", "-", "referência", "LC 270/2024 Art. 345 §4 / RIU"],
+    ["CAM - Coef. Aprov. Máximo", "1,0  (=500,00 m2)", "980,00 m2", "NÃO CONFORME", "LC 270/2024 Anexo XXI / RIU"],
+    ["Taxa de Ocupação máxima", "50%  (=250,00 m2)", "PENDENTE", "não conferível", "LC 270/2024 Anexo XXI / RIU"],
+    ["Gabarito - afastado", "4 pav / 14,00 m", "11,80 m", "CONFORME", "LC 270/2024 Anexo XXI / RIU"],
+    ["Gabarito - não afastado", "4 pav / 14,00 m", "11,80 m", "CONFORME", "LC 270/2024 Anexo XXI / RIU"],
+    ["Afastamento frontal", "5,00 m", "5,00 m", "CONFORME", "LC 270/2024 Anexo XXI / RIU"],
+    ["Afastamento lateral", "conf. COES", "PENDENTE", "não conferível", "LC 198/2019 (COES)"],
+    ["Afastamento de fundos", "conf. COES", "PENDENTE", "não conferível", "LC 198/2019 (COES)"],
+    ["Lote mínimo", "360,00 m2", "500,00 m2", "CONFORME", "LC 270/2024 Anexo XXI / RIU"],
+    ["Testada mínima", "10,00 m", "16,00 m", "CONFORME", "LC 270/2024 Anexo XXI / RIU"],
+    ["ICS - Índice Comércio e Serviços", "0,3 do CAM", "-", "ver nota", "LC 270/2024 Art. 367"],
+    ["SMD - permeabilidade", "20% da área livre", "PENDENTE", "não conferível", "LC 270/2024 Art. 351-353"],
+    ["Vagas de estacionamento", "def. por PGV/CET-Rio", "PENDENTE", "não conferível", "LC 270/2024 Art. 368 §1 II"]
+  ],
+
+  "fonte_parametros": "Zona/subzona e parâmetros dimensionais confirmados em fonte oficial: Relatório de Informações Urbanísticas (RIU), mapas.rio.rj.gov.br, CL 476218, print oficial conferido por Claudemberg em 15/07/2026. A API ArcGIS pgeo3.rio.rj.gov.br foi REBAIXADA a indicativo de baixa confiança após erro de zoneamento confirmado neste mesmo lote (registrava ZRM3 O; o correto é ZRM2 G) e NÃO é usada como fonte desta prancha. Base legal: LC 270/2024 (Plano Diretor/LUOS), LC 198/2019 (COES), Decreto Rio 55.622/2025 (LICIN 2.0), Decreto Rio 56.561/2025 (usos por CNAE e zona). ICS: não se aplica a unidade de saúde por força do Art. 367 §1 I da LC 270/2024 - a verificar no caso concreto.",
+
+  "nao_conformidade": {
+    "titulo": "NÃO CONFORMIDADE GRAVE - COEFICIENTE DE APROVEITAMENTO MÁXIMO ESTOURADO",
+    "paragrafos": [
+      "CAM 1,0 x 500,00 m2 de terreno = 500,00 m2 de área total edificável máxima permitida por lei.",
+      "ÁREA PRETENDIDA PELO PROJETO: 980,00 m2 brutos.",
+      "EXCEDENTE: 480,00 m2 acima do máximo legal. O projeto pretende 1,96x o limite - quase o dobro.",
+      "Este achado NÃO se resolve por documentação, por reclassificação de uso nem por recálculo de vagas. Exige redimensionamento do projeto ou instrumento legal de aumento de potencial construtivo aplicável e vigente. Enquanto não resolvido, esta prancha NÃO deve ser protocolada.",
+      "PENDÊNCIAS BLOQUEANTES ADICIONAIS:"
+    ],
+    "bloqueantes": [
+      "PREO não identificado e sem ART/RRT emitida - o Anexo II (Declaração de Responsabilidade) do LICIN 2.0 não pode ser assinado (Decreto 55.622/2025, Art. 6 par. único).",
+      "Elevador com cabine 1,00 x 1,25 m, abaixo do mínimo de 1,10 x 1,40 m da ABNT NBR 9050:2020 para uso público/coletivo. Uso de saúde pode exigir dimensão maior (transporte de maca) - não confirmado.",
+      "Número de vagas indefinido: depende de análise de Polo Gerador de Viagens pela CET-Rio (LC 270/2024, Art. 368 §1 II). Não existe número pela LUOS para este uso.",
+      "AVCB/CBMERJ: nenhuma menção no pacote. Uso de saúde com público e múltiplos pavimentos tende a exigir PPCI compatibilizado antes da obra."
+    ],
+    "fonte": "Cálculo verificável: CAM 1,0 (LC 270/2024, Anexo XXI, AP4, ZRM2 G, confirmado via RIU oficial em 15/07/2026) x 500,00 m2 (área do terreno conforme título) = 500,00 m2. Área pretendida de 980,00 m2 conforme pacote do Anteprojeto. Divisão: 980,00 / 500,00 = 1,96.",
+    "instrumentos_afastados": [
+      "Operação Urbana Consorciada do Parque do Legado Olímpico Rio 2016 (LC 284/2025), Área Receptora Setor III-H: o pacote ampliado (CAM 3 / TO 30% / 12 pav-36 m) NÃO socorre este caso. O Art. 12, VI, alínea 'd' restringe literalmente o uso a 'residencial multifamiliar', sem a cláusula de abertura que outros subsetores da mesma lei possuem (III-C/D/E incluem comercial e serviços; III-A remete a LC 270/2024). O uso deste projeto é Serviços II (S-II).",
+      "Pendência lateral registrada, irrelevante para este caso mas relevante para casos futuros com uso residencial no mesmo setor: o Art. 51 da LC 284/2025 condiciona a vigência do Art. 12 à aprovação prévia do Masterplan e dos PAA/PAL substitutivos (Art. 21, I e III) - não verificado.",
+      "Faixa de contrapartida CAB-CAM (300,00 a 500,00 m2): mesmo integralmente utilizada e paga, para em 500,00 m2. Não alcança os 980,00 m2 pretendidos."
+    ]
+  },
+
+  "quadro_implantacao": [
+    ["AMARRAÇÃO", "PROJETO", "SITUAÇÃO"],
+    ["Afastamento frontal", "5,00 m", "CONFORME (min. 5,00 m)"],
+    ["Afastamento lateral esq.", "PENDENTE", "não fornecido"],
+    ["Afastamento lateral dir.", "PENDENTE", "não fornecido"],
+    ["Afastamento de fundos", "PENDENTE", "não fornecido"],
+    ["Projeção horizontal térreo", "PENDENTE", "TO não conferível"],
+    ["Regime adotado", "PENDENTE", "afastado / não afastado"],
+    ["Gabarito total", "11,80 m", "CONFORME (max. 14,00 m)"],
+    ["Acesso de veículos", "PENDENTE", "não fornecido"],
+    ["Acesso de pedestres", "PENDENTE", "não fornecido"],
+    ["Área a demolir", "140,00 m2", "Alvará 00000-TESTE/2005"]
+  ],
+
+  "pendencia_demolicao": [
+    "Não confirmado se demolição total + construção nova tramitam em um único DULI ou em dois processos formalmente separados (licença de demolição prévia e depois o LICIN da obra nova).",
+    "O Decreto 55.622/2025 não trata da hipótese expressamente. O Portal Carioca Digital descreve a licença de demolição como serviço próprio e separado, com documentação própria (fotos, ART/RRT do responsável pela demolição, declaração do Art. 3 do Decreto 23.235/2003, certidão de matrícula).",
+    "Sinalizado a Kelsen. Não presumo nenhum dos dois caminhos."
+  ],
+
+  "nota_cores": "Convenção de cores - fonte localizada e delimitada: o Decreto 55.622/2025, Anexo I, IV, item 2, determina amarelo para demolição, vermelho para construção nova ou existente a legalizar e preto para existente sem modificação, MAS o texto restringe a exigência a 'todo projeto de MODIFICAÇÃO'. Este caso é demolição total seguida de edificação nova, não modificação - a aplicabilidade da convenção permanece indefinida e depende da resposta à pendência acima.",
+
+  "pavimentos": [
+    {"nome": "SUBSOLO (GARAGEM)", "nota": "Área do pavimento: PENDENTE. Número e demarcação de vagas: PENDENTE - depende de análise PGV pela CET-Rio (LC 270/2024, Art. 368 §1 II). As 10 vagas em padrão residencial do Anteprojeto NÃO têm base legal para este uso. Vaga PcD: mínimo 2% do total, ao menos 1 (COES Art. 29 §2 III) - percentual não calculável sem o total."},
+    {"nome": "TÉRREO (RECEPÇÃO / FARMÁCIA)", "nota": "Área do pavimento: PENDENTE. Área de projeção horizontal: PENDENTE - sem ela a Taxa de Ocupação (max. 50% = 250,00 m2) NÃO é conferível. Elevador: cabine proposta 1,00 x 1,25 m, abaixo do mínimo NBR 9050:2020 (1,10 x 1,40 m) para uso público/coletivo - correção exigida antes do protocolo."},
+    {"nome": "PAVIMENTO 1 (CONSULTÓRIOS)", "nota": "Área do pavimento: PENDENTE. Distribuição de consultórios, circulação e saídas de emergência: dependem da geometria do Anteprojeto, não fornecida."},
+    {"nome": "PAVIMENTO 2 (CONSULTÓRIOS)", "nota": "Área do pavimento: PENDENTE. Distribuição de consultórios, circulação e saídas de emergência: dependem da geometria do Anteprojeto, não fornecida."}
+  ],
+
+  "cortes": [
+    {"nome": "CORTE AA - LONGITUDINAL", "nota": "Gabarito total pretendido 11,80 m (dado real do pacote). Pé-direito por pavimento, perfil natural do terreno, cota de soleira, nível do meio-fio e desnível do subsolo aflorado: PENDENTES - não fornecidos. O desnível do subsolo aflorado é determinante para o cálculo de ATE (LC 270/2024, Art. 346-347) e, portanto, para o próprio número de 980,00 m2."},
+    {"nome": "CORTE BB - TRANSVERSAL", "nota": "Mesmas pendências do Corte AA. A quantidade de cortes efetivamente exigida pelo órgão licenciador não está fixada no Decreto 55.622/2025 - os dois cortes aqui previstos seguem o roteiro do caso, não uma exigência normativa localizada."}
+  ],
+
+  "fachadas": [
+    {"nome": "FACHADA FRONTAL (RUA ESCRITOR ELIE WIESEL)", "nota": "Geometria e partido arquitetônico são do Anteprojeto do Estúdio Bruma Arquitetura e devem ser preservados integralmente. Não fornecidos a esta compilação."},
+    {"nome": "FACHADA LATERAL", "nota": "Geometria e partido arquitetônico são do Anteprojeto do Estúdio Bruma Arquitetura e devem ser preservados integralmente. Não fornecidos a esta compilação."}
+  ],
+
+  "divergencia_fachada": {
+    "titulo": "DIVERGÊNCIA ENTRE A BASE INTERNA E O DECRETO - DECISÃO DE KELSEN, NÃO MINHA",
+    "paragrafos": [
+      "A Planilha de Enviáveis Externos e o POP-ARQ-PL-01 listam 'Fachadas legais' como entregável do Projeto Legal. O Decreto Rio 55.622/2025, porém, não possui seção de fachadas no Anexo I (que enumera apenas TÍTULO, QUADRO DE ÁREAS, PLANTA DE SITUAÇÃO, PLANTAS DOS PAVIMENTOS e CORTES) e, na Condição Geral IV, item 1, declara textualmente: 'Não serão aceitas plantas baixas dos pavimentos, fachadas, e plantas com informações que não interfiram na análise da implantação e volumetria do prédio.'",
+      "Leitura possível: no LICIN 2.0 a análise é de implantação e volumetria, e a fachada pode não integrar - ou até ser recusada n - a peça protocolada. A redação do dispositivo admite mais de uma leitura sintática e eu NÃO decido qual prevalece.",
+      "Esta folha permanece compilada para não suprimir entregável previsto na base interna, com a divergência declarada em vez de silenciada (Princípio 8 - Rastreabilidade). Sinalizado a Kelsen para julgamento antes de qualquer protocolo real."
+    ]
+  },
+
+  "quadro_areas": {
+    "titulo": "QUADRO EXPLICATIVO DE ÁREAS - ANEXO III (EDIFICAÇÃO NOVA)",
+    "subtitulo": "Decreto Rio n. 55.622/2025, Art. 10 e Anexo III. Anexo III (não Anexo IV) porque a edificação não é residencial unifamiliar nem bifamiliar (Art. 10, par. único).",
+    "linhas": [
+      ["PAVIMENTO", "DESCRIÇÃO / USO", "ÁREA (m2)", "OBSERVAÇÃO"],
+      ["Subsolo", "Garagem", "PENDENTE", "não discriminada no pacote"],
+      ["Térreo", "Recepção / Farmácia", "PENDENTE", "não discriminada no pacote"],
+      ["Pavimento 1", "Consultórios - S-II CNAE 86.3", "PENDENTE", "não discriminada no pacote"],
+      ["Pavimento 2", "Consultórios - S-II CNAE 86.3", "PENDENTE", "não discriminada no pacote"],
+      ["TOTAL BRUTO PRETENDIDO", "-", "980,00", "único número de área fornecido"],
+      ["ATE - Área Total Edificada", "sujeita a cálculo", "PENDENTE", "depende do subsolo aflorado (Art. 346-347)"],
+      ["Máximo legal (CAM 1,0)", "500,00 m2", "500,00", "EXCEDIDO em 480,00 m2"],
+      ["Projeção horizontal (TO)", "max. 250,00 m2 (50%)", "PENDENTE", "não conferível"],
+      ["Varandas / terraços descobertos", "-", "PENDENTE", "não discriminados"],
+      ["Estacionamento coberto", "-", "PENDENTE", "não discriminado"],
+      ["Vagas de veículo", "-", "PENDENTE", "análise PGV/CET-Rio"]
+    ],
+    "fonte": "Área total de 980,00 m2 conforme pacote do Anteprojeto (único dado de área fornecido). Máximo legal calculado sobre CAM 1,0 x 500,00 m2, parâmetro do RIU oficial. Todas as demais linhas constam como PENDENTE porque o pacote não discrimina áreas por pavimento - nenhum valor foi estimado, rateado ou arredondado para preencher o quadro.",
+    "pendencia_subtabela": [
+      "O Anexo III do Decreto 55.622/2025 traz TRÊS subtabelas distintas: (1) residencial multifamiliar/grupamento/misto; (2) uso exclusivo/industrial; (3) edificação comercial.",
+      "Uma clínica com uso Serviços II admite enquadramento em (2) uso exclusivo ou em (3) edificação comercial, que pedem itens diferentes - (3) exige área privativa por unidade, jirau/mezanino, varandas/sacadas; (2) não.",
+      "O caso registrava 'Anexo III' sem escolher a subtabela. Não escolho sozinho: sinalizado a Kelsen."
+    ]
+  },
+
+  "termo_responsabilidade": "Os abaixo assinados, respectivamente, proprietário ou adquirente e autor do projeto, declaram que assumem, cada um, individualmente, total responsabilidade pela veracidade das informações contidas no quadro explicativo de áreas, sujeitando-se à aplicação das leis e regulamentos pertinentes, em caso de inexatidão dos dados declarados.  (Texto literal do Anexo III do Decreto Rio n. 55.622/2025.)",
+
+  "pendencia_assinaturas": [
+    "Campos de assinatura reproduzidos em branco DE PROPÓSITO. Este é material de teste - não deve ser assinado.",
+    "Num caso real, o Anexo II (Declaração de Responsabilidade) exige Requerente + PRPA + PREO assinando. O PREO deste caso não existe."
+  ],
+
+  "memorial": [
+    {"titulo": "1. IDENTIFICAÇÃO DO REQUERENTE E DO IMÓVEL",
+     "texto": "Requerente: Clínica TESTE-QA Bem-Estar Recreio Serviços Médicos LTDA., representada pela sócia-administradora Dra. Camila Herzog Prestes. Imóvel: Rua Escritor Elie Wiesel, n. 215, Recreio dos Bandeirantes, Rio de Janeiro/RJ, CEP 22790-672. Código de logradouro CL 476218. Matrícula RGI 000.002-TESTE. Terreno de 500,00 m2, com dimensões de 16,00 x 31,25 m. Número de quadra e n. do PAA: PENDENTES, não fornecidos. Todos os dados de identificação deste memorial são FICTÍCIOS - material de teste."},
+    {"titulo": "2. SITUAÇÃO ATUAL E SITUAÇÃO PRETENDIDA",
+     "texto": "Situação atual: casa residencial térrea existente, averbada com 140,00 m2, conforme Alvará n. 00000-TESTE/2005, a ser integralmente demolida. Situação pretendida: edificação nova destinada a clínica médica, com subsolo de garagem, térreo de recepção e farmácia e dois pavimentos de consultórios, com área bruta pretendida de 980,00 m2 e gabarito de 11,80 m. Por se tratar de demolição total seguida de construção nova, e não de modificação de edificação existente, o fechamento da obra se dará por Habite-se, e não por Aceitação de Obras, e o quadro de áreas aplicável é o do Anexo III, e não o do Anexo IV."},
+    {"titulo": "3. PARÂMETROS URBANÍSTICOS APLICADOS E FONTE",
+     "texto": "O lote situa-se em ZRM2, subzona G, Área de Planejamento 4, conforme Relatório de Informações Urbanísticas (RIU) oficial da SMDU, mapas.rio.rj.gov.br, para o CL 476218, conferido em 15/07/2026. Parâmetros: CAB 0,6; CAM 1,0; Taxa de Ocupação máxima 50%; gabarito de 4 pavimentos e 14,00 m em ambos os regimes, afastado e não afastado das divisas; afastamento frontal mínimo de 5,00 m; lote mínimo 360,00 m2; testada mínima 10,00 m; ICS 0,3 do CAM; SMD 20% da área livre. Base legal: Lei Complementar n. 270/2024 (Plano Diretor e LUOS), Lei Complementar n. 198/2019 (COES) e Decreto Rio n. 55.622/2025 (LICIN 2.0). Registro de rastreabilidade: consulta anterior por API ArcGIS indicou erroneamente ZRM3 subzona O para este lote; o erro foi corrigido por fonte oficial e a API foi rebaixada a indicativo de baixa confiança."},
+    {"titulo": "4. ENQUADRAMENTO DE USO",
+     "texto": "O uso pretendido enquadra-se como Uso de Serviços II (S-II), CNAE 86.3 - Atividades de atenção ambulatorial executadas por médicos e odontólogos, conforme Decreto Rio n. 56.561/2025 (Anexo IV, AP4) combinado com o Art. 338, inciso VIII, da LC 270/2024. Registra-se expressamente que NÃO se aplica a categoria 'Uso Institucional de interesse público' (Art. 338, XVI), reservada por texto legal a instituições de governo ou a entidades de cunho assistencial e religioso - a requerente é sociedade limitada com fins lucrativos. A expressão coloquial 'institucional de saúde' não corresponde a categoria formal alguma da legislação e não deve ser empregada, ainda que sugerida em exigência administrativa."},
+    {"titulo": "5. DESCRIÇÃO DO PARTIDO ARQUITETÔNICO",
+     "texto": "PENDENTE. O partido arquitetônico é de autoria do Estúdio Bruma Arquitetura, parceiro externo, e deve ser preservado integralmente nesta etapa, conforme o MEMORIAL DESCRITIVO - Projeto Legal ('toda a documentação deverá preservar integralmente a solução aprovada no Anteprojeto') e o POP-ARQ-PL-01. As peças gráficas do Anteprojeto não foram fornecidas a esta compilação. Nenhuma descrição de partido foi redigida por inferência."},
+    {"titulo": "6. QUADRO DE ÁREAS",
+     "texto": "Remete à folha 08 desta prancha. Registra-se que o quadro está preenchido com PENDENTE em todas as linhas de área por pavimento: o pacote fornece exclusivamente o total bruto de 980,00 m2. Nenhum valor foi estimado ou rateado para completar o quadro."},
+    {"titulo": "7. RESPONSÁVEIS TÉCNICOS",
+     "texto": "PRPA (Profissional Responsável pelo Projeto Arquitetônico): Arqto. Fábio Noronha Salgueiro, Estúdio Bruma Arquitetura, CAU A000001-1-TESTE, ART-TESTE-2026-0031 emitida. A assinatura como PRPA cabe a quem produziu o projeto arquitetônico - neste caso, o parceiro externo, não a Sttickler. PREO (Profissional Responsável pela Execução das Obras): NÃO IDENTIFICADO. Há pré-indicação informal, sem contrato e sem ART/RRT emitida. Sem PREO, a Declaração de Responsabilidade do Anexo II do Decreto 55.622/2025 não pode ser assinada e o protocolo não pode ser formalizado."},
+    {"titulo": "8. CONFORMIDADE LEGAL - DECLARAÇÃO EXPRESSA",
+     "texto": "Este Projeto Legal NÃO atende integralmente à legislação vigente na sua configuração atual. A área bruta pretendida de 980,00 m2 excede em 480,00 m2 o máximo legal de 500,00 m2 resultante do Coeficiente de Aproveitamento Máximo de 1,0 aplicado ao terreno de 500,00 m2, correspondendo a 1,96 vezes o limite. A Operação Urbana Consorciada do Parque do Legado Olímpico (LC 284/2025, Setor III-H) foi verificada e NÃO alcança este caso, por restrição literal de uso do Art. 12, VI, 'd', a residencial multifamiliar. Enquanto a não conformidade não for sanada por redimensionamento ou por instrumento legal aplicável e vigente, esta peça não está apta a protocolo."},
+    {"titulo": "9. PENDÊNCIAS DECLARADAS",
+     "texto": "São pendências ativas, listadas na folha 10: áreas discriminadas por pavimento; área de projeção horizontal do térreo e consequente aferição da Taxa de Ocupação; afastamentos lateral e de fundos; número de vagas, dependente de análise de Polo Gerador de Viagens pela CET-Rio; dimensão da cabine do elevador, hoje abaixo do mínimo da NBR 9050:2020; PREO e respectiva ART/RRT; AVCB/CBMERJ; forma de tramitação da demolição total, em DULI único ou em processo próprio; e escolha da subtabela aplicável do Anexo III. Nenhuma delas foi preenchida por estimativa."}
+  ],
+
+  "pendencias": [
+    ["#", "PENDÊNCIA", "EFEITO / RAZÃO", "NATUREZA"],
+    ["1", "Estouro de CAM: 980,00 m2 x 500,00 m2 máximo", "Não conformidade legal grave. Exige redimensionamento ou instrumento de potencial construtivo", "BLOQUEANTE - mérito"],
+    ["2", "PREO não identificado, sem ART/RRT", "Anexo II não assinável; protocolo inviável", "BLOQUEANTE - documental"],
+    ["3", "Áreas discriminadas por pavimento", "Quadro do Anexo III não preenchível; ATE não calculável", "BLOQUEANTE - dado de entrada"],
+    ["4", "Área de projeção horizontal do térreo", "Taxa de Ocupação (max. 50%) não conferível", "BLOQUEANTE - dado de entrada"],
+    ["5", "Afastamentos lateral e de fundos", "Conformidade com o COES não verificável; regime não definido", "BLOQUEANTE - dado de entrada"],
+    ["6", "Elevador 1,00 x 1,25 m", "Abaixo do mínimo NBR 9050:2020 (1,10 x 1,40 m) para uso público/coletivo", "BLOQUEANTE - acessibilidade"],
+    ["7", "Número de vagas", "Depende de análise PGV pela CET-Rio; não há número pela LUOS", "PENDENTE - órgão externo"],
+    ["8", "AVCB / CBMERJ", "Sem menção no pacote; uso de saúde tende a exigir PPCI compatibilizado", "PENDENTE - órgão externo"],
+    ["9", "Demolição: 1 DULI ou 2 processos", "Procedimento não confirmado em fonte oficial suficiente", "PENDENTE - pesquisa"],
+    ["10", "Subtabela do Anexo III aplicável", "Uso exclusivo x edificação comercial exigem itens diferentes", "PENDENTE - julgamento"],
+    ["11", "Fachadas: exigidas ou recusadas", "Base interna x Decreto 55.622/2025, Anexo I, IV, 1", "PENDENTE - julgamento"],
+    ["12", "Quadra e n. do PAA do lote", "Exigidos na planta de situação pelo Anexo I do Decreto", "PENDENTE - dado de entrada"],
+    ["13", "SMD / permeabilidade", "20% da área livre; área livre não conhecida", "PENDENTE - dado de entrada"],
+    ["14", "TODOS OS DESENHOS", "Placeholders. Nenhuma geometria do Anteprojeto foi fornecida", "BLOQUEANTE - dado de entrada"]
+  ],
+
+  "responsaveis": [
+    ["FUNÇÃO", "PROFISSIONAL", "REGISTRO"],
+    ["PRPA", "Arqto. Fábio Noronha Salgueiro - Estúdio Bruma Arquitetura", "CAU A000001-1-TESTE / ART-TESTE-2026-0031 emitida"],
+    ["PREO", "PENDENTE - não contratado", "PENDENTE - sem ART/RRT"],
+    ["Resp. demolição", "PENDENTE", "PENDENTE - ART/RRT própria exigida"],
+    ["Requerente", "Clínica TESTE-QA Bem-Estar Recreio Serviços Médicos LTDA.", "assinatura exigida no Anexo II"],
+    ["Coordenação", "Sttickler Empreendimentos - gestão administrativa do processo", "conforme MEMORIAL DESCRITIVO - Projeto Legal"]
+  ],
+
+  "bloqueio_protocolo": {
+    "titulo": "STATUS: NÃO APTA A PROTOCOLO",
+    "paragrafos": [
+      "Esta prancha é MATERIAL DE TESTE do organismo STTK, com dados fictícios e desenhos placeholder. Não pode ser protocolada em nenhuma hipótese.",
+      "Ainda que os dados fossem reais, o protocolo estaria vedado pelas pendências 1 a 6 e 14 acima."
+    ]
+  },
+
+  "rodape_rastreabilidade": "Compilado por Hely, Agente Executor do Projeto Legal da equipe do Gestor Legal (Kelsen), Organismo STTK - Sttickler Empreendimentos, em 21/07/2026, sob determinação de Claudemberg via Wallenberg. Gerado por código: _ferramentas/gerar_prancha_legal.py. Formato A1 paisagem (841 x 594 mm) conforme ABNT NBR 10068; registra-se que o Decreto Rio 55.622/2025 não fixa formato de prancha. Princípio 8 - Rastreabilidade; Princípio 18 - Ética e conformidade em primeiro lugar."
+}

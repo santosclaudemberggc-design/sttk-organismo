@@ -1,0 +1,416 @@
+<title>Kelsen — Proposta do Gestor Legal</title>
+<style>
+  @media (prefers-color-scheme: light) { :root { color-scheme: light; } }
+  @media (prefers-color-scheme: dark)  { :root { color-scheme: dark; } }
+
+  :root {
+    --paper: #F1ECE2;
+    --paper-raised: #E9E2D2;
+    --ink: #221F1C;
+    --ink-soft: #55504A;
+    --ink-faint: #8A8375;
+    --blueprint: #24476E;
+    --blueprint-soft: #6C87A6;
+    --blueprint-wash: #DCE4EC;
+    --ochre: #A66A2E;
+    --ochre-wash: #EEE0CE;
+    --line: #D3C9B6;
+    --good: #3F6B4A;
+    --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    --font-body: Seravek, "Gill Sans Nova", "Segoe UI", Calibri, sans-serif;
+    --font-mono: "Berkeley Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #17191C;
+      --paper-raised: #1E2124;
+      --ink: #EDE7DA;
+      --ink-soft: #ABA290;
+      --ink-faint: #716C60;
+      --blueprint: #7FA6D6;
+      --blueprint-soft: #45617F;
+      --blueprint-wash: #202B36;
+      --ochre: #D89A5C;
+      --ochre-wash: #2E2519;
+      --line: #34383D;
+      --good: #7FAF8B;
+    }
+  }
+  :root[data-theme="light"] {
+    --paper: #F1ECE2; --paper-raised: #E9E2D2; --ink: #221F1C; --ink-soft: #55504A; --ink-faint: #8A8375;
+    --blueprint: #24476E; --blueprint-soft: #6C87A6; --blueprint-wash: #DCE4EC; --ochre: #A66A2E; --ochre-wash: #EEE0CE;
+    --line: #D3C9B6; --good: #3F6B4A;
+  }
+  :root[data-theme="dark"] {
+    --paper: #17191C; --paper-raised: #1E2124; --ink: #EDE7DA; --ink-soft: #ABA290; --ink-faint: #716C60;
+    --blueprint: #7FA6D6; --blueprint-soft: #45617F; --blueprint-wash: #202B36; --ochre: #D89A5C; --ochre-wash: #2E2519;
+    --line: #34383D; --good: #7FAF8B;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16.5px;
+    line-height: 1.6;
+  }
+  ::selection { background: var(--blueprint-wash); color: var(--ink); }
+  a { color: var(--blueprint); }
+
+  .titleblock {
+    border-bottom: 2px solid var(--ink);
+    padding: 2.6rem clamp(1.25rem, 5vw, 3rem) 1.6rem;
+  }
+  .titleblock-grid {
+    max-width: 920px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: end;
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--blueprint);
+    margin: 0 0 0.6rem;
+  }
+  h1.name {
+    font-family: var(--font-display);
+    font-size: clamp(2.6rem, 7vw, 4.4rem);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    margin: 0;
+    text-wrap: balance;
+    line-height: 1.02;
+  }
+  .subtitle {
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    margin: 0.65rem 0 0;
+    max-width: 46ch;
+  }
+  .meta {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--ink-faint);
+    text-align: right;
+    line-height: 1.7;
+    white-space: nowrap;
+  }
+  .meta strong { color: var(--ink-soft); font-weight: 600; }
+
+  .layout {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 220px minmax(0, 760px);
+    gap: 0;
+    justify-content: center;
+  }
+  nav.index {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    padding: 2.4rem 1.25rem 2rem 1.25rem;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+  nav.index ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+  nav.index a {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    color: var(--ink-faint);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    border-left: 2px solid transparent;
+    padding-left: 0.7rem;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  nav.index a:hover { color: var(--ink); }
+
+  main {
+    padding: 2.6rem clamp(1.25rem, 5vw, 2.5rem) 6rem;
+    min-width: 0;
+  }
+
+  section { padding-top: 2.4rem; scroll-margin-top: 1rem; }
+  section + section { border-top: 1px solid var(--line); }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.9rem;
+    margin-bottom: 1.1rem;
+  }
+  .section-num {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--blueprint-soft);
+  }
+  h2 {
+    font-family: var(--font-display);
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h3 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 1.6rem 0 0.5rem;
+  }
+  p { margin: 0.7rem 0; max-width: 66ch; }
+  p.lede { font-size: 1.05rem; color: var(--ink-soft); max-width: 62ch; }
+  ul, ol.plain { margin: 0.6rem 0; padding-left: 1.3rem; }
+  ul li, ol.plain li { margin: 0.35rem 0; }
+  strong { color: var(--ink); font-weight: 650; }
+
+  .rule-box {
+    background: var(--ochre-wash);
+    border: 1px solid var(--ochre);
+    border-radius: 3px;
+    padding: 1.1rem 1.3rem;
+    margin: 1rem 0;
+  }
+  .rule-box .label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    margin: 0 0 0.4rem;
+  }
+  .rule-box p { margin: 0; max-width: none; color: var(--ink); }
+  .rule-box.blue { border-color: var(--blueprint); background: var(--blueprint-wash); }
+  .rule-box.blue .label { color: var(--blueprint); }
+
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0; }
+  .table-wrap table { margin: 0; min-width: 480px; }
+  th, td { text-align: left; padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--line); }
+  th { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-faint); font-weight: 600; }
+
+  .pill { display: inline-block; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.03em; padding: 0.15rem 0.55rem; border-radius: 2px; border: 1px solid currentColor; }
+  .pill.ready { color: var(--good); background: color-mix(in srgb, var(--good) 12%, transparent); }
+  .pill.build { color: var(--blueprint); background: var(--blueprint-wash); }
+  .pill.hard  { color: var(--ochre); background: var(--ochre-wash); }
+  .pill.pending { color: var(--ochre); background: var(--ochre-wash); }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1rem 0; }
+  .card { border: 1px solid var(--line); border-radius: 3px; padding: 1.1rem 1.2rem; }
+  .card h4 { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blueprint); margin: 0 0 0.5rem; }
+  .card .card-name { font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; margin: 0 0 0.3rem; }
+  .card ul { margin: 0.4rem 0 0; padding-left: 1.1rem; font-size: 0.92rem; }
+  .card p { font-size: 0.92rem; }
+
+  .open-item { display: flex; gap: 0.7rem; padding: 0.6rem 0; border-bottom: 1px dashed var(--line); align-items: baseline; }
+  .open-item:last-child { border-bottom: none; }
+  .open-item .dot { color: var(--ochre); font-family: var(--font-mono); }
+  .open-item p { margin: 0; font-size: 0.94rem; }
+
+  .princ { font-family: var(--font-mono); font-size: 0.68rem; color: var(--blueprint-soft); border: 1px solid var(--blueprint-soft); border-radius: 2px; padding: 0.05rem 0.4rem; margin-right: 0.3rem; display: inline-block; }
+
+  footer { max-width: 760px; margin: 0 auto; padding: 0 clamp(1.25rem, 5vw, 2.5rem) 4rem; font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-faint); }
+
+  @media (max-width: 880px) {
+    .layout { grid-template-columns: 1fr; }
+    nav.index { position: static; max-height: none; padding: 1.4rem clamp(1.25rem, 5vw, 2.5rem) 0; }
+    nav.index ol { flex-direction: row; flex-wrap: wrap; gap: 0.4rem 1rem; }
+    .titleblock-grid { grid-template-columns: 1fr; }
+    .meta { text-align: left; }
+    .two-col { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="titleblock">
+  <div class="titleblock-grid">
+    <div>
+      <p class="eyebrow">Sistema Orgânico STTK — Sttickler Empreendimentos · proposta de Wallenberg</p>
+      <h1 class="name">Kelsen</h1>
+      <p class="subtitle">Proposta completa do primeiro Gestor do organismo — Gestor Legal, responsável pelo Projeto Legal e pela base legislativa consultada por todo o fluxo.</p>
+    </div>
+    <div class="meta">
+      <div><strong>Status</strong> <span class="pill ready">aprovado</span></div>
+      <div><strong>Reunião</strong> segunda-feira, 13/07/2026 · 10:30</div>
+      <div><strong>Preparado por</strong> Wallenberg (função 02, Orquestrador)</div>
+      <div><strong>Aprovado por</strong> Claudemberg, 13/07/2026</div>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+  <nav class="index" aria-label="Índice">
+    <ol>
+      <li><a href="#porque">00 — Por que Legal primeiro</a></li>
+      <li><a href="#identidade">01 — Identidade</a></li>
+      <li><a href="#conhecimento">02 — Conhecimento</a></li>
+      <li><a href="#capacidade">03 — Capacidade</a></li>
+      <li><a href="#licin">04 — Como funciona na prática (LICIN 2.0)</a></li>
+      <li><a href="#equipe">05 — Equipe proposta</a></li>
+      <li><a href="#fluxo">06 — Onde ele entra no fluxo</a></li>
+      <li><a href="#teste">07 — Teste de contratação</a></li>
+      <li><a href="#pendencias">08 — Pendências pra segunda</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="porque">
+      <div class="section-head"><span class="section-num">00</span><h2>Por que Legal primeiro</h2></div>
+      <p class="lede">A ordem de construção dos 4 Gestores é decisão do próprio Wallenberg (<span class="princ">Princípio 13</span> autonomia com prestação de contas) — mas a razão não é arbitrária.</p>
+      <div class="rule-box blue">
+        <p class="label">Dependência obrigatória — Arquitetura precisa de Legal antes de existir de verdade</p>
+        <p>A equipe de Arquitetura tem que consultar a base legislativa do Gestor Legal <strong>desde o Levantamento</strong> — a primeira etapa do fluxo, não uma etapa intermediária (ajustado por Claudemberg na Reunião Semanal de 13/07/2026; a versão anterior desta proposta previa "antes do Estudo Preliminar"). Não é consulta livre, é pré-requisito desde o primeiro passo. Criar Arquitetura primeiro deixaria esse Gestor sem ter em quem se apoiar no primeiro dia. Legal nasce primeiro para que a base já exista quando o segundo Gestor for criado (<span class="princ">Princípio 9</span> Padronização de projetos).</p>
+      </div>
+    </section>
+
+    <section id="identidade">
+      <div class="section-head"><span class="section-num">01</span><h2>Identidade</h2></div>
+      <p class="lede"><strong>Kelsen</strong> — nome ainda sujeito à confirmação de Claudemberg na reunião.</p>
+      <p>Referência a <strong>Hans Kelsen</strong>, jurista austríaco criador da Teoria Pura do Direito e da "pirâmide de Kelsen" — a ideia de que todo sistema jurídico se organiza em camadas hierárquicas de validade, cada norma apoiada na que está acima dela. É exatamente o papel deste Gestor dentro do organismo: estruturar a base legal sobre a qual o resto do fluxo se apoia, com rigor e hierarquia claras.</p>
+      <table>
+        <tr><th>Campo</th><th>Definição</th></tr>
+        <tr><td>Papel</td><td>Gestor Legal — responsável pelo Projeto Legal (aprovação junto a Prefeitura/órgãos) e pela base legislativa do organismo.</td></tr>
+        <tr><td>Reporta a</td><td>Wallenberg (CEO)</td></tr>
+        <tr><td>Coordena</td><td>Equipe de Agentes própria — nomeada por ele mesmo, autorizada por Wallenberg</td></tr>
+        <tr><td>Regra de decisão</td><td>Mesma regra de ouro do organismo: nada estrutural sozinho — equipe própria só é aprovada na Reunião Semanal com Claudemberg + Wallenberg</td></tr>
+        <tr><td>Princípios centrais</td><td><span class="princ">18</span> Ética e conformidade em primeiro lugar · <span class="princ">8</span> Rastreabilidade de decisões · <span class="princ">9</span> Padronização de projetos</td></tr>
+      </table>
+      <p>Pesquisa externa (10/07/2026) confirma que esse papel já existe no mercado do Rio de Janeiro como área de negócio própria — empresas como a <a href="https://www.projetolegal.arq.br/" target="_blank" rel="noopener">Projeto Legal</a> vendem exatamente isso: estudo de viabilidade, elaboração do projeto de aprovação, consultoria de legislação e instrução do processo de licenciamento, como um serviço separado do projeto de arquitetura em si. Confirma que Legal como um Gestor próprio (e não uma sub-tarefa de Arquitetura) é como o mercado real já organiza esse trabalho.</p>
+    </section>
+
+    <section id="conhecimento">
+      <div class="section-head"><span class="section-num">02</span><h2>Conhecimento</h2></div>
+      <p class="lede">As Skills que Kelsen consulta — e a que ele próprio fornece para o resto do organismo.</p>
+      <div class="two-col">
+        <div class="card">
+          <h4>Fontes internas (Drive)</h4>
+          <ul>
+            <li><code>001_PROCEDIMENTOS</code> — POPs da pasta "Legal"</li>
+            <li><code>006_MEMORIAIS DESCRITIVOS</code> — pasta "Legal"</li>
+            <li><code>004_FORMULÁRIOS</code> / <code>005_PLANILHAS</code> — recorte "Construção Nova" de Legal</li>
+            <li><code>002_CETIFICAÇÃO</code> — consulta (Skill exclusiva de Wallenberg, função 10)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Pesquisa externa</h4>
+          <ul>
+            <li>Plano Diretor + LUOS (Legislação de Uso e Ocupação do Solo) do Rio</li>
+            <li>Código de Obras e Edificações Simplificado</li>
+            <li><strong>Decreto Rio nº 55.622/2025</strong> — institui o LICIN 2.0, o procedimento de licenciamento vigente (ver seção 04)</li>
+            <li>Resoluções CAU/CREA aplicáveis a aprovação legal</li>
+            <li>NBRs relevantes</li>
+            <li>Curada por Wallenberg (função 03, Cérebro), 1×/semana, sempre testada antes de virar Skill</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rule-box blue">
+        <p class="label">Skill que ele fornece — não só consome</p>
+        <p>A base legislativa mantida por Kelsen é consultada obrigatoriamente pelo Gestor Arquitetura desde o Levantamento, a primeira etapa do fluxo. É a única relação cross-Gestor já definida no organismo hoje (ver seção 00).</p>
+      </div>
+      <p>Achado da pesquisa (10/07/2026): o LICIN 2.0 é recente — decreto de janeiro de 2025 — o que reforça por que esta Skill precisa de manutenção ativa (Agente dedicado, ver seção 05) e não pode ser um documento estático: o procedimento de licenciamento muda, e um Estudo Preliminar desenhado sobre a versão errada gera retrabalho real.</p>
+    </section>
+
+    <section id="capacidade">
+      <div class="section-head"><span class="section-num">03</span><h2>Capacidade</h2></div>
+      <p class="lede">Legal é uma das 3 áreas que já <strong>produzem de verdade</strong> hoje — não só coordenam arquiteto parceiro.</p>
+      <table>
+        <tr><th>Frente</th><th>Situação</th><th>Detalhe</th></tr>
+        <tr><td>Produção do Projeto Legal</td><td><span class="pill ready">curto prazo</span></td><td>Mais compilação e checagem contra legislação do que modelagem — viável com IA hoje, junto com Interiores e Compatibilização.</td></tr>
+        <tr><td>ART/RRT</td><td><span class="pill ready">cobre com CAU 2026</span></td><td>Resolução CAU/BR nº 21/2012 dá ao arquiteto com CAU atribuição pra assinar RRT de Legal — Claudemberg assina pessoalmente, sem depender de CREA externo.</td></tr>
+      </table>
+    </section>
+
+    <section id="licin">
+      <div class="section-head"><span class="section-num">04</span><h2>Como funciona na prática (LICIN 2.0)</h2></div>
+      <p class="lede">Achado central da pesquisa externa (10/07/2026): o Rio de Janeiro já tem um procedimento oficial único pra tudo isso — o <strong>LICIN 2.0</strong> (Licenciamento Integrado de Edificações, Decreto Rio nº 55.622/2025). É sobre esse procedimento real que o Executor do Projeto Legal precisa trabalhar, não um genérico "protocolar na prefeitura".</p>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Etapa</th><th>O que acontece</th><th>Documento</th></tr>
+          <tr><td>1 — Requerimento</td><td>Interessado preenche o pedido online</td><td>DULI (Documento Único de Licenciamento Integrado, Anexo I) + Declaração de responsabilidade (Anexo II)</td></tr>
+          <tr><td>2 — Análise técnica</td><td>Técnico da SMDU confere se os parâmetros do projeto batem com a legislação — prazo de 30 dias</td><td>Análise interna SMDU</td></tr>
+          <tr><td>3 — Emissão</td><td>Se está tudo certo, sai a licença</td><td>Minuta da Licença + guia de arrecadação + Quadro Explicativo de Áreas (Anexo III ou IV) + Termo de Responsabilidade</td></tr>
+          <tr><td>Antes da obra começar</td><td>Confirma que o que foi licenciado bate com as liberações de outros órgãos (bombeiro, meio ambiente etc.)</td><td>Declaração de Compatibilidade (Anexo V)</td></tr>
+          <tr><td>Depois da obra pronta</td><td>Fecha o ciclo — reconhecimento oficial da edificação</td><td>Habite-se (unidade nova) ou Aceitação de Obras (modificação)</td></tr>
+        </table>
+      </div>
+      <div class="rule-box blue">
+        <p class="label">Depois da emissão — o laço até a Liberação de Obra (corrigido por Claudemberg, 13/07/2026)</p>
+        <p>Projeto Legal <strong>não passa por Compatibilização</strong> — essa etapa é checagem de interferência entre modelos técnicos (Estrutural × Elétrico × Hidro × Automação × Paisagismo × Interiores), e Legal não tem modelo, é aprovação documental junto à prefeitura. O caminho real é mais direto: se a prefeitura <strong>aprova</strong>, o processo segue direto pra fila de espera da <strong>Liberação de Obra (Gate 16)</strong>, já com o Habite-se emitido. Se a prefeitura <strong>recusa ou pede ajuste</strong>, o Executor faz as alterações e reenvia — laço iterativo até aprovar. As duas linhas do fluxo (Legal e os 6 Complementares via Compatibilização) só se encontram no Gate 16, cada uma contribuindo sua parte da documentação.</p>
+      </div>
+      <p><strong>Quem assina o quê:</strong> o próprio decreto nomeia dois responsáveis formais que declaram, sob pena de responder administrativa, civil e penalmente, que o projeto atende à legislação — <strong>PRPA</strong> (Profissional Responsável pelo Projeto Arquitetônico) e <strong>PREO</strong> (Profissional Responsável pela Execução das Obras), além do Requerente (dono do imóvel).</p>
+      <div class="rule-box blue">
+        <p class="label">Regra de assinatura PRPA — definida por Claudemberg em 13/07/2026</p>
+        <p>A assinatura de PRPA segue a <strong>autoria do projeto arquitetônico</strong>, não o Gestor Legal. Se o Estudo Preliminar/Anteprojeto for produzido por um Agente da própria estrutura Sttickler, <strong>Claudemberg assina</strong> (com o CAU, a partir de 2026). Se for produzido por um <strong>arquiteto parceiro externo</strong> — cenário padrão hoje, já que Arquitetura ainda só coordena o parceiro e não produz (ver [[sttickler_revit_capacidade]]) — a assinatura é de direito <strong>do parceiro</strong> que fez o projeto original. O Executor do Projeto Legal prepara todo o processo de licenciamento de qualquer forma, mas não decide quem assina.</p>
+      </div>
+    </section>
+
+    <section id="equipe">
+      <div class="section-head"><span class="section-num">05</span><h2>Equipe proposta</h2></div>
+      <p class="lede">Nomear a própria equipe é papel do Gestor, não de Wallenberg — mas como Kelsen ainda não existe oficialmente, este é um <strong>esboço inicial</strong> para dar algo concreto à conversa de hoje, agora ancorado no procedimento real (seção 04). Nome humanizado do Agente fica em aberto para o próprio Kelsen decidir, uma vez aprovado.</p>
+      <div class="rule-box blue">
+        <p class="label">Fusão decidida por Claudemberg, 13/07/2026</p>
+        <p>A proposta original tinha 2 Agentes separados — execução do processo de um lado, manutenção da base legislativa do outro. Claudemberg aplicou o próprio teste de contratação de volta: "você contrataria 2 funcionários pras duas funções, ou um só dá conta?" Resposta: <strong>um agente só</strong>. Executar o LICIN 2.0 corretamente já exige conhecer a fundo a legislação do bairro — separar as duas funções cria repasse artificial entre 2 agentes pro mesmo trabalho (o oposto do <span class="princ">Princípio 15</span>, Redundância zero).</p>
+      </div>
+      <div class="card" style="max-width: 100%;">
+        <h4>Agente único</h4>
+        <p class="card-name">Executor do Projeto Legal</p>
+        <p>Conduz o LICIN 2.0 de ponta a ponta — estudo de viabilidade, DULI + Anexos I/II, acompanhamento dos 30 dias de análise da SMDU, Quadro de Áreas e Termo de Responsabilidade na emissão, laço de ajuste/reenvio se a prefeitura recusar, Declaração de Compatibilidade antes da obra, e instrução até o Habite-se — <strong>e</strong> mantém viva a base legislativa que sustenta esse trabalho: Plano Diretor, LUOS, Código de Obras, o decreto do LICIN 2.0, resoluções CAU/CREA e NBRs, com granularidade por <strong>bairro/sub-prefeitura</strong> (Área de Planejamento, Região Administrativa) — a mesma regra que vale pro Recreio pode não valer pra Barra.</p>
+        <ul>
+          <li>Capacidade: produz de verdade</li>
+          <li>Consome: POPs + Memoriais de Legal, pesquisa externa curada por Wallenberg</li>
+          <li>Depende de: dados do projeto arquitetônico (Estudo Preliminar/Anteprojeto)</li>
+          <li>Fornece: Skill cross-Gestor obrigatória para Arquitetura, desde o Levantamento</li>
+          <li>Trabalha junto ao PRPA (Claudemberg ou o parceiro que fez o projeto arquitetônico, conforme regra da seção 04) — prepara, mas não assina</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="fluxo">
+      <div class="section-head"><span class="section-num">06</span><h2>Onde ele entra no fluxo</h2></div>
+      <p class="lede">Fluxo corrigido em 13/07/2026: Arquitetura (Levantamento → Briefing → Estudo Preliminar → Anteprojeto) bifurca em duas linhas <strong>independentes</strong> — Projeto Legal de um lado, os 6 Complementares (que convergem em Compatibilização) do outro. Elas só se encontram de novo no Gate 16.</p>
+      <ul>
+        <li><strong>Recebe</strong> de Arquitetura: dados do Estudo Preliminar/Anteprojeto para montar o processo de aprovação.</li>
+        <li><strong>Fornece</strong> a Arquitetura: base legislativa por bairro/sub-prefeitura, como pré-requisito desde o <strong>Levantamento</strong> — a primeira etapa do fluxo.</li>
+        <li><strong>Entrega</strong> ao fluxo: <strong>não passa por Compatibilização.</strong> Segue direto pra fila de espera da Liberação de Obra (Gate 16) quando a prefeitura aprova, já com o Habite-se; se recusar, ajusta e reenvia.</li>
+        <li><strong>Documentos por etapa</strong> (padrão do fluxograma): POP (amarelo) + Formulário de Validação da Coordenação (verde) + Formulário de Aprovação do Cliente (azul).</li>
+      </ul>
+    </section>
+
+    <section id="teste">
+      <div class="section-head"><span class="section-num">07</span><h2>Teste de contratação</h2></div>
+      <p class="lede">Rodada 2, aplicada por Claudemberg em cima da minha própria proposta inicial de 2 Agentes.</p>
+      <div class="open-item"><span class="dot">→</span><p><strong>"Você contrataria 2 funcionários pras duas funções, ou um só dá conta?"</strong> Um só dá conta — executar o LICIN 2.0 já exige saber a legislação do bairro a fundo, então separar execução de pesquisa legislativa criava 2 headcounts pro mesmo domínio de trabalho. Fundidos em um Agente único (seção 05).</p></div>
+      <div class="open-item"><span class="dot">→</span><p><strong>Executor do Projeto Legal (fundido):</strong> nenhum outro Agente do organismo produz aprovação legal nem mantém a base legislativa consultável por outro Gestor — função exclusiva, sem sobreposição (<span class="princ">Princípio 15</span> Redundância zero). Passa no teste.</p></div>
+    </section>
+
+    <section id="pendencias">
+      <div class="section-head"><span class="section-num">08</span><h2>Pendências para segunda-feira</h2></div>
+      <p class="lede">Nada aqui é oficial até aprovação de Claudemberg na Reunião Semanal — regra de ouro do organismo.</p>
+      <div class="open-item"><span class="dot">✓</span><p><strong>Nome aprovado</strong> — Kelsen, 13/07/2026.</p></div>
+      <div class="open-item"><span class="dot">✓</span><p><strong>Equipe aprovada</strong> — 1 Agente único (Executor do Projeto Legal, fundido), com os ajustes de Claudemberg (base por bairro/sub-prefeitura; alinhamento com Arquitetura desde o Levantamento; fusão dos 2 papéis em 1), 13/07/2026.</p></div>
+      <div class="open-item"><span class="dot">→</span><p>Nome humanizado do Agente: <strong>não é decisão de Wallenberg</strong> — fica para o próprio Kelsen escolher, depois de oficialmente implantado (regra de nomeação em cascata).</p></div>
+      <div class="open-item"><span class="dot">✓</span><p><strong>Regra de assinatura PRPA definida</strong> — segue autoria do projeto arquitetônico (Claudemberg se for Agente interno; parceiro externo se for ele quem produziu), 13/07/2026.</p></div>
+      <div class="open-item"><span class="dot">✓</span><p><strong>Kelsen aprovado</strong> como primeiro Gestor oficial do organismo, 13/07/2026. Próximo passo: preparar a proposta do Gestor Arquitetura para uma próxima reunião.</p></div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  Sistema Orgânico STTK — proposta preparada por Wallenberg em 10/07/2026, para decisão na Reunião Semanal de 13/07/2026. Pesquisa externa: <a href="https://www.projetolegal.arq.br/" target="_blank" rel="noopener">projetolegal.arq.br</a>, <a href="https://carioca.rio/servicos/licenca-para-construcao-ou-modificacao-de-edificacao-licin/" target="_blank" rel="noopener">Portal Carioca Digital — LICIN</a>, <a href="https://www.normasbrasil.com.br/norma/decreto-55622-2025-rio-de-janeiro-rj_471595.html" target="_blank" rel="noopener">Decreto Rio nº 55.622/2025</a>, <a href="https://caubr.gov.br/a-importancia-do-responsavel-tecnico-em-obras-de-construcao-civil/" target="_blank" rel="noopener">CAU/BR — Responsável Técnico</a>.
+</footer>

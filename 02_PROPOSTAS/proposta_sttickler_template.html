@@ -1,0 +1,452 @@
+<title>Proposta Orçamentária — Sttickler Empreendimentos</title>
+<style>
+  @media (prefers-color-scheme: light) { :root { color-scheme: light; } }
+  @media (prefers-color-scheme: dark)  { :root { color-scheme: dark; } }
+
+  :root {
+    --paper: #F6F1E9;
+    --paper-deep: #ECE3D2;
+    --ink: #241F1A;
+    --ink-soft: #6B6154;
+    --ink-faint: #A0937A;
+    --brass: #9C6B32;
+    --brass-deep: #7A4F22;
+    --brass-wash: #EFE1CC;
+    --pine: #2F4A3B;
+    --pine-wash: #E1E8E2;
+    --line: #DDD2BC;
+    --font-display: "Big Caslon", Didot, "Bodoni MT", "Playfair Display", Georgia, serif;
+    --font-body: Optima, Candara, "Century Gothic", Corbel, sans-serif;
+    --font-data: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #171410; --paper-deep: #201C16; --ink: #F1E9DA; --ink-soft: #B3A791; --ink-faint: #6E6553;
+      --brass: #C89257; --brass-deep: #9C6B32; --brass-wash: #2B2115; --pine: #6B9B82; --pine-wash: #1B2620;
+      --line: #3A332A;
+    }
+  }
+  :root[data-theme="light"] {
+    --paper: #F6F1E9; --paper-deep: #ECE3D2; --ink: #241F1A; --ink-soft: #6B6154; --ink-faint: #A0937A;
+    --brass: #9C6B32; --brass-deep: #7A4F22; --brass-wash: #EFE1CC; --pine: #2F4A3B; --pine-wash: #E1E8E2; --line: #DDD2BC;
+  }
+  :root[data-theme="dark"] {
+    --paper: #171410; --paper-deep: #201C16; --ink: #F1E9DA; --ink-soft: #B3A791; --ink-faint: #6E6553;
+    --brass: #C89257; --brass-deep: #9C6B32; --brass-wash: #2B2115; --pine: #6B9B82; --pine-wash: #1B2620; --line: #3A332A;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.65; }
+  ::selection { background: var(--brass-wash); color: var(--ink); }
+  img { max-width: 100%; }
+
+  .placeholder-banner {
+    background: var(--pine);
+    color: var(--pine-wash);
+    text-align: center;
+    font-family: var(--font-data);
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 1rem;
+  }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    padding: clamp(4rem, 12vw, 7rem) clamp(1.5rem, 6vw, 3rem) clamp(3rem, 8vw, 5rem);
+    text-align: center;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse at top, var(--brass-wash) 0%, transparent 60%),
+      var(--paper);
+  }
+  .hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 64px 64px;
+    opacity: 0.25;
+    mask-image: linear-gradient(to bottom, black, transparent 75%);
+  }
+  .hero-inner { position: relative; max-width: 720px; margin: 0 auto; }
+  .hero .mark { font-family: var(--font-data); font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brass-deep); margin: 0 0 1.6rem; }
+  .hero h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(2.6rem, 8vw, 4.6rem); line-height: 1.04; margin: 0; text-wrap: balance; }
+  .hero .rule { width: 64px; height: 2px; background: var(--brass); margin: 1.6rem auto; border: none; }
+  .hero p.tag { color: var(--ink-soft); font-size: 1.08rem; max-width: 42ch; margin: 0 auto; }
+  .hero .fields {
+    margin: 2.6rem auto 0;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    gap: 0.4rem 1.4rem;
+    text-align: left;
+    font-family: var(--font-data);
+    font-size: 0.8rem;
+  }
+  .hero .fields dt { color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.04em; }
+  .hero .fields dd { margin: 0; color: var(--ink); }
+
+  main { max-width: 760px; margin: 0 auto; padding: 0 clamp(1.5rem, 6vw, 2.5rem) 6rem; }
+
+  section { padding-top: 4rem; }
+  section.divider { border-top: 1px solid var(--line); }
+
+  .kicker { font-family: var(--font-data); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brass-deep); margin: 0 0 0.6rem; }
+  h2 { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.9rem, 5vw, 2.5rem); margin: 0 0 1rem; text-wrap: balance; }
+  h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.3rem; margin: 0 0 0.4rem; }
+  p { margin: 0.7rem 0; max-width: 62ch; color: var(--ink); }
+  p.lede { color: var(--ink-soft); font-size: 1.06rem; max-width: 58ch; }
+
+  .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem; margin-top: 1.6rem; }
+  .feature { border-top: 1px solid var(--brass); padding-top: 0.8rem; }
+  .feature h4 { font-family: var(--font-body); font-weight: 700; font-size: 0.98rem; margin: 0 0 0.35rem; }
+  .feature p { font-size: 0.92rem; color: var(--ink-soft); margin: 0; }
+
+  .img-slot {
+    aspect-ratio: 4 / 3;
+    background:
+      repeating-linear-gradient(135deg, transparent, transparent 10px, var(--line) 10px, var(--line) 11px),
+      var(--paper-deep);
+    border: 1px dashed var(--brass-deep);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+  }
+  .img-slot span { font-family: var(--font-data); font-size: 0.68rem; letter-spacing: 0.02em; color: var(--brass-deep); max-width: 20ch; }
+  .img-slot.wide { aspect-ratio: 16 / 7; }
+
+  .portfolio-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem 1.4rem; margin-top: 1.8rem; }
+  .portfolio-item h4 { font-family: var(--font-display); font-weight: 400; font-size: 1.15rem; margin: 0.8rem 0 0.15rem; }
+  .portfolio-item p { font-size: 0.86rem; color: var(--ink-faint); margin: 0; }
+
+  .full-image { margin: 2.2rem 0; }
+  .full-image figcaption { font-family: var(--font-data); font-size: 0.68rem; color: var(--ink-faint); text-align: center; margin-top: 0.6rem; }
+
+  .adv-list { list-style: none; margin: 1.4rem 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem 1.6rem; }
+  .adv-list li { font-size: 0.94rem; padding-left: 1.3rem; position: relative; }
+  .adv-list li::before { content: "—"; position: absolute; left: 0; color: var(--brass); }
+
+  @media (max-width: 640px) { .portfolio-grid { grid-template-columns: 1fr; } .adv-list { grid-template-columns: 1fr; } }
+
+  .stage {
+    display: grid;
+    grid-template-columns: 3.2rem 1fr;
+    gap: 1.1rem;
+    padding: 1.6rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .stage:first-of-type { padding-top: 0.4rem; }
+  .stage-num { font-family: var(--font-display); font-size: 1.5rem; color: var(--brass); line-height: 1; padding-top: 0.15rem; }
+  .stage h3 { margin-bottom: 0.15rem; }
+  .stage .duration { font-family: var(--font-data); font-size: 0.74rem; color: var(--ink-faint); margin: 0 0 0.6rem; }
+  .stage p.desc { font-size: 0.95rem; color: var(--ink-soft); }
+  .stage .deliverables { margin: 0.6rem 0 0; padding-left: 1.1rem; font-size: 0.9rem; columns: 2; column-gap: 1.4rem; }
+  .stage .deliverables li { margin: 0.15rem 0; break-inside: avoid; }
+
+  .table-wrap { overflow-x: auto; margin: 1.4rem 0; border: 1px solid var(--line); border-radius: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 620px; }
+  th, td { text-align: left; padding: 0.7rem 1rem; border-bottom: 1px solid var(--line); }
+  thead th { font-family: var(--font-data); font-size: 0.66rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-faint); background: var(--paper-deep); font-weight: 600; }
+  td.num, th.num { text-align: right; font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+  tbody tr:last-child td { border-bottom: none; }
+  tr.total td { border-top: 2px solid var(--ink); font-weight: 700; background: var(--paper-deep); }
+  .note {
+    margin-top: 1.2rem; padding: 0.9rem 1.1rem;
+    border-left: 3px solid var(--brass);
+    background: var(--brass-wash);
+    font-size: 0.9rem; color: var(--ink);
+  }
+  .note strong { color: var(--brass-deep); }
+
+  .terms-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; margin-top: 1.4rem; }
+  .terms-grid ul { margin: 0.4rem 0 0; padding-left: 1.1rem; font-size: 0.93rem; }
+
+  footer { max-width: 760px; margin: 0 auto; padding: 3rem clamp(1.5rem, 6vw, 2.5rem) 4rem; border-top: 1px solid var(--line); text-align: center; }
+  footer .brand { font-family: var(--font-display); font-size: 1.3rem; }
+  footer .cnpj { font-family: var(--font-data); font-size: 0.7rem; color: var(--ink-faint); margin-top: 0.5rem; }
+
+  @media (max-width: 640px) {
+    .feature-grid { grid-template-columns: 1fr; }
+    .terms-grid { grid-template-columns: 1fr; }
+    .stage { grid-template-columns: 2.4rem 1fr; }
+    .stage .deliverables { columns: 1; }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-inner { animation: settle 0.7s cubic-bezier(.2,.7,.3,1) both; }
+    @keyframes settle { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  }
+</style>
+
+<div class="placeholder-banner">MODELO — campos entre colchetes e valores da tabela são ilustrativos, substituir por projeto real</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="mark">Sttickler Empreendimentos</p>
+    <h1>Proposta<br>Orçamentária</h1>
+    <hr class="rule">
+    <p class="tag">Projeto de arquitetura, complementares e interiores para transformar seu terreno em um lugar para viver.</p>
+    <dl class="fields">
+      <dt>Cliente</dt><dd>[Nome do Cliente]</dd>
+      <dt>Imóvel</dt><dd>[Endereço / Condomínio — Bairro, Rio de Janeiro]</dd>
+      <dt>Data</dt><dd>[DD de mês de AAAA]</dd>
+    </dl>
+    <div class="img-slot wide" style="margin-top:2.4rem"><span>[Foto de capa — render ou foto do terreno/projeto]</span></div>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <p class="kicker">Como trabalhamos</p>
+    <h2>Tecnologia a serviço da sua obra</h2>
+    <p class="lede">Cada projeto respeita as necessidades do cliente, explorando o potencial máximo do terreno com os melhores profissionais, softwares e plataformas de modelagem 3D do mercado.</p>
+    <div class="feature-grid">
+      <div class="feature"><h4>Modelagem BIM</h4><p>Todo o projeto em tecnologia BIM, explorando modelos 3D completos — mobília, decoração, vegetação.</p></div>
+      <div class="feature"><h4>Fotorrealismo</h4><p>Materiais exportados em alta definição, com renderização de última geração.</p></div>
+      <div class="feature"><h4>Realidade Virtual</h4><p>Veja sua casa antes de existir — passeio 360° com óculos de RV pelos ambientes.</p></div>
+      <div class="feature"><h4>Área do Cliente</h4><p>Acompanhamento com acesso a documentos, orçamentos, projetos e diário de obra.</p></div>
+      <div class="feature"><h4>Vídeo do Projeto</h4><p>A imagem ideal do seu projeto transformada em vídeo, com percepção real de espaço e materiais.</p></div>
+      <div class="feature"><h4>Monitoramento da Obra</h4><p>Câmeras em tempo real na obra — segurança e acompanhamento contínuo, onde você estiver.</p></div>
+    </div>
+  </section>
+
+  <section class="divider">
+    <p class="kicker">Portfólio</p>
+    <h2>Projetos que já ganharam vida</h2>
+    <p class="lede">Uma seleção de obras entregues pela Sttickler — substitua pelos projetos reais antes de enviar ao cliente.</p>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <div class="img-slot"><span>[Foto — fachada, projeto concluído]</span></div>
+        <h4>[Nome do Projeto]</h4>
+        <p>[Bairro, Rio de Janeiro — XXX m²]</p>
+      </div>
+      <div class="portfolio-item">
+        <div class="img-slot"><span>[Foto — área de estar / interiores]</span></div>
+        <h4>[Nome do Projeto]</h4>
+        <p>[Bairro, Rio de Janeiro — XXX m²]</p>
+      </div>
+      <div class="portfolio-item">
+        <div class="img-slot"><span>[Foto — vista aérea / paisagismo]</span></div>
+        <h4>[Nome do Projeto]</h4>
+        <p>[Bairro, Rio de Janeiro — XXX m²]</p>
+      </div>
+      <div class="portfolio-item">
+        <div class="img-slot"><span>[Foto — obra em execução]</span></div>
+        <h4>[Nome do Projeto]</h4>
+        <p>[Bairro, Rio de Janeiro — XXX m²]</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="divider">
+    <p class="kicker">O caminho do projeto</p>
+    <h2>Do levantamento à liberação de obra</h2>
+    <p class="lede">Cada etapa tem prazo, entregável e responsável definidos. As marcadas como serviço próprio são executadas diretamente pela Sttickler — as demais, por um arquiteto parceiro escolhido por você na tabela de investimento.</p>
+
+    <div class="stage">
+      <div class="stage-num">01</div>
+      <div>
+        <h3>Levantamento Topográfico / Sondagem</h3>
+        <p class="duration">10 dias</p>
+        <p class="desc">Localização do terreno, limites e características do solo — base técnica de todo o projeto.</p>
+        <ul class="deliverables"><li>Levantamento do terreno</li><li>Levantamento topográfico</li><li>Levantamento fotográfico</li><li>Digitalização da planta</li><li>Sondagem mecânica do solo</li></ul>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-num">02</div>
+      <div>
+        <h3>Briefing Arquitetônico</h3>
+        <p class="duration">5 dias úteis, a contar da conclusão do Levantamento</p>
+        <p class="desc">A etapa que menos aparece e mais define o projeto: transforma o que você deseja em requisitos técnicos objetivos. Sem um briefing bem feito, todo o resto — Estudo Preliminar, Anteprojeto, Interiores — corre o risco de nascer desalinhado com o que você realmente queria.</p>
+        <ul class="deliverables"><li>Questionário de Briefing Sttickler respondido</li><li>Painel de Referências (moodboard)</li><li>Caderno de Briefing consolidado</li></ul>
+      </div>
+    </div>
+
+    <figure class="full-image"><div class="img-slot wide"><span>[Render 3D — Estudo Preliminar]</span></div><figcaption>Cada Estudo Preliminar é apresentado com imagens ilustrativas da fachada antes da aprovação</figcaption></figure>
+
+    <div class="stage">
+      <div class="stage-num">03</div>
+      <div>
+        <h3>Projeto de Arquitetura — Estudo Preliminar e Anteprojeto</h3>
+        <p class="duration">15 dias úteis (Estudo Preliminar, a contar da conclusão do Briefing) + 45 dias úteis (Anteprojeto, a contar da aprovação do Estudo Preliminar)</p>
+        <p class="desc">Com o Briefing em mãos, o conceito ganha forma, é refinado em solução técnica completa e aprovado por você antes de avançar. <strong>O Projeto Executivo (detalhamento máximo pra obra) está incluído no escopo desta etapa</strong> — não é cobrado à parte.</p>
+        <ul class="deliverables"><li>Estudo de conceito e layout</li><li>Elevações e fachadas ilustrativas</li><li>Planta de layout humanizado definitivo</li><li>Planta de iluminação e tomadas</li><li>Planta de cobertura</li></ul>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-num">04</div>
+      <div>
+        <h3>Projeto Legal</h3>
+        <p class="duration">Mín. 30 dias úteis após o Projeto Básico</p>
+        <p class="desc">Adequação às leis, códigos e normas técnicas dos órgãos públicos — projeto regularizado e pronto para avançar sem risco.</p>
+        <ul class="deliverables"><li>Planta de situação com quadro de áreas</li><li>Plantas baixas de todos os níveis</li><li>Planta de cobertura</li><li>Cortes e fachadas legais</li></ul>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-num">05</div>
+      <div>
+        <h3>Projeto Estrutural</h3>
+        <p class="duration">Em paralelo aos demais complementares, 60 dias úteis a contar da aprovação do Anteprojeto</p>
+        <p class="desc">Tipologia estrutural, fundações e dimensionamento — segurança e estabilidade compatibilizadas com o restante do projeto.</p>
+        <ul class="deliverables"><li>Planta de fôrmas e armações</li><li>Planta de fundação</li><li>Memorial de cálculo</li><li>Quadro de cargas e quantitativos</li></ul>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-num">06</div>
+      <div>
+        <h3>Projeto Elétrico</h3>
+        <p class="duration">Em paralelo aos demais complementares, 60 dias úteis a contar da aprovação do Anteprojeto</p>
+        <p class="desc">Segurança, desempenho e conformidade normativa (NBR 5410), integrado à automação.</p>
+        <ul class="deliverables"><li>Planta de pontos e iluminação</li><li>Diagrama unifilar</li><li>Dimensionamento de cabos e disjuntores</li><li>Planilha de carga</li></ul>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-num">07</div>
+      <div>
+        <h3>Projeto Hidrossanitário</h3>
+        <p class="duration">Em paralelo aos demais complementares, 60 dias úteis a contar da aprovação do Anteprojeto</p>
+        <p class="desc">Água fria e quente, esgoto e drenagem pluvial — compatibilizado com estrutura e elétrico.</p>
+        <ul class="deliverables"><li>Planta de água fria/quente e esgoto</li><li>Planta de águas pluviais</li><li>Detalhamento de reservatórios e prumadas</li></ul>
+      </div>
+    </div>
+
+    <figure class="full-image"><div class="img-slot wide"><span>[Render 3D — ambiente de interiores finalizado]</span></div><figcaption>Duas imagens 3D por ambiente entram no Memorial Descritivo de Interiores</figcaption></figure>
+
+    <div class="stage">
+      <div class="stage-num">08</div>
+      <div>
+        <h3>Projeto de Interiores</h3>
+        <p class="duration">90 dias úteis, a contar da aprovação do anteprojeto</p>
+        <p class="desc">O imóvel ganha identidade — materiais, cores e mobiliário pensados para conforto e bem-estar.</p>
+        <ul class="deliverables"><li>Memorial descritivo</li><li>Planta de layout com detalhamento</li><li>Detalhamento de marcenaria</li><li>Mood board e 3D dos ambientes</li></ul>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-num">09</div>
+      <div>
+        <h3>Projeto de Automação</h3>
+        <p class="duration">30 dias úteis, em paralelo ao Projeto de Interiores</p>
+        <p class="desc">Controle inteligente de iluminação, climatização, cortinas e áudio — inclui os pontos de CFTV e telefonia da residência.</p>
+        <ul class="deliverables"><li>Planta de pontos de automação</li><li>Diagrama de rede e comunicação</li><li>Planilha de equipamentos</li></ul>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-num">10</div>
+      <div>
+        <h3>Projeto de Paisagismo</h3>
+        <p class="duration">30 dias úteis, a contar da aprovação de interiores</p>
+        <p class="desc">Áreas externas com espécies, canteiros e circulação pensados para harmonia e sustentabilidade.</p>
+        <ul class="deliverables"><li>Planta baixa com distribuição de espécies</li><li>Memorial botânico</li><li>Lista de espécies e quantitativo</li></ul>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-num">11</div>
+      <div>
+        <h3>Compatibilização de Projetos</h3>
+        <p class="duration">Após aprovação de todos os projetos técnicos</p>
+        <p class="desc">Auditoria cruzada entre arquitetura, estrutura, elétrico, hidrossanitário e automação — elimina interferências antes da obra começar. Nenhuma obra é liberada com pendência de compatibilização.</p>
+        <ul class="deliverables"><li>Verificação de shafts e prumadas</li><li>Verificação de pé-direito útil</li><li>Verificação de passagens em vigas e lajes</li><li>Relatório de interferências</li></ul>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-num">12</div>
+      <div>
+        <h3>Projeto Executivo</h3>
+        <p class="duration">60 dias úteis após a conclusão do Projeto Básico</p>
+        <p class="desc">Detalhamento máximo para execução — integra arquitetura e complementares em informações precisas de obra. <strong>Incluído no valor do Projeto de Arquitetura</strong> na tabela de investimento — não é uma linha à parte.</p>
+        <ul class="deliverables"><li>Plantas definitivas cotadas</li><li>Planta de teto refletido</li><li>Detalhamento de esquadrias e bancadas</li><li>Planta de paginação de revestimentos</li></ul>
+      </div>
+    </div>
+
+    <p class="note"><strong>Orçamento Executivo de Obra</strong> é precificado numa proposta própria, depois do Projeto Executivo compatibilizado — é o que define o custo real da construção, com cotação mínima de 3 fornecedores homologados para itens de alto valor. Por depender do projeto já pronto, entra numa segunda proposta, não nesta tabela.</p>
+  </section>
+
+  <section class="divider">
+    <p class="kicker">Seu investimento</p>
+    <h2>Escolha o parceiro do seu projeto</h2>
+    <p class="lede">Independente da sua escolha, o parceiro trabalha sob gerência e fiscalização da Sttickler — prazos e especificações são de nossa responsabilidade.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Serviço</th><th class="num">Parceiro A</th><th class="num">Parceiro B</th><th class="num">Parceiro C</th></tr></thead>
+        <tbody>
+          <tr><td>Projeto de Arquitetura <span style="color:var(--ink-faint); font-size:0.8em">(inclui Executivo)</span></td><td class="num">32.500,00</td><td class="num">35.900,00</td><td class="num">61.200,00</td></tr>
+          <tr><td>Projeto Estrutural</td><td class="num">14.800,00</td><td class="num">16.400,00</td><td class="num">17.100,00</td></tr>
+          <tr><td>Projeto Elétrico</td><td class="num">9.200,00</td><td class="num">10.600,00</td><td class="num">10.900,00</td></tr>
+          <tr><td>Projeto Hidrossanitário</td><td class="num">8.700,00</td><td class="num">9.400,00</td><td class="num">9.900,00</td></tr>
+          <tr><td>Projeto Legal</td><td class="num">2.900,00</td><td class="num">2.900,00</td><td class="num">2.900,00</td></tr>
+          <tr><td>Projeto de Automação</td><td class="num">2.900,00</td><td class="num">3.250,00</td><td class="num">2.900,00</td></tr>
+          <tr><td>Projeto de Paisagismo</td><td class="num">7.100,00</td><td class="num">6.500,00</td><td class="num">7.100,00</td></tr>
+          <tr><td>Projeto de Interiores</td><td class="num">24.300,00</td><td class="num">24.300,00</td><td class="num">24.300,00</td></tr>
+          <tr><td>Compatibilização de Projetos</td><td class="num">6.400,00</td><td class="num">6.400,00</td><td class="num">6.400,00</td></tr>
+          <tr class="total"><td>Custo Total</td><td class="num">108.800,00</td><td class="num">115.650,00</td><td class="num">142.700,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <figure class="full-image"><div class="img-slot wide"><span>[Foto — passeio de Realidade Virtual / cliente com óculos de RV]</span></div><figcaption>Veja sua casa antes de existir — passeio 360° pelos ambientes antes da primeira parede erguida</figcaption></figure>
+
+  <section class="divider">
+    <p class="kicker">Por que a Sttickler</p>
+    <h2>Vale a pena investir em projeto de arquitetura</h2>
+    <p class="lede">Um bom projeto organiza ideias, define soluções técnicas e transforma necessidades em espaços funcionais e esteticamente agradáveis — reduzindo risco e retrabalho antes mesmo da obra começar.</p>
+    <ul class="adv-list">
+      <li>Redução de riscos e erros na obra</li>
+      <li>Melhor controle de custos e prazos</li>
+      <li>Estudo detalhado de cada escolha, do layout aos materiais</li>
+      <li>Personalização e atendimento às suas necessidades</li>
+      <li>Área do cliente com documentos, orçamentos e diário de obra</li>
+      <li>Parcerias com fornecedores estratégicos</li>
+      <li>Viabilidade técnica e econômica avaliada desde o início</li>
+      <li>Transparência total do primeiro esboço à entrega das chaves</li>
+    </ul>
+  </section>
+
+  <section class="divider">
+    <p class="kicker">Condições</p>
+    <h2>Pagamento e responsabilidades</h2>
+    <div class="terms-grid">
+      <div>
+        <h3 style="font-size:1.05rem">À vista — PIX/boleto</h3>
+        <p style="font-size:0.9rem">7% de desconto sobre os valores acima.</p>
+        <ul><li>30% na assinatura</li><li>20% em 30 dias</li><li>20% em 90 dias</li><li>30% na entrega</li></ul>
+      </div>
+      <div>
+        <h3 style="font-size:1.05rem">Cartão de crédito</h3>
+        <p style="font-size:0.9rem">Parcelamento sem alterar o escopo contratado.</p>
+        <ul><li>Até 3x sem juros</li><li>4x–12x com juros da operadora</li></ul>
+      </div>
+    </div>
+    <div class="terms-grid" style="margin-top: 1rem">
+      <div>
+        <h3 style="font-size:1.05rem">Sttickler</h3>
+        <ul><li>Gerenciar e fiscalizar o parceiro</li><li>Zelar pelo cronograma</li><li>Suporte em todas as etapas</li></ul>
+      </div>
+      <div>
+        <h3 style="font-size:1.05rem">Cliente</h3>
+        <ul><li>Fornecer informações necessárias</li><li>Realizar pagamentos conforme aceite</li></ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p class="brand">Sttickler Empreendimentos</p>
+  <p style="color: var(--ink-soft); max-width: 42ch; margin: 0.6rem auto 0;">Ficou com alguma dúvida? Vamos tomar um café — conte sempre com a gente.</p>
+  <p class="cnpj">CNPJ 39.520.415/0001-21</p>
+</footer>
