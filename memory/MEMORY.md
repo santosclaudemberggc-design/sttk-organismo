@@ -6,12 +6,13 @@
 - [Análise Sinek "Porquê" STTK](projeto/sttickler_analise_sinek_porque.md) — analisada e NÃO adotada (20/07/2026); não re-propor sozinho
 - [Arquivo de estado dos agentes STTK](projeto/sttickler_arquivo_estado_agentes.md) — todo agente lê ao nascer e escreve ao morrer; 4 seções fixas; convive com o Registro Diário, sem PDF
 - [Molde de Skill STTK](projeto/sttickler_molde_skill_mapa.md) — Skill é mapa (fonte, método, armadilhas), nunca cópia de parâmetro; paráfrase nossa é fonte secundária
-- [Marco VITRUVIUS STTK](projeto/sttickler_marco_vitruvius.md) — quando o Vitruvius (Revit) estiver 100% pronto, começa o teste real de produção de projetos via agentes (Coordenador do Lúcio)
+- [Marco VITRUVIUS STTK](projeto/sttickler_marco_vitruvius.md) — MARCO ATINGIDO 29/07/2026: Vitruvius confirmado com escrita real no Revit, virou capacidade oficial do Coordenador do Lúcio (e futuro Estrutural do Cardozo)
 
 **Referência**
 - [Fluxograma oficial Sttickler](referencia/sttickler_fluxograma_oficial.md) — como ler o PDF/Figma oficial de execução de projetos (legenda de cores)
 - [Estrutura Drive STTK](referencia/sttickler_drive_estrutura.md) — mapa real do Google Drive "Dptº de Projetos" e regra de filtro Construção do Zero vs. outros produtos
-- [Capacidade Revit STTK](referencia/sttickler_revit_capacidade.md) — o que agentes de IA conseguem produzir no Revit hoje, e o limite do ART/RRT
+- [Capacidade Revit STTK](referencia/sttickler_revit_capacidade.md) — o que agentes de IA conseguem produzir no Revit hoje (Vitruvius confirmado 29/07/2026), e o limite do ART/RRT
+- [Links reais dos formulários do fluxograma STTK](referencia/sttickler_formularios_fluxograma_links.md) — POP + form Coordenação (Maurício) + form Cliente, por etapa, extraídos do PDF oficial; blocker real pro Gate do Maurício (forms sem planilha de respostas)
 - [LICIN 2.0 licenciamento RJ](referencia/sttickler_licin_licenciamento_rj.md) — como funciona de verdade o licenciamento de projeto legal no Rio hoje, base da proposta do Gestor Legal (Kelsen)
 - [RIU API oficial STTK](referencia/sttickler_riu_api_oficial.md) — endpoints ArcGIS públicos que leem zoneamento+parâmetros do RIU por coordenada, sem clique; resolve o ponto fraco do Hely
 - [Outorga Onerosa RJ](referencia/sttickler_outorga_onerosa_rj.md) — fórmula oficial da contrapartida CAB→CAM/além dos parâmetros no Rio (LC 270/274/2024, LC 281/2025 art. 18)

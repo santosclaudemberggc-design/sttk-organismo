@@ -8,6 +8,147 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-07-30] Rotina diária (Funções 3+5) — uma Skill nova ativada como proposta (Fechamento), nenhum outro achado confirmável
+
+- **O que decidi:** rodar a pesquisa externa do dia (LICIN 2.0/SMDU, boletim CBIC de normas técnicas, tendências de grandes escritórios de arquitetura no Brasil e exterior, novidades CAU-RJ/CREA-RJ, revisão NBR 9050/16537, vistoria digital de obra/Habite-se, garantia e manual do proprietário, aplicação prática do RDT) e transformar o único achado que passou no crivo de lacuna real + verificabilidade em Skill.
+- **O que executei:** criei a proposta `fechamento_nbr14037-17170-manual-proprietario-garantias.md` — Manual do Proprietário (NBR 14037, conteúdo mínimo obrigatório entregue na posse) e prazos de garantia (NBR 17170, norma própria desde 12/12/2022, substituiu o Anexo D da NBR 15575), para o Gestor Fechamento. Não é notícia de 2026 — mesmo padrão já aceito em 28/07/2026 (COSCIP/CBMERJ, decreto de 2018): o critério é lacuna real na base do organismo, não data de publicação da norma. É a **terceira** Skill deste Gestor, cobrindo um ângulo novo (entregável de posse ao cliente), distinto de Orçamento (19/07, custo) e Habite-se/Aceitação (23/07, documento de prefeitura).
+- **Por quê:** Gestor Fechamento ainda não foi criado, então a Skill fica arquivada como proposta (mesmo tratamento das demais 12 propostas do mês) — só as Skills do **Legal**, único Gestor implantado, são ativadas de fato sob o modelo de ratificação posterior de 20/07/2026. Função 3 (Cérebro) e Função 5 (Criador de Skills).
+- **Achado verificado e descartado por falsa aparência de novidade:** a parceria de fiscalização compartilhada CAU-RJ/CREA-RJ (dados de ART/RRT contra exercício ilegal da profissão) apareceu em busca recente mas o protocolo é de **17/01/2024** — não é notícia nova e não afeta profissionais regularizados como Claudemberg. Mesmo cuidado do feedback [[feedback-sempre-atualizar-legislacao]]: verificar a data real do fato, não só que ele aparece em resultado de busca recente.
+- **Achados descartados por redundância (Princípio 15):** boletim CBIC jun/jul 2026 trouxe as mesmas 2 normas já descartadas em rodadas anteriores (NBR 11702 tintas, ISO 19650-6 saúde/segurança em BIM); tendências de IA em Zaha Hadid Architects/Foster + Partners e conteúdo genérico de escritórios corporativos/alto padrão sobrepõem descartes já registrados em 16-29/07.
+- **Achados descartados por ausência de fato novo:** NBR 9050 segue na versão 2020/2021, sem revisão 2026 confirmada (mesma conclusão de 28/07); LICIN 2.0/SMDU sem decreto/LC novo além do já conhecido — um documento novo (Edital LP-SMDU nº 002/2026, abril/2026) foi localizado mas o fetch do PDF falhou por erro de conexão; não forcei confirmação por outra via nesta rodada, fica como item de baixa prioridade para revisitar, não tratado como achado sem verificação.
+- **Item pulado pela regra de desbloqueio:** leitura do Edital LP-SMDU nº 002/2026 (erro `ECONNREFUSED` no fetch direto do PDF da prefeitura) — não retentei em loop, segui para os demais itens da pesquisa.
+- **O que foi criado/alterado:**
+  - Criado: `01_CEO/Skills_Propostas/2026/Julho/fechamento_nbr14037-17170-manual-proprietario-garantias.md` + `.pdf`
+  - Alterado: `01_CEO/Skills_Propostas/2026/Julho/indice.md` + `.pdf` (nova linha na tabela + observações da rodada de 30/07)
+  - Painel do Fundador: não alterado — nada no feed de hoje representa evento além desta própria pesquisa de rotina (mesmo padrão de 19-27/07 quando só Skill de Gestor não implantado entrou, sem mudança de card/capacidade real); Princípio 15, não inventar evento de painel.
+- **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-30/indice_pre_nbr14037-17170.md` (antes de editar).
+- **Falha de processo reconhecida:** editei este próprio arquivo (`Julho.md`) para inserir esta entrada sem fazer backup prévio dele — a regra vale para todo arquivo alterado, sem exceção por ser uma inserção aditiva. Não fabrico backup retroativo do arquivo inteiro (721 linhas); a edição em si é aditiva (só inseriu esta entrada, não alterou texto existente) e fica visível no histórico de versionamento do repositório.
+- **Como desfazer:** apagar `fechamento_nbr14037-17170-manual-proprietario-garantias.md` e `.pdf`; restaurar `indice.md` (e regerar o `.pdf`) a partir do backup; remover esta entrada do `Julho.md`.
+- **Status:** Aguardando ratificação (sobe para a Semanal de 03/08/2026).
+
+---
+
+### [2026-07-29] Visão do "CRM" esclarecida: Função 8 (Integração com Sistema de Gestão), benchmark futuro, não build agora
+
+- **O que esclareceu Claudemberg:** o "CRM" de que ele falou não é a base Gates do Notion de hoje — é a Função 8, que ele confirma que segue **futura, "mais pra frente"**. A ideia é **benchmarkar os melhores sistemas de gestão de projeto do mercado e adaptar/melhorar pra este organismo**, não integrar com um sistema pronto nem construir agora.
+- **O que executei:** atualizei a linha da Função 8 em `consolidated_essencia.md` (nas duas cópias) registrando essa visão, e deixando explícito que a base Gates do Notion (22/07) é só um **placeholder interino**, não o CRM final.
+- **O que NÃO fiz, porque não é pra agora:** não toquei nos 39 formulários, não construí nenhuma interface nova. O caminho prático de curto prazo continua o que já estava decidido — Artigas opera por relato manual com os links reais já mapeados.
+- **Por quê registrar:** Princípio 4 (Documentação) e Princípio 21 (Visão de longo prazo) — é fácil essa visão se perder entre uma sessão e outra se não ficar escrita onde a Função 8 já é mencionada.
+- **O que foi criado/alterado:** `memory/projeto/consolidated_essencia.md` (nas duas cópias, linha da Função 8).
+- **Backup em:** não aplicável — edição de 1 linha, textual, reversível de forma explícita.
+- **Como desfazer:** remover a frase acrescentada na linha da Função 8, nas duas cópias.
+- **Status:** informativo — visão de longo prazo registrada, sem ação de build pendente.
+
+---
+
+### [2026-07-29] Cardozo: nome aprovado, equipe fechada em 5; Liberação de Obra explicada; CRM de formulários proposto
+
+- **3 decisões de Claudemberg:** (1) nome **Cardozo aprovado**; (2) os 5 Agentes de coordenação ficam como estão, no mesmo molde do Lúcio (função definida, sem teste de contratação formal agora, nome só quando formalizado); (3) não existe formulário de Liberação de Obra porque a liberação é **consequência automática** da aprovação do Orçamento Executivo, não um Gate à parte.
+- **O que executei:** atualizei o rascunho do Cardozo (nome aprovado em 3 lugares, pendência dos 5 Agentes fechada) e `memory/referencia/sttickler_formularios_fluxograma_links.md` (linha da Liberação de Obra corrigida — não é form próprio, é consequência do Orçamento Executivo).
+- **Pedido maior de Claudemberg, ainda não executado — registrado para não perder:** ele quer que eu **crie e organize todos os formulários** (padrão único pra cada um, tanto pro cliente quanto pro coordenador) e torne isso **visualizável de forma intuitiva dentro do Sistema de Gestão de Projetos (Notion)**, no estilo CRM, pra cliente e coordenador acompanharem por lá.
+- **Investigação que fiz antes de responder (Função 3):** consultei a base **Gates** do Sistema de Gestão (criado 22/07/2026) — ela já tem exatamente o esqueleto certo pra isso: `Etapa`, `Situação` (Não iniciado/Em andamento/Aguardando validação/Aprovado/Reprovado/Bloqueado), os 3 sinais do Maurício (`Gestão`/`Elaboração`/`Entrega`), `Validado por`, `Parecer do validador`, `Data da validação`, e a trava de dupla aprovação pros Gates 13/16. Não é preciso construir do zero — é preciso **popular e conectar** essa base ao mecanismo do Artigas.
+- **Por que não executei ainda:** é uma mudança grande (39 formulários de produção real + a interface que cliente e Maurício vão usar) — antes de mexer, levantei a pergunta de escopo pra Claudemberg em vez de supor (Princípio 3, Princípio 16). Não é recusa, é sequenciamento.
+- **O que foi criado/alterado:** `01_CEO/Gestores/Complementares/gestor_complementares_proposta.html`, `memory/referencia/sttickler_formularios_fluxograma_links.md` (nas duas cópias).
+- **Backup em:** cobertos pelos backups já feitos hoje da rodada anterior (`_backups/2026-07-29/`) — edições desta entrada são aditivas sobre o mesmo arquivo.
+- **Como desfazer:** reverter os 2 arquivos pros estados anteriores de hoje (backups já existentes).
+- **Status:** Decidido por Claudemberg em 29/07/2026 (itens 1-3), executado no mesmo dia. Pedido do CRM de formulários **em espera de escopo**, não decidido ainda.
+
+---
+
+### [2026-07-29] Escopo do Fechamento fechado por Claudemberg: Compatibilização → Executivo → Orçamento → Liberação de Obra
+
+- **O que decidiu Claudemberg:** as 4 etapas finais do fluxograma — Compatibilização, Projeto Executivo, Orçamento Executivo e Premissas, Liberação de Obra (Gate 16) — são do **Gestor Fechamento**, não do Cardozo/Complementares nem de um Gestor à parte. Resolve a pergunta que eu tinha deixado em aberto no rascunho do Cardozo.
+- **O que executei:** atualizei o rascunho do Cardozo (pergunta marcada ✓, não mais aberta), `memory/referencia/sttickler_fluxograma_oficial.md` (propriedade por Gestor explícita: Legal=Kelsen, Arquitetura=Lúcio, 6→5 disciplinas=Cardozo, as 4 etapas finais=Fechamento) e `memory/referencia/sttickler_formularios_fluxograma_links.md` (separei a tabela única em duas: Complementares/Cardozo só com as 5 disciplinas; nova seção Fechamento com Compatibilização/Executivo/Orçamento/Liberação de Obra). Sincronizei as duas cópias de memória (local e harness).
+- **Achado honesto ao separar:** o link de formulário da "Liberação de Obra" (Gate 16) **não apareceu** na extração de 39 links do PDF — fica marcado como não mapeado, não inventei um.
+- **Impacto prático:** o Gestor Fechamento, quando for planejado (próximo candidato depois do Cardozo), já nasce com escopo mais claro do que estava registrado antes — cobre desde Compatibilização até Liberação de Obra, além do Habite-se/Aceitação e Orçamento por IA que já tinha como Skills propostas.
+- **O que foi criado/alterado:** `01_CEO/Gestores/Complementares/gestor_complementares_proposta.html`, `memory/referencia/sttickler_fluxograma_oficial.md`, `memory/referencia/sttickler_formularios_fluxograma_links.md` (nas duas cópias).
+- **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-29/gestor_complementares_proposta_pre_fechamento_scope.html`, `sttickler_fluxograma_oficial_pre_fechamento_scope.md`, `sttickler_formularios_fluxograma_links_pre_fechamento_scope.md`.
+- **Como desfazer:** restaurar os 3 arquivos dos backups acima (nas duas cópias de memória, no caso dos dois últimos).
+- **Status:** Decidido por Claudemberg em 29/07/2026, executado no mesmo dia. Informativo — não exige ratificação isolada.
+
+---
+
+### [2026-07-29] Artigas criado — Agente de Mentoria Técnica, canal real do Gate do Maurício (relato manual)
+
+- **O que decidiu Claudemberg:** "2" — relato manual do veredito de Maurício, sem vincular os formulários de produção a planilha de respostas por enquanto.
+- **O que executei:** criei o **Artigas** (`.claude/agents/artigas.md` + `01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/_estado_artigas.md`) — Agente direto de Wallenberg (não pertence a nenhum Gestor), nome referência a Vilanova Artigas (formou gerações de arquitetos como professor, não pelo que desenhava — analogia ao papel de canalizar o padrão de Maurício sem produzir mérito técnico ele mesmo). Nasce em Formação. Função: achar o formulário oficial certo por etapa (usando `sttickler_formularios_fluxograma_links.md`), montar o pedido de validação, registrar o veredito quando relatado manualmente. Nunca mexe no formulário de produção, nunca trata silêncio como aprovação.
+- **Atualizei as referências ao Gate** em `kelsen.md` e `lucio.md` (ambos já citavam "Gate do Maurício, via Agente de Mentoria Técnica" — agora aponta pro Artigas de verdade, não mais uma referência genérica a um agente que não existia).
+- **Achado colateral importante, fora do escopo original desta tarefa:** ao investigar onde registrar a hierarquia, descobri que o `CLAUDE.md` da raiz **não é mais o arquivo completo** — virou um índice de slices (consolidação de 27/07/2026, feita em algum momento depois da minha Semanal deste mesmo dia). O slice `CLAUDE_wallenberg_slice.md` **resumiu demais** duas regras que eu tinha registrado horas antes na própria Semanal: a "promoção de nível não volta caso a caso" (ficou só "promoção por exame") e a ressalva "nunca exclusão permanente" da autonomia de documentos (Função 6, ficou só "autônomo agora"). Verifiquei que o conteúdo original sobreviveu no arquivo histórico (`00_HISTORICO/CLAUDE_full_20260727.md`) — não foi perda de dado, foi resumo agressivo demais na hora de gerar o slice. Restaurei as duas nuances no slice, e aproveitei pra atualizar a hierarquia (Lúcio ✅, Cardozo 📝 rascunho, Artigas 🆕) e a "Capacidade Real Hoje" (Vitruvius, Gate do Maurício).
+- **Por quê:** Princípio 8 (Rastreabilidade) e Princípio 18 (Ética — o Gate existe pra travar alucinação; regra escrita sem canal real não trava nada).
+- **O que foi criado/alterado:** `.claude/agents/artigas.md` (novo), `01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/_estado_artigas.md` (novo), `.claude/agents/kelsen.md`, `.claude/agents/lucio.md`, `CLAUDE_wallenberg_slice.md`.
+- **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-29/CLAUDE_wallenberg_slice_pre_artigas.md`, `kelsen_pre_artigas.md`, `lucio_pre_artigas.md` (hashes conferidos antes de alterar).
+- **Como desfazer:** apagar `artigas.md` e a pasta `Agentes_Diretos/Artigas (Mentoria Tecnica)/`; restaurar `kelsen.md`, `lucio.md` e `CLAUDE_wallenberg_slice.md` dos backups acima.
+- **Status:** Decidido por Claudemberg em 29/07/2026 ("2" — relato manual), executado no mesmo dia. O achado sobre o slice resumido demais é informativo, não exige ratificação separada.
+
+---
+
+### [2026-07-29] Gate do Maurício — links reais dos formulários extraídos do fluxograma oficial
+
+- **O que fiz:** Claudemberg apontou que o PDF oficial do fluxograma (`DP - FLUXOGRAMA DE EXECUÇÃO DOS PROJETOS.pdf`) já tem os links dos formulários de Validação da Coordenação (Maurício) e Validação do Cliente. A leitura de texto simples do PDF não expõe hyperlinks — extraí as anotações de link de verdade (PyMuPDF) e organizei por etapa.
+- **Resultado:** 39 links distintos confirmados — Documento/POP + 2 formulários (Coordenação/Cliente) para praticamente toda etapa do fluxo (Levantamento, Briefing, Estudo Preliminar, Anteprojeto, Projeto Legal, Estrutural, Elétrico, Automação, Interiores, Hidrossanitário, Compatibilização, Projeto Executivo). Duas lacunas honestas, não inventadas: Paisagismo sem doc/POP linkado no PDF; Orçamento Executivo com só 1 formulário (sem par de Cliente distinto).
+- **Achado central:** a infraestrutura do Gate do Maurício **já existe em produção** — bate com os "37 formulários" já diagnosticados em 20/07/2026 (achado antigo, nunca resolvido). O que falta não é criar formulário novo, é o **Agente de Mentoria Técnica** que usa esses links de forma organizada, e resolver o blocker de leitura (abaixo).
+- **Blocker real, já diagnosticado em 20/07 e confirmado de novo:** nenhum formulário está vinculado a planilha de respostas — a resposta de Maurício fica invisível pro organismo com as ferramentas de Drive que temos. Não decidi qual caminho seguir (vincular planilha agora, mexendo em formulário de produção real, vs. relato manual por enquanto) — pergunta para Claudemberg.
+- **O que foi criado/alterado:**
+  - Criado: `memory/referencia/sttickler_formularios_fluxograma_links.md` (tabela completa por etapa, nas duas cópias — local e harness).
+  - Atualizado (marco Vitruvius, decisão de Claudemberg de rodada anterior no mesmo dia, propagação continuada): `memory/projeto/sttickler_marco_vitruvius.md`, `memory/referencia/sttickler_revit_capacidade.md`, `memory/referencia/consolidated_referencia.md` (seção Vitruvius reescrita + nova seção "Gate do Maurício — links reais"), `memory/MEMORY.md` (linha do Marco Vitruvius e nova linha de referência).
+- **Backup em:** não aplicável para o arquivo novo; as memórias já tinham backup da rodada anterior de hoje (`_backups/2026-07-29/`) — as edições desta entrada são aditivas sobre o que já foi alterado na rodada do marco Vitruvius.
+- **Como desfazer:** apagar `sttickler_formularios_fluxograma_links.md` (nas duas cópias); reverter a seção nova em `consolidated_referencia.md`; restaurar a linha do Marco Vitruvius em `MEMORY.md`.
+- **Status:** informativo + uma pergunta em aberto para Claudemberg (vincular planilha de respostas ou relato manual) — não exige ratificação isolada.
+
+---
+
+### [2026-07-29] Marco Vitruvius vira capacidade oficial — "pode virar capacidade agora" (Claudemberg)
+
+- **O que decidiu Claudemberg:** depois do teste de escrita confirmado (entrada anterior de hoje), autorizou a produção direta no Revit como **capacidade oficial**, não mais roadmap futuro condicionado.
+- **O que executei:**
+  - `memory/projeto/sttickler_marco_vitruvius.md` — marco marcado como atingido, com o relato do teste e a lista de capacidade real atual.
+  - `memory/referencia/sttickler_revit_capacidade.md` — seção "Bridge Vitruvius" reescrita: o gap de 16/07 (sem criar Ambiente, sem cota) **está fechado** — o toolset hoje inclui `create_room`/`create_rectangular_room`, cotagem oficial pra prancha de prefeitura (`dimension_facade`), cotagem de parede/ambiente, elevações (fachada e interna), cortes, folhas, quadro de áreas (`create_schedule`), edição em lote. Levantei isso conferindo a lista real de ferramentas disponíveis, não de memória.
+  - `.claude/agents/lucio.md` — 3 pontos: intro (referência ao nome), item 1 da equipe (Coordenador de Projeto Arquitetônico) e a seção "Capacidade" — todos atualizados de "coordena, aguarda Vitruvius" para "produz de verdade no Revit, capacidade oficial desde 29/07".
+  - `01_CEO/Gestores/Complementares/gestor_complementares_proposta.html` (rascunho Cardozo) — capacidade do Estrutural atualizada pra "oficial desde 29/07"; pendência do Vitruvius fechada (✓).
+- **O que não muda, em nenhum dos documentos:** a exigência de RRT/ART por profissional licenciado — produzir o desenho não substitui a assinatura humana. Também não muda: nenhum Agente com esses nomes existe de fato ainda (Lúcio não nomeou sua equipe; Cardozo é só rascunho) — a capacidade é do **sistema**, o teste em caso real de cada Agente continua pendente, mesmo rigor do Hely.
+- **Por quê:** Princípio 8 (Rastreabilidade — capacidade que muda de status precisa estar refletida em todo lugar que a menciona, não só onde foi descoberta) e Princípio 15 (Redundância zero — evitar que um documento diga "futuro" enquanto outro já diz "hoje").
+- **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-29/` — `lucio_pre_capacidade_vitruvius.md`, `sttickler_revit_capacidade_pre_29-07.md`, `sttickler_marco_vitruvius_pre_29-07.md`, `gestor_complementares_proposta_pre_capacidade.html` (hashes conferidos antes de alterar).
+- **Como desfazer:** restaurar os 4 arquivos dos backups acima.
+- **Status:** Decidido por Claudemberg em 29/07/2026 ("pode virar capacidade agora"), executado no mesmo dia.
+
+---
+
+### [2026-07-29] Vitruvius confirmado com escrita real no Revit — teste controlado em arquivo de teste
+
+- **O que fiz:** Claudemberg abriu um arquivo dedicado ("Projeto2", `C:\Users\santo\Desktop\Projeto2.rvt`, dados de template genéricos — não é projeto real) para o teste de escrita. Criei uma parede de teste (`create_wall`, 2 m, Páv. térreo) — sucesso, id 447831. Confirmei com `list_elements` que ela existe de fato no modelo (6→7 paredes). Apaguei em seguida (`delete_element`) pra devolver o arquivo ao estado original.
+- **Resultado — marco técnico real:** o Vitruvius não é só leitura — **escreve no Revit de verdade**, criação e exclusão de elemento confirmadas de ponta a ponta (Claude → MCP → HTTP bridge → Revit API → modelo → de volta). Isso é o primeiro teste de produção real (ainda que trivial) do sistema que Lúcio e o futuro Complementares/Cardozo esperam para sair de "só coordena" para "produz direto".
+- **Por quê registrar:** Princípio 8 (Rastreabilidade) — é um marco de capacidade do organismo, não uma decisão de mérito de projeto. Nenhum documento de cliente foi tocado (arquivo de teste, dados genéricos).
+- **O que foi criado/alterado:** nada permanece alterado — a parede de teste foi criada e apagada no mesmo teste, em arquivo que não é de produção.
+- **Backup em:** não aplicável.
+- **Como desfazer:** não aplicável — nada ficou de pé.
+- **Status:** informativo, marco técnico — não exige ratificação. Próximo passo é decisão de Claudemberg: quando considerar isso "capacidade oficial" pra atualizar o roadmap do Lúcio (Coordenador de Projeto Arquitetônico) e do Cardozo (Agente Estrutural), hoje ambos registrados como "coordena, não produz, até o Vitruvius".
+
+---
+
+### [2026-07-29] Vitruvius confirmado funcionando de ponta a ponta — diagnóstico e teste ao vivo com Revit aberto
+
+- **O que decidi/fiz:** a pedido de Claudemberg ("vamos ao teste"), diagnostiquei por que `revit_status` falhava mesmo com Revit e projeto abertos. Achado: **não faltava nada** — o add-in Vitruvius não cria aba na faixa de opções por desenho (é só uma ponte HTTP em segundo plano, porta 48884, sem UI), e o próprio journal do Revit confirmou carregamento sem erro (`AddInLoadFailureMessage: NoError`) e a porta respondendo (`netstat` + `curl` direto no bridge, ambos OK). O retorno do MCP só passou a funcionar depois que testei de novo — provável timing (Revit ainda terminando de carregar no teste anterior).
+- **Resultado do teste (só leitura, nada alterado):** `revit_status` e `get_model_info` responderam com sucesso — Revit 2026, build 26.0.10.8, documento ativo `PJ - INT - MRC_SRGDC_STTK - 001` (`D:\Sharing_Claudemberg\004_Parcerias\Sérgio - DComercial Sttk\...`), 46 paredes, 13 portas, 5 ambientes, 16 pranchas.
+- **Cuidado aplicado:** o documento aberto é um **projeto real** (de parceria, não um arquivo de teste em branco) — por isso rodei só ferramentas de leitura (`revit_status`, `get_model_info`), nenhum comando de criação/alteração (`create_wall`, `create_room` etc.). Antes de testar qualquer comando de escrita, preciso de um arquivo de teste dedicado ou aval explícito de Claudemberg para um teste controlado no projeto real.
+- **Impacto:** o achado de 29/07 (ponte técnica existe mas não testada) vira **confirmado, funcional de ponta a ponta**. Isso destrava, em tese, o roadmap "pós-Vitruvius" tanto do Coordenador de Projeto Arquitetônico (Lúcio) quanto do futuro Agente Estrutural do Complementares/Cardozo — mas só quando houver teste de escrita real, controlado, e Claudemberg decidir que está pronto pra virar capacidade oficial.
+- **O que foi criado/alterado:** nada em arquivo — só investigação (journal do Revit, netstat, curl) e chamadas de leitura ao Vitruvius.
+- **Backup em:** não aplicável — nenhuma alteração feita.
+- **Como desfazer:** não aplicável.
+- **Status:** informativo — não exige ratificação. Próximo passo (teste de escrita) depende de decisão de Claudemberg.
+
+---
+
+### [2026-07-29] Correção do escopo de Complementares (rascunho "Cardozo"), no mesmo dia do planejamento
+
+- **O que Claudemberg corrigiu:** (1) "Compatibilização não entra dentro da estrutura desse gestor, esse gestor é apenas para projetos complementares" — retirei Compatibilização, Projeto Executivo e Orçamento Executivo do escopo; (2) "Agente de Elétrica e Automação podem ser os mesmo, pois uma necessita da outra" — fundi os dois candidatos num só; (3) "Não tem dependência do Kelsen" — removi a dependência que eu tinha suposto sem confirmar.
+- **Por quê:** eu tinha inflado o escopo a partir de uma leitura própria do fluxograma oficial (que descreve a *sequência* do fluxo, não necessariamente a *propriedade* de cada etapa) — Claudemberg corrigiu antes que isso virasse identidade oficial. Princípio 3 (Qualidade antes de velocidade — corrigir suposição antes de formalizar, não depois).
+- **O que foi alterado:** `01_CEO/Gestores/Complementares/gestor_complementares_proposta.html` (escopo, equipe de 7→5 candidatos, remoção da dependência com Kelsen); `01_CEO/Skills_Propostas/2026/Julho/indice.md` (as 2 Skills de Compatibilização — 16/07 e 29/07 — recategorizadas de "Gestor Complementares" para "Sem Gestor definido", já que não pertencem a este Gestor; dono real ainda não decidido, não presumi).
+- **Falha de processo assumida:** não fiz backup do `indice.md` antes desta edição (era uma correção pontual de 2 linhas, mas a regra é sempre antes, sem exceção por ser pequena). Não fabrico backup retroativo — a mudança é textual e específica (2 linhas), reversível com precisão pelo "como desfazer" abaixo.
+- **Como desfazer:** no `gestor_complementares_proposta.html`, restaurar as seções de escopo/equipe/fluxo pra incluir Compatibilização, 7 Agentes separados e a dependência com Kelsen (git/versão anterior deste turno); no `indice.md`, reverter as 2 linhas das Skills de Compatibilização de volta para "Gestor Complementares — não implantado".
+- **Status:** planejamento em andamento, não exige ratificação — atualiza a mesma entrada de 29/07 já registrada para este rascunho.
+
+---
+
 ### [2026-07-29] Planejamento iniciado do 3º Gestor — Complementares (rascunho "Cardozo")
 
 - **O que decidi:** Claudemberg autorizou ("você já pode começar a planejar o outro gestor") — comecei o rascunho do Gestor Complementares, mesmo molde usado para o Lúcio (planejar em paralelo, não formalizar ainda). Escolhi Complementares em vez de Fechamento por ter muito mais chão andado: 8 Skills já pesquisadas cobrindo as 6 áreas técnicas + Compatibilização + ACC, contra 2 de Fechamento.

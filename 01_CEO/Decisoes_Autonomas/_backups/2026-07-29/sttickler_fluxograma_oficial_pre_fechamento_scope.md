@@ -18,12 +18,11 @@ metadata:
 
 **Importante:** essa é a leitura correta confirmada pelo usuário. Uma leitura anterior (de que Hidrossanitário/Paisagismo seriam etapas terceirizadas por causa da cor amarela) estava **errada** — amarelo é universal em toda etapa, é sempre o bloco de execução linkado ao POP, não um marcador de terceirização.
 
-## Estrutura do fluxo (corrigida em 13/07/2026; propriedade por Gestor fechada em 29/07/2026)
-Sequencial em Arquitetura (Levantamento → Briefing → Estudo Preliminar → Anteprojeto, **Lúcio**) → bifurca em duas linhas paralelas e **independentes**:
-- **Projeto Legal** (**Kelsen**) → protocolado na prefeitura → se aprovado, segue direto pra fila de espera de **Liberação de Obra (Gate 16)**, já com o Habite-se; se recusado/precisa de ajuste, as alterações são feitas e reenviado à prefeitura (laço iterativo até aprovar). **Não passa por Compatibilização** — Compatibilização é checagem de interferência entre modelos técnicos, e Legal não tem modelo, é aprovação documental.
-- **6 Complementares** (Estrutural, Elétrico+Automação, Interiores, Hidrossanitário, Paisagismo — **Gestor Cardozo/Complementares**, rascunho em 29/07) → produzem cada disciplina, mas **não são donos do que vem depois**.
-- **Compatibilização → Projeto Executivo → Orçamento Executivo e Premissas → Liberação de Obra (Gate 16)**: essas 4 etapas finais são do **Gestor Fechamento** (decidido por Claudemberg em 29/07/2026) — recebe o output das 6 disciplinas de Cardozo, compatibiliza, monta o executivo, orça, e libera a obra.
+## Estrutura do fluxo (corrigida em 13/07/2026)
+Sequencial em Arquitetura (Levantamento → Briefing → Estudo Preliminar → Anteprojeto) → bifurca em duas linhas paralelas e **independentes**:
+- **Projeto Legal** (Kelsen) → protocolado na prefeitura → se aprovado, segue direto pra fila de espera de **Liberação de Obra (Gate 16)**, já com o Habite-se; se recusado/precisa de ajuste, as alterações são feitas e reenviado à prefeitura (laço iterativo até aprovar). **Não passa por Compatibilização** — Compatibilização é checagem de interferência entre modelos técnicos, e Legal não tem modelo, é aprovação documental.
+- **6 Complementares** (Estrutural, Elétrico, Automação, Interiores, Hidrossanitário, Paisagismo) → convergem em Compatibilização → Projeto Executivo → Orçamento Executivo e Premissas → também alimentam Liberação de Obra.
 
-As duas linhas de cima (Legal e Complementares) só se encontram no Gate 16 (Liberação de Obra), que é do Fechamento — Legal contribui a documentação/Habite-se, Fechamento contribui o Projeto Executivo compatibilizado e orçado. Confirmado por Claudemberg em 13/07/2026 (que as duas linhas são independentes) e em 29/07/2026 (que Compatibilização/Executivo/Orçamento/Liberação são do Fechamento, não dos Complementares nem de um Gestor à parte).
+As duas linhas se encontram só no Gate 16 (Liberação de Obra) — Legal contribui a documentação/Habite-se, os Complementares contribuem o Projeto Executivo compatibilizado. Confirmado por Claudemberg em 13/07/2026, corrigindo a leitura anterior desta memória (que colocava Legal dentro da convergência de Compatibilização).
 
 Cada etapa = 3 documentos reais linkados (POP + form coordenação + form cliente), o que bate exatamente com o inventário de 37 formulários (14 Validação Coordenação + 14 Aprovação Cliente + 9 Briefing) descrito nos .md mestres — ver [[sttickler_visao_geral]].

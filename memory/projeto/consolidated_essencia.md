@@ -61,7 +61,7 @@ Toda decisão importante cita os princípios aplicáveis:
 | 5 | **Criador de Skills** | Filtra conhecimento novo → Skills (granularidade: 1 Agente = 1 Skill) | Autônomo |
 | 6 | **Padronizador de Documentos** | Varre base documental (001_MATERIAL), cria/ajusta/padroniza | **Autônomo agora** (20/07) |
 | 7 | **Relatório Mensal** | Síntese estratégica pro Conselho (padrões, saúde do organismo) | Autônomo |
-| 8 | **Integração com Sistema de Gestão** | Futuro, fora do MVP (Dez/2026) | — |
+| 8 | **Integração com Sistema de Gestão** | Futuro, fora do MVP (Dez/2026). Visão confirmada 29/07/2026: não é integrar com um sistema existente — é **benchmarkar os melhores sistemas de gestão de projeto do mercado e adaptar/melhorar pra este organismo**. A base "Gates" do Notion (22/07) é só um placeholder interino, não o CRM final. | — |
 | 9 | **Reunião Semanal** | Seg 10:30 com Claudemberg; apresenta decisões autônomas da semana | Ratificação |
 | 10 | **Organizador do Leilão** | Monta tabela de preços (3 serviços próprios + leilão parceiros); via **Agente da Proposta** | Propõe |
 | 11 | **Validador Gates 13/16** | Confere pessoalmente (dupla aprovação: Wallenberg + Gestor) na hora, não espera reunião | Urgência |

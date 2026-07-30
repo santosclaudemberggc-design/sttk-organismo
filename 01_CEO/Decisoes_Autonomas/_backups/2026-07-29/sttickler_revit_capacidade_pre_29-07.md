@@ -38,20 +38,8 @@ Sources (buscadas em 09/07/2026): [Revit Public MCP Server - Autodesk AEC Tech D
 
 ---
 
-## Bridge Vitruvius — o MCP que usamos de fato (atualizado 29/07/2026 — MARCO ATINGIDO)
+## Bridge Vitruvius — o MCP que usamos de fato (verificado 16/07/2026)
 
-Bridge próprio chamado **Vitruvius**, conectando ao Revit ao vivo **com escrita real**, confirmado pessoalmente por Claudemberg em 29/07/2026 como capacidade oficial (não mais "roadmap futuro" — ver [[sttickler_marco_vitruvius]]).
+Diferente do MCP oficial da Autodesk (só leitura), temos um bridge próprio chamado **Vitruvius** conectando ao Revit ao vivo (testado no Revit 2026, doc "Projeto2") **com escrita real**. O que ele **cria de fato hoje**: nível, parede (entre 2 pontos, em metros), porta e janela (hospedadas em parede, por offset), piso (contorno fechado). Leitura: status, model_info, níveis, tipos, elementos, ambientes (`list_rooms`), detalhe de elemento. Edição: apagar elemento. Coordenadas em metros, X→leste / Y→norte.
 
-**Capacidade real em 29/07/2026 (bem além do estado de 16/07):**
-- **Modelagem:** nível, parede (entre 2 pontos), porta e janela (hospedadas, por offset), vão de passagem sem porta, piso (contorno fechado), mover/redimensionar/trocar tipo de elemento.
-- **Ambientes — GAP DE 16/07 FECHADO:** `create_room` (ponto dentro de espaço já fechado) e `create_rectangular_room` (cômodo completo: 4 paredes + Ambiente nomeado + piso opcional, medidas internas com compensação automática de espessura). `create_room_separator` para espaços integrados sem parede.
-- **Cotagem — GAP DE 16/07 FECHADO:** `dimension_facade` (cota de amarração de fachada inteira, **uso oficial pra prancha de prefeitura**), `dimension_wall` (cadeia de cotas de uma parede), `dimension_room` (cota humanizada interna de ambiente, associativa).
-- **Documentação/entrega:** `create_elevation` (fachada externa) e `create_room_elevations` (elevações internas de ambiente — armário, revestimento), `create_section` (corte), `create_sheet` (prancha com carimbo), `place_view_on_sheet`, `create_schedule` (quadro de áreas, lista de portas/janelas etc.), `tag_rooms` (etiqueta ambientes).
-- **Consulta/edição em lote:** `find_elements` (busca por filtro), `get_element` (detalhe completo), `set_parameter`/`set_parameters_batch` (até 200 operações, tudo-ou-nada).
-- **Leitura:** status, model_info, níveis, categorias, tipos, elementos, ambientes.
-
-**Teste de escrita confirmado em 29/07/2026:** parede criada e apagada em arquivo de teste dedicado ("Projeto2"), ciclo completo Claude→MCP→Revit→modelo→de volta, sem tocar projeto real algum.
-
-**O que isso destrava:** o toolset hoje já cobre o suficiente pra produzir plantas, cortes, fachadas, quadro de áreas e cotagem oficial de uma prancha de Projeto Legal ou Anteprojeto — a mesma lista de entregáveis que o Hely hoje monta em PDF por código pro Legal. Não testado ainda em caso real; cada Agente que for produzir de fato continua precisando do próprio ciclo de teste (mesmo rigor do Hely) antes de ir a cliente.
-
-**O que NÃO muda:** o limite de RRT/ART (seção acima) continua valendo — produzir o desenho não substitui a assinatura de profissional licenciado.
+**GAP de capacidade (PENDÊNCIA — levar ao sistema/desenvolvimento do MCP):** o Vitruvius **não tem comando para criar Ambiente (Room)** nem para gerar **cotas/dimensões**. `list_rooms` só lê ambientes existentes; não há `create_room` nem `create_dimension`. Consequência prática: ao montar um cômodo pela automação, o Room (que calcula área/nome/acabamento no quadro de áreas) e as cotas alinhadas precisam ser inseridos **manualmente** no Revit (`Arquitetura → Ambiente`; `Anotar → Cota Alinhada`/atalho DI). Constatado ao criar um cômodo-teste de 4×3 m no Páv. térreo. **Ação:** incluir criação de Room e de cotas no roadmap do bridge Vitruvius — sem isso, o fluxo de projeto legal/arquitetura não fecha 100% por automação. Relaciona-se ao limite de escrita em [[sttickler_negocio_leilao]] (disciplinas que hoje só coordenam o parceiro).
