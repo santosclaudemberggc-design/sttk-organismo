@@ -264,10 +264,10 @@ REDUÇÃO:
 **Duração:** 2h
 
 #### Tarefas:
-- [ ] Analisar 57 MB de PDFs legislativos em `01_CEO/Gestores/Kelsen/Agentes/Hely/Fontes_Legislacao/`
-- [ ] Projetar schema SQLite (bairro, subzona, parâmetro, valor, fonte, data_vigor, oficial)
-- [ ] Parse dos 15+ PDFs legislativos (LC 270/2024, LC 274/2024, Decretos, etc.)
-- [ ] Gravar índice em SQLite local (~2 MB máximo)
+- [x] Analisar 59 MB de PDFs legislativos em `01_CEO/Gestores/Kelsen/Agentes/Hely/Fontes_Legislacao/` (27 arquivos, 1.035 páginas)
+- [x] Projetar schema SQLite (bairro, subzona, parâmetro, valor, fonte, data_vigor, oficial) — ver `Fontes_Legislacao/indice_sqlite/README.md`
+- [x] Parse dos 27 PDFs legislativos (LC 270/2024, LC 274/2024, Decretos, etc.) — 100% processados, 0 falhas
+- [x] Gravar índice em SQLite local (~2 MB máximo) — 1,18 MB gravado (`Fontes_Legislacao/indice_sqlite/legislacao_index.sqlite3`)
 
 #### Métricas:
 ```
@@ -388,7 +388,7 @@ ACUMULADO GERAL (Semana 1 + 2):
 
 | Item | Quando | Redução | Status |
 |------|--------|---------|--------|
-| 4: SQLite Legislação | 12/08 (Seg) | 20-25% | ⏳ |
+| 4: SQLite Legislação | 12/08 (Seg) | 20-25% | ✅ |
 | 5: Google Drive Cache | 13/08 (Ter) | 10-15% | ⏳ |
 | 6: Skills JSON | 14/08 (Qua) | 2-5% | ⏳ |
 | **Validação** | 15/08 (Qui) | — | ⏳ |
