@@ -1,0 +1,118 @@
+{
+  "_comment": "Indice estruturado de METADADOS + tabela de pendencias de _estado_hely.md, copiada campo a campo (sem resumo). Secoes 'Onde parei', 'Aprendizados' (raciocinio juridico denso) permanecem só no .md — reduzi-las a JSON reintroduziria o mesmo risco de paráfrase já documentado na Skill legal-base-legislativa-bairro.",
+  "agente": "Hely (Executor Legal, equipe de Kelsen)",
+  "fonte_completa": "01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/_estado_hely.md",
+  "ultima_atualizacao": "2026-07-28",
+  "pendencias_abertas": [
+    {
+      "pendencia": "B9 respondida: unifamiliar sem gatilho é passível de LMS (LAM simplificado), não isento — Decreto 51.503/2022 Art. 26-27. Zona cinzenta não fechada: 'passível de' é obrigação ou faculdade? Kelsen decide se sobe a Claudemberg",
+      "sinalizada_em": "2026-07-27",
+      "status": "Aberta — decisão de escalonamento é de Kelsen"
+    },
+    {
+      "pendencia": "Resolução SMAC 27/2020 (citada no achado original de Wallenberg) não localizada no Busca Fácil — hipótese não confirmada de imprecisão de órgão/data",
+      "sinalizada_em": "2026-07-27",
+      "status": "Aberta — não decidida sozinho, é conjectura"
+    },
+    {
+      "pendencia": "Decreto 52.712/2023 (altera o 51.503) não indexado no Busca Fácil — conhecido só por citação cruzada",
+      "sinalizada_em": "2026-07-27",
+      "status": "Aberta — baixo risco"
+    },
+    {
+      "pendencia": "POP-LEGAL-02 — rascunho de reconstrução entregue em 28/07/2026 (Arts. 18-20 da LC 281/2025 verbatim). Quarentena da Seção 0 continua de pé",
+      "sinalizada_em": "2026-07-28",
+      "status": "Aberta — auditoria e decisão de levantar quarentena são de Kelsen"
+    },
+    {
+      "pendencia": "PDF consolidado LC281_2025_CondicoesEspeciais_CONSOLIDADO.pdf está desatualizado quanto ao Art. 40 — só reflete a redação da LC 291/2025, não a LC 301/2026",
+      "sinalizada_em": "2026-07-28",
+      "status": "Aberta — Kelsen decide se atualiza o PDF consolidado"
+    },
+    {
+      "pendencia": "Janela comercial aberta até 01/12/2026 — LC 281 Art. 40, redação da LC 301/2026 Art. 58, 30% de desconto à vista. Base registrava como expirada",
+      "sinalizada_em": "2026-07-21",
+      "status": "Aberta — decisão comercial de Claudemberg"
+    },
+    {
+      "pendencia": "COES Art. 35 §7º (LC 283/2025): dutos no passeio, obrigatório em toda nova edificação. Custo de obra que ninguém orçou. Atravessa Legal -> Complementares -> proposta",
+      "sinalizada_em": "2026-07-21",
+      "status": "Aberta — escalonamento"
+    },
+    {
+      "pendencia": "Formato da prancha — resolvido por Kelsen em 23/07/2026: não há formato exigido, nem A1 nem A0",
+      "sinalizada_em": "2026-07-23",
+      "status": "Fechada — mantida só até confirmar que a prancha-teste (A1) não precisa ser refeita"
+    },
+    {
+      "pendencia": "Lista de documentos do protocolo é inacessível (lacuna L-1). Art. 2º, I remete ao requerimento on-line, atrás de login. Estreitou: ART/RRT quitado circula no procedimento",
+      "sinalizada_em": "2026-07-21",
+      "status": "Aberta — precisa acesso autenticado ou protocolo real observado"
+    },
+    {
+      "pendencia": "Bittencourt: item 3 do caso (RESOLVIDO) tem fundamento errado e nunca foi calculado TO nem ATE. Se os 25 m² não se qualificarem como edícula, TO=56,94%>50% e ATE=300>CAB 288",
+      "sinalizada_em": "2026-07-20",
+      "status": "Aberta — correção do arquivo é de Kelsen"
+    },
+    {
+      "pendencia": "Lacuna geométrica Bittencourt: (a) fachada lateral 0,90m tem abertura de que compartimento? (b) posição da edícula/varanda 25m² em relação à divisa; (c) afastamento frontal",
+      "sinalizada_em": "2026-07-20",
+      "status": "Aberta"
+    },
+    {
+      "pendencia": "Lacuna na Skill legal-base-legislativa-bairro: não avisa da colisão de código de zona entre APs. Proposta: trava 'confirme a AP antes de ler a linha do Anexo XXI'",
+      "sinalizada_em": "2026-07-20",
+      "status": "Aberta — Kelsen avalia levar a Wallenberg"
+    },
+    {
+      "pendencia": "Proposta nova para a Skill e para o POP-GESTOR-LEGAL-01: incorporar a consulta de status na base Busca Fácil da SMU antes de usar qualquer norma",
+      "sinalizada_em": "2026-07-21",
+      "status": "Aberta — decisão de Kelsen"
+    },
+    {
+      "pendencia": "Projeto de fachada em lote em APAC — LC 270/2024 Art. 280, III exige aprovação do órgão de tutela do patrimônio antes da 1ª laje. Procedimento e formato desconhecidos",
+      "sinalizada_em": "2026-07-21",
+      "status": "Aberta (lacuna L-11) — só importa se um lote nosso cair em APAC"
+    },
+    {
+      "pendencia": "Formulários de Legal ilegíveis por API",
+      "sinalizada_em": "2026-07-20",
+      "status": "Aberta — precisa export manual por Kelsen ou Claudemberg"
+    },
+    {
+      "pendencia": "Divergência com o Drive: Planilha de Enviáveis e POP-ARQ-PL-01 vendem 'Fachadas legais' e 'Memorial para protocolo legal' — fachada é recusada pelo decreto e memorial não é peça do LICIN",
+      "sinalizada_em": "2026-07-21",
+      "status": "Aberta — correção dos documentos do Drive é de Kelsen"
+    },
+    {
+      "pendencia": "Anexo III — subtabela: decidido por Kelsen em 23/07/2026. No escopo padrão usa-se Anexo IV, que não tem subtabelas",
+      "sinalizada_em": "2026-07-23",
+      "status": "Fechada como critério de trabalho"
+    },
+    {
+      "pendencia": "PREO no protocolo (L-9) — estreitada. Resolução SMDEIS 3/2023 regula a substituição do PREO: protocolar com PREO inicial e substituir depois",
+      "sinalizada_em": "2026-07-21",
+      "status": "Aberta — Kelsen decide se vira regra comercial"
+    },
+    {
+      "pendencia": "Decreto 45.917/2019 (regulamenta o COES) não lido — leismunicipais devolve HTTP 403",
+      "sinalizada_em": "2026-07-20",
+      "status": "Aberta — tentar pela Busca Fácil da SMU"
+    },
+    {
+      "pendencia": "B10 respondida: NT 1-07 do CBMERJ NÃO reintroduz obrigação de segurança contra incêndio para unifamiliar puro isento. Achado colateral: o Decreto não tem §3º no Art. 3º",
+      "sinalizada_em": "2026-07-28",
+      "status": "Aberta — Kelsen decide se vira conhecimento ativo; varredura das demais 46+ NTs não feita"
+    },
+    {
+      "pendencia": "Script gerar_prancha_legal.py tinha títulos de folha hardcoded em ASCII sem acento — corrigido em 28/07/2026 (item B11)",
+      "sinalizada_em": "2026-07-28",
+      "status": "Fechada"
+    },
+    {
+      "pendencia": "md_to_pdf.py: 4 ocorrências da seta unicode → em POP-GESTOR-LEGAL-01, corrigidas para -> e PDF regenerado",
+      "sinalizada_em": "2026-07-28",
+      "status": "Fechada nos 2 arquivos desta rodada — outros .md da casa não foram varridos"
+    }
+  ]
+}

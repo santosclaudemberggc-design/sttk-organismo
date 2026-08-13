@@ -1,0 +1,28 @@
+{
+  "_comment": "Indice estruturado de METADADOS + tabela de pendencias de _estado_lucio.md, copiada campo a campo (sem resumo).",
+  "agente": "Lúcio (Gestor Arquitetura)",
+  "fonte_completa": "01_CEO/Gestores/Lúcio (Arquitetura)/_estado_lucio.md",
+  "ultima_atualizacao": "2026-07-28",
+  "pendencias_abertas": [
+    {
+      "pendencia": "Nomear e formalizar meus 3 Agentes (Coordenador de Projeto Arquitetônico, Agente de Apresentações, Agente de Renders/Vídeos) — só faz sentido no momento em que forem de fato criados",
+      "esperando": "eu, primeiro projeto/execução real que exigir a equipe",
+      "desde": "2026-07-27"
+    },
+    {
+      "pendencia": "Meu primeiro exame de nível (Formação → Shadow) — 1º caso-teste (Levantamento Müller) já respondido em 28/07/2026; aguardo Wallenberg trazer próximo(s) caso(s) ou o veredito final",
+      "esperando": "Wallenberg",
+      "desde": "2026-07-27"
+    },
+    {
+      "pendencia": "Checar a Notion Treinos e Testes (Gestor=Lúcio, Status=pendente) — não tenho tool de Notion",
+      "esperando": "Wallenberg",
+      "desde": "2026-07-27"
+    },
+    {
+      "pendencia": "Atualizar o POP-PROJ-01 oficial no Drive com os itens do Levantamento que faltam — só faz sentido depois que eu estiver operando de verdade",
+      "esperando": "eu mesmo, quando rodar de fato",
+      "desde": "2026-07-20"
+    }
+  ]
+}

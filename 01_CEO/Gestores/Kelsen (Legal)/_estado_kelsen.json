@@ -1,0 +1,84 @@
+{
+  "_comment": "Indice estruturado de METADADOS + tabelas de pendencias de _estado_kelsen.md, copiadas campo a campo (sem resumo). Secoes 'Onde parei' e 'Aprendizados' permanecem só no .md.",
+  "agente": "Kelsen (Gestor Legal)",
+  "fonte_completa": "01_CEO/Gestores/Kelsen (Legal)/_estado_kelsen.md",
+  "ultima_atualizacao": "2026-07-28",
+  "pendencias_balde_a_alcada_propria": [],
+  "pendencias_balde_a_nota": "vazio nesta data — drenado em 23/07/2026",
+  "pendencias_balde_b_hely_produz": [
+    {
+      "id": "B1",
+      "prioridade": "alta",
+      "pendencia": "Regerar o .pdf de POP-LEGAL-02 (md_to_pdf.py) — mudou 2x hoje, .pdf gêmeo não reflete; _indice_fontes.md também mudou e precisa de regen; avaliar se SKILL.md passa a ter PDF gêmeo",
+      "desde": "23-28/07"
+    },
+    {
+      "id": "B4",
+      "prioridade": "normal",
+      "pendencia": "POP-LEGAL-04 §8 (glosa 0,3 do CAM): arquivar o Dicionário de Termos da LC 270/2024 e extrair o Art. 367 verbatim. Não alterar nada antes de ver o primário",
+      "desde": "20/07"
+    },
+    {
+      "id": "B5",
+      "prioridade": "normal",
+      "pendencia": "Decreto 45.917/2019 (regulamento do COES) pela Busca Fácil — a via existe desde 21/07",
+      "desde": "20/07"
+    },
+    {
+      "id": "B6",
+      "prioridade": "normal",
+      "pendencia": "Propagar para os POPs do Hely a trava de colisão de subzona entre APs e as decisões 3.5/3.6 do POP-LEGAL-05",
+      "desde": "20-21/07"
+    },
+    {
+      "id": "B7",
+      "prioridade": "normal",
+      "pendencia": "Mapear incidência de APAC em Recreio/Barra/Vargem Grande (LBB_APAC)",
+      "desde": "21/07"
+    },
+    {
+      "id": "B8",
+      "prioridade": "normal",
+      "pendencia": "Varredura de decretos e resoluções no acervo Busca Fácil — universo não provado completo",
+      "desde": "21/07"
+    },
+    {
+      "id": "B11",
+      "prioridade": "baixa",
+      "pendencia": "Títulos de folha da prancha legal hardcoded em ASCII no gerar_prancha_legal.py — não bloqueia caso nenhum hoje",
+      "desde": "28/07"
+    }
+  ],
+  "pendencias_balde_b_fechadas_nota": "B9 fechada 27/07 (virou item de Balde c). B10, B2, B3 fechadas 28/07. b9-zona-cinzenta-lms fechada 28/07 (3ª passagem, decisão própria sem escalar)",
+  "pendencias_balde_c_sobe_claudemberg": [
+    {
+      "pendencia": "COES Art. 2º §7º (LC 291/2025): parcelamento de lote bifamiliar com metade do lote mínimo e testada 6 m — incide em licenciamento de loteamento, impacto baixo no escopo atual, oportunidade de negócio",
+      "desde": "21/07"
+    },
+    {
+      "pendencia": "Base oficial do Drive (POP-ARQ-PL-01, Memorial, Planilha) desconhece o LICIN 2.0 — POP oficial é de 05/03/2026, anterior a tudo que construímos",
+      "desde": "20/07"
+    },
+    {
+      "pendencia": "A Planilha de Enviáveis vende entregável que a prefeitura recusa (fachadas legais; memorial para protocolo legal) — dúvida jurídica resolvida, falta corrigir os documentos",
+      "desde": "20/07"
+    },
+    {
+      "pendencia": "Os dois formulários de Legal são ilegíveis por ferramenta (mime google-apps.form) — precisa export manual",
+      "desde": "20/07"
+    },
+    {
+      "pendencia": "Migração de teste → produção real (000_CLIENTES_TESTE no Drive)",
+      "desde": "13/07"
+    },
+    {
+      "pendencia": "POPs no Drive sem PDF (RIU-01, 03, 04); duas pastas distintas chamadas GESTOR LEGAL",
+      "desde": "20/07"
+    }
+  ],
+  "pendencias_balde_c_resolvidas_nota": [
+    "COES Art. 35 §7º (dutos no passeio) — resolvida 27/07: entra na fase de orçamento de obra, ver 01_CEO/Pendencias/pendencias.json id coes-dutos-passeio",
+    "Decreto 51.503/2022 Art. 27 (LMS obrigatória p/ unifamiliar) — resolvida 28/07: incorporar agora na base ativa, ver id b9-lms-unifamiliar-achado",
+    "Janela comercial de 30% até 01/12/2026 — resolvida 28/07: não usar como argumento de venda por ora, ver id janela-comercial-desconto"
+  ]
+}

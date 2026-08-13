@@ -1,0 +1,44 @@
+{
+  "_comment": "Indice estruturado de METADADOS + tabela de pendencias de _estado_wallenberg.md, copiada campo a campo (sem resumo). Secoes 'Onde parei' e 'Aprendizados' (prosa/raciocinio) permanecem só no .md — não repetidas aqui.",
+  "agente": "Wallenberg (CEO)",
+  "fonte_completa": "01_CEO/_estado_wallenberg.md",
+  "ultima_atualizacao": "2026-07-27",
+  "fase_atual": "Semana 1 — Otimização de Tokens (29/07 - 05/08)",
+  "pendencias_abertas": [
+    {
+      "pendencia": "Ratificação da pauta de 27/07 (23 itens da Parte 1 + 7 da Parte 2) — rodada automática rodou sem Claudemberg presente, nada foi ratificado ainda",
+      "esperando": "Claudemberg",
+      "desde": "2026-07-20"
+    },
+    {
+      "pendencia": "Aprovação do Gestor Lúcio (Arquitetura)",
+      "esperando": "Claudemberg",
+      "desde": null
+    },
+    {
+      "pendencia": "Registro Diário de 17/07 não existe — a série pula de 16 para 20. Nada avisou",
+      "esperando": "eu, investigar",
+      "desde": "2026-07-20"
+    },
+    {
+      "pendencia": "Decreto 45.917/2019 (regulamento do COES) não lido — 403 nos agregadores",
+      "esperando": "Hely, via Kelsen",
+      "desde": "2026-07-20"
+    },
+    {
+      "pendencia": "Ferramenta Notion ausente nas sessões de subagente de Kelsen e Lúcio (Wallenberg roda a consulta manualmente por ora)",
+      "esperando": "eu, investigar (mesma classe do achado da ferramenta Skill em 20/07)",
+      "desde": "2026-07-27"
+    },
+    {
+      "pendencia": "Achado do LAM/PGRCC (unifamiliar sujeito ao LMS) precisa de ciência de Claudemberg antes de virar conhecimento ativo em caso real",
+      "esperando": "Claudemberg",
+      "desde": "2026-07-27"
+    },
+    {
+      "pendencia": "Sessão de subagente do Kelsen (e a minha própria) só têm ferramentas Drive de leitura — autonomia de documento de 27/07 não tem execução real por trás (wallenberg-drive-write-tool-gap), bloqueia 2 itens",
+      "esperando": "eu, investigar (mesma classe do gap Notion)",
+      "desde": "2026-07-28"
+    }
+  ]
+}
