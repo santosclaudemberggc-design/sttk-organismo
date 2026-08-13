@@ -1,0 +1,44 @@
+{
+  "_comment": "Índice estruturado de METADADOS da Skill — não é um resumo do conteúdo legal. SKILL.md continua sendo a única fonte de verdade para armadilhas, hierarquia de fontes e endereços de parâmetro. Ver seção 'Nota de decisão' no Registro Diário de 14/08/2026 para o porquê deste arquivo não contém paráfrase jurídica.",
+  "skill_id": "legal-base-legislativa-bairro",
+  "path": ".claude/skills/legal-base-legislativa-bairro/SKILL.md",
+  "description": "Base legislativa urbanística do Rio de Janeiro por bairro/subzona — onde encontrar e como confirmar zona, subzona e parâmetros (CAB, CAM, TO, gabarito, afastamentos, lote mínimo, ICS, SMD) de um lote específico, com a hierarquia de confiabilidade das fontes e as armadilhas já confirmadas.",
+  "gestor_responsavel": "Kelsen (Legal)",
+  "agente_consumidor": "Hely",
+  "escopo_atual": ["Recreio dos Bandeirantes", "Barra da Tijuca", "Vargem Grande"],
+  "area_planejamento": "AP4",
+  "criterio_crescimento": "por demanda (Princípio 19) — só entra bairro novo quando houver cliente real",
+  "fontes_arquivadas_pasta": "01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/",
+  "fontes_arquivadas_arquivos": [
+    "LC270_2024_PlanoDiretorLUOS.pdf",
+    "COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf",
+    "Decreto55622_2025_LICIN2.0.pdf",
+    "Decreto55622_2025_LICIN2.0_AnexoI_ModelosDULI.pdf",
+    "Decreto55622_2025_LICIN2.0_AnexoII_TermosDeclaracoes.pdf",
+    "LC281_2025_CondicoesEspeciais_CONSOLIDADO.pdf",
+    "LC283_2025_AlteraCOES_Art35.pdf",
+    "LC291_2025_SupermercadosShoppingsHospitais.pdf",
+    "LC292_2025_RiscoEstrutural.pdf",
+    "LC299_2026_AlteraLC270_Art371.pdf",
+    "LC301_2026_AEIUPracaOnze_AlteraLC270e281.pdf",
+    "LC274_2024_CONSOLIDADO.pdf",
+    "LC284_2025_OperacaoUrbanaLegadoOlimpico.pdf",
+    "Decreto56561_2025_UsosPorZona_AnexosICES.pdf",
+    "ResolucaoSMDEIS03_2023_SubstituicaoPREO.pdf",
+    "ResolucaoSMDEIS27_2021_LICIN_BaixaComplexidade_SEM_EFEITO.pdf",
+    "Decreto42_2018_COSCIP_CBMERJ_COMPILADO.pdf"
+  ],
+  "pops_relacionados": [
+    "POP-LEGAL-RIU-01",
+    "POP-LEGAL-02",
+    "POP-LEGAL-03",
+    "POP-LEGAL-04",
+    "POP-LEGAL-05"
+  ],
+  "indice_fontes_arquivo": "01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/_indice_fontes.md",
+  "pendencias_abertas": [
+    "B10: ler NT 1-07 do CBMERJ antes de fechar isenção de segurança contra incêndio para unifamiliar puro"
+  ],
+  "ultima_atualizacao": "2026-07-28",
+  "versao_conteudo": "verificar SKILL.md — este índice não versiona o conteúdo legal, apenas os metadados acima"
+}

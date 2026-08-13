@@ -1,0 +1,145 @@
+{
+  "_comment": "Índice estruturado das Skills PROPOSTAS de Julho/2026 (tabela de indice.md em JSON). Nenhuma foi aprovada — decisão de Claudemberg na Reunião Mensal ao Conselho (Princípio 13). As observações narrativas de cada rodada diária permanecem só em indice.md — este arquivo cobre apenas a tabela estruturada, para consulta rápida por Gestor sem carregar o arquivo inteiro.",
+  "mes": "Julho",
+  "ano": 2026,
+  "status_geral": "nenhuma proposta aprovada",
+  "fonte_completa": "01_CEO/Skills_Propostas/2026/Julho/indice.md",
+  "propostas": [
+    {
+      "data": "2026-07-16",
+      "arquivo": "legal_anexo-i-base-legal-decreto-48719-21.md",
+      "titulo": "Base legal do Anexo I — Decreto 48.719/21",
+      "gestor_alvo": "Kelsen (Legal) → Hely",
+      "resumo": "Anexo I do LICIN 2.0 tem base legal própria (Decreto 48.719/21), distinta do Decreto 55.622/2025 do procedimento geral",
+      "fonte_principal": "Portal Carioca Digital"
+    },
+    {
+      "data": "2026-07-16",
+      "arquivo": "arquitetura_sistemas-industrializados-modulares-nbr.md",
+      "titulo": "Sistemas industrializados/modulares e NBRs de painel leve",
+      "gestor_alvo": "Lúcio (Arquitetura) — não implantado",
+      "resumo": "Steel/Wood Frame e painel leve modular como tendência 2026, com as novas NBRs que os regem (17266-1, 17305-1, 17073-2)",
+      "fonte_principal": "Exame, CBIC"
+    },
+    {
+      "data": "2026-07-16",
+      "arquivo": "arquitetura_ia-generativa-estudo-preliminar-gensler.md",
+      "titulo": "IA generativa no Estudo Preliminar — caso Gensler",
+      "gestor_alvo": "Lúcio (Arquitetura) — não implantado",
+      "resumo": "Simulação de luz/uso/desempenho por IA já na fase de conceito, referência de mercado de um dos maiores escritórios do mundo",
+      "fonte_principal": "Gensler, ArchDaily"
+    },
+    {
+      "data": "2026-07-16",
+      "arquivo": "complementares_compatibilizacao-nbr-iso19650-clash-detection.md",
+      "titulo": "Compatibilização BIM — NBR ISO 19650/15965 e clash detection",
+      "gestor_alvo": "Gestor Complementares — não implantado (futuro Agente de Compatibilização)",
+      "resumo": "Normas, clash avoidance e matriz GUT de priorização para o Agente que já tem MCP Autodesk pronto",
+      "fonte_principal": "spbim, WGB Engenharia, Thórus Engenharia"
+    },
+    {
+      "data": "2026-07-19",
+      "arquivo": "legal_resolucao-smdu-10-2026-rdt-plano-diretor.md",
+      "titulo": "Resolução SMDU nº 010/2026 — regulamentação do RDT",
+      "gestor_alvo": "Kelsen (Legal) → Hely",
+      "resumo": "Novo instrumento do Plano Diretor (LC 270/2024) dá diretrizes viárias/espaços públicos antes do licenciamento — possível etapa prévia complementar ao RIU",
+      "fonte_principal": "Diário Oficial do Município do Rio (Boletim 10/2026)"
+    },
+    {
+      "data": "2026-07-19",
+      "arquivo": "complementares_nbr-6118-2026-emenda-estruturas-concreto.md",
+      "titulo": "NBR 6118:2026 (Emenda 1) — estruturas de concreto",
+      "gestor_alvo": "Gestor Complementares — não implantado, futuro Agente Estrutural",
+      "resumo": "Classes de consequência CC1/CC2/CC3, ATP regra geral (dispensável em CC1), armadura de segurança em balanços; afeta assinatura de RRT do próprio Claudemberg em CC2/CC3",
+      "fonte_principal": "APL Engenharia, Master em Modelagem"
+    },
+    {
+      "data": "2026-07-19",
+      "arquivo": "arquitetura_nbr-20250-sustentabilidade-selos-verdes.md",
+      "titulo": "NBR 20250 — sustentabilidade e Selo Verde",
+      "gestor_alvo": "Lúcio (Arquitetura) — não implantado, Estudo Preliminar",
+      "resumo": "Critérios de sustentabilidade verificáveis alinhados ao Selo Verde federal; BNDES/BID já vinculam crédito a parâmetros de sustentabilidade (não é exigência legal ainda)",
+      "fonte_principal": "Novakem"
+    },
+    {
+      "data": "2026-07-19",
+      "arquivo": "legal_art-georreferenciada-crea-rj-2026.md",
+      "titulo": "ART georreferenciada do CREA-RJ (2026)",
+      "gestor_alvo": "Kelsen (Legal) → Hely",
+      "resumo": "Novo sistema de ART: valor calculado por custo/m² do Sinduscon-Rio + georreferenciamento antifraude (múltiplas ARTs no mesmo dia)",
+      "fonte_principal": "CREA-RJ"
+    },
+    {
+      "data": "2026-07-19",
+      "arquivo": "fechamento_ia-orcamento-executivo-obra.md",
+      "titulo": "IA para Orçamento Executivo de Obra",
+      "gestor_alvo": "Gestor Fechamento — não implantado",
+      "resumo": "Quantitativo automático a partir de planta (Togal.AI) + base SINAPI/CUB/TCPO consolidada em softwares nacionais; primeira Skill dirigida a este Gestor",
+      "fonte_principal": "obraprima, Korvi, Sinduscon-Rio"
+    },
+    {
+      "data": "2026-07-20",
+      "arquivo": "complementares_nbr-16783-reuso-agua-fontes-alternativas.md",
+      "titulo": "NBR 16783 — reuso de água / fontes alternativas",
+      "gestor_alvo": "Gestor Complementares — não implantado, futuro Agente Hidrossanitário",
+      "resumo": "Água de chuva/cinza/poço para descarga, irrigação e limpeza; primeira Skill dirigida a este Agente",
+      "fonte_principal": "APM, Target Normas, GMAR Ambiental"
+    },
+    {
+      "data": "2026-07-20",
+      "arquivo": "complementares_automacao-residencial-tendencias-2026.md",
+      "titulo": "Tendências de automação residencial 2026",
+      "gestor_alvo": "Gestor Complementares — não implantado, futuro Agente de Automação",
+      "resumo": "IA local antecipatória, design invisível, centralização, +40% das residências urbanas com automação até fim de 2026; primeira Skill dirigida a este Agente",
+      "fonte_principal": "Eletrolar News, Revista Oeste, Antares Tech"
+    },
+    {
+      "data": "2026-07-20",
+      "arquivo": "complementares_paisagismo-jardim-de-chuva-drenagem.md",
+      "titulo": "Jardim de chuva — drenagem sustentável",
+      "gestor_alvo": "Gestor Complementares — não implantado, futuro Agente de Paisagismo",
+      "resumo": "Solução de baixo custo que absorve até 30% do escoamento superficial do lote; primeira Skill dirigida a este Agente",
+      "fonte_principal": "Terra Brasil Notícias, Saneamento Básico, Jardineiro.net"
+    },
+    {
+      "data": "2026-07-20",
+      "arquivo": "complementares_interiores-tendencias-materiais-2026.md",
+      "titulo": "Tendências de materiais e interiores 2026",
+      "gestor_alvo": "Gestor Complementares — não implantado, Agente Interiores (já produz de verdade)",
+      "resumo": "Paleta quente/natural, materiais biobaseados, flexibilidade de ambientes, home office personalizado",
+      "fonte_principal": "Tralhão Design Center, Tasselo, Urben"
+    },
+    {
+      "data": "2026-07-21",
+      "arquivo": "complementares_nbr-5410-2026-revisao-instalacoes-eletricas.md",
+      "titulo": "Revisão da NBR 5410 — instalações elétricas de baixa tensão",
+      "gestor_alvo": "Gestor Complementares — não implantado, futuro Agente Elétrico",
+      "resumo": "Maior revisão da norma desde 2004 (ainda em consulta, não publicada): DR por circuito em estudo, harmonização com NBR 5419, aterramento para fotovoltaico/veículo elétrico; primeira Skill dirigida a este Agente",
+      "fonte_principal": "GreenGold Engenharia, O Setor Elétrico, Aranda Editora"
+    },
+    {
+      "data": "2026-07-22",
+      "arquivo": "arquitetura_nbr-15575-zoneamento-bioclimatico-2025.md",
+      "titulo": "NBR 15575 — Emenda 1/2025 e novo zoneamento bioclimático",
+      "gestor_alvo": "Lúcio (Arquitetura) — não implantado, futuro Agente de Estudo Preliminar",
+      "resumo": "Rio de Janeiro mudou de categoria bioclimática (NBR 15220-3:2024 + Emenda 1/2025 à NBR 15575); afeta desempenho térmico mínimo exigido e a isenção de capacidade térmica de sistemas leves",
+      "fonte_principal": "La Toqualitas, CBCS"
+    },
+    {
+      "data": "2026-07-23",
+      "arquivo": "fechamento_habite-se-aceitacao-licin.md",
+      "titulo": "Habite-se e Aceitação de Obra — fluxo dentro do LICIN 2.0",
+      "gestor_alvo": "Gestor Fechamento — não implantado, segunda Skill dirigida a este Gestor",
+      "resumo": "Decreto 55.622/2025 exige reporte progressivo da obra em 4 marcos (Art. 5º) e vistoria final por comparação com o projeto aprovado (Art. 8º); distingue Habite-se de Aceitação de Obra",
+      "fonte_principal": "LegisWeb (Decreto 55.622/2025), Portal Carioca Digital"
+    },
+    {
+      "data": "2026-07-29",
+      "arquivo": "complementares_verificacao-automatica-conformidade-bim-ids-rase.md",
+      "titulo": "Verificação Automática de Conformidade Normativa em BIM (ACC — RASE/IDS)",
+      "gestor_alvo": "Gestor Complementares — não implantado, complementa (não substitui) a Skill de clash detection de 16/07",
+      "resumo": "Metodologia RASE + openBIM IDS para checagem automática de modelo BIM contra norma/parâmetro (distinto de clash entre disciplinas); tratado como direção de pesquisa, não ferramenta comercial madura",
+      "fonte_principal": "SIBRAGEC/ANTAC, IEEE Xplore, 01building, arXiv"
+    }
+  ]
+}
