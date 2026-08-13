@@ -288,16 +288,16 @@ REDUÇÃO:
 
 ---
 
-### 🟡 Terça 13/08
+### ✅ Terça 13/08
 **Horário:** 09:00 - 11:00  
 **Item:** 5 — Google Drive Cache Incremental  
 **Duração:** 2h
 
 #### Tarefas:
-- [ ] Implementar `modifiedTime` tracking em cache local
-- [ ] Primeira sincronização: fetch completo de folders (POPs, Memoriais, Clientes)
-- [ ] Sync incremental: buscar apenas arquivos mudados nos últimos N horas
-- [ ] Teste: comparar `modifiedTime` vs. sempre carregar tudo
+- [x] Implementar `modifiedTime` tracking em cache local
+- [x] Primeira sincronização: fetch completo de folders (POPs, Memoriais, Clientes — Clientes com 30 pastas de arquivo-folha pendente, documentado em `Drive_Cache/README.md`)
+- [x] Sync incremental: validado com 2 cenários (sem mudança / 1 mudança sintética) — buscar apenas arquivos mudados desde o último sync
+- [x] Teste: `modifiedTime` vs. sempre carregar tudo — 0,007-0,024 ms/consulta local medido, ver `03_REGISTROS_DIARIOS/2026/08/2026-08-13.md`
 
 #### Métricas:
 ```
@@ -389,7 +389,7 @@ ACUMULADO GERAL (Semana 1 + 2):
 | Item | Quando | Redução | Status |
 |------|--------|---------|--------|
 | 4: SQLite Legislação | 12/08 (Seg) | 20-25% | ✅ |
-| 5: Google Drive Cache | 13/08 (Ter) | 10-15% | ⏳ |
+| 5: Google Drive Cache | 13/08 (Ter) | 10-15% (estimado, a validar 15/08) | ✅ |
 | 6: Skills JSON | 14/08 (Qua) | 2-5% | ⏳ |
 | **Validação** | 15/08 (Qui) | — | ⏳ |
 | **TOTAL SEMANA 1+2** | **até 15/08** | **47-70%** | ⏳ |
