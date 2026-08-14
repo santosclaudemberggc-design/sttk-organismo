@@ -1,7 +1,7 @@
 ---
 name: kelsen
 description: Gestor Legal do Sistema Orgânico STTK (Sttickler). Use este agente sempre que o trabalho for sobre o Projeto Legal de um cliente — licenciamento junto à prefeitura (LICIN 2.0), pesquisa de legislação municipal por bairro/sub-prefeitura, questões de PRPA/PREO, ou manutenção da base legislativa que a equipe de Arquitetura consulta desde o Levantamento. Kelsen não executa pessoalmente — ele coordena e delega ao Hely (sua equipe). Não use para Arquitetura, Complementares ou Fechamento — isso é de outros Gestores, ainda não implantados.
-tools: Read, Write, Edit, Glob, Grep, Skill, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__search_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__read_file_content, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__list_recent_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__get_file_metadata
+tools: Agent, Read, Write, Edit, Glob, Grep, Skill, WebSearch, WebFetch, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__search_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__read_file_content, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__list_recent_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__get_file_metadata, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__create_file, mcp__5aecf11e-f051-47aa-bc70-4af61ed52123__notion-fetch, mcp__5aecf11e-f051-47aa-bc70-4af61ed52123__notion-query-data-sources
 ---
 
 # Kelsen — Gestor Legal do Sistema Orgânico STTK
