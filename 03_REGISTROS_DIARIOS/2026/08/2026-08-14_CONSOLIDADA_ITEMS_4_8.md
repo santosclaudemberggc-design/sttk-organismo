@@ -21,9 +21,10 @@ preparado_por: Wallenberg (Rotina STTK Consolidada)
 | 5 | Google Drive Cache Incremental | ✅ Validado | 93% ↓ |
 | 6 | Skills JSON Estruturado | ✅ Validado | 2-5% ↓ |
 | 7 | Prompt Caching | ⏳ Planejamento | 15-20% (meta) |
-| 8 | Sistema de Gestão | ⏳ Planejamento | Estrutura base |
 
 **Status Geral:** ✅ **SEMANA 2 CONCLUÍDA — Items 4-6 em Produção**
+
+*Nota: Sistema de Gestão de Projetos removido do escopo da Rotina STTK Consolidada. É um projeto futuro e separado, não afeta Painel do Fundador.*
 
 ---
 
@@ -265,23 +266,6 @@ propostas_julho = [p for p in propostas if p["data"].startswith("2026-07")]
 
 ---
 
-## ⏳ PLANEJAMENTO ITEM 8 — Sistema de Gestão de Projetos Futuro
-
-### Status Atual
-- Base estruturada: Arquivos de estado JSON criados
-- Modelo: Determinístico (Kelsen/Hely) + Autônomo (Lúcio em expansão)
-- Escopo fora do Painel Fundador atual:
-  - Gates de aprovação de projeto
-  - Formulários de entrada de cliente
-  - Portal de status do cliente (futuro)
-
-### Observação
-- Sistema de Gestão é **fora do escopo** da Rotina Consolidada Semana 2
-- Entra em Semana 3 como planejamento de longo prazo
-- Não afeta otimização de tokens do Painel Fundador (Claudemberg)
-
----
-
 ## 📊 Consolidação de Métricas — COMPLETA
 
 ### Items 4-6 em Produção (Validados)
@@ -366,9 +350,10 @@ Tamanho: 92 KB
 | Data | Item | Descrição | Responsável |
 |------|------|-----------|-------------|
 | 19/08 | 7 | Prompt Caching (se API disponível) | Wallenberg |
-| 20/08 | 8 | Sistema de Gestão (planejamento) | Wallenberg |
-| 21/08 | 9 | Validação Final & Documento de Conclusão | Wallenberg |
-| 22/08 | 10 | Relatório Executivo para Claudemberg | Wallenberg |
+| 21/08 | 8 | Validação Final & Documento de Conclusão | Wallenberg |
+| 22/08 | 9 | Relatório Executivo para Claudemberg | Wallenberg |
+
+*Nota: Sistema de Gestão de Projetos é um projeto separado e futuro — removido do escopo da Rotina STTK Consolidada.*
 
 ---
 
@@ -380,7 +365,6 @@ Tamanho: 92 KB
 ✅ Item 5 (Google Drive Cache) — VALIDADO  
 ✅ Item 6 (Skills JSON) — VALIDADO
 ⏳ Item 7 (Prompt Caching) — Aguardando API
-⏳ Item 8 (Sistema de Gestão) — Planejamento em dia
 ✅ Sincronização Painel Fundador — COMPLETA
 ✅ Registro Diário — COMPLETO
 ```
@@ -391,6 +375,7 @@ Tamanho: 92 KB
 - ✅ Métricas consolidadas com dados reais
 - ✅ Redução acumulada 45-67% alcançada
 - ✅ Painel sincronizado e backup criado
+- ✅ Sistema de Gestão de Projetos removido do escopo (projeto futuro/separado)
 - ✅ Pronto para Semana 3
 
 ---
