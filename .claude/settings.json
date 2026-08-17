@@ -1,0 +1,28 @@
+{
+  "caching": {
+    "enabled": true,
+    "prompts": [
+      "CLAUDE.md",
+      "CLAUDE_wallenberg_slice.md",
+      "CLAUDE_gestor_slice.md",
+      "CLAUDE_agente_slice.md",
+      "memory/projeto/consolidated_essencia.md",
+      "memory/projeto/consolidated_estrutura.md",
+      "memory/referencia/consolidated_referencia.md"
+    ],
+    "ttl_minutes": 60,
+    "activation_date": "2026-08-17T09:30:00Z",
+    "expected_reduction": "15-20%"
+  },
+  "system": {
+    "auto_memory": true,
+    "worktree_isolation": true,
+    "token_optimization": {
+      "item_4_sqlite": true,
+      "item_5_drive_cache": true,
+      "item_6_skills_json": true,
+      "item_7_prompt_caching": true,
+      "item_8_system_gestao": "planejamento"
+    }
+  }
+}

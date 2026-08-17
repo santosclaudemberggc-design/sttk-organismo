@@ -30,6 +30,8 @@
 - [Agentes autônomos, não canalizados STTK](feedback/feedback_agentes_autonomos_nao_canalizados.md) — todo Agente novo precisa de julgamento próprio dentro da função, não só repassar instrução; vale pra qualquer Gestor
 - [Memória contínua, não zerada STTK](feedback/feedback_memoria_continua_nao_zerada.md) — arquivo de estado é aprendizado acumulado, não "nasce zerado"; agente sempre começa entendendo o que já fez
 - [Registro input/output de execução STTK](feedback/feedback_registro_input_output_execucao.md) — salvar input recebido, output entregue e relatório de início/fim de cada execução; sustenta autonomia real (não canalizada)
+- [Tendências de escritórios do mundo STTK](feedback/feedback_tendencias_escritorios_mundo.md) — buscar ferramenta/IA/precificação/entrega nomeados, nunca "tendência" genérica
+- [Render/vídeo via MCP para Lúcio](feedback/feedback_render_video_mcp_lucio.md) — busca contínua de conectores MCP de render/vídeo/tour 360 usáveis pela equipe do Lúcio
 
 ---
 *Esta é a memória oficial do projeto (migrada em 10/07/2026). Existe uma cópia de referência dentro da pasta do organismo em `D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\memory\`, legível sem acesso à memória do Claude Code — manter os dois em sincronia.*
