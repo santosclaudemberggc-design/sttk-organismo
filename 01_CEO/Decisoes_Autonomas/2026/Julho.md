@@ -8,6 +8,67 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-07-31] Correção de erro apontado por Claudemberg: bug sistêmico de linha do tempo não-clicável no Painel do Fundador
+
+- **O que Claudemberg apontou, ao vivo, pela segunda vez:** que itens novos entrando na linha do tempo (ou em qualquer outra parte) do Painel do Fundador deveriam ser sempre clicáveis para o material completo, e que isso já tinha sido pedido antes — questionando se eu de fato aprendo com o próprio erro.
+- **Investigação, não desculpa:** o mecanismo do Painel só torna um item da linha do tempo clicável quando o campo `rec` do evento (1) tem conteúdo correspondente no objeto `R` (o registro completo) **e** (2) esse mesmo `rec` está listado no array `recs` de algum card de domínio (é isso que resolve para onde o clique navega). Auditei o arquivo inteiro (script Node ad hoc, comparando os `rec` usados no `feed` contra as chaves de `R` e contra todos os `recs:[...]` dos cards) e achei **5 chaves de rec quebradas, afetando 6 entradas da linha do tempo**, não só a que eu tinha acabado de adicionar:
+  1. `wallenbergDriveExec` (usada por DUAS entradas — 30/07 "3 documentos atualizados" e a minha nova de 31/07) — **sem conteúdo em `R` e sem card dono**; as duas entradas compartilhavam a mesma chave, então mesmo se eu corrigisse só o "dono", clicar na de 31/07 mostraria o conteúdo da de 30/07 (evento errado).
+  2. `wallenbergDriveGap` (30/07, "ferramenta de escrita no Drive habilitada") — mesma falha: sem conteúdo em `R`, sem card dono.
+  3. `painelCriado` (22/07) — tinha conteúdo em `R`, mas **nenhum card o listava em `recs`** — não navegava a lugar nenhum.
+  4. `painelPagina` (23/07) — mesma falha que o anterior.
+  5. `skillRecon` (22/07, "Skill legal reconciliada") — mesma falha.
+- **O que fiz:** escrevi conteúdo completo em `R` para as 2 chaves que não tinham (`wallenbergDriveGap`, `wallenbergDriveExec`); criei uma chave nova e própria (`wallenbergDrenagem3107`) para a minha entrada de 31/07, em vez de continuar compartilhando a chave de 30/07 — cada evento passa a ter seu próprio registro; registrei as 3 chaves órfãs (`skillRecon`, `wallenbergDriveGap`, `wallenbergDriveExec`, `wallenbergDrenagem3107`) no `recs` do card `kelsen`, e as 2 do Painel (`painelCriado`, `painelPagina`) no card `sistema`. Reexecutei o script de auditoria depois da correção: **zero rec quebrado restante** no arquivo inteiro (22 chaves únicas usadas na linha do tempo, todas com conteúdo e dono).
+- **Por quê isto é mais grave do que um bug isolado:** eu já tinha corrigido instâncias pontuais desse problema antes (é por isso que existem tantos registros com conteúdo completo), mas nunca extraí a regra geral disso para uma memória — cada vez que eu adicionava um evento novo, eu esquecia de checar as duas outras pontas (conteúdo em `R` + registro no `recs` do card certo). É exatamente o padrão que Claudemberg descreveu: **corrigir o sintoma sem generalizar a causa**. Registrei isso como memória de feedback (`memory/feedback/feedback_painel_rec_precisa_dono_e_conteudo.md`), com um checklist explícito para toda vez que eu tocar o `feed` do Painel — não só "vou lembrar", uma verificação nomeada.
+- **Achado colateral, esclarecido por Claudemberg ao vivo:** a planilha "Controle de entregáveis para arq. externos" (o arquivo CANÔNICO que Kelsen identificou para `planilha-enviaveis-recusada`) contém **todos os entregáveis de cada etapa e projeto**, não é exclusiva do Legal — registrado em `pendencias.json` (campo `confirmacao_claudemberg_31_07`) para que a execução futura da edição toque só as linhas da seção "Projeto Legal", sem mexer em linhas de outros Gestores que compartilham o mesmo arquivo.
+- **Por quê:** Princípio 8 (rastreabilidade) e o próprio princípio de aprender com erro próprio — que só vale se a lição virar memória verificável, não só texto no livro-razão que ninguém reconsulta antes de repetir a ação.
+- **O que foi criado/alterado:**
+  - Alterado: `01_CEO/Painel_Fundador/painel_fundador_sttk.html` (3 registros novos em `R`, 1 rec renomeado na entrada de 31/07 do `feed`, 5 chaves adicionadas a `recs[]` de 2 cards)
+  - Alterado: `01_CEO/Pendencias/pendencias.json` (confirmação de Claudemberg sobre o escopo da planilha)
+  - Criado: `memory/feedback/feedback_painel_rec_precisa_dono_e_conteudo.md` + linha em `memory/MEMORY.md`
+- **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-31/painel_fundador_sttk_pre_fix_links_quebrados.html`, `pendencias_pre_confirmacao_claudemberg.json`, `Julho_pre_fix_links_entry.md`.
+- **Como desfazer:** restaurar `painel_fundador_sttk.html` e `pendencias.json` a partir dos backups acima; apagar a memória nova e a linha do índice; remover esta entrada do `Julho.md`.
+- **Status:** Correção em resposta a apontamento direto de Claudemberg, ao vivo — não aguarda ratificação da Semanal, já é a correção do apontamento.
+
+---
+
+### [2026-07-31] Rotina `wallenberg-drenagem-continua` — Kelsen corrige ID de arquivo errado, Lúcio estável, duplicata de pendência reconciliada, execução de escrita bloqueada pelo modo automático
+
+- **O que decidi:** rodar a drenagem contínua acionando Kelsen e Lúcio em paralelo, passando os itens de `pendencias.json` com `status:"aberta"` de cada um.
+- **Kelsen — achado que corrige erro meu, não novidade neutra.** Ao investigar `planilha-enviaveis-recusada` (alc:"auto"), Kelsen descobriu que o ID de arquivo que eu havia registrado em 30/07 (4ª passagem) para a "Planilha de Enviáveis" estava **errado** — apontava para uma planilha genérica de reforma sem nenhuma linha "fachada legal"/"memorial legal". Usando `read_file_content`/`search_files` (ferramentas de leitura, sem escrita), localizou e confirmou por leitura literal os 3 arquivos certos, com IDs completos, aba, texto exato das células e substituição proposta — tudo registrado em `pendencias.json`. Reconfirmou também `formularios-ilegiveis` (mime `google-apps.form` continua ilegível, gap técnico inalterado).
+- **Execução real da escrita ficou BLOQUEADA — não por falta de ferramenta, mas pelo classificador de permissão do modo automático.** Tentei executar a edição via Bash + Python (mesmo mecanismo — Service Account + googleapiclient — usado com sucesso em 30/07 para 3 outros documentos), e o comando que apenas listaria a pasta de credenciais (`C:\Users\santo\.google\`) foi negado pelo classificador. Não tentei contornar via outra ferramenta (ex. PowerShell) para a mesma ação sensível — seria burlar o motivo do bloqueio, não resolvê-lo. **Diferença importante da classe de gap já registrada (`wallenberg-drive-write-tool-gap`):** ali a ferramenta não existia; aqui a ferramenta existe mas o modo automático vetou o uso específico nesta sessão, sem Claudemberg presente. Registrado como observação nova em `planilha-enviaveis-recusada` (campo `obs_31_07`), item continua `status:"aberta"`.
+- **Reconciliação de duplicata em `pendencias.json`:** encontrei o id `wallenberg-drive-write-tool-gap` duplicado — uma entrada já `resolvida` (30/07, topo do arquivo) e uma segunda, idêntica em conteúdo, ainda `status:"aberta"`, datada de 28/07. A segunda descrevia exatamente o mesmo gap já fechado (Kelsen com Drive só leitura na própria sessão, resolvido via mecanismo Wallenberg fora da sessão do subagente). Marquei-a `resolvida` também, preservando o texto original como registro histórico da causa raiz, para não deixar a mesma pendência aparentando aberta em dois lugares do arquivo.
+- **Lúcio:** reconciliação pura, sem execução — `lucio-agentes-nao-nomeados` (planejado) confirmado sem mudança, nada forçado. Não avançou no caso Lote 1/Q6 além de confirmar o próprio estado (fora do escopo desta rotina).
+- **Por quê:** Princípio 5 (autonomia contínua) e Princípio 18 (ética/conformidade) — melhor achar e corrigir um ID errado próprio do que deixar uma execução real mirar no arquivo errado; e melhor registrar honestamente um bloqueio do próprio modo automático do que forçar um contorno.
+- **O que foi criado/alterado:**
+  - Alterado: `01_CEO/Pendencias/pendencias.json` (Kelsen: correção do ID + achados de `planilha-enviaveis-recusada`; Wallenberg: reconciliação da duplicata `wallenberg-drive-write-tool-gap` -> resolvida, nota de bloqueio em `planilha-enviaveis-recusada`, `atualizado_em` -> 2026-07-31)
+  - Alterados: `_estado_kelsen.md`, `_estado_lucio.md` (seção 1, nova entrada de cada um)
+  - Painel do Fundador: **não republicado ainda nesta entrada** — ver observação abaixo.
+- **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-31/pendencias_pre_reconciliacao_duplicata.json` (antes da minha 1ª edição) e `pendencias_pre_wallenberg_blocker_note.json` (antes da 2ª). `Julho_pre_drenagem_entry.md` (antes desta entrada).
+- **Falha de processo observada, não escondida:** a edição de Kelsen em `pendencias.json` (correção do ID + achados) não teve backup próprio antes dela — só existe o backup que eu fiz antes da minha 1ª edição (anterior à dele) e o que fiz depois da dele (que já captura o resultado). Kelsen não tem Bash nesta sessão para copiar arquivo; ferramenta de backup mecânico não está disponível para ele, mesma classe de limitação já conhecida.
+- **Como desfazer:** restaurar `pendencias.json` a partir de `pendencias_pre_reconciliacao_duplicata.json` (reverte tudo desta rodada); remover esta entrada do `Julho.md` a partir do backup `Julho_pre_drenagem_entry.md`.
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal). Execução real (escrita na Planilha de Enviáveis) já foi concluída em 01/08, com Claudemberg presente (ver item 19).
+
+---
+
+### [2026-07-31] Rotina diária (Funções 3+5) — uma Skill nova como proposta (Arquitetura, acessibilidade), correção de rota de 28-30/07 e item pendente resolvido
+
+- **O que decidi:** rodar a pesquisa externa do dia (item pendente do Edital LP-SMDU 002/2026, boletim CBIC de normas, revisão NBR 16690 fotovoltaico, tendências de escritórios brasileiros, CAU Digital, madeira industrializada/mass timber, NBR 12721, acessibilidade NBR 9050/16537) e transformar o achado que passou no crivo de lacuna real + verificabilidade em Skill.
+- **O que executei:** criei a proposta `arquitetura_nbr-16537-2024-piso-tatil-acessibilidade.md` — a NBR 16537 (sinalização tátil no piso) teve 2ª edição publicada em 2024 (44→58 páginas), para o Gestor Lúcio (Arquitetura), primeira Skill de acessibilidade deste Gestor. **É uma correção de rota, não achado do zero**: as rodadas de 28/07 e 30/07 concluíram "sem revisão de acessibilidade" olhando só a NBR 9050 — a NBR 16537 é norma própria desde 2016 (destacada da 9050) e foi de fato revisada. Confirmado em 3 fontes independentes (Sinallink, PDF oficial via AMPID, LevanteBH); pontos técnicos concretos: cor/largura constantes na sinalização direcional, alerta obrigatório de 0,50m no início/fim do percurso em calçada, regra de contraste único quando o piso adjacente muda de cor entre ambientes.
+- **Por quê:** Gestor Arquitetura ainda não foi criado, então a Skill fica arquivada como proposta (mesmo tratamento das demais propostas do mês) — só as Skills do **Legal**, único Gestor implantado, são ativadas de fato sob o modelo de ratificação posterior de 20/07/2026. Função 3 (Cérebro) e Função 5 (Criador de Skills).
+- **Item pendente de 30/07 resolvido:** o Edital LP-SMDU nº 002/2026 (fetch tinha falhado ontem por erro de conexão) foi lido hoje via WebFetch — **não é sobre LICIN 2.0/licenciamento**, é o edital do programa "Reviver Patrimônio Pró-APAC" (restauração de patrimônio histórico), fora do escopo de Construção do Zero. Item encerrado, não vira achado nem pendência.
+- **Achados descartados por redundância (Princípio 15):** boletim CBIC mai/jun 2026 repete as mesmas 2 normas já descartadas (NBR 11702 tintas, ISO 19650-6 BIM); revisão da NBR 16690 (fotovoltaico) segue em comissão de estudo sem previsão de conclusão 2026, mesmo status de 28/07; CAU Digital segue fase 1, nona rodada seguida sem mudança de fase real — não vou mais registrar esse item a cada rodada, só revisitar se outro achado indicar mudança.
+- **Achado avaliado e não transformado em Skill:** madeira industrializada de grande porte (CLT/Glulam, NBR 7190-1:2022 partes 6-7) é tendência real (Modern Construction Show 2026 passa a incluir madeira engenheirada), mas se sobrepõe parcialmente à Skill de sistemas industrializados/modulares já proposta em 16/07 (Light Steel Frame/painel leve) — é tecnologia distinta (estrutura pesada vs. painel leve), mas sem caso real do organismo demandando esse porte hoje. Anotado no índice para revisitar por demanda (Princípio 19), não criado como Skill especulativa.
+- **Achados descartados por ausência de fonte/fato novo:** Studio MK27/Bernardes Arquitetura (busca não retornou conteúdo específico de tendências 2026 verificável); NBR 12721 (custos unitários, sem revisão 2026, versão vigente segue 2006).
+- **O que foi criado/alterado:**
+  - Criado: `01_CEO/Skills_Propostas/2026/Julho/arquitetura_nbr-16537-2024-piso-tatil-acessibilidade.md` (PDF gerado a seguir)
+  - Alterado: `01_CEO/Skills_Propostas/2026/Julho/indice.md` (nova linha na tabela + observações da rodada de 31/07)
+  - Painel do Fundador: **não alterado** — mesmo padrão de 19-30/07: só entrou Skill de Gestor não implantado (proposta arquivada), sem mudança de card/capacidade real do organismo hoje; Princípio 15, não inventar evento de painel.
+- **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-31/indice_pre_nbr16537.md` e `Julho_pre_31_entry.md` (antes de editar).
+- **Como desfazer:** apagar `arquitetura_nbr-16537-2024-piso-tatil-acessibilidade.md` e `.pdf`; restaurar `indice.md` a partir do backup; remover esta entrada do `Julho.md` a partir do backup `Julho_pre_31_entry.md`.
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal).
+
+---
+
 ### [2026-07-30] Rotina diária (Funções 3+5) — uma Skill nova ativada como proposta (Fechamento), nenhum outro achado confirmável
 
 - **O que decidi:** rodar a pesquisa externa do dia (LICIN 2.0/SMDU, boletim CBIC de normas técnicas, tendências de grandes escritórios de arquitetura no Brasil e exterior, novidades CAU-RJ/CREA-RJ, revisão NBR 9050/16537, vistoria digital de obra/Habite-se, garantia e manual do proprietário, aplicação prática do RDT) e transformar o único achado que passou no crivo de lacuna real + verificabilidade em Skill.
@@ -24,7 +85,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-30/indice_pre_nbr14037-17170.md` (antes de editar).
 - **Falha de processo reconhecida:** editei este próprio arquivo (`Julho.md`) para inserir esta entrada sem fazer backup prévio dele — a regra vale para todo arquivo alterado, sem exceção por ser uma inserção aditiva. Não fabrico backup retroativo do arquivo inteiro (721 linhas); a edição em si é aditiva (só inseriu esta entrada, não alterou texto existente) e fica visível no histórico de versionamento do repositório.
 - **Como desfazer:** apagar `fechamento_nbr14037-17170-manual-proprietario-garantias.md` e `.pdf`; restaurar `indice.md` (e regerar o `.pdf`) a partir do backup; remover esta entrada do `Julho.md`.
-- **Status:** Aguardando ratificação (sobe para a Semanal de 03/08/2026).
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal).
 
 ---
 
@@ -177,7 +238,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
   - Painel do Fundador: não alterado — nada no feed de hoje representa evento além desta própria pesquisa de rotina, e ela já fica registrada aqui (Princípio 15 — não inventar evento de painel).
 - **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-29/indice.md` (antes de editar).
 - **Como desfazer:** apagar `complementares_verificacao-automatica-conformidade-bim-ids-rase.md` e `.pdf`; restaurar `indice.md` (e regerar o `.pdf`) a partir do backup.
-- **Status:** Aguardando ratificação (sobe para a Semanal de 03/08/2026).
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal).
 
 ---
 
@@ -190,7 +251,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - **O que foi criado/alterado:** `01_CEO/Gestores/Lúcio (Arquitetura)/Casos_TESTE/Levantamento Muller TESTE/levantamento_muller_teste.md` (novo, caso-teste); `.claude/agents/lucio.md` (nível Formação -> Shadow); `01_CEO/Pendencias/pendencias.json` (`lucio-exame-nivel` → `resolvida`); Notion "Treinos e Testes" (página do exame: Status `pendente` → `aprovado`, campos Resultado/Caso-teste/Atualizado em preenchidos); `01_CEO/Gestores/Lúcio (Arquitetura)/_estado_lucio.md` (atualizado pelo próprio Lúcio, antes de responder).
 - **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-28/lucio_pre_exame1_promocao.md`, `pendencias_pre_lucio_exame1.json`, `Julho_pre_lucio_exame1.md` (todos antes de editar).
 - **Como desfazer:** restaurar `lucio.md` e `pendencias.json` a partir dos backups; reverter a página Notio do exame para Status `pendente` e limpar os campos preenchidos.
-- **Status:** Aguardando ratificação (sobe para a Semanal de 03/08). Próximo passo real: Shadow -> Assisted exige vários casos-teste (mínimo 3, tipos diferentes) — não é imediato, só quando eu desenhar a próxima leva.
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal) — Claudemberg confirmou o critério: exame precisa refletir situação real de cliente e exigir busca rígida/trabalho complexo; caso bate com o critério para o estágio de Exame 1 (precisão, 1 caso). Próximo passo real: Shadow -> Assisted exige vários casos-teste (mínimo 3, tipos diferentes) — não é imediato, só quando eu desenhar a próxima leva.
 
 ---
 
@@ -207,7 +268,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - **O que foi criado/alterado:** `01_CEO/Pendencias/pendencias.json` (4 itens fechados nesta leva: `b9-zona-cinzenta-lms`, `b9-lms-unifamiliar-achado`, `janela-comercial-desconto`, `b1-regerar-pdfs`, `b11-titulos-prancha-ascii` — 5 no total); `.claude/skills/legal-base-legislativa-bairro/SKILL.md` (+ `.pdf`); `01_CEO/Gestores/Kelsen (Legal)/POP-GESTOR-LEGAL-01_conferencia_pre_validacao.md` (+ `.pdf`); `01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/_indice_fontes.md` (+ `.pdf`); `01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/POPs/POP-LEGAL-02_outorga_onerosa_cab_cam.pdf`; `_ferramentas/gerar_prancha_legal.py`; prancha de teste regenerada; arquivos de estado de Kelsen e Hely.
 - **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-28/pendencias_pre_fechamento-final.json` (Wallenberg, antes desta consolidação); `SKILL_pre_b9_incorporacao.md`, `POP-GESTOR-LEGAL-01_pre_b9_incorporacao.md`, `pendencias_pre_b9_janela_fechamento.json` (Kelsen, antes das próprias edições).
 - **Como desfazer:** restaurar os arquivos citados a partir dos backups; reverter os 5 itens de `pendencias.json` para `"aberta"` manualmente (conteúdo de reversão descrito nesta entrada, sem backup único que cubra as 5 mudanças de uma vez).
-- **Status:** Aguardando ratificação (sobe para a Semanal de 03/08) — exceto as 2 decisões de Claudemberg (B9/LMS incorporado, janela comercial não usada), que já são a própria decisão dele, executadas no mesmo dia.
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal) — exceto as 2 decisões de Claudemberg (B9/LMS incorporado, janela comercial não usada), que já eram a própria decisão dele, executadas no mesmo dia, sem precisar de ratificação separada.
 
 ---
 
@@ -221,7 +282,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - **O que foi criado/alterado:** `01_CEO/Painel_Fundador/painel_fundador_sttk.html` (2 registros novos em `R`; `recs` do card do Kelsen; `rec` dos 2 eventos do feed). Republicado no mesmo link.
 - **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-28/painel_fundador_sttk_pre_fix-linha-do-tempo.html` (feito antes de editar).
 - **Como desfazer:** restaurar `painel_fundador_sttk.html` do backup acima e republicar no mesmo link (isso também reintroduz o bug de 20/07, já que ele preexistia).
-- **Status:** Aguardando ratificação (sobe para a Semanal de 03/08).
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal).
 
 ---
 
@@ -239,7 +300,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - **O que foi criado/alterado:** `01_CEO/Pendencias/pendencias.json` (3 itens marcados `"resolvida"` — `b10-coscip-nt107`, `b2-pop-legal-02-quarentena`, `b3-acentuacao-prancha`; `b1-regerar-pdfs` mantido aberto com escopo revisado; item novo `b11-titulos-prancha-ascii`; item novo `wallenberg-drive-write-tool-gap`); `01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/_indice_fontes.md` (+ 2 PDFs primários novos: Decreto 42/2018, NT 1-07); `01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/POPs/POP-LEGAL-02_outorga_onerosa_cab_cam.md` (quarentena encerrada); `01_CEO/Gestores/Kelsen (Legal)/POP-GESTOR-LEGAL-01_conferencia_pre_validacao.md` (+ `.pdf`, correção de setas unicode); `01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Casos_TESTE/.../caso_prancha.json` (+ `.pdf`); arquivos de estado de Wallenberg, Kelsen, Hely e Lúcio.
 - **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-28/POP-LEGAL-02_outorga_onerosa_cab_cam.md` e `_indice_fontes.md` (feitos por Kelsen, antes de alterar); `01_CEO/Decisoes_Autonomas/_backups/2026-07-28/Julho_pre_drenagem-2a-rodada.md` (feito por Wallenberg, antes desta entrada). **Sem backup:** as 3 primeiras edições de Hely e a reclassificação inicial de Kelsen no `pendencias.json` (falha reconhecida acima).
 - **Como desfazer:** restaurar `POP-LEGAL-02_outorga_onerosa_cab_cam.md` e `_indice_fontes.md` dos backups de Kelsen citados; reverter os 5 itens de `pendencias.json` para o estado anterior (não há backup exato desse ponto — precisa reverter manualmente `status`/`alc` conforme esta entrada); os PDFs regenerados podem ser recriados rodando `_ferramentas/md_to_pdf.py` de novo sobre a versão restaurada dos `.md`.
-- **Status:** Aguardando ratificação (sobe para a Semanal de 03/08).
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal).
 
 ---
 
@@ -252,7 +313,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - **O que foi criado/alterado:** `.claude/skills/legal-base-legislativa-bairro/SKILL.md` (nova entrada em "Lacunas conhecidas", texto redigido por Kelsen no molde mapa-não-enciclopédia, PDF gêmeo regerado); `01_CEO/Pendencias/pendencias.json` (item novo `b10-coscip-nt107`, `alc:"auto"` — Hely pode executar o levantamento de fonte primária sem esperar decisão); `01_CEO/Gestores/Kelsen (Legal)/_estado_kelsen.md` (nova entrada + B10 no Balde (b)); Painel do Fundador (feed + bloco de pendências), republicado no mesmo link.
 - **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-28/` (`SKILL_pre_coscip.md`, `pendencias_pre_b10.json`, `painel_fundador_sttk_pre_coscip.html`), feito antes de qualquer edição de hoje.
 - **Como desfazer:** restaurar os 3 arquivos dos backups acima (republicar o Painel depois de restaurar); remover o item `b10-coscip-nt107` de `pendencias.json`.
-- **Status:** Aguardando ratificação (sobe para a Semanal de 03/08). Sem decisão de escopo comercial — se o Hely confirmar obrigação residual da NT 1-07, o achado muda de alçada (auto → humano) e sobe a Claudemberg, mesmo critério do B9.
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal). Sem decisão de escopo comercial — se o Hely confirmar obrigação residual da NT 1-07, o achado muda de alçada (auto → humano) e sobe a Claudemberg, mesmo critério do B9.
 
 ---
 
@@ -267,7 +328,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - **O que foi criado/alterado:** `01_CEO/Painel_Fundador/painel_fundador_sttk.html` (CSS novo para `.pend-*`, `.team-*`, `.equipe`, `.tcard`; campo `team` nos cards de Kelsen e Lúcio; array `pendencias` novo; funções `shortName`/`stColor`; render da seção de pendências e da seção "Equipe" na página de detalhe). Republicado no mesmo link (`https://claude.ai/code/artifact/3c28ec0d-1817-4e7a-9a22-a4c16c570f27`).
 - **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-27/painel_fundador_sttk_pre_drenagem.html` (feito antes de qualquer edição de hoje no arquivo — cobre também esta mudança, por ser cumulativa sobre a mesma sessão de edições).
 - **Como desfazer:** restaurar `painel_fundador_sttk.html` do backup acima e republicar no mesmo link.
-- **Status:** Aguardando ratificação (sobe para a Semanal de 03/08).
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal).
 
 ---
 
@@ -296,7 +357,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - **O que foi criado/alterado:** `01_CEO/Pendencias/pendencias.json` (novo); `SKILL.md` da rotina `wallenberg-drenagem-continua` (prompt substituído via `update_scheduled_task`).
 - **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-27/wallenberg-drenagem-continua_SKILL_pre_pendencias-json.md` (cópia do prompt anterior, feita antes de chamar `update_scheduled_task`).
 - **Como desfazer:** chamar `update_scheduled_task` de novo com o prompt do backup acima; apagar `01_CEO/Pendencias/pendencias.json` (a rotina volta a rodar como antes, sem o passo 2.5/3.b2, se o arquivo não existir — mas o correto é reverter o prompt também, não só apagar o JSON).
-- **Status:** Aguardando ratificação (sobe para a Semanal de 03/08). A decisão de mérito sobre COES Art. 35 §7º segue em aberto com Claudemberg, separada desta entrada.
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal). A decisão de mérito sobre COES Art. 35 §7º segue em aberto com Claudemberg, separada desta entrada.
 
 ---
 
@@ -313,7 +374,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - **O que foi criado/alterado:** `01_CEO/Painel_Fundador/painel_fundador_sttk.html` (array `agentesStandalone` novo; `recToCard` novo; render da Linha do Tempo agora condicional a botão; `renderDetail`/`route` aceitam registro-alvo; registro `b9Fechada` novo em `R`, linkado no card do Kelsen e em 2 eventos do feed; CSS de destaque `.record.hl` e de linha clicável `button.ev`). Republicado no mesmo link.
 - **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-27/painel_fundador_sttk_pre_drenagem.html` (mesmo backup do início do dia — cobre também esta mudança, cumulativa na mesma sessão de edições).
 - **Como desfazer:** restaurar `painel_fundador_sttk.html` do backup acima e republicar no mesmo link.
-- **Status:** Aguardando ratificação (sobe para a Semanal de 03/08).
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal).
 
 ---
 
@@ -327,7 +388,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - **Fronteira:** não cruzada hoje — zero cliente real ativo, é achado de manutenção de base, não decisão sobre caso real. Mas fica **sinalizado explicitamente**: antes desta base virar Skill ativa consumida em caso real de cliente, o achado precisa de ciência de Claudemberg (custo/escopo pode mudar para lotes unifamiliares que hoje presumiam isenção).
 - **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-27/_indice_fontes.md` (feito por Hely antes de alterar).
 - **Como desfazer:** restaurar `_indice_fontes.md` do backup acima; apagar os 4 PDFs primários novos listados.
-- **Status:** Aguardando ratificação (sobe para a Semanal de 03/08).
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal).
 
 ---
 
@@ -350,7 +411,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - **O que foi criado/alterado:** `CLAUDE.md` (nova regra); página nova na Notion "Treinos e Testes" (Lúcio).
 - **Backup em:** `01_CEO/Decisoes_Autonomas/_backups/2026-07-27/CLAUDE_pre_cascata_formacao.md` (hash conferido antes de alterar).
 - **Como desfazer:** restaurar `CLAUDE.md` do backup acima; apagar a página do Lúcio na Notion "Treinos e Testes".
-- **Status:** Aguardando ratificação (sobe para a Semanal de 03/08).
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal) — Claudemberg reconfirmou a cascata ao vivo (Wallenberg cria/treina/aprova o Gestor até Autonomous → Gestor Autonomous cria/treina/aprova a própria equipe), bate com o que está registrado.
 
 ---
 
@@ -366,7 +427,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - **Limite honesto que não desaparece:** esta tarefa (como as duas que já existem) só dispara **com o aplicativo aberto** — se estiver fechado na hora, roda no próximo lançamento. Não é possível hoje ter execução 24/7 sem o app rodando; é limite da plataforma, não algo que decidi.
 - **Backup em:** não aplicável — arquivo novo (`SKILL.md` da tarefa), Painel já tinha backup próprio do dia (`_backups/2026-07-27/painel_fundador_sttk_pre_semanal_fix.html`).
 - **Como desfazer:** apagar a tarefa agendada (`C:\Users\santo\.claude\scheduled-tasks\wallenberg-drenagem-continua\`, ou via "Scheduled" na barra lateral); restaurar `painel_fundador_sttk.html` do backup e republicar.
-- **Status:** Aguardando ratificação (Semanal de 27/07 já fechada — sobe para 03/08).
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal).
 
 ---
 
@@ -475,7 +536,7 @@ Estas decisões continuam exigindo Claudemberg **antes** de executar. Se aparece
 - **Por que não subiu como risco crítico agora:** zero cliente real ativo hoje, nenhum protocolo em curso, nenhum Gate do Maurício em jogo. Se o Hely confirmar via B9 que unifamiliar sem gatilho também está sujeito, isso muda de categoria — vira risco real de protocolo (mesmo nível do achado já registrado do COES Art. 35 §7º, dutos no passeio) e aí sim sobe a Claudemberg antes de qualquer protocolo real.
 - **Descartado nesta rodada, sem virar Skill (Princípio 15):** LICIN 2.0/SMDU sem novidade além do já conhecido; NBR 5410 ainda em segunda consulta pública, sem publicação (mesmo status de 21/07); tendências genéricas de IA em arquitetura e construção modular/industrializada (mesmo conteúdo de mercado já descartado repetidamente desde 20/07, sem norma nova); NBR 9050 sem revisão desde 2020/2021; BIM obrigatório federal é de 2020, sem novidade 2026 específica para arquitetura privada; atualização mensal do CUB-RJ (rotina, não achado, mesmo critério já aplicado ao SINAPI em 22/07).
 - **Como desfazer:** restaurar `_indice_fontes.md` e `legal-base-legislativa-bairro/SKILL.md` a partir dos backups de 27/07 acima e apagar os dois `.pdf` regenerados (ou restaurar as versões anteriores).
-- **Status:** Aguardando ratificação (Semanal de 27/07 — esta entrada é posterior ao horário da reunião de hoje; sobe para a próxima).
+- **Status:** Ratificado em 10/08/2026 (Reunião Semanal).
 
 ### [2026-07-24] Rotina diária (Função 3+5) — achado LC 301/2026 auditado por Kelsen contra fonte primária; Skills passam a ter PDF gêmeo
 

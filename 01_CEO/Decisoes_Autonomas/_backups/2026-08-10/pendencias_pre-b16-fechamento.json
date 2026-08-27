@@ -1,0 +1,19 @@
+{
+  "_comentario": "Fonte única e estruturada da fila de pendências do organismo. A rotina wallenberg-drenagem-continua lê este arquivo a cada disparo: itens com alc='auto' e status='aberta' são executados sozinhos pelo Gestor dono (via seu Agente, quando aplicável); os demais (humano/tecnico/planejado) só são reconciliados, nunca forçados. O Painel do Fundador (painel_fundador_sttk.html) espelha este arquivo — ao alterar aqui, regerar o array `pendencias` do painel e republicar.",
+  "schema_versao": 1,
+  "atualizado_em": "2026-08-10 (4ª sub-passagem, rotina wallenberg-drenagem-continua): b16-numero-exato-decretos-citados aberto — recomendação solta do B8 (08/08) formalizada como item estruturado, mesma classe de correção já aplicada a B4-B8/B14 em 08/08. Varredura de vigência e b15-glifo-symbol-indice-fontes seguem como na atualização anterior (mesmo dia, sub-passagens 1-3).",
+  "_nota_backup": "Backup pré-fechamento do item b16-numero-exato-decretos-citados, 10/08/2026 (5ª sub-passagem). Snapshot do item b16 no estado ABERTA, tal como estava antes da auditoria de Kelsen contra os 2 PDFs primários arquivados por Hely. Ver pendencias.json (arquivo vivo) para o conteúdo completo e atualizado — este backup preserva só o registro do item b16 pré-edição, conforme lido nesta rodada; os demais itens do arquivo não foram tocados nesta passagem e permanecem idênticos ao arquivo vivo.",
+  "item_b16_pre_fechamento": {
+    "id": "b16-numero-exato-decretos-citados",
+    "owner": "Kelsen",
+    "agente": "Hely",
+    "cardId": "kelsen",
+    "txt": "Recomendação aberta por Hely em 08/08/2026 (item b8-varredura-decretos-resolucoes, campo resultado), nunca formalizada como item próprio: a varredura temática de decretos/resoluções na Busca Fácil (10 buscas por assunto) não confirmou 2 atos já citados por número em POPs nossos — Decreto 22.705/2003 (acessibilidade) e Decreto 20.504/2001 (sombra na orla). Busca por assunto não é prova de ausência (o próprio Hely registrou isso como honestidade de método, não como falha) — falta busca por número exato (consultaPorAto.asp) para confirmar vigência e arquivar os PDFs primários, mesmo padrão já usado com sucesso para o Decreto 45.917/2019 (B5, 08/08).",
+    "desde": "2026-08-08",
+    "crit": "baixa",
+    "alc": "auto",
+    "res": "Achado de reconciliação de Kelsen (10/08/2026, 4ª sub-passagem da rotina wallenberg-drenagem-continua, varredura de melhoria do passo 5 — sem item auto+aberta executável nesta rodada). A recomendação de Hely ficou só como texto solto dentro do campo 'resultado' do item b8, nunca virou item estruturado que a rotina de drenagem lê de fato — mesma classe de lacuna que Kelsen já tinha corrigido em 08/08 (2ª passagem) para B4-B8/B14, quando texto solto na tabela do próprio arquivo de estado ficava invisível para reconciliação automática. Aqui o texto solto estava dentro do JSON (não na tabela do estado), mas a mesma lição se aplica: recomendação sem item formal não é confiável para a rotina encontrar sozinha.",
+    "acao": "Kelsen aciona Hely: buscar os dois decretos por número exato (consultaPorAto.asp, Busca Fácil da SMU) — Decreto 22.705/2003 e Decreto 20.504/2001 — confirmar status de vigência (Válido/revogado/alterado), arquivar PDF em Fontes_Legislacao/ e atualizar _indice_fontes.md, mesmo padrão já usado para B5 (Decreto 45.917/2019, 08/08). Não é julgamento de mérito, é levantamento de fonte primária — Kelsen audita o retorno contra o primário antes de fechar.",
+    "status": "aberta"
+  }
+}

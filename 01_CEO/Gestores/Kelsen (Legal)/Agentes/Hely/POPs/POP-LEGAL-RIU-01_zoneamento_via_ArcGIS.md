@@ -30,11 +30,11 @@ Este POP **substitui explicitamente** os "contornos" anteriores que erravam (geo
 ## 4. Servidor e projeção
 - Base: `https://pgeo3.rio.rj.gov.br/arcgis/rest/services/`
 - Projeção de trabalho do zoneamento: **EPSG 31983** (SIRGAS 2000 / UTM 23S). Toda consulta de zoneamento/restrição usa `inSR=31983` e geometria com `"spatialReference":{"wkid":31983}`.
-- **Reprojeção resolvida na origem:** o geocoder devolve nativamente WGS84 (wkid 4326), mas a operação `findAddressCandidates` aceita o parâmetro **`outSR=31983`** — o próprio ArcGIS reprojeta no servidor e devolve a coordenada já em 31983. **Não é preciso reprojetar manualmente.** (Fallback, caso um geocoder não aceite `outSR`: reprojetar 4326→31983 com `pyproj` antes de consultar o zoneamento. No teste real não foi necessário.)
+- **Reprojeção resolvida na origem:** o geocoder devolve nativamente WGS84 (wkid 4326), mas a operação `findAddressCandidates` aceita o parâmetro **`outSR=31983`** — o próprio ArcGIS reprojeta no servidor e devolve a coordenada já em 31983. **Não é preciso reprojetar manualmente.** (Fallback, caso um geocoder não aceite `outSR`: reprojetar 4326->31983 com `pyproj` antes de consultar o zoneamento. No teste real não foi necessário.)
 
 ## 5. Procedimento passo a passo
 
-### Passo 1 — Endereço → coordenada (geocoder oficial)
+### Passo 1 — Endereço -> coordenada (geocoder oficial)
 Geocoder recomendado (testado, o que melhor interpola número de porta): **`Geocode/Geocode_composto_SIURB`**. Alternativas oficiais no mesmo servidor: `Geocode/Geocode_Logradouros_WGS84`, `Geocode/Geocode_Logradouros`, e `Geocode/PAL_QD_LOTE` (geocodifica direto por PAL/Quadra/Lote quando esses dados são conhecidos).
 
 ```
@@ -64,7 +64,7 @@ Escolher a feature de lote válida mais próxima (campo `x>0`) e **usar a coorde
 
 Corroboração adicional quando disponível (não é gate único, cobertura é incompleta): `CadParcel/GeoPAL/MapServer/1` (polígono PAL do loteamento — confirma "AVERBADO") e `CadParcel/IMOVEIS_TERRITORIAIS/MapServer/0` (polígono do imóvel). No teste, esses dois nem sempre têm feature no ponto — por isso a camada 0 "Número de lote" é o confirmador primário do lote.
 
-### Passo 3 — Coordenada do lote → pacote de zoneamento (uma consulta)
+### Passo 3 — Coordenada do lote -> pacote de zoneamento (uma consulta)
 ```
 curl -s -G "https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Urbanismo/LBB_Zoneamento_urbano_vigente/MapServer/0/query" \
   --data-urlencode "f=json" --data-urlencode "geometryType=esriGeometryPoint" \
@@ -89,6 +89,8 @@ Auxiliares úteis: `Urbanismo/IU_Zoneamento_Urbano_Limites`, `Urbanismo/LBB_Para
 > **TRAVA B — homônimos de rua.** Se o nome da rua existir em mais de um ponto da cidade, cruzar com `CadLog/Trechos_Logradouros` e resolver pelo lote (TRAVA A) qual é o do cliente — nunca pelo score do geocoder isolado.
 >
 > **TRAVA C — conferência humana CONTINUA, agora como SEGURANÇA (dupla checagem), não como fonte única.** Antes de qualquer protocolo real, o parâmetro obtido aqui é conferido contra o RIU interativo oficial no lote específico (Princípio 18). Hely não acessa o mapa interativo direto — quando a confirmação visual for necessária, sinalizar a Kelsen/Claudemberg para conferir no mapa. A API dá o dado; a conferência humana fecha.
+>
+> **TRAVA D — colisão de subzona entre Áreas de Planejamento, propagada do `POP-GESTOR-LEGAL-01` (checagem B, item 4) em 08/08/2026.** O mesmo código de subzona existe em APs diferentes com valores diferentes (ex.: "ZRM3 D" existe na AP2, com CAM 3,5/TO 70/8pav-25m, **e** na AP4, com CAM 1,00/TO 50/6pav-20m afastado/4pav-14m não afastado). Antes de aceitar a linha do Anexo XXI lida no Passo 3 (seção 5), **conferir que o cabeçalho do bloco de Área de Planejamento é o da AP do lote** — não basta o código da subzona bater. **Near-miss real em 20/07/2026:** parâmetro de lote da Zona Sul quase aplicado a uma casa no Recreio. O campo `ap` retornado pela consulta de ponto (seção 5, Passo 3) já identifica a AP correta — usar esse campo para escolher o bloco certo do Anexo XXI, nunca localizar a subzona por busca textual isolada (`grep` devolve a primeira ocorrência, que pode ser de outra AP).
 
 ## 6.1. FALLBACK DA TRAVA A — quando a unidade está dentro de uma GLEBA-MÃE (loteamento fechado / condomínio fechado)
 > **Aprovado por Claudemberg na Reunião Semanal de 20/07/2026**, a partir do achado documentado desde o caso Vasconcelos. Este fallback é uma extensão específica da TRAVA A (seção 6) — não a substitui, e **não dispensa a TRAVA C** (ver Resultado, abaixo).
@@ -166,19 +168,19 @@ Em 14/07/2026 uma consulta a esta API (caso Rua Escritor Elie Wiesel / CL 476218
 
 ### Exemplo A — happy path numérico completo + restrições incidentes
 - Endereço: **Estrada dos Bandeirantes, 5000, Vargem Grande**
-- Geocode (`Geocode_composto_SIURB`, `outSR=31983`): score 96,33, `Addr_type=StreetAddress`, match "5000 Estrada dos Bandeirantes" → ponto interpolado **x=658105.67 y=7457186.26**.
-- TRAVA GeoPAL (raio 50 m): lote **11**, quadra **IV**, **CLNP 02433113867**, np 13867 → coordenada do lote real **x=658139.37 y=7457206.69** (39,4 m do ponto interpolado — o refino importou).
+- Geocode (`Geocode_composto_SIURB`, `outSR=31983`): score 96,33, `Addr_type=StreetAddress`, match "5000 Estrada dos Bandeirantes" -> ponto interpolado **x=658105.67 y=7457186.26**.
+- TRAVA GeoPAL (raio 50 m): lote **11**, quadra **IV**, **CLNP 02433113867**, np 13867 -> coordenada do lote real **x=658139.37 y=7457206.69** (39,4 m do ponto interpolado — o refino importou).
 - Zoneamento @ lote: **ZRM3 B** (AP4, lei 270/2024) — CAB 0,8; CAM 1,5; TO 50; lote_min 360; testada 10; gab_afast 6pav/20m; gab_n_afast "-"; afast_frontal 5; ICS 0,6.
 - Restrições sobrepostas: **LBB_AEI INCIDE** — AEIA "Ambiental de Vargem Grande, Vargem Pequena e parte do Recreio/Camorim" (Leis 48.990/2021; 49.405/2021; 49.697/2021); **LBB_Areas_Protegidas INCIDE** — **APA do Sertão Carioca** (Leis 50.411/2022; 49.695/2021). AEIS, APAC, APP não incidem. *Prova concreta de que o zoneamento-base não basta.*
 
 ### Exemplo B — TRAVA pegando ponto fora do lote + deferência honesta à lei específica
 - Endereço: **Rua Albano de Carvalho, 100, Recreio dos Bandeirantes**
-- Geocode: score 99,5, `Addr_type=StreetAddress` → ponto interpolado x=656277.77 y=7453276.62. `IMOVEIS_TERRITORIAIS` nesse ponto: **0 features** (interpolação caiu fora do polígono de lote — a TRAVA A justifica-se aqui).
-- TRAVA GeoPAL (raio 40 m): lote **22**, quadra **14**, **CLNP 10421600085** → coordenada do lote **x=656325.95 y=7453333.96**.
+- Geocode: score 99,5, `Addr_type=StreetAddress` -> ponto interpolado x=656277.77 y=7453276.62. `IMOVEIS_TERRITORIAIS` nesse ponto: **0 features** (interpolação caiu fora do polígono de lote — a TRAVA A justifica-se aqui).
+- TRAVA GeoPAL (raio 40 m): lote **22**, quadra **14**, **CLNP 10421600085** -> coordenada do lote **x=656325.95 y=7453333.96**.
 - Zoneamento (nos DOIS pontos, interpolado e lote — concordaram): **ZPP (A-20)**, AP4, legislação "Decreto 3.046/1981; LC 270/2024". Parâmetros retornados como texto **"Ver Subzona A-20 do Dec. nº 3046/1981"** — a API remete à lei específica; o número sai da leitura do decreto, não da API. Nenhuma restrição adicional (AEI/AEIS/Áreas Protegidas/APAC/APP) incidente — a proteção já está na própria zona-base ZPP.
 
 ### Âncora — reprodução do teste do Claudemberg
-- Coordenada x=657364.35 y=7454433.40 (31983) → **ZRM3 D**, CAB 0,8, CAM 1,0, TO 50, lote_min 600, testada 12, gab 6pav/20m (afast)/4pav/14m (não afast), afast_frontal 5, ICS 0,4, lei 270/2024 — **bateu 100% com o RIU oficial**. Isto ancora que o endpoint REST = a fonte que alimenta o RIU.
+- Coordenada x=657364.35 y=7454433.40 (31983) -> **ZRM3 D**, CAB 0,8, CAM 1,0, TO 50, lote_min 600, testada 12, gab 6pav/20m (afast)/4pav/14m (não afast), afast_frontal 5, ICS 0,4, lei 270/2024 — **bateu 100% com o RIU oficial**. Isto ancora que o endpoint REST = a fonte que alimenta o RIU.
 
 ## 10. Lacunas conhecidas (sinalizadas a Kelsen)
 - **Precisão do geocoder:** localiza o número quando `Addr_type=StreetAddress/PointAddress`, mas por **interpolação** — o ponto pode ficar dezenas de metros do lote (39 m e 76 m nos testes). Por isso a TRAVA A (refino por lote) é obrigatória, não opcional. Quando só devolve `StreetName`, é o meio do trecho — mais fraco ainda.

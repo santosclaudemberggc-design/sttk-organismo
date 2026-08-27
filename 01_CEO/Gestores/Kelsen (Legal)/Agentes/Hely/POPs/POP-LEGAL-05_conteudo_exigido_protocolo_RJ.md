@@ -658,6 +658,8 @@ Texto literal, íntegro (Anexo I, IV, item 2):
 
 **Recomendação a Kelsen:** adotar, em obra nova, representação monocromática preta, por ser o padrão de desenho técnico e por não haver regra em contrário. **[INTERPRETAÇÃO]** — o decreto não determina isso; determina apenas que a regra das três cores não se aplica. Kelsen ratifica.
 
+**Propagado em 08/08/2026:** esta seção já estava alinhada com a decisão formal de Kelsen no `POP-GESTOR-LEGAL-01`, seção 3.6 (23/07/2026) — que decidiu no mesmo sentido (obra nova não atrai a convenção de cores; demolição total é processo apartado via `POP-LEGAL-03`) e resolveu, adicionalmente, o cenário de demolição total + obra nova no mesmo caso, que esta seção não cobria explicitamente. Nenhuma mudança de conclusão, só referência cruzada formal entre os dois documentos.
+
 ---
 
 ## 11. Formato de prancha, escala e nomenclatura
@@ -709,10 +711,10 @@ Faltam no quadro: gabarito, afastamentos, cota de soleira, limite de profundidad
 **L-5 — "Padrão de apresentação" do Art. 11 não é definido.**
 Sem definição, não sei se a vinculação alcança formato de papel, espessura de linha, fonte, ou apenas o conteúdo e a diagramação dos quadros. É a lacuna que sustenta a indefinição de formato da Seção 11.
 
-**L-6 — REBAIXADA em 21/07/2026, não fechada. O decreto não traz critério, mas o COES traz a definição que o critério usa.**
-O Decreto 55.622/2025 continua sem regra de escolha entre as três subtabelas do Anexo III — a varredura negativa da Seção 7.2 permanece válida. **O que mudou:** o COES, Art. 2º, III, "a" e "b", define legalmente "edificação de uso exclusivo" (um único uso/atividade por lote, numeração única) em oposição a "edificação constituída por unidades autônomas", e esses são exatamente os dois vocabulários das subtabelas 2 e 3. **O critério deixou de ser construção nossa e passou a ser remissão sistemática entre dois textos legais.** O que continua sendo nosso — e é o resíduo da lacuna — é a **ponte**: o decreto não manda ler o Art. 2º do COES. Ver Seção 7.2.
+**L-6 — FECHADA COMO DECISÃO ADOTADA em 08/08/2026 (propagada do `POP-GESTOR-LEGAL-01`, seção 3.5, decidido por Kelsen em 23/07/2026). Deixa de ser lacuna aberta e passa a ser critério de trabalho da casa, com a ressalva mantida.**
+O Decreto 55.622/2025 continua sem regra de escolha entre as três subtabelas do Anexo III — a varredura negativa da Seção 7.2 permanece válida. O COES, Art. 2º, III, "a" e "b", define legalmente "edificação de uso exclusivo" (um único uso/atividade por lote, numeração única) em oposição a "edificação constituída por unidades autônomas", e esses são exatamente os dois vocabulários das subtabelas 2 e 3. **Decisão adotada por Kelsen:** no escopo declarado da Sttickler (Construção do Zero, residencial unifamiliar), a pergunta nem se coloca — o Art. 10, parágrafo único, manda usar o Anexo IV, sem subtabelas; peça montada sobre o Anexo III num caso unifamiliar é erro de enquadramento e barra a etapa. **Fora do escopo padrão** (caso não residencial), o critério é o COES Art. 2º, III, "a"/"b": uso exclusivo -> subtabela 2; unidades autônomas -> subtabela 3. **A ressalva não foi eliminada pela decisão, só deixou de bloquear o trabalho:** o decreto não manda ler o Art. 2º do COES — a ponte entre os dois textos continua sendo nossa, defensável mas não é a norma desempatando. Por isso a decisão exige **declarar o enquadramento escolhido na própria peça**, e todo caso não residencial real sobe como ressalva (seção 5 do `POP-GESTOR-LEGAL-01`), nunca em silêncio. Ver Seção 7.2.
 
-**L-6-b — Falta saber se a SMDU aceita a "união de itens" do Anexo III que recomendo em caso de dúvida (Seção 7.2).** Não há vedação no texto, mas também não há autorização expressa.
+**L-6-b — Falta saber se a SMDU aceita a "união de itens" do Anexo III que recomendo em caso de dúvida (Seção 7.2).** Não há vedação no texto, mas também não há autorização expressa. **Não coberta pela decisão de 23/07/2026** (que resolveu só o critério de escolha entre subtabelas, não a possibilidade de uni-las) — continua aberta.
 
 **L-7 — A conclusão sobre fachadas não tem confirmação da SMDU.**
 A leitura (i) da Seção 4 é sólida em texto, modelo e finalidade, mas não há parecer, manual ou decisão administrativa no nosso acervo confirmando. Ver Seção 13.

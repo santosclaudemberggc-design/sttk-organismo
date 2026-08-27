@@ -1,0 +1,25 @@
+{
+  "_comentario": "Backup de pendencias.json ANTES da inclusão do item hely-glifo-preventivo-pdf (POP-LEGAL-06), feito por Kelsen em 07/08/2026 durante varredura de autoauditoria (sem pendência real na fila, diretriz de Claudemberg ao vivo).",
+  "schema_versao": 1,
+  "atualizado_em": "2026-08-01",
+  "itens": [
+    { "id": "wallenberg-drive-write-tool-gap", "status": "resolvida" },
+    { "id": "b10-coscip-nt107", "status": "resolvida" },
+    { "id": "b1-regerar-pdfs", "status": "resolvida" },
+    { "id": "b2-pop-legal-02-quarentena", "status": "resolvida" },
+    { "id": "b3-acentuacao-prancha", "status": "resolvida" },
+    { "id": "b11-titulos-prancha-ascii", "status": "resolvida" },
+    { "id": "b9-lms-unifamiliar-achado", "status": "resolvida" },
+    { "id": "coes-dutos-passeio", "status": "resolvida" },
+    { "id": "janela-comercial-desconto", "status": "resolvida" },
+    { "id": "drive-pop-arq-desatualizado", "status": "resolvida" },
+    { "id": "planilha-enviaveis-recusada", "status": "resolvida" },
+    { "id": "formularios-ilegiveis", "status": "resolvida" },
+    { "id": "b9-zona-cinzenta-lms", "status": "resolvida" },
+    { "id": "lucio-agentes-nao-nomeados", "status": "aberta" },
+    { "id": "lucio-exame-nivel", "status": "resolvida" },
+    { "id": "wallenberg-drive-write-tool-gap (2)", "status": "resolvida" },
+    { "id": "wallenberg-notion-tool-gap", "status": "aberta" }
+  ],
+  "nota": "Backup resumido (só ids+status) — conteúdo completo dos itens preservado no pendencias.json vigente antes desta edição; ver histórico git/estado se precisar do texto integral pré-07/08."
+}

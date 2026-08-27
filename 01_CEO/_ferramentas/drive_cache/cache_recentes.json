@@ -1,0 +1,22 @@
+{
+  "_comment": "Cache local incremental do Google Drive — Item 5. Chave = fileId. synced_at é o momento desta gravação. Regerar via sync_incremental.py a partir da saída de list_recent_files/search_files (MCP Google Drive).",
+  "synced_at": "2026-08-13T00:00:00Z",
+  "fonte": "mcp__Google_Drive__list_recent_files (orderBy=lastModified, pageSize=15, excludeContentSnippets=true)",
+  "arquivos": {
+    "12yu6ed91FQSuPwgDxZg-oXE4x5IDYN3Lv7SS4FIO2MU": {"title": "POP MASTER - PROCEDIMENTO OPERACIONAL PADRÃO MASTER", "modifiedTime": "2026-08-12T21:45:11.960Z", "parentId": "1xDet_5njzuAM_CQCZ7loly3XxkHySWkw", "mimeType": "application/vnd.google-apps.document", "fileSize": "40750"},
+    "1wiJsLV1yu5TfZwL09SnJN84uTTkaTPYPOr38rTLg5hY": {"title": "Termo de Autorização de Início de Obra (AIO)", "modifiedTime": "2026-08-12T21:45:11.096Z", "parentId": "1ULUv7QXnQX_lS8SOzuEn2LwptsHFWROM", "mimeType": "application/vnd.google-apps.document", "fileSize": "3667"},
+    "1AdLBfFUN0HRcvi6x79w-MfKZKIniSU0QqIzhh-I2Guk": {"title": "MEMORIAL DESCRITIVO INTERNO - Liberação de Obra", "modifiedTime": "2026-08-12T21:45:10.383Z", "parentId": "1ULUv7QXnQX_lS8SOzuEn2LwptsHFWROM", "mimeType": "application/vnd.google-apps.document", "fileSize": "4957"},
+    "1mwHC0l9NZcfzhBoY0NLk61DyokPmekHTz0__FMPiLKQ": {"title": "POP – LIBERAÇÃO DE OBRA", "modifiedTime": "2026-08-12T21:45:09.641Z", "parentId": "1-jti0GJK7AERHjSy3VaoxtK-q-UVmJhh", "mimeType": "application/vnd.google-apps.document", "fileSize": "5269"},
+    "13cfflfsBNDAhpFlfR9uLNlMwytsqkimLXFjf8ezmNck": {"title": "MEMORIAL DESCRITIVO INTERNO", "modifiedTime": "2026-08-12T21:45:08.880Z", "parentId": "10ofmZY-wRORATwDGSTVAaHvOrNKkAl9P", "mimeType": "application/vnd.google-apps.document", "fileSize": "9422"},
+    "12s9F2UMBOQv8P-7yBEryWV9EGFR7O-HU": {"title": "projeto clinica.rvt", "modifiedTime": "2026-08-12T14:54:06.721Z", "parentId": "0AD8GL_8U1pwhUk9PVA", "mimeType": "application/octet-stream", "fileSize": "1117622272"},
+    "1FL88G47AM0QgT0eODaV0YzmcHqatTRo2": {"title": "projeto clinica.rvt", "modifiedTime": "2026-08-12T14:27:35.129Z", "parentId": null, "mimeType": "application/octet-stream", "fileSize": "1116844032"},
+    "1L_eAcTUK7vhXy6RtltrZgwpr0PzIkBlc": {"title": "TESTE_WALLENBERG_upload_pdf_10_08_pode_apagar.pdf", "modifiedTime": "2026-08-10T20:39:26.129Z", "parentId": "0AD8GL_8U1pwhUk9PVA", "mimeType": "text/plain", "fileSize": "289"},
+    "1a3fmqPuATApW-nuXl9_s0MXAKMZeQcpbjdB6Dih6slk": {"title": "TESTE_WALLENBERG_pode_apagar_3", "modifiedTime": "2026-08-08T16:37:12.070Z", "parentId": "0AD8GL_8U1pwhUk9PVA", "mimeType": "application/vnd.google-apps.document", "fileSize": "1024"},
+    "1LwHB8r2L49kwQmONMRrIERb0CerWL5ecShwpnazfgkQ": {"title": "APROVAÇÃO DE PROJETO - ETAPA ESTUDO PRELIMINAR", "modifiedTime": "2026-08-07T23:47:22.006Z", "parentId": "16BQ5cLedfxpP3_dTriybvQEblQLGe0Zi", "mimeType": "application/vnd.google-apps.form", "fileSize": "2207"},
+    "1S5ziHdJupFYpRRh1Rz89v-GXYnZuS-06ObgO9FFH8-8": {"title": "Planilha Arquitetura Viável 2.1", "modifiedTime": "2026-08-04T17:16:59.264Z", "parentId": null, "mimeType": "application/vnd.google-apps.spreadsheet", "fileSize": "673954"},
+    "1y0z2-JIN7nzFBdr17RSvfz5RW5-6SBjPpfrW6_QA9H0": {"title": "VALIDAÇÃO DA COORDENAÇÃO - LEVANTAMENTO", "modifiedTime": "2026-08-03T21:55:17.057Z", "parentId": "1VIhTBSz3Q3TGgCGZvGX0ureENa-c19cJ", "mimeType": "application/vnd.google-apps.form", "fileSize": "1024"},
+    "1tEtxt5WxfrAZGWlV_Y_SYsEuBgEQv0JPxbWmx7JFfKU": {"title": "VALIDAÇÃO DA COORDENAÇÃO - ANÁLISE TÉCNICA DO BRIEFING", "modifiedTime": "2026-08-03T21:52:56.439Z", "parentId": "1VIhTBSz3Q3TGgCGZvGX0ureENa-c19cJ", "mimeType": "application/vnd.google-apps.form", "fileSize": "1024"},
+    "1qCX0Bi6-eTdHpIcfmJWG8b4BkpGQnNxbaFY-H_9J5eo": {"title": "VALIDAÇÃO DA COORDENAÇÃO - ESTUDO PRELIMINAR", "modifiedTime": "2026-08-03T21:47:33.237Z", "parentId": "1VIhTBSz3Q3TGgCGZvGX0ureENa-c19cJ", "mimeType": "application/vnd.google-apps.form", "fileSize": "3194"},
+    "17MvTtG9Mp7ox4qZ07fPeeE7VenGwC92_Q3XCE4nKEpM": {"title": "VALIDAÇÃO DA COORDENAÇÃO - PROJETO ESTRUTURAL", "modifiedTime": "2026-08-03T21:33:22.349Z", "parentId": "1VIhTBSz3Q3TGgCGZvGX0ureENa-c19cJ", "mimeType": "application/vnd.google-apps.form", "fileSize": "2365"}
+  }
+}

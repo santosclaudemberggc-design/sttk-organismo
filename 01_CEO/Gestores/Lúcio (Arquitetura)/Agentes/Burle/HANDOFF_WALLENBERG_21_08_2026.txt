@@ -1,0 +1,56 @@
+HANDOFF: INSTRUÇÃO WALLENBERG — WAN 2.2 (21/08/2026)
+
+De: Burle (Agente de Renders e Vídeos)
+Para: Lúcio (Gestor Arquitetura)
+Data: 21/08/2026
+Assunto: Pivô estratégico — Stack Render/Vídeo
+
+---
+
+INSTRUÇÃO RECEBIDA:
+Wallenberg aprovou WAN 2.2 (Alibaba, 16.5k stars, Apache 2.0, self-hosted) como solução de render/vídeo.
+Referência: https://github.com/Wan-Video/Wan2.2
+
+DESCRIÇÃO:
+- Modelo cinematic (texto → vídeo), production-ready
+- Self-hosted 100% (credenciais ficam LOCAL)
+- RTX 4090 suporta (5B variant: 8-12GB VRAM típico, 6GB mínimo)
+- Stack anterior (Hugging Face MCP + Blender MCP) descartado
+
+CRONOGRAMA:
+24/08 (dom): Setup local (Python 3.10+, PyTorch 2.0+, CUDA 11.8+, fork repo, validação GPU)
+25-26/08 (seg-ter): Testes (10 prompts de render arquitetônico real)
+27/08 (qua): Análise + Relatório `RELATORIO_WAN2.2_BURLE.md`
+28/08 (qui): Entrega a Lúcio + Wallenberg (Go/Not-Go)
+
+ESTRUTURA RELATÓRIO OBRIGATÓRIO:
+- O que é WAN 2.2 (2-3 frases)
+- Setup completado (quais passos, tempo, dificuldades)
+- Testes (10 prompts com tempo/qualidade/resolução)
+- Qual ferramenta é melhor? (comparação numérica)
+- Pronto pra produção? (sim/não/ressalva)
+- Se não pronto, bloqueio exato (problema técnico específico)
+
+ARQUIVOS CRIADOS HOJE (21/08):
+1. _estado_burle.md (atualizado com instrução + cronograma)
+2. PROMPTS_WAN2.2_TESTE.md (10 prompts estruturados)
+3. PRECHECK_WAN2.2_TECNICO.md (checklist de bloqueios antes de setup)
+
+REGRA CRÍTICA:
+Se bloqueio técnico descoberto em 24/08 → comunicar a Lúcio IMEDIATAMENTE
+(não guardar para relatório final em 27/08)
+
+PRÓ​XIMO PASSO (22-23/08):
+Executar Pré-Check Técnico (validação de GPU, VRAM, Python, PyTorch, CUDA, Git)
+Se bloqueio encontrado: comunicar para Lúcio no mesmo dia
+Se tudo OK: aguardar 24/08 para setup
+
+DÚVIDAS / BLOQUEIOS ANTECIPADOS:
+- Documentos de referência ("rotina_fechamento_21_08_2026.md", "busca_alternativas_*.md") não encontrados no repo
+  Isso não bloqueia execução (instrução de Wallenberg foi clara em ferramenta e características)
+- Hierarquia: executar com supervisão de Lúcio conforme nível Assisted (não direto a Wallenberg)
+
+---
+
+Burle
+21/08/2026, 14h30 (aproximado)

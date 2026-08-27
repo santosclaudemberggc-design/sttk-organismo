@@ -41,7 +41,7 @@ de tentar, não depois de falhar três vezes.
 2. PowerShell 5.1 **não tem** `&&`, `||`, `?:`, `??`, `?.` nem `-AsHashtable`. Condicional: `A; if ($?) { B }`.
 3. Caminho com espaço **sempre** entre aspas (esta pasta tem espaços no nome).
 4. Arquivo: `Read`, `Grep`, `Glob`, `Edit`, `Write` — nunca `cat`, `type`, `findstr`, `Get-Content`, `Select-String`, `Get-ChildItem -Recurse`.
-5. `Read` antes de `Edit`, e antes de `Write` em arquivo existente — senão falha.
+5. `Read` antes de `Edit`, e antes de `Write` em arquivo existente. Republicar artifact (chamada com `url`) exige `WebFetch` nessa URL antes, na mesma conversa — senão falha.
 6. Depois de editar, **não releia** para conferir: se falhasse, teria dado erro.
 7. `Edit`: `old_string` literal, indentação inclusa, único no arquivo. Ao copiar do `Read`, tire o número de linha e o tab.
 8. Ferramenta fora do seu `tools` **não existe para você**: reporte a limitação, não procure atalho.

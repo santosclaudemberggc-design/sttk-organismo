@@ -24,5 +24,25 @@
       "item_7_prompt_caching": true,
       "item_8_system_gestao": "planejamento"
     }
+  },
+  "hooks": {
+    "PostSessionStart": [
+      {
+        "description": "STTK Item 5 — Sincronizar cache Google Drive (max 1x por sessão)",
+        "condition": "env.STTK_CACHE_FRESH_CHECK=true",
+        "command": "python \"01_CEO/_ferramentas/drive_cache/sync_incremental.py\"",
+        "error_handling": "log_only",
+        "timeout_seconds": 30
+      }
+    ],
+    "PostToolUse": [
+      {
+        "tool_pattern": "mcp__Google_Drive__*",
+        "description": "Auto-refresh cache após qualquer operação Google Drive",
+        "command": "python \"01_CEO/_ferramentas/drive_cache/sync_incremental.py\"",
+        "error_handling": "log_only",
+        "timeout_seconds": 30
+      }
+    ]
   }
 }

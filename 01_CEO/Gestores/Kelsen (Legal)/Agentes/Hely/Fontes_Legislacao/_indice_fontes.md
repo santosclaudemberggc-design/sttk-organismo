@@ -413,13 +413,13 @@ Rodei a Busca Fácil (`www2.rio.rj.gov.br/smu/buscafacil`) por HTTP direto (POST
 
 **Camada 1 — regime PLENO (LMP/LMI) e a exigência específica de PGRCC: lote unifamiliar padrão NÃO se enquadra.**
 - **Art. 2º/3º**: os critérios de enquadramento para o licenciamento ambiental (regime pleno) estão no **Anexo I**. Empreendimento que não se enquadra no Anexo I não é dispensado de *outras* licenças cabíveis (ex: remoção de vegetação), mas não precisa do regime pleno deste Decreto.
-- **Anexo I, item 1 ("Construção de edificações novas e acréscimos")** — enquadra-se se **qualquer** destes: (a) orla; (b) **ATC ≥ 10.000 m²**; (c) em/lindeiro a Unidade de Conservação; (d) terreno > 2.000 m² em ZE1/ZCA; (e) **movimentação de material sólido ≥ 5.000 m³**; (f) área com risco potencial de passivo ambiental.
+- **Anexo I, item 1 ("Construção de edificações novas e acréscimos")** — enquadra-se se **qualquer** destes: (a) orla; (b) **ATC >= 10.000 m²**; (c) em/lindeiro a Unidade de Conservação; (d) terreno > 2.000 m² em ZE1/ZCA; (e) **movimentação de material sólido >= 5.000 m³**; (f) área com risco potencial de passivo ambiental.
 - **Um lote unifamiliar padrão (Construção do Zero residencial) não bate em nenhum destes** — ATC de uma casa está ordens de grandeza abaixo de 10.000 m², movimentação de terra de uma obra residencial comum está abaixo de 5.000 m³, e os demais critérios (orla, UC, ZE1/ZCA, passivo ambiental) **são exatamente os mesmos gatilhos que o Anexo II do LICIN 2.0 já rastreia por autodeclaração** — se o pacote não os aciona lá, também não aciona aqui.
-- **A exigência específica de PGRCC (a peça documental em si) confirma o mesmo corte, por norma distinta e independente**: **Resolução SMAC nº 512/2012 (Válido), Art. 1º** — *"As atividades de construção, reforma, ampliação, demolição e movimentação de terra sujeitas ao Licenciamento Ambiental Municipal [...] deverão apresentar o [PGRCC] [...] nos seguintes casos: I) EDIFICAÇÕES com área total construída (ATC) igual ou maior que 10.000 m²; II) [...] MOVIMENTO DE TERRA com volume superior a 5.000 m³; III) DEMOLIÇÃO [...] ATC ≥ 10.000 m² ou volume superior a 5.000 m³."* **Duas normas primárias e independentes, a mesma fronteira numérica.** Um lote unifamiliar padrão está abaixo de ambos os limiares — **não precisa apresentar PGRCC**.
+- **A exigência específica de PGRCC (a peça documental em si) confirma o mesmo corte, por norma distinta e independente**: **Resolução SMAC nº 512/2012 (Válido), Art. 1º** — *"As atividades de construção, reforma, ampliação, demolição e movimentação de terra sujeitas ao Licenciamento Ambiental Municipal [...] deverão apresentar o [PGRCC] [...] nos seguintes casos: I) EDIFICAÇÕES com área total construída (ATC) igual ou maior que 10.000 m²; II) [...] MOVIMENTO DE TERRA com volume superior a 5.000 m³; III) DEMOLIÇÃO [...] ATC >= 10.000 m² ou volume superior a 5.000 m³."* **Duas normas primárias e independentes, a mesma fronteira numérica.** Um lote unifamiliar padrão está abaixo de ambos os limiares — **não precisa apresentar PGRCC**.
 
 **Camada 2 — regime SIMPLIFICADO (LMS): aqui a resposta muda de figura, e é o achado mais importante desta rodada.**
 - **Capítulo VI do mesmo Decreto ("Do Licenciamento Simplificado para Empreendimentos de Baixa Complexidade"), Art. 27** — *"Serão passíveis de LMS as construções, os acréscimos e as demolições de edificações **unifamiliares**, bifamiliares, multifamiliares e não-residenciais, exceto grupamentos."* **Isto enquadra literalmente a categoria "unifamiliar" como sujeita ao LAM — só que pela via simplificada (Licença Municipal Ambiental Simplificada, LMS), não pela dispensa total.**
-- O **parágrafo único do Art. 27** só afasta o rito simplificado (não o LAM como um todo) se o lote estiver em: (I) orla marítima; (II) terreno com APP; (III) área de risco/erosão; (IV) área alagadiça; (V) aterro com material nocivo/suspeita de contaminação; (VI) declividade ≥ 30%. **Note que este rol de seis condições NÃO é idêntico ao do Anexo II do LICIN 2.0** — "declividade ≥ 30%" e "área alagadiça" são categorias novas que a nossa base ainda não rastreava; "curso d'água a 50 m" (que está no Anexo II do LICIN) não aparece neste rol específico do Art. 27 (aparece, sim, em outro artigo do mesmo Decreto — Art. 37, IV — mas ali é sobre dispensa de vistoria prévia, não sobre elegibilidade ao LMS).
+- O **parágrafo único do Art. 27** só afasta o rito simplificado (não o LAM como um todo) se o lote estiver em: (I) orla marítima; (II) terreno com APP; (III) área de risco/erosão; (IV) área alagadiça; (V) aterro com material nocivo/suspeita de contaminação; (VI) declividade >= 30%. **Note que este rol de seis condições NÃO é idêntico ao do Anexo II do LICIN 2.0** — "declividade >= 30%" e "área alagadiça" são categorias novas que a nossa base ainda não rastreava; "curso d'água a 50 m" (que está no Anexo II do LICIN) não aparece neste rol específico do Art. 27 (aparece, sim, em outro artigo do mesmo Decreto — Art. 37, IV — mas ali é sobre dispensa de vistoria prévia, não sobre elegibilidade ao LMS).
 
 **Resposta literal à pergunta de Kelsen, sem arredondar**: **um lote unifamiliar padrão, sem nenhum dos gatilhos do Anexo II do LICIN 2.0, NÃO está isento do Licenciamento Ambiental Municipal.** Ele está dispensado apenas da parte mais pesada — não precisa de PGRCC (Res. SMAC 512/2012) nem do regime pleno LMP/LMI (Anexo I do Decreto 51.503) — mas, pelo texto literal do **Art. 27 do Decreto 51.503/2022 (Válido)**, ele **é "passível de" (leitura mais defensável: sujeito a) uma Licença Municipal Ambiental Simplificada (LMS)**, salvo se estiver numa das seis situações do parágrafo único (que por sua vez, se ocorrerem, o tirariam da via simplificada, não do LAM como um todo).
 
@@ -439,7 +439,7 @@ Kelsen definiu: "se a pendência 3(c) confirmar que o LAM é obrigatório mesmo 
 |---|---|---|---|
 | `Decreto51503_2022_CriteriosLAM_AnexoI.pdf` | Decreto 51.503/2022 | Válido | Critérios de enquadramento do LAM (Anexo I) + regime simplificado unifamiliar (Art. 26-27) — **a peça central desta rodada** |
 | `ResolucaoSMDEIS06_2023_ProcedimentosLAM_VALIDO.pdf` | Res. EIS-REN 6/2023 | Válido | Procedimentos/formulários de instrução do LAM; revoga a SMDEIS 27/2022 |
-| `ResolucaoSMAC512_2012_PGRCC_VALIDO.pdf` | Res. SMAC 512/2012 | Válido | Disciplina o conteúdo do PGRCC e fixa o limiar de exigibilidade (ATC ≥ 10.000 m² ou movimento de terra ≥ 5.000 m³) |
+| `ResolucaoSMAC512_2012_PGRCC_VALIDO.pdf` | Res. SMAC 512/2012 | Válido | Disciplina o conteúdo do PGRCC e fixa o limiar de exigibilidade (ATC >= 10.000 m² ou movimento de terra >= 5.000 m³) |
 | `Decreto55621_2025_MemorialTecnicoAmbiental.pdf` | Decreto 55.621/2025 | Válido | Memorial Técnico como peça alternativa no LAM — publicado na mesma data do LICIN 2.0, confirma trâmites paralelos e independentes |
 
 ### 6. Método (Princípio 8 — rastreabilidade)
@@ -513,7 +513,256 @@ Releitura verbatim do `Decreto51503_2022_CriteriosLAM_AnexoI.pdf` inteiro (53 ar
 | `Lei6766_1979_ParcelamentoSoloUrbano.md` + `.pdf` | Lei Federal nº 6.766/1979 | Texto compilado oficial (Planalto), sem selo de status — lei federal, fora do escopo do Busca Fácil municipal | Texto completo (55 artigos), extraído do HTML compilado oficial `planalto.gov.br/ccivil_03/leis/l6766.htm` e renderizado em PDF via `md_to_pdf.py`. Art. 3º, parágrafo único (a citação usada no parecer) conferido nas pp. iniciais |
 | `CodigoCivil_Lei10406_2002_ExcertoCompraVenda_Art481-532.md` + `.pdf` | Código Civil (Lei 10.406/2002), excerto | Idem — federal, fora do Busca Fácil | **Não é o Código inteiro** (2.046 artigos) — arquivei o Capítulo I "Da Compra e Venda" (Arts. 481-532) por inteiro, que contém o Art. 504 (direito de preferência entre condôminos) com o contexto normativo imediato. Se Kelsen precisar de outro trecho do CC, sinalizar para arquivamento pontual adicional |
 
-**Achado de maior impacto (H2/H3 do levantamento, resumo — detalhe completo no relatório do caso):** a coordenada de referência do imóvel (E 653.300 / N 7.453.400, SIRGAS2000/31983) consultada na API oficial `LBB_Zoneamento_urbano_vigente` devolveu **ZCS E** (AP4, LC 270/2024 — CAM 2,5, TO 50%, lote mínimo 600 m², gabarito 12pav/38m afastado, afastamento frontal 5m), **não ZPP/Decreto 3.046/1981** como hipotetizado no pedido — confirmado por 9 pontos de amostragem num raio de ~100m ao redor da coordenada (zona idêntica em todos) e cruzado com o Anexo XXI (`pdftotext -table`, bloco AP4) e o Art. 345 §4º (CAB — ZCS E não consta nas exceções, logo CAB=1,0 por regra residual, batendo com o valor devolvido pela API). Bairro confirmado por camada oficial (`Cartografia/Limites_administrativos/MapServer/4`): **Recreio dos Bandeirantes**, RA Barra da Tijuca (XXIV), AP4 — não Guaratiba (a "Freguesia de Guaratiba" da matrícula é designação histórica/cartorial, não bairro atual, consistente com a ressalva do próprio pedido em H6). O REVIS dos Campos de Sernambetiba **não incide** — a mesma API só encontra a feature do REVIS a partir de ~900-1000m de distância da coordenada, e o memorial cartográfico do Decreto 50.413/2022 (Anexo I, poligonal por coordenadas) tem sua latitude mínima (N mínimo ≈ 7.454.233) cerca de 800m ao norte da coordenada do caso — dupla corroboração de não incidência. AEI Ambiental (duas camadas sobrepostas, Baixada de Jacarepaguá + Vargem Grande/Recreio/Camorim) **incide** na coordenada exata.
+**Achado de maior impacto (H2/H3 do levantamento, resumo — detalhe completo no relatório do caso):** a coordenada de referência do imóvel (E 653.300 / N 7.453.400, SIRGAS2000/31983) consultada na API oficial `LBB_Zoneamento_urbano_vigente` devolveu **ZCS E** (AP4, LC 270/2024 — CAM 2,5, TO 50%, lote mínimo 600 m², gabarito 12pav/38m afastado, afastamento frontal 5m), **não ZPP/Decreto 3.046/1981** como hipotetizado no pedido — confirmado por 9 pontos de amostragem num raio de ~100m ao redor da coordenada (zona idêntica em todos) e cruzado com o Anexo XXI (`pdftotext -table`, bloco AP4) e o Art. 345 §4º (CAB — ZCS E não consta nas exceções, logo CAB=1,0 por regra residual, batendo com o valor devolvido pela API). Bairro confirmado por camada oficial (`Cartografia/Limites_administrativos/MapServer/4`): **Recreio dos Bandeirantes**, RA Barra da Tijuca (XXIV), AP4 — não Guaratiba (a "Freguesia de Guaratiba" da matrícula é designação histórica/cartorial, não bairro atual, consistente com a ressalva do próprio pedido em H6). O REVIS dos Campos de Sernambetiba **não incide** — a mesma API só encontra a feature do REVIS a partir de ~900-1000m de distância da coordenada, e o memorial cartográfico do Decreto 50.413/2022 (Anexo I, poligonal por coordenadas) tem sua latitude mínima (N mínimo aprox. 7.454.233) cerca de 800m ao norte da coordenada do caso — dupla corroboração de não incidência. AEI Ambiental (duas camadas sobrepostas, Baixada de Jacarepaguá + Vargem Grande/Recreio/Camorim) **incide** na coordenada exata.
 
 **Método**: consultas ArcGIS REST oficiais (`pgeo3.rio.rj.gov.br`) conforme `POP-LEGAL-RIU-01`, com amostragem em grade ao redor do ponto de referência (não coberta pelo POP original, que assume um único ponto já refinado por lote — aqui não havia lote cadastral GeoPAL correspondente a "Lote 1/Quadra 6", só a gleba-mãe do PAL 19170, RGI 9, AVERBADO — consistente com o núcleo jurídico de Kelsen "é gleba, não lote"). Federais (Lei 6.766, CC) via `planalto.gov.br` com `curl -A "Mozilla/5.0"` (sem user-agent o servidor devolvia ECONNRESET/timeout — achado de método novo, registrar para reuso).
+
+---
+
+## VARREDURA DE VIGÊNCIA — 03/08/2026 (acionamento direto de Kelsen via ferramenta Agent, 1ª vez sem retransmissão manual de Wallenberg)
+
+> **Pedido**: confirmar se há lei/decreto novo, publicado desde a última verificação registrada aqui, que altere a LC 270/2024, a LC 281/2025 ou o Decreto 55.622/2025 (LICIN 2.0). **Resultado: nada novo.**
+
+**Método (`www2.rio.rj.gov.br/smu/buscafacil`, `curl` direto, fonte oficial)**:
+1. **Status por ato** (`consultaPorAto.asp` -> `RelacaoDocumentos.asp`, `selTipoAto=6` p/ LC, `=1` p/ Decreto): os três atos continuam **Válido**, 1 registro único cada (LC270 id 2118, LC281 id 2349, Decreto 55622 id 2262) — nenhum duplicado, nenhuma revogação.
+2. **Nota de status** (`geraModal.asp?c={id}`): LC270 traz o mesmo alerta já conhecido — *"VERIFICAR ALTERAÇÕES DA LEI COMPLEMENTAR Nº 301 DE 09/07/2026"* (já incorporado à nossa base desde a reconfirmação de hoje mais cedo, no caso "Av. Projetada Canal 2" — nenhuma alteradora nova além da 301). LC281 e Decreto 55.622 **sem nota de alerta nenhuma** (nenhuma pendência de verificação sinalizada pela própria SMU).
+3. **Busca por texto integral** (`consultaPorPalavra.asp`, `TipoConsulta=PALAVRA`) — testa se algum ato **cita** os três alvos, não só se eles existem:
+   - `"Lei Complementar nº 270"` -> 59 registros; o mais recente que cita é a **LC 301/2026 (09/07/2026)** — já conhecida.
+   - `"Lei Complementar nº 281"` -> 3 registros; mesmo teto, **LC 301/2026**.
+   - `"55.622"` -> **1 registro** — só o próprio decreto. Nenhum ato cita/altera o Decreto 55.622/2025 até hoje.
+   - `"LICIN"` -> 17 registros; nenhum datado depois de 2023 além do próprio Decreto 55.622/2025 (01/01/2025).
+   - Nenhum resultado, em nenhuma das quatro buscas, com data entre 10/07/2026 e 03/08/2026 (a janela desde a última alteração conhecida, LC 301).
+
+**Resposta literal para Kelsen levar adiante**: **nada novo.** Nenhuma lei ou decreto publicado desde a LC 301/2026 (09/07/2026) — que já está incorporada à nossa base — altera a LC 270/2024, a LC 281/2025 ou o Decreto 55.622/2025 (LICIN 2.0), até a data desta consulta (03/08/2026).
+
+**Ressalva de honestidade (não arredondar)**:
+- Busca por texto integral só encontra ato que **cita explicitamente** o número do alvo — é o padrão de redação legislativa municipal do Rio (toda alteradora cita o ato alterado por número), mas não é uma garantia lógica absoluta contra uma norma que altere por remissão indireta sem citar o número.
+- Não tenho como confirmar o **lag de indexação** da própria Busca Fácil (quanto tempo entre publicação no D.O. e o ato aparecer pesquisável) — se algo foi publicado nos últimos dias e ainda não foi indexado, esta varredura não o pegaria. Não encontrei essa informação documentada em lugar nenhum da base.
+- Esta é uma varredura de **vigência/alteração**, não uma auditoria de mérito — não reabri o conteúdo já registrado dessas três normas.
+
+**Método arquivado para reuso**: `consultaPorPalavra.asp` com `txtPalavra` = número do ato entre aspas (com "Lei Complementar nº" ou "Decreto" no texto) é mais confiável que buscar só o número solto — evita ruído de outros atos que citam o mesmo número por coincidência de contexto.
+
+---
+
+## RODADA 08/08/2026 — 6 TAREFAS MECÂNICAS DE LEVANTAMENTO (B4, B5, B6, B7, B8, B14), acionadas por Kelsen via `pendencias.json`
+
+> Todas de manutenção da base legislativa (exceto B14, que toca o caso real EVTL Av. Projetada Canal 2 — só busca de precedente, sem decisão de mérito). Kelsen audita contra o primário antes de qualquer uso. Backup pré-edição dos 3 arquivos tocados nesta rodada em `01_CEO/Decisoes_Autonomas/_backups/2026-08-08/`.
+
+### B4 — Glosa "0,3 do CAM" (POP-LEGAL-04 §8): Dicionário de Termos arquivado + Art. 367 extraído verbatim — HIPÓTESE DE KELSEN CONFIRMADA
+
+**Dicionário de Termos oficial da LC 270/2024, 2ª edição (04/12/2025), SMDU** — **arquivado nesta data**: `DicionarioTermos_LC270_2aEdicao_04-12-2025.pdf` (139 pp.). Baixado direto de `desenvolvimentourbano.prefeitura.rio/wp-content/uploads/sites/52/2026/02/Dicionario-de-Termos-LC-270-2a-edicao-04_12_2025.docx.pdf` (`curl -A "Mozilla/5.0"`, HTTP 200). **Nota de integridade**: existe uma segunda cópia no servidor, em pasta `/2025/12/` em vez de `/2026/02/`, com MD5 diferente (mesmo título, mesma contagem de 139 páginas, `Producer` do Google Docs Renderer em versão ligeiramente distinta — m146 vs m144) — são dois re-exports do mesmo Google Doc, não duas edições divergentes; arquivei a cópia da pasta mais recente (`/2026/02/`), que é a atualmente referenciada pelos resultados de busca.
+
+**Definição do ICS no Dicionário, verbatim (p. 64)**:
+> "ÍNDICE DE COMÉRCIO E SERVIÇOS - ICS: Parâmetro urbanístico representado pelo índice que define a área máxima de comércio e serviços permitida no terreno, mediante a multiplicação do seu valor pela Área Total Edificável (ATE). Vide Art. 344 [Inciso IX] e Art. 367 [Caput]."
+
+Bate 100% com o já citado no `POP-LEGAL-04` §3 — confirma que aquele POP já transcrevia o Dicionário corretamente (não precisou de correção).
+
+**Art. 367 da LC 270/2024, extraído verbatim** (`LC270_2024_PlanoDiretorLUOS.pdf`, já arquivado, `pdftotext -layout`):
+> "Art. 367. Para o controle da intensidade dos usos não residenciais admitidos nas zonas residenciais será aplicado o Índice de Comércio e Serviços - ICS, para garantia da predominância do uso principal, que corresponderá à no máximo: I - ZRU, ZRM 1 e 2: 0,3 (três décimos) do CAM; II - ZRM 3: 0,4 (quatro décimos) do CAM. § 1º O disposto neste artigo não se aplica a: I - unidades de saúde, educação e hotel [...]; II - transformação de uso de edificações existentes regularmente licenciadas com até três pavimentos [...]; e III - edificações não residenciais existentes, regularmente licenciadas com até dois pavimentos. § 2° As atividades permitidas nas Zonas podem ocorrer em parte de edificação residencial, desde que tenham acesso direto ao logradouro público [...]."
+
+**Resultado do teste da hipótese de Kelsen — CONFIRMADA. Os dois registros estão certos, em perguntas diferentes; o certo era anotar, não reescrever nada.**
+- **Art. 367 caput responde "quanto vale o coeficiente ICS?"** — a resposta é literalmente "0,3 do CAM" (ZRU/ZRM1/ZRM2) ou "0,4 do CAM" (ZRM3). A glosa "(0,3 do CAM)" na entrada da LC 284/2025 (linha do `_indice_fontes.md`, ver seção "LC 284/2025" acima) **não é imprecisa — é o texto literal do Art. 367, caput, inciso I**, aplicado à ZRM2 G do caso Clínica Bem-Estar Recreio.
+- **O Dicionário (Art. 344, IX + Art. 367, caput, por remissão) responde "para que serve o coeficiente ICS, uma vez que eu já sei seu valor?"** — a resposta é "multiplica a ATE para dar a área máxima de comércio/serviços". Isso não contradiz o valor; é o próximo passo do cálculo.
+- **Não há erro a corrigir em nenhum dos dois registros.** O que faltava — e este achado supre — era a fonte primária do Dicionário arquivada localmente (antes só citada de memória em `POP-LEGAL-04`) e o texto do Art. 367 extraído lado a lado com a definição do Dicionário, para que a distinção entre "valor do coeficiente" (Art. 367 caput) e "aplicação do coeficiente" (Art. 344, IX / Dicionário) fique registrada de forma rastreável. **Não alterei o `POP-LEGAL-04`** — a decisão de anotar ou reescrever seções do POP é de Kelsen, conforme instrução recebida.
+- **Recomendação a Kelsen (não decidida por mim):** considerar adicionar à seção 4 do `POP-LEGAL-04` uma nota explícita de que "0,3/0,4 do CAM" é o próprio texto legal do valor do ICS (Art. 367, caput), não uma glosa imprecisa nossa — para que a seção 8 (Lacunas) daquele POP, que hoje recomenda "ajustar" a entrada da LC 284/2025, seja atualizada para "confirmar como correta", em vez de "corrigir".
+
+### B5 — Decreto 45.917/2019 (regulamenta o COES) — LOCALIZADO E ARQUIVADO. Status: Válido.
+
+A premissa "esperar a via oficial" se confirmou: **Busca Fácil devolveu o ato normalmente** (`consultaPorAto.asp`, `selTipoAto=1`, `txtNumAto=45917`, `id interno 1669`, tamanho 71.756 bytes). Status jurídico (`geraModal.asp?c=1669`): **"Decreto nº 45917 de 03/05/2019 — Válido"**, sem nota de revogação/alteração. Baixado via `ContadorAcessoAto.asp` (`CdDispLg=1669`) e **arquivado como `Decreto45917_2019_RegulamentaCOES.pdf`** (2 pp.).
+
+**Conteúdo, 11 artigos — todos regulamentam dispositivos específicos da LC 198/2019 (COES) que o próprio COES delegou** (Art. 39 §2º): parcelamento de lote (Art. 2º), equivalência de "vila" ao grupamento tipo vila (Art. 3º), definição operacional de "embasamento não afastado das divisas" para fins de cálculo de afastamento (Art. 4º), dimensões de prismas (Art. 5º), **distância mínima entre varandas projetadas sobre o afastamento entre edificações: 5 metros** (Art. 6º — dado novo, não estava na nossa base antes), critério de "formação de quadra" para AEIS/favelas sem delimitação oficial (Art. 7º), uso exclusivo de "academia" como área comum do condomínio (Art. 8º), vagas de estacionamento por proximidade a transporte de alta capacidade — inclusive BRT/"Metrô na superfície" e barcas (Art. 9º), e dimensão de vaga com acesso paralelo (Art. 10º).
+
+**Achado relevante para o núcleo de aprendizado já registrado sobre "embasamento não afastado"** (Seção 3 do `_estado_hely.md` e seção "Afastamento lateral e de fundos" acima): o **Art. 4º deste Decreto** é a fonte regulamentar direta do conceito "embasamento não afastado das divisas" usado no Art. 4º §2º do próprio COES — reforça, por norma regulamentar (não só por leitura sistemática do intérprete), a mesma lógica já aplicada no caso Av. Projetada Canal 2 (embasamento não afastado + torre afastada convivem, ver `_estado_hely.md`, nota 2.2 de 03/08). Não é a mesma fonte (aquela reconciliação usou o COES Art. 4º §2º direto); este Decreto é regulamentação adicional do mesmo dispositivo, ainda mais direta.
+
+### B6 — Propagação de decisões já tomadas (sem julgamento novo) — CONCLUÍDA
+
+- **Trava de colisão de subzona entre APs** (já registrada como aprendizado na Seção 3 deste índice — ver mais acima, "CÓDIGO DE ZONA COLIDE ENTRE APs") **propagada como TRAVA D formal do `POP-LEGAL-RIU-01`, seção 6** — antes só existia como checagem do `POP-GESTOR-LEGAL-01` (conferência de Kelsen), não como passo do próprio POP de execução do Hely.
+- **Decisão 3.5 do `POP-GESTOR-LEGAL-01`** (Anexo III vs. IV, critério COES Art. 2º, III) **propagada ao `POP-LEGAL-05`, fechando a lacuna L-6 como decisão adotada** — a seção 7.2 e a seção 12 (L-6, L-6-b) foram atualizadas para registrar que o critério deixou de ser lacuna aberta e virou critério de trabalho da casa, com a ressalva (a ponte entre decreto e COES continua sendo nossa) mantida, não apagada.
+- **Decisão 3.6 do `POP-GESTOR-LEGAL-01`** (convenção de cores não incide em obra nova) já estava, de fato, alinhada com a conclusão independente do `POP-LEGAL-05`, Seção 10 (ambos chegaram à mesma leitura, por caminhos de pesquisa diferentes) — adicionei só uma referência cruzada formal entre os dois documentos, sem mudar conclusão nenhuma.
+
+### B7 — Incidência de APAC (`Urbanismo/LBB_APAC`) em Recreio dos Bandeirantes, Barra da Tijuca e Vargem Grande — HIPÓTESE REMOTA CONFIRMADA (zero incidência hoje)
+
+**Método duplo, para não depender de um único caminho:**
+1. **Varredura por atributo**: consultei todas as **59 feições** da camada `Urbanismo/LBB_APAC/MapServer/0` (`where=1=1`, `outFields=codigo,nome,tipo,endereco,subareas,legislacao`, sem geometria). Nenhuma tem `nome` referindo Recreio, Barra da Tijuca ou Vargem Grande — todas ficam em Zona Sul (Botafogo, Laranjeiras, Ipanema, Leblon, Jardim Botânico, Humaitá, Catete/Glória, Gávea), Centro (Lapa, Estácio, São Cristóvão/Mangueira/Benfica, Praça Onze), Zona Norte (Grajaú, Marechal Hermes, Sampaio) e Zona Oeste distante (Santa Cruz, Paquetá).
+2. **Varredura espacial**: consultei a camada `LBB_APAC` por interseção contra o **polígono real de cada um dos 3 bairros** (`Cartografia/Limites_administrativos/MapServer/4`, campo `nome`, geometria completa, não bounding box — um bounding box amplo demais capturou falsamente Santa Cruz/Marechal Hermes na primeira tentativa, corrigido usando o polígono real). **Resultado: 0 feições de APAC intersectam Recreio dos Bandeirantes, 0 intersectam Barra da Tijuca, 0 intersectam Vargem Grande.**
+
+**Resposta a Kelsen: hoje, no acervo oficial (59 registros citywide), o Art. 280, III (LC 270/2024) é hipótese REMOTA no escopo AP4 de atuação do organismo — não incide em nenhum dos 3 bairros.** Ressalva de honestidade: isso não significa que **nunca** incidirá — se o escopo do organismo se expandir para Zona Sul/Centro/Grajaú/Santa Cruz, a checagem do `POP-GESTOR-LEGAL-01` §4.2 (APAC) continua sendo passo obrigatório por lote, não descartável por este achado. O achado só desqualifica a hipótese **hoje**, no escopo real de atuação (AP4).
+
+### B8 — Varredura de decretos/resoluções no Busca Fácil, escopo AP4/unifamiliar — COBERTURA MAPEADA (prova de completude parcial, não total)
+
+**O que já está arquivado e confirmado Válido** (13 decretos/resoluções, listados por tema): LICIN 2.0 (Decreto 55.622/2025 + 3 anexos), usos por CNAE/zona (Decreto 56.561/2025), COSCIP/CBMERJ (Decreto Estadual 42/2018 + NT 1-07), LAM/PGRCC (Decreto 51.503/2022, Res. SMAC 512/2012, Res. SMDEIS 6/2023), substituição de PREO (Res. SMDEIS 3/2023), rito de baixa complexidade extinto (Res. SMDEIS 27/2021, Sem efeito), regulamentação do COES (**Decreto 45.917/2019, arquivado nesta rodada — ver B5**), memorial técnico ambiental (Decreto 55.621/2025), regime de zoneamento local de Jacarepaguá/Recreio (Decreto 3.046/1981), REVIS/APA Sertão Carioca-Sernambetiba (Decretos 50.412 e 50.413/2022).
+
+**Varredura temática nova, por contagem de resultados no Busca Fácil (`consultaPorPalavra.asp`, sem ler cada ato por completo — levantamento de existência/relevância, conforme escopo do pedido):**
+
+| Termo buscado | Resultados | Leitura |
+|---|---|---|
+| "Codigo de Obras" | 29 | Universo grande — a maioria já é de contexto (LC 198/2019 citada por outros atos), não normas novas não mapeadas |
+| "afastamento das divisas" | 12 | Coberto pelo COES + Decreto 45.917/2019 (Art. 4º, 6º) — sem indício de decreto adicional relevante ao nosso escopo |
+| "gabarito de altura" | 7 | Coberto pela LC 270/2024, Anexo XXI — sem achado novo |
+| "Indice de Comercio e Servicos" | 8 | Coberto pelo Art. 367 (ver B4) — sem achado novo |
+| "outorga onerosa" | 15 | Já em quarentena de reconstrução (`POP-LEGAL-02`, ver `pendencias.json` b2) — universo já mapeado, sem norma nova identificada nesta varredura rasa |
+| "Licenciamento Ambiental Municipal" | 39 | Já mapeado (Decreto 51.503/2022 + Res. SMAC 512/2012 + Res. SMDEIS 6/2023) — universo grande sugere que pode haver normas específicas por tipologia ainda não lidas, mas não apareceu nome de ato novo nos primeiros resultados |
+| "superficie minima drenante" (SMD) | 3 | Coberto pela LC 270/2024, Arts. 351-353 — sem decreto regulamentador adicional identificado |
+| "aquifero Guaratiba" | 3 (na prática 1 relevante) | **Único resultado substantivo: Decreto nº 48.940/2021 (Plano de Desenvolvimento Sustentável e Ação Climática — PDS), Válido** — cita o aquífero de forma tangencial (plano geral, não delimitação). **Não é** a regulamentação específica do Art. 458 §2º da LC 270/2024 (prazo de 180 dias), que **continua não localizada publicada** — pendência já registrada, não fechada por este achado |
+| "acessibilidade edificacoes" | 0 | Nenhum ato dedicado no Busca Fácil sob este termo exato — o Decreto 22.705/2003 (citado no Anexo II do LICIN, Seção 5.3 do `POP-LEGAL-05`) não apareceu por esta busca textual; **testar diretamente por número em rodada futura**, não é prova de ausência |
+| "sombra calcadao orla" | 0 | Mesma situação — o Decreto 20.504/2001 (citado no mesmo Anexo II) não apareceu; testar por número |
+
+**Conclusão honesta, sem arredondar:** a base de decretos/resoluções **não está provada 100% completa** — e não ficou provada nesta rodada. O que esta varredura entrega é: (1) confirmação de que os 13 atos já arquivados seguem sendo os achados centrais para os temas testados (nenhum concorrente relevante apareceu nos resultados de maior volume); (2) dois atos **já citados em POPs nossos por número** (Decreto 22.705/2003 acessibilidade; Decreto 20.504/2001 sombra orla) **não foram confirmados nesta rodada** — a busca por termo textual não os capturou, o que não prova ausência (pode ser questão de indexação ou de termo de busca), mas é lacuna a fechar buscando por número exato, não por assunto. **Recomendo a Kelsen** uma rodada futura dedicada, buscando por número de ato (não por tema) os ~10-15 decretos/resoluções já citados por número em algum POP nosso mas nunca baixados/arquivados como arquivo próprio — é o caminho mais barato para fechar a prova de completude, em vez de nova varredura temática ampla.
+
+### B14 — Precedente/orientação técnica para transferência obrigatória em glebas entre 10.000 e 20.000 m² — NÃO LOCALIZADO. Lacuna real, não arredondada.
+
+**Confirmação textual do achado de Kelsen que originou a tarefa:** rasterizei o **Quadro 24.3 do Anexo XXIV** (`LC274_2024_CONSOLIDADO.pdf`, p. 25 — é imagem, `pdftotext` não extrai) e conferi visualmente: a tabela tem **apenas duas faixas** — "Maior que 20.000 m² e menor ou igual a 40.000 m²" (15% total de destinação) e "Maior que 40.000 m²" (30% total) — **não existe linha para gleba/lote de 20.000 m² ou menos**. O Art. 304, caput, remete inteiramente ao Quadro 24.3 para o percentual mínimo — sem tabela, sem percentual definido por esta via para a faixa 10.000-20.000 m². O Art. 305 (a outra via de transferência obrigatória) só incide **acima de 40.000 m²** (texto verbatim: "superior a quarenta mil metros quadrados"). **Confirma 100% o achado de Kelsen: nem um nem outro cobre a gleba do caso (~10.500 m²).**
+
+**Busca de precedente/orientação técnica, três frentes, todas sem achado:**
+1. **Busca Fácil por texto integral** — "transferencia obrigatoria" (2 resultados: a própria LC 270/2024 e a LC 299/2026, que altera o Art. 371 — tema de coeficiente por reconversão em ZCVS, não Arts. 304/305); "Quadro 24.3" e "areas de transferencia" (1 resultado cada, ambos apontando só para a própria LC 270/2024 consolidada) — **nenhum ato específico (resolução, decreto, orientação técnica) tratando da faixa 10.000-20.000 m² foi encontrado**.
+2. **Normas alteradoras recentes da LC 270/2024** (LC 299/2026, LC 301/2026) — nenhuma toca os Arts. 304, 305 ou o Quadro 24.3; tratam de temas distintos (Art. 371/ZCVS na LC 299; AEIU Praça Onze/Legado Olímpico na LC 301, com seu próprio mecanismo de "transferência obrigatória" de equipamento urbano, **regulado por outros artigos específicos daquelas leis e não aplicável ao regime geral de loteamento dos Arts. 304-305**).
+3. **Busca ampla na web (WebSearch) por parecer/orientação técnica da SMDU sobre o tema** — encontrei a **Resolução SMDU nº 10, de 03/07/2026** (instituiu a Consulta Prévia de Diretrizes Territoriais / RDT, regulamentando aspectos de parcelamento da LC 270/2024) — **verificada e sem relação com o percentual de transferência**: seus gatilhos de exigibilidade (Art. 4º) são para área acima de 40.000 m², testada acima de 200 m ou condição de quadra — não toca a faixa 10.000-20.000 m² nem cita os Arts. 304/305/Quadro 24.3. Nenhuma outra fonte pública (parecer, ofício, manual técnico) localizada.
+
+**Resposta a Kelsen: não existe, até onde a pesquisa alcançou, precedente publicado nem orientação técnica formal da SMDU cobrindo glebas/lotes entre 10.000 e 20.000 m² quanto a percentual de transferência obrigatória.** É lacuna real da norma (confirmada, não hipotética) — decisão de mérito sobre como tratar essa lacuna no §5.4 do adendo (risco de "perda dupla da FMP") é de Kelsen, não minha. Se Kelsen quiser fechar com mais confiança, os únicos caminhos que restam são: (a) consulta formal/protocolo de dúvida à SMDU (fora do meu alcance de ferramenta); (b) achar processo real já protocolado com gleba nessa faixa (não encontrado nesta busca, que foi por texto de norma, não por processo administrativo individual — processos não são indexados no Busca Fácil).
+
+---
+
+## VARREDURA DE VIGÊNCIA — 10/08/2026 (repetição do método de 03/08/2026, pedido de Kelsen via rotina `wallenberg-drenagem-continua` — caso real EVTL Av. Projetada Canal 2 antes do Gate do Maurício)
+
+> **Pedido**: confirmar se há lei/decreto novo publicado entre 03/08/2026 (última checagem) e hoje que altere a LC 270/2024, a LC 281/2025 ou o Decreto 55.622/2025 (LICIN 2.0), com atenção especial a outorga onerosa/CAB-CAM (Arts. 18-20 e 40 da LC 281) e transferência obrigatória (Art. 304/Quadro 24.3 e Art. 305 da LC 270). **Resultado: nada novo desde 03/08/2026.**
+
+**Método (idêntico ao de 03/08/2026, `www2.rio.rj.gov.br/smu/buscafacil`, `curl` direto, fonte oficial)**:
+1. **Status por ato** (`consultaPorAto.asp` -> `RelacaoDocumentos.asp`, `selTipoAto=6` p/ LC, `=1` p/ Decreto) — formulário e endpoints confirmados **inalterados** desde 03/08 (mesmos `<option>` numéricos). Os três atos continuam **Válido**, 1 registro único cada, **mesmos IDs internos de 03/08** (LC 270 id 2118, LC 281 id 2349, Decreto 55.622 id 2262) — nenhum duplicado, nenhuma revogação, nenhuma redação nova registrada.
+2. **Nota de status** (`geraModal.asp?c={id}`): LC 270 traz **o mesmo alerta de 03/08, sem mudança** — *"VERIFICAR ALTERAÇÕES DA LEI COMPLEMENTAR Nº 301 DE 09/07/2026"* (já incorporada à base desde 03/08). LC 281 e Decreto 55.622 seguem **sem nota de alerta**.
+3. **Busca por texto integral** (`consultaPorPalavra.asp`, `TipoConsulta=PALAVRA`) — testa citação por qualquer ato aos três alvos, agora também aos temas sensíveis do caso:
+   - `"270"` -> mais recente que cita: **LC 301/2026 (09/07/2026)** — mesmo teto de 03/08. Nenhum resultado entre 04/08 e 10/08/2026.
+   - `"281"` -> mesmo teto, **LC 301/2026 (09/07/2026)**. Nenhum resultado em agosto/2026.
+   - `"55622"` -> 2 registros (o próprio decreto + uma Lei nº 5.801/2014 sem relação, número coincidente em outro contexto) — nenhum ato altera o Decreto 55.622/2025.
+   - `"LICIN"` -> mais recente ainda é o próprio Decreto 55.622/2025 (01/01/2025); nenhum ato novo.
+   - `"outorga onerosa"` -> mais recente que cita: **LC 301/2026 (09/07/2026)** — nenhuma norma nova toca outorga onerosa/CAB-CAM desde então.
+   - `"transferencia obrigatoria"` (sem acento — ver ressalva de método abaixo) -> mesmo teto, **LC 301/2026 (09/07/2026)**, que altera o Art. 371 (ZCVS), tema não relacionado a transferência de área em loteamento. Nenhuma norma nova toca os Arts. 304/305/Quadro 24.3 (que já são a lacuna registrada no achado B14 de 08/08 — segue igual, sem novidade).
+   - Em nenhuma das seis buscas apareceu qualquer resultado datado entre 04/08/2026 e 10/08/2026 (a janela desde a última checagem).
+
+**Resposta literal para Kelsen levar adiante**: **nada novo desde 03/08/2026.** A LC 270/2024, a LC 281/2025 e o Decreto 55.622/2025 continuam **Válidos**, sem alteração publicada até 10/08/2026, inclusive nos pontos sensíveis do caso EVTL (outorga onerosa/CAB-CAM e transferência obrigatória). A lacuna já mapeada em B14 (Quadro 24.3 sem faixa para glebas <= 20.000 m²) **permanece exatamente como estava** — nenhum precedente ou norma nova a fechou.
+
+**Ressalva de método nova, registrada para não repetir o erro**: hoje, buscar com o caractere ordinal `º` (ex.: `"Lei Complementar nº 281"`, idêntico ao texto que funcionou em 03/08) **quebra a consulta** — o Busca Fácil devolve "Nenhum documento encontrado" porque o byte do `º` chega corrompido ao servidor (confirmado por inspeção do HTML de retorno, que mostra o critério de pesquisa com um caractere ilegível no lugar do `º`), independente de eu enviar em UTF-8 ou em Latin-1. **Não é prova de que a norma sumiu** — é quebra de busca, detectada porque testei a mesma query sem o `º` (ex.: `"281"`, `"Lei Complementar 281"`) e ela voltou a funcionar. Da mesma forma, `"55.622"` com ponto retornou um resultado errado (Lei nº 4.202/2005, coincidência numérica) — sem o ponto (`"55622"`) achou o decreto certo. **Daqui para frente: testar a busca sem pontuação/ordinal primeiro; se vier "nenhum documento encontrado" para um ato que sei que existe, é sinal de quebra de encoding do lado do site, não de norma revogada — trocar a grafia antes de aceitar o resultado como verdadeiro.** Isso não é um achado de mérito, é higiene de ferramenta — mas se eu não tivesse cruzado com o `consultaPorAto.asp` (que confirmou Válido/mesmo ID pelos 3 atos), um resultado de busca por palavra quebrado teria sido lido, por engano, como ausência de citação.
+
+**Ressalvas de honestidade repetidas de 03/08 (seguem valendo)**: busca por texto só pega citação explícita do número/termo; lag de indexação da Busca Fácil não é confirmável; isto é varredura de vigência/alteração, não reabertura de mérito das três normas.
+
+---
+
+## RODADA 10/08/2026 (item b16) — DECRETO 22.705/2003 E DECRETO 20.504/2001, LOCALIZADOS POR NÚMERO EXATO — LOCALIZADOS E ARQUIVADOS. Status: Válido (os dois).
+
+> Pedido de Kelsen via `pendencias.json` (item `b16-numero-exato-decretos-citados`), fechando a lacuna que eu mesma tinha registrado em 08/08/2026 (achado B8): esses dois decretos são citados por número em `POP-LEGAL-05` §5.3 (Anexo II do LICIN 2.0, itens de declaração), mas a varredura temática do Busca Fácil não os tinha confirmado por termo textual ("acessibilidade edificacoes" e "sombra calcadao orla" deram 0 resultados). Mesmo padrão de execução já usado com sucesso no Decreto 45.917/2019 (item B5, 08/08/2026): busca direta por número exato em `consultaPorAto.asp`, não por assunto. Levantamento mecânico de fonte primária — não julguei mérito nem toquei em nenhum POP.
+
+### Decreto 22.705/2003 — Acessibilidade em condomínios residenciais — LOCALIZADO. Status: Válido.
+
+Buscado em `consultaPorAto.asp` (`selTipoAto=1`, `txtNumAto=22705`, `selStatus=Todos`) -> `RelacaoDocumentos.asp`. **1 resultado único: Decreto nº 22.705 de 07/03/2003, id interno 813, tamanho 23.176 bytes.** Status jurídico, confirmado em dois pontos independentes da própria página (badge da linha do resultado e `geraModal.asp?c=813`): **"Válido"**, sem nota textual de revogação/alteração associada ao próprio ato. Baixado via `ContadorAcessoAto.asp` (`CdDispLg=813`) e **arquivado como `Decreto22705_2003_AcessibilidadeCondominiosResidenciais.pdf`** (2 pp.).
+
+**Ementa**: "Regulamenta a Lei n.º 3.311, de 3 de dezembro de 2001, estabelecendo os procedimentos que menciona." Conteúdo, 7 artigos, lido por `pdftotext -layout`: regulamenta os procedimentos para concessão de licenças de adaptações ambientais e arquitetônicas em partes comuns de condomínios residenciais (Art. 1º); **§1º do Art. 1º remete explicitamente às Normas Técnicas Brasileiras de Acessibilidade da ABNT como padrão de solução** — é o dispositivo que sustenta a citação no `POP-LEGAL-05` §5.3, item 4 (declaração de acessibilidade no Anexo II do LICIN); Art. 2º exige o mesmo padrão ABNT em licenciamento de construção nova, substituição de projeto aprovado e revalidação; Art. 3º isenta edificações de interesse social e as existentes sem elevador do cumprimento de exigências de equipamento eletromecânico; Art. 4º admite, em caráter excepcional, ocupação do afastamento frontal mínimo ou do passeio por rampas/equipamento eletromecânico, sob 3 condições cumulativas; Art. 6º revoga o Decreto nº 21.581/2002; **Art. 7º já traz consolidada, no próprio corpo do PDF baixado, a redação dada pelo Decreto nº 24.276/2004** (regra de transição de vigência — não retroage a processos já protocolados/aprovados antes de 30/03/2004). **O ato lido é o texto já consolidado com sua única alteração conhecida (2004), não o texto original de 2003 isolado.**
+
+**Confirma o uso que o `POP-LEGAL-05` já faz do decreto** — é a fonte correta e vigente para a declaração de acessibilidade do Anexo II. Não achei nenhum outro decreto concorrente/mais recente tratando do mesmo tema nesta busca por número exato.
+
+### Decreto 20.504/2001 — Sombra sobre calçadão/areal na orla marítima — LOCALIZADO. Status: Válido.
+
+Buscado em `consultaPorAto.asp` (`selTipoAto=1`, `txtNumAto=20504`, `selStatus=Todos`) -> `RelacaoDocumentos.asp`. **1 resultado único: Decreto nº 20.504 de 13/09/2001, id interno 1080, tamanho 26.462 bytes.** Status jurídico, mesma dupla confirmação (badge da linha + `geraModal.asp?c=1080`): **"Válido"**, sem nota textual de revogação/alteração associada ao próprio ato. Baixado via `ContadorAcessoAto.asp` (`CdDispLg=1080`) e **arquivado como `Decreto20504_2001_SombraOrlaCalcadaoPraias.pdf`** (2 pp.).
+
+**Ementa**: "Regulamenta a Lei Complementar 47 de 01 de dezembro de 2000, quanto aos critérios de análise e limites máximos permitidos para sombreamento de edificações nas praias municipais." Conteúdo, 6 artigos, lido por `pdftotext -layout`: Art. 1º define praia e orla marítima para fins do decreto, com **§2º e §3º já trazendo, no corpo do PDF, a redação/revogação dada pelo Decreto nº 21.121/2002**; Art. 2º condiciona a aprovação de projeto na orla, defronte a praia, à análise de estudo de sombras pela SMAC; Art. 3º lista os documentos mínimos da instrução do processo (planta cadastral, certidão de zoneamento, projeto de arquitetura completo, estudo de sombras em horários e datas específicos — equinócios e solstícios); **Art. 4º fixa os limites máximos de sombreamento vedados por período do ano, com parágrafo único (também incorporado pelo Decreto 21.121/2002) excluindo do cômputo sombra de acidente topográfico ou de edificação já regularizada**; Art. 5º admite exigir redução de altura mesmo em edificação já licenciada que não tenha concluído a primeira laje. **O ato lido é o texto já consolidado com sua alteração conhecida (2002), não o original isolado de 2001.**
+
+**Confirma o uso que o `POP-LEGAL-05` já faz do decreto** — é a fonte correta e vigente para a declaração de sombreamento na orla, item 1-2 do Anexo II do LICIN. Não achei nenhum outro decreto concorrente/mais recente tratando do mesmo tema nesta busca por número exato.
+
+**Resposta a Kelsen, item b16**: os dois decretos existem, estão **Válidos** (nenhum revogado ou alterado de forma a comprometer o uso que já fazemos deles), e o texto baixado de cada um já vem consolidado com sua respectiva alteração pontual (Decreto 24.276/2004 para o 22.705; Decreto 21.121/2002 para o 20.504) embutida no próprio corpo do PDF oficial — não há necessidade de baixar separadamente os decretos alteradores para este uso específico (declaração de Anexo II), mas registro a existência deles (21.581/2002 revogado pelo 22.705; 21.121/2002 e 24.276/2004 como alteradores) para o caso de precisarmos ler o histórico completo de algum dos dois no futuro. **Fecha a lacuna registrada em B8 (08/08/2026)** — busca por número exato teve sucesso onde a busca temática por assunto tinha falhado (achado de método já havia sido antecipado nessa ocasião).
+
+---
+
+## RODADA 11/08/2026 (item `kelsen-anexo3-anexo4-criterio-escolha`) — CRITÉRIO DE ESCOLHA ENTRE AS TRÊS SUBTABELAS DO ANEXO III, E RELAÇÃO ANEXO III/IV — BUSCA EXAURIDA, LACUNA CONFIRMADA COMO REAL (não é achado novo de mérito, é reconfirmação com nova evidência)
+
+> Pedido de Kelsen, fechando o item `kelsen-anexo3-anexo4-criterio-escolha` de `pendencias.json` (formalizado na Reunião Semanal de 10/08/2026, item 2.6). Este exato ponto **já tinha sido investigado por mim em 21-23/07/2026** e está documentado em `POPs/POP-LEGAL-05_conteudo_exigido_protocolo_RJ.md`, Seções 7.2 e 12 (lacuna L-6, hoje "fechada como decisão de trabalho", não como norma). O pedido desta rodada foi reconfirmar contra a Busca Fácil (fonte oficial consolidada) e procurar explicitamente uma Resolução/instrução normativa complementar da SMDU/SMU — os dois passos que a investigação de julho não tinha esgotado com essa ferramenta específica.
+
+### 1. Texto oficial consolidado com Anexos III e IV na íntegra — CONFIRMADO, é o mesmo já arquivado
+
+Busquei o Decreto 55.622/2025 na Busca Fácil (`consultaPorAto.asp`, `selTipoAto=1`, `txtNumAto=55622`) — **1 resultado, id interno 2262, status Válido**, mesmo id já usado nas rodadas de 03/08 e 10/08. Baixei o PDF consolidado via `ContadorAcessoAto.asp` (`CdDispLg=2262`, 722.085 bytes, 14 páginas) e comparei por hash: **MD5 `63e5274003eae0c2b29ad60f9bb36cdb` — idêntico byte a byte ao `Decreto55622_2025_LICIN2.0.pdf` já arquivado em 21/07/2026.** Ou seja: **o corpo do decreto já arquivado é, ele mesmo, o texto consolidado oficial da Busca Fácil** — não há uma versão "mais consolidada" à parte. Confirmei por `pdftotext -layout` que os Anexos III e IV estão de fato embutidos como texto extraível neste arquivo (só o Anexo I, os modelos gráficos do DULI, é que existe só como imagem em arquivo separado — achado antigo, reconfirmado, não mudou).
+
+### 2. Critério de escolha entre as três subtabelas do Anexo III — RECONFIRMADO: não está escrito em nenhum lugar do texto do decreto
+
+Reli o Anexo III inteiro (extração de texto desta rodada, `decreto55622_buscafacil.txt`, linhas 329-350) e o Art. 10 (linhas 169-176). **Nenhuma palavra nova em relação à transcrição já registrada** no `POP-LEGAL-05`, Seção 7 (títulos literais das três subtabelas, campos, Termo de Responsabilidade). Não há cabeçalho, nota de rodapé, remissão cruzada ou parágrafo em qualquer lugar do corpo do decreto que diga qual subtabela usar em qual situação — a busca desta rodada olhou especificamente por essas três coisas (o pedido de Kelsen) e não achou nenhuma. **Fonte exata para Kelsen conferir**: Decreto 55.622/2025, Anexo III (imediatamente após o Art. 12/assinatura, sem numeração de página própria no PDF — é a p. 12 do arquivo `Decreto55622_2025_LICIN2.0.pdf` já arquivado, confirmado por rasterização em 21/07/2026).
+
+### 3. Relação Anexo III / Anexo IV — RECONFIRMADO: só há uma regra escrita, a já conhecida (Art. 10)
+
+**Art. 10, caput e parágrafo único** continuam sendo a única ponte normativa entre os dois anexos: III é a regra geral (qualquer projeto de construção/modificação de prédio); IV é exceção expressa para **residencial unifamiliar ou bifamiliar**. Não há hipótese adicional de uso do Anexo IV além dessa — nem alternativa, nem complementar, nem "à escolha do requerente": o parágrafo único usa a fórmula *"não se aplicam as disposições do caput [...] devendo ser adotado"*, que é mandatória, não facultativa. Não achei, nesta rodada, nenhuma terceira hipótese (ex.: grupamento pequeno, uso misto residencial) que desloque o enquadramento III/IV além do que já estava registrado.
+
+### 4. Busca de Resolução/instrução normativa complementar da SMDU/SMU — EXAURIDA, sem achado que preencha a lacuna
+
+Rodei 11 buscas por texto integral na Busca Fácil (`consultaPorPalavra.asp`), termos direcionados ao objeto específico do pedido (não repetição das buscas temáticas já feitas em julho para outros fins):
+
+| Termo buscado | Resultado |
+|---|---|
+| `"quadro explicativo de areas"` | 0 (nenhum documento) |
+| `"subtabela"` | 0 |
+| `"uso exclusivo"` | 0 |
+| `"unidades autonomas"` | 0 |
+| `"DULI"` | 1 — só o próprio Decreto 55.622/2025 (id 2262) |
+| `"quadro de areas"` | 26 atos — termo genérico demais (aparece em muitos decretos de zoneamento/IPTU sem relação com o LICIN); nenhum deles é resolução complementar ao Anexo III/IV |
+| `"licenciamento integrado"` | 9 atos — ver detalhe abaixo |
+| `"instrucao normativa licin"` | 0 |
+| `"orientacao tecnica DULI"` | 0 |
+| `"LICIN 2.0"` | 1 — só o próprio decreto |
+| `"formularios LICIN"` | 2 — Decreto 48.719/2021 (LICIN 1.0, já Sem efeito) e Resolução SMDEIS 3/2023 (substituição de PREO, já arquivada, tema não relacionado) |
+| `"criterios LICIN"` | 0 |
+| `"Anexo III do Decreto 55622"` / `"Anexo IV do Decreto 55622"` | 0 nas duas |
+
+**O achado relevante veio de `"licenciamento integrado"` (9 atos).** Dois deles, ambos hoje com status **Sem efeito** (revogados tacitamente pelo próprio Decreto 55.622/2025, mesma nota de status que já conhecíamos para o Decreto 48.719/2021), tratam exatamente do tema — mas do regime **anterior** (LICIN 1.0):
+
+- **Resolução SMDEIS nº 27, de 10/11/2021** (id 1828) — *"Estabelece critérios e procedimentos a serem adotados para análise de acordo com o Licenciamento Integrado de Edificação - LICIN para os projetos que especifica."* **Já arquivada nesta pasta** (`ResolucaoSMDEIS27_2021_LICIN_BaixaComplexidade_SEM_EFEITO.pdf`, achado de 21/07/2026) — eu já a conhecia por outro motivo (rito de baixa complexidade), mas não a tinha relido com esta pergunta específica. Reli agora: **Art. 1º manda usar "o Anexo I e Anexo II do Decreto Rio Nº 48719" + "o projeto de acordo com o Anexo III do Decreto Rio Nº 48719" para TODOS os tipos de projeto listados nos incisos I a VI — inclusive unifamiliar e bifamiliar (inciso I, "a" e "b").** Ou seja: **sob o LICIN 1.0 (Decreto 48.719/2021), não existia a distinção Anexo III (regra geral) vs. Anexo IV (uni/bifamiliar) que hoje está no Art. 10 do Decreto 55.622/2025** — unifamiliar/bifamiliar usava o mesmo "Anexo III" de todo mundo. **A cisão III/IV é estrutura nova, introduzida pelo LICIN 2.0**, sem precedente direto no regime anterior para orientar a leitura.
+- **Resolução "N" EIS-REN-2022 nº 9, de 25/04/2022** (id 1856) — *"Substitui e complementa os formulários adotados para análise de acordo com o Licenciamento Integrado de Edificação - LICIN para os projetos de grupamentos, edificações únicas no lote e modificações de projeto aprovado."* **Não estava arquivada — arquivei nesta rodada**: `ResolucaoEISREN09_2022_LICIN_FormulariosGrupamento_SEM_EFEITO.pdf`. Lida por inteiro: divide os formulários por **Anexo I-A (grupamento) / I-B (edificação única no lote) / I-C (modificação de projeto aprovado)** — um critério de tipo de OBRA (grupamento vs. edificação única vs. modificação), não um critério de tipo de USO (residencial/exclusivo/comercial) como as três subtabelas do Anexo III do LICIN 2.0. **Não é o mesmo eixo de classificação** — não serve de precedente direto para desempatar as subtabelas 1/2/3 de hoje. Confirma, de novo, que a estrutura de hoje é distinta da de 2021-2022.
+
+Nenhum dos dois é "instrução normativa complementar" vigente — os dois estão **Sem efeito** desde a publicação do Decreto 55.622/2025 (mesma nota de status já vista em outras normas do LICIN 1.0). **Não localizei nenhuma resolução ou instrução normativa da SMDU/SMU publicada depois de 01/01/2025 (data do LICIN 2.0) tratando do Anexo III, do Anexo IV, das subtabelas ou de critério de enquadramento de tipo de projeto.** Zero resultado em todas as buscas de texto direcionadas a esse período/tema.
+
+### Resposta literal a Kelsen
+
+1. **Sim, o texto integral dos Anexos III e IV está confirmado em fonte oficial consolidada** — é o mesmo `Decreto55622_2025_LICIN2.0.pdf` já arquivado (MD5 idêntico ao baixado agora direto da Busca Fácil); não existe versão mais atual ou mais completa.
+2. **O critério de escolha entre as três subtabelas do Anexo III não está escrito em nenhum lugar do Decreto 55.622/2025** — reconfirmado nesta rodada, mesma conclusão de 21-23/07/2026 (`POP-LEGAL-05`, Seção 7.2). Endereço exato para conferir: Anexo III do decreto, títulos literais `"1. PROJETO RESIDENCIAL MULTIFAMILIAR / GRUPAMENTO / MISTO"`, `"2. PROJETO DE USO EXCLUSIVO / INDUSTRIAL"`, `"3. PROJETO DE EDIFICAÇÃO COMERCIAL"` — sem definição, sem regra de prevalência, sem remissão. O critério hoje em uso pela casa (COES Art. 2º, III, "a"/"b" — uso exclusivo -> subtabela 2; unidades autônomas -> subtabela 3) **continua sendo ponte nossa, não texto da norma** — decisão já adotada por Kelsen em 23/07/2026 como critério de trabalho, não alterada por esta busca.
+3. **A relação Anexo III/Anexo IV não tem hipótese adicional além da já conhecida** (Art. 10, caput e parágrafo único — III é regra geral, IV é exceção mandatória para unifamiliar/bifamiliar). Achado novo, não sobre o critério em si mas sobre o histórico: **a distinção III/IV é exclusiva do LICIN 2.0** — o regime anterior (LICIN 1.0, Decreto 48.719/2021) usava um único "Anexo III" também para unifamiliar/bifamiliar, confirmado pela Resolução SMDEIS 27/2021, Art. 1º, inciso I. Isso não resolve a lacuna, mas explica por que não há precedente administrativo direto para ela: a pergunta é nova, não uma omissão de atualizar uma prática antiga.
+4. **Busca exaurida sem achar Resolução/instrução normativa complementar vigente.** As duas resoluções da era LICIN 1.0 que tratam de formulários/anexos do procedimento (Res. SMDEIS 27/2021 e Res. EIS-REN 9/2022) estão **Sem efeito** e, mesmo quando vigentes, usavam outro eixo de classificação (tipo de obra, não tipo de uso) — não são precedente direto. **Isto é lacuna real confirmada por busca exaurida em fonte primária, mesmo padrão dos achados B14 (transferência obrigatória) e B8 (decretos por número) — não é falha da execução, é resultado honesto.**
+
+### Arquivos desta rodada
+
+- **Novo**: `ResolucaoEISREN09_2022_LICIN_FormulariosGrupamento_SEM_EFEITO.pdf` (1 p.) — Resolução "N" EIS-REN-2022 nº 9, de 25/04/2022, status **Sem efeito**, id interno 1856 na Busca Fácil. Arquivado por completude de rastreabilidade (Princípio 8), não porque resolve a lacuna.
+- **Não houve necessidade de rearquivar** `Decreto55622_2025_LICIN2.0.pdf` nem `ResolucaoSMDEIS27_2021_LICIN_BaixaComplexidade_SEM_EFEITO.pdf` — ambos já arquivados e conferidos (o primeiro por MD5 idêntico ao baixado agora; o segundo por leitura de conteúdo, que bate com o texto já arquivado em 21/07/2026, mesmo o download avulso desta rodada tendo vindo mais curto/sem os anexos gráficos anexados ao PDF original — não é divergência de conteúdo normativo, é diferença de quais peças o servidor concatenou na resposta).
+
+**Não fechei o item `kelsen-anexo3-anexo4-criterio-escolha` sozinho** — devolvo a Kelsen para auditar contra o PDF primário (`Decreto55622_2025_LICIN2.0.pdf`, Anexo III/Art. 10) e contra `ResolucaoEISREN09_2022_LICIN_FormulariosGrupamento_SEM_EFEITO.pdf`; ele decide se fecha em `pendencias.json` e se atualiza a ressalva do `POP-LEGAL-05` Seção 7.2/12 (L-6) para registrar que a busca por instrução complementar foi refeita e segue exaurida.
+
+---
+
+## REGISTRO — 26/08/2026 — RESOLUÇÃO SMDU Nº 10/2026 — RDT (RELATÓRIO DE DIRETRIZES TERRITORIAIS)
+
+> Origem: proposta de Skill identificada pela rotina diária de 26/08/2026, avaliada por Kelsen nesta mesma data. Esta entrada formaliza a resolução como norma conhecida da base. A resolução já havia sido encontrada durante a pesquisa B14 (seção acima — "Busca ampla na web, 3ª frente") e identificada como "sem relação com o percentual de transferência"; aqui recebe registro próprio porque é norma vigente com impacto real em projetos de grande porte.
+
+- **Arquivo**: não arquivado (fonte atual é agregador legisweb.com.br — **fonte secundária**; texto primário via Busca Fácil pendente)
+- **Fonte**: Resolução SMDU Nº 10, de 03/07/2026 — `legisweb.com.br/legislacao/?id=497794`
+- **Próxima ação obrigatória (Hely)**: confirmar via `www2.rio.rj.gov.br/smu/buscafacil`, arquivar PDF primário, verificar artigos 4º e 8º. **Não usar como fonte primária em protocolo antes disso.**
+
+### O que regula
+
+Institui a **Consulta Prévia de Diretrizes Territoriais** e o **RDT (Relatório de Diretrizes Territoriais)**, regulamentando aspectos de parcelamento da LC 270/2024. Cria etapa obrigatória **antes** do LICIN 2.0 para projetos que ultrapassem os thresholds abaixo.
+
+### Thresholds de incidência (Art. 4º — fonte secundária, confirmar via Busca Fácil)
+
+| Critério | Threshold |
+|---|---|
+| Área do empreendimento | > 40.000 m² |
+| Testada do terreno | > 200 m |
+| Inserção em quadra com testada | > 200 m |
+
+### Impacto no fluxo de licenciamento (fonte secundária)
+
+- **RDT obrigatório antes do LICIN** (Art. 8º da Resolução)
+- **Prazo de análise pela SMDU:** 90 dias
+- **Validade do RDT emitido:** 12 meses (prorrogável por mais 6 meses)
+- **Efeito prático:** adiciona mínimo 90 dias ao cronograma antes do início formal do LICIN, para projetos acima dos thresholds
+
+### Aplicação ao escopo Sttickler
+
+**NÃO INCIDE sobre o escopo típico (unifamiliar, lotes < 40.000 m² e testada < 200m).** Caso EVTL (~10.500 m²): bem abaixo do threshold — não afetado. Relevante apenas se surgir projeto de grande porte (loteamento de grande área, condomínio multifamiliar acima de 40.000 m² ou terreno com testada > 200m). Nenhum POP existente alterado nesta rodada — thresholds de grande porte não são o escopo padrão atual.
+
+### O que esta entrada não resolve
+
+- Texto primário integral não confirmado (fonte é legisweb — secundária)
+- Impacto em projetos com variedade de usos (residencial x comercial mistos) não verificado
+- Possíveis thresholds menores para categorias específicas: não confirmado
 

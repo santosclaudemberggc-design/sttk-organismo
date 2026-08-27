@@ -1,0 +1,329 @@
+<title>Cardozo — Proposta Formal do Gestor Complementares (com Aprovações 14/08)</title>
+<style>
+  @media (prefers-color-scheme: light) { :root { color-scheme: light; } }
+  @media (prefers-color-scheme: dark)  { :root { color-scheme: dark; } }
+
+  :root {
+    --paper: #F1ECE2;
+    --paper-raised: #E9E2D2;
+    --ink: #221F1C;
+    --ink-soft: #55504A;
+    --ink-faint: #8A8375;
+    --blueprint: #24476E;
+    --blueprint-soft: #6C87A6;
+    --blueprint-wash: #DCE4EC;
+    --ochre: #A66A2E;
+    --ochre-wash: #EEE0CE;
+    --line: #D3C9B6;
+    --good: #3F6B4A;
+    --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    --font-body: Seravek, "Gill Sans Nova", "Segoe UI", Calibri, sans-serif;
+    --font-mono: "Berkeley Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #17191C; --paper-raised: #1E2124; --ink: #EDE7DA; --ink-soft: #ABA290; --ink-faint: #716C60;
+      --blueprint: #7FA6D6; --blueprint-soft: #45617F; --blueprint-wash: #202B36; --ochre: #D89A5C; --ochre-wash: #2E2519;
+      --line: #34383D; --good: #7FAF8B;
+    }
+  }
+  :root[data-theme="light"] {
+    --paper: #F1ECE2; --paper-raised: #E9E2D2; --ink: #221F1C; --ink-soft: #55504A; --ink-faint: #8A8375;
+    --blueprint: #24476E; --blueprint-soft: #6C87A6; --blueprint-wash: #DCE4EC; --ochre: #A66A2E; --ochre-wash: #EEE0CE;
+    --line: #D3C9B6; --good: #3F6B4A;
+  }
+  :root[data-theme="dark"] {
+    --paper: #17191C; --paper-raised: #1E2124; --ink: #EDE7DA; --ink-soft: #ABA290; --ink-faint: #716C60;
+    --blueprint: #7FA6D6; --blueprint-soft: #45617F; --blueprint-wash: #202B36; --ochre: #D89A5C; --ochre-wash: #2E2519;
+    --line: #34383D; --good: #7FAF8B;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 16.5px; line-height: 1.6; }
+  ::selection { background: var(--blueprint-wash); color: var(--ink); }
+  a { color: var(--blueprint); }
+
+  .titleblock { border-bottom: 2px solid var(--ink); padding: 2.6rem clamp(1.25rem, 5vw, 3rem) 1.6rem; }
+  .titleblock-grid { max-width: 920px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: end; }
+  .eyebrow { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blueprint); margin: 0 0 0.6rem; }
+  h1.name { font-family: var(--font-display); font-size: clamp(2.6rem, 7vw, 4.4rem); font-weight: 500; letter-spacing: 0.01em; margin: 0; text-wrap: balance; line-height: 1.02; }
+  .subtitle { font-size: 1.05rem; color: var(--ink-soft); margin: 0.65rem 0 0; max-width: 46ch; }
+  .meta { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-faint); text-align: right; line-height: 1.7; white-space: nowrap; }
+  .meta strong { color: var(--ink-soft); font-weight: 600; }
+
+  .layout { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 220px minmax(0, 760px); gap: 0; justify-content: center; }
+  nav.index { position: sticky; top: 0; align-self: start; padding: 2.4rem 1.25rem 2rem 1.25rem; max-height: 100vh; overflow-y: auto; }
+  nav.index ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+  nav.index a { display: block; font-family: var(--font-mono); font-size: 0.74rem; color: var(--ink-faint); text-decoration: none; letter-spacing: 0.02em; border-left: 2px solid transparent; padding-left: 0.7rem; transition: color 0.15s, border-color 0.15s; }
+  nav.index a:hover { color: var(--ink); }
+
+  main { padding: 2.6rem clamp(1.25rem, 5vw, 2.5rem) 6rem; min-width: 0; }
+  section { padding-top: 2.4rem; scroll-margin-top: 1rem; }
+  section + section { border-top: 1px solid var(--line); }
+  .section-head { display: flex; align-items: baseline; gap: 0.9rem; margin-bottom: 1.1rem; }
+  .section-num { font-family: var(--font-mono); font-size: 0.85rem; color: var(--blueprint-soft); }
+  h2 { font-family: var(--font-display); font-size: 1.7rem; font-weight: 500; margin: 0; text-wrap: balance; }
+  h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; margin: 1.6rem 0 0.5rem; }
+  p { margin: 0.7rem 0; max-width: 66ch; }
+  p.lede { font-size: 1.05rem; color: var(--ink-soft); max-width: 62ch; }
+  ul, ol.plain { margin: 0.6rem 0; padding-left: 1.3rem; }
+  ul li, ol.plain li { margin: 0.35rem 0; }
+  strong { color: var(--ink); font-weight: 650; }
+
+  .rule-box { background: var(--ochre-wash); border: 1px solid var(--ochre); border-radius: 3px; padding: 1.1rem 1.3rem; margin: 1rem 0; }
+  .rule-box .label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ochre); margin: 0 0 0.4rem; }
+  .rule-box p { margin: 0; max-width: none; color: var(--ink); }
+  .rule-box.blue { border-color: var(--blueprint); background: var(--blueprint-wash); }
+  .rule-box.blue .label { color: var(--blueprint); }
+  .rule-box.green { border-color: var(--good); background: color-mix(in srgb, var(--good) 15%, var(--paper)); }
+  .rule-box.green .label { color: var(--good); }
+
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--line); }
+  th { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-faint); font-weight: 600; }
+
+  .pill { display: inline-block; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.03em; padding: 0.15rem 0.55rem; border-radius: 2px; border: 1px solid currentColor; }
+  .pill.ready { color: var(--good); background: color-mix(in srgb, var(--good) 12%, transparent); }
+  .pill.build { color: var(--blueprint); background: var(--blueprint-wash); }
+  .pill.pending { color: var(--ochre); background: var(--ochre-wash); }
+  .pill.new { color: #D4A574; background: color-mix(in srgb, #D4A574 12%, transparent); }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1rem 0; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; margin: 1rem 0; }
+  .card { border: 1px solid var(--line); border-radius: 3px; padding: 1.1rem 1.2rem; }
+  .card h4 { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blueprint); margin: 0 0 0.5rem; }
+  .card .card-name { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin: 0 0 0.3rem; }
+  .card ul { margin: 0.4rem 0 0; padding-left: 1.1rem; font-size: 0.9rem; }
+  .card p { font-size: 0.9rem; }
+
+  .open-item { display: flex; gap: 0.7rem; padding: 0.6rem 0; border-bottom: 1px dashed var(--line); align-items: baseline; }
+  .open-item:last-child { border-bottom: none; }
+  .open-item .dot { color: var(--ochre); font-family: var(--font-mono); }
+  .open-item p { margin: 0; font-size: 0.94rem; }
+
+  .princ { font-family: var(--font-mono); font-size: 0.68rem; color: var(--blueprint-soft); border: 1px solid var(--blueprint-soft); border-radius: 2px; padding: 0.05rem 0.4rem; margin-right: 0.3rem; display: inline-block; }
+
+  footer { max-width: 760px; margin: 0 auto; padding: 0 clamp(1.25rem, 5vw, 2.5rem) 4rem; font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-faint); }
+
+  @media (max-width: 880px) {
+    .layout { grid-template-columns: 1fr; }
+    nav.index { position: static; max-height: none; padding: 1.4rem clamp(1.25rem, 5vw, 2.5rem) 0; }
+    nav.index ol { flex-direction: row; flex-wrap: wrap; gap: 0.4rem 1rem; }
+    .titleblock-grid { grid-template-columns: 1fr; }
+    .meta { text-align: left; }
+    .two-col, .grid3 { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="titleblock">
+  <div class="titleblock-grid">
+    <div>
+      <p class="eyebrow">Sistema Orgânico STTK — Sttickler Empreendimentos</p>
+      <h1 class="name">Cardozo</h1>
+      <p class="subtitle">Proposta Formal do 3º Gestor — Gestor Complementares: orquestra briefings para sua equipe de 6 Agentes (Estrutural, Elétrica/Automação, Hidrossanitário, Paisagismo, Interiores, Apresentação) que ajustam e modificam. Deixa tudo no Drive para Wallenberg compilar em Briefing Único visual e interativo.</p>
+    </div>
+    <div class="meta">
+      <div><strong>Status</strong> <span class="pill build">proposta formal — revisão</span></div>
+      <div><strong>Nome</strong> Cardozo ✅ (aprovado 29/07)</div>
+      <div><strong>Decisões 14/08</strong> <span class="pill new">6 Agentes + validador</span></div>
+      <div><strong>Preparado por</strong> Wallenberg (Função 02)</div>
+      <div><strong>Data</strong> 14/08/2026</div>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+  <nav class="index" aria-label="Índice">
+    <ol>
+      <li><a href="#identidade">01 — Identidade</a></li>
+      <li><a href="#escopo">02 — Escopo: 6 Agentes</a></li>
+      <li><a href="#lucio">03 — Dependência com Lúcio (NOVO)</a></li>
+      <li><a href="#validador">04 — Papel de Validador (NOVO)</a></li>
+      <li><a href="#skills">05 — 6 Skills prontas</a></li>
+      <li><a href="#capacidade">06 — Capacidades</a></li>
+      <li><a href="#equipe">07 — 6 Agentes</a></li>
+      <li><a href="#fluxo">08 — Fluxo Operacional</a></li>
+      <li><a href="#decisoes">09 — Decisões Aprovadas</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="identidade">
+      <div class="section-head"><span class="section-num">01</span><h2>Identidade</h2></div>
+      <p class="lede"><strong>Cardozo</strong> — nome aprovado por Claudemberg em 29/07/2026.</p>
+      <p>Referência a <strong>Joaquim Cardozo</strong>, engenheiro estrutural (e poeta) que calculou as estruturas de Oscar Niemeyer e Lúcio Costa em Brasília — não desenhava o partido, mas orquestrava como aquela visão ficaria de pé através da estrutura e complementares.</p>
+      <p><strong>Papel deste Gestor:</strong>
+      <ol class="plain">
+        <li><strong>Pega</strong> os briefings feitos para Complementares (no Drive)</li>
+        <li><strong>Analisa</strong> se cobrem tudo que sua equipe precisa</li>
+        <li><strong>Distribui</strong> para seus 6 Agentes (Estrutural, Elétrica+Automação, Hidro, Paisagismo, Interiores, Apresentação)</li>
+        <li><strong>Coleta de volta</strong> as modificações e ajustes de cada Agente</li>
+        <li><strong>Organiza no Drive</strong> todo o material ajustado e pronto</li>
+        <li><strong>CEO Wallenberg</strong> pega TODOS os briefings (Arquitetura + Complementares + futuro) e formaliza em Briefing Único visual e interativo</li>
+      </ol>
+      </p>
+    </section>
+
+    <section id="escopo">
+      <div class="section-head"><span class="section-num">02</span><h2>Escopo — 6 Agentes (não 5)</h2></div>
+      <p class="lede"><strong>Aprovação de 14/08:</strong> Cardozo tem 6 Agentes, incluindo um novo Agente de Apresentação próprio.</p>
+      <table>
+        <tr><th>#</th><th>Agente</th><th>Função</th><th>NBR</th><th>Briefing</th></tr>
+        <tr><td>1</td><td>Estrutural</td><td>Cálculo, RRT, CC1/CC2/CC3</td><td>NBR 6118:2026</td><td>Tipo estrutura (steel/concreto)</td></tr>
+        <tr><td>2</td><td>Automação + Elétrica</td><td>Instalações + automação (fundidas)</td><td>NBR 5410</td><td>O que automatizar, pontos</td></tr>
+        <tr><td>3</td><td>Hidrossanitário</td><td>Água/esgoto, reuso</td><td>NBR 16783</td><td>Água fria/quente, reuso</td></tr>
+        <tr><td>4</td><td>Paisagismo</td><td>Projeto + drenagem sustentável</td><td>—</td><td>Paisagem desejada</td></tr>
+        <tr><td>5</td><td>Interior — Produção</td><td>Projeto de interiores</td><td>—</td><td>Estilo, mobiliários, pisos</td></tr>
+        <tr><td>6</td><td>Apresentação ✨ NOVO</td><td>Comunica projetos de cada agente</td><td>—</td><td>Recebe de todos</td></tr>
+      </table>
+    </section>
+
+    <section id="lucio">
+      <div class="section-head"><span class="section-num">03</span><h2>Fluxo de Briefing (Lúcio → Cardozo → Wallenberg)</h2></div>
+      <div class="rule-box blue">
+        <p class="label">Orquestração de Briefing para Complementares</p>
+        <p><strong>Cardozo orquestra ajustes de briefing:</strong> pega briefings do Drive, distribui para sua equipe de 6 Agentes que modificam/ajustam, coleta de volta, compila em Briefing Único para Wallenberg formalizar.</p>
+      </div>
+
+      <h3>Fluxo Completo</h3>
+      <pre style="background: var(--paper-raised); padding: 1rem; border-radius: 3px; font-size: 0.9rem; overflow-x: auto;">
+Lúcio (Levantamento → Briefing → Estudo Preliminar → Anteprojeto)
+  ↓ Briefing Arquitetura no Drive
+Cardozo (ORQUESTRADOR)
+  ├─ Pega briefing no Drive
+  ├─ Analisa para Complementares
+  ├─ Distribui para 6 Agentes
+  │  ├─ Agente 1: Estrutural (modifica conforme necessário)
+  │  ├─ Agente 2: Automação+Elétrica (ajusta)
+  │  ├─ Agente 3: Hidrossanitário (ajusta)
+  │  ├─ Agente 4: Paisagismo (ajusta)
+  │  ├─ Agente 5: Interiores (ajusta)
+  │  └─ Agente 6: Apresentação (documenta)
+  ├─ Coleta retorno de todos
+  └─ DEIXA TUDO NO DRIVE (pronto para CEO)
+      ↓
+Wallenberg (CEO — COMPILAÇÃO FINAL)
+  ├─ Pega Briefing Arquitetura (Lúcio)
+  ├─ Pega Briefing Complementares (Cardozo + 6 Agentes)
+  ├─ Pega outros briefings (futuro)
+  └─ COMPILA em Briefing Único visual e interativo
+      ↓
+Resultado: Briefing Único que absorve TODAS as necessidades e desejos do cliente
+      </pre>
+
+      <h3>Responsabilidades de Cardozo</h3>
+      <ul>
+        <li><strong>Análise:</strong> verifica se Briefing cobre tudo para Complementares</li>
+        <li><strong>Distribuição:</strong> passa para cada um dos 6 Agentes com suas disciplinas</li>
+        <li><strong>Coleta:</strong> recebe modificações/ajustes de volta</li>
+        <li><strong>Organização:</strong> deixa tudo no Drive de forma estruturada e pronto</li>
+      </ul>
+
+      <h3>Responsabilidades de Wallenberg (CEO)</h3>
+      <ul>
+        <li><strong>Compilação:</strong> pega TODOS os briefings (Arquitetura de Lúcio, Complementares de Cardozo, e futuros)</li>
+        <li><strong>Formalização:</strong> cria Briefing Único visual e interativo</li>
+        <li><strong>Absorção:</strong> documento final captura TODAS as necessidades e desejos do cliente</li>
+      </ul>
+    </section>
+
+    <section id="validador">
+      <div class="section-head"><span class="section-num">04</span><h2>Papel de Orquestrador (Não Compilador)</h2></div>
+      <div class="rule-box green">
+        <p class="label">Responsabilidades de Cardozo</p>
+        <p>Cardozo <strong>orquestra ajustes de briefing</strong> para sua equipe. <strong>Não compila</strong> — deixa tudo no Drive para Wallenberg compilar.</p>
+      </div>
+
+      <h3>O que Cardozo Faz</h3>
+      <ul>
+        <li><strong>Análise:</strong> Verifica se Briefing cobre todos os pontos técnicos de Complementares</li>
+        <li><strong>Distribuição:</strong> Passa Briefing para cada Agente com clareza do que ajustar/modificar</li>
+        <li><strong>Coleta:</strong> Recebe contribuições de cada Agente (Estrutural, Elétrica+Automação, Hidro, Paisagismo, Interiores, Apresentação)</li>
+        <li><strong>Organização:</strong> Deixa todo o material no Drive estruturado e pronto</li>
+      </ul>
+
+      <h3>O que Wallenberg (CEO) Faz</h3>
+      <ul>
+        <li><strong>Compilação:</strong> Pega TODOS os briefings do Drive (Arquitetura de Lúcio + Complementares de Cardozo + futuro)</li>
+        <li><strong>Integração:</strong> Monta um Briefing Único que absorve TODAS as necessidades e desejos do cliente</li>
+        <li><strong>Formalização:</strong> Cria apresentação visual e interativa (painel, documento vivo) que o cliente vê e aprova</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <div class="section-head"><span class="section-num">05</span><h2>6 Skills Prontas</h2></div>
+      <p class="lede">Todas em <code>01_CEO/Skills_Propostas/2026/Julho/</code>, prefixo <code>complementares_</code></p>
+      <table>
+        <tr><th>Área</th><th>Skill</th><th>Data</th><th>Status</th></tr>
+        <tr><td>Estrutural</td><td>NBR 6118:2026 (Emenda 1) — classes CC1/CC2/CC3, ATP, armadura</td><td>19/07</td><td><span class="pill ready">pronta</span></td></tr>
+        <tr><td>Elétrico+Automação</td><td>Revisão da NBR 5410 (em consulta pública)</td><td>21/07</td><td><span class="pill ready">pronta</span></td></tr>
+        <tr><td>Elétrico+Automação</td><td>Tendências de automação residencial 2026</td><td>20/07</td><td><span class="pill ready">pronta</span></td></tr>
+        <tr><td>Hidrossanitário</td><td>NBR 16783 — reuso de água / fontes alternativas</td><td>20/07</td><td><span class="pill ready">pronta</span></td></tr>
+        <tr><td>Paisagismo</td><td>Jardim de chuva — drenagem sustentável</td><td>20/07</td><td><span class="pill ready">pronta</span></td></tr>
+        <tr><td>Interiores</td><td>Tendências de materiais e interiores 2026</td><td>20/07</td><td><span class="pill ready">pronta</span></td></tr>
+      </table>
+      <p><strong>Nota:</strong> Nenhuma foi auditada contra caso real (mesmo padrão do Kelsen em Legal) — auditoria acontece quando Gestor existir com Agentes.</p>
+    </section>
+
+    <section id="capacidade">
+      <div class="section-head"><span class="section-num">06</span><h2>Capacidades Confirmadas</h2></div>
+      <table>
+        <tr><th>Frente</th><th>Status</th><th>Notas</th></tr>
+        <tr><td><strong>Interiores</strong></td><td><span class="pill ready">já produz</span></td><td>Mesmo padrão de Portinari — não depende de BIM pronto</td></tr>
+        <tr><td><strong>Estrutural</strong></td><td><span class="pill ready">Vitruvius testado</span></td><td>Pode criar/editar paredes, níveis, cotagem no Revit (29/07). RRT exige profissional licenciado</td></tr>
+        <tr><td><strong>Automação+Elétrica, Hidro, Paisagismo</strong></td><td><span class="pill pending">parceiro técnico</span></td><td>Vitruvius é mais forte em arquitetura/estrutura. Ainda não mapeei ferramenta equivalente</td></tr>
+      </table>
+    </section>
+
+    <section id="equipe">
+      <div class="section-head"><span class="section-num">07</span><h2>6 Agentes (Nomes a Definir)</h2></div>
+      <p class="lede">Nomeação é função de Cardozo (cascata), quando formalizado. Todos nascem em nível Formação.</p>
+      <table>
+        <tr><th>#</th><th>Perfil</th><th>Função</th><th>Nível</th></tr>
+        <tr><td>1</td><td>Agente Estrutural</td><td>Cálculo, RRT, classes CC1/CC2/CC3</td><td>Formação</td></tr>
+        <tr><td>2</td><td>Agente Automação+Elétrica</td><td>NBR 5410 + automação residencial</td><td>Formação</td></tr>
+        <tr><td>3</td><td>Agente Hidrossanitário</td><td>NBR 16783, reuso, fontes alternativas</td><td>Formação</td></tr>
+        <tr><td>4</td><td>Agente Paisagismo</td><td>Projeto paisagístico, drenagem sustentável</td><td>Formação</td></tr>
+        <tr><td>5</td><td>Agente Interior — Produção</td><td>Projeto de interiores</td><td>Formação</td></tr>
+        <tr><td>6</td><td>Agente de Apresentação ✨</td><td>Comunica projetos técnicos de cada agente</td><td>Formação</td></tr>
+      </table>
+      <p>Primeiro exame de cada um será administrado por Cardozo (modelo já usado com Oscar, Portinari, Burle).</p>
+    </section>
+
+    <section id="fluxo">
+      <div class="section-head"><span class="section-num">08</span><h2>Fluxo Operacional</h2></div>
+      <h3>Recebimento</h3>
+      <p>Do Anteprojeto aprovado de Lúcio (plantas, cortes, fachadas, quadro de áreas, <strong>Briefing com requisitos técnicos</strong>)</p>
+
+      <h3>Execução Paralela</h3>
+      <p>5 frentes técnicas (Estrutural, Elétrica+Automação, Hidrossanitário, Paisagismo, Interiores) desenvolvem em paralelo, cada uma sob seu Agente. Cardozo valida cada disciplina contra Briefing antes de liberação.</p>
+
+      <h3>Comunicação</h3>
+      <p>Agente de Apresentação de Cardozo recebe de todos os 5 e comunica o resultado consolidado.</p>
+
+      <h3>Entrega</h3>
+      <p>Cada projeto técnico pronto para Compatibilização (próxima etapa, dono ainda não definido).</p>
+    </section>
+
+    <section id="decisoes">
+      <div class="section-head"><span class="section-num">09</span><h2>Decisões Aprovadas</h2></div>
+      <table>
+        <tr><th>Data</th><th>Decisão</th><th>Efeito</th></tr>
+        <tr><td>29/07</td><td>Nome "Cardozo" aprovado</td><td>Identidade fixada</td></tr>
+        <tr><td>29/07</td><td>Compatibilização sai do escopo</td><td>Escopo reduzido (só complementares)</td></tr>
+        <tr><td>29/07</td><td>Elétrico+Automação fundidos</td><td>1 Agente em vez de 2</td></tr>
+        <tr><td>29/07</td><td>Sem dependência com Kelsen</td><td>Confirmado — Legal não impacta Complementares</td></tr>
+        <tr><td>29/07</td><td>Vitruvius = capacidade oficial</td><td>Estrutural pode produzir direto no Revit</td></tr>
+        <tr><td>14/08</td><td><strong>Dependência explícita com Lúcio (via Briefing)</strong></td><td><strong>Fluxo ajustado — Cardozo valida requisitos</strong></td></tr>
+        <tr><td>14/08</td><td><strong>Cardozo como validador técnico</strong></td><td><strong>Papel expandido além de executor</strong></td></tr>
+        <tr><td>14/08</td><td><strong>6º Agente: Apresentação</strong></td><td><strong>Agente de comunicação próprio de Cardozo</strong></td></tr>
+      </table>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  Sistema Orgânico STTK — Proposta Formal do Gestor Cardozo. Nome aprovado 29/07/2026 (Claudemberg). Adições e aprovações 14/08/2026: 6 Agentes, dependência Lúcio via Briefing, papel de validador técnico, Agente de Apresentação. Preparado por Wallenberg (Função 02, Orquestrador). Para revisão.
+</footer>
