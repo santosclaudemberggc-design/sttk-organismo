@@ -6,7 +6,10 @@ metadata:
   data: 26/08/2026
   gestor_alvo: Lúcio (Arquitetura)
   agente_consumidor: Portinari (Agente de Apresentações)
-  status: proposta
+  status: descartada_na_implantacao
+  testado_em: 2026-08-27
+  motivo_descarte: "pip install pptagent falha: dependencia fasttext requer C++ Build Tools (nao instalado). Nao previsto pela Skill."
+  proxima_acao: "Diaria Skills: avaliar alternativa sem fasttext ou instruir instalacao de Build Tools primeiro"
   fonte: github.com/icip-cas/PPTAgent
 ---
 
@@ -16,7 +19,9 @@ metadata:
 Lúcio (Gestor Arquitetura) → Portinari (Agente de Apresentações) — montagem de apresentação ao cliente nas etapas de Estudo Preliminar e Anteprojeto.
 
 ## Status
-proposta
+descartada na implantação (2026-08-27)
+
+**Motivo:** `pip install pptagent` falha com `ERROR: Failed building wheel for fasttext` — dependência C que requer Microsoft Visual C++ Build Tools instalado. Bloqueio técnico real, não previsto pela Skill. Solução: instalar Build Tools via `winget install Microsoft.VisualStudio.2022.BuildTools` ou usar Conda. Sinalizado para Diária Skills corrigir ou reconsiderar alternativa gratuita.
 
 ## O que a ferramenta faz
 

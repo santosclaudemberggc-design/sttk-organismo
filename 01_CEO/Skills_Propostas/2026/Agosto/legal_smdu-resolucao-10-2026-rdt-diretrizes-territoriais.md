@@ -6,7 +6,10 @@ metadata:
   data: 26/08/2026
   gestor_alvo: Kelsen (Legal)
   agente_consumidor: Hely (executor)
-  status: proposta
+  status: implantada
+  implantada_em: 2026-08-27
+  implantada_por: Drenagem Contínua v2.3 (rodada 27/08)
+  nota_implantacao: "Resolução catalogada por Kelsen em _indice_fontes.md na varredura de melhoria de 26/08. Skill de conhecimento — não é MCP, não requer instalação técnica. Hely pode consultar diretamente. Ressalva: texto completo da Resolução não arquivado como PDF em Fontes_Legislacao ainda (fonte legisweb.com.br)."
   fonte: legisweb.com.br/legislacao/?id=497794
 ---
 
@@ -16,7 +19,7 @@ metadata:
 Kelsen (Gestor Legal) → Hely (executor) — etapa de Levantamento/início de LICIN para empreendimentos de grande porte no Rio de Janeiro.
 
 ## Status
-proposta
+implantada (2026-08-27) — catalogada por Kelsen em _indice_fontes.md (26/08). Hely pode consultar diretamente. PDF da Resolução completa ainda não arquivado em Fontes_Legislacao.
 
 ## O que a Resolução regula
 

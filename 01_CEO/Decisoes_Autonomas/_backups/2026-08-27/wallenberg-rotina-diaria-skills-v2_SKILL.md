@@ -52,7 +52,6 @@ Procure por:
 - **Apresentação ao cliente:** formas de apresentar projeto (não só visual do render, mas metodologia — Portinari, sequência, narrativa, interatividade).
 - **CAU-RJ + normativas RJ:** legislação específica do Rio de Janeiro (não CAU/SP, ABNT genérica, ou Brasil). Priorize LICIN 2.0, RIU, CAU-RJ direto.
 - **Cases de grandes empresas/escritórios de arquitetura** Brasil: observe como estão performando com renderização + apresentação, tendências locais.
-- **Complementares (Cardozo) — Inteligência técnica, não ferramenta:** [FIXADO 27/08/2026] para as 6 etapas de projetos complementares (Estrutural/Baumgart, Automação+Elétrica/Landell, Hidrossanitário/Saturnino, Paisagismo/Glaziou, Interiores/Tenreiro, Apresentação/Mindlin), busque **normas técnicas** (NBRs, códigos de obra, regulamentos de concessionária), **técnicas de projetar** (métodos de dimensionamento, boas práticas de detalhamento, cálculo) e **regras de projeto** (o que costuma dar errado, checklist de verificação) — em qualquer fonte (normas oficiais ABNT/concessionárias, livros/apostilas técnicas, sites de referência do setor, cursos, YouTube técnico), não só GitHub. Isto é **Trilha A (Inteligência)** — alimenta o próprio saber-fazer do Agente, é Skill de conhecimento técnico, não de ferramenta. Distinto da Trilha B (Passo 8, busca de ferramenta/software) — mantenha as duas buscas e as duas Skills resultantes separadas, mesmo quando a mesma sessão cobre a mesma área.
 - **GitHub:** repositórios, extensões, MCPs comunitários (verificar idoneidade: README coerente, atividade recente, sem typosquatting)
 - **Instagram (perfis seguidos + busca ampla):** 
   - Perfis: maxcarrau.ia, 99hud, seanaiux, o.engenheirolider, sobre.arq, goxyvi + busca por "Claude AI", "Claude Code", "IA arquitetura", "produtividade construção civil"
@@ -64,8 +63,6 @@ Procure por:
 **Tradução obrigatória:** Qualquer conteúdo em inglês → português, para que Gestores possam usar sem barreira de idioma.
 
 **Segurança:** isto é pesquisa, não instalação — NUNCA clone, execute, `npm install`/`pip install` ou rode código de terceiro. Cheque sinais de idoneidade por leitura (WebFetch): README existente, atividade recente, estrelas/forks compatíveis, sem aviso de malware. Se algo parecer suspeito, descarte.
-
-**Vitruvius (Revit) — completude:** [FIXADO 27/08/2026, instrução de Claudemberg] "nosso Vitruvius tem que ser completo então tudo que tenha relação com ele é bem-vindo para vermos se agrega ou não". Todo achado de conector/plugin/IA que toque Revit ou BIM — mesmo que pareça concorrente/alternativa ao Vitruvius, não só complemento óbvio — entra primeiro em [`vitruvius_achados_candidatos.md`](Gestores/Lúcio%20(Arquitetura)/Agentes/Oscar/vitruvius_achados_candidatos.md) antes (ou junto) de virar Skill de usabilidade isolada. Nunca descartar por omissão: registrar o que foi comparado contra o Vitruvius e por quê agrega, monitora ou não serve.
 
 Sempre teste/valide fonte antes de usar (Princípio 3). Anote URL/fonte/data de cada achado.
 
@@ -210,7 +207,6 @@ Antes de confirmar:
 ## PASSO 8: BUSCA DE FERRAMENTA (GITHUB) + SKILL DE USABILIDADE
 
 **[FIXADO 25/08/2026 — divisão final de papéis com a Drenagem Contínua, definida por Claudemberg]**
-**[FIXADO 27/08/2026]** Este passo é a **Trilha B (Ferramentas)** — distinta da Trilha A (Inteligência técnica: normas, técnicas de projetar, regras de projeto) do Passo 1, que gera Skill de conhecimento, não de ferramenta. Para as 6 áreas de Cardozo, rode as duas trilhas nas rodadas em que a área for pesquisada — não uma no lugar da outra.
 
 ### Papel desta rotina no Passo 8: CRIAR a inteligência, nunca implantar
 
@@ -325,10 +321,9 @@ Se um dia não houver nada novo relevante, diga isso honestamente e não invente
 | 2.2 | 25/08/2026 (manhã) | Passo 8 redefinido — Busca de Ferramenta + Skill de Usabilidade (versão intermediária, substituída) |
 | 2.3 | 25/08/2026 (tarde) | Passo 8 removido desta rotina, movido inteiro para a Drenagem (correção intermediária, incompleta) |
 | 2.4 | 25/08/2026 (noite) | **[DIVISÃO FINAL]** Passo 8 volta a existir aqui, com papel único: **buscar no GitHub + criar a Skill de usabilidade**. A implantação real (instalar, conectar, testar) é 100% da Drenagem Contínua, que lê esta Skill como contrato e nunca diverge dela. Campo `Status` da Skill definido como fonte única de verdade (esta rotina só escreve `proposta`). |
-| 2.5 | 27/08/2026 | **[DUAS ADIÇÕES, Claudemberg]** (1) Vitruvius: todo achado relacionado a Revit-MCP/BIM entra em `vitruvius_achados_candidatos.md` (Oscar) antes de virar Skill isolada — "nosso Vitruvius tem que ser completo". (2) Cardozo (Complementares): pesquisa dividida em Trilha A (Inteligência — normas/técnicas de projetar/regras, Passo 1, qualquer fonte) e Trilha B (Ferramentas — GitHub/MCP, Passo 8) — nunca uma no lugar da outra. |
 
 ---
 
-**Última atualização:** 27/08/2026  
-**Status:** ✅ Operacional — 8 passos (pesquisa geral com Trilha A de Complementares, Skill, Learning Agent, busca de ferramenta/Trilha B + Skill de usabilidade)  
-**Próximo:** Aplicar Trilha A (Inteligência) de Cardozo na rodada seguinte — normas/técnicas para as 6 áreas de complementares, começando por Estrutural (Baumgart) e Hidrossanitário (Saturnino)
+**Última atualização:** 25/08/2026  
+**Status:** ✅ Operacional — 8 passos (pesquisa geral, Skill, Learning Agent, busca de ferramenta + Skill de usabilidade)  
+**Próximo:** Aplicar Passo 8 na rodada seguinte — buscar GitHub para Oscar (automação BIM), Portinari (apresentação) e futuro time Cardozo

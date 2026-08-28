@@ -89,6 +89,13 @@ metadata:
 
 *Apenas os últimos 2-3 encerramentos para referência rápida*
 
+### [2026-08-27] Diária Skills v2.4
+
+- ✅ Entregou: 2 Skills novas (FreeCAD MCP para Baumgart, Revit MCP Study 173 tools para Oscar), 2 PDFs, índice atualizado
+- ⚠️ Bloqueadores: (1) **CRÍTICO** — descoberta de divergência entre Painel publicado (ao vivo, 12/08) e cópia local do repositório (selo "15/08" mas faltando ~2 semanas de eventos reais). Cópia local RECONCILIADA com sucesso (histórico completo restaurado + evento Cardozo/26-08 adicionado), mas a **republicação via Artifact falhou 3x** com erro "identical content already refused... resent unchanged" — aparente falso positivo da ferramenta, não resolvido. Arquivo local está correto e pronto; o link ao vivo segue desatualizado (12/08) até alguém retentar publish ou usar `force:true` com autorização explícita.
+- ❌ Retrabalho: Nenhum
+- 🎯 Status: Parcial — Passos 1-5 e 8 completos; Passo 6 com correção pronta mas publicação bloqueada (ver livro-razão 27/08 para detalhe completo); Passo 7 sem achado novo
+
 ### [2026-08-26] Drenagem Contínua
 
 - ✅ Entregou: 3 Gestores drenados (Kelsen/Lúcio/Cardozo); equipe Cardozo formalizada (Baumgart, Landell, Saturnino, Glaziou, Tenreiro, Mindlin — 6 agentes, `.md` criados); Resolução SMDU Nº 10/2026 catalogada em `_indice_fontes.md`; livro-razão e estados atualizados

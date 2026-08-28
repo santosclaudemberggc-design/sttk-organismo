@@ -732,47 +732,37 @@ Nenhum dos dois é "instrução normativa complementar" vigente — os dois est�
 ## REGISTRO — 26/08/2026 — RESOLUÇÃO SMDU Nº 10/2026 — RDT (RELATÓRIO DE DIRETRIZES TERRITORIAIS)
 
 > Origem: proposta de Skill identificada pela rotina diária de 26/08/2026, avaliada por Kelsen nesta mesma data. Esta entrada formaliza a resolução como norma conhecida da base. A resolução já havia sido encontrada durante a pesquisa B14 (seção acima — "Busca ampla na web, 3ª frente") e identificada como "sem relação com o percentual de transferência"; aqui recebe registro próprio porque é norma vigente com impacto real em projetos de grande porte.
-> **Fonte primária confirmada em 27/08/2026 (Hely):** PDF baixado da Busca Fácil da SMU (id interno 2582), status Válido sem nota de revogação ou alteração, artigos 4º e 8º lidos verbatim. Diferença relevante encontrada em relação à fonte secundária — registrada abaixo.
 
-- **Arquivo**: `ResSmdu10_2026_RDT_DiretrizesTerritoriais.pdf` (127.650 bytes) — arquivado em `Fontes_Legislacao/` em 27/08/2026
-- **Fonte**: Busca Fácil da SMU, `www2.rio.rj.gov.br/smu/buscafacil/`, id interno 2582, POST `ContadorAcessoAto.asp` com `CdDispLg=2582`
-- **Status**: Válido (`geraModal.asp?c=2582` — sem nota de revogação, alteração ou sub judice)
-- **Publicação**: D.O. Rio de 06/07/2026
+- **Arquivo**: não arquivado (fonte atual é agregador legisweb.com.br — **fonte secundária**; texto primário via Busca Fácil pendente)
+- **Fonte**: Resolução SMDU Nº 10, de 03/07/2026 — `legisweb.com.br/legislacao/?id=497794`
+- **Próxima ação obrigatória (Hely)**: confirmar via `www2.rio.rj.gov.br/smu/buscafacil`, arquivar PDF primário, verificar artigos 4º e 8º. **Não usar como fonte primária em protocolo antes disso.**
 
 ### O que regula
 
-Institui a **Consulta Prévia de Diretrizes Territoriais** e o **RDT (Relatório de Diretrizes Territoriais)**, regulamentando aspectos de parcelamento da LC 270/2024 (Arts. 291 e 292). Cria etapa obrigatória **antes** do LICIN 2.0 para projetos que ultrapassem os thresholds do Art. 4º.
+Institui a **Consulta Prévia de Diretrizes Territoriais** e o **RDT (Relatório de Diretrizes Territoriais)**, regulamentando aspectos de parcelamento da LC 270/2024. Cria etapa obrigatória **antes** do LICIN 2.0 para projetos que ultrapassem os thresholds abaixo.
 
-### Thresholds de incidência — Art. 4º (texto verbatim, fonte primária confirmada 27/08/2026)
+### Thresholds de incidência (Art. 4º — fonte secundária, confirmar via Busca Fácil)
 
-"A Consulta Prévia de Diretrizes Territoriais é obrigatória e deverá ser solicitada antes de se requerer uma licença, em projetos de parcelamentos, grupamentos e edificações em glebas, lotes ou terrenos que apresentem uma ou mais das seguintes condições:
-I - área superior a quarenta mil metros quadrados;
-II - testada superior a duzentos metros;
-III - inserido em quadra com testada superior a duzentos metros de extensão.
-Parágrafo único - Ficam excetuados os casos de projetos de parcelamentos, grupamentos e edificações em glebas, lotes ou terrenos situados em esquina de logradouros com obras aceitas de urbanização e que se enquadrem unicamente no inciso III deste artigo."
+| Critério | Threshold |
+|---|---|
+| Área do empreendimento | > 40.000 m² |
+| Testada do terreno | > 200 m |
+| Inserção em quadra com testada | > 200 m |
 
-| Critério | Threshold | Inciso |
-|---|---|---|
-| Área do terreno/gleba/lote | > 40.000 m² | I |
-| Testada do próprio terreno | > 200 m | II |
-| Inserção em quadra com testada | > 200 m | III |
+### Impacto no fluxo de licenciamento (fonte secundária)
 
-**[ATENÇÃO] Diferença material em relação à fonte secundária (legisweb):** A fonte secundária descrevia o critério do inciso I como ">40.000 m² de área total construída". O texto primário diz "área superior a quarenta mil metros quadrados" da gleba, lote ou terreno — é a **área do terreno**, não a área construída. O threshold incide quando o próprio terreno tem mais de 40.000 m², independentemente de quanto o projeto vai construir. **O parágrafo único também não constava da fonte secundária:** exceção aplicável somente para terreno em esquina com obras aceitas de urbanização que se enquadre UNICAMENTE no inciso III (quadra com testada > 200 m) — não para os incisos I ou II.
-
-### Impacto no fluxo de licenciamento — Arts. 8º e 16 (texto verbatim, fonte primária confirmada 27/08/2026)
-
-Art. 8º: "Para os novos parcelamentos, grupamentos de construção e edificações em glebas, lotes ou terrenos enquadrados nas condições do art. 4º desta Resolução, a apresentação do RDT para a análise do processo de licenciamento é obrigatória."
-
-Art. 16: "Os processos autuados para licenciamento de projetos de parcelamento, grupamento e edificação em glebas, lotes ou terrenos, ou lotes resultantes destes, que se enquadrem nas condições mencionadas no art. 4º desta Resolução, terão a emissão de qualquer Licença de Obras condicionada à elaboração e emissão do Relatório de Diretrizes Territoriais - RDT."
-
-- **RDT obrigatório antes do LICIN:** confirmado — o Art. 4º diz "antes de se requerer uma licença" e o Art. 16 condiciona a emissão de qualquer Licença de Obras ao RDT
-- **Prazo de análise pela SMDU:** 90 dias corridos (Art. 11; decurso de prazo equivale a aceite com despacho de decurso, viabilizando o licenciamento)
-- **Validade do RDT emitido:** 12 meses, prorrogável por 6 meses (Art. 12)
+- **RDT obrigatório antes do LICIN** (Art. 8º da Resolução)
+- **Prazo de análise pela SMDU:** 90 dias
+- **Validade do RDT emitido:** 12 meses (prorrogável por mais 6 meses)
 - **Efeito prático:** adiciona mínimo 90 dias ao cronograma antes do início formal do LICIN, para projetos acima dos thresholds
-
-**Isenção (Art. 17):** processos com licença já emitida (sem restrição para início de obras) ou AIO concedida até 06/07/2026 (data de publicação) estão isentos. Pedidos de alteração de projeto já licenciados NÃO estão isentos.
 
 ### Aplicação ao escopo Sttickler
 
-**NÃO INCIDE sobre o escopo típico (unifamiliar, lotes < 40.000 m² e testada < 200m).** Caso EVTL (~10.500 m²): bem abaixo do threshold de terreno (inciso I) — não afetado. Relevante apenas se surgir projeto de grande porte (gleba > 40.000 m², testada do terreno > 200 m, ou terreno inserido em quadra com testada > 200 m sem a exceção de esquina do parágrafo único do Art. 4º). Nenhum POP existente alterado — thresholds de grande porte não são o escopo padrão atual.
+**NÃO INCIDE sobre o escopo típico (unifamiliar, lotes < 40.000 m² e testada < 200m).** Caso EVTL (~10.500 m²): bem abaixo do threshold — não afetado. Relevante apenas se surgir projeto de grande porte (loteamento de grande área, condomínio multifamiliar acima de 40.000 m² ou terreno com testada > 200m). Nenhum POP existente alterado nesta rodada — thresholds de grande porte não são o escopo padrão atual.
+
+### O que esta entrada não resolve
+
+- Texto primário integral não confirmado (fonte é legisweb — secundária)
+- Impacto em projetos com variedade de usos (residencial x comercial mistos) não verificado
+- Possíveis thresholds menores para categorias específicas: não confirmado
 

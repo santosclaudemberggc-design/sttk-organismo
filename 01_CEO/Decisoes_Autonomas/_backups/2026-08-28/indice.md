@@ -42,23 +42,6 @@ Todas as entradas abaixo são **propostas**, produzidas pela rotina diária do W
 | 26/08/2026 | [PPTAgent — Geração Automática de Apresentação PPTX](portinari_pptAgent-geracao-apresentacao-pptx.md) | Lúcio (Arquitetura) — Portinari (Agente de Apresentações) | **Passo 8 GitHub:** MIT, 5.000+ estrelas, 578 forks. Gera PPTX real via CLI ou Docker. Gratuito com DeepPresenter-9B (HuggingFace, local). Fluxo: Portinari descreve projeto → PPTAgent gera esqueleto → Portinari insere renders e revisa. Meta: montar apresentação < 45min vs. 2-3h manual. | github.com/icip-cas/PPTAgent |
 | 27/08/2026 | [FreeCAD MCP — FEM Estrutural com CalculiX](baumgart_freecad-mcp-fem-estrutural.md) | Cardozo (Complementares) — Baumgart (Estrutural) | **Passo 8 GitHub:** MIT, 46 tools, análise FEM gratuita (tensão/deformação/fator de segurança) com CalculiX, meshing automático via Gmsh. FreeCAD 1.1.1+ + Python 3.13+. Self-hosted local. Único candidato gratuito para FEM estrutural encontrado (baixa tração: 20 stars). Não substitui TQS/Eberick para cálculo normativo completo. | github.com/sandraschi/freecad-mcp |
 | 27/08/2026 | [Revit MCP Study — 173 Tools + 76 BIM SOPs (shuotao)](arquitetura_revit-mcp-study-173tools-shuotao.md) | Lúcio (Arquitetura) — Oscar (Coordenador de Projeto) | **Passo 8 GitHub:** MIT, npm (`npx @shuotao/revit-mcp-server`), 173 tools (vs 138 LuDattilo), 76 SOPs BIM profissionais, 100 stars/108 forks/543 commits. Revit 2023-2026. Instalação mais simples (npx, sem build .NET). Candidato complementar ao LuDattilo — avaliação comparativa recomendada antes de escolha. | github.com/shuotao/REVIT_MCP_study |
-| 28/08/2026 | [NBR 6118:2026 com Emenda 1 — Inteligência Técnica Estrutural](baumgart_nbr6118-2026-emenda1-estrutural-concreto.md) | Cardozo (Complementares) — Baumgart (Estrutural) | **Trilha A (Inteligência):** Emenda 1 publicada em 11/03/2026. Classes CC1/CC2/CC3 obrigatórias desde o início; CC3 exige ATP (revisor independente). Mudanças em: emendas de armadura (proibido traspasse Ø>32 mm), marquises (armadura inferior de segurança obrigatória), punção (ancoragem além do contorno), redistribuição δ≥0,75, frequência natural pisos ≥3 Hz. Checklist de 10 itens para Baumgart. | blog.apl.eng.br, masteremmodelagem.com.br (28/08/2026) |
-| 28/08/2026 | [NBR 5626/8160 — Inteligência Técnica Hidrossanitária](saturnino_nbr5626-8160-hidrossanitario-dimensionamento.md) | Cardozo (Complementares) — Saturnino (Hidrossanitário) | **Trilha A (Inteligência):** Normas base consolidadas (NBR 5626:2020 água fria/quente, NBR 8160:1999 esgoto, NBR 10844 pluvial). Método Hunter adaptado (tabela de UPs), pressão máx. 400 kPa, mín. 10 kPa. Esgoto: UHE por aparelho, inclinação ≥2% (DN≤100mm), ventilação obrigatória. Drenagem pluvial: fórmula Q=C×I×A/360 com IDF local RJ. Checklist de 12 itens. Coordenação com Baumgart/Landell/Glaziou documentada. | nptengenharia.com.br, normas.com.br (28/08/2026) |
-
-## Observações desta rodada (28/08/2026)
-
-- **Pesquisa cobriu (5 WebSearches + 4 WebFetches):** NBR 6118:2026 Emenda 1 (Estrutural), NBR 5626:2020 técnicas de dimensionamento (Hidrossanitário), render/vídeo novas ferramentas, CAU-RJ agosto 2026, GitHub MCPs para as áreas de Cardozo.
-- **Achados aceitos (2 Skills — Trilha A estreia):**
-  1. **NBR 6118:2026 com Emenda 1 (Baumgart)** — primeira Skill de Inteligência de Cardozo. Emenda 1 de março/2026 com classes CC1/CC2/CC3, ATP obrigatória para CC3, mudanças críticas em marquises, punção e emendas de armadura.
-  2. **NBR 5626/8160 Hidrossanitário (Saturnino)** — normas base consolidadas com método Hunter, tabela de UPs/UHEs, parâmetros de pressão, dimensionamento de esgoto e pluvial, checklist prático e coordenação entre agentes de Cardozo.
-- **Achados descartados:**
-  - AutoCAD MCP (puran-water, MIT, 471 stars, P&ID symbols) — requer AutoCAD LT 2024+ (software pago), viola critério 1 do Passo 8
-  - EPLAN MCP (covagashi, MIT, 75 stars) — requer EPLAN P8 pago, viola critério 1 do Passo 8
-  - Render/Vídeo: Vizcraft e Finch 3D já mapeados (Skills de 17/08 e 24/08)
-  - CAU-RJ: sem resolução nova de agosto 2026. Confirmação apenas de valores RRT/ART já fixados em dez/2025
-- **Passo 8 (GitHub):** AutoCAD MCP (P&ID) e EPLAN MCP encontrados e avaliados, mas ambos dependem de software-base pago — não passam no critério 1. Regra de Exceção aplicada: nenhum candidato novo passa nos 4 critérios esta rodada.
-- **Painel Fundador:** atualizado com eventos de 27/08 (FreeCAD MCP Baumgart + Revit MCP Study Oscar) e 28/08 (estreia Trilha A Cardozo — 2 Skills). Republicação tentada — ver observação abaixo.
-- **Passo 7 Learning Agent:** sem achado novo de técnica de criação de conhecimento nesta rodada — Princípio 15.
 
 ## Observações desta rodada (26/08/2026)
 

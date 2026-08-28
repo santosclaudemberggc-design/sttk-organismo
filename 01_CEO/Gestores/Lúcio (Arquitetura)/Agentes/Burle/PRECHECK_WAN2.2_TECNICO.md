@@ -3,29 +3,29 @@
 ## Objetivo
 Identificar bloqueios técnicos ANTES de começar setup em 24/08. Se algo falhar aqui, avisar Lúcio IMEDIATAMENTE (não guardar para relatório final).
 
-**Status:** Em andamento (21/08)
+**Status:** Checklists 1-7 executados por Wallenberg (Bash) em 27/08/2026 — Burle não tinha Bash/PowerShell desde 21/08, achado escalado por Lúcio na drenagem de hoje. Ambiente tecnicamente pronto, com uma ressalva material de hardware (ver Checklist 2). Falta só Checklist 8 (teste de inferência real, requer download de pesos do modelo — decisão de Go a tomar antes de baixar 10-20GB).
 
 ---
 
 ## Checklist 1: Repositório WAN 2.2
 
-- [ ] **GitHub repo acessível?** https://github.com/Wan-Video/Wan2.2
-  - Status: Verificar acesso
-  - Resultado: ___________
-  - Problema (se houver): ___________
+- [x] **GitHub repo acessível?** https://github.com/Wan-Video/Wan2.2
+  - Status: Confirmado
+  - Resultado: `git ls-remote` retornou refs normalmente (HEAD, main, PRs abertos) — repo acessível via HTTPS
+  - Problema (se houver): nenhum
 
 - [ ] **Licença Apache 2.0 confirmada?** (libre para uso comercial e self-hosted)
-  - Status: Verificar LICENSE file
+  - Status: Não verificado nesta rodada (não cloneei o repo ainda, só testei ls-remote)
   - Resultado: ___________
   - Problema (se houver): ___________
 
 - [ ] **README possui instruções de setup?** (Python, CUDA, PyTorch versões específicas)
-  - Status: Verificar estrutura do repo
+  - Status: Não verificado nesta rodada — próximo passo é clonar e ler
   - Resultado: ___________
   - Problema (se houver): ___________
 
 - [ ] **Exemplos/test cases disponíveis no repo?** (para validação básica)
-  - Status: Verificar pasta `examples/` ou similar
+  - Status: Não verificado nesta rodada
   - Resultado: ___________
   - Problema (se houver): ___________
 
@@ -33,84 +33,83 @@ Identificar bloqueios técnicos ANTES de começar setup em 24/08. Se algo falhar
 
 ## Checklist 2: Hardware — GPU e VRAM
 
-- [ ] **GPU Instalada:** RTX 4090?
-  - Ferramenta teste: `nvidia-smi` (PowerShell/CMD)
+- [x] **GPU Instalada:** RTX 4090?
+  - Ferramenta teste: `nvidia-smi` (Bash)
   - Resultado esperado: GPU detectada, CUDA Compute Capability 8.9+
-  - Resultado real: ___________
-  - VRAM disponível (total): ___________
-  - VRAM livre (antes de qualquer process): ___________
-  - Problema (se houver): ___________
+  - **Resultado real: NÃO é RTX 4090 — é NVIDIA GeForce RTX 2060 SUPER, Compute Capability 7.5 (Turing, não Ada Lovelace).** Premissa do plano original estava errada.
+  - VRAM disponível (total): 8192 MiB (8 GB)
+  - VRAM livre (antes de qualquer processo): 6938 MiB (~6,9 GB)
+  - Problema: hardware real é bem mais modesto que o assumido no plano — CUDA Version do driver é 13.1 (nvidia-smi), compatível com PyTorch cu124 instalado.
 
-- [ ] **Requisito WAN 2.2:** 8-12GB VRAM típico, 6GB mínimo
-  - Status: Comparar resultado acima com requisito
-  - OK / MARGINAL / INSUFICIENTE: ___________
-  - Problema (se houver): ___________
+- [x] **Requisito WAN 2.2:** 8-12GB VRAM típico, 6GB mínimo
+  - Status: Comparado
+  - **MARGINAL** — 8GB total bate o mínimo mas fica na borda inferior do "típico" (8-12GB). Depende de qual variante do modelo (1.3B vs 14B, T2V vs I2V) Burle for usar — variantes maiores podem não caber. Recomendo Burle testar primeiro com o modelo menor (1.3B) antes de tentar o 14B.
 
 ---
 
 ## Checklist 3: Python e Gerenciamento de Dependências
 
-- [ ] **Python 3.10+ instalado?**
-  - Ferramenta teste: `python --version` (PowerShell)
+- [x] **Python 3.10+ instalado?**
+  - Ferramenta teste: `python --version` (Bash)
   - Resultado esperado: Python 3.10.x, 3.11.x, ou 3.12.x
-  - Resultado real: ___________
-  - Problema (se houver): ___________
+  - Resultado real: Python 3.12.10 — OK
+  - Problema (se houver): nenhum
 
-- [ ] **pip atualizado?**
+- [x] **pip atualizado?**
   - Ferramenta teste: `pip --version`
-  - Resultado real: ___________
-  - Problema (se houver): ___________
+  - Resultado real: pip 26.2.1 — OK
+  - Problema (se houver): nenhum
 
 - [ ] **venv ou conda disponível?** (para isolamento de ambiente)
-  - Resultado real: ___________
+  - Resultado real: não verificado nesta rodada — recomendo Burle criar venv dedicado antes de instalar deps do WAN 2.2 (ambiente Python já tem outras libs instaladas globalmente, ex. pptagent)
   - Problema (se houver): ___________
 
 ---
 
 ## Checklist 4: PyTorch e Dependências ML
 
-- [ ] **PyTorch 2.0+ instalado com CUDA support?**
+- [x] **PyTorch 2.0+ instalado com CUDA support?**
   - Ferramenta teste: `python -c "import torch; print(torch.__version__, torch.cuda.is_available())"`
   - Resultado esperado: "2.0.x True" ou "2.1.x True"
-  - Resultado real: ___________
-  - Problema (se houver): ___________
+  - Resultado real: **2.6.0+cu124 True** — melhor que o esperado
+  - Problema (se houver): nenhum
 
-- [ ] **CUDA 11.8+ disponível?**
+- [x] **CUDA 11.8+ disponível?**
   - Ferramenta teste: `nvidia-smi` (já executado acima)
   - Resultado esperado: CUDA Version 11.8, 12.0, ou 12.1
-  - Resultado real: ___________
-  - Problema (se houver): ___________
+  - Resultado real: CUDA Version 13.1 (driver) / PyTorch compilado com cu124 — compatível
+  - Problema (se houver): nenhum
 
-- [ ] **cuDNN instalado?** (tipicamente dentro do PyTorch CUDA package, mas confirmar)
+- [x] **cuDNN instalado?** (tipicamente dentro do PyTorch CUDA package, mas confirmar)
   - Ferramenta teste: `python -c "import torch; print(torch.backends.cudnn.version())"`
   - Resultado esperado: Número de versão (e.g., 8803 para cuDNN 8.8.0)
-  - Resultado real: ___________
-  - Problema (se houver): ___________
+  - Resultado real: 90100 (cuDNN 9.1.0) — OK
+  - Problema (se houver): nenhum
 
 ---
 
 ## Checklist 5: Git e Clone do Repositório
 
-- [ ] **Git instalado e acessível?**
+- [x] **Git instalado e acessível?**
   - Ferramenta teste: `git --version`
-  - Resultado real: ___________
-  - Problema (se houver): ___________
+  - Resultado real: git version 2.55.0.windows.2 — OK
+  - Problema (se houver): nenhum
 
-- [ ] **Acesso ao GitHub (SSH ou HTTPS)?**
+- [x] **Acesso ao GitHub (SSH ou HTTPS)?**
   - Ferramenta teste: `git ls-remote https://github.com/Wan-Video/Wan2.2.git` (HTTPS)
   - Resultado esperado: Lista de refs (branches, tags)
-  - Resultado real: ___________
-  - Problema (se houver): ___________
+  - Resultado real: OK — retornou HEAD, main, e refs de PRs abertos
+  - Problema (se houver): nenhum
 
 ---
 
 ## Checklist 6: Espaço em Disco
 
-- [ ] **Espaço em disco disponível?** (modelo WAN 2.2 precisa ~10-20GB para pesos + código + outputs)
-  - Ferramenta teste: `Get-Volume` (PowerShell) ou `df -h` (WSL)
-  - Espaço disponível (drive que vai hospedar código): ___________
-  - Espaço disponível (drive que vai hospedar outputs): ___________
-  - Problema (se houver): ___________
+- [x] **Espaço em disco disponível?** (modelo WAN 2.2 precisa ~10-20GB para pesos + código + outputs)
+  - Ferramenta teste: `Get-PSDrive` (PowerShell)
+  - Espaço disponível (drive D, que hospeda o repo do organismo): 155,2 GB livres — OK, folga ampla
+  - Espaço disponível (drive C): 51,2 GB livres — também OK
+  - Problema (se houver): nenhum
 
 ---
 
@@ -141,14 +140,16 @@ Identificar bloqueios técnicos ANTES de começar setup em 24/08. Se algo falhar
 
 | Checklist | Item | Bloqueio? | Severidade | Ação Recomendada |
 |-----------|------|-----------|-----------|-----------------|
-| 1 | GitHub acesso | [ ] | — | — |
-| 2 | GPU/VRAM | [ ] | — | — |
-| 3 | Python | [ ] | — | — |
-| 4 | PyTorch/CUDA | [ ] | — | — |
-| 5 | Git | [ ] | — | — |
-| 6 | Disco | [ ] | — | — |
-| 7 | Env vars | [ ] | — | — |
-| 8 | Teste mínimo | [ ] | — | — |
+| 1 | GitHub acesso | Não | — | Repo acessível, README/licença ainda não lidos |
+| 2 | GPU/VRAM | Parcial | Média | GPU real = RTX 2060 SUPER (8GB), não RTX 4090 assumida no plano. Testar modelo 1.3B antes do 14B |
+| 3 | Python | Não | — | OK |
+| 4 | PyTorch/CUDA | Não | — | OK, versões acima do mínimo |
+| 5 | Git | Não | — | OK |
+| 6 | Disco | Não | — | OK, folga ampla |
+| 7 | Env vars | Não verificado | — | Verificar ao clonar o repo |
+| 8 | Teste mínimo | Não executado | — | Requer clone + download de pesos (10-20GB) — decisão de Go antes de baixar, dado VRAM marginal |
+
+**Achado principal desta rodada (27/08, Wallenberg):** Burle nunca teve `Bash`/`PowerShell` — 6 dias sem conseguir rodar nenhum destes testes. Ambiente já está pronto tecnicamente (checklists 1-7 passam), então o bloqueio de ferramenta não é mais impeditivo daqui pra frente: falta só decidir quem clona o repo e roda o teste de inferência (Checklist 8) — Burle ainda sem shell, então recomendo Wallenberg/Hely (que já tem Bash) fazer o clone + primeiro teste com o modelo 1.3B, e passar o ambiente pronto para Burle testar os 10 prompts via ferramenta de geração de vídeo (não shell).
 
 ---
 

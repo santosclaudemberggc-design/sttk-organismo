@@ -1,0 +1,270 @@
+<style>
+  :root{
+    --paper:#F1EEE6; --surface:#FBFAF5; --surface-2:#F6F3EC;
+    --ink:#222A2B; --ink-soft:#5B6360; --ink-faint:#8A8F88;
+    --line:#E4DFD3; --line-soft:#EDE9DF;
+    --brand:#2A4A46;
+    --s-good:#3E7A57; --s-move:#3F6B8C; --s-warn:#B57F32; --s-crit:#AF463A;
+    --good-bg:rgba(62,122,87,.09); --move-bg:rgba(63,107,140,.09);
+    --shadow:0 1px 2px rgba(30,34,30,.05), 0 6px 20px rgba(30,34,30,.05);
+    --sans:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,system-ui,sans-serif;
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+    --mono:"Cascadia Code","SF Mono",ui-monospace,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --paper:#13171A; --surface:#1B2124; --surface-2:#1F272A; --ink:#EAE6DC; --ink-soft:#9CA39D; --ink-faint:#767C77;
+    --line:#2B3336; --line-soft:#242B2E; --brand:#82B4AB;
+    --s-good:#61A67C; --s-move:#6D9AC2; --s-warn:#D3A155; --s-crit:#CE6A5C;
+    --good-bg:rgba(97,166,124,.13); --move-bg:rgba(109,154,194,.13);
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.28);
+  }}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);font-family:var(--sans);font-size:15px;line-height:1.6;color:var(--ink);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:920px;margin:0 auto;padding:32px 24px 60px}
+
+  .header{display:flex;align-items:center;gap:16px;margin-bottom:32px;padding-bottom:24px;border-bottom:2px solid var(--brand)}
+  .mark{width:48px;height:48px;border-radius:11px;background:var(--brand);color:#fff;display:grid;place-items:center;font-family:var(--mono);font-weight:700;font-size:13px;flex:none}
+  .header-text h1{margin:0;font-family:var(--serif);font-size:26px;font-weight:600;letter-spacing:-.01em}
+  .header-text p{margin:4px 0 0;color:var(--ink-soft);font-size:13px}
+
+  .meta{display:flex;gap:20px;margin:20px 0 32px;padding:16px;background:var(--surface-2);border-radius:12px;border:1px solid var(--line)}
+  .meta-item{flex:1}
+  .meta-label{font-family:var(--mono);font-size:11px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:4px}
+  .meta-value{font-size:14px;font-weight:600;color:var(--ink)}
+
+  .section{margin:28px 0}
+  .sec-title{font-family:var(--mono);font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+  .sec-title::before{content:"";width:20px;height:3px;background:var(--brand);border-radius:2px}
+
+  .task-list{display:flex;flex-direction:column;gap:10px}
+  .task{display:grid;grid-template-columns:24px 1fr;gap:12px;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:10px;align-items:start}
+  .task input[type="checkbox"]{width:18px;height:18px;margin-top:3px;cursor:pointer;accent-color:var(--brand)}
+  .task input[type="checkbox"]:checked ~ .task-content .task-title{text-decoration:line-through;color:var(--ink-faint)}
+  .task-content{flex:1}
+  .task-title{font-weight:600;font-size:14px;margin:0 0 4px;color:var(--ink)}
+  .task-desc{margin:0;font-size:13px;color:var(--ink-soft);line-height:1.45}
+  .task-time{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-top:6px}
+
+  .time-box{display:inline-block;background:var(--move-bg);padding:3px 8px;border-radius:4px;color:var(--s-move);font-weight:600;font-family:var(--mono)}
+
+  .step-block{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px}
+  .step-num{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+  .step-title{font-size:15px;font-weight:600;margin:0 0 8px;color:var(--ink)}
+  .step-desc{font-size:13px;color:var(--ink-soft);line-height:1.5;margin:0}
+
+  .summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:24px 0}
+  .sum-card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-align:center}
+  .sum-label{font-family:var(--mono);font-size:10px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+  .sum-value{font-size:18px;font-weight:700;color:var(--brand)}
+
+  .note{background:var(--good-bg);border-left:4px solid var(--s-good);border-radius:0 8px 8px 0;padding:12px 14px;margin:16px 0;font-size:13px;color:var(--ink-soft);line-height:1.5}
+  .note b{color:var(--ink);font-weight:600}
+
+  .footer{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);text-align:center;font-family:var(--mono);font-size:12px;color:var(--ink-faint)}
+
+  @media (max-width:640px){
+    .wrap{padding:20px 16px 40px}
+    .header{flex-direction:column;align-items:flex-start}
+    .meta{flex-direction:column;gap:12px}
+    .task{grid-template-columns:20px 1fr}
+  }
+</style>
+
+<div class="wrap">
+  <div class="header">
+    <div class="mark">📋</div>
+    <div class="header-text">
+      <h1>Checklist Diária</h1>
+      <p>Rotina de Skills — Segunda a Quinta (seg/ter/qua/qui)</p>
+    </div>
+  </div>
+
+  <div class="meta">
+    <div class="meta-item">
+      <span class="meta-label">Tempo Total</span>
+      <span class="meta-value">60–75 minutos</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Dias</span>
+      <span class="meta-value">Seg · Ter · Qua · Qui</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Frequência</span>
+      <span class="meta-value">Toda manhã (ativa amanh or conforme agenda)</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Dono</span>
+      <span class="meta-value">Wallenberg (CEO)</span>
+    </div>
+  </div>
+
+  <!-- ANTES -->
+  <div class="section">
+    <h2 class="sec-title">Antes de começar</h2>
+    <div class="task-list">
+      <div class="task">
+        <input type="checkbox" id="t1">
+        <div class="task-content">
+          <label for="t1" class="task-title">1. Leia o Fechamento Anterior</label>
+          <p class="task-desc">Arquivo: <code style="font-family:var(--mono);font-size:12px">01_CEO/rotina_fechamento_template.md</code></p>
+          <p class="task-desc">✓ O que foi entregue (Skills já criadas) · ✓ Pendências (bloqueadores) · ✓ Retrabalho a evitar</p>
+          <span class="task-time"><span class="time-box">5 min</span></span>
+        </div>
+      </div>
+
+      <div class="task">
+        <input type="checkbox" id="t2">
+        <div class="task-content">
+          <label for="t2" class="task-title">2. Verifique Estado de Cada Agente</label>
+          <p class="task-desc">Arquivos: <code style="font-family:var(--mono);font-size:12px">01_CEO/Gestores/[Gestor]/Agentes/[Agente]/_estado_*.md</code></p>
+          <p class="task-desc">✓ Lacunas abertas (Agente precisa de Skill?) · ✓ Testes agendados · ✓ Dependências</p>
+          <span class="task-time"><span class="time-box">5 min</span></span>
+        </div>
+      </div>
+
+      <div class="task">
+        <input type="checkbox" id="t3">
+        <div class="task-content">
+          <label for="t3" class="task-title">3. Verifique Última Atualização do Painel</label>
+          <p class="task-desc">Arquivo: <code style="font-family:var(--mono);font-size:12px">01_CEO/Painel_Fundador/painel_fundador_sttk.html</code></p>
+          <p class="task-desc">✓ Quando foi republicado · ✓ Eventos fora do FEED · ✓ Se está em dia</p>
+          <span class="task-time"><span class="time-box">2 min</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>Dica:</b> Os 3 passos acima formam o mapa de prioridade. Se Agente X tem lacuna, você pesquisa pra X. Se Painel defasado, você atualiza. Sem esses 3, você pesquisa no escuro.
+  </div>
+
+  <!-- DURANTE -->
+  <div class="section">
+    <h2 class="sec-title">Faça durante a rodada</h2>
+
+    <div class="step-block">
+      <div class="step-num">PASSO 1</div>
+      <h3 class="step-title">Pesquisa Externa (Trilha A + Trilha B)</h3>
+      <p class="step-desc">Buscar conhecimento novo + ferramentas. <b>Trilha A (Inteligência):</b> normas, técnicas, regras — qualquer fonte. <b>Trilha B (Ferramentas):</b> GitHub, connectors, MCPs. 5 WebSearches paralelas + 2+ WebFetches.</p>
+      <span class="task-time" style="margin-top:8px"><span class="time-box">15–20 min</span></span>
+    </div>
+
+    <div class="step-block">
+      <div class="step-num">PASSO 2</div>
+      <h3 class="step-title">Consolidação & Prioridade</h3>
+      <p class="step-desc">Filtrar ruído, agrupar por Gestor/Agente, criar mapa de prioridade. Honesto: o que é real, o que é especulação?</p>
+      <span class="task-time" style="margin-top:8px"><span class="time-box">10 min</span></span>
+    </div>
+
+    <div class="step-block">
+      <div class="step-num">PASSO 3</div>
+      <h3 class="step-title">Redação de Skills</h3>
+      <p class="step-desc">Escrever conforme estrutura (O que, Por quê, Como, Ferramentas, Critério, Bloqueadores). Pronto pra Passo 4.</p>
+      <span class="task-time" style="margin-top:8px"><span class="time-box">20–30 min</span></span>
+    </div>
+
+    <div class="step-block">
+      <div class="step-num">PASSO 4</div>
+      <h3 class="step-title">Salvamento & Registro</h3>
+      <p class="step-desc">Salvar em <code style="font-family:var(--mono);font-size:12px">Skills_Propostas/2026/[Mês]/</code> · Atualizar índice · Backup se editou arquivo existente.</p>
+      <span class="task-time" style="margin-top:8px"><span class="time-box">5 min</span></span>
+    </div>
+
+    <div class="step-block">
+      <div class="step-num">PASSO 8</div>
+      <h3 class="step-title">Ferramentas (se lacuna aberta)</h3>
+      <p class="step-desc">Checar mapa dinâmico de lacunas · Buscar GitHub se lacuna real · Se encontrou: redigir Skill de usabilidade · Se não: registrar "nenhum achado".</p>
+      <span class="task-time" style="margin-top:8px"><span class="time-box">10–20 min</span></span>
+    </div>
+
+    <div class="note">
+      <b>Regra de Desbloqueio:</b> Se algo travou (fonte fora do ar, permissão negada), nunca espere. Registre o impedimento, pule aquele item, continue. Uma rodada com 4 de 5 itens + relato do 5º é sucesso.
+    </div>
+  </div>
+
+  <!-- DEPOIS -->
+  <div class="section">
+    <h2 class="sec-title">Depois de terminar</h2>
+    <div class="task-list">
+      <div class="task">
+        <input type="checkbox" id="t4">
+        <div class="task-content">
+          <label for="t4" class="task-title">Registre o que saiu</label>
+          <p class="task-desc">Quantas Skills novas? Quais Gestores? Houve bloqueadores? Faça anotação rápida.</p>
+        </div>
+      </div>
+
+      <div class="task">
+        <input type="checkbox" id="t5">
+        <div class="task-content">
+          <label for="t5" class="task-title">Backup de segurança</label>
+          <p class="task-desc">Se editou arquivo que é "durável" (estado, closed, índice), faça backup na pasta de backups.</p>
+        </div>
+      </div>
+
+      <div class="task">
+        <input type="checkbox" id="t6">
+        <div class="task-content">
+          <label for="t6" class="task-title">Pronto pro Painel sexta?</label>
+          <p class="task-desc">Nada a fazer agora. Sexta você consolida tudo que saiu seg-qui e atualiza o Painel.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUMO -->
+  <div class="section">
+    <h2 class="sec-title">Resumo da execução</h2>
+    <div class="summary">
+      <div class="sum-card">
+        <div class="sum-label">Skills Criadas</div>
+        <div class="sum-value" id="skills-count">—</div>
+      </div>
+      <div class="sum-card">
+        <div class="sum-label">Gestores Envolvidos</div>
+        <div class="sum-value" id="gestores-count">—</div>
+      </div>
+      <div class="sum-card">
+        <div class="sum-label">Bloqueadores</div>
+        <div class="sum-value" id="blocker-count">0</div>
+      </div>
+      <div class="sum-card">
+        <div class="sum-label">Tempo Real</div>
+        <div class="sum-value" id="time-count">—</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Próximo: <b>SEXTA</b> você executa a <b>Rotina Sexta</b> (Painel + Learning + Dashboard Review + Análise) — 90-120 min
+  </div>
+</div>
+
+<script>
+  (function(){
+    // Persist checklist state
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(function(cb){
+      var id = cb.id;
+      if(localStorage.getItem('checklist-' + id)){
+        cb.checked = true;
+      }
+      cb.addEventListener('change', function(){
+        if(cb.checked){
+          localStorage.setItem('checklist-' + id, 'true');
+        } else {
+          localStorage.removeItem('checklist-' + id);
+        }
+      });
+    });
+
+    // Dark mode
+    var root = document.documentElement;
+    var theme = localStorage.getItem('checklist-theme') || 'light';
+    root.style.colorScheme = theme;
+    if(theme === 'dark' && !root.getAttribute('data-theme')){
+      var style = document.querySelector('style');
+      style.textContent = style.textContent.replace(/:root\{/g, ':root[data-theme="dark"]{');
+    }
+  })();
+</script>
