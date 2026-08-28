@@ -6,40 +6,6 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 **Regra de preenchimento:** registrar no **mesmo dia** da execução. Nunca em lote no fim da semana — o objetivo é que Claudemberg possa intervir antes da segunda se algo estiver claramente errado.
 
-### [2026-08-28] Rotina Automática Diária Skills v2.7 — 2 rodadas completas (5 Skills + inauguração Trilha A Cardozo em 4 áreas)
-
-**Contexto:** Claudemberg atualizou o SKILL.md da rotina de v2.4 para v2.7 (nova estrutura: Checklists visuais Seg-Qui + Sexta, Dashboard, CronJob PDF 20:00, Agendador 08:00). A rotina foi executada duas vezes em 28/08.
-
-**Rodada 1 — Trilha A estreia para Cardozo (Baumgart + Saturnino):**
-- **2 Skills criadas (Trilha A — Inteligência Técnica):**
-  1. `baumgart_nbr6118-2026-emenda1-estrutural-concreto.md` — NBR 6118:2026 com Emenda 1 (11/03/2026): CC1/CC2/CC3, ATP obrigatória CC3, marquises, punção, traspasse >Ø32mm proibido
-  2. `saturnino_nbr5626-8160-hidrossanitario-dimensionamento.md` — NBR 5626:2020 + 8160:1999 + 10844: método Hunter, pressão máx. 400 kPa, inclinação esgoto, ventilação, pluvial Q=C×I×A/360 com IDF-RJ
-- **3 PDFs gerados:** 2 Skills + índice
-- **Descartados (Passo 8):** AutoCAD MCP (software pago) e EPLAN MCP (software pago) — nenhum passa nos 4 critérios
-- **Painel Fundador:** HTML editado localmente (evento Trilha A estreia 28/08 adicionado) — **publicação agendada para Sexta 01/09** (v2.7: Painel é tarefa de Sexta-feira)
-
-**Rodada 2 — Trilha A continuação (Landell + Glaziou) + Presenton (Passo 8):**
-- **3 Skills criadas:**
-  1. `landell_nbr5410-2026-eletrica-instalacoes-prediais.md` — Trilha A: NBR 5410:2004 vigente + mudanças revisão 2026 (2ª consulta, não publicada). IEC 60364-5-52, infraestrutura EV, harmonização SPDA. Automação: KNX/Zigbee/Modbus.
-  2. `glaziou_nbr16636-4-paisagismo-tecnico-predial.md` — Trilha A: NBR 16636-4:2023, 6 fases, carga cobertura verde (80–1000+ kg/m²), NBR 9050/9575, espécies IBAMA/INEA-RJ.
-  3. `portinari_presenton-mcp-apresentacao-ia-self-hosted.md` — Trilha B / Passo 8: Apache 2.0, 9.9k stars, MCP server nativo, Ollama self-hosted (zero custo). Complementa PPTAgent (CLI) com interface visual + MCP.
-- **4 PDFs gerados:** 3 Skills + índice atualizado
-- **Descartado (Passo 8):** mcp-server-powerpoint (sbroenne, 18 stars, exige PowerPoint pago)
-
-**Estado do SKILL.md:** v2.7 (atualizado por Claudemberg em 28/08/2026). Mudanças documentadas no histórico de versões do arquivo. Backup da versão anterior em `_backups/2026-08-27/wallenberg-rotina-diaria-skills-v2_SKILL.md`.
-
-**Arquivos criados/alterados hoje (28/08):**
-- Criados: 5 Skills `.md` + 5 PDFs em `Skills_Propostas/2026/Agosto/`
-- Alterado: `indice.md` (+ PDF) — 5 novas linhas + Observações de 2 rodadas
-- Modificado (não publicado): `painel_fundador_sttk.html` — evento 28/08 Trilha A adicionado, aguarda publicação Sexta
-- Backup: `_backups/2026-08-28/indice.md`, `_backups/2026-08-28/painel_fundador_sttk.html`, `_backups/2026-08-28/Agosto.md`
-
-**Como desfazer:** apagar as 5 Skills novas + reverter `indice.md` via backup. Para o Painel: HTML local ainda tem o evento de 28/08 mas não foi publicado — reverter via backup `_backups/2026-08-28/painel_fundador_sttk.html` descarta o evento adicionado.
-
-**Status:** ✅ Completo — 5 Skills (4 Trilha A + 1 Trilha B), 4 áreas Cardozo com inteligência técnica inaugural (faltam Tenreiro/Interiores e Mindlin/Apresentação). Painel será publicado na Sexta 01/09.
-
----
-
 ### [2026-08-27] Rotina Automática Diária Skills v2.4 — 2 Skills novas (Passo 8) + achado crítico de divergência do Painel + bloqueio na republicação
 
 - **O que aconteceu:** rodada automática da `wallenberg-rotina-diaria-skills-v2`. Passo 1 (5 WebSearches) + Passo 2 (consolidação) cobriram: MCP estrutural/FEM gratuito para Baumgart, MCP Revit alternativo para Oscar, status WAN 2.2, CAU-RJ agosto/2026, MCP paisagismo/MEP gratuito.

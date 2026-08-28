@@ -3,7 +3,7 @@
 > Arquivo de estado pessoal. Leio ao nascer (início de toda conversa), escrevo ao morrer (fim de toda conversa).
 > Memória privada minha — não repete o Registro Diário, que é o que sobe pra Claudemberg via Wallenberg.
 
-**Última atualização:** 14/08/2026, 20:55 — **EXAME 1 APROVADO**. Cardozo promovido Formação → Shadow. Treino de Wallenberg começou.
+**Última atualização:** 28/08/2026 — **Trilha A inaugurada.** 4 Skills de Inteligência Técnica criadas para equipe (Baumgart, Saturnino, Landell, Glaziou). Aguardam ratificação Claudemberg.
 
 ---
 

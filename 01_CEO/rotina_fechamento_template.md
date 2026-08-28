@@ -89,12 +89,19 @@ metadata:
 
 *Apenas os últimos 2-3 encerramentos para referência rápida*
 
+### [2026-08-28] Diária Skills v2.7 — 2 rodadas
+
+- ✅ Entregou: **5 Skills novas** (Baumgart/NBR6118, Saturnino/NBR5626-8160, Landell/NBR5410, Glaziou/NBR16636-4, Portinari/Presenton), 9 PDFs (5 Skills + 4 índices atualizados), índice com 5 novas linhas + observações das 2 rodadas, livro-razão registrado, `_estado_cardozo.md` atualizado
+- ⚠️ Bloqueadores: (1) **Painel Fundador não publicado** — v2.7 move Painel para Sexta-feira. HTML local tem o evento 28/08 (Trilha A estreia) pronto em `01_CEO/Painel_Fundador/painel_fundador_sttk.html`. Publicar na Sexta 01/09 via Artifact com url `https://claude.ai/code/artifact/3c28ec0d-1817-4e7a-9a22-a4c16c570f27` (fazer WebFetch no artifact antes de publicar — regra AULA CLAUDE).
+- ❌ Retrabalho evitado: (1) FreeCAD MCP e Revit MCP Study (27/08) não recriados; (2) PPTAgent (26/08) não duplicado — Presenton é ferramenta diferente (MCP nativo vs CLI)
+- 🎯 Status: **Completa** — 5 Skills (4 Trilha A + 1 Trilha B), 4 áreas Cardozo cobertas. Pendentes sem Skill Trilha A ainda: Tenreiro (Interiores) e Mindlin (Apresentação). Painel publicar Sexta.
+
 ### [2026-08-27] Diária Skills v2.4
 
 - ✅ Entregou: 2 Skills novas (FreeCAD MCP para Baumgart, Revit MCP Study 173 tools para Oscar), 2 PDFs, índice atualizado
-- ⚠️ Bloqueadores: (1) **CRÍTICO** — descoberta de divergência entre Painel publicado (ao vivo, 12/08) e cópia local do repositório (selo "15/08" mas faltando ~2 semanas de eventos reais). Cópia local RECONCILIADA com sucesso (histórico completo restaurado + evento Cardozo/26-08 adicionado), mas a **republicação via Artifact falhou 3x** com erro "identical content already refused... resent unchanged" — aparente falso positivo da ferramenta, não resolvido. Arquivo local está correto e pronto; o link ao vivo segue desatualizado (12/08) até alguém retentar publish ou usar `force:true` com autorização explícita.
+- ⚠️ Bloqueadores: (1) **CRÍTICO** — descoberta de divergência entre Painel publicado (ao vivo, 12/08) e cópia local do repositório (selo "15/08" mas faltando ~2 semanas de eventos reais). Cópia local RECONCILIADA com sucesso (histórico completo restaurado + evento Cardozo/26-08 adicionado), mas a **republicação via Artifact falhou 3x** com erro "identical content already refused... resent unchanged" — aparente falso positivo da ferramenta, não resolvido. Arquivo local está correto e pronto; o link ao vivo segue desatualizado até alguém retentar publish.
 - ❌ Retrabalho: Nenhum
-- 🎯 Status: Parcial — Passos 1-5 e 8 completos; Passo 6 com correção pronta mas publicação bloqueada (ver livro-razão 27/08 para detalhe completo); Passo 7 sem achado novo
+- 🎯 Status: Parcial — Passos 1-5 e 8 completos; Passo 6 com correção pronta mas publicação bloqueada; Passo 7 sem achado novo
 
 ### [2026-08-26] Drenagem Contínua
 
