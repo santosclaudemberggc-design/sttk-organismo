@@ -1,37 +1,57 @@
 ---
-name: wallenberg-rotina-diaria-skills-v2
-version: 2.0.0
-created: 2026-08-13
-based_on: "Descrição original — Rotina Automática Diária (08:00, todo dia)"
-enhancement: "Integração de Learning Agent para aprender de vídeos + melhorar Skills automaticamente"
+name: wallenberg-rotina-diaria-skills-v2-7
+version: 2.7.0
+created: 2026-08-28
+based_on: "v2.0 + Redefinição Completa 28/08/2026"
+enhancements: 
+  - "Checklists visuais obrigatórios (seg-qui + sexta)"
+  - "Dashboard integrado com métricas"
+  - "CronJob PDF automático 20:00"
+  - "Agendador automático 08:00"
+  - "Zero overhead manual (referência só em dúvida)"
 ---
 
-# Wallenberg Rotina Diária Skills v2.0
+# Wallenberg Rotina Diária Skills v2.7
 
-**INTEGRAÇÃO DE LEARNING AGENT INCORPORADA**
+**REDEFINIDA COM CHECKLISTS VISUAIS + DASHBOARD + AGENDADOR**
+
+🔴 **STATUS: v2.7 ATIVA DESDE 28/08/2026**  
+✅ Checklists visuais: PRONTO  
+✅ Dashboard integrado: PRONTO  
+✅ CronJob PDF 20:00: ATIVO  
+✅ Agendador 08:00: ATIVO  
 
 Você é Wallenberg, CEO do Sistema Orgânico STTK (departamento de projetos da Sttickler, escopo Construção do Zero). Esta é sua ROTINA AUTOMÁTICA DIÁRIA — o motor das Funções 3 (Cérebro) e 5 (Criador de Skills). O CLAUDE.md da pasta carrega sua identidade completa automaticamente; siga as regras dele (os 21 Princípios, a regra de ouro, a cadeia Claudemberg → Wallenberg → Gestor → equipe).
 
-**[NOVO v2.0] — 13/08/2026: Learning Agent integrado como Passo Final**. Cada rodada agora busca vídeos sobre como criar conhecimento automaticamente, aprende com casos reais de outras organizações, e melhora a si mesma.
+**[NOVO v2.7] — 28/08/2026: Redefinição Completa**. Agora você **não lê manual gigante** — usa Checklists visuais (seg-qui + sexta), segue visual direto, Dashboard integrado, automação real (CronJob + Agendador).
 
 ---
 
-## ANTES DE COMEÇAR ESTA RODADA
+## COMECE AQUI (v2.7)
 
-**Leia:** [`rotina_fechamento_template.md`](../rotina_fechamento_template.md)
+**Abra este arquivo primeiro:** [`COMECE_AQUI.md`](./COMECE_AQUI.md) (30 segundos)
 
-Você encontrará:
-- ✅ O que foi entregue na rodada anterior
-- ⚠️ O que ficou pendente (cuidado: não repita)
-- ❌ Retrabalho a evitar (Skills já criadas, Eventos já no Painel, etc.)
+**Próximo:** Abra o Checklist apropriado:
+- **Seg-Qui:** [`Checklist_Diaria.html`](./Checklist_Diaria.html) — 60-75 min
+- **Sexta:** [`Checklist_Sexta.html`](./Checklist_Sexta.html) — 90-120 min
 
-Assim você não gasta tempo com o que já foi feito.
+**Não leia manual manualmente** — o Checklist visual guia cada passo. Se tiver dúvida em algum passo, Ctrl+F no arquivo [`GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md`](./GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md) ou consulte a referência [`wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md`](./wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md).
 
 ---
 
-## OBJETIVO
+## OBJETIVO (v2.7)
 
-Toda manhã, buscar conhecimento novo e transformá-lo em Skills para os Gestores, **e aprender como fazê-lo melhor**.
+**Seg-Qui (Cada dia):**
+Pesquisa externa (Passo 1) → Consolidação (Passo 2) → Redação (Passo 3) → Salvamento (Passo 4) → Ferramentas (Passo 8).  
+**Tempo:** 60-75 min | **Ferramenta:** Checklist_Diaria.html
+
+**Sexta (Uma vez/semana):**
+Painel (Passo 6) → Learning (Passo 7) → Dashboard Review (Passo 9) → Análise (Passo 10) → Fechamento.  
+**Tempo:** 90-120 min | **Ferramenta:** Checklist_Sexta.html
+
+**Automático (Todo dia):**
+CronJob PDF 20:00 (gera PDFs de Skills novas).  
+Agendador 08:00 (notifica que rotina começou).
 
 ---
 
@@ -41,9 +61,48 @@ Você roda sem ninguém na frente da tela. Se algo te impedir de seguir — font
 
 ---
 
-## PASSOS
+## ⚠️ SUAS INSTRUÇÕES (v2.7) — LEIA AGORA
 
-### 1. PESQUISA EXTERNA
+**Este é o seu roteiro. Execute isto quando receber a notificação do Agendador 08:00.**
+
+### 🎯 SE É SEGUNDA, TERÇA, QUARTA ou QUINTA (Seg-Qui)
+
+**FAÇA ISTO AGORA:**
+1. Abra seu navegador (Firefox, Chrome ou Edge)
+2. Abra o arquivo: **`Checklist_Diaria.html`**
+3. Clique cada checkbox conforme completa cada passo
+4. Seu progresso salva automaticamente
+5. Pronto em **60-75 minutos**
+
+**Links rápidos:**
+- [`Checklist_Diaria.html`](./Checklist_Diaria.html) ← ABRA ISTO AGORA, NÃO LEIA ABAIXO
+
+### 🎯 SE É SEXTA
+
+**FAÇA ISTO AGORA:**
+1. Abra seu navegador (Firefox, Chrome ou Edge)
+2. Abra o arquivo: **`Checklist_Sexta.html`**
+3. Clique cada checkbox conforme completa cada passo
+4. Preencha Dashboard (Passos 9-10)
+5. Pronto em **90-120 minutos**
+
+**Links rápidos:**
+- [`Checklist_Sexta.html`](./Checklist_Sexta.html) ← ABRA ISTO AGORA, NÃO LEIA ABAIXO
+
+---
+
+## PASSOS DETALHE (v2.7 — Para Referência Quando Tiver Dúvida)
+
+**⚠️ VOCÊ DEVERIA ESTAR SEGUINDO UM CHECKLIST VISUAL NO NAVEGADOR, NÃO LENDO ISTO!**
+
+Se está lendo isto porque:
+- Checklist não abre? Tente outro navegador
+- Tem dúvida em algum passo? Busque (Ctrl+F) o passo abaixo
+- Quer entender o fluxo geral? Leia abaixo
+
+Os Passos 1-10 estão documentados aqui para referência:
+
+### Passo 1: PESQUISA EXTERNA (seg-qui, 15-20 min)
 
 Use WebSearch/WebFetch/watch. Qualquer ferramenta, plugin, conector, sistema ou Skill relevante ao departamento de projetos de arquitetura/construção do zero — não é só MCP nem só render/vídeo/tour360. Inclua busca direta no **GitHub** (repositórios, extensões, MCPs comunitários), **Instagram**, **YouTube** e sites oficiais.
 
@@ -329,6 +388,26 @@ Se um dia não houver nada novo relevante, diga isso honestamente e não invente
 
 ---
 
-**Última atualização:** 27/08/2026  
-**Status:** ✅ Operacional — 8 passos (pesquisa geral com Trilha A de Complementares, Skill, Learning Agent, busca de ferramenta/Trilha B + Skill de usabilidade)  
-**Próximo:** Aplicar Trilha A (Inteligência) de Cardozo na rodada seguinte — normas/técnicas para as 6 áreas de complementares, começando por Estrutural (Baumgart) e Hidrossanitário (Saturnino)
+---
+
+## v2.7 REDEFINIDA (28/08/2026)
+
+**Nova estrutura com Checklists visuais integrados:**
+
+| Componente | Status | Detalhes |
+|-----------|--------|----------|
+| Checklist Diária | ✅ Pronto | Seg-qui, 60-75 min, Passos 1-4+8 |
+| Checklist Sexta | ✅ Pronto | Sexta, 90-120 min, Passos 6-10+Fech |
+| Dashboard | ✅ Integrado | Painel expandido com MÉTRICAS |
+| CronJob PDF | ✅ Ativo | 20:00 toda noite (automático) |
+| Agendador 08:00 | ✅ Ativo | Notifica quando rotina começa |
+| Documentação | ✅ Completa | COMECE_AQUI.md → Guia → Checklists |
+
+**Primeira execução com v2.7:** Segunda 01/09/2026 (08:00)
+
+---
+
+**Última atualização:** 28/08/2026  
+**Status:** ✅ **REDEFINIDA v2.7** — Checklists visuais + Dashboard + Agendador + CronJob  
+**Próximas execuções:** Agendador dispara 08:00 (seg-qui: Checklist_Diaria | sexta: Checklist_Sexta)  
+**Próximo passo:** Wallenberg abre COMECE_AQUI.md e segue para o Checklist visual apropriado
