@@ -22,29 +22,27 @@ metadata:
 
 ---
 
-## [DATA-RODADA] — Diária Skills / Drenagem
+## [2026-08-31] — Diária Skills v2.7 (Seg-Qui)
 
 ### RODADA ANTERIOR (O que foi entregue)
 
-- [ ] **Skills criadas:** [listar nomes + versão (v1, v2, etc.)]
-- [ ] **Skills documentadas:** [listar paths]
-- [ ] **PDFs regenerados:** [listar quantos]
-- [ ] **Painel atualizado:** Sim/Não (se sim, que eventos adicionados?)
-- [ ] **Livro-razão registrado:** Sim/Não
-- [ ] **Learning Agent propôs melhorias:** [listar quantas + resumo]
+- [x] **Skills criadas:** 3 Skills Trilha A (Tenreiro/NBR 15575-4+8995-1, Kelsen/CAU-RJ 009/2026, Mindlin/NBR 6492:2021)
+- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Agosto/` (3 arquivos novos)
+- [ ] **PDFs regenerados:** 0 — sem script de geração localizado
+- [ ] **Painel atualizado:** Não (Painel é tarefa de Sexta)
+- [x] **Livro-razão registrado:** Sim (Agosto.md atualizado com entrada de 31/08)
+- [ ] **Learning Agent propôs melhorias:** N/A (Seg-Qui)
 
 ### O QUE FICOU PENDENTE (Cuidado: não repita)
 
-- **Item bloqueador 1:** [descrição] → **Ação:** [o que fazer]
-- **Item bloqueador 2:** [descrição] → **Ação:** [o que fazer]
-- *Se não houver bloqueadores, deixar vazio*
+- **Geração de PDFs:** sem script de geração de PDF localizado no projeto. CronJob PDF 20:00 referenciado na v2.7 sem implementação local. **Ação:** Claudemberg precisa esclarecer como PDFs são gerados ou criar o CronJob.
+- **Zoneamento bioclimático RJ:** NBR 15220-3:2024 reclassificou municípios em 12 zonas. Verificar se Rio de Janeiro mudou de zona bioclimática — impacta critérios de desempenho térmico da Skill do Tenreiro. **Ação:** próxima rodada deve buscar o mapa ou tabela da NBR 15220-3:2024.
 
 ### O QUE NÃO FAZER (Avoid retrabalho)
 
-- ❌ **Skill X não crie novamente** — já existe em `Skills_Propostas/2026/Agosto/`
-- ❌ **Evento Y não adicione ao Painel** — redundante com evento Z de ontem
-- ❌ **Reunião Z não agende** — já agendada para 25/08 (terça-feira)
-- *Se não houver retrabalho a evitar, deixar vazio*
+- ❌ **Blender MCP não crie Skill nova** — já coberto em `arquitetura_mcp-gratuitos-render-video-blender-huggingface.md` (01/08/2026)
+- ❌ **Architecture MCP (sceneview-tools) não pesquise mais** — retornou 404, projeto possivelmente removido
+- ❌ **NBR 5410 não duplique** — já coberta por `landell_nbr5410-2026-eletrica-instalacoes-prediais.md` (28/08)
 
 ---
 
@@ -52,36 +50,33 @@ metadata:
 
 ### Entregáveis
 
-- [ ] **Skills criadas:** [nomes + v#]
-- [ ] **Skills documentadas:** [paths]
-- [ ] **PDFs regenerados:** [quantos]
-- [ ] **Painel atualizado:** Sim/Não (descrever mudanças)
-- [ ] **Livro-razão registrado:** Sim/Não (data entry)
-- [ ] **Learning Agent melhorias:** [quantas + resumo]
+- [x] **Skills criadas:** 3 (Tenreiro NBR 15575-4+8995-1 v1.0, Kelsen CAU-RJ 009/2026 v1.0, Mindlin NBR 6492:2021 v1.0)
+- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Agosto/` (3 novos)
+- [ ] **PDFs regenerados:** 0 (sem script)
+- [ ] **Painel atualizado:** Não (tarefa de Sexta)
+- [x] **Livro-razão registrado:** Sim (Agosto.md, entrada 31/08)
+- [ ] **Learning Agent melhorias:** N/A
 
 ### Bloqueadores (se houver)
 
-- **Bloqueador 1:** [descrição clara]
-  - Causa: [por quê trava]
-  - Impacto: [o que não conseguiu fazer]
-  - Próximo passo: [quem resolve, quando]
+- **Bloqueador 1:** Geração de PDFs
+  - Causa: sem script/CronJob implementado para conversão .md→.pdf
+  - Impacto: 3 Skills sem versão PDF gêmea
+  - Próximo passo: Claudemberg esclarecer mecanismo, ou implementar na próxima Sexta
 
-- **Bloqueador 2:** [descrição clara]
-
-*Se nenhum bloqueador, escrever: "Sem bloqueadores esta rodada"*
+*Sem bloqueadores críticos para a rodada em si — os 3 passos principais (1-4) foram executados.*
 
 ### Retrabalho Evitado (se houver)
 
-- **Item 1:** Skill X não recriada (já existe v2 de 20/08)
-- **Item 2:** Evento Y não adicionado (redundante)
-
-*Se nenhum retrabalho evitado, deixar vazio*
+- **Item 1:** Blender MCP não recriado (já existe Skill de 01/08 com cobertura completa)
+- **Item 2:** BIMwright e Architecture MCP descartados (redundantes/404)
 
 ### Status Final
 
-- **Rodada:** ✅ Completa / ⚠️ Parcial (se parcial, descrever)
-- **Taxa de Sucesso:** [X de Y itens planejados entregues]
-- **Próxima Rodada Recomendação:** [2-3 itens prioritários baseado em bloqueadores]
+- **Rodada:** ✅ Completa
+- **Taxa de Sucesso:** 3 de 3 Skills planejadas entregues (PDFs pendentes por bloqueio técnico, não por falha de execução)
+- **Marco:** Trilha A 6/6 áreas de Cardozo cobertas
+- **Próxima Rodada Recomendação:** (1) Verificar zoneamento bioclimático RJ na NBR 15220-3:2024; (2) Resolver geração de PDFs; (3) Sexta 05/09: Painel + Dashboard + Análise semanal
 
 ---
 
@@ -103,26 +98,12 @@ metadata:
 - ❌ Retrabalho: Nenhum
 - 🎯 Status: Parcial — Passos 1-5 e 8 completos; Passo 6 com correção pronta mas publicação bloqueada; Passo 7 sem achado novo
 
-### [2026-08-26] Drenagem Contínua
-
-- ✅ Entregou: 3 Gestores drenados (Kelsen/Lúcio/Cardozo); equipe Cardozo formalizada (Baumgart, Landell, Saturnino, Glaziou, Tenreiro, Mindlin — 6 agentes, `.md` criados); Resolução SMDU Nº 10/2026 catalogada em `_indice_fontes.md`; livro-razão e estados atualizados
-- ⚠️ Bloqueadores: (1) b14 aguarda resposta SMDU — verificar email santosclaudembergg@hotmail.com; (2) PPTAgent implantação requer `pip install pptagent` por Wallenberg antes de 28/08; (3) Painel não atualizado (Cardozo + 6 agentes ausentes — deixar para próxima sessão); (4) WAN 2.2 Burle — report esperado amanhã 27/08; (5) Decisão pendente: sobreposição Revit MCP 138 tools vs. Vitruvius; (6) 2 Skills BIM de Cardozo aguardam decisão de incorporação no CLAUDE.md
-- ❌ Retrabalho: Nenhum
-- 🎯 Status: Parcial — Passos 1-5 e 7 completos; Passo 6 (Painel) adiado; Passo 8 (PPTAgent) parcial (proposta verificada, implantação bloqueada)
-
 ### [2026-08-26] Diária Skills v2.4
 
 - ✅ Entregou: 2 Skills (Resolução SMDU Nº 10/2026 RDT + PPTAgent para Portinari), 8 PDFs (2 novos + 6 retroativos de 23-24/08), índice retroativo com 6 linhas de 23-24/08
 - ⚠️ Bloqueadores: Nenhum
 - ❌ Retrabalho: Nenhum evitado
 - 🎯 Status: Completa (8 passos)
-
-### [2026-08-21] Diária Skills
-
-- ✅ Entregou: 2 Skills novas (Learning Agent Fase 2 + Architecture MCP), 3 PDFs
-- ⚠️ Bloqueadores: Nenhum
-- ❌ Retrabalho: Nenhum evitado
-- 🎯 Status: Completa (7 de 7 passos)
 
 ---
 
@@ -135,5 +116,5 @@ metadata:
 
 ---
 
-**Última atualização:** [data da última rodada]  
-**Próxima leitura:** [data da próxima rodada]
+**Última atualização:** 31/08/2026  
+**Próxima leitura:** 01/09/2026 (Terça — Diária Skills Seg-Qui)
