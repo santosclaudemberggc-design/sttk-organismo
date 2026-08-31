@@ -17,7 +17,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 **Marco:** com Tenreiro e Mindlin cobertos, as **6 áreas de Cardozo (Complementares) estão todas com pelo menos 1 Skill Trilha A proposta** (Baumgart 28/08, Saturnino 28/08, Landell 28/08, Glaziou 28/08, Tenreiro 31/08, Mindlin 31/08).
 
-**PDFs:** pendentes — sem script de geração localizado. CronJob PDF 20:00 referenciado na v2.7 sem implementação local encontrada.
+**PDFs:** 4 gerados (3 Skills + índice) com `_ferramentas/md_to_pdf.py`. **CronJob PDF criado:** tarefa agendada `wallenberg-cronjob-pdf-2000` (seg-sex 20:00) — pendência da v2.7 resolvida.
 
 **Passo 8 (Ferramentas):** nenhuma lacuna real de ferramenta nova identificada. Blender MCP já coberto em Skill de 01/08. Architecture MCP (GitHub 404, possível remoção). BIMwright redundante com Revit MCPs existentes.
 
@@ -37,7 +37,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
   2. `saturnino_nbr5626-8160-hidrossanitario-dimensionamento.md` — NBR 5626:2020 + 8160:1999 + 10844: método Hunter, pressão máx. 400 kPa, inclinação esgoto, ventilação, pluvial Q=C×I×A/360 com IDF-RJ
 - **3 PDFs gerados:** 2 Skills + índice
 - **Descartados (Passo 8):** AutoCAD MCP (software pago) e EPLAN MCP (software pago) — nenhum passa nos 4 critérios
-- **Painel Fundador:** HTML editado localmente (evento Trilha A estreia 28/08 adicionado) — **publicação agendada para Sexta 01/09** (v2.7: Painel é tarefa de Sexta-feira)
+- **Painel Fundador:** HTML editado localmente (evento Trilha A estreia 28/08 adicionado) — **publicação agendada para Sexta 04/09** (v2.7: Painel é tarefa de Sexta-feira)
 
 **Rodada 2 — Trilha A continuação (Landell + Glaziou) + Presenton (Passo 8):**
 - **3 Skills criadas:**
@@ -57,7 +57,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 **Como desfazer:** apagar as 5 Skills novas + reverter `indice.md` via backup. Para o Painel: HTML local ainda tem o evento de 28/08 mas não foi publicado — reverter via backup `_backups/2026-08-28/painel_fundador_sttk.html` descarta o evento adicionado.
 
-**Status:** ✅ Completo — 5 Skills (4 Trilha A + 1 Trilha B), 4 áreas Cardozo com inteligência técnica inaugural (faltam Tenreiro/Interiores e Mindlin/Apresentação). Painel será publicado na Sexta 01/09.
+**Status:** ✅ Completo — 5 Skills (4 Trilha A + 1 Trilha B), 4 áreas Cardozo com inteligência técnica inaugural (faltam Tenreiro/Interiores e Mindlin/Apresentação). Painel será publicado na Sexta 04/09.
 
 ---
 
