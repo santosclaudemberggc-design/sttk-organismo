@@ -776,17 +776,3 @@ Art. 16: "Os processos autuados para licenciamento de projetos de parcelamento, 
 
 **NÃO INCIDE sobre o escopo típico (unifamiliar, lotes < 40.000 m² e testada < 200m).** Caso EVTL (~10.500 m²): bem abaixo do threshold de terreno (inciso I) — não afetado. Relevante apenas se surgir projeto de grande porte (gleba > 40.000 m², testada do terreno > 200 m, ou terreno inserido em quadra com testada > 200 m sem a exceção de esquina do parágrafo único do Art. 4º). Nenhum POP existente alterado — thresholds de grande porte não são o escopo padrão atual.
 
-
----
-
-## REGISTRO — 31/08/2026 — DOMÍNIO CAU/RRT (fora do escopo urbanístico SMU deste índice) — DELIBERAÇÃO PLENÁRIA CAU/RJ Nº 009/2026
-
-*Inserido por Wallenberg a pedido de Kelsen (rotina wallenberg-drenagem-continua, 31/08/2026) — Kelsen decidiu indexar aqui, em sub-seção delimitada, por o índice já carregar domínios adjacentes (COSCIP estadual, LAM/SMAC). Levantamento de fonte primária feito por Hely, auditado por Kelsen contra os PDFs primários e WebFetch do portal do CAU/BR.*
-
-| Arquivo | Ato | Status | Nota |
-|---|---|---|---|
-| `DeliberacaoPlenariaCAURJ_009_2026_SugestaoAlteracaoArt8_Res91_2014_RRTDerivado.pdf` | Deliberação Plenária DPO/RJ nº 009/2026 (CAU/RJ), sessão 13/01/2026, orig. Deliberação CEP 021/2025 | SUGESTÃO estadual — NÃO vigente | CAU/RJ apenas sugere e remete ao CAU/BR. Propõe acrescentar §5º ao Art. 8º da Res. CAU/BR 91/2014 sobre RRT Derivado. ATENÇÃO: o Art. 8º da Res. 91/2014 já tem §5º vigente (RRT Social) e vai até §8º; RRT Derivado já é inciso IV + §4º. Colisão de numeração — a proposta não é texto vigente. |
-
-- Baseline do Art. 8º Res. CAU/BR 91/2014: incisos I-V + §§1º-8º, consolidação até Res. CAU/BR 184/2019 (22/11/2019); sem alteração publicada posterior. Res. 91/2014 não substituída.
-- Único ato CAU/BR de 2026 tocando a Res. 91: DP DPOBR 0173-10/2026 (10/08/2026), "alteração de entendimento sobre RRT Retificador" — não é o Art. 8º, não é mudança de texto normativo. (Ressalva de completude de Hely: lista do portal vai até a Res. 276/2026; janela mai-ago/2026 pode não estar refletida.)
-- Uso: monitoramento apenas. Skill `legal_caurj-deliberacao-009-2026-rrt-art8.md` (Trilha A) aguarda ratificação de Claudemberg; não incorporada à base ativa; nenhum POP alterado.

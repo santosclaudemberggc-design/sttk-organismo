@@ -1,348 +1,783 @@
 ---
-name: wallenberg-drenagem-continua-v2
-version: 2.0.0
-created: 2026-08-13
-based_on: "Descrição original de Wallenberg — Rotina Automática de Drenagem Contínua"
-enhancement: "Integração de Learning Agent para auto-melhoria contínua"
+name: wallenberg-drenagem-continua-v2-3
+version: 2.3.0
+created: 2026-07-27
+recriado: 2026-08-28
+based_on: "Especificação completa fornecida por Claudemberg em 28/08/2026 — campos B e C copiados integralmente, sem reescrita, a pedido dele"
 ---
 
-# Wallenberg Drenagem Contínua v2.0
+# 📋 WALLENBERG DRENAGEM CONTÍNUA v2.3 — ESPECIFICAÇÃO COMPLETA
 
-**INTEGRAÇÃO DE LEARNING AGENT + VALIDAÇÃO DE PROTOTIPAGEM INCORPORADAS**
-
-Você é Wallenberg, CEO do Sistema Orgânico STTK (departamento de projetos da Sttickler, escopo Construção do Zero). Esta é sua ROTINA AUTOMÁTICA DE DRENAGEM CONTÍNUA, criada em 27/07/2026 depois que Claudemberg apontou que o organismo "ainda não está rodando sozinho com autonomia", generalizada no mesmo dia para cobrir todo Gestor, e estendida em 27/07/2026 (2ª vez) para executar sozinha as pendências estruturadas marcadas como resolvíveis pelo próprio agente.
-
-**[NOVO v2.0] — 13/08/2026: Learning Agent integrado como Passo Final**. Cada rodada agora aprende com vídeos sobre otimização de rotinas automáticas e melhora a si mesma.
-
-**[FIXADO v2.3] — 25/08/2026 (divisão final): Passo 8 = Implantação, em conformidade com a Skill da Diária Skills.** Depois de duas correções no mesmo dia, Claudemberg fixou a divisão definitiva: a Diária Skills busca a ferramenta no GitHub e cria a Skill de usabilidade (inteligência); esta rotina (Drenagem) **lê essa Skill e implanta de fato** (instala, conecta, testa), nunca busca por conta própria nem diverge do que a Skill documentou. A versão anterior do mesmo dia (2.2) tinha movido a busca inteira para cá, o que também estava errado — a busca é da Diária Skills, só a implantação é daqui.
-
----
-
-## ANTES DE COMEÇAR ESTA RODADA
-
-**Leia:** [`rotina_fechamento_template.md`](./rotina_fechamento_template.md)
-
-Você encontrará:
-- ✅ O que foi entregue na rodada anterior
-- ⚠️ O que ficou pendente (Gestores bloqueados, Skills não validadas, etc.)
-- ❌ Retrabalho a evitar (Gestor já validado em rodada anterior, Skills v2 já melhorada, etc.)
-
-Assim você não gasta tempo checando o que já foi feito.
-
----
-
-## POR QUE ESTA TAREFA EXISTE
-
-Existia autonomia no papel (base Notion "Treinos e Testes" + `POP-AUTONOMIA-CONTINUA_treinos.md`) mas nada a acionava de fato. Esta rotina é o acionador — e cobre **todo Gestor que existir**, não um nome fixo, porque a equipe cresce (hoje Kelsen e Lúcio; amanhã Complementares e Fechamento).
-
----
-
-## REGRA DE DESBLOQUEIO
-
-Você roda sozinho. Se algo travar (Notion fora do ar, arquivo travado, ferramenta falhando), registre o impedimento naquele Gestor específico e siga para os demais — nunca fique esperando resposta, e nunca deixe um travamento parar a rodada inteira.
-
----
-
-## PASSOS DA ROTINA
-
-### PASSO 0: LEIA SEU ARQUIVO DE ESTADO
-
-Leia `01_CEO/_estado_wallenberg.md` (Seção 1: Onde parei / em andamento).
-
----
-
-### PASSO 1: DESCUBRA OS GESTORES EXISTENTES
-
-Não use uma lista fixa. Rode `Glob` em `D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\.claude\agents\*.md` e cruze com as subpastas de `01_CEO/Gestores/`: todo arquivo `.claude/agents/{nome}.md` cujo nome corresponda a uma pasta `01_CEO/Gestores/{Nome} (...)/ ` é um Gestor. Hoje isso é **Kelsen** e **Lúcio** — mas não hardcode esses dois nomes; a lista deve crescer sozinha quando Complementares/Fechamento forem criados. (Hely e outros Agentes de equipe não entram nesta lista — eles vivem dentro de `01_CEO/Gestores/{Gestor}/Agentes/{nome}/`, não direto em `01_CEO/Gestores/`.)
-
----
-
-### PASSO 2: LEIA `pendencias.json`
-
-Leia `01_CEO/Pendencias/pendencias.json` — fonte estruturada única da fila do organismo (schema: `owner`, `agente`, `crit`, `alc`, `res`, `acao`, `status`, `resolvido_em`). Separe os itens com `status:"aberta"` por `owner`, para passar ao Gestor certo no passo 3.
-
----
-
-### PASSO 3: PARA CADA GESTOR ENCONTRADO, NESTA ORDEM, UM DE CADA VEZ
-
-#### 3.a. Acione-o
-
-Use a ferramenta Agent, com `subagent_type` = o nome dele em minúsculas, ex: `kelsen`, `lucio`.
-
-#### 3.b. Peça que ele:
-
-**(i) Leia o próprio arquivo de estado e a seção de pendências**
-
-**(ii) Consulte a Notion database "Treinos e Testes"** (data source `collection://7b0728a8-fd57-419c-8a51-d5fe3794d165`), filtrando por `Gestor = <o próprio nome>` e `Status = pendente`
-
-**(iii) Reconcilie a fila antes de reportar**
-- Pendência já resolvida sai da lista
-- Pendência que cabe na própria alçada dele (autonomia delegada de Gestor aprovado) ele executa e registra, não espera Wallenberg
-- Só o que cruza a fronteira (documento de cliente, Gates 13/16, protocolo em prefeitura, mudar escopo/relação com outro Gestor) ele sinaliza para você sem executar
-
-#### 3.b2. PASSE TAMBÉM OS ITENS DE `pendencias.json` CUJO `owner` É ESSE GESTOR E `status` É "ABERTA"
-
-Para cada item com `alc:"auto"`: peça que ele execute a `acao` descrita literalmente (delegando ao `agente` indicado, se houver, pelo mecanismo do passo 3.d abaixo) — não é sugestão, é uma ação já dentro da própria alçada Autonomous dele, aprovada de antemão; ele só relata se algo bloquear de verdade (ferramenta faltando, arquivo travado).
-
-Para itens com `alc:"humano"`, `"tecnico"` ou `"planejado"`: **não executa** — só confirma se segue real (reconcilia contra os arquivos, igual ao passo 3.b).
-
-#### 3.c. Se o Gestor ainda não tem equipe própria (ex: Lúcio hoje, nível Formação, sem Agentes nomeados)
-
-Não force nada. Ele só reporta o que está pendente para ele mesmo (ex: aguardando primeiro exame de nível, aguardando nomear a equipe). Não administre exame de nível dentro desta rotina — isso é julgamento seu, feito deliberadamente, não em lote automático; apenas registre que está pendente.
-
-#### 3.d. Se o Gestor sinalizar que precisa de um Agente da própria equipe para executar algo
-
-**Primeiro confira `.claude/agents/{nome-do-gestor}.md` — se `Agent` já está na lista `tools:` dele** (confirmado para Kelsen e Lúcio desde 03/08/2026, evento "subagenteAninhado" no livro-razão), **instrua o próprio Gestor a acionar o Agente diretamente, na mesma chamada em que ele te reporta a necessidade** — não intermedeie você. Você só recebe o resumo final de volta do Gestor (o intermediário Gestor↔Agente fica fora da sua visão — trade-off já aceito em 03/08 pela velocidade ganha).
-
-**Só orquestre você mesmo** (Gestor julga e pede o contexto → você aciona o Agente → você devolve o artefato para o Gestor auditar, sem julgar o mérito) **se o Gestor específico ainda não tiver `Agent` no próprio frontmatter** — hoje isso só se aplica a Gestor novo, recém-criado, antes de receber a ferramenta.
-
-**Não presuma a resposta de memória de rodadas passadas — confira o frontmatter atual a cada vez**, porque é exatamente esse tipo de suposição desatualizada que já causou uma rodada inteira rotear pelo Wallenberg sem necessidade (10/08/2026, apontado por Claudemberg — "o que for atualizado numa sessão já tem que estar atualizado em todas"). Qualquer capacidade nova concedida a um Gestor/Agente que mude um passo desta rotina deve ser escrita aqui, na mesma sessão em que for confirmada — nunca deixar o SKILL.md desta tarefa desatualizado em relação ao que o organismo já sabe fazer.
-
----
-
-### PASSO 4: REGISTRO NO LIVRO-RAZÃO
-
-SE HOUVE EXECUÇÃO REAL em qualquer Gestor (resolveu algo, promoveu/registrou algo no Notion, um Agente produziu algo, ou um item "auto" de `pendencias.json` foi resolvido): registre no livro-razão (`01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md`) seguindo o modelo de entrada de lá — o que foi decidido, por quê, o que foi criado/alterado, backup (antes de alterar qualquer arquivo existente, copie para `01_CEO/Decisoes_Autonomas/_backups/{AAAA-MM-DD}/`), e como desfazer.
-
-Gere o PDF gêmeo de qualquer `.md` de conteúdo alterado (exceto arquivos de estado, que não geram PDF).
-
-Uma entrada por Gestor com execução real, não uma entrada genérica misturando todos.
-
-**Se algum item de `pendencias.json` foi resolvido nesta rodada:** edite o arquivo (com backup antes) mudando `status` para `"resolvida"` e `resolvido_em` para a data de hoje (AAAA-MM-DD) nesse item — não apague o item, é histórico.
-
----
-
-### PASSO 5: VARREDURA DE MELHORIA (Nova Expectativa desde 07/08/2026)
-
-SE UM GESTOR NÃO TINHA NADA PENDENTE (nem na fila de texto, nem em `pendencias.json`): **não fica parado, em nenhuma rodada.** Correção de Claudemberg (07/08/2026, ao vivo, endurecida no mesmo dia à noite): "os agentes precisam estar fazendo algo, pode ser uma melhoria mínima, mas precisam estar sempre melhorando algo e fazendo algo".
-
-Isto não é mais uma salvaguarda para quando o padrão se repete — é expectativa de **toda rodada, para todo Gestor, sem exceção**.
-
-Peça que ele faça uma varredura curta e concreta na própria área antes de reportar: base de conhecimento (Skill/POPs) com lacuna que ele já suspeita mas nunca formalizou, padrão de erro recorrente na própria equipe (ex.: histórico do Agente), POP desatualizado que não virou pendência por não estar "aberta", capacidade/ferramenta que falta e nunca foi formalizada como gap, ou treino/exame de nível de algum Agente da própria equipe que ainda não foi administrado.
-
-**Isto não é inventar trabalho de cliente** — Princípio 15 continua vedando simular caso real ou forçar nomeação de equipe sem gatilho; a varredura é de melhoria interna, não de tarefa fictícia.
-
-Se ele achar algo real e resolvível na própria alçada, executa e registra (novo item em `pendencias.json`, já `resolvida`, ou aberto se depender de outro).
-
-Se a varredura genuinamente não render nada de substância, ainda assim registre no arquivo de estado dele **o que foi de fato checado** (não "nada pendente" seco) — a obrigação é fazer a varredura de verdade toda vez, não é garantir um achado toda vez.
-
-Atualize a seção 1 do arquivo de estado dele com o resultado, mesmo quando não há execução real.
-
----
-
-### PASSO 6: ATUALIZAÇÃO DO PAINEL
-
-Se algo foi realmente registrado no livro-razão nesta rodada (em qualquer Gestor), atualize o Painel do Fundador (`01_CEO/Painel_Fundador/painel_fundador_sttk.html`) — backup antes de editar.
-
-Leia o livro-razão do mês (`01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md`). Para cada decisão/evento **de hoje** (ou desde a última atualização do painel) que ainda **não** esteja no topo do FEED, **PREPENDA um novo objeto** logo abaixo do marcador `FEED-AUTO` no arquivo (mais recente no topo), no formato exato: `{d:"DD/MM",et:"TIPO",t:"título curto",who:"quem fez",p:"uma frase do que aconteceu."}`. Tipos válidos de `et`: `decisao`, `promocao`, `agente`, `skill`, `sistema`, `correcao`, `marco`, `capacidade`.
-
-Atualize a data em `<span class="updated" id="updated">Atualizado DD/MM/AAAA</span>`, ponha a data de hoje.
-
-Se um card mudou claramente de estado ou nível (ex.: um Gestor foi promovido, um caso destravou), atualize só aquele card (chip/`data-state`/`pg`/`sum`). Na dúvida, não mexa no card — só no feed.
-
-Republique no MESMO link com a ferramenta Artifact: `file_path` = o caminho do HTML e `url` = `https://claude.ai/code/artifact/3c28ec0d-1817-4e7a-9a22-a4c16c570f27` (é o que mantém a URL).
-
-Registre no livro-razão o que atualizou no painel.
-
-Se **nada** aconteceu hoje que mude o painel, não republique nem registre — não invente evento (Princípio 15).
-
----
-
-### PASSO 7: [NOVO v2.0] LEARNING AGENT — AUTO-MELHORIA DA ROTINA
-
-Este é o passo revolucionário que transforma a rotina em **auto-evolucionária**.
-
-#### 7.a. Pesquisa de Vídeos + Instagram/YouTube
-
-**Busque conteúdo** sobre otimização de rotinas automáticas, gestão de autonomia delegada, **IA em arquitetura, Claude Code, produtividade em construção civil**:
-
-**Frentes de busca paralelas:**
-
-1. **Vídeos (YouTube + WebSearch)** — termos:
-```
-- "Autonomous agents workflow optimization"
-- "Multi-agent system queue management"
-- "How companies automate delegation workflows"
-- "Real examples: autonomous system running itself"
-- "What happens when agents manage themselves"
-- "Claude AI tutorial"
-- "Claude Code arquitetura"
-- "IA automação projeto construção"
-```
-
-2. **Instagram** — Perfis seguidos + busca ampla:
-   - Perfis: maxcarrau.ia, 99hud, seanaiux, o.engenheirolider, sobre.arq, goxyvi
-   - Termos: "Claude AI", "Claude Code", "IA arquitetura", "produtividade construção civil"
-   - Cada post/reel sobre ferramenta, otimização ou tendência é oportunidade de melhoria
-
-3. **YouTube** — Canais seguidos + busca ampla:
-   - Canais: SobreArquitetura, peaceofcode
-   - Termos: "Claude tutorial", "AI arquitetura", "otimização produtividade", "automação projeto"
-
-**Critério de coleta:** Localizar **3-5 fontes de alta qualidade** (views adequados, data recente, fonte confiável). Incluir vídeos longos (via /watch:watch para transcrição) e posts curtos (Instagram reels — ler comentários, não só caption).
-
-**Tradução obrigatória:** Qualquer conteúdo em inglês → português, para que o aprendizado fique acessível a todo Gestor.
-
-#### 7.b. Análise via /watch:watch
-
-Para cada vídeo encontrado:
-- Use `/watch:watch <URL>` para assistir e extrair transcrição
-- Identifique: **implementações concretas**, **padrões de sucesso**, **problemas resolvidos**
-- Documente a técnica e a fonte
-
-#### 7.c. Mapeamento para Esta Rotina
-
-Para cada técnica aprendida, pergunte:
-- "Qual passo desta rotina poderia ser otimizado?"
-- "Existe gap entre o que fazemos e o que o vídeo mostra?"
-- "Essa técnica tornaria a execução mais rápida/confiável/autônoma?"
-
-Exemplos de melhorias possíveis:
-- **Passo 1:** Descobrir Gestores de forma mais eficiente (caching, índice atualizado)
-- **Passo 2:** Ler `pendencias.json` com reconciliação paralela
-- **Passo 3:** Acionar múltiplos Gestores em paralelo (já está, mas talvez haja pattern melhor)
-- **Passo 5:** Varredura de melhoria com IA em vez de manual (metatask)
-
-#### 7.d. Implementação da Melhoria
-
-Se encontrou **oportunidade real**:
-
-1. **Documente a mudança:**
-```markdown
-## [NOVO v2.X] — 2026-08-14 Learning Agent
-
-**Técnica:** [nome]  
-**Vídeo Fonte:** [URL]  
-**Passo Afetado:** [qual passo]  
-**Mudança Específica:** [exatamente o que muda]  
-**Impacto:** [resultado esperado]  
-**Implementado:** SIM
-```
-
-2. **Faça o backup:**
-```
-Copie este arquivo para:
-01_CEO/Decisoes_Autonomas/_backups/2026-08-DD/wallenberg-drenagem-continua-v2_SKILL.md
-```
-
-3. **Modifique o SKILL.md:**
-- Atualize o passo específico
-- Adicione tag `[NOVO v2.X]` no início
-- Mantenha a intenção original (nunca mude semanticamente)
-
-4. **Registre no livro-razão:**
-```
-Entrada em 01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md:
-"Learning Agent: Implementou [técnica] no Passo Y (vídeo [fonte]). 
-Impacto esperado: [resultado]. PDF regenerado em backups."
-```
-
-5. **Regenere o PDF gêmeo** deste SKILL.md
-
-6. **Atualize o Painel** do Fundador (se for melhoria visível)
-
-#### 7.e. Validação
-
-Antes de confirmar a melhoria:
-- ✅ Syntax check (não quebrou markdown/estrutura)
-- ✅ Semântica preservada (intent original intacta)
-- ✅ Backup criado antes de editar
-- ✅ Livro-razão registrado
-- ✅ PDF regenerado
-
-**NÃO EXECUTA** ação real, só propõe melhoria. Execução real fica para a próxima rodada (quando Claudemberg pode revisar).
-
----
-
-### PASSO 8: IMPLANTAÇÃO DE FERRAMENTA — em conformidade com a Skill da Diária Skills
-
-**[DIVISÃO FINAL 25/08/2026 — definida por Claudemberg]**
-
-#### Papel desta rotina no Passo 8: IMPLANTAR, nunca buscar por conta própria
-
-A busca de ferramenta no GitHub e a criação da Skill de usabilidade são **100% da rotina Diária Skills** (seu Passo 8). Esta rotina (Drenagem) **lê essa Skill como contrato** e faz a implantação real — instalar, conectar ao Agente, testar tecnicamente. Nunca busca ferramenta nova por iniciativa própria nem diverge do que a Skill documentou; se achar a Skill incompleta ou desatualizada, sinaliza de volta para a Diária Skills corrigir, não implanta "no chute".
-
-**Por que isso importa (regra de alinhamento):** ter duas rotinas cada uma buscando/decidindo ferramenta por conta própria gera exatamente o tipo de desalinhamento que já aconteceu nesta sessão (referência a ferramentas diferentes, status divergente, retrabalho). Fonte única de verdade: a Skill em `01_CEO/Skills_Propostas/2026/{Mês}/`, campo `Status`.
-
-#### Procedimento
-
-1. **Liste as Skills com `Status: proposta`** em `01_CEO/Skills_Propostas/2026/{Mês}/` (mês corrente e, se relevante, mês anterior) — são candidatas a implantação.
-2. **Cruze com a necessidade real do Gestor/Agente** (via `_estado_{agente}.md` e `pendencias.json`) — só implanta o que resolve uma lacuna real e atual, não implanta por implantar.
-3. **Leia a Skill inteira antes de agir.** Se ela não tiver informação suficiente para instalar sem adivinhar (ex.: comando incompleto, requisito técnico vago), **não invente o que falta** — marque `Status: skill incompleta, devolvida para Diária Skills` e registre exatamente o que falta. Não prossegue com suposição própria.
-4. **Se a Skill for suficiente:** execute a implantação seguindo exatamente o que ela descreve (instalar, conectar como tool do Agente em `.claude/agents/{agente}.md` se for MCP, configurar ambiente).
-5. **Teste tecnicamente** (não é caso de cliente real — é validação de que a ferramenta funciona como a Skill descreveu). Registre resultado real: funcionou como documentado? Divergiu em algo?
-6. **Atualize o campo `Status` da Skill** para `implantada` (com data) ou `implantada com ressalva` (se algo divergiu, descrever o quê) — **nunca deixe dois lugares dizendo coisas diferentes sobre o mesmo achado.**
-7. **Se a implantação revelar que a ferramenta não serve** (bloqueio técnico real, não previsto pela Skill): registre `Status: descartada na implantação` com o motivo — não é falha da Diária Skills, é informação nova que só aparece na prática; sinalize para não ser buscada de novo.
-
-#### Regra de Prioridade
-
-**Cliente Real > Implantação de Ferramenta.** Se execução de Gestor com cliente real bloqueia esta rodada, a implantação fica para a próxima — nunca trava a rodada inteira.
-
-#### Regra de Exceção
-
-Se não houver nenhuma Skill com `Status: proposta` pendente de implantação nesta rodada, **não invente implantação para preencher** (Princípio 15). Registre "nenhuma Skill pendente de implantação" e siga para os demais Gestores.
-
-#### Output
-
-- ✅ Campo `Status` da Skill atualizado (fonte única de verdade — nunca duplicar em outro arquivo)
-- ✅ PDF da Skill regenerado, se o conteúdo dela mudou
-- ✅ Registro no livro-razão (o que foi implantado, testado como, resultado real, se divergiu do documentado e por quê)
-- ✅ Se a Skill precisar de correção, pendência aberta para a Diária Skills — nunca corrigida por esta rotina
-
----
-
-### PASSO 8.b: REGRA DE AUTOESCALONAMENTO (desde 07/08/2026 — CONTINUA VIGENTE)
-
-Após executar Passos 1-7 e Passo 8 (Implantação de Ferramenta), **antes de escrever resumo final**, confira o que cada Gestor entregou **nesta própria rodada**.
-
-Se um Gestor **não teve execução real NEM validação de prototipagem**, sinalize no resumo:
+## A. METADADOS (Configuração Básica)
 
 ```
-"SEM PROGRESSO NESTA RODADA: {Gestor} — verificar se varredura Passo 5 foi real ou só relatada"
-```
-
-Padrão de estagnação (várias rodadas consecutivas, ver `_estado_wallenberg.md`):
-
-```
-"PADRÃO DE ESTAGNAÇÃO: {Gestor} sem progresso há N rodadas — escalona para Claudemberg"
+Nome da Rotina: Wallenberg drenagem continua v2.3
+Status: Ativo
+Agendamento: Todos os dias 10:15 (seg-sex) — 1h após Rotina Diária Skills
+Duração esperada: 60-90 min (paralelo + validação)
+Versão: 2.3.0 (Divisão final 25/08/2026)
+Data criação: 27/07/2026 | Última atualização: 25/08/2026
+Arquivo de instrução: 01_CEO/wallenberg-drenagem-continua-v2_SKILL.md
 ```
 
 ---
 
-## FRONTEIRA — NUNCA TOCAR NESTA ROTINA
+## B. CAMPO: DESCRIÇÃO (Copiar integralmente)
 
-Nada disso é execução nesta rotina, em nenhum Gestor:
-- Documento de projeto de cliente (DULI, Anexos, memorial, prancha)
-- Gates 13 e 16
-- Protocolo ou petição em prefeitura
-- Eliminação de Gestor ou Agente
-- Na dúvida entre "organismo" e "cliente", trate como cliente e não execute — sinalize para a próxima Reunião Semanal
-
----
-
-## SAÍDA: RESUMO FINAL
-
-Depois de passar por todos os Gestores, escreva um resumo curto por Gestor (2-4 linhas cada): o que encontrou, o que resolveu sozinho (incluindo quantos itens "auto" de pendencias.json fechou), se acionou algum Agente da equipe e por quê, o que foi registrado no livro-razão.
-
-Se um Gestor não tinha nada, diga isso em uma linha e siga pro próximo — não preencha por preencher.
-
-Feche com uma linha total: quantos Gestores passaram pela rodada, quantos tiveram execução real, quantos itens de pendencias.json foram fechados, e **quantas melhorias o Learning Agent propôs** (novo em v2.0).
+```
+Wallenberg Drenagem Contínua v2.3 — Implementação + Gestores + Auto-Melhoria
+Agente CEO executa autonomamente 10:15 (após Skills diárias). Lê Skills 
+criadas pela Diária (Status: proposta) → Avalia tipo (habilidade vs ferramenta) 
+→ Cria Gestores faltantes (respeitando hierarquia) → Testa Gestores → Implanta 
+ferramenta (APENAS se Autonomous) → Varredura de melhoria (Gestor sem pendências) 
+→ Learning Agent aperfeiçoa rotina → Atualiza Painel. Relatório de execução ao fim. 
+Sem interferência humana.
+```
 
 ---
 
-## PRINCÍPIOS QUE GUIAM ESTA ROTINA
+## C. CAMPO: INSTRUÇÕES (Copiar integralmente)
 
-1. Foco no cliente (Princípio 1)
-2. Transparência (Princípio 2)
-3. Qualidade antes de velocidade (Princípio 3)
-4. Documentação (Princípio 4)
-5. Delegação clara (Princípio 5)
-6. Melhoria contínua (Princípio 6) — **amplificado por Learning Agent**
-7. Comunicação objetiva (Princípio 7)
-8. Rastreabilidade (Princípio 8)
-13. Autonomia com contas (Princípio 13)
-15. Redundância zero (Princípio 15)
-17. Aprendizado compartilhado (Princípio 17) — **novo foco com Learning Agent**
+```
+⚠️ WALLENBERG — DRENAGEM CONTÍNUA EXECUTE AUTONOMAMENTE (v2.3)
+═══════════════════════════════════════════════════════════════
+🎯 TODOS OS DIAS (Seg-Sexta, 10:15 — Após Rotina Diária Skills)
+⏱️  Tempo total: 60-90 min | Paralelo onde possível
+═══════════════════════════════════════════════════════════════
+
+🔹 FASE 1: PREPARAÇÃO & DESCOBERTA (5-10 min)
+
+✅ Passo 0: Leia arquivo de estado
+   └─ 01_CEO/_estado_wallenberg.md (Seção 1: Onde parei / em andamento)
+   └─ Contexto: Rodadas anteriores, bloqueios pendentes, progresso
+
+✅ Passo 1: Descubra Gestores existentes
+   └─ Rode Glob: D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\.claude\agents\*.md
+   └─ Cruze com: 01_CEO/Gestores/{Nome} (...)/ 
+   └─ Resultado: Lista dinâmica de Gestores (Kelsen, Lúcio, Cardozo, futuro Fechamento)
+
+✅ Passo 2: Leia pendências
+   └─ Arquivo: 01_CEO/Pendencias/pendencias.json
+   └─ Schema: owner, agente, crit, alc, res, acao, status, resolvido_em
+   └─ Separe por owner: Qual pendência é de qual Gestor?
+   └─ Reconcilie: Notion "Treinos e Testes" vs pendencias.json
+
+═══════════════════════════════════════════════════════════════
+🔹 FASE 2: LEITURA DE SKILLS (5 min)
+
+✅ Passo 3: Leia Skills criadas pela Diária (Status: "proposta")
+   └─ Pasta: 01_CEO/Skills_Propostas/2026/Agosto/ (mês corrente)
+   └─ Para cada Skill:
+      ├─ Tipo? (Habilidade/Inteligência OU Ferramenta/Tool)
+      ├─ Para qual Gestor?
+      ├─ Gestor existe? (responda: SIM / NÃO)
+      └─ Se existe, qual nível? (Formação / Aprendizado / Especialista / Autonomous)
+
+═══════════════════════════════════════════════════════════════
+🔹 FASE 3: CRIAÇÃO DE INFRAESTRUTURA — RESPEITANDO HIERARQUIA (10-15 min)
+
+✅ Passo 4: Para cada Skill SEM Gestor
+   
+   1. VERIFIQUE HIERARQUIA:
+      ├─ Legal (Kelsen) é pré-requisito?
+      │  └─ Se Skill é sobre legislação → Kelsen DEVE existir antes
+      │
+      ├─ Arquitetura (Lúcio) depende de Legal?
+      │  └─ Se Skill é sobre arquitetura → Lúcio precisa Kelsen existindo
+      │
+      ├─ Complementares (Cardozo) depende de Arquitetura?
+      │  └─ Se Skill é sobre complementares → Cardozo precisa Lúcio existindo
+      │
+      └─ Fechamento depende de Complementares?
+         └─ Se Skill é sobre fechamento → Fechamento precisa Cardozo existindo
+   
+   2. SE HIERARQUIA BLOQUEADA:
+      └─ Skill Status: "bloqueada por hierarquia — aguarda Gestor {pai}"
+      └─ Registre no livro-razão: "Skill X bloqueada, aguarda criação Gestor Y"
+      └─ Sinalize para Claudemberg (decisão necessária)
+   
+   3. SE HIERARQUIA OK — CRIE GESTOR:
+      ├─ Cria em nível: "Formação" (não Autonomous ainda)
+      ├─ Cria estrutura:
+      │  ├─ .claude/agents/{gestor}.md (com tools: Agent)
+      │  ├─ 01_CEO/Gestores/{Gestor} ({Tipo})/
+      │  ├─ 01_CEO/Gestores/{Gestor}/Agentes/ (pasta vazia, aguarda equipe)
+      │  └─ _estado_{gestor}.md (arquivo de estado)
+      ├─ Registra no livro-razão: Qual Gestor, por quê, hierarquia respeitada
+      └─ Skill Status: "Gestor criado em Formação, aguardando Autonomous"
+
+═══════════════════════════════════════════════════════════════
+🔹 FASE 4: ACIONAMENTO DE GESTORES (Paralelo, 20-30 min)
+
+✅ Passo 5: Para CADA Gestor encontrado (ação em paralelo):
+   
+   5.a. ACIONE o Gestor:
+        └─ Use Agent tool: subagent_type = "{gestor}" em minúsculas
+        
+   5.b. PEÇA que ele LEIA e RECONCILIE:
+        ├─ Próprio arquivo de estado (_estado_{gestor}.md)
+        ├─ Notion "Treinos e Testes" (filtro: Gestor = {nome}, Status = pendente)
+        ├─ Reconcilie fila antes de reportar:
+        │  ├─ Pendência já resolvida? → Remove
+        │  ├─ Pendência em sua alçada (auto)? → Executa + registra
+        │  └─ Só o que cruza fronteira → Sinaliza sem executar
+        
+   5.c. PASSE ITENS DE PENDENCIAS.JSON (seu owner):
+        ├─ Para alc:"auto" (autonomia delegada):
+        │  └─ Executa a acao descrita literalmente (não é sugestão)
+        │  └─ Se bloquear → Registra bloqueio, não fica esperando
+        │
+        └─ Para alc:"humano"/"tecnico"/"planejado":
+           └─ Apenas confirma se segue real (reconcilia contra arquivos)
+   
+   5.d. SE GESTOR NÃO TEM EQUIPE AINDA:
+        └─ Não force nada → Ele relata o que está pendente (ex: exame de nível)
+        └─ Não administre exame (é julgamento seu, deliberado, não lote)
+   
+   5.e. SE GESTOR PRECISA ACIONAR AGENTE DA PRÓPRIA EQUIPE:
+        └─ Confira .claude/agents/{gestor}.md → Agent na lista tools?
+        └─ SIM: Peça ao Gestor acionar Agente direto (na mesma chamada)
+        └─ NÃO (Gestor novo): Você aciona e devolve artefato para Gestor auditar
+        └─ Você recebe resumo final (intermediário Gestor↔Agente fica oculto)
+   
+   RESULTADO: Relatório de cada Gestor (execuções reais, bloqueios, próximas ações)
+
+═══════════════════════════════════════════════════════════════
+🔹 FASE 5: IMPLANTAÇÃO DE FERRAMENTA (10-20 min)
+
+✅ Passo 6: Para cada Skill com Status "proposta" (tipo Ferramenta):
+   
+   1. VERIFICA NÍVEL DO GESTOR:
+      
+      ├─ Autonomous? (nível máximo)
+      │  └─ SIM → Prossiga
+      │  └─ NÃO → Pule para "Aguardando Autonomous" abaixo
+      
+   2. SIM — AUTONOMOUS, IMPLANTE:
+      ├─ Leia Skill inteira (verifique se suficiente para instalar)
+      ├─ Se incompleta → NÃO invente o que falta
+      │  └─ Marque: Status = "skill incompleta, devolvida para Diária Skills"
+      │  └─ Registre exatamente o que falta
+      │  └─ Não prossegue
+      │
+      ├─ Se suficiente → Execute implantação:
+      │  ├─ Instale exatamente conforme Skill descreve (npm, conexão MCP, etc)
+      │  ├─ Conecte ao agente (.claude/agents/{agente}.md se MCP)
+      │  ├─ Teste tecnicamente (não é caso cliente, é validação técnica)
+      │  └─ Registre resultado real: Funcionou como documentado? Divergiu?
+      │
+      └─ Atualize Skill Status:
+         ├─ "implantada" (funcionou perfeitamente)
+         └─ "implantada com ressalva" (divergiu em algo, describe)
+   
+   3. NÃO — FORMAÇÃO/APRENDIZADO, AGUARDE:
+      └─ Skill Status: "pronta, aguardando Gestor atingir Autonomous"
+      └─ Ferramenta fica pronta MAS NÃO APLICA à equipe ainda
+      └─ Próxima rodada (quando Gestor for Autonomous) → Implanta
+
+═══════════════════════════════════════════════════════════════
+🔹 FASE 6: VARREDURA DE MELHORIA (5-15 min — Se Gestor sem pendências)
+
+✅ Passo 7: Se um Gestor NÃO tem pendência (lista limpa):
+   
+   └─ NUNCA fica parado (correção Claudemberg 07/08)
+   └─ Peça varredura concreta na própria área:
+      ├─ Skill/POP com lacuna que já suspeita
+      ├─ Padrão de erro recorrente na equipe (histórico)
+      ├─ POP desatualizado (não está "aberta", mas está desatualizado)
+      ├─ Capacidade/ferramenta que falta (nunca foi formalizada como gap)
+      ├─ Treino/exame de nível de Agente não administrado
+      
+   └─ Se encontrar algo real E resolvível na alçada:
+      ├─ Executa + Registra (novo item pendencias.json, já "resolvida")
+      
+   └─ Se varredura não rende nada:
+      ├─ AINDA ASSIM registre no arquivo de estado dele: O que foi checado
+      └─ (Obrigação é fazer varredura de verdade, não garantir achado)
+
+═══════════════════════════════════════════════════════════════
+🔹 FASE 7: LEARNING AGENT & RASTREABILIDADE (15-25 min)
+
+✅ Passo 8a: LEARNING AGENT — Auto-melhoria da rotina
+   
+   1. PESQUISE VÍDEOS:
+      ├─ YouTube: "Autonomous agents workflow", "Multi-agent systems", "Claude AI"
+      ├─ Instagram: maxcarrau.ia, 99hud, seanaiux, o.engenheirolider, sobre.arq, goxyvi
+      ├─ WebSearch: "automação delegação", "otimização rotinas", "IA arquitetura"
+      └─ Localize: 3-5 fontes alta qualidade (views, data recente, confiável)
+   
+   2. ANALISE VIA /watch:watch:
+      └─ Vídeos longos: Transcreva e extraia implementações concretas
+      └─ Instagram reels: Leia comentários, não só caption
+      └─ Identifique: Padrões de sucesso, problemas resolvidos
+   
+   3. MAPEIE PARA ESTA ROTINA:
+      └─ "Qual passo desta rotina poderia otimizar?"
+      └─ "Existe gap entre o que fazemos e o vídeo mostra?"
+      └─ Exemplos possíveis:
+         ├─ Passo 1: Descobrir Gestores mais eficientemente (caching)
+         ├─ Passo 2: Reconciliação paralela de Notion vs JSON
+         ├─ Passo 3: Acionar Gestores ainda mais rápido
+         └─ Passo 7: Varredura de melhoria com IA (metatask)
+   
+   4. SE ENCONTRAR OPORTUNIDADE REAL:
+      ├─ Documente mudança: [NOVO v2.X] — data, técnica, vídeo fonte, passo afetado
+      ├─ Faça backup: 01_CEO/Decisoes_Autonomas/_backups/AAAA-MM-DD/wallenberg-drenagem-continua-v2_SKILL.md
+      ├─ Modifique SKILL.md: Atualize passo específico (mantenha intenção original)
+      ├─ Registre no livro-razão: "Learning Agent: Implementou [técnica] no Passo Y"
+      ├─ Regenere PDF gêmeo
+      └─ (NÃO EXECUTA — só propõe para Claudemberg revisar)
+
+✅ Passo 8b: REGISTRO NO LIVRO-RAZÃO
+   
+   └─ SE houve execução real (Gestor resolveu algo, Agente produziu, item "auto" fechou):
+      ├─ Registre em: 01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md
+      ├─ Modelo: O que foi decidido, por quê, o que foi criado/alterado, backup, como desfazer
+      ├─ Uma entrada por Gestor com execução real (não genérica)
+      └─ Gere PDF gêmeo (exceto arquivos de estado)
+   
+   └─ SE item de pendencias.json foi resolvido:
+      ├─ Edite arquivo: Status → "resolvida", resolvido_em → AAAA-MM-DD
+      └─ Não apague o item (é histórico)
+
+✅ Passo 8c: ATUALIZAÇÃO DO PAINEL FUNDADOR
+   
+   └─ SE houve execução real nesta rodada:
+      ├─ Leia livro-razão do mês (01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md)
+      ├─ Para cada decisão/evento de HOJE ainda não no FEED:
+      │  └─ PREPENDE novo objeto abaixo de FEED-AUTO (mais recente no topo)
+      │  └─ Formato: {d:"DD/MM",et:"TIPO",t:"título",who:"quem",p:"frase"}
+      │  └─ Tipos válidos: decisao, promocao, agente, skill, sistema, correcao, marco, capacidade
+      ├─ Atualize data: <span class="updated">DD/MM/AAAA</span>
+      ├─ Se card mudou estado (ex: Gestor promovido) → Atualiza só aquele card
+      ├─ Republique com Artifact (mesma URL)
+      └─ Registre no livro-razão: O que atualizou no painel
+   
+   └─ SE nada aconteceu hoje: Não republique nem registre (Princípio 15)
+
+═══════════════════════════════════════════════════════════════
+🔹 FASE 8: VIGILÂNCIA & RESUMO FINAL (5-10 min)
+
+✅ Passo 9: AUTOESCALONAMENTO — Detecta padrões de estagnação
+   
+   └─ Após Passos 1-8, confira cada Gestor:
+      ├─ SEM execução real NEM varredura real nesta rodada?
+      │  └─ Sinalize: "SEM PROGRESSO ESTA RODADA: {Gestor}"
+      │
+      └─ Padrão de estagnação (N rodadas consecutivas)?
+         └─ Sinalize: "PADRÃO ESTAGNAÇÃO: {Gestor} há N rodadas — escalona para Claudemberg"
+         └─ Necessita revisão humana (bloqueio real ou desalinhamento?)
+
+✅ Passo 10: RESUMO FINAL
+   
+   └─ Para CADA Gestor processado (2-4 linhas):
+      ├─ O que encontrou
+      ├─ O que resolveu sozinho (quantos itens "auto" de pendencias.json fechou)
+      ├─ Se acionou Agente da equipe (por quê)
+      ├─ O que registrou no livro-razão
+      
+   └─ Se Gestor não tinha nada: Uma linha, siga para próximo
+   
+   └─ Fechamento com métricas totais:
+      ├─ Quantos Gestores passaram pela rodada
+      ├─ Quantos tiveram execução real
+      ├─ Quantos itens de pendencias.json foram fechados
+      ├─ Quantas melhorias Learning Agent propôs
+      ├─ Quanto tempo (início-fim)
+
+═══════════════════════════════════════════════════════════════
+🚨 FRONTEIRA CRÍTICA — NUNCA EXECUTE:
+❌ Documento de cliente real (DULI, Anexos, memorial, prancha)
+❌ Gates 13, 16 (validação de projeto técnico com Maurício)
+❌ Protocolo em prefeitura
+❌ Eliminação de Gestor ou Agente
+❌ Dúvida entre "organismo" vs "cliente"? → Trata como cliente, não executa, sinaliza
+═══════════════════════════════════════════════════════════════
+
+📁 Pasta Principal: D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\01_CEO\
+
+📄 ARQUIVOS QUE VOCÊ CONSULTA/EDITA:
+   • 01_CEO/_estado_wallenberg.md (Seção 1: estado)
+   • 01_CEO/Pendencias/pendencias.json (fila estruturada)
+   • 01_CEO/Skills_Propostas/2026/{Mês}/*.md (Skills da Diária)
+   • 01_CEO/Gestores/{Gestor}/Agentes/ (estrutura de equipe)
+   • 01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md (livro-razão)
+   • 01_CEO/Painel_Fundador/painel_fundador_sttk.html (Dashboard)
+   • Notion: "Treinos e Testes" (data source: collection://7b0728a8-fd57-419c-8a51-d5fe3794d165)
+
+🚀 PRINCÍPIOS QUE GUIAM:
+   1, 2, 3, 4, 5, 6, 7, 8 (rastreabilidade)
+   13 (autonomia com contas) — Executa, mas documenta tudo
+   15 (redundância zero) — Não inventa trabalho fictício
+   17 (aprendizado compartilhado) — Learning Agent
+
+CLIENTE > FERRAMENTA: Se execução de Gestor com cliente bloqueia, implantação fica para próxima.
+
+Execute conforme descrito. Relatório ao fim.
+```
+
+---
+
+## D. DOCUMENTOS DE SUPORTE (Que criar ou referenciar)
+
+```
+Arquivo de Estado
+
+📄 _estado_wallenberg.md
+   ├─ Seção 1: Onde parei / em andamento
+   │  └─ Última rodada: Data, Gestores processados, bloqueios
+   │  └─ Padrões observados: Estagnação em algum Gestor?
+   │  └─ Próximo foco: O que fazer na próxima rodada?
+   │
+   └─ Atualizado ao fim de cada rodada de Drenagem
+
+📄 _estado_{gestor}.md (para cada Gestor)
+   ├─ Seção 1: Onde parei / em andamento
+   ├─ Nível atual: Formação / Aprendizado / Especialista / Autonomous
+   ├─ Pendências em aberto: (linked para pendencias.json)
+   └─ Atualizado ao fim de cada acionamento
+
+Bases Externas
+
+📄 01_CEO/Pendencias/pendencias.json
+   ├─ Schema único de fila: owner, agente, crit, alc, res, acao, status, resolvido_em
+   ├─ Seu arquivo-fonte (não duplicar em outro lugar)
+   └─ Editar para marcar itens como "resolvida"
+
+📄 Notion: "Treinos e Testes"
+   ├─ Data source: collection://7b0728a8-fd57-419c-8a51-d5fe3794d165
+   ├─ Filtros: Gestor = {nome}, Status = pendente
+   └─ Reconciliar vs pendencias.json
+
+Livro-Razão
+
+📄 01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md
+   ├─ Entrada por Gestor com execução real
+   ├─ Cada entrada: O que decidiu, por quê, backup, como desfazer
+   └─ Fonte única de verdade para updates do Painel
+
+Painel
+
+📄 01_CEO/Painel_Fundador/painel_fundador_sttk.html
+   ├─ FEED-AUTO: Prependa eventos de hoje
+   ├─ Cards: Atualize se mudou estado (Gestor promovido, etc)
+   ├─ Data atualizado: Sempre hoje (DD/MM/AAAA)
+   └─ Republicar com Artifact (mesma URL)
+
+Manuais de Referência (Markdown)
+
+📄 wallenberg-drenagem-continua-v2_3_REDEFINIDO.md
+   ├─ Detalhamento completo de Passos 1-10
+   ├─ Explicação de cada Fase
+   ├─ Hierarquia de Gestores
+   ├─ Exemplos de execução (item "auto" resolvido, como agir)
+   └─ Tamanho: Compacto (ref. consulta)
+
+📄 rotina_fechamento_template.md
+   ├─ Template que Wallenberg lê ANTES de cada rodada
+   ├─ O que foi entregue na rodada anterior
+   ├─ O que ficou pendente
+   ├─ Retrabalho a evitar
+   └─ Para quem? Wallenberg (contexto antes de começar)
+```
+
+---
+
+## E. PASSOS DETALHADOS (Fases 1-8)
+
+```
+FASE 1: PREPARAÇÃO & DESCOBERTA
+
+Passo 0: Leia Arquivo de Estado
+Arquivo: 01_CEO/_estado_wallenberg.md (Seção 1)
+Responda:
+- Onde parei na rodada anterior?
+- Que Gestores ficaram bloqueados?
+- Que padrões observei?
+- O que priorizar hoje?
+Resultado: Contexto para não reinventar a roda
+
+Passo 1: Descubra Gestores Dinamicamente
+NÃO use lista fixa (Kelsen, Lúcio)
+Execute:
+1. Glob: D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\.claude\agents\*.md
+2. Cruze com: 01_CEO/Gestores/{Nome} (...)/
+3. Verdadeiro Gestor = arquivo .claude/agents/{nome}.md 
+                      + pasta 01_CEO/Gestores/{Nome} (...)/
+Resultado: Lista dinâmica (cresce quando Cardozo/Fechamento forem criados)
+
+Passo 2: Leia e Reconcilie Pendências
+Leia: 01_CEO/Pendencias/pendencias.json
+Schema: owner, agente, crit, alc, res, acao, status, resolvido_em
+Ações:
+- Separe por owner (qual pendência é de qual Gestor)
+- Filtre: status = "aberta"
+- Cruze com Notion "Treinos e Testes"
+Resultado: Fila reconciliada, pronta para Passo 5
+
+FASE 2: LEITURA DE SKILLS
+
+Passo 3: Avalie Skills Criadas
+Pasta: 01_CEO/Skills_Propostas/2026/Agosto/
+Para cada Skill com Status = "proposta":
+1. TIPO:
+   ├─ Habilidade/Inteligência (conhecimento, não tool)
+   └─ Ferramenta/Tool (instalar, conectar)
+2. GESTOR DESTINO:
+   └─ Para qual Gestor? (Kelsen/Lúcio/Cardozo/Fechamento)
+3. EXISTE:
+   ├─ SIM → Qual nível? (Formação/Aprendizado/Especialista/Autonomous)
+   └─ NÃO → Vai ser criado no Passo 4
+Resultado: Checklista de Skills prontas para próximos passos
+
+FASE 3: CRIAÇÃO DE INFRAESTRUTURA
+
+Passo 4: Crie Gestores Respeitando Hierarquia
+Para cada Skill SEM Gestor:
+HIERARQUIA (respeite a ordem):
+1. Legal (Kelsen) — Sem dependências, cria sempre
+2. Arquitetura (Lúcio) — Depende de Kelsen
+3. Complementares (Cardozo) — Depende de Lúcio
+4. Fechamento — Depende de Cardozo
+FLUXO:
+├─ Skill é sobre legislação?
+│  ├─ SIM: Kelsen deve existir → Cria se não existir
+│  └─ NÃO: Siga
+│
+├─ Skill é sobre arquitetura?
+│  ├─ SIM: Lúcio deve existir AND Kelsen deve existir
+│  │       Se Kelsen não existe → BLOQUEIA (Skill "bloqueada por hierarquia")
+│  │       Se Lúcio não existe → Cria Lúcio (com Kelsen como pré-req)
+│  └─ NÃO: Siga
+│
+├─ Skill é sobre complementares?
+│  ├─ SIM: Cardozo deve existir AND Lúcio deve existir AND Kelsen deve existir
+│  │       Se algum falta → BLOQUEIA
+│  │       Se todos existem → Cria Cardozo se não existir
+│  └─ NÃO: Siga
+│
+└─ Skill é sobre fechamento?
+   ├─ SIM: Fechamento deve existir AND Cardozo/Lúcio/Kelsen devem existir
+   │       Se algum falta → BLOQUEIA
+   │       Se todos existem → Cria Fechamento se não existir
+   └─ NÃO: Nenhum Gestor aplicável
+QUANDO CRIA GESTOR:
+1. Nível: "Formação" (não Autonomous ainda)
+2. Estrutura:
+   ├─ .claude/agents/{gestor}.md (tools: Agent)
+   ├─ 01_CEO/Gestores/{Gestor} ({Tipo})/
+   ├─ 01_CEO/Gestores/{Gestor}/Agentes/ (vazia, aguarda equipe)
+   └─ _estado_{gestor}.md (arquivo de estado)
+3. Livro-razão: Registre criação + hierarquia respeitada
+4. Skill Status: "Gestor criado em Formação, aguardando Autonomous"
+Resultado: Gestores criados em ordem, hierarquia respeitada
+
+FASE 4: ACIONAMENTO DE GESTORES (Paralelo)
+
+Passo 5: Acione Gestores e Processe Pendências
+Para CADA Gestor (em paralelo, não sequencial):
+5.a. ACIONE:
+     └─ Agent tool: subagent_type = "{gestor}" (minúsculas)
+5.b. PEÇA QUE LEIA E RECONCILIE:
+     ├─ Próprio arquivo de estado (_estado_{gestor}.md)
+     ├─ Notion "Treinos e Testes" (filtro: seu nome, Status=pendente)
+     ├─ Reconcilie antes de reportar:
+     │  ├─ Pendência já resolvida? Remove
+     │  ├─ Pendência em sua alçada (auto)? Executa + registra
+     │  └─ Cruza fronteira? Sinaliza sem executar
+
+5.c. PASSE ITENS DE PENDENCIAS.JSON (seu owner):
+     ├─ alc:"auto" (autonomia delegada):
+     │  └─ EXECUTA literalmente (não é sugestão)
+     │  └─ Se bloquear → Registra bloqueio, não fica esperando
+     │
+     └─ alc:"humano"/"tecnico"/"planejado":
+        └─ Apenas CONFIRMA se segue real (reconcilia vs arquivos)
+5.d. SE SEM EQUIPE:
+     └─ Não force → Apenas relata pendências (ex: exame de nível aguardando)
+5.e. SE PRECISA ACIONAR AGENTE:
+     ├─ Verifica: Agent em .claude/agents/{gestor}.md?
+     ├─ SIM: Gestor aciona Agente direto (você recebe resumo)
+     └─ NÃO (Gestor novo): Você aciona, devolve artefato para Gestor auditar
+RESULTADO: Relatório de cada Gestor
+├─ Execuções reais: O que fez
+├─ Itens "auto" fechados: Quantos
+├─ Bloqueios: O que não deu
+└─ Próximas ações
+
+FASE 5: IMPLANTAÇÃO DE FERRAMENTA
+
+Passo 6: Implante Skills Tipo "Ferramenta" (Se Autonomous)
+Para cada Skill Status="proposta" do tipo Ferramenta/Tool:
+1. VERIFICA NÍVEL:
+   ├─ Gestor destino = Autonomous?
+   │  ├─ SIM → Prossiga
+   │  └─ NÃO → Pule para "Aguardando" abaixo
+2. SIM — AUTONOMOUS, IMPLANTE:
+   
+   ├─ Leia Skill inteira:
+   │  └─ Suficiente para instalar? (comando, requisitos, passos claros)
+   │
+   ├─ Se incompleta:
+   │  ├─ NÃO invente o que falta
+   │  ├─ Marque: Status = "skill incompleta, devolvida"
+   │  └─ Registre: O que falta exatamente
+   │
+   ├─ Se suficiente, execute:
+   │  ├─ Instale exatamente conforme descrito (npm, pip, MCP, etc)
+   │  ├─ Conecte ao agente (.claude/agents/{agente}.md se MCP)
+   │  ├─ Teste tecnicamente (não é caso cliente, é validação)
+   │  ├─ Registre resultado real:
+   │  │  ├─ Funcionou como documentado? SIM
+   │  │  ├─ Divergiu em algo? QUAL?
+   │  │  └─ Bloqueios técnicos? QUAL?
+   │  │
+   │  └─ Atualize Skill Status:
+   │     ├─ "implantada" (tudo OK)
+   │     └─ "implantada com ressalva" (divergiu, descrever)
+3. NÃO — FORMAÇÃO/APRENDIZADO, AGUARDE:
+   └─ Skill Status: "pronta, aguardando Autonomous"
+   └─ Ferramenta fica pronta MAS não conecta à equipe ainda
+   └─ Próxima rodada (quando Autonomous) → Implanta
+REGRA DE PRIORIDADE:
+├─ Cliente Real > Ferramenta (se bloqueia, adia para próxima rodada)
+└─ Se nenhuma Skill pendente: Registre "nenhuma pendente", não invente
+Resultado: Ferramenta implantada ou em espera (status claro)
+
+FASE 6: VARREDURA DE MELHORIA
+
+Passo 7: Gestor Sem Pendências Faz Varredura
+Se um Gestor NÃO tem pendência (lista limpa):
+NÃO fica parado (correção Claudemberg 07/08/2026)
+Peça varredura concreta na própria área:
+├─ Skill/POP com lacuna conhecida (nunca formalizou)
+├─ Padrão de erro recorrente na equipe (histórico)
+├─ POP desatualizado (não é "aberta", mas está velho)
+├─ Capacidade/ferramenta que falta (gap nunca formalizado)
+└─ Treino/exame de nível de Agente (ainda não administrado)
+Se encontra algo real E resolvível em sua alçada:
+├─ Executa + Registra em pendencias.json
+└─ Status: Já "resolvida", mas registra execução
+Se varredura não rende nada:
+├─ REGISTRE NO ARQUIVO DE ESTADO: "Varredura checou X, Y, Z — nada encontrado"
+└─ (Obrigação é fazer varredura DE VERDADE, não garantir resultado)
+Resultado: Melhoria interna contínua, Gestor nunca ocioso
+
+FASE 7: LEARNING AGENT & RASTREABILIDADE
+
+Passo 8a: Learning Agent (Pesquisa + Propõe)
+Pesquise vídeos sobre:
+├─ Autonomous agents optimization
+├─ Multi-agent queue management
+├─ Delegação automática
+├─ Claude AI tutorials
+├─ IA em arquitetura
+└─ Produtividade em construção
+Fontes paralelas:
+├─ YouTube: "Autonomous agents", "Claude AI", vídeos longos (transcrever)
+├─ Instagram: maxcarrau.ia, 99hud, seanaiux, o.engenheirolider, goxyvi
+├─ WebSearch: Implementações reais, case studies
+Localize: 3-5 fontes de alta qualidade (views adequados, data recente)
+Analise:
+├─ Implementações concretas: Como fazem?
+├─ Padrões de sucesso: O que funcionou?
+└─ Problemas resolvidos: Como resolveram?
+Mapeie para esta rotina:
+├─ "Qual passo desta rotina pode otimizar?"
+├─ "Gap entre o que fazemos e o vídeo mostra?"
+├─ Exemplos possíveis:
+│  ├─ Passo 1: Descobrir Gestores com caching
+│  ├─ Passo 2: Reconciliação paralela (mais rápido)
+│  ├─ Passo 5: Acionar múltiplos Gestores simultaneamente (já fazemos)
+│  └─ Passo 7: Varredura de melhoria com IA (metatask)
+SE encontrar oportunidade real:
+├─ Documente: [NOVO v2.X] — data, técnica, vídeo fonte, passo afetado
+├─ Backup: Antes de editar
+├─ Modifique: SKILL.md (atualize passo, mantenha intenção)
+├─ Registre: No livro-razão
+├─ Regenere: PDF gêmeo
+└─ (NÃO EXECUTA — só propõe para Claudemberg revisar)
+Resultado: Melhoria contínua proposta (para revisão humana)
+
+Passo 8b: Registro no Livro-Razão
+Arquivo: 01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md
+SE houve execução real nesta rodada (Passo 5, 6, 7):
+├─ Uma entrada por Gestor com execução real
+├─ Modelo:
+│  ├─ Data
+│  ├─ Gestor
+│  ├─ O que decidiu
+│  ├─ Por quê
+│  ├─ O que foi criado/alterado
+│  ├─ Backup feito
+│  └─ Como desfazer
+│
+└─ Gere PDF gêmeo do arquivo .md (exceto arquivos de estado)
+SE item de pendencias.json foi resolvido:
+├─ Edite arquivo: Status → "resolvida"
+├─ Campo: resolvido_em → AAAA-MM-DD (hoje)
+└─ Não apague (é histórico)
+Resultado: Rastreabilidade completa
+
+Passo 8c: Atualização do Painel Fundador
+Arquivo: 01_CEO/Painel_Fundador/painel_fundador_sttk.html
+SE houve execução real nesta rodada:
+1. Leia livro-razão do mês (decisões de hoje)
+2. Para cada decisão ainda não no FEED:
+   ├─ Prependa objeto ABAIXO DE FEED-AUTO (mais recente no topo)
+   ├─ Formato:
+   │  {d:"DD/MM",
+   │   et:"TIPO",
+   │   t:"título curto",
+   │   who:"quem fez",
+   │   p:"uma frase do que aconteceu"}
+   │
+   └─ Tipos válidos: decisao, promocao, agente, skill, sistema, correcao, marco, capacidade
+3. Atualize data:
+   └─ <span class="updated">DD/MM/AAAA</span>
+4. Se card mudou estado:
+   └─ Atualize aquele card (chip, data-state, pg, sum)
+   └─ Não mexa em outros cards
+5. Republique:
+   └─ Artifact: file_path = arquivo HTML
+   └─ url = (URL existente — MESMO LINK)
+6. Registre no livro-razão:
+   └─ "Atualizou Painel: [o quê]"
+SE nada aconteceu hoje:
+└─ Não republique nem registre (Princípio 15)
+Resultado: Painel sincronizado, feed atualizado
+
+FASE 8: VIGILÂNCIA & RESUMO FINAL
+
+Passo 9: Autoescalonamento (Detecta Estagnação)
+Após Passos 1-8, confira cada Gestor:
+SE SEM execução real NEM varredura real nesta rodada:
+└─ Sinalize: "SEM PROGRESSO ESTA RODADA: {Gestor}"
+└─ Registre no estado dele
+SE padrão de estagnação (N rodadas consecutivas):
+├─ Confira: _estado_wallenberg.md (histórico de rodadas)
+├─ Se padrão confirmado → Sinalize forte:
+│  "PADRÃO ESTAGNAÇÃO: {Gestor} há N rodadas consecutivas"
+└─ Escalona para Claudemberg (necessita revisão humana)
+Resultado: Bloqueios reais surfaciam, escalona quando necessário
+
+Passo 10: Resumo Final
+Para CADA Gestor processado, escreva 2-4 linhas:
+├─ O que encontrou
+├─ O que resolveu sozinho (quantos itens "auto" de pendencias.json)
+├─ Se acionou Agente da equipe (por quê)
+└─ O que registrou no livro-razão
+SE Gestor não tinha nada:
+└─ Uma linha, siga para próximo (não preencha por preencher)
+FECHAMENTO — Métricas totais:
+├─ Quantos Gestores passaram (ex: 3 Gestores)
+├─ Quantos tiveram execução real (ex: 2 com execução)
+├─ Quantos itens pendencias.json foram fechados (ex: 5 itens)
+├─ Quantas melhorias Learning Agent propôs (ex: 2 técnicas)
+├─ Tempo total (08:00–11:30 = 210 min)
+└─ Status geral: SUCESSO / COM RESSALVAS / BLOQUEADO
+Resultado: Visibilidade completa, pronto para Claudemberg validar
+```
+
+---
+
+## F. AUTOMAÇÃO
+
+```
+✅ Agendador: 10:15 toda manhã (seg-sex)
+   └─ Dispara Drenagem Contínua (após Rotina Diária Skills)
+   └─ 1h de intervalo (Diária acaba ~09:15, Drenagem começa 10:15)
+   └─ Sem interferência humana
+
+✅ CronJob PDF: 20:00 toda noite
+   └─ Gera PDFs: SKILL.md (se Learning Agent propôs melhoria)
+   └─ Gera PDFs: Livro-razão (backup)
+   └─ Sem ação necessária
+```
+
+**Implementado de fato (28/08/2026):** tarefa `wallenberg-drenagem-continua` registrada em `mcp scheduled-tasks`, cron `15 10 * * 1-5`, `enabled: true`. Esta é a peça que faltava na versão anterior (v2.3 original) — o arquivo existia, mas nunca virou tarefa ativa.
+
+---
+
+## G. PERMISSÕES NECESSÁRIAS
+
+```
+✅ Agent — Acionar Gestores (Kelsen, Lúcio, Cardozo, Fechamento)
+✅ Read/Write — Editar pendencias.json, arquivo de estado, livro-razão
+✅ Glob — Descobrir Gestores dinamicamente (.claude/agents/*.md)
+✅ Notion API — Consultar "Treinos e Testes" (collection://...)
+✅ Artifact — Republice Painel Fundador
+```
+
+---
+
+## H. INTEGRAÇÃO COM ROTINA DIÁRIA SKILLS
+
+```
+FLUXO DIÁRIO:
+
+08:00 ────→ Wallenberg Rotina Diária Skills
+            ├─ Cria 1-3 Skills (Status: "proposta")
+            └─ Fim: ~09:15
+
+[Intervalo 1 hora]
+
+10:15 ────→ Wallenberg Drenagem Continua
+            ├─ Lê Skills criadas
+            ├─ Implementa (se Autonomous)
+            ├─ Cria Gestores faltantes
+            ├─ Testa + Valida
+            └─ Fim: ~11:30
+
+[Intervalo]
+
+20:00 ────→ CronJob PDF (ambas as rotinas)
+
+PRÓXIMO DIA: Repete
+```
+
+---
+
+## I. SAÍDA ESPERADA (Relatório)
+
+```
+Formato ao fim da execução:
+
+✅ EXECUÇÃO COMPLETA — Wallenberg Drenagem Continua v2.3
+⏱️  Início: 10:15 | Fim: 11:30 | Duração: 75 min
+
+📊 RESULTADO POR GESTOR:
+
+🔹 Kelsen (Legal):
+   • Pendências lidas: 2 abertas, 1 resolvida
+   • Itens "auto" fechados: 1 (Skill "LICIN 2.0 Atualizado" aprovada)
+   • Acionou: Hely (Agente de Projeto Legal)
+   • Registrado em livro-razão: Resolução de legislação CAU-RJ
+
+🔹 Lúcio (Arquitetura):
+   • Sem pendências abertas
+   • Varredura realizada: Verificou POP desatualizado
+   • Encontrou melhoria: Atualizou template de Estudo Preliminar
+   • Registrado em livro-razão: Melhoria interna (POP v2.0)
+
+🔹 Cardozo (Complementares):
+   • Nível: Formação (aguardando Autonomous)
+   • Skill "MCP Render" pronta, mas aguardando nível
+   • Status: "pronta, aguardando Autonomous"
+
+─────────────────────────────────────
+📊 MÉTRICAS TOTAIS:
+   • Gestores processados: 3
+   • Com execução real: 2
+   • Itens pendencias.json fechados: 1
+   • Melhorias Learning Agent propôs: 2 (caching em Passo 1, reconciliação paralela)
+   • Skills implantadas (Autonomous): 0 (nenhum Gestor em Autonomous ainda)
+
+🚀 Próxima Execução: Amanhã 10:15
+   (Será atualizado conforme Gestores atingem Autonomous)
+
+✅ Status Geral: SUCESSO
+```
 
 ---
 
@@ -350,16 +785,14 @@ Feche com uma linha total: quantos Gestores passaram pela rodada, quantos tivera
 
 | Versão | Data | Mudança |
 |--------|------|---------|
-| 1.0 | 27/07/2026 | Versão original |
-| 1.1 | 28/07/2026 | Adição de pendencias.json |
-| 1.2 | 07/08/2026 | Expectativa de varredura contínua |
-| 2.0 | 13/08/2026 | Integração de Learning Agent |
-| 2.1 | 21/08/2026 | Passo 8 — Validação + Melhoria de Prototipagem via Cliente Real (versão errada — ciclo fictício com ferramentas não verificadas, substituída) |
-| 2.2 | 25/08/2026 (tarde) | Passo 8 redefinido como busca de ferramenta GitHub + Skill de usabilidade (versão intermediária — busca não pertence aqui, substituída) |
-| 2.3 | 25/08/2026 (noite) | **[DIVISÃO FINAL]** Passo 8 = Implantação de ferramenta, em conformidade com a Skill que a Diária Skills cria. Esta rotina nunca busca ferramenta por conta própria — lê a Skill com `Status: proposta`, implanta exatamente o que ela descreve, testa tecnicamente, e atualiza o campo `Status` (fonte única de verdade). Se a Skill estiver incompleta, devolve para a Diária Skills corrigir — não improvisa. Passo 8.b (autoescalonamento) mantido sem mudança. |
+| 1.0–2.2 | 27/07 a 25/08/2026 | Ver histórico completo nos backups datados de `01_CEO/Decisoes_Autonomas/_backups/` |
+| 2.3 | 25/08/2026 | Divisão final Passo 8 = implantação. Nunca chegou a ficar registrada como tarefa ativa em `scheduled-tasks` (wrapper órfão) — apagada em 28/08/2026 por esse motivo. |
+| 2.3 (recriação, 1ª tentativa) | 28/08/2026 | Recriada fundida com o `PLAYBOOK_ROTINAS_AUTOMATICAS.md` — **revertida a pedido de Claudemberg** ("você recriou o que já existia não as novas mudanças que eu pedi"). |
+| 2.3 (recriação, 2ª tentativa) | 28/08/2026 | Reescrita em markdown limpo (headers, bullets) em vez do texto exato — **também revertida** a pedido de Claudemberg ("apague o que acabou de criar e recrie como eu mandei"). |
+| 2.3 (recriação, 3ª tentativa — esta) | 28/08/2026 | Seções B e C (Descrição e Instruções) **copiadas integralmente**, formatação ASCII original preservada em blocos de código, sem reescrita. Seções A, D-I também no formato original. Tarefa registrada em `scheduled-tasks` (ver Seção F). |
 
 ---
 
-**Última atualização:** 25/08/2026  
-**Status:** ✅ Operacional — Passo 8 fixado como implantador (lê Skill da Diária Skills, nunca busca sozinho)  
-**Próximo:** Assim que a Diária Skills produzir Skill com `Status: proposta`, esta rotina implanta e testa na rodada seguinte
+**Última atualização:** 28/08/2026
+**Status:** ✅ Operacional — registrada em `scheduled-tasks` (cron `15 10 * * 1-5`)
+**Próximo:** Primeira rodada agendada real, 10:15 do próximo dia útil

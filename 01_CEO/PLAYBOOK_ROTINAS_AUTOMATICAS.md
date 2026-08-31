@@ -18,7 +18,7 @@ Atualizar sempre que uma rotina mudar de forma que afete o comportamento esperad
 | Rotina | Arquivo | Frequencia | Papel |
 |--------|---------|------------|-------|
 | Diaria Skills | `wallenberg-rotina-diaria-skills-v2_SKILL.md` | Todo dia (08:00) | Descobrir e documentar ferramentas e conhecimento novo |
-| Drenagem Continua | `wallenberg-drenagem-continua-v2_SKILL.md` | Sob demanda / agendada | Drenar fila de pendencias, acionar Gestores, implantar Skills |
+| Drenagem Continua | `wallenberg-drenagem-continua-v2_SKILL.md` | Todo dia (10:15, seg-sex) | Drenar fila de pendencias, acionar Gestores, implantar Skills |
 
 ### Como as rotinas se relacionam
 
@@ -403,8 +403,10 @@ Drenar a fila de pendencias do organismo: acionar Gestores, executar itens `auto
 
 ### Quando roda
 
-Sob demanda (tarefa agendada `wallenberg-drenagem-continua`) ou disparada manualmente.
-Claudemberg ausente e o cenario normal — Wallenberg executa sozinho.
+Todo dia (seg-sex), 10:15 — tarefa agendada `wallenberg-drenagem-continua` registrada em
+`scheduled-tasks` (recriada em 28/08/2026, versao 3.0.0 do SKILL.md, agora efetivamente
+ativa — a versao anterior existia como arquivo mas nunca chegou a ficar registrada
+como tarefa ativa). Claudemberg ausente e o cenario normal — Wallenberg executa sozinho.
 
 ### Fronteira — o que nao faz
 
