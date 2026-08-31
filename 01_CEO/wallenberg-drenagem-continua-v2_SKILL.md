@@ -781,10 +781,26 @@ Formato ao fim da execução:
 
 ---
 
+## J. ADENDOS OPERACIONAIS (instruções de Claudemberg — não alteram as seções B/C, que são cópia integral)
+
+**J.1 — Skill do tipo Ferramenta: validação obrigatória, não opcional (31/08/2026).**
+Quando a rotina `wallenberg-rotina-diaria-skills` criar Skill do tipo **Ferramenta/Tool**, esta rotina (Passo 6) NÃO só verifica se o Gestor está Autonomous — ela **analisa, cria/conecta, testa tecnicamente e valida se a ferramenta é realmente útil dentro do organismo STTK** antes de considerar a Skill "implantada". "Pronta, aguardando Autonomous" só vale para a etapa de aplicar à equipe; a validação técnica da ferramenta em si acontece assim que a Skill chega.
+
+**J.2 — Cadeia CEO -> Gestor -> Agente não pode travar (31/08/2026).**
+Gestor sem Agente acionável, exame de nível represado, ou "aguardando Autonomous" NÃO são motivo para a cadeia parar. Se um Gestor está abaixo de Autonomous e isso bloqueia o treino da equipe dele, Wallenberg desenha e administra os exames de nível do próprio Gestor na mesma janela (Exame 2/3), e então o Gestor treina a equipe até o nível máximo. Exame represado é pendência real a resolver na rodada, não item a só sinalizar.
+
+**J.3 — Varredura de documentos no Drive "Dptº de Projetos" (31/08/2026) — passo recorrente.**
+A cada rodada (ou a cada N rodadas, a critério de Wallenberg), cada Gestor acionado verifica, na pasta compartilhada do Google Drive **"Dptº de Projetos"**, os documentos da **própria área** — atualização, completude, terminologia vigente (LICIN 2.0 / Decreto 55.622/2025, sem termos pré-LICIN soltos). É levantamento de leitura; correção segue o fluxo normal de pendência.
+- **Documento que pertence a mais de um Gestor** (ex.: a planilha canônica de entregáveis com abas de todas as disciplinas): o Gestor apenas **lista e sinaliza**; **quem audita é o CEO Wallenberg**.
+- **Padronização de documentos entre Gestores**: também é auditoria de Wallenberg, não de Gestor isolado (conecta com a função de padronização cross-departamento de 08/08/2026).
+
+---
+
 ## HISTÓRICO DE VERSÕES
 
 | Versão | Data | Mudança |
 |--------|------|---------|
+| 2.3 (adendos J.1–J.3) | 31/08/2026 | Instruções de Claudemberg após a 1ª rodada real: validação obrigatória de Skill-ferramenta; cadeia CEO→Gestor→Agente não trava (Wallenberg destrava exames de Gestor abaixo de Autonomous); varredura recorrente de documentos no Drive "Dptº de Projetos" com auditoria de Wallenberg para docs cross-Gestor e padronização. Seções B/C intactas. |
 | 1.0–2.2 | 27/07 a 25/08/2026 | Ver histórico completo nos backups datados de `01_CEO/Decisoes_Autonomas/_backups/` |
 | 2.3 | 25/08/2026 | Divisão final Passo 8 = implantação. Nunca chegou a ficar registrada como tarefa ativa em `scheduled-tasks` (wrapper órfão) — apagada em 28/08/2026 por esse motivo. |
 | 2.3 (recriação, 1ª tentativa) | 28/08/2026 | Recriada fundida com o `PLAYBOOK_ROTINAS_AUTOMATICAS.md` — **revertida a pedido de Claudemberg** ("você recriou o que já existia não as novas mudanças que eu pedi"). |
@@ -793,6 +809,6 @@ Formato ao fim da execução:
 
 ---
 
-**Última atualização:** 28/08/2026
+**Última atualização:** 31/08/2026 (adendos J.1-J.3)
 **Status:** ✅ Operacional — registrada em `scheduled-tasks` (cron `15 10 * * 1-5`)
 **Próximo:** Primeira rodada agendada real, 10:15 do próximo dia útil
