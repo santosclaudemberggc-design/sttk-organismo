@@ -944,7 +944,7 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - **Backup em:** nenhum formal — todos os arquivos tocados são novos (pastas `Casos_TESTE/Exame2_*_Caso2_TESTE` inéditas). Mesmo tratamento já usado para o Caso 1 (10/08).
 - **Como desfazer:** apagar as 3 pastas `Casos_TESTE/Exame2_*_Caso2_TESTE/`; reverter os 3 arquivos de estado dos Agentes ao conteúdo anterior a esta rodada (edições aditivas, git-tracked, sem backup formal).
 - **Nota de processo:** esta entrada foi escrita por Lúcio diretamente no livro-razão (ferramentas `Write`/`Edit`), mas ele não tem `Bash`/`PowerShell` na própria lista de tools — a regeneração do PDF gêmeo (`Agosto.pdf`) desta edição foi feita por Wallenberg ao fechar a rodada. Mesma classe de gap já vista com Kelsen/Drive em 28/07 (ferramenta ausente, não bloqueio de permissão) — sinalizado, não contornado. Wallenberg também corrigiu 2 ocorrências da seta unicode residuais nesta entrada (título e corpo, "Shadow->Assisted") antes de gerar — checagem preventiva do POP-LEGAL-06 aplicada por analogia fora do Legal.
-- **Status:** Aguardando ratificação (sobe para a próxima Reunião Semanal). PDF gêmeo regenerado por Wallenberg (11/08, ~09:34), conferido por extração de texto.
+- **Status:** Ratificado em 31/08/2026 (Reunião Semanal). Nota: promoção Shadow→Assisted de Oscar/Portinari/Burle já havia sido ratificada ao vivo na Semanal de 17/08 — este item cobria apenas o registro formal dos casos-teste no livro-razão.
 
 ---
 
