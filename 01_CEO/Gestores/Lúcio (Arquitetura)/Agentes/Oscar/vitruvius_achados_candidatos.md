@@ -46,6 +46,15 @@ Para cada achado: **o que é**, **o que o Vitruvius já cobre ou não cobre diss
 - **Decisão:** **monitorar** — sem preço, sem maturidade de produção ainda. Comparar com o Vitruvius quando sair do tech preview.
 - **Fonte:** `01_CEO/Skills_Propostas/2026/Agosto/arquitetura_mcp-oficial-autodesk-fusion-revit-infoworks.md`
 
+### 01/09/2026 — RevitMCPBridge2026 (WeberG619) — 705+ endpoints + 113-file knowledge base
+
+- **O que é:** ponte open source entre IA (MCP client) e Revit 2026 via named pipes. Expõe a Revit API inteira através do MCP com 705+ endpoints (não tools MCP — endpoints da API Revit acessíveis). Inclui base de conhecimento arquitetônico de 113 arquivos. Repositório ativo, alternativa mantida pelo autor.
+- **O que o Vitruvius não cobre hoje:** o Vitruvius (23 tools produção) expõe um subconjunto curado da API Revit. O RevitMCPBridge2026 expõe a API inteira sem curadoria — abordagem oposta (amplitude vs. curadoria). A base de 113 arquivos de conhecimento arquitetônico é ativo sem equivalente no Vitruvius.
+- **Comparação rápida contra achados anteriores:** mais endpoints que shuotao (173 tools), LuDattilo (138 tools), Demolinator (48 tools). Porém "endpoint" ≠ "tool MCP curado" — muitos endpoints podem ser raw API calls sem prompt engineering.
+- **Decisão:** **monitorar** — a amplitude é impressionante (705+), mas a abordagem raw API sem curadoria pode gerar resultados inconsistentes vs. o Vitruvius (que faz curadoria explícita). A base de 113 arquivos merece avaliação separada como Skill de conhecimento para Oscar (mesmo raciocínio das 76 SOPs do shuotao). Named pipes como mecanismo de comunicação pode conflitar com a comunicação do Vitruvius (verificar antes de testar ambos no mesmo Revit).
+- **Próximo passo:** Lúcio/Oscar avaliam: (a) os 113 arquivos de knowledge base como Skill de conhecimento independente do conector; (b) se named pipes é compatível com o mecanismo de comunicação do Vitruvius para coexistência.
+- **Fonte:** https://github.com/WeberG619/RevitMCPBridge2026 — verificado 01/09/2026
+
 ---
 
 ## Como usar este arquivo
