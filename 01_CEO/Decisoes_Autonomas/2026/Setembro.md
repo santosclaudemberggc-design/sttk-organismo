@@ -4,6 +4,31 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-02] Diária Skills v2.7 — Quarta-feira (Seg-Qui)
+
+**Contexto:** rodada automática da `wallenberg-rotina-diaria-skills-v2-7`, 02/09/2026 (qua). Execução autônoma, Claudemberg ausente.
+
+**Passo 1 — Pesquisa (5 eixos):**
+- NBR 15220-3:2024 zoneamento bioclimático → JÁ coberto em 01/09
+- CAU-RJ deliberações 2026 → 009 já coberta; 008 (ATHIS) fora de escopo STTK
+- Render/vídeo IA → Luw.ai descartado (cloud + watermark + sem MCP); demais freemium
+- NBR 15575 Emenda 1/2025 → dado novo confirmado: Upar ≤ 2,7 W/(m².K) zona 4A
+- NBR 9575:2024 impermeabilização → ACHADO PRINCIPAL, prioridade do índice
+
+**Passo 2 — Consolidação:** 1 Skill nova (NBR 9575), 0 Trilha B, 5 descartados com justificativa.
+
+**Passo 3 — Redação:** `complementares_nbr9575-2024-impermeabilizacao-selecao-projeto.md` (Trilha A, cross-disciplina Saturnino/Baumgart/Tenreiro). v1.0, Status: proposta.
+
+**Passo 4 — Salvamento:** `01_CEO/Skills_Propostas/2026/Setembro/`. Índice atualizado. Livro-razão registrado aqui.
+
+**Passo 5 — PDF:** 2 gerados (Skill NBR 9575 + índice Setembro).
+
+**Passo 8 — Ferramentas:** nenhum achado novo que passe nos 4 critérios. Burle bloqueado por config (não por ferramenta). Portinari sem ferramenta gratuita de apresentação self-hosted.
+
+**Como desfazer:** apagar `complementares_nbr9575-2024-impermeabilizacao-selecao-projeto.md` e reverter edições no `indice.md` (remover linha 02/09 e observações da rodada 02/09).
+
+---
+
 ### [2026-09-01] Drenagem Contínua v2.3 — 2ª execução real (10:15)
 
 **Contexto:** segunda rodada da `wallenberg-drenagem-continua` sob tarefa agendada, 01/09/2026 (seg). Execução autônoma, Claudemberg ausente.
