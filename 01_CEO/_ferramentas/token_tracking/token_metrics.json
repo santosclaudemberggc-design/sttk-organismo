@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-02T20:41:00",
+  "gerado_em": "2026-09-02T20:56:16",
   "transcripts_dir": "C:\\Users\\santo\\.claude\\projects\\D--000-ESTRUTURA-DEPARTAMENTO-DE-PROJETO",
   "sessoes_lidas": 118,
   "sessoes_trabalho": 117,
@@ -10,7 +10,7 @@
   "prompt_caching": {
     "sessoes_com_cache": 118,
     "sessoes_total": 118,
-    "cache_hit_ratio_medio_trabalho": 0.9125
+    "cache_hit_ratio_medio_trabalho": 0.913
   },
   "baseline_vs_atual": {
     "semanas_base": [
@@ -120,9 +120,9 @@
       "contexto_inicial_media": 75331,
       "contexto_inicial_min": 66187,
       "contexto_inicial_max": 87295,
-      "cache_hit_ratio_medio": 0.9144,
-      "output_total": 1665911,
-      "custo_equivalente_total": 62757728
+      "cache_hit_ratio_medio": 0.918,
+      "output_total": 1710982,
+      "custo_equivalente_total": 64044098
     }
   ],
   "sessoes": [
@@ -2948,25 +2948,25 @@
       "session_id": "d2254e84-64ec-439e-92c4-421fb470112b",
       "data": "2026-09-02",
       "inicio": "2026-09-02T23:01:30.447000+00:00",
-      "fim": "2026-09-02T23:40:58.124000+00:00",
-      "duracao_min": 39.5,
+      "fim": "2026-09-02T23:56:13.841000+00:00",
+      "duracao_min": 54.7,
       "git_branch": "session/organismo-30-07-updates",
       "modelos": [
         "claude-sonnet-5"
       ],
-      "turnos_assistente": 49,
-      "turnos_principais": 49,
+      "turnos_assistente": 97,
+      "turnos_principais": 97,
       "turnos_subagente": 0,
       "somente_subagente": false,
       "contexto_inicial": 87295,
-      "contexto_pico": 165270,
-      "input_total": 98,
-      "cache_write_total": 617677,
-      "cache_read_total": 5841709,
-      "output_total": 60376,
-      "thinking_total": 27979,
-      "cache_hit_ratio": 0.9044,
-      "custo_equivalente": 1658245
+      "contexto_pico": 222016,
+      "input_total": 194,
+      "cache_write_total": 720290,
+      "cache_read_total": 15168238,
+      "output_total": 105447,
+      "thinking_total": 45265,
+      "cache_hit_ratio": 0.9547,
+      "custo_equivalente": 2944615
     },
     {
       "session_id": "2ba19103-167e-4a19-9935-ad76508d12e9",

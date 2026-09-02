@@ -35,9 +35,30 @@ python 01_CEO/_ferramentas/token_tracking/medir_tokens.py
 
 ou `medir_tokens.bat` (Windows). Argumento opcional `--transcripts "<pasta>"`.
 
-Gera, na própria pasta:
-- `token_metrics.json` — por sessão + rollup semanal (consumível pelo Painel)
-- `RELATORIO_TOKENS.md` — relatório legível
+Gera:
+- `token_metrics.json` (nesta pasta) — por sessão + rollup semanal
+- `RELATORIO_TOKENS.md` (nesta pasta) — relatório legível
+- `01_CEO/Painel_Fundador/painel_economia_tokens.html` — painel do Fundador,
+  estático, resolvido ao abrir; regenerado a cada execução com dados reais
+  (use `--panel ""` para pular)
+
+## Cadência — como fica registrado ao longo do tempo
+
+Os transcripts são acumulativos: **cada execução reconstrói toda a série** desde
+16/07. O histórico "de como está performando" mora em três lugares, atualizados
+juntos a cada run:
+
+1. `token_metrics.json` → chave `semanal` = uma linha por semana ISO, S29 até hoje
+2. `RELATORIO_TOKENS.md` → tabela da evolução semanal + as 118 sessões
+3. `painel_economia_tokens.html` → gráfico de barras da mediana semanal
+
+Cada commit desses arquivos é um marco datado da métrica. Rodar 1x por semana
+(segunda, junto da rotina) e commitar é suficiente — não precisa de cron.
+
+> Nota: `01_CEO/Painel_Fundador/rotina_sttk_consolidada.py` está inerte
+> (`repo_path` fixo em `D:\sttk-organismo`, que não existe aqui) e seu gerador de
+> registro diário sobrescreve arquivos escritos à mão com texto contraditório.
+> Não usar até ser consertado. Rodar `medir_tokens.py` direto.
 
 ## Veredito da 1ª medição (02/09/2026 · 118 sessões · 16/07 → 02/09)
 

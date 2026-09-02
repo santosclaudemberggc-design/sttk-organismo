@@ -1,6 +1,6 @@
 # Relatorio de Tokens — MEDICAO REAL
 
-**Gerado em:** 2026-09-02T20:41:00  
+**Gerado em:** 2026-09-02T20:56:16  
 **Fonte:** transcripts de sessao do Claude Code (`C:\Users\santo\.claude\projects\D--000-ESTRUTURA-DEPARTAMENTO-DE-PROJETO`)  
 **Sessoes lidas:** 118 (**117** conversas de trabalho, >= 3 turnos)  
 **Periodo:** 2026-07-16 -> 2026-09-02  
@@ -10,7 +10,7 @@
 ## 1. Prompt caching — ja esta ligado?
 
 - Sessoes com leitura de cache (`cache_read_input_tokens` > 0): **118 / 118**
-- Cache hit ratio medio (conversas de trabalho): **91.2%** do contexto de entrada vem de cache
+- Cache hit ratio medio (conversas de trabalho): **91.3%** do contexto de entrada vem de cache
 
 **Conclusao:** o prompt caching nativo da Anthropic **ja opera** nas sessoes deste projeto. O Item 7 ("aguardando API Claude v1.9+") descreve um bloqueio que nao existe — o ganho ja esta sendo colhido.
 
@@ -33,7 +33,7 @@
 | 2026-S33 | 2026-08-10 | 22 | 68.6k | 65.2k | 53.8k | 74.3k | 91% |
 | 2026-S34 | 2026-08-17 | 17 | 61.0k | 62.9k | 58.9k | 82.2k | 90% |
 | 2026-S35 | 2026-08-24 | 18 | 64.0k | 65.7k | 60.1k | 85.8k | 90% |
-| 2026-S36 | 2026-08-31 | 14 | 73.6k | 75.3k | 66.2k | 87.3k | 91% |
+| 2026-S36 | 2026-08-31 | 14 | 73.6k | 75.3k | 66.2k | 87.3k | 92% |
 
 **Marcos do plano de otimizacao (para cruzar com a curva):**
 - 2026-07-29 — Item 1: consolidacao MEMORY.md (18 -> 3 arquivos)
@@ -46,7 +46,7 @@
 | Data | Sessao | Br. | Turnos | Ctx inicial | Ctx pico | Saida | Cache read | Custo-eq |
 |---|---|---|--:|--:|--:|--:|--:|--:|
 | 2026-09-02 | `2ba19103` | organismo-30-0 | 14 | 72.9k | 80.5k | 6.1k | 906.6k | 326.1k |
-| 2026-09-02 | `d2254e84` | organismo-30-0 | 49 | 87.3k | 165.3k | 60.4k | 5.84M | 1.66M |
+| 2026-09-02 | `d2254e84` | organismo-30-0 | 97 | 87.3k | 222.0k | 105.4k | 15.17M | 2.94M |
 | 2026-09-02 | `b9957111` | organismo-30-0 | 18 | 87.3k | 121.3k | 15.7k | 1.58M | 595.1k |
 | 2026-09-02 | `ff76dfd0` | organismo-30-0 | 46 | 74.3k | 153.7k | 35.2k | 5.58M | 1.18M |
 | 2026-09-02 | `62d5dd97` | organismo-30-0 | 104 | 71.4k | 166.7k | 66.0k | 12.90M | 2.24M |

@@ -370,11 +370,123 @@ def write_report(data, out_md):
         fh.write("\n".join(L))
 
 
+PANEL_DEFAULT = os.path.normpath(os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    "..", "..", "Painel_Fundador", "painel_economia_tokens.html",
+))
+
+
+def write_panel(data, out_html):
+    """Painel estatico do Fundador — resolvido ao abrir, sem dado externo."""
+    sem = data["semanal"]
+    d = data["baseline_vs_atual"]
+    c = data["prompt_caching"]
+    atual = sem[-1] if sem else None
+
+    maxmed = max((w["contexto_inicial_mediana"] for w in sem), default=1) or 1
+    bars = []
+    for w in sem:
+        h = round(w["contexto_inicial_mediana"] / maxmed * 100)
+        bars.append(
+            f'<div class="bar"><div class="fill" style="height:{h}%"></div>'
+            f'<div class="bl">{w["semana"].split("-")[1]}</div>'
+            f'<div class="bv">{w["contexto_inicial_mediana"]//1000}k</div></div>'
+        )
+
+    if d and d["direcao"] == "reducao":
+        verdito = (f'Contexto por conversa: <b>reducao de {abs(d["variacao_pct"]):.1f}%</b> '
+                   f'({human(d["contexto_base"])} &rarr; {human(d["contexto_atual"])} tokens).')
+        vclass = "good"
+    elif d:
+        verdito = (f'Contexto por conversa: <b>sem reducao</b> — {human(d["contexto_base"])} '
+                   f'&rarr; {human(d["contexto_atual"])} tokens ({d["variacao_pct"]:+.1f}%). '
+                   f'Os slices de CLAUDE.md e a consolidacao de MEMORY.md nao moveram esta curva.')
+        vclass = "warn"
+    else:
+        verdito = "Dados insuficientes."
+        vclass = "warn"
+
+    html = f"""<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Economia de Tokens STTK</title>
+<style>
+:root {{
+  --paper:#F1EEE6; --surface:#FBFAF5; --ink:#222A2B; --ink-soft:#5B6360;
+  --ink-faint:#8A8F88; --line:#E4DFD3; --brand:#2A4A46;
+  --good:#3E7A57; --warn:#B57F32;
+}}
+@media (prefers-color-scheme: dark) {{ :root {{
+  --paper:#13171A; --surface:#1B2124; --ink:#EAE6DC; --ink-soft:#9CA39D;
+  --ink-faint:#767C77; --line:#2B3336; --brand:#82B4AB;
+  --good:#61A67C; --warn:#D3A155;
+}} }}
+* {{ box-sizing:border-box; }}
+body {{ margin:0; background:var(--paper); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  font-size:15px; line-height:1.5; }}
+.wrap {{ max-width:960px; margin:0 auto; padding:32px 24px; }}
+h1 {{ font-size:22px; margin:0 0 2px; }}
+.sub {{ color:var(--ink-soft); font-size:13px; margin-bottom:24px; }}
+.grid {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:16px; margin-bottom:24px; }}
+.card {{ background:var(--surface); border:1px solid var(--line);
+  border-radius:12px; padding:16px 18px; }}
+.k {{ font-size:11px; text-transform:uppercase; letter-spacing:.05em;
+  color:var(--ink-faint); font-family:"Cascadia Code",monospace; }}
+.v {{ font-size:28px; font-weight:600; margin-top:4px; }}
+.v small {{ font-size:13px; font-weight:400; color:var(--ink-soft); }}
+.verd {{ background:var(--surface); border:1px solid var(--line);
+  border-left:3px solid var(--warn); border-radius:8px; padding:14px 16px;
+  margin-bottom:24px; font-size:14px; }}
+.verd.good {{ border-left-color:var(--good); }}
+.chart {{ background:var(--surface); border:1px solid var(--line);
+  border-radius:12px; padding:20px 18px 12px; }}
+.chart h2 {{ font-size:13px; margin:0 0 16px; color:var(--ink-soft);
+  font-weight:600; }}
+.bars {{ display:flex; align-items:flex-end; gap:10px; height:150px; }}
+.bar {{ flex:1; display:flex; flex-direction:column; align-items:center;
+  height:100%; justify-content:flex-end; position:relative; }}
+.fill {{ width:100%; max-width:46px; background:var(--brand);
+  border-radius:4px 4px 0 0; min-height:2px; }}
+.bl {{ font-size:10px; color:var(--ink-faint); margin-top:6px; }}
+.bv {{ font-size:10px; color:var(--ink-soft); position:absolute; top:-16px; }}
+.foot {{ color:var(--ink-faint); font-size:12px; margin-top:20px; }}
+</style></head><body><div class="wrap">
+<h1>Economia de Tokens STTK &mdash; medicao real</h1>
+<div class="sub">Fonte: {data['sessoes_lidas']} transcripts de sessao ({data['periodo']['de']} &rarr; {data['periodo']['ate']}). Gerado {data['gerado_em']} por <code>medir_tokens.py</code>. Sem projecao.</div>
+
+<div class="grid">
+  <div class="card"><div class="k">Contexto inicial / conversa (atual)</div>
+    <div class="v">{human(atual['contexto_inicial_mediana']) if atual else '-'} <small>mediana {atual['semana'] if atual else ''}</small></div></div>
+  <div class="card"><div class="k">Variacao vs. base (tamanho do contexto)</div>
+    <div class="v">{-d['variacao_pct']:+.1f}%<small> &nbsp;{'menor' if d and d['direcao']=='reducao' else 'maior'}</small></div></div>
+  <div class="card"><div class="k">Prompt caching</div>
+    <div class="v">{c['cache_hit_ratio_medio_trabalho']*100:.0f}%<small> hit &middot; {c['sessoes_com_cache']}/{c['sessoes_total']} sessoes</small></div></div>
+  <div class="card"><div class="k">Conversas medidas</div>
+    <div class="v">{data['sessoes_trabalho']}<small> &nbsp;&ge;3 turnos</small></div></div>
+</div>
+
+<div class="verd {vclass}">{verdito}</div>
+
+<div class="chart"><h2>Mediana do contexto inicial por semana ISO (tokens)</h2>
+<div class="bars">{''.join(bars)}</div></div>
+
+<div class="foot">Contexto inicial = input + cache_creation + cache_read do 1o turno real do assistente.
+Marcos: 29/07 consolidacao MEMORY.md &middot; 30/07 slices CLAUDE.md &middot; 05/08 estado JSON &middot; 13/08 cache Drive.
+Nenhum marco produziu degrau visivel nesta curva &mdash; o unico ganho real de token e o prompt caching, ativo desde sempre.</div>
+</div></body></html>"""
+    with open(out_html, "w", encoding="utf-8") as fh:
+        fh.write(html)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--transcripts", default=DEFAULT_TRANSCRIPTS,
                     help="Pasta com os arquivos .jsonl de sessao")
     ap.add_argument("--outdir", default=os.path.dirname(os.path.abspath(__file__)))
+    ap.add_argument("--panel", default=PANEL_DEFAULT,
+                    help="Caminho do painel HTML a (re)gerar; vazio para pular")
     args = ap.parse_args()
 
     tdir = os.path.abspath(os.path.expanduser(args.transcripts))
@@ -388,6 +500,10 @@ def main():
     with open(out_json, "w", encoding="utf-8") as fh:
         json.dump(data, fh, ensure_ascii=False, indent=2)
     write_report(data, out_md)
+
+    if args.panel:
+        write_panel(data, args.panel)
+        print(f"Escrito: {args.panel}")
 
     print(f"Sessoes lidas         : {data['sessoes_lidas']}")
     print(f"Conversas de trabalho : {data['sessoes_trabalho']}")
