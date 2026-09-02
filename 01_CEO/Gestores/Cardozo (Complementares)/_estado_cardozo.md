@@ -3,7 +3,7 @@
 > Arquivo de estado pessoal. Leio ao nascer (início de toda conversa), escrevo ao morrer (fim de toda conversa).
 > Memória privada minha — não repete o Registro Diário, que é o que sobe pra Claudemberg via Wallenberg.
 
-**Última atualização:** 01/09/2026 — **Autonomous ativado.** Exames 2 e 3 concluídos em 31/08 (5 iscas bloqueadas no bilhete Mindlin). Trilha A com 4 Skills técnicas criadas (Baumgart, Saturnino, Landell, Glaziou). Aguardam ratificação Claudemberg.
+**Última atualização:** 02/09/2026 — **Drenagem Contínua v2.3 concluída.** Autonomous consolidado. Trilha A com 6 Skills prontas (confirmadas em arquivo de estado 01/09). Varredura de melhoria: POP-COMPL-02 criado e registrado. Zero pendências represadas na alçada de Cardozo.
 
 ---
 
@@ -28,7 +28,11 @@
 
 ---
 
-**Situação:** Shadow → Assisted → Autonomous completados em 31/08 (mesma data, conforme diretriz Claudemberg: "Cardozo treina os 6 Agentes, precisa estar no topo"). Pronto para nomear/ativar/treinar os 6 Agentes (Exame 1 de cada, modelo Lúcio → Oscar).
+- **02/09/2026 — DRENAGEM CONTÍNUA v2.3 CONCLUÍDA.** Wallenberg disparou a rotina. Cardozo: reconciliou fila (pendencias.json: 0 itens automáticos abertos com owner=Cardozo; Notion "Treinos e Testes": não consultado diretamente por gap de ferramenta, confirmado via estado de Wallenberg que é zero pendente). Varredura de melhoria: POP-COMPL-01 já cobrindo validação de Briefing (entrada); achado lacuna complementar — POP-COMPL-02, protocolo de bloqueador encontrado durante execução (diagnóstico Briefing vs Coordenação, parada seletiva, escalonamento). Criado e registrado em pendencias.json. **Status:** Autonomous consolida-se. Pronto para nomear/ativar/treinar os 6 Agentes (Exame 1 de cada, gatilho Wallenberg).
+
+---
+
+**Situação:** Shadow → Assisted → Autonomous completados em 31/08 (mesma data, conforme diretriz Claudemberg: "Cardozo treina os 6 Agentes, precisa estar no topo"). Pronto para administrar Exame 1 dos 6 Agentes (gatilho Wallenberg).
 
 ---
 

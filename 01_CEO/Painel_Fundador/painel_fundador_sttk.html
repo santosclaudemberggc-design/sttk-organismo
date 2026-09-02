@@ -196,7 +196,32 @@
   .files .l{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);margin-bottom:6px}
   .files code{display:block;font-family:var(--mono);font-size:11.5px;background:var(--surface-2);border:1px solid var(--line-soft);border-radius:7px;padding:7px 10px;margin:5px 0;color:var(--ink);overflow-x:auto;white-space:nowrap}
 
-  @media (prefers-reduced-motion:no-preference){.domain,.council,.topbar,.feed,.levels,.detail{animation:rise .45s ease both}}
+  /* ===== Visão Geral — retrato executivo (snapshot manual, ver marcador OV-SNAPSHOT no rodapé da seção) ===== */
+  .ov{margin-top:24px;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:22px 22px 20px;box-shadow:var(--shadow)}
+  .ov-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px}
+  .ov-head h2{margin:0;font-family:var(--serif);font-size:20px;font-weight:600;letter-spacing:-.01em}
+  .ov-head .when{font-family:var(--mono);font-size:11px;color:var(--ink-faint)}
+  .ov-head p{flex-basis:100%;margin:6px 0 0;color:var(--ink-soft);font-size:12.5px;line-height:1.5;max-width:88ch}
+  .ov-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:10px;margin:18px 0 2px}
+  .kpi{border:1px solid var(--line);border-radius:11px;background:var(--surface-2);padding:12px 13px}
+  .kpi b{display:block;font-family:var(--mono);font-size:21px;font-weight:600;color:var(--brand);line-height:1.1}
+  .kpi span{display:block;margin-top:5px;font-size:11.5px;color:var(--ink-soft);line-height:1.4;font-weight:600}
+  .kpi span i{display:block;margin-top:2px;color:var(--ink-faint);font-style:normal;font-size:10.5px;font-weight:400}
+  .kpi.alert b{color:var(--s-crit)}
+  .ov-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:15px;margin-top:20px}
+  .ovc{margin:0;border:1px solid var(--line-soft);border-radius:12px;background:var(--surface-2);padding:14px 15px 13px}
+  .ovc figcaption{font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:12px}
+  .ovc svg{display:block;width:100%;height:auto;overflow:visible;font-family:var(--sans)}
+  .ovc svg text{fill:var(--ink-soft)}
+  .ovc svg .vlbl{fill:var(--ink);font-weight:600}
+  .ovc svg .vfaint{fill:var(--ink-faint)}
+  .ov-lgd{display:flex;flex-wrap:wrap;gap:5px 13px;margin-top:11px;font-size:10.5px;color:var(--ink-soft)}
+  .ov-lgd i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+  .ov-note{margin-top:16px;padding-top:12px;border-top:1px solid var(--line-soft);font-size:11px;color:var(--ink-faint);line-height:1.55}
+  .sw-good{fill:var(--s-good)}.sw-move{fill:var(--s-move)}.sw-warn{fill:var(--s-warn)}.sw-crit{fill:var(--s-crit)}.sw-idle{fill:var(--s-idle)}.sw-line{fill:var(--line)}
+  .bg-good{background:var(--s-good)}.bg-move{background:var(--s-move)}.bg-warn{background:var(--s-warn)}.bg-crit{background:var(--s-crit)}.bg-idle{background:var(--s-idle)}.bg-line{background:var(--line)}
+
+  @media (prefers-reduced-motion:no-preference){.domain,.council,.topbar,.feed,.levels,.detail,.ov{animation:rise .45s ease both}}
   @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
   @media (max-width:560px){.wrap,.detail{padding:22px 15px 48px}.meta{align-items:flex-start}.topbar{flex-direction:column;align-items:flex-start}.ev{grid-template-columns:60px 1fr;gap:10px}.d-title{font-size:24px}.d-kv{grid-template-columns:1fr}}
 </style>
@@ -213,10 +238,132 @@
         <span id="themeLabel">Noite</span>
       </button>
       <span class="tag">Leitura &mdash; curadoria de Wallenberg</span>
-      <span class="updated" id="updated">Atualizado 31/08/2026 — Drenagem contínua: POP-COMPL-01 criado (Cardozo, validação do Briefing de Arquitetura); Trilha A de Complementares agora completa 6/6 (Tenreiro + Mindlin, aguardam ratificação); loop dos patches POP-PROJ-01/02 reauditado e fechado (Lúcio → Oscar). Publicação consolidada da semana (28/08 Trilha A + 31/08) fica para sexta 04/09, cadência v2.7 do Painel</span>
+      <span class="updated" id="updated">Atualizado 01/09/2026 — Painel reconciliado com o livro-razão: Cardozo agora Autonomous (31/08), os 6 Agentes de Complementares Shadow (01/09), Oscar/Portinari/Burle Assisted (17/08), canal do Gate (Artigas) ativo, array de pendências refeito (9 abertas de 43). Nova seção "Onde o organismo está" com gráficos. Antes, 31/08 — Drenagem contínua: POP-COMPL-01 criado (Cardozo, validação do Briefing de Arquitetura); Trilha A de Complementares agora completa 6/6 (Tenreiro + Mindlin, aguardam ratificação); loop dos patches POP-PROJ-01/02 reauditado e fechado (Lúcio → Oscar). Publicação consolidada da semana (28/08 Trilha A + 31/08) fica para sexta 04/09, cadência v2.7 do Painel</span>
     </div>
   </header>
   <p class="hint"><b>Clique em qualquer card</b> para abrir a página do registro completo &mdash; tudo que foi feito ali, sem resumo. A <b>Linha do Tempo</b> mostra a evolução do organismo.</p>
+
+  <section class="ov" aria-label="Visão geral do organismo">
+    <div class="ov-head">
+      <h2>Onde o organismo está</h2>
+      <span class="when">retrato de 01/09/2026</span>
+      <p>Números apurados do livro-razão (<code>01_CEO/Decisoes_Autonomas/2026</code>). O painel é vista, não verdade — quando divergir, vale o livro-razão e a Reunião Semanal. Rumo ao <b>MVP de Dezembro/2026</b>.</p>
+    </div>
+
+    <div class="ov-kpis">
+      <div class="kpi"><b>3&thinsp;/&thinsp;4</b><span>Gestores Autonomous<i>Legal, Arquitetura e Complementares (Cardozo desde 31/08) · Fechamento nunca criado</i></span></div>
+      <div class="kpi"><b>13</b><span>Gestores + Agentes<i>4 Autonomous · 3 Assisted · 6 Shadow · 0 Formação · + Artigas (canal do Gate)</i></span></div>
+      <div class="kpi"><b>34&thinsp;/&thinsp;43</b><span>Pendências fechadas<i>9 abertas — 1 crítica, 1 alta, 4 média, 3 baixa</i></span></div>
+      <div class="kpi alert"><b>1&thinsp;/&thinsp;0</b><span>Caso real em produção / concluído<i>Interiores Daniel–OB (v3) no Gate do Maurício · nenhum aceito ponta a ponta</i></span></div>
+      <div class="kpi"><b>6&thinsp;/&thinsp;9</b><span>Marcos até o MVP<i>faltam caso real aprovado no Gate · Gestor de Fechamento · cliente aceito</i></span></div>
+    </div>
+
+    <div class="ov-grid">
+
+      <figure class="ovc" style="grid-column:1/-1">
+        <figcaption>Trilho até o MVP — marcos estruturais</figcaption>
+        <svg viewBox="0 0 520 74" role="img" aria-label="6 de 9 marcos concluídos">
+          <line x1="24" y1="26" x2="496" y2="26" stroke="var(--line)" stroke-width="3"/>
+          <line x1="24" y1="26" x2="319" y2="26" stroke="var(--brand)" stroke-width="3"/>
+          <g>
+            <circle cx="24"  cy="26" r="7" class="sw-good"/><circle cx="83"  cy="26" r="7" class="sw-good"/><circle cx="142" cy="26" r="7" class="sw-good"/>
+            <circle cx="201" cy="26" r="7" class="sw-good"/><circle cx="260" cy="26" r="7" class="sw-good"/><circle cx="319" cy="26" r="7" class="sw-good"/>
+            <circle cx="378" cy="26" r="7" fill="var(--surface)" stroke="var(--ink-faint)" stroke-width="1.5"/>
+            <circle cx="437" cy="26" r="7" fill="var(--surface)" stroke="var(--ink-faint)" stroke-width="1.5"/>
+            <circle cx="496" cy="26" r="7" fill="var(--surface)" stroke="var(--ink-faint)" stroke-width="1.5"/>
+          </g>
+          <g font-size="8.5" text-anchor="middle">
+            <text x="24"  y="46">Legal +</text><text x="24"  y="56">Hely</text>
+            <text x="83"  y="46">5 casos</text><text x="83"  y="56">teste</text>
+            <text x="142" y="46">Arquitet.</text><text x="142" y="56">Assisted</text>
+            <text x="201" y="46">Exames</text><text x="201" y="56">1·2·3</text>
+            <text x="260" y="46">Complem.</text><text x="260" y="56">Autonomous</text>
+            <text x="319" y="46">6 Agentes</text><text x="319" y="56">Shadow</text>
+            <text x="378" y="46" class="vfaint">Caso real</text><text x="378" y="56" class="vfaint">no Gate</text>
+            <text x="437" y="46" class="vfaint">Gestor</text><text x="437" y="56" class="vfaint">Fechamento</text>
+            <text x="496" y="46" class="vfaint">Cliente</text><text x="496" y="56" class="vfaint">aceito</text>
+          </g>
+        </svg>
+      </figure>
+
+      <figure class="ovc">
+        <figcaption>Gestores + Agentes por nível &mdash; 13 no total</figcaption>
+        <svg viewBox="0 0 300 40" role="img" aria-label="4 Autonomous, 3 Assisted, 6 Shadow, 0 Formação">
+          <rect x="6"     y="6" width="88.6"  height="24" rx="3" class="sw-good"/>
+          <rect x="94.6"  y="6" width="66.5"  height="24" rx="3" class="sw-move"/>
+          <rect x="161.1" y="6" width="132.9" height="24" rx="3" class="sw-warn"/>
+          <g font-size="11" text-anchor="middle" fill="#fff" font-weight="600">
+            <text x="50" y="22">4</text><text x="128" y="22">3</text><text x="228" y="22">6</text>
+          </g>
+        </svg>
+        <div class="ov-lgd"><span><i class="bg-good"></i>Autonomous 4</span><span><i class="bg-move"></i>Assisted 3</span><span><i class="bg-warn"></i>Shadow 6</span><span><i class="bg-line"></i>Formação 0</span></div>
+      </figure>
+
+      <figure class="ovc">
+        <figcaption>Pendências abertas por criticidade &mdash; 9 de 43</figcaption>
+        <svg viewBox="0 0 300 40" role="img" aria-label="1 crítica, 1 alta, 4 média, 3 baixa">
+          <rect x="6"     y="6" width="32"  height="24" rx="3" class="sw-crit"/>
+          <rect x="38"    y="6" width="32"  height="24" rx="3" class="sw-warn"/>
+          <rect x="70"    y="6" width="128" height="24" rx="3" class="sw-move"/>
+          <rect x="198"   y="6" width="96"  height="24" rx="3" class="sw-idle"/>
+          <g font-size="11" text-anchor="middle" fill="#fff" font-weight="600">
+            <text x="22" y="22">1</text><text x="54" y="22">1</text><text x="134" y="22">4</text><text x="246" y="22">3</text>
+          </g>
+        </svg>
+        <div class="ov-lgd"><span><i class="bg-crit"></i>Crítica 1</span><span><i class="bg-warn"></i>Alta 1</span><span><i class="bg-move"></i>Média 4</span><span><i class="bg-idle"></i>Baixa 3</span></div>
+      </figure>
+
+      <figure class="ovc">
+        <figcaption>Represamento &mdash; dias parado por pendência</figcaption>
+        <svg viewBox="0 0 300 132" role="img" aria-label="dias parados por pendência">
+          <g font-size="9">
+            <text x="0" y="12">B14 EVTL — aguardando Gate do Maurício</text>
+            <rect x="0" y="16" width="190" height="13" rx="2" class="sw-crit"/><text x="196" y="26" class="vlbl">24d</text>
+            <text x="0" y="45">Conectores MCP render/apresentação (Lúcio)</text>
+            <rect x="0" y="49" width="190" height="13" rx="2" class="sw-crit"/><text x="196" y="59" class="vlbl">24d</text>
+            <text x="0" y="78">Auditoria de Oscar no Drive (item 4 → Kelsen)</text>
+            <rect x="0" y="82" width="166" height="13" rx="2" class="sw-crit"/><text x="172" y="92" class="vlbl">21d</text>
+            <text x="0" y="111">WAN 2.2 render/vídeo — Burle sem shell (VENCIDO)</text>
+            <rect x="0" y="115" width="40" height="13" rx="2" class="sw-idle"/><text x="46" y="125" class="vlbl">5d</text>
+          </g>
+        </svg>
+        <div class="ov-lgd"><span><i class="bg-crit"></i>&ge; 3 semanas</span><span><i class="bg-idle"></i>&lt; 1 semana</span></div>
+      </figure>
+
+      <figure class="ovc">
+        <figcaption>Funil da operação real</figcaption>
+        <svg viewBox="0 0 300 108" role="img" aria-label="casos-teste 5 de 5, 1 caso real em produção, 0 aprovados no Gate">
+          <g text-anchor="middle" fill="#fff" font-size="10" font-weight="600">
+            <rect x="20"  y="6"  width="260" height="26" rx="4" class="sw-good"/><text x="150" y="23">Casos-teste (sandbox) — 5 / 5</text>
+            <rect x="65"  y="40" width="170" height="26" rx="4" class="sw-move"/><text x="150" y="57">Caso real em produção — 1</text>
+            <rect x="105" y="74" width="90"  height="26" rx="4" class="sw-crit"/><text x="150" y="91">Aprovado no Gate — 0</text>
+          </g>
+        </svg>
+      </figure>
+
+      <figure class="ovc">
+        <figcaption>Pendências abertas por alçada &mdash; de quem depende destravar</figcaption>
+        <svg viewBox="0 0 300 92" role="img" aria-label="humano 2, técnico 5, autônomo 2">
+          <g font-size="9.5">
+            <text x="0" y="19">Decisão humana</text>
+            <rect x="104" y="8"  width="76"  height="16" rx="2" class="sw-warn"/><text x="104" y="19" dx="6" fill="#fff" font-weight="600">2</text>
+            <text x="0" y="49">Limitação técnica</text>
+            <rect x="104" y="38" width="190" height="16" rx="2" class="sw-move"/><text x="104" y="49" dx="6" fill="#fff" font-weight="600">5</text>
+            <text x="0" y="79">Resolve sozinho (bloq. modo auto)</text>
+            <rect x="104" y="68" width="76"  height="16" rx="2" class="sw-good"/><text x="104" y="79" dx="6" fill="#fff" font-weight="600">2</text>
+          </g>
+        </svg>
+      </figure>
+
+    </div>
+
+    <p class="ov-note"><!-- OV-SNAPSHOT 01/09/2026 · fontes: Decisoes_Autonomas/2026/Setembro.md, _estado_wallenberg.md, _estado_cardozo.md, _estado_lucio.md, Pendencias/pendencias.json · atualizar à mão -->
+      <b>Níveis (livro-razão):</b> Kelsen (Autonomous 22/07), Hely (Autonomous 23/07), Lúcio (Autonomous 07/08), Oscar/Portinari/Burle (Assisted 17/08), Cardozo (Autonomous 31/08), os 6 Agentes de Cardozo (Shadow 01/09, Exame 1 6/6), Artigas (canal do Gate, "relato manual", desde 29/07). Fechamento: nunca criado.
+      <b>Operação real:</b> 5/5 casos-teste do Legal em sandbox; 1º caso real de produção iniciado 01/09 — Estudo de Ambientação de Interiores, cliente Daniel–OB (Cardozo), v3 aguardando veredito do Gate do Maurício; renders por IA 0/8 (bloqueio de ferramenta no Burle). Caso Orla Bothânica (Legal) travado por documento do cliente. Nenhum caso aprovado no Gate ponta a ponta ainda.
+      <b>9 pendências abertas (43 no total, 34 fechadas):</b> WAN 2.2 render/vídeo — Burle sem shell (crítica, VENCIDO) · B14 EVTL (alta, aguardando Gate) · Fase 2 otimização de tokens (média, pausada até 02/09) · auditoria de Oscar no Drive item 4 (média, → Kelsen) · 2 correções Drive do Legal (média, bloqueadas pelo modo automático) · 2 conectores MCP a verificar (baixa) · lacuna de numeração da Skill CAU-RJ RRT (baixa) · varredura Drive Arquitetura (baixa).
+    </p>
+  </section>
+
   <div id="domains"></div>
   <h3 class="sec-title">Pendências abertas &mdash; fila do organismo</h3>
   <p class="hint">Cruza todos os Gestores e Agentes. <b>Resolve sozinho</b> = já está na autonomia do próprio agente, só falta a próxima execução &middot; <b>Decisão humana</b> = espera Claudemberg ou Wallenberg &middot; <b>Limitação técnica</b> = é a ferramenta que falta, não o julgamento &middot; <b>Sequência planejada</b> = não é trava, é a ordem certa de acontecer.</p>
@@ -329,34 +476,34 @@ fechamento2807:{d:"28/07",et:"marco",t:"Fila do dia drenada até o fim do que er
        recs:["lucioExame2Caso2TresAgentes","correcaoOrquestracao1008","lucioPortinariBurleRegraArq01","lucioExame2Caso1TresAgentes","lucioOscarRegraArq01Ref","exame1NovosAgentes","equipeLucioNomeada","lucioRegraPressaoComercial","lucioExame3","lucioExame1","semanal2707"],
        files:[".claude/agents/lucio.md","01_CEO/Gestores/Lúcio (Arquitetura)/_estado_lucio.md","01_CEO/Gestores/Lúcio (Arquitetura)/gestor_arquitetura_proposta.html"],
        team:["oscar","portinari","burle"]},
-      {id:"comp", t:"Complementares · Fechamento", st:"andamento", chip:"Cardozo: Formação — 5 Skills criadas (28/08)", pg:22, owner:"Wallenberg → Cardozo", next:"Exame 1 de Cardozo; Skills Trilha A para Tenreiro e Mindlin na próxima rodada",
-       sum:"Cardozo (Gestor Complementares) formalizado em 26/08/2026 com 6 Agentes: Baumgart (Estrutural), Landell (Elétrica+Automação), Saturnino (Hidrossanitário), Glaziou (Paisagismo), Tenreiro (Interiores) e Mindlin (Apresentação). 5 Skills criadas em 28/08: Trilha A para 4 áreas e Trilha B para Portinari/Mindlin. Fechamento ainda não iniciado.",
-       kv:[["Complementares","Cardozo formalizado 26/08 — 6 Agentes em Formação"],["Skills Trilha A (28/08)","Baumgart/NBR6118:2026, Saturnino/NBR5626+8160, Landell/NBR5410, Glaziou/NBR16636-4"],["Skills Trilha B (28/08)","Portinari e Mindlin: Office-PowerPoint-MCP-Server (MIT, 34 ferramentas, python-pptx)"],["Falta Trilha A","Tenreiro (Interiores) e Mindlin (Apresentação) — próxima rodada"],["Fechamento","Gestor ainda não criado — aguarda demanda real"]],
+      {id:"comp", t:"Complementares · Fechamento", st:"good", chip:"Cardozo: Autonomous (31/08) · 6 Agentes Shadow (01/09)", pg:70, owner:"Wallenberg → Cardozo", next:"1º caso real de produção (Interiores Daniel–OB) aguarda veredito do Gate; revisar 6 POPs de disciplina após ratificação das Skills",
+       sum:"Cardozo (Gestor Complementares) formalizado em 26/08/2026 com 6 Agentes: Baumgart (Estrutural), Landell (Elétrica+Automação), Saturnino (Hidrossanitário), Glaziou (Paisagismo), Tenreiro (Interiores) e Mindlin (Apresentação). Cardozo passou Exames 2 e 3 em 31/08 → Autonomous. Os 6 Agentes passaram o Exame 1 em 01/09 (6/6) → Shadow. 1º caso real de produção iniciado 01/09 (Estudo de Ambientação de Interiores, cliente Daniel–OB), v3 no Gate do Maurício. Fechamento ainda não iniciado.",
+       kv:[["Cardozo","Autonomous desde 31/08/2026 (Exames 2 e 3 aprovados por Wallenberg)"],["6 Agentes","todos Shadow desde 01/09/2026 — Exame 1 administrado e auditado, 6/6 aprovados"],["Skills","6 originais + 6 Trilha A (uma por área) — arquivos .md, aguardam ratificação de Claudemberg"],["1º caso real","Estudo de Ambientação de Interiores (Daniel–OB, Recreio/RJ) — v3, no Gate; renders por IA 0/8 (bloqueio de ferramenta no Burle)"],["Pendências","6 POPs de disciplina desatualizados no Drive; 6 Agentes sem WebSearch/WebFetch/Bash; 7º Agente (Compatibilização) nunca criado"],["Fechamento","Gestor ainda não criado — aguarda demanda real"]],
        recs:[],
-       files:["01_CEO/Skills_Propostas/2026/Agosto/indice.md","01_CEO/Gestores/Complementares/_estado_cardozo.md"]},
+       files:["01_CEO/Gestores/Complementares/_estado_cardozo.md","01_CEO/Skills_Propostas/2026/Agosto/indice.md"]},
       {id:"tokens", t:"Economia de Tokens STTK", st:"atencao", chip:"OmniRoute descartado — números em revisão", pg:35, owner:"Wallenberg", next:"Ligar prompt caching nativo nas conversas mais repetitivas; buscar via de redução de tokens que não exporte dados/documentos para fora",
        sum:"Item 1 e Item 2 são reduções estruturais reais (tamanho de arquivo verificado), mas ainda sem medição de token real. OmniRoute descartado em 10/08/2026 (Reunião Semanal): Claudemberg decidiu desinstalar; na checagem, o pacote não foi encontrado instalado nesta máquina (sem processo, sem registro npm) — nunca chegou a interceptar tráfego de verdade. Próximo passo real: prompt caching nativo da Anthropic (sem proxy de terceiro, sem exportar dados/documentos).",
        kv:[["Item 1 — MEMORY.md (29/07)","530→75 KB, redução estrutural confirmada; impacto em token ainda não medido"],["Item 2 — CLAUDE.md slices (30/07)","150→25 KB, redução estrutural confirmada; impacto em token ainda não medido"],["OmniRoute (31/07)","DESCARTADO em 10/08 — Claudemberg decidiu desinstalar, sem exportar dados; checagem confirmou que não estava sequer instalado nesta máquina"],["Próximo item real","prompt caching nativo (Anthropic) — sem proxy de terceiro, sem exportação de dados"]],
        recs:["tokenPlanoCorrecao","tokenOmnirouteDesinstalado"],
        files:["01_CEO/Analise_Tokens_REAL.md","01_CEO/Decisoes_Autonomas/2026/Agosto.md"]},
-      {id:"diretos", t:"Proposta · Mentoria Técnica", st:"inativo", chip:"Não criado", pg:4, owner:"Wallenberg", next:"Criar a Mentoria Técnica — destrava o Gate",
-       sum:"Os dois Agentes diretos do Wallenberg. A Mentoria Técnica é o canal do Maurício Costa — o Gate de validação técnica.",
-       kv:[["Proposta","monta o Leilão dos arquitetos parceiros"],["Mentoria Técnica","canal do Maurício Costa; criá-la destrava 'Hely apto para produção real'"]],
-       recs:[],files:[]}
+      {id:"diretos", t:"Proposta · Mentoria Técnica", st:"andamento", chip:"Artigas ativo (29/07) · Proposta não criada", pg:50, owner:"Wallenberg", next:"Criar o Agente de Proposta (Leilão dos arquitetos parceiros)",
+       sum:"Os dois Agentes diretos do Wallenberg. Artigas (Mentoria Técnica) foi criado em 29/07/2026 e opera como canal do Gate do Maurício no modelo 'relato manual' — aponta o formulário certo, Wallenberg/Claudemberg relatam o veredito de volta. O Agente de Proposta (Leilão) ainda não foi criado.",
+       kv:[["Mentoria Técnica (Artigas)","criado 29/07/2026 — canal do Gate do Maurício, modelo relato manual; já montou o pedido do 1º caso real (Interiores Daniel–OB)"],["Proposta","não criado — monta o Leilão dos arquitetos parceiros"]],
+       recs:[],files:["01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/_estado_artigas.md"]}
     ]},
     {k:"F", title:"Formação e níveis dos agentes", sub:"curadoria de Wallenberg", cards:[
       {id:"escala", t:"Escala de níveis", st:"andamento", chip:"Em andamento", pg:55, owner:"Wallenberg", next:"Formalizar no CLAUDE.md",
        sum:"Formação → Shadow → Assisted → Autonomous. Definida por Claudemberg em 22-23/07. Mede autoridade de execução, e é por escopo.",
        kv:[["Modelo de execução","Autonomous executa sozinho; quem ainda não é, tem a pendência disparada pelo Autonomous responsável — sem ordem de Claudemberg"],["Visibilidade","tudo passa por Claudemberg: Semanal, Painel ou Sistema de Gestão"],["Trava de alucinação","os Gates do Maurício Costa — nenhuma autonomia passa por cima do Gate"]],
        recs:[],files:["memory/projeto/sttickler_niveis_agentes_formacao.md"]},
-      {id:"exames", t:"Exames de promoção", st:"good", chip:"Lúcio: 4 níveis completos", pg:75, owner:"Wallenberg", next:"Casos 2 e 3 do Exame 2 de Oscar/Portinari/Burle; próximo exame de Gestor só quando Complementares/Fechamento nascerem",
-       sum:"POP-FORMAÇÃO-01 criado (três exames). Kelsen e Hely completaram o ciclo em 22-23/07. Lúcio completou os 3 exames entre 28/07 e 07/08 — Shadow, Assisted, Autonomous. Oscar/Portinari/Burle passaram no Exame 1 em 07/08 e nos Casos 1 e 2 do Exame 2 em 10-11/08. Critério que atravessa todos: quanto trabalho sobra para Claudemberg.",
-       kv:[["Shadow","mede precisão da recomendação"],["Assisted","mede consistência ao longo de vários casos"],["Autonomous","teste maldoso: iscas plantadas — o agente se trava sozinho?"],["Kelsen/Hely","ciclo completo em 22-23/07"],["Lúcio","ciclo completo em 07/08 — 5/5 iscas do teste maldoso barradas sem lista pronta"],["Oscar/Portinari/Burle","Exame 1 em 07/08; Casos 1 e 2 do Exame 2 aprovados nos 3 (10/08, 11/08), falta Caso 3"]],
+      {id:"exames", t:"Exames de promoção", st:"good", chip:"3 Gestores Autonomous · 9 Agentes promovidos", pg:90, owner:"Wallenberg", next:"Exames 2 e 3 dos 6 Agentes de Cardozo (Shadow → Assisted → Autonomous); próximo exame de Gestor só quando Fechamento nascer",
+       sum:"POP-FORMAÇÃO-01 (três exames). Kelsen e Hely completaram o ciclo em 22-23/07. Lúcio completou os 3 exames entre 28/07 e 07/08 → Autonomous. Cardozo completou Exames 2 e 3 em 31/08 → Autonomous. Oscar/Portinari/Burle: Exame 2 completo (9 casos) → Assisted desde 17/08. Os 6 Agentes de Cardozo: Exame 1 em 01/09 (6/6) → Shadow. Critério que atravessa todos: quanto trabalho sobra para Claudemberg.",
+       kv:[["Shadow","mede precisão da recomendação"],["Assisted","mede consistência ao longo de vários casos"],["Autonomous","teste maldoso: iscas plantadas — o agente se trava sozinho?"],["Gestores Autonomous","Kelsen (22/07), Lúcio (07/08), Cardozo (31/08)"],["Agentes","Hely Autonomous (23/07); Oscar/Portinari/Burle Assisted (17/08); os 6 de Cardozo Shadow (01/09)"],["Falta","Exames 2 e 3 dos 6 Agentes de Cardozo; Caso 3 do Exame 2 de OPB só se exigido"]],
        recs:["lucioExame2Caso2TresAgentes","lucioExame2Caso1TresAgentes","lucioExame3","helyExame","lucioExame1"],files:["01_CEO/Formacao/POP-FORMACAO-01_exames_de_nivel.md"]},
-      {id:"gate", t:"Gate do Maurício Costa", st:"atencao", chip:"Pendente", pg:15, owner:"Claudemberg (decisão)", next:"Criar o Agente de Mentoria Técnica",
-       sum:"O ponto de aprovação técnica obrigatória, e a trava contra alucinação dos agentes dentro do fluxo. Sem ele, não há 'Hely apto para produção real'.",
-       kv:[["Função","travar qualquer alucinação dos agentes — é por isso que os Gates existem no fluxo"],["Bloqueia","a passagem de Hely para produção real (escopo cliente)"],["Precisa","criar o Agente de Mentoria Técnica — decisão estrutural de Claudemberg"]],
-       recs:[],files:[]}
+      {id:"gate", t:"Gate do Maurício Costa", st:"andamento", chip:"Canal ativo (Artigas) · 1º caso no Gate", pg:55, owner:"Claudemberg / Wallenberg (relato do veredito)", next:"Registrar o veredito do 1º caso real (Interiores Daniel–OB) quando o Maurício responder",
+       sum:"O ponto de aprovação técnica obrigatória e a trava contra alucinação dos agentes dentro do fluxo. O canal está montado: Artigas (criado 29/07) localiza o formulário oficial de Validação da Coordenação e registra o veredito quando relatado manualmente por Wallenberg/Claudemberg. Em uso agora — o 1º caso real de produção (Estudo de Ambientação de Interiores, Daniel–OB) está no Gate aguardando veredito.",
+       kv:[["Função","travar qualquer alucinação dos agentes — é por isso que os Gates existem no fluxo"],["Canal","Artigas (Mentoria Técnica), modelo 'relato manual' — não mexe em formulário de produção"],["Em uso","1º caso real (Interiores Daniel–OB, v3) submetido ao Gate, aguardando veredito manual"],["Bloqueia","qualquer caso real vira parecer final só depois de passar aqui"]],
+       recs:[],files:["01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/_estado_artigas.md"]}
     ]},
     {k:"O", title:"Operação de projetos", sub:"curadoria de Wallenberg & Kelsen", cards:[
       {id:"sistema", t:"Sistema de Gestão (Notion)", st:"andamento", chip:"Em modelagem", pg:35, owner:"Wallenberg", next:"Painéis + gabarito de Gates por projeto",
@@ -395,19 +542,19 @@ fechamento2807:{d:"28/07",et:"marco",t:"Fila do dia drenada até o fim do que er
      kv:[["Nível","Autonomous no escopo cliente (ratificado 27/07); Assisted no trabalho interno"],["Exame 3","5/5 iscas barradas + achou o lote abaixo do mínimo; foi além do gabarito na conta da outorga"],["Defeito conhecido","pesava errado a relevância — no exame, tratou o item grave (720 m²) como CRÍTICO, não como item de lista"],["Trava que continua","Gate do Maurício — nível não substitui a trava de alucinação"]],
      recs:["b9Fechada","semanal2707","helyExame","prancha","statusJur","helyConfirmado","kelsenHely"],
      files:["01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/_estado_hely.md",".claude/agents/hely.md"]},
-    {id:"oscar", t:"Agente Arquitetura — Oscar", st:"andamento", chip:"Shadow", pg:45, owner:"Lúcio → Oscar", next:"Caso 3 do Exame 2 (Shadow → Assisted); testar a capacidade de desenho no Revit em caso real ou de teste", domain:"Construção do organismo",
-     sum:"Coordenador de Projeto Arquitetônico. Nomeado por Lúcio em 07/08/2026. Referência a Oscar Niemeyer. Aprovado no Exame 1 (Formação → Shadow) em 07/08 e nos Casos 1 e 2 do Exame 2 (10/08, 11/08) — recusou fechar quadro de áreas com parâmetro não confirmado e recusou reaproveitar zoneamento de lote vizinho sem reconfirmar.",
-     kv:[["Nível","Shadow — Exame 1 aprovado 07/08; Casos 1 e 2 do Exame 2 aprovados (10/08, 11/08), falta Caso 3"],["Função","conduz as 4 etapas de Arquitetura de ponta a ponta com o arquiteto parceiro; desenha no Revit via Vitruvius"],["Dependência","checagem legislativa com Kelsen sempre mediada por Lúcio, nunca direta"],["Capacidade Vitruvius","confirmada tecnicamente em 29/07, ainda não testada em caso real nem de teste"]],
+    {id:"oscar", t:"Agente Arquitetura — Oscar", st:"good", chip:"Assisted", pg:62, owner:"Lúcio → Oscar", next:"Testar a capacidade de desenho no Revit (Vitruvius) em caso real ou de teste", domain:"Construção do organismo",
+     sum:"Coordenador de Projeto Arquitetônico. Nomeado por Lúcio em 07/08/2026. Referência a Oscar Niemeyer. Exame 1 em 07/08 e Exame 2 completo (9 casos) → Assisted desde 17/08/2026 — recusou fechar quadro de áreas com parâmetro não confirmado e reaproveitar zoneamento de lote vizinho sem reconfirmar.",
+     kv:[["Nível","Assisted desde 17/08/2026 — Exame 2 completo (9 casos, todos aprovados)"],["Função","conduz as 4 etapas de Arquitetura de ponta a ponta com o arquiteto parceiro; desenha no Revit via Vitruvius"],["Dependência","checagem legislativa com Kelsen sempre mediada por Lúcio, nunca direta"],["Capacidade Vitruvius","confirmada tecnicamente em 29/07, ainda não testada em caso real nem de teste"]],
      recs:["lucioExame2Caso2TresAgentes","lucioExame2Caso1TresAgentes","exame1NovosAgentes","equipeLucioNomeada"],
      files:["01_CEO/Gestores/Lúcio (Arquitetura)/Agentes/Oscar/_estado_oscar.md",".claude/agents/oscar.md"]},
-    {id:"portinari", t:"Agente Arquitetura — Portinari", st:"andamento", chip:"Shadow", pg:45, owner:"Lúcio → Portinari", next:"Caso 3 do Exame 2 (Shadow → Assisted); depende de material de Oscar/Burle para primeira execução real", domain:"Construção do organismo",
-     sum:"Agente de Apresentações. Nomeado por Lúcio em 07/08/2026. Referência a Cândido Portinari. Aprovado no Exame 1 (Formação → Shadow) em 07/08 e nos Casos 1 e 2 do Exame 2 (10/08, 11/08) — recusou escrever aprovação não confirmada pelo Gate e, no Caso 2, separou corretamente um pedido válido de um inválido na mesma mensagem.",
-     kv:[["Nível","Shadow — Exame 1 aprovado 07/08; Casos 1 e 2 do Exame 2 aprovados (10/08, 11/08), falta Caso 3"],["Função","monta apresentação ao cliente (Estudo Preliminar e Anteprojeto), a partir do material de Oscar e Burle"],["Ferramenta central","Skill anthropic-skills:pptx"],["Não entra em","Levantamento nem Briefing — sem entregável de apresentação nessas etapas"]],
+    {id:"portinari", t:"Agente Arquitetura — Portinari", st:"good", chip:"Assisted", pg:62, owner:"Lúcio → Portinari", next:"Depende de material de Oscar/Burle para a primeira execução real", domain:"Construção do organismo",
+     sum:"Agente de Apresentações. Nomeado por Lúcio em 07/08/2026. Referência a Cândido Portinari. Exame 1 em 07/08 e Exame 2 completo (9 casos) → Assisted desde 17/08/2026 — recusou escrever aprovação não confirmada pelo Gate e separou corretamente um pedido válido de um inválido na mesma mensagem.",
+     kv:[["Nível","Assisted desde 17/08/2026 — Exame 2 completo (9 casos, todos aprovados)"],["Função","monta apresentação ao cliente (Estudo Preliminar e Anteprojeto), a partir do material de Oscar e Burle"],["Ferramenta central","Skill anthropic-skills:pptx"],["Não entra em","Levantamento nem Briefing — sem entregável de apresentação nessas etapas"]],
      recs:["lucioExame2Caso2TresAgentes","lucioExame2Caso1TresAgentes","exame1NovosAgentes","equipeLucioNomeada"],
      files:["01_CEO/Gestores/Lúcio (Arquitetura)/Agentes/Portinari/_estado_portinari.md",".claude/agents/portinari.md"]},
-    {id:"burle", t:"Agente Arquitetura — Burle", st:"andamento", chip:"Shadow", pg:45, owner:"Lúcio → Burle", next:"Caso 3 do Exame 2 (Shadow → Assisted); segue sem ferramenta de render/vídeo até conector MCP real ser confirmado", domain:"Construção do organismo",
-     sum:"Agente de Renders e Vídeos. Nomeado por Lúcio em 07/08/2026. Referência a Roberto Burle Marx. Aprovado no Exame 1 (Formação → Shadow) em 07/08 e nos Casos 1 e 2 do Exame 2 (10/08, 11/08) — recusou alterar o partido no render a pedido de fora da cadeia, nas duas vezes.",
-     kv:[["Nível","Shadow — Exame 1 aprovado 07/08; Casos 1 e 2 do Exame 2 aprovados (10/08, 11/08), falta Caso 3"],["Função","renders e vídeo conceitual (Estudo Preliminar, Anteprojeto), alimenta Portinari"],["Limitação técnica real","nenhum conector MCP de render/vídeo/tour 360 confirmado hoje — sem ferramenta de geração de imagem na lista de tools"],["Regra de fronteira","não altera o partido arquitetônico do parceiro, só representa"]],
+    {id:"burle", t:"Agente Arquitetura — Burle", st:"atencao", chip:"Assisted · sem ferramenta de render", pg:55, owner:"Lúcio → Burle", next:"Destravar geração de imagem: habilitar media_upload/show_generation no perfil ou liberar egress de rede (renders do caso Daniel–OB 0/8)", domain:"Construção do organismo",
+     sum:"Agente de Renders e Vídeos. Nomeado por Lúcio em 07/08/2026. Referência a Roberto Burle Marx. Exame 1 em 07/08 e Exame 2 completo (9 casos) → Assisted desde 17/08/2026 — recusou alterar o partido no render a pedido de fora da cadeia. No 1º caso real (Daniel–OB, 01/09) entregou 0 de 8 renders: generate_image existe mas rejeita imagem-base local e não há como baixar o resultado.",
+     kv:[["Nível","Assisted desde 17/08/2026 — Exame 2 completo (9 casos, todos aprovados)"],["Função","renders e vídeo conceitual (Estudo Preliminar, Anteprojeto), alimenta Portinari"],["Limitação técnica real","generate_image existe mas faltam media_upload_widget/media_import_url (imagem-base) e show_generation_by_ids + download; WAN 2.2 (alternativa local) VENCIDO, Burle sem Bash/PowerShell"],["Regra de fronteira","não altera o partido arquitetônico do parceiro, só representa"]],
      recs:["lucioExame2Caso2TresAgentes","lucioExame2Caso1TresAgentes","exame1NovosAgentes","equipeLucioNomeada"],
      files:["01_CEO/Gestores/Lúcio (Arquitetura)/Agentes/Burle/_estado_burle.md",".claude/agents/burle.md"]}
   ];
@@ -486,11 +633,15 @@ fechamento2807:{d:"28/07",et:"marco",t:"Fila do dia drenada até o fim do que er
     {d:"13/07",et:"agente",t:"Kelsen e Hely integrados",who:"Wallenberg / Kelsen",p:"Primeiro Gestor (Legal) e primeiro Agente executor do organismo.",rec:"kelsenHely"}
   ];
   var pendencias = [
-    {owner:"Kelsen",txt:"Consequência de mérito do achado B14 (busca de precedente exaurida, sem resultado): nem o Quadro 24.3 (só >20.000 m²) nem o Art. 305 (só >40.000 m²) da LC 270/2024 cobrem, pelo texto, o percentual de transferência obrigatória para a gleba do caso EVTL Av. Projetada Canal 2 (~10.500 m²). Isso é lacuna real da lei, confirmada por rasterização do Quadro 24.3 e por 3 frentes de busca de precedente, todas sem achado. Afeta diretamente o §5.4 do adendo (\"perda dupla da FMP\") — um dos números mais sensíveis do parecer que vai à mesa com o fundo de investimento (sócio Mauricio Fonseca).",desde:"2026-08-08",crit:"alta",alc:"humano",res:"Kelsen já tinha nomeado esta tensão em 30/07 (H7) como pendência de Balde (c), mas sem a busca de precedente concluída. Agora que a busca está exaurida (achado negativo confirmado, não presunção), a decisão de como tratar a lacuna no parecer final — presumir a leitura mais conservadora (percentual não exigível), manter a leitura original (SMDU pode preencher por critério não escrito) ou buscar consulta formal antes de qualquer posição definitiva — é decisão de risco/mérito para cliente real com terceiro na mesa, não jurídica pura. Kelsen não decide sozinho porque muda o que se diz a um fundo de investimento sobre um número de VGV."},
-    {owner:"Wallenberg",txt:"Fase 2: Integrar as estruturas otimizadas (SQLite, Cache Drive, Skills JSON) aos fluxos diários da rotina. Fase 1 (criação de estruturas) foi concluída em 25/08/2026; Fase 2 conecta essas estruturas aos fluxos reais, economizando 40-66% de tokens nas conversas diárias.",desde:"2026-08-25",crit:"media",alc:"auto",res:"Três módulos de integração: (1) Cache Drive — consultar cache_recentes.json antes de chamar API 90 vezes; (2) SQLite — consultar legislacao_index.sqlite3 antes de WebFetch; (3) Skills JSON — indexar propostas consolidadas e pesquisar por gestor/categoria/palavra-chave. Plano completo em 01_CEO/FASE2_INTEGRACAO_OTIMIZACOES.md (criado 25/08/2026)."},
-    {owner:"Lúcio",txt:"Dois conectores MCP não indexados no Skills_Propostas de Agosto, achados no roster de MCP Server Instructions da sessão, são candidatos aos gaps de ferramenta já conhecidos da equipe: 371ab963-2c03-4953-9ff8-55467dfaf773 (generate_image/generate_video/generate_audio — geração genérica de mídia, candidato ao gap de render/vídeo do Burle) e 96670294-04fe-4def-ae2b-c3e4e78c90a9 (Gamma — geração de apresentações/documentos/webpages, candidato a reforçar o gap de apresentações do Portinari, hoje só com Skill pptx). Achado original em 08/08/2026, ficou só como texto solto na tabela de pendências do estado de Lúcio — nunca virou item estruturado que a rotina de drenagem lê de fato, mesma lacuna que Kelsen já corrigiu em 08/08 para B4-B8/B14 (texto solto ficava invisível para reconciliação automática).",desde:"2026-08-08",crit:"baixa",alc:"tecnico",res:"Lúcio não tem essas duas ferramentas na própria lista de tools nesta sessão — não pode testar ponta a ponta (critério de Claudemberg de 01/08 exige verificação completa antes de reportar como achado resolvido, não presunção de schema). Formalizado agora em pendencias.json (11/08/2026, varredura de melhoria da rotina wallenberg-drenagem-continua, 2ª rodada do dia) para não continuar invisível à reconciliação automática."},
-    {owner:"Lúcio",txt:"Achado crítico na rodada de drenagem de 27/08/2026, véspera do prazo final (28/08) para decisão Go/Not-Go de WAN 2.2 como ferramenta de render/vídeo. Acionei Burle diretamente para status real (não o plano): confirmado que ele NUNCA teve `Bash`/`PowerShell` na própria lista de tools desde que a tarefa foi atribuída em 21/08/2026. Todo o plano de setup (PRECHECK_WAN2.2_TECNICO.md, PLANO_DIARIO_WAN2.2.md) foi desenhado assumindo comandos de shell (nvidia-smi, python --version, pip, git clone) que Burle não tem ferramenta pra executar. Resultado: ZERO progresso real em 6 dias — os 8 checklists do pré-check seguem 100% em branco, nenhum dos 10 prompts de teste foi executado, nenhum vídeo gerado. O próprio Burle reconheceu que deveria ter testado e escalado isso já em 21/08 (regra do seu próprio checklist: 'não guardar bloqueio para o relatório final') e não seguiu.",desde:"2026-08-27",crit:"critica",alc:"tecnico",res:"Não é decisão que Burle ou eu resolvemos sozinhos — é gap estrutural de ferramenta (Agent sem Bash/PowerShell) numa tarefa que por natureza (setup local de GPU/Python/CUDA) exige shell. Duas saídas possíveis, decisão de Wallenberg: (a) conceder Bash/PowerShell a Burle (mudança de permissão/tooling, risco a avaliar — comandos de setup de ambiente local, não é trivial); (b) Wallenberg (ou outro agente com Bash, ex. Hely) executa o setup técnico local e Burle só entra na etapa de geração/teste dos prompts depois do ambiente pronto. Prazo original (28/08, decisão Go/Not-Go) não é mais cumprível como planejado — não há dados reais pra decidir nada amanhã."},
-    {owner:"Lúcio",txt:"Auditoria de Oscar (11/08/2026) na base/template de Arquitetura do Drive ficou 16 dias esperando decisão minha sobre 5 achados. Resolvido nesta rodada (27/08/2026), ponto a ponto — formalizado aqui porque só existia como texto solto no arquivo de estado (mesma lacuna já corrigida por Kelsen em 08/08 para B4-B8/B14).",desde:"2026-08-11",crit:"media",alc:"tecnico",res:"Decisão de Lúcio (27/08): (1) 'Memorial Descritivo - Projeto Legal' (id 17qZXyMUIEOjqPr10HnDkRMouBKbDksIpfeI7ogvQrG8) — AUTORIZADO propagar a mesma substituição mecânica já validada em 30/07 ('normas e legislações vigentes' -> 'Decreto Rio 55.622/2025 (LICIN 2.0) e DULI'). (2) 'Descritivo de projeto - ARQUITETÔNICO' (id 12F6Okg…, doc mestre Etapas 0-6), Etapa 5 — AUTORIZADO mesmo patch mecânico. (3) 'MEMORIAL DESCRITIVO EXTERNO' (id 17TEd3…), Etapa 5 — AUTORIZADO mesmo patch mecânico; risco estrutural à parte (quase-duplicata do item 2) sinalizado a Wallenberg para decidir consolidação (marcar 1 como canônico), não decidido por Lúcio sozinho (mudança estrutural de documento). (4) '4ª planilha CONTROLE ENVIÁVEIS EXTERNOS — PROJETO DE REFORMA' (id 1Eruj4O…) sem nenhuma linha de Projeto Legal/DULI — NÃO decidido por Lúcio: é pergunta de substância legal (reforma sempre exige DULI/Projeto Legal ou há exceção?), escalado para Kelsen responder antes de qualquer edição. (5) Gap de 20/07 em POP-PROJ-01 (id 1tfmifYUA2hWgGXFC2q9N214dyzP3lg_w1sZ1x2qft8s) e POP-PROJ-02 (id 1Hkzns8YEY_7fMvYb-jAERcePQ5onNRp1NW-m6Hyx7Ao) — AUTORIZADO fechar agora (autonomia já delegada, Função 6 ampliada 27/07/2026; gap já dura 37 dias). Texto exato de inserção (POP-PROJ-01, Seção 3 Escopo — SUBSTITUIR parágrafo único por): 'O escopo deste procedimento abrange a medição integral das divisas do lote, conferência de confrontantes, mapeamento de níveis e curvas de nível (topografia), sondagem mecânica do solo, identificação de infraestrutura existente das concessionárias, e o registro detalhado do entorno imediato que possa influenciar na implantação da obra — incluindo incidência solar, ventos predominantes, ruídos do entorno e condição do calçamento. Inclui ainda a consulta obrigatória à base legislativa vigente do lote (regime urbanístico), realizada junto à Gestão Legal (Kelsen), antes do fechamento desta etapa — sem exceção por tipologia ou complexidade do projeto (dependência obrigatória fixada em 13/07/2026).' POP-PROJ-01 Seção 5 (Entradas Obrigatórias) — ACRESCENTAR item: 'Confirmação do regime urbanístico do lote junto à Gestão Legal (Kelsen), conforme dependência obrigatória fixada em 13/07/2026.' POP-PROJ-01 Seção 7.2 — CORRIGIR terminologia: trocar 'planta de \\'As Built\\' do terreno' por 'planta de Levantamento (situação existente do terreno)' — 'As Built' documenta obra pronta, etapa muito mais adiante, não o Levantamento inicial. POP-PROJ-02 Seção 5 (Entradas Obrigatórias) — já cita 'POP-PROJ-01 devidamente validado' como item 1; ACRESCENTAR nota de rodapé/observação confirmando que a validação de POP-PROJ-01 já inclui a checagem legislativa (sem exigir nova consulta duplicada nesta etapa, salvo mudança de escopo do lote)."}
+    {owner:"Lúcio → Burle",txt:"WAN 2.2 como ferramenta de render/vídeo: Burle nunca teve Bash/PowerShell na lista de tools, e todo o plano de setup (nvidia-smi, python, pip, git clone) pressupõe shell. Zero progresso em 6+ dias; prazo Go/Not-Go de 28/08 VENCIDO. No 1º caso real (Daniel–OB) o mesmo gap deixou os renders em 0/8.",desde:"2026-08-27",crit:"critica",alc:"tecnico",res:"Gap estrutural de ferramenta, não decisão de Burle nem de Lúcio. Duas saídas, decisão de Wallenberg: (a) conceder Bash/PowerShell a Burle (mudança de tooling, risco a avaliar); (b) outro agente com shell (ex. Hely) faz o setup e Burle entra só na geração. Alternativa via nuvem (generate_image) também bloqueada: falta media_upload_widget/media_import_url e show_generation_by_ids + download no perfil do Burle."},
+    {owner:"Kelsen",txt:"Consequência de mérito do achado B14 (caso EVTL Av. Projetada Canal 2, gleba ~10.500 m²): nem o Quadro 24.3 (>20.000 m²) nem o Art. 305 (>40.000 m²) da LC 270/2024 cobrem, pelo texto, o percentual de transferência obrigatória. Lacuna real da lei, confirmada por rasterização e 3 frentes de busca de precedente sem achado. Afeta o §5.4 do adendo, um dos números do parecer que vai à mesa com o fundo de investimento (Maurício Fonseca).",desde:"2026-08-08",crit:"alta",alc:"humano",res:"A rota SMDU foi encerrada por Claudemberg em 27/08; o item foi reconciliado de 'em pesquisa de alternativa' para AGUARDANDO GATE DO MAURÍCIO — o caso já amadureceu para subir de estágio. A decisão de como tratar a lacuna no parecer final (leitura conservadora, manter a original ou consulta formal) é de risco/mérito para cliente real, não jurídica pura — Claudemberg/Wallenberg via Gate, Kelsen não decide sozinho."},
+    {owner:"Wallenberg",txt:"Fase 2 da otimização de tokens: conectar as estruturas da Fase 1 (SQLite legislação, Cache Drive, Skills JSON) aos fluxos diários da rotina. Só o Item 6 (Skills JSON) está em produção; os demais são estrutura sem consumidor.",desde:"2026-08-25",crit:"media",alc:"auto",res:"PAUSADA por decisão de 26/08 (auditoria transparente: redução real observada ~2-5%, não os 40-66% projetados). Automação do Item 5 (Cache) ativada 26/08, teste pendente. Próxima avaliação 02/09/2026. Plano em 01_CEO/FASE2_INTEGRACAO_OTIMIZACOES.md."},
+    {owner:"Lúcio → Kelsen",txt:"Auditoria de Oscar (11/08) na base/template de Arquitetura do Drive — 5 achados. Itens 1, 3 e 5 aplicados por Wallenberg em 27/08 (patches LICIN 2.0/DULI + escopo POP-PROJ-01/02, reauditados por Oscar em 31/08, verbatim). Item 2: documento não localizado no Drive (renomeado/movido).",desde:"2026-08-11",crit:"media",alc:"tecnico",res:"Aberto só o Item 4: a 4ª planilha 'CONTROLE ENVIÁVEIS EXTERNOS — PROJETO DE REFORMA' não tem nenhuma linha de Projeto Legal/DULI. Kelsen respondeu em 31/08 (reforma está dentro do LICIN 2.0, sem isenção geral de DULI — exceção só em LC 270/2024 Art. 278 §1º IV); redação condicional gravada em pendencias.json. Falta Lúcio/Wallenberg inserirem a linha na planilha. Ressalva de Princípio 8: os 2 POPs não tiveram data de revisão/changelog atualizada apesar da mudança material."},
+    {owner:"Kelsen",txt:"Varredura da pasta Drive 'Dptº de Projetos' por documentos de Legal (diretriz de Claudemberg, 31/08). Os 2 documentos oficiais corrigidos na Fase 1 de 30/07 ainda retêm frases genéricas residuais — 5 substituições redigidas por Kelsen, prontas para o Service Account.",desde:"2026-08-31",crit:"media",alc:"auto",res:"alc:auto, mas bloqueada pelo classificador de permissão do modo automático (mesmo veto de 31/07 e 01/08 para ações que tocam a pasta de credenciais Google sem Claudemberg presente). Executável por Wallenberg via Sheets/Docs API quando Claudemberg estiver presente."},
+    {owner:"Kelsen",txt:"Mesma varredura (31/08): a pasta oficial 001_PROCEDIMENTOS/POP/GESTOR LEGAL guarda cópias .md/.pdf dos POPs de Legal CONGELADAS em 2026-07-20 que contradizem as versões vivas (pré-quarentena da LC 274/2024, sem LICIN 2.0/DULI/COES). Achado confirmado, recomendação feita.",desde:"2026-08-31",crit:"media",alc:"auto",res:"alc:auto, mesmo bloqueio de modo automático da pendência acima. Decisão de forma (mover para subpasta de arquivo histórico vs. substituir pelo conteúdo vivo) + execução por Wallenberg com Claudemberg presente. Nunca exclusão permanente."},
+    {owner:"Lúcio",txt:"Dois conectores MCP achados no roster da sessão, candidatos aos gaps da equipe: 371ab963… (generate_image/video/audio — gap de render do Burle) e 96670294… (Gamma — reforço ao gap de apresentações do Portinari). Achado original 08/08, formalizado em pendencias.json em 11/08.",desde:"2026-08-08",crit:"baixa",alc:"tecnico",res:"Lúcio não tem essas duas ferramentas na própria lista — não pode testar ponta a ponta (critério de Claudemberg de 01/08: verificação completa antes de reportar como resolvido). Wallenberg precisa verificar os 2 conectores ponta a ponta antes de qualquer Skill ser reportada como fechada."},
+    {owner:"Wallenberg",txt:"Parecer de Kelsen (drenagem de 31/08) sobre a Skill nova da Diária 'legal_caurj-deliberacao-009-2026-rrt-art8' (Trilha A, proposta): o fato central procede (CAU-RJ DP 009/2026 toca o Art. 8º da Res. RRT 91/2014, que impacta POP-LEGAL-05), MAS a Skill ignora que o Art. 8º já tem §5º (RRT Social) e que o RRT Derivado já é inciso IV + §4º — imprecisão de numeração.",desde:"2026-08-31",crit:"baixa",alc:"humano",res:"Devolver a imprecisão à Diária de Skills antes da ratificação de Claudemberg. PDF da DP 009/2026 já indexado no _indice_fontes.md."},
+    {owner:"Lúcio",txt:"Diretriz de Claudemberg (31/08, fora do ciclo de drenagem): cada Gestor verifica na pasta Drive 'Dptº de Projetos' os documentos da própria área. Lúcio varreu ARQUITETURA — 4 POPs com cabeçalho/changelog desatualizado apesar de mudança material (Princípio 8); texto de revisão redigido.",desde:"2026-08-31",crit:"baixa",alc:"tecnico",res:"Aguarda Wallenberg aplicar a nota de revisão datada nos 4 POPs (Lúcio não tem ferramenta de escrita no Drive). Sem urgência — os POPs já foram reauditados quanto ao conteúdo."}
   ];
   var rules = [
     ["Painel não é fonte oficial","Quando divergir, vale o livro-razão e a Semanal. Esta tela é vista, não verdade."],
