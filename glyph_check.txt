@@ -1,2 +1,0 @@
-problem glyphs found: {'→'}
-count: 3
