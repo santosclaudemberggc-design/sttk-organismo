@@ -4,6 +4,26 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-03] Exclusão da rotina "STTK Consolidada" + medição de tokens movida para a Reunião Semanal — decisão de Claudemberg
+
+**Decisão de Claudemberg (nesta conversa):** (1) excluir tudo que rodava antes com erros/falhas no thread de otimização de tokens; (2) a medição de token passa a rodar **toda segunda, dentro da Reunião Semanal**.
+
+**Executado por Wallenberg:**
+- **Tarefa agendada `sttk-consolidada-otimizacaotokens` EXCLUÍDA do agendador** (14 sessões arquivadas). Reportava métricas fabricadas ("96% ↓", "45-67%", "Item 7 aguardando API"). SKILL.md substituído por lápide apontando para o novo passo.
+- **`01_CEO/Painel_Fundador/rotina_sttk_consolidada.py` + `.bat` + `ROTINA_STTK_CONSOLIDADA_README.md` REMOVIDOS do repo** (`git rm`). Script inerte (`repo_path` fixo em `D:\sttk-organismo`) cujo gerador de registro diário sobrescrevia arquivos escritos à mão com texto contraditório.
+- **Pasta órfã `wallenberg-drenagem-continua`** (a que editei por engano em 02/09) — SKILL.md substituído por lápide apontando para `-local`.
+- **`wallenberg-reuniao-semanal/SKILL.md` — novo Passo 2.5:** roda `medir_tokens.py` + `custo_por_agente.py`, lê os JSON e monta na pauta a seção "3. SAÚDE DE CONSUMO (medido, não projetado)" — cache hit, contexto por conversa (semana vs. base vs. semana passada), top-3 agentes por custo, custo por rotina, e quantas rodadas de Drenagem o Portão barrou por fila vazia. Números só dos JSON, nunca inventados.
+
+**Backups (em `_backups/2026-09-02/`):** `DELETADO_sttk-consolidada-otimizacaotokens_SKILL.md`, `DELETADO_wallenberg-drenagem-continua_ORFAO_SKILL.md`, `DELETADO_rotina_sttk_consolidada.py`, `wallenberg-reuniao-semanal_SKILL_pos-passo2.5-tokens.md`.
+
+**Pendente (Claudemberg decidiu adiar):** trim do `_estado_kelsen.md` (~40k tokens, append-only) e aperto do hand-off Kelsen→Hely — só **depois** que o Kelsen fechar o caso Daniel-OB.
+
+**Nota:** as pastas `sttk-consolidada-otimizacaotokens/` e `wallenberg-drenagem-continua/` seguem no disco em `~/.claude/scheduled-tasks/` (só a lápide) — remoção física da pasta bloqueada por permissão; Claudemberg apaga pelo Explorer se quiser.
+
+**Como desfazer:** restaurar os arquivos dos backups acima; recriar a tarefa `sttk-consolidada-otimizacaotokens` via MCP scheduled-tasks com o cron `30 9 * * 1-5`; remover o Passo 2.5 de `wallenberg-reuniao-semanal/SKILL.md`.
+
+---
+
 ### [2026-09-02] Portão de Trabalho na Drenagem Contínua (Opção B / Alvo A) — decisão de Claudemberg, executada por Wallenberg
 
 **Contexto:** medição real de tokens (ferramenta `01_CEO/_ferramentas/token_tracking/`, commits `e15d8d9`..`5fe1c87`) mostrou que a "otimização de tokens" não reduziu custo por agente e que o maior bloco de gasto é as rotinas agendadas — `wallenberg-drenagem-continua` rodou 48× (~US$ 488 em tokens-equivalentes de API), boa parte com fila vazia. No plano **Pro** (R$ ~1.200/ano fixo) o custo real não é dinheiro, é bater no teto de uso semanal e o organismo travar — o que acontece em algumas semanas.
