@@ -39,7 +39,11 @@ Esta é a rodada agendada da Rotina Drenagem Contínua v2.3. Abaixo está a espe
 
    Com os dados dos Passos 1-2, ANTES de abrir qualquer Gestor, monte:
    ├─ auto_abertas = itens de pendencias.json com alc:"auto" E status:"aberta", por owner
-   ├─ skills_novas = 01_CEO/Skills_Propostas/2026/{mês corrente}/ com Status: "proposta"
+   ├─ skills_novas = Skills em 01_CEO/Skills_Propostas/2026/{mês corrente}/ com Status:
+   │                 "proposta" QUE AINDA NÃO FORAM AVALIADAS por uma rodada anterior
+   │                 (sem anotação de avaliação no índice / criadas após a última drenagem).
+   │                 Skill já avaliada e parada em "aguardando ratificação de Claudemberg"
+   │                 NÃO conta — ela volta na Reunião Mensal, não a cada dia.
    └─ notion_pend  = "Treinos e Testes" com Status: pendente
 
    ▶ SE auto_abertas, skills_novas e notion_pend estão TODOS vazios:
