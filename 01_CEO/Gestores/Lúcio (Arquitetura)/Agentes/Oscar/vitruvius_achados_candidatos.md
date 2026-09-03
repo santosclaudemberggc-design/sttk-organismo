@@ -55,6 +55,24 @@ Para cada achado: **o que é**, **o que o Vitruvius já cobre ou não cobre diss
 - **Próximo passo:** Lúcio/Oscar: (1) Extrair e redigir os 113 arquivos como Skill de BIM knowledge; (2) **TESTAR: named pipes + Vitruvius no mesmo Revit — há conflito de comunicação?**; (3) Se testes OK, propor a Wallenberg: "manter RevitMCPBridge como fallback paralelo ao Vitruvius para casos fora do escopo dos 35 tools".
 - **Fonte:** https://github.com/WeberG619/RevitMCPBridge2026 — verificado 01/09/2026
 
+### 03/09/2026 — BIMwright/rvt-mcp — 229 tools, Revit 2022-2027, Apache-2.0
+
+- **O que é:** ponte local entre MCP client (Claude, Cursor, Codex, etc.) e Revit via TCP (Revit 2022-2024, .NET Framework 4.8) ou Named Pipe (Revit 2025-2027, .NET 8/10). Oferece **229 tools** em modo completo (40 no modo padrão, expansível até 232 com bake adaptativo). Organizado em toolsets temáticos: Query (vistas, seleção, filtros, parâmetros), Create (grids, níveis, salas, elementos geométricos), View (criar vistas, sheets, capturar imagens), Meta (execução em lote, multi-Revit, envio de código C#), e opcionais: MEP, estrutural, anotações, materiais, geometria, links, parâmetros.
+- **O que o Vitruvius não cobre hoje:** suporte a multi-Revit (rodar em mais de uma instância do Revit simultaneamente), envio de código C# arbitrário via MCP (o Vitruvius não expõe raw API), toolsets MEP/estrutural dedicados, bake adaptativo (o AI recebe só as tools relevantes ao contexto). 229 tools vs. 35 do Vitruvius — faixa intermediária entre o Vitruvius curado (35) e o RevitMCPBridge bruto (705+).
+- **Comparação com achados anteriores:** mais tools que UV-Tech (40), Demolinator (48) e LuDattilo (138, original), menos que RevitMCPBridge2026 (705+). Porém é o mais maduro em CI/manutenção: **166 commits, 18 estrelas, 9 forks** — atividade sustentada. Apache-2.0 (licença mais permissiva que MIT para uso corporativo).
+- **Compatibilidade Revit:** 2022-2027 — a mais ampla de todos os achados. Vitruvius suporta quais versões? (pendente de confirmação).
+- **Decisão:** **avaliar incorporação parcial** — é o candidato mais equilibrado entre amplitude de tooling e maturidade de projeto. Testar coexistência com Vitruvius (Named Pipe no Revit 2025+ — mesmo mecanismo?). Se compatíveis, os toolsets opcionais (MEP, estrutural) podem ser ativados conforme a disciplina do Agente (Baumgart ativa estrutural, Landell ativa MEP).
+- **Próximo passo:** Lúcio/Oscar: (1) confirmar se Vitruvius usa Named Pipe ou outro mecanismo; (2) se Named Pipe, testar se dois servidores MCP podem escutar no mesmo Revit; (3) avaliar bake adaptativo como modelo para curar tools do Vitruvius por contexto.
+- **Fonte:** https://github.com/bimwright/rvt-mcp — verificado 03/09/2026
+
+### 03/09/2026 — UV-Tech/revit-claude-mcp — 40 tools, Revit 2026, MIT
+
+- **O que é:** conector MCP para Revit 2026 com 40 ferramentas locais. Claude fala com um servidor Node.js MCP que se comunica com um addin Revit via HTTP local (localhost:6543). Cobre 5 áreas: Read (project info, levels, rooms, elements, families, views, sheets, parameters), Modify (criar paredes, posicionar famílias, definir parâmetros, mover/deletar), Export (PDFs, DWGs, IFCs, cronogramas), Audit (famílias, conteúdo não utilizado, importação de dados), Coordinate (detecção de clashes, exportação de relatórios HTML/CSV).
+- **O que o Vitruvius não cobre hoje:** exportação direta de PDF/DWG/IFC via MCP (o Vitruvius exporta?), auditoria de famílias e conteúdo não utilizado, relatórios de clash em HTML/CSV. Mesma faixa de tools que o modo padrão do BIMwright (40).
+- **Comparação com achados anteriores:** 40 tools é igual ao modo padrão do BIMwright, porém só Revit 2026 (vs. 2022-2027 do BIMwright) e com atividade muito inferior (5 commits, 2 stars, 0 forks). Arquitetura HTTP local vs. Named Pipe — pode ser mais simples de configurar, mas menos performante.
+- **Decisão:** **monitorar** — projeto em estágio muito inicial (5 commits). Funcionalidades de export e audit são interessantes mas o BIMwright cobre as mesmas com mais maturidade. Se o UV-Tech evoluir, reavaliar.
+- **Fonte:** https://github.com/UV-Tech/revit-claude-mcp — verificado 03/09/2026
+
 ---
 
 ## Como usar este arquivo

@@ -22,6 +22,35 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-03] Diária Skills v2.7 — Quinta-feira (Seg-Qui)
+
+**Contexto:** rodada automática da `wallenberg-rotina-diaria-skills-v2-7`, 03/09/2026 (qui). Execução autônoma, Claudemberg ausente.
+
+**Passo 1 — Pesquisa (5 eixos):**
+- NBR 15575:2025 desempenho acústico pisos → ACHADO PRINCIPAL Complementares (publicada dez/2024, vigente jun/2025, ambientes sem dormitório agora obrigatórios)
+- CAU-RJ + normativas RJ → Resolução SMDU 10/2026 (03/07/2026) → ACHADO PRINCIPAL Legal (Consulta Prévia + RDT obrigatório)
+- Render/vídeo → nada novo (Remodel AI cloud, Redraw cloud, Leonardo cloud — violam critério 2)
+- Apresentação interativa cliente → 3ª busca sem ferramenta gratuita viável (BIMx pago, pCon só interiores, Unreal Engine pesado)
+- GitHub Revit/BIM → 2 novos achados para Vitruvius: BIMwright/rvt-mcp (229 tools, 166 commits, Apache-2.0) e UV-Tech/revit-claude-mcp (40 tools, MIT)
+
+**Passo 2 — Consolidação:** 2 Skills novas (Trilha A), 0 Trilha B, 2 achados Vitruvius, 6 descartados com justificativa.
+
+**Passo 3 — Redação:**
+- `legal_resolucao-smdu-10-2026-consulta-previa-rdt-rj.md` (Trilha A, Legal — Kelsen/Hely + Lúcio/Oscar)
+- `complementares_nbr15575-2025-desempenho-acustico-pisos.md` (Trilha A, cross-disciplina Baumgart/Saturnino/Tenreiro)
+- `vitruvius_achados_candidatos.md` atualizado com 2 novos achados (BIMwright + UV-Tech)
+- Ambas Skills v1.0, Status: proposta.
+
+**Passo 4 — Salvamento:** `01_CEO/Skills_Propostas/2026/Setembro/`. Índice atualizado com 2 novas linhas + observações da rodada + prioridades atualizadas. Livro-razão registrado aqui.
+
+**Passo 5 — PDF:** 3 gerados (2 Skills + índice).
+
+**Passo 8 — Ferramentas:** nenhum achado novo que passe nos 4 critérios para Skill isolada de ferramenta. Os 2 achados Revit (BIMwright + UV-Tech) foram registrados em vitruvius_achados_candidatos.md conforme instrução de Claudemberg 27/08 — não viram Skill de usabilidade isolada porque são candidatos a agregar ao Vitruvius, não ferramentas independentes.
+
+**Como desfazer:** apagar `legal_resolucao-smdu-10-2026-consulta-previa-rdt-rj.md` e `complementares_nbr15575-2025-desempenho-acustico-pisos.md`; reverter edições no `indice.md` (remover linhas 03/09 e observações da rodada 03/09); reverter entradas de 03/09 em `vitruvius_achados_candidatos.md`.
+
+---
+
 ### [2026-09-02] Diária Skills v2.7 — Quarta-feira (Seg-Qui)
 
 **Contexto:** rodada automática da `wallenberg-rotina-diaria-skills-v2-7`, 02/09/2026 (qua). Execução autônoma, Claudemberg ausente.
