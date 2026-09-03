@@ -4,6 +4,23 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-03] Trim do `_estado_kelsen.md` (171 KB → 20 KB) — decisão de Claudemberg
+
+**Contexto:** o arquivo de estado do Kelsen é lido no início de todo acionamento dele (75 até agora) e da cadeia Kelsen→Hely. Estava em **487 linhas / 171 KB (~40k tokens)** — log append-only desde 13/07, violando a própria regra do arquivo ("substitua seções, não append"; "apague o que virou passado"). É a Função 6 (Padronizador) + o alvo mais recorrente de custo por agente.
+
+**Executado por Wallenberg:**
+- `_estado_kelsen.md` copiado verbatim para **`_estado_kelsen_HISTORICO.md`** (487 linhas, nada perdido) — arquivo que o Kelsen **não lê ao nascer**.
+- `_estado_kelsen.md` reescrito enxuto (**114 linhas / 20 KB**), 4 seções fixas: (1) onde parei — condensado, com os 2 casos ativos (Daniel-OB + EVTL) e a base AP4/unifamiliar/LMS; (2) pendências — só ponteiros para `pendencias.json`; (3) **os ~40 aprendizados preservados integralmente**; (4) como escrever (agora manda o log cronológico ir para o HISTÓRICO).
+- `.claude/agents/kelsen.md` — nota sobre o HISTÓRICO e a regra de não fazer append de log no arquivo vivo.
+
+**Nada de conteúdo foi perdido** — o HISTÓRICO tem o arquivo antigo byte a byte. As lições da Seção 3 estão nos dois.
+
+**Como desfazer:** `cp "_estado_kelsen_HISTORICO.md" "_estado_kelsen.md"` (remove o cabeçalho de HISTÓRICO manualmente) e reverter a nota no `.claude/agents/kelsen.md`.
+
+**Próximos (mesmo padrão, ainda não feitos):** `_estado_hely.md` (103 KB), `_estado_lucio.md` (96 KB), `_estado_wallenberg.md` (113 KB).
+
+---
+
 ### [2026-09-03] Exclusão da rotina "STTK Consolidada" + medição de tokens movida para a Reunião Semanal — decisão de Claudemberg
 
 **Decisão de Claudemberg (nesta conversa):** (1) excluir tudo que rodava antes com erros/falhas no thread de otimização de tokens; (2) a medição de token passa a rodar **toda segunda, dentro da Reunião Semanal**.
@@ -81,6 +98,29 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 3. Cardozo/alguém: reformular NBR 15575 com acesso norma ABNT ou note de ressalva antes de ratificação.
 
 **Duração:** ~53 min (Portão 5min + Acionamento Gestores paralelo ~88s cada + consolidação).
+
+---
+
+### [2026-09-03, ao vivo] Fechamento pós-Drenagem: 1 item Drive executado + 4 Skills ratificadas — Claudemberg presente
+
+**Contexto:** Claudemberg entrou ao vivo logo após a 2ª rodada de Drenagem Contínua (10:22-11:15) para resolver o que ficou bloqueado/pendente de ratificação.
+
+**Item 1 — `drive-legal-fase2-frases-genericas` EXECUTADO:**
+Wallenberg executou via Google Docs API (Service Account `sttickler-organismo-ia`), backup em `_backups/2026-09-03/drive-legal-fase2-frases-genericas_texto_pre_edicao.md`. **Achado na releitura antes de editar:** a Fase 1 (30/07) já tinha substituído "conforme legislação vigente" pela citação do Decreto, mas deixou **redundância** (citação duplicada na mesma frase) em vez do texto genérico puro que o item original supunha — correção ajustada em tempo real. Aplicadas 5 substituições (3 em POP-ARQ-PL-01: Seção 2, Seção 7.1 passo 2, "Arquiteto contrato"→"contratado"; 2 em MEMORIAL DESCRITIVO: regência "as Decreto"→"ao Decreto", ressalva de que fachada não é peça autônoma do DULI). Todas confirmadas por releitura pós-edição via Docs API. **Item fechado.**
+
+**4 Skills ratificadas** (Claudemberg, decisão verbal "vamos executar"):
+- `legal_lc281-2025-condicoes-especiais-licenciamento-rj.md` (Kelsen/Legal)
+- `legal_resolucao-smdu-10-2026-consulta-previa-rdt-rj.md` (Kelsen/Legal)
+- `complementares_nbr15220-3-2024-reclassificacao-bioclimatica-rj.md` (Cardozo/Complementares)
+- `complementares_nbr9575-2024-impermeabilizacao-selecao-projeto.md` (Cardozo/Complementares)
+
+Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e contexto da ratificação.
+
+**Pendente de decisão (não executado ainda):**
+- `drive-legal-pops-copias-desatualizadas` — decisão de organização do Drive (remover cópias antigas vs. sincronizar), aguardando escolha de Claudemberg antes de executar.
+- `complementares_nbr15575-2025-desempenho-acustico-pisos.md` (NBR 15575, Cardozo) — **não ratificada**: lacuna técnica real (valores para ambientes sem dormitório não em fonte aberta, norma ABNT paga). Aguarda decisão sobre acesso à norma ou reformulação com ressalva.
+
+**Como desfazer:** reverter as 5 substituições do item 1 usando o texto de backup listado acima; reverter Status de "ratificada" para "proposta" nos 4 arquivos de Skill se necessário.
 
 ---
 
