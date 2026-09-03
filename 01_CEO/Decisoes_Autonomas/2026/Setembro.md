@@ -11,10 +11,12 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 **Decisão de Claudemberg (nesta conversa):** (1) Alvo A — só cortes sem perda de qualidade de entrega; (2) modelo: Haiku só em varredura/reconciliação, Sonnet+ no Legal/Arquitetura; (3) **Opção B** — checagem barata antes de subir a rotina inteira. Pro fica.
 
 **Executado por Wallenberg:**
-- `wallenberg-drenagem-continua/SKILL.md` — novo **Passo 2.5 (Portão de Trabalho)**: se `pendencias.json` (alc:auto + aberta), Skills propostas do mês e Notion "Treinos e Testes" estão os três vazios → registra 2 linhas no registro diário, atualiza `_estado_wallenberg` Seção 1 e **encerra a rodada** sem abrir Gestor nenhum. Se há fila, abre **só** os Gestores com item real (não os 3 sempre).
-- Mesmo SKILL.md — **Passo 8a (Learning Agent)** passa a rodar só **segunda-feira E se houve execução real**; nos demais dias é pulado (a busca diária de vídeo YouTube/Instagram/watch queimava cota e rendia ~zero mudança).
+- **Passo 2.5 (Portão de Trabalho)** novo: se `pendencias.json` (alc:auto + aberta), Skills propostas do mês e Notion "Treinos e Testes" estão os três vazios → registra 2 linhas no registro diário, atualiza `_estado_wallenberg` Seção 1 e **encerra a rodada** sem abrir Gestor nenhum. Se há fila, abre **só** os Gestores com item real (não os 3 sempre).
+- **Passo 8a (Learning Agent)** passa a rodar só **segunda-feira E se houve execução real**; nos demais dias é pulado (a busca diária de vídeo YouTube/Instagram/watch queimava cota e rendia ~zero mudança).
 
-**Backup:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-02/wallenberg-drenagem-continua_SKILL_pre-portao-opcaoB.md` (+ cópia da rotina-diaria-skills, ainda não alterada).
+**CORREÇÃO 03/09/2026:** a edição de 02/09 foi feita no arquivo errado — `wallenberg-drenagem-continua/SKILL.md`, que é órfão (não está nas tarefas agendadas). A tarefa que **de fato roda** (seg-sex 10:15, `enabled`) é **`wallenberg-drenagem-continua-local`**. As duas edições acima foram replicadas em `C:\Users\santo\.claude\scheduled-tasks\wallenberg-drenagem-continua-local\SKILL.md` em 03/09, antes da rodada das 10:22. O arquivo órfão fica com a mesma mudança (inócua). Mesmo padrão observado: nomes "-local"/"-v2-7" são as tarefas vivas; os nomes sem sufixo estão obsoletos.
+
+**Backup:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-02/wallenberg-drenagem-continua_SKILL_pre-portao-opcaoB.md` (arquivo órfão, versão longa). O `-local` (versão compacta) não teve backup pré-edição salvo; **como desfazer:** as duas mudanças são adições puras e delimitadas — remover o bloco "✅ Passo 2.5: PORTÃO DE TRABALHO ..." inteiro e o parágrafo "⚠️ EXECUTE SOMENTE SE ..." sob o Passo 8a.
 
 **Não alterado:** `wallenberg-rotina-diaria-skills` (é geradora, não drenadora — "fila vazia" não se aplica; reduzir cadência dela é outra conversa) e `wallenberg-reuniao-semanal` (já é semanal, tem função de ratificação).
 
