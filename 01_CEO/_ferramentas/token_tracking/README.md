@@ -35,6 +35,19 @@ python 01_CEO/_ferramentas/token_tracking/medir_tokens.py
 
 ou `medir_tokens.bat` (Windows). Argumento opcional `--transcripts "<pasta>"`.
 
+### Custo por agente
+
+```bash
+python 01_CEO/_ferramentas/token_tracking/custo_por_agente.py
+```
+
+Lê os transcripts de **subagente** (`<sessionId>/subagents/agent-*.jsonl` +
+`.meta.json` com o `agentType`) e mostra quanto cada agente (Kelsen, Lúcio, Hely,
+Cardozo, …) gastou de fato, mais o antes/depois do corte de otimização (30/07) e
+o custo das sessões principais por rotina agendada. Gera `custo_por_agente.json`
++ `RELATORIO_CUSTO_AGENTES.md`. USD por preço de tabela pública (estimativa de
+ordem de grandeza, não a fatura).
+
 Gera:
 - `token_metrics.json` (nesta pasta) — por sessão + rollup semanal
 - `RELATORIO_TOKENS.md` (nesta pasta) — relatório legível
