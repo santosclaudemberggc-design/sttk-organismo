@@ -44,6 +44,46 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-03 10:22-11:15] Drenagem Contínua v2.3 — 2ª rodada automática (terça-feira)
+
+**Contexto:** 2ª rodada automática da tarefa agendada `wallenberg-drenagem-continua-local`, 03/09/2026 (ter), 10:22-11:15. Execução autônoma, Claudemberg ausente.
+
+**Portão de Trabalho (Passo 2.5):** Fila mapeada — 3 itens auto+aberta (Wallenberg 1, Kelsen 2) + 5 Skills novas (Kelsen 2, Cardozo 3). Prosseguiu.
+
+**Reconciliação de fila (Fase 4, Passo 5):**
+1. **Wallenberg** (1 item): `wallenberg-fase2-integracao-otimizacoes` estava mal classificado como `alc:"auto"` — estava deliberadamente PAUSADO desde 26/08 (auditoria crítica). **Reclassificado para `alc:"planejado"`** (permanece aberto, não executável). Fila reconciliada e limpa de auto+aberta.
+2. **Kelsen** (2 itens): `drive-legal-fase2-frases-genericas` e `drive-legal-pops-copias-desatualizadas` — **2 bloqueados por permissão** (Service Account modo automático veta Bash). Ambos já bloqueados desde 31/08. Redação das substituições pronta em 31/08; recomendação de escopo decisória — pendente Wallenberg executar fora do automático. Fila reconciliada, 0 itens executáveis agora.
+3. **Cardozo** (0 itens auto+aberta): fila limpa.
+
+**Avaliação de Skills novas (Fase 4, Passo 5 + Fase 6, Passo 6):**
+- **Kelsen**: 2 Skills proposta avaliadas — legal_lc281-2025, legal_resolucao-smdu-10-2026 — ambas **prontas para ratificação de Claudemberg** (Trilha A, sem lacuna crítica, impacto baixo-médio).
+- **Cardozo**: 3 Skills proposta avaliadas:
+  - **NBR 15220-3:2024** (ZB 4A): ✅ Pronta. Cross-disciplina Tenreiro/Baumgart/Glaziou. Esclarecimento menor: período de transição 15220-3 vs Emenda 1/2025 da 15575.
+  - **NBR 9575:2024** (Impermeabilização): ✅ Pronta. Cross-disciplina Saturnino/Baumgart/Tenreiro. Sem lacuna.
+  - **NBR 15575:2025** (Acústica Pisos): ⚠️ **Incompleta**. Lacuna crítica: valores numéricos para ambientes sem dormitório não estão em fonte aberta (norma ABNT é paga). Skill admite limitação explicitamente. Recomendação: aguarda acesso norma ou reformulação com nota de ressalva.
+
+**Total de execução real:** **Zero itens auto+aberta executados** (1 reclassificado, 2 bloqueados por permissão). 5 Skills avaliadas (4 prontas, 1 com bloqueio técnico).
+
+**Ações não executadas por falta de execução real:**
+- Passo 6 (Implantação de Ferramenta): nenhuma (Skills aguardam ratificação/reformulação, e Gestores não estão em nível Autonomous pra implantar Trilha A).
+- Passo 7 (Varredura de Melhoria): Gestores com fila limpa teriam feito varredura, MAS todos têm itens bloqueados ou Skills pendentes — nenhuma varredura iniciada.
+- Passo 8a (Learning Agent): **PULADO** — hoje é terça-feira, não segunda-feira (Passo 8a só roda seg E se houve execução real).
+
+**Registrado em pendencias.json:**
+- `wallenberg-fase2-integracao-otimizacoes`: alc mudado de "auto" para "planejado" (status permanece "aberta").
+- Sem novos itens abertos.
+
+**Painel Fundador:** sem mudança (zero execução real, zero item para reportar no feed).
+
+**Próximos passos:**
+1. Wallenberg: executar fora do modo automático as 2 edições Drive de Kelsen (quando Claudemberg presente ou permissão elevada).
+2. Claudemberg: ratificar 4 Skills prontas (Kelsen 2, Cardozo 2 — NBR 15220-3 e NBR 9575).
+3. Cardozo/alguém: reformular NBR 15575 com acesso norma ABNT ou note de ressalva antes de ratificação.
+
+**Duração:** ~53 min (Portão 5min + Acionamento Gestores paralelo ~88s cada + consolidação).
+
+---
+
 ### [2026-09-03] Diária Skills v2.7 — Quinta-feira (Seg-Qui)
 
 **Contexto:** rodada automática da `wallenberg-rotina-diaria-skills-v2-7`, 03/09/2026 (qui). Execução autônoma, Claudemberg ausente.
