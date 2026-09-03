@@ -65,13 +65,13 @@ juntos a cada run:
 2. `RELATORIO_TOKENS.md` → tabela da evolução semanal + as 118 sessões
 3. `painel_economia_tokens.html` → gráfico de barras da mediana semanal
 
-Cada commit desses arquivos é um marco datado da métrica. Rodar 1x por semana
-(segunda, junto da rotina) e commitar é suficiente — não precisa de cron.
+Cada commit desses arquivos é um marco datado da métrica.
 
-> Nota: `01_CEO/Painel_Fundador/rotina_sttk_consolidada.py` está inerte
-> (`repo_path` fixo em `D:\sttk-organismo`, que não existe aqui) e seu gerador de
-> registro diário sobrescreve arquivos escritos à mão com texto contraditório.
-> Não usar até ser consertado. Rodar `medir_tokens.py` direto.
+**Cadência oficial (desde 03/09/2026):** o Passo 2.5 da `wallenberg-reuniao-semanal`
+(toda segunda) roda os dois scripts e leva os números para a pauta, seção
+"3. SAÚDE DE CONSUMO". Substituiu a rotina `sttk-consolidada-otimizacaotokens`,
+excluída por reportar métricas fabricadas (o `rotina_sttk_consolidada.py` também
+foi removido do repo). Fora disso, é só rodar `medir_tokens.py` na mão quando quiser.
 
 ## Veredito da 1ª medição (02/09/2026 · 118 sessões · 16/07 → 02/09)
 
