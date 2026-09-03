@@ -4,6 +4,24 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-02] Portão de Trabalho na Drenagem Contínua (Opção B / Alvo A) — decisão de Claudemberg, executada por Wallenberg
+
+**Contexto:** medição real de tokens (ferramenta `01_CEO/_ferramentas/token_tracking/`, commits `e15d8d9`..`5fe1c87`) mostrou que a "otimização de tokens" não reduziu custo por agente e que o maior bloco de gasto é as rotinas agendadas — `wallenberg-drenagem-continua` rodou 48× (~US$ 488 em tokens-equivalentes de API), boa parte com fila vazia. No plano **Pro** (R$ ~1.200/ano fixo) o custo real não é dinheiro, é bater no teto de uso semanal e o organismo travar — o que acontece em algumas semanas.
+
+**Decisão de Claudemberg (nesta conversa):** (1) Alvo A — só cortes sem perda de qualidade de entrega; (2) modelo: Haiku só em varredura/reconciliação, Sonnet+ no Legal/Arquitetura; (3) **Opção B** — checagem barata antes de subir a rotina inteira. Pro fica.
+
+**Executado por Wallenberg:**
+- `wallenberg-drenagem-continua/SKILL.md` — novo **Passo 2.5 (Portão de Trabalho)**: se `pendencias.json` (alc:auto + aberta), Skills propostas do mês e Notion "Treinos e Testes" estão os três vazios → registra 2 linhas no registro diário, atualiza `_estado_wallenberg` Seção 1 e **encerra a rodada** sem abrir Gestor nenhum. Se há fila, abre **só** os Gestores com item real (não os 3 sempre).
+- Mesmo SKILL.md — **Passo 8a (Learning Agent)** passa a rodar só **segunda-feira E se houve execução real**; nos demais dias é pulado (a busca diária de vídeo YouTube/Instagram/watch queimava cota e rendia ~zero mudança).
+
+**Backup:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-02/wallenberg-drenagem-continua_SKILL_pre-portao-opcaoB.md` (+ cópia da rotina-diaria-skills, ainda não alterada).
+
+**Não alterado:** `wallenberg-rotina-diaria-skills` (é geradora, não drenadora — "fila vazia" não se aplica; reduzir cadência dela é outra conversa) e `wallenberg-reuniao-semanal` (já é semanal, tem função de ratificação).
+
+**Como desfazer:** restaurar o SKILL.md do backup acima para `C:\Users\santo\.claude\scheduled-tasks\wallenberg-drenagem-continua\SKILL.md`.
+
+---
+
 ### [2026-09-02] Diária Skills v2.7 — Quarta-feira (Seg-Qui)
 
 **Contexto:** rodada automática da `wallenberg-rotina-diaria-skills-v2-7`, 02/09/2026 (qua). Execução autônoma, Claudemberg ausente.
