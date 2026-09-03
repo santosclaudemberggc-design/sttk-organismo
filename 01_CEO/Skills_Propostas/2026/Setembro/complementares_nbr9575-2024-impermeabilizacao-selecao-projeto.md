@@ -1,8 +1,9 @@
 # NBR 9575:2024 — Impermeabilização: Seleção e Projeto
 
 **Versão:** 1.0  
-**Status:** proposta  
+**Status:** ratificada  
 **Data:** 02/09/2026  
+**Ratificado em:** 03/09/2026 (Claudemberg, ao vivo, pós-Drenagem Contínua)  
 **Tipo:** Inteligência (Trilha A)  
 **Para:** Saturnino (Hidrossanitário — principal), Baumgart (Estrutural), Tenreiro (Interiores — áreas molhadas)  
 **Gestor:** Cardozo (Complementares)

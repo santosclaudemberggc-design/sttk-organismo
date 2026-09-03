@@ -1,8 +1,9 @@
 # NBR 15220-3:2024 — Reclassificação Bioclimática do Rio de Janeiro (ZB 8 → ZB 4A)
 
 **Versão:** 1.0  
-**Status:** proposta  
+**Status:** ratificada  
 **Data:** 01/09/2026  
+**Ratificado em:** 03/09/2026 (Claudemberg, ao vivo, pós-Drenagem Contínua)  
 **Tipo:** Inteligência (Trilha A)  
 **Para:** Tenreiro (Interiores), Baumgart (Estrutural), Glaziou (Paisagismo) — cross-disciplina Complementares  
 **Gestor:** Cardozo (Complementares)

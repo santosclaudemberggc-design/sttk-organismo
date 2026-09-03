@@ -1,8 +1,9 @@
 # LC 281/2025 — Condições Especiais para Licenciamento e Legalização de Construções no RJ
 
 **Versão:** 1.0  
-**Status:** proposta  
+**Status:** ratificada  
 **Data:** 01/09/2026  
+**Ratificado em:** 03/09/2026 (Claudemberg, ao vivo, pós-Drenagem Contínua)  
 **Tipo:** Inteligência (Trilha A)  
 **Para:** Kelsen/Hely (Legal)  
 **Gestor:** Kelsen (Legal)

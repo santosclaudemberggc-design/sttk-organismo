@@ -10,7 +10,7 @@
 
 ## Status
 
-proposta
+ratificada — 03/09/2026 (Claudemberg, ao vivo, pós-Drenagem Contínua)
 
 ## Versão
 
