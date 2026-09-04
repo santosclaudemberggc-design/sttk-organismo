@@ -22,7 +22,9 @@ metadata:
 
 ---
 
-## [2026-09-04] — Diária Skills v2.7 (Quinta)
+## [2026-09-04] — Diária Skills v2.7 (Sexta)
+
+**⚠️ Correção 04/09/2026:** esta rodada rodou os Passos 1-5+8 (Seg-Qui) por engano — o executor assumiu "Quinta" sem verificar o dia da semana real. **04/09/2026 é SEXTA**, não quinta (03/09 é que foi quinta). O trabalho de pesquisa (Skill COSCIP/CBMERJ) tem valor e foi mantido; os Passos 6/9/10 (Sexta) foram executados em seguida, na mesma rodada, para não perder o dia. Rótulos corrigidos abaixo.
 
 ### RODADA ANTERIOR (O que foi entregue)
 
@@ -62,34 +64,50 @@ metadata:
 
 ## ESTA RODADA (Preencher ao terminar)
 
-### Entregáveis
+**Nota:** rodada híbrida — começou como Seg-Qui (engano de calendário, corrigido em andamento) e terminou cobrindo os Passos 6/9/10 de Sexta na mesma sessão, já que 04/09 é realmente sexta-feira.
 
-- [x] **Skills criadas:** 1 (COSCIP/CBMERJ Decreto 42/2018 — Segurança Contra Incêndio RJ — Complementares cross-disciplina Landell/Baumgart)
+### Entregáveis — Passos 1-5+8 (Seg-Qui, pesquisa)
+
+- [x] **Skills criadas:** 1 (COSCIP/CBMERJ Decreto 42/2018 v1.1 — Segurança Contra Incêndio RJ — Complementares cross-disciplina Landell/Baumgart; corrigida em andamento após auto-verificação, ver abaixo)
 - [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (1 novo + índice atualizado)
 - [x] **PDFs regenerados:** 2 (1 Skill + índice)
-- [ ] **Painel atualizado:** Não (tarefa de Sexta 05/09)
-- [x] **Livro-razão registrado:** Sim (Setembro.md, entrada 04/09)
 - [x] **Vitruvius achados atualizados:** 1 (LuDattilo 138 tools — detalhe técnico completo, decisão sobe para "avaliar incorporação parcial")
-- [ ] **Learning Agent melhorias:** N/A (Seg-Qui)
+- [ ] **Learning Agent melhorias:** N/A (regra: só segunda e se houve execução real)
+
+### Auto-correção (achada ao preparar o Painel, antes de publicar qualquer coisa errada)
+
+1. **Skill COSCIP mal enquadrada:** dizia "lacuna nunca coberta antes" — falso, já apurada e fechada (pendência B10, 28/07/2026). Corrigida para v1.1 (é expansão real: mapa de NTs por disciplina + achado novo sobre grupamentos A-4, não descoberta). `legal-base-legislativa-bairro/SKILL.md` também atualizada com o achado do grupamento.
+2. **`pendencias.json` estava com JSON inválido** (2 chaves de fechamento faltando) — corrigido e revalidado (49 itens). Tempo que ficou quebrado: indeterminado, nenhum registro anterior menciona.
+3. **Painel publicado (Artifact) estava travado em 27/08/2026** — a atualização de 01/09 só existia no arquivo local, nunca foi republicada de fato. Corrigido.
+4. **Array manual `pendencias` do Painel tinha 5 de 8 itens obsoletos** (já resolvidos/descartados em `pendencias.json`, ex.: WAN 2.2, Fase 2 tokens, 2 itens Drive Legal, CAU-RJ RRT) — mesma classe de bug já corrigida uma vez em 04/08/2026, reincidiu. Reescrito com os 6 itens reais.
+5. **Nova pendência aberta:** `kelsen-coscip-grupamento-a4-limiar-6-unidades` — Hely apura com rigor antes de aplicar ao caso Daniel-OB.
+
+### Entregáveis — Passos 6/9/10 (Sexta, hoje mesmo)
+
+- [x] **Painel atualizado e republicado:** feed com 4 eventos reais desde 01/09 (ratificação em bloco, Compatibilização→Fechamento, Portão de Trabalho, auto-correção de hoje); KPIs de pendências recontados (43/49 fechadas, 6 ativas — antes mostrava números stale "34/43"); gráficos SVG (criticidade, alçada, represamento) recalculados com dados reais.
+- [x] **Dashboard:** KPI "Skills criadas esta semana / testadas" adicionado (7 criadas, 0 testadas, Complementares é o Gestor mais ativo com 4). Achado: a seção de Dashboard descrita no manual (`metric-created`, `metric-tested` etc.) nunca foi implementada no arquivo real — documentação e código divergentes. Resolvido pragmaticamente com um KPI simples no padrão já existente, em vez de construir a estrutura nunca implementada nesta rodada.
+- [x] **Learning Agent:** pulado (não é segunda-feira).
+- [x] **Livro-razão registrado:** Sim (Setembro.md, 3 entradas — pesquisa + auto-correção + Painel)
 
 ### Bloqueadores (se houver)
 
-*Sem bloqueadores de execução. 1 falha transitória do md_to_pdf.py ao sobrescrever indice.pdf (provável lock momentâneo de antivírus/indexador) — resolvida no retry imediato, sem impacto no resultado final.*
+*Sem bloqueadores de execução. 1 falha transitória do md_to_pdf.py ao sobrescrever indice.pdf (resolvida no retry). Custo de token maior que o normal por causa da leitura obrigatória do artifact publicado (630 linhas) antes de poder republicar.*
 
 ### Retrabalho Evitado (se houver)
 
-- **Item 1:** Presenton não duplicado (Skill de 28/08 já existe, confirmado 04/09 como melhor candidato ainda não testado)
+- **Item 1:** Presenton não duplicado (Skill de 28/08 já existe)
 - **Item 2:** LuDattilo 138 tools não virou Skill isolada nova — atualização do achado já existente (24/08)
 - **Item 3:** Autodesk APS Sample MCP descartado por critério 1 (paga)
 - **Item 4:** Modly descartado por foco errado (geração de modelo 3D, não render de cena)
 - **Item 5:** CAU-RJ — busca de setembro não achou deliberação nova, não forçou Skill
+- **Item 6 (o mais importante):** Skill COSCIP quase publicada com alegação factualmente errada ("lacuna nunca coberta") — pega antes de qualquer ratificação, pela própria checagem do feed histórico ao preparar o Painel.
 
 ### Status Final
 
-- **Rodada:** ✅ Completa
-- **Taxa de Sucesso:** 1 Skill + 2 PDFs + 1 achado Vitruvius atualizado + 4 descartados com justificativa — 100%
-- **Marco:** Primeira Skill cobrindo segurança contra incêndio (COSCIP) desde o início do organismo — lacuna real fechada, com achado prático direto para o caso real Daniel-OB (grupamento A-4 não isento de aprovação CBMERJ)
-- **Próxima Rodada Recomendação:** (1) Sexta 05/09: Painel + Dashboard + Análise semanal (pendente há 2 semanas); (2) LuDattilo — testar coexistência de porta 8080 com outros conectores antes de decidir incorporação; (3) Ler texto integral das NTs 2-03/2-05/2-08/2-15 do COSCIP antes de aplicar em caso real; (4) Considerar parar busca de apresentação interativa até caso real forçar decisão (4 buscas sem novidade)
+- **Rodada:** ✅ Completa — Seg-Qui + Sexta na mesma sessão
+- **Taxa de Sucesso:** 1 Skill (corrigida) + 1 achado Vitruvius + 1 pendência nova aberta + Painel corrigido e republicado + 2 bugs estruturais achados e corrigidos (JSON quebrado, array manual obsoleto) — 100% do que foi tentado, com qualidade real (não só volume)
+- **Marco:** Primeiro dia em que a própria rotina se auto-auditou e pegou um erro antes de publicar — precedente de processo, não só entrega de conteúdo
+- **Próxima Rodada Recomendação:** (1) Hely apura o limiar de grupamento A-4/COSCIP (pendência nova, relevante ao caso Daniel-OB); (2) LuDattilo — testar coexistência de porta 8080 antes de decidir incorporação; (3) considerar parar busca de apresentação interativa até caso real forçar decisão (4 buscas sem novidade); (4) verificar se o array manual `pendencias` do Painel pode ser gerado automaticamente a partir de `pendencias.json` em vez de espelho manual — 2ª vez que diverge e vira trabalho de correção
 
 ---
 
@@ -129,6 +147,6 @@ metadata:
 
 ---
 
-**Última atualização:** 04/09/2026  
-**Próxima leitura:** 05/09/2026 (Sexta — Painel + Dashboard + Análise semanal)  
-**Painel pendente para:** 05/09/2026 (Sexta — Painel + Dashboard + Análise semanal)
+**Última atualização:** 04/09/2026 (sexta-feira — Painel/Dashboard/Análise já executados nesta data, ver "ESTA RODADA" acima)  
+**Próxima leitura:** 07/09/2026 (segunda-feira — 05-06/09 é fim de semana, sem execução) — Diária Skills Seg-Qui  
+**Painel pendente para:** já feito em 04/09/2026 — próxima atualização de Painel só na próxima sexta (11/09/2026), salvo achado relevante antes disso

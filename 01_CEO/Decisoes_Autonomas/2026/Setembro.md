@@ -4,7 +4,33 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
-### [2026-09-04] Rotina Diária de Skills v2.7 (Quinta) — 1 Skill nova + 1 achado Vitruvius atualizado
+### [2026-09-04, mesma rodada] Auto-correção: Skill COSCIP não era lacuna nova + JSON quebrado em `pendencias.json` encontrado e corrigido
+
+**Contexto:** ao redigir a entrada do Painel do Fundador (Passo 6), a checagem de eventos desde a última atualização (01/09) levou a reler o feed histórico e achar uma entrada de **28/07/2026** já cobrindo COSCIP/CBMERJ — contradizendo a Skill que eu tinha acabado de escrever hoje como "lacuna nunca coberta antes".
+
+**Achado 1 — Skill duplicada em framing (conteúdo parcialmente novo):** o COSCIP já tinha pendência fechada (`b10-coscip-nt107`, 28/07/2026, auditoria dupla Hely/Kelsen) e está documentado em `.claude/skills/legal-base-legislativa-bairro/SKILL.md`. A Skill nova de hoje (`complementares_coscip-cbmerj-decreto42-2018-seguranca-incendio-rj.md`) não era pura duplicata — trazia um mapa de Notas Técnicas por disciplina (Landell/Baumgart) inexistente antes, e um achado novo (grupamento A-4 >6 unidades pode não ser isento) relevante ao caso ativo Daniel-OB — mas a moldura ("lacuna nunca coberta") estava factualmente errada.
+
+**Executado por Wallenberg:**
+- **Skill corrigida para v1.1** com nota de correção explícita no topo, dividindo competência: isenção/exigibilidade (Kelsen, `legal-base-legislativa-bairro`) vs. mapa técnico por disciplina (Complementares, esta Skill).
+- **`legal-base-legislativa-bairro/SKILL.md` atualizada** — seção COSCIP existente ganhou o achado novo sobre grupamentos A-4 (não fechado com o mesmo rigor da B10, registrado como pista pendente de apuração). Backup pré-edição em `_backups/2026-09-04/legal-base-legislativa-bairro_SKILL_pre-correcao-coscip.md`.
+- **Nova pendência aberta:** `kelsen-coscip-grupamento-a4-limiar-6-unidades` (owner Kelsen, agente Hely, alc:auto, crit:media) — apurar com rigor o dispositivo primário do limiar de 6 unidades antes de aplicar a qualquer caso real, mesmo padrão que fechou a B10.
+- **`indice.md` de Setembro corrigido** com a moldura certa.
+
+**Achado 2 (colateral, mais sério) — `01_CEO/Pendencias/pendencias.json` estava com JSON INVÁLIDO:** 2 chaves de fechamento `}` faltando entre objetos (após `kelsen-daniel-ob-legislacao-real-lote04` e após `lucio-daniel-ob-excedente-ate-cliente-aprovou`) — confirmado com `python -m json.load`, erro `Expecting ',' delimiter`. Isso quebra qualquer leitura programática do arquivo que todos os Gestores citam como "fonte de verdade" da fila. Não sei há quantas rodadas o arquivo está quebrado — nenhum registro anterior no livro-razão menciona isso, o que sugere que os Gestores vêm lendo o arquivo via `Read`/`Grep` (que toleram texto malformado) em vez de parser JSON real, mascarando o problema.
+
+**Executado por Wallenberg:**
+- Backup em `_backups/2026-09-04/pendencias_pre-correcao-json.json`.
+- 2 chaves `},` inseridas nos pontos exatos. Revalidado com `python -m json.load` — 48 itens (49 após a nova pendência acima).
+
+**Como desfazer:** restaurar os 3 arquivos (`complementares_coscip-...md`, `legal-base-legislativa-bairro/SKILL.md`, `pendencias.json`) dos backups em `_backups/2026-09-04/`; remover a pendência `kelsen-coscip-grupamento-a4-limiar-6-unidades`.
+
+**Recomendação a Claudemberg:** considerar validação de JSON (`python -m json.tool` ou equivalente) como passo automático depois de qualquer edição em `pendencias.json` — o bug ficou invisível porque nada força parse estrito.
+
+**Achado 3 (colateral, no Passo 6/Painel) — o Painel publicado (Artifact) estava travado em 27/08/2026:** ao ler a versão publicada antes de republicar (regra obrigatória), o `<span class="updated">` do artifact ao vivo dizia "Atualizado 27/08/2026" — a atualização de 01/09/2026 (Cardozo Autonomous, 6 Agentes Shadow) só existia no arquivo local `painel_fundador_sttk.html`, nunca foi de fato republicada via Artifact. O painel que Claudemberg via ao abrir o link estava 8 dias desatualizado. Corrigido nesta rodada — republicado com o conteúdo local (01/09 a 04/09 incluídos, sem perda).
+
+---
+
+### [2026-09-04] Rotina Diária de Skills v2.7 (Sexta, executada como Seg-Qui por engano de calendário) — 1 Skill nova + 1 achado Vitruvius atualizado
 
 **Contexto:** rodada autônoma Seg-Qui (Passos 1-5+8). Pesquisa nos 5 eixos obrigatórios: render/vídeo, apresentação ao cliente, CAU-RJ, Complementares (Trilha A), Revit/BIM.
 

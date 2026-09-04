@@ -238,7 +238,7 @@
         <span id="themeLabel">Noite</span>
       </button>
       <span class="tag">Leitura &mdash; curadoria de Wallenberg</span>
-      <span class="updated" id="updated">Atualizado 01/09/2026 — Painel reconciliado com o livro-razão: Cardozo agora Autonomous (31/08), os 6 Agentes de Complementares Shadow (01/09), Oscar/Portinari/Burle Assisted (17/08), canal do Gate (Artigas) ativo, array de pendências refeito (9 abertas de 43). Nova seção "Onde o organismo está" com gráficos. Antes, 31/08 — Drenagem contínua: POP-COMPL-01 criado (Cardozo, validação do Briefing de Arquitetura); Trilha A de Complementares agora completa 6/6 (Tenreiro + Mindlin, aguardam ratificação); loop dos patches POP-PROJ-01/02 reauditado e fechado (Lúcio → Oscar). Publicação consolidada da semana (28/08 Trilha A + 31/08) fica para sexta 04/09, cadência v2.7 do Painel</span>
+      <span class="updated" id="updated">Atualizado 04/09/2026 — Feed reconciliado com o livro-razão desde 01/09: ratificação em bloco de 4 Skills + 5 duplicatas removidas (03/09), Compatibilização confirmada no Fechamento (03/09), Portão de Trabalho reduz custo da Drenagem sem cortar qualidade (02/09), e auto-correção pega Skill mal enquadrada + JSON quebrado em pendencias.json antes de virar conhecimento oficial (04/09). Fila de pendências: 49 itens no arquivo (corrigido de JSON inválido nesta rodada) — contagem de abertas/fechadas pendente de recontagem no Dashboard. Antes, 01/09 — Cardozo Autonomous (31/08), 6 Agentes de Complementares Shadow, Oscar/Portinari/Burle Assisted</span>
     </div>
   </header>
   <p class="hint"><b>Clique em qualquer card</b> para abrir a página do registro completo &mdash; tudo que foi feito ali, sem resumo. A <b>Linha do Tempo</b> mostra a evolução do organismo.</p>
@@ -253,9 +253,10 @@
     <div class="ov-kpis">
       <div class="kpi"><b>3&thinsp;/&thinsp;4</b><span>Gestores Autonomous<i>Legal, Arquitetura e Complementares (Cardozo desde 31/08) · Fechamento nunca criado</i></span></div>
       <div class="kpi"><b>13</b><span>Gestores + Agentes<i>4 Autonomous · 3 Assisted · 6 Shadow · 0 Formação · + Artigas (canal do Gate)</i></span></div>
-      <div class="kpi"><b>34&thinsp;/&thinsp;43</b><span>Pendências fechadas<i>9 abertas — 1 crítica, 1 alta, 4 média, 3 baixa</i></span></div>
+      <div class="kpi"><b>43&thinsp;/&thinsp;49</b><span>Pendências fechadas<i>6 ativas — 1 crítica, 1 alta, 2 média, 2 baixa (recontado 04/09, JSON estava quebrado)</i></span></div>
       <div class="kpi alert"><b>1&thinsp;/&thinsp;0</b><span>Caso real em produção / concluído<i>Interiores Daniel–OB (v3) no Gate do Maurício · nenhum aceito ponta a ponta</i></span></div>
       <div class="kpi"><b>6&thinsp;/&thinsp;9</b><span>Marcos até o MVP<i>faltam caso real aprovado no Gate · Gestor de Fechamento · cliente aceito</i></span></div>
+      <div class="kpi"><b>7&thinsp;/&thinsp;0</b><span>Skills criadas esta semana / testadas<i>Complementares 4 (top) · Kelsen/Hely 2 · Portinari 1 — nenhuma testada em produção ainda</i></span></div>
     </div>
 
     <div class="ov-grid">
@@ -300,17 +301,17 @@
       </figure>
 
       <figure class="ovc">
-        <figcaption>Pendências abertas por criticidade &mdash; 9 de 43</figcaption>
-        <svg viewBox="0 0 300 40" role="img" aria-label="1 crítica, 1 alta, 4 média, 3 baixa">
-          <rect x="6"     y="6" width="32"  height="24" rx="3" class="sw-crit"/>
-          <rect x="38"    y="6" width="32"  height="24" rx="3" class="sw-warn"/>
-          <rect x="70"    y="6" width="128" height="24" rx="3" class="sw-move"/>
+        <figcaption>Pendências abertas por criticidade &mdash; 6 de 49</figcaption>
+        <svg viewBox="0 0 300 40" role="img" aria-label="1 crítica, 1 alta, 2 média, 2 baixa">
+          <rect x="6"     y="6" width="48"  height="24" rx="3" class="sw-crit"/>
+          <rect x="54"    y="6" width="48"  height="24" rx="3" class="sw-warn"/>
+          <rect x="102"   y="6" width="96"  height="24" rx="3" class="sw-move"/>
           <rect x="198"   y="6" width="96"  height="24" rx="3" class="sw-idle"/>
           <g font-size="11" text-anchor="middle" fill="#fff" font-weight="600">
-            <text x="22" y="22">1</text><text x="54" y="22">1</text><text x="134" y="22">4</text><text x="246" y="22">3</text>
+            <text x="30" y="22">1</text><text x="78" y="22">1</text><text x="150" y="22">2</text><text x="246" y="22">2</text>
           </g>
         </svg>
-        <div class="ov-lgd"><span><i class="bg-crit"></i>Crítica 1</span><span><i class="bg-warn"></i>Alta 1</span><span><i class="bg-move"></i>Média 4</span><span><i class="bg-idle"></i>Baixa 3</span></div>
+        <div class="ov-lgd"><span><i class="bg-crit"></i>Crítica 1</span><span><i class="bg-warn"></i>Alta 1</span><span><i class="bg-move"></i>Média 2</span><span><i class="bg-idle"></i>Baixa 2</span></div>
       </figure>
 
       <figure class="ovc">
@@ -318,13 +319,13 @@
         <svg viewBox="0 0 300 132" role="img" aria-label="dias parados por pendência">
           <g font-size="9">
             <text x="0" y="12">B14 EVTL — aguardando Gate do Maurício</text>
-            <rect x="0" y="16" width="190" height="13" rx="2" class="sw-crit"/><text x="196" y="26" class="vlbl">24d</text>
+            <rect x="0" y="16" width="190" height="13" rx="2" class="sw-crit"/><text x="196" y="26" class="vlbl">27d</text>
             <text x="0" y="45">Conectores MCP render/apresentação (Lúcio)</text>
-            <rect x="0" y="49" width="190" height="13" rx="2" class="sw-crit"/><text x="196" y="59" class="vlbl">24d</text>
+            <rect x="0" y="49" width="190" height="13" rx="2" class="sw-crit"/><text x="196" y="59" class="vlbl">27d</text>
             <text x="0" y="78">Auditoria de Oscar no Drive (item 4 → Kelsen)</text>
-            <rect x="0" y="82" width="166" height="13" rx="2" class="sw-crit"/><text x="172" y="92" class="vlbl">21d</text>
-            <text x="0" y="111">WAN 2.2 render/vídeo — Burle sem shell (VENCIDO)</text>
-            <rect x="0" y="115" width="40" height="13" rx="2" class="sw-idle"/><text x="46" y="125" class="vlbl">5d</text>
+            <rect x="0" y="82" width="169" height="13" rx="2" class="sw-crit"/><text x="175" y="92" class="vlbl">24d</text>
+            <text x="0" y="111">Daniel-OB — excedente de área (crítica, recém-aberta)</text>
+            <rect x="0" y="115" width="14" height="13" rx="2" class="sw-idle"/><text x="20" y="125" class="vlbl">2d</text>
           </g>
         </svg>
         <div class="ov-lgd"><span><i class="bg-crit"></i>&ge; 3 semanas</span><span><i class="bg-idle"></i>&lt; 1 semana</span></div>
@@ -343,24 +344,24 @@
 
       <figure class="ovc">
         <figcaption>Pendências abertas por alçada &mdash; de quem depende destravar</figcaption>
-        <svg viewBox="0 0 300 92" role="img" aria-label="humano 2, técnico 5, autônomo 2">
+        <svg viewBox="0 0 300 92" role="img" aria-label="humano 2, técnico 3, autônomo 1">
           <g font-size="9.5">
             <text x="0" y="19">Decisão humana</text>
             <rect x="104" y="8"  width="76"  height="16" rx="2" class="sw-warn"/><text x="104" y="19" dx="6" fill="#fff" font-weight="600">2</text>
             <text x="0" y="49">Limitação técnica</text>
-            <rect x="104" y="38" width="190" height="16" rx="2" class="sw-move"/><text x="104" y="49" dx="6" fill="#fff" font-weight="600">5</text>
-            <text x="0" y="79">Resolve sozinho (bloq. modo auto)</text>
-            <rect x="104" y="68" width="76"  height="16" rx="2" class="sw-good"/><text x="104" y="79" dx="6" fill="#fff" font-weight="600">2</text>
+            <rect x="104" y="38" width="114" height="16" rx="2" class="sw-move"/><text x="104" y="49" dx="6" fill="#fff" font-weight="600">3</text>
+            <text x="0" y="79">Resolve sozinho</text>
+            <rect x="104" y="68" width="38"  height="16" rx="2" class="sw-good"/><text x="104" y="79" dx="6" fill="#fff" font-weight="600">1</text>
           </g>
         </svg>
       </figure>
 
     </div>
 
-    <p class="ov-note"><!-- OV-SNAPSHOT 01/09/2026 · fontes: Decisoes_Autonomas/2026/Setembro.md, _estado_wallenberg.md, _estado_cardozo.md, _estado_lucio.md, Pendencias/pendencias.json · atualizar à mão -->
+    <p class="ov-note"><!-- OV-SNAPSHOT 04/09/2026 · fontes: Decisoes_Autonomas/2026/Setembro.md, _estado_wallenberg.md, _estado_cardozo.md, _estado_lucio.md, Pendencias/pendencias.json · atualizar à mão -->
       <b>Níveis (livro-razão):</b> Kelsen (Autonomous 22/07), Hely (Autonomous 23/07), Lúcio (Autonomous 07/08), Oscar/Portinari/Burle (Assisted 17/08), Cardozo (Autonomous 31/08), os 6 Agentes de Cardozo (Shadow 01/09, Exame 1 6/6), Artigas (canal do Gate, "relato manual", desde 29/07). Fechamento: nunca criado.
-      <b>Operação real:</b> 5/5 casos-teste do Legal em sandbox; 1º caso real de produção iniciado 01/09 — Estudo de Ambientação de Interiores, cliente Daniel–OB (Cardozo), v3 aguardando veredito do Gate do Maurício; renders por IA 0/8 (bloqueio de ferramenta no Burle). Caso Orla Bothânica (Legal) travado por documento do cliente. Nenhum caso aprovado no Gate ponta a ponta ainda.
-      <b>9 pendências abertas (43 no total, 34 fechadas):</b> WAN 2.2 render/vídeo — Burle sem shell (crítica, VENCIDO) · B14 EVTL (alta, aguardando Gate) · Fase 2 otimização de tokens (média, pausada até 02/09) · auditoria de Oscar no Drive item 4 (média, → Kelsen) · 2 correções Drive do Legal (média, bloqueadas pelo modo automático) · 2 conectores MCP a verificar (baixa) · lacuna de numeração da Skill CAU-RJ RRT (baixa) · varredura Drive Arquitetura (baixa).
+      <b>Operação real:</b> 5/5 casos-teste do Legal em sandbox; 1º caso real de produção iniciado 01/09 — Estudo de Ambientação de Interiores, cliente Daniel–OB (Cardozo), v3 aguardando veredito do Gate do Maurício; renders por IA 0/8 (bloqueio de ferramenta no Burle). Achado técnico crítico no mesmo caso (02-03/09): Anteprojeto assinado excede a Convenção do condomínio em ~29% de ATE — Claudemberg trata diretamente com o arquiteto parceiro. Caso Orla Bothânica (Legal) travado por documento do cliente. Nenhum caso aprovado no Gate ponta a ponta ainda.
+      <b>6 pendências ativas (49 no total, 43 fechadas — recontado 04/09; <code>pendencias.json</code> estava com JSON inválido, corrigido nesta rodada):</b> Daniel-OB — excedente de área no Anteprojeto assinado (crítica, tratativa direta Claudemberg↔arquiteto parceiro) · B14 EVTL (alta, aguardando Gate) · auditoria de Oscar no Drive item 4 (média, pausada → Kelsen) · grupamento A-4/COSCIP não fechado com rigor (média, novo 04/09, relevante ao caso Daniel-OB) · 2 conectores MCP a verificar (baixa) · varredura Drive Arquitetura (baixa).
     </p>
   </section>
 
@@ -567,6 +568,10 @@ fechamento2807:{d:"28/07",et:"marco",t:"Fila do dia drenada até o fim do que er
   ];
   /* ===== FEED / LINHA DO TEMPO — a rotina diária PREPENDA novos eventos aqui (mais recente no topo). Não mexer no resto do arquivo. Marcador: FEED-AUTO ===== */
   var feed = [
+    {d:"04/09",et:"correcao",t:"Auto-verificação pega 2 erros antes de virar conhecimento oficial: Skill COSCIP mal enquadrada + JSON quebrado na fila",who:"Wallenberg (rotina diária, checagem antes de publicar no Painel)",p:"Ao preparar esta própria atualização, a checagem do feed histórico revelou que a Skill de segurança contra incêndio (COSCIP/CBMERJ) escrita hoje se dizia 'lacuna nunca coberta' — falso, já tinha sido apurada e fechada em 28/07/2026 (pendência B10). Corrigida para v1.1 (expansão real: mapa de Notas Técnicas por disciplina + achado novo sobre grupamentos não fechado com o mesmo rigor, relevante ao caso Daniel-OB). Na mesma checagem, achado mais sério: `pendencias.json` — a fonte de verdade de toda a fila do organismo — estava com JSON inválido (2 chaves de fechamento faltando), há tempo indeterminado. Corrigido e revalidado (49 itens)."},
+    {d:"03/09",et:"marco",t:"Ratificação em bloco: 4 Skills + 1 execução Drive, ao vivo com Claudemberg",who:"Claudemberg (decisão) → Wallenberg (execução)",p:"LC 281/2025, Resolução SMDU 10/2026 (Legal), NBR 15220-3:2024 e NBR 9575:2024 (Complementares) ratificadas. Auditoria da mesma rodada removeu 5 duplicatas reais acumuladas desde Julho. Item Drive represado (frases genéricas em 5 documentos legais) executado via Service Account."},
+    {d:"03/09",et:"correcao",t:"Compatibilização de projetos confirmada como escopo do Gestor Fechamento, não de Cardozo",who:"Wallenberg (Claudemberg confirmou)",p:"A decisão original (29/07) nunca tinha se propagado por completo em 6 arquivos vivos — 2 Skills BIM ficavam rotuladas 'sem Gestor definido'. Corrigido; memória duplicada do estado do Cardozo (2 arquivos divergentes) também consolidada na mesma auditoria."},
+    {d:"02/09",et:"sistema",t:"Portão de Trabalho reduz custo da Drenagem Contínua sem cortar qualidade de entrega",who:"Claudemberg (decisão) → Wallenberg (execução)",p:"Medição real de tokens mostrou que boa parte das 48 rodadas da Drenagem Contínua rodava com fila vazia. Novo Passo 2.5: se pendências/Skills/Notion estão todos vazios, a rodada registra e encerra sem abrir Gestor nenhum — só abre quem tem item real."},
     {d:"31/08",et:"skill",t:"POP-COMPL-01 criado — Cardozo formaliza a validação do Briefing de Arquitetura antes de despachar os 6 Agentes",who:"Cardozo (rotina drenagem contínua, varredura de melhoria)",p:"A validação do Briefing recebido de Arquitetura é a função central de Cardozo (testada no Exame 1, caso Vilela), mas não havia POP cobrindo o passo — só referências espalhadas no doc de nomeação da equipe. POP-COMPL-01 traz checklist item a item por Agente (Baumgart/Landell/Saturnino/Glaziou/Tenreiro; Mindlin só depois dos 5), a regra-mãe 'Briefing incompleto para uma disciplina = não despacha aquela disciplina' e o fluxo até o depósito no Drive. Mesmo precedente de forma de POP-LEGAL-06 (Kelsen) e REGRA-ARQ-01 (Lúcio). Também na rodada: as 2 Skills Trilha A da Diária de hoje (Tenreiro/NBR 15575-4 Em.1 + NBR 8995-1; Mindlin/NBR 6492:2021) e a de Kelsen (CAU-RJ Deliberação 009/2026 sobre o Art. 8º da Resolução RRT 91/2014) — as 3 seguem 'proposta', aguardam ratificação. Com Tenreiro e Mindlin cobertos, as 6 áreas de Complementares têm Trilha A completa."},
     {d:"31/08",et:"correcao",t:"Loop represado destravado — os 4 patches de POP-PROJ-01/02 aplicados em 27/08 nunca tinham sido reauditados",who:"Lúcio → Oscar (reauditoria de leitura)",p:"Na varredura de melhoria da drenagem contínua, Lúcio achou que os 4 patches do Item 5 da auditoria de Oscar (POP-PROJ-01 Seções 3/5/7.2 + POP-PROJ-02 Seção 5), aplicados por Wallenberg no Drive em 27/08, nunca tinham sido conferidos apesar de a própria ação prever 'Oscar reaudita depois de aplicados' — loop parado há 4 dias. Acionou Oscar: os 4 patches confirmados aplicados verbatim, sem truncamento nem erro de seção, nenhum 'As Built' remanescente. Item 5 fechado. Ressalva: os cabeçalhos dos 2 POPs ainda dizem '24 de junho de 2026' apesar da mudança material — incluir nota de revisão datada ao aplicar os itens 1-4 restantes (Princípio 8). Escalado a Claudemberg na mesma rodada: WAN 2.2 (render/vídeo do Burle) VENCIDO — prazo era 28/08, falta o teste de inferência real; e os 6 Agentes de Complementares não têm web tools para fechar sozinhos as lacunas de fonte primária das Skills Trilha A."},
     {d:"28/08",et:"skill",t:"Trilha A inaugurada — 5 Skills para equipe de Cardozo (2 rodadas, sexta-feira)",who:"Wallenberg (rotina diária v2.7)",p:"4 Skills de Inteligência Técnica: Baumgart/NBR6118:2026 Emenda 1 (estrutural), Saturnino/NBR5626+NBR8160 (hidrossanitário), Landell/NBR5410:2004+revisão2026 (elétrica), Glaziou/NBR16636-4:2023 (paisagismo). 1 Skill Trilha B: Portinari/Presenton MCP (Apache 2.0, 9.9k stars, self-hosted via Ollama). Índice Agosto atualizado, livro-razão registrado. Tenreiro e Mindlin ainda sem Trilha A — próxima rodada."},
@@ -633,14 +638,11 @@ fechamento2807:{d:"28/07",et:"marco",t:"Fila do dia drenada até o fim do que er
     {d:"13/07",et:"agente",t:"Kelsen e Hely integrados",who:"Wallenberg / Kelsen",p:"Primeiro Gestor (Legal) e primeiro Agente executor do organismo.",rec:"kelsenHely"}
   ];
   var pendencias = [
-    {owner:"Lúcio → Burle",txt:"WAN 2.2 como ferramenta de render/vídeo: Burle nunca teve Bash/PowerShell na lista de tools, e todo o plano de setup (nvidia-smi, python, pip, git clone) pressupõe shell. Zero progresso em 6+ dias; prazo Go/Not-Go de 28/08 VENCIDO. No 1º caso real (Daniel–OB) o mesmo gap deixou os renders em 0/8.",desde:"2026-08-27",crit:"critica",alc:"tecnico",res:"Gap estrutural de ferramenta, não decisão de Burle nem de Lúcio. Duas saídas, decisão de Wallenberg: (a) conceder Bash/PowerShell a Burle (mudança de tooling, risco a avaliar); (b) outro agente com shell (ex. Hely) faz o setup e Burle entra só na geração. Alternativa via nuvem (generate_image) também bloqueada: falta media_upload_widget/media_import_url e show_generation_by_ids + download no perfil do Burle."},
+    {owner:"Lúcio",txt:"Achado técnico real de cliente (Daniel-OB, Condomínio Venice, Área Privativa 04): o Anteprojeto já aprovado pelo cliente (15/05/2026) excede o quadro oficial da Convenção do condomínio em ATE (+59,66 m², ~29%), TO (+6,48 m²), altura (+0,08m) e 3º pavimento (+4,80 m²). Achado por Oscar, comparando o projeto assinado contra a Minuta da Convenção lida por completo pela 1ª vez em 02/09.",desde:"2026-09-02",crit:"critica",alc:"humano",res:"Cruza fronteira comercial/contratual — cliente já assinou aprovação com cláusula de congelamento. Claudemberg confirmou 03/09: cliente AINDA NÃO assinou a versão corrigida (a aprovação de 15/05 era de versão anterior/excedente); Claudemberg trata diretamente com o arquiteto parceiro (Maurício) para reduzir a área até o limite de 204,00 m² do condomínio (mais restritivo que o CAM municipal de 216,00 m²). Fluxo: Maurício reduz → Daniel aprova a versão reduzida → só então Gate do Maurício/Artigas."},
     {owner:"Kelsen",txt:"Consequência de mérito do achado B14 (caso EVTL Av. Projetada Canal 2, gleba ~10.500 m²): nem o Quadro 24.3 (>20.000 m²) nem o Art. 305 (>40.000 m²) da LC 270/2024 cobrem, pelo texto, o percentual de transferência obrigatória. Lacuna real da lei, confirmada por rasterização e 3 frentes de busca de precedente sem achado. Afeta o §5.4 do adendo, um dos números do parecer que vai à mesa com o fundo de investimento (Maurício Fonseca).",desde:"2026-08-08",crit:"alta",alc:"humano",res:"A rota SMDU foi encerrada por Claudemberg em 27/08; o item foi reconciliado de 'em pesquisa de alternativa' para AGUARDANDO GATE DO MAURÍCIO — o caso já amadureceu para subir de estágio. A decisão de como tratar a lacuna no parecer final (leitura conservadora, manter a original ou consulta formal) é de risco/mérito para cliente real, não jurídica pura — Claudemberg/Wallenberg via Gate, Kelsen não decide sozinho."},
-    {owner:"Wallenberg",txt:"Fase 2 da otimização de tokens: conectar as estruturas da Fase 1 (SQLite legislação, Cache Drive, Skills JSON) aos fluxos diários da rotina. Só o Item 6 (Skills JSON) está em produção; os demais são estrutura sem consumidor.",desde:"2026-08-25",crit:"media",alc:"auto",res:"PAUSADA por decisão de 26/08 (auditoria transparente: redução real observada ~2-5%, não os 40-66% projetados). Automação do Item 5 (Cache) ativada 26/08, teste pendente. Próxima avaliação 02/09/2026. Plano em 01_CEO/FASE2_INTEGRACAO_OTIMIZACOES.md."},
-    {owner:"Lúcio → Kelsen",txt:"Auditoria de Oscar (11/08) na base/template de Arquitetura do Drive — 5 achados. Itens 1, 3 e 5 aplicados por Wallenberg em 27/08 (patches LICIN 2.0/DULI + escopo POP-PROJ-01/02, reauditados por Oscar em 31/08, verbatim). Item 2: documento não localizado no Drive (renomeado/movido).",desde:"2026-08-11",crit:"media",alc:"tecnico",res:"Aberto só o Item 4: a 4ª planilha 'CONTROLE ENVIÁVEIS EXTERNOS — PROJETO DE REFORMA' não tem nenhuma linha de Projeto Legal/DULI. Kelsen respondeu em 31/08 (reforma está dentro do LICIN 2.0, sem isenção geral de DULI — exceção só em LC 270/2024 Art. 278 §1º IV); redação condicional gravada em pendencias.json. Falta Lúcio/Wallenberg inserirem a linha na planilha. Ressalva de Princípio 8: os 2 POPs não tiveram data de revisão/changelog atualizada apesar da mudança material."},
-    {owner:"Kelsen",txt:"Varredura da pasta Drive 'Dptº de Projetos' por documentos de Legal (diretriz de Claudemberg, 31/08). Os 2 documentos oficiais corrigidos na Fase 1 de 30/07 ainda retêm frases genéricas residuais — 5 substituições redigidas por Kelsen, prontas para o Service Account.",desde:"2026-08-31",crit:"media",alc:"auto",res:"alc:auto, mas bloqueada pelo classificador de permissão do modo automático (mesmo veto de 31/07 e 01/08 para ações que tocam a pasta de credenciais Google sem Claudemberg presente). Executável por Wallenberg via Sheets/Docs API quando Claudemberg estiver presente."},
-    {owner:"Kelsen",txt:"Mesma varredura (31/08): a pasta oficial 001_PROCEDIMENTOS/POP/GESTOR LEGAL guarda cópias .md/.pdf dos POPs de Legal CONGELADAS em 2026-07-20 que contradizem as versões vivas (pré-quarentena da LC 274/2024, sem LICIN 2.0/DULI/COES). Achado confirmado, recomendação feita.",desde:"2026-08-31",crit:"media",alc:"auto",res:"alc:auto, mesmo bloqueio de modo automático da pendência acima. Decisão de forma (mover para subpasta de arquivo histórico vs. substituir pelo conteúdo vivo) + execução por Wallenberg com Claudemberg presente. Nunca exclusão permanente."},
+    {owner:"Lúcio → Kelsen",txt:"Auditoria de Oscar (11/08) na base/template de Arquitetura do Drive — 5 achados. Itens 1, 3 e 5 aplicados por Wallenberg em 27/08 (patches LICIN 2.0/DULI + escopo POP-PROJ-01/02, reauditados por Oscar em 31/08, verbatim). Item 2: documento não localizado no Drive (renomeado/movido).",desde:"2026-08-11",crit:"media",alc:"tecnico",res:"PAUSADA. Aberto só o Item 4: a 4ª planilha 'CONTROLE ENVIÁVEIS EXTERNOS — PROJETO DE REFORMA' não tem nenhuma linha de Projeto Legal/DULI. Kelsen respondeu em 31/08 (reforma está dentro do LICIN 2.0, sem isenção geral de DULI — exceção só em LC 270/2024 Art. 278 §1º IV); redação condicional gravada em pendencias.json. Falta Lúcio/Wallenberg inserirem a linha na planilha."},
+    {owner:"Kelsen",txt:"Achado de pesquisa (rotina diária, 04/09/2026, fonte secundária não auditada com rigor de B10): grupamentos residenciais A-4 do COSCIP (condomínios horizontais) com mais de 6 unidades podem NÃO ser isentos de aprovação CBMERJ, diferente da isenção já fechada (B10, 28/07) para unifamiliar isolado (A-1). Relevante ao caso ativo Daniel-OB — o Condomínio Venice é um grupamento A-4.",desde:"2026-09-04",crit:"media",alc:"auto",res:"Hely tem WebFetch/Bash — pode apurar o dispositivo primário exato com o mesmo rigor que fechou a B10, antes de aplicar a qualquer caso real."},
     {owner:"Lúcio",txt:"Dois conectores MCP achados no roster da sessão, candidatos aos gaps da equipe: 371ab963… (generate_image/video/audio — gap de render do Burle) e 96670294… (Gamma — reforço ao gap de apresentações do Portinari). Achado original 08/08, formalizado em pendencias.json em 11/08.",desde:"2026-08-08",crit:"baixa",alc:"tecnico",res:"Lúcio não tem essas duas ferramentas na própria lista — não pode testar ponta a ponta (critério de Claudemberg de 01/08: verificação completa antes de reportar como resolvido). Wallenberg precisa verificar os 2 conectores ponta a ponta antes de qualquer Skill ser reportada como fechada."},
-    {owner:"Wallenberg",txt:"Parecer de Kelsen (drenagem de 31/08) sobre a Skill nova da Diária 'legal_caurj-deliberacao-009-2026-rrt-art8' (Trilha A, proposta): o fato central procede (CAU-RJ DP 009/2026 toca o Art. 8º da Res. RRT 91/2014, que impacta POP-LEGAL-05), MAS a Skill ignora que o Art. 8º já tem §5º (RRT Social) e que o RRT Derivado já é inciso IV + §4º — imprecisão de numeração.",desde:"2026-08-31",crit:"baixa",alc:"humano",res:"Devolver a imprecisão à Diária de Skills antes da ratificação de Claudemberg. PDF da DP 009/2026 já indexado no _indice_fontes.md."},
     {owner:"Lúcio",txt:"Diretriz de Claudemberg (31/08, fora do ciclo de drenagem): cada Gestor verifica na pasta Drive 'Dptº de Projetos' os documentos da própria área. Lúcio varreu ARQUITETURA — 4 POPs com cabeçalho/changelog desatualizado apesar de mudança material (Princípio 8); texto de revisão redigido.",desde:"2026-08-31",crit:"baixa",alc:"tecnico",res:"Aguarda Wallenberg aplicar a nota de revisão datada nos 4 POPs (Lúcio não tem ferramenta de escrita no Drive). Sem urgência — os POPs já foram reauditados quanto ao conteúdo."}
   ];
   var rules = [

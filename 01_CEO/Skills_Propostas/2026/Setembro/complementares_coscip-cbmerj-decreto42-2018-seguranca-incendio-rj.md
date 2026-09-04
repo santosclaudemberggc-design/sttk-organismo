@@ -6,7 +6,18 @@
 - **Cross-disciplina geral** — todo projeto de Construção do Zero no Estado do RJ precisa conhecer as fronteiras de aplicação do COSCIP, mesmo quando a edificação é isenta de aprovação pelo CBMERJ
 
 ## Status
-proposta — v1.0 (04/09/2026)
+proposta — v1.1 (04/09/2026, corrigida)
+
+## ⚠️ Correção 04/09/2026 — não é lacuna nova, é expansão de conhecimento já existente
+
+**A versão original desta Skill (v1.0) afirmava incorretamente que o COSCIP era "lacuna nunca coberta antes".** Isso é falso — o COSCIP/CBMERJ já foi identificado, apurado e fechado como pendência (`b10-coscip-nt107`) em **28/07/2026**, com auditoria dupla (Hely apura, Kelsen audita contra o primário) e está documentado na Skill `.claude/skills/legal-base-legislativa-bairro/SKILL.md`, seção "Segurança contra incêndio e pânico (CBMERJ/COSCIP)". O achado de 28/07 é mais rigoroso que esta Skill em um ponto (leu a NT 1-07 primária inteira, não só resumo secundário) e conclui: **edificação unifamiliar isolada (A-1) sem atividade econômica está isenta, sem obrigação residual** — questão fechada.
+
+**O que esta Skill (v1.1) genuinamente adiciona, e por isso continua tendo valor:**
+1. Mapa completo das Notas Técnicas do CBMERJ por relevância a cada disciplina de projeto (Landell/elétrica-alarme-SPDA, Baumgart/estrutural-resistência ao fogo) — a Skill de 28/07 não tinha esse detalhe, é conhecimento novo para Complementares.
+2. Achado sobre **grupamentos (Divisão A-4)** — condomínios horizontais com mais de 6 unidades **não** seguem a mesma isenção do A-1 isolado. Isso NÃO foi apurado com o mesmo rigor da B10 (só fonte secundária, não leitura de artigo primário) — foi acrescentado como pista não fechada na Skill de Kelsen, pendente de apuração por Hely antes de aplicar a qualquer caso real.
+3. **Relevância direta ao caso ativo Daniel-OB** (Condomínio Venice, grupamento A-4) — nunca antes levantada nas apurações de zoneamento desse caso.
+
+**Divisão de competência, sem duplicidade:** a pergunta "esta edificação precisa de aprovação CBMERJ?" (isenção/exigibilidade) é conhecimento do Kelsen, vive em `legal-base-legislativa-bairro`. A pergunta "quando o COSCIP incide, o que cada disciplina de projeto precisa saber?" (mapa de Notas Técnicas por função) é conhecimento de Complementares, vive aqui.
 
 ## O que é o COSCIP
 
