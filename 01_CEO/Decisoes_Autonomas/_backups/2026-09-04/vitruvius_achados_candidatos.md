@@ -26,14 +26,12 @@ Para cada achado: **o que é**, **o que o Vitruvius já cobre ou não cobre diss
 - **Próximo passo:** Lúcio/Oscar avaliam se vale abrir uma issue/pedido ao mantenedor do Vitruvius (se for projeto ativo) pedindo essas 2 funções, em vez de rodar 2 conectores MCP simultâneos no mesmo Revit (risco de conflito de conexão exclusiva, já documentado no Skill correspondente).
 - **Fonte:** [github.com/shuotao/REVIT_MCP_study](https://github.com/shuotao/REVIT_MCP_study) — Skill completa em `01_CEO/Skills_Propostas/2026/Agosto/arquitetura_revit-mcp-study-173tools-shuotao.md`
 
-### 24/08/2026 — Revit MCP 138 Tools (LuDattilo) — **atualizado 04/09/2026**
+### 24/08/2026 — Revit MCP 138 Tools (LuDattilo)
 
-- **O que é:** conector MCP para Revit 2023-2027 (`LuDattilo/revit-mcp-server`), 138 tools MCP (README anuncia "80+"), MIT, 51 stars, 140 commits — desenvolvimento ativo confirmado em 04/09.
-- **Detalhe técnico confirmado (04/09):** 6 categorias operacionais — Projeto/Modelo Info (metadados, views, seleção), Análise/Auditoria de Modelo (health score, **clash detection**, consultas espaciais), Materiais/Quantitativos (takeoff), Criação de Elementos (paredes, pisos, salas, grids, arrays), Modificação (parâmetros, tipos, overrides gráficos), Exportação (PDF/DWG/IFC/CSV, schedules). Painel de chat integrado com API Anthropic (extended thinking 10K tokens) dentro do próprio Revit. Windows apenas, Node.js 18+, porta 8080 fixa, documento único ativo, sem agrupamento de undo para lotes de IA.
-- **O que o Vitruvius não cobre hoje:** clash detection e health score de modelo, quantitativos (QTO) e exportação IFC/CSV em lote — mesma lacuna já identificada no achado shuotao (173 tools, 27/08).
-- **Decisão:** **avaliar incorporação parcial** — dado técnico agora suficiente para decisão (antes "monitorar" por falta de detalhe). Mais maduro que Demolinator (48, descartado) mas ainda sem comparação tool-a-tool formal contra os 35 tools do Vitruvius em produção. Prioridade sobe frente a shuotao/BIMwright por ter integração de chat nativa Anthropic já pronta.
-- **Próximo passo:** Lúcio/Oscar decidem se vale testar coexistência (porta 8080 fixa pode colidir com outro conector já testado nesse endereço) antes de qualquer piloto.
-- **Fonte:** `01_CEO/Skills_Propostas/2026/Agosto/skill_revit_mcp_138tools.md` | https://github.com/LuDattilo/revit-mcp-server — reverificado 04/09/2026
+- **O que é:** conector MCP para Revit 2026, 138 tools, natural language em português.
+- **O que o Vitruvius não cobre hoje:** não auditado ponto a ponto ainda contra as 23 tools atuais do Vitruvius — pendência.
+- **Decisão:** **monitorar** — candidato mais próximo em maturidade ao Vitruvius (mesma geração 2026), mas nunca comparado tool-a-tool. Decisão pendente de Wallenberg/Cardozo desde 26/08 (ver livro-razão 26/08, "sobreposição Revit MCP 138 tools vs. Vitruvius").
+- **Fonte:** `01_CEO/Skills_Propostas/2026/Agosto/skill_revit_mcp_138tools.md`
 
 ### 23/08/2026 — Revit MCP 48 Tools (Demolinator)
 

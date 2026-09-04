@@ -2,7 +2,7 @@
 
 **Status:** Ativo  
 **Mês:** Setembro 2026  
-**Atualização:** 03/09/2026
+**Atualização:** 04/09/2026
 
 ---
 
@@ -10,29 +10,33 @@
 
 | Data | Título | Tipo | Para Quem | Status |
 |------|--------|------|-----------|--------|
-| 01/09 | NBR 15220-3:2024 — Reclassificação Bioclimática RJ (ZB 8 → ZB 4A) | Inteligência (Trilha A) | Tenreiro, Baumgart, Glaziou (cross-disciplina Complementares) | proposta |
-| 01/09 | LC 281/2025 — Condições Especiais Licenciamento e Legalização RJ | Inteligência (Trilha A) | Kelsen/Hely (Legal) | proposta |
-| 02/09 | NBR 9575:2024 — Impermeabilização: Seleção e Projeto | Inteligência (Trilha A) | Saturnino, Baumgart, Tenreiro (cross-disciplina Complementares) | proposta |
-| 03/09 | Resolução SMDU Nº 10/2026 — Consulta Prévia de Diretrizes Territoriais e RDT | Inteligência (Trilha A) | Kelsen/Hely (Legal) + Lúcio/Oscar (Arquitetura) | proposta |
-| 03/09 | NBR 15575:2025 — Desempenho Acústico de Sistemas de Pisos | Inteligência (Trilha A) | Baumgart, Saturnino, Tenreiro (cross-disciplina Complementares) | proposta |
+| 01/09 | NBR 15220-3:2024 — Reclassificação Bioclimática RJ (ZB 8 → ZB 4A) | Inteligência (Trilha A) | Tenreiro, Baumgart, Glaziou (cross-disciplina Complementares) | ratificada 03/09 (corrigida — ver nota abaixo) |
+| 01/09 | LC 281/2025 — Condições Especiais Licenciamento e Legalização RJ | Inteligência (Trilha A) | Kelsen/Hely (Legal) | ratificada 03/09 (corrigida — ver nota abaixo) |
+| 02/09 | NBR 9575:2024 — Impermeabilização: Seleção e Projeto | Inteligência (Trilha A) | Saturnino, Baumgart, Tenreiro (cross-disciplina Complementares) | ratificada 03/09 (corrigida — ver nota abaixo) |
+| 03/09 | Resolução SMDU Nº 10/2026 — Consulta Prévia de Diretrizes Territoriais e RDT | Inteligência (Trilha A) | Kelsen/Hely (Legal) + Lúcio/Oscar (Arquitetura) | ratificada 03/09 (corrigida — ver nota abaixo) |
+| 03/09 | NBR 15575:2025 — Desempenho Acústico de Sistemas de Pisos | Inteligência (Trilha A) | Baumgart, Saturnino, Tenreiro (cross-disciplina Complementares) | ratificada 03/09 |
+| 03/09 | Kinocut MCP — Edição de Vídeo Local | Ferramenta (Trilha B) | Lúcio/Burle + Portinari (pós-produção) | ratificada 03/09 |
+| 04/09 | COSCIP/CBMERJ Decreto 42/2018 — Segurança Contra Incêndio e Pânico RJ | Inteligência (Trilha A) | Landell, Baumgart (Complementares) | proposta |
+
+**⚠️ Nota de correção (03/09/2026):** as 4 primeiras linhas acima tinham se autodeclarado "ratificada — Claudemberg, ao vivo, pós-Drenagem Contínua" nos próprios arquivos `.md`, sem que essa ratificação tivesse de fato acontecido — autodeclaração indevida de uma rotina autônoma. Corrigido nos arquivos-fonte; a ratificação real aconteceu nesta data, em rodada de auditoria com Wallenberg.
 
 ---
 
 ## Estatísticas
 
-- **Skills Propostas (semana atual):** 5 (Trilha A: 5, Trilha B: 0)
-- **Skills Propostas (acumulado setembro):** 5
+- **Skills Propostas (semana atual):** 7 (Trilha A: 6, Trilha B: 1)
+- **Skills Propostas (acumulado setembro):** 7
 - **Skills Testadas:** 0
 - **Cobertura Trilha A por Agente (desde agosto):**
-  - Baumgart: 2 (NBR 6118:2026 + NBR 15220-3:2024 cross)
+  - Baumgart: 3 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross)
   - Saturnino: 2 (NBR 5626+8160 + NBR 9575:2024 cross)
-  - Landell: 1 (NBR 5410)
+  - Landell: 2 (NBR 5410 + COSCIP/CBMERJ)
   - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
   - Tenreiro: 2 (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross)
   - Mindlin: 1 (NBR 6492:2021)
   - Kelsen/Hely: 3 (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026)
-- **Achados Vitruvius:** +2 novos em 03/09 (BIMwright/rvt-mcp 229 tools + UV-Tech/revit-claude-mcp 40 tools — registrados em vitruvius_achados_candidatos.md). Total acumulado: 6 achados.
-- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) Apresentação interativa ao cliente (Portinari/Mindlin) — buscas 02-03/09 não encontraram ferramenta gratuita viável; (4) NBR 16280:2024 reformas (STTK = construção do zero, mas pode ser útil para Tenreiro em intervenções internas); (5) Passo 8 se lacuna real pedir
+- **Achados Vitruvius:** achado de 24/08 (LuDattilo 138 tools) atualizado com detalhe técnico completo em 04/09 — decisão sobe de "monitorar" para "avaliar incorporação parcial". Total acumulado: 6 achados (nenhum novo hoje, 1 atualizado).
+- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) Apresentação interativa ao cliente (Portinari/Mindlin) — 4ª busca consecutiva (04/09) ainda sem ferramenta gratuita self-hosted viável; (5) NBR 16280:2024 reformas (STTK = construção do zero, monitorar); (6) Passo 8 se lacuna real pedir
 
 ---
 
@@ -65,4 +69,15 @@
 
 ---
 
-**Próxima Atualização:** 04/09/2026 ou próxima rodada
+## Observações da Rodada 04/09/2026
+
+1. **COSCIP/CBMERJ (Decreto Estadual 42/2018) — achado principal:** lacuna real coberta pela primeira vez — nenhuma Skill anterior tratava segurança contra incêndio no RJ. Cross-disciplina Landell (alarme/detecção/iluminação de emergência/SPDA) e Baumgart (resistência ao fogo/compartimentação/saídas de emergência). Achado de impacto prático: **residência unifamiliar isolada (A-1) tende a ser isenta de aprovação CBMERJ; grupamento/condomínio horizontal (A-4) com mais de 6 unidades NÃO é isento** — relevante para o caso real Daniel-OB (Condomínio Venice), que é grupamento. Lacuna reconhecida na própria Skill: tabela completa do Anexo III (exigências por porte) e texto integral das Notas Técnicas mais críticas (NT 2-03, 2-05, 2-08, 2-15) não foram lidos na íntegra — precisam de verificação antes de qualquer dimensionamento real.
+2. **Vitruvius — achado LuDattilo (138 tools) atualizado, não novo:** dado técnico completo obtido (categorias, requisitos, limitações) que faltava desde 24/08. Decisão sobe de "monitorar" para "avaliar incorporação parcial" — mesma lacuna de clash detection/QTO já vista no achado shuotao.
+3. **Apresentação interativa ao cliente — 4ª busca consecutiva (01, 02, 03, 04/09) sem achado novo qualificado.** Presenton (self-hosted, Docker, Apache-2.0, 10k stars) já registrado em 28/08 — não duplicado. Nenhum candidato novo encontrado hoje além do já mapeado.
+4. **CAU-RJ:** busca de setembro não encontrou deliberação/resolução nova específica do CAU-RJ (só achados já conhecidos do CAU/BR). Nenhuma Skill criada (Princípio 15).
+5. **Render/vídeo:** Modly (geração de modelo 3D local via GPU, não renderizador de cena arquitetônica) e ferramentas Autodesk APS (exigem assinatura paga) avaliados e descartados — não atendem aos critérios (foco errado / custo não-zero). Stable Diffusion+ControlNet, Blender e TRELLIS2/Hunyuan3D já cobertos por Skills existentes de agosto — não duplicados.
+6. **Descartados:** Autodesk APS Sample MCP (paga, cloud-only, exige ACC/BIM360) — viola critério 1 (custo zero) mesmo sendo achado de pesquisa geral, não passa nem para vitruvius_achados como candidato ativo, só nota histórica.
+
+---
+
+**Próxima Atualização:** 05/09/2026 (Sexta — Painel + Dashboard + Análise semanal) ou próxima rodada Seg-Qui

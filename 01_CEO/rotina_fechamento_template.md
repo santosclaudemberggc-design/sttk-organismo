@@ -22,22 +22,22 @@ metadata:
 
 ---
 
-## [2026-09-03] — Diária Skills v2.7 (Quinta)
+## [2026-09-04] — Diária Skills v2.7 (Quinta)
 
 ### RODADA ANTERIOR (O que foi entregue)
 
-- [x] **Skills criadas (02/09):** 1 Trilha A (NBR 9575:2024 Impermeabilização — Saturnino/Baumgart/Tenreiro)
-- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (1 novo + índice atualizado)
-- [x] **PDFs regenerados (02/09):** 2 (1 Skill + índice)
+- [x] **Skills criadas (03/09):** 2 (Resolução SMDU 10/2026 RDT — Legal + NBR 15575:2025 Desempenho Acústico Pisos — Complementares cross-disciplina)
+- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (2 novos + índice atualizado)
+- [x] **PDFs regenerados (03/09):** 3 (2 Skills + índice)
 - [ ] **Painel atualizado:** Não (tarefa de Sexta 05/09)
-- [x] **Livro-razão registrado:** Sim (Setembro.md, entrada 02/09)
+- [x] **Livro-razão registrado:** Sim (Setembro.md, entrada 03/09)
 - [ ] **Learning Agent propôs melhorias:** N/A (Seg-Qui)
 
 ### O QUE FICOU PENDENTE (Cuidado: não repita)
 
-- **Dado complementar zona 4A:** Upar ≤ 2,7 W/(m².K) para paredes (confirmado 02/09). LSF no RJ exige simulação computacional. Incorporar à Skill existente se Claudemberg pedir refinamento.
-- **Apresentação interativa ao cliente:** 3ª busca consecutiva (01-03/09) sem ferramenta gratuita viável. BIMx = Archicad pago, pCon.planner = só interiores, Unreal Engine = pesado, MeuPasseioVirtual = trial, Augment = SaaS, ARki = limitado. Continuar buscando, mas prioridade rebaixada.
-- **BIMwright/rvt-mcp (229 tools):** candidato mais maduro para agregar ao Vitruvius. Pendente: testar coexistência Named Pipe com Vitruvius.
+- **Apresentação interativa ao cliente:** 4ª busca consecutiva (01-04/09) sem ferramenta gratuita self-hosted viável. Presenton já registrado (28/08) é o melhor candidato até agora, mas ninguém testou de fato. Prioridade rebaixada — considerar parar de buscar até haver caso real que force decisão.
+- **COSCIP/CBMERJ:** Skill nova (04/09) tem lacunas reconhecidas — tabela completa do Anexo III e texto integral das NTs 2-03/2-05/2-08/2-15 não lidos na íntegra. Ler antes de qualquer dimensionamento real (ex. caso Daniel-OB, que é grupamento A-4, não isento).
+- **LuDattilo/revit-mcp-server (138 tools):** decisão subiu para "avaliar incorporação parcial" — falta comparação tool-a-tool formal contra os 35 tools do Vitruvius, e checar se a porta 8080 fixa colide com outro conector já testado.
 
 ### O QUE NÃO FAZER (Avoid retrabalho)
 
@@ -48,11 +48,15 @@ metadata:
 - ❌ **NBR 15575:2025 desempenho acústico pisos não duplique** — coberta por Skill de 03/09
 - ❌ **NBR 9575:2024 impermeabilização não duplique** — coberta por Skill de 02/09
 - ❌ **Resolução SMDU 10/2026 (RDT) não duplique** — coberta por Skill de 03/09
+- ❌ **COSCIP/CBMERJ Decreto 42/2018 não duplique** — coberta por Skill de 04/09
 - ❌ **RevitCortex 173 tools não duplique** — já registrado em vitruvius_achados e Skill de 27/08
 - ❌ **BIMwright/rvt-mcp 229 tools não crie Skill isolada** — registrado em vitruvius_achados 03/09 (candidato a agregar ao Vitruvius)
 - ❌ **UV-Tech/revit-claude-mcp 40 tools não crie Skill isolada** — registrado em vitruvius_achados 03/09 (monitorar)
+- ❌ **LuDattilo/revit-mcp-server 138 tools não crie Skill isolada nova** — já existe desde 24/08, só atualizada em detalhe técnico 04/09 (vitruvius_achados)
 - ❌ **Luw.ai não crie Skill** — cloud + watermark + sem MCP, viola critério 2 (vazamento de dados)
 - ❌ **Remodel AI / Redraw / Leonardo AI** — todos cloud, violam critério 2
+- ❌ **Autodesk APS Sample MCP Server não crie Skill** — exige assinatura paga (ACC/BIM360), viola critério 1
+- ❌ **Modly não crie Skill de render** — é gerador de modelo 3D via GPU local, não renderizador de cena arquitetônica (foco errado, não critério de segurança)
 
 ---
 
@@ -60,38 +64,45 @@ metadata:
 
 ### Entregáveis
 
-- [x] **Skills criadas:** 2 (Resolução SMDU 10/2026 RDT — Legal + NBR 15575:2025 Desempenho Acústico Pisos — Complementares cross-disciplina)
-- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (2 novos + índice atualizado)
-- [x] **PDFs regenerados:** 3 (2 Skills + índice)
+- [x] **Skills criadas:** 1 (COSCIP/CBMERJ Decreto 42/2018 — Segurança Contra Incêndio RJ — Complementares cross-disciplina Landell/Baumgart)
+- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (1 novo + índice atualizado)
+- [x] **PDFs regenerados:** 2 (1 Skill + índice)
 - [ ] **Painel atualizado:** Não (tarefa de Sexta 05/09)
-- [x] **Livro-razão registrado:** Sim (Setembro.md, entrada 03/09)
-- [x] **Vitruvius achados atualizados:** +2 (BIMwright 229 tools + UV-Tech 40 tools)
+- [x] **Livro-razão registrado:** Sim (Setembro.md, entrada 04/09)
+- [x] **Vitruvius achados atualizados:** 1 (LuDattilo 138 tools — detalhe técnico completo, decisão sobe para "avaliar incorporação parcial")
 - [ ] **Learning Agent melhorias:** N/A (Seg-Qui)
 
 ### Bloqueadores (se houver)
 
-*Sem bloqueadores. Pesquisa fluiu nos 5 eixos. PDFs gerados via md_to_pdf.py sem problemas.*
+*Sem bloqueadores de execução. 1 falha transitória do md_to_pdf.py ao sobrescrever indice.pdf (provável lock momentâneo de antivírus/indexador) — resolvida no retry imediato, sem impacto no resultado final.*
 
 ### Retrabalho Evitado (se houver)
 
-- **Item 1:** NBR 9575:2024 não duplicada (Skill de 02/09 já existe)
-- **Item 2:** NBR 15220-3:2024 não duplicada (Skill de 01/09 já existe)
-- **Item 3:** Demolinator/RevitCortex não duplicados (vitruvius_achados 23/08 e 27/08)
-- **Item 4:** Render cloud (Remodel AI, Redraw, Leonardo) descartados por critério 2
-- **Item 5:** CAU-RJ Del. 002/003/008 fora de escopo direto STTK — não viram Skill
+- **Item 1:** Presenton não duplicado (Skill de 28/08 já existe, confirmado 04/09 como melhor candidato ainda não testado)
+- **Item 2:** LuDattilo 138 tools não virou Skill isolada nova — atualização do achado já existente (24/08)
+- **Item 3:** Autodesk APS Sample MCP descartado por critério 1 (paga)
+- **Item 4:** Modly descartado por foco errado (geração de modelo 3D, não render de cena)
+- **Item 5:** CAU-RJ — busca de setembro não achou deliberação nova, não forçou Skill
 
 ### Status Final
 
 - **Rodada:** ✅ Completa
-- **Taxa de Sucesso:** 2 Skills + 3 PDFs + 2 achados Vitruvius + 6 descartados com justificativa — 100%
-- **Marco:** Resolução SMDU 10/2026 é a 3ª Skill Legal de Setembro; NBR 15575:2025 pisos (prioridade #2 do índice) resolvida; Kelsen/Hely sobe para 3 Skills
-- **Próxima Rodada Recomendação:** (1) Apresentação interativa ao cliente (4ª busca — tentar "open source presentation builder architecture" no GitHub); (2) Sexta 05/09: Painel + Dashboard + Análise semanal; (3) NBR 16280:2024 reformas (se Tenreiro sinalizar relevância); (4) BIMwright coexistência com Vitruvius (pendente teste)
+- **Taxa de Sucesso:** 1 Skill + 2 PDFs + 1 achado Vitruvius atualizado + 4 descartados com justificativa — 100%
+- **Marco:** Primeira Skill cobrindo segurança contra incêndio (COSCIP) desde o início do organismo — lacuna real fechada, com achado prático direto para o caso real Daniel-OB (grupamento A-4 não isento de aprovação CBMERJ)
+- **Próxima Rodada Recomendação:** (1) Sexta 05/09: Painel + Dashboard + Análise semanal (pendente há 2 semanas); (2) LuDattilo — testar coexistência de porta 8080 com outros conectores antes de decidir incorporação; (3) Ler texto integral das NTs 2-03/2-05/2-08/2-15 do COSCIP antes de aplicar em caso real; (4) Considerar parar busca de apresentação interativa até caso real forçar decisão (4 buscas sem novidade)
 
 ---
 
 ## HISTÓRICO DE RODADAS
 
 *Apenas os últimos 2-3 encerramentos para referência rápida*
+
+### [2026-09-03] Diária Skills v2.7 — Seg-Qui (2 Skills)
+
+- ✅ Entregou: **2 Skills Trilha A** (Resolução SMDU 10/2026 RDT — Legal; NBR 15575:2025 Desempenho Acústico Pisos — Complementares cross), 3 PDFs, +2 achados Vitruvius (BIMwright 229 tools + UV-Tech 40 tools)
+- ⚠️ Bloqueadores: Nenhum
+- ❌ Retrabalho evitado: NBR 9575/15220-3 não duplicadas, render cloud descartado, CAU-RJ fora de escopo não virou Skill
+- 🎯 Status: **Completa** — NBR 15575:2025 pisos (prioridade #2) resolvida, Kelsen/Hely sobe para 3 Skills
 
 ### [2026-09-02] Diária Skills v2.7 — Seg-Qui (1 Skill)
 
@@ -107,17 +118,6 @@ metadata:
 - ❌ Retrabalho evitado: Leonardo AI/Runway ML/Midjourney descartados (freemium); Demolinator não duplicado
 - 🎯 Status: **Completa** — pendência zoneamento 31/08 resolvida, Setembro inaugurado
 
-### [2026-08-31] Diária Skills v2.7 — Seg-Qui (3 Skills)
-
-- ✅ Entregou: **3 Skills Trilha A** (Tenreiro NBR 15575-4+8995-1, Kelsen CAU-RJ 009/2026, Mindlin NBR 6492:2021), 4 PDFs, CronJob PDF criado
-- ⚠️ Bloqueadores: Nenhum
-- 🎯 Status: **Completa** — Trilha A 6/6 áreas de Cardozo cobertas
-
-### [2026-08-28] Diária Skills v2.7 — 2 rodadas
-
-- ✅ Entregou: **5 Skills** (4 Trilha A + 1 Trilha B), 9 PDFs
-- 🎯 Status: **Completa** — 4 áreas Cardozo cobertas. Painel pendente para Sexta.
-
 ---
 
 ## INSTRUÇÕES DE USO
@@ -129,6 +129,6 @@ metadata:
 
 ---
 
-**Última atualização:** 03/09/2026  
-**Próxima leitura:** 04/09/2026 (Sexta — Diária Skills Seg-Qui)  
+**Última atualização:** 04/09/2026  
+**Próxima leitura:** 05/09/2026 (Sexta — Painel + Dashboard + Análise semanal)  
 **Painel pendente para:** 05/09/2026 (Sexta — Painel + Dashboard + Análise semanal)

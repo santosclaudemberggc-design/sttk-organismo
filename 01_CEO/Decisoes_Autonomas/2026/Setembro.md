@@ -4,6 +4,24 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-04] Rotina Diária de Skills v2.7 (Quinta) — 1 Skill nova + 1 achado Vitruvius atualizado
+
+**Contexto:** rodada autônoma Seg-Qui (Passos 1-5+8). Pesquisa nos 5 eixos obrigatórios: render/vídeo, apresentação ao cliente, CAU-RJ, Complementares (Trilha A), Revit/BIM.
+
+**Executado por Wallenberg:**
+- **Skill nova criada** (Trilha A, Inteligência): `01_CEO/Skills_Propostas/2026/Setembro/complementares_coscip-cbmerj-decreto42-2018-seguranca-incendio-rj.md` + PDF. Cobre o **COSCIP** (Decreto Estadual 42/2018) — segurança contra incêndio no RJ, lacuna nunca coberta antes. Cross-disciplina Landell (alarme/detecção/SPDA) e Baumgart (resistência ao fogo/compartimentação). Achado prático relevante: residência unifamiliar isolada (A-1) tende a ser isenta de aprovação CBMERJ; grupamento/condomínio horizontal (A-4, ex. caso real Daniel-OB/Condomínio Venice) com mais de 6 unidades **não** é isento.
+- **`vitruvius_achados_candidatos.md` atualizado** (achado de 24/08, LuDattilo/revit-mcp-server 138 tools): detalhe técnico completo obtido (categorias operacionais, requisitos, limitações), decisão sobe de "monitorar" para "avaliar incorporação parcial". Backup pré-edição em `_backups/2026-09-04/vitruvius_achados_candidatos.md`.
+- **`01_CEO/Skills_Propostas/2026/Setembro/indice.md` atualizado** com a Skill nova, estatísticas e observações da rodada. Backup pré-edição em `_backups/2026-09-04/indice_setembro.md`.
+- **PDFs regenerados:** 2 (Skill COSCIP nova + índice de Setembro).
+
+**Descartados com justificativa (Passo 1):** Autodesk APS Sample MCP Server (paga, cloud-only, exige assinatura ACC/BIM360 — viola critério 1); Modly (geração de modelo 3D via GPU local, não é renderizador de cena arquitetônica — foco errado); Presenton (self-hosted, mas já registrado em 28/08 — não duplicado); CAU-RJ (busca de setembro não achou deliberação nova específica do CAU-RJ).
+
+**Passo 8 (Trilha B/Ferramentas):** nenhuma lacuna real nova pedindo busca de ferramenta esta rodada — Landell/Baumgart/demais Agentes de Cardozo aguardam Briefing real (sem caso ativo); bloqueio de Burle (media_upload_widget/show_generation_by_ids) é config já escalada, não candidato de busca GitHub nova.
+
+**Como desfazer:** restaurar `vitruvius_achados_candidatos.md` e `indice.md` (Setembro) dos backups em `_backups/2026-09-04/`; remover o arquivo `.md`+`.pdf` da Skill COSCIP (status ainda "proposta", não ratificada).
+
+---
+
 ### [2026-09-03] Trim do `_estado_kelsen.md` (171 KB → 20 KB) — decisão de Claudemberg
 
 **Contexto:** o arquivo de estado do Kelsen é lido no início de todo acionamento dele (75 até agora) e da cadeia Kelsen→Hely. Estava em **487 linhas / 171 KB (~40k tokens)** — log append-only desde 13/07, violando a própria regra do arquivo ("substitua seções, não append"; "apague o que virou passado"). É a Função 6 (Padronizador) + o alvo mais recorrente de custo por agente.
