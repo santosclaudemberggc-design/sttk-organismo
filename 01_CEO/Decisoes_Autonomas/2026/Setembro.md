@@ -4,6 +4,28 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-07] Diária Skills v2.7 (Segunda) — 1 Skill Trilha A (NBR 6122 Fundações) + 1 achado Vitruvius
+
+**Executado por Wallenberg (rotina Seg-Qui, Passos 0-5+8):**
+
+**Passo 0 (Pré-rodada):** fechamento de 04/09 lido (sexta-feira), estados de Kelsen/Hely/Cardozo verificados. Caso Daniel-OB ativo (COSCIP A-4 = 62 unidades confirmado por Hely 04/09). Cardozo fila limpa, 6 agentes Shadow. Lacuna real identificada: Baumgart não tinha cobertura de fundações (NBR 6122).
+
+**Passo 1 (Pesquisa Externa):** 6 buscas paralelas (NBR 6122, CAU-RJ, Revit MCP GitHub, render IA, multi-agent workflow, apresentação ao cliente). CAU-RJ: nenhuma deliberação nova em setembro. Render: nada novo self-hosted. Apresentação: 5ª busca consecutiva sem ferramenta gratuita viável — recomendação formal de pausar.
+
+**Passo 2 (Consolidação):** 2 achados úteis: NBR 6122 (Skill) + IbrahimFahdah/revit-claude-mcp 46 tools (vitruvius achado). Restante descartado como ruído (mesmas ferramentas cloud, projetos pequenos superados).
+
+**Passo 3 (Redação):** Skill `baumgart_nbr6122-2022-emenda1-fundacoes-projeto-execucao.md` criada (v1.0, proposta). Conteúdo: tipos de fundação (rasas/profundas), investigação geotécnica obrigatória, Emenda 1/2022 (cimento 400→350 kg/m³), interface com 7 normas correlatas, checklist de projeto, erros comuns. Lacunas declaradas: texto integral ABNT não lido (fontes secundárias verificadas).
+
+**Passo 4 (Salvamento):** Skill em `01_CEO/Skills_Propostas/2026/Setembro/`. `vitruvius_achados_candidatos.md` atualizado (IbrahimFahdah, "monitorar"). Índice de Setembro atualizado (8 Skills acumuladas). Livro-razão registrado.
+
+**Passo 5 (PDFs):** a seguir.
+
+**Passo 8 (Ferramentas/Trilha B):** nenhuma lacuna real de Agente pediu ferramenta nova hoje. IbrahimFahdah registrado em vitruvius_achados como "monitorar" (46 tools não preenche lacuna vs BIMwright 229 / LuDattilo 138).
+
+**Como desfazer:** remover `baumgart_nbr6122-2022-emenda1-fundacoes-projeto-execucao.md`; reverter edições no índice e no vitruvius_achados (via git revert do commit desta rodada).
+
+---
+
 ### [2026-09-07] Drenagem Contínua v2.3 (Segunda, 10:15) — Portão de Trabalho ativado, Cardozo único Gestor acionado
 
 **Contexto:** disparo agendado da `wallenberg-drenagem-continua-local`. Verificação do Portão de Trabalho (Passo 2.5): `pendencias.json` com zero itens `alc:"auto"`+`status:"aberta"` (46 resolvida, 3 descartada, 1 pausada); Notion "Treinos e Testes" zero pendente (`notion-query-data-sources`, filtro Status=pendente); mas a Skill `complementares_coscip-cbmerj-decreto42-2018-seguranca-incendio-rj.md` (criada 04/09 pela Diária) seguia com Status "proposta", nunca avaliada por nenhuma rodada de Drenagem — a rodada de 04/09 (mesmo dia) tinha reportado "fila vazia" sem capturá-la. Como havia 1 item real (skill nova, owner Cardozo), o Portão não fechou a rodada: só Cardozo foi acionado — Kelsen e Lúcio confirmados sem fila (nenhuma pendência aberta com seu owner, nenhuma Skill de Setembro destinada a eles) e não foram chamados, conforme a regra de 02/09 (Opção B/Alvo A).

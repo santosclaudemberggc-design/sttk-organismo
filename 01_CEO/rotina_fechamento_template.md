@@ -22,7 +22,65 @@ metadata:
 
 ---
 
-## [2026-09-04] — Diária Skills v2.7 (Sexta)
+## [2026-09-07] — Diária Skills v2.7 (Segunda)
+
+### RODADA ANTERIOR (O que foi entregue)
+
+- [x] **Skills criadas:** 1 (NBR 6122:2019 + Emenda 1/2022 — Fundações, Trilha A, Baumgart)
+- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (1 novo + índice atualizado)
+- [x] **PDFs regenerados:** 2 (1 Skill + índice)
+- [x] **Vitruvius achados atualizados:** 1 (IbrahimFahdah 46 tools — "monitorar")
+- [x] **Livro-razão registrado:** Sim (Setembro.md, entrada 07/09)
+- [ ] **Painel atualizado:** Não (tarefa de Sexta 11/09)
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **Apresentação interativa ao cliente:** 5a busca consecutiva sem achado. **Recomendação formal: pausar esta busca até caso real forçar decisão.** Presenton (28/08) continua o melhor candidato.
+- **LuDattilo/revit-mcp-server (138 tools):** decisão em "avaliar incorporação parcial" — falta comparação tool-a-tool formal contra os 35 tools do Vitruvius, e checar coexistência porta 8080.
+- **COSCIP/CBMERJ Skill:** avaliada por Cardozo em 07/09 como "procede, pronta para ratificação". Aguarda Claudemberg.
+- **Cardozo Exame 2 (6 agentes):** pendência aberta 07/09, planejada para rodada dedicada futura.
+
+### O QUE NÃO FAZER (Avoid retrabalho)
+
+- ❌ **Blender MCP não crie Skill nova** — já coberto em `arquitetura_mcp-gratuitos-render-video-blender-huggingface.md` (01/08/2026)
+- ❌ **Architecture MCP (sceneview-tools) não pesquise mais** — retornou 404
+- ❌ **NBR 5410 não duplique** — já coberta por Skill de 28/08
+- ❌ **NBR 15220-3:2024 não duplique** — já coberta por Skill de 01/09
+- ❌ **NBR 15575:2025 desempenho acústico pisos não duplique** — Skill de 03/09
+- ❌ **NBR 9575:2024 impermeabilização não duplique** — Skill de 02/09
+- ❌ **Resolução SMDU 10/2026 (RDT) não duplique** — Skill de 03/09
+- ❌ **COSCIP/CBMERJ Decreto 42/2018 não duplique** — Skill de 04/09
+- ❌ **NBR 6122:2022 fundações não duplique** — Skill de 07/09
+- ❌ **RevitCortex 173 tools não duplique** — vitruvius_achados 27/08
+- ❌ **BIMwright/rvt-mcp 229 tools não crie Skill isolada** — vitruvius_achados 03/09
+- ❌ **UV-Tech/revit-claude-mcp 40 tools não crie Skill isolada** — vitruvius_achados 03/09
+- ❌ **LuDattilo/revit-mcp-server 138 tools não crie Skill isolada nova** — vitruvius_achados 24/08, atualizado 04/09
+- ❌ **IbrahimFahdah/revit-claude-mcp 46 tools não crie Skill isolada** — vitruvius_achados 07/09 ("monitorar")
+- ❌ **Luw.ai, Remodel AI, Redraw, Leonardo AI** — todos cloud, violam critério 2
+- ❌ **Autodesk APS Sample MCP Server** — exige assinatura paga, viola critério 1
+- ❌ **Modly** — gerador 3D, não renderizador de cena (foco errado)
+- ❌ **Apresentação interativa — PAUSAR BUSCA** até caso real forçar decisão (5 buscas sem novidade)
+
+---
+
+## ESTA RODADA (Preencher ao terminar)
+
+*(Preenchida acima como "RODADA ANTERIOR" — a próxima rotina lê de lá)*
+
+---
+
+## HISTÓRICO DE RODADAS
+
+### [2026-09-04] Diária Skills v2.7 — Sexta (1 Skill + Painel + auto-correção)
+
+- ✅ Entregou: 1 Skill COSCIP/CBMERJ (corrigida v1.1) + 1 achado Vitruvius atualizado (LuDattilo) + Painel republicado + 2 bugs estruturais corrigidos (JSON quebrado, array manual obsoleto)
+- ⚠️ Bloqueadores: Nenhum
+- ❌ Retrabalho evitado: Presenton não duplicado, LuDattilo não virou Skill isolada, Autodesk APS descartado, Modly descartado
+- 🎯 Status: **Completa** — primeiro dia de auto-auditoria preventiva
+
+---
+
+## [LEGADO 2026-09-04] — Diária Skills v2.7 (Sexta)
 
 **⚠️ Correção 04/09/2026:** esta rodada rodou os Passos 1-5+8 (Seg-Qui) por engano — o executor assumiu "Quinta" sem verificar o dia da semana real. **04/09/2026 é SEXTA**, não quinta (03/09 é que foi quinta). O trabalho de pesquisa (Skill COSCIP/CBMERJ) tem valor e foi mantido; os Passos 6/9/10 (Sexta) foram executados em seguida, na mesma rodada, para não perder o dia. Rótulos corrigidos abaixo.
 
@@ -147,6 +205,6 @@ metadata:
 
 ---
 
-**Última atualização:** 04/09/2026 (sexta-feira — Painel/Dashboard/Análise já executados nesta data, ver "ESTA RODADA" acima)  
-**Próxima leitura:** 07/09/2026 (segunda-feira — 05-06/09 é fim de semana, sem execução) — Diária Skills Seg-Qui  
-**Painel pendente para:** já feito em 04/09/2026 — próxima atualização de Painel só na próxima sexta (11/09/2026), salvo achado relevante antes disso
+**Última atualização:** 07/09/2026 (segunda-feira — Diária Seg-Qui, Passos 0-5+8 executados)  
+**Próxima leitura:** 08/09/2026 (terça-feira) — Diária Skills Seg-Qui  
+**Painel pendente para:** 11/09/2026 (sexta-feira)

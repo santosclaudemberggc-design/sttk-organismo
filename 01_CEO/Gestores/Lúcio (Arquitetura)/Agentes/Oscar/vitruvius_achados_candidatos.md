@@ -75,6 +75,15 @@ Para cada achado: **o que é**, **o que o Vitruvius já cobre ou não cobre diss
 - **Decisão:** **monitorar** — projeto em estágio muito inicial (5 commits). Funcionalidades de export e audit são interessantes mas o BIMwright cobre as mesmas com mais maturidade. Se o UV-Tech evoluir, reavaliar.
 - **Fonte:** https://github.com/UV-Tech/revit-claude-mcp — verificado 03/09/2026
 
+### 07/09/2026 — IbrahimFahdah/revit-claude-mcp — 46 tools, extensivel, .NET 8
+
+- **O que e:** conector MCP entre Claude AI e Revit via HTTP local (127.0.0.1:5578). 46 tools built-in cobrindo query, modificacao, exportacao e visualizacao. Instalavel via `.mcpb` (Claude Desktop extension). .NET 8 SDK, Revit 2026 para build (anuncia compatibilidade com "todas as versoes"). 22 stars, 3 forks, 67 commits — desenvolvimento ativo (curso gratuito publicado no LinkedIn pelo autor).
+- **Diferencial:** modelo de extensibilidade via `Packages\` folder — usuarios publicam e compartilham tool packages customizados, adicionando funcoes sem alterar o core. Tres caminhos de contribuicao: melhorar os 46 tools, publicar pacotes custom, ou melhorar o plugin.
+- **O que o Vitruvius nao cobre hoje:** o modelo de extensibilidade (pacotes plugaveis) e um conceito que o Vitruvius nao tem — mas as 46 tools em si cobrem funcoes ja presentes nos achados anteriores (LuDattilo 138, BIMwright 229).
+- **Comparacao:** 46 tools e comparavel ao UV-Tech (40, monitorar) e ao modo padrao do BIMwright (40 padrao / 229 expandido). Porem o BIMwright cobre Revit 2022-2027 com 166 commits e Apache-2.0 — mais maduro. IbrahimFahdah se destaca pela extensibilidade, nao pela amplitude.
+- **Decisao:** **monitorar** — 46 tools nao preenche lacuna nova vs achados existentes (BIMwright 229, LuDattilo 138). Extensibilidade via pacotes custom e interessante como conceito (Vitruvius poderia adotar modelo similar), mas nao justifica piloto agora. Reavaliar se o ecossistema de pacotes crescer.
+- **Fonte:** https://github.com/IbrahimFahdah/revit-claude-mcp — verificado 07/09/2026
+
 ---
 
 ## Como usar este arquivo

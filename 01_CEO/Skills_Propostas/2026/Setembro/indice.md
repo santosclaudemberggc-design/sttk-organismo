@@ -2,7 +2,7 @@
 
 **Status:** Ativo  
 **Mês:** Setembro 2026  
-**Atualização:** 04/09/2026
+**Atualização:** 07/09/2026
 
 ---
 
@@ -17,6 +17,7 @@
 | 03/09 | NBR 15575:2025 — Desempenho Acústico de Sistemas de Pisos | Inteligência (Trilha A) | Baumgart, Saturnino, Tenreiro (cross-disciplina Complementares) | ratificada 03/09 |
 | 03/09 | Kinocut MCP — Edição de Vídeo Local | Ferramenta (Trilha B) | Lúcio/Burle + Portinari (pós-produção) | ratificada 03/09 |
 | 04/09 | COSCIP/CBMERJ Decreto 42/2018 — Segurança Contra Incêndio e Pânico RJ | Inteligência (Trilha A) | Landell, Baumgart (Complementares) | proposta |
+| 07/09 | NBR 6122:2019 + Emenda 1/2022 — Projeto e Execução de Fundações | Inteligência (Trilha A) | Baumgart (Estrutural, Complementares) | proposta |
 
 **⚠️ Nota de correção (03/09/2026):** as 4 primeiras linhas acima tinham se autodeclarado "ratificada — Claudemberg, ao vivo, pós-Drenagem Contínua" nos próprios arquivos `.md`, sem que essa ratificação tivesse de fato acontecido — autodeclaração indevida de uma rotina autônoma. Corrigido nos arquivos-fonte; a ratificação real aconteceu nesta data, em rodada de auditoria com Wallenberg.
 
@@ -24,19 +25,19 @@
 
 ## Estatísticas
 
-- **Skills Propostas (semana atual):** 7 (Trilha A: 6, Trilha B: 1)
-- **Skills Propostas (acumulado setembro):** 7
+- **Skills Propostas (semana 07-12/09):** 1 (Trilha A: 1, Trilha B: 0)
+- **Skills Propostas (acumulado setembro):** 8
 - **Skills Testadas:** 0
 - **Cobertura Trilha A por Agente (desde agosto):**
-  - Baumgart: 3 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross)
+  - Baumgart: 4 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações)
   - Saturnino: 2 (NBR 5626+8160 + NBR 9575:2024 cross)
   - Landell: 2 (NBR 5410 + COSCIP/CBMERJ)
   - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
   - Tenreiro: 2 (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross)
   - Mindlin: 1 (NBR 6492:2021)
   - Kelsen/Hely: 3 (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026)
-- **Achados Vitruvius:** achado de 24/08 (LuDattilo 138 tools) atualizado com detalhe técnico completo em 04/09 — decisão sobe de "monitorar" para "avaliar incorporação parcial". Total acumulado: 6 achados (nenhum novo hoje, 1 atualizado).
-- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) Apresentação interativa ao cliente (Portinari/Mindlin) — 4ª busca consecutiva (04/09) ainda sem ferramenta gratuita self-hosted viável; (5) NBR 16280:2024 reformas (STTK = construção do zero, monitorar); (6) Passo 8 se lacuna real pedir
+- **Achados Vitruvius:** IbrahimFahdah/revit-claude-mcp (46 tools, extensível, .NET 8) registrado 07/09 como "monitorar". Total acumulado: 7 achados (1 novo, 0 atualizados).
+- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) ~~NBR 6122:2022 fundações~~ CONCLUÍDA 07/09; (5) Apresentação interativa ao cliente — **5a busca consecutiva sem achado, recomendação formal: pausar busca até caso real forçar decisão**; (6) NBR 16280:2024 reformas (STTK = construção do zero, monitorar); (7) NBR 6120:2019 cargas (Baumgart — complemento natural da 6122); (8) Passo 8 se lacuna real pedir
 
 ---
 
@@ -80,4 +81,16 @@
 
 ---
 
-**Próxima Atualização:** 05/09/2026 (Sexta — Painel + Dashboard + Análise semanal) ou próxima rodada Seg-Qui
+## Observações da Rodada 07/09/2026
+
+1. **NBR 6122:2019 + Emenda 1/2022 — Fundações (Baumgart):** lacuna real confirmada. Norma-irmã da NBR 6118 (concreto armado) — a 6118 dimensiona a superestrutura, a 6122 dimensiona o que sustenta tudo. Emenda 1/2022 reduz consumo mínimo de cimento de 400 para 350 kg/m³ (economia de até 12,5%). Altera Anexos J (hélice contínua) e N (estacas escavadas com fluido). Obrigatória para construção do zero. Cross-disciplina: Saturnino (impermeabilização de fundação) e Glaziou (drenagem próxima a fundação).
+2. **Vitruvius achado — IbrahimFahdah/revit-claude-mcp (46 tools):** registrado como "monitorar". Diferencial: extensibilidade via pacotes custom (`Packages\` folder). 22 stars, 67 commits, .NET 8, HTTP local. Não preenche lacuna nova vs BIMwright (229) ou LuDattilo (138), mas modelo de extensibilidade é conceito interessante.
+3. **CAU-RJ:** busca de setembro não encontrou deliberação nova além das já conhecidas (009/2026 RRT, 010/2026 Comissão Eleitoral). Nenhuma Skill criada (Princípio 15).
+4. **Render IA self-hosted:** mesmas ferramentas cloud (Leonardo, Midjourney, Stable Diffusion). Nada novo self-hosted/gratuito. Descartados por critérios já conhecidos.
+5. **Apresentação interativa ao cliente:** 5a busca consecutiva (01-04/09 + 07/09) sem ferramenta gratuita self-hosted viável. **Recomendação formal: pausar esta busca até caso real forçar decisão.** Presenton (28/08) continua o melhor candidato mapeado.
+6. **Multi-agent workflow (produtividade do fluxograma):** Claude Dynamic Workflows (maio/2026) — orquestração determinística via JavaScript, subagentes especializados, controle de fluxo sem improvisação do modelo. Conceito alinhado com o que o organismo STTK já faz (Gestores orquestram Agentes). Não virou Skill — é observação de produtividade para Learning Agent avaliar em rodada futura.
+7. **Descartados:** schauh11/revit-mcp-server e PiggyAndrew/revit_mcp (projetos muito pequenos, superados pelos achados existentes); Autodesk APS (paga); ferramentas cloud de render (violam critério 2).
+
+---
+
+**Próxima Atualização:** 08/09/2026 (Terça — Seg-Qui) ou 11/09/2026 (Sexta — Painel + Dashboard)
