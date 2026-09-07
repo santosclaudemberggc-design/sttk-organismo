@@ -4,6 +4,93 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-07, 10:30-11:00] Reunião Semanal com Claudemberg — RATIFICAÇÃO COMPLETA
+
+**Contexto:** Reunião Semanal de Wallenberg (Função 9), segunda-feira 08/09/2026. Pauta consolidada com 5 ratificações + 3 decisões. Claudemberg ratificou TUDO.
+
+**PARTE 1 — RATIFICAÇÃO (5 ITENS) — ✅ RATIFICADOS:**
+
+1. ✅ **Auto-correção COSCIP v1.1 + JSON corrigido + Painel republicado (04/09)**
+   - Skill COSCIP moldura corrigida (não era lacuna nova, era expansão de 28/07)
+   - JSON `pendencias.json` corrigido (2 chaves faltando)
+   - Painel Artifact republicado (27/08 → 04/09)
+   - **Status:** RATIFICADO 07/09/2026
+
+2. ✅ **Portão de Trabalho na Drenagem Contínua (02/09)**
+   - Passo 2.5 novo: fila vazia → encerra sem Gestor
+   - Teste 5 dias: validado
+   - Economia: ~4 rodadas Gestor/semana (~US$ 40-50)
+   - **Status:** RATIFICADO 07/09/2026 — ATIVA PERMANENTE
+
+3. ✅ **Exclusão de STTK Consolidada (03/09)**
+   - Tarefa `sttk-consolidada-otimizacaotokens` deletada
+   - Scripts `rotina_sttk_consolidada.py`, `.bat`, README removidos
+   - Medição de tokens agora roda na Semanal (Passo 2.5)
+   - **Status:** RATIFICADO 07/09/2026
+
+4. ✅ **Trim `_estado_kelsen.md` (171 KB → 20 KB) (03/09)**
+   - Arquivo append-only → enxuto (4 seções fixas)
+   - HISTÓRICO preservado (487 linhas = 0 perda)
+   - Aprendizados (~40) preservados
+   - **Status:** RATIFICADO 07/09/2026
+
+5. ✅ **Skill NBR 6122 Fundações criada (07/09)**
+   - v1.0 Trilha A: tipos, investigação geotécnica, Emenda 1/2022
+   - Cross-disciplina: Baumgart + Saturnino + Glaziou
+   - Lacuna declarada: ABNT não lida (fontes secundárias OK)
+   - **Status:** RATIFICADO 07/09/2026
+
+**PARTE 2 — DECISÕES (3 ITENS) — ✅ DECIDIDO:**
+
+**Decisão 1: Ratificar 2 Skills Propostas**
+- ✅ **COSCIP/CBMERJ (Decreto 42/2018)** — avaliada Cardozo → RATIFICADA 07/09/2026
+- ✅ **NBR 6122 Fundações** — proposta Wallenberg → RATIFICADA 07/09/2026
+
+**Decisão 2: Exame 2 dos 6 Agentes Cardozo**
+- ✅ **QUANDO:** Semana de 08-12/09/2026 (segunda a quarta)
+- ✅ **MODALIDADE:** 2 exames/agente × 6 agentes = 12 exames total
+- ✅ **PLANEJAMENTO:** Página Notion criada (07/09) com cronograma, casos-teste, critérios
+- ✅ **URL:** https://app.notion.com/p/3d492372eae181c6aefdfc95728c353a?pvs=204
+- ✅ **Status:** AGENDADO 08/09/2026 → EXECUÇÃO SEMANA 08-12/09
+
+**Decisão 3: Apresentação Interativa ao Cliente**
+- ✅ **PAUSAR busca deliberada** até caso real pedir (Princípio 15)
+- ✅ **Presenton (28/08)** mantém-se como melhor candidato mapeado
+- ✅ **Status:** PAUSADO 07/09/2026
+
+**SAÚDE DE CONSUMO (07/09):**
+- Cache hit ratio: 90,7% (Item 7 STTK = CONCLUÍDO, não "aguardando")
+- Contexto inicial: +12,8% vs base (não redução)
+- Portão de Trabalho: validado, manter ativo
+- Redução 45-67% esperada: 0% medido (prompt caching +90.7% = único ganho real)
+
+**DECISÕES REGISTRADAS:**
+| Item | O que foi | Decisão | Data |
+|------|----------|---------|------|
+| Auto-correção COSCIP+JSON+Painel | Ratificação | ✅ RATIFICADO | 07/09 |
+| Portão de Trabalho | Ratificação | ✅ RATIFICADO (ativo) | 07/09 |
+| Exclusão STTK Consolidada | Ratificação | ✅ RATIFICADO | 07/09 |
+| Trim _estado_kelsen | Ratificação | ✅ RATIFICADO | 07/09 |
+| Skill NBR 6122 | Ratificação | ✅ RATIFICADO | 07/09 |
+| 2 Skills Propostas | Decisão | ✅ RATIFICADAS | 07/09 |
+| Exame 2 Cardozo | Decisão | ✅ 08-12/09 | 07/09 |
+| Apresentação Interativa | Decisão | ✅ PAUSADA | 07/09 |
+
+**Como desfazer:** reverter git commit desta entrada (todos os 5 itens cancelados simultaneamente; se apenas alguns reverter manualmente).
+
+**Próximas ações:**
+- PDF pauta gerado
+- Pauta registrada com decisões
+- Livro-Razão consolidado
+- Commit git com ratificação
+
+**Registrado por:** Wallenberg (CEO)  
+**Ratificado por:** Claudemberg (Presidente)  
+**Data:** 07/09/2026, 10:30-11:00 UTC  
+**Status:** ✅ COMPLETO E EXECUTADO
+
+---
+
 ### [2026-09-07] Diária Skills v2.7 (Segunda) — 1 Skill Trilha A (NBR 6122 Fundações) + 1 achado Vitruvius
 
 **Executado por Wallenberg (rotina Seg-Qui, Passos 0-5+8):**
