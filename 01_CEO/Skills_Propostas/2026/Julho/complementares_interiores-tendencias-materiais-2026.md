@@ -3,7 +3,9 @@ name: skill-proposta-complementares-interiores-tendencias-2026
 description: "PROPOSTA — Tendências 2026 de materiais, paleta e flexibilidade em design de interiores, para o Agente de Interiores que já produz de verdade hoje"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_reuniao_mensal
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Gestor Complementares — não implantado (Agente Interiores hoje reporta indiretamente, sem Gestor formal)
   agente_alvo: Agente de Interiores (produz de verdade — ver capacidade real)
   data: 2026-07-20
@@ -34,4 +36,4 @@ Se aprovada: o Agente de Interiores passa a citar esta paleta/linha de materiais
 - Pesquisado em 20/07/2026, rotina diária do Wallenberg. Fontes de mercado/blog especializado em design — conteúdo de tendência, não norma técnica (Princípio 3).
 
 ## Governança
-Proposta pendente — Gestor Complementares ainda não foi criado; esta Skill fica arquivada para quando ele for aprovado (Reunião Semanal) e sua equipe for formada. Não altera nenhuma Skill oficial hoje. Decisão final de Claudemberg na Reunião Mensal ao Conselho (Princípio 13).
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). **Convertida em Skill real em 03/09/2026:** `.claude/skills/interiores-tendencias-2026/SKILL.md`.

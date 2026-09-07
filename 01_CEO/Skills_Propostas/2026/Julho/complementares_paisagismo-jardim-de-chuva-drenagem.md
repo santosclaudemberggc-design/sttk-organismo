@@ -3,7 +3,9 @@ name: skill-proposta-complementares-paisagismo-jardim-de-chuva
 description: "PROPOSTA — Jardim de chuva como solução de drenagem sustentável de baixo custo para o futuro Agente de Paisagismo, absorvendo até 30% do escoamento superficial do lote"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_reuniao_mensal
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Gestor Complementares — não implantado
   agente_alvo: futuro Agente de Paisagismo (coordenação do parceiro externo, não produção — ver capacidade real)
   data: 2026-07-20
@@ -33,4 +35,4 @@ Se aprovada: o Agente de Paisagismo passa a oferecer jardim de chuva como opçã
 - Pesquisado em 20/07/2026, rotina diária do Wallenberg. Fontes de mercado/blog especializado — nenhuma norma técnica regulatória identificada para este item específico (Princípio 3).
 
 ## Governança
-Proposta pendente — Gestor Complementares ainda não foi criado; esta Skill fica arquivada para quando ele for aprovado (Reunião Semanal) e sua equipe for formada. Não altera nenhuma Skill oficial hoje. Decisão final de Claudemberg na Reunião Mensal ao Conselho (Princípio 13).
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). **Convertida em Skill real em 03/09/2026:** `.claude/skills/paisagismo-jardim-de-chuva/SKILL.md`.

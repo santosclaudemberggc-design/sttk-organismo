@@ -3,7 +3,7 @@
 **Versão:** 1.0  
 **Status:** ratificada  
 **Data:** 01/09/2026  
-**Ratificado em:** 03/09/2026 (Claudemberg, ao vivo, pós-Drenagem Contínua)  
+**Ratificado em:** 03/09/2026 — Claudemberg, em rodada de auditoria com Wallenberg (correção: versão anterior deste arquivo alegava aprovação "ao vivo pós-Drenagem Contínua" que não aconteceu de fato — autodeclaração indevida de uma rotina autônoma, corrigida nesta data)  
 **Tipo:** Inteligência (Trilha A)  
 **Para:** Kelsen/Hely (Legal)  
 **Gestor:** Kelsen (Legal)
@@ -68,3 +68,9 @@ Data limite de **30 de junho de 2026** para apresentação de requerimento de le
 - Prefeitura do Rio — PDF oficial: https://desenvolvimentourbano.prefeitura.rio/wp-content/uploads/sites/52/2025/08/Lei-ComplementarMunicipal-No.-281-de-30-05-2025.pdf
 - NormasBrasil: https://www.normasbrasil.com.br/norma/lei-complementar-281-2025-rio-de-janeiro_478943.html
 - Data de verificação: 01/09/2026
+
+## Integração — 03/09/2026 (Kelsen)
+
+**Não gerou Skill nova nem seção nova de conteúdo** — a LC 281/2025 já está incorporada à Skill `legal-base-legislativa-bairro` desde 28/07/2026 (POP-LEGAL-02 reescrito e auditado verbatim por Kelsen), com cobertura mais profunda do que esta proposta (Arts. 18-19 outorga, Art. 40 janela de contrapartida, cadeia de prorrogação por LC291/LC301).
+
+**Um dado desta proposta está incorreto e foi tratado como armadilha, não como fato novo:** a seção "Prazo para legalização por contrapartida" desta proposta afirma que o prazo do Art. 40 expirou em **30/06/2026**. **Essa data não existe na cadeia verbatim já auditada duas vezes contra o PDF primário** (1º/12/2025 original → 1º/06/2026 por LC 291/2025 → **1º/12/2026 por LC 301/2026, Art. 58 — ainda aberta hoje**). Adicionei uma nota de armadilha à Skill existente ("Prazo da LC 281/2025 — cuidado com data errada em fonte secundária") para que esse erro específico não se repita numa peça de cliente real — dizer a um cliente que a janela fechou quando ela segue aberta até 01/12/2026 seria erro grave e mensurável.

@@ -3,7 +3,9 @@ name: skill-proposta-arquitetura-mcp-gratuitos-render-video-blender-huggingface
 description: "PROPOSTA — resposta a pedido explícito de Claudemberg por conectores MCP GRATUITOS (não freemium) de render/vídeo/360; achado principal é Blender MCP (ahujasid/blender-mcp, 25,2k estrelas, MIT, 100% gratuito para sempre), complementado por Hugging Face MCP oficial (conta grátis + créditos ZeroGPU) e mcp-video-gen/CogVideoX (vídeo grátis, qualidade irregular); nenhum resolve tour 360 multi-ponto tipo Matterport de graça"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_criacao_do_gestor
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Lúcio (Arquitetura) — não implantado
   agente_alvo: futuro Agente de Renders/Vídeos (equipe de Lúcio, função já aprovada em pendencias.json id lucio-agentes-nao-nomeados)
   data: 2026-08-01
@@ -49,4 +51,4 @@ Não instalar/testar ainda — achado de pesquisa, não recomendação de uso im
 - Pesquisado em 01/08/2026, mesma sessão dos achados de Twinmotion e Magnific, em resposta a pedido explícito de Claudemberg por opções gratuitas.
 
 ## Governança
-Proposta pendente — Lúcio (Arquitetura) ainda não foi criado como Gestor; esta Skill fica arquivada para quando ele for aprovado e a equipe for formada. Não altera nenhuma Skill oficial hoje, e não autoriza instalação/uso real de nenhum conector — é registro de candidatos encontrados e verificados, sujeitos a teste técnico no momento do uso real (Princípio 3), inclusive a checagem ainda pendente de compatibilidade do Blender MCP com Claude Code especificamente. Sob o modelo de ratificação posterior (20/07/2026), a criação do Gestor Arquitetura e a ativação desta Skill passam a ser decisão do próprio Wallenberg quando o teste de contratação for aplicado — mas seguem sujeitas a ratificação na Reunião Semanal. Busca de render/vídeo/tour 360 **continua aberta**, incluindo a lacuna confirmada de novo hoje: nenhuma opção gratuita ou paga resolve tour 360 multi-ponto (ver `feedback_render_video_mcp_lucio`).
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). Fica como conhecimento formalizado, aguardando a criação do Gestor/Agente correspondente para virar Skill executável.

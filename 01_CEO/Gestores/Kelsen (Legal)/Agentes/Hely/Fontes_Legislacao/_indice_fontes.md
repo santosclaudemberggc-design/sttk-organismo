@@ -202,6 +202,18 @@ Descobri, dentro do mesmo conjunto de serviços ArcGIS da Prefeitura (pasta `Geo
 
 A Planilha de Enviáveis e o POP-ARQ-PL-01 listam **"Fachadas legais"** e **"Memorial descritivo (para protocolo legal)"** como entregáveis do Projeto Legal. Confrontados com o decreto: fachada é **expressamente recusada** (Anexo I, IV, 1) e memorial **não é peça do LICIN 2.0**. Detalhamento e consequências em POP-LEGAL-05, Seção 13. **Correção dos documentos do Drive é de Kelsen, não do Hely.**
 
+### [ATENÇÃO] Contradição não resolvida — proposta de Skill (16/07/2026) diz que o Anexo I tem base legal própria no Decreto 48.719/2021; nossa própria base já confirma esse decreto como SEM EFEITO
+
+Na integração de Skills Propostas de 03/09/2026 (Kelsen), a proposta `legal_anexo-i-base-legal-decreto-48719-21.md` afirmou, citando o portal Carioca Digital (atualizado 01/06/2026), que o **Anexo I do LICIN 2.0 (DULI)** tem fundamento legal próprio no **Decreto Rio nº 48.719/2021**, distinto do Decreto 55.622/2025 (procedimento geral). **Isso contradiz o que já está confirmado nesta pasta, duas vezes, por fonte primária (Busca Fácil da SMU):**
+
+- Linha 247 acima (tabela "Status oficial das normas..."): **Decreto 48.719/2021 (LICIN 1.0) → status "Sem efeito" — "EM FUNÇÃO DA PUBLICAÇÃO DO DECRETO 55622"**.
+- Achado de 21/07/2026 (mais acima): o próprio Decreto 55.622/2025 revoga o LICIN 1.0 **tacitamente** (sem cláusula revogatória expressa) — é a Busca Fácil, não o corpo do decreto, que registra a revogação tácita.
+- Achado de 11/08/2026 (Rodada `kelsen-anexo3-anexo4-criterio-escolha`, item acima): sob o **LICIN 1.0** (Decreto 48.719/2021), unifamiliar/bifamiliar usava o mesmo "Anexo III" de todos os projetos — **a cisão Anexo III (regra geral) / Anexo IV (uni/bifamiliar) é estrutura nova do LICIN 2.0, sem precedente no 48.719/2021.**
+
+**Não decido isso sozinha, e não incorporei a afirmação da proposta como fato na Skill `legal-base-legislativa-bairro`.** Duas leituras possíveis, nenhuma confirmada: (a) o Carioca Digital não atualizou a base legal citada na página do serviço depois da transição LICIN 1.0 → 2.0 (mesmo padrão já visto — nome/fonte de portal que não acompanha a lei); (b) existe alguma continuidade formal do 48.719/2021 especificamente para o modelo gráfico do Anexo I que a Busca Fácil não capturaria por não ser uma "revogação" no sentido tradicional. **Pendência para Hely:** abrir a página do Carioca Digital (`carioca.rio/servicos/licenca-para-construcao-ou-modificacao-de-edificacao-licin/`) e conferir se ela realmente cita o 48.719/2021 como base do Anexo I hoje, e se sim, checar o D.O. de 01/01/2025 (já arquivado, `Decreto55622_2025_PublicacaoDO.pdf`) por qualquer cláusula de vigência específica dos anexos gráficos que não seja a revogação geral do procedimento. Até essa checagem, a Skill segue **sem** citar o 48.719/2021 como fundamento do Anexo I — e citar esse decreto como base legal num DULI real seria vício grave (mesma classe de risco já registrada para "citar artigo revogado em protocolo").
+
+**A segunda parte da mesma proposta (PRPA/PREO precisam de credencial CREA/RJ ou CAU/RJ + comprovante de dimensão do lote no Anexo I) não foi confirmada nem refutada nesta rodada** — vem da mesma fonte (Carioca Digital), tratada com a mesma cautela até verificação.
+
 ---
 
 # ATUALIZAÇÃO DE VIGÊNCIA — 21/07/2026 (2ª rodada)

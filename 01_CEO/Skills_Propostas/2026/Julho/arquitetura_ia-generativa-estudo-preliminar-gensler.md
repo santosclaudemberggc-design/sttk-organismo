@@ -3,7 +3,9 @@ name: skill-proposta-arquitetura-ia-generativa-estudo-preliminar
 description: "PROPOSTA — uso de IA generativa no Estudo Preliminar (simulação de luz, uso e desempenho), referência de mercado: caso real da Gensler"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_reuniao_mensal
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Lúcio (Arquitetura) — ainda não implantado
   data: 2026-07-16
 ---
@@ -28,4 +30,4 @@ Isso é relevante mesmo hoje: mesmo sem produzir o modelo Revit, o Agente de Est
 - Pesquisado em 16/07/2026, rotina diária do Wallenberg.
 
 ## Governança
-Proposta pendente — só entra para o Gestor Arquitetura depois que ele for criado (Reunião Semanal com Claudemberg) e a Skill for aprovada na Reunião Mensal ao Conselho (Princípio 13).
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). **Convertida em Skill real em 03/09/2026:** `.claude/skills/ia-generativa-estudo-preliminar/SKILL.md`.

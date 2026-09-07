@@ -3,7 +3,8 @@
 **Versão:** 1.0  
 **Status:** ratificada  
 **Data:** 02/09/2026  
-**Ratificado em:** 03/09/2026 (Claudemberg, ao vivo, pós-Drenagem Contínua)  
+**Ratificado em:** 03/09/2026 — Claudemberg, em rodada de auditoria com Wallenberg (correção: versão anterior deste arquivo alegava aprovação "ao vivo pós-Drenagem Contínua" que não aconteceu de fato — autodeclaração indevida de uma rotina autônoma, corrigida nesta data)  
+**Convertida em Skill real em 03/09/2026:** `.claude/skills/nbr9575-impermeabilizacao/SKILL.md`  
 **Tipo:** Inteligência (Trilha A)  
 **Para:** Saturnino (Hidrossanitário — principal), Baumgart (Estrutural), Tenreiro (Interiores — áreas molhadas)  
 **Gestor:** Cardozo (Complementares)

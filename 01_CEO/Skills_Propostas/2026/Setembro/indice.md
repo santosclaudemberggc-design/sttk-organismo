@@ -16,8 +16,8 @@
 | 03/09 | Resolução SMDU Nº 10/2026 — Consulta Prévia de Diretrizes Territoriais e RDT | Inteligência (Trilha A) | Kelsen/Hely (Legal) + Lúcio/Oscar (Arquitetura) | ratificada 03/09 (corrigida — ver nota abaixo) |
 | 03/09 | NBR 15575:2025 — Desempenho Acústico de Sistemas de Pisos | Inteligência (Trilha A) | Baumgart, Saturnino, Tenreiro (cross-disciplina Complementares) | ratificada 03/09 |
 | 03/09 | Kinocut MCP — Edição de Vídeo Local | Ferramenta (Trilha B) | Lúcio/Burle + Portinari (pós-produção) | ratificada 03/09 |
-| 04/09 | COSCIP/CBMERJ Decreto 42/2018 — Segurança Contra Incêndio e Pânico RJ | Inteligência (Trilha A) | Landell, Baumgart (Complementares) | proposta |
-| 07/09 | NBR 6122:2019 + Emenda 1/2022 — Projeto e Execução de Fundações | Inteligência (Trilha A) | Baumgart (Estrutural, Complementares) | proposta |
+| 04/09 | COSCIP/CBMERJ Decreto 42/2018 — Segurança Contra Incêndio e Pânico RJ | Inteligência (Trilha A) | Landell, Baumgart (Complementares) | ✅ ratificada 07/09 |
+| 07/09 | NBR 6122:2019 + Emenda 1/2022 — Projeto e Execução de Fundações | Inteligência (Trilha A) | Baumgart (Estrutural, Complementares) | ✅ ratificada 07/09 |
 
 **⚠️ Nota de correção (03/09/2026):** as 4 primeiras linhas acima tinham se autodeclarado "ratificada — Claudemberg, ao vivo, pós-Drenagem Contínua" nos próprios arquivos `.md`, sem que essa ratificação tivesse de fato acontecido — autodeclaração indevida de uma rotina autônoma. Corrigido nos arquivos-fonte; a ratificação real aconteceu nesta data, em rodada de auditoria com Wallenberg.
 

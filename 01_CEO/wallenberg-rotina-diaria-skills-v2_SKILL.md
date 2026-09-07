@@ -104,7 +104,7 @@ Os Passos 1-10 estão documentados aqui para referência:
 
 ### Passo 1: PESQUISA EXTERNA (seg-qui, 15-20 min)
 
-Use WebSearch/WebFetch/watch. Qualquer ferramenta, plugin, conector, sistema ou Skill relevante ao departamento de projetos de arquitetura/construção do zero — não é só MCP nem só render/vídeo/tour360. Inclua busca direta no **GitHub** (repositórios, extensões, MCPs comunitários), **Instagram**, **YouTube** e sites oficiais.
+Use WebSearch/WebFetch/**watch** (plugin `/watch:watch` — assista o vídeo de verdade, não só ache texto sobre ele). Qualquer ferramenta, plugin, conector, sistema ou Skill relevante ao departamento de projetos de arquitetura/construção do zero — não é só MCP nem só render/vídeo/tour360. **[AMPLIADO 03/09/2026, Claudemberg]** Escopo não fica preso só a arquitetura/render/apresentação — inclua também busca focada no **nosso próprio fluxograma**, com o objetivo de melhorar a produtividade dos Gestores e Agentes do organismo (mesmo eixo que antes só rodava no Learning Agent/Passo 8a da Drenagem — agora também é responsabilidade deste passo). Inclua busca direta no **GitHub** (repositórios, extensões, MCPs comunitários), **todas as plataformas do Meta** (Instagram, Facebook), **YouTube** e sites oficiais.
 
 Procure por:
 - **Render/Vídeo:** qualquer ferramenta de render de imagens e geração de vídeos (não só D5). Priorize plugins/MCPs/recursos de IA verificáveis.
@@ -113,12 +113,8 @@ Procure por:
 - **Cases de grandes empresas/escritórios de arquitetura** Brasil: observe como estão performando com renderização + apresentação, tendências locais.
 - **Complementares (Cardozo) — Inteligência técnica, não ferramenta:** [FIXADO 27/08/2026] para as 6 etapas de projetos complementares (Estrutural/Baumgart, Automação+Elétrica/Landell, Hidrossanitário/Saturnino, Paisagismo/Glaziou, Interiores/Tenreiro, Apresentação/Mindlin), busque **normas técnicas** (NBRs, códigos de obra, regulamentos de concessionária), **técnicas de projetar** (métodos de dimensionamento, boas práticas de detalhamento, cálculo) e **regras de projeto** (o que costuma dar errado, checklist de verificação) — em qualquer fonte (normas oficiais ABNT/concessionárias, livros/apostilas técnicas, sites de referência do setor, cursos, YouTube técnico), não só GitHub. Isto é **Trilha A (Inteligência)** — alimenta o próprio saber-fazer do Agente, é Skill de conhecimento técnico, não de ferramenta. Distinto da Trilha B (Passo 8, busca de ferramenta/software) — mantenha as duas buscas e as duas Skills resultantes separadas, mesmo quando a mesma sessão cobre a mesma área.
 - **GitHub:** repositórios, extensões, MCPs comunitários (verificar idoneidade: README coerente, atividade recente, sem typosquatting)
-- **Instagram (perfis seguidos + busca ampla):** 
-  - Perfis: maxcarrau.ia, 99hud, seanaiux, o.engenheirolider, sobre.arq, goxyvi + busca por "Claude AI", "Claude Code", "IA arquitetura", "produtividade construção civil"
-  - Cada post/reel é potencial Skill (novidade de ferramenta, otimização de processo, tendência de mercado)
-- **YouTube (canais seguidos + busca ampla):**
-  - Canais: SobreArquitetura, peaceofcode + busca por "Claude tutorial", "AI arquitetura", "otimização produtividade", "automação projeto"
-  - Vídeos longos têm transcripts (via /watch:watch) — extrair conceitos, não só URLs
+- **Instagram/Facebook (Meta) — busca ampla, sem lista fixa de perfil:** **[AMPLIADO 03/09/2026, Claudemberg — não fica preso a certos canais/contas]** busque por "Claude AI", "Claude Code", "IA arquitetura", "produtividade construção civil", "automação multi-agente", "fluxo de projeto arquitetura" e variações — deixe a busca achar o que é relevante na hora, não uma lista fixa que envelhece. Cada post/reel relevante é potencial Skill (novidade de ferramenta, otimização de processo, tendência de mercado, melhoria de fluxo do próprio organismo).
+- **YouTube — busca ampla, sem lista fixa de canal:** **[AMPLIADO 03/09/2026, Claudemberg]** busque por "Claude tutorial", "AI arquitetura", "otimização produtividade", "automação projeto", "multi-agent systems", "autonomous agents workflow" e variações — sem prender a canais específicos. **Assista de verdade os vídeos relevantes via `/watch:watch`** (não só ache a URL) — vídeos longos: transcreva e extraia implementações concretas; reels curtos: leia comentários também. Extrair conceitos aplicáveis, não só linkar a fonte.
 
 **Tradução obrigatória:** Qualquer conteúdo em inglês → português, para que Gestores possam usar sem barreira de idioma.
 

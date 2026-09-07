@@ -43,7 +43,7 @@ Cardozo (valida + executa 6 projetos complementares)
   ↓
 Agente de Apresentação de Cardozo (comunica cada projeto)
   ↓
-Próxima etapa (Compatibilização — dono não definido)
+Próxima etapa (Compatibilização — dono: Gestor Fechamento, decidido 29/07/2026)
 ```
 
 **Por quê essa dependência?** O Briefing define:
@@ -129,7 +129,7 @@ Nomeação é função de Cardozo (cascata), quando formalizado. Hoje, aprovados
 - Agente de Apresentação de Cardozo recebe de todos os 5 e comunica o resultado consolidado
 
 **Entrega:**
-- Cada projeto técnico (estrutura, elétrica, etc) pronto para Compatibilização (próxima etapa, dono ainda não definido)
+- Cada projeto técnico (estrutura, elétrica, etc) pronto para Compatibilização (próxima etapa, dono: Gestor Fechamento, decidido 29/07/2026)
 
 ---
 

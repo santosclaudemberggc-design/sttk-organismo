@@ -4,7 +4,9 @@
 **Glaziou** (Paisagismo) — equipe de Cardozo (Gestor Complementares). Esta é uma Skill de **Trilha A (Inteligência)**: normas técnicas e técnicas de projetar paisagismo, não ferramenta de software. Alimenta o saber-fazer de Glaziou em projetos de espaços livres e abertos em edificações prediais (jardins, coberturas verdes, áreas comuns, drenagem pluvial sustentável).
 
 ## Status
-proposta — aguardando ratificação de Claudemberg
+ratificada — 03/09/2026, Claudemberg (rodada de auditoria com Wallenberg)
+
+**Convertida em Skill real em 03/09/2026:** `.claude/skills/nbr16636-paisagismo-predial/SKILL.md`. Este arquivo permanece como registro histórico da pesquisa original.
 
 ## O que esta Skill ensina
 

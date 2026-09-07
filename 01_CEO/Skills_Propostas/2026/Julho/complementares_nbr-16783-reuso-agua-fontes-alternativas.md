@@ -3,7 +3,9 @@ name: skill-proposta-complementares-nbr-16783-reuso-agua
 description: "PROPOSTA — NBR 16783 (uso de fontes alternativas de água não potável em edificações) como base técnica obrigatória do futuro Agente Hidrossanitário: água de chuva, água cinza e poço/rebaixamento de lençol para descarga, irrigação e limpeza"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_reuniao_mensal
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Gestor Complementares — não implantado
   agente_alvo: futuro Agente Hidrossanitário (coordenação do parceiro externo, não produção — ver capacidade real)
   data: 2026-07-20
@@ -32,4 +34,4 @@ Se aprovada: o Agente Hidrossanitário passa a checar, já no Estudo Preliminar 
 - Pesquisado em 20/07/2026, rotina diária do Wallenberg. Norma vigente desde 2019 (não é novidade de 2026), mas ainda não constava na base de conhecimento do organismo — trazida agora por ser pré-requisito técnico do Agente Hidrossanitário, que ainda não tem Skill nenhuma proposta. Confirmar texto integral junto à ABNT antes de qualquer mudança de processo (Princípio 3).
 
 ## Governança
-Proposta pendente — Gestor Complementares ainda não foi criado; esta Skill fica arquivada para quando ele for aprovado (Reunião Semanal) e sua equipe for formada. Não altera nenhuma Skill oficial hoje. Decisão final de Claudemberg na Reunião Mensal ao Conselho (Princípio 13).
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). **Convertida em Skill real em 03/09/2026:** `.claude/skills/nbr16783-reuso-agua/SKILL.md`.

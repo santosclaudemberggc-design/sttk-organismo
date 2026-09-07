@@ -4,7 +4,9 @@ description: "FreeCAD MCP com análise FEM/CalculiX gratuita para projeto estrut
 metadata:
   type: skill
   gestor_alvo: Cardozo (Complementares) — Baumgart (Agente Estrutural)
-  status: proposta
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   data: 2026-08-27
   fonte: github.com/sandraschi/freecad-mcp
 ---

@@ -4,7 +4,9 @@
 **Mindlin** (Apresentação) — equipe de Cardozo (Gestor Complementares). Esta é uma Skill de **Trilha A (Inteligência)**: norma técnica de representação gráfica, não ferramenta de software. Alimenta o saber-fazer de Mindlin na compilação e apresentação de pranchas técnicas dos projetos complementares ao cliente.
 
 ## Status
-proposta — v1.0 — aguardando ratificação de Claudemberg
+ratificada — v1.0 — 03/09/2026, Claudemberg (rodada de auditoria com Wallenberg)
+
+**Convertida em Skill real em 03/09/2026:** `.claude/skills/nbr6492-representacao-grafica/SKILL.md`. Este arquivo permanece como registro histórico da pesquisa original.
 
 ## O que esta Skill ensina
 

@@ -4,7 +4,9 @@
 **Landell** (Automação + Elétrica) — equipe de Cardozo (Gestor Complementares). Esta é uma Skill de **Trilha A (Inteligência)**: normas técnicas e técnicas de projetar instalações elétricas prediais, não ferramenta de software. Alimenta o saber-fazer de Landell em projetos de instalações elétricas de baixa tensão.
 
 ## Status
-proposta — aguardando ratificação de Claudemberg
+ratificada — 03/09/2026, Claudemberg (rodada de auditoria com Wallenberg)
+
+**Convertida em Skill real em 03/09/2026:** `.claude/skills/nbr5410-eletrica-automacao/SKILL.md`. Este arquivo permanece como registro histórico da pesquisa original.
 
 ## O que esta Skill ensina
 

@@ -3,7 +3,9 @@ name: skill-proposta-arquitetura-nbr-20250-sustentabilidade
 description: "PROPOSTA — ABNT NBR 20250 (publicada janeiro/2026) cria critérios de sustentabilidade verificáveis alinhados ao Programa de Selo Verde do Governo Federal; BNDES/BID já vinculam crédito a parâmetros de sustentabilidade"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_reuniao_mensal
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Lúcio (Arquitetura) — não implantado
   agente_alvo: futuro Agente de Estudo Preliminar
   data: 2026-07-19
@@ -32,4 +34,4 @@ Se aprovada: (1) a futura Skill de Estudo Preliminar do Lúcio deve incluir a NB
 - Pesquisado em 19/07/2026, rotina diária do Wallenberg. Fonte é blog setorial secundário, não o normativo oficial da ABNT (abnt.org.br) — recomenda-se confirmação direta antes de uso comercial/contratual (Princípio 3).
 
 ## Governança
-Proposta pendente — Lúcio (Arquitetura) ainda não foi criado como Gestor; esta Skill fica arquivada para quando ele for aprovado e sua equipe for formada. Não altera nenhuma Skill oficial hoje.
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). **Convertida em Skill real em 03/09/2026:** `.claude/skills/nbr20250-selo-verde/SKILL.md`.

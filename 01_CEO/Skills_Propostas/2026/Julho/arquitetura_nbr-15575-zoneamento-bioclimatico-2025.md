@@ -3,7 +3,9 @@ name: skill-proposta-arquitetura-nbr-15575-zoneamento-bioclimatico
 description: "PROPOSTA — Emenda 1/2025 da NBR 15575 (partes 1, 4 e 5) internaliza o novo zoneamento bioclimático da NBR 15220-3:2024; Rio de Janeiro mudou de categoria, alterando o desempenho térmico mínimo exigido em projeto residencial"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_criacao_do_gestor
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Lúcio (Arquitetura) — não implantado
   agente_alvo: futuro Agente de Estudo Preliminar
   data: 2026-07-22
@@ -34,4 +36,4 @@ Se o Gestor Lúcio for criado: (1) o futuro Agente de Estudo Preliminar verifica
 - Pesquisado em 22/07/2026, rotina diária do Wallenberg. **Nenhuma fonte é o normativo oficial da ABNT** (abnt.org.br é pago/restrito) — Princípio 3 exige confirmação em fonte primária ou na ferramenta oficial "Busca ZB" antes de qualquer uso comercial/contratual.
 
 ## Governança
-Proposta pendente — Lúcio (Arquitetura) ainda não foi criado como Gestor; esta Skill fica arquivada para quando ele for aprovado e sua equipe for formada. Não altera nenhuma Skill oficial hoje. Sob o modelo de ratificação posterior (20/07/2026), a criação do Gestor Arquitetura e a ativação desta Skill passam a ser decisão do próprio Wallenberg quando o teste de contratação for aplicado — mas seguem sujeitas a ratificação na Reunião Semanal, e o resumo desta Skill entra na Reunião Mensal ao Conselho enquanto o Gestor não existir.
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). **NÃO virou Skill separada** — mesmo achado (RJ mudou de zona bioclimática) já pesquisado por Complementares em 01/09/2026. Consolidado em `.claude/skills/nbr15220-3-bioclimatica-rj/SKILL.md`, que agora lista Lúcio/Estudo Preliminar como consumidor também. A ressalva desta proposta sobre "código ZB4A não confirmado em fonte primária" foi preservada na Skill final.

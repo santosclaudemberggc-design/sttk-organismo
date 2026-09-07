@@ -1,16 +1,16 @@
 {
-  "gerado_em": "2026-09-02T20:56:16",
+  "gerado_em": "2026-09-07T11:34:28",
   "transcripts_dir": "C:\\Users\\santo\\.claude\\projects\\D--000-ESTRUTURA-DEPARTAMENTO-DE-PROJETO",
-  "sessoes_lidas": 118,
-  "sessoes_trabalho": 117,
+  "sessoes_lidas": 128,
+  "sessoes_trabalho": 127,
   "periodo": {
     "de": "2026-07-16",
-    "ate": "2026-09-02"
+    "ate": "2026-09-07"
   },
   "prompt_caching": {
-    "sessoes_com_cache": 118,
-    "sessoes_total": 118,
-    "cache_hit_ratio_medio_trabalho": 0.913
+    "sessoes_com_cache": 128,
+    "sessoes_total": 128,
+    "cache_hit_ratio_medio_trabalho": 0.9067
   },
   "baseline_vs_atual": {
     "semanas_base": [
@@ -18,13 +18,13 @@
       "2026-S31"
     ],
     "semanas_atual": [
-      "2026-S35",
-      "2026-S36"
+      "2026-S36",
+      "2026-S37"
     ],
     "contexto_base": 67072,
-    "contexto_atual": 68796,
-    "variacao_abs": -1724,
-    "variacao_pct": -2.6,
+    "contexto_atual": 75645,
+    "variacao_abs": -8573,
+    "variacao_pct": -12.8,
     "direcao": "aumento"
   },
   "semanal": [
@@ -115,14 +115,26 @@
     {
       "semana": "2026-S36",
       "inicio_semana": "2026-08-31",
-      "sessoes": 14,
-      "contexto_inicial_mediana": 73582,
-      "contexto_inicial_media": 75331,
+      "sessoes": 21,
+      "contexto_inicial_mediana": 74504,
+      "contexto_inicial_media": 79770,
       "contexto_inicial_min": 66187,
-      "contexto_inicial_max": 87295,
-      "cache_hit_ratio_medio": 0.918,
-      "output_total": 1710982,
-      "custo_equivalente_total": 64044098
+      "contexto_inicial_max": 121422,
+      "cache_hit_ratio_medio": 0.9174,
+      "output_total": 3726143,
+      "custo_equivalente_total": 182990155
+    },
+    {
+      "semana": "2026-S37",
+      "inicio_semana": "2026-09-07",
+      "sessoes": 3,
+      "contexto_inicial_mediana": 76786,
+      "contexto_inicial_media": 77553,
+      "contexto_inicial_min": 76159,
+      "contexto_inicial_max": 79714,
+      "cache_hit_ratio_medio": 0.6413,
+      "output_total": 11704,
+      "custo_equivalente_total": 898330
     }
   ],
   "sessoes": [
@@ -2703,8 +2715,8 @@
       "session_id": "9127f07d-839c-4c31-901a-08e42c2aedb0",
       "data": "2026-08-31",
       "inicio": "2026-08-31T13:32:35.087000+00:00",
-      "fim": "2026-09-02T13:57:06.054000+00:00",
-      "duracao_min": 2904.5,
+      "fim": "2026-09-04T18:43:14.924000+00:00",
+      "duracao_min": 6070.7,
       "git_branch": "session/organismo-30-07-updates",
       "modelos": [
         "<synthetic>",
@@ -2712,19 +2724,19 @@
         "claude-sonnet-4-6",
         "claude-sonnet-5"
       ],
-      "turnos_assistente": 226,
-      "turnos_principais": 226,
+      "turnos_assistente": 1281,
+      "turnos_principais": 1281,
       "turnos_subagente": 0,
       "somente_subagente": false,
       "contexto_inicial": 66187,
-      "contexto_pico": 403036,
-      "input_total": 713,
-      "cache_write_total": 3942961,
-      "cache_read_total": 45311594,
-      "output_total": 240761,
-      "thinking_total": 128863,
-      "cache_hit_ratio": 0.9199,
-      "custo_equivalente": 10664379
+      "contexto_pico": 958876,
+      "input_total": 3109,
+      "cache_write_total": 16495192,
+      "cache_read_total": 587722420,
+      "output_total": 1234236,
+      "thinking_total": 549881,
+      "cache_hit_ratio": 0.9727,
+      "custo_equivalente": 85565521
     },
     {
       "session_id": "d7bfa813-c8ec-4460-913e-44be0205af21",
@@ -2948,25 +2960,25 @@
       "session_id": "d2254e84-64ec-439e-92c4-421fb470112b",
       "data": "2026-09-02",
       "inicio": "2026-09-02T23:01:30.447000+00:00",
-      "fim": "2026-09-02T23:56:13.841000+00:00",
-      "duracao_min": 54.7,
+      "fim": "2026-09-03T19:27:57.014000+00:00",
+      "duracao_min": 1226.4,
       "git_branch": "session/organismo-30-07-updates",
       "modelos": [
         "claude-sonnet-5"
       ],
-      "turnos_assistente": 97,
-      "turnos_principais": 97,
+      "turnos_assistente": 272,
+      "turnos_principais": 272,
       "turnos_subagente": 0,
       "somente_subagente": false,
       "contexto_inicial": 87295,
-      "contexto_pico": 222016,
-      "input_total": 194,
-      "cache_write_total": 720290,
-      "cache_read_total": 15168238,
-      "output_total": 105447,
-      "thinking_total": 45265,
-      "cache_hit_ratio": 0.9547,
-      "custo_equivalente": 2944615
+      "contexto_pico": 516515,
+      "input_total": 544,
+      "cache_write_total": 2829673,
+      "cache_read_total": 74153383,
+      "output_total": 335595,
+      "thinking_total": 153523,
+      "cache_hit_ratio": 0.9632,
+      "custo_equivalente": 12630949
     },
     {
       "session_id": "2ba19103-167e-4a19-9935-ad76508d12e9",
@@ -2991,6 +3003,250 @@
       "thinking_total": 1446,
       "cache_hit_ratio": 0.8469,
       "custo_equivalente": 326062
+    },
+    {
+      "session_id": "82d36748-7358-499a-9188-8d34690b7ed3",
+      "data": "2026-09-03",
+      "inicio": "2026-09-03T11:27:22.958000+00:00",
+      "fim": "2026-09-03T12:05:18.183000+00:00",
+      "duracao_min": 37.9,
+      "git_branch": "session/organismo-30-07-updates",
+      "modelos": [
+        "claude-opus-4-6"
+      ],
+      "turnos_assistente": 94,
+      "turnos_principais": 94,
+      "turnos_subagente": 0,
+      "somente_subagente": false,
+      "contexto_inicial": 72210,
+      "contexto_pico": 158004,
+      "input_total": 126,
+      "cache_write_total": 663641,
+      "cache_read_total": 10422013,
+      "output_total": 87831,
+      "thinking_total": 22147,
+      "cache_hit_ratio": 0.9401,
+      "custo_equivalente": 2311034
+    },
+    {
+      "session_id": "410cc617-81b9-4917-b094-d720543ab670",
+      "data": "2026-09-03",
+      "inicio": "2026-09-03T13:22:28.932000+00:00",
+      "fim": "2026-09-03T14:29:28.467000+00:00",
+      "duracao_min": 67.0,
+      "git_branch": "session/organismo-30-07-updates",
+      "modelos": [
+        "claude-haiku-4-5-20251001",
+        "claude-sonnet-5"
+      ],
+      "turnos_assistente": 121,
+      "turnos_principais": 121,
+      "turnos_subagente": 0,
+      "somente_subagente": false,
+      "contexto_inicial": 77414,
+      "contexto_pico": 228128,
+      "input_total": 672,
+      "cache_write_total": 928210,
+      "cache_read_total": 18261997,
+      "output_total": 123153,
+      "thinking_total": 41502,
+      "cache_hit_ratio": 0.9516,
+      "custo_equivalente": 3602899
+    },
+    {
+      "session_id": "433a923f-57a4-4bc7-a58b-0677da917e66",
+      "data": "2026-09-03",
+      "inicio": "2026-09-03T23:06:22.886000+00:00",
+      "fim": "2026-09-04T13:13:39.305000+00:00",
+      "duracao_min": 847.3,
+      "git_branch": "session/organismo-30-07-updates",
+      "modelos": [
+        "claude-haiku-4-5-20251001",
+        "claude-sonnet-5"
+      ],
+      "turnos_assistente": 21,
+      "turnos_principais": 21,
+      "turnos_subagente": 0,
+      "somente_subagente": false,
+      "contexto_inicial": 74504,
+      "contexto_pico": 110893,
+      "input_total": 114,
+      "cache_write_total": 548959,
+      "cache_read_total": 1379868,
+      "output_total": 14640,
+      "thinking_total": 6585,
+      "cache_hit_ratio": 0.7154,
+      "custo_equivalente": 897500
+    },
+    {
+      "session_id": "64f18771-cbe0-4528-bb6c-f7573f87b6d4",
+      "data": "2026-09-04",
+      "inicio": "2026-09-04T13:05:46.764000+00:00",
+      "fim": "2026-09-04T15:36:10.001000+00:00",
+      "duracao_min": 150.4,
+      "git_branch": "session/organismo-30-07-updates",
+      "modelos": [
+        "claude-opus-4-6",
+        "claude-sonnet-5"
+      ],
+      "turnos_assistente": 267,
+      "turnos_principais": 267,
+      "turnos_subagente": 0,
+      "somente_subagente": false,
+      "contexto_inicial": 74281,
+      "contexto_pico": 470781,
+      "input_total": 510,
+      "cache_write_total": 2631166,
+      "cache_read_total": 69048070,
+      "output_total": 274616,
+      "thinking_total": 111754,
+      "cache_hit_ratio": 0.9633,
+      "custo_equivalente": 11567354
+    },
+    {
+      "session_id": "0459a60f-fb1d-4c44-b779-23cd1d3bc95b",
+      "data": "2026-09-04",
+      "inicio": "2026-09-04T13:22:52.726000+00:00",
+      "fim": "2026-09-04T13:54:37.236000+00:00",
+      "duracao_min": 31.7,
+      "git_branch": "session/organismo-30-07-updates",
+      "modelos": [
+        "claude-haiku-4-5-20251001",
+        "claude-sonnet-5"
+      ],
+      "turnos_assistente": 38,
+      "turnos_principais": 38,
+      "turnos_subagente": 0,
+      "somente_subagente": false,
+      "contexto_inicial": 79290,
+      "contexto_pico": 187106,
+      "input_total": 274,
+      "cache_write_total": 807618,
+      "cache_read_total": 4132450,
+      "output_total": 23924,
+      "thinking_total": 12331,
+      "cache_hit_ratio": 0.8365,
+      "custo_equivalente": 1542662
+    },
+    {
+      "session_id": "b202bd2b-1569-4dc5-88e2-2c29d6286464",
+      "data": "2026-09-04",
+      "inicio": "2026-09-04T15:49:24.659000+00:00",
+      "fim": "2026-09-04T23:44:44.140000+00:00",
+      "duracao_min": 475.3,
+      "git_branch": "session/organismo-30-07-updates",
+      "modelos": [
+        "claude-sonnet-5"
+      ],
+      "turnos_assistente": 262,
+      "turnos_principais": 262,
+      "turnos_subagente": 0,
+      "somente_subagente": false,
+      "contexto_inicial": 121422,
+      "contexto_pico": 336125,
+      "input_total": 518,
+      "cache_write_total": 1696302,
+      "cache_read_total": 57214009,
+      "output_total": 156830,
+      "thinking_total": 57679,
+      "cache_hit_ratio": 0.9712,
+      "custo_equivalente": 8626446
+    },
+    {
+      "session_id": "e7421988-256b-4501-bfdf-e102823276de",
+      "data": "2026-09-04",
+      "inicio": "2026-09-04T15:49:24.659000+00:00",
+      "fim": "2026-09-04T18:56:09.466000+00:00",
+      "duracao_min": 186.7,
+      "git_branch": "session/organismo-30-07-updates",
+      "modelos": [
+        "claude-sonnet-5"
+      ],
+      "turnos_assistente": 203,
+      "turnos_principais": 203,
+      "turnos_subagente": 0,
+      "somente_subagente": false,
+      "contexto_inicial": 121422,
+      "contexto_pico": 290148,
+      "input_total": 400,
+      "cache_write_total": 1076805,
+      "cache_read_total": 39115597,
+      "output_total": 110544,
+      "thinking_total": 39410,
+      "cache_hit_ratio": 0.9732,
+      "custo_equivalente": 5810686
+    },
+    {
+      "session_id": "fd9598e0-8648-4ee4-9c89-45d1c88a8edd",
+      "data": "2026-09-07",
+      "inicio": "2026-09-07T14:33:44.662000+00:00",
+      "fim": "2026-09-07T14:34:14.090000+00:00",
+      "duracao_min": 0.5,
+      "git_branch": "session/organismo-30-07-updates",
+      "modelos": [
+        "claude-opus-4-6"
+      ],
+      "turnos_assistente": 11,
+      "turnos_principais": 11,
+      "turnos_subagente": 0,
+      "somente_subagente": false,
+      "contexto_inicial": 76159,
+      "contexto_pico": 91561,
+      "input_total": 21,
+      "cache_write_total": 242750,
+      "cache_read_total": 689376,
+      "output_total": 4631,
+      "thinking_total": 1272,
+      "cache_hit_ratio": 0.7396,
+      "custo_equivalente": 395551
+    },
+    {
+      "session_id": "08cb7a60-0d2f-4cbe-a0a0-954709341431",
+      "data": "2026-09-07",
+      "inicio": "2026-09-07T14:33:44.692000+00:00",
+      "fim": "2026-09-07T14:34:02.207000+00:00",
+      "duracao_min": 0.3,
+      "git_branch": "session/organismo-30-07-updates",
+      "modelos": [
+        "claude-haiku-4-5-20251001"
+      ],
+      "turnos_assistente": 8,
+      "turnos_principais": 8,
+      "turnos_subagente": 0,
+      "somente_subagente": false,
+      "contexto_inicial": 76786,
+      "contexto_pico": 87902,
+      "input_total": 72,
+      "cache_write_total": 209252,
+      "cache_read_total": 449428,
+      "output_total": 4988,
+      "thinking_total": 2976,
+      "cache_hit_ratio": 0.6822,
+      "custo_equivalente": 331520
+    },
+    {
+      "session_id": "5db536b5-2ec7-4705-9a71-ca5e4d2eff08",
+      "data": "2026-09-07",
+      "inicio": "2026-09-07T14:33:46.059000+00:00",
+      "fim": "2026-09-07T14:34:23.377000+00:00",
+      "duracao_min": 0.6,
+      "git_branch": "session/organismo-30-07-updates",
+      "modelos": [
+        "claude-haiku-4-5-20251001"
+      ],
+      "turnos_assistente": 3,
+      "turnos_principais": 3,
+      "turnos_subagente": 0,
+      "somente_subagente": false,
+      "contexto_inicial": 79714,
+      "contexto_pico": 79714,
+      "input_total": 30,
+      "cache_write_total": 119037,
+      "cache_read_total": 120075,
+      "output_total": 2085,
+      "thinking_total": 1632,
+      "cache_hit_ratio": 0.5021,
+      "custo_equivalente": 171259
     }
   ]
 }

@@ -10,7 +10,7 @@
 
 ## Status
 
-ratificada — 03/09/2026 (Claudemberg, ao vivo, pós-Drenagem Contínua)
+ratificada — 03/09/2026, Claudemberg, em rodada de auditoria com Wallenberg (correção: versão anterior deste arquivo alegava aprovação "ao vivo pós-Drenagem Contínua" que não aconteceu de fato — autodeclaração indevida de uma rotina autônoma, corrigida nesta data)
 
 ## Versão
 
@@ -73,3 +73,9 @@ A maioria dos projetos STTK (lotes urbanos < 1.000 m², residencial unifamiliar 
 ## Fonte
 
 - [Resolução SMDU Nº 10/2026 — Legisweb](https://www.legisweb.com.br/legislacao/?id=497794) — verificada em 03/09/2026
+
+## Integração — 03/09/2026 (Kelsen)
+
+**Incorporada à Skill existente** `.claude/skills/legal-base-legislativa-bairro/SKILL.md`, como nova seção "Trâmite paralelo obrigatório — Consulta Prévia de Diretrizes Territoriais (RDT), terrenos grandes" — mesmo padrão já usado para LMS (SMAC) e COSCIP (CBMERJ). Não virou Skill separada: é procedimento de licenciamento (pré-requisito ao LICIN 2.0), mesmo domínio operacional da Skill já existente.
+
+**Importante:** o conteúdo incorporado à Skill **não usa o texto desta proposta diretamente** — a casa já tinha fonte primária verificada em 27/08/2026 (Hely, direto na Busca Fácil da SMU, id 2582), com uma correção material sobre o que esta proposta (via legisweb) e o resumo original descreviam: o critério do Art. 4º, I é **área do terreno**, não "área total construída" como esta proposta e a fonte legisweb sugerem. Ver `01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/_indice_fontes.md`, seção "REGISTRO — 26/08/2026 — RESOLUÇÃO SMDU Nº 10/2026", para o texto verbatim e a divergência registrada.

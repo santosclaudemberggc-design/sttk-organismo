@@ -3,7 +3,9 @@ name: skill-proposta-arquitetura-nbr-16537-2024-piso-tatil
 description: "PROPOSTA — NBR 16537:2024 (2ª edição) revisou a norma de sinalização tátil no piso, ampliando de 44 para 58 páginas; corrige conclusão anterior do organismo (28/07 e 30/07) de que não havia revisão de acessibilidade em curso — havia, só que na norma dedicada (16537), não na NBR 9050"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_criacao_do_gestor
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Lúcio (Arquitetura) — não implantado
   agente_alvo: futuro Agente de Estudo Preliminar
   data: 2026-07-31
@@ -37,4 +39,4 @@ Se o Gestor Lúcio for criado: (1) o futuro Agente de Estudo Preliminar/Anteproj
 - Pesquisado em 31/07/2026, rotina diária do Wallenberg. **Nenhuma fonte é o texto integral navegável do normativo ABNT** (abnt.org.br é pago/restrito, e os PDFs de terceiros vieram como binário não legível pela ferramenta de fetch) — Princípio 3 exige leitura do documento oficial completo antes de qualquer uso comercial/contratual.
 
 ## Governança
-Proposta pendente — Lúcio (Arquitetura) ainda não foi criado como Gestor; esta Skill fica arquivada para quando ele for aprovado e sua equipe for formada. Não altera nenhuma Skill oficial hoje. Sob o modelo de ratificação posterior (20/07/2026), a criação do Gestor Arquitetura e a ativação desta Skill passam a ser decisão do próprio Wallenberg quando o teste de contratação for aplicado — mas seguem sujeitas a ratificação na Reunião Semanal, e o resumo desta Skill entra na Reunião Mensal ao Conselho enquanto o Gestor não existir.
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). **Convertida em Skill real em 03/09/2026:** `.claude/skills/nbr16537-piso-tatil/SKILL.md`.

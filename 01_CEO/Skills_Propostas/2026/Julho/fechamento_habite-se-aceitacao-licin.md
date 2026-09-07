@@ -3,7 +3,9 @@ name: skill-proposta-fechamento-habite-se-aceitacao
 description: "PROPOSTA — fluxo oficial de Habite-se/Aceitação de Obra dentro do LICIN 2.0 (Decreto 55.622/2025), com os artigos que regem reporte de fases da obra e vistoria final; relevante para o futuro Gestor Fechamento"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_reuniao_mensal
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Gestor Fechamento — não implantado
   data: 2026-07-23
 ---
@@ -36,4 +38,4 @@ Regra já fixada para toda Skill do organismo desde 20/07/2026 (ver `legal-base-
 Quando o Gestor Fechamento for criado: (a) desenhar o ponto de entrada do Agente de Fechamento no fluxo considerando que o LICIN 2.0 espera reporte progressivo desde o início da obra, não só no fim; (b) usar `certidoessmdeis.rio.gov.br` como primeira checagem de status antes de qualquer contato com a prefeitura; (c) tratar Habite-se e Aceitação como dois rótulos distintos, nunca intercambiáveis, no material que o Agente produzir.
 
 ## Governança
-Proposta pendente — não cria o Gestor Fechamento nem qualquer Agente (decisão estrutural, fora do escopo desta rotina). Fica arquivada para quando Claudemberg decidir avançar a construção desse Gestor (Princípio 13).
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). **Convertida em Skill real em 03/09/2026:** `.claude/skills/habite-se-aceitacao-licin/SKILL.md`.

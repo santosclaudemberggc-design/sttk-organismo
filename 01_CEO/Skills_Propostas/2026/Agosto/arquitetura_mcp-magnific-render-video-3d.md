@@ -3,7 +3,9 @@ name: skill-proposta-arquitetura-mcp-magnific-render-video-3d
 description: "PROPOSTA — Magnific MCP (mcp.magnific.com) é conector MCP oficial de 1ª parte (Freepik/Magnific) com mais de 40 tools de imagem/vídeo/áudio/3D, conecta ao Claude Code em 1 comando (sem chave de API, OAuth com plano web já existente); acionado por indicação de Claudemberg (post de terceiro no Instagram, verificado antes de virar achado) — resolve render fotorrealista a partir de imagem 2D (print/sketch/planta) e vídeo, mas não faz tour 360 nem lê modelo BIM diretamente como o Twinmotion"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_criacao_do_gestor
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Lúcio (Arquitetura) — não implantado
   agente_alvo: futuro Agente de Renders/Vídeos (equipe de Lúcio, função já aprovada em pendencias.json id lucio-agentes-nao-nomeados)
   data: 2026-08-01
@@ -38,4 +40,4 @@ Não conectar/assinar ainda — é achado de pesquisa, não recomendação de co
 - Pesquisado em 01/08/2026, mesma rotina/sessão do achado da manhã (Twinmotion), em resposta a indicação ao vivo de Claudemberg.
 
 ## Governança
-Proposta pendente — Lúcio (Arquitetura) ainda não foi criado como Gestor; esta Skill fica arquivada para quando ele for aprovado e a equipe for formada. Não altera nenhuma Skill oficial hoje, e não autoriza assinatura/conexão do conector — é registro de candidato encontrado e verificado, sujeito a checagem de preço ao vivo e teste técnico no momento do uso real (Princípio 3). Sob o modelo de ratificação posterior (20/07/2026), a criação do Gestor Arquitetura e a ativação desta Skill passam a ser decisão do próprio Wallenberg quando o teste de contratação for aplicado — mas seguem sujeitas a ratificação na Reunião Semanal. Busca de render/vídeo/tour 360 **continua aberta** (ver `feedback_render_video_mcp_lucio`).
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). Fica como conhecimento formalizado, aguardando a criação do Gestor/Agente correspondente para virar Skill executável.

@@ -3,7 +3,9 @@ name: skill-proposta-legal-art-georreferenciada-crea-rj
 description: "PROPOSTA — novo sistema de ART do CREA-RJ em 2026: georreferenciado, com cálculo de valor por custo de obra (Sinduscon-Rio) e alerta antifraude de múltiplas ARTs no mesmo dia"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_reuniao_mensal
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Kelsen (Legal)
   agente_alvo: Hely
   data: 2026-07-19
@@ -29,4 +31,10 @@ Se aprovada, a Skill de base legislativa do Hely passa a registrar, ao lidar com
 - Pesquisado em 19/07/2026, rotina diária do Wallenberg
 
 ## Governança
-Proposta pendente — não altera a Skill oficial do Hely até aprovação de Claudemberg na Reunião Mensal ao Conselho (Princípio 13). Recomendação: antes de oficializar, tentar acesso direto ao Ato Normativo por outro canal (ex.: navegador autenticado), já que o WebFetch foi bloqueado pelo site (Princípio 3).
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). Fica como conhecimento formalizado, aguardando a criação do Gestor/Agente correspondente para virar Skill executável.
+
+## Integração — 03/09/2026 (Kelsen)
+
+**Virou Skill própria**, não linha da Skill de base legislativa: `.claude/skills/legal-art-crea-responsabilidade-tecnica-rj/SKILL.md`. Decisão: ART/CREA é registro profissional (quem assina, quanto custa, se está vinculado ao endereço da obra) — domínio genuinamente distinto de zoneamento/parâmetro urbanístico por lote, que é o que a Skill `legal-base-legislativa-bairro` cobre. Manter as duas fundidas quebraria o "mapa não cópia" da Skill existente e misturaria dois tipos de decisão que Hely toma em momentos diferentes do processo.
+
+A ressalva de confiança **média** (WebFetch 403 no PDF do Ato Normativo 001/2025, conteúdo vindo de página de segundo grau do próprio crea-rj.org.br) foi preservada na Skill nova, com pendência explícita para Hely tentar de novo o acesso ao primário antes de aplicar a um caso real com ART de terceiro em jogo.

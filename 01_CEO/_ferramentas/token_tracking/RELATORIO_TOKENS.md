@@ -1,24 +1,24 @@
 # Relatorio de Tokens — MEDICAO REAL
 
-**Gerado em:** 2026-09-02T20:56:16  
+**Gerado em:** 2026-09-07T11:34:28  
 **Fonte:** transcripts de sessao do Claude Code (`C:\Users\santo\.claude\projects\D--000-ESTRUTURA-DEPARTAMENTO-DE-PROJETO`)  
-**Sessoes lidas:** 118 (**117** conversas de trabalho, >= 3 turnos)  
-**Periodo:** 2026-07-16 -> 2026-09-02  
+**Sessoes lidas:** 128 (**127** conversas de trabalho, >= 3 turnos)  
+**Periodo:** 2026-07-16 -> 2026-09-07  
 
 > Todo numero abaixo vem do campo `message.usage` de cada resposta do assistente. Nao ha projecao nem estimativa multiplicada.
 
 ## 1. Prompt caching — ja esta ligado?
 
-- Sessoes com leitura de cache (`cache_read_input_tokens` > 0): **118 / 118**
-- Cache hit ratio medio (conversas de trabalho): **91.3%** do contexto de entrada vem de cache
+- Sessoes com leitura de cache (`cache_read_input_tokens` > 0): **128 / 128**
+- Cache hit ratio medio (conversas de trabalho): **90.7%** do contexto de entrada vem de cache
 
 **Conclusao:** o prompt caching nativo da Anthropic **ja opera** nas sessoes deste projeto. O Item 7 ("aguardando API Claude v1.9+") descreve um bloqueio que nao existe — o ganho ja esta sendo colhido.
 
 ## 2. Contexto inicial por conversa — baseline vs. atual
 
 - Base (2026-S30, 2026-S31): mediana **67.1k** tokens de contexto inicial
-- Atual (2026-S35, 2026-S36): mediana **68.8k** tokens
-- Resultado medido: **AUMENTO de 2.6%** (1.7k tokens)
+- Atual (2026-S36, 2026-S37): mediana **75.6k** tokens
+- Resultado medido: **AUMENTO de 12.8%** (8.6k tokens)
 
 > O plano projetava 45-70% de **reducao** de contexto por conversa. A medicao real mostra o contrario: o contexto inicial nao caiu apos os slices de CLAUDE.md (30/07) nem a consolidacao de MEMORY.md (29/07).
 
@@ -33,7 +33,8 @@
 | 2026-S33 | 2026-08-10 | 22 | 68.6k | 65.2k | 53.8k | 74.3k | 91% |
 | 2026-S34 | 2026-08-17 | 17 | 61.0k | 62.9k | 58.9k | 82.2k | 90% |
 | 2026-S35 | 2026-08-24 | 18 | 64.0k | 65.7k | 60.1k | 85.8k | 90% |
-| 2026-S36 | 2026-08-31 | 14 | 73.6k | 75.3k | 66.2k | 87.3k | 92% |
+| 2026-S36 | 2026-08-31 | 21 | 74.5k | 79.8k | 66.2k | 121.4k | 92% |
+| 2026-S37 | 2026-09-07 | 3 | 76.8k | 77.6k | 76.2k | 79.7k | 64% |
 
 **Marcos do plano de otimizacao (para cruzar com a curva):**
 - 2026-07-29 — Item 1: consolidacao MEMORY.md (18 -> 3 arquivos)
@@ -45,8 +46,18 @@
 
 | Data | Sessao | Br. | Turnos | Ctx inicial | Ctx pico | Saida | Cache read | Custo-eq |
 |---|---|---|--:|--:|--:|--:|--:|--:|
+| 2026-09-07 | `5db536b5` | organismo-30-0 | 3 | 79.7k | 79.7k | 2.1k | 120.1k | 171.3k |
+| 2026-09-07 | `08cb7a60` | organismo-30-0 | 8 | 76.8k | 87.9k | 5.0k | 449.4k | 331.5k |
+| 2026-09-07 | `fd9598e0` | organismo-30-0 | 11 | 76.2k | 91.6k | 4.6k | 689.4k | 395.6k |
+| 2026-09-04 | `e7421988` | organismo-30-0 | 203 | 121.4k | 290.1k | 110.5k | 39.12M | 5.81M |
+| 2026-09-04 | `b202bd2b` | organismo-30-0 | 262 | 121.4k | 336.1k | 156.8k | 57.21M | 8.63M |
+| 2026-09-04 | `0459a60f` | organismo-30-0 | 38 | 79.3k | 187.1k | 23.9k | 4.13M | 1.54M |
+| 2026-09-04 | `64f18771` | organismo-30-0 | 267 | 74.3k | 470.8k | 274.6k | 69.05M | 11.57M |
+| 2026-09-03 | `433a923f` | organismo-30-0 | 21 | 74.5k | 110.9k | 14.6k | 1.38M | 897.5k |
+| 2026-09-03 | `410cc617` | organismo-30-0 | 121 | 77.4k | 228.1k | 123.2k | 18.26M | 3.60M |
+| 2026-09-03 | `82d36748` | organismo-30-0 | 94 | 72.2k | 158.0k | 87.8k | 10.42M | 2.31M |
 | 2026-09-02 | `2ba19103` | organismo-30-0 | 14 | 72.9k | 80.5k | 6.1k | 906.6k | 326.1k |
-| 2026-09-02 | `d2254e84` | organismo-30-0 | 97 | 87.3k | 222.0k | 105.4k | 15.17M | 2.94M |
+| 2026-09-02 | `d2254e84` | organismo-30-0 | 272 | 87.3k | 516.5k | 335.6k | 74.15M | 12.63M |
 | 2026-09-02 | `b9957111` | organismo-30-0 | 18 | 87.3k | 121.3k | 15.7k | 1.58M | 595.1k |
 | 2026-09-02 | `ff76dfd0` | organismo-30-0 | 46 | 74.3k | 153.7k | 35.2k | 5.58M | 1.18M |
 | 2026-09-02 | `62d5dd97` | organismo-30-0 | 104 | 71.4k | 166.7k | 66.0k | 12.90M | 2.24M |
@@ -56,7 +67,7 @@
 | 2026-09-01 | `242af919` | organismo-30-0 | 429 | 78.7k | 619.9k | 506.8k | 156.87M | 20.42M |
 | 2026-09-01 | `8894329b` | organismo-30-0 | 118 | 67.7k | 156.5k | 105.5k | 12.22M | 4.07M |
 | 2026-08-31 | `d7bfa813` | organismo-30-0 | 14 | 77.0k | 90.4k | 12.7k | 961.0k | 444.1k |
-| 2026-08-31 | `9127f07d` | organismo-30-0 | 226 | 66.2k | 403.0k | 240.8k | 45.31M | 10.66M |
+| 2026-08-31 | `9127f07d` | organismo-30-0 | 1281 | 66.2k | 958.9k | 1.23M | 587.72M | 85.57M |
 | 2026-08-31 | `6126b1de` | organismo-30-0 | 219 | 81.8k | 441.0k | 245.9k | 61.06M | 9.75M |
 | 2026-08-31 | `e3f145d9` | organismo-30-0 | 119 | 66.8k | 158.2k | 84.9k | 14.51M | 2.51M |
 | 2026-08-29 | `ae5e3aa9` | organismo-30-0 | 2 | 66.8k | 66.8k | 988 | 61.3k | 101.5k |

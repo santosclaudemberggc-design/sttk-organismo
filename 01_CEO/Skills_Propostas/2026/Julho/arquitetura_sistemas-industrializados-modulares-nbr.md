@@ -3,7 +3,9 @@ name: skill-proposta-arquitetura-sistemas-industrializados
 description: "PROPOSTA — sistemas construtivos industrializados/modulares (Steel Frame, Wood Frame, painel leve) e as novas NBRs que os regem, para o Estudo Preliminar/Anteprojeto"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_reuniao_mensal
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Lúcio (Arquitetura) — ainda não implantado
   data: 2026-07-16
 ---
@@ -30,4 +32,4 @@ A Skill proposta ensinaria ao Agente de Estudo Preliminar/Anteprojeto: (1) quand
 - Pesquisado em 16/07/2026, rotina diária do Wallenberg.
 
 ## Governança
-Proposta pendente — só entra para o Gestor Arquitetura depois que ele for criado (Reunião Semanal com Claudemberg) e a Skill for aprovada na Reunião Mensal ao Conselho (Princípio 13).
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). **Convertida em Skill real em 03/09/2026:** `.claude/skills/sistemas-industrializados-modulares/SKILL.md`.

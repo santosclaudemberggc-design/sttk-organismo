@@ -4,7 +4,9 @@
 **Saturnino** (Hidrossanitário) — equipe de Cardozo (Gestor Complementares). Esta é uma Skill de **Trilha A (Inteligência)**: normas técnicas e técnicas de projetar, não ferramenta de software. Alimenta o saber-fazer de Saturnino em projetos de instalações prediais de água fria, água quente, esgoto sanitário, e drenagem pluvial.
 
 ## Status
-proposta — aguardando ratificação de Claudemberg
+ratificada — 03/09/2026, Claudemberg (rodada de auditoria com Wallenberg)
+
+**Convertida em Skill real em 03/09/2026:** `.claude/skills/nbr5626-8160-hidrossanitario/SKILL.md`. Este arquivo permanece como registro histórico da pesquisa original.
 
 ## O que esta Skill ensina
 

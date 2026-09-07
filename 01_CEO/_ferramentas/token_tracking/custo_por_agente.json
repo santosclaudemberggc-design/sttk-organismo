@@ -1,25 +1,25 @@
 {
-  "gerado_em": "2026-09-02T21:05:15",
+  "gerado_em": "2026-09-07T12:44:35",
   "corte_otimizacao": "2026-07-30",
-  "total_invocacoes": 241,
-  "custo_eq_total": 174661096,
-  "usd_aprox_total": 495.63,
+  "total_invocacoes": 253,
+  "custo_eq_total": 188106648,
+  "usd_aprox_total": 532.76,
   "agentes": [
     {
       "agente": "kelsen",
-      "invocacoes": 75,
-      "turnos": 1973,
-      "tokens_input": 178229,
-      "tokens_cache_write": 28770379,
-      "tokens_cache_read": 179132769,
-      "tokens_output": 893907,
-      "tokens_thinking": 107255,
-      "custo_eq": 58524015,
-      "usd_aprox": 176.37,
+      "invocacoes": 80,
+      "turnos": 2158,
+      "tokens_input": 178709,
+      "tokens_cache_write": 32416460,
+      "tokens_cache_read": 201876641,
+      "tokens_output": 993411,
+      "tokens_thinking": 148162,
+      "custo_eq": 65854003,
+      "usd_aprox": 197.36,
       "ctx0_mediana_pre_otim": 22621,
-      "ctx0_mediana_pos_otim": 29929,
-      "ctx0_variacao_pct": 32.3,
-      "periodo": "2026-07-23 -> 2026-09-02",
+      "ctx0_mediana_pos_otim": 30085,
+      "ctx0_variacao_pct": 33.0,
+      "periodo": "2026-07-23 -> 2026-09-04",
       "amostra_descricoes": [
         "Kelsen — rodada de drenagem contínua",
         "Acionar Kelsen nesta rodada de drenagem",
@@ -28,23 +28,23 @@
         "Drenagem Kelsen 28/08",
         "Kelsen reconciliação de fila"
       ],
-      "pct_do_total": 33.5
+      "pct_do_total": 35.0
     },
     {
       "agente": "hely",
-      "invocacoes": 27,
-      "turnos": 2100,
-      "tokens_input": 319556,
-      "tokens_cache_write": 11969880,
-      "tokens_cache_read": 250005672,
-      "tokens_output": 604373,
-      "tokens_thinking": 60067,
-      "custo_eq": 43304338,
-      "usd_aprox": 130.95,
+      "invocacoes": 30,
+      "turnos": 2256,
+      "tokens_input": 319868,
+      "tokens_cache_write": 13012618,
+      "tokens_cache_read": 267341497,
+      "tokens_output": 642830,
+      "tokens_thinking": 74935,
+      "custo_eq": 46533940,
+      "usd_aprox": 140.63,
       "ctx0_mediana_pre_otim": 30325,
-      "ctx0_mediana_pos_otim": 30527,
-      "ctx0_variacao_pct": 0.7,
-      "periodo": "2026-07-23 -> 2026-09-02",
+      "ctx0_mediana_pos_otim": 30643,
+      "ctx0_variacao_pct": 1.0,
+      "periodo": "2026-07-23 -> 2026-09-04",
       "amostra_descricoes": [
         "Regenerar PDF do POP-LEGAL-06",
         "Verificar 4 docs terminologia Alvará",
@@ -53,7 +53,7 @@
         "Hely — Busca profunda de atualizações LC/Decreto (11-21/08)",
         "EVTL — Hely executa H1-H9 (caso real urgente)"
       ],
-      "pct_do_total": 24.8
+      "pct_do_total": 24.7
     },
     {
       "agente": "lucio",
@@ -78,32 +78,32 @@
         "Lúcio — ORDEM: teste Burle stack gratuito AGORA",
         "Varredura de segurança e viabilidade de 3 ferramentas open-source"
       ],
-      "pct_do_total": 17.6
+      "pct_do_total": 16.4
     },
     {
       "agente": "cardozo",
-      "invocacoes": 15,
-      "turnos": 556,
-      "tokens_input": 79180,
-      "tokens_cache_write": 9851313,
-      "tokens_cache_read": 38725828,
-      "tokens_output": 305291,
-      "tokens_thinking": 84930,
-      "custo_eq": 17792359,
-      "usd_aprox": 41.07,
+      "invocacoes": 17,
+      "turnos": 598,
+      "tokens_input": 79408,
+      "tokens_cache_write": 10524068,
+      "tokens_cache_read": 41550968,
+      "tokens_output": 321905,
+      "tokens_thinking": 91761,
+      "custo_eq": 18999115,
+      "usd_aprox": 43.88,
       "ctx0_mediana_pre_otim": null,
-      "ctx0_mediana_pos_otim": 30039,
+      "ctx0_mediana_pos_otim": 30067,
       "ctx0_variacao_pct": null,
-      "periodo": "2026-08-15 -> 2026-09-02",
+      "periodo": "2026-08-15 -> 2026-09-07",
       "amostra_descricoes": [
         "Drenagem contínua — Cardozo lê seu estado e pendências",
         "Apresentação interiores Daniel-OB",
+        "Cardozo: ler fila, avaliar 3 skills novas para Complementares",
         "Rotina automática de drenagem contínua — reconciliação de pendências e varredura de melhoria",
         "Passo 3c — Cardozo formaliza equipe de 6 Agentes",
-        "Exame 2 Cardozo Casos 2 e 3",
-        "Acionar Cardozo — drenagem 31/08"
+        "Cardozo avalia Skill COSCIP e reconcilia fila"
       ],
-      "pct_do_total": 10.2
+      "pct_do_total": 10.1
     },
     {
       "agente": "mindlin",
@@ -127,7 +127,31 @@
         "Exame 1 Mindlin apresentacao",
         "Exame 1 Mindlin - caso apresentacao"
       ],
-      "pct_do_total": 2.4
+      "pct_do_total": 2.2
+    },
+    {
+      "agente": "general-purpose",
+      "invocacoes": 5,
+      "turnos": 138,
+      "tokens_input": 358,
+      "tokens_cache_write": 1669200,
+      "tokens_cache_read": 13911135,
+      "tokens_output": 80043,
+      "tokens_thinking": 5477,
+      "custo_eq": 3878186,
+      "usd_aprox": 10.72,
+      "ctx0_mediana_pre_otim": null,
+      "ctx0_mediana_pos_otim": 46906,
+      "ctx0_variacao_pct": null,
+      "periodo": "2026-08-08 -> 2026-09-03",
+      "amostra_descricoes": [
+        "Teste de render Flux.1 [schnell] + Open-Sora com Burle",
+        "Wallenberg reconecta servidor MCP Higgsfield",
+        "Buscar contato Maurício Costa",
+        "Implementar indicador de dias parado no Painel",
+        "Criar backup do estado do Kelsen"
+      ],
+      "pct_do_total": 2.1
     },
     {
       "agente": "oscar",
@@ -152,30 +176,7 @@
         "Oscar varre Drive por POPs técnicos de Arquitetura",
         "Exame 2 Caso 2 — Oscar"
       ],
-      "pct_do_total": 2.2
-    },
-    {
-      "agente": "general-purpose",
-      "invocacoes": 4,
-      "turnos": 95,
-      "tokens_input": 272,
-      "tokens_cache_write": 1237426,
-      "tokens_cache_read": 9842641,
-      "tokens_output": 71817,
-      "tokens_thinking": 4429,
-      "custo_eq": 2890404,
-      "usd_aprox": 7.76,
-      "ctx0_mediana_pre_otim": null,
-      "ctx0_mediana_pos_otim": 45744,
-      "ctx0_variacao_pct": null,
-      "periodo": "2026-08-08 -> 2026-08-21",
-      "amostra_descricoes": [
-        "Teste de render Flux.1 [schnell] + Open-Sora com Burle",
-        "Wallenberg reconecta servidor MCP Higgsfield",
-        "Implementar indicador de dias parado no Painel",
-        "Criar backup do estado do Kelsen"
-      ],
-      "pct_do_total": 1.7
+      "pct_do_total": 2.1
     },
     {
       "agente": "burle",
@@ -200,7 +201,7 @@
         "Renders conceituais Daniel-OB térreo",
         "Exame 1 Burle"
       ],
-      "pct_do_total": 1.5
+      "pct_do_total": 1.4
     },
     {
       "agente": "portinari",
@@ -224,7 +225,7 @@
         "Portinari varre Drive por templates de apresentação/enviáveis",
         "Exame 2 Caso 1 — Portinari"
       ],
-      "pct_do_total": 1.4
+      "pct_do_total": 1.3
     },
     {
       "agente": "tenreiro",
@@ -247,7 +248,7 @@
         "Exame 1 Tenreiro - caso interiores",
         "Exame 1 Tenreiro interiores"
       ],
-      "pct_do_total": 1.2
+      "pct_do_total": 1.1
     },
     {
       "agente": "glaziou",
@@ -289,7 +290,7 @@
         "Exame 1 Baumgart - caso estrutural",
         "Exame 1 Baumgart estrutural"
       ],
-      "pct_do_total": 0.6
+      "pct_do_total": 0.5
     },
     {
       "agente": "guia-claude",
@@ -311,7 +312,7 @@
         "Como instalar Claude in Chrome",
         "Verificar suporte a subagentes aninhados"
       ],
-      "pct_do_total": 0.6
+      "pct_do_total": 0.5
     },
     {
       "agente": "landell",
@@ -354,7 +355,28 @@
         "Explorar coordenação entre agentes no organismo",
         "Entender estrutura de níveis e exames"
       ],
-      "pct_do_total": 0.5
+      "pct_do_total": 0.4
+    },
+    {
+      "agente": "claude",
+      "invocacoes": 2,
+      "turnos": 28,
+      "tokens_input": 220,
+      "tokens_cache_write": 459492,
+      "tokens_cache_read": 2020527,
+      "tokens_output": 6760,
+      "tokens_thinking": 4083,
+      "custo_eq": 810438,
+      "usd_aprox": 1.05,
+      "ctx0_mediana_pre_otim": null,
+      "ctx0_mediana_pos_otim": 50829,
+      "ctx0_variacao_pct": null,
+      "periodo": "2026-08-11 -> 2026-09-03",
+      "amostra_descricoes": [
+        "Wallenberg: auditar e executar própria pendência auto",
+        "n/a - not used"
+      ],
+      "pct_do_total": 0.4
     },
     {
       "agente": "saturnino",
@@ -398,36 +420,24 @@
         "Preparar Gate do Maurício"
       ],
       "pct_do_total": 0.3
-    },
-    {
-      "agente": "claude",
-      "invocacoes": 1,
-      "turnos": 2,
-      "tokens_input": 4,
-      "tokens_cache_write": 94172,
-      "tokens_cache_read": 0,
-      "tokens_output": 259,
-      "tokens_thinking": 0,
-      "custo_eq": 119014,
-      "usd_aprox": 0.36,
-      "ctx0_mediana_pre_otim": null,
-      "ctx0_mediana_pos_otim": 47088,
-      "ctx0_variacao_pct": null,
-      "periodo": "2026-08-11 -> 2026-08-11",
-      "amostra_descricoes": [
-        "n/a - not used"
-      ],
-      "pct_do_total": 0.1
     }
   ],
   "rotinas_sessao_principal": [
     {
       "origem": "(interativo / manual)",
-      "sessoes": 14,
-      "turnos": 2069,
-      "custo_eq": 100286097,
-      "usd_aprox": 909.82,
-      "periodo": "2026-07-16 -> 2026-09-03"
+      "sessoes": 16,
+      "turnos": 2674,
+      "custo_eq": 123285447,
+      "usd_aprox": 978.82,
+      "periodo": "2026-07-16 -> 2026-09-04"
+    },
+    {
+      "origem": "wallenberg-reuniao-semanal",
+      "sessoes": 11,
+      "turnos": 3079,
+      "custo_eq": 182517489,
+      "usd_aprox": 542.07,
+      "periodo": "2026-07-20 -> 2026-09-07"
     },
     {
       "origem": "wallenberg-drenagem-continua",
@@ -438,12 +448,12 @@
       "periodo": "2026-07-27 -> 2026-08-28"
     },
     {
-      "origem": "wallenberg-reuniao-semanal",
-      "sessoes": 10,
-      "turnos": 2016,
-      "custo_eq": 107284827,
-      "usd_aprox": 319.91,
-      "periodo": "2026-07-20 -> 2026-09-02"
+      "origem": "wallenberg-rotina-diaria-skills-v2-7",
+      "sessoes": 7,
+      "turnos": 782,
+      "custo_eq": 24848866,
+      "usd_aprox": 217.45,
+      "periodo": "2026-08-29 -> 2026-09-07"
     },
     {
       "origem": "wallenberg-rotina-diaria-skills",
@@ -454,28 +464,20 @@
       "periodo": "2026-07-22 -> 2026-08-28"
     },
     {
-      "origem": "wallenberg-rotina-diaria-skills-v2-7",
-      "sessoes": 4,
-      "turnos": 343,
-      "custo_eq": 8926663,
-      "usd_aprox": 97.24,
-      "periodo": "2026-08-29 -> 2026-09-02"
-    },
-    {
       "origem": "wallenberg-drenagem-continua-local",
-      "sessoes": 3,
-      "turnos": 365,
-      "custo_eq": 13707252,
-      "usd_aprox": 32.1,
-      "periodo": "2026-08-31 -> 2026-09-02"
+      "sessoes": 6,
+      "turnos": 597,
+      "custo_eq": 22229151,
+      "usd_aprox": 51.7,
+      "periodo": "2026-08-31 -> 2026-09-07"
     },
     {
       "origem": "wallenberg-cronjob-pdf-2000",
-      "sessoes": 3,
-      "turnos": 39,
-      "custo_eq": 1023794,
-      "usd_aprox": 1.91,
-      "periodo": "2026-08-31 -> 2026-09-02"
+      "sessoes": 4,
+      "turnos": 60,
+      "custo_eq": 1921293,
+      "usd_aprox": 3.83,
+      "periodo": "2026-08-31 -> 2026-09-04"
     },
     {
       "origem": "teste-kelsen-abre-hely",
@@ -486,6 +488,6 @@
       "periodo": "2026-07-23 -> 2026-07-23"
     }
   ],
-  "usd_aprox_sessoes_principais": 2062.44,
-  "usd_aprox_geral": 2558.07
+  "usd_aprox_sessoes_principais": 2495.33,
+  "usd_aprox_geral": 3028.09
 }

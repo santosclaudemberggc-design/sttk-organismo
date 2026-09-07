@@ -3,7 +3,9 @@ name: skill-proposta-legal-anexo-i-base-legal
 description: "PROPOSTA — complemento à base legislativa do Hely: fundamento legal específico do Anexo I (DULI) é o Decreto Rio nº 48.719/21, não só o Decreto 55.622/2025"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_reuniao_mensal
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Kelsen (Legal)
   agente_alvo: Hely
   data: 2026-07-16
@@ -28,4 +30,10 @@ Se aprovada, a Skill de base legislativa do Hely passa a citar dois decretos sep
 - Pesquisado em 16/07/2026, rotina diária do Wallenberg.
 
 ## Governança
-Proposta pendente — não altera a Skill oficial do Hely até aprovação de Claudemberg na Reunião Mensal ao Conselho (Princípio 13).
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). Fica como conhecimento formalizado, aguardando a criação do Gestor/Agente correspondente para virar Skill executável.
+
+## Integração — 03/09/2026 (Kelsen)
+
+**NÃO virou Skill nem foi incorporada à Skill `legal-base-legislativa-bairro`.** A afirmação central desta proposta — que o Anexo I (DULI) tem base legal própria no Decreto 48.719/2021 — **contradiz fonte primária já confirmada pela casa**: `_indice_fontes.md` (Kelsen/Hely) registra, por consulta direta à Busca Fácil da SMU, que o Decreto 48.719/2021 (LICIN 1.0) está com status **"Sem efeito — em função da publicação do Decreto 55.622/2025"**, e um achado de 11/08/2026 confirma que a própria estrutura Anexo III/Anexo IV (citada pela proposta) é exclusiva do LICIN 2.0, sem precedente no 48.719/2021.
+
+Registrei a contradição como nota `[ATENÇÃO]` em `01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/_indice_fontes.md` (seção "Decreto Rio nº 55.622/2025 — LICIN 2.0"), com pendência para Hely verificar diretamente a página do Carioca Digital e o D.O. de 01/01/2025 antes de qualquer citação real. Até essa verificação, **a Skill de base legislativa não cita o 48.719/2021 como fundamento do Anexo I** — citar decreto sem efeito num DULI real seria vício grave. A segunda parte da proposta (credencial CREA/RJ ou CAU/RJ + comprovante de dimensão do lote para PRPA/PREO) também não foi confirmada nem refutada nesta rodada.

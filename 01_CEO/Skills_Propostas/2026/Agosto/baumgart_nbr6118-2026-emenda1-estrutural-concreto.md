@@ -4,7 +4,9 @@
 **Baumgart** (Estrutural) — equipe de Cardozo (Gestor Complementares). Esta é uma Skill de **Trilha A (Inteligência)**: normas técnicas e técnicas de projetar, não ferramenta de software. Alimenta o saber-fazer de Baumgart em projetos de estruturas de concreto armado (fundações, vigas, pilares, lajes).
 
 ## Status
-proposta — aguardando ratificação de Claudemberg
+ratificada — 03/09/2026, Claudemberg (rodada de auditoria com Wallenberg)
+
+**Convertida em Skill real (piloto) em 03/09/2026:** `.claude/skills/nbr6118-estrutural-concreto/SKILL.md` — acionável pela ferramenta `Skill` do harness, não só documento de referência. Este arquivo permanece como registro histórico da pesquisa original.
 
 ## O que esta Skill ensina
 

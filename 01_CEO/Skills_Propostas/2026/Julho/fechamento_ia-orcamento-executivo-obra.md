@@ -3,7 +3,9 @@ name: skill-proposta-fechamento-ia-orcamento-executivo
 description: "PROPOSTA — panorama de ferramentas de IA para orçamento executivo de obra (quantitativo automático, base SINAPI/CUB/TCPO) relevante para o futuro Gestor Fechamento"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_reuniao_mensal
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Gestor Fechamento — não implantado
   data: 2026-07-19
 ---
@@ -30,4 +32,4 @@ Quando o Gestor Fechamento for criado, considerar esta Skill como ponto de parti
 - Pesquisado em 19/07/2026, rotina diária do Wallenberg
 
 ## Governança
-Proposta pendente — não cria o Gestor Fechamento nem qualquer Agente (isso é decisão estrutural, fora do escopo desta rotina). Fica arquivada para quando Claudemberg decidir avançar a construção desse Gestor (Princípio 13).
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). **Convertida em Skill real em 03/09/2026:** `.claude/skills/ia-orcamento-executivo-obra/SKILL.md`.

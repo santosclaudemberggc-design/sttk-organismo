@@ -3,7 +3,9 @@ name: skill-proposta-fechamento-manual-proprietario-garantias
 description: "PROPOSTA — Manual do Proprietário (NBR 14037) e prazos de garantia (NBR 17170) como entregável obrigatório do fechamento, distinto do Habite-se/Aceitação; relevante para o futuro Gestor Fechamento"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_reuniao_mensal
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Gestor Fechamento — não implantado
   data: 2026-07-30
 ---
@@ -38,4 +40,4 @@ Fecha um terceiro ângulo do mesmo Gestor: Orçamento Executivo (19/07, custo an
 Quando o Gestor Fechamento for criado: (a) incluir a produção do Manual do Proprietário como etapa formal do fluxo de fechamento, não como anexo informal; (b) decidir explicitamente se a Sttickler assume o papel normativo de "construtor/incorporador" para esta obrigação, dado o modelo de Construção do Zero; (c) usar a NBR 17170 como referência de prazo de garantia, não mais o Anexo D da 15575.
 
 ## Governança
-Proposta pendente — não cria o Gestor Fechamento nem qualquer Agente (decisão estrutural, fora do escopo desta rotina). Fica arquivada para quando Claudemberg decidir avançar a construção desse Gestor (Princípio 13).
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). **Convertida em Skill real em 03/09/2026:** `.claude/skills/nbr14037-17170-manual-proprietario/SKILL.md`.

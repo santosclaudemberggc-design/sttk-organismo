@@ -62,6 +62,19 @@ Sem interferência humana.
    └─ Separe por owner: Qual pendência é de qual Gestor?
    └─ Reconcilie: Notion "Treinos e Testes" vs pendencias.json
 
+✅ Passo 2.5: PORTÃO DE TRABALHO — Validar se fila tem conteúdo
+   ├─ Verifica: `pendencias.json` tem itens com alc:"auto" abertos?
+   ├─ Verifica: `Skills_Propostas/2026/{mês}/` tem .md/proposta?
+   ├─ Verifica: Notion "Treinos e Testes" tem Status="pendente"?
+   │
+   ├─ SE TUDO VAZIO (fila = 0):
+   │  └─ Registra: "Portão validado: fila vazia em {data} {hora}"
+   │  └─ **ENCERRA AQUI** — Não abre Gestor nenhum (economia de tokens)
+   │  └─ Status geral: "Drenagem Contínua: rodada completada (fila vazia)"
+   │
+   └─ SE FILA TEM CONTEÚDO (alc:auto + skills + notion > 0):
+      └─ Prossiga para Passo 3 (abre Gestores com fila real)
+
 ═══════════════════════════════════════════════════════════════
 🔹 FASE 2: LEITURA DE SKILLS (5 min)
 
@@ -200,11 +213,13 @@ Sem interferência humana.
 
 ✅ Passo 8a: LEARNING AGENT — Auto-melhoria da rotina
    
-   1. PESQUISE VÍDEOS:
-      ├─ YouTube: "Autonomous agents workflow", "Multi-agent systems", "Claude AI"
-      ├─ Instagram: maxcarrau.ia, 99hud, seanaiux, o.engenheirolider, sobre.arq, goxyvi
+   1. PESQUISE VÍDEOS: **[AMPLIADO 03/09/2026, Claudemberg — não fica preso a poucas contas nem só YouTube]**
+      ├─ YouTube: "Autonomous agents workflow", "Multi-agent systems", "Claude AI" — busca ampla, sem lista fixa de canal
+      ├─ Instagram/Facebook (Meta), busca ampla — sem lista fixa de perfil, deixe a busca achar quem está relevante agora
+      ├─ Outras plataformas de vídeo além do YouTube (ex.: Vimeo, canais técnicos que hospedam vídeo fora do YouTube) que gerem conteúdo sobre "Autonomous agents workflow", "Multi-agent systems", "Claude AI"
       ├─ WebSearch: "automação delegação", "otimização rotinas", "IA arquitetura"
-      └─ Localize: 3-5 fontes alta qualidade (views, data recente, confiável)
+      ├─ Assista de verdade via `/watch:watch` — vídeo longo: transcreva; reel/curto: leia comentários também
+      └─ Localize: 3-5 fontes alta qualidade (views, data recente, confiável) — mais se a rodada justificar
    
    2. ANALISE VIA /watch:watch:
       └─ Vídeos longos: Transcreva e extraia implementações concretas
@@ -573,9 +588,10 @@ Pesquise vídeos sobre:
 ├─ Claude AI tutorials
 ├─ IA em arquitetura
 └─ Produtividade em construção
-Fontes paralelas:
-├─ YouTube: "Autonomous agents", "Claude AI", vídeos longos (transcrever)
-├─ Instagram: maxcarrau.ia, 99hud, seanaiux, o.engenheirolider, goxyvi
+Fontes paralelas: **[AMPLIADO 03/09/2026, Claudemberg — não fica preso a poucas contas nem só YouTube]**
+├─ YouTube: "Autonomous agents", "Claude AI", vídeos longos (transcrever via /watch:watch) — busca ampla, sem canal fixo
+├─ Instagram/Facebook (Meta) — busca ampla, sem lista fixa de perfil
+├─ Outras plataformas de vídeo além do YouTube que gerem esse tipo de conteúdo
 ├─ WebSearch: Implementações reais, case studies
 Localize: 3-5 fontes de alta qualidade (views adequados, data recente)
 Analise:

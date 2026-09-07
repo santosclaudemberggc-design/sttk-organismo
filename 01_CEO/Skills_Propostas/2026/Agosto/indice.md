@@ -4,6 +4,8 @@
 **Mês:** Agosto 2026  
 **Atualização:** 31/08/2026
 
+**Nota 03/09/2026:** todas as Skills de Agosto listadas neste índice (e as demais do mês, fora da janela rolling abaixo) foram **ratificadas em bloco por Claudemberg** nesta data, exceto as já arquivadas/implantadas. `legal_lei-complementar-281-2025-cau-rj.md` foi **removida** por duplicidade — conteúdo superado pela versão de Setembro (`legal_lc281-2025-condicoes-especiais-licenciamento-rj.md`).
+
 ---
 
 ## Skills Criadas Nesta Semana (Semana 01-05/09)

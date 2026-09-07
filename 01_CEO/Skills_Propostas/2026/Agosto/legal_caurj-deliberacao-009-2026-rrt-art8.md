@@ -4,7 +4,7 @@
 **Kelsen** (Gestor Legal) e **Hely** (Executor Legal). Esta é uma Skill de **Trilha A (Inteligência)**: legislação regulatória profissional, não ferramenta de software. Alimenta o controle de Kelsen sobre mudanças no regime de Registro de Responsabilidade Técnica que afetam todo projeto com responsável técnico.
 
 ## Status
-proposta — v1.0 — aguardando ratificação de Claudemberg
+ratificada — v1.0 — 03/09/2026, Claudemberg (rodada de auditoria com Wallenberg). **⚠️ NÃO virou Skill executável, por decisão do Kelsen — ver "Integração — 03/09/2026" no fim do documento antes de usar qualquer informação daqui.** Resumo: o Art. 8º já tem §5º-§8º vigentes (não é "espaço vazio" como o corpo abaixo descreve) — a proposta do CAU-RJ colide em numeração com isso. Conteúdo permanece só como nota de monitoramento em `_indice_fontes.md`.
 
 ## O que esta Skill ensina
 
@@ -63,3 +63,13 @@ A **Deliberação Plenária CAU/RJ Nº 009/2026** (originada na CEP — Comissã
 **Versão:** v1.0  
 **Criada em:** 31/08/2026  
 **Rotina:** Diária Skills v2.7 — Seg-Qui, Passo 3
+
+---
+
+## Integração — 03/09/2026 (Kelsen)
+
+**NÃO virou Skill formal**, apesar da ratificação de 03/09/2026. Decisão deliberada de Kelsen: esta proposta descreve uma **sugestão do CAU/RJ ao CAU/BR, ainda não publicada** — e colide com a numeração já vigente do próprio Art. 8º da Resolução CAU/BR 91/2014 (que já tem §5º e vai até §8º; RRT Derivado já é matéria do inciso IV + §4º). Essa colisão já estava registrada **antes** da ratificação, em `pendencias.json` (item `skill-caurj-rrt-009-2026-lacuna-numeracao`, aberto em 31/08/2026, com recomendação explícita de "devolver à Diária de Skills antes de ratificar") — a ratificação em bloco de 03/09/2026 ocorreu sem essa correção ter sido feita.
+
+Formalizar como Skill um texto que colide com a norma vigente já conferida pela própria casa seria repetir o erro já registrado no histórico do Kelsen ("Conclusão marcada RESOLVIDO merece mais desconfiança, não menos"). O conteúdo desta proposta **permanece exatamente onde já estava**, como nota de monitoramento: `01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/_indice_fontes.md`, seção "REGISTRO — 31/08/2026 — DOMÍNIO CAU/RRT". A nova Skill `legal-art-crea-responsabilidade-tecnica-rj` (item irmão desta rodada) referencia esta situação numa "Nota de escopo", para quem procurar RRT ali não pense que foi esquecido.
+
+Gatilho para reabrir: qualquer Resolução nova do CAU/BR de fato alterando o Art. 8º, ou providência formal do CAU/BR sobre a DP CAU/RJ 009/2026. `pendencias.json` foi atualizado em 03/09/2026 registrando este desfecho.

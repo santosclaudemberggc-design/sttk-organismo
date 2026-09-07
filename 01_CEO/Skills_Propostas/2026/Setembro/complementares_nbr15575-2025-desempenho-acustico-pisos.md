@@ -15,7 +15,9 @@ Complementarmente: **Lúcio/Oscar** — a definição de layout e programa de ne
 
 ## Status
 
-proposta
+ratificada — 03/09/2026, Claudemberg (rodada de auditoria com Wallenberg)
+
+**Convertida em Skill real em 03/09/2026:** `.claude/skills/nbr15575-acustico-pisos/SKILL.md`
 
 ## Versão
 

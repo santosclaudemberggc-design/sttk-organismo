@@ -3,7 +3,9 @@ name: skill-proposta-complementares-automacao-residencial-2026
 description: "PROPOSTA — Tendências 2026 de automação residencial (IA local, design invisível, centralização, eficiência energética) como referência de mercado para o futuro Agente de Automação"
 metadata:
   type: skill_proposta
-  status: proposta_pendente_reuniao_mensal
+  status: ratificada
+  ratificada_em: 2026-09-03
+  ratificada_por: "Claudemberg, rodada de auditoria com Wallenberg"
   gestor_alvo: Gestor Complementares — não implantado
   agente_alvo: futuro Agente de Automação (coordenação do parceiro externo, não produção — ver capacidade real)
   data: 2026-07-20
@@ -34,4 +36,4 @@ Se aprovada: o Agente de Automação passa a levantar, já no Estudo Preliminar,
 - Pesquisado em 20/07/2026, rotina diária do Wallenberg. Fontes são conteúdo de mercado/blog especializado, não norma técnica — sem exigência regulatória associada até o momento (Princípio 3).
 
 ## Governança
-Proposta pendente — Gestor Complementares ainda não foi criado; esta Skill fica arquivada para quando ele for aprovado (Reunião Semanal) e sua equipe for formada. Não altera nenhuma Skill oficial hoje. Decisão final de Claudemberg na Reunião Mensal ao Conselho (Princípio 13).
+RATIFICADA em 03/09/2026 por Claudemberg (rodada de auditoria com Wallenberg). **Convertida em Skill real em 03/09/2026:** `.claude/skills/automacao-residencial-tendencias/SKILL.md`.

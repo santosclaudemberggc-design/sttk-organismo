@@ -7,6 +7,9 @@ metadata:
   data: 2026-08-11
   fonte_principal: "helonic.com (site oficial + about), ycombinator.com/companies/helonic, marketscale.com (cobertura independente do lote YC 2026)"
   status: proposta_arquivada
+  arquivada_em: 2026-09-03
+  motivo_arquivamento: "Sem MCP/API pública confirmada — mesmo tratamento de SWAPP.AI, Togal.AI, Hypar. Ratificado por Claudemberg (item 49, pauta 31/08/2026)."
+  inteligencia_reaproveitada_em: "01_CEO/Skills_Propostas/2026/Julho/fechamento_compatibilizacao-nbr-iso19650-clash-detection.md — Seção 2 (Gestor Fechamento, futuro Agente de Compatibilização)"
 ---
 
 # Helonic — QA/QC e detecção de conflitos multidisciplinares em pranchas 2D
