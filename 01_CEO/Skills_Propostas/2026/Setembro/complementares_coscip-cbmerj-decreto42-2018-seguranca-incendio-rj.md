@@ -6,7 +6,7 @@
 - **Cross-disciplina geral** — todo projeto de Construção do Zero no Estado do RJ precisa conhecer as fronteiras de aplicação do COSCIP, mesmo quando a edificação é isenta de aprovação pelo CBMERJ
 
 ## Status
-proposta — v1.1 (04/09/2026, corrigida)
+avaliada — pronta para ratificação de Claudemberg (Cardozo, Drenagem Contínua 07/09/2026). v1.1 (04/09/2026, corrigida) — sem erro factual encontrado, fontes primárias citadas, escopo bem distinguido do Kelsen (isenção/exigibilidade) vs. Complementares (mapa de NTs por disciplina). Procede como conhecimento Trilha A para Landell e Baumgart. Lacunas remanescentes (texto integral das NTs mais relevantes, tabela do Anexo III, fronteira exata A-1/A-4 em lote compartilhado) são do mesmo tipo já aceito em Skills anteriores — o Agente lê a fonte primária antes de dimensionar, não impedem ratificação.
 
 ## ⚠️ Correção 04/09/2026 — não é lacuna nova, é expansão de conhecimento já existente
 

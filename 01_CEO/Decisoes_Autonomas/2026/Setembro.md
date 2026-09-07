@@ -4,6 +4,24 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-07] Drenagem Contínua v2.3 (Segunda, 10:15) — Portão de Trabalho ativado, Cardozo único Gestor acionado
+
+**Contexto:** disparo agendado da `wallenberg-drenagem-continua-local`. Verificação do Portão de Trabalho (Passo 2.5): `pendencias.json` com zero itens `alc:"auto"`+`status:"aberta"` (46 resolvida, 3 descartada, 1 pausada); Notion "Treinos e Testes" zero pendente (`notion-query-data-sources`, filtro Status=pendente); mas a Skill `complementares_coscip-cbmerj-decreto42-2018-seguranca-incendio-rj.md` (criada 04/09 pela Diária) seguia com Status "proposta", nunca avaliada por nenhuma rodada de Drenagem — a rodada de 04/09 (mesmo dia) tinha reportado "fila vazia" sem capturá-la. Como havia 1 item real (skill nova, owner Cardozo), o Portão não fechou a rodada: só Cardozo foi acionado — Kelsen e Lúcio confirmados sem fila (nenhuma pendência aberta com seu owner, nenhuma Skill de Setembro destinada a eles) e não foram chamados, conforme a regra de 02/09 (Opção B/Alvo A).
+
+**Executado por Cardozo (Autonomous), único Gestor acionado:**
+- Reconciliou a própria fila em `pendencias.json` (zero itens abertos seus).
+- **Avaliou a Skill COSCIP/CBMERJ na íntegra — PROCEDE.** Conhecimento Trilha A válido para Landell (SPDA/alarme/iluminação de emergência) e Baumgart (resistência ao fogo/TRRF/compartimentação), sem erro factual, escopo bem separado do que já é do Kelsen. Marcada "avaliada — pronta para ratificação de Claudemberg" (Cardozo não ratifica, só avalia).
+- **Varredura de melhoria (Passo 7) — achado real:** os 6 Agentes de Complementares seguem em Shadow desde 01/09/2026 (Exame 1) sem Exame 2 (Shadow→Assisted) administrado — uma semana parado. Montar 3 casos-teste × 6 Agentes é trabalho grande demais para uma rodada de Drenagem sem virar exame raso. **Nova pendência aberta:** `cardozo-exame2-6-agentes-nao-administrado` (owner Cardozo, `alc:"planejado"`) — fica para rodada dedicada futura, fora da Drenagem Contínua.
+- Achado de ferramenta (não resolvido): Cardozo não conseguiu confirmar a fila do Notion "Treinos e Testes" pelo próprio lado — `notion-fetch` não faz busca por título, só por ID/URL exato, e ele não tem o ID do database salvo no próprio estado. Aceitou a confirmação já feita por Wallenberg, mas o gap persiste (mesma classe já registrada em 02/09). **Recomendação:** salvar o ID/URL do database "Treinos e Testes" no `_estado_cardozo.md` para ele confirmar sozinho nas próximas rodadas.
+
+**Learning Agent (Passo 8a) — executado (segunda-feira + execução real na rodada):** pesquisa web sobre padrões de orquestração multi-agente 2026 (circuit breakers/budget de tokens, loop detection, approval gates, orchestration layer unificado, log estruturado com correlation ID). Mapeamento contra a rotina: a maioria já implementada (Portão de Trabalho = budget/circuit breaker; verificação de disparo duplicado = loop detection; Gate do Maurício = approval gate; cadeia CEO→Gestor→Agente = orchestration layer). Único gap identificado (log "tamper-evident" com correlation ID formal) é prática de auditoria de escala enterprise, não prioritária agora. **Nenhuma modificação ao `SKILL.md`.**
+
+**Painel do Fundador:** não tocado — nenhuma mudança de capacidade real do organismo hoje (Skill "avaliada" ainda não é Skill ativa; pendência nova é baixa prioridade/planejada). Princípio 15.
+
+**Fechamento:** 1 Gestor acionado (Cardozo), 1 com execução real, 0 itens de `pendencias.json` fechados (1 novo aberto: `cardozo-exame2-6-agentes-nao-administrado`), 1 Skill avaliada (aguarda ratificação de Claudemberg). Nenhum item cruzou a fronteira.
+
+---
+
 ### [2026-09-04, mesma rodada] Auto-correção: Skill COSCIP não era lacuna nova + JSON quebrado em `pendencias.json` encontrado e corrigido
 
 **Contexto:** ao redigir a entrada do Painel do Fundador (Passo 6), a checagem de eventos desde a última atualização (01/09) levou a reler o feed histórico e achar uma entrada de **28/07/2026** já cobrindo COSCIP/CBMERJ — contradizendo a Skill que eu tinha acabado de escrever hoje como "lacuna nunca coberta antes".
