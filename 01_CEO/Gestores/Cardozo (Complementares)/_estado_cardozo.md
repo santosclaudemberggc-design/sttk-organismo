@@ -9,6 +9,11 @@
 
 ## 1. Onde Parei / Em Andamento
 
+**Rodada 08/09/2026 (tarde) — CORREÇÃO CRÍTICA: Exame 2 (6 Agentes) movido para dentro do database "Treinos e Testes".**
+- Claudemberg apontou que o Exame 2 (agendado 08-12/09) precisava estar DENTRO do database "Treinos e Testes" (não numa página solta) — é o padrão que a Drenagem Contínua usa para reconciliar (Passo 5.b: filtro Gestor+Status). A página solta criada em 07/09 (`https://app.notion.com/p/3d492372eae181c6aefdfc95728c353a`) não é encontrada por essa query.
+- **Corrigido por Wallenberg:** 12 linhas criadas na data source do database (uma por exame: 6 Agentes × E1+E2), `Gestor="Cardozo"`, `Status="pendente"`, `Exame="Shadow→Assisted"`, datadas 08/09 (Baumgart+Landell), 09/09 (Saturnino+Glaziou), 10/09 (Tenreiro+Mindlin). Confirmado via SQL query: 12/12 presentes.
+- **Gap de ferramenta resolvido nesta mesma rodada:** IDs do database salvos abaixo (Seção 2) — a partir de agora eu reconcilio "Treinos e Testes" sozinho, sem depender da confirmação de Wallenberg.
+
 **Rodada 08/09/2026 — DRENAGEM CONTÍNUA v2.3 (terça-feira). Acionamento: avaliar Skill NBR 6120:2019.**
 - **Skill `baumgart_nbr6120-2019-acoes-cargas-calculo-estruturas.md` (v1.0) avaliada — decisão: PROCEDE.** Trilha A/Inteligência para Baumgart (principal — cargas estruturais) + cross Saturnino (cargas áreas molhadas), Tenreiro (revestimentos), Glaziou (coberturas verdes), Landell (equipamentos). Tríade estrutural completa agora (6118 ago + 6122 07/09 + **6120 agora**). Substância técnica correta; escopo bem mapeado; confiança apropriada (média — fontes secundárias, ABNT não lida, padrão esperado); prioridade alta (alimenta dimensionamento); risco jurídico nulo. Sem lacunas não resolvíveis por Agente (aquisição ABNT é de Wallenberg). Arquivo marcado como "avaliada — pronta para ratificação de Claudemberg". 
 
@@ -68,6 +73,12 @@
 ---
 
 ## 2. Pendências Abertas
+
+**✅ RESOLVIDO 08/09/2026 — Gap de ferramenta "Treinos e Testes" (achado original 02/09, reafirmado 07/09):** eu não conseguia consultar o database sozinho porque `notion-fetch` não busca por título, só por ID/URL exato, e eu não tinha o ID salvo. **IDs canônicos, salvar de vez:**
+- Database: `6bf06266-94ac-4043-92da-6cb0fe202273` (url: `https://app.notion.com/p/6bf0626694ac404392da6cb0fe202273`)
+- Data source (usar em query SQL/rows): `collection://7b0728a8-fd57-419c-8a51-d5fe3794d165`
+- Schema: `Agente` (title), `Gestor` (text), `Exame` (text), `Caso-teste` (text), `Status` (select: pendente/em execução/aprovado/reprovado), `Resultado` (text), `Criado em`/`Atualizado em` (date)
+- Para reconciliar minha fila: SQL `SELECT * FROM "collection://7b0728a8-fd57-419c-8a51-d5fe3794d165" WHERE "Gestor" = 'Cardozo'`
 
 **✅ RESOLVIDO 03/09/2026 — Desincronia de arquivo de estado (achado original 27/08):** existiam DOIS arquivos `_estado_cardozo.md` (`01_CEO/Gestores/Complementares/` e este, `01_CEO/Gestores/Cardozo (Complementares)/`). Consolidados por Wallenberg nesta data, sem perda — este arquivo é o único daqui em diante, e `.claude/agents/cardozo.md` foi corrigido para apontar pra cá. A pasta `01_CEO/Gestores/Complementares/` (órfã) foi removida.
 

@@ -4,6 +4,25 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-08, ao vivo] Correção — Exame 2 (6 Agentes Cardozo) movido para dentro do database "Treinos e Testes"
+
+**Contexto:** Claudemberg apontou, ao vivo, que o Exame 2 (agendado 08-12/09/2026, decidido na Reunião Semanal de 07/09) precisava estar registrado DENTRO do database Notion "Treinos e Testes" — a estrutura padrão que a Drenagem Contínua usa para reconciliar pendências de Gestor (Passo 5.b, filtro Gestor+Status). Cardozo tinha criado apenas uma página solta (`https://app.notion.com/p/3d492372eae181c6aefdfc95728c353a`) com o cronograma — essa página **não é encontrada** pela query que a Drenagem roda, então na prática o Exame 2 estava invisível para o sistema, apesar de "documentado".
+
+**O que foi feito:**
+1. Consultado o database "Treinos e Testes" (`collection://7b0728a8-fd57-419c-8a51-d5fe3794d165`) via SQL — confirmado 0 linhas com `Gestor="Cardozo"` antes da correção.
+2. Criadas 12 linhas (páginas) dentro do database, uma por exame: 6 Agentes × (E1 simples + E2 complexo). `Gestor="Cardozo"`, `Exame="Shadow→Assisted"`, `Status="pendente"`, `Caso-teste` com a descrição resumida de cada caso.
+   - 08/09: Baumgart (E1 sapata rasa / E2 hélice contínua NBR 6122), Landell (E1 iluminação 100m² / E2 SPDA Decreto 42/2018)
+   - 09/09: Saturnino (E1 água fria 3 banheiros / E2 reuso NBR 16783), Glaziou (E1 drenagem 500m² / E2 jardim de chuva)
+   - 10/09: Tenreiro (E1 piso cimento queimado / E2 acústico NBR 15575:2025), Mindlin (E1 prancha técnica / E2 compilação completa)
+3. Verificado via SQL: 12/12 linhas presentes, todas `Status="pendente"`.
+4. **Corrigido gap de ferramenta do Cardozo (achado desde 02/09, nunca resolvido):** ele não tinha o ID do database salvo no próprio estado, por isso nunca conseguia reconciliar "Treinos e Testes" sozinho — sempre dependia da confirmação de Wallenberg. IDs (database + data source + schema) agora salvos em `_estado_cardozo.md`, Seção 2, marcados como resolvido. A partir de agora Cardozo reconcilia sozinho.
+
+**Por quê:** Sem isso, a semana de exames (08-12/09) rodaria sem que a Drenagem Contínua ou o próprio Cardozo enxergassem a fila — decisão da Reunião Semanal ficaria só no papel.
+
+**Como desfazer:** apagar as 12 páginas criadas no database (IDs retornados na chamada de criação); reverter a Seção 2 de `_estado_cardozo.md` (remover bloco de IDs); a página solta original permanece intacta como referência.
+
+---
+
 ### [2026-09-08, 10:15-11:30] Drenagem Contínua v2.3 — 5ª Rodada (seg)
 
 **Contexto:** Execução automática de `wallenberg-drenagem-continua-local` — Portão de Trabalho ativado (Passo 2.5).
@@ -455,5 +474,23 @@ Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e co
 - Claudemberg: ratificar 2 Skills
 - Wallenberg: card Cardozo ao Painel; 2 ações Drive Kelsen quando Claudemberg presente
 - Wallenberg: verificar 2 conectores MCP (Lúcio, 08/08) antes de reportar Skill fechada
+
+---
+
+### [2026-09-08] Rotina Diária Skills v2.8 → v2.9 — Item 2: Fluxo de Ativação de Skills
+
+**Contexto:** conversa ao vivo com Claudemberg (Função de Wallenberg — melhoria do organismo). Item 2 de 6 da lista de melhorias. Decisão alinhada item a item; Claudemberg aprovou o recorte e pediu para aplicar na rotina de Skills.
+
+**O que decidiu:** Skill de Trilha A (Inteligência — normas/técnicas/regras) deixa de nascer como `proposta` parada esperando a Reunião Semanal. Passa a: (1) Gestor dono valida no mesmo dia (erro factual / não é duplicata / lacunas marcadas) via ferramenta `Agent`; (2) ativa em produção imediatamente (`Status: ativa`); (3) Claudemberg revisa retroativamente na Semanal — deixa de ser portão de entrada, vira revisão com poder de reverter. Skill sem fonte primária lida ativa com **selo de ressalva** (`Status: ativa-com-ressalva` + bloco de aviso obrigatório no topo; Agente sinaliza a lacuna ao aplicar em caso real; nunca vira número final de documento de cliente sem fechar a fonte). Trilha B (ferramentas / Passo 8) e Skill de Gestor não implantado (Fechamento) seguem `proposta` como antes — ferramenta precisa instalar/testar, Gestor inexistente não tem quem valide.
+
+**Por quê:** o modelo de governança do organismo (reescrita de 20/07/2026) já mandava "ativar por conta própria, ratificar depois" — a rotina tinha derivado para carimbar tudo `proposta` e represar até ratificação em bloco (caso 07/09). Construir capacidade antes de ter caso real é treino deliberado, não desperdício (posição de Claudemberg); o gargalo era o portão de ativação, não o ritmo de produção. O selo de ressalva protege a parte legal/normativa — parâmetro urbanístico ativado como verdade final com fonte secundária é retrabalho dobrado (projeto refeito para entrar na legalidade).
+
+**O que alterou:** `01_CEO/wallenberg-rotina-diaria-skills-v2_SKILL.md` — frontmatter (v2.9.0), Passo 3 (2 blocos novos: Fluxo de Ativação + Selo de Ressalva), Passo 4 (coluna Status do índice), Regra de Governança (linha v2.9), Histórico de Versões (linha 2.9), rodapé.
+
+**Backup:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-08/wallenberg-rotina-diaria-skills-v2_SKILL_pre-item2-ativacao.md`
+
+**Pendente de propagação (não feito nesta sessão):** `Checklist_Diaria.html`, `wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md` e `wallenberg_manual_operacional_rotina_diaria_skills.md` ainda descrevem o fluxo antigo (Skill → proposta). Atualizar antes da próxima execução seg-qui, ou na leva de edições em bloco das melhorias 1–6. PDF gêmeo do SKILL.md não regenerado (CronJob 20:00 cobre).
+
+**Como desfazer:** `cp "01_CEO/Decisoes_Autonomas/_backups/2026-09-08/wallenberg-rotina-diaria-skills-v2_SKILL_pre-item2-ativacao.md" "01_CEO/wallenberg-rotina-diaria-skills-v2_SKILL.md"` e remover esta entrada.
 
 ---
