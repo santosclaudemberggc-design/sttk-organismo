@@ -4,6 +4,28 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-08, continuação pós-Drenagem] Exame 2 — Baumgart aprovado (1/6) + correção de Skills não instaladas
+
+**Contexto:** Após a 5ª rodada da Drenagem Contínua (ver entrada abaixo), Claudemberg apontou (ao vivo) que a verificação do Notion "Treinos e Testes" tinha sido feita incorretamente (assumida de rodada anterior, não consultada de fato). Consulta real revelou 12 casos-teste do Exame 2 dos 6 Agentes de Cardozo, recém-inseridos por Claudemberg (ver entrada seguinte, mesma data). Claudemberg autorizou: (1) atualizar `pendencias.json` refletindo o achado; (2) acionar Cardozo para iniciar a administração do primeiro par (Baumgart, previsto 08/09).
+
+**O que foi feito:**
+
+1. **`pendencias.json` atualizado** — item `cardozo-exame2-6-agentes-nao-administrado` de `status:"aberta"` para `status:"em_andamento"`, registrando os 12 casos-teste e o cronograma (08/09 Baumgart+Landell, 09/09 Saturnino+Glaziou, 10/09 Tenreiro+Mindlin).
+
+2. **Cardozo acionado** — administrou o Exame 2 de Baumgart (2 casos: E1 sapata rasa isolada/Botafogo, E2 hélice contínua/Ipanema esquina). Releu as 3 Skills técnicas de Baumgart antes de montar as armadilhas (baseadas em norma real). **Resultado: 2/2 APROVADO.** Baumgart identificou todas as armadilhas plantadas (10 no total entre os 2 casos, incluindo 1 isca reversa no E2 — cimento 400kg/m³ conforme, não erro), citou fonte normativa em cada afirmação, e ainda encontrou problemas adicionais não plantados (comparação ELU vs. tensão admissível inválida; recalque diferencial ELS não verificado; exigência de ATP/CC3, vistoria cautelar de vizinhos e monitoramento geotécnico no caso da hélice contínua). Auditados os arquivos que Baumgart alegou ter gravado — confirmados. **Baumgart promovido Shadow→Assisted** (critério: individual por Agente, não em lote — cada Agente é promovido ao concluir seus próprios 2 casos, independente do cronograma dos demais). Progresso do lote: 1/6.
+
+3. **Notion atualizado por Wallenberg** — Cardozo não tem ferramenta de escrita no Notion (só leitura: `notion-fetch`, `notion-query-data-sources`). As 2 páginas (Baumgart E1/E2) foram atualizadas manualmente: `Status: pendente → aprovado`, `Resultado` preenchido com o relato completo, `Atualizado em: 08/09/2026`.
+
+4. **Achado colateral corrigido — Skills não instaladas:** Baumgart sinalizou (durante o Exame) que NBR 6122:2019 (ratificada 07/09) e NBR 6120:2019 (avaliada/PROCEDE 08/09, mesma rodada) nunca tinham sido instaladas em `.claude/skills/` — só existiam como arquivo em `Skills_Propostas/`. Confirmado por Glob: 24 Skills instaladas, nenhuma das 2 novas. Mesmo padrão de erro já registrado na memória `feedback_ativado_so_se_instalado_de_verdade` (03/09/2026). **Corrigido:** criadas `.claude/skills/nbr6122-2019-fundacoes/SKILL.md` e `.claude/skills/nbr6120-2019-cargas/SKILL.md`, frontmatter padrão (name+description com gatilhos de uso), conteúdo condensado do arquivo-fonte. NBR 6122 (já ratificada) está oficialmente ativa agora. **NBR 6120 está tecnicamente instalada mas ainda aguarda ratificação formal de Claudemberg antes de uso em caso real de cliente** — uso em Exame sintético (como o de hoje) segue o mesmo padrão já aceito em exames anteriores.
+
+**Por quê:** Sem a correção de instalação, Baumgart (e qualquer Agente futuro) estaria usando conteúdo técnico por acesso direto a arquivo solto, não pelo mecanismo oficial de Skill — mesmo risco de "ativado sem instalado de verdade" já visto antes.
+
+**Como desfazer:** reverter os 2 arquivos `.claude/skills/nbr6122-2019-fundacoes/` e `.claude/skills/nbr6120-2019-cargas/` (git); reverter `pendencias.json` para o estado anterior a esta entrada; nas 2 páginas do Notion, reverter `Status` para "pendente" e limpar `Resultado`/`Atualizado em`.
+
+**Próxima ação:** Cardozo administra Landell (previsto 08/09, mesma data, mas fora desta rodada — cronograma de 1-2 Agentes/dia para não virar produção rasa); depois Saturnino+Glaziou (09/09); Tenreiro+Mindlin (10/09).
+
+---
+
 ### [2026-09-08, ao vivo] Correção — Exame 2 (6 Agentes Cardozo) movido para dentro do database "Treinos e Testes"
 
 **Contexto:** Claudemberg apontou, ao vivo, que o Exame 2 (agendado 08-12/09/2026, decidido na Reunião Semanal de 07/09) precisava estar registrado DENTRO do database Notion "Treinos e Testes" — a estrutura padrão que a Drenagem Contínua usa para reconciliar pendências de Gestor (Passo 5.b, filtro Gestor+Status). Cardozo tinha criado apenas uma página solta (`https://app.notion.com/p/3d492372eae181c6aefdfc95728c353a`) com o cronograma — essa página **não é encontrada** pela query que a Drenagem roda, então na prática o Exame 2 estava invisível para o sistema, apesar de "documentado".
@@ -492,5 +514,38 @@ Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e co
 **Pendente de propagação (não feito nesta sessão):** `Checklist_Diaria.html`, `wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md` e `wallenberg_manual_operacional_rotina_diaria_skills.md` ainda descrevem o fluxo antigo (Skill → proposta). Atualizar antes da próxima execução seg-qui, ou na leva de edições em bloco das melhorias 1–6. PDF gêmeo do SKILL.md não regenerado (CronJob 20:00 cobre).
 
 **Como desfazer:** `cp "01_CEO/Decisoes_Autonomas/_backups/2026-09-08/wallenberg-rotina-diaria-skills-v2_SKILL_pre-item2-ativacao.md" "01_CEO/wallenberg-rotina-diaria-skills-v2_SKILL.md"` e remover esta entrada.
+
+---
+
+### [2026-09-08] Melhorias do Organismo — Itens 4, 5 e 6 (parte) aplicados
+
+**Contexto:** continuação da conversa ao vivo de 08/09 (Função de Wallenberg — lista de 6 melhorias). Itens 4, 5 e 6 decididos item a item com Claudemberg; aplicados nesta sessão os que são de baixo risco. Itens 1 (Fechamento) fica atrás do Cardozo; 6.2 e 6.5 (reescritas maiores) ficam para passe dedicado.
+
+**Item 4 — Cadência da reauditoria legal → varredura mensal de documentos no Drive, por Gestor.**
+- `wallenberg-drenagem-continua-local/SKILL.md`: Passo 7 ganhou trava "não reconferir vigência legislativa na varredura diária"; novo **Passo 7.5** — só na 1ª rodada útil do mês, cada Gestor acionado varre os documentos dele no Drive (Kelsen POPs Legal + base legislativa, Lúcio POP-PROJ, Cardozo os 6 POPs de disciplina). Autônomo: sinaliza + corrige erro objetivo + exclui/trasheia/dedup + cria doc faltante (via conector MCP de Drive). Não autônomo: reescrita canônica de conteúdo (só sinaliza). Descoberta de lei/trâmite novo segue com a Rotina Diária Skills (Passo 1); checagem de vigência por caso de cliente segue inegociável.
+- Base: teste real de 08/09 confirmou que o conector MCP de Drive cria + edita + trasheia arquivo existente (Service Account não fazia; MCP faz). Memória `feedback_drive_e_fonte_unica_documentos_existentes` corrigida.
+
+**Item 5 — Inventário de Capacidade.**
+- Novo arquivo `01_CEO/Inventario_Capacidade/inventario_capacidade_sttk.md`, dono Wallenberg. Regra: sem linha "testado assim, nesta data" = capacidade tratada como indisponível. Populado com o que está verificado (Drive MCP, Drive Service Account, Notion, Agent, WebSearch, watch, scripts PDF, token_tracking, Painel, scheduled-tasks) e o que está presente-mas-não-validado (Vitruvius, Higgsfield, Claude in Chrome, cadeia Cardozo→6 Agentes).
+
+**Item 6.1 — Semanal → quinzenal em teste (08/09 a 08/10).**
+- Cron de `wallenberg-reuniao-semanal` mudado de `30 10 * * 1` para `30 10 8-14,22-28 * 1` (2ª feira a cada ~14 dias). Nota datada no SKILL.md com gatilho de reavaliação em 08/10 e reversão.
+
+**Item 6.3 — Painel só com mudança de capacidade real.**
+- `drenagem-continua-local/SKILL.md` Passo 8c: "houve execução real" não basta; só republica se um leitor de fora veria diferença no que o organismo consegue fazer.
+
+**Item 6.4 — PDF gêmeo só de pauta + livro-razão.**
+- `wallenberg-rotina-diaria-skills-v2_SKILL.md` Passo 5: Skill e `indice.md` não geram mais PDF gêmeo (arquivo de máquina, lido via Read). CronJob 20:00 fica só com pauta + livro-razão.
+
+**Backups:** `_backups/2026-09-08/` — `drenagem-continua-local_SKILL_pre-item4-varredura-mensal.md`, `wallenberg-drenagem-continua-v2_SKILL_pre-item4.md`, `wallenberg-rotina-diaria-skills-v2_SKILL_pre-item2-ativacao.md`.
+
+**NÃO feito nesta sessão (dívida aberta):**
+- Item 1 (criar Gestor de Fechamento + 4 Agentes) — depende do Cardozo fechar (Exame 2, 08–12/09).
+- Item 6.2 — condensar `_estado_hely.md` (111 KB), `_estado_wallenberg.md` (117 KB), `_estado_lucio.md` (95 KB): log → HISTÓRICO, arquivo vivo condensado. Passe dedicado.
+- Item 6.5 — colapsar fechamento de rotina + Registro Diário + entrada no livro-razão em um registro só. Redesenho de processo, toca vários SKILLs. Passe dedicado.
+- Item 2 — propagar o fluxo de ativação aos 3 espelhos (`Checklist_Diaria.html`, `_REDEFINIDO.md`, manual operacional).
+- Item 4 — replicar o Passo 7.5 no arquivo-fonte `01_CEO/wallenberg-drenagem-continua-v2_SKILL.md` (só a cópia executável em `.claude/scheduled-tasks/` foi editada).
+
+**Como desfazer:** restaurar os 3 arquivos dos backups de `_backups/2026-09-08/`; `update_scheduled_task wallenberg-reuniao-semanal cronExpression "30 10 * * 1"`; apagar `01_CEO/Inventario_Capacidade/`; remover esta entrada.
 
 ---

@@ -751,9 +751,15 @@
       "crit": "media",
       "alc": "planejado",
       "acao": "Cardozo reserva rodada dedicada (fora da Drenagem Contínua, ideal com tempo de sessão maior) para montar e administrar o Exame 2 dos 6 Agentes, um de cada vez ou em lote — não à revelia da qualidade do exame. Sem caso real de cliente ainda para servir de base, os casos seguem sendo sintéticos (mesmo padrão do Exame 1).",
-      "status": "aberta",
+      "status": "em_andamento",
       "resolvido_em": null,
-      "resultado": null
+      "resultado": null,
+      "atualizacao_08_09_2026": "12 casos-teste estruturados (2 por Agente: E1 simples + E2 complexo) inseridos no Notion 'Treinos e Testes' (collection://7b0728a8-fd57-419c-8a51-d5fe3794d165) em 08/09/2026 20:49:46Z, todos Status:'pendente', Gestor:Cardozo. Cronograma escalonado: Baumgart+Landell (08/09), Saturnino+Glaziou (09/09), Tenreiro+Mindlin (10/09). Verificado via notion-query-data-sources nesta mesma rodada de Drenagem Contínua. Wallenberg aciona Cardozo para iniciar administração do par de 08/09 (Baumgart) nesta mesma rodada.",
+      "atualizacao_08_09_2026_baumgart": "Exame 2 de Baumgart administrado nesta rodada (Notion IDs 3d592372-eae1-81d3-b61f-f56b1564c165 / 3d592372-eae1-81d1-bd62-f4880489b4e6): E1 (sapata rasa, Botafogo) e E2 (hélice contínua, Ipanema esquina) — 2/2 APROVADO, sem invenção de dado, com correção normativa citada e cálculo-sanidade adicional. Baumgart PROMOVIDO Shadow→Assisted (critério individual — não à revelia dos demais 5 Agentes ainda em Shadow). Progresso do lote: 1/6 concluído. Notion ATUALIZADO por Wallenberg (Cardozo não tem ferramenta de escrita — só notion-fetch/notion-query-data-sources, ambas leitura): Status:aprovado + Resultado + Atualizado em:08/09/2026 nas 2 linhas. Landell segue AGENDADO para 08/09 mas NÃO administrado nesta rodada (respeitando o cronograma de 1-2 Agentes/dia).",
+      "achado_colateral_skills_nao_instaladas_08_09_2026": "Baumgart sinalizou durante o Exame 2 que NBR 6122:2019 (ratificada 07/09) e NBR 6120:2019 (avaliada/PROCEDE 08/09) eram usadas via arquivo em Skills_Propostas/, NÃO instaladas em .claude/skills/ — mesmo padrão de erro já registrado na memória 'Ativado só se instalado de verdade' (03/09). Confirmado por Glob: .claude/skills/ tinha 24 Skills, nenhuma das 2 novas. CORRIGIDO por Wallenberg nesta rodada: criadas .claude/skills/nbr6122-2019-fundacoes/SKILL.md e .claude/skills/nbr6120-2019-cargas/SKILL.md, frontmatter padrão (name+description com gatilhos de uso), conteúdo condensado a partir do arquivo-fonte em Skills_Propostas. NBR 6122 (já ratificada) está agora oficialmente ativa. NBR 6120 está tecnicamente instalada mas AINDA aguarda ratificação formal de Claudemberg antes de uso em caso real de cliente — uso em Exame/teste sintético (como o de hoje) é aceitável, mesmo padrão de Exames anteriores.",
+      "status": "em_andamento",
+      "resolvido_em": null,
+      "resultado": "1/6 Agentes do Exame 2 concluído (Baumgart, aprovado, promovido Shadow→Assisted). Restam 5/6 (Landell, Saturnino, Glaziou, Tenreiro, Mindlin) — cronograma Notion prevê 09/09 (Saturnino+Glaziou) e 10/09 (Tenreiro+Mindlin). Item fecha (status:resolvida) só quando os 6/6 estiverem administrados. Notion 'Treinos e Testes' é a fonte de verdade das 12 linhas; este registro em pendencias.json serve de espelho/histórico."
     },
     {
       "id": "kelsen-coscip-grupamento-a4-limiar-6-unidades",
