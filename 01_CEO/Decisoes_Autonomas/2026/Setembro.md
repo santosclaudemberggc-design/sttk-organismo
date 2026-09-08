@@ -4,6 +4,45 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-08, 10:15-11:30] Drenagem Contínua v2.3 — 5ª Rodada (seg)
+
+**Contexto:** Execução automática de `wallenberg-drenagem-continua-local` — Portão de Trabalho ativado (Passo 2.5).
+
+**Fila verificada:**
+- `pendencias.json`: 0 itens `alc:"auto"`+`status:"aberta"` (grep confirmado)
+- Skills propostas: 1 Skill nova (`nbr6120-2019-acoes-cargas`, criada 08/09, Status "proposta")
+- Notion "Treinos e Testes": 0 pendente
+
+**Execução:**
+
+1. ✅ **Cardozo acionado** (único Gestor com fila)
+   - Avaliou Skill NBR 6120:2019 — **PROCEDE**
+   - Substância técnica correta (norma 2019 vigente)
+   - Escopo completo (tríade 6120→6118→6122 mapeada)
+   - Confiança apropriada (média, fontes secundárias — padrão aceito)
+   - Prioridade real (fecha tríade estrutural de Baumgart)
+   - Arquivo-fonte atualizado: status "avaliada — pronta para ratificação de Claudemberg"
+   - Nenhuma pendência aberta
+
+2. ✅ **Learning Agent (Passo 8a)**
+   - Segunda-feira: SIM
+   - Execução real: SIM (Cardozo avaliou Skill)
+   - Pesquisa de padrões multi-agente 2026: confirmado 6 padrões implementados (Portão, loop detection, Gate do Maurício, hierarquia stage-gated, detecção estagnação, trilha auditoria)
+   - Oportunidades novas: nenhuma vs. linha de 07/09
+   - Mudanças ao SKILL.md: nenhuma proposta
+
+3. ✅ **Registros atualizados**
+   - Registro Diário (`03_REGISTROS_DIARIOS/2026/Setembro/08.md`) criado
+   - `_estado_wallenberg.md` Seção 1 atualizada com início de rodada
+
+**Resultado:** 0 itens fechados (0 necessários), 1 Skill avaliada (PROCEDE), 0 bloqueios.
+
+**Duração:** ~75 min (Portão + leitura + Cardozo background + Learning Agent + registros).
+
+**Próxima ação:** Claudemberg ratificar Skill NBR 6120:2019 em rodada futura (próxima Semanal ou via aprovação direta).
+
+---
+
 ### [2026-09-07, 10:30-11:00] Reunião Semanal com Claudemberg — RATIFICAÇÃO COMPLETA
 
 **Contexto:** Reunião Semanal de Wallenberg (Função 9), segunda-feira 08/09/2026. Pauta consolidada com 5 ratificações + 3 decisões. Claudemberg ratificou TUDO.
