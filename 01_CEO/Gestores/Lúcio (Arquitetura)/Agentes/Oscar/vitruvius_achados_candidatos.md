@@ -84,6 +84,15 @@ Para cada achado: **o que é**, **o que o Vitruvius já cobre ou não cobre diss
 - **Decisao:** **monitorar** — 46 tools nao preenche lacuna nova vs achados existentes (BIMwright 229, LuDattilo 138). Extensibilidade via pacotes custom e interessante como conceito (Vitruvius poderia adotar modelo similar), mas nao justifica piloto agora. Reavaliar se o ecossistema de pacotes crescer.
 - **Fonte:** https://github.com/IbrahimFahdah/revit-claude-mcp — verificado 07/09/2026
 
+### 08/09/2026 — Simone-Balin/revit-mcp-claude-code-setup (baseado em Sam-AEC) — 100+ tools, guia de setup
+
+- **O que é:** guia passo a passo para conectar Revit 2026 ao Claude Code via MCP. **NÃO é um MCP server novo** — é documentação de integração baseada no `Autodesk-Revit-MCP-Server` de Sam-AEC. Arquitetura de 3 camadas: Claude Code (stdio) → Python MCP Server (100+ tools em 10 categorias) → C# Revit Bridge Add-in (localhost:3000, HTTP) → Revit API. Testado Windows 11, Revit 2026 (compatível 2024-2025), Python 3.13, .NET Framework 4.8.
+- **10 categorias de tools:** Documents, Levels & Grids, Walls/Floors/Roofs, MEP (ducts/pipes/cable trays), Families, Parameters, Views, Sheets, Schedules/Export (DWG/IFC/Navisworks), Worksharing, Advanced (direct API reflection).
+- **O que o Vitruvius não cobre hoje:** MEP (dutos/tubulações/eletrocalhas), Worksharing (sync/relinquishment), exportação Navisworks, reflexão direta de API. Porém, BIMwright (229 tools) já cobre MEP e exportação com mais maturidade.
+- **Comparação:** 100+ tools é faixa intermediária. Repo-guia tem **1 star, 0 forks** — repo subjacente Sam-AEC não verificado em detalhe. Muito abaixo de BIMwright (229 tools, 18 stars, 166 commits) e LuDattilo (138, 51 stars) em maturidade.
+- **Decisão:** **monitorar (baixa prioridade)** — é um guia de setup, não um conector com diferencial único. Valor real: documentação de integração Claude Code ↔ Revit pode servir de referência quando Oscar testar coexistência de conectores. Não justifica piloto nem Skill isolada.
+- **Fonte:** https://github.com/Simone-Balin/revit-mcp-claude-code-setup — verificado 08/09/2026
+
 ---
 
 ## Como usar este arquivo

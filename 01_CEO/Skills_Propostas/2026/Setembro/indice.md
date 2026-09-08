@@ -2,7 +2,7 @@
 
 **Status:** Ativo  
 **Mês:** Setembro 2026  
-**Atualização:** 07/09/2026
+**Atualização:** 08/09/2026
 
 ---
 
@@ -18,6 +18,7 @@
 | 03/09 | Kinocut MCP — Edição de Vídeo Local | Ferramenta (Trilha B) | Lúcio/Burle + Portinari (pós-produção) | ratificada 03/09 |
 | 04/09 | COSCIP/CBMERJ Decreto 42/2018 — Segurança Contra Incêndio e Pânico RJ | Inteligência (Trilha A) | Landell, Baumgart (Complementares) | ✅ ratificada 07/09 |
 | 07/09 | NBR 6122:2019 + Emenda 1/2022 — Projeto e Execução de Fundações | Inteligência (Trilha A) | Baumgart (Estrutural, Complementares) | ✅ ratificada 07/09 |
+| 08/09 | NBR 6120:2019 — Ações para o Cálculo de Estruturas (Cargas) | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Tenreiro, Glaziou, Landell | proposta |
 
 **⚠️ Nota de correção (03/09/2026):** as 4 primeiras linhas acima tinham se autodeclarado "ratificada — Claudemberg, ao vivo, pós-Drenagem Contínua" nos próprios arquivos `.md`, sem que essa ratificação tivesse de fato acontecido — autodeclaração indevida de uma rotina autônoma. Corrigido nos arquivos-fonte; a ratificação real aconteceu nesta data, em rodada de auditoria com Wallenberg.
 
@@ -25,19 +26,19 @@
 
 ## Estatísticas
 
-- **Skills Propostas (semana 07-12/09):** 1 (Trilha A: 1, Trilha B: 0)
-- **Skills Propostas (acumulado setembro):** 8
+- **Skills Propostas (semana 07-12/09):** 2 (Trilha A: 2, Trilha B: 0)
+- **Skills Propostas (acumulado setembro):** 9
 - **Skills Testadas:** 0
 - **Cobertura Trilha A por Agente (desde agosto):**
-  - Baumgart: 4 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações)
+  - Baumgart: 5 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas)
   - Saturnino: 2 (NBR 5626+8160 + NBR 9575:2024 cross)
   - Landell: 2 (NBR 5410 + COSCIP/CBMERJ)
   - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
   - Tenreiro: 2 (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross)
   - Mindlin: 1 (NBR 6492:2021)
   - Kelsen/Hely: 3 (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026)
-- **Achados Vitruvius:** IbrahimFahdah/revit-claude-mcp (46 tools, extensível, .NET 8) registrado 07/09 como "monitorar". Total acumulado: 7 achados (1 novo, 0 atualizados).
-- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) ~~NBR 6122:2022 fundações~~ CONCLUÍDA 07/09; (5) Apresentação interativa ao cliente — **5a busca consecutiva sem achado, recomendação formal: pausar busca até caso real forçar decisão**; (6) NBR 16280:2024 reformas (STTK = construção do zero, monitorar); (7) NBR 6120:2019 cargas (Baumgart — complemento natural da 6122); (8) Passo 8 se lacuna real pedir
+- **Achados Vitruvius:** Simone-Balin/Sam-AEC setup guide (100+ tools, guia de setup, 1 star) registrado 08/09 como "monitorar (baixa prioridade)". Total acumulado: 8 achados (1 novo, 0 atualizados).
+- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) ~~NBR 6122:2022 fundações~~ CONCLUÍDA 07/09; (5) Apresentação interativa ao cliente — **6a busca consecutiva sem achado, busca PAUSADA** (recomendação formal aceita); (6) NBR 16280:2024 reformas (STTK = construção do zero, monitorar, PAUSADA per feedback); (7) ~~NBR 6120:2019 cargas~~ CONCLUÍDA 08/09; (8) NBR 8681 (ações e segurança — fatores de combinação, complemento natural da 6120); (9) NBR 10844 (águas pluviais — Saturnino); (10) Passo 8 se lacuna real pedir
 
 ---
 
@@ -93,4 +94,19 @@
 
 ---
 
-**Próxima Atualização:** 08/09/2026 (Terça — Seg-Qui) ou 11/09/2026 (Sexta — Painel + Dashboard)
+---
+
+## Observações da Rodada 08/09/2026
+
+1. **NBR 6120:2019 — Ações para Cálculo de Estruturas (Cargas) — Baumgart:** completa a tríade fundamental de cálculo estrutural (6118 superestrutura + 6122 fundações + 6120 cargas). Versão 2019 confirmada vigente (sem emenda publicada). Valores parciais de cargas variáveis obtidos de fontes secundárias (portais de engenharia) — texto integral da ABNT não disponível (norma paga). Cross-disciplina: Saturnino (reservatórios/tubulações), Tenreiro (revestimentos pesados), Glaziou (coberturas verdes), Landell (equipamentos elétricos). Lacuna principal: fatores de combinação de ações exigem a NBR 8681 (próxima prioridade sugerida).
+2. **Vitruvius achado — Simone-Balin/Sam-AEC (100+ tools):** guia de setup, não MCP server novo. Baseia-se em `Autodesk-Revit-MCP-Server` de Sam-AEC. 10 categorias (Documents, Levels, Walls/Floors/Roofs, MEP, Families, Parameters, Views, Sheets, Export, Worksharing). Repo-guia com 1 star — muito abaixo dos achados existentes (BIMwright 229, LuDattilo 138) em maturidade. Registrado como "monitorar (baixa prioridade)".
+3. **CAU-RJ:** acordo de cooperação Prefeitura RJ + CAU-RJ (dez/2024) — protocolo de intenções, sem mudança regulatória. Nenhuma deliberação/resolução nova de setembro 2026. Nenhuma Skill criada (Princípio 15).
+4. **Render IA self-hosted:** ComfyUI (122k+ stars), Forge, SwarmUI confirmados como stack open-source vigente. ControlNet para render arquitetônico (Revit/CAD → SD) já coberto. Nada novo vs Skills de agosto.
+5. **YouTube Claude+Arquitetura:** tutoriais em português e espanhol sobre Claude+Revit 2027, Claude+SketchUp, pyRevit+MCP. Conteúdo educativo genérico — não gera Skill técnica nova. Nota: "IA no Revit: Claude + MCP pyRevit 100% gratuito" sugere abordagem via pyRevit como intermediário — sem detalhe suficiente para registro em vitruvius_achados.
+6. **Multi-agent enterprise:** adoção +340% YoY em 2026, 73% Fortune 500 com multi-agent workflows. Padrões descritos (orchestrator-worker, bounded autonomy, stage-gated) já implementados no STTK. Nenhuma oportunidade nova.
+7. **Apresentação interativa:** 6a busca consecutiva (01-08/09) sem achado novo. **Busca PAUSADA** conforme recomendação formal aceita em 07/09. Presenton (28/08) continua melhor candidato mapeado.
+8. **Descartados:** Claude na Engenharia Civil 41 Skills (produto pago R$47, não Skill gratuita); Redraw (cloud, viola critério 2); Geopogo Claude to Revit (comercial/SaaS).
+
+---
+
+**Próxima Atualização:** 09/09/2026 (Quarta — Seg-Qui) ou 11/09/2026 (Sexta — Painel + Dashboard)

@@ -22,23 +22,24 @@ metadata:
 
 ---
 
-## [2026-09-07] — Diária Skills v2.7 (Segunda)
+## [2026-09-08] — Diária Skills v2.7 (Terça)
 
 ### RODADA ANTERIOR (O que foi entregue)
 
-- [x] **Skills criadas:** 1 (NBR 6122:2019 + Emenda 1/2022 — Fundações, Trilha A, Baumgart)
+- [x] **Skills criadas:** 1 (NBR 6120:2019 — Ações para Cálculo de Estruturas/Cargas, Trilha A, Baumgart principal + cross 4 Agentes)
 - [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (1 novo + índice atualizado)
 - [x] **PDFs regenerados:** 2 (1 Skill + índice)
-- [x] **Vitruvius achados atualizados:** 1 (IbrahimFahdah 46 tools — "monitorar")
-- [x] **Livro-razão registrado:** Sim (Setembro.md, entrada 07/09)
+- [x] **Vitruvius achados atualizados:** 1 (Simone-Balin/Sam-AEC 100+ tools — "monitorar, baixa prioridade")
+- [x] **Livro-razão registrado:** Sim (Setembro.md, entrada 08/09)
 - [ ] **Painel atualizado:** Não (tarefa de Sexta 11/09)
 
 ### O QUE FICOU PENDENTE (Cuidado: não repita)
 
-- **Apresentação interativa ao cliente:** 5a busca consecutiva sem achado. **Recomendação formal: pausar esta busca até caso real forçar decisão.** Presenton (28/08) continua o melhor candidato.
+- **Apresentação interativa ao cliente:** busca PAUSADA desde 07/09 (6 buscas consecutivas sem achado). Presenton (28/08) continua o melhor candidato. Não buscar mais até caso real forçar decisão.
 - **LuDattilo/revit-mcp-server (138 tools):** decisão em "avaliar incorporação parcial" — falta comparação tool-a-tool formal contra os 35 tools do Vitruvius, e checar coexistência porta 8080.
-- **COSCIP/CBMERJ Skill:** avaliada por Cardozo em 07/09 como "procede, pronta para ratificação". Aguarda Claudemberg.
-- **Cardozo Exame 2 (6 agentes):** pendência aberta 07/09, planejada para rodada dedicada futura.
+- **Cardozo Exame 2 (6 agentes):** agendado para semana 08-12/09 (página Notion criada 07/09). Planejado via Drenagem dedicada.
+- **NBR 8681 (ações e segurança):** próxima prioridade Trilha A — define fatores de combinação/ponderação que a NBR 6120 referencia. Complemento direto.
+- **NBR 10844 (águas pluviais):** prioridade seguinte para Saturnino.
 
 ### O QUE NÃO FAZER (Avoid retrabalho)
 
@@ -56,6 +57,8 @@ metadata:
 - ❌ **UV-Tech/revit-claude-mcp 40 tools não crie Skill isolada** — vitruvius_achados 03/09
 - ❌ **LuDattilo/revit-mcp-server 138 tools não crie Skill isolada nova** — vitruvius_achados 24/08, atualizado 04/09
 - ❌ **IbrahimFahdah/revit-claude-mcp 46 tools não crie Skill isolada** — vitruvius_achados 07/09 ("monitorar")
+- ❌ **Simone-Balin/Sam-AEC 100+ tools não crie Skill isolada** — vitruvius_achados 08/09, é guia de setup (1 star), monitorar baixa prioridade
+- ❌ **NBR 6120:2019 cargas não duplique** — Skill de 08/09
 - ❌ **Luw.ai, Remodel AI, Redraw, Leonardo AI** — todos cloud, violam critério 2
 - ❌ **Autodesk APS Sample MCP Server** — exige assinatura paga, viola critério 1
 - ❌ **Modly** — gerador 3D, não renderizador de cena (foco errado)

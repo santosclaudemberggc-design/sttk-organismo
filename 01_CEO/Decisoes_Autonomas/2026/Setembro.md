@@ -91,6 +91,33 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-08] Diária Skills v2.7 (Terça) — 1 Skill Trilha A (NBR 6120 Cargas) + 1 achado Vitruvius
+
+**Executado por Wallenberg (rotina Seg-Qui, Passos 0-5+8):**
+
+**Passo 0 (Pré-rodada):** fechamento de 07/09 lido. Estados de Kelsen/Cardozo/Lúcio verificados — todos estáveis, sem lacuna nova além do já documentado. Próxima prioridade Trilha A confirmada: NBR 6120:2019 (cargas — complemento natural da 6122 fundações e 6118 concreto armado).
+
+**Passo 1 (Pesquisa Externa):** 6 buscas paralelas + 4 aprofundamentos. Eixos cobertos: NBR 6120:2019, CAU-RJ, render IA self-hosted, GitHub Revit MCP, multi-agent workflow, YouTube/Meta (Claude+Arquitetura).
+
+**Passo 2 (Consolidação):** 2 achados úteis separados do ruído:
+- NBR 6120:2019 → Skill Trilha A (Baumgart)
+- Simone-Balin/Sam-AEC (100+ tools, guia de setup) → vitruvius achado (monitorar, baixa prioridade)
+- Descartados: CAU-RJ acordo cooperação (dez/2024, velho, sem mudança regulatória); ComfyUI/SwarmUI/Forge (já cobertos); multi-agent enterprise +340% (padrões já implementados); YouTube tutoriais (educativo genérico); Claude na Engenharia Civil 41 Skills (produto pago R$47); Geopogo (comercial/SaaS); Redraw (cloud).
+
+**Passo 3 (Redação):** Skill `baumgart_nbr6120-2019-acoes-cargas-calculo-estruturas.md` criada (v1.0, proposta). Conteúdo: tríade fundamental 6118+6122+6120, classificação de ações (permanentes/variáveis/especiais), tabela de cargas variáveis mínimas por uso (residencial 1,5 kN/m², escritório 2,0, garagem 3,0, cobertura inacessível 0,5), cargas especiais (guarda-corpo, divisórias, degraus isolados), cross-disciplina 5 Agentes, interação com 5 normas, 5 erros comuns a evitar. Lacunas declaradas: texto integral ABNT não lido (fontes secundárias); fatores de combinação (NBR 8681) não cobertos.
+
+**Passo 4 (Salvamento):** Skill em `01_CEO/Skills_Propostas/2026/Setembro/`. `vitruvius_achados_candidatos.md` atualizado (Simone-Balin/Sam-AEC, "monitorar baixa prioridade" — 100+ tools, 1 star, é guia não MCP server novo). Índice de Setembro atualizado (9 Skills acumuladas, Baumgart sobe para 5 Skills).
+
+**Passo 5 (PDFs):** 2 PDFs gerados (Skill + índice).
+
+**Passo 8 (Ferramentas/Trilha B):** nenhuma lacuna real de Agente pediu ferramenta nova hoje. Burle = config, Portinari = busca pausada, 6 Agentes Cardozo = decisão de Claudemberg, Vitruvius = sem lacuna nova.
+
+**Retrabalho evitado:** Apresentação interativa não pesquisada (busca PAUSADA desde 07/09, 6ª rodada consecutiva). ComfyUI/Blender/TRELLIS2 não duplicados. LuDattilo/BIMwright/IbrahimFahdah não duplicados. NBR 16280 reformas não pesquisada (PAUSADA per feedback). CAU-RJ deliberações já conhecidas não viram Skill.
+
+**Como desfazer:** remover `baumgart_nbr6120-2019-acoes-cargas-calculo-estruturas.md`; reverter edições no índice e no vitruvius_achados (via git revert do commit desta rodada).
+
+---
+
 ### [2026-09-07] Diária Skills v2.7 (Segunda) — 1 Skill Trilha A (NBR 6122 Fundações) + 1 achado Vitruvius
 
 **Executado por Wallenberg (rotina Seg-Qui, Passos 0-5+8):**
