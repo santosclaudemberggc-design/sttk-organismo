@@ -2,7 +2,7 @@
 
 **Status:** Ativo  
 **Mês:** Setembro 2026  
-**Atualização:** 09/09/2026
+**Atualização:** 08/09/2026
 
 ---
 
@@ -19,7 +19,6 @@
 | 04/09 | COSCIP/CBMERJ Decreto 42/2018 — Segurança Contra Incêndio e Pânico RJ | Inteligência (Trilha A) | Landell, Baumgart (Complementares) | ✅ ratificada 07/09 |
 | 07/09 | NBR 6122:2019 + Emenda 1/2022 — Projeto e Execução de Fundações | Inteligência (Trilha A) | Baumgart (Estrutural, Complementares) | ✅ ratificada 07/09 |
 | 08/09 | NBR 6120:2019 — Ações para o Cálculo de Estruturas (Cargas) | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Tenreiro, Glaziou, Landell | proposta |
-| 09/09 | NBR 8681:2025 — Ação e Segurança nas Estruturas (fatores γf, ψ, combinações ELU/ELS) | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Landell | ativa-com-ressalva (v2.9, Cardozo 09/09) |
 
 **⚠️ Nota de correção (03/09/2026):** as 4 primeiras linhas acima tinham se autodeclarado "ratificada — Claudemberg, ao vivo, pós-Drenagem Contínua" nos próprios arquivos `.md`, sem que essa ratificação tivesse de fato acontecido — autodeclaração indevida de uma rotina autônoma. Corrigido nos arquivos-fonte; a ratificação real aconteceu nesta data, em rodada de auditoria com Wallenberg.
 
@@ -27,19 +26,19 @@
 
 ## Estatísticas
 
-- **Skills Propostas (semana 07-12/09):** 3 (Trilha A: 3, Trilha B: 0)
-- **Skills Propostas (acumulado setembro):** 10
+- **Skills Propostas (semana 07-12/09):** 2 (Trilha A: 2, Trilha B: 0)
+- **Skills Propostas (acumulado setembro):** 9
 - **Skills Testadas:** 0
 - **Cobertura Trilha A por Agente (desde agosto):**
-  - Baumgart: 6 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas + NBR 8681:2025 segurança)
+  - Baumgart: 5 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas)
   - Saturnino: 2 (NBR 5626+8160 + NBR 9575:2024 cross)
   - Landell: 2 (NBR 5410 + COSCIP/CBMERJ)
   - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
   - Tenreiro: 2 (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross)
   - Mindlin: 1 (NBR 6492:2021)
   - Kelsen/Hely: 3 (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026)
-- **Achados Vitruvius:** nenhum achado novo esta rodada (pyRevit-MCP pago — descartado; mcp-servers-for-revit arquivado — descartado). Total acumulado: 8 achados (0 novo, 0 atualizados).
-- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) ~~NBR 6122:2022 fundações~~ CONCLUÍDA 07/09; (5) Apresentação interativa ao cliente — **busca PAUSADA** (recomendação formal aceita); (6) NBR 16280:2024 reformas (STTK = construção do zero, monitorar, PAUSADA per feedback); (7) ~~NBR 6120:2019 cargas~~ CONCLUÍDA 08/09; (8) ~~NBR 8681:2025 segurança~~ CONCLUÍDA 09/09 (ativa-com-ressalva); (9) NBR 10844:1989 (águas pluviais — Saturnino); (10) Passo 8 se lacuna real pedir
+- **Achados Vitruvius:** Simone-Balin/Sam-AEC setup guide (100+ tools, guia de setup, 1 star) registrado 08/09 como "monitorar (baixa prioridade)". Total acumulado: 8 achados (1 novo, 0 atualizados).
+- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) ~~NBR 6122:2022 fundações~~ CONCLUÍDA 07/09; (5) Apresentação interativa ao cliente — **6a busca consecutiva sem achado, busca PAUSADA** (recomendação formal aceita); (6) NBR 16280:2024 reformas (STTK = construção do zero, monitorar, PAUSADA per feedback); (7) ~~NBR 6120:2019 cargas~~ CONCLUÍDA 08/09; (8) NBR 8681 (ações e segurança — fatores de combinação, complemento natural da 6120); (9) NBR 10844 (águas pluviais — Saturnino); (10) Passo 8 se lacuna real pedir
 
 ---
 
@@ -110,14 +109,4 @@
 
 ---
 
-## Observações da Rodada 09/09/2026
-
-1. **NBR 8681:2025 — Ação e Segurança nas Estruturas (Baumgart):** preenche a lacuna declarada pela Skill de NBR 6120 ("fatores de combinação exigem a NBR 8681"). Publicada 29/09/2025 (substitui 2003). Conteúdo: fatores de ponderação γf, coeficientes de combinação ψ, fórmulas de combinação ELU (normal/especial/excepcional) e ELS (rara/frequente/quase-permanente), sequência de cálculo integrada 6120→8681→6118→6122. **Validada por Cardozo (v2.9): PROCEDE.** 1 correção aplicada durante validação: ψ de escritórios era 0,6/0,4/0,3 (categoria inventada) → corrigido para 0,7/0,6/0,4 (Tabela 6 clássica). Status: `ativa-com-ressalva` (fonte primária ABNT não lida). **Primeira Skill ativada pelo fluxo v2.9.**
-2. **Kelsen:** sem material novo viável. CAU-RJ sem deliberação nova de setembro. Nenhuma Skill criada (Princípio 15).
-3. **Lúcio:** sem material novo viável. pyRevit-MCP (pago, viola critério 1 — descartado). mcp-servers-for-revit (arquivado 2024 — descartado). Nenhum achado novo para vitruvius_achados.
-4. **Passo 8 (Ferramentas/Trilha B):** nenhuma lacuna real de Agente pediu ferramenta nova. Vitruvius sem achado novo. Burle = config. Portinari = busca pausada. 6 Agentes Cardozo = Exame 2 em andamento (1/6 completo Baumgart; Saturnino+Glaziou previstos hoje).
-5. **Descartados:** pyRevit-MCP (pago, não atende critério 1); mcp-servers-for-revit (arquivado, inativo); masteremmodelagem.com.br (HTTP 403, bloqueado); UFPR PDF NBR 8681 (binário, ilegível via WebFetch). NBR 10844:1989 pesquisada mas não virou Skill nesta rodada (meta: 1 Skill/Gestor/dia; fica como prioridade 9).
-
----
-
-**Próxima Atualização:** 10/09/2026 (Quinta — Seg-Qui) ou 12/09/2026 (Sexta — Painel + Dashboard)
+**Próxima Atualização:** 09/09/2026 (Quarta — Seg-Qui) ou 11/09/2026 (Sexta — Painel + Dashboard)

@@ -3,11 +3,19 @@
 > Arquivo de estado pessoal. Leio ao nascer (início de toda conversa), escrevo ao morrer (fim de toda conversa).
 > Memória privada minha — não repete o Registro Diário, que é o que sobe pra Claudemberg via Wallenberg.
 
-**Última atualização:** 03/09/2026 — **Consolidação de arquivo de estado duplicado.** Existiam dois `_estado_cardozo.md` ativos e divergentes (`01_CEO/Gestores/Complementares/` — path que `.claude/agents/cardozo.md` apontava por engano — e este, `01_CEO/Gestores/Cardozo (Complementares)/`, que já concentrava POPs/Casos_TESTE/subpastas dos 6 Agentes). Mesclados sem perda por Wallenberg a pedido de Claudemberg (auditoria estrutural 03/09). `.claude/agents/cardozo.md` corrigido para apontar pra este arquivo, único caminho daqui em diante. Detalhe da consolidação: ver Seção 2.
+**Última atualização:** 09/09/2026 — Validação de Skill NBR 8681:2025 (fluxo v2.9).
 
 ---
 
 ## 1. Onde Parei / Em Andamento
+
+**Rodada 09/09/2026 — Validação de Skill `baumgart_nbr8681-2025-acao-seguranca-estruturas.md` (fluxo v2.9).**
+- Acionado por Wallenberg para validar Skill antes de ativação. 3 critérios verificados: (1) erro factual, (2) duplicata, (3) lacunas marcadas.
+- **Decisão: PROCEDE — `ativa-com-ressalva`.** Fonte primária ABNT não lida (padrão já aceito em Skills anteriores).
+- **Achado factual menor (não bloqueante):** a tabela de coeficientes psi na Skill cria uma categoria "Escritórios / salas comerciais" com psi_0=0,6 / psi_1=0,4 / psi_2=0,3 que não existe como linha própria na Tabela 6 clássica da NBR 8681:2003. A tabela real tem 3 faixas para uso e ocupação (0,5 / 0,7 / 0,8 em psi_0). Escritórios são normalmente classificados na 2ª faixa ("com predominância") = 0,7 / 0,6 / 0,4. Coberto pela ressalva geral da Skill ("confirmar contra texto 2025"), mas Baumgart precisa saber.
+- **Não é duplicata** — preenche lacuna explicitamente identificada na Skill de NBR 6120 ("fatores de combinação exigem a NBR 8681"). Completa a "tríade+1" do cálculo estrutural.
+- **Lacunas corretamente marcadas** — 5 mecanismos de ressalva na Skill (ressalva de fonte no topo, confiança média-baixa, seção de lacunas conhecidas, erros comuns, título das tabelas).
+- Fontes de conferência: ABECE (publicação confirmada), UFPR Capítulo 2 Tabelas 2.1/2.2 (framework clássico), Target/ABNT (catálogo).
 
 **Rodada 08/09/2026 (noite) — Exame 2 de Baumgart (Shadow→Assisted) administrado, 2/2 aprovado, promovido.**
 - Acionado por Wallenberg para dar continuidade à Drenagem: administrar o par de casos de Baumgart previsto para hoje (Landell fica para outra rodada — cronograma é 1-2 Agentes/dia, não virar produção rasa).

@@ -4,6 +4,34 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-09] Diária Skills v2.9 (Quarta) — 1 Skill Trilha A (NBR 8681:2025 Segurança) + 1ª ativação v2.9
+
+**Executado por Wallenberg (rotina Seg-Qui, Passos 0-5+8):**
+
+**Passo 0 (Pré-rodada):** fechamento de 08/09 lido. Estados de Kelsen/Cardozo/Lúcio verificados — Cardozo com Exame 2 em andamento (1/6 Baumgart aprovado), Kelsen e Lúcio estáveis. Próxima prioridade Trilha A confirmada: NBR 8681:2025 (fatores de combinação — complemento direto da 6120, lacuna declarada pela Skill anterior).
+
+**Passo 1 (Pesquisa Externa):** 6 buscas paralelas + aprofundamentos. Eixos: NBR 8681:2025, NBR 10844:1989, CAU-RJ, Revit MCP GitHub, render IA. Achados úteis: NBR 8681 (publicação 29/09/2025 confirmada via ABECE, framework de fatores de fontes secundárias), NBR 10844 (Manning, condutores, períodos de retorno). Bloqueios: masteremmodelagem.com.br 403, UFPR PDF binário ilegível. pyRevit-MCP (pago, descartado), mcp-servers-for-revit (arquivado, descartado).
+
+**Passo 2 (Consolidação):** 1 Skill viável para Cardozo (NBR 8681). NBR 10844 viável mas meta 1/Gestor/dia impede — fica como próxima prioridade (9). Kelsen e Lúcio sem material.
+
+**Passo 3 (Redação + Ativação v2.9):** Skill `baumgart_nbr8681-2025-acao-seguranca-estruturas.md` criada (v1.0). Conteúdo: fatores γf (permanente/variável, normal/especial/excepcional), coeficientes ψ (7 categorias), fórmulas de combinação ELU (3 tipos) e ELS (3 tipos), sequência integrada 6120→8681→6118→6122, cross-disciplina Saturnino/Landell, 6 erros comuns, 4 lacunas declaradas.
+
+**Validação Cardozo (v2.9 — primeira execução do fluxo):** PROCEDE. 1 correção aplicada durante validação: ψ de escritórios era 0,6/0,4/0,3 (categoria inventada, não existe na Tabela 6 clássica) → corrigido para 0,7/0,6/0,4 (faixa "com concentração de pessoas ou equipamentos"). Skill ativada com `status: ativa-com-ressalva` (fonte primária ABNT não lida).
+
+**Passo 4 (Salvamento):** Skill em `01_CEO/Skills_Propostas/2026/Setembro/`. Instalada em `.claude/skills/nbr8681-2025-seguranca-estruturas/SKILL.md`. Índice atualizado (10 Skills acumuladas, Baumgart sobe para 6). Backup do índice em `_backups/2026-09-09/`.
+
+**Passo 5 (PDFs):** Não gerados (v2.9 Item 6.4 — Skill e índice não geram mais PDF gêmeo).
+
+**Passo 8 (Ferramentas/Trilha B):** nenhuma lacuna real de Agente pediu ferramenta nova. pyRevit-MCP (pago) e mcp-servers-for-revit (arquivado) descartados. Vitruvius sem achado novo. Resultado: "nenhum achado novo."
+
+**Retrabalho evitado:** Apresentação interativa não pesquisada (PAUSADA). ComfyUI/Blender/TRELLIS2 não duplicados. Achados Vitruvius existentes não duplicados. NBR 10844 não forçada (1/Gestor/dia).
+
+**Marco:** primeira Skill ativada pelo fluxo v2.9 (validação por Gestor dono no mesmo dia, sem esperar Semanal). Precedente operacional confirmado.
+
+**Como desfazer:** remover `baumgart_nbr8681-2025-acao-seguranca-estruturas.md` e `.claude/skills/nbr8681-2025-seguranca-estruturas/`; reverter edições no índice (via backup `_backups/2026-09-09/indice_setembro_pre-nbr8681.md`); remover esta entrada do livro-razão.
+
+---
+
 ### [2026-09-08, continuação pós-Drenagem] Exame 2 — Baumgart aprovado (1/6) + correção de Skills não instaladas
 
 **Contexto:** Após a 5ª rodada da Drenagem Contínua (ver entrada abaixo), Claudemberg apontou (ao vivo) que a verificação do Notion "Treinos e Testes" tinha sido feita incorretamente (assumida de rodada anterior, não consultada de fato). Consulta real revelou 12 casos-teste do Exame 2 dos 6 Agentes de Cardozo, recém-inseridos por Claudemberg (ver entrada seguinte, mesma data). Claudemberg autorizou: (1) atualizar `pendencias.json` refletindo o achado; (2) acionar Cardozo para iniciar a administração do primeiro par (Baumgart, previsto 08/09).

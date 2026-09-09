@@ -22,24 +22,24 @@ metadata:
 
 ---
 
-## [2026-09-08] — Diária Skills v2.7 (Terça)
+## [2026-09-09] — Diária Skills v2.9 (Quarta)
 
 ### RODADA ANTERIOR (O que foi entregue)
 
-- [x] **Skills criadas:** 1 (NBR 6120:2019 — Ações para Cálculo de Estruturas/Cargas, Trilha A, Baumgart principal + cross 4 Agentes)
+- [x] **Skills criadas:** 1 (NBR 8681:2025 — Ação e Segurança nas Estruturas, Trilha A, Baumgart principal + cross Saturnino/Landell)
+- [x] **Skill ativada v2.9:** Sim — primeira Skill ativada pelo fluxo v2.9 (validada por Cardozo → ativa-com-ressalva, fonte primária ABNT não lida)
+- [x] **Skill instalada:** `.claude/skills/nbr8681-2025-seguranca-estruturas/SKILL.md`
 - [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (1 novo + índice atualizado)
-- [x] **PDFs regenerados:** 2 (1 Skill + índice)
-- [x] **Vitruvius achados atualizados:** 1 (Simone-Balin/Sam-AEC 100+ tools — "monitorar, baixa prioridade")
-- [x] **Livro-razão registrado:** Sim (Setembro.md, entrada 08/09)
-- [ ] **Painel atualizado:** Não (tarefa de Sexta 11/09)
+- [x] **Livro-razão registrado:** Sim (Setembro.md, entrada 09/09)
+- [ ] **Painel atualizado:** Não (tarefa de Sexta 12/09)
 
 ### O QUE FICOU PENDENTE (Cuidado: não repita)
 
 - **Apresentação interativa ao cliente:** busca PAUSADA desde 07/09 (6 buscas consecutivas sem achado). Presenton (28/08) continua o melhor candidato. Não buscar mais até caso real forçar decisão.
 - **LuDattilo/revit-mcp-server (138 tools):** decisão em "avaliar incorporação parcial" — falta comparação tool-a-tool formal contra os 35 tools do Vitruvius, e checar coexistência porta 8080.
-- **Cardozo Exame 2 (6 agentes):** agendado para semana 08-12/09 (página Notion criada 07/09). Planejado via Drenagem dedicada.
-- **NBR 8681 (ações e segurança):** próxima prioridade Trilha A — define fatores de combinação/ponderação que a NBR 6120 referencia. Complemento direto.
-- **NBR 10844 (águas pluviais):** prioridade seguinte para Saturnino.
+- **Cardozo Exame 2 (6 agentes):** em andamento semana 08-12/09. Baumgart aprovado (1/6). Saturnino+Glaziou previstos 09/09, Tenreiro+Mindlin previstos 10/09.
+- **NBR 10844:1989 (águas pluviais):** próxima prioridade Trilha A para Saturnino. Pesquisa feita 09/09, material viável, mas meta 1/Gestor/dia limitou a esta rodada.
+- **NBR 6120:2019:** status "proposta" — aguarda ratificação de Claudemberg (Drenagem avaliou PROCEDE 08/09).
 
 ### O QUE NÃO FAZER (Avoid retrabalho)
 
@@ -59,6 +59,9 @@ metadata:
 - ❌ **IbrahimFahdah/revit-claude-mcp 46 tools não crie Skill isolada** — vitruvius_achados 07/09 ("monitorar")
 - ❌ **Simone-Balin/Sam-AEC 100+ tools não crie Skill isolada** — vitruvius_achados 08/09, é guia de setup (1 star), monitorar baixa prioridade
 - ❌ **NBR 6120:2019 cargas não duplique** — Skill de 08/09
+- ❌ **NBR 8681:2025 segurança/fatores não duplique** — Skill de 09/09 (ativa-com-ressalva)
+- ❌ **pyRevit-MCP não crie Skill** — pago, viola critério 1
+- ❌ **mcp-servers-for-revit não crie Skill** — arquivado 2024, inativo
 - ❌ **Luw.ai, Remodel AI, Redraw, Leonardo AI** — todos cloud, violam critério 2
 - ❌ **Autodesk APS Sample MCP Server** — exige assinatura paga, viola critério 1
 - ❌ **Modly** — gerador 3D, não renderizador de cena (foco errado)
@@ -208,6 +211,6 @@ metadata:
 
 ---
 
-**Última atualização:** 07/09/2026 (segunda-feira — Diária Seg-Qui, Passos 0-5+8 executados)  
-**Próxima leitura:** 08/09/2026 (terça-feira) — Diária Skills Seg-Qui  
-**Painel pendente para:** 11/09/2026 (sexta-feira)
+**Última atualização:** 09/09/2026 (quarta-feira — Diária Skills v2.9, Passos 0-5+8 executados)  
+**Próxima leitura:** 10/09/2026 (quinta-feira) — Diária Skills Seg-Qui  
+**Painel pendente para:** 12/09/2026 (sexta-feira)
