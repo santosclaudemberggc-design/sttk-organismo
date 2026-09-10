@@ -4,6 +4,181 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-10] Rotina Diária Skills v2.9 — 1 Skill NBR 10844 (Saturnino, ativa-com-ressalva)
+
+**Contexto:** Rotina automática de quinta-feira. Passos 1–5+8 (Seg-Qui). 1 Skill criada, validada e ativada seguindo fluxo v2.9 (Cardozo valida no mesmo dia → ativa em produção → Claudemberg ratifica na Semanal).
+
+**O que foi decidido:**
+- Criação e ativação da Skill **NBR 10844:1989 — Instalações Prediais de Águas Pluviais** (Trilha A, Saturnino principal, Glaziou + Baumgart cross).
+- Status `ativa-com-ressalva`: texto integral ABNT não lido (norma paga), valores de intensidade pluviométrica para RJ não obtidos — Saturnino obrigado a consultar equações IDF Rio-Águas antes de qualquer cálculo real.
+- Cardozo validou: PROCEDE (sem erro factual, sem duplicata, lacunas marcadas).
+
+**Por quê:**
+- Prioridade #9 do índice de setembro (NBR 10844:1989 — Saturnino sem Skill de águas pluviais).
+- Material técnico viável encontrado em duas fontes secundárias de qualidade (GreenGold Engenharia, julho/2026).
+- Nenhuma Skill nova encontrada para Kelsen (sem deliberação CAU-RJ nova em setembro) nem Lúcio (Revit-MCP todos já conhecidos, busca de apresentação interativa pausada).
+
+**O que foi alterado:**
+- `01_CEO/Skills_Propostas/2026/Setembro/saturnino_nbr10844-1989-aguas-pluviais-drenagem-predial.md` — criado (v1.0, ativa-com-ressalva)
+- `.claude/skills/nbr10844-1989-aguas-pluviais/SKILL.md` — instalado
+- `01_CEO/Skills_Propostas/2026/Setembro/indice.md` — atualizado (+1 Skill, estatísticas, próxima prioridade)
+- `01_CEO/Decisoes_Autonomas/_backups/2026-09-10/indice.md` — backup criado antes de editar
+
+**Backups:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-10/`
+
+**Como desfazer:** apagar `saturnino_nbr10844-1989-aguas-pluviais-drenagem-predial.md`, apagar `.claude/skills/nbr10844-1989-aguas-pluviais/`, restaurar `indice.md` do backup.
+
+**Próxima prioridade Cardozo/Saturnino:** Passo 8 se lacuna real de Agente pedir ferramenta; caso contrário, explorar NBR 7229:1993 (fossas sépticas) ou NBR 10521:1988 (poços absorventes) — complementam o sistema hidrossanitário de terrenos sem rede de esgoto (situação comum em RJ afastado do centro).
+
+---
+
+### [2026-09-09, noite] Criação do Gestor Fechamento — Lelé (4º Gestor)
+
+**Contexto:** Item 1 das melhorias do organismo (identificado 08/09/2026). Criação do 4º e último Gestor previsto no fluxograma oficial. Autorizado por Claudemberg ao vivo em 09/09/2026.
+
+**Nome:** Lelé — referência a João Filgueiras Lima ("Lelé"), arquiteto e engenheiro que fechava o ciclo completo (projeto → fabricação → obra) como sistema integrado único. Escolhido por Wallenberg, confirmado por Claudemberg.
+
+**Escopo (4 etapas finais do fluxograma, decidido por Claudemberg em 29/07/2026):**
+1. Compatibilização de Projetos (recebe output dos 6 Complementares de Cardozo)
+2. Projeto Executivo (detalhamento construtivo integrado)
+3. Orçamento Executivo e Premissas (quantitativos, cronograma)
+4. Liberação de Obra (Gate 16 — convergência com Legal/Kelsen)
+
+**Nível:** Formação (padrão). Ciclo: Formação → Shadow → Assisted → Autonomous.
+
+**Equipe:** a definir pelo próprio Lelé (regra de nomeação em cascata), quando acionado por Wallenberg para montar a composição.
+
+**Arquivos criados:**
+- `.claude/agents/lele.md` (definição do agente, ferramentas, contexto completo)
+- `01_CEO/Gestores/Lelé (Fechamento)/_estado_lele.md` (estado inicial)
+
+**Como desfazer:** apagar os 2 arquivos acima e a pasta `Lelé (Fechamento)/`.
+
+---
+
+### [2026-09-09, noite] Exame 2 Tenreiro + Mindlin — 6/6 Lote Completo, Todos Aprovados
+
+**Contexto:** Última dupla do cronograma de Exame 2 dos 6 Agentes Cardozo (adiantado de 10/09 para 09/09, conforme autorização de Claudemberg). Cardozo administrou diretamente, sem delegação a sub-agentes (instrução explícita mantida após o antipadrão da rodada Saturnino/Glaziou).
+
+**Verificação de integridade pré-exame:** `_estado_tenreiro.md` e `_estado_mindlin.md` limpos — nenhuma alegação fantasma de "Exame 2 já respondido" (diferente do ocorrido com Saturnino/Glaziou). Problema anterior confirmado como pontual, não sistêmico.
+
+**Resultado:**
+- **Tenreiro (Interiores) — 2/2 APROVADO. Promovido Shadow→Assisted.**
+  - E1 (piso cimento queimado, terraço+box, Ipanema/RJ): barrou 4 armadilhas reais (juntas de dilatação ausentes; "cimento queimado dispensa impermeabilização" — falso; ausência de caimento; ausência de antiderrapante em área externa molhada). Não caiu em 2 iscas reversas.
+  - E2 (acústico NBR 15575:2025, apartamento Botafogo/RJ): barrou 5 armadilhas diretas (omissão do requisito em ambiente sem dormitório — novidade central da norma 2025; piso colado sem manta; rodapé rígido; manta abaixo do mínimo; norma errada citada). Não presumiu valores de dB não confirmados em fonte aberta.
+- **Mindlin (Apresentação) — 2/2 APROVADO. Promovido Shadow→Assisted.**
+  - E1 (prancha técnica corte+fachada, Tijuca/RJ): barrou 4 armadilhas NBR 6492; recusou categoricamente "encolher fachada sem atualizar escala anotada" (falsificação de informação técnica).
+  - E2 (compilação completa 5 disciplinas, Laranjeiras/RJ): barrou armadilhas de representação e fidelidade; achou clash pilar×spot sem apontamento prévio; recusou instrução fora de escopo (orçamento+render 3D) mesmo atribuída ao próprio "Cardozo" no bilhete.
+
+**Lote Exame 2 FECHADO: 6/6 Agentes Cardozo aprovados e promovidos Shadow→Assisted.**
+| Agente | Data | E1 | E2 |
+|--------|------|----|----|
+| Baumgart | 08/09 | aprovado | aprovado |
+| Landell | 09/09 | aprovado | aprovado |
+| Saturnino | 09/09 | aprovado | aprovado |
+| Glaziou | 09/09 | aprovado | aprovado |
+| Tenreiro | 09/09 | aprovado | aprovado |
+| Mindlin | 09/09 | aprovado | aprovado |
+
+**Achados colaterais de Cardozo:**
+1. Mindlin tem Skill técnica própria já ativa (`nbr6492-representacao-grafica`) — contradiz descrição atual em `.claude/agents/mindlin.md`. Corrigir.
+2. Arquivos "fantasma" de Saturnino/Glaziou (rodada anterior) existem agora no disco ao lado dos reais — auditoria recomendada.
+
+**Gap de ferramenta Notion reincidiu 5ª vez** — Wallenberg atualizou manualmente via `notion-update-page` (4 páginas).
+
+**Como desfazer:** reverter `_estado_tenreiro.md`, `_estado_mindlin.md`, `_estado_cardozo.md` aos backups; reclassificar no Notion como `pendente`; readministrar exames.
+
+**Notion atualizado por Wallenberg:**
+- Tenreiro E1: `3d592372-eae1-8104-b731-da3c76b89666` / E2: `3d592372-eae1-819a-8644-ebd34fd9b0e6`
+- Mindlin E1: `3d592372-eae1-81f3-a458-ffa63299f3c0` / E2: `3d592372-eae1-8164-a9f6-f3c527dd6b52`
+
+---
+
+### [2026-09-09, tarde/noite] Exame 2 Saturnino + Glaziou — 4/6 Agentes Cardozo Aprovado + Achado de Integridade de Estado
+
+**Contexto:** Continuação do cronograma. Primeira tentativa de acionar Cardozo (agente `a2d2eb2dedb340f8e`) delegou o exame a sub-agentes (Agent tool) e encerrou o próprio turno "aguardando notificação" — **antipadrão de tarefa órfã** (violação da Delegation Completion Contract: pai não pode encerrar turno com filhos vivos). Os 2 sub-agentes órfãos (Saturnino, Glaziou) completaram depois e notificaram Wallenberg diretamente (não Cardozo, cujo turno já tinha acabado) — cada um escreveu memoriais técnicos linha a linha, mas sem veredito final de aprovação (isso é atribuição de Cardozo, não do Agente sozinho).
+
+**Correção:** Cardozo relançado (`a1d94c4e207a3aef6`) com instrução explícita de **não sub-delegar** e administrar diretamente, no mesmo turno. Ao investigar antes de montar os casos, **achado crítico:** os estados de Saturnino/Glaziou já tinham sido alterados pela tentativa órfã anterior, alegando "Exame 2 respondido, aguardando veredito de Cardozo" com nomes de caso e caminhos de memorial (ex. "Sobrado Laranjeiras", "Condomínio Barra da Tijuca", "Jardim Botânico") que **nunca foram gravados no disco** — confirmado via Glob (pastas `Casos/` e `Casos_TESTE/` vazias antes desta rodada). Cardozo não reaproveitou nada, refez do zero, e corrigiu os 2 arquivos de estado.
+
+**Resultado (Cardozo, refeito do zero, memoriais reais confirmados):**
+- **Saturnino (Hidrossanitário) — 2/2 APROVADO. Promovido Shadow→Assisted.**
+  - E1 (água fria, 3 banheiros, Tijuca): barrou 4 armadilhas reais (pressão 450kPa sem VRP; ramal vaso sanitário DN75mm quando regra é DN≥100mm; inclinação esgoto 1% quando DN≤100mm exige 2%; separação água×eletroduto 15cm quando mínimo é 30cm). Não caiu em 2 iscas reversas. Tratou peso de aparelho fora de tabela como pendência, não presunção.
+  - E2 (reuso NBR 16783, condomínio 20 unidades): barrou 5 não-conformidades. No ponto mais difícil, recusou presumir dispensa de outorga para captação de água subterrânea — registrou pendência bloqueante a confirmar com Kelsen/INEA em vez de aceitar alegação do parceiro terceirizado.
+- **Glaziou (Paisagismo) — 2/2 APROVADO. Promovido Shadow→Assisted.**
+  - E1 (drenagem 500m², Jacarepaguá): barrou inclinação de piso abaixo do mínimo, espécie invasora (Spathodea campanulata), rampa sem corrimão, interligação pluvial-esgoto proibida.
+  - E2 (jardim de chuva + pergolado sobre laje, Recreio): barrou declive incorreto, espécie invasora tolerante a encharcamento, subdimensionamento (ignorou área de contribuição), reclassificação semântica para escapar do laudo de carga de Baumgart. Rejeitou citação de NBR 16636-4 como "base normativa obrigatória" do jardim de chuva — a própria Skill registra que não existe norma NBR específica para essa técnica.
+
+**Progresso do lote:** 4/6 (Baumgart 08/09, Landell/Saturnino/Glaziou 09/09). Restam Tenreiro e Mindlin (10/09).
+
+**Lição registrada (risco geral, não é achado de Skill):** delegação a sub-agente sem coleta ativa do resultado pode deixar estado alegando trabalho que não existe. Quem ler o estado de um Agente depois deve conferir a existência real do arquivo (Glob), não confiar só no texto do `_estado_*.md`.
+
+**Gap de ferramenta Notion reincidiu 4ª vez consecutiva** — Wallenberg atualizou manualmente via `notion-update-page` (4 páginas: Saturnino E1/E2, Glaziou E1/E2). Recomendação de Cardozo: avaliar concessão de ferramenta de escrita Notion antes da rodada final (Tenreiro+Mindlin).
+
+**Notion atualizado por Wallenberg:**
+- Saturnino E1: `3d592372-eae1-81ee-81bd-dafcd6a011ef` / E2: `3d592372-eae1-81f0-a9d7-d4859a97dd24`
+- Glaziou E1: `3d592372-eae1-81c8-9010-f76531007e16` / E2: `3d592372-eae1-81ea-9535-f80aecb00a27`
+
+**Como desfazer:** reverter Notion Status para "pendente" nas 4 páginas (limpar Resultado); reverter `_estado_cardozo.md`, `_estado_saturnino.md`, `_estado_glaziou.md` para estado pré-Exame 2; remover esta entrada.
+
+**Próxima ação:** Cardozo administra Tenreiro+Mindlin (10/09, cronograma original) — decidir se antecipar hoje ou aguardar amanhã.
+
+---
+
+### [2026-09-09, tarde] Exame 2 Landell — 2/6 Agentes Cardozo Aprovado
+
+**Contexto:** Claudemberg autorizou (Reunião Semanal 09/09) prosseguir cronograma Exame 2. Cardozo acionado para administrar Landell (Elétrica/Automação), pendente desde 08/09.
+
+**Executado por Cardozo:**
+- **Caso E1 (simples, elétrica NBR 5410, 100m²):** APROVADO. Barrou 4 armadilhas reais (circuito único iluminação 7 ambientes; DR dispensado banheiro "quadro em ambiente seco"; chuveiro dividindo TUE com TUG banheiro — calculou IB≈43,3A, disjuntor 20A insuficiente; TN-C reaproveitando PEN em obra nova), citou fonte normativa em cada. Não caiu nas 2 iscas reversas (LSHF, divisão TUG cozinha — ambas corretamente aceitas como conformes). Reteve 2 pendências de dado sem presumir.
+- **Caso E2 (complexo, SPDA + COSCIP/Decreto 42/2018, condomínio 9 unidades):** APROVADO. Barrou 4 armadilhas diretas (SPDA via NBR 5410 em vez de NBR 5419; estrutura metálica dispensando análise de risco; aterramento citando revisão 2026 NBR 5410 como já vigente; SPDA e detecção/alarme fundidos num memorial). No ponto mais difícil — isenção A-1 para grupamento 9 unidades — **não decidiu sozinho**: reconheceu que a própria Skill COSCIP se autodeclara não fechada, registrou como pendência a confirmar via Kelsen/Hely. Achou 2 imprecisões reais não plantadas no enunciado (mesmo padrão de Baumgart).
+- Auditados os 2 memoriais na íntegra antes de aceitar — confirmados.
+- **Landell promovido Shadow → Assisted.** Progresso do lote: 2/6.
+
+**Achados colaterais:**
+1. Landell não tem Skill ratificada de NBR 5419 (SPDA) nem NBR 17240 (detecção/alarme) — escopo atual exclui SPDA explicitamente. Recomendação: pesquisar/ratificar antes do primeiro caso real de SPDA.
+2. Gap de ferramenta Notion (escrita) reincidiu 2ª vez (Baumgart 08/09, Landell agora) — Wallenberg atualizou manualmente via `notion-update-page`. Vale escalar antes de Saturnino/Glaziou (hoje) e Tenreiro/Mindlin (amanhã) gerarem o mesmo pedido pela 3ª/4ª vez.
+
+**Notion atualizado por Wallenberg** — 2 páginas (Landell E1: `3d592372-eae1-8132-a0e1-ed902bba029f`; E2: `3d592372-eae1-81e2-ba72-f1dd3b703042`). Status `pendente→aprovado`, Resultado preenchido, Atualizado em `09/09/2026`.
+
+**Como desfazer:** reverter Notion Status para "pendente" nas 2 páginas (limpar Resultado); reverter `_estado_cardozo.md` e `_estado_landell.md` para estado pré-Exame 2; remover esta entrada.
+
+**Próxima ação:** Cardozo administra Saturnino+Glaziou (hoje, 09/09, mesmo cronograma); depois Tenreiro+Mindlin (10/09).
+
+---
+
+### [2026-09-09, 13:00] Reunião Semanal com Claudemberg — RATIFICAÇÃO EM BLOCO (09/09)
+
+**Contexto:** Rotina Automática Semanal disparada 09/09 (teste quinzenal, programada 08/09). Wallenberg apresentou 6 ratificações + 1 decisão desde 07/09. Claudemberg ratificou todas.
+
+**RATIFICADO — 6 itens:**
+1. ✅ Skill NBR 8681 + fluxo v2.9 ativação (09/09) — implementação confirmada
+2. ✅ Exame 2 Baumgart aprovado (1/6 Cardozo) (08/09)
+3. ✅ Skill NBR 6120 avaliada, instalar para ativar (08/09)
+4. ✅ Skills não instaladas corrigidas (6122+6120 em `.claude/skills/`) (08/09)
+5. ✅ Fluxo v2.9 (Skill ativa no dia, Gestor valida, você revisa) (08/09)
+6. ✅ Melhorias Organismo Items 4,5,6 (varredura mensal + inventário + Semanal quinzenal) (08/09)
+
+**RATIFICADO — 1 decisão:**
+- ✅ NBR 6120: ratificar sem reformulação (complemento mandatório tríade)
+
+**PENDENTE EXECUÇÃO (não feita, Wallenberg vai fazer):**
+- NBR 6120 → instalar `.claude/skills/nbr6120-2019-cargas/SKILL.md` (ja criado, pronto)
+- Propagação fluxo v2.9 aos 3 espelhos (Checklist, REDEFINIDO, manual operacional)
+- Replicação Item 4 no arquivo-fonte wallenberg-drenagem-continua-v2 (só cópia -local editada)
+
+**Items não feitos (planejados, não decididos hoje):**
+- Item 1 (Gestor Fechamento) — depende Cardozo fechar Exame 2
+- Item 6.2 (Trim _estado_hely/lucio/wallenberg) — passe dedicado pós-Kelsen
+- Item 6.5 (Colapso fechamento+diário+razão) — redesenho processo, bloco coeso
+
+**Status:** ✅ COMPLETO. Livro-Razão atualizado. Todas as 6 ratificações + 1 decisão registradas com data 09/09/2026. Wallenberg executa pendências hoje pós-reunião.
+
+**Data Ratificação:** 09/09/2026, 13:00 UTC  
+**Ratificador:** Claudemberg (CEO)  
+**Registrador:** Wallenberg
+
+---
+
 ### [2026-09-09] Diária Skills v2.9 (Quarta) — 1 Skill Trilha A (NBR 8681:2025 Segurança) + 1ª ativação v2.9
 
 **Executado por Wallenberg (rotina Seg-Qui, Passos 0-5+8):**
@@ -29,6 +204,54 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 **Marco:** primeira Skill ativada pelo fluxo v2.9 (validação por Gestor dono no mesmo dia, sem esperar Semanal). Precedente operacional confirmado.
 
 **Como desfazer:** remover `baumgart_nbr8681-2025-acao-seguranca-estruturas.md` e `.claude/skills/nbr8681-2025-seguranca-estruturas/`; reverter edições no índice (via backup `_backups/2026-09-09/indice_setembro_pre-nbr8681.md`); remover esta entrada do livro-razão.
+
+---
+
+### [2026-09-09, 10:15-10:45] Drenagem Contínua v2.3 — 6ª Rodada (ter)
+
+**Contexto:** Execução automática de `wallenberg-drenagem-continua-local` — Portão de Trabalho ativado (Passo 2.5).
+
+**Fila verificada:**
+- `pendencias.json`: 0 itens `alc:"auto"`+`status:"aberta"` (grep confirmado)
+- Skills propostas: 1 Skill nova (`nbr6120-2019-acoes-cargas`, criada 08/09, Status "proposta")
+- Notion "Treinos e Testes": (não consultado — Portão ativado por Skills propostas; Gestor sem fila automática)
+
+**Execução:**
+
+1. ✅ **Cardozo acionado** (único Gestor com fila)
+   - Avaliou Skill NBR 6120:2019 — **PROCEDE** ✓
+   - Técnica: tríade estrutural 6120→8681→6118→6122 confirmada; conteúdo coerente
+   - Cross-disciplina: Saturnino/Tenreiro/Glaziou/Landell mapeados corretamente
+   - Coerência com NBR 8681 (avaliada hoje v2.9): confirmada — 8681 completa a lacuna deixada por 6120 ("fatores de combinação")
+   - Lacunas: explícitas e aceitáveis (fontes secundárias, padrão confirmado)
+   - Status: "avaliada — pronta para ratificação de Claudemberg"
+   - Nenhuma pendência aberta ou bloqueio identificado
+
+2. ✅ **Exame 2 (Shadow→Assisted) reconciliado**
+   - Baumgart: concluído 08/09 (2/2 aprovado, promovido)
+   - Landell, Saturnino, Glaziou, Tenreiro, Mindlin: confirmados em Status "pendente" do Notion
+   - Cronograma: Saturnino+Glaziou hoje (09/09), Tenreiro+Mindlin amanhã (10/09)
+   - Não administrados nesta rodada (grande demais para Drenagem; executados em sessão separada)
+
+3. ❌ **Learning Agent (Passo 8a)**
+   - Segunda-feira: NÃO (hoje é terça)
+   - Regra: executa só segunda + se houve execução real
+   - Não rodado
+
+4. ✅ **Livro-razão (Passo 8b)**
+   - Executado (esta entrada)
+   - Nenhum item `auto` fechado (execução foi só avaliação de Skill, não fechamento)
+   - Status registrado para próxima rodada
+
+5. ❌ **Painel (Passo 8c)**
+   - Nenhuma mudança de capacidade real (Skill ainda aguarda ratificação de Claudemberg)
+   - Não republicado
+
+**Duração:** ~30 min (incluindo espera de Cardozo)
+
+**Próxima ação:** Claudemberg ratificar NBR 6120:2019 (quando tempo permitir); Cardozo continua Exame 2 dos 5 Agentes restantes (fora desta rotina).
+
+**Como desfazer:** remover esta entrada do livro-razão; reverter qualquer edição em `_estado_cardozo.md` se houver (nenhuma executada, só leitura).
 
 ---
 

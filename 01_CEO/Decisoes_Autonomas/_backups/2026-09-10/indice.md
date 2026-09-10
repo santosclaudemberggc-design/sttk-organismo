@@ -2,7 +2,7 @@
 
 **Status:** Ativo  
 **Mês:** Setembro 2026  
-**Atualização:** 10/09/2026
+**Atualização:** 09/09/2026
 
 ---
 
@@ -20,7 +20,6 @@
 | 07/09 | NBR 6122:2019 + Emenda 1/2022 — Projeto e Execução de Fundações | Inteligência (Trilha A) | Baumgart (Estrutural, Complementares) | ✅ ratificada 07/09 |
 | 08/09 | NBR 6120:2019 — Ações para o Cálculo de Estruturas (Cargas) | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Tenreiro, Glaziou, Landell | proposta |
 | 09/09 | NBR 8681:2025 — Ação e Segurança nas Estruturas (fatores γf, ψ, combinações ELU/ELS) | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Landell | ativa-com-ressalva (v2.9, Cardozo 09/09) |
-| 10/09 | NBR 10844:1989 — Instalações Prediais de Águas Pluviais (calhas, condutores, caixas de areia, lançamento) | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart | ativa-com-ressalva (v2.9, Cardozo 10/09) |
 
 **⚠️ Nota de correção (03/09/2026):** as 4 primeiras linhas acima tinham se autodeclarado "ratificada — Claudemberg, ao vivo, pós-Drenagem Contínua" nos próprios arquivos `.md`, sem que essa ratificação tivesse de fato acontecido — autodeclaração indevida de uma rotina autônoma. Corrigido nos arquivos-fonte; a ratificação real aconteceu nesta data, em rodada de auditoria com Wallenberg.
 
@@ -28,19 +27,19 @@
 
 ## Estatísticas
 
-- **Skills Propostas (semana 07-12/09):** 4 (Trilha A: 4, Trilha B: 0)
-- **Skills Propostas (acumulado setembro):** 11
+- **Skills Propostas (semana 07-12/09):** 3 (Trilha A: 3, Trilha B: 0)
+- **Skills Propostas (acumulado setembro):** 10
 - **Skills Testadas:** 0
 - **Cobertura Trilha A por Agente (desde agosto):**
   - Baumgart: 6 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas + NBR 8681:2025 segurança)
-  - Saturnino: 3 (NBR 5626+8160 + NBR 9575:2024 cross + NBR 10844:1989 águas pluviais)
+  - Saturnino: 2 (NBR 5626+8160 + NBR 9575:2024 cross)
   - Landell: 2 (NBR 5410 + COSCIP/CBMERJ)
   - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
   - Tenreiro: 2 (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross)
   - Mindlin: 1 (NBR 6492:2021)
   - Kelsen/Hely: 3 (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026)
 - **Achados Vitruvius:** nenhum achado novo esta rodada (pyRevit-MCP pago — descartado; mcp-servers-for-revit arquivado — descartado). Total acumulado: 8 achados (0 novo, 0 atualizados).
-- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) ~~NBR 6122:2022 fundações~~ CONCLUÍDA 07/09; (5) Apresentação interativa ao cliente — **busca PAUSADA**; (6) NBR 16280:2024 reformas (PAUSADA — construção do zero); (7) ~~NBR 6120:2019 cargas~~ CONCLUÍDA 08/09; (8) ~~NBR 8681:2025 segurança~~ CONCLUÍDA 09/09 (ativa-com-ressalva); (9) ~~NBR 10844:1989 águas pluviais~~ CONCLUÍDA 10/09 (ativa-com-ressalva); (10) Próximo Saturnino: NBR 7229:1993 (fossas sépticas) ou NBR 10521:1988 (poços absorventes) — terrenos sem rede pública; (11) Passo 8 se lacuna real pedir
+- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) ~~NBR 6122:2022 fundações~~ CONCLUÍDA 07/09; (5) Apresentação interativa ao cliente — **busca PAUSADA** (recomendação formal aceita); (6) NBR 16280:2024 reformas (STTK = construção do zero, monitorar, PAUSADA per feedback); (7) ~~NBR 6120:2019 cargas~~ CONCLUÍDA 08/09; (8) ~~NBR 8681:2025 segurança~~ CONCLUÍDA 09/09 (ativa-com-ressalva); (9) NBR 10844:1989 (águas pluviais — Saturnino); (10) Passo 8 se lacuna real pedir
 
 ---
 
@@ -121,15 +120,4 @@
 
 ---
 
----
-
-## Observações da Rodada 10/09/2026
-
-1. **NBR 10844:1989 — Instalações Prediais de Águas Pluviais (Saturnino):** completa o conjunto fundamental de normas hidrossanitárias de Saturnino (NBR 5626+8160 cobre água fria+esgoto; NBR 10844 cobre drenagem pluvial). Skill ativa-com-ressalva: texto integral ABNT não lido (pago), valores de i (mm/h) para RJ não obtidos numericamente — Saturnino obrigado a consultar equações IDF Rio-Águas por zona do bairro antes de qualquer cálculo real. Cardozo validou PROCEDE sem correções.
-2. **Kelsen:** nenhuma deliberação CAU-RJ nova em setembro identificada. LICIN 2.0 sem atualização 2026 além da implementação de 01/01/2025. Sem Skill criada (Princípio 15).
-3. **Lúcio:** todos os projetos Revit-MCP já conhecidos (UV-Tech, RevitMCPBridge2026, BIMwright). Nenhum achado novo para vitruvius_achados. Busca de apresentação interativa continua PAUSADA. Sem Skill criada (Princípio 15).
-4. **Achados vitruvius:** nenhum achado novo.
-
----
-
-**Próxima Atualização:** 11/09/2026 (Sexta — Painel + Dashboard + Análise semanal) ou conforme agenda
+**Próxima Atualização:** 10/09/2026 (Quinta — Seg-Qui) ou 12/09/2026 (Sexta — Painel + Dashboard)

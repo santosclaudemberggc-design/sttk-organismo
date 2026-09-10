@@ -22,6 +22,54 @@ metadata:
 
 ---
 
+## [2026-09-10] — Diária Skills v2.9 (Quinta)
+
+### RODADA ANTERIOR (O que foi entregue)
+
+- [x] **Skills criadas:** 1 (NBR 10844:1989 — Instalações Prediais de Águas Pluviais, Trilha A, Saturnino principal + cross Glaziou/Baumgart)
+- [x] **Skill ativada v2.9:** Sim — Cardozo validou PROCEDE, instalada em `.claude/skills/nbr10844-1989-aguas-pluviais/SKILL.md`
+- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (1 novo + índice atualizado)
+- [x] **Livro-razão registrado:** Sim (Setembro.md, entrada 10/09)
+- [ ] **Painel atualizado:** Não (tarefa de Sexta 12/09)
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **Apresentação interativa ao cliente:** busca PAUSADA. Não buscar mais até caso real forçar decisão.
+- **LuDattilo/revit-mcp-server (138 tools):** decisão em "avaliar incorporação parcial" — falta comparação tool-a-tool formal.
+- **Cardozo Exame 2:** LOTE COMPLETO (6/6) — nenhuma pendência.
+- **NBR 7229:1993 (fossas sépticas) / NBR 10521:1988 (poços absorventes):** próxima prioridade Saturnino — para terrenos sem rede pública de esgoto.
+- **Intensidade pluviométrica RJ (i mm/h):** obtida só como referência orientativa na Skill de hoje. Saturnino precisa consultar IDF Rio-Águas em caso real — não fechar esse item aqui, é responsabilidade do Agente ao usar a Skill.
+- **Mindlin: `agents/mindlin.md` desatualizado** — ainda pode listar "sem Skill técnica própria" mas ele TEM `nbr6492-representacao-grafica` ativa. Corrigir quando houver janela.
+
+### O QUE NÃO FAZER (Avoid retrabalho)
+
+- ❌ **Blender MCP não crie Skill nova** — já coberto em `arquitetura_mcp-gratuitos-render-video-blender-huggingface.md` (01/08/2026)
+- ❌ **Architecture MCP (sceneview-tools) não pesquise mais** — retornou 404
+- ❌ **NBR 5410 não duplique** — já coberta por Skill de 28/08
+- ❌ **NBR 15220-3:2024 não duplique** — Skill de 01/09
+- ❌ **NBR 15575:2025 desempenho acústico pisos não duplique** — Skill de 03/09
+- ❌ **NBR 9575:2024 impermeabilização não duplique** — Skill de 02/09
+- ❌ **Resolução SMDU 10/2026 (RDT) não duplique** — Skill de 03/09
+- ❌ **COSCIP/CBMERJ Decreto 42/2018 não duplique** — Skill de 04/09
+- ❌ **NBR 6122:2022 fundações não duplique** — Skill de 07/09
+- ❌ **RevitCortex 173 tools não duplique** — vitruvius_achados 27/08
+- ❌ **BIMwright/rvt-mcp 229 tools não crie Skill isolada** — vitruvius_achados 03/09
+- ❌ **UV-Tech/revit-claude-mcp 40 tools não crie Skill isolada** — vitruvius_achados 03/09
+- ❌ **LuDattilo/revit-mcp-server 138 tools não crie Skill isolada nova** — vitruvius_achados 24/08, atualizado 04/09
+- ❌ **IbrahimFahdah/revit-claude-mcp 46 tools não crie Skill isolada** — vitruvius_achados 07/09
+- ❌ **Simone-Balin/Sam-AEC 100+ tools não crie Skill** — vitruvius_achados 08/09, guia de setup (1 star)
+- ❌ **NBR 6120:2019 cargas não duplique** — Skill de 08/09
+- ❌ **NBR 8681:2025 segurança/fatores não duplique** — Skill de 09/09 (ativa-com-ressalva)
+- ❌ **NBR 10844:1989 águas pluviais não duplique** — Skill de 10/09 (ativa-com-ressalva)
+- ❌ **pyRevit-MCP não crie Skill** — pago, viola critério 1
+- ❌ **mcp-servers-for-revit não crie Skill** — arquivado 2024, inativo
+- ❌ **Luw.ai, Remodel AI, Redraw, Leonardo AI** — todos cloud, violam critério 2
+- ❌ **Autodesk APS Sample MCP Server** — exige assinatura paga, viola critério 1
+- ❌ **Modly** — gerador 3D, não renderizador de cena
+- ❌ **Apresentação interativa — PAUSAR BUSCA** até caso real forçar decisão
+
+---
+
 ## [2026-09-09] — Diária Skills v2.9 (Quarta)
 
 ### RODADA ANTERIOR (O que foi entregue)
@@ -211,6 +259,6 @@ metadata:
 
 ---
 
-**Última atualização:** 09/09/2026 (quarta-feira — Diária Skills v2.9, Passos 0-5+8 executados)  
-**Próxima leitura:** 10/09/2026 (quinta-feira) — Diária Skills Seg-Qui  
+**Última atualização:** 10/09/2026 (quinta-feira — Diária Skills v2.9, Passos 0-5+8 executados)  
+**Próxima leitura:** 11/09/2026 (sexta-feira) — Diária Skills SEXTA (Painel + Dashboard + Análise)  
 **Painel pendente para:** 12/09/2026 (sexta-feira)
