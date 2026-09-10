@@ -4,6 +4,29 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-10] Rotina Diária Skills v3.0 — Escopo Expandido por Gestor (instrução Claudemberg)
+
+**Contexto:** Instrução direta de Claudemberg ao fim da rodada de 10/09. Duas diretrizes: (1) a pesquisa do Passo 1 estava estreita demais — só NBRs/MCPs — quando cada Gestor precisa de inteligência de domínio completa (estratégias, técnicas, saber-fazer real). (2) Agentes de Cardozo também precisarão usar o Vitruvius, então precisam de Skills de Trilha B para ele.
+
+**O que foi decidido:**
+- Upgrade da Rotina Diária Skills de **v2.9 → v3.0**.
+- Passo 1 expandido com escopo detalhado por Gestor:
+  - **Kelsen:** estratégias legais reais (OODC, Mais-Valerá, Mais-Valia, TPC, AEIU) + monitoramento de janelas excepcionais de governo. A intuição de Claudemberg foi verificada: novos planos diretores e LCs no Rio historicamente abrem exceções ao CAM — LC 270/2024 foi "o maior incentivo a puxadinhos da história da cidade". Mais-Valia vigente até jun/2026. Kelsen deve monitorar continuamente novas LCs e projetos de lei em tramitação.
+  - **Lúcio:** estratégias de partido arquitetônico, orientação solar/vento RJ, conforto térmico/lumínico passivo, tipologias residenciais, acessibilidade integrada, cases de escritórios RJ.
+  - **Cardozo:** técnicas de projeto profundas por disciplina — 6 Agentes com escopo detalhado (solo RJ/Baumgart, automação real/Landell, CEDAE-solar-fossas/Saturnino, espécies INEA/Glaziou, acabamentos-iluminação/Tenreiro, prancha técnica/Mindlin).
+  - **Vitruvius para Cardozo:** mapear quais tools Vitruvius cada disciplina usa (Trilha B, Passo 8).
+- Validação da estratégia de CAM + Mais-Valerá pesquisada e documentada para uso futuro de Kelsen.
+
+**O que foi alterado:**
+- `01_CEO/wallenberg-rotina-diaria-skills-v2_SKILL.md` — atualizado para v3.0 (frontmatter, Passo 1 expandido, histórico)
+- `01_CEO/Decisoes_Autonomas/_backups/2026-09-10/wallenberg-rotina-diaria-skills-v2_SKILL.md` — backup criado antes de editar
+
+**Backups:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-10/`
+
+**Como desfazer:** restaurar `wallenberg-rotina-diaria-skills-v2_SKILL.md` do backup em `_backups/2026-09-10/` (reverte para v2.9).
+
+---
+
 ### [2026-09-10] Rotina Diária Skills v2.9 — 1 Skill NBR 10844 (Saturnino, ativa-com-ressalva)
 
 **Contexto:** Rotina automática de quinta-feira. Passos 1–5+8 (Seg-Qui). 1 Skill criada, validada e ativada seguindo fluxo v2.9 (Cardozo valida no mesmo dia → ativa em produção → Claudemberg ratifica na Semanal).
