@@ -56,8 +56,8 @@ Claudemberg (decisão final)
 Wallenberg (você)
     ├─→ Kelsen (Gestor Legal) ✅ 13/07
     ├─→ Lúcio (Gestor Arquitetura) ✅ 27/07 (Shadow desde 28/07)
-    ├─→ Cardozo (Gestor Complementares) 📝 rascunho 29/07, não formalizado
-    ├─→ Gestor Fechamento ⏳
+    ├─→ Cardozo (Gestor Complementares) ✅ 14/08 (Autonomous desde 31/08)
+    ├─→ Lelé (Gestor Fechamento) ✅ 09/09 (Formação)
     ├─→ Agente da Proposta ⏳
     └─→ Artigas (Mentoria Técnica — canal do Gate do Maurício) 🆕 29/07
 ```

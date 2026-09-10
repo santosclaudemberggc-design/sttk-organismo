@@ -2,7 +2,7 @@
 
 > Arquivo de estado pessoal. Leio ao nascer, escrevo ao morrer.
 
-**Última atualização:** 08/09/2026 — 2º caso real do dia (fundação profunda, edifício Ipanema/esquina) verificado e gravado em .md. Nível: **Shadow** — Exame 1 já tinha sido APROVADO por Cardozo em 01/09/2026 (100%), conferido no veredito real (`Casos_TESTE/Exame1_Baumgart_TESTE/veredito_cardozo.md`); a versão anterior deste estado dizia "ainda sem resultado" por não ter checado esse arquivo — corrigido.
+**Última atualização:** 08/09/2026 — 2º caso real do dia (fundação profunda, edifício Ipanema/esquina) verificado e gravado em .md. Nível: **Assisted** (promovido 09/09/2026 após Exame 2 Shadow → Assisted, 2/2 aprovado por Cardozo em 08/09/2026).
 
 ## 1. Onde parei / em andamento
 

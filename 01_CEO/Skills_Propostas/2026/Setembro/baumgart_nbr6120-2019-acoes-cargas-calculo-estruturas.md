@@ -2,7 +2,7 @@
 name: nbr6120-2019-acoes-cargas-calculo-estruturas
 description: "NBR 6120:2019 — Ações para o Cálculo de Estruturas de Edificações (cargas permanentes e acidentais). Complemento direto da NBR 6118 (superestrutura) e NBR 6122 (fundações)"
 version: 1.0
-status: "avaliada — pronta para ratificação de Claudemberg (Cardozo, 08/09/2026)"
+status: "ratificada (Claudemberg, 09/09/2026 — Reunião Semanal)"
 tipo: Inteligência (Trilha A)
 gestor_alvo: Cardozo (Complementares)
 agente_alvo: Baumgart (Estrutural, principal) — cross: Saturnino (cargas em áreas molhadas/coberturas), Tenreiro (cargas de revestimento/interiores)

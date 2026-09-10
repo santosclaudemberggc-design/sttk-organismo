@@ -1,16 +1,16 @@
 # Relatorio de Tokens — MEDICAO REAL
 
-**Gerado em:** 2026-09-07T11:34:28  
+**Gerado em:** 2026-09-09T12:30:27  
 **Fonte:** transcripts de sessao do Claude Code (`C:\Users\santo\.claude\projects\D--000-ESTRUTURA-DEPARTAMENTO-DE-PROJETO`)  
-**Sessoes lidas:** 128 (**127** conversas de trabalho, >= 3 turnos)  
-**Periodo:** 2026-07-16 -> 2026-09-07  
+**Sessoes lidas:** 137 (**136** conversas de trabalho, >= 3 turnos)  
+**Periodo:** 2026-07-16 -> 2026-09-09  
 
 > Todo numero abaixo vem do campo `message.usage` de cada resposta do assistente. Nao ha projecao nem estimativa multiplicada.
 
 ## 1. Prompt caching — ja esta ligado?
 
-- Sessoes com leitura de cache (`cache_read_input_tokens` > 0): **128 / 128**
-- Cache hit ratio medio (conversas de trabalho): **90.7%** do contexto de entrada vem de cache
+- Sessoes com leitura de cache (`cache_read_input_tokens` > 0): **137 / 137**
+- Cache hit ratio medio (conversas de trabalho): **91.0%** do contexto de entrada vem de cache
 
 **Conclusao:** o prompt caching nativo da Anthropic **ja opera** nas sessoes deste projeto. O Item 7 ("aguardando API Claude v1.9+") descreve um bloqueio que nao existe — o ganho ja esta sendo colhido.
 
@@ -18,7 +18,7 @@
 
 - Base (2026-S30, 2026-S31): mediana **67.1k** tokens de contexto inicial
 - Atual (2026-S36, 2026-S37): mediana **75.6k** tokens
-- Resultado medido: **AUMENTO de 12.8%** (8.6k tokens)
+- Resultado medido: **AUMENTO de 12.7%** (8.5k tokens)
 
 > O plano projetava 45-70% de **reducao** de contexto por conversa. A medicao real mostra o contrario: o contexto inicial nao caiu apos os slices de CLAUDE.md (30/07) nem a consolidacao de MEMORY.md (29/07).
 
@@ -34,7 +34,7 @@
 | 2026-S34 | 2026-08-17 | 17 | 61.0k | 62.9k | 58.9k | 82.2k | 90% |
 | 2026-S35 | 2026-08-24 | 18 | 64.0k | 65.7k | 60.1k | 85.8k | 90% |
 | 2026-S36 | 2026-08-31 | 21 | 74.5k | 79.8k | 66.2k | 121.4k | 92% |
-| 2026-S37 | 2026-09-07 | 3 | 76.8k | 77.6k | 76.2k | 79.7k | 64% |
+| 2026-S37 | 2026-09-07 | 12 | 76.7k | 78.4k | 74.1k | 94.3k | 88% |
 
 **Marcos do plano de otimizacao (para cruzar com a curva):**
 - 2026-07-29 — Item 1: consolidacao MEMORY.md (18 -> 3 arquivos)
@@ -46,9 +46,18 @@
 
 | Data | Sessao | Br. | Turnos | Ctx inicial | Ctx pico | Saida | Cache read | Custo-eq |
 |---|---|---|--:|--:|--:|--:|--:|--:|
-| 2026-09-07 | `5db536b5` | organismo-30-0 | 3 | 79.7k | 79.7k | 2.1k | 120.1k | 171.3k |
-| 2026-09-07 | `08cb7a60` | organismo-30-0 | 8 | 76.8k | 87.9k | 5.0k | 449.4k | 331.5k |
-| 2026-09-07 | `fd9598e0` | organismo-30-0 | 11 | 76.2k | 91.6k | 4.6k | 689.4k | 395.6k |
+| 2026-09-09 | `78c1af14` | organismo-30-0 | 13 | 76.5k | 104.3k | 10.9k | 999.8k | 441.2k |
+| 2026-09-09 | `a1773a2b` | organismo-30-0 | 32 | 80.4k | 134.5k | 23.8k | 3.26M | 812.7k |
+| 2026-09-09 | `b3e9b3c2` | organismo-30-0 | 105 | 75.8k | 166.4k | 104.3k | 12.62M | 2.97M |
+| 2026-09-08 | `d2605239` | organismo-30-0 | 12 | 74.4k | 77.8k | 4.8k | 752.8k | 301.7k |
+| 2026-09-08 | `c3a38d35` | organismo-30-0 | 169 | 78.9k | 325.1k | 137.4k | 31.17M | 7.98M |
+| 2026-09-08 | `37d58eca` | organismo-30-0 | 108 | 78.9k | 265.7k | 75.2k | 14.04M | 4.34M |
+| 2026-09-08 | `89937358` | organismo-30-0 | 115 | 94.3k | 265.1k | 135.0k | 21.91M | 4.22M |
+| 2026-09-08 | `0613ca48` | organismo-30-0 | 120 | 75.4k | 166.8k | 85.6k | 14.28M | 2.73M |
+| 2026-09-07 | `4aca0aa7` | organismo-30-0 | 9 | 74.1k | 104.5k | 6.4k | 432.6k | 490.0k |
+| 2026-09-07 | `5db536b5` | organismo-30-0 | 73 | 79.7k | 255.1k | 55.7k | 12.83M | 3.38M |
+| 2026-09-07 | `08cb7a60` | organismo-30-0 | 262 | 76.8k | 296.2k | 203.2k | 40.44M | 7.97M |
+| 2026-09-07 | `fd9598e0` | organismo-30-0 | 78 | 76.2k | 167.1k | 65.0k | 9.89M | 2.04M |
 | 2026-09-04 | `e7421988` | organismo-30-0 | 203 | 121.4k | 290.1k | 110.5k | 39.12M | 5.81M |
 | 2026-09-04 | `b202bd2b` | organismo-30-0 | 262 | 121.4k | 336.1k | 156.8k | 57.21M | 8.63M |
 | 2026-09-04 | `0459a60f` | organismo-30-0 | 38 | 79.3k | 187.1k | 23.9k | 4.13M | 1.54M |

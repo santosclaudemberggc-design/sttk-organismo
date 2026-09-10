@@ -44,9 +44,9 @@ WALLENBERG (CEO)
     │    └── Agentes (futuros)
     │         └─ Coordenam: Estrutural, Elétrico, Hidro, Automação, Paisagismo
     │
-    ├── ??? (Gestor Fechamento) ⏳
-    │    └── Agentes (futuros)
-    │         └─ Coordenam: Orçamento, Cronograma, Pós-venda
+    ├── Lelé (Gestor Fechamento) ✅ 09/09/2026 (Formação)
+    │    └── Agentes (a definir por Lelé)
+    │         └─ 4 etapas: Compatibilização, Projeto Executivo, Orçamento Executivo, Liberação de Obra (Gate 16)
     │
     ├── Agente da Proposta (direto a Wallenberg) ⏳
     │    └─ Função: Leilão de preços + Certificação de parceiros

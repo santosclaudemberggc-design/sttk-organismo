@@ -80,6 +80,8 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 | Tenreiro | 09/09 | aprovado | aprovado |
 | Mindlin | 09/09 | aprovado | aprovado |
 
+**Consolidação (10/09/2026):** Cardozo confirmou 4 memoriais em disco (Tenreiro E1/E2, Mindlin E1/E2) — estado verificado e correto. `.claude/agents/` atualizados para Assisted. **Lote Exame 2 tecnicamente encerrado com sucesso.**
+
 **Achados colaterais de Cardozo:**
 1. Mindlin tem Skill técnica própria já ativa (`nbr6492-representacao-grafica`) — contradiz descrição atual em `.claude/agents/mindlin.md`. Corrigir.
 2. Arquivos "fantasma" de Saturnino/Glaziou (rodada anterior) existem agora no disco ao lado dos reais — auditoria recomendada.
@@ -798,5 +800,61 @@ Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e co
 - Item 4 — replicar o Passo 7.5 no arquivo-fonte `01_CEO/wallenberg-drenagem-continua-v2_SKILL.md` (só a cópia executável em `.claude/scheduled-tasks/` foi editada).
 
 **Como desfazer:** restaurar os 3 arquivos dos backups de `_backups/2026-09-08/`; `update_scheduled_task wallenberg-reuniao-semanal cronExpression "30 10 * * 1"`; apagar `01_CEO/Inventario_Capacidade/`; remover esta entrada.
+
+---
+
+### [2026-09-10, 10:15-10:45] Drenagem Contínua v2.3 — 7ª Rodada (qua) — Consolidação Exame 2
+
+**Contexto:** Execução automática de `wallenberg-drenagem-continua-local` (segunda rodada desta semana, Portão ativado).
+
+**Fila verificada:**
+- `pendencias.json`: 0 itens `alc:"auto"`+`status:"aberta"` (grep confirmado)
+- Skills propostas: 1 Skill "proposta" (`nbr6120-2019-acoes-cargas`, criada 08/09, status "proposta" — não avaliada nesta rodada)
+- Notion "Treinos e Testes": 2 itens "pendente" (Exame 2 Tenreiro+Mindlin — continuação de 09/09)
+
+**Decisão do Portão:** Fila não vazia. Gestor acionado: Cardozo (Exame 2 represado).
+
+**Execução:**
+
+1. ✅ **Cardozo acionado em background** (10:22)
+   - Escopo: administrar Exame 2 (Shadow→Assisted) para Tenreiro+Mindlin (últimos 2/6 do lote)
+   - Cronograma original: 10/09 (confirmado)
+   - Instrução: não sub-delegar; executar direto
+   - Retorno (10:45 matutino): **2/2 aprovado ambos**
+
+2. ✅ **Resultado final consolidado:**
+   - **Tenreiro (Interiores):** E1 piso Ipanema, E2 acústica NBR 15575:2025 — **2/2 APROVADO. Promovido Shadow→Assisted.**
+   - **Mindlin (Apresentação):** E1 prancha Tijuca, E2 compilação Laranjeiras — **2/2 APROVADO. Promovido Shadow→Assisted.**
+   - **✅ LOTE EXAME 2 COMPLETO: 6/6 Agentes Cardozo Assisted**
+     - Baumgart 08/09
+     - Landell, Saturnino, Glaziou 09/09
+     - Tenreiro, Mindlin 09/09 (confirmado em disco 10/09)
+
+3. ✅ **Integridade de estado verificada:**
+   - 4 memoriais técnicos de Tenreiro+Mindlin em disco (confirmado por Cardozo)
+   - `.claude/agents/tenreiro.md` e `mindlin.md` atualizados para nível Assisted
+   - `_estado_tenreiro.md` e `_estado_mindlin.md` atualizados
+
+4. ⚠️ **Gap de ferramenta Notion reincidiu 6ª vez**
+   - Cardozo não consegue atualizar Notion (sem ferramenta de escrita)
+   - IDs aguardando registro manual por Wallenberg:
+     - Tenreiro E1: `3d592372-eae1-8104-b731-da3c76b89666` / E2: `3d592372-eae1-819a-8644-ebd34fd9b0e6`
+     - Mindlin E1: `3d592372-eae1-81f3-a458-ffa63299f3c0` / E2: `3d592372-eae1-8164-a9f6-f3c527dd6b52`
+   - Campos: Status `pendente→aprovado`, Resultado `2/2 aprovado`, Atualizado em `09/09/2026`
+
+5. ❌ **Learning Agent (Passo 8a):** não rodado (quarta-feira, só roda segunda)
+
+6. ✅ **Painel (Passo 8c):** mudança de capacidade real → **REPUBLICA** com atualização de card Cardozo
+
+**Impacto de capacidade:** 
+- ✅ 6 Agentes de Complementares agora Assisted (estavam Shadow)
+- ✅ Cardozo pronto para Exame 3 (Assisted→Autonomous) quando julgar apropriado
+- Primeira equipe completa em nível Assisted desde a criação
+
+**Como desfazer:** reverter `.claude/agents/tenreiro.md` e `mindlin.md` para Shadow; reclassificar Notion como "pendente"; readministrar Exame 2.
+
+**Duração:** ~20 min de execução automática + consolidação.
+
+**Próxima ação:** Wallenberg atualizar Notion manualmente (IDs acima); republica Painel; entrega da rodada 10/09 concluída.
 
 ---

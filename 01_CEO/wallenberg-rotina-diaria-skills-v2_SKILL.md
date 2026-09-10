@@ -1,21 +1,24 @@
 ---
-name: wallenberg-rotina-diaria-skills-v2-7
-version: 2.7.0
+name: wallenberg-rotina-diaria-skills-v2-9
+version: 2.9.0
 created: 2026-08-28
-based_on: "v2.0 + Redefinição Completa 28/08/2026"
+based_on: "v2.8 + Item 2 (Fluxo de Ativação) 08/09/2026"
 enhancements: 
   - "Checklists visuais obrigatórios (seg-qui + sexta)"
   - "Dashboard integrado com métricas"
   - "CronJob PDF automático 20:00"
   - "Agendador automático 08:00"
   - "Zero overhead manual (referência só em dúvida)"
+  - "1 Skill por Gestor por dia (até 3), não mais 1 total"
+  - "Trilha A ativa no mesmo dia via validação do Gestor dono (não espera Semanal)"
+  - "Selo de ressalva para Skill sem fonte primária lida"
 ---
 
 # Wallenberg Rotina Diária Skills v2.7
 
 **REDEFINIDA COM CHECKLISTS VISUAIS + DASHBOARD + AGENDADOR**
 
-🔴 **STATUS: v2.7 ATIVA DESDE 28/08/2026**  
+🔴 **STATUS: v2.8 ATIVA DESDE 08/09/2026**  
 ✅ Checklists visuais: PRONTO  
 ✅ Dashboard integrado: PRONTO  
 ✅ CronJob PDF 20:00: ATIVO  
@@ -43,7 +46,8 @@ Você é Wallenberg, CEO do Sistema Orgânico STTK (departamento de projetos da 
 
 **Seg-Qui (Cada dia):**
 Pesquisa externa (Passo 1) → Consolidação (Passo 2) → Redação (Passo 3) → Salvamento (Passo 4) → Ferramentas (Passo 8).  
-**Tempo:** 60-75 min | **Ferramenta:** Checklist_Diaria.html
+**Meta:** até **1 Skill por Gestor** por dia (máx. 3: Kelsen, Lúcio, Cardozo). Se não encontrar material viável para algum Gestor, simplesmente não cria — nunca forçar Skill fraca para preencher cota.  
+**Tempo:** 60-90 min | **Ferramenta:** Checklist_Diaria.html
 
 **Sexta (Uma vez/semana):**
 Painel (Passo 6) → Learning (Passo 7) → Dashboard Review (Passo 9) → Análise (Passo 10) → Fechamento.  
@@ -102,7 +106,9 @@ Se está lendo isto porque:
 
 Os Passos 1-10 estão documentados aqui para referência:
 
-### Passo 1: PESQUISA EXTERNA (seg-qui, 15-20 min)
+### Passo 1: PESQUISA EXTERNA (seg-qui, 20-30 min)
+
+**[v2.8] Distribuição por Gestor:** a pesquisa agora cobre os 3 Gestores em paralelo. Aloque ~2 buscas por Gestor (6 buscas totais), cada uma dirigida à próxima prioridade do Gestor no índice do mês. Se um Gestor não tiver prioridade pendente clara, use as buscas dele para reforçar outro Gestor ou explorar tema novo.
 
 Use WebSearch/WebFetch/**watch** (plugin `/watch:watch` — assista o vídeo de verdade, não só ache texto sobre ele). Qualquer ferramenta, plugin, conector, sistema ou Skill relevante ao departamento de projetos de arquitetura/construção do zero — não é só MCP nem só render/vídeo/tour360. **[AMPLIADO 03/09/2026, Claudemberg]** Escopo não fica preso só a arquitetura/render/apresentação — inclua também busca focada no **nosso próprio fluxograma**, com o objetivo de melhorar a produtividade dos Gestores e Agentes do organismo (mesmo eixo que antes só rodava no Learning Agent/Passo 8a da Drenagem — agora também é responsabilidade deste passo). Inclua busca direta no **GitHub** (repositórios, extensões, MCPs comunitários), **todas as plataformas do Meta** (Instagram, Facebook), **YouTube** e sites oficiais.
 
@@ -134,9 +140,43 @@ Separe o que é ruído do que é útil, e agrupe por qual Gestor se beneficia (A
 
 ### 3. REDAÇÃO E ATIVAÇÃO DE SKILLS
 
+**[v2.8] Até 1 Skill por Gestor:** redija até 3 Skills por rodada (1 Kelsen, 1 Lúcio, 1 Cardozo). Se a pesquisa do Passo 1 não rendeu material suficiente para algum Gestor, não crie Skill para ele — nunca forçar. A qualidade de cada Skill individual não muda: mesma profundidade, mesmas fontes, mesmo template.
+
 Granularidade: pense por Agente que consumiria a Skill (Função 5). Para cada Skill, inclua no próprio arquivo: para qual Gestor/Agente serve, o que ela ensina/entrega, e a(s) fonte(s) da pesquisa que a originou.
 
 Antes de alterar qualquer arquivo que já existia, copie-o para `01_CEO/Decisoes_Autonomas/_backups/{AAAA-MM-DD}/`.
+
+---
+
+#### [NOVO v2.9 — 08/09/2026, Item 2] FLUXO DE ATIVAÇÃO — Skill de Inteligência (Trilha A) entra em produção no mesmo dia
+
+Skill de conhecimento técnico (Trilha A — normas, técnicas de projetar, regras de projeto) **não nasce mais como `proposta` parada esperando a Reunião Semanal**. O modelo de governança do organismo já manda ativar por conta própria e ratificar depois (ver "REGRA DE GOVERNANÇA" abaixo) — este passo só torna isso explícito para as Skills de conhecimento.
+
+**Para cada Skill de Trilha A redigida nesta rodada:**
+
+1. **Validação pelo Gestor dono (não por Claudemberg).** Acione o Gestor-alvo (Kelsen / Lúcio / Cardozo) pela ferramenta `Agent` e peça que ele confira, contra o que já existe:
+   - **Erro factual zero** — número de norma, artigo, parâmetro, prazo conferidos contra a fonte citada.
+   - **Não é duplicata** — não repete Skill que o organismo já tem (checar `indice.md` do mês + Skills ativas do Gestor). Se for expansão de uma Skill existente, editar a existente, não criar outra.
+   - **Lacunas marcadas** — toda afirmação apoiada só em fonte secundária está sinalizada no texto.
+2. **Ativação no mesmo dia.** Passando na validação do Gestor, a Skill entra em produção imediatamente — disponível para os Agentes daquele Gestor. Campo `Status` da Skill = `ativa` (ou `ativa-com-ressalva`, ver abaixo).
+3. **Claudemberg vê na Semanal como revisão retroativa**, não como portão de entrada. Pode mandar reverter uma Skill específica — por isso o "como desfazer" no livro-razão é obrigatório.
+
+**Skill de Gestor ainda não implantado** (hoje: Fechamento) continua saindo como `proposta` — sem Gestor dono, não há quem valide nem Agente que consuma. Ela ativa quando o Gestor for criado.
+
+**Trilha B (ferramentas / GitHub — Passo 8) não muda:** segue o ciclo `proposta` → `aguardando implantação` → `implantada` da Drenagem Contínua, porque ferramenta exige instalar e testar antes de estar "ativa" de verdade. Isso não é portão de Claudemberg, é prontidão técnica.
+
+---
+
+#### [NOVO v2.9 — 08/09/2026, Item 2] SELO DE RESSALVA — lacuna de fonte primária
+
+Skill de Trilha A que **não pôde ser conferida contra a fonte primária** (texto ABNT não lido, decreto/LC acessado só via agregador, parâmetro urbanístico vindo de compilação de terceiro) ativa com **selo de ressalva**:
+
+- Campo `Status` = `ativa-com-ressalva`.
+- Bloco no topo da Skill: `> ⚠️ RESSALVA DE FONTE — {qual afirmação} apoiada em {fonte secundária}. Fonte primária ({norma/lei}) não lida. Ao aplicar em caso real, o Agente é obrigado a sinalizar esta lacuna no seu retorno e tratar o valor como provisório, não como fechado.`
+- A Skill é usável (melhor ter o mapa do que não ter) — mas nunca serve de base para número final em documento de cliente sem alguém fechar a fonte primária antes.
+- Fechar a ressalva (ler a fonte primária e confirmar/corrigir) é item que o Gestor dono registra na sua própria fila de pendências.
+
+**Por quê:** parâmetro urbanístico ou norma técnica ativado como verdade final, com fonte secundária, é retrabalho dobrado — projeto refeito para entrar na legalidade. O selo deixa a capacidade disponível sem deixar o organismo confiar cedo demais nela.
 
 ---
 
@@ -144,13 +184,13 @@ Antes de alterar qualquer arquivo que já existia, copie-o para `01_CEO/Decisoes
 
 Salve em `D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\01_CEO\Skills_Propostas\{Ano}\{Mês}\` (ex: `2026\Agosto\`). Um arquivo `.md` por Skill.
 
-Mantenha/atualize um `indice.md` do mês listando cada Skill do mês (data, nome, Gestor-alvo, resumo de 1 linha, fonte, e se já está ativa) — é ele que alimenta a Reunião Mensal.
+Mantenha/atualize um `indice.md` do mês listando cada Skill do mês (data, nome, Gestor-alvo, resumo de 1 linha, fonte, e o `Status`: `ativa` / `ativa-com-ressalva` / `proposta` — esta última só para Gestor não implantado ou Trilha B aguardando a Drenagem). É ele que alimenta a Reunião Mensal e a revisão retroativa da Semanal.
 
 ---
 
 ### 5. GERAR PDFs
 
-Gere o PDF de cada `.md` criado/alterado (Skill e índice), usando `D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\_ferramentas\md_to_pdf.py`, na mesma pasta e mesmo nome — regra de PDF do organismo.
+**[v2.9 — Item 6.4, 08/09/2026] PDF gêmeo só do que sai do organismo pra Claudemberg ler/assinar:** pauta de reunião e livro-razão. **Skill e `indice.md` NÃO geram mais PDF gêmeo** — são arquivo de máquina, lidos por Gestor/Agente via Read, e cada regeneração é custo sem leitor. O CronJob PDF das 20:00 fica só com pauta + livro-razão. Se algum dia Claudemberg pedir o PDF de uma Skill específica, gera aquela sob demanda com `_ferramentas\md_to_pdf.py`.
 
 ---
 
@@ -339,7 +379,7 @@ Se a busca desta rodada não encontrar candidato novo que passe nos 4 critérios
 
 **Reescrita em 20/07/2026 por Claudemberg.** O modelo mudou de aprovação prévia para **ratificação posterior**.
 
-Você ATIVA as Skills por conta própria, sem esperar aprovação. Em troca, duas obrigações inegociáveis, no mesmo dia da execução:
+Você ATIVA as Skills por conta própria, sem esperar aprovação. **[v2.9]** Para Skill de Trilha A isso passa pela validação do Gestor dono no mesmo dia (Passo 3 — erro factual, duplicata, lacunas) e, quando a fonte primária não foi lida, entra com selo de ressalva — mas nunca espera a Semanal para ativar. Em troca, duas obrigações inegociáveis, no mesmo dia da execução:
 
 1. **Backup antes de alterar** qualquer arquivo existente → `01_CEO/Decisoes_Autonomas/_backups/{AAAA-MM-DD}/`
 2. **Registrar no livro-razão** → `01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md`, seguindo o modelo: o que decidiu, por quê, o que alterou, onde está o backup, e **como desfazer**. Claudemberg ratifica na Reunião Semanal e pode mandar reverter — se o "como desfazer" não estiver escrito, ele não consegue.
@@ -381,6 +421,8 @@ Se um dia não houver nada novo relevante, diga isso honestamente e não invente
 | 2.3 | 25/08/2026 (tarde) | Passo 8 removido desta rotina, movido inteiro para a Drenagem (correção intermediária, incompleta) |
 | 2.4 | 25/08/2026 (noite) | **[DIVISÃO FINAL]** Passo 8 volta a existir aqui, com papel único: **buscar no GitHub + criar a Skill de usabilidade**. A implantação real (instalar, conectar, testar) é 100% da Drenagem Contínua, que lê esta Skill como contrato e nunca diverge dela. Campo `Status` da Skill definido como fonte única de verdade (esta rotina só escreve `proposta`). |
 | 2.5 | 27/08/2026 | **[DUAS ADIÇÕES, Claudemberg]** (1) Vitruvius: todo achado relacionado a Revit-MCP/BIM entra em `vitruvius_achados_candidatos.md` (Oscar) antes de virar Skill isolada — "nosso Vitruvius tem que ser completo". (2) Cardozo (Complementares): pesquisa dividida em Trilha A (Inteligência — normas/técnicas de projetar/regras, Passo 1, qualquer fonte) e Trilha B (Ferramentas — GitHub/MCP, Passo 8) — nunca uma no lugar da outra. |
+| 2.8 | 08/09/2026 | **[ESCALA POR GESTOR, Claudemberg]** Meta passa de 1 Skill/dia (total) para até 1 Skill por Gestor por dia (máx. 3: Kelsen, Lúcio, Cardozo). Pesquisa do Passo 1 distribui ~2 buscas por Gestor. Se não encontrar material viável para algum Gestor, simplesmente não cria — sem forçar. Tempo estimado Seg-Qui ajustado para 60-90 min. |
+| 2.9 | 08/09/2026 | **[ITEM 2 — FLUXO DE ATIVAÇÃO, Claudemberg]** Skill de Trilha A (Inteligência) deixa de nascer `proposta` parada: Gestor dono valida no mesmo dia (erro factual / duplicata / lacunas) → ativa em produção → Claudemberg revisa retroativamente na Semanal, não é mais portão. Novo `Status` `ativa-com-ressalva` + selo de ressalva obrigatório para Skill cuja fonte primária não foi lida (Agente sinaliza a lacuna ao usar em caso real; nunca vira número final de documento de cliente sem fechar a fonte). Trilha B (Passo 8) e Skill de Gestor não implantado seguem `proposta` como antes. |
 
 ---
 
@@ -403,7 +445,7 @@ Se um dia não houver nada novo relevante, diga isso honestamente e não invente
 
 ---
 
-**Última atualização:** 28/08/2026  
-**Status:** ✅ **REDEFINIDA v2.7** — Checklists visuais + Dashboard + Agendador + CronJob  
+**Última atualização:** 08/09/2026  
+**Status:** ✅ **v2.9** — Fluxo de Ativação (Trilha A ativa no dia via Gestor dono + selo de ressalva) + Escala por Gestor (até 3 Skills/dia) + Checklists visuais + Dashboard + Agendador + CronJob  
 **Próximas execuções:** Agendador dispara 08:00 (seg-qui: Checklist_Diaria | sexta: Checklist_Sexta)  
 **Próximo passo:** Wallenberg abre COMECE_AQUI.md e segue para o Checklist visual apropriado

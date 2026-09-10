@@ -2,11 +2,16 @@
 
 > Arquivo de estado pessoal. Leio ao nascer, escrevo ao morrer.
 
-**Última atualização:** 01/09/2026 (tarde) — RECONSTRUÇÃO da curadoria Daniel OB entregue. BLOQUEIO DE PATH: pasta do projeto não montada nesta sessão.
+**Última atualização:** 09/09/2026 — Exame 2 (Shadow→Assisted) administrado por Cardozo diretamente, 2/2 APROVADO, PROMOVIDO a Assisted.
 
 ## 1. Onde parei / em andamento
 
-**Nível:** Shadow (promovido 01/09/2026 após Exame 1 Formação → Shadow, administrado por Cardozo).
+**Nível:** Assisted (promovido 09/09/2026 após Exame 2 Shadow → Assisted, administrado por Cardozo pessoalmente, sem sub-agente).
+
+**Exame 2 (09/09/2026) — 2/2 APROVADO.**
+- **Caso E1 (simples) — piso de cimento queimado, terraço + box, Ipanema/RJ** (Notion `3d592372-eae1-8104-b731-da3c76b89666`): 7 itens, 4 armadilhas reais (terraço sem juntas de dilatação/controle; box "já impermeável por natureza, dispensa manta" — falso, cimento queimado é poroso, área molhada exige sistema de impermeabilização; terraço sem caimento; acabamento liso sem antiderrapante em área externa molhada) + 2 iscas reversas (sala térrea sem unidade abaixo dispensa isolamento de impacto NBR 15575:2025 — correto; cura úmida de 10 dias antes do selante — prática correta) + 1 ponto de julgamento (compatibilizar cinza do cimento com a paleta única da casa — pendência a confirmar com Cardozo, não decidir sozinho). Memorial: `Agentes/Tenreiro/Casos/2026-09_Residencia_Ipanema_PisoCimentoQueimado/memorial_verificacao_piso_cimento_queimado.md`. **APROVADO.**
+- **Caso E2 (complexo) — desempenho acústico de pisos, NBR 15575:2025, apartamento Botafogo/RJ** (Notion `3d592372-eae1-819a-8644-ebd34fd9b0e6`): 8 itens, 5 armadilhas diretas da Skill (sala/cozinha sem manta "porque só quarto exige" — é exatamente a regra ANTIGA, 2025 estendeu a ambientes sem dormitório; piso vinílico colado sem manta; rodapé com contato rígido nos dois lados; manta de 2mm "atende ao mínimo" quando a Skill referencia ≥5mm; memorial cita "NBR 15575-4" — norma errada, é vedações internas/térmico, não acústico de pisos) + 1 isca reversa (prumada de esgoto com luva resiliente + vedação viscoelástica — prática correta) + 2 pontos críticos (valores de dB para ambiente sem dormitório citados como "confirmados" quando a própria Skill diz que não há fonte aberta — não presumir; dispensa de ensaio de campo por "autorização verbal do vizinho" — ensaio é exigência técnica/contratual, não decisão informal). Memorial: `Agentes/Tenreiro/Casos/2026-09_Apartamento_Botafogo_Acustico_NBR15575/memorial_verificacao_acustico_nbr15575.md`. **APROVADO.**
+- **Notion NÃO atualizado por mim (Cardozo) — gap de ferramenta de escrita.** Devolve a Wallenberg/Cardozo registrar as 2 linhas.
 
 **Caso real Daniel OB / Orla Bothânica (Recreio/RJ) — RECONSTRUÇÃO 01/09/2026 (tarde).**
 Cardozo reacionou com mudanças aprovadas por Claudemberg. Novo enquadramento: "PAVIMENTO TÉRREO —
@@ -83,6 +88,19 @@ Caso Daniel OB (reconstrução) — pendências no retorno a Cardozo:
   troca por porcelanato/laminado alta resistência ou madeira de exterior tratada — não deixar para
   a compatibilização pegar. EXCEÇÃO: deck de piscina = madeira de exterior (cumaru/ipê) tratada, com
   estrutura ventilada e plano de manutenção — não porcelanato (conforto térmico/tátil é a intenção).
+- **Cimento queimado NÃO é sistema de impermeabilização** (é traço cimentício poroso/microfissurado)
+  — área molhada continua exigindo manta/sistema de impermeabilização por baixo, mesma regra já
+  aprendida com madeira. Área externa exige juntas de dilatação (~2-2,5m) e tratamento antiderrapante
+  — estética "industrial" não dispensa esses dois requisitos.
+- **NBR 15575:2025 (acústico de pisos) — desde jun/2025 o requisito de isolamento entre unidades
+  sobrepostas vale também para ambientes SEM dormitório** (sala, cozinha, banheiro), não só quarto —
+  regra antiga (2013/2021) só cobria dormitório receptor. Valores exatos de dB para esses ambientes
+  sem dormitório NÃO estão em fonte aberta (norma paga) — tratar como pendência, não presumir os
+  valores da tabela com dormitório. Contrapiso colado transmite mais impacto que sobre manta; rodapé
+  não pode ter contato rígido com parede nem piso; ensaio de campo (ISO 16283) é exigência
+  técnica/contratual, não dispensável por acordo informal entre vizinhos.
+- **Não confundir NBR 15575-4 (vedações internas/térmico/iluminação) com a parte de desempenho
+  acústico de pisos** — são escopos distintos dentro da mesma norma guarda-chuva.
 - **REGRA DO MÁRMORE (pattern Daniel OB reconstrução):** mármore natural só em 1–2 pontos-herói de
   contemplação com uso leve; todo o resto que "seria mármore" (bancadas molhadas, box, testeiras,
   soleiras) = MESMO desenho em porcelanato efeito mármore, com a justificativa escrita ao cliente

@@ -63,4 +63,4 @@ Armadilha comum: esquecer peso de revestimento cerâmico em laje de banheiro/coz
 
 Texto integral ABNT não lido (fontes secundárias: portais de engenharia). Tabela 1 completa de pesos específicos não disponível. Fatores de combinação dependem da NBR 8681 (não lida — próxima prioridade sugerida). Nenhuma emenda encontrada até 08/09/2026 (versão vigente confirmada: 2019).
 
-**Fonte primária:** ABNT NBR 6120:2019. **Confiança:** média (fontes secundárias). **Avaliada e aprovada por Cardozo em 08/09/2026** — pronta para ratificação de Claudemberg.
+**Fonte primária:** ABNT NBR 6120:2019. **Confiança:** média (fontes secundárias). **Avaliada e aprovada por Cardozo em 08/09/2026. Ratificada por Claudemberg em 09/09/2026 (Reunião Semanal).**
