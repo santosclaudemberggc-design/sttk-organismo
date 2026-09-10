@@ -115,6 +115,26 @@ Os Passos 1-10 estão documentados aqui para referência:
 
 **[v2.8] Distribuição por Gestor:** a pesquisa agora cobre os 3 Gestores em paralelo. Aloque ~2 buscas por Gestor (6 buscas totais), cada uma dirigida à próxima prioridade do Gestor no índice do mês. Se um Gestor não tiver prioridade pendente clara, use as buscas dele para reforçar outro Gestor ou explorar tema novo.
 
+**[v3.0 — MENTALIDADE OBRIGATÓRIA] Buscar a brecha válida, não só a regra:**
+
+Cada Gestor precisa de dois níveis de conhecimento — e o segundo é o mais raro e mais valioso:
+
+1. **O que a lei diz** — a norma, o limite, o parâmetro. Isso qualquer um que ler a legislação aprende.
+2. **Onde a lei tem folga** — a brecha válida, o instrumento que ninguém usou ainda, a janela que abriu com a última mudança de governo, o caminho que resolve o problema do cliente quando o caminho óbvio está bloqueado.
+
+**O segundo nível é o que diferencia o profissional experiente do iniciante.** É o que os melhores arquitetos, engenheiros e advogados do RJ fazem de verdade — não burlar a lei, mas conhecê-la suficientemente bem para encontrar o que está autorizado e que outros não viram.
+
+Ao pesquisar para cada Gestor, sempre pergunte: **"Dado este problema real — CA ultrapassado, prazo vencido, área não computável, material proibido em geral mas permitido em exceção — qual é o caminho que a lei deixa aberto?"** Essa pergunta é o motor da pesquisa, não o índice de normas.
+
+Exemplos por Gestor do que isso significa na prática:
+- **Kelsen:** CA acima do básico → OODC resolve; CA acima do máximo → procura AEIU, TPC ou janela de governo; obra irregular existente → Mais-Valia até jun/2026; imóvel tombado → TPC gera potencial construtivo transferível para outro lote.
+- **Lúcio:** varanda pode não computar no CA dependendo da profundidade; mezanino pode não computar dependendo do pé-direito; ático pode ser aproveitado sem violar gabarito se tratado como reservatório/barrilete; recuo frontal pode virar área de lazer sem vedar a fachada.
+- **Baumgart:** alvenaria estrutural elimina pilares e ganha área útil real; laje nervurada reduz carga e permite vãos maiores sem pilar intermediário.
+- **Saturnino:** cisterna de reaproveitamento pluvial reduz consumo CEDAE e às vezes evita aumento de ramal; fossa+filtro aeróbico pode substituir rede em lote isolado sem autuação se aprovada no projeto legal.
+- **Glaziou:** área permeável computa para taxa de permeabilidade obrigatória mesmo quando é jardim sobre laje se o substrato for drenante — integra com cobertura verde de Baumgart.
+
+**A Skill resultante não é só "o que diz a NBR X" — é "como profissionais experientes no RJ resolvem o problema Y usando o instrumento Z que a maioria não conhece".**
+
 Use WebSearch/WebFetch/**watch** (plugin `/watch:watch` — assista o vídeo de verdade, não só ache texto sobre ele). Qualquer ferramenta, plugin, conector, sistema ou Skill relevante ao departamento de projetos de arquitetura/construção do zero — não é só MCP nem só render/vídeo/tour360. **[AMPLIADO 03/09/2026, Claudemberg]** Escopo não fica preso só a arquitetura/render/apresentação — inclua também busca focada no **nosso próprio fluxograma**, com o objetivo de melhorar a produtividade dos Gestores e Agentes do organismo (mesmo eixo que antes só rodava no Learning Agent/Passo 8a da Drenagem — agora também é responsabilidade deste passo). Inclua busca direta no **GitHub** (repositórios, extensões, MCPs comunitários), **todas as plataformas do Meta** (Instagram, Facebook), **YouTube** e sites oficiais.
 
 Procure por:
