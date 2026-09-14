@@ -22,6 +22,35 @@ metadata:
 
 ---
 
+## [2026-09-14] — Diária Skills v2.8 (Segunda)
+
+### RODADA ANTERIOR (O que foi entregue)
+
+- [x] **Skills criadas:** 1 (NBR 17076:2024 — Sistema de Tratamento de Esgoto de Menor Porte, Trilha A, Saturnino principal + cross Glaziou/Baumgart)
+- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (1 novo + índice atualizado)
+- [ ] **Skill ativada:** Não — aguarda validação Cardozo (status: proposta)
+- [ ] **PDF gerado:** Não — sem script ativo nesta sessão (registrado como pendência)
+- [ ] **Painel atualizado:** Não (tarefa de Sexta 19/09)
+- [ ] **Livro-razão registrado:** Não — registrar na próxima rodada
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **Lúcio:** sem material novo viável (NBR 16537 e NBR 15220-3 já cobertos). Investigar partido arquitetônico ou NBR 9050:2020 (acessibilidade geral) como próxima prioridade.
+- **Kelsen:** sem deliberação CAU-RJ nova em setembro. LICIN 2.0 sem atualização RJ. Aguardar outubro.
+- **NBR 17076:2024 Skill:** aguarda validação Cardozo + PDF.
+- **PDF das Skills de setembro:** sem script ativo. md_to_pdf.py a executar quando disponível.
+- **Mindlin:** ainda com apenas 1 Skill (NBR 6492). Menor cobertura dos Agentes Cardozo.
+
+### O QUE NÃO FAZER (Avoid retrabalho)
+
+- ❌ **NBR 7229:1993 criar Skill separada** — substituída pela NBR 17076:2024 (14/09). Não duplicar.
+- ❌ **NBR 13969:1997 criar Skill** — também substituída pela NBR 17076:2024
+- ❌ **NBR 10521:1988 criar Skill de sumidouros** — conteúdo coberto na NBR 17076:2024
+- ❌ **Regime de Licenciamento Portugal (outubro 2026)** — é português, não RJ. Não pesquisar novamente como se fosse brasileiro.
+- ❌ Todos os itens da lista de "NÃO FAZER" da rodada anterior continuam válidos
+
+---
+
 ## [2026-09-10] — Diária Skills v2.9 (Quinta)
 
 ### RODADA ANTERIOR (O que foi entregue)

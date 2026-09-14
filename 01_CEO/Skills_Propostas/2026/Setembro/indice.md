@@ -2,7 +2,7 @@
 
 **Status:** Ativo  
 **Mês:** Setembro 2026  
-**Atualização:** 10/09/2026
+**Atualização:** 14/09/2026
 
 ---
 
@@ -21,6 +21,7 @@
 | 08/09 | NBR 6120:2019 — Ações para o Cálculo de Estruturas (Cargas) | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Tenreiro, Glaziou, Landell | proposta |
 | 09/09 | NBR 8681:2025 — Ação e Segurança nas Estruturas (fatores γf, ψ, combinações ELU/ELS) | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Landell | ativa-com-ressalva (v2.9, Cardozo 09/09) |
 | 10/09 | NBR 10844:1989 — Instalações Prediais de Águas Pluviais (calhas, condutores, caixas de areia, lançamento) | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart | ativa-com-ressalva (v2.9, Cardozo 10/09) |
+| 14/09 | NBR 17076:2024 — Sistema de Tratamento de Esgoto de Menor Porte (Fossa, Filtro e Sumidouro) — substitui NBR 7229:1993 + NBR 13969:1997 | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart | proposta |
 
 **⚠️ Nota de correção (03/09/2026):** as 4 primeiras linhas acima tinham se autodeclarado "ratificada — Claudemberg, ao vivo, pós-Drenagem Contínua" nos próprios arquivos `.md`, sem que essa ratificação tivesse de fato acontecido — autodeclaração indevida de uma rotina autônoma. Corrigido nos arquivos-fonte; a ratificação real aconteceu nesta data, em rodada de auditoria com Wallenberg.
 
@@ -29,18 +30,19 @@
 ## Estatísticas
 
 - **Skills Propostas (semana 07-12/09):** 4 (Trilha A: 4, Trilha B: 0)
-- **Skills Propostas (acumulado setembro):** 11
+- **Skills Propostas (semana 14/09+):** 1 (Trilha A: 1, Trilha B: 0)
+- **Skills Propostas (acumulado setembro):** 12
 - **Skills Testadas:** 0
 - **Cobertura Trilha A por Agente (desde agosto):**
   - Baumgart: 6 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas + NBR 8681:2025 segurança)
-  - Saturnino: 3 (NBR 5626+8160 + NBR 9575:2024 cross + NBR 10844:1989 águas pluviais)
+  - Saturnino: 4 (NBR 5626+8160 + NBR 9575:2024 cross + NBR 10844:1989 águas pluviais + NBR 17076:2024 fossa/filtro/sumidouro)
   - Landell: 2 (NBR 5410 + COSCIP/CBMERJ)
   - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
   - Tenreiro: 2 (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross)
   - Mindlin: 1 (NBR 6492:2021)
   - Kelsen/Hely: 3 (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026)
 - **Achados Vitruvius:** nenhum achado novo esta rodada (pyRevit-MCP pago — descartado; mcp-servers-for-revit arquivado — descartado). Total acumulado: 8 achados (0 novo, 0 atualizados).
-- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) ~~NBR 6122:2022 fundações~~ CONCLUÍDA 07/09; (5) Apresentação interativa ao cliente — **busca PAUSADA**; (6) NBR 16280:2024 reformas (PAUSADA — construção do zero); (7) ~~NBR 6120:2019 cargas~~ CONCLUÍDA 08/09; (8) ~~NBR 8681:2025 segurança~~ CONCLUÍDA 09/09 (ativa-com-ressalva); (9) ~~NBR 10844:1989 águas pluviais~~ CONCLUÍDA 10/09 (ativa-com-ressalva); (10) Próximo Saturnino: NBR 7229:1993 (fossas sépticas) ou NBR 10521:1988 (poços absorventes) — terrenos sem rede pública; (11) Passo 8 se lacuna real pedir
+- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) ~~NBR 6122:2022 fundações~~ CONCLUÍDA 07/09; (5) Apresentação interativa ao cliente — **busca PAUSADA**; (6) NBR 16280:2024 reformas (PAUSADA — construção do zero); (7) ~~NBR 6120:2019 cargas~~ CONCLUÍDA 08/09; (8) ~~NBR 8681:2025 segurança~~ CONCLUÍDA 09/09 (ativa-com-ressalva); (9) ~~NBR 10844:1989 águas pluviais~~ CONCLUÍDA 10/09 (ativa-com-ressalva); (10) ~~NBR 7229:1993/NBR 13969:1997~~ RESOLVIDA 14/09 pela NBR 17076:2024 (substitui ambas); (11) Passo 8 se lacuna real pedir; (12) Próximo Lúcio: material novo ainda não identificado; (13) Próximo Kelsen: sem deliberação CAU-RJ nova em setembro
 
 ---
 
@@ -132,4 +134,13 @@
 
 ---
 
-**Próxima Atualização:** 11/09/2026 (Sexta — Painel + Dashboard + Análise semanal) ou conforme agenda
+## Observações da Rodada 14/09/2026
+
+1. **NBR 17076:2024 — Sistema de Tratamento de Esgoto de Menor Porte (Saturnino):** norma nova que substitui AMBAS as NBR 7229:1993 e NBR 13969:1997 num único documento. Principal mudança: sequência de 4 etapas obrigatória (pré-tratamento → fossa → filtro anaeróbio → sumidouro) — não é mais permitido ligar fossa diretamente ao sumidouro. Profundidade máxima de sumidouro fixada em 3,5 m. Limite de aplicação: até 12.000 L/dia. ART de engenheiro obrigatória. Resolve a prioridade (10) identificada no fechamento anterior.
+2. **Kelsen:** sem deliberação/resolução nova do CAU-RJ em setembro 2026. LICIN 2.0 sem atualização brasileira (link "outubro 2026" era regime português — descartado). Nenhuma Skill criada (Princípio 15).
+3. **Lúcio:** NBR 16537:2016 (piso tátil) já existe como Skill ativa no sistema. NBR 15220-3:2024 já coberta (01/09). Partido arquitetônico/solar/conforto sem norma nova identificada. Nenhuma Skill criada (Princípio 15).
+4. **Descartados esta rodada:** Regime de Licenciamento Urbanístico "outubro 2026" (é Portugal, não RJ); NBR 7229:1993 criação isolada (substituída pela 17076:2024 mais atual); NBR 10521:1988 criação isolada (sumidouros agora na 17076:2024).
+
+---
+
+**Próxima Atualização:** 15/09/2026 (Terça — Seg-Qui, passos 1-5) ou conforme agenda
