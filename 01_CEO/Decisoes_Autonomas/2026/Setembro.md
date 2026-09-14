@@ -4,7 +4,101 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
-### [2026-09-11] Painel do Fundador atualizado — 11/09/2026 (sexta, Rotina Diária Passo 6)
+### [2026-09-14, 10:30] Reunião Semanal com Claudemberg — CONSOLIDAÇÃO QUINZENAL (2ª quinzenal)
+
+**Contexto:** Rotina automática semanal disparada 14/09, segunda-feira. Modo quinzenal em teste (08/09–08/10). 2ª quinzenal — a de 11/09 foi criada mas Claudemberg estava ausente; todos os itens foram carregados para esta.
+
+**EXECUTADO — Pauta consolidada:**
+
+1. **Livro-razão lido:** 11-14/09 completo (incluindo Exame 3 Cardozo 6/6 em 12/09)
+2. **Medição de tokens:** scripts `medir_tokens.py` + `custo_por_agente.py` rodaram com sucesso
+   - 151 sessões lidas; período 16/07 → 14/09
+   - Cache hit: 90,69% — estável
+   - Contexto inicial: +15% aumento sobre baseline (S30-S31: 67.072 → S36-S37: 77.109)
+   - S37: 25 sessões, 79.714 mediana, 88,31% hit (ligeiro piora vs. S36's 91,74%)
+   - Top agentes: Kelsen 31,1%, Hely 22,1%, Cardozo 18,6%
+3. **Pauta formal consolidada:** 2026-09-14_pauta.md criada
+   - 8 ratificações (6 carry-forward de 11/09 + NBR 6120:2019 + Exame 3 Autonomous)
+   - 2 decisões (saúde de consumo + prioridades)
+4. **PDF gerado:** `04_REUNIOES_SEMANAIS/2026-09-14_pauta.pdf` via `_ferramentas/md_to_pdf.py`
+
+**Status:** ✅ COMPLETO. Pauta aguarda apresentação e ratificação de Claudemberg.
+
+**Itens Aguardando Ratificação (carry-forward de 11/09 + novos):**
+1. Painel do Fundador atualização 11/09
+2. Gestor Lelé (Fechamento) criado 09/09
+3. Rotina Diária Skills v3.0 — mentalidade brecha válida (10/09)
+4. Skill NBR 8681:2025 ativa-com-ressalva (09/09)
+5. Exame 2 Cardozo 6/6 Shadow→Assisted completo (08-09/09)
+6. Skill NBR 10844:1989 ativa-com-ressalva (10/09)
+7. **[NOVO]** Skill NBR 6120:2019 ativa-com-ressalva — Cardozo PROCEDE COM RESSALVA (11/09)
+8. **[NOVO — MARCO]** Exame 3 Cardozo 6/6 Agentes Autonomous (12/09)
+
+**Como desfazer:** remover entrada do Livro-Razão; PDF já gerado permanece.
+
+---
+
+### [2026-09-14, ~11:00] Drenagem Contínua v2.3 — Rodada 9ª (segunda, 10:15-11:00)
+
+**Portão de Trabalho:** 1 Skill nova (NBR 17076:2024, Saturnino/Cardozo) → Fila não vazia.
+
+**Execução Real:**
+- **Cardozo** (Autonomous): Avaliou Skill NBR 17076:2024 — **PROCEDE COM RESSALVA**
+  - Sequência obrigatória fossa → filtro anaeróbio → sumidouro verificada; mudança crítica vs. normas anteriores (NBR 7229+13969)
+  - 1 ressalva adicionada (Seção 11): câmaras múltiplas — parâmetro "1.000 L/câmara adicional" não confirmável sem texto integral ABNT
+  - Cross-disciplinas mapeadas: Glaziou (drenagem próxima ao sistema), Baumgart (carga sobre cobertura das unidades)
+  - Status: "avaliada — aguarda ratificação de Claudemberg"
+
+**Correção aplicada (em paralelo):**
+- NBR 6120:2019: status "proposta" → "avaliada — aguarda ratificação de Claudemberg" (avaliação foi 11/09, arquivo-fonte não havia sido atualizado)
+- Footer de avaliação adicionado ao arquivo NBR 6120 (Cardozo 11/09, PROCEDE COM RESSALVA)
+- `indice.md`: 2 linhas atualizadas (NBR 6120 linha 08/09 + NBR 17076 linha 14/09)
+
+**Gestores sem fila (reconciliação pura, não acionados):**
+- Kelsen: 0 itens auto+aberta, 0 Notion pendente
+- Lúcio: 0 itens auto+aberta, 0 Notion pendente
+- Lelé: nível Formação — não acionado
+
+**Learning Agent (8a — segunda + execução real):**
+3 achados novos vs. implementação STTK atual:
+1. **Handoff Protocol Format** — frameworks 2025-2026 (Anthropic KAIROS, memorywire) estabelecem wire-format padronizado de entrega de contexto inter-agente como primitiva, além de coleta ativa. Potencial adição ao SKILL.md (seção "Padrões de Agente Autonomous-tier").
+2. **Observe-Plan-Act-Reflect loop** (Reflexion, Self-Refine) — auto-avaliação iterativa embutida dentro do loop de cada agente Autonomous: gera → avalia → corrige, sem depender do orquestrador. STTK tem gate de aprovação no nível do sistema mas não documenta auto-reflexão interna do agente como padrão operacional.
+3. **Memória hierárquica persistente** (HMARS/Mem0 ECAI 2025) — extração hierárquica com +29,6 pts em temporal queries. Roadmap de médio prazo para Trilha A Inteligência.
+Recomendação: pontos 1 e 2 para SKILL.md da rotina; ponto 3 é roadmap.
+
+**Painel (8c):** Não republicado — Skills aguardam ratificação (sem capacidade real ativada hoje).
+
+**Duração:** ~45 min. **Próximas ações:** Claudemberg ratificar NBR 17076:2024 e NBR 6120:2019.
+
+---
+
+### [2026-09-11, 10:30-11:15] Reunião Semanal com Claudemberg — CONSOLIDAÇÃO QUINZENAL
+
+**Contexto:** Rotina automática semanal disparada 11/09, quinta-feira. Modo quinzenal em teste (08/09–08/10).
+
+**EXECUTADO — Pauta consolidada:**
+
+1. **Livro-razão lido:** 09-11/09 completo (25 decisões autônomas, nenhuma bloqueada)
+2. **Medição de tokens:** scripts `medir_tokens.py` + `custo_por_agente.py` rodaram com sucesso
+   - 146 sessões lidas (16 novas de 09-11/09)
+   - Cache hit: 90,6% — Item 7 STTK encerrado
+   - Contexto inicial: +14,3% aumento (não redução esperada de 45-67%)
+   - S37: 21 sessões, 78.9k mediana, 86,2% hit (pior que S36)
+3. **Pauta formal:** 2026-09-11_pauta.md criada (6 ratificações + 2 decisões)
+4. **Protocolos permanentes:** Adicionados à pauta
+   - Protocolo 1 (Epistemologia — clareza sobre incerteza)
+   - Protocolo 2 (Antagonismo Construtivo — teste antes de validar)
+   - Ambos em vigor a partir de 11/09, permanentes
+
+**Status:** ✅ COMPLETO. Pauta aguarda apresentação e ratificação de Claudemberg.
+
+**PDF:** Gerado via `md_to_pdf.py` (2026-09-11_pauta.pdf)
+
+**Como desfazer:** remover entrada de protocolos de pauta; reverter edições em Setembro.md.
+
+---
+
+### [2026-09-11] Painel do Fundador atualizado — 11/09/2026 (quinta, Rotina Semanal)
 
 **O que foi atualizado no Painel:**
 - Data: 04/09 → 11/09/2026
@@ -43,6 +137,29 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 4. **Primeira entrega cliente:** Portinari compila material técnico de Oscar + Burle (quando MCP pronto) para apresentação
 
 **Learning Agent (Passo 7):** Achado — **NBR ISO 19650 compatibilização contínua em Revit/Navisworks** reduz rework na fase de Fechamento; integrado ao conhecimento de Lelé.
+
+---
+
+### [2026-09-11] Drenagem Contínua v2.3 — Rodada 8ª (quinta, 10:15-10:35)
+
+**Portão de Trabalho:** 1 Skill nova (NBR 6120:2019, Baumgart/Cardozo) → Fila não vazia.
+
+**Execução Real:**
+- **Cardozo** (Autonomous): Avaliou Skill NBR 6120:2019 — **PROCEDE COM RESSALVA**
+  - Técnica sólida, lacunas bem declaradas (norma paga não lida, valores secundários), aviso explícito de consulta primária em dimensionamento real
+  - Cross-disciplinas mapeadas: Saturnino, Tenreiro, Glaziou, Landell
+  - Padrão idêntico ao de NBR 6122 e NBR 8681 já aceitas
+  - Status: Pronta para ratificação de Claudemberg (tipo Inteligência, não Ferramenta)
+
+**Gestores sem fila (reconciliação pura, não acionados):**
+- Kelsen: 0 itens auto+aberta, 0 Notion pendente
+- Lúcio: 0 itens auto+aberta, 0 Notion pendente
+
+**Learning Agent (8a):** Não rodou (apenas segunda-feira, regra Opção B)
+
+**Painel (8c):** Não republicado (Skill aguarda ratificação — sem capacidade real ativada ainda)
+
+**Duração:** ~20 min. **Próximas ações:** Claudemberg ratificar NBR 6120:2019.
 
 ---
 

@@ -2,7 +2,7 @@
 name: nbr6120-2019-acoes-cargas-calculo-estruturas
 description: "NBR 6120:2019 — Ações para o Cálculo de Estruturas de Edificações (cargas permanentes e acidentais). Complemento direto da NBR 6118 (superestrutura) e NBR 6122 (fundações)"
 version: 1.0
-status: "ratificada (Claudemberg, 09/09/2026 — Reunião Semanal)"
+status: "avaliada — aguarda ratificação de Claudemberg"
 tipo: Inteligência (Trilha A)
 gestor_alvo: Cardozo (Complementares)
 agente_alvo: Baumgart (Estrutural, principal) — cross: Saturnino (cargas em áreas molhadas/coberturas), Tenreiro (cargas de revestimento/interiores)
@@ -139,3 +139,10 @@ Cargas de uso/ocupação: pessoas, móveis, veículos, equipamentos. Valores mí
 2. **Tabelas completas de pesos específicos (Tabela 1) não disponíveis** — essenciais para cargas permanentes. Dependem do texto integral.
 3. **Fatores de combinação de ações (NBR 8681)** — a 6120 referencia a 8681 para combinações. A 8681 não foi lida. Para dimensionamento real, ambas são necessárias.
 4. **Emenda ou revisão posterior a 2019** — nenhuma encontrada na pesquisa de 08/09/2026. Versão vigente confirmada como 2019 (sem emenda publicada até a data).
+
+---
+
+**Skill proposta em:** 08/09/2026  
+**Proposta por:** Rotina Diária Skills v2.8 (segunda-feira)  
+**Avaliado por:** Cardozo (Gestor Complementares) — 11/09/2026  
+**Veredito:** PROCEDE COM RESSALVA — técnica sólida, tríade estrutural 6120→8681→6118→6122 confirmada, padrão idêntico às Skills NBR 6122 e NBR 8681 já aceitas. Lacunas adequadamente declaradas. Pronta para ratificação de Claudemberg.

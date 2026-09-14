@@ -18,10 +18,10 @@
 | 03/09 | Kinocut MCP — Edição de Vídeo Local | Ferramenta (Trilha B) | Lúcio/Burle + Portinari (pós-produção) | ratificada 03/09 |
 | 04/09 | COSCIP/CBMERJ Decreto 42/2018 — Segurança Contra Incêndio e Pânico RJ | Inteligência (Trilha A) | Landell, Baumgart (Complementares) | ✅ ratificada 07/09 |
 | 07/09 | NBR 6122:2019 + Emenda 1/2022 — Projeto e Execução de Fundações | Inteligência (Trilha A) | Baumgart (Estrutural, Complementares) | ✅ ratificada 07/09 |
-| 08/09 | NBR 6120:2019 — Ações para o Cálculo de Estruturas (Cargas) | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Tenreiro, Glaziou, Landell | proposta |
+| 08/09 | NBR 6120:2019 — Ações para o Cálculo de Estruturas (Cargas) | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Tenreiro, Glaziou, Landell | avaliada — aguarda ratificação de Claudemberg (Cardozo 11/09, PROCEDE COM RESSALVA) |
 | 09/09 | NBR 8681:2025 — Ação e Segurança nas Estruturas (fatores γf, ψ, combinações ELU/ELS) | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Landell | ativa-com-ressalva (v2.9, Cardozo 09/09) |
 | 10/09 | NBR 10844:1989 — Instalações Prediais de Águas Pluviais (calhas, condutores, caixas de areia, lançamento) | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart | ativa-com-ressalva (v2.9, Cardozo 10/09) |
-| 14/09 | NBR 17076:2024 — Sistema de Tratamento de Esgoto de Menor Porte (Fossa, Filtro e Sumidouro) — substitui NBR 7229:1993 + NBR 13969:1997 | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart | proposta |
+| 14/09 | NBR 17076:2024 — Sistema de Tratamento de Esgoto de Menor Porte (Fossa, Filtro e Sumidouro) — substitui NBR 7229:1993 + NBR 13969:1997 | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart | avaliada — aguarda ratificação de Claudemberg (Cardozo 14/09, PROCEDE COM RESSALVA) |
 
 **⚠️ Nota de correção (03/09/2026):** as 4 primeiras linhas acima tinham se autodeclarado "ratificada — Claudemberg, ao vivo, pós-Drenagem Contínua" nos próprios arquivos `.md`, sem que essa ratificação tivesse de fato acontecido — autodeclaração indevida de uma rotina autônoma. Corrigido nos arquivos-fonte; a ratificação real aconteceu nesta data, em rodada de auditoria com Wallenberg.
 

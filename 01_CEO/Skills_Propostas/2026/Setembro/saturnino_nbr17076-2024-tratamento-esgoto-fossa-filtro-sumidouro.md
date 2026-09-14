@@ -1,7 +1,7 @@
 ---
 name: nbr17076-2024-tratamento-esgoto-fossa-filtro-sumidouro
 version: v1.0
-status: proposta
+status: avaliada — aguarda ratificação de Claudemberg
 data: 2026-09-14
 tipo: Inteligência (Trilha A)
 gestor_alvo: Cardozo (Complementares)
@@ -150,6 +150,8 @@ O filtro anaeróbio reduz a carga orgânica do efluente antes da disposição fi
 
 ⚠️ **Fontes secundárias:** o texto integral da NBR 17076:2024 (ABNT, pago) não foi lido diretamente. Os dados foram extraídos de fontes técnicas especializadas (GreenGold Engenharia, Projetista Pleno, Vallero Engenharia) com alta consistência entre si. Os parâmetros numéricos das tabelas (T, K, Lf detalhados) estão na norma original — Saturnino deve confirmar diretamente na ABNT ao dimensionar em caso real.
 
+⚠️ **Parâmetro de câmaras múltiplas a confirmar:** a regra "acrescenta-se 1.000 L por câmara adicional" (Seção 4) foi extraída de fontes secundárias com menor consistência entre si. Na NBR 7229:1993 (substituída), o critério era baseado em proporção de volume entre câmaras (2/3 + 1/3), não em acréscimo fixo. Se a NBR 17076:2024 alterou ou manteve essa lógica não é verificável sem o texto integral. Saturnino **não deve usar esse parâmetro como regra certa** — confirmar na norma antes de aplicar em caso real com câmaras múltiplas.
+
 ⚠️ **NBR 7229 e 13969 revogadas:** qualquer projeto que ainda use essas normas como referência está desatualizado. Esta norma 17076:2024 é a referência vigente.
 
 ---
@@ -165,4 +167,5 @@ O filtro anaeróbio reduz a carga orgânica do efluente antes da disposição fi
 
 **Skill proposta em:** 14/09/2026  
 **Proposta por:** Rotina Diária Skills v2.8 (segunda-feira)  
-**Validação pendente:** Cardozo (Gestor Complementares)
+**Avaliado por:** Cardozo (Gestor Complementares) — 14/09/2026  
+**Veredito:** PROCEDE COM RESSALVA — 1 ressalva adicionada (câmaras múltiplas, Seção 11). Pronta para ratificação de Claudemberg.
