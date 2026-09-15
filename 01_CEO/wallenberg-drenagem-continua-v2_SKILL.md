@@ -810,12 +810,24 @@ A cada rodada (ou a cada N rodadas, a critério de Wallenberg), cada Gestor acio
 - **Documento que pertence a mais de um Gestor** (ex.: a planilha canônica de entregáveis com abas de todas as disciplinas): o Gestor apenas **lista e sinaliza**; **quem audita é o CEO Wallenberg**.
 - **Padronização de documentos entre Gestores**: também é auditoria de Wallenberg, não de Gestor isolado (conecta com a função de padronização cross-departamento de 08/08/2026).
 
+**J.4 — Sincronização 14/09/2026: 2 decisões que só existiam na tarefa agendada, nunca chegaram a este arquivo-fonte.**
+Achado de Claudemberg (mesmo dia da correção da Rotina Diária Skills v3.0): este arquivo é citado pela tarefa agendada `wallenberg-drenagem-continua-local` como "arquivo-fonte completo", mas duas decisões reais de Claudemberg, já aplicadas na tarefa agendada, nunca tinham sido sincronizadas de volta aqui. Sem esta sincronização, quem consultasse este arquivo por dúvida reintroduziria comportamento já descartado por custo. Registrando as duas agora:
+
+- **Portão de Trabalho — Opção B / Alvo A (02/09/2026).** O Passo 2.5 (seção C/E acima) descreve a versão simples original ("se fila tem conteúdo, prossiga para todos"). **Isso está superado.** A regra real, em vigor desde 02/09/2026: (1) Skill em `Skills_Propostas` com Status "proposta" só entra na contagem da fila se **ainda não foi avaliada** por rodada anterior — Skill já avaliada e parada em "aguardando ratificação de Claudemberg" NÃO conta, ela só volta na Reunião Semanal/Mensal; (2) mesmo com fila não-vazia, a Fase 4 (Passo 5) aciona **SOMENTE os Gestores com item real na própria fila** (auto_abertas dele, OU skill nova endereçada a ele, OU Notion pendente dele) — Gestor sem nada na fila não é aberto, registra "sem fila, não acionado". Motivo: abrir os 3 Gestores só para ouvir "nada a fazer" queimava ~90k tokens/rodada; no plano Pro isso batia no teto semanal e travava o organismo.
+
+- **Learning Agent só roda às segundas + execução real (Item 4, 08/09/2026).** O Passo 8a (seção C/E acima) descreve pesquisa de vídeo incondicional a cada rodada. **Isso está superado.** Regra real desde 08/09/2026: o Passo 8a só executa **SE hoje é segunda-feira E houve execução real nesta rodada** (Gestor fechou item, Agente produziu, ou skill implantada). Fora disso, pule o 8a inteiro — não pesquise vídeo, não transcreva. Motivo: a busca diária de vídeo queimava cota do plano Pro e vinha rendendo ~zero mudança real ao SKILL.md.
+
+- **Passo 7.5 — Varredura Mensal de Documentos no Drive (Item 4, 08/09/2026) — só na 1ª rodada útil do mês.** Este é um passo inteiro que existe na tarefa agendada mas não tinha entrado aqui (é mais específico que o J.3 acima, que é de 31/08 e fala em "Dptº de Projetos" genérico). Para CADA Gestor acionado na rodada, na 1ª rodada útil do mês: peça varredura dos documentos dele no Drive (Kelsen: POPs de Legal + base legislativa; Lúcio: POP-PROJ + templates de Arquitetura; Cardozo: os 6 POPs de disciplina). Use o conector MCP de Drive (search_files/get_file_metadata/read_file_content). **Autônomo** (backup do "antes" + livro-razão + "como desfazer"): sinaliza base desatualizada/erro factual/contradição/duplicata/arquivo de teste em pasta oficial; corrige (update_file) referência a lei revogada, nº de norma errado, link quebrado, cabeçalho desatualizado; exclui/resolve duplicata (trash_file — confirmado em teste real 08/09 que o MCP cria, edita e trasheia arquivo existente); cria documento que falte (create_file). **Não-autônomo** — só sinaliza para Claudemberg: reescrever documento canônico por julgamento (reordenar seções, reinterpretar conteúdo). Nas demais rodadas do mês, pule este passo. Registre no `_estado` de cada Gestor o que foi varrido; se nada precisou mudar, registre "sem correção necessária" (a obrigação é varrer, não achar).
+
+**Como desfazer:** reverter esta seção J.4 via git revert. Não afeta as seções B/C (permanecem cópia integral de 28/08, como protocolo já estabelecido).
+
 ---
 
 ## HISTÓRICO DE VERSÕES
 
 | Versão | Data | Mudança |
 |--------|------|---------|
+| 2.3 (adendo J.4) | 14/09/2026 | **Sincronização de divergência real** — 2 decisões já aplicadas na tarefa agendada (`wallenberg-drenagem-continua-local`) desde 02/09 e 08/09 nunca tinham chegado a este arquivo-fonte: Portão de Trabalho Opção B/Alvo A (skill já avaliada não conta na fila; só abre Gestor com item real) e Learning Agent restrito a segunda-feira + execução real, além do Passo 7.5 (varredura mensal de Drive) inteiro. Achado por Claudemberg no mesmo dia da correção da Rotina Diária Skills v3.0. |
 | 2.3 (adendos J.1–J.3) | 31/08/2026 | Instruções de Claudemberg após a 1ª rodada real: validação obrigatória de Skill-ferramenta; cadeia CEO→Gestor→Agente não trava (Wallenberg destrava exames de Gestor abaixo de Autonomous); varredura recorrente de documentos no Drive "Dptº de Projetos" com auditoria de Wallenberg para docs cross-Gestor e padronização. Seções B/C intactas. |
 | 1.0–2.2 | 27/07 a 25/08/2026 | Ver histórico completo nos backups datados de `01_CEO/Decisoes_Autonomas/_backups/` |
 | 2.3 | 25/08/2026 | Divisão final Passo 8 = implantação. Nunca chegou a ficar registrada como tarefa ativa em `scheduled-tasks` (wrapper órfão) — apagada em 28/08/2026 por esse motivo. |
@@ -825,6 +837,6 @@ A cada rodada (ou a cada N rodadas, a critério de Wallenberg), cada Gestor acio
 
 ---
 
-**Última atualização:** 31/08/2026 (adendos J.1-J.3)
+**Última atualização:** 14/09/2026 (adendo J.4 — sincronização com a tarefa agendada, ver Histórico de Versões)
 **Status:** ✅ Operacional — registrada em `scheduled-tasks` (cron `15 10 * * 1-5`)
-**Próximo:** Primeira rodada agendada real, 10:15 do próximo dia útil
+**Atenção:** este arquivo é referência de consulta; a tarefa agendada (`C:\Users\santo\.claude\scheduled-tasks\wallenberg-drenagem-continua-local\SKILL.md`) é o que executa de fato. Ao propor melhoria via Learning Agent (Passo 8a), sincronizar os dois lados — não só este arquivo.

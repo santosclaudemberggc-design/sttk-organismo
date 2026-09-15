@@ -55,6 +55,26 @@ Conferido antes de apagar: nenhum arquivo do fluxo ativo dependia deles — só 
 
 ---
 
+### [2026-09-14, ~14:30] Varredura nas demais tarefas agendadas — mesma falha achada na Drenagem Contínua
+
+**Contexto:** Claudemberg pediu para conferir se as outras tarefas agendadas tinham o mesmo problema (arquivo-fonte do projeto divergente do prompt que roda de verdade). Conferidas as 3 tarefas vivas restantes: `wallenberg-reuniao-semanal`, `wallenberg-drenagem-continua-local`, `wallenberg-cronjob-pdf-2000`.
+
+**wallenberg-reuniao-semanal:** sem risco — não tem arquivo-fonte de projeto separado, lê direto Livro-Razão/Registros Diários/scripts de token (dados dinâmicos, não documentação estática). OK.
+
+**wallenberg-drenagem-continua-local:** achado real, na **direção oposta** da Diária — a tarefa agendada (o que roda de verdade) estava mais atualizada que `01_CEO/wallenberg-drenagem-continua-v2_SKILL.md` (citado pela própria tarefa como "arquivo-fonte completo"). 2 decisões reais de Claudemberg nunca chegaram ao arquivo do projeto:
+1. **Portão de Trabalho Opção B/Alvo A (02/09):** Skill já avaliada não conta na fila; só abre Gestor com item real na fila — arquivo do projeto ainda tinha a versão simples ("fila não vazia → abre todos os Gestores").
+2. **Learning Agent restrito a segunda + execução real (Item 4, 08/09)** + **Passo 7.5 inteiro (varredura mensal de Drive, Item 4, 08/09)** — nenhum dos dois estava no arquivo do projeto.
+
+**Corrigido:** adendo J.4 acrescentado a `wallenberg-drenagem-continua-v2_SKILL.md` (seções B/C mantidas intactas, como já era o protocolo do arquivo — adendos vão em J, não reescrevem a cópia original de 28/08), Histórico de Versões e rodapé atualizados com aviso de que a tarefa agendada é quem executa de fato.
+
+**wallenberg-cronjob-pdf-2000:** só rótulo cosmético desatualizado ("Rotina Diária Skills v2.7" na primeira linha do prompt) — sem impacto funcional (o CronJob gera PDF de qualquer .md sem PDF gêmeo, independe de versão). Corrigido mesmo assim, por consistência.
+
+**Como desfazer:** reverter o adendo J.4 via git revert; reverter o prompt do CronJob via `update_scheduled_task` com o texto anterior.
+
+**Aguardando:** ☐ RATIFICADO — item novo, entra na próxima pauta junto com a correção da Rotina Diária.
+
+---
+
 ### [2026-09-14, 10:30] Reunião Semanal com Claudemberg — CONSOLIDAÇÃO QUINZENAL (2ª quinzenal)
 
 **Contexto:** Rotina automática semanal disparada 14/09, segunda-feira. Modo quinzenal em teste (08/09–08/10). 2ª quinzenal — a de 11/09 foi criada mas Claudemberg estava ausente; todos os itens foram carregados para esta.
