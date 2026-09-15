@@ -41,12 +41,18 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 - Livro-razão: esta entrada.
 - `_estado_wallenberg.md`: seção "Última atualização" com resumo.
 
+**Ratificação executada (mesma sessão, ~10:45):**
+- ✅ **OODC — instalada** em `.claude/skills/legal-oodc-mais-valera-mais-valia/SKILL.md` com status "instalada — ratificada Claudemberg 15/09/2026", ressalvas documentadas
+- ✅ **NBR 9050 — instalada** em `.claude/skills/arquitetura-nbr9050-acessibilidade/SKILL.md` com status "instalada — ratificada Claudemberg 15/09/2026", **maçaneta corrigida de 0,80m para 0,90m**, ressalvas documentadas
+- `indice.md`: ambas as Skills atualizadas de status "proposta" → "✅ **instalada** — Claudemberg 15/09/2026"
+- Gestores alertados: Skills ativas em `.claude/skills/`, ressalvas operacionais documentadas (Hely reconciliar LC 281; Oscar/Lúcio aplicar correção maçaneta)
+
 **Próximas ações:**
-1. Claudemberg ratificar OODC (com ressalvas, usar antes de reconciliar com LC 281) e NBR 9050 (com ressalvas, corrigir maçaneta antes de uso).
-2. Hely reconciliar OODC contra `legal_lc281-2025-condicoes-especiais-licenciamento-rj.md`.
+1. Hely reconciliar OODC contra `legal_lc281-2025-condicoes-especiais-licenciamento-rj.md` antes de qualquer uso em caso real.
+2. Oscar/Lúcio aplicar correção de maçaneta (0,90m em rotas acessíveis) em projetos usando NBR 9050.
 3. Roadmap Learning Agent opcional (3 itens acima) escalar com Claudemberg.
 
-**Duração:** ~45 min.
+**Duração:** ~50 min (avaliação + trim + ratificação).
 
 **Data:** 15/09/2026  
 **Registrador:** Wallenberg
