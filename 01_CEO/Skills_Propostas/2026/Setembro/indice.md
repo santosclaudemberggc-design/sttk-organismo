@@ -2,7 +2,7 @@
 
 **Status:** Ativo  
 **Mês:** Setembro 2026  
-**Atualização:** 14/09/2026
+**Atualização:** 15/09/2026
 
 ---
 
@@ -22,6 +22,8 @@
 | 09/09 | NBR 8681:2025 — Ação e Segurança nas Estruturas (fatores γf, ψ, combinações ELU/ELS) | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Landell | ativa-com-ressalva (v2.9, Cardozo 09/09) |
 | 10/09 | NBR 10844:1989 — Instalações Prediais de Águas Pluviais (calhas, condutores, caixas de areia, lançamento) | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart | ativa-com-ressalva (v2.9, Cardozo 10/09) |
 | 14/09 | NBR 17076:2024 — Sistema de Tratamento de Esgoto de Menor Porte (Fossa, Filtro e Sumidouro) — substitui NBR 7229:1993 + NBR 13969:1997 | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart | avaliada — aguarda ratificação de Claudemberg (Cardozo 14/09, PROCEDE COM RESSALVA) |
+| 15/09 | OODC, Mais-Valerá e Mais-Valia — Instrumentos de Potencial Construtivo no RJ | Inteligência (Trilha A) | Kelsen/Hely (Legal) — cross: Lúcio/Oscar (Arquitetura) | proposta |
+| 15/09 | NBR 9050:2020 — Acessibilidade Integrada ao Projeto Residencial | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | proposta |
 
 **⚠️ Nota de correção (03/09/2026):** as 4 primeiras linhas acima tinham se autodeclarado "ratificada — Claudemberg, ao vivo, pós-Drenagem Contínua" nos próprios arquivos `.md`, sem que essa ratificação tivesse de fato acontecido — autodeclaração indevida de uma rotina autônoma. Corrigido nos arquivos-fonte; a ratificação real aconteceu nesta data, em rodada de auditoria com Wallenberg.
 
@@ -30,8 +32,8 @@
 ## Estatísticas
 
 - **Skills Propostas (semana 07-12/09):** 4 (Trilha A: 4, Trilha B: 0)
-- **Skills Propostas (semana 14/09+):** 1 (Trilha A: 1, Trilha B: 0)
-- **Skills Propostas (acumulado setembro):** 12
+- **Skills Propostas (semana 14/09+):** 3 (Trilha A: 3, Trilha B: 0)
+- **Skills Propostas (acumulado setembro):** 14
 - **Skills Testadas:** 0
 - **Cobertura Trilha A por Agente (desde agosto):**
   - Baumgart: 6 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas + NBR 8681:2025 segurança)
@@ -40,9 +42,9 @@
   - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
   - Tenreiro: 2 (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross)
   - Mindlin: 1 (NBR 6492:2021)
-  - Kelsen/Hely: 3 (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026)
+  - Kelsen/Hely: 4 (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026 + OODC/Mais-Valerá/Mais-Valia)
 - **Achados Vitruvius:** nenhum achado novo esta rodada (pyRevit-MCP pago — descartado; mcp-servers-for-revit arquivado — descartado). Total acumulado: 8 achados (0 novo, 0 atualizados).
-- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) ~~NBR 6122:2022 fundações~~ CONCLUÍDA 07/09; (5) Apresentação interativa ao cliente — **busca PAUSADA**; (6) NBR 16280:2024 reformas (PAUSADA — construção do zero); (7) ~~NBR 6120:2019 cargas~~ CONCLUÍDA 08/09; (8) ~~NBR 8681:2025 segurança~~ CONCLUÍDA 09/09 (ativa-com-ressalva); (9) ~~NBR 10844:1989 águas pluviais~~ CONCLUÍDA 10/09 (ativa-com-ressalva); (10) ~~NBR 7229:1993/NBR 13969:1997~~ RESOLVIDA 14/09 pela NBR 17076:2024 (substitui ambas); (11) Passo 8 se lacuna real pedir; (12) Próximo Lúcio: material novo ainda não identificado; (13) Próximo Kelsen: sem deliberação CAU-RJ nova em setembro
+- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) ~~NBR 6122:2022 fundações~~ CONCLUÍDA 07/09; (5) Apresentação interativa ao cliente — **busca PAUSADA**; (6) NBR 16280:2024 reformas (PAUSADA — construção do zero); (7) ~~NBR 6120:2019 cargas~~ CONCLUÍDA 08/09; (8) ~~NBR 8681:2025 segurança~~ CONCLUÍDA 09/09 (ativa-com-ressalva); (9) ~~NBR 10844:1989 águas pluviais~~ CONCLUÍDA 10/09 (ativa-com-ressalva); (10) ~~NBR 7229:1993/NBR 13969:1997~~ RESOLVIDA 14/09 pela NBR 17076:2024 (substitui ambas); (11) Passo 8 se lacuna real pedir; (12) ~~Lúcio: NBR 9050:2020 acessibilidade~~ CONCLUÍDA 15/09 (proposta); (13) ~~Kelsen: OODC/Mais-Valerá/Mais-Valia~~ CONCLUÍDA 15/09 (proposta); (14) NBR 5419:2025 SPDA (Landell) — ADIADA, dados insuficientes (norma paga, fontes web só promocionais); (15) Mindlin: menor cobertura (1 Skill), próxima prioridade se material viável surgir
 
 ---
 
@@ -143,4 +145,15 @@
 
 ---
 
-**Próxima Atualização:** 15/09/2026 (Terça — Seg-Qui, passos 1-5) ou conforme agenda
+---
+
+## Observações da Rodada 15/09/2026
+
+1. **OODC/Mais-Valerá/Mais-Valia — Kelsen:** primeira Skill de instrumentos urbanísticos para potencial construtivo. Achado principal (brecha válida): a maioria dos projetistas no RJ trata o CAB como limite absoluto e ignora que o CAM é alcançável mediante contrapartida. Lacuna: fórmula do Anexo XXV (LC 270/2024) não obtida em fontes públicas. Prazos especiais (Mais-Valerá 01/06/2026 e Mais-Valia 30/06/2026) já expirados — documentado na Skill como alerta. Isenção de 5 anos NÃO confirmada por fonte primária.
+2. **NBR 9050:2020 — Lúcio:** primeira Skill de Arquitetura (Lúcio) em setembro. Lacuna real: nenhuma Skill de acessibilidade existia no sistema. Parâmetros parciais (circulação, rampas, sanitários, estacionamento, elevadores) obtidos de fontes secundárias. Brecha válida: custo < 5% quando integrada desde o partido; ~15% de valorização. Texto integral da norma (~150 pág.) não lido (paga). Cross-disciplina: Tenreiro (interiores/acabamentos acessíveis) e Baumgart (estrutura de rampas/poço de elevador).
+3. **NBR 5419:2025 SPDA — Landell:** gap confirmado (Landell declarou em seu estado), pesquisa realizada em 3 frentes, mas todas fontes web retornaram apenas conteúdo promocional sem parâmetros numéricos. PDF da NBR 5419:2001 encontrado e lido, mas é versão obsoleta (antes da divisão em 4 partes de 2015/2025). **Decisão: adiar** até obter texto da versão vigente. Não forçar Skill fraca (Princípio "não cria se material insuficiente").
+4. **Descartados esta rodada:** riorenovavel.com (DNS failure — site inacessível); raceletrica.eng.br (HTTP 403); IPAAM PDF NBR 5419-1 (binário/corrompido); todas fontes web sobre NBR 5419 (engehall, clintec, sibras, a3a — apenas resumos promocionais).
+
+---
+
+**Próxima Atualização:** 16/09/2026 (Terça — Seg-Qui, passos 1-5) ou conforme agenda

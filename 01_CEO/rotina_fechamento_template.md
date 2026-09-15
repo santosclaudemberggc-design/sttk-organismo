@@ -22,6 +22,40 @@ metadata:
 
 ---
 
+## [2026-09-15] — Diária Skills v3.0 (Segunda)
+
+### RODADA ANTERIOR (O que foi entregue)
+
+- [x] **Skills criadas:** 2 (OODC/Mais-Valerá/Mais-Valia — Kelsen Legal + NBR 9050:2020 Acessibilidade — Lúcio Arquitetura)
+- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (2 novos + índice atualizado)
+- [x] **PDFs gerados:** 3 (2 Skills + índice regenerado)
+- [ ] **Skills ativadas:** Não — ambas em status proposta, aguardam avaliação Cardozo/Drenagem
+- [ ] **Painel atualizado:** Não (tarefa de Sexta 19/09)
+- [ ] **Livro-razão registrado:** Não — registrar na próxima rodada
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **NBR 5419:2025 SPDA (Landell):** gap real confirmado (Landell declarou em seu estado), pesquisa rodou em 3 frentes, mas todas fontes web são promocionais — sem parâmetros numéricos. PDF encontrado é da versão 2001 (obsoleta). Adiar até obter texto vigente (norma paga).
+- **Mindlin:** ainda com apenas 1 Skill (NBR 6492). Menor cobertura dos Agentes Cardozo.
+- **OODC fórmula:** Anexo XXV da LC 270/2024 não obtido. Consultar SMU diretamente quando caso real exigir.
+- **OODC isenção 5 anos:** mencionada em fonte secundária, NÃO confirmada. Não tratar como fato.
+- **NBR 17076:2024 Skill:** ainda aguarda validação Cardozo.
+- **Kelsen:** sem deliberação CAU-RJ nova em setembro. LICIN 2.0 sem atualização RJ.
+- **Cardozo/Landell:** NBR 5419 é próxima prioridade se dados surgirem.
+
+### O QUE NÃO FAZER (Avoid retrabalho)
+
+- ❌ **OODC/Mais-Valerá/Mais-Valia não duplique** — Skill de 15/09 (proposta)
+- ❌ **NBR 9050:2020 acessibilidade não duplique** — Skill de 15/09 (proposta)
+- ❌ **NBR 5419:2001 não use como base para Skill** — versão obsoleta (antes da divisão em 4 partes de 2015/2025)
+- ❌ **NBR 7229:1993 criar Skill separada** — substituída pela NBR 17076:2024 (14/09). Não duplicar.
+- ❌ **NBR 13969:1997 criar Skill** — também substituída pela NBR 17076:2024
+- ❌ **NBR 10521:1988 criar Skill de sumidouros** — conteúdo coberto na NBR 17076:2024
+- ❌ **Regime de Licenciamento Portugal (outubro 2026)** — é português, não RJ
+- ❌ Todos os itens da lista de "NÃO FAZER" da rodada anterior continuam válidos
+
+---
+
 ## [2026-09-14] — Diária Skills v2.8 (Segunda)
 
 ### RODADA ANTERIOR (O que foi entregue)
@@ -29,25 +63,9 @@ metadata:
 - [x] **Skills criadas:** 1 (NBR 17076:2024 — Sistema de Tratamento de Esgoto de Menor Porte, Trilha A, Saturnino principal + cross Glaziou/Baumgart)
 - [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (1 novo + índice atualizado)
 - [ ] **Skill ativada:** Não — aguarda validação Cardozo (status: proposta)
-- [ ] **PDF gerado:** Não — sem script ativo nesta sessão (registrado como pendência)
+- [x] **PDF gerado:** Sim — gerado nesta rodada (15/09) junto com os novos
 - [ ] **Painel atualizado:** Não (tarefa de Sexta 19/09)
 - [ ] **Livro-razão registrado:** Não — registrar na próxima rodada
-
-### O QUE FICOU PENDENTE (Cuidado: não repita)
-
-- **Lúcio:** sem material novo viável (NBR 16537 e NBR 15220-3 já cobertos). Investigar partido arquitetônico ou NBR 9050:2020 (acessibilidade geral) como próxima prioridade.
-- **Kelsen:** sem deliberação CAU-RJ nova em setembro. LICIN 2.0 sem atualização RJ. Aguardar outubro.
-- **NBR 17076:2024 Skill:** aguarda validação Cardozo + PDF.
-- **PDF das Skills de setembro:** sem script ativo. md_to_pdf.py a executar quando disponível.
-- **Mindlin:** ainda com apenas 1 Skill (NBR 6492). Menor cobertura dos Agentes Cardozo.
-
-### O QUE NÃO FAZER (Avoid retrabalho)
-
-- ❌ **NBR 7229:1993 criar Skill separada** — substituída pela NBR 17076:2024 (14/09). Não duplicar.
-- ❌ **NBR 13969:1997 criar Skill** — também substituída pela NBR 17076:2024
-- ❌ **NBR 10521:1988 criar Skill de sumidouros** — conteúdo coberto na NBR 17076:2024
-- ❌ **Regime de Licenciamento Portugal (outubro 2026)** — é português, não RJ. Não pesquisar novamente como se fosse brasileiro.
-- ❌ Todos os itens da lista de "NÃO FAZER" da rodada anterior continuam válidos
 
 ---
 
@@ -288,6 +306,6 @@ metadata:
 
 ---
 
-**Última atualização:** 10/09/2026 (quinta-feira — Diária Skills v2.9, Passos 0-5+8 executados)  
-**Próxima leitura:** 11/09/2026 (sexta-feira) — Diária Skills SEXTA (Painel + Dashboard + Análise)  
-**Painel pendente para:** 12/09/2026 (sexta-feira)
+**Última atualização:** 15/09/2026 (segunda-feira — Diária Skills v3.0, Passos 0-5+8 executados)  
+**Próxima leitura:** 16/09/2026 (terça-feira) — Diária Skills Seg-Qui  
+**Painel pendente para:** 19/09/2026 (sexta-feira)
