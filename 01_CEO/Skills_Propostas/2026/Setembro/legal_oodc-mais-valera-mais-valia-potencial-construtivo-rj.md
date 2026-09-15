@@ -30,19 +30,20 @@ O LICIN 2.0 (Decreto 55.622, D.O. 01/01/2025) regulamenta a LC 270/2024, que é 
 
 ### 2. Mais-Valerá (licenciamento preventivo para obras futuras)
 
-- **Base legal:** LC 281/2025
+- **Base legal:** LC 274/2024 (criou o instrumento), LC 281/2025 (estendeu prazos)
 - **O que faz:** permite protocolar licenciamento com OODC para obras que AINDA NÃO FORAM EXECUTADAS — antecipa o direito de construir acima do CAB antes de iniciar a obra
-- **Prazo:** requerimento deveria ser apresentado até **01/06/2026**
-- **⚠️ PRAZO EXPIRADO em 01/06/2026** — projetos que não protocolaram perderam esta janela
-- **Contrapartida:** 30% de desconto para pagamentos efetuados até 02/03/2026 (desconto também já expirado)
+- **1ª janela (LC 274/2024):** prazo até **01/12/2025**, com desconto de **50%** na contrapartida para pagamento à vista em 30 dias após DARM
+- **2ª janela (LC 281/2025):** estendeu prazo até **01/06/2026**, com desconto de **30%** para pagamentos até 02/03/2026
+- **⚠️ AMBOS OS PRAZOS EXPIRADOS** — projetos que não protocolaram perderam as duas janelas
+- **Atenção:** verificar se houve nova extensão legislativa após junho/2026 antes de informar cliente
 
 ### 3. Mais-Valia (regularização de obras existentes)
 
-- **Base legal:** LC 281/2025
+- **Base legal:** LC 274/2024, LC 281/2025
 - **O que faz:** permite regularizar obras JÁ EXECUTADAS sem licença que excedem o CAB, mediante pagamento de contrapartida — funciona como legalização de construção irregular que ultrapassa o potencial básico
 - **Prazo:** requerimento deveria ser apresentado até **30/06/2026**
 - **⚠️ PRAZO EXPIRADO em 30/06/2026** — clientes que não protocolaram perderam a janela
-- **Contrapartida:** mesma regra de desconto de 30% até 02/03/2026
+- **Contrapartida:** mesmas condições de desconto (50% na 1ª janela LC 274, 30% na 2ª janela LC 281)
 
 ## Brecha válida (mentalidade v3.0)
 

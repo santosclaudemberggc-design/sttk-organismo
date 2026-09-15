@@ -22,33 +22,34 @@ metadata:
 
 ---
 
-## [2026-09-15] — Diária Skills v3.0 (Segunda)
+## [2026-09-15] — Diária Skills v3.0 (Segunda) — RODADA COMPLETA
 
-### RODADA ANTERIOR (O que foi entregue)
+### RODADA ATUAL (O que foi entregue)
 
-- [x] **Skills criadas:** 2 (OODC/Mais-Valerá/Mais-Valia — Kelsen Legal + NBR 9050:2020 Acessibilidade — Lúcio Arquitetura)
-- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (2 novos + índice atualizado)
-- [x] **PDFs gerados:** 3 (2 Skills + índice regenerado)
-- [ ] **Skills ativadas:** Não — ambas em status proposta, aguardam avaliação Cardozo/Drenagem
+- [x] **Skills criadas:** 3 (OODC/Mais-Valerá/Mais-Valia v1.1 corrigida — Kelsen + NBR 9050:2020 v1.1 enriquecida — Lúcio + NBR 5419:2026 nova — Landell)
+- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (3 Skills + índice atualizado)
+- [x] **PDFs gerados:** 3 (1 Skill Kelsen corrigida + 1 Skill Lúcio enriquecida + 1 Skill Landell nova + índice regenerado = 4 PDFs)
+- [x] **Enriquecimentos aplicados:** Kelsen (2 janelas LC 274+LC 281); Lúcio (tabela rampas + 6 erros + elevador >5 pav.); Landell (parâmetros numéricos completos SPDA)
+- [ ] **Skills ativadas:** Não — todas em status proposta, aguardam avaliação Cardozo/Drenagem
 - [ ] **Painel atualizado:** Não (tarefa de Sexta 19/09)
 - [ ] **Livro-razão registrado:** Não — registrar na próxima rodada
+- [x] **Commit local:** Pendente (será feito agora)
 
 ### O QUE FICOU PENDENTE (Cuidado: não repita)
 
-- **NBR 5419:2025 SPDA (Landell):** gap real confirmado (Landell declarou em seu estado), pesquisa rodou em 3 frentes, mas todas fontes web são promocionais — sem parâmetros numéricos. PDF encontrado é da versão 2001 (obsoleta). Adiar até obter texto vigente (norma paga).
-- **Mindlin:** ainda com apenas 1 Skill (NBR 6492). Menor cobertura dos Agentes Cardozo.
+- **Mindlin:** ainda com apenas 1 Skill (NBR 6492). Menor cobertura dos Agentes Cardozo — próxima prioridade.
 - **OODC fórmula:** Anexo XXV da LC 270/2024 não obtido. Consultar SMU diretamente quando caso real exigir.
 - **OODC isenção 5 anos:** mencionada em fonte secundária, NÃO confirmada. Não tratar como fato.
 - **NBR 17076:2024 Skill:** ainda aguarda validação Cardozo.
 - **Kelsen:** sem deliberação CAU-RJ nova em setembro. LICIN 2.0 sem atualização RJ.
-- **Cardozo/Landell:** NBR 5419 é próxima prioridade se dados surgirem.
 
 ### O QUE NÃO FAZER (Avoid retrabalho)
 
-- ❌ **OODC/Mais-Valerá/Mais-Valia não duplique** — Skill de 15/09 (proposta)
-- ❌ **NBR 9050:2020 acessibilidade não duplique** — Skill de 15/09 (proposta)
-- ❌ **NBR 5419:2001 não use como base para Skill** — versão obsoleta (antes da divisão em 4 partes de 2015/2025)
-- ❌ **NBR 7229:1993 criar Skill separada** — substituída pela NBR 17076:2024 (14/09). Não duplicar.
+- ❌ **OODC/Mais-Valerá/Mais-Valia não duplique** — Skill de 15/09 v1.1 (proposta, corrigida)
+- ❌ **NBR 9050:2020 acessibilidade não duplique** — Skill de 15/09 v1.1 (proposta, enriquecida)
+- ❌ **NBR 5419:2026 SPDA não duplique** — Skill de 15/09 v1.0 (proposta, nova)
+- ❌ **NBR 5419:2001 não use como base** — versão obsoleta (antes da divisão em 4 partes de 2015/2026)
+- ❌ **NBR 7229:1993 criar Skill separada** — substituída pela NBR 17076:2024 (14/09)
 - ❌ **NBR 13969:1997 criar Skill** — também substituída pela NBR 17076:2024
 - ❌ **NBR 10521:1988 criar Skill de sumidouros** — conteúdo coberto na NBR 17076:2024
 - ❌ **Regime de Licenciamento Portugal (outubro 2026)** — é português, não RJ

@@ -22,8 +22,9 @@
 | 09/09 | NBR 8681:2025 — Ação e Segurança nas Estruturas (fatores γf, ψ, combinações ELU/ELS) | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Landell | ativa-com-ressalva (v2.9, Cardozo 09/09) |
 | 10/09 | NBR 10844:1989 — Instalações Prediais de Águas Pluviais (calhas, condutores, caixas de areia, lançamento) | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart | ativa-com-ressalva (v2.9, Cardozo 10/09) |
 | 14/09 | NBR 17076:2024 — Sistema de Tratamento de Esgoto de Menor Porte (Fossa, Filtro e Sumidouro) — substitui NBR 7229:1993 + NBR 13969:1997 | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart | avaliada — aguarda ratificação de Claudemberg (Cardozo 14/09, PROCEDE COM RESSALVA) |
-| 15/09 | OODC, Mais-Valerá e Mais-Valia — Instrumentos de Potencial Construtivo no RJ | Inteligência (Trilha A) | Kelsen/Hely (Legal) — cross: Lúcio/Oscar (Arquitetura) | proposta |
-| 15/09 | NBR 9050:2020 — Acessibilidade Integrada ao Projeto Residencial | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | proposta |
+| 15/09 | OODC, Mais-Valerá e Mais-Valia — Instrumentos de Potencial Construtivo no RJ | Inteligência (Trilha A) | Kelsen/Hely (Legal) — cross: Lúcio/Oscar (Arquitetura) | aguarda ratificação de Claudemberg (Kelsen 15/09, PROCEDE COM RESSALVA — R1: prazos Mais-Valerá/Mais-Valia divergentes entre Skill e estado Kelsen [LC301 até 01/12/2026 vs. "expirados"]; R2: nomenclatura LC 281 vs LC 291; R3: fórmula Anexo XXV não obtida; R4: isenção de 5 anos não confirmada; R5: CAB/CAM por subzona não listados — Hely deve reconciliar com Skill existente `legal_lc281-2025` antes de uso em caso real) |
+| 15/09 | NBR 9050:2020 — Acessibilidade Integrada ao Projeto Residencial | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | aguarda ratificação de Claudemberg (Lúcio 15/09, PROCEDE COM RESSALVA — R1: texto integral NBR não lido (paga); R2: maçaneta citada como 0,80m mas rota acessível exige 0,90m — corrigir antes de uso; R3: parâmetros parciais (~150 pág. cobertas parcialmente); R4: custo <5% e ~15% valorização são referências de mercado, não dados auditados) |
+| 15/09 | NBR 5419:2026 — SPDA: Proteção contra Descargas Atmosféricas | Inteligência (Trilha A) | Landell (Elétrica, principal) — cross: Baumgart (Estrutural), Oscar (Arquitetura) | proposta |
 
 **⚠️ Nota de correção (03/09/2026):** as 4 primeiras linhas acima tinham se autodeclarado "ratificada — Claudemberg, ao vivo, pós-Drenagem Contínua" nos próprios arquivos `.md`, sem que essa ratificação tivesse de fato acontecido — autodeclaração indevida de uma rotina autônoma. Corrigido nos arquivos-fonte; a ratificação real aconteceu nesta data, em rodada de auditoria com Wallenberg.
 
@@ -32,19 +33,20 @@
 ## Estatísticas
 
 - **Skills Propostas (semana 07-12/09):** 4 (Trilha A: 4, Trilha B: 0)
-- **Skills Propostas (semana 14/09+):** 3 (Trilha A: 3, Trilha B: 0)
-- **Skills Propostas (acumulado setembro):** 14
+- **Skills Propostas (semana 14/09+):** 4 (Trilha A: 4, Trilha B: 0)
+- **Skills Propostas (acumulado setembro):** 15
 - **Skills Testadas:** 0
 - **Cobertura Trilha A por Agente (desde agosto):**
   - Baumgart: 6 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas + NBR 8681:2025 segurança)
   - Saturnino: 4 (NBR 5626+8160 + NBR 9575:2024 cross + NBR 10844:1989 águas pluviais + NBR 17076:2024 fossa/filtro/sumidouro)
-  - Landell: 2 (NBR 5410 + COSCIP/CBMERJ)
+  - Landell: 3 (NBR 5410 + COSCIP/CBMERJ + NBR 5419:2026 SPDA)
   - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
   - Tenreiro: 2 (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross)
   - Mindlin: 1 (NBR 6492:2021)
-  - Kelsen/Hely: 4 (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026 + OODC/Mais-Valerá/Mais-Valia)
+  - Kelsen/Hely: 4 (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026 + OODC/Mais-Valerá/Mais-Valia — v1.1 corrigida com 2 janelas LC 274+LC 281)
+  - Lúcio/Oscar (Arquitetura): 1 (NBR 9050:2020 acessibilidade — v1.1 com rampas detalhadas + 6 erros)
 - **Achados Vitruvius:** nenhum achado novo esta rodada (pyRevit-MCP pago — descartado; mcp-servers-for-revit arquivado — descartado). Total acumulado: 8 achados (0 novo, 0 atualizados).
-- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) ~~NBR 6122:2022 fundações~~ CONCLUÍDA 07/09; (5) Apresentação interativa ao cliente — **busca PAUSADA**; (6) NBR 16280:2024 reformas (PAUSADA — construção do zero); (7) ~~NBR 6120:2019 cargas~~ CONCLUÍDA 08/09; (8) ~~NBR 8681:2025 segurança~~ CONCLUÍDA 09/09 (ativa-com-ressalva); (9) ~~NBR 10844:1989 águas pluviais~~ CONCLUÍDA 10/09 (ativa-com-ressalva); (10) ~~NBR 7229:1993/NBR 13969:1997~~ RESOLVIDA 14/09 pela NBR 17076:2024 (substitui ambas); (11) Passo 8 se lacuna real pedir; (12) ~~Lúcio: NBR 9050:2020 acessibilidade~~ CONCLUÍDA 15/09 (proposta); (13) ~~Kelsen: OODC/Mais-Valerá/Mais-Valia~~ CONCLUÍDA 15/09 (proposta); (14) NBR 5419:2025 SPDA (Landell) — ADIADA, dados insuficientes (norma paga, fontes web só promocionais); (15) Mindlin: menor cobertura (1 Skill), próxima prioridade se material viável surgir
+- **Próxima Prioridade:** (1) ~~NBR 9575:2024~~ CONCLUÍDA 02/09; (2) ~~NBR 15575:2025 pisos~~ CONCLUÍDA 03/09; (3) ~~COSCIP/CBMERJ~~ CONCLUÍDA 04/09; (4) ~~NBR 6122:2022 fundações~~ CONCLUÍDA 07/09; (5) Apresentação interativa ao cliente — **busca PAUSADA**; (6) NBR 16280:2024 reformas (PAUSADA — construção do zero); (7) ~~NBR 6120:2019 cargas~~ CONCLUÍDA 08/09; (8) ~~NBR 8681:2025 segurança~~ CONCLUÍDA 09/09 (ativa-com-ressalva); (9) ~~NBR 10844:1989 águas pluviais~~ CONCLUÍDA 10/09 (ativa-com-ressalva); (10) ~~NBR 7229:1993/NBR 13969:1997~~ RESOLVIDA 14/09 pela NBR 17076:2024 (substitui ambas); (11) Passo 8 se lacuna real pedir; (12) ~~Lúcio: NBR 9050:2020 acessibilidade~~ CONCLUÍDA 15/09 (proposta); (13) ~~Kelsen: OODC/Mais-Valerá/Mais-Valia~~ CONCLUÍDA 15/09 (proposta); (14) ~~NBR 5419:2026 SPDA (Landell)~~ CONCLUÍDA 15/09 (proposta — eletroproj.com.br forneceu parâmetros: raio esfera, malha, seções mínimas, mudança política de aterramento); (15) Mindlin: menor cobertura (1 Skill), próxima prioridade se material viável surgir
 
 ---
 
@@ -149,10 +151,11 @@
 
 ## Observações da Rodada 15/09/2026
 
-1. **OODC/Mais-Valerá/Mais-Valia — Kelsen:** primeira Skill de instrumentos urbanísticos para potencial construtivo. Achado principal (brecha válida): a maioria dos projetistas no RJ trata o CAB como limite absoluto e ignora que o CAM é alcançável mediante contrapartida. Lacuna: fórmula do Anexo XXV (LC 270/2024) não obtida em fontes públicas. Prazos especiais (Mais-Valerá 01/06/2026 e Mais-Valia 30/06/2026) já expirados — documentado na Skill como alerta. Isenção de 5 anos NÃO confirmada por fonte primária.
-2. **NBR 9050:2020 — Lúcio:** primeira Skill de Arquitetura (Lúcio) em setembro. Lacuna real: nenhuma Skill de acessibilidade existia no sistema. Parâmetros parciais (circulação, rampas, sanitários, estacionamento, elevadores) obtidos de fontes secundárias. Brecha válida: custo < 5% quando integrada desde o partido; ~15% de valorização. Texto integral da norma (~150 pág.) não lido (paga). Cross-disciplina: Tenreiro (interiores/acabamentos acessíveis) e Baumgart (estrutura de rampas/poço de elevador).
-3. **NBR 5419:2025 SPDA — Landell:** gap confirmado (Landell declarou em seu estado), pesquisa realizada em 3 frentes, mas todas fontes web retornaram apenas conteúdo promocional sem parâmetros numéricos. PDF da NBR 5419:2001 encontrado e lido, mas é versão obsoleta (antes da divisão em 4 partes de 2015/2025). **Decisão: adiar** até obter texto da versão vigente. Não forçar Skill fraca (Princípio "não cria se material insuficiente").
-4. **Descartados esta rodada:** riorenovavel.com (DNS failure — site inacessível); raceletrica.eng.br (HTTP 403); IPAAM PDF NBR 5419-1 (binário/corrompido); todas fontes web sobre NBR 5419 (engehall, clintec, sibras, a3a — apenas resumos promocionais).
+1. **OODC/Mais-Valerá/Mais-Valia — Kelsen (v1.1 corrigida):** Skill corrigida com 2 janelas distintas — 1ª janela (LC 274/2024, até 01/12/2025, 50% desconto) e 2ª janela (LC 281/2025, até 01/06/2026, 30% desconto). Versão inicial registrou apenas a 2ª janela. Fontes conflitantes (SMDU 27/01/2026 vs. Machado Meyer snippets) reconciliadas. Lacuna persistente: fórmula do Anexo XXV (LC 270/2024) não obtida. Isenção de 5 anos NÃO confirmada por fonte primária.
+2. **NBR 9050:2020 — Lúcio (v1.1 enriquecida):** tabela de rampas detalhada (4 inclinações + comprimentos máximos + inclinação transversal 2%/3%); elevador obrigatório acima de 5 pavimentos (não 2); 6 erros mais comuns em projetos residenciais RJ adicionados. Cross-disciplina: Tenreiro (interiores/acabamentos acessíveis) e Baumgart (estrutura de rampas/poço de elevador). Texto integral da norma (~150 pág.) não lido (paga).
+3. **NBR 5419:2026 SPDA — Landell (v1.0 nova):** revertida a decisão de adiar. eletroproj.com.br forneceu parâmetros numéricos reais: raio esfera (20/30/45/60 m por nível I-IV), malha de captação (5×5 a 20×20 m), seções mínimas de condutores (Cu 35mm², Al 70mm², Aço 50mm²), espaçamento de descidas (10-25 m). Mudança principal da versão 2026: Ng por satélite/sensor, medição de resistência de aterramento NÃO mais exigida (só continuidade com miliohmetro). Inspeção periódica a cada 3 anos. Texto integral da ABNT não lido (paga).
+4. **Pesquisa prática por Gestor (vídeos/conteúdo técnico):** eletroproj.com.br (Landell/NBR 5419), sienge.com.br (Lúcio/NBR 9050), fontes SMDU/Legalizzar/Machado Meyer (Kelsen/OODC). Confirmado que o enriquecimento das Skills veio desta rodada de pesquisa prática.
+5. **Descartados esta rodada:** riorenovavel.com (DNS failure); raceletrica.eng.br (HTTP 403); IPAAM PDF NBR 5419-1 (binário/corrompido); NBR 5419:2001 (versão obsoleta, não usada).
 
 ---
 

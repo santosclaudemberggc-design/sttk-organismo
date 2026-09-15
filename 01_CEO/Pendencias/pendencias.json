@@ -798,7 +798,24 @@
       "alc": "auto",
       "res": "Wallenberg confere sozinho no proprio escopo do organismo (nao e decisao de Claudemberg, e auditoria de execucao). Sem bloqueio externo.",
       "acao": "Ler o(s) arquivo(s) de Skill criados pela Diaria de 15/09 em 01_CEO/Skills_Propostas/2026/Setembro/ e conferir: (1) as fontes/raciocinio citados refletem a pergunta \"qual caminho a lei/tecnica deixa aberto\" (brecha valida), nao so recitacao de norma; (2) se pesquisa para Kelsen/Lucio foi feita, ela cobre os eixos do escopo v3.0 (OODC/Mais-Valera/janelas de governo para Kelsen; partido/solar/conforto para Lucio) e nao so a busca generica antiga (NBR/CAU-RJ/render). Se a Diaria nao criou Skill pra Kelsen/Lucio hoje, conferir no relatorio dela SE a busca ampla foi de fato tentada (nao presumir \"sem material\" sem evidencia, igual ao que aconteceu em 14/09). Ler tambem o commit local gerado pela tarefa (mensagem + diff) para confirmar que cita o escopo v3.0, nao mais \"v2.8\". Registrar o resultado desta verificacao no livro-razao de Setembro, ratificando que a correcao funcionou ou sinalizando regressao imediatamente.",
-      "status": "aberta"
+      "status": "resolvida",
+      "resolvido_em": "2026-09-15",
+      "resultado": "Diária v3.0 confirmada: commit 9574f27 cita 'v3.0' na mensagem, OODC Skill tem seção 'Brecha válida (mentalidade v3.0)', NBR 9050 idem, 2 Skills criadas (OODC + NBR9050), NBR5419 SPDA corretamente adiada por material insuficiente. Correção de 14/09 (commit a81ac84, 3 camadas: tarefa agendada + Checklist + manual) funcionou — rodada de 15/09 rodou com escopo real v3.0."
+    },
+    {
+      "id": "wallenberg-trim-estado-kelsen-hely-14-09",
+      "owner": "Wallenberg",
+      "agente": null,
+      "cardId": "sistema",
+      "txt": "Decisao de Claudemberg na Reuniao Semanal de 14/09/2026 (Item 1, Parte 2 da pauta 2026-09-14_pauta.md): destravar o trim de _estado_kelsen.md e _estado_hely.md AGORA, antes do fechamento do caso Daniel-OB (prioridade original). Motivo: medicao real de tokens mostrou 3a leitura consecutiva em alta de contexto inicial (07/09: +12,8% -> 11/09: +14,3% -> 14/09: +20,9% vs baseline S30-S31), com Kelsen (31%) e Hely (22%) concentrando 53% do custo total do organismo.",
+      "desde": "2026-09-14",
+      "crit": "alta",
+      "alc": "auto",
+      "res": "Wallenberg executa sozinho no escopo do organismo (trim de arquivo de estado proprio, mesmo padrao ja aprovado no trim de _estado_kelsen de 03/09). Sem bloqueio externo.",
+      "acao": "Trimar _estado_kelsen.md e _estado_hely.md seguindo o mesmo padrao ja validado em 03/09/2026 (_estado_kelsen: 171 KB -> 20 KB): converter de arquivo append-only para estrutura enxuta com secoes fixas, preservando 100% do HISTORICO (secao apartada) e dos Aprendizados registrados - nunca cortar conteudo, so reorganizar. Fazer backup do arquivo original antes de editar (01_CEO/Decisoes_Autonomas/_backups/2026-09-14/). Registrar no livro-razao com o resultado (tamanho antes/depois, confirmacao de zero perda de aprendizado).",
+      "status": "resolvida",
+      "resolvido_em": "2026-09-15",
+      "resultado": "Trim executado com sucesso: _estado_kelsen.md 32KB→28KB (subseções EVTL e Integração 5 Skills movidas para _estado_kelsen_HISTORICO.md, que cresceu de 167KB→171KB); _estado_hely.md 117KB→87KB + novo _estado_hely_HISTORICO.md criado (30KB com entradas históricas de 27/08 a 12/09/2026). Zero perda de conteúdo, 100% do HISTÓRICO preservado em arquivos apartados."
     }
   ]
 }

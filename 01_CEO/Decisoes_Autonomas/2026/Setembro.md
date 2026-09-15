@@ -4,6 +4,82 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-15, ~10:30] Drenagem Contínua v2.3, 10ª rodada (segunda) — 2 SKILLS AVALIADAS + TRIM ESTADOS
+
+**Contexto:** Rodada automática sob tarefa agendada `wallenberg-drenagem-continua-local` (10:15, seg). Verificação de execução da Rotina Diária de Skills v3.0 (teste de correção de 14/09).
+
+**Verificação Portão de Trabalho:**
+- `notion_pend = vazia` ✓ (zero itens Status:pendente)
+- `auto_abertas = 2` ✓ (`wallenberg-verificar-diaria-v3-15-09` e `wallenberg-trim-estado-kelsen-hely-14-09`)
+- `skills_novas = 2` ✓ (OODC + NBR 9050, ambas "proposta")
+
+**Execução Real:**
+
+**1. Kelsen (acionado via Portão — 2 Skills novas para avaliar):**
+- **OODC, Mais-Valerá e Mais-Valia — Instrumentos de Potencial Construtivo (RJ):** v1.0, avaliada como **PROCEDE COM RESSALVA** (5 ressalvas registradas no veredito: (R1) divergência entre prazos Skill ["expirados 30/06/2026"] vs. estado Kelsen [LC301 até 01/12/2026, ainda aberto em 15/09]; (R2) nomenclatura LC 281 vs. LC 291; (R3) fórmula Anexo XXV não obtida em fontes públicas; (R4) isenção de 5 anos não confirmada por fonte primária; (R5) CAB/CAM por subzona não listados). Hely deve reconciliar com Skill existente `legal_lc281-2025-condicoes-especiais-licenciamento-rj.md` antes de qualquer uso em caso real.
+- Veredito entregue a Wallenberg para ratificação de Claudemberg. Status: "aguarda ratificação".
+
+**2. Lúcio (acionado via Portão — 1 Skill nova para avaliar):**
+- **NBR 9050:2020 — Acessibilidade Integrada ao Projeto Residencial:** v1.1, avaliada como **PROCEDE COM RESSALVA** (4 ressalvas registradas: (R1) texto integral NBR não lido [paga]; (R2) maçaneta na rota acessível deve ser 0,90m, não 0,80m — corrigir antes de uso em caso real; (R3) parâmetros parciais (~150 pág., cobertura incompleta); (R4) custo <5% e ~15% valorização são referências de mercado, não dados auditados). Adequação para projeto residencial v3.0 confirmada.
+- Veredito entregue a Wallenberg para ratificação de Claudemberg. Status: "aguarda ratificação".
+
+**3. Wallenberg (auto — 2 pendências para fechar):**
+- `wallenberg-verificar-diaria-v3-15-09` **RESOLVIDA** em 15/09: Diária v3.0 confirmada funcionando com escopo correto. Evidências: (a) commit 9574f27 cita "v3.0" na mensagem; (b) OODC Skill tem seção "Brecha válida (mentalidade v3.0)"; (c) NBR 9050 Skill idem; (d) 2 Skills criadas (OODC + NBR 9050) conforme expectativa; (e) NBR 5419 SPDA corretamente adiada por material insuficiente. Correção de 14/09 (commit a81ac84, 3 camadas de sincronização) funcionou — rodada de 15/09 provou execução real com escopo v3.0.
+- `wallenberg-trim-estado-kelsen-hely-14-09` **RESOLVIDA** em 15/09: Trim executado com sucesso. (a) `_estado_kelsen.md`: 32KB → 28KB (subseções "Integração 5 Skills" e "Caso EVTL" movidas para HISTÓRICO); `_estado_kelsen_HISTORICO.md`: 167KB → 171KB (append preservado). (b) `_estado_hely.md`: 117KB → 87KB (entradas históricas "Última atualização" de 27/08-12/09 movidas); novo `_estado_hely_HISTORICO.md`: 30KB criado. (c) Confirmado: zero perda de conteúdo, 100% do HISTÓRICO preservado em arquivos apartados, estrutura de estado ativa enxuga sem degradação.
+
+**4. Learning Agent (Passo 8a — segunda, execução real):**
+- Pesquisa: "Multi-agent workflows", "Autonomous agents patterns", "Workflow optimization" — YouTube, GitHub, web genérico.
+- Achados: (a) Handoff Protocol Format (padrão de handover entre agentes — viável, documentar como optional enhancement); (b) Observe-Plan-Act-Reflect loop (estrutura mental — alinhada com estado de Agentes + Portão); (c) Memória hierárquica com correlation IDs (enterprise pattern, não prioritário).
+- Recomendação: nenhuma mudança obrigatória ao SKILL.md. Roadmap de opcional: formalizar handoff em POP (Item 1); considerar OPAR em "Como escrevem neste arquivo" para Agentes futuros (Item 2); roadmap futuro: correlation IDs (Item 3).
+- Modificação: NENHUMA.
+
+**Painel:** Não atualizado (Kelsen e Lúcio Skills ainda aguardam ratificação de Claudemberg; capacidade real não ativada).
+
+**Registros:** 
+- `pendencias.json`: 2 itens fechados (status "resolvida", resolvido_em "2026-09-15", resultado documentado).
+- `indice.md` (Skills_Propostas/2026/Setembro): OODC + NBR 9050 status "proposta" → "aguarda ratificação de Claudemberg" com vereditos resumidos.
+- Livro-razão: esta entrada.
+- `_estado_wallenberg.md`: seção "Última atualização" com resumo.
+
+**Próximas ações:**
+1. Claudemberg ratificar OODC (com ressalvas, usar antes de reconciliar com LC 281) e NBR 9050 (com ressalvas, corrigir maçaneta antes de uso).
+2. Hely reconciliar OODC contra `legal_lc281-2025-condicoes-especiais-licenciamento-rj.md`.
+3. Roadmap Learning Agent opcional (3 itens acima) escalar com Claudemberg.
+
+**Duração:** ~45 min.
+
+**Data:** 15/09/2026  
+**Registrador:** Wallenberg
+
+---
+
+### [2026-09-14, ~16:00] Reunião Semanal com Claudemberg — RATIFICAÇÃO EM BLOCO (14/09, ao vivo)
+
+**Contexto:** Claudemberg passou a pauta de 2026-09-14_pauta.md item a item, ao vivo, na mesma sessão. Todos os 9 itens de ratificação e as 2 decisões foram respondidos.
+
+**RATIFICADO — 9 itens:**
+1. ✅ Painel do Fundador — atualização 11/09
+2. ✅ Criação do Gestor Lelé (Fechamento) — 09/09
+3. ✅ Rotina Diária Skills v3.0 — mentalidade "brecha válida" (decisão de conteúdo, 10/09)
+4. ✅ Skill NBR 8681:2025 — 1ª ativação fluxo v2.9
+5. ✅ Exame 2 Cardozo: 6/6 Agentes concluído (Shadow→Assisted)
+6. ✅ Skill NBR 10844:1989 — ativação v2.9 (Saturnino)
+7. ✅ Skill NBR 6120:2019 — ações para cálculo de estruturas (Baumgart)
+8. ✅ Exame 3 Cardozo: 6/6 Agentes Autonomous (marco)
+9. ✅ Correção estrutural — Rotina Diária v3.0 não chegava ao fluxo real de execução (achado do próprio Claudemberg, apurado e corrigido nesta mesma sessão — commits `a81ac84`, `cf9b15c`, `757500a`)
+
+**DECIDIDO — 2 itens:**
+- ✅ **Saúde de Consumo:** destravar o trim de `_estado_kelsen.md`/`_estado_hely.md` AGORA, sem esperar a leitura de 28/09 — pendência criada (`wallenberg-trim-estado-kelsen-hely-14-09`, crit alta, alc auto) para execução dedicada, mesmo padrão do trim de `_estado_kelsen` de 03/09 (zero perda de HISTÓRICO/Aprendizados).
+- ✅ **Próximas Prioridades:** sequência Oscar → Cardozo (Trilha B) → Lelé → Portinari aprovada sem ajustes.
+
+**Status:** ✅ COMPLETO. Pauta 2026-09-14_pauta.md atualizada item a item com "Decisão: ✅ RATIFICADO/APROVADO — 14/09/2026" em cada seção. PDF regenerado.
+
+**Data Ratificação:** 14/09/2026  
+**Ratificador:** Claudemberg (Presidente)  
+**Registrador:** Wallenberg
+
+---
+
 ### [2026-09-14, ~13:30] Correção — Rótulo de versão da Rotina Diária Skills (v2.7/v2.8 → v3.0) + dúvida real sobre execução
 
 **Contexto:** Claudemberg apontou que os commits de 11/09 e 14/09 diziam "Rotina Diária Skills v2.8", quando a v3.0 (Escopo Expandido por Gestor) foi decidida e mesclada no arquivo-fonte em 10/09.

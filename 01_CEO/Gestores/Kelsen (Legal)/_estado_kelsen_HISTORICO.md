@@ -497,3 +497,26 @@
 ## 4. Como escrever neste arquivo
 
 Antes de devolver o retorno a Wallenberg, atualize as 4 seções: substitua o que mudou, apague o que virou passado, mantenha só o que o próximo Kelsen precisa pra continuar. Não vire diário nem repita o conteúdo dos documentos — aponte pra eles. **A seção 2 se reconcilia contra os arquivos, não contra a memória** — item que já está feito sai da lista; item marcado "esperando alguém" que na verdade é meu volta pro balde (a).
+
+
+---
+
+## Rodada 15/09/2026 — Subseções movidas para HISTÓRICO (trim)
+
+### Integração das 5 Skills Propostas de Legal ratificadas em bloco (03/09/2026) — CONCLUÍDA
+
+Wallenberg pediu decisão item a item (integrar/Skill separada/só nota) + execução. Decidido e executado:
+1. **Anexo I / Decreto 48.719/21 (Julho)** — NÃO integrado como fato. Contradiz o que a própria base já confirmava: 48.719/2021 é **Sem efeito** desde a publicação do 55.622/2025 (Busca Fácil). Registrei a contradição como [ATENÇÃO] em _indice_fontes.md (seção do Decreto 55.622/2025) com pendência para Hely checar Carioca Digital + D.O. antes de qualquer citação real.
+2. **ART georreferenciada CREA-RJ (Julho)** — virou Skill própria: .claude/skills/legal-art-crea-responsabilidade-tecnica-rj/SKILL.md. Domínio genuinamente distinto (registro profissional/CREA, não zoneamento). Confiança média preservada (fonte de 2º grau, PDF primário nunca aberto — 403).
+3. **CAU-RJ Deliberação 009/2026 / RRT (Agosto)** — NÃO virou Skill, apesar de ter entrado na ratificação em bloco. Eu já tinha essa colisão registrada em pendencias.json **antes** da ratificação (Art. 8º da Res. 91/2014 já tem §5º; a "sugestão" da CEP-RJ colide com numeração vigente) — a ratificação em bloco passou por cima do alerta sem a Diária de Skills ter corrigido a proposta. Mantive só como nota de monitoramento (já existia em _indice_fontes.md, seção 31/08); a Skill nova de ART referencia essa decisão numa "Nota de escopo". pendencias.json atualizado com o desfecho e uma recomendação a Wallenberg: levar a Claudemberg que ratificação em bloco passou por cima de alerta técnico prévio — falha de processo a corrigir, não bloqueante desta vez.
+4. **Resolução SMDU 10/2026 / RDT (Setembro)** — integrado à Skill existente (legal-base-legislativa-bairro), nova seção "Trâmite paralelo obrigatório — Consulta Prévia RDT", no padrão já usado para LMS/COSCIP. Usei o texto **verbatim já verificado por Hely em 27/08** (não o resumo secundário da proposta) — a proposta descrevia o critério do Art. 4º,I como "ATC > 40.000 m²"; o primário diz área do **terreno**, não construída. Registrei essa divergência como armadilha na própria Skill.
+5. **LC 281/2025 (Setembro)** — não gerou conteúdo novo (a LC 281 já estava coberta com mais profundidade desde 28/07). A proposta trazia uma data errada ("prazo expirado em 30/06/2026") que não bate com a cadeia verbatim já auditada duas vezes (1º/12/2025→1º/06/2026 LC291→1º/12/2026 LC301, ainda aberta). Virou nota de armadilha na Skill existente.
+
+Os 5 arquivos-fonte em  1_CEO/Skills_Propostas/2026/ foram atualizados com nota "Integração — 03/09/2026" apontando para onde a informação foi (mesmo padrão do piloto Baumgart).
+
+---
+
+### Caso EVTL Av. Projetada Canal 2 (fora do escopo das rotinas de drenagem — Wallenberg, 31/08)
+
+PA 19170, Lote 1/Quadra 6, matrícula 21.336/9º RGI, ~10.500 m². Núcleo do parecer de pé desde 30/07: é **gleba, não lote** (LC270/2024 Arts. 289 V / 323 / 327 §2º — sem logradouro público aceito não há testada legal; um único gargalo mata prédio, casa e condomínio de lotes). B13/TRAVA C (zoneamento **ZCS E**) fechada 08/08 via RIU interativo (Claude in Chrome). B14 (transferência obrigatória — nem Quadro 24.3 >20.000m² nem Art. 305 >40.000m² cobrem ~10.500m²): busca exaurida; nota técnica bipartite 14_nota_tecnica_lacuna_transferencia_evtl.md pronta 27/08 (ANÁLISE PRELIMINAR — Leitura A/isenção favorecida por precedente SP Cota de Solidariedade; Leitura B/conservadora 15% por analogia). Caso conduzido pelo comercial (Maurício Fonseca, Novos Negócios) + Gate do Maurício (Costa). **Não toco.**
+

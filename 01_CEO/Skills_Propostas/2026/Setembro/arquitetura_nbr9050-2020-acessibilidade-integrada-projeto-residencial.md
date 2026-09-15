@@ -33,13 +33,19 @@ NBR 9050:2020 — Acessibilidade a edificações, mobiliário, espaços e equipa
 
 ### Rampas
 
+| Inclinação | Desnível máx. por segmento | Comprimento máx. por segmento | Condição |
+|-----------|---------------------------|------------------------------|----------|
+| 5% (1:20) | sem limite prático | sem limite prático | Recomendada (conforto ideal) |
+| 6,25% (1:16) | 0,80 m | 12,80 m | Permitida — áreas de circulação geral |
+| 8,33% (1:12) | 0,80 m | 9,60 m | Máxima para obra nova |
+| 12,5% (1:8) | 0,20 m | 1,60 m | Somente reforma com impossibilidade técnica comprovada |
+
 | Parâmetro | Valor | Observação |
 |-----------|-------|------------|
-| Inclinação máxima | 8,33% (1:12) | Para desníveis até 0,80 m |
-| Inclinação máxima (situação excepcional) | 12,5% (1:8) | Só para desníveis até 0,20 m em reforma |
 | Largura mínima da rampa | 1,20 m | Livre de obstáculos |
-| Comprimento máximo de cada segmento | 5,00 m | A cada 5 m, patamar de descanso |
-| Patamar de descanso (comprimento mín.) | 1,20 m | No início, fim e a cada 5 m |
+| Patamar de descanso (comprimento mín.) | 1,20 m | No início, fim e entre segmentos |
+| Inclinação transversal máxima (interna) | 2% | Sentido perpendicular ao deslocamento |
+| Inclinação transversal máxima (externa) | 3% | Rampas ao ar livre |
 | Corrimãos | obrigatórios em ambos os lados | Altura: 0,70 m e 0,92 m (duplo) |
 | Guia de balizamento | 0,05 m de altura mínima | Nas bordas laterais da rampa |
 
@@ -68,6 +74,7 @@ NBR 9050:2020 — Acessibilidade a edificações, mobiliário, espaços e equipa
 
 | Parâmetro | Valor | Observação |
 |-----------|-------|------------|
+| Obrigatoriedade | edificações com mais de **5 pavimentos** | NBR 9050:2020 + Código de Obras RJ |
 | Vão livre da porta | 0,80 m mínimo | NBR 13994 referenciada |
 | Espaço interno mínimo da cabine | 1,10 m × 1,40 m | Para edificações existentes; novas: 1,10 m × 1,60 m |
 | Botoeira interna | 0,89 m a 1,35 m do piso | Com sinalização em Braille e relevo |
@@ -98,7 +105,16 @@ A maioria dos escritórios de arquitetura no RJ trata acessibilidade como "custo
 ### Para Baumgart (Estrutural — cross)
 
 - **Rampas:** prever nas fundações e estrutura quando o projeto tiver desnível entre pavimentos ou entre piso e calçada.
-- **Elevador:** se o projeto exigir elevador (edificações com mais de 2 pavimentos ou uso coletivo), prever poço com dimensões mínimas da NBR 13994.
+- **Elevador:** se o projeto exigir elevador (edificações com mais de **5 pavimentos** ou uso coletivo), prever poço com dimensões mínimas da NBR 13994.
+
+## 6 Erros mais comuns em projetos residenciais no RJ
+
+1. **Porta de 0,70 m em banheiro de área comum** — precisa de 0,80 m livre (folha de 0,90 m)
+2. **Rampa a 10% sem justificativa de reforma** — máximo permitido em obra nova é 8,33%
+3. **Falta de inclinação transversal controlada** — máximo 2% interno, 3% externo
+4. **Elevador omitido até 5 pavimentos** — "Não precisa" é comum, mas o Código de Obras RJ exige acima de 5
+5. **Sanitário acessível com área de giro insuficiente** — especificar ø 1,50 m livre, não apenas "banheiro adaptado"
+6. **Corrimão simples em rampa** — obrigatório duplo (0,70 m e 0,92 m) em ambos os lados
 
 ## O que NÃO muda
 
