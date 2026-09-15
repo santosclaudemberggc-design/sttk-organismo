@@ -1,6 +1,6 @@
-﻿# 📊 Resumo Executivo — Rotina Redefinida v2.7
+﻿# 📊 Resumo Executivo — Rotina Redefinida v3.0
 
-**Data:** 28/08/2026  
+**Data original:** 28/08/2026 | **Rótulo corrigido:** 14/09/2026 (v3.0 ativa desde 10/09/2026 — Escopo Expandido por Gestor)  
 **Decisão:** Redesenhar rotina diária para máxima clareza + automação
 
 ---
@@ -65,11 +65,11 @@
 
 ## Próximos Passos
 
-1. Leia wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md
-2. Amanhã (29/08) 08:00, abra Checklist_Diaria.html
+1. Leia `wallenberg-rotina-diaria-skills-v2_SKILL.md` (é a referência completa — `wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md` está vazio, não usar)
+2. Seg-Qui 08:00, abra Checklist_Diaria.html (já traz o resumo do escopo v3.0 no Passo 1)
 3. Acompanhe tempo real + marque progresso
-4. Sexta (01/09), use Checklist_Sexta.html
+4. Sexta, use Checklist_Sexta.html
 
 ---
 
-**Status:** ✅ Pronto para lançamento 29/08/2026
+**Status:** ✅ Rotina ativa. Ganhos abaixo continuam válidos (checklist visual + automação); o escopo de pesquisa do Passo 1 mudou na v3.0 — ver SKILL.md.

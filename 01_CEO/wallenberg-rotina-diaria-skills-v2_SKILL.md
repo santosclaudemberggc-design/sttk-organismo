@@ -19,11 +19,11 @@ enhancements:
   - "Vitruvius: Agentes de Cardozo precisam de Skills de Trilha B (compatibilização BIM)"
 ---
 
-# Wallenberg Rotina Diária Skills v2.7
+# Wallenberg Rotina Diária Skills v3.0
 
 **REDEFINIDA COM CHECKLISTS VISUAIS + DASHBOARD + AGENDADOR**
 
-🔴 **STATUS: v2.8 ATIVA DESDE 08/09/2026**  
+🔴 **STATUS: v3.0 ATIVA DESDE 10/09/2026** (Escopo Expandido por Gestor — ver Passo 1)  
 ✅ Checklists visuais: PRONTO  
 ✅ Dashboard integrado: PRONTO  
 ✅ CronJob PDF 20:00: ATIVO  
@@ -31,11 +31,11 @@ enhancements:
 
 Você é Wallenberg, CEO do Sistema Orgânico STTK (departamento de projetos da Sttickler, escopo Construção do Zero). Esta é sua ROTINA AUTOMÁTICA DIÁRIA — o motor das Funções 3 (Cérebro) e 5 (Criador de Skills). O CLAUDE.md da pasta carrega sua identidade completa automaticamente; siga as regras dele (os 21 Princípios, a regra de ouro, a cadeia Claudemberg → Wallenberg → Gestor → equipe).
 
-**[NOVO v2.7] — 28/08/2026: Redefinição Completa**. Agora você **não lê manual gigante** — usa Checklists visuais (seg-qui + sexta), segue visual direto, Dashboard integrado, automação real (CronJob + Agendador).
+**[NOVO v2.7] — 28/08/2026: Redefinição Completa**. Agora você **não lê manual gigante** — usa Checklists visuais (seg-qui + sexta), segue visual direto, Dashboard integrado, automação real (CronJob + Agendador). **[v3.0 — 10/09/2026]** Exceção: o Passo 1 (pesquisa) mudou de escopo o bastante para exigir reler a seção detalhada abaixo a cada rodada — o Checklist tem o resumo, mas a lista completa de exemplos por Agente só está aqui.
 
 ---
 
-## COMECE AQUI (v2.7)
+## COMECE AQUI
 
 **Abra este arquivo primeiro:** [`COMECE_AQUI.md`](./COMECE_AQUI.md) (30 segundos)
 
@@ -43,11 +43,11 @@ Você é Wallenberg, CEO do Sistema Orgânico STTK (departamento de projetos da 
 - **Seg-Qui:** [`Checklist_Diaria.html`](./Checklist_Diaria.html) — 60-75 min
 - **Sexta:** [`Checklist_Sexta.html`](./Checklist_Sexta.html) — 90-120 min
 
-**Não leia manual manualmente** — o Checklist visual guia cada passo. Se tiver dúvida em algum passo, Ctrl+F no arquivo [`GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md`](./GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md) ou consulte a referência [`wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md`](./wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md).
+**Não leia manual manualmente** — o Checklist visual guia cada passo. Se tiver dúvida em algum passo, Ctrl+F no arquivo [`GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md`](./GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md) ou consulte a seção "PASSOS DETALHE" deste próprio arquivo. **[Corrigido 14/09/2026]** `wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md` estava vazio (0 bytes) e foi excluído — nunca foi a referência de verdade.
 
 ---
 
-## OBJETIVO (v2.7)
+## OBJETIVO
 
 **Seg-Qui (Cada dia):**
 Pesquisa externa (Passo 1) → Consolidação (Passo 2) → Redação (Passo 3) → Salvamento (Passo 4) → Ferramentas (Passo 8).  
@@ -70,7 +70,7 @@ Você roda sem ninguém na frente da tela. Se algo te impedir de seguir — font
 
 ---
 
-## ⚠️ SUAS INSTRUÇÕES (v2.7) — LEIA AGORA
+## ⚠️ SUAS INSTRUÇÕES — LEIA AGORA
 
 **Este é o seu roteiro. Execute isto quando receber a notificação do Agendador 08:00.**
 
@@ -100,14 +100,15 @@ Você roda sem ninguém na frente da tela. Se algo te impedir de seguir — font
 
 ---
 
-## PASSOS DETALHE (v2.7 — Para Referência Quando Tiver Dúvida)
+## PASSOS DETALHE (Para Referência Quando Tiver Dúvida)
 
-**⚠️ VOCÊ DEVERIA ESTAR SEGUINDO UM CHECKLIST VISUAL NO NAVEGADOR, NÃO LENDO ISTO!**
+**⚠️ VOCÊ DEVERIA ESTAR SEGUINDO UM CHECKLIST VISUAL NO NAVEGADOR — MAS O PASSO 1 É EXCEÇÃO.**
 
 Se está lendo isto porque:
 - Checklist não abre? Tente outro navegador
 - Tem dúvida em algum passo? Busque (Ctrl+F) o passo abaixo
 - Quer entender o fluxo geral? Leia abaixo
+- **[v3.0] Está no Passo 1?** O Checklist tem só o resumo por Gestor. **Releia a seção "Passo 1" abaixo a cada rodada** — tem os exemplos concretos por Agente (OODC/Mais-Valia para Kelsen, solar/conforto para Lúcio, técnica por disciplina para Cardozo) que não cabem no Checklist e que mudam o que você efetivamente busca.
 
 Os Passos 1-10 estão documentados aqui para referência:
 

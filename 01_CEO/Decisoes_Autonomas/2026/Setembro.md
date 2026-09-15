@@ -4,6 +4,57 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-14, ~13:30] Correção — Rótulo de versão da Rotina Diária Skills (v2.7/v2.8 → v3.0) + dúvida real sobre execução
+
+**Contexto:** Claudemberg apontou que os commits de 11/09 e 14/09 diziam "Rotina Diária Skills v2.8", quando a v3.0 (Escopo Expandido por Gestor) foi decidida e mesclada no arquivo-fonte em 10/09.
+
+**Achado:** `wallenberg-rotina-diaria-skills-v2_SKILL.md` tinha 3 rótulos de versão contraditórios — frontmatter `version: 3.0.0` (correto), título H1 "v2.7" (desatualizado), banner de status "🔴 v2.8 ATIVA DESDE 08/09" (desatualizado). O conteúdo do Passo 1 (escopo v3.0 por Gestor) estava de fato mesclado corretamente — o problema era só o rótulo visível no topo do arquivo, que é o que se copia para o título do commit.
+
+**Corrigido (execução, dentro do escopo):**
+- Título H1: v2.7 → v3.0
+- Banner de status: "v2.8 ATIVA DESDE 08/09" → "v3.0 ATIVA DESDE 10/09 (Escopo Expandido por Gestor)"
+
+**Investigação mais a fundo (mesma sessão, a pedido de Claudemberg) — causa raiz real encontrada, não era só rótulo:**
+
+A rotina Seg-Qui instrui explicitamente a **não ler** a seção "Passo 1" do SKILL.md ("ABRA O CHECKLIST, NÃO LEIA ABAIXO") e seguir só `Checklist_Diaria.html`. Conferido o Checklist: seu Passo 1 continuava com a descrição **genérica anterior à v3.0** ("Trilha A: normas, técnicas, regras — qualquer fonte"), sem nenhuma menção a "brecha válida", sem o escopo por Gestor (OODC/Mais-Valerá/janelas de governo para Kelsen; partido/solar/conforto para Lúcio; técnica por disciplina + Vitruvius para Cardozo) que a v3.0 exige desde 10/09. **A v3.0 nunca chegou ao arquivo que a rotina de fato segue** — só ao arquivo de referência que a própria rotina instrui a não ler. Isso explica com muito mais força a lacuna do que só o rótulo do commit.
+
+**Corrigido (execução, dentro do escopo):**
+1. `Checklist_Diaria.html`, Passo 1: reescrito com a mentalidade "brecha válida" + resumo de 1-2 linhas por Gestor (Kelsen/Lúcio/Cardozo) + pointer explícito para reler a seção "Passo 1" do SKILL.md a cada rodada (exemplos completos não cabem no Checklist). Tempo do passo ajustado 15-20min → 20-30min; tempo total do checklist 60-75min → 60-90min (bate com o SKILL.md).
+2. `wallenberg-rotina-diaria-skills-v2_SKILL.md`: removidos os rótulos "v2.7" residuais do título, COMECE AQUI, OBJETIVO e SUAS INSTRUÇÕES; adicionada exceção explícita na trava "não leia abaixo" — Passo 1 é releitura obrigatória a cada rodada.
+3. `COMECE_AQUI.md`: título v2.7→v3.0; removida referência a `wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md` (achado colateral: esse arquivo está **vazio**, 0 bytes — apontava lá como "referência completa, 30 min leitura"; quem seguisse teria aberto um arquivo em branco). `RESUMO_EXECUTIVO_ROTINA_REDEFINIDA.md` e `INDICE_ROTINA_REDEFINIDA_28_08_2026.md` não foram conferidos — mesmo risco em aberto.
+
+**A partir de amanhã (15/09, terça, Seg-Qui):** a rotina deve rodar com o escopo v3.0 de fato visível no fluxo que ela segue.
+
+**NÃO decidido sozinho — dúvida real que permanece, agora só sobre o passado:** não dá para confirmar nem descartar se a busca profunda foi de algum modo feita "de memória" nas rodadas de 11/09 e 14/09 (ex.: se Wallenberg leu o SKILL.md por hábito mesmo com a trava). O commit de 14/09 ("Kelsen e Lúcio: sem material novo viável hoje") é compatível com as duas hipóteses.
+
+**Correção adicional (mesma sessão) — a causa raiz de verdade era mais profunda que o Checklist:**
+
+Claudemberg apontou que a tarefa "Rotina Diária de Skills v2.8" continuava com esse nome na barra lateral do desktop, mesmo após a correção acima. Investigando: a tarefa agendada `wallenberg-rotina-diaria-skills-v2-7` (a que dispara de verdade, seg-sex 08:16) tem **seu próprio arquivo de prompt**, separado do projeto: `C:\Users\santo\.claude\scheduled-tasks\wallenberg-rotina-diaria-skills-v2-7\SKILL.md`. Esse arquivo tinha **seu próprio Passo 1 hardcoded**, escrito antes de 10/09 e nunca atualizado — chamava o SKILL.md do projeto de "fonte de verdade" mas não herdava dele nada automaticamente. **Esse era o verdadeiro motivo da lacuna em 11/09 e 14/09**, mais direto ainda que o Checklist: é o prompt que a IA recebe de fato ao disparar.
+
+**Corrigido via `mcp__scheduled-tasks__update_scheduled_task`:**
+- `title`: "Rotina Diária de Skills v2.8" → "v3.0" (aparece agora corrigido na barra lateral)
+- `description`: atualizada para citar o escopo expandido
+- `prompt`: Passo 1 reescrito com a mentalidade "brecha válida" + resumo por Gestor + instrução de reler a seção "Passo 1" do SKILL.md do projeto a cada rodada. Lista de arquivos de referência corrigida (removida a citação do arquivo vazio como se fosse consultável).
+
+**Também corrigidos (a pedido de Claudemberg, mesma varredura):** `RESUMO_EXECUTIVO_ROTINA_REDEFINIDA.md` e `INDICE_ROTINA_REDEFINIDA_28_08_2026.md` — ambos tinham rótulo v2.7 e múltiplas referências ao arquivo vazio como "manual completo"/"referência". Todas substituídas por `wallenberg-rotina-diaria-skills-v2_SKILL.md` (o arquivo real).
+
+**Não tocados (deliberado):** `RESUMO_IMPLANTACAO_FINAL_28_08_2026.md`, `ENTREGA_FINAL_REDEFINICAO_28_08_2026.md`, `CHECKLIST_PRE_LANCAMENTO_28_08_2026.md`, `ROTINA_REDEFINIDA_COM_AGENDADOR.md` — são registros de lançamento de 28/08, nenhum arquivo do fluxo ativo aponta para eles hoje; tratados como histórico, não como documentação viva. Se algum dia forem reabertos como referência ativa, precisam da mesma varredura.
+
+**Exclusão final (a pedido de Claudemberg, mesma sessão):** os 5 arquivos confirmados obsoletos foram removidos do disco via `git rm` (não commitado — fica para o commit que Claudemberg autorizar):
+- `wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md` (vazio, 0 bytes)
+- `RESUMO_IMPLANTACAO_FINAL_28_08_2026.md` (relatório de lançamento, puramente histórico)
+- `ENTREGA_FINAL_REDEFINICAO_28_08_2026.md` (relatório de aprovação, puramente histórico)
+- `CHECKLIST_PRE_LANCAMENTO_28_08_2026.md` (checklist de assinatura, nunca preenchido, puramente histórico)
+- `ROTINA_REDEFINIDA_COM_AGENDADOR.md` (explicação de automação, conteúdo já coberto pelo SKILL.md + tarefas agendadas reais)
+
+Conferido antes de apagar: nenhum arquivo do fluxo ativo dependia deles — só o próprio `INDICE_ROTINA_REDEFINIDA_28_08_2026.md` os citava na própria lista de navegação. Índice limpo das referências mortas (tabela "Validação & Lançamento" removida, "Cronograma de Lançamento" virou "Histórico de Versões da Rotina"). Link morto residual no cabeçalho do SKILL.md ("COMECE AQUI") também corrigido. Prompt da tarefa agendada atualizado de novo — a observação antiga citava o arquivo já excluído e tratava RESUMO_EXECUTIVO/INDICE como desatualizados quando já tinham sido corrigidos.
+
+**Como desfazer:** os 5 arquivos excluídos são recuperáveis via `git restore` (estão staged para remoção, não commitados) ou `git log` se já commitados depois; reverter os demais arquivos de projeto via git revert desta entrada; para a tarefa agendada, usar `update_scheduled_task` com o prompt/título anteriores (texto original preservado no histórico desta conversa).
+
+**Aguardando:** ☐ RATIFICADO (correção estrutural completa + exclusão de 5 arquivos obsoletos) — item novo, entra na próxima pauta.
+
+---
+
 ### [2026-09-14, 10:30] Reunião Semanal com Claudemberg — CONSOLIDAÇÃO QUINZENAL (2ª quinzenal)
 
 **Contexto:** Rotina automática semanal disparada 14/09, segunda-feira. Modo quinzenal em teste (08/09–08/10). 2ª quinzenal — a de 11/09 foi criada mas Claudemberg estava ausente; todos os itens foram carregados para esta.
@@ -23,6 +74,12 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 4. **PDF gerado:** `04_REUNIOES_SEMANAIS/2026-09-14_pauta.pdf` via `_ferramentas/md_to_pdf.py`
 
 **Status:** ✅ COMPLETO. Pauta aguarda apresentação e ratificação de Claudemberg.
+
+**Remedição ao vivo (mesma sessão, horas depois — números finais na pauta):**
+- 154 sessões (vs. 151 na leitura das 10:30), cache 90,6%, contexto 67.072→81.082 (**+20,9%**, não +15%)
+- 3ª leitura consecutiva em alta (07/09: +12,8% → 11/09: +14,3% → 14/09: +20,9%) — ponto de antagonismo adicionado à pauta: o represamento do trim Kelsen/Hely pode não ser mais só prudência
+- Custo-eq: 299 invocações, 228,9M tokens-eq, ~USD 657,46. Top 3 inalterado: Kelsen 31,0%, Hely 22,0%, Cardozo 18,8%
+- Pauta (Item 1, Parte 2) e PDF regenerados com os números finais
 
 **Itens Aguardando Ratificação (carry-forward de 11/09 + novos):**
 1. Painel do Fundador atualização 11/09
