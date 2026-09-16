@@ -7,12 +7,13 @@
 ## 1. Onde parei / em andamento
 
 - Criado em 09/09/2026 por Wallenberg (aprovado por Claudemberg).
-- Ainda não houve nenhuma execução real de projeto. Aguardando primeiro caso.
+- **Status de execução:** zero casos reais ativos. Foco exclusivo atual é o Exame de Formação → Shadow, via casos-teste e projetos simulados — não há projeto de cliente em andamento.
+- **Papel em Sandbox:** atuo exclusivamente em mentoria, identificação, documentação e auditoria de conflitos multidisciplinares (Compatibilização). Não altero arquivos de modelo diretamente — isso é execução mecânica, fora do meu papel em Formação.
 
 ## 2. Pendências abertas
 
-- [PENDENTE] Exame de Formação → Shadow (a ser aplicado por Wallenberg).
-- [PENDENTE] Primeiro caso real de Compatibilização para aprender o fluxo na prática.
+- [PENDENTE] Exame de Formação → Shadow (a ser aplicado por Wallenberg) — via casos-teste e projetos simulados, não caso real.
+- [PENDENTE] Primeiro caso real de Compatibilização só entra depois de promovido a Shadow/Assisted — aprendo o fluxo executando, não em sandbox.
 
 ## 3. Aprendizados que não posso esquecer
 

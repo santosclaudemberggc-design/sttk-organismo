@@ -1,6 +1,6 @@
 ---
 name: wallenberg-drenagem-continua-v2-3
-version: 2.3.0
+version: 2.4.0
 created: 2026-07-27
 recriado: 2026-08-28
 based_on: "Especificação completa fornecida por Claudemberg em 28/08/2026 — campos B e C copiados integralmente, sem reescrita, a pedido dele"
@@ -821,12 +821,33 @@ Achado de Claudemberg (mesmo dia da correção da Rotina Diária Skills v3.0): e
 
 **Como desfazer:** reverter esta seção J.4 via git revert. Não afeta as seções B/C (permanecem cópia integral de 28/08, como protocolo já estabelecido).
 
+**J.5 — v2.4 (16/09/2026): checagem cruzada, filtro geográfico e log estruturado — mesclados, não sobrescritos.**
+Pedido original era "sobrescrever integralmente" a tarefa agendada e este arquivo com um pipeline novo. Antes de executar, confirmado que a v2.3 (seções B/C acima + adendos J.1-J.4) tem mecanismo real e testado que o texto do pedido não mencionava (Portão de Trabalho, hierarquia de criação de Gestor, gate de Autonomous, autoescalonamento, fronteira crítica) — sobrescrever teria apagado tudo isso. Decisão de Claudemberg: **mesclar**. As 4 adições entraram na tarefa agendada (`wallenberg-drenagem-continua-local`, fonte operativa real) dentro do esqueleto de 8 fases/10 passos da v2.3, sem remover nada:
+
+- **Filtro geográfico (Passo 2).** Fonte da verdade: `INDICE_PRIORIDADES.md` (raiz). Foco vigente: Barra da Tijuca e Recreio dos Bandeirantes. Item sem dimensão geográfica (a maioria dos itens de Skill/pendência do organismo, ex. Painel, Learning Agent, exame de nível) **não é descartado** — só item claramente identificado como de fora do RJ é sinalizado "Brecha de Escopo". Ajuste feito no pedido original: o texto pedia descarte sumário de "qualquer dado de outros bairros/cidades", o que na prática descartaria quase tudo — a maioria dos itens do organismo não tem dimensão geográfica nenhuma.
+- **Mecanismo antifrail de refação (Passo 5.b.1).** Teste do Notion com ID que não bate com o Gestor/Agente que vai executá-lo é invalidado (`Status: INVALIDADO_REFAZER`), nunca conta como progresso, e o desvio de atribuição vira entrada "Desvio de Governança" no livro-razão. Corrigido no mesmo passo: o pedido original descrevia Gestores como "treinados e homologados diretamente pelo CEO (Claudemberg)" — Claudemberg não é o CEO do organismo (é Wallenberg, em todo outro arquivo do sistema); exame de Gestor é administrado por Wallenberg com Claudemberg presente/ratificando na Semanal, e exame de Agente pelo próprio Gestor da célula.
+- **Staging de MCP antes de implantar (Passo 6.3).** Nunca escreve `~/.claude/settings.json` autonomamente. Se a Skill de ferramenta exigir MCP novo, monta o fragmento JSON em `01_CEO/Painel_Fundador/staging_mcp.json` e para, aguardando validação manual de Claudemberg — gate novo, adicional ao gate de Autonomous já existente, não substitui.
+- **Log estruturado em vez de edição de HTML (Passo 8c).** Desde a migração de 16/09/2026 (Painel lê `feed.jsonl` via `fetch()`), editar `painel_fundador_sttk.html` diretamente virou proibido — Passo 8c reescrito para invocar `Append-STTKLog.ps1` com a assinatura real (`-LogPath -D -Et -T -Who -P` + opcional `-Rec`). Corrigido no mesmo passo: o pedido original descrevia o script fazendo "Exponential Backoff" contra file-lock — o script real (rodada anterior desta mesma sessão) faz retry de intervalo fixo (150ms × 8 tentativas), não backoff exponencial; o texto foi ajustado para descrever o comportamento real, não o pretendido.
+- **Auditoria do nó terminal Lelé (Passo 5.f, novo).** Lelé não existia quando a v2.3 foi escrita. Em Formação/Sandbox: só mentoria e julgamento de conflito, proibido despachar subagente até o log de promoção ser assinado por Wallenberg. Diagnóstico e métrica de teste persistem em `01_CEO/Painel_Fundador/auditoria_lele.json` (estático, sobrescrito por rodada — diferente do `feed.jsonl`, que é incremental).
+
+**J.5.1 — Motor de Triagem, algoritmo de 3 travas (16/09/2026, mesmo dia).** O mecanismo antifrail acima ganhou forma final de motor nomeado, aplicado a cada linha consumida da fila Notion "Treinos e Testes" (qualquer Gestor, não só Lelé), na tarefa agendada (Passo 5.b.1):
+- **Trava 1 (Geográfica):** só se aplica quando o teste declara localidade explícita. Fora de Barra/Recreio (`INDICE_PRIORIDADES.md`) → `INVALIDADO_REFAZER`, finding "Brecha de Escopo". Teste sem dimensão geográfica não é afetado — ajuste feito na mesma sessão porque a especificação original invalidaria quase todo exame do organismo.
+- **Trava 2 (Célula técnica):** é o mecanismo antifrail já descrito acima, agora nomeado formalmente — finding "Desvio de Atribuição Funcional".
+- **Trava 3 (Assinatura):** homologação de sucesso em exame de nível de Gestor exige Wallenberg (CEO) revisando com Claudemberg (Founder) presente/ratificando — nunca auto-homologado. Exame de Agente segue a autoridade do próprio Gestor da célula (sem essa exigência extra).
+
+**J.5.2 — Ciclo de vida de `01_CEO/Painel_Fundador/auditoria_lele.json` (schema inicializado 16/09/2026).** Arquivo de persistência estática (sobrescrita por rodada inteira, não incremental) com 3 chaves de topo: `metadados` (versão do pipeline, timestamp real, nível atual do Lelé), `metricas` (total_testes, sucessos, falhas, invalidados, `prontidao_promocao_shadow_pct` = sucessos/total_testes, com teste invalidado contando no denominador e nunca no numerador) e `historico_testes` (lista de casos, cada um com `status: "aprovado"` ou `"INVALIDADO_REFAZER"` + `motivo` + `registrado_como: "Desvio de Governança"` quando barrado). A cada rodada em que Lelé for acionado (Passo 5.f), o arquivo é lido por inteiro, cada linha nova do Notion passa pelo Motor de Triagem (J.5.1), os contadores são recalculados, e o arquivo inteiro é reescrito (não append) em UTF-8 sem BOM, 2 espaços de indentação.
+
+Este arquivo-fonte (seções B/C) **não foi reescrito** para os novos mecanismos — permanece cópia histórica da v2.3, como já era o protocolo desde a 3ª tentativa de recriação (28/08/2026, ver Histórico de Versões). Quem precisar do comportamento real e vigente da v2.4 consulta a tarefa agendada diretamente, ou este adendo J.5.
+
+**Como desfazer:** reverter esta seção J.5 (incluindo J.5.1/J.5.2) via git revert; reverter a tarefa agendada separadamente (fora do controle de versão deste repositório).
+
 ---
 
 ## HISTÓRICO DE VERSÕES
 
 | Versão | Data | Mudança |
 |--------|------|---------|
+| 2.4 (adendo J.5) | 16/09/2026 | **Mesclagem, não substituição.** Filtro geográfico (Barra/Recreio via `INDICE_PRIORIDADES.md`), mecanismo antifrail de refação de teste mal atribuído no Notion, staging de MCP antes de instalar (`staging_mcp.json`), Passo 8c migrado de edição direta de HTML para `Append-STTKLog.ps1`, auditoria do nó terminal Lelé (`auditoria_lele.json`). Pedido original era sobrescrita integral; recusado depois de confirmar que apagaria Portão de Trabalho, hierarquia de Gestor, gate de Autonomous e fronteira crítica — nenhum dos quais estava no texto novo. |
 | 2.3 (adendo J.4) | 14/09/2026 | **Sincronização de divergência real** — 2 decisões já aplicadas na tarefa agendada (`wallenberg-drenagem-continua-local`) desde 02/09 e 08/09 nunca tinham chegado a este arquivo-fonte: Portão de Trabalho Opção B/Alvo A (skill já avaliada não conta na fila; só abre Gestor com item real) e Learning Agent restrito a segunda-feira + execução real, além do Passo 7.5 (varredura mensal de Drive) inteiro. Achado por Claudemberg no mesmo dia da correção da Rotina Diária Skills v3.0. |
 | 2.3 (adendos J.1–J.3) | 31/08/2026 | Instruções de Claudemberg após a 1ª rodada real: validação obrigatória de Skill-ferramenta; cadeia CEO→Gestor→Agente não trava (Wallenberg destrava exames de Gestor abaixo de Autonomous); varredura recorrente de documentos no Drive "Dptº de Projetos" com auditoria de Wallenberg para docs cross-Gestor e padronização. Seções B/C intactas. |
 | 1.0–2.2 | 27/07 a 25/08/2026 | Ver histórico completo nos backups datados de `01_CEO/Decisoes_Autonomas/_backups/` |
@@ -837,6 +858,6 @@ Achado de Claudemberg (mesmo dia da correção da Rotina Diária Skills v3.0): e
 
 ---
 
-**Última atualização:** 14/09/2026 (adendo J.4 — sincronização com a tarefa agendada, ver Histórico de Versões)
+**Última atualização:** 16/09/2026 (adendo J.5 — v2.4 mesclada na tarefa agendada, ver Histórico de Versões)
 **Status:** ✅ Operacional — registrada em `scheduled-tasks` (cron `15 10 * * 1-5`)
 **Atenção:** este arquivo é referência de consulta; a tarefa agendada (`C:\Users\santo\.claude\scheduled-tasks\wallenberg-drenagem-continua-local\SKILL.md`) é o que executa de fato. Ao propor melhoria via Learning Agent (Passo 8a), sincronizar os dois lados — não só este arquivo.

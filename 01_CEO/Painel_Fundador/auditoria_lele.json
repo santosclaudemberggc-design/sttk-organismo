@@ -1,0 +1,44 @@
+{
+  "metadados": {
+    "pipeline_versao": "2.4.0",
+    "gerado_em": "2026-09-16T23:17:42Z",
+    "agente": "Lelé (Fechamento)",
+    "status": "Sandbox",
+    "nivel_atual": "Formação",
+    "escada_niveis": ["Formação", "Shadow", "Assisted", "Autonomous"],
+    "persistencia": "estática — sobrescrita por rodada, não incremental (diferente do feed.jsonl)"
+  },
+  "metricas": {
+    "total_testes": 3,
+    "sucessos": 2,
+    "falhas": 0,
+    "invalidados": 1,
+    "prontidao_promocao_shadow_pct": 66.6,
+    "formula": "sucessos / total_testes — teste invalidado entra no denominador (foi tentado) mas nunca conta como sucesso, por regra do mecanismo antifrail (Drenagem Contínua v2.4, Passo 5.b.1)"
+  },
+  "historico_testes": [
+    {
+      "id": "lele-teste-001",
+      "caso": "Simulação do Canal das Taxas",
+      "gestor_alvo": "Lelé (Fechamento)",
+      "status": "aprovado",
+      "resumo": "Cenário simulado de Compatibilização com conflito de cotas entre disciplinas próximo a canal de drenagem. Lelé identificou o conflito, documentou o impacto e recomendou o percurso de resolução sem executar alteração mecânica no modelo — dentro do papel de mentoria/julgamento definido para o nível Sandbox."
+    },
+    {
+      "id": "lele-teste-002",
+      "caso": "Compatibilização em Solo Arenoso",
+      "gestor_alvo": "Lelé (Fechamento)",
+      "status": "aprovado",
+      "resumo": "Cenário simulado de fundação em solo arenoso com interferência entre projeto estrutural e hidrossanitário. Lelé auditou o conflito multidisciplinar e emitiu relatório de impacto apontando o percurso de resolução, sem acionar subagente nem alterar arquivo de modelo."
+    },
+    {
+      "id": "lele-teste-003",
+      "caso": "Teste técnico do Lúcio em Jacarepaguá",
+      "gestor_alvo": "Lúcio (Arquitetura)",
+      "status": "INVALIDADO_REFAZER",
+      "motivo": "Desvio de escopo — teste de nível endereçado ao Gestor errado. O caso pertence à célula técnica de Lúcio (Arquitetura), não à de Lelé (Fechamento); atribuição corrigida pelo mecanismo antifrail de refação (Drenagem Contínua v2.4, Passo 5.b.1) antes de qualquer progresso ser computado.",
+      "registrado_como": "Desvio de Governança",
+      "resumo": "Não conta como sucesso nem como falha de Lelé — excluído das métricas de evolução dele até ser refeito, do zero, contra o Gestor correto."
+    }
+  ]
+}
