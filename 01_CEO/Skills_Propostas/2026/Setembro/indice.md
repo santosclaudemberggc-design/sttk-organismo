@@ -159,4 +159,36 @@
 
 ---
 
-**Próxima Atualização:** 16/09/2026 (Terça — Seg-Qui, passos 1-5) ou conforme agenda
+---
+
+## Skills Criadas (Rodada 16/09/2026)
+
+| Data | Título | Tipo | Para Quem | Status |
+|------|--------|------|-----------|--------|
+| 16/09 | TDC no RJ — Transferência do Direito de Construir + Estratégias de Aprovação LICIN 2.0 | Inteligência (Trilha A) | Kelsen/Hely (Legal) — cross: Lúcio/Oscar (Arquitetura) | proposta |
+| 16/09 | Partido Arquitetônico e Conforto Térmico Passivo — Orientação Solar, Ventilação e Tipologias no RJ | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | proposta |
+| 16/09 | Memorial Descritivo e Apresentação Técnica ao Cliente — Do Projeto ao Convencimento | Inteligência (Trilha A) | Mindlin (Apresentação, principal) — cross: Oscar (Arquitetura), Portinari | proposta |
+
+---
+
+## Estatísticas (Atualizado 16/09/2026)
+
+- **Skills Propostas (semana 07-12/09):** 4 (Trilha A: 4, Trilha B: 0)
+- **Skills Propostas (semana 14/09+):** 7 (Trilha A: 7, Trilha B: 0) ← atualizado 16/09
+- **Skills Propostas (acumulado setembro):** 18 ← atualizado 16/09
+- **Skills Testadas:** 0
+- **Cobertura Trilha A por Agente (desde agosto):**
+  - Baumgart: 6 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas + NBR 8681:2025 segurança)
+  - Saturnino: 4 (NBR 5626+8160 + NBR 9575:2024 cross + NBR 10844:1989 águas pluviais + NBR 17076:2024 fossa/filtro/sumidouro)
+  - Landell: 3 (NBR 5410 + COSCIP/CBMERJ + NBR 5419:2026 SPDA)
+  - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
+  - Tenreiro: 2 (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross)
+  - **Mindlin: 2** (NBR 6492:2021 + Memorial Descritivo/Apresentação Técnica 16/09) ← **sobe de 1 para 2**
+  - Kelsen/Hely: **5** (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026 + OODC/Mais-Valerá/Mais-Valia v1.1 + TDC/LICIN 2.0 16/09) ← sobe de 4 para 5
+  - Lúcio/Oscar (Arquitetura): **2** (NBR 9050:2020 acessibilidade + Partido/Conforto Térmico/Tipologias 16/09) ← sobe de 1 para 2
+- **Achados Vitruvius:** nenhum achado novo esta rodada. Total acumulado: 8.
+- **Próxima Prioridade:** (1) Tenreiro: iluminação/acabamentos RJ em profundidade (1 Skill com parâmetros numéricos reais); (2) Glaziou: espécies nativas RJ + SMAC (3ª Skill); (3) Verificar isenção OODC 2029 via fonte primária (Art. 106 LC 270/2024) — pendência aberta na Skill TDC/LICIN 2.0; (4) Passo 8 se lacuna real pedir; (5) Painel sexta 19/09
+
+---
+
+**Próxima Atualização:** 17/09/2026 (Quarta — Seg-Qui, passos 1-5) ou conforme agenda

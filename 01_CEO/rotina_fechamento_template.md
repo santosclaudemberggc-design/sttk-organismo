@@ -22,6 +22,34 @@ metadata:
 
 ---
 
+## [2026-09-16] — Diária Skills v3.0 (Quarta) — RODADA COMPLETA
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Skills criadas:** 3 (TDC/LICIN 2.0 v1.0 — Kelsen + Partido/Conforto Térmico/Tipologias v1.0 — Lúcio + Memorial Descritivo/Apresentação Técnica v1.0 — Mindlin)
+- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (3 Skills + índice atualizado)
+- [ ] **Skills ativadas:** Não — todas em status proposta, aguardam avaliação Gestor dono
+- [ ] **PDFs gerados:** Não (v2.9: Skills não geram PDF — só pauta e livro-razão)
+- [ ] **Painel atualizado:** Não (tarefa de Sexta 19/09)
+- [ ] **Livro-razão registrado:** Não — registrar na próxima rodada
+- [x] **Commit local:** a ser feito ao finalizar esta rodada
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **Verificar isenção OODC até 2029:** dado de Instituto Bramante (fonte secundária) na Skill TDC/LICIN 2.0. Hely deve verificar Art. 106 LC 270/2024 na íntegra antes de usar com cliente.
+- **TDC fórmula numérica:** coeficiente de equivalência não fixado em lei — depende de regulamentação SMDU por caso.
+- **Tenreiro:** ainda com apenas 2 Skills. Menor cobertura dos Agentes Cardozo (com Mindlin agora em 2). Próxima prioridade: iluminação de interiores + acabamentos RJ com parâmetros numéricos reais.
+- **Glaziou:** ainda com 2 Skills. Espécies nativas RJ + legislação SMAC (supressão de árvore em lote privado) ainda sem cobertura.
+
+### O QUE NÃO FAZER (Avoid retrabalho)
+
+- ❌ **TDC/LICIN 2.0 não duplique** — Skill de 16/09 v1.0 (proposta)
+- ❌ **Partido/Conforto Térmico não duplique** — Skill de 16/09 v1.0 (proposta)
+- ❌ **Memorial Descritivo/Apresentação Técnica Mindlin não duplique** — Skill de 16/09 v1.0 (proposta)
+- ❌ Todos os itens de "NÃO FAZER" das rodadas anteriores continuam válidos
+
+---
+
 ## [2026-09-15] — Diária Skills v3.0 (Segunda) — RODADA COMPLETA
 
 ### RODADA ATUAL (O que foi entregue)
