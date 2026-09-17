@@ -104,11 +104,11 @@ Se você precisar do arquivo **CLAUDE.md completo** (original, não slices):
 - ✅ Backup do original em 00_HISTORICO
 - ✅ Sincronia com pasta organismo (local)
 - ✅ Impacto esperado: 8-12% redução tokens/conversa
-- ✅ `.claude/agents/*.md` (kelsen, lucio, hely, artigas) referenciam o slice do próprio papel (30/07/2026)
+- ✅ `.claude/agents/*.md` referenciam o slice do próprio papel — **[Corrigido 17/09/2026]** lista não é fixa, cresce conforme o organismo contrata: confira a lista real via `.claude/agents/*.md`, nunca hardcode nomes aqui (mesma lição já aplicada às rotinas agendadas). Confirmado em 17/09/2026: 15 arquivos reais (Gestores kelsen/lucio/cardozo/lele + hely/artigas + as equipes de Lúcio, Cardozo e futuros).
 
-**Próximo:** Validação Items 1 & 2 (zero perda confirmada) — agendada para 31/07/2026.
+**Próximo:** ~~Validação Items 1 & 2 (zero perda confirmada) — agendada para 31/07/2026~~ — **[Sinalizado 17/09/2026]** item nunca fechado nem revisitado, 7 semanas parado; auditoria de documentos gerais encontrou como pendência órfã. Decisão de Claudemberg necessária: fechar como obsoleto (slices já em uso comprovado há semanas) ou reabrir de verdade.
 
 ---
 
-**Última atualização:** 30/07/2026  
+**Última atualização:** 17/09/2026 (auditoria de documentos gerais — roster de agentes e pendência órfã corrigidos)  
 **Consolidação:** Semana 1, Item 2 de Otimização de Tokens STTK — CONCLUÍDO

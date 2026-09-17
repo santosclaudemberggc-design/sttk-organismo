@@ -1,6 +1,6 @@
-# 🚀 COMECE AQUI — Rotina Diária Skills v3.0
+# 🚀 COMECE AQUI — Rotina Diária Skills v3.3.2
 
-**Data:** 16/09/2026 (fonte única consolidada) | **Status:** ✅ PRONTO PARA USAR | **v3.1 desde:** 16/09/2026 (Fonte Única — manual v2.9 e Guia Sexta aposentados)
+**Data:** 17/09/2026 (varredura de documentos gerais) | **Status:** ✅ PRONTO PARA USAR | **v3.3.2 desde:** 17/09/2026 (endurecimento SRE + sincronização `/watch:watch` + fronteira crítica de cliente restaurada — ver Histórico de Versões em `wallenberg-rotina-diaria-skills-v2_SKILL.md`)
 
 ---
 
@@ -29,7 +29,7 @@ Depois: **Mesmo processo, checklist visual + automação 20:00 (PDFs)**
 
 | Arquivo | Quando Usar |
 |---------|------------|
-| wallenberg-rotina-diaria-skills-v2_SKILL.md | **Fonte única de verdade** — Referência completa (v3.1, inclui Apêndice de bloqueadores/critérios). **Releia a seção "Passo 1" a cada rodada**, não só na primeira vez |
+| wallenberg-rotina-diaria-skills-v2_SKILL.md | **Fonte única de verdade** — Referência completa (v3.3.2, inclui Apêndice de bloqueadores/critérios). **Releia a seção "Passo 1" a cada rodada**, não só na primeira vez |
 | Checklist_Diaria.html | Durante a rotina seg-qui (visual + timer) — tem o resumo do Passo 1 v3.0 |
 | Checklist_Sexta.html | Durante a rotina sexta (visual + timer) — Painel = FEED de eventos, ver item 6 do SKILL.md |
 
@@ -54,4 +54,4 @@ Depois: **Mesmo processo, checklist visual + automação 20:00 (PDFs)**
 
 ---
 
-**Status:** ✅ Rotina pronta — v3.0 ativa desde 10/09/2026, rótulos corrigidos 14/09/2026
+**Status:** ✅ Rotina pronta — v3.0 ativa desde 10/09/2026, rótulos corrigidos 14/09/2026, v3.3.2 (SRE + `/watch:watch` + fronteira crítica de cliente) desde 17/09/2026

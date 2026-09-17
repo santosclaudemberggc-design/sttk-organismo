@@ -85,7 +85,7 @@ Wallenberg consolida em `01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md` e leva para 
 
 - ❌ Mudar seu próprio escopo/missão
 - ❌ Mudar como se relaciona com outro Gestor
-- ❌ Ativar Skill (Skill só vem de Wallenberg, Função 5)
+- ❌ Redigir Skill do zero (Skill nasce de Wallenberg, Função 5) — **[Corrigido 17/09/2026]** mas ativar não é mais só dele: desde o Fluxo de Ativação (08/09/2026), Skill de Trilha A (conhecimento) entra em produção no mesmo dia assim que **você**, Gestor dono, validar (erro factual, duplicata, lacunas marcadas) — sua validação É o gatilho de ativação, não um passo que espera Wallenberg depois. Claudemberg só revisa retroativamente na Semanal.
 - ❌ Qualquer documento que chega ao cliente ou prefeitura
 - ❌ Gates 13 & 16 (dupla aprovação: você + Wallenberg)
 - ❌ Eliminar Agente (destrutivo)
@@ -143,7 +143,7 @@ As 3 camadas (Identidade, Conhecimento, Capacidade) são o molde:
 ## Reuniões
 
 ### Reunião Semanal (Seg 10:30)
-Wallenberg apresenta **suas** decisões autônomas à Claudemberg. Você não participa (comunicação sobe/desce por nível).
+Wallenberg apresenta **suas** decisões autônomas à Claudemberg. Você não participa (comunicação sobe/desce por nível). **[Corrigido 17/09/2026]** Em teste quinzenal (não mais toda segunda) no período 08/09–08/10/2026 — reavaliar volta ao semanal em 08/10. Enquanto durar o teste, suas decisões autônomas continuam valendo no mesmo dia (Fluxo de Ativação); a Semanal/quinzenal é só a ratificação retroativa, nunca o portão de entrada.
 
 ### Reunião Mensal do Conselho (1ª seg, 09:00)
 Wallenberg faz síntese estratégica. Inclui **a equipe que você contratou por conta própria** (autonomia delegada).
@@ -209,5 +209,5 @@ Pode resultar em eliminar a proposta de um Agente (redundância).
 
 ---
 
-**Última atualização:** 27/07/2026  
+**Última atualização:** 17/09/2026 (autoridade de ativação de Skill + cadência da Semanal corrigidas — auditoria de documentos gerais)  
 **Origem:** Slice de CLAUDE.md (completo em `00_HISTORICO/CLAUDE_full_20260727.md`)
