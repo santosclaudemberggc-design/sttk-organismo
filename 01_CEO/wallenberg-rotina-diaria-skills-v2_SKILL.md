@@ -1,6 +1,6 @@
 ---
 name: wallenberg-rotina-diaria-skills-v2-9
-version: 3.3.0
+version: 3.3.1
 created: 2026-08-28
 based_on: "v3.0 + Consolidação de Fonte Única 16/09/2026"
 enhancements: 
@@ -592,6 +592,7 @@ Se um dia não houver nada novo relevante, diga isso honestamente e não invente
 | 3.1 | 16/09/2026 | **[CONSOLIDAÇÃO DE FONTE ÚNICA, auditoria Claudemberg]** Corrigida dessincronização entre 4 documentos vivos descrevendo a mesma rotina com conteúdo divergente. (1) Manual operacional v2.9 **aposentado** (movido para `00_HISTORICO/`) — estava preso na versão pré-v3.0 do Passo 1 (sem escopo por Gestor) e era citado pelo scheduled task como fonte de dúvida no mesmo nível deste arquivo; seu conteúdo vivo (bloqueadores/critérios de sucesso por passo) foi migrado para o **Apêndice** acima. (2) `GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md` **aposentado** — descrevia o Passo 6 (Painel) como atualização de "% de progresso por projeto", mecanismo que não existe mais (o Painel real usa FEED de eventos prependado, `var feed = [...]`). (3) CronJob PDF 20:00 (`wallenberg-cronjob-pdf-2000`) **corrigido** para não gerar mais PDF de Skills individuais. (4) Prompt do scheduled task diário atualizado para não citar mais o manual v2.9. **[Reaplicado 16/09/2026]** primeira aplicação desta linha foi desfeita por um `git checkout` de escopo amplo, durante correção de um incidente não relacionado — reconstruída aqui, conteúdo idêntico. |
 | 3.2 | 16/09/2026 | **Nunca aplicada a este arquivo.** A v3.2 (pipeline técnico linear, mesma data) foi escrita direto no prompt operativo da tarefa agendada (`wallenberg-rotina-diaria-skills-v2-7`, fora deste repositório) — este arquivo de referência pulou de 3.1 para 3.3 sem ter uma versão 3.2 própria. Registrado aqui só para não deixar buraco silencioso na numeração. |
 | 3.3 | 16/09/2026 | **[ENDURECIMENTO SRE, mesmo dia]** Blindagem contra falha de I/O, concorrência e virada de mês: (1) Passo 0 (novo nesta rotina — já existia só na tarefa agendada) ganha checagem compulsória de `(Get-Date).DayOfWeek` antes de ramificar seg-qui/sexta, contra desvio de fuso/relógio de contêiner. (2) Passo 4 ganha `New-Item -Force` preemptivo do diretório `{Ano}/{Mês}` antes de gravar Skill nova, prevenindo erro fatal na virada de mês. (3) Passo 6 reescrito para refletir o mecanismo real pós-migração (`Append-STTKLog.ps1`, não mais edição direta de HTML) e ganha regra de espaçamento entre chamadas — margem defensiva contra sobreposição entre rotinas diferentes (Diária × Drenagem), não contra colisão dentro da própria rodada, que já é sequencial por natureza das chamadas de ferramenta. |
+| 3.3.1 | 17/09/2026 | **[SINCRONIZAÇÃO — gap real encontrado por auditoria de Claudemberg]** Este arquivo (Passo 1, linhas ~152 e ~191) sempre exigiu `/watch:watch` de verdade para vídeo relevante, não só `WebSearch` textual. A tarefa agendada real (v3.2, "pipeline técnico linear", ver linha da v3.2 acima) nunca herdou essa exigência — seu Passo 2 ficou só com `WebSearch` isolado por eixo. Confirmado por auditoria do transcript real da rodada de 17/09/2026: 6 chamadas `WebSearch`, zero chamadas `Skill watch:watch`. Mesmo padrão de falha já registrado em memória ("Atualização só conta se chegar em TODOS os locais de execução", 14/09/2026) — a regra existia aqui, nunca chegou no prompt que a rotina de fato lê. Corrigido na tarefa agendada (`wallenberg-rotina-diaria-skills-v2-7`) na mesma data. |
 
 ---
 
@@ -616,7 +617,7 @@ Se um dia não houver nada novo relevante, diga isso honestamente e não invente
 
 ---
 
-**Última atualização:** 16/09/2026  
-**Status:** ✅ **v3.3** — Endurecimento SRE (checagem de dia da semana, guarda de virada de mês, prevenção de colisão I/O entre rotinas) sobre a base v3.1 (fonte única consolidada: manual v2.9 e GUIA_EXECUCAO_ROTINA_SEXTA aposentados, CronJob PDF corrigido) e v3.0 (Escopo Expandido por Gestor: Kelsen estratégias legais + janelas de governo | Lúcio partido/solar/conforto | Cardozo técnicas por disciplina | Vitruvius para Cardozo). Fluxo de Ativação Trilha A + Escala até 3 Skills/dia + Checklists + Dashboard + Agendador + CronJob mantidos.  
+**Última atualização:** 17/09/2026 (v3.3.1 — sincronização `/watch:watch` no Passo 1/2 da tarefa agendada, ver Histórico de Versões)  
+**Status:** ✅ **v3.3.1** — Endurecimento SRE (checagem de dia da semana, guarda de virada de mês, prevenção de colisão I/O entre rotinas) sobre a base v3.1 (fonte única consolidada: manual v2.9 e GUIA_EXECUCAO_ROTINA_SEXTA aposentados, CronJob PDF corrigido) e v3.0 (Escopo Expandido por Gestor: Kelsen estratégias legais + janelas de governo | Lúcio partido/solar/conforto | Cardozo técnicas por disciplina | Vitruvius para Cardozo). Fluxo de Ativação Trilha A + Escala até 3 Skills/dia + Checklists + Dashboard + Agendador + CronJob mantidos.  
 **Próximas execuções:** Agendador dispara 08:00 (seg-qui: Checklist_Diaria | sexta: Checklist_Sexta)  
 **Próximo passo:** Wallenberg abre COMECE_AQUI.md e segue para o Checklist visual apropriado
