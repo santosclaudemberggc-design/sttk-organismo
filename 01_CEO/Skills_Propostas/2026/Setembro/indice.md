@@ -179,11 +179,19 @@
 
 ---
 
-## Estatísticas (Atualizado 16/09/2026)
+## Skills Criadas (Rodada 17/09/2026)
+
+| Data | Título | Tipo | Para Quém | Status |
+|------|--------|------|-----------|--------|
+| 17/09 | Proteção Solar Externa — Brises, Cobogó e Venezianas: Dispositivos e Parâmetros de Projeto para Fachadas no RJ | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | proposta-corrigida v1.1 — 4 erros corrigidos (terminologia zenital→altitude, fachada Sul, fachada Leste misto H+V, NBR vento 6118→6123:1988); aguarda confirmação final Lúcio |
+
+---
+
+## Estatísticas (Atualizado 17/09/2026)
 
 - **Skills Propostas (semana 07-12/09):** 4 (Trilha A: 4, Trilha B: 0)
-- **Skills Propostas (semana 14/09+):** 7 (Trilha A: 7, Trilha B: 0) ← atualizado 16/09
-- **Skills Propostas (acumulado setembro):** 18 ← atualizado 16/09
+- **Skills Propostas (semana 14/09+):** 8 (Trilha A: 8, Trilha B: 0) ← atualizado 17/09
+- **Skills Propostas (acumulado setembro):** 19 ← atualizado 17/09
 - **Skills Testadas:** 0
 - **Cobertura Trilha A por Agente (desde agosto):**
   - Baumgart: 6 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas + NBR 8681:2025 segurança)
@@ -191,12 +199,13 @@
   - Landell: 3 (NBR 5410 + COSCIP/CBMERJ + NBR 5419:2026 SPDA)
   - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
   - Tenreiro: 2 (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross)
-  - **Mindlin: 2** (NBR 6492:2021 + Memorial Descritivo/Apresentação Técnica 16/09) ← **sobe de 1 para 2**
-  - Kelsen/Hely: **5** (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026 + OODC/Mais-Valerá/Mais-Valia v1.1 + TDC/LICIN 2.0 16/09) ← sobe de 4 para 5
-  - Lúcio/Oscar (Arquitetura): **2** (NBR 9050:2020 acessibilidade + Partido/Conforto Térmico/Tipologias 16/09) ← sobe de 1 para 2
+  - **Mindlin: 2** (NBR 6492:2021 + Memorial Descritivo/Apresentação Técnica 16/09)
+  - Kelsen/Hely: 5 (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026 + OODC/Mais-Valerá/Mais-Valia v1.1 + TDC/LICIN 2.0 16/09)
+  - Lúcio/Oscar (Arquitetura): **3** (NBR 9050:2020 acessibilidade + Partido/Conforto Térmico/Tipologias 16/09 + Proteção Solar Externa Dispositivos 17/09) ← sobe de 2 para 3
 - **Achados Vitruvius:** nenhum achado novo esta rodada. Total acumulado: 8.
-- **Próxima Prioridade:** (1) Tenreiro: iluminação/acabamentos RJ em profundidade (1 Skill com parâmetros numéricos reais); (2) Glaziou: espécies nativas RJ + SMAC (3ª Skill); (3) Verificar isenção OODC 2029 via fonte primária (Art. 106 LC 270/2024) — pendência aberta na Skill TDC/LICIN 2.0; (4) Passo 8 se lacuna real pedir; (5) Painel sexta 19/09
+- **Achado de Monitoramento:** LC 301/2026 (09/07/2026 — Municipal RJ) identificada nos resultados de busca. Não investigada ainda — próxima rodada de Kelsen deve incluir uma busca específica sobre conteúdo e impacto para LICIN/OODC.
+- **Próxima Prioridade:** (1) Tenreiro: iluminação/acabamentos RJ em profundidade (1 Skill com parâmetros numéricos reais); (2) Glaziou: espécies nativas RJ + SMAC (3ª Skill); (3) LC 301/2026 — verificar conteúdo (Kelsen); (4) Verificar isenção OODC 2029 via fonte primária (Art. 106 LC 270/2024) — pendência aberta na Skill TDC/LICIN 2.0; (5) Painel sexta 19/09
 
 ---
 
-**Próxima Atualização:** 17/09/2026 (Quarta — Seg-Qui, passos 1-5) ou conforme agenda
+**Próxima Atualização:** 18/09/2026 (Quinta — Seg-Qui, passos 1-5) ou conforme agenda
