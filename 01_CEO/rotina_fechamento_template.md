@@ -22,6 +22,32 @@ metadata:
 
 ---
 
+## [2026-09-17] — Diária Skills v3.2 (Quinta) — RODADA COMPLETA
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Skills criadas:** 1 (Proteção Solar Externa — Brises, Cobogó e Venezianas — Lúcio v1.1)
+- [x] **Skills documentadas:** `01_CEO/Skills_Propostas/2026/Setembro/` (1 Skill + índice atualizado)
+- [x] **Skill ativada:** SIM — Lúcio validou no mesmo dia (PROCEDE COM RESSALVA, 4 ressalvas)
+- [x] **Skill instalada:** `.claude/skills/lucio-protecao-solar-externa-dispositivos-rj/SKILL.md` — ativa
+- [x] **Feed atualizado:** 3 entradas (proposta inicial + achado LC 301/2026 + ativação)
+- [x] **Commit local:** 2 commits (d510eec + d43193b)
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **LC 301/2026 (09/07/2026 — Municipal RJ):** identificada nos resultados de busca de Kelsen, conteúdo não investigado. Próxima rodada de Kelsen deve incluir busca específica sobre impacto (LICIN/OODC/parâmetros urbanísticos).
+- **Tenreiro:** iluminação de interiores com parâmetros numéricos reais — prioridade #1 confirmada (2 Skills, menor cobertura Cardozo).
+- **Glaziou:** espécies nativas RJ + SMAC (supressão de árvore em lote privado) — prioridade #2 confirmada (2 Skills, menor cobertura Cardozo).
+- **Isenção OODC 2029:** fonte primária (Art. 106 LC 270/2024) não verificada — pendência aberta da Skill TDC/LICIN 2.0 (16/09).
+- **Painel:** desatualizado (11/09/2026) — próxima sexta-feira 19/09.
+
+### O QUE NÃO FAZER (Avoid retrabalho)
+
+- ❌ **Proteção Solar Externa Lúcio não duplique** — Skill de 17/09 v1.1 (ativa-com-ressalva)
+- ❌ Todos os itens de "NÃO FAZER" das rodadas anteriores continuam válidos
+
+---
+
 ## [2026-09-16] — Diária Skills v3.0 (Quarta) — RODADA COMPLETA
 
 ### RODADA ATUAL (O que foi entregue)
