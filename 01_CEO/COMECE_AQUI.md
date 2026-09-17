@@ -1,6 +1,6 @@
-﻿# 🚀 COMECE AQUI — Rotina Diária Skills v3.0
+# 🚀 COMECE AQUI — Rotina Diária Skills v3.0
 
-**Data:** 14/09/2026 (rótulo corrigido) | **Status:** ✅ PRONTO PARA USAR | **v3.0 desde:** 10/09/2026 (Escopo Expandido por Gestor)
+**Data:** 16/09/2026 (fonte única consolidada) | **Status:** ✅ PRONTO PARA USAR | **v3.1 desde:** 16/09/2026 (Fonte Única — manual v2.9 e Guia Sexta aposentados)
 
 ---
 
@@ -29,12 +29,13 @@ Depois: **Mesmo processo, checklist visual + automação 20:00 (PDFs)**
 
 | Arquivo | Quando Usar |
 |---------|------------|
-| wallenberg-rotina-diaria-skills-v2_SKILL.md | Referência completa — **releia a seção "Passo 1" a cada rodada**, não só na primeira vez |
+| wallenberg-rotina-diaria-skills-v2_SKILL.md | **Fonte única de verdade** — Referência completa (v3.1, inclui Apêndice de bloqueadores/critérios). **Releia a seção "Passo 1" a cada rodada**, não só na primeira vez |
 | Checklist_Diaria.html | Durante a rotina seg-qui (visual + timer) — tem o resumo do Passo 1 v3.0 |
-| Checklist_Sexta.html | Durante a rotina sexta (visual + timer) |
-| GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md | Passo-a-passo sexta |
+| Checklist_Sexta.html | Durante a rotina sexta (visual + timer) — Painel = FEED de eventos, ver item 6 do SKILL.md |
 
-**Removido desta lista (14/09/2026):** `wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md` estava vazio (0 bytes) mas era apontado aqui como "referência completa, 30 min leitura" — quem seguisse essa instrução perderia tempo abrindo um arquivo em branco. `RESUMO_EXECUTIVO_ROTINA_REDEFINIDA.md` e `INDICE_ROTINA_REDEFINIDA_28_08_2026.md` não foram conferidos nesta correção — se também estiverem vazios ou desatualizados, o mesmo problema se repete.
+**Removido desta lista (14/09/2026):** `wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md` estava vazio (0 bytes) mas era apontado aqui como "referência completa, 30 min leitura" — quem seguisse essa instrução perderia tempo abrindo um arquivo em branco.
+
+**Removido desta lista (16/09/2026, auditoria de dessincronização — Claudemberg):** `wallenberg_manual_operacional_rotina_diaria_skills.md` (v2.9, preso na versão pré-v3.0 do Passo 1; conteúdo vivo migrado para o Apêndice do SKILL.md) e `GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md` (descrevia o Painel como "% de progresso por projeto", mecanismo que não existe mais). Ambos movidos para `00_HISTORICO/` com aviso de aposentadoria no topo — não os use como referência ativa.
 
 ---
 

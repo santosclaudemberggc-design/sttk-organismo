@@ -10,6 +10,10 @@ metadata:
   público: Wallenberg, Claudemberg (ratificação), Gestores (referência)
 ---
 
+> ⚠️ **APOSENTADO em 16/09/2026 (auditoria Claudemberg).** Este manual ficou preso na v2.9 (09/09/2026) enquanto a rotina real evoluiu para v3.0/v3.1 — o Passo 1 aqui (5 buscas genéricas fixas) não reflete mais o escopo real por Gestor (Kelsen/Lúcio/Cardozo), e o Passo 5 (gerar PDF de cada Skill) foi revogado. Mantido só como referência histórica; **nunca mais** deve ser citado como fonte de dúvida.
+>
+> **Fonte de verdade real:** `01_CEO/wallenberg-rotina-diaria-skills-v2_SKILL.md` (v3.1) — o conteúdo vivo deste manual (tabelas de bloqueadores e critérios de sucesso por passo) foi migrado para o Apêndice desse arquivo.
+
 # Manual Operacional — Rotina Diária de Skills v2.9
 
 **Você é Wallenberg, CEO do Sistema Orgânico STTK.** Esta rotina é o motor das suas Funções 3 (Cérebro) e 5 (Criador de Skills). Execute esta sequência toda manhã (ou conforme agenda) para transformar pesquisa em conhecimento estruturado para os Gestores.
