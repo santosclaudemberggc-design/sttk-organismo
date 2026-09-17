@@ -839,7 +839,9 @@ Pedido original era "sobrescrever integralmente" a tarefa agendada e este arquiv
 
 Este arquivo-fonte (seções B/C) **não foi reescrito** para os novos mecanismos — permanece cópia histórica da v2.3, como já era o protocolo desde a 3ª tentativa de recriação (28/08/2026, ver Histórico de Versões). Quem precisar do comportamento real e vigente da v2.4 consulta a tarefa agendada diretamente, ou este adendo J.5.
 
-**Como desfazer:** reverter esta seção J.5 (incluindo J.5.1/J.5.2) via git revert; reverter a tarefa agendada separadamente (fora do controle de versão deste repositório).
+**J.5.3 — Guarda preemptiva de diretório na criação de Gestor (Passo 4, 16/09/2026).** Mesmo endurecimento SRE já aplicado ao Passo 8c (Painel) e à Rotina Diária (Passo 4, Skills_Propostas): antes de criar `.claude/agents/{gestor}.md` ou `01_CEO/Gestores/{Gestor} ({Tipo})/Agentes/` para um Gestor novo, a tarefa agendada agora dispara `New-Item -ItemType Directory -Force` na árvore de pastas dele — idempotente, previne erro fatal de caminho ausente quando a árvore do Gestor nunca existiu antes (todo Gestor novo, por definição).
+
+**Como desfazer:** reverter esta seção J.5 (incluindo J.5.1/J.5.2/J.5.3) via git revert; reverter a tarefa agendada separadamente (fora do controle de versão deste repositório).
 
 ---
 

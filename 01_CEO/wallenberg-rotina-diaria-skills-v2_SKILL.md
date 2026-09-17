@@ -1,12 +1,12 @@
 ---
 name: wallenberg-rotina-diaria-skills-v2-9
-version: 3.0.0
+version: 3.3.0
 created: 2026-08-28
-based_on: "v2.9 + Escopo Expandido de Pesquisa por Gestor 10/09/2026"
+based_on: "v3.0 + Consolidação de Fonte Única 16/09/2026"
 enhancements: 
   - "Checklists visuais obrigatórios (seg-qui + sexta)"
   - "Dashboard integrado com métricas"
-  - "CronJob PDF automático 20:00"
+  - "CronJob PDF automático 20:00 (só pauta + livro-razão, nunca mais Skills)"
   - "Agendador automático 08:00"
   - "Zero overhead manual (referência só em dúvida)"
   - "1 Skill por Gestor por dia (até 3), não mais 1 total"
@@ -17,6 +17,9 @@ enhancements:
   - "Lúcio: estratégias de projeto arquitetônico (solar, conforto, partido, tipologias)"
   - "Cardozo: técnicas de projeto profundas por Agente (6 disciplinas)"
   - "Vitruvius: Agentes de Cardozo precisam de Skills de Trilha B (compatibilização BIM)"
+  - "[v3.1] Fonte única: manual operacional v2.9 aposentado, conteúdo vivo (bloqueadores/critérios) absorvido no Apêndice deste arquivo"
+  - "[v3.1] GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md aposentado (descrevia Painel como % de progresso por projeto — modelo que não existe mais)"
+  - "[v3.1, reaplicado 16/09/2026] Primeira aplicação desta consolidação foi revertida sem querer num git checkout de escopo amplo — reconstruída nesta rodada, idêntica em conteúdo"
 ---
 
 # Wallenberg Rotina Diária Skills v3.0
@@ -43,7 +46,7 @@ Você é Wallenberg, CEO do Sistema Orgânico STTK (departamento de projetos da 
 - **Seg-Qui:** [`Checklist_Diaria.html`](./Checklist_Diaria.html) — 60-75 min
 - **Sexta:** [`Checklist_Sexta.html`](./Checklist_Sexta.html) — 90-120 min
 
-**Não leia manual manualmente** — o Checklist visual guia cada passo. Se tiver dúvida em algum passo, Ctrl+F no arquivo [`GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md`](./GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md) ou consulte a seção "PASSOS DETALHE" deste próprio arquivo. **[Corrigido 14/09/2026]** `wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md` estava vazio (0 bytes) e foi excluído — nunca foi a referência de verdade.
+**Não leia manual separado** — o Checklist visual guia cada passo. Se tiver dúvida em algum passo, Ctrl+F na seção "PASSOS DETALHE" ou no "APÊNDICE — Bloqueadores e Critérios de Sucesso por Passo" deste próprio arquivo. **[Corrigido 14/09/2026]** `wallenberg_rotina_diaria_skills_v2_7_REDEFINIDO.md` estava vazio (0 bytes) e foi excluído. **[Corrigido 16/09/2026]** `GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md` e `wallenberg_manual_operacional_rotina_diaria_skills.md` foram aposentados (movidos para `00_HISTORICO/`) — nenhum dos três nomes é referência de verdade.
 
 ---
 
@@ -67,6 +70,16 @@ Agendador 08:00 (notifica que rotina começou).
 ## REGRA DE DESBLOQUEIO
 
 Você roda sem ninguém na frente da tela. Se algo te impedir de seguir — fonte fora do ar, permissão negada, arquivo travado, ferramenta falhando — **nunca fique esperando**. Registre o impedimento, pule aquele item e siga para os demais. Uma execução que entrega 4 de 5 itens e relata o quinto é sucesso; uma execução que trava no item 1 esperando resposta bloqueia os dias seguintes da rotina inteira.
+
+---
+
+## PASSO 0 — PRÉ-RODADA (5 min)
+
+**[NOVO v3.3 — 16/09/2026, endurecimento SRE]** Antes de ramificar a lógica entre o pipeline linear (seg-qui) e o fluxo de sexta-feira, execute compulsoriamente o comando de shell isolado `powershell (Get-Date).DayOfWeek` para extrair o dia da semana real da máquina hospedeira, eliminando desvio de fuso horário/relógio de contêiner entre a hora que o agendador disparou e a hora que você de fato processa a lógica de ramificação.
+
+1. Leia `01_CEO/rotina_fechamento_template.md` (fechamento da rodada anterior).
+2. Leia `_estado_{agente}.md` de cada Agente com lacuna suspeita — não suponha da rodada anterior.
+3. Confira a data da última atualização do Painel (`01_CEO/Painel_Fundador/painel_fundador_sttk.html`, campo `<span id="updated">`).
 
 ---
 
@@ -237,6 +250,12 @@ Skill de Trilha A que **não pôde ser conferida contra a fonte primária** (tex
 
 ### 4. SALVAMENTO LOCAL
 
+**[NOVO v3.3 — 16/09/2026, endurecimento SRE — garantia de virada de mês]** Antes de gravar o arquivo Markdown da nova Skill proposta na pasta `{Ano}/{Mês}`, dispare de forma preemptiva:
+```powershell
+New-Item -ItemType Directory -Path "D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\01_CEO\Skills_Propostas\{Ano}\{Mês}" -Force
+```
+`-Force` torna o comando idempotente (não falha se a pasta já existir) — isso previne erro fatal de "arquivo não encontrado" no primeiro dia útil de um mês novo, quando a pasta do mês ainda não existe.
+
 Salve em `D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\01_CEO\Skills_Propostas\{Ano}\{Mês}\` (ex: `2026\Agosto\`). Um arquivo `.md` por Skill.
 
 Mantenha/atualize um `indice.md` do mês listando cada Skill do mês (data, nome, Gestor-alvo, resumo de 1 linha, fonte, e o `Status`: `ativa` / `ativa-com-ressalva` / `proposta` — esta última só para Gestor não implantado ou Trilha B aguardando a Drenagem). É ele que alimenta a Reunião Mensal e a revisão retroativa da Semanal.
@@ -245,7 +264,7 @@ Mantenha/atualize um `indice.md` do mês listando cada Skill do mês (data, nome
 
 ### 5. GERAR PDFs
 
-**[v2.9 — Item 6.4, 08/09/2026] PDF gêmeo só do que sai do organismo pra Claudemberg ler/assinar:** pauta de reunião e livro-razão. **Skill e `indice.md` NÃO geram mais PDF gêmeo** — são arquivo de máquina, lidos por Gestor/Agente via Read, e cada regeneração é custo sem leitor. O CronJob PDF das 20:00 fica só com pauta + livro-razão. Se algum dia Claudemberg pedir o PDF de uma Skill específica, gera aquela sob demanda com `_ferramentas\md_to_pdf.py`.
+**[v2.9 — Item 6.4, 08/09/2026 | Confirmado v3.1, 16/09/2026] PDF gêmeo só do que sai do organismo pra Claudemberg ler/assinar:** pauta de reunião e livro-razão. **Skill e `indice.md` NÃO geram mais PDF gêmeo** — são arquivo de máquina, lidos por Gestor/Agente via Read, e cada regeneração é custo sem leitor. O CronJob PDF das 20:00 fica só com pauta + livro-razão (script real corrigido em 16/09/2026 para não mais varrer `Skills_Propostas/`). Se algum dia Claudemberg pedir o PDF de uma Skill específica, gera aquela sob demanda com `_ferramentas\md_to_pdf.py`.
 
 ---
 
@@ -255,15 +274,21 @@ Depois de pesquisar e de registrar no livro-razão, mantenha o painel "Organismo
 
 **a. Backup do HTML antes de editar** → `01_CEO/Decisoes_Autonomas/_backups/{AAAA-MM-DD}/painel_fundador_sttk.html`.
 
-**b. Leia o livro-razão do mês** (`01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md`). Para cada decisão/evento **de hoje** (ou desde a última atualização do painel) que ainda **não** esteja no topo do FEED, **PREPENDA um novo objeto** logo abaixo do marcador `FEED-AUTO` no arquivo (mais recente no topo), no formato exato: `{d:"DD/MM",et:"TIPO",t:"título curto",who:"quem fez",p:"uma frase do que aconteceu."}`. Tipos válidos de `et`: `decisao`, `promocao`, `agente`, `skill`, `sistema`, `correcao`, `marco`, `capacidade`.
+**b. [Corrigido 16/09/2026] Leia o livro-razão do mês** (`01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md`). Para cada decisão/evento **de hoje** que ainda **não** esteja no topo do FEED: **PROIBIDO** editar `painel_fundador_sttk.html` diretamente (o array estático foi removido na migração de 16/09/2026 — o Painel lê `01_CEO/Painel_Fundador/feed.jsonl` via `fetch()`). Grave cada evento invocando:
+```
+powershell.exe -ExecutionPolicy Bypass -File "01_CEO\Painel_Fundador\Append-STTKLog.ps1" -LogPath "01_CEO\Painel_Fundador\feed.jsonl" -D "DD/MM" -Et "TIPO" -Who "quem fez" -T "título curto" -P "uma frase do que aconteceu."
+```
+Tipos válidos de `et`: `decisao`, `promocao`, `agente`, `skill`, `sistema`, `correcao`, `marco`, `capacidade`.
 
-**c. Atualize a data**: em `<span class="updated" id="updated">Atualizado DD/MM/AAAA</span>`, ponha a data de hoje.
+**c. Atualize a data**: em `<span class="updated" id="updated">Atualizado DD/MM/AAAA</span>`, ponha a data de hoje (só se houve evento real gravado — não é mais republicação de HTML, mas a data ainda vive nesse `<span>` do arquivo estático).
 
-**d. Republique no MESMO link** com a ferramenta Artifact: `file_path` = o caminho do HTML **e** `url` = `https://claude.ai/code/artifact/3c28ec0d-1817-4e7a-9a22-a4c16c570f27` (é o que mantém a URL).
+**d. [Descontinuado v3.1]** Republicação via Artifact não se aplica mais a eventos de rotina — o HTML só muda de verdade quando alguém edita layout/estrutura (raro), não a cada evento novo. Eventos vivem só no `feed.jsonl`.
 
-**e. Registre no livro-razão** o que atualizou no painel.
+**e. Registre no livro-razão** o que foi gravado no `feed.jsonl`.
 
-Se **nada** aconteceu hoje que mude o painel, não republique nem registre — não invente evento (Princípio 15).
+**f. [NOVO v3.3 — 16/09/2026, endurecimento SRE — prevenção de colisão de I/O]** As chamadas ao `Append-STTKLog.ps1` são disparadas de forma estritamente sequencial e linear (uma invocação PowerShell por vez, nunca `&&`/pipe/paralelo). Isso não é necessário para evitar colisão dentro desta mesma rodada — chamadas de ferramenta já são inerentemente sequenciais (uma só termina, com o handle do arquivo liberado, depois que a anterior já saiu). A margem real é para **sobreposição entre rotinas diferentes** (esta rotina às 08:00 e a Drenagem Contínua às 10:15, ou uma rodada atrasada colidindo com o disparo seguinte) — nesse cenário, um pequeno intervalo entre gravações consecutivas reduz a chance de esgotar o loop de retry fixo (150ms × 8 tentativas) do script antes que o outro processo libere o arquivo.
+
+Se **nada** aconteceu hoje que mude o painel, não grave evento nem registre — não invente evento (Princípio 15).
 
 ---
 
@@ -453,6 +478,91 @@ Na dúvida entre "organismo" e "cliente", trate como cliente e deixe para Claude
 
 ---
 
+## APÊNDICE — BLOQUEADORES E CRITÉRIOS DE SUCESSO POR PASSO
+
+**[NOVO v3.1 — 16/09/2026, reaplicado após reversão acidental]** O manual operacional v2.9 (`wallenberg_manual_operacional_rotina_diaria_skills.md`) foi **aposentado** e movido para `00_HISTORICO/` — havia dois documentos vivos descrevendo a mesma rotina com conteúdo divergente (o Passo 1 do manual ainda tinha a versão genérica pré-v3.0, sem escopo por Gestor). A partir de agora **este arquivo é a única fonte procedimental**. O conteúdo do manual que ainda tinha valor real — as tabelas de bloqueadores comuns e o critério de "o que significa passo concluído" — foi absorvido aqui, para não perder conhecimento operacional só por aposentar o arquivo duplicado.
+
+### Passo 1 — Pesquisa Externa
+
+**Critério de sucesso:** 5+ WebSearches (2 por Gestor) rodaram; 2+ WebFetches validaram achados principais; cada achado tem URL/fonte/data; conteúdo em inglês foi traduzido; achados Revit/BIM registrados em `vitruvius_achados_candidatos.md`; nenhum achado foi implantado localmente (só pesquisado).
+
+| Bloqueador | Causa provável | Ação |
+|---|---|---|
+| WebSearch não retorna resultado útil | Termos muito amplos ou muito técnicos | Refine os termos, use português |
+| Website oficial fora do ar | Server down, URL mudou | Procure alternativas (GitHub, blog, Wayback Machine) |
+| WebFetch retorna erro (ECONNREFUSED, 403) | Site down ou exige autenticação | Pule o achado (Regra de Desbloqueio) |
+| Repositório GitHub parece suspeito | Typosquatting, malware | Descarte — desconfiar custa menos que vazar dado |
+| Não consegue confirmar se é gratuito | Preço não está claro | Descarte — Passo 8 exige custo zero confirmado |
+| Gestor/Agente sem `_estado_*.md` | Agente novo, ainda não criado | Deixe a Skill pronta para quando existir |
+
+### Passo 2 — Consolidação
+
+**Critério de sucesso:** cada achado tem Gestor/Agente atribuído (ou descartado com motivo); nenhum achado é redundante com Skill anterior; Trilha A/B foi definida; mapa pronto para o Passo 3.
+
+| Bloqueador | Ação |
+|---|---|
+| Não tenho certeza se é novo | Busque a Skill anterior no índice do mês — se existe, é redundância |
+| Achado bom mas sem Agente claro | Deixe como "aguardando atribuição" |
+| Achado é para Gestor ainda não implantado (ex: Fechamento) | Deixe a proposta pronta para quando o Gestor existir |
+
+### Passo 3 — Redação e Ativação
+
+**Critério de sucesso:** estrutura padrão completa (metadata + seções); redação clara e específica (não genérica); limitações honestas; fonte primária citada; conteúdo em português; Trilha A validada pelo Gestor dono no mesmo dia.
+
+| Bloqueador | Ação |
+|---|---|
+| Não sei se é Trilha A ou B | Ensina conhecimento técnico = A; descreve ferramenta/instalação = B |
+| Achado interessante mas não sei redigir | Escreva em tópicos soltos, deixe pronto para revisão |
+| Fonte é blog/agregador, não primária | Não use — encontre a fonte original antes de escrever |
+
+### Passo 4 — Salvamento Local
+
+**Critério de sucesso:** `.md` salvo em `Skills_Propostas/{Ano}/{Mês}/`; nome em kebab-case; índice do mês atualizado; backup criado se editou arquivo existente; se `ativa`/`ativa-com-ressalva`, também instalada em `.claude/skills/[nome]/SKILL.md`.
+
+| Bloqueador | Ação |
+|---|---|
+| Pasta `{Ano}/{Mês}` não existe | Crie-a |
+| Índice do mês não existe | Crie um novo com header padrão (veja outro mês como modelo) |
+| Sem permissão para editar | Regra de Desbloqueio: pule, registre impedimento, continue |
+
+### Passo 6 — Atualizar Painel do Fundador
+
+**Critério de sucesso:** backup do HTML antes de editar; eventos de hoje/semana prependados no FEED (topo, não fim); data atualizada; republicado no mesmo link (Artifact); registrado no livro-razão.
+
+| Bloqueador | Ação |
+|---|---|
+| Não sei se evento deve entrar no Painel | Regra: se entrou no livro-razão (decisão/Skill/marco), entra. Se é "FYI" ou retrabalho, não |
+| Não sei qual tipo (`et`) usar | Veja o histórico do FEED, escolha o tipo mais próximo |
+| Artifact retorna erro ao republicar | Regra de Desbloqueio: registre, pule — Painel fica na versão anterior |
+| HTML muito grande / corrompido | Não mexa — reporte o bloqueador |
+| Painel não atualizou no link | Pode ser cache — espere alguns minutos; se persistir, reporte |
+
+### Passo 7 — Learning Agent
+
+**Critério de sucesso (achou melhoria):** 3-5 vídeos assistidos via `/watch:watch`; técnica documentada; SKILL.md atualizado com backup e livro-razão. **Critério de sucesso (não achou):** vídeos assistidos, "nenhuma técnica nova" registrado honestamente (Princípio 15).
+
+| Bloqueador | Ação |
+|---|---|
+| WebSearch não acha bons vídeos | Refine termos ou pule (Regra de Desbloqueio) |
+| Vídeo em inglês / sem transcrição | Assista mesmo assim, traduza o conceito |
+| Técnica viável mas exige novo MCP/ferramenta | Descarte por agora, anote como roadmap futuro |
+| Técnica exigiria reescrever metade da rotina | Descarte — risco alto, prefira melhoria menor |
+| Painel bloqueado (Artifact error) | Pule a atualização do Painel — o que importa é o SKILL.md |
+
+### Passo 8 — Busca de Ferramenta (Trilha B)
+
+**Critério de sucesso (achou):** todos os 4 critérios verificados; Skill de usabilidade completa o bastante para a Drenagem instalar sem perguntar; limitações honestas. **Critério de sucesso (não achou):** "nenhum achado novo" registrado com motivo, mapa de busca por Agente mantido.
+
+| Bloqueador | Ação |
+|---|---|
+| GitHub não acha nada no termo preciso | Varie os termos, ou descarte (Regra de Desbloqueio) |
+| 2-3 candidatos, sem saber qual escolher | Cheque os 4 critérios em cada — raro haver empate real |
+| Custo vago, não claramente zero | Descarte — regra é custo zero confirmado, não "provavelmente gratuito" |
+| Ferramenta exige hardware que o Agente não tem | Cheque `_estado_{agente}.md` por hardware; se não tem, descarte |
+| "Vou achar algo melhor se esperar uma semana" | Não espere — se passa nos 4 critérios hoje, proponha hoje |
+
+---
+
 ## SAÍDA: RESUMO FINAL
 
 Ao terminar, escreva um resumo curto (5-10 linhas) do que pesquisou hoje, quantas Skills ativou e para quais Gestores, onde salvou, **o que registrou no livro-razão**, e **se atualizou/republicou o Painel do Fundador** (incluindo quantas melhorias o Learning Agent propôs).
@@ -479,6 +589,9 @@ Se um dia não houver nada novo relevante, diga isso honestamente e não invente
 | 2.8 | 08/09/2026 | **[ESCALA POR GESTOR, Claudemberg]** Meta passa de 1 Skill/dia (total) para até 1 Skill por Gestor por dia (máx. 3: Kelsen, Lúcio, Cardozo). Pesquisa do Passo 1 distribui ~2 buscas por Gestor. Se não encontrar material viável para algum Gestor, simplesmente não cria — sem forçar. Tempo estimado Seg-Qui ajustado para 60-90 min. |
 | 2.9 | 08/09/2026 | **[ITEM 2 — FLUXO DE ATIVAÇÃO, Claudemberg]** Skill de Trilha A (Inteligência) deixa de nascer `proposta` parada: Gestor dono valida no mesmo dia (erro factual / duplicata / lacunas) → ativa em produção → Claudemberg revisa retroativamente na Semanal, não é mais portão. Novo `Status` `ativa-com-ressalva` + selo de ressalva obrigatório para Skill cuja fonte primária não foi lida (Agente sinaliza a lacuna ao usar em caso real; nunca vira número final de documento de cliente sem fechar a fonte). Trilha B (Passo 8) e Skill de Gestor não implantado seguem `proposta` como antes. |
 | 3.0 | 10/09/2026 | **[ESCOPO EXPANDIDO POR GESTOR, Claudemberg]** Passo 1 deixa de ser "busca de NBRs + ferramentas" e passa a cobrir **inteligência de domínio completa** por Gestor. (1) **Kelsen:** estratégias legais reais de resolução de problemas (OODC, Mais-Valerá/Mais-Valia, TPC, AEIU) + monitoramento contínuo de janelas excepcionais abertas por mudanças de governo/administração (padrão histórico RJ confirmado: novos planos diretores e LCs abrem exceções ao CAM). (2) **Lúcio:** estratégias de partido arquitetônico, orientação solar/vento RJ, conforto passivo, tipologias residenciais, acessibilidade integrada, cases de escritórios RJ. (3) **Cardozo:** técnicas de projeto profundas por Agente — Baumgart (solo RJ, patologias), Landell (automação real, Light/CEDAE), Saturnino (CEDAE, solar, fossas), Glaziou (espécies nativas/invasoras INEA, SMAC), Tenreiro (acabamentos, iluminação por ambiente), Mindlin (prancha técnica, memorial). (4) **Vitruvius para Cardozo:** Agentes de Cardozo precisarão modelar no BIM — mapear quais das 35 tools Vitruvius cada disciplina usa (Trilha B, Passo 8). |
+| 3.1 | 16/09/2026 | **[CONSOLIDAÇÃO DE FONTE ÚNICA, auditoria Claudemberg]** Corrigida dessincronização entre 4 documentos vivos descrevendo a mesma rotina com conteúdo divergente. (1) Manual operacional v2.9 **aposentado** (movido para `00_HISTORICO/`) — estava preso na versão pré-v3.0 do Passo 1 (sem escopo por Gestor) e era citado pelo scheduled task como fonte de dúvida no mesmo nível deste arquivo; seu conteúdo vivo (bloqueadores/critérios de sucesso por passo) foi migrado para o **Apêndice** acima. (2) `GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md` **aposentado** — descrevia o Passo 6 (Painel) como atualização de "% de progresso por projeto", mecanismo que não existe mais (o Painel real usa FEED de eventos prependado, `var feed = [...]`). (3) CronJob PDF 20:00 (`wallenberg-cronjob-pdf-2000`) **corrigido** para não gerar mais PDF de Skills individuais. (4) Prompt do scheduled task diário atualizado para não citar mais o manual v2.9. **[Reaplicado 16/09/2026]** primeira aplicação desta linha foi desfeita por um `git checkout` de escopo amplo, durante correção de um incidente não relacionado — reconstruída aqui, conteúdo idêntico. |
+| 3.2 | 16/09/2026 | **Nunca aplicada a este arquivo.** A v3.2 (pipeline técnico linear, mesma data) foi escrita direto no prompt operativo da tarefa agendada (`wallenberg-rotina-diaria-skills-v2-7`, fora deste repositório) — este arquivo de referência pulou de 3.1 para 3.3 sem ter uma versão 3.2 própria. Registrado aqui só para não deixar buraco silencioso na numeração. |
+| 3.3 | 16/09/2026 | **[ENDURECIMENTO SRE, mesmo dia]** Blindagem contra falha de I/O, concorrência e virada de mês: (1) Passo 0 (novo nesta rotina — já existia só na tarefa agendada) ganha checagem compulsória de `(Get-Date).DayOfWeek` antes de ramificar seg-qui/sexta, contra desvio de fuso/relógio de contêiner. (2) Passo 4 ganha `New-Item -Force` preemptivo do diretório `{Ano}/{Mês}` antes de gravar Skill nova, prevenindo erro fatal na virada de mês. (3) Passo 6 reescrito para refletir o mecanismo real pós-migração (`Append-STTKLog.ps1`, não mais edição direta de HTML) e ganha regra de espaçamento entre chamadas — margem defensiva contra sobreposição entre rotinas diferentes (Diária × Drenagem), não contra colisão dentro da própria rodada, que já é sequencial por natureza das chamadas de ferramenta. |
 
 ---
 
@@ -495,13 +608,15 @@ Se um dia não houver nada novo relevante, diga isso honestamente e não invente
 | Dashboard | ✅ Integrado | Painel expandido com MÉTRICAS |
 | CronJob PDF | ✅ Ativo | 20:00 toda noite (automático) |
 | Agendador 08:00 | ✅ Ativo | Notifica quando rotina começa |
-| Documentação | ✅ Completa | COMECE_AQUI.md → Guia → Checklists |
+| Documentação | ✅ Completa | COMECE_AQUI.md → SKILL.md (fonte única, com Apêndice v3.1) → Checklists |
 
 **Primeira execução com v2.7:** Segunda 01/09/2026 (08:00)
 
+**[v3.1 — 16/09/2026]** `GUIA_EXECUCAO_ROTINA_SEXTA_28_08_2026.md` foi aposentado — descrevia um modelo de Painel (% de progresso por projeto) que não existe mais. Para Sexta, use `Checklist_Sexta.html` + item 6 deste arquivo (FEED de eventos).
+
 ---
 
-**Última atualização:** 10/09/2026  
-**Status:** ✅ **v3.0** — Escopo Expandido por Gestor (Kelsen: estratégias legais + janelas de governo | Lúcio: partido/solar/conforto | Cardozo: técnicas por disciplina | Vitruvius para Cardozo) + Fluxo de Ativação Trilha A + Escala até 3 Skills/dia + Checklists + Dashboard + Agendador + CronJob  
+**Última atualização:** 16/09/2026  
+**Status:** ✅ **v3.3** — Endurecimento SRE (checagem de dia da semana, guarda de virada de mês, prevenção de colisão I/O entre rotinas) sobre a base v3.1 (fonte única consolidada: manual v2.9 e GUIA_EXECUCAO_ROTINA_SEXTA aposentados, CronJob PDF corrigido) e v3.0 (Escopo Expandido por Gestor: Kelsen estratégias legais + janelas de governo | Lúcio partido/solar/conforto | Cardozo técnicas por disciplina | Vitruvius para Cardozo). Fluxo de Ativação Trilha A + Escala até 3 Skills/dia + Checklists + Dashboard + Agendador + CronJob mantidos.  
 **Próximas execuções:** Agendador dispara 08:00 (seg-qui: Checklist_Diaria | sexta: Checklist_Sexta)  
 **Próximo passo:** Wallenberg abre COMECE_AQUI.md e segue para o Checklist visual apropriado
