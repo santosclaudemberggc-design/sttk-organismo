@@ -1,8 +1,9 @@
 # Memorial Descritivo e Apresentação Técnica ao Cliente — Do Projeto ao Convencimento
 
 **Versão:** 1.0  
-**Status:** proposta  
-**Data:** 16/09/2026  
+**Status:** avaliada — procede  
+**Data:** 16/09/2026
+**Avaliado em:** 16/09/2026  
 **Tipo:** Inteligência (Trilha A)  
 **Para:** Mindlin (Apresentação) — cross: Oscar (Arquitetura), Portinari (Apresentação Arquitetônica)  
 **Gestor:** Cardozo (Complementares)

@@ -40,6 +40,20 @@ Skill `legal_oodc-mais-valera-mais-valia-potencial-construtivo-rj.md` avaliada. 
 
 Parte estrutural (OODC, CAB/CAM, Art. 106 LC 270/2024, fluxo STTK) é válida e faltava na base. Problema identificado: a Skill afirma "AMBOS OS PRAZOS EXPIRADOS" para Mais-Valerá (01/06/2026) e Mais-Valia (30/06/2026), mas meu estado registra cadeia auditada duas vezes (03/09): LC274 → LC291 → LC301 com prazo até 01/12/2026, ainda aberto em 03/09 e em 15/09. A Skill também cita "LC 281/2025" como base da 2ª janela — meu estado aponta "LC 291" para essa extensão. Duas inconsistências: numeração de LCs e status dos prazos. Hely deve reconciliar com Skill existente `legal_lc281-2025-condicoes-especiais-licenciamento-rj.md` antes de qualquer uso em caso real. Cinco ressalvas registradas no veredito entregue a Wallenberg. Aguarda ratificação de Claudemberg.
 
+### Avaliação Skill TDC/LICIN 2.0 (16/09/2026) — Drenagem Contínua 11ª rodada
+
+Skill `legal_tdc-licin2-transferencia-direito-construir-aprovacao-rj.md` avaliada. **Veredito: PROCEDE COM RESSALVA.**
+
+Fundamento jurídico sólido — base legal bem estruturada (LC 270/2024, LC 274/2024, LC 281/2025, LC 291/2025), diferenciação clara TDC vs OODC, documentos do TDC bem mapeados (Termo de Potencial Construtivo Transferível + Certidão de Potencial Construtivo Transferido + averbação obrigatória). Aplicação ao fluxo STTK clara (passo 1 do Levantamento = verificar se lote é emissor; passo 4 do Anteprojeto = checklist dos 13 parâmetros). Mentalidade v3.0 de "brechas válidas" bem descrita.
+
+Lacunas (4 ressalvas já marcadas na própria Skill, linhas 185-189):
+1. **TDC fórmula numérica:** coeficiente de equivalência depende de regulamentação SMDU por caso — não confirmada em fonte primária. **NÃO é bloqueante** (é informação correia que a lei não fixa fórmula única; caso real de TDC vai pedir pesquisa caso-a-caso — oportunidade futura de negócio, não critério hoje).
+2. **CRÍTICA — Isenção OODC até 2029:** Skill cita via Instituto Bramante (fonte secundária) que LC 270/2024 estabeleceu "período de transição de 5 anos" com isenção de OODC pra zonas estratégicas (Zona Oeste, Zona Sul, Tijuca, Vila Isabel). Se verdade, muda análise de viabilidade para 5 anos inteiros. Se falsa, Skill gera dado errado. **Hely DEVE verificar Art. 106 LC 270/2024 na íntegra antes de qualquer uso em caso real com cliente em zona estratégica.** Recomendação formalizada.
+3. **Custo da licença (fórmula):** Skill cita "Valor = (ATC × 0,2412) × Número de Meses" (fonte Carioca Digital) mas avisa que portal ainda refencia Decreto 48.719/2021 quando deveria ser 55.622/2025 (promulgado jan/2025, 8 meses atrás). **Hely verifica se a fórmula mudou** antes de informar custo a cliente real. Não é bloqueante, é verificação de defasagem de portal.
+4. **Diferenças por subprefeitura (Barra, Zona Norte, Centro):** não documentadas publicamente — variam na prática. Monitorar.
+
+**Síntese:** Skill pronta para montagem de documentação Hely e treinamento do fluxo Legal em paralelo. NÃO pronta para cliente real até as lacunas críticas (isenção 2029 + custo LICIN 2025) serem resolvidas. Fila de Legal (16/09): nenhum treino/exame pendente; 1 Skill avaliada com ressalva.
+
 ### Verificação Protocolo Bloqueador — POP-ARQ-PL-01 / Memorial Descritivo (11/09/2026)
 
 Wallenberg pediu auditoria das 5 correções legais que eu tinha apontado, executadas por ele via script Python/Google Docs API. Resolvi ler os dois docs eu mesma via `read_file_content` (tool que já tenho) em vez de acionar o Hely — verificação textual pontual, não pesquisa de legislação nem produção de documento. Resultado: **2 passaram, 1 passou com ressalva, 2 falharam**.

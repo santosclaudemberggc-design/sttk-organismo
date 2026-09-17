@@ -1,8 +1,9 @@
 # TDC e LICIN 2.0 no RJ — Transferência do Direito de Construir e Estratégias de Aprovação
 
 **Versão:** 1.0  
-**Status:** proposta  
+**Status:** avaliada  
 **Data:** 16/09/2026  
+**Avaliação:** PROCEDE COM RESSALVA (16/09/2026 — Kelsen)  
 **Tipo:** Inteligência (Trilha A)  
 **Para:** Kelsen/Hely (Legal) — cross: Lúcio/Oscar (Arquitetura)  
 **Gestor:** Kelsen (Legal)

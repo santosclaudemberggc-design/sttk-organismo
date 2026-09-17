@@ -1,11 +1,12 @@
 # Partido Arquitetônico e Conforto Térmico Passivo — Orientação Solar, Ventilação e Tipologias no RJ
 
 **Versão:** 1.0  
-**Status:** proposta  
+**Status:** avaliada — PROCEDE COM RESSALVA  
 **Data:** 16/09/2026  
 **Tipo:** Inteligência (Trilha A)  
 **Para:** Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro (Interiores), Baumgart (Estrutural)  
-**Gestor:** Lúcio (Arquitetura)
+**Gestor:** Lúcio (Arquitetura)  
+**Avaliação (16/09/2026):** Orientação solar/ventilação/tipologias mapeadas para RJ, aplicáveis a Levantamento/EP/Anteprojeto. Ressalvas: (1) beiral 0,80–1,0m sem fonte citada (usar SOL-AR conforme texto); (2) LC 299/2026 não verificada por Lúcio (confirmar com Kelsen se questionada); (3) ruído urbano × ventilação implícito (escalar se rua ruidosa). Baixa prioridade — não bloqueiam execução.
 
 ---
 

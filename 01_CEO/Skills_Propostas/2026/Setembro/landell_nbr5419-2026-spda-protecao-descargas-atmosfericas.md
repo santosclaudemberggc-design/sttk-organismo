@@ -1,8 +1,9 @@
 # NBR 5419:2026 — SPDA: Proteção contra Descargas Atmosféricas
 
 **Versão:** 1.0  
-**Status:** proposta  
-**Data:** 15/09/2026  
+**Status:** avaliada — procede com ressalva  
+**Data:** 15/09/2026
+**Avaliado em:** 16/09/2026  
 **Tipo:** Inteligência (Trilha A)  
 **Para:** Landell (Elétrica+Automação) — cross: Baumgart (Estrutural), Oscar (Arquitetura)  
 **Gestor:** Cardozo (Complementares)

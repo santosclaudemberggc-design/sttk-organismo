@@ -24,7 +24,7 @@
 | 14/09 | NBR 17076:2024 — Sistema de Tratamento de Esgoto de Menor Porte (Fossa, Filtro e Sumidouro) — substitui NBR 7229:1993 + NBR 13969:1997 | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart | avaliada — aguarda ratificação de Claudemberg (Cardozo 14/09, PROCEDE COM RESSALVA) |
 | 15/09 | OODC, Mais-Valerá e Mais-Valia — Instrumentos de Potencial Construtivo no RJ | Inteligência (Trilha A) | Kelsen/Hely (Legal) — cross: Lúcio/Oscar (Arquitetura) | ✅ **instalada** — Claudemberg 15/09/2026 (PROCEDE COM RESSALVA — R1: prazos Mais-Valerá/Mais-Valia divergentes entre Skill e estado Kelsen [LC301 até 01/12/2026 vs. "expirados"]; R2: nomenclatura LC 281 vs LC 291; R3: fórmula Anexo XXV não obtida; R4: isenção de 5 anos não confirmada; R5: CAB/CAM por subzona não listados — Hely deve reconciliar com Skill existente `legal_lc281-2025` antes de uso em caso real) |
 | 15/09 | NBR 9050:2020 — Acessibilidade Integrada ao Projeto Residencial | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | ✅ **instalada** — Claudemberg 15/09/2026 (PROCEDE COM RESSALVA — R1: texto integral NBR não lido (paga); R2: **maçaneta corrigida: 0,90m** em rotas acessíveis — aplicar antes de usar; R3: parâmetros parciais (~150 pág. cobertas parcialmente); R4: custo <5% e ~15% valorização são referências de mercado, não dados auditados) |
-| 15/09 | NBR 5419:2026 — SPDA: Proteção contra Descargas Atmosféricas | Inteligência (Trilha A) | Landell (Elétrica, principal) — cross: Baumgart (Estrutural), Oscar (Arquitetura) | proposta |
+| 15/09 | NBR 5419:2026 — SPDA: Proteção contra Descargas Atmosféricas | Inteligência (Trilha A) | Landell (Elétrica, principal) — cross: Baumgart (Estrutural), Oscar (Arquitetura) | avaliada — procede com ressalva (Cardozo 16/09) |
 
 **⚠️ Nota de correção (03/09/2026):** as 4 primeiras linhas acima tinham se autodeclarado "ratificada — Claudemberg, ao vivo, pós-Drenagem Contínua" nos próprios arquivos `.md`, sem que essa ratificação tivesse de fato acontecido — autodeclaração indevida de uma rotina autônoma. Corrigido nos arquivos-fonte; a ratificação real aconteceu nesta data, em rodada de auditoria com Wallenberg.
 
@@ -159,15 +159,23 @@
 
 ---
 
+## Observações da Rodada 16/09/2026
+
+1. **TDC/LICIN 2.0 — Kelsen (v1.0):** Skill de TDC (Transferência do Direito de Construir) e estratégias de aprovação LICIN 2.0. **Veredito: PROCEDE COM RESSALVA (16/09, Kelsen).** Fundamento jurídico sólido (LC 270/2024, LC 274/2024, LC 281/2025, LC 291/2025), estrutura clara, aplicável ao fluxo Legal. Mas 4 lacunas reconhecidas (próprias Ressalvas da Skill): (R1) TDC fórmula numérica do coeficiente de equivalência não confirmada em fonte primária (depende de regulamentação SMDU por caso — não é bloqueante, é oportunidade futura); (R2) **CRÍTICA: isenção OODC até 2029** mencionada via Instituto Bramante (fonte secundária) — Hely DEVE verificar Art. 106 LC 270/2024 antes de qualquer cliente em zonas estratégicas (Zona Oeste, Zona Sul, Tijuca, Vila Isabel) que se baseie nessa isenção de 5 anos; (R3) Diferenças por subprefeitura não documentadas — monitorar prática; (R4) Custo da licença (fórmula Decreto 48.719/2021) pode estar defasado — Hely verifica se 55.622/2025 alterou o cálculo. Sem acionar Hely agora (não há caso real): Skill está pronta pra treinamento e montagem de documentação, mas não para cliente real até as 2 lacunas críticas (isenção 2029 + custo) serem resolvidas.
+2. **Partido Arquitetônico e Conforto Térmico — Lúcio (v1.0 proposta):** pesquisa ativa de Lúcio; "Solar, Ventilação e Tipologias no RJ" — criada como proposta em 16/09. Sem avaliação em 16/09 (fora de escopo Kelsen).
+3. **Memorial Descritivo e Apresentação Técnica — Mindlin (v1.0 proposta):** Skill de transição dos achados técnicos para narrativa de apresentação ao cliente. Criada como proposta em 16/09. Sem avaliação em 16/09 (fora de escopo Kelsen).
+
+---
+
 ---
 
 ## Skills Criadas (Rodada 16/09/2026)
 
-| Data | Título | Tipo | Para Quem | Status |
+| Data | Título | Tipo | Para Quém | Status |
 |------|--------|------|-----------|--------|
-| 16/09 | TDC no RJ — Transferência do Direito de Construir + Estratégias de Aprovação LICIN 2.0 | Inteligência (Trilha A) | Kelsen/Hely (Legal) — cross: Lúcio/Oscar (Arquitetura) | proposta |
-| 16/09 | Partido Arquitetônico e Conforto Térmico Passivo — Orientação Solar, Ventilação e Tipologias no RJ | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | proposta |
-| 16/09 | Memorial Descritivo e Apresentação Técnica ao Cliente — Do Projeto ao Convencimento | Inteligência (Trilha A) | Mindlin (Apresentação, principal) — cross: Oscar (Arquitetura), Portinari | proposta |
+| 16/09 | TDC no RJ — Transferência do Direito de Construir + Estratégias de Aprovação LICIN 2.0 | Inteligência (Trilha A) | Kelsen/Hely (Legal) — cross: Lúcio/Oscar (Arquitetura) | avaliada (16/09 — Kelsen, PROCEDE COM RESSALVA — ver nota abaixo) |
+| 16/09 | Partido Arquitetônico e Conforto Térmico Passivo — Orientação Solar, Ventilação e Tipologias no RJ | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | avaliada — PROCEDE COM RESSALVA (Lúcio 16/09: orientação solar/ventilação/tipologias RJ bem mapeadas; R1: beiral 0,80–1,0m sem fonte; R2: LC 299/2026 não verificada; R3: ruído urbano × ventilação implícito) |
+| 16/09 | Memorial Descritivo e Apresentação Técnica ao Cliente — Do Projeto ao Convencimento | Inteligência (Trilha A) | Mindlin (Apresentação, principal) — cross: Oscar (Arquitetura), Portinari | avaliada — procede (Cardozo 16/09) |
 
 ---
 
