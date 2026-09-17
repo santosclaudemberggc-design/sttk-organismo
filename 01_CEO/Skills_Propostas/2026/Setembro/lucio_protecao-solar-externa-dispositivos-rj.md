@@ -4,7 +4,7 @@ description: "Proteção Solar Externa — Brises, Cobogó e Venezianas: disposi
 metadata:
   type: inteligencia
   trilha: A
-  status: proposta
+  status: ativa-com-ressalva
   gestor: Lucio
   agente_principal: Oscar (Arquitetura)
   cross_disciplina: [Tenreiro, Baumgart]
@@ -14,7 +14,11 @@ metadata:
   versao: "1.1"
 ---
 
-> ⚠️ **RESSALVA (ativa-com-ressalva):** parâmetros de dimensionamento (ângulos de lâmina, profundidade ótima de brise) vieram de fontes secundárias — ProjetEEE/MME (gov.br), Correio Braziliense/engenheiros consultados, Cia da Samalia, Galvisteel. Texto integral da NBR 15220 não lido (paga). Para projeto executivo, Oscar deve obter o dimensionamento de brise por calculador solar ou especialista antes de fechar o desenho.
+> ⚠️ **RESSALVAS (ativa-com-ressalva — validado por Lúcio em 17/09/2026):**
+> 1. **Fontes secundárias:** parâmetros numéricos de ângulos de lâminas e profundidades de brise vieram de ProjetEEE/MME (gov.br), Correio Braziliense, Cia da Samalia, Galvisteel. Texto integral da NBR 15220 não lido (paga). Para projeto executivo, Oscar deve rodar o SOL-AR ou acionar especialista de conforto antes de fechar o desenho de brise.
+> 2. **SOL-AR — ângulos alfa/beta ausentes nesta Skill:** Oscar deve consultar a Skill de 16/09 (Partido/Conforto Térmico) para entender como usar o SOL-AR — ela já tem essa explicação. As duas Skills funcionam em par.
+> 3. **NBR 15575 fora do escopo:** para projetos residenciais multifamiliares, a NBR 15575 tem critérios de desempenho térmico de envoltória (fator solar, transmitância) que vão além desta Skill. Se o projeto exigir laudo de desempenho, verificar separadamente.
+> 4. **Gate obrigatório:** brise externo que altere a leitura de fachada precisa passar pelo Gate de Maurício antes de ir ao cliente (impacto visual direto).
 
 ---
 

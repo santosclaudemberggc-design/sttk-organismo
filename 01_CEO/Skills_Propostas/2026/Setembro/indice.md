@@ -183,7 +183,7 @@
 
 | Data | Título | Tipo | Para Quém | Status |
 |------|--------|------|-----------|--------|
-| 17/09 | Proteção Solar Externa — Brises, Cobogó e Venezianas: Dispositivos e Parâmetros de Projeto para Fachadas no RJ | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | proposta-corrigida v1.1 — 4 erros corrigidos (terminologia zenital→altitude, fachada Sul, fachada Leste misto H+V, NBR vento 6118→6123:1988); aguarda confirmação final Lúcio |
+| 17/09 | Proteção Solar Externa — Brises, Cobogó e Venezianas: Dispositivos e Parâmetros de Projeto para Fachadas no RJ | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | ✅ **ativa-com-ressalva** (Lúcio 17/09 — v1.1 corrigida, 4 ressalvas declaradas; instalada em `.claude/skills/lucio-protecao-solar-externa-dispositivos-rj/`) |
 
 ---
 
