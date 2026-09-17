@@ -1,6 +1,6 @@
 ---
 name: wallenberg-drenagem-continua-v2-3
-version: 2.4.0
+version: 2.4.1
 created: 2026-07-27
 recriado: 2026-08-28
 based_on: "Especificação completa fornecida por Claudemberg em 28/08/2026 — campos B e C copiados integralmente, sem reescrita, a pedido dele"
@@ -850,12 +850,20 @@ Este arquivo-fonte (seções B/C) **não foi reescrito** para os novos mecanismo
 
 **Como desfazer:** reverter esta seção J.5 (incluindo J.5.1/J.5.2/J.5.3/J.5.4) via git revert; reverter a tarefa agendada separadamente (fora do controle de versão deste repositório).
 
+**J.6 — Blindagem de permissão: proibido Bash encadeado com PowerShell embutido (17/09/2026).**
+Incidente real: a rodada de 17/09/2026 (10:22) da tarefa agendada foi interrompida no meio do Passo 2 (checagem de arquivos de estado dos Gestores) — nenhum Gestor foi acionado, nenhum commit foi feito, nenhum relatório de fechamento foi escrito. Causa raiz identificada no transcript bruto da sessão: rodando com `permissionMode: "default"` (tarefa não supervisionada), a rotina tentou uma chamada `Bash("cd \"...\" && powershell -Command \"...\"")` para checar `_estado_{gestor}.md` de 4 Gestores em loop — um padrão de comando nunca antes aprovado (string distinta das 2 chamadas anteriores da mesma rodada, essas já aprovadas em rodadas passadas). Sem ninguém presente para responder ao prompt de permissão, a chamada foi automaticamente rejeitada (`"Request interrupted by user for tool use"`) e a sessão morreu ali. `list_task_runs` reportou `status: "succeeded"` mesmo assim — falso positivo que mascarou a falha até auditoria manual.
+
+**Regra (reforça AULA CLAUDE, Regra 1 — já valia; explicitada aqui com o incidente real que a violou):** nesta rotina, toda operação de sistema Windows/cmdlet (checar arquivo, listar diretório, rodar script `.ps1`) usa a tool `PowerShell` nativa diretamente — nunca `Bash` encadeando `cd "..." && powershell -Command "..."`. Motivo prático, não só estilo: cada variação de string dentro de um wrapper Bash é tratada como comando novo pelo sistema de permissão e pode travar uma rodada não supervisionada esperando aprovação que nunca chega. Chamada `PowerShell` direta usa o mesmo canal já aprovado que a Rotina Diária usa com sucesso todo dia (Passo 0 — DayOfWeek — e Passo 3 — Append-STTKLog.ps1).
+
+**Como desfazer:** reverter esta seção J.6 via git revert.
+
 ---
 
 ## HISTÓRICO DE VERSÕES
 
 | Versão | Data | Mudança |
 |--------|------|---------|
+| 2.4.1 (adendo J.6) | 17/09/2026 | **Blindagem de permissão.** Proibido `Bash` encadeando `cd "..." && powershell -Command "..."` — sempre tool `PowerShell` nativa direta. Causa raiz confirmada de incidente real: rodada 17/09 interrompida no Passo 2 por rejeição automática de permissão (comando Bash+PowerShell nunca antes aprovado, ninguém presente pra aprovar), sessão morreu sem acionar Gestor, sem commit, sem relatório — mas `list_task_runs` reportou `"succeeded"` (falso positivo). |
 | 2.4 (adendo J.5) | 16/09/2026 | **Mesclagem, não substituição.** Filtro geográfico (Barra/Recreio via `INDICE_PRIORIDADES.md`), mecanismo antifrail de refação de teste mal atribuído no Notion, staging de MCP antes de instalar (`staging_mcp.json`), Passo 8c migrado de edição direta de HTML para `Append-STTKLog.ps1`, auditoria do nó terminal Lelé (`auditoria_lele.json`). Pedido original era sobrescrita integral; recusado depois de confirmar que apagaria Portão de Trabalho, hierarquia de Gestor, gate de Autonomous e fronteira crítica — nenhum dos quais estava no texto novo. |
 | 2.3 (adendo J.4) | 14/09/2026 | **Sincronização de divergência real** — 2 decisões já aplicadas na tarefa agendada (`wallenberg-drenagem-continua-local`) desde 02/09 e 08/09 nunca tinham chegado a este arquivo-fonte: Portão de Trabalho Opção B/Alvo A (skill já avaliada não conta na fila; só abre Gestor com item real) e Learning Agent restrito a segunda-feira + execução real, além do Passo 7.5 (varredura mensal de Drive) inteiro. Achado por Claudemberg no mesmo dia da correção da Rotina Diária Skills v3.0. |
 | 2.3 (adendos J.1–J.3) | 31/08/2026 | Instruções de Claudemberg após a 1ª rodada real: validação obrigatória de Skill-ferramenta; cadeia CEO→Gestor→Agente não trava (Wallenberg destrava exames de Gestor abaixo de Autonomous); varredura recorrente de documentos no Drive "Dptº de Projetos" com auditoria de Wallenberg para docs cross-Gestor e padronização. Seções B/C intactas. |
@@ -867,6 +875,6 @@ Este arquivo-fonte (seções B/C) **não foi reescrito** para os novos mecanismo
 
 ---
 
-**Última atualização:** 16/09/2026 (adendo J.5 — v2.4 mesclada na tarefa agendada, ver Histórico de Versões)
+**Última atualização:** 17/09/2026 (adendo J.6 — blindagem de permissão Bash/PowerShell, ver Histórico de Versões)
 **Status:** ✅ Operacional — registrada em `scheduled-tasks` (cron `15 10 * * 1-5`)
 **Atenção:** este arquivo é referência de consulta; a tarefa agendada (`C:\Users\santo\.claude\scheduled-tasks\wallenberg-drenagem-continua-local\SKILL.md`) é o que executa de fato. Ao propor melhoria via Learning Agent (Passo 8a), sincronizar os dois lados — não só este arquivo.
