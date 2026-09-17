@@ -841,7 +841,14 @@ Este arquivo-fonte (seções B/C) **não foi reescrito** para os novos mecanismo
 
 **J.5.3 — Guarda preemptiva de diretório na criação de Gestor (Passo 4, 16/09/2026).** Mesmo endurecimento SRE já aplicado ao Passo 8c (Painel) e à Rotina Diária (Passo 4, Skills_Propostas): antes de criar `.claude/agents/{gestor}.md` ou `01_CEO/Gestores/{Gestor} ({Tipo})/Agentes/` para um Gestor novo, a tarefa agendada agora dispara `New-Item -ItemType Directory -Force` na árvore de pastas dele — idempotente, previne erro fatal de caminho ausente quando a árvore do Gestor nunca existiu antes (todo Gestor novo, por definição).
 
-**Como desfazer:** reverter esta seção J.5 (incluindo J.5.1/J.5.2/J.5.3) via git revert; reverter a tarefa agendada separadamente (fora do controle de versão deste repositório).
+**J.5.4 — Loop de Promoção Dinâmica (16/09/2026).** Formaliza um gatilho automático dentro do Passo 5.b (tarefa agendada, `5.b.3`) para manter a fila de exame de cada Gestor abaixo de Autonomous sempre abastecida, sem depender de alguém lembrar de criar o próximo teste manualmente:
+
+- **Gatilho:** fila do Gestor no Notion "Treinos e Testes" vazia (zero `pendente`/`em execução`) E nível atual abaixo de Autonomous → Wallenberg gera e injeta uma nova linha de exame, genuinamente mais difícil ou de eixo diferente do último já passado (nunca teste raso repetido — Princípio 15).
+- **Salvaguarda de rigor (não pedida no texto original, adicionada aqui por consistência com o resto do organismo):** gerar o teste **nunca promove sozinho**. A mudança de nível continua exigindo o processo já existente — Gestor passa o teste → Wallenberg audita o artefato → Claudemberg ratifica na Semanal (Trava 3, J.5.1). O loop só garante que sempre há um próximo desafio na fila; quem decide se o Gestor de fato avançou continua sendo o mesmo processo de sempre.
+- **Salvaguarda de custo (idem):** nunca gera segunda linha nova enquanto já existe uma `pendente`/`em execução` em aberto para aquele Gestor — sem isso, o loop rodaria a cada disparo diário e acumularia fila sem necessidade, contra o espírito do Portão de Trabalho (Passo 2.5).
+- **Delegação de liderança:** ao atingir Autonomous, a Drenagem para de gerar teste para aquele Gestor — a responsabilidade passa a ser dele, ao ser acionado, gerar o próximo exame para o Agente da própria equipe com fila vazia e nível abaixo de Autonomous. Isso formaliza um gatilho automático para um comportamento que já é real hoje em Kelsen, Lúcio e Cardozo (cada um já examina a própria equipe por iniciativa própria) — não inventa processo novo para eles, só automatiza quando ele dispara.
+
+**Como desfazer:** reverter esta seção J.5 (incluindo J.5.1/J.5.2/J.5.3/J.5.4) via git revert; reverter a tarefa agendada separadamente (fora do controle de versão deste repositório).
 
 ---
 
