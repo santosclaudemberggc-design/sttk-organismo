@@ -4,6 +4,68 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-18, 10:15-11:30] Drenagem Contínua v2.4, rodada 12ª (sexta) — 3 SKILLS NOVAS AVALIADAS (PENDENTES)
+
+**Contexto:** Rodada automática sob tarefa agendada `wallenberg-drenagem-continua-local` (10:15, sex). Verificação de execução da Rotina Diária Skills (18/09, ~09:00).
+
+**Verificação Portão de Trabalho:**
+- `notion_pend = vazia` ✓ (zero itens Status:pendente)
+- `auto_abertas = zero` ✓
+- `skills_novas = 3` ✓ (iluminação, remoção árvores, LC 301/2026 — todas "proposta" de 18/09/2026)
+
+**Execução Real (em andamento):**
+
+**1. Cardozo (acionado via Portão — 2 Skills novas para avaliar):**
+- **Iluminação de Interiores Residencial — NBR ISO/CIE 8995-1** (Tenreiro)
+- **Remoção de Árvores RJ — FPJ/SMAC Autorização (Glaziou)**
+- Status: acionado, background, sem resultado ainda (~10:22).
+
+**2. Kelsen (acionado via Portão — 1 Skill nova para avaliar):**
+- **LC 301/2026 — AEIU Praça Onze Maravilha + Janela de Desconto LICIN** (Legal/Hely)
+- Status: acionado, background, sem resultado ainda (~10:22).
+
+**Gestores sem fila:**
+- Lúcio: não tem Skills "proposta" em fila hoje. Não acionado.
+- Wallenberg: zero item `alc:"auto"` + `status:"aberta"`.
+- Villaça: novo, sem fila de testes ainda. Não acionado.
+
+**Painel:** Não atualizado (Skills novas ainda "proposta", não ativadas).
+
+**Próximas ações (pendentes resultado Cardozo/Kelsen):**
+- Cardozo/Kelsen reportam vereditos (PROCEDE / COM RESSALVA / NÃO).
+- Wallenberg registra Status → "ratificada" ou "aguarda correção" ou "bloqueada".
+- Eventual acióna de Agentes (Tenreiro/Glaziou/Hely) se correção necessária.
+
+**Duração até agora:** ~15 min (acionamento apenas). Aguardando background.
+
+**Data:** 18/09/2026  
+**Registrador:** Wallenberg
+
+---
+
+### [2026-09-18, ~09:00] Villaça — 5º Gestor criado (Viabilidade) — APROVADO AO VIVO, não autônomo
+
+**Contexto:** Decorrente do Ensaio Ponta a Ponta (Caso Sombra 001, fictício, `01_CEO/Casos_TESTE/Recreio/ensaio_fluxo_completo_001/`). Depois da Etapa 1 (Legal, Kelsen/Hely), Claudemberg — avaliando como cliente e como técnico/arquiteto — identificou lacuna real: não existia quem traduzisse os parâmetros legais (CAB/CAM/custo OODC) em decisão financeira (custo de obra x valor de revenda) antes da Arquitetura começar a desenhar.
+
+**Decisão (não autônoma — aprovada ao vivo por Claudemberg, opção A entre 2 apresentadas):** criar Gestor novo, peer a Kelsen — não subordinado a ele. Motivo rejeitado explicitamente: nestar os 2 novos Agentes dentro de Kelsen quebraria a capacidade real de auditoria (Kelsen não tem domínio pra julgar custo de obra nem avaliação imobiliária).
+
+**O que foi criado:**
+- `.claude/agents/villaca.md` — definição do Gestor, tools: Agent/Read/Write/Edit/Glob/Grep/Skill/WebSearch/WebFetch + Drive/Notion MCP.
+- `01_CEO/Gestores/Villaça (Viabilidade)/_estado_villaca.md`
+- `01_CEO/Gestores/Villaça (Viabilidade)/gestor_viabilidade_proposta.html` (mesmo padrão visual dos outros Gestores)
+
+**Nível:** Formação (regra padrão pra Gestor novo). Hierarquia: só depende de Kelsen (Legal) existir — já existe, sem bloqueio. Não depende de Lúcio/Cardozo/Lelé.
+
+**Nome:** Villaça, referência temática (não verificada em fonte primária) a Flávio Villaça, urbanista brasileiro associado a valor da terra/espaço urbano — sinalizado explicitamente como sujeito a troca.
+
+**[CORREÇÃO — mesmo dia, 18/09/2026] Equipe nomeada fora de processo, revertida.** Na criação original, Wallenberg nomeou 1 Agente ("Mascaró", custo de obra) e deixou o 2º em aberto. Claudemberg apontou: nomear/criar Agente é **função do próprio Gestor** (Regra de Cascata, mesma regra já aplicada ao Lelé em 09/09/2026), não de Wallenberg — mesmo com só 1 dos 2 nomeado, o processo estava errado. Como nada disso tinha sido commitado ainda, a pasta `Agentes/Mascaró/` foi removida e os 3 documentos (`.claude/agents/villaca.md`, `_estado_villaca.md`, `gestor_viabilidade_proposta.html`) foram corrigidos para "equipe a definir pelo próprio Villaça, quando ele puder fazer isso" — texto idêntico em espírito ao que já existe pro Lelé.
+
+**Como desfazer:** apagar os 3 arquivos/pastas listados acima (Gestor novo, sem propagação em outro arquivo).
+
+**Próxima ação:** rodar o primeiro Pré-Estudo de Viabilidade dentro do Ensaio Ponta a Ponta, com Villaça atuando diretamente (sem equipe ainda, supervisionado por Wallenberg). Nomeação de equipe fica para quando Villaça tiver condição real.
+
+---
+
 ### [2026-09-15, ~10:30] Drenagem Contínua v2.3, 10ª rodada (segunda) — 2 SKILLS AVALIADAS + TRIM ESTADOS
 
 **Contexto:** Rodada automática sob tarefa agendada `wallenberg-drenagem-continua-local` (10:15, seg). Verificação de execução da Rotina Diária de Skills v3.0 (teste de correção de 14/09).
