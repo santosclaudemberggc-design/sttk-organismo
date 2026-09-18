@@ -22,6 +22,37 @@ metadata:
 
 ---
 
+## [2026-09-18] — Diária Skills v3.2 (Sexta) — RODADA COMPLETA
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Skills criadas:** 3 (Tenreiro iluminação NBR ISO/CIE 8995-1 + Glaziou remoção árvores SMAC/FPJ + Kelsen LC 301/2026 AEIU)
+- [x] **Skills ativadas:** 2 (Tenreiro + Glaziou — Cardozo PROCEDE COM RESSALVA)
+- [x] **Skills instaladas:** `.claude/skills/iluminacao-interiores-nbr-iso-8995-1-residencial/SKILL.md` + `.claude/skills/remocao-arvores-smac-fpj-autorizacao-compensacao-rj/SKILL.md`
+- [x] **Kelsen LC 301:** status `proposta-com-ressalvas` — aguarda Hely verificar 4 lacunas (desconto 30% geral vs. AEIU, parâmetros CA por setor, prorrogação definitiva, texto integral)
+- [x] **Feed atualizado:** 7 entradas totais (Tenreiro proposta + Glaziou proposta + LC 301 decisão + resumo semanal + dashboard + Tenreiro ativação + Glaziou ativação)
+- [x] **Correção factual:** LC 281 → LC 291 em 2 pontos da Skill LC 301 (erro de propagação da Skill OODC de 15/09)
+- [x] **Índice Setembro:** 22 Skills acumuladas (semana 14/09+ = 11; Cardozo 18; Kelsen/Hely 6; Lúcio 5)
+- [x] **Commit local:** feito ao finalizar esta rodada
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **LC 301/2026 lacunas críticas (Kelsen/Hely):** desconto 30% é geral (todo RJ) ou restrito ao perímetro da AEIU Praça Onze? Texto integral da lei (PDF) não foi lido — WebFetch retornou binário. Hely deve verificar Art. de disposições gerais/transitórias antes de informar desconto a qualquer cliente.
+- **LC 281 vs LC 291:** o erro de origem está na Skill OODC/Mais-Valerá de 15/09 (mencionava "LC 281/2025" na tabela de janelas). A Skill LC 301 foi corrigida (18/09), mas verificar se a Skill OODC também foi corrigida.
+- **yt-dlp/YouTube:** HTTP 403 + 429 na extração + sem JS runtime (deno/node). yt-dlp precisa de `deno` ou `node` instalado na máquina para extrair YouTube. Tentar /watch em próxima sexta após instalação.
+- **Tenreiro NBR 8995-1 coexistência:** Skill de 18/09 coexiste com a Skill `tenreiro_nbr15575-4-emenda1-nbr8995-1-interiores-desempenho.md` (31/08, ainda em propostas) — adicionar referência cruzada entre as duas em próxima rodada.
+- **Painel `id="updated"`:** span hardcoded, não é atualizado pelo feed.jsonl. Limitação arquitetural mantida — feed.jsonl está atual.
+
+### O QUE NÃO FAZER (Avoid retrabalho)
+
+- ❌ **Iluminação Interiores NBR ISO/CIE 8995-1 não duplique** — Skill Tenreiro 18/09 (ativa-com-ressalva)
+- ❌ **Remoção Árvores FPJ/SMAC RJ não duplique** — Skill Glaziou 18/09 (ativa-com-ressalva)
+- ❌ **LC 301/2026 AEIU Praça Onze não duplique** — Skill Kelsen 18/09 (proposta-com-ressalvas)
+- ❌ **LC 291/2025 não crie Skill separada** — conteúdo já coberto como histórico na Skill LC 301
+- ❌ Todos os itens de "NÃO FAZER" das rodadas anteriores continuam válidos
+
+---
+
 ## [2026-09-17] — Diária Skills v3.2 (Quinta) — RODADA COMPLETA
 
 ### RODADA ATUAL (O que foi entregue)
@@ -361,6 +392,6 @@ metadata:
 
 ---
 
-**Última atualização:** 15/09/2026 (segunda-feira — Diária Skills v3.0, Passos 0-5+8 executados)  
-**Próxima leitura:** 16/09/2026 (terça-feira) — Diária Skills Seg-Qui  
-**Painel pendente para:** 19/09/2026 (sexta-feira)
+**Última atualização:** 18/09/2026 (sexta-feira — Diária Skills v3.2, Rodada Sexta completa — 3 Skills, 2 ativadas)  
+**Próxima leitura:** 22/09/2026 (segunda-feira) — Diária Skills Seg-Qui  
+**Painel pendente para:** 25/09/2026 (sexta-feira)

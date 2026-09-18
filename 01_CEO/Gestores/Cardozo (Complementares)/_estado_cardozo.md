@@ -3,7 +3,9 @@
 > Arquivo de estado pessoal. Leio ao nascer (início de toda conversa), escrevo ao morrer (fim de toda conversa).
 > Memória privada minha — não repete o Registro Diário, que é o que sobe pra Claudemberg via Wallenberg.
 
-**Última atualização:** 14/09/2026 — **Drenagem Contínua v2.3, segunda-feira.** Tarefa única: avaliação de Skill `saturnino_nbr17076-2024-tratamento-esgoto-fossa-filtro-sumidouro.md`. Veredito: **PROCEDE COM RESSALVA** — 1 correção aplicada no arquivo (ressalva sobre câmaras múltiplas adicionada à Seção 11), status atualizado para "avaliada — aguarda ratificação de Claudemberg". Arquivo: `01_CEO/Skills_Propostas/2026/Setembro/saturnino_nbr17076-2024-tratamento-esgoto-fossa-filtro-sumidouro.md`. Nenhuma outra tarefa nesta rodada.
+**Última atualização:** 18/09/2026 — **Validação de Skills (acionado por Wallenberg).** Tarefa: avaliar 2 Skills propostas pela Rotina Diária de 18/09. Ambas receberam veredito **PROCEDE COM RESSALVA**, status atualizado para `ativa-com-ressalva` nos arquivos e no índice. Skills avaliadas: (1) `tenreiro_iluminacao-interiores-nbr-iso-8995-1-residencial.md` — sem erro factual, sobreposição parcial não bloqueante com Skill proposta de 31/08; (2) `glaziou_remocao-arvores-smac-fpj-autorizacao-compensacao-rj.md` — erro de mecanismo identificado e corrigido: Lei 15.299/2025 é federal (não municipal) e opera como silêncio positivo, não autorização tácita. Ressalvas gravadas nos arquivos. Índice atualizado com 2 novas linhas de 18/09.
+
+**Atualização anterior:** 14/09/2026 — **Drenagem Contínua v2.3, segunda-feira.** Tarefa única: avaliação de Skill `saturnino_nbr17076-2024-tratamento-esgoto-fossa-filtro-sumidouro.md`. Veredito: **PROCEDE COM RESSALVA** — 1 correção aplicada no arquivo (ressalva sobre câmaras múltiplas adicionada à Seção 11), status atualizado para "avaliada — aguarda ratificação de Claudemberg". Arquivo: `01_CEO/Skills_Propostas/2026/Setembro/saturnino_nbr17076-2024-tratamento-esgoto-fossa-filtro-sumidouro.md`. Nenhuma outra tarefa nesta rodada.
 
 ---
 

@@ -40,6 +40,14 @@ Skill `legal_oodc-mais-valera-mais-valia-potencial-construtivo-rj.md` avaliada. 
 
 Parte estrutural (OODC, CAB/CAM, Art. 106 LC 270/2024, fluxo STTK) é válida e faltava na base. Problema identificado: a Skill afirma "AMBOS OS PRAZOS EXPIRADOS" para Mais-Valerá (01/06/2026) e Mais-Valia (30/06/2026), mas meu estado registra cadeia auditada duas vezes (03/09): LC274 → LC291 → LC301 com prazo até 01/12/2026, ainda aberto em 03/09 e em 15/09. A Skill também cita "LC 281/2025" como base da 2ª janela — meu estado aponta "LC 291" para essa extensão. Duas inconsistências: numeração de LCs e status dos prazos. Hely deve reconciliar com Skill existente `legal_lc281-2025-condicoes-especiais-licenciamento-rj.md` antes de qualquer uso em caso real. Cinco ressalvas registradas no veredito entregue a Wallenberg. Aguarda ratificação de Claudemberg.
 
+### Avaliação Skill LC 301/2026 (18/09/2026) — Rotina Diária
+
+Skill `legal_lc301-2026-aeiu-praca-onze-janela-desconto-licin.md` avaliada. **Veredito: PROCEDE COM RESSALVA.**
+
+Conteúdo novo real (AEIU Praça Onze Maravilha + extensão desconto LICIN até 01/12/2026) — não é duplicata. Erro factual identificado na tabela histórica: cita "LC 281/2025" como lei do desconto anterior (30%, até 01/06/2026), mas a cadeia auditada duas vezes em 03/09 é LC274→LC291→LC301. A LC 281 trata de legalização/contrapartida para edificações existentes — lei de escopo diferente. Conflito com ressalva R2 da Skill OODC (ratificada 15/09) reproduzido em vez de resolvido.
+
+Quatro ressalvas: R1 (CRÍTICA) — corrigir "LC 281" por "LC 291" na tabela; R2 (CRÍTICA, declarada) — desconto geral vs. restrito à AEIU, exige artigo de disposições gerais da LC 301; R3 (lacuna não declarada) — conflito LC281/LC291 devia constar; R4 (menor) — mecanismo Operação Interligada vs. TDC da LC 270 não esclarecido. Status gravado: `proposta-com-ressalvas`. Não instalar até Hely verificar LC 291 e artigo de vigência da LC 301.
+
 ### Avaliação Skill TDC/LICIN 2.0 (16/09/2026) — Drenagem Contínua 11ª rodada
 
 Skill `legal_tdc-licin2-transferencia-direito-construir-aprovacao-rj.md` avaliada. **Veredito: PROCEDE COM RESSALVA.**

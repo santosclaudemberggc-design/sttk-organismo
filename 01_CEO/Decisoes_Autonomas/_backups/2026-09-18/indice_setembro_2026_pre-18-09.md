@@ -25,8 +25,6 @@
 | 15/09 | OODC, Mais-Valerá e Mais-Valia — Instrumentos de Potencial Construtivo no RJ | Inteligência (Trilha A) | Kelsen/Hely (Legal) — cross: Lúcio/Oscar (Arquitetura) | ✅ **instalada** — Claudemberg 15/09/2026 (PROCEDE COM RESSALVA — R1: prazos Mais-Valerá/Mais-Valia divergentes entre Skill e estado Kelsen [LC301 até 01/12/2026 vs. "expirados"]; R2: nomenclatura LC 281 vs LC 291; R3: fórmula Anexo XXV não obtida; R4: isenção de 5 anos não confirmada; R5: CAB/CAM por subzona não listados — Hely deve reconciliar com Skill existente `legal_lc281-2025` antes de uso em caso real) |
 | 15/09 | NBR 9050:2020 — Acessibilidade Integrada ao Projeto Residencial | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | ✅ **instalada** — Claudemberg 15/09/2026 (PROCEDE COM RESSALVA — R1: texto integral NBR não lido (paga); R2: **maçaneta corrigida: 0,90m** em rotas acessíveis — aplicar antes de usar; R3: parâmetros parciais (~150 pág. cobertas parcialmente); R4: custo <5% e ~15% valorização são referências de mercado, não dados auditados) |
 | 15/09 | NBR 5419:2026 — SPDA: Proteção contra Descargas Atmosféricas | Inteligência (Trilha A) | Landell (Elétrica, principal) — cross: Baumgart (Estrutural), Oscar (Arquitetura) | avaliada — procede com ressalva (Cardozo 16/09) |
-| 18/09 | Iluminação de Interiores Residencial — NBR ISO/CIE 8995-1: Lux, Temperatura de Cor e IRC por Cômodo | Inteligência (Trilha A) | Tenreiro (Interiores, principal) — cross: Landell (elétrica), Oscar (pé-direito) | ativa-com-ressalva (Cardozo 18/09 — R1: NBR paga não lida; R2: coexiste com Skill de 31/08 que cobre 8995-1 de forma tangencial — referenciar) |
-| 18/09 | Remoção de Árvores em Área Particular RJ — FPJ/SMAC: Autorização, Documentação e Medida Compensatória | Inteligência (Trilha A) | Glaziou (Paisagismo, principal) — cross: Saturnino (drenagem), Baumgart (fundações) | ativa-com-ressalva (Cardozo 18/09 — R1: taxa UFIR a verificar; R2 ALTA: Lei 15.299/2025 é federal/silêncio positivo, não autorização tácita da FPJ — corrigir redação antes de usar; R3: Resoluções SMAC 567/2014 e Conj. 3/2021 não lidas na fonte primária) |
 
 **⚠️ Nota de correção (03/09/2026):** as 4 primeiras linhas acima tinham se autodeclarado "ratificada — Claudemberg, ao vivo, pós-Drenagem Contínua" nos próprios arquivos `.md`, sem que essa ratificação tivesse de fato acontecido — autodeclaração indevida de uma rotina autônoma. Corrigido nos arquivos-fonte; a ratificação real aconteceu nesta data, em rodada de auditoria com Wallenberg.
 
@@ -192,8 +190,8 @@
 ## Estatísticas (Atualizado 17/09/2026)
 
 - **Skills Propostas (semana 07-12/09):** 4 (Trilha A: 4, Trilha B: 0)
-- **Skills Propostas (semana 14/09+):** 11 (Trilha A: 11, Trilha B: 0) ← atualizado 18/09
-- **Skills Propostas (acumulado setembro):** 22 ← atualizado 18/09
+- **Skills Propostas (semana 14/09+):** 8 (Trilha A: 8, Trilha B: 0) ← atualizado 17/09
+- **Skills Propostas (acumulado setembro):** 19 ← atualizado 17/09
 - **Skills Testadas:** 0
 - **Cobertura Trilha A por Agente (desde agosto):**
   - Baumgart: 6 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas + NBR 8681:2025 segurança)
@@ -202,25 +200,12 @@
   - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
   - Tenreiro: 2 (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross)
   - **Mindlin: 2** (NBR 6492:2021 + Memorial Descritivo/Apresentação Técnica 16/09)
-  - **Glaziou: 3** (NBR 16636-4 + NBR 15220-3:2024 cross + Remoção SMAC/FPJ 18/09) ← sobe de 2 para 3
-  - **Tenreiro: 3** (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross + Iluminação NBR ISO/CIE 8995-1 18/09) ← sobe de 2 para 3
-  - Kelsen/Hely: **6** (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026 + OODC/Mais-Valerá/Mais-Valia v1.1 + TDC/LICIN 2.0 16/09 + LC 301/2026 AEIU 18/09) ← sobe de 5 para 6
-  - Lúcio/Oscar (Arquitetura): **3** (NBR 9050:2020 acessibilidade + Partido/Conforto Térmico/Tipologias 16/09 + Proteção Solar Externa Dispositivos 17/09)
+  - Kelsen/Hely: 5 (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026 + OODC/Mais-Valerá/Mais-Valia v1.1 + TDC/LICIN 2.0 16/09)
+  - Lúcio/Oscar (Arquitetura): **3** (NBR 9050:2020 acessibilidade + Partido/Conforto Térmico/Tipologias 16/09 + Proteção Solar Externa Dispositivos 17/09) ← sobe de 2 para 3
 - **Achados Vitruvius:** nenhum achado novo esta rodada. Total acumulado: 8.
 - **Achado de Monitoramento:** LC 301/2026 (09/07/2026 — Municipal RJ) identificada nos resultados de busca. Não investigada ainda — próxima rodada de Kelsen deve incluir uma busca específica sobre conteúdo e impacto para LICIN/OODC.
 - **Próxima Prioridade:** (1) Tenreiro: iluminação/acabamentos RJ em profundidade (1 Skill com parâmetros numéricos reais); (2) Glaziou: espécies nativas RJ + SMAC (3ª Skill); (3) LC 301/2026 — verificar conteúdo (Kelsen); (4) Verificar isenção OODC 2029 via fonte primária (Art. 106 LC 270/2024) — pendência aberta na Skill TDC/LICIN 2.0; (5) Painel sexta 19/09
 
 ---
 
-## Skills Criadas (Rodada 18/09/2026)
-
-| Data | Título | Tipo | Para Quem | Status |
-|------|--------|------|-----------|--------|
-| 18/09 | Iluminação de Interiores Residencial — NBR ISO/CIE 8995-1: Parâmetros de Lux, Temperatura de Cor e IRC por Cômodo | Inteligência (Trilha A) | Tenreiro (Interiores, principal) — cross: Landell, Oscar | proposta — aguarda validação Cardozo |
-| 18/09 | Remoção de Árvores em Área Particular no RJ — FPJ/SMAC: Autorização, Documentação e Medida Compensatória | Inteligência (Trilha A) | Glaziou (Paisagismo, principal) — cross: Saturnino, Baumgart | proposta — aguarda validação Cardozo |
-| 18/09 | LC 301/2026 — AEIU Praça Onze Maravilha e Janela de Desconto LICIN até 01/12/2026 | Inteligência (Trilha A) | Kelsen/Hely (Legal, principal) — cross: Lúcio/Oscar | proposta — aguarda validação Kelsen |
-
----
-
-**Atualização:** 18/09/2026  
-**Próxima Atualização:** 19/09/2026 (ou próxima rodada útil)
+**Próxima Atualização:** 18/09/2026 (Quinta — Seg-Qui, passos 1-5) ou conforme agenda
