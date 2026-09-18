@@ -4,6 +4,29 @@ Registro de tudo que o Wallenberg decidiu e executou **sem aprovação prévia**
 
 ---
 
+### [2026-09-18, ~12:00] Villaça — promovido Formação → Shadow — APROVADO AO VIVO, não autônomo
+
+**Contexto:** No mesmo dia da criação (18/09/2026, ver entrada abaixo), Villaça executou 4 versões do Pré-Estudo de Viabilidade do Caso Sombra 001 (ensaio, `01_CEO/Casos_TESTE/Recreio/ensaio_fluxo_completo_001/pre_estudo_viabilidade_villaca_001.md`), cada uma corrigindo uma fraqueza real apontada por Claudemberg ou pelo próprio Villaça:
+- **v1:** primeira entrega, 1 padrão de custo (CUB proxy R8-N), poucos comparáveis de revenda. Custo da OODC corretamente marcado como não calculável.
+- **v2:** ampliação para 3 padrões (baixo/médio/alto) e mais fontes de revenda, a pedido de Claudemberg. Achou sozinho uma coincidência suspeita entre 2 valores de CUB (R1-Baixo = R8-Normal) e sinalizou como possível erro de fonte agregadora.
+- **v3:** Claudemberg forneceu o PDF oficial da tabela CUB-RJ (Sinduscon-Rio, agosto/2026) — Villaça confirmou pessoalmente que a coincidência era real, não erro, e corrigiu a autoavaliação: sinalizar a suspeita foi certo, o que faltou foi ir até a fonte primária antes de concluir "erro".
+- **v4:** correção de método nos comparáveis de revenda (filtro por tipo unifamiliar + padrão + metragem aproximada, em vez de extrapolação linear de média de bairro), a pedido de Claudemberg. Resultado inverteu a própria hipótese de Villaça (esperava R$/m² menor em casas grandes; achou o oposto, com comparáveis reais em Barra da Tijuca).
+
+**Auditoria de Wallenberg em cada rodada:** verificado isolamento (nenhum arquivo de outro Gestor tocado), conferida matemática das tabelas finais, e confirmado que as fontes citadas são reais (URLs, PDF oficial), não inventadas.
+
+**Decisão (não autônoma — aprovada ao vivo por Claudemberg):** promover Formação → Shadow. Critério aplicado: o nível Shadow exige apenas "proponho ações, Wallenberg aprova antes de executar" — isso já foi demonstrado 4 vezes. Não avança para Assisted ainda — falta testar coordenação de equipe (Villaça executou tudo sozinho, sem Agentes formalizados) e volume (só 1 caso, ainda que em 4 versões).
+
+**O que foi atualizado:**
+- `.claude/agents/villaca.md` — tabela de nível, Shadow marcado.
+- `01_CEO/Gestores/Villaça (Viabilidade)/_estado_villaca.md` — nível, pendências reorganizadas.
+- `01_CEO/Gestores/Villaça (Viabilidade)/gestor_viabilidade_proposta.html` — badges de status, seção de capacidade e pendências atualizadas.
+
+**Como desfazer:** reverter os 3 arquivos acima para o estado anterior (nível Formação) via git.
+
+**Próxima ação:** Villaça segue sem equipe formalizada (Regra de Cascata, decisão dele). Próximo Pré-Estudo real deve testar delegação de verdade, não execução solo.
+
+---
+
 ### [2026-09-18, 10:15-11:30] Drenagem Contínua v2.4, rodada 12ª (sexta) — 3 SKILLS NOVAS AVALIADAS (PENDENTES)
 
 **Contexto:** Rodada automática sob tarefa agendada `wallenberg-drenagem-continua-local` (10:15, sex). Verificação de execução da Rotina Diária Skills (18/09, ~09:00).

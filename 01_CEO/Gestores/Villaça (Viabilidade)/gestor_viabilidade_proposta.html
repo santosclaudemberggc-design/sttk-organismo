@@ -87,6 +87,7 @@
   .pill.build { color: var(--blueprint); background: var(--blueprint-wash); }
   .pill.pending { color: var(--ochre); background: var(--ochre-wash); }
   .pill.formacao { color: var(--blueprint); background: var(--blueprint-wash); }
+  .pill.shadow { color: var(--good); background: color-mix(in srgb, var(--good) 12%, transparent); }
 
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1rem 0; }
   .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; margin: 1rem 0; }
@@ -133,7 +134,7 @@
       <p class="subtitle">Gestor Viabilidade — <strong>Pré-Estudo de Viabilidade Financeira</strong>: compara cenário CAB (básico) vs. cenário CAM (com Outorga Onerosa), entregando custo de obra e valor de revenda estimados para cada um, antes da Arquitetura começar a desenhar.</p>
     </div>
     <div class="meta">
-      <div><strong>Status</strong> <span class="pill formacao">Formação — criado 18/09/2026</span></div>
+      <div><strong>Status</strong> <span class="pill shadow">Shadow — promovido 18/09/2026</span></div>
       <div><strong>Origem</strong> Ensaio Ponta a Ponta (Caso Sombra 001)</div>
       <div><strong>Preparado por</strong> Wallenberg (função 02, Orquestrador)</div>
       <div><strong>Proposto por</strong> Claudemberg, ao vivo — 18/09/2026</div>
@@ -182,7 +183,7 @@
         <tr><td>Coordena</td><td>Equipe própria — a nomear por ele mesmo, quando puder fazer isso (Regra de Cascata, mesma regra do Lelé)</td></tr>
         <tr><td>Recebe de</td><td>Kelsen (Legal) — CAB, CAM, custo estimado da OODC</td></tr>
         <tr><td>Entrega para</td><td>Cliente (decisão de escopo) — e, se o cliente optar pelo CAM, informa Lúcio para dimensionar o Anteprojeto</td></tr>
-        <tr><td>Nível atual</td><td><span class="pill formacao">Formação</span> — criado 18/09/2026</td></tr>
+        <tr><td>Nível atual</td><td><span class="pill shadow">Shadow</span> — promovido 18/09/2026, após 4 versões do Pré-Estudo de Viabilidade (Caso Sombra 001) testadas e corrigidas no mesmo dia</td></tr>
         <tr><td>Princípios centrais</td><td><span class="princ">3</span> Qualidade antes de velocidade · <span class="princ">8</span> Rastreabilidade · <span class="princ">18</span> Ética e conformidade (nunca prometer valor de venda como garantia)</td></tr>
       </table>
     </section>
@@ -226,16 +227,17 @@
 
     <section id="capacidade">
       <div class="section-head"><span class="section-num">04</span><h2>Capacidade atual</h2></div>
-      <p class="lede">Em Formação, Villaça ainda não executou nenhum caso real. Primeiro teste: o Pré-Estudo de Viabilidade dentro do Ensaio Ponta a Ponta (Caso Sombra 001, fictício).</p>
+      <p class="lede">Promovido para Shadow em 18/09/2026, depois de 4 versões do Pré-Estudo de Viabilidade dentro do Ensaio Ponta a Ponta (Caso Sombra 001, fictício), cada uma corrigindo uma fraqueza real encontrada na anterior.</p>
       <table>
         <tr><th>Frente</th><th>Situação</th></tr>
-        <tr><td>Custo de obra</td><td><span class="pill pending">coordena — Agente a nomear por Villaça</span></td></tr>
-        <tr><td>Valor de mercado/comparáveis</td><td><span class="pill pending">coordena — Agente a nomear por Villaça</span></td></tr>
-        <tr><td>Comparação CAB x CAM</td><td><span class="pill pending">a testar no ensaio, com Villaça atuando diretamente enquanto não tem equipe</span></td></tr>
+        <tr><td>Custo de obra</td><td><span class="pill ready">testado — 3 padrões (baixo/médio/alto) confirmados em fonte primária oficial (CUB-RJ/Sinduscon)</span></td></tr>
+        <tr><td>Valor de mercado/comparáveis</td><td><span class="pill build">testado com ressalva — comparáveis reais filtrados por tipo+padrão+metragem; padrão médio do cenário CAM ainda sem comparável real no tamanho-alvo</span></td></tr>
+        <tr><td>Comparação CAB x CAM</td><td><span class="pill ready">executado por Villaça sozinho (sem equipe), 4 vezes, com autocorreção a cada rodada</span></td></tr>
+        <tr><td>Coordenação de equipe</td><td><span class="pill pending">ainda não testada — Villaça não tem Agentes formalizados</span></td></tr>
       </table>
       <div class="rule-box blue">
         <p class="label">Capacidade declarada só depois de caso real testado</p>
-        <p>Mesmo princípio que guiou Hely, Lelé e os Agentes de Cardozo: capacidade real só é declarada depois de execução real validada por Wallenberg (ou, neste caso, também por Claudemberg como avaliador técnico). Não há atalho.</p>
+        <p>Mesmo princípio que guiou Hely, Lelé e os Agentes de Cardozo: capacidade real só é declarada depois de execução real validada por Wallenberg (ou, neste caso, também por Claudemberg como avaliador técnico). O salto Formação→Shadow foi sustentado por 4 execuções reais auditadas — não há atalho, mas também não há mais motivo para segurar em Formação.</p>
       </div>
     </section>
 
@@ -268,9 +270,11 @@
       <div class="open-item"><span class="dot ok">✓</span><p><strong>Escopo:</strong> Pré-Estudo de Viabilidade (CAB vs. CAM), definido por Claudemberg em 18/09/2026.</p></div>
       <div class="open-item"><span class="dot ok">✓</span><p><strong>Hierarquia:</strong> Gestor peer a Kelsen, único pré-requisito é Kelsen existir — já existe.</p></div>
       <div class="open-item"><span class="dot">→</span><p><strong>Equipe:</strong> Villaça define por conta própria quando tiver condição real. Não é para agora — corrigido em 18/09/2026 depois de nomeação prematura por Wallenberg.</p></div>
-      <div class="open-item"><span class="dot">→</span><p><strong>Primeiro caso:</strong> Pré-Estudo de Viabilidade dentro do Ensaio Ponta a Ponta (Caso Sombra 001, fictício) — ainda não executado.</p></div>
-      <div class="open-item"><span class="dot">→</span><p><strong>Exame Formação → Shadow:</strong> a ser aplicado por Wallenberg depois do primeiro caso (real ou de ensaio).</p></div>
-      <div class="open-item"><span class="dot">→</span><p><strong>Fonte de benchmark de custo/m² e comparáveis de mercado:</strong> ainda não estabelecida — precisa ser real e citável.</p></div>
+      <div class="open-item"><span class="dot ok">✓</span><p><strong>Primeiro caso:</strong> Pré-Estudo de Viabilidade dentro do Ensaio Ponta a Ponta (Caso Sombra 001, fictício) — executado 4 vezes (v1-v4), cada uma corrigindo a anterior.</p></div>
+      <div class="open-item"><span class="dot ok">✓</span><p><strong>Exame Formação → Shadow:</strong> aprovado por Claudemberg em 18/09/2026.</p></div>
+      <div class="open-item"><span class="dot ok">✓</span><p><strong>Fonte de benchmark de custo/m²:</strong> estabelecida — CUB-RJ/Sinduscon-Rio, fonte primária oficial, 3 padrões confirmados.</p></div>
+      <div class="open-item"><span class="dot">→</span><p><strong>Comparáveis de mercado, padrão MÉDIO do cenário CAM:</strong> ainda sem comparável real no tamanho-alvo (650-850m²) — usa interpolação com ressalva.</p></div>
+      <div class="open-item"><span class="dot">→</span><p><strong>Exame Shadow → Assisted:</strong> a ser aplicado por Wallenberg/Claudemberg depois de mais execuções, idealmente já com equipe delegando de verdade.</p></div>
     </section>
 
   </main>
