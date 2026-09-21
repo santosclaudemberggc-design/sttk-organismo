@@ -230,7 +230,7 @@
 |------|--------|------|-----------|--------|
 | 21/09 | COE RJ — Ventilação Natural, Iluminação e Pé-Direito em Edificações Residenciais (LC 198/2019) | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart, Landell | ✅ **ativa-com-ressalva** (Lúcio 21/09 — R5: H/4 verificar multi-pav; R6: nota banheiro; R7: H real inclui laje; instalada em `.claude/skills/coe-lc198-2019-ventilacao-iluminacao-pe-direito-residencial-rj/`) |
 | 21/09 | Fundações em Solos Moles e Lençol Freático Alto — Barra da Tijuca, Recreio e Jacarepaguá | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Glaziou | ✅ **ativa-com-ressalva** (Cardozo 21/09 — R5 ALTA: verificar NBR 6484 edição; R6 ALTA: 60-120 kN sem método declarado; instalada em `.claude/skills/fundacoes-solos-moles-lencol-freatico-barra-recreio/`) |
-| 21/09 | Base Legal para Licenciamento LICIN 2.0 na Barra da Tijuca e Recreio — Decreto 3046/81 (ZE-5) e LC 270/2024 | Inteligência (Trilha A) | Kelsen/Hely (Legal, principal) — cross: Oscar (Arquitetura) | proposta-com-ressalvas (Kelsen 21/09 — R2: LMS adicionada; R3: ZPP vs ZRM1-B verificar; R4: Art.106 cruzar TDC/LICIN; R5: checklist item OODC corrigido — aguarda ratificação Claudemberg) |
+| 21/09 | Base Legal para Licenciamento LICIN 2.0 na Barra da Tijuca e Recreio — Decreto 3046/81 (ZE-5) e LC 270/2024 | Inteligência (Trilha A) | Kelsen/Hely (Legal, principal) — cross: Oscar (Arquitetura) | ✅ **ativa-com-ressalva** (Kelsen 21/09 + Claudemberg ratificou 21/09 — R1 CRÍTICA: Art.106 OODC sem confirmar; R5: LMS adicionada; R8: checklist OODC corrigido; instalada em `.claude/skills/decreto3046-81-lc270-2024-licin-barra-recreio/`) |
 
 ---
 

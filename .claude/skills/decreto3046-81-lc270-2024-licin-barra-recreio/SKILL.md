@@ -153,8 +153,6 @@ os parâmetros de referência são os do Decreto 3046/81
 
 **R8 CRÍTICA — Checklist item OODC corrigido (Kelsen, 21/09):** o checklist original instruía "Consultar se o lote está em área de OODC disponível" sem alertar sobre o Art. 106 em aberto — contradição interna com a R1. Corrigido nesta versão para condicionar a consulta à confirmação do Art. 106.
 
----
-
 **R9 — Ratificada por Claudemberg (21/09/2026):** status promovido de `proposta-com-ressalvas` para `ativa-com-ressalva` por Claudemberg em sessão manual. Todas as ressalvas acima permanecem ativas — uso pelo Hely condicionado às ressalvas R1, R5 e R8 especialmente.
 
 ---
