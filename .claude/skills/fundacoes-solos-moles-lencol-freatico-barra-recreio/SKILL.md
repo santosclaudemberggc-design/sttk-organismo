@@ -1,0 +1,156 @@
+---
+name: fundacoes-solos-moles-lencol-freatico-barra-recreio
+description: "Critérios de projeto de fundações em solos moles e com lençol freático alto — condicionantes geotécnicos da Barra da Tijuca, Recreio dos Bandeirantes e Jacarepaguá: SPT, tipos de estaca e soluções recomendadas."
+version: "1.0"
+status: ativa-com-ressalva
+created: 2026-09-21
+author: Rotina Diária Skills v3.2
+gestor_validador: cardozo
+agente_principal: baumgart
+cross_disciplina:
+  - saturnino
+  - glaziou
+fonte_primaria_lida: "não — dados de fontes técnicas secundárias verificadas (AECweb, APL Engenharia, USF, blog.apl.eng.br)"
+metadata:
+  tipo: Inteligência (Trilha A)
+  norma_base: "NBR 6122:2019+Em.1/2022 (Fundações) + NBR 6484/2020 (SPT)"
+  zona_geografica: "Barra da Tijuca, Recreio dos Bandeirantes, Jacarepaguá — Rio de Janeiro"
+  tags:
+    - fundacoes-profundas
+    - solos-moles
+    - lencol-freatico
+    - estaca-helice-continua
+    - barra-tijuca
+    - recreio
+    - spt
+    - baumgart
+---
+
+# Fundações em Solos Moles e Lençol Freático Alto
+## Barra da Tijuca, Recreio dos Bandeirantes e Jacarepaguá — RJ
+
+---
+
+## POR QUE ESTA SKILL
+
+A Barra da Tijuca, o Recreio dos Bandeirantes e a Baixada de Jacarepaguá têm perfil geotécnico distinto do restante da cidade: **solo mole**, **aterro sobre banhados** e **lençol freático muito próximo ou na superfície** em grande parte dos lotes. Projetar fundação para esses terrenos como se fosse um lote no Flamengo ou na Tijuca é erro técnico comum que leva a recalques diferenciais, erosão de base e falha de fundação. Esta Skill reúne o diagnóstico e as soluções recomendadas.
+
+---
+
+## 1. CONDICIONANTES GEOTÉCNICOS DA REGIÃO
+
+### Perfil típico do solo
+
+| Camada | Característica | Implicação |
+|---|---|---|
+| 0–3 m | Aterro antrópico (anos 1970–1980) ou argila orgânica mole | SPT N ≤ 5, baixa capacidade de carga |
+| 3–10 m | Areia fina fofa ou argila mole a média | SPT N 3–10, compressível |
+| 10–20 m | Argila a areia de densidade média | SPT N 10–20 |
+| > 20 m | Areia densa ou rocha alterada | SPT N > 20, capacidade de carga viável |
+
+**Lençol freático:** frequentemente entre 0,5 m e 2,0 m de profundidade, especialmente em lotes próximos às lagoas (Lagoa de Jacarepaguá, Lagoa da Tijuca, Lagoa de Marapendi).
+
+### Consequência para projeto
+
+- **Solo raso incompetente** → fundação direta (sapata, radier em solo) é inviável na maioria dos casos
+- **Lençol freático alto** → perfuração seca (tradagem) não funciona para profundidades > lençol
+- **Aterro irregular** → sondagem SPT **obrigatória antes de qualquer dimensionamento** (NBR 6122:2019, item 6.3 — mínimo 1 furo por 200 m² de área construída, mínimo 3 furos)
+
+---
+
+## 2. TIPOS DE SONDAGEM RECOMENDADA
+
+### SPT (Standard Penetration Test) — NBR 6484/2020
+
+- Fornece perfil estratigráfico + resistência N por metro
+- **Identifica nível do lençol freático** quando interceptado
+- Mínimo de furos por NBR 6122 — em Barra/Recreio, ampliar para 1 furo a cada 100–150 m² (solos heterogêneos por aterro)
+- Solicitar análise granulométrica nas amostras de camadas moles (argila × silte × areia) para aferir coesão
+
+**Atenção:** em lotes que eram banhado ou lagoa até décadas recentes, a sondagem pode revelar turfas (matéria orgânica decomposta) com N = 0 — camada que exige tratamento especial ou transposição total.
+
+---
+
+## 3. FUNDAÇÕES RECOMENDADAS POR CONDIÇÃO
+
+### 3.1 Solo mole + lençol freático próximo à superfície (situação mais comum na Barra/Recreio)
+
+| Solução | Quando usar | Vantagem | Limitação |
+|---|---|---|---|
+| **Estaca hélice contínua** | Qualquer profundidade com água | Atravessa areia fofa e lençol freático sem desmoronar; concreto bombeado pelo eixo da broca antes da extração | Barulho e vibração limitados; equipe especializada |
+| **Estaca pré-moldada de concreto** | Solo não coesivo + lençol freático | Controle de qualidade da fábrica; boa para grandes cargas pontuais | Cravação por percussão pode ser restrita em área residencial |
+| **Estaca escavada com camisa metálica** | Quando lençol freático pode invadir o furo | Camisa avança durante escavação e impede colapso | Custo maior; deixar camisa ou retirar após concretagem |
+| **Radier rígido** | Solo superficial razoável (N ≥ 5–8) + carga bem distribuída | Simples, sem equipamento de percussão | Requer solo superficial minimamente competente |
+
+### 3.2 Solo com turfa ou matéria orgânica (N ≈ 0)
+
+- **Pilotar sem apoio nesta camada** — a estaca deve transpor até camada competente (N ≥ 10–15 para carga leve; N ≥ 20+ para carga alta)
+- Turfa não pode servir como solo de apoio, mesmo para radier
+- Verificar recalque diferencial no tempo — turfa continua adensando mesmo após a obra
+
+### 3.3 Carga leve (casas térreas, sobrados)
+
+- Estaca hélice contínua Ø 30 cm ou Ø 40 cm com profundidade de 12–20 m é a solução padrão na Barra/Recreio
+- Capacidade de carga típica: 60–120 kN/estaca (hélice Ø 30–40 cm em areia média)
+
+---
+
+## 4. ERROS MAIS COMUNS NA REGIÃO
+
+1. **Usar sapata em aterro:** o aterro original da Barra (anos 1970–1980) não tem compactação controlada. SPT baixo (N < 5). Sapata recalca.
+
+2. **Jogar concreto na água:** em furo cheio de água, o concreto convencional fica contaminado e perde resistência. Solução: hélice contínua (concreto bombeado pela broca) ou camisa metálica + concreto autoadensável.
+
+3. **Não considerar a turfa:** laudos geotécnicos antigos podem não ter identificado camadas orgânicas — pedir laudo novo se o lote era área alagada até recentemente.
+
+4. **Dimensionar pelo valor médio de N:** em solos heterogêneos, um furo com N médio bom pode mascarar uma camada mole. Usar o critério da camada mais fraca no trecho de apoio.
+
+5. **Desconsiderar recalques futuros:** solos moles de Jacarepaguá/Recreio têm recalques por adensamento que podem levar anos. Prever juntas de dilatação e não apoiar estrutura em fundação diferente numa mesma planta.
+
+---
+
+## 5. PARCERIA COM OUTROS AGENTES
+
+- **Saturnino:** lençol freático alto impacta sistema de drenagem de águas servidas. Verificar cota de saída do esgoto — pode ser necessária elevatória ou rebaixamento do lençol durante a obra.
+- **Glaziou:** jardins de chuva e jardins de infiltração na Barra/Recreio devem verificar se o lençol não está já saturado na cota de infiltração — paisagismo superficial pode acumular água se o subsolo estiver impermeável.
+- **NBR 6122:2019 + Em.1/2022 (Skill existente de Baumgart):** esta Skill é complemento geográfico da Skill de fundações geral. Aqui o foco é o solo específico da Barra/Recreio, não os cálculos gerais da norma.
+
+---
+
+## 6. O QUE FAZER ANTES DE QUALQUER LANÇAMENTO ESTRUTURAL
+
+**Checklist mínimo para projetos na Barra/Recreio:**
+
+- [ ] Contratar sondagem SPT (mínimo 3 furos, preferencialmente 1/100–150 m²)
+- [ ] Verificar se o histórico do lote inclui aterro, banhado ou lagoa (mapa histórico ou vizinhança)
+- [ ] Identificar nível do lençol freático médio anual (pode ser diferente da profundidade no dia da sondagem)
+- [ ] Checar se há camada de turfa (N ≈ 0 com cores escuras/cheiro orgânico na amostra)
+- [ ] Cotizar hélice contínua como opção padrão e escavada com camisa como alternativa
+- [ ] Comunicar a Kelsen se SPT revelar condição que altere viabilidade da obra (ART de fundações pode mudar custo substancialmente)
+
+---
+
+## RESSALVAS
+
+**R1 (CRÍTICA) — Fonte primária:** dados de SPT médio e profundidade de camadas competentes NÃO foram obtidos de laudo geotécnico real da Barra/Recreio — são valores típicos de referência da literatura técnica (AECweb, APL Engenharia). Baumgart DEVE solicitar sondagem real antes de qualquer dimensionamento.
+
+**R2 — Variabilidade por lote:** o perfil geotécnico varia muito dentro do mesmo bairro. Um lote a 200 m do outro pode ter situação completamente diferente (aterro antigo vs. solo natural).
+
+**R3 — Norma vigente:** NBR 6122 vigente é a edição de 2019 + Emenda 1/2022 (cimento: 350 kg/m³ mín.). Verificar se há nova emenda antes de usar.
+
+**R4 — Não substituir Skill NBR 6122:** esta Skill complementa, não substitui, a Skill de fundações NBR 6122:2019 (07/09/2026) que trata de dimensionamento. Aqui o foco é o condicionante geográfico da Barra/Recreio.
+
+**R5 ALTA — Verificar existência da NBR 6484:2020 (Cardozo, 21/09):** a Skill cita "NBR 6484/2020" para SPT. A edição anterior consolidada era NBR 6484:2001. Se a versão 2020 não existir como publicação ABNT vigente, a citação normativa está errada — erro que invalida a base normativa em memorial de cálculo. Baumgart deve confirmar a edição atual antes de qualquer citação formal.
+
+**R6 ALTA — Capacidade de carga 60-120 kN/estaca sem método declarado (Cardozo, 21/09):** os valores de capacidade de carga citados (60–120 kN para hélice Ø 30–40 cm em areia média) não especificam o método de cálculo utilizado (Aoki-Velloso ou Décourt-Quaresma produzem resultados distintos para o mesmo perfil SPT). Baumgart não pode usar esses valores como referência em memorial de dimensionamento real sem declarar o método — são apenas orientação de ordem de grandeza para estimativa preliminar de viabilidade, não valores de projeto.
+
+---
+
+## FONTES VERIFICADAS
+
+- AECweb — "Solos moles pedem fundações profundas: conheça as principais alternativas" (secundária ✓)
+- APL Engenharia — "Lençol Freático: Como a Água no Solo Pode Comprometer Fundações" (secundária ✓)
+- APL Engenharia — "Conheça os principais tipos de estacas para fundações" (secundária ✓)
+- GF Engenharia SP — "Sondagem de simples reconhecimento do solo com SPT" (secundária ✓)
+- TCC UENF 2026 — "Projeto de fundações profundas em solo mole" — PDF binário, não lido na íntegra (mencionado, não citado como fonte de valores)
+- **NBR 6484/2020 e NBR 6122:2019+Em.1/2022** — normas de referência (não lidas na íntegra — ABNT pagas)

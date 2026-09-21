@@ -39,7 +39,7 @@
 - **Skills Propostas (acumulado setembro):** 15
 - **Skills Testadas:** 0
 - **Cobertura Trilha A por Agente (desde agosto):**
-  - Baumgart: 7 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas + NBR 8681:2025 segurança + Fundações solos moles Barra/Recreio 21/09)
+  - Baumgart: 6 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas + NBR 8681:2025 segurança)
   - Saturnino: 4 (NBR 5626+8160 + NBR 9575:2024 cross + NBR 10844:1989 águas pluviais + NBR 17076:2024 fossa/filtro/sumidouro)
   - Landell: 3 (NBR 5410 + COSCIP/CBMERJ + NBR 5419:2026 SPDA)
   - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
@@ -192,11 +192,11 @@
 ## Estatísticas (Atualizado 17/09/2026)
 
 - **Skills Propostas (semana 07-12/09):** 4 (Trilha A: 4, Trilha B: 0)
-- **Skills Propostas (semana 14/09+):** 14 (Trilha A: 14, Trilha B: 0) ← atualizado 21/09
-- **Skills Propostas (acumulado setembro):** 25 ← atualizado 21/09
+- **Skills Propostas (semana 14/09+):** 11 (Trilha A: 11, Trilha B: 0) ← atualizado 18/09
+- **Skills Propostas (acumulado setembro):** 22 ← atualizado 18/09
 - **Skills Testadas:** 0
 - **Cobertura Trilha A por Agente (desde agosto):**
-  - Baumgart: 7 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas + NBR 8681:2025 segurança + Fundações solos moles Barra/Recreio 21/09)
+  - Baumgart: 6 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas + NBR 8681:2025 segurança)
   - Saturnino: 4 (NBR 5626+8160 + NBR 9575:2024 cross + NBR 10844:1989 águas pluviais + NBR 17076:2024 fossa/filtro/sumidouro)
   - Landell: 3 (NBR 5410 + COSCIP/CBMERJ + NBR 5419:2026 SPDA)
   - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
@@ -204,8 +204,8 @@
   - **Mindlin: 2** (NBR 6492:2021 + Memorial Descritivo/Apresentação Técnica 16/09)
   - **Glaziou: 3** (NBR 16636-4 + NBR 15220-3:2024 cross + Remoção SMAC/FPJ 18/09) ← sobe de 2 para 3
   - **Tenreiro: 3** (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross + Iluminação NBR ISO/CIE 8995-1 18/09) ← sobe de 2 para 3
-  - Kelsen/Hely: **7** (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026 + OODC/Mais-Valerá/Mais-Valia v1.1 + TDC/LICIN 2.0 16/09 + LC 301/2026 AEIU 18/09 + Decreto 3046/81+LC270/2024 Barra/Recreio 21/09) ← sobe de 6 para 7
-  - Lúcio/Oscar (Arquitetura): **4** (NBR 9050:2020 acessibilidade + Partido/Conforto Térmico/Tipologias 16/09 + Proteção Solar Externa Dispositivos 17/09 + COE LC 198/2019 ventilação/iluminação 21/09) ← sobe de 3 para 4
+  - Kelsen/Hely: **6** (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026 + OODC/Mais-Valerá/Mais-Valia v1.1 + TDC/LICIN 2.0 16/09 + LC 301/2026 AEIU 18/09) ← sobe de 5 para 6
+  - Lúcio/Oscar (Arquitetura): **3** (NBR 9050:2020 acessibilidade + Partido/Conforto Térmico/Tipologias 16/09 + Proteção Solar Externa Dispositivos 17/09)
 - **Achados Vitruvius:** nenhum achado novo esta rodada. Total acumulado: 8.
 - **Achado de Monitoramento:** LC 301/2026 (09/07/2026 — Municipal RJ) identificada nos resultados de busca. Não investigada ainda — próxima rodada de Kelsen deve incluir uma busca específica sobre conteúdo e impacto para LICIN/OODC.
 - **Próxima Prioridade:** (1) Tenreiro: iluminação/acabamentos RJ em profundidade (1 Skill com parâmetros numéricos reais); (2) Glaziou: espécies nativas RJ + SMAC (3ª Skill); (3) LC 301/2026 — verificar conteúdo (Kelsen); (4) Verificar isenção OODC 2029 via fonte primária (Art. 106 LC 270/2024) — pendência aberta na Skill TDC/LICIN 2.0; (5) Painel sexta 19/09
@@ -222,17 +222,5 @@
 
 ---
 
----
-
-## Skills Criadas (Rodada 21/09/2026)
-
-| Data | Título | Tipo | Para Quem | Status |
-|------|--------|------|-----------|--------|
-| 21/09 | COE RJ — Ventilação Natural, Iluminação e Pé-Direito em Edificações Residenciais (LC 198/2019) | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart, Landell | ✅ **ativa-com-ressalva** (Lúcio 21/09 — R5: H/4 verificar multi-pav; R6: nota banheiro; R7: H real inclui laje; instalada em `.claude/skills/coe-lc198-2019-ventilacao-iluminacao-pe-direito-residencial-rj/`) |
-| 21/09 | Fundações em Solos Moles e Lençol Freático Alto — Barra da Tijuca, Recreio e Jacarepaguá | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Glaziou | ✅ **ativa-com-ressalva** (Cardozo 21/09 — R5 ALTA: verificar NBR 6484 edição; R6 ALTA: 60-120 kN sem método declarado; instalada em `.claude/skills/fundacoes-solos-moles-lencol-freatico-barra-recreio/`) |
-| 21/09 | Base Legal para Licenciamento LICIN 2.0 na Barra da Tijuca e Recreio — Decreto 3046/81 (ZE-5) e LC 270/2024 | Inteligência (Trilha A) | Kelsen/Hely (Legal, principal) — cross: Oscar (Arquitetura) | proposta-com-ressalvas (Kelsen 21/09 — R2: LMS adicionada; R3: ZPP vs ZRM1-B verificar; R4: Art.106 cruzar TDC/LICIN; R5: checklist item OODC corrigido — aguarda ratificação Claudemberg) |
-
----
-
-**Atualização:** 21/09/2026  
-**Próxima Atualização:** 22/09/2026 (ou próxima rodada útil)
+**Atualização:** 18/09/2026  
+**Próxima Atualização:** 19/09/2026 (ou próxima rodada útil)
