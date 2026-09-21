@@ -29,15 +29,18 @@ metadata:
 - [x] **Skills criadas:** 3 (Lúcio COE LC 198/2019 ventilação/iluminação/pé-direito + Baumgart fundações solos moles Barra/Recreio + Kelsen Decreto 3046/81 + LC 270/2024 LICIN Barra/Recreio)
 - [x] **Skills ativadas:** 2 (Lúcio ativa-com-ressalva + Baumgart/Cardozo ativa-com-ressalva)
 - [x] **Skills instaladas:** `.claude/skills/coe-lc198-2019-ventilacao-iluminacao-pe-direito-residencial-rj/SKILL.md` + `.claude/skills/fundacoes-solos-moles-lencol-freatico-barra-recreio/SKILL.md`
-- [x] **Kelsen Decreto 3046/81:** status `proposta-com-ressalvas` — 4 correções aplicadas (LMS adicionada ao checklist; checklist OODC reescrito para condicionar confirmação ao Art. 106). Aguarda ratificação Claudemberg na Semanal antes de instalar em `.claude/skills/`
+- [x] **Kelsen Decreto 3046/81:** **RATIFICADA por Claudemberg 21/09** — status `ativa-com-ressalva`. Instalada em `.claude/skills/decreto3046-81-lc270-2024-licin-barra-recreio/SKILL.md`. Ressalvas R1/R5/R8 críticas permanecem ativas.
 - [x] **Feed atualizado:** 5 entradas (Lúcio proposta + Baumgart proposta + Kelsen proposta + Lúcio ativação + Baumgart ativação)
 - [x] **Índice Setembro:** 25 Skills acumuladas (semana 14/09+ = 14; Baumgart 7; Kelsen/Hely 7; Lúcio/Oscar 4)
 - [x] **Commit local:** feito ao finalizar esta rodada
 - [x] **Foco geográfico:** Barra da Tijuca, Recreio dos Bandeirantes (Zona Oeste RJ) — Lúcio com fonte primária LC 198/2019 lida; Baumgart com fontes secundárias; Kelsen com fonte parcial LC 270/2024 (truncada Art. 80)
+- [x] **Vídeos /watch analisados:** 2 (Lúcio COE vãos iluminação + Kelsen LICIN 2.0 processo digital). Achados: vão RJ = 1/8 área (não 1/7); RIU é passo zero LICIN; processos 100% digitais desde jun/2021; orla = restrição sombreamento na faixa de areia/ciclovia/calçadão que "poucos arquitetos sabem".
+- [x] **Passo 8 Trilha B executado e filtrado (21/09):** buscas GitHub rodaram para Kelsen, Lúcio e Cardozo (6 Agentes). Filtro Claudemberg aplicado: **todo projeto fica dentro do Revit** — ferramentas standalone (PyNite, CBE Clima, EasyEletric, PyFlo, open-garden-planner etc.) descartadas por não integrar com Revit. Sobrevivem apenas ferramentas de pesquisa pré-Revit de Kelsen (GEOINFO/SMUL + licenciamento-ambiental-automatizado).
+- [x] **Regra nova permanente — Trilha B Lúcio/Cardozo:** próximas rodadas buscam **Revit add-ins / plugins GitHub** (`.addin`, Dynamo scripts, Revit API) — não ferramentas standalone Python/web. Kelsen/Hely é exceção (pesquisa legal não passa pelo Revit).
 
 ### O QUE FICOU PENDENTE (Cuidado: não repita)
 
-- **Art. 106 LC 270/2024 (isenção OODC):** texto disponível só até Art. 80 via legisweb.com.br. Hely deve ler Art. 106 na íntegra via Diário Oficial ou balcão SMU. Bloqueia: instalação da Skill Kelsen 21/09 + Skill TDC/LICIN 2.0 (16/09) atualização final
+- **Art. 106 LC 270/2024 (isenção OODC):** texto disponível só até Art. 80 via legisweb.com.br. Hely deve ler Art. 106 na íntegra via Diário Oficial ou balcão SMU. Bloqueia: Skill TDC/LICIN 2.0 (16/09) atualização final
 - **NBR 6484 edição real:** Skill Baumgart cita "NBR 6484/2020" mas edição anterior consolidada era NBR 6484:2001. Baumgart confirma edição vigente antes de qualquer citação em memorial
 - **ZPP vs ZRM1-B nomenclatura:** caso Daniel-OB usa "ZRM1-B" do Decreto 3046/81; Skill Kelsen usa "ZPP" da LC 270/2024. Hely confirma via RIU se subzonas foram renomeadas no novo PD
 - **Kelsen LC 301/2026 lacunas (pendência 18/09):** desconto 30% AEIU não verificado em fonte primária; texto integral da lei não lido
@@ -47,7 +50,14 @@ metadata:
 
 - ❌ **COE LC 198/2019 ventilação/iluminação/pé-direito não duplique** — Skill Lúcio 21/09 (ativa-com-ressalva)
 - ❌ **Fundações solos moles Barra/Recreio não duplique** — Skill Baumgart 21/09 (ativa-com-ressalva)
-- ❌ **Decreto 3046/81 + LC 270/2024 LICIN Barra/Recreio não duplique** — Skill Kelsen 21/09 (proposta-com-ressalvas)
+- ❌ **Decreto 3046/81 + LC 270/2024 LICIN Barra/Recreio não duplique** — Skill Kelsen 21/09 (ativa-com-ressalva, ratificada)
+- ❌ **PyNite / anaStruct / StructPy não proponha** — estrutural Python standalone, não integra Revit (filtro Claudemberg 21/09)
+- ❌ **CBE Clima Tool não proponha** — análise climática web standalone, não integra Revit
+- ❌ **EasyEletric SaaS não proponha** — elétrico NBR 5410 standalone, não integra Revit
+- ❌ **PyFlo / pipedream não proponha** — hidráulica Python standalone, não integra Revit
+- ❌ **open-garden-planner não proponha** — paisagismo standalone, não integra Revit
+- ❌ **Blueprint3d / AI interior design agent não proponha** — interiores standalone, não integra Revit
+- ❌ **Trilha B Lúcio/Cardozo: nunca mais propor ferramenta standalone** — buscar apenas Revit add-ins/plugins/Dynamo scripts GitHub
 - ❌ Todos os itens de "NÃO FAZER" das rodadas anteriores continuam válidos
 
 ---
@@ -422,6 +432,6 @@ metadata:
 
 ---
 
-**Última atualização:** 21/09/2026 (segunda-feira — Diária Skills v3.2, Rodada Segunda completa — 3 Skills, 2 ativadas)  
+**Última atualização:** 21/09/2026 (segunda-feira — Diária Skills v3.2, Rodada COMPLETA + manual — 3 Skills ativas-com-ressalva, 2 vídeos /watch analisados, Passo 8 Trilha B executado + filtrado)  
 **Próxima leitura:** 22/09/2026 (terça-feira) — Diária Skills Seg-Qui  
 **Painel pendente para:** 25/09/2026 (quinta-feira ou sexta)
