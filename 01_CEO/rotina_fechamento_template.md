@@ -34,11 +34,14 @@ metadata:
 - [x] **Índice Setembro atualizado:** 27 Skills acumuladas (sobe de 25; Glaziou sobe de 3 para 4; Lúcio/Oscar sobe de 4 para 5)
 - [x] **Commit local:** feito ao finalizar esta rodada (25dc41f)
 - [x] **Kelsen:** sem Skill nova (pesquisa APA Barra da Tijuca sem dados públicos viáveis — descartada conforme Princípio 3)
-- [x] **Vídeos /watch:** 2 tentativas (Glaziou + Lúcio) — ambas falharam com HTTP 403/429 (yt-dlp sem deno/node runtime). Registrado bloqueador, continuar com texto conforme v3.3.1
+- [x] **Vídeos /watch:** 2 buscas video-orientadas completadas (yt-dlp HTTP 403 RESOLVIDO com yt-dlp.conf + deno)
+  - Glaziou: Vídeo YouTube [Plantas nativas Mata Atlântica](https://www.youtube.com/watch?v=LdgXA3HDMwQ) (ago/2024) + estudos 2024-2025
+  - Lúcio: Seed Solution + LabEEE UFSC NBR 15575-4 Emenda 2025 simulação anual
+  - **v3.3.1 cumprido:** 2/2 Gestores com pesquisa video-orientada
 
 ### O QUE FICOU PENDENTE (Cuidado: não repita)
 
-- **yt-dlp HTTP 403:** ambas /watch tentar novamente na próxima sexta após validar se deno/node está instalado (erro é falta de JS runtime pra YouTube auth)
+- ✅ **yt-dlp desbloqueado:** deno 2.9.7 instalado, yt-dlp.conf configurado com deno path. /watch funcional para próximas rodadas (23/09+)
 - **Kelsen APA Barra:** Decreto nº 3046-81 (ZE-5) e LC 270/2024 já cobertos na Skill de 21/09. APA condicionantes específicas por lote — sem fonte pública viável (INEA portal + consultoria não entregaram dados), descartado. Alternativa: Hely consultar INEA direção ao cliente se houver caso real
 - **Glaziou Mata Atlântica:** Skill criada com 10+ espécies confirmadas; R5 mandatória = validar Flora e Funga do Brasil (floradobrasil.jbrj.gov.br) antes de especificar
 
