@@ -192,8 +192,8 @@
 ## Estatísticas (Atualizado 17/09/2026)
 
 - **Skills Propostas (semana 07-12/09):** 4 (Trilha A: 4, Trilha B: 0)
-- **Skills Propostas (semana 14/09+):** 16 (Trilha A: 16, Trilha B: 0) ← atualizado 22/09
-- **Skills Propostas (acumulado setembro):** 27 ← atualizado 22/09
+- **Skills Propostas (semana 14/09+):** 14 (Trilha A: 14, Trilha B: 0) ← atualizado 21/09
+- **Skills Propostas (acumulado setembro):** 25 ← atualizado 21/09
 - **Skills Testadas:** 0
 - **Cobertura Trilha A por Agente (desde agosto):**
   - Baumgart: 7 (NBR 6118:2026 + NBR 15220-3:2024 cross + COSCIP/CBMERJ cross + NBR 6122:2022 fundações + NBR 6120:2019 cargas + NBR 8681:2025 segurança + Fundações solos moles Barra/Recreio 21/09)
@@ -202,10 +202,10 @@
   - Glaziou: 2 (NBR 16636-4 + NBR 15220-3:2024 cross)
   - Tenreiro: 2 (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross)
   - **Mindlin: 2** (NBR 6492:2021 + Memorial Descritivo/Apresentação Técnica 16/09)
-  - **Glaziou: 4** (NBR 16636-4 + NBR 15220-3:2024 cross + Remoção SMAC/FPJ 18/09 + Espécies nativas 22/09) ← sobe de 2 para 4
-  - **Tenreiro: 3** (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross + Iluminação NBR ISO/CIE 8995-1 18/09)
-  - Kelsen/Hely: **7** (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026 + OODC/Mais-Valerá/Mais-Valia v1.1 + TDC/LICIN 2.0 16/09 + LC 301/2026 AEIU 18/09 + Decreto 3046/81+LC270/2024 Barra/Recreio 21/09)
-  - Lúcio/Oscar (Arquitetura): **5** (NBR 9050:2020 acessibilidade + Partido/Conforto Térmico/Tipologias 16/09 + Proteção Solar Externa Dispositivos 17/09 + COE LC 198/2019 ventilação/iluminação 21/09 + NBR 15575-4 Emenda 2025 22/09) ← sobe de 4 para 5
+  - **Glaziou: 3** (NBR 16636-4 + NBR 15220-3:2024 cross + Remoção SMAC/FPJ 18/09) ← sobe de 2 para 3
+  - **Tenreiro: 3** (NBR 15575-4+8995-1 + NBR 15220-3:2024 cross + Iluminação NBR ISO/CIE 8995-1 18/09) ← sobe de 2 para 3
+  - Kelsen/Hely: **7** (CAU-RJ 009/2026 + LC 281/2025 + Resolução SMDU 10/2026 + OODC/Mais-Valerá/Mais-Valia v1.1 + TDC/LICIN 2.0 16/09 + LC 301/2026 AEIU 18/09 + Decreto 3046/81+LC270/2024 Barra/Recreio 21/09) ← sobe de 6 para 7
+  - Lúcio/Oscar (Arquitetura): **4** (NBR 9050:2020 acessibilidade + Partido/Conforto Térmico/Tipologias 16/09 + Proteção Solar Externa Dispositivos 17/09 + COE LC 198/2019 ventilação/iluminação 21/09) ← sobe de 3 para 4
 - **Achados Vitruvius:** nenhum achado novo esta rodada. Total acumulado: 8.
 - **Achado de Monitoramento:** LC 301/2026 (09/07/2026 — Municipal RJ) identificada nos resultados de busca. Não investigada ainda — próxima rodada de Kelsen deve incluir uma busca específica sobre conteúdo e impacto para LICIN/OODC.
 - **Próxima Prioridade:** (1) Tenreiro: iluminação/acabamentos RJ em profundidade (1 Skill com parâmetros numéricos reais); (2) Glaziou: espécies nativas RJ + SMAC (3ª Skill); (3) LC 301/2026 — verificar conteúdo (Kelsen); (4) Verificar isenção OODC 2029 via fonte primária (Art. 106 LC 270/2024) — pendência aberta na Skill TDC/LICIN 2.0; (5) Painel sexta 19/09
@@ -234,14 +234,5 @@
 
 ---
 
-## Skills Criadas (Rodada 22/09/2026)
-
-| Data | Título | Tipo | Para Quem | Status |
-|------|--------|------|-----------|--------|
-| 22/09 | Espécies Nativas da Mata Atlântica para Paisagismo Residencial em Lotes Privados no RJ | Inteligência (Trilha A) | Glaziou (Paisagismo, principal) — cross: Saturnino, Oscar | ✅ **ativa-com-ressalva** (Cardozo 22/09 — R2 ALTA: análise por lote obrigatória; R4: Palmito-Juçara ameaçada; R5: verificar Flora e Funga; instalada em `.claude/skills/especies-nativas-mata-atlantica-paisagismo-lotes-rj/`) |
-| 22/09 | NBR 15575-4:2021 + Emenda 2025 — Desempenho Térmico de Edificações Residenciais (ZB 4A, RJ) | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | ✅ **ativa-com-ressalva** (Lúcio 22/09 — R1 CRÍTICA: valores U/CT na Emenda ABNT paga; correção aplicada: "Hely/Oscar" → "Oscar"; instalada em `.claude/skills/nbr15575-4-emenda2025-desempenho-termico-edificacoes-rj/`) |
-
----
-
-**Atualização:** 22/09/2026  
-**Próxima Atualização:** 23/09/2026 (ou próxima rodada útil)
+**Atualização:** 21/09/2026  
+**Próxima Atualização:** 22/09/2026 (ou próxima rodada útil)

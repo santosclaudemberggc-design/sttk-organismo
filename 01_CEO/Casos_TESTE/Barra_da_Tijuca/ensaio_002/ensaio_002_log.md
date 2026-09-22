@@ -34,6 +34,19 @@
 
 ---
 
+## Etapa 2 — Arquitetônico completo — Lúcio/Oscar
+
+- **Início:** 21/09/2026
+- **[Decisão de negócio, 21/09/2026]** Antes de iniciar, perguntei diretamente a Claudemberg (cliente) qual cenário desenhar — CAB ou CAM — em vez de decidir sozinho (o Pré-Estudo aprovado deixou explícito que essa escolha é do cliente, não do Gestor/coordenador). **Claudemberg escolheu CAB** (400m²): custo mais previsível, prazo com mais folga nos 10 meses de financiamento, sem contrapartida de OODC a pagar. Registrado em `caso_sombra_002.md`.
+- **Quem fez o quê:** Lúcio leu os 3 documentos de contexto (Legal, Viabilidade, Caso) + próprio estado + arquivo técnico de Oscar antes de agir. Acionou Oscar em primeiro plano (não em background) — aprendendo com as 2 falhas de processo anteriores desta mesma ensaio (Kelsen na 1.a, Villaça na 1.b) — e esperou o resultado real antes de reportar. Não acionou Portinari (decisão própria, dentro da alçada: material desta etapa é técnico interno, apresentação ao cliente é gate posterior).
+- **Entregas de Oscar:** `levantamento_002.md`, `briefing_002.md`, `estudo_preliminar_002.md`, `anteprojeto_002.md` — as 4 etapas de Arquitetura sobre o cenário CAB (400m² ATE). Disciplina (a)/(b)/(c) mantida, com nova marcação **(d) Envelope Conservador Declarado** criada por Oscar para lidar com TO/gabarito/afastamento exato ainda não confirmados pelo Legal (usa hipótese conservadora explícita, nunca apresentada como fato).
+- **Achado técnico honesto — capacidade Vitruvius/Revit testada e reportada como indisponível:** Oscar chamou `mcp__vitruvius__revit_status` antes de desenhar. Retorno: erro de ferramenta inexistente (não timeout, não simulação). Decisão consequente: não simulou nenhum desenho BIM — entregou o Anteprojeto em formato de memorial técnico (quadro de áreas manual, descrição de partido), listando explicitamente os 8 itens que faltam para virar Anteprojeto real (modelo BIM, cotagem, elevações/cortes, folhas NBR 6492, quadro de áreas extraído de modelo, TO/gabarito/afastamento reais, RRT/ART, Gate do Maurício). Mesma pendência de capacidade aberta desde 07/08/2026, ainda não resolvida — não é erro novo desta rodada.
+- **Auditoria de Wallenberg sobre Lúcio/Oscar:** Li os 4 arquivos (Estudo Preliminar e Anteprojeto na íntegra). Confirmo: (1) disciplina (a)/(b)/(c)/(d) coerente e nunca confunde hipótese com fato confirmado; (2) quadro de áreas (≈291m² de 400m² disponíveis) é honesto sobre a folga não alocada, sem forçar o programa a esgotar o limite; (3) o ponto de varanda/sacada (15m², cômputo pendente) foi corretamente escalado para checagem futura com Kelsen, sem decisão unilateral — mesma lição do caso real Marambaia, aplicada corretamente aqui; (4) o achado do Vitruvius é o mais importante da etapa: testado de verdade, reportado sem disfarce, nenhuma linha do documento finge um desenho que não existe; (5) Oscar não reabriu CAB x CAM (decisão já fechada pelo cliente) e não inventou dado de orientação solar/vento que não tinha.
+- **Aprovação do Cliente (Claudemberg):** pendente
+- **Aprovação do Avaliador Técnico (Claudemberg):** pendente
+
+---
+
 ## Etapa 1 (completa) — Status Final
 
 ✅ **Etapa 1.a (Legal) e Etapa 1.b (Viabilidade) aprovadas nos dois formatos (cliente + avaliador técnico) em 18/09/2026 e 21/09/2026.** Kelsen/Hely e Villaça/Mascaró/Fiker trabalharam em sequência sobre o mesmo caso, cada Gestor auditando sua própria equipe antes de reportar. Etapa 1 do fluxograma (Legal → Arquitetônico completo → Legal/legalização → Complementares → Fechamento) está fechada. Próxima etapa: Arquitetônico completo (Lúcio).

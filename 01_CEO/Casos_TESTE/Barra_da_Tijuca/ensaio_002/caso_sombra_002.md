@@ -37,7 +37,13 @@ Na reunião inicial (simulada), o cliente vai mencionar:
 
 | Etapa | Gestor | Status |
 |---|---|---|
-| 1.a — Legal (base) | Kelsen → Hely | 🔵 A iniciar |
-| 1.b — Viabilidade (Pré-Estudo CAB x CAM) | Villaça → Mascaró + Fiker | ⏳ Aguardando 1.a |
+| 1.a — Legal (base) | Kelsen → Hely | ✅ Aprovado 18/09/2026 |
+| 1.b — Viabilidade (Pré-Estudo CAB x CAM) | Villaça → Mascaró + Fiker | ✅ Aprovado 21/09/2026 |
+| 2 — Arquitetônico completo (Levantamento, Briefing, Estudo Preliminar, Anteprojeto) | Lúcio → Oscar/Burle/Portinari | 🔵 A iniciar |
+| 3 — Legal (legalização — Prefeitura + Condomínio) | Kelsen → Hely | ⏳ Aguardando 2 |
+| 4 — Complementares | Cardozo → equipe (6 Agentes) | ⏳ Aguardando 3 |
+| 5 — Fechamento | Lelé → equipe | ⏳ Aguardando 4 |
+
+**Decisão de escopo para a Etapa 2 — Claudemberg (cliente) escolheu CAB, 21/09/2026.** Motivo declarado: custo mais previsível, prazo com mais folga dentro dos 10 meses de financiamento, sem contrapartida de OODC a pagar. Lúcio/Oscar desenham as 4 etapas de Arquitetura sobre o cenário CAB — 400m² de área computável (CAB=1,0), programa do Caso (2 pavimentos, 4 suítes, home office, área gourmet, padrão médio-alto).
 
 Log detalhado (métricas, aprovações, quem fez o quê): ver `ensaio_002_log.md` nesta mesma pasta.

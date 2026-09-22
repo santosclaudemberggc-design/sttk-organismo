@@ -1,75 +1,75 @@
 {
-  "gerado_em": "2026-09-14T20:27:11",
+  "gerado_em": "2026-09-21T13:30:43",
   "corte_otimizacao": "2026-07-30",
-  "total_invocacoes": 299,
-  "custo_eq_total": 228941940,
-  "usd_aprox_total": 657.46,
+  "total_invocacoes": 338,
+  "custo_eq_total": 252665814,
+  "usd_aprox_total": 721.04,
   "agentes": [
     {
       "agente": "kelsen",
-      "invocacoes": 86,
-      "turnos": 2278,
-      "tokens_input": 179271,
-      "tokens_cache_write": 35050762,
-      "tokens_cache_read": 214392671,
-      "tokens_output": 1085651,
-      "tokens_thinking": 202834,
-      "custo_eq": 70860246,
-      "usd_aprox": 209.44,
+      "invocacoes": 95,
+      "turnos": 2401,
+      "tokens_input": 179725,
+      "tokens_cache_write": 37537404,
+      "tokens_cache_read": 223923487,
+      "tokens_output": 1141655,
+      "tokens_thinking": 225427,
+      "custo_eq": 75202104,
+      "usd_aprox": 220.46,
       "ctx0_mediana_pre_otim": 22621,
-      "ctx0_mediana_pos_otim": 30162,
-      "ctx0_variacao_pct": 33.3,
-      "periodo": "2026-07-23 -> 2026-09-12",
+      "ctx0_mediana_pos_otim": 30660,
+      "ctx0_variacao_pct": 35.5,
+      "periodo": "2026-07-23 -> 2026-09-21",
       "amostra_descricoes": [
         "Kelsen — rodada de drenagem contínua",
         "Acionar Kelsen nesta rodada de drenagem",
         "Drenagem contínua — Kelsen lê seu estado e pendências",
         "Kelsen reconcilia fila",
         "Drenagem Kelsen 28/08",
-        "Kelsen reconciliação de fila"
+        "Ensaio ponta a ponta — Etapa 1 Legal"
       ],
-      "pct_do_total": 31.0
+      "pct_do_total": 29.8
     },
     {
       "agente": "hely",
-      "invocacoes": 32,
-      "turnos": 2445,
-      "tokens_input": 320246,
-      "tokens_cache_write": 13838102,
-      "tokens_cache_read": 291042707,
-      "tokens_output": 734095,
-      "tokens_thinking": 129391,
-      "custo_eq": 50392619,
-      "usd_aprox": 152.21,
+      "invocacoes": 36,
+      "turnos": 2554,
+      "tokens_input": 320464,
+      "tokens_cache_write": 14687944,
+      "tokens_cache_read": 300059065,
+      "tokens_output": 786243,
+      "tokens_thinking": 136864,
+      "custo_eq": 52617516,
+      "usd_aprox": 158.89,
       "ctx0_mediana_pre_otim": 30325,
-      "ctx0_mediana_pos_otim": 30705,
-      "ctx0_variacao_pct": 1.3,
-      "periodo": "2026-07-23 -> 2026-09-12",
+      "ctx0_mediana_pos_otim": 31039,
+      "ctx0_variacao_pct": 2.4,
+      "periodo": "2026-07-23 -> 2026-09-19",
       "amostra_descricoes": [
         "Regenerar PDF do POP-LEGAL-06",
         "Verificar 4 docs terminologia Alvará",
         "Busca de vigência legislativa — Workaround Busca Fácil offline",
         "Varredura de vigência legislativa — LICIN 2.0 e LC de outorga/transferência (21/08/2026)",
         "Hely — Busca profunda de atualizações LC/Decreto (11-21/08)",
-        "EVTL — Hely executa H1-H9 (caso real urgente)"
+        "Ensaio Etapa 1 Legal — confirmação de parâmetros fictícios Recreio"
       ],
-      "pct_do_total": 22.0
+      "pct_do_total": 20.8
     },
     {
       "agente": "cardozo",
-      "invocacoes": 35,
-      "turnos": 1173,
-      "tokens_input": 80970,
-      "tokens_cache_write": 23187775,
-      "tokens_cache_read": 103257867,
-      "tokens_output": 741571,
-      "tokens_thinking": 278492,
-      "custo_eq": 43099330,
-      "usd_aprox": 121.3,
+      "invocacoes": 39,
+      "turnos": 1243,
+      "tokens_input": 81341,
+      "tokens_cache_write": 24709266,
+      "tokens_cache_read": 108384666,
+      "tokens_output": 773506,
+      "tokens_thinking": 295184,
+      "custo_eq": 45673920,
+      "usd_aprox": 126.05,
       "ctx0_mediana_pre_otim": null,
-      "ctx0_mediana_pos_otim": 49841,
+      "ctx0_mediana_pos_otim": 50498,
       "ctx0_variacao_pct": null,
-      "periodo": "2026-08-15 -> 2026-09-14",
+      "periodo": "2026-08-15 -> 2026-09-21",
       "amostra_descricoes": [
         "Cardozo verifica/cria Notion Exame 2 com tarefas diárias",
         "Administrar Exame 2 (Shadow→Assisted) — Tenreiro e Mindlin, últimos 2/6 do lote iniciado 08/09",
@@ -78,57 +78,82 @@
         "Avaliação de Skill NBR 6120:2019 proposta",
         "Cardozo: ler fila, avaliar 3 skills novas para Complementares"
       ],
-      "pct_do_total": 18.8
+      "pct_do_total": 18.1
     },
     {
       "agente": "lucio",
-      "invocacoes": 67,
-      "turnos": 1217,
-      "tokens_input": 9718,
-      "tokens_cache_write": 16621238,
-      "tokens_cache_read": 77244633,
-      "tokens_output": 459927,
-      "tokens_thinking": 93144,
-      "custo_eq": 30810364,
-      "usd_aprox": 68.19,
+      "invocacoes": 71,
+      "turnos": 1287,
+      "tokens_input": 10044,
+      "tokens_cache_write": 18257785,
+      "tokens_cache_read": 82460678,
+      "tokens_output": 537171,
+      "tokens_thinking": 154728,
+      "custo_eq": 33764198,
+      "usd_aprox": 74.95,
       "ctx0_mediana_pre_otim": 20303,
-      "ctx0_mediana_pos_otim": 29625,
-      "ctx0_variacao_pct": 45.9,
-      "periodo": "2026-07-27 -> 2026-09-02",
+      "ctx0_mediana_pos_otim": 29675,
+      "ctx0_variacao_pct": 46.2,
+      "periodo": "2026-07-27 -> 2026-09-21",
       "amostra_descricoes": [
+        "Lúcio valida Skill de Proteção Solar Externa",
         "Lúcio — rodada de drenagem contínua",
         "Acionar Lúcio nesta rodada de drenagem",
         "Acionar Burle com Wan 2.2 — prazo 28/08",
         "Lúcio — Status teste stack gratuito Burle",
-        "Lúcio — ORDEM: teste Burle stack gratuito AGORA",
-        "Varredura de segurança e viabilidade de 3 ferramentas open-source"
+        "Lúcio — ORDEM: teste Burle stack gratuito AGORA"
       ],
-      "pct_do_total": 13.5
+      "pct_do_total": 13.4
+    },
+    {
+      "agente": "villaca",
+      "invocacoes": 8,
+      "turnos": 264,
+      "tokens_input": 526,
+      "tokens_cache_write": 3626255,
+      "tokens_cache_read": 28947561,
+      "tokens_output": 172492,
+      "tokens_thinking": 37000,
+      "custo_eq": 8290561,
+      "usd_aprox": 24.87,
+      "ctx0_mediana_pre_otim": null,
+      "ctx0_mediana_pos_otim": 78620,
+      "ctx0_variacao_pct": null,
+      "periodo": "2026-09-18 -> 2026-09-21",
+      "amostra_descricoes": [
+        "Villaça — 2º teste, formar equipe",
+        "Villaça retesta delegação — sessão nova",
+        "Villaça refina busca de comparáveis",
+        "Villaça propõe própria equipe",
+        "Villaça corrige com tabela CUB oficial",
+        "Villaça amplia pesquisa — 3 padrões"
+      ],
+      "pct_do_total": 3.3
     },
     {
       "agente": "mindlin",
-      "invocacoes": 7,
-      "turnos": 131,
-      "tokens_input": 262,
-      "tokens_cache_write": 2365291,
-      "tokens_cache_read": 6508980,
-      "tokens_output": 233127,
-      "tokens_thinking": 41647,
-      "custo_eq": 4773409,
-      "usd_aprox": 14.32,
+      "invocacoes": 8,
+      "turnos": 135,
+      "tokens_input": 298,
+      "tokens_cache_write": 2430599,
+      "tokens_cache_read": 6555338,
+      "tokens_output": 235265,
+      "tokens_thinking": 43019,
+      "custo_eq": 4870406,
+      "usd_aprox": 14.42,
       "ctx0_mediana_pre_otim": null,
-      "ctx0_mediana_pos_otim": 29349,
+      "ctx0_mediana_pos_otim": 28566,
       "ctx0_variacao_pct": null,
-      "periodo": "2026-08-31 -> 2026-09-12",
+      "periodo": "2026-08-31 -> 2026-09-16",
       "amostra_descricoes": [
         "Deck v3 — flat-lay moodboard + revisão",
         "Reconstruir deck HTML com moodboard",
         "Montar deck HTML de interiores",
         "Exame 1 Mindlin apresentacao",
         "Exame 1 Mindlin - caso apresentacao",
-        "Exame 2 Caso 3 - Mindlin"
+        "Avaliação de Skill Memorial Descritivo — Apresentação Técnica ao Cliente"
       ],
-      "pct_do_total": 2.1
+      "pct_do_total": 1.9
     },
     {
       "agente": "general-purpose",
@@ -153,7 +178,7 @@
         "Implementar indicador de dias parado no Painel",
         "Criar backup do estado do Kelsen"
       ],
-      "pct_do_total": 1.7
+      "pct_do_total": 1.6
     },
     {
       "agente": "oscar",
@@ -178,7 +203,32 @@
         "Oscar varre Drive por POPs técnicos de Arquitetura",
         "Exame 2 Caso 2 — Oscar"
       ],
-      "pct_do_total": 1.7
+      "pct_do_total": 1.5
+    },
+    {
+      "agente": "Explore",
+      "invocacoes": 8,
+      "turnos": 248,
+      "tokens_input": 24372,
+      "tokens_cache_write": 1442272,
+      "tokens_cache_read": 11834547,
+      "tokens_output": 64691,
+      "tokens_thinking": 11600,
+      "custo_eq": 3334122,
+      "usd_aprox": 8.34,
+      "ctx0_mediana_pre_otim": 24243,
+      "ctx0_mediana_pos_otim": 34502,
+      "ctx0_variacao_pct": 42.3,
+      "periodo": "2026-07-27 -> 2026-09-16",
+      "amostra_descricoes": [
+        "Busca profunda GitHub — alternativas render/vídeo open-source",
+        "Pesquisa Lúcio — partido arquitetônico, tipologias RJ, ventilação cruzada",
+        "Pesquisa Mindlin — técnicas de memorial descritivo e apresentação técnica",
+        "Pesquisa Kelsen — estratégias LICIN 2.0 e TPC no RJ",
+        "Explorar coordenação entre agentes no organismo",
+        "Entender estrutura de níveis e exames"
+      ],
+      "pct_do_total": 1.3
     },
     {
       "agente": "baumgart",
@@ -203,7 +253,7 @@
         "Exame 2 Caso 3 - Baumgart",
         "Exame 3 Baumgart - teste maldoso"
       ],
-      "pct_do_total": 1.2
+      "pct_do_total": 1.1
     },
     {
       "agente": "tenreiro",
@@ -228,7 +278,7 @@
         "Exame 3 Tenreiro - teste maldoso",
         "Exame 2 Caso 3 - Tenreiro"
       ],
-      "pct_do_total": 1.2
+      "pct_do_total": 1.1
     },
     {
       "agente": "burle",
@@ -253,7 +303,7 @@
         "Renders conceituais Daniel-OB térreo",
         "Exame 1 Burle"
       ],
-      "pct_do_total": 1.2
+      "pct_do_total": 1.1
     },
     {
       "agente": "portinari",
@@ -277,7 +327,7 @@
         "Portinari varre Drive por templates de apresentação/enviáveis",
         "Exame 2 Caso 1 — Portinari"
       ],
-      "pct_do_total": 1.0
+      "pct_do_total": 0.9
     },
     {
       "agente": "glaziou",
@@ -301,55 +351,32 @@
         "Exame 3 Glaziou - teste maldoso",
         "Exame 2 Caso 3 - Glaziou"
       ],
-      "pct_do_total": 1.0
+      "pct_do_total": 0.9
     },
     {
       "agente": "landell",
-      "invocacoes": 5,
-      "turnos": 85,
-      "tokens_input": 168,
-      "tokens_cache_write": 1001489,
-      "tokens_cache_read": 3528907,
-      "tokens_output": 110587,
-      "tokens_thinking": 54366,
-      "custo_eq": 2157855,
-      "usd_aprox": 6.47,
+      "invocacoes": 6,
+      "turnos": 93,
+      "tokens_input": 238,
+      "tokens_cache_write": 1102196,
+      "tokens_cache_read": 3660787,
+      "tokens_output": 114212,
+      "tokens_thinking": 56781,
+      "custo_eq": 2315122,
+      "usd_aprox": 6.63,
       "ctx0_mediana_pre_otim": null,
-      "ctx0_mediana_pos_otim": 35803,
+      "ctx0_mediana_pos_otim": 30945,
       "ctx0_variacao_pct": null,
-      "periodo": "2026-08-31 -> 2026-09-12",
+      "periodo": "2026-08-31 -> 2026-09-16",
       "amostra_descricoes": [
         "Exame 1 Landell eletrica",
         "Exame 1 Landell - caso eletrica",
+        "Avaliação de Skill NBR 5419:2026 SPDA — Proteção contra Descargas Atmosféricas",
         "Exame 2 Landell — E1+E2",
         "Exame 3 Landell - teste maldoso",
         "Exame 2 Caso 3 - Landell"
       ],
       "pct_do_total": 0.9
-    },
-    {
-      "agente": "Explore",
-      "invocacoes": 5,
-      "turnos": 97,
-      "tokens_input": 24189,
-      "tokens_cache_write": 978635,
-      "tokens_cache_read": 4414648,
-      "tokens_output": 24703,
-      "tokens_thinking": 5508,
-      "custo_eq": 1812463,
-      "usd_aprox": 3.78,
-      "ctx0_mediana_pre_otim": 24243,
-      "ctx0_mediana_pos_otim": 34574,
-      "ctx0_variacao_pct": 42.6,
-      "periodo": "2026-07-27 -> 2026-09-14",
-      "amostra_descricoes": [
-        "Busca profunda GitHub — alternativas render/vídeo open-source",
-        "Explorar coordenação entre agentes no organismo",
-        "Entender estrutura de níveis e exames",
-        "Passo 8a Learning Agent — padrões multi-agent 2026",
-        "Buscar estrutura dos Exames 1 e 2 dos Agentes"
-      ],
-      "pct_do_total": 0.8
     },
     {
       "agente": "saturnino",
@@ -373,7 +400,29 @@
         "Exame 2 Caso 3 - Saturnino",
         "Exame 3 Saturnino - teste maldoso"
       ],
-      "pct_do_total": 0.8
+      "pct_do_total": 0.7
+    },
+    {
+      "agente": "mascaro",
+      "invocacoes": 3,
+      "turnos": 59,
+      "tokens_input": 118,
+      "tokens_cache_write": 519859,
+      "tokens_cache_read": 2347215,
+      "tokens_output": 31270,
+      "tokens_thinking": 9883,
+      "custo_eq": 1041013,
+      "usd_aprox": 3.12,
+      "ctx0_mediana_pre_otim": null,
+      "ctx0_mediana_pos_otim": 28444,
+      "ctx0_variacao_pct": null,
+      "periodo": "2026-09-18 -> 2026-09-21",
+      "amostra_descricoes": [
+        "Mascaró audita Seção 2 do Pré-Estudo",
+        "Mascaró custo de obra Caso 002",
+        "Mascaró 2ª via de custo Caso 002"
+      ],
+      "pct_do_total": 0.4
     },
     {
       "agente": "guia-claude",
@@ -416,7 +465,7 @@
         "Wallenberg: auditar e executar própria pendência auto",
         "n/a - not used"
       ],
-      "pct_do_total": 0.4
+      "pct_do_total": 0.3
     },
     {
       "agente": "artigas",
@@ -438,25 +487,54 @@
         "Reabrir Gate do Maurício v2",
         "Preparar Gate do Maurício"
       ],
-      "pct_do_total": 0.3
+      "pct_do_total": 0.2
+    },
+    {
+      "agente": "fiker",
+      "invocacoes": 2,
+      "turnos": 36,
+      "tokens_input": 72,
+      "tokens_cache_write": 254505,
+      "tokens_cache_read": 1244649,
+      "tokens_output": 15706,
+      "tokens_thinking": 3493,
+      "custo_eq": 521198,
+      "usd_aprox": 1.56,
+      "ctx0_mediana_pre_otim": null,
+      "ctx0_mediana_pos_otim": 28740,
+      "ctx0_variacao_pct": null,
+      "periodo": "2026-09-18 -> 2026-09-21",
+      "amostra_descricoes": [
+        "Fiker revisa Seção 3 do Pré-Estudo",
+        "Fiker valor de revenda Caso 002"
+      ],
+      "pct_do_total": 0.2
     }
   ],
   "rotinas_sessao_principal": [
     {
       "origem": "(interativo / manual)",
-      "sessoes": 20,
-      "turnos": 3740,
-      "custo_eq": 163531822,
-      "usd_aprox": 1081.42,
-      "periodo": "2026-07-16 -> 2026-09-12"
+      "sessoes": 26,
+      "turnos": 6904,
+      "custo_eq": 352968295,
+      "usd_aprox": 1640.38,
+      "periodo": "2026-07-16 -> 2026-09-21"
     },
     {
       "origem": "wallenberg-reuniao-semanal",
+      "sessoes": 18,
+      "turnos": 4461,
+      "custo_eq": 235206225,
+      "usd_aprox": 698.23,
+      "periodo": "2026-07-20 -> 2026-09-21"
+    },
+    {
+      "origem": "wallenberg-rotina-diaria-skills-v2-7",
       "sessoes": 17,
-      "turnos": 4139,
-      "custo_eq": 222482691,
-      "usd_aprox": 661.16,
-      "periodo": "2026-07-20 -> 2026-09-14"
+      "turnos": 1984,
+      "custo_eq": 59583807,
+      "usd_aprox": 491.19,
+      "periodo": "2026-08-29 -> 2026-09-21"
     },
     {
       "origem": "wallenberg-drenagem-continua",
@@ -465,14 +543,6 @@
       "custo_eq": 187536861,
       "usd_aprox": 487.65,
       "periodo": "2026-07-27 -> 2026-08-28"
-    },
-    {
-      "origem": "wallenberg-rotina-diaria-skills-v2-7",
-      "sessoes": 12,
-      "turnos": 1361,
-      "custo_eq": 42240329,
-      "usd_aprox": 391.93,
-      "periodo": "2026-08-29 -> 2026-09-14"
     },
     {
       "origem": "wallenberg-rotina-diaria-skills",
@@ -484,19 +554,19 @@
     },
     {
       "origem": "wallenberg-drenagem-continua-local",
-      "sessoes": 12,
-      "turnos": 1135,
-      "custo_eq": 42404714,
-      "usd_aprox": 88.38,
-      "periodo": "2026-08-31 -> 2026-09-14"
+      "sessoes": 18,
+      "turnos": 1450,
+      "custo_eq": 54096056,
+      "usd_aprox": 109.54,
+      "periodo": "2026-08-31 -> 2026-09-21"
     },
     {
       "origem": "wallenberg-cronjob-pdf-2000",
-      "sessoes": 10,
-      "turnos": 126,
-      "custo_eq": 4221521,
-      "usd_aprox": 9.7,
-      "periodo": "2026-08-31 -> 2026-09-14"
+      "sessoes": 14,
+      "turnos": 187,
+      "custo_eq": 5857436,
+      "usd_aprox": 14.61,
+      "periodo": "2026-08-31 -> 2026-09-18"
     },
     {
       "origem": "teste-kelsen-abre-hely",
@@ -507,6 +577,6 @@
       "periodo": "2026-07-23 -> 2026-07-23"
     }
   ],
-  "usd_aprox_sessoes_principais": 2934.05,
-  "usd_aprox_geral": 3591.51
+  "usd_aprox_sessoes_principais": 3655.41,
+  "usd_aprox_geral": 4376.45
 }
