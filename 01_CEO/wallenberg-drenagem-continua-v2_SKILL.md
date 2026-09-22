@@ -79,7 +79,7 @@ Sem interferência humana.
 🔹 FASE 2: LEITURA DE SKILLS (5 min)
 
 ✅ Passo 3: Leia Skills criadas pela Diária (Status: "proposta")
-   └─ Pasta: 01_CEO/Skills_Propostas/2026/Agosto/ (mês corrente)
+   └─ Pasta: 01_CEO/Skills_Propostas/{Ano}/{Mês corrente}/
    └─ Para cada Skill:
       ├─ Tipo? (Habilidade/Inteligência OU Ferramenta/Tool)
       ├─ Para qual Gestor?
@@ -433,7 +433,7 @@ Resultado: Fila reconciliada, pronta para Passo 5
 FASE 2: LEITURA DE SKILLS
 
 Passo 3: Avalie Skills Criadas
-Pasta: 01_CEO/Skills_Propostas/2026/Agosto/
+Pasta: 01_CEO/Skills_Propostas/{Ano}/{Mês corrente}/
 Para cada Skill com Status = "proposta":
 1. TIPO:
    ├─ Habilidade/Inteligência (conhecimento, não tool)
