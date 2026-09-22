@@ -22,6 +22,35 @@ metadata:
 
 ---
 
+## [2026-09-22] — Diária Skills v3.2 (Terça) — RODADA COMPLETA
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Skills criadas:** 2 (Glaziou espécies nativas Mata Atlântica + Lúcio NBR 15575-4 Emenda 2025 desempenho térmico ZB 4A)
+- [x] **Skills ativadas:** 2 (ambas ativa-com-ressalva após validação Cardozo/Glaziou e Lúcio)
+- [x] **Skills instaladas:** `.claude/skills/especies-nativas-mata-atlantica-paisagismo-lotes-rj/SKILL.md` + `.claude/skills/nbr15575-4-emenda2025-desempenho-termico-edificacoes-rj/SKILL.md`
+- [x] **Correção aplicada (Lúcio):** "Hely/Oscar" → "Oscar" na linha 58 (R1 ressalva). Status atualizado para `ativa-com-ressalva` em ambas
+- [x] **Feed atualizado:** 2 entradas (Cardozo/Glaziou espécies nativas + Lúcio/Oscar NBR 15575-4)
+- [x] **Índice Setembro atualizado:** 27 Skills acumuladas (sobe de 25; Glaziou sobe de 3 para 4; Lúcio/Oscar sobe de 4 para 5)
+- [x] **Commit local:** feito ao finalizar esta rodada (25dc41f)
+- [x] **Kelsen:** sem Skill nova (pesquisa APA Barra da Tijuca sem dados públicos viáveis — descartada conforme Princípio 3)
+- [x] **Vídeos /watch:** 2 tentativas (Glaziou + Lúcio) — ambas falharam com HTTP 403/429 (yt-dlp sem deno/node runtime). Registrado bloqueador, continuar com texto conforme v3.3.1
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **yt-dlp HTTP 403:** ambas /watch tentar novamente na próxima sexta após validar se deno/node está instalado (erro é falta de JS runtime pra YouTube auth)
+- **Kelsen APA Barra:** Decreto nº 3046-81 (ZE-5) e LC 270/2024 já cobertos na Skill de 21/09. APA condicionantes específicas por lote — sem fonte pública viável (INEA portal + consultoria não entregaram dados), descartado. Alternativa: Hely consultar INEA direção ao cliente se houver caso real
+- **Glaziou Mata Atlântica:** Skill criada com 10+ espécies confirmadas; R5 mandatória = validar Flora e Funga do Brasil (floradobrasil.jbrj.gov.br) antes de especificar
+
+### O QUE NÃO FAZER (Avoid retrabalho)
+
+- ❌ **Espécies Nativas Mata Atlântica não duplique** — Skill Glaziou 22/09 (ativa-com-ressalva)
+- ❌ **NBR 15575-4 Emenda 2025 não duplique** — Skill Lúcio 22/09 (ativa-com-ressalva, correção aplicada)
+- ❌ **APA Barra Condicionantes não tente novamente** — dados públicos insuficientes (22/09 confirmado)
+- ❌ Todos os itens de "NÃO FAZER" das rodadas anteriores continuam válidos
+
+---
+
 ## [2026-09-21] — Diária Skills v3.2 (Segunda) — RODADA COMPLETA
 
 ### RODADA ATUAL (O que foi entregue)
