@@ -2,7 +2,7 @@
 
 **Status:** Ativo  
 **Mês:** Setembro 2026  
-**Atualização:** 23/09/2026
+**Atualização:** 15/09/2026
 
 ---
 
@@ -243,40 +243,5 @@
 
 ---
 
-## Skills Criadas (Rodada 23/09/2026)
-
-| Data | Título | Tipo | Para Quem | Status |
-|------|--------|------|-----------|--------|
-| 23/09 | NBR 14565:2019 — Cabeamento Estruturado como Base para Automação Residencial de Alto Padrão | Inteligência (Trilha A) | Landell (Automação+Elétrica, principal) — cross: Oscar (eletrodutos em planta), Baumgart (shaft técnico, rack) | ✅ **ativa-com-ressalva** (Cardozo 23/09 — R1: aterramento rack com cabo verde-amarelo dedicado; R2: gatilho R$8k/m² é indicativo não critério normativo; R3: NBR 14159 (fibra GPON) não coberta — verificar em projetos com GPON/XGS-PON; instalada em `.claude/skills/nbr14565-2019-cabeamento-estruturado-automacao-residencial/`) |
-
-**Correção aplicada (não nova Skill):** LC 301/2026 (Kelsen, 18/09) → v1.1 (23/09): Art. 20, §8º lido via legisweb confirma **+20% adicional exclusivo para subsetores AEIU Praça Onze**, com prazo de 24 meses (~ago/2028) — separado e acumulável com cadeia de 30% geral. Cadeia de 30% (RJ-amplo vs. AEIU) continua em aberto. Art. 64 (isenção transitória áreas receptoras até 31/12/2027) adicionado como nova questão para Hely.
-
----
-
-## Observações da Rodada 23/09/2026
-
-1. **NBR 14565:2019 — Landell (v1.0 proposta):** preenche lacuna de infraestrutura física entre NBR 5410 (circuitos de força) e automação-residencial-tendencias (protocolos). Cobre hierarquia DG→DA→TO, cabos por aplicação (Cat6A, KNX TP, RG-6, coaxial), dimensionamento de rack, pré-conduit antes da alvenaria, coordenação com Oscar (shaft técnico) e circuito dedicado para rack. Apesar de ser norma "comercial", é o padrão adotado por profissionais experientes em residencial de alto padrão. Landell agora tem 4 Skills.
-2. **LC 301/2026 — Kelsen (correção v1.1, não nova Skill):** Art. 20, §8º lido diretamente no legisweb. Achado: a AEIU Praça Onze tem **benefício adicional de +20%** por 24 meses (sumado à cadeia do Anexo VII), separado da cadeia geral de 30%. Lacuna sobre escopo da cadeia de 30% (RJ-amplo vs. AEIU) parcialmente esclarecida: o +20% é claramente restrito à AEIU; o 30% base ainda precisa de confirmação por Hely. Art. 64 identificado como nova questão (isenção em "áreas receptoras" até 31/12/2027 — escopo incerto, pode ser TDC/OODC).
-3. **Lúcio:** ventilação cruzada/fachada poente já coberta pela combinação de Partido Arquitetônico (16/09) + Proteção Solar Externa (17/09). Sem duplicação — Princípio 15.
-4. **Compliance v3.3.1 (vídeo):** vídeo LICIN 2.0 ("Saiba como conseguir Licença de Obras Digital em 30 dias no RJ") assistido via yt-dlp auto-captions (workaround 403). Conteúdo pré-LICIN 2.0 (2021) — sem nova Skill gerada.
-
----
-
-## Estatísticas (Atualizado 23/09/2026)
-
-- **Skills Propostas (semana 14/09+):** 17 (Trilha A: 17, Trilha B: 0)
-- **Skills Propostas (acumulado setembro):** 28
-- **Cobertura Trilha A por Agente (desde agosto):**
-  - Baumgart: 7
-  - Saturnino: 4
-  - **Landell: 4** (NBR 5410 + COSCIP/CBMERJ + NBR 5419:2026 SPDA + NBR 14565:2019 cabeamento estruturado)
-  - Glaziou: 4
-  - Tenreiro: 3
-  - Mindlin: 2
-  - Kelsen/Hely: 7 (LC 301/2026 v1.1 corrigida — sem nova Skill, só atualização)
-  - Lúcio/Oscar: 5
-
----
-
-**Atualização:** 23/09/2026  
-**Próxima Atualização:** 24/09/2026 (ou próxima rodada útil)
+**Atualização:** 22/09/2026  
+**Próxima Atualização:** 23/09/2026 (ou próxima rodada útil)

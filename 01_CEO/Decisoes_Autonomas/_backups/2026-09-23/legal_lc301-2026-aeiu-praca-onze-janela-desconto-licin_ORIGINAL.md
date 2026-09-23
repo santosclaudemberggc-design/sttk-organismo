@@ -1,9 +1,8 @@
 ---
 name: lc301-2026-aeiu-praca-onze-janela-desconto-licin
-version: v1.1
+version: v1.0
 status: proposta-com-ressalvas
 data: 2026-09-18
-atualizado: 2026-09-23
 tipo: Inteligência (Trilha A)
 gestor_alvo: Kelsen (Legal)
 agente_principal: Hely (Executor Legal)
@@ -14,10 +13,9 @@ agentes_cross: Lúcio/Oscar (impacto de janela de desconto em projetos na fila)
 
 ## ⚠️ RESSALVAS DE FONTE
 
-1. O PDF da lei (disponível em desenvolvimentourbano.prefeitura.rio) não foi lido integralmente — é binário e não extraível por WebFetch. Os dados aqui são baseados na **nota de imprensa da SMDU**, **portal Carioca Digital** e **texto parcial via legisweb.com.br (23/09/2026)** — Art. 20, §8º lido diretamente.
-2. **LACUNA PARCIALMENTE RESPONDIDA (23/09/2026):** Leitura do Art. 20, §8º via legisweb confirma que há benefício **adicional de 20%** específico para subsetores da AEIU Praça Onze. Isso é **separado e acumulável** com a cadeia de 30% (LC 274→291→301). A questão sobre se a cadeia de 30% aplica-se a todo o RJ ou só à AEIU continua sem confirmação definitiva — Hely DEVE ler o artigo de vigência antes de garantir desconto a cliente de Barra/Recreio.
+1. O PDF da lei (disponível em desenvolvimentourbano.prefeitura.rio) não foi lido integralmente — é binário e não extraível por WebFetch. Os dados aqui são baseados na **nota de imprensa da SMDU** e no **portal Carioca Digital** — fontes primárias oficiais, mas não o texto completo da lei.
+2. **LACUNA CRÍTICA:** não foi confirmado se o desconto de 30% vale para todo o Rio de Janeiro ou apenas para projetos dentro do perímetro da AEIU Praça Onze. Hely DEVE verificar os artigos específicos antes de informar desconto a qualquer cliente fora da área central.
 3. **Barra da Tijuca / Recreio** não são mencionados na lei — a AEIU está restrita ao Centro histórico e regiões adjacentes (Centro/Zona Sul/Zona Norte).
-4. **Art. 64** menciona isenção transitória até 31/12/2027 em "áreas receptoras" específicas — a ser verificado por Hely (pode afetar OODC/TDC, não necessariamente o desconto de protocolo).
 
 ---
 
@@ -61,22 +59,17 @@ Trechos sobre "construção de prédios mais altos em vias de Copacabana" foram 
 
 ### O que estabelece
 - **30% de desconto** para pagamento à vista em pedidos de **novos projetos de licenciamento**
-- Prazo (cadeia geral): projetos protocolados até **1º de dezembro de 2026** (por nota SMDU/Carioca Digital)
+- Prazo: projetos protocolados até **1º de dezembro de 2026**
 - Projetos com processos abertos até **30 de junho de 2026** têm **direitos preservados** (retroativo ao momento do protocolo)
-
-### Benefício adicional — exclusivo AEIU Praça Onze (Art. 20, §8º — confirmado legisweb 23/09/2026)
-- **+20% de desconto** acumulável com a cadeia de 30%, exclusivo para subsetores da AEIU Praça Onze
-- Prazo do benefício adicional: **24 meses da publicação** (julho/2026 → ~agosto/2028) — prazo muito maior que a cadeia geral
-- Fórmula: desconto do Anexo VII (cadeia 30%) **somado** a 20% = desconto total potencial de ~50% para projetos dentro da AEIU
 
 ### Contexto histórico da janela
 | Instrumento | Desconto | Prazo original |
 |-------------|---------|---------------|
 | LC 274/2024 | 50% | Até 01/12/2025 |
 | LC 291/2025 | 30% | Até 01/06/2026 |
-| **LC 301/2026** | **30% (geral) + 20% AEIU** | **Até 01/12/2026 (geral) / ~ago/2028 (AEIU)** |
+| **LC 301/2026** | **30%** | **Até 01/12/2026** ← nova extensão |
 
-> **Leitura estratégica:** a janela de 30% foi prorrogada pela 3ª vez. Para projetos DENTRO da AEIU, o benefício acumulado pode chegar a ~50% por 24 meses. Para Barra/Recreio, a aplicabilidade da cadeia de 30% precisa de confirmação formal por Hely — não comunicar a clientes sem essa verificação.
+> **Leitura estratégica:** a janela de desconto foi prorrogada pela 3ª vez consecutiva. Clientes que "deixaram para depois" após a LC 291 têm uma nova oportunidade de capturar 30% de economia nos custos de licenciamento — sem data de nova prorrogação confirmada.
 
 ---
 
@@ -94,18 +87,18 @@ Trechos sobre "construção de prédios mais altos em vias de Copacabana" foram 
 
 ## 5. ARTIGOS A VERIFICAR (Hely)
 
-| Questão | Status | Onde verificar |
-|---------|--------|----------------|
-| A cadeia de 30% é geral (todo RJ) ou restrita à AEIU? | **ABERTA** — Art. 20, §8º confirmado só para +20% AEIU; cadeia base ainda pendente | Art. de vigência/disposições gerais da LC 301 |
-| A Operação Interligada da AEIU usa a mesma fórmula do TDC da LC 270/2024? | Aberta | Arts. sobre a AEIU Praça Onze |
-| O Art. 64 (isenção transitória até 31/12/2027 em "áreas receptoras") afeta desconto de protocolo ou só TDC/OODC? | **Nova — aberta (23/09/2026)** | Art. 64 da LC 301/2026 |
-| A expansão de benefícios para Zona Norte/Sul inclui parâmetros de CA específicos? | Aberta | Anexo ou artigos sobre cada bairro |
+| Questão em aberto | Onde verificar |
+|------------------|----------------|
+| O desconto de 30% é geral (todo RJ) ou restrito à AEIU? | Texto integral da LC 301/2026 — art. de vigência/disposições gerais |
+| A Operação Interligada da AEIU usa a mesma fórmula do TDC da LC 270/2024? | Arts. sobre a AEIU Praça Onze |
+| Existe prazo de nova prorrogação previsto ou o 01/12/2026 é definitivo? | Art. de disposições transitórias |
+| A expansão de benefícios para Zona Norte/Sul inclui parâmetros de CA específicos? | Anexo ou artigos sobre cada bairro |
 
 ---
 
 ## 6. LACUNAS DECLARADAS
 
-1. PDF da lei não lido integralmente (binário ilegível). Dados de nota SMDU, Carioca Digital e legisweb (Art. 20, §8º parcial).
-2. **PARCIALMENTE RESPONDIDA (23/09/2026):** Art. 20, §8º via legisweb confirma +20% adicional para AEIU por 24 meses. A cadeia base de 30% (escopo RJ-amplo vs. só AEIU) continua sem confirmação.
+1. PDF da lei não lido integralmente (binário ilegível). Dados de nota SMDU e portal Carioca Digital.
+2. Não confirmado se o desconto de 30% é geral ou restrito à AEIU.
 3. Parâmetros específicos da AEIU (CA, gabarito por setor/subsetor) não levantados.
 4. Impacto em Barra da Tijuca / Recreio não confirmado — a lei não os menciona explicitamente.

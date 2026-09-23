@@ -22,6 +22,36 @@ metadata:
 
 ---
 
+## [2026-09-23] — Diária Skills v3.2 (Quarta) — RODADA COMPLETA
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Skill criada:** 1 (Landell — NBR 14565:2019 Cabeamento Estruturado para Automação Residencial — proposta → ativa-com-ressalva em rodada única)
+- [x] **Skill instalada:** `.claude/skills/nbr14565-2019-cabeamento-estruturado-automacao-residencial/SKILL.md`
+- [x] **Correção aplicada (Kelsen):** LC 301/2026 → v1.1 — Art. 20, §8º confirmado via legisweb: +20% adicional exclusivo para AEIU Praça Onze por 24 meses (~ago/2028), separado da cadeia de 30%; Art. 64 nova questão (isenção áreas receptoras 31/12/2027)
+- [x] **Cardozo validou Landell NBR 14565:** PROCEDE COM RESSALVA — R1: aterramento rack (cabo verde-amarelo 4mm² dedicado); R2: gatilho R$8k/m² é indicativo; R3: NBR 14159 (fibra GPON) não coberta
+- [x] **Feed atualizado:** 2 entradas (nova Skill Landell + correção LC 301)
+- [x] **Índice Setembro:** 28 Skills acumuladas (Landell sobe de 3 para 4; LC 301 atualizada, não nova)
+- [x] **Backups:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-23/` com LC 301 original + indice original
+- [x] **Compliance v3.3.1:** vídeo LICIN 2.0 via yt-dlp auto-captions — conteúdo 2021 pré-LICIN 2.0, sem nova Skill
+- [x] **Lúcio:** sem Skill nova (ventilação cruzada/fachada poente já coberta por Partido Arquitetônico 16/09 + Proteção Solar 17/09 — Princípio 15)
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **LC 301/2026 cadeia de 30% (escopo):** ainda sem confirmação definitiva se vale RJ-amplo ou só AEIU. Hely lê o art. de vigência/disposições gerais antes de usar com cliente fora da área central
+- **Art. 64 LC 301:** isenção em "áreas receptoras" até 31/12/2027 — escopo incerto (TDC/OODC vs. desconto de protocolo) — nova questão para Hely
+- **Art. 106 LC 270/2024 (isenção OODC):** continua em aberto (texto só até Art. 80 no legisweb)
+- **NBR 6484 edição:** Skill Baumgart cita "NBR 6484/2020" — Baumgart confirma edição vigente
+
+### O QUE NÃO FAZER (Avoid retrabalho)
+
+- ❌ **NBR 14565:2019 cabeamento estruturado não duplique** — Skill Landell 23/09 (ativa-com-ressalva)
+- ❌ **LC 301/2026 AEIU não crie nova Skill** — Skill Kelsen 18/09 v1.1 (proposta-com-ressalvas, corrigida 23/09)
+- ❌ **Ventilação cruzada/fachada poente Lúcio não duplique** — coberta por Partido Arquitetônico (16/09) + Proteção Solar (17/09)
+- ❌ Todos os itens de "NÃO FAZER" das rodadas anteriores continuam válidos
+
+---
+
 ## [2026-09-22] — Diária Skills v3.2 (Terça) — RODADA COMPLETA
 
 ### RODADA ATUAL (O que foi entregue)
@@ -464,6 +494,6 @@ metadata:
 
 ---
 
-**Última atualização:** 21/09/2026 (segunda-feira — Diária Skills v3.2, Rodada COMPLETA + manual — 3 Skills ativas-com-ressalva, 2 vídeos /watch analisados, Passo 8 Trilha B executado + filtrado)  
-**Próxima leitura:** 22/09/2026 (terça-feira) — Diária Skills Seg-Qui  
-**Painel pendente para:** 25/09/2026 (quinta-feira ou sexta)
+**Última atualização:** 23/09/2026 (quarta-feira — Diária Skills v3.2, Rodada COMPLETA — 1 Skill nova Landell NBR 14565 ativa-com-ressalva + correção LC 301/2026 v1.1)  
+**Próxima leitura:** 24/09/2026 (quinta-feira) — Diária Skills Seg-Qui  
+**Painel pendente para:** 26/09/2026 (sexta)
