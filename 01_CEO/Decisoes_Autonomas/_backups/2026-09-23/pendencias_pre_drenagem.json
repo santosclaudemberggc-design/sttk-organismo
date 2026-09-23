@@ -1,7 +1,7 @@
 {
   "_comentario": "Fonte única e estruturada da fila de pendências do organismo. A rotina wallenberg-drenagem-continua lê este arquivo a cada disparo: itens com alc='auto' e status='aberta' são executados sozinhos pelo Gestor dono (via seu Agente, quando aplicável); os demais (humano/tecnico/planejado) só são reconciliados, nunca forçados. O Painel do Fundador (painel_fundador_sttk.html) espelha este arquivo — ao alterar aqui, regerar o array `pendencias` do painel e republicar.",
   "schema_versao": 1,
-  "atualizado_em": "2026-09-23 (Drenagem Contínua v2.4 — 2 itens novos)",
+  "atualizado_em": "2026-08-17 (rotina wallenberg-drenagem-continua, orquestração de pendências): Wallenberg redefine seu papel como orquestrador (não executor), aprova Opção B para b14-lacuna (Kelsen consulta SMDU), valida capacidades de Gestores (Kelsen/Lúcio/Cardozo têm ferramentas gerais), inicia resolução de 4 pendências em paralelo. Backup criado em 2026-08-17-VASCULHA-INICIAL. Pendência #1 (b14-lacuna): Kelsen acionado (1ª falhou API, 2ª em andamento). Pendência #2 (Kelsen WebSearch/WebFetch): já presente. Pendência #3 (Higgsfield MCP): conectado (UUID 371ab963-2c03-4953-9ff8-55467dfaf773), Burle pronto, pausado por orçamento (Claudemberg 17/08). Pendência #4 (Cardozo): capacidades completas (create_file + Notion tools adicionados 17/08). Notion 'Treinos e Testes' consultada, Burle em Assisted desde 17/08.",
   "itens": [
     {
       "id": "wallenberg-drive-write-tool-gap",
@@ -816,30 +816,6 @@
       "status": "resolvida",
       "resolvido_em": "2026-09-15",
       "resultado": "Trim executado com sucesso: _estado_kelsen.md 32KB→28KB (subseções EVTL e Integração 5 Skills movidas para _estado_kelsen_HISTORICO.md, que cresceu de 167KB→171KB); _estado_hely.md 117KB→87KB + novo _estado_hely_HISTORICO.md criado (30KB com entradas históricas de 27/08 a 12/09/2026). Zero perda de conteúdo, 100% do HISTÓRICO preservado em arquivos apartados."
-    },
-    {
-      "id": "skill-lc301-v11-nao-procede-decisao",
-      "owner": "Wallenberg",
-      "agente": null,
-      "crit": "baixa",
-      "alc": "humano",
-      "desde": "2026-09-23",
-      "res": "Kelsen avaliou a v1.1 da Skill LC 301/2026 (AEIU Praça Onze) contra o PDF primário: NÃO PROCEDE — Art. 64 inexistente, §8º mal lido (+20% soma ao Anexo VII, não aos 30%), desconto de 30% (Art. 40 LC 281) só incide sobre contrapartida por acréscimos; conteúdo útil já está no POP-LEGAL-02 R.7.",
-      "acao": "Claudemberg decide: arquivar a Skill (recomendação de Kelsen: não instalar, Princípio 15) ou devolver à Diária para v1.2 com as correções da seção 'Avaliação do Gestor (Kelsen, 23/09/2026)' do arquivo.",
-      "status": "aberta",
-      "resolvido_em": null
-    },
-    {
-      "id": "kelsen-hely-lc281-art40-unifamiliar-ap4",
-      "owner": "Kelsen",
-      "agente": "Hely",
-      "crit": "media",
-      "alc": "auto",
-      "desde": "2026-09-23",
-      "res": "Lacuna aberta na avaliação da LC 301 v1.1: não confirmado se o regime de 'contrapartida por acréscimos não previstos na legislação ordinária' (Art. 40 LC 281/2025, redação LC 301 Art. 58, prazo 01/12/2026) alcança lote unifamiliar em AP4 (Barra/Recreio) e quais acréscimos admite.",
-      "acao": "Kelsen aciona Hely para ler o PDF consolidado da LC 281/2025 (Art. 40 e correlatos) e responder: (1) alcança unifamiliar em ZRU/ZRM de Barra/Recreio? (2) quais acréscimos admite? Kelsen audita contra o primário e atualiza POP-LEGAL-02 R.7 / _indice_fontes.md se houver mudança.",
-      "status": "aberta",
-      "resolvido_em": null
     }
   ]
 }

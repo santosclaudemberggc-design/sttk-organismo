@@ -1284,3 +1284,25 @@ Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e co
 **Próxima ação:** Wallenberg atualizar Notion manualmente (IDs acima); republica Painel; entrega da rodada 10/09 concluída.
 
 ---
+
+---
+
+### [2026-09-23] Drenagem Contínua v2.4 — rodada automática (qua) — 2 Skills avaliadas, 1 linha Notion órfã fechada, 2 exames gerados
+
+**Portão (2.5):** 0 itens `auto`+`aberta`; 2 Skills novas sem avaliação de Gestor (Landell NBR 14565:2019 — nova; LC 301/2026 v1.1 — correção de hoje); Notion: 0 `pendente`, mas 1 linha `em execução` órfã desde 01/08 (Caso Andrade, Lúcio Shadow→Assisted caso 1). As rodadas anteriores filtravam só `pendente` e nunca a viram.
+
+**Cardozo (NBR 14565, Landell):** PROCEDE COM RESSALVA. Corrigiu no arquivo-fonte e na cópia instalada em `.claude/skills/`: existe a NBR 16264:2016 (cabeamento residencial), ao contrário do que a Skill dizia; data center é a NBR 16665:2019, não a "16065"; cabo KNX tem 0,8 mm de diâmetro; PE do rack pela Tabela 58 da NBR 5410; Landell não assina ART/RRT. Em aberto: NBR 5281/11785/14159 não confirmadas. Lacuna: a v1.1 deveria ter a NBR 16264 como base primária (recomendação à Diária).
+
+**Kelsen (LC 301 v1.1):** NÃO PROCEDE, com base no PDF primário arquivado. O desconto de 30% (Art. 58 LC 301 → Art. 40 LC 281) não tem recorte geográfico, mas só incide sobre a contrapartida por acréscimos. Por isso não se aplica a unifamiliar dentro dos parâmetros. O Art. 64 não existe (a lei vai até o 63). O +20% do §8º soma ao Anexo VII, não aos 30%. Status do cabeçalho alterado para "avaliada — NÃO PROCEDE — aguarda decisão de Claudemberg; não instalar". **Brecha de Escopo sinalizada:** Skill centrada na AEIU Praça Onze (Centro), fora do foco Barra/Recreio. Não foi descartada, vai para decisão.
+
+**Notion, reconciliação:** a linha `3af92372…ccd9` (Caso Andrade) foi alterada de `em execução` para `aprovado`. O próprio Resultado já registrava a aprovação por Wallenberg em 01/08, e Lúcio está em Autonomous desde 07/08.
+
+**Loop de Promoção (5.b.3):** Lelé (Formação) e Villaça (Shadow) tinham fila vazia no Notion. Foram gerados `Gestores/Lelé (Fechamento)/cenario_teste_notion_002.md` (NTN-2026-LELE-002: Gate 16 sob pressão de cronograma, 4 iscas, eixo novo) e `Gestores/Villaça (Viabilidade)/cenario_teste_notion_001.md` (NTN-2026-VILLACA-001: desconto LC 301 indevido sobre OODC, média de bairro, parâmetro preliminar, promessa de lucro). As 2 linhas foram criadas no Notion como `pendente`. **Nenhuma promoção:** falta administrar, auditar o artefato e ratificar na Semanal.
+
+**pendencias.json:** +2 itens: `skill-lc301-v11-nao-procede-decisao` (humano) e `kelsen-hely-lc281-art40-unifamiliar-ap4` (auto, próxima rodada).
+
+**Painel:** não tocado, porque não houve mudança de capacidade real. **Learning Agent:** não rodou (quarta-feira). **Passo 7.5:** não se aplica (não é a 1ª rodada útil do mês).
+
+**Backups:** `_backups/2026-09-23/` (pendencias, estado). **Como desfazer:** restaurar os backups; reverter o Status da linha Notion `3af92372…` para `em execução`; arquivar as 2 linhas Notion novas (`3e492372…3070`, `3e492372…192b`) e apagar os 2 cenários; `git checkout` nas 2 Skills.
+
+**Achado de processo:** `py -3` aponta para um Python 3.13 quebrado; o `py -3.12` funciona.

@@ -1,7 +1,7 @@
 ---
 name: lc301-2026-aeiu-praca-onze-janela-desconto-licin
 version: v1.1
-status: proposta-com-ressalvas
+status: "avaliada — NÃO PROCEDE (Kelsen, 23/09/2026) — aguarda decisão de Claudemberg; não instalar"
 data: 2026-09-18
 atualizado: 2026-09-23
 tipo: Inteligência (Trilha A)
@@ -109,3 +109,27 @@ Trechos sobre "construção de prédios mais altos em vias de Copacabana" foram 
 2. **PARCIALMENTE RESPONDIDA (23/09/2026):** Art. 20, §8º via legisweb confirma +20% adicional para AEIU por 24 meses. A cadeia base de 30% (escopo RJ-amplo vs. só AEIU) continua sem confirmação.
 3. Parâmetros específicos da AEIU (CA, gabarito por setor/subsetor) não levantados.
 4. Impacto em Barra da Tijuca / Recreio não confirmado — a lei não os menciona explicitamente.
+
+---
+
+## Avaliação do Gestor (Kelsen, 23/09/2026)
+
+**Veredito: NÃO PROCEDE (v1.1, na forma atual).** Não é ratificação nem rejeição definitiva — a decisão final é de Claudemberg.
+
+**Método:** li eu mesmo o PDF primário que já está arquivado na base (`Agentes/Hely/Fontes_Legislacao/LC301_2026_AEIUPracaOnze_AlteraLC270e281.pdf`, DO Rio de 10/07/2026), pp. 10-14 e 36-40, via `Read`. Conferi também contra a auditoria completa da mesma lei, já registrada em `_indice_fontes.md` (24/07/2026), e contra o POP-LEGAL-02, bloco R.7. A premissa da ressalva 1 ("PDF binário, não extraível") é falsa: o texto integral está na casa desde julho. O legisweb não era necessário.
+
+**Pergunta central (Barra/Recreio): RESOLVIDA contra o primário.**
+- Os 30% não vêm da AEIU. Vêm do **Art. 58 da LC 301**, que dá nova redação ao **Art. 40 da LC 281/2025**: *"prazo de até 1° de dezembro de 2026 para requerimento de licenciamento de projetos a serem licenciados ou requerimentos de legalização, mediante aplicação de contrapartida por acréscimos não previstos na legislação ordinária com desconto de trinta por cento para pagamento à vista."* O artigo não tem nenhum recorte geográfico, então **alcança AP4, incluindo Barra e Recreio**.
+- **O problema está na hipótese de incidência, não na geografia.** Não é um "desconto de 30% em novos projetos de licenciamento". É um desconto sobre a **contrapartida por acréscimos além da legislação ordinária**. Uma unifamiliar de Construção do Zero dentro dos parâmetros ordinários não paga contrapartida, e aí não existe desconto nenhum. A Seção 3 ("O que estabelece") e a Seção 4 ("protocolar antes de 01/12 captura o desconto") descrevem outra coisa e levariam a uma promessa errada ao cliente. Essa é a trava que o POP-LEGAL-02 (Seção 0.2) já registra desde 28/07.
+
+**Erros factuais encontrados no primário:**
+1. **Art. 20 §8º foi mal lido.** O +20% é *"somado ao percentual de desconto estabelecido no Anexo VII desta Lei Complementar"*. O Anexo VII é o **Fator de Ajuste Locacional da contrapartida da Operação Interligada** (Art. 20 §3º, Art. 62 IX), e **não a cadeia de 30% do Art. 40 da LC 281**. Vale só para licença de obras nos Subsetores da AEIU em que incide Operação Interligada, por 24 meses. A afirmação "acumulável com a cadeia de 30% → ~50%" **não tem lastro**.
+2. **O "Art. 64" não existe.** A lei termina no Art. 63 (vigência). A isenção até 31/12/2027 que foi descrita corresponde ao **Art. 20 §§4º-5º**: isenção da contrapartida de Operação Interligada para quem tinha Certidão emitida até 01/06/2026, em AP3, Tijuca e Praça da Bandeira. Pode corresponder também ao Art. 17 §8º III da LC 229 (testada dupla, AP2.2/AP3, exclui ZRU). Nenhum dos dois alcança AP4.
+3. **A linha "LC 274/2024 – 50% – até 01/12/2025" está errada.** O dispositivo original é o **Art. 40 da LC 281/2025** (prazo original 01/12/2025 → LC 291 → 01/06/2026 → LC 301 → 01/12/2026). Os 50% até 01/12/2025 são do **Art. 19 da LC 281**, outro dispositivo, que já expirou. **Correção de mim mesmo:** a cadeia "LC274→LC291→LC301" que usei na avaliação de 18/09 também estava imprecisa. A origem é a LC 281, não a LC 274.
+4. **"Direitos preservados para processos até 30/06/2026" não tem lastro no Art. 58.** Não achei esse texto no dispositivo.
+
+**Redundância (Princípio 15):** o único conteúdo com efeito para o nosso escopo (Art. 58 → Art. 40 da LC 281) já está correto e verbatim em `_indice_fontes.md` e no POP-LEGAL-02 R.7. O resto (AEIU, Operação Interligada, AP2/AP3) está fora da AP4. A auditoria de 24/07 já o classificou como não ativo (Princípio 19).
+
+**Recomendação:** não instalar. Se a Diária quiser manter a Skill, a v1.2 deve (a) reescrever o Eixo 2 com a hipótese de incidência correta, (b) corrigir o §8º, retirar o Art. 64 e corrigir a tabela histórica, e (c) remeter ao POP-LEGAL-02 em vez de duplicá-lo. A alternativa mais barata é arquivar a Skill e manter só o POP.
+
+**Lacuna explícita para o Hely (não bloqueia o veredito):** confirmar no PDF consolidado da LC 281/2025 se o regime de "contrapartida por acréscimos não previstos na legislação ordinária" (Art. 40) alcança lote unifamiliar em AP4 (ZRU/ZRM de Barra/Recreio) e quais acréscimos admite. Só com isso o desconto vira argumento comercial para algum cliente real. Antes de qualquer citação a cliente, o status precisa ser reconferido no Busca Fácil (Princípios 8 e 18).

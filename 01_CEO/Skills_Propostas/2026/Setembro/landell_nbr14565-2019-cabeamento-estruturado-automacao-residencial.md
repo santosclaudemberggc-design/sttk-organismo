@@ -38,7 +38,9 @@ Apesar do título "comercial", é o padrão adotado por profissionais de alto pa
 | Norma | Escopo |
 |-------|--------|
 | ABNT NBR 14565:2019 | Cabeamento estruturado (infraestrutura física) |
-| ABNT NBR 16065:2012 | Cabeamento estruturado para data centers |
+| ABNT NBR 16264 (ed. 2016) | Cabeamento estruturado **residencial** (TIC + broadcast + automação residencial) — referência primária para residência; ver Avaliação do Gestor |
+| ABNT NBR 16415:2021 | Caminhos e espaços para cabeamento estruturado (eletrodutos, shafts, separação de força) |
+| ABNT NBR 16665:2019 | Cabeamento estruturado para data centers (corrigido pelo Gestor; a versão original citava "NBR 16065:2012", número incorreto) |
 | ISO/IEC 11801:2017 | Equivalente internacional (referência premium) |
 | ABNT NBR 5410:2004 | Instalações elétricas de baixa tensão (camada de força) |
 
@@ -67,7 +69,7 @@ DG (Distribuidor Geral) — rack principal, entrada de operadoras
 | Aplicação | Cabo recomendado | Padrão |
 |-----------|-----------------|--------|
 | Rede de dados / Wi-Fi AP | Cat6A U/FTP | ISO/IEC 11801 Class EA |
-| Automação KNX cabeada | Cabo KNX TP (verde) 2×2×0,8 mm² | EN 50090-2-2 |
+| Automação KNX cabeada | Cabo KNX TP (verde) 2×2×0,8 mm (0,8 = diâmetro do condutor, não mm²) | EN 50090-2-2 |
 | TV por satélite / antena | RG-6 quad-shield | ABNT NBR 5281 |
 | Sistema de som distribuído | 2×1,5 mm² flexível | Especificação fabricante |
 | CFTV / câmeras IP | Cat6A ou cabo coaxial RG-59 | Depende da câmera (IP vs. analógica) |
@@ -131,7 +133,7 @@ A NBR 14565 e a NBR 5410 atuam em camadas distintas mas precisam ser coordenadas
 
 **Atenção ao circuito do rack:** o rack concentra equipamentos críticos (roteador, servidor, automação). Prever circuito **dedicado** de 20A para o rack principal, com tomada de 20A + filtro de linha ou no-break no próprio rack.
 
-**Aterramento do rack:** o gabinete metálico do rack deve receber cabo de aterramento dedicado (verde-amarelo, bitola conforme NBR 5410 Tabela 54F — usualmente 4 mm² para circuito de 20A). Coordenar com o projeto elétrico: o ponto de aterramento do rack não é o mesmo que o neutro do circuito de força.
+**Aterramento do rack:** o gabinete metálico do rack deve receber cabo de aterramento dedicado (verde-amarelo, seção conforme NBR 5410 Tabela 58 — para fase até 16 mm², o condutor de proteção tem a mesma seção da fase; ex.: circuito de 20A em 2,5 mm² → PE 2,5 mm². Corrigido pelo Gestor em 23/09: a versão anterior citava "Tabela 54F / usualmente 4 mm²", referência inexistente). Coordenar com o projeto elétrico: o ponto de aterramento do rack não é o mesmo que o neutro do circuito de força.
 
 ---
 
@@ -163,8 +165,31 @@ Landell consulta esta Skill sempre que o briefing mencionar:
 
 ## 10. RESSALVAS
 
-1. A NBR 14565:2019 é norma comercial — não há norma ABNT residencial equivalente publicada. A adoção do padrão comercial em residencial é prática de mercado, não exigência legal, mas é a referência técnica defensável.
+1. **[Corrigida pelo Gestor em 23/09/2026]** A NBR 14565:2019 é norma comercial. A versão original afirmava que "não há norma ABNT residencial equivalente" — **falso**: existe a ABNT NBR 16264 (Cabeamento estruturado residencial, ed. 2016, baseada na ISO/IEC 15018 e alinhada à ISO/IEC 11801-4), que cobre TIC, broadcast e automação residencial. Para residência, a 16264 é a referência primária; a 14565 entra só como complemento (backbone, distâncias, categorias). Nenhuma das duas é exigência legal para residência unifamiliar — são referência técnica.
 2. Parâmetros KNX seguem EN 50090 (norma europeia) — não há equivalente ABNT. A certificação KNX é feita pela associação KNX Brasil.
-3. Projeto elétrico (NBR 5410) e projeto de cabeamento estruturado são **documentos separados** — ambos assinados por Landell, ambos com ART/RRT.
+3. **[Corrigida pelo Gestor em 23/09/2026]** Projeto elétrico (NBR 5410) e projeto de cabeamento estruturado são **documentos separados**. Landell **prepara** os dois, mas **não assina**: ART/RRT exige profissional habilitado (engenheiro eletricista/CREA ou arquiteto/CAU com atribuição). A versão original dizia "ambos assinados por Landell" — fronteira errada.
 4. O gatilho de "R$ 8.000/m² de construção" (Seção 9) é referência de mercado indicativa de escopo, não critério normativo. Em Barra/Recreio 2026, projetos acima desse valor ainda podem não incluir automação completa, e projetos abaixo podem tê-la por exigência do cliente. Landell deve usar o gatilho como orientação de briefing, não como regra de contratação.
-5. A ABNT NBR 14159 (Instalações prediais — sistemas privados de telecomunicações) não é citada nesta Skill, mas é a referência usada por operadoras para dimensionar a entrada de fibra óptica no DG. Em projetos que especificam entrada de fibra óptica GPON/XGS-PON, Landell deve verificar a NBR 14159 para dimensionar a sala técnica de entrada — limitar-se à NBR 14565 pode subestimar o espaço físico necessário.
+5. **[Número NÃO confirmado em fonte — verificar antes de citar em memorial]** A ABNT NBR 14159 (Instalações prediais — sistemas privados de telecomunicações) não é citada nesta Skill, mas é a referência usada por operadoras para dimensionar a entrada de fibra óptica no DG. Em projetos que especificam entrada de fibra óptica GPON/XGS-PON, Landell deve verificar a NBR 14159 para dimensionar a sala técnica de entrada — limitar-se à NBR 14565 pode subestimar o espaço físico necessário.
+
+---
+
+## Avaliação do Gestor (Cardozo, 23/09/2026)
+
+**Veredito: PROCEDE COM RESSALVA.** Avaliação do Gestor dono. **Não é** ratificação de Claudemberg, que continua pendente.
+
+**O que está certo e se aproveita:** hierarquia DG → DA → TO; limite de 90 m no cabeamento horizontal (enlace permanente); Cat6A para dados/AP; pré-conduit antes da alvenaria; circuito dedicado ao rack; separação física entre sinal e força; tabela de pontos por ambiente como referência de briefing.
+
+**Correções que fiz diretamente (fonte + cópia instalada em `.claude/skills/`):**
+1. **Premissa errada (a mais grave):** a Skill dizia que não existe norma ABNT residencial. Existe a **NBR 16264** (cabeamento estruturado residencial, ed. 2016). Ressalva 1 reescrita e norma incluída na tabela. Recomendo que, na v1.1, o título e a Seção 2 passem a ter a 16264 como base, com a 14565 como complemento.
+2. "NBR 16065:2012 (data centers)" estava errado → **NBR 16665:2019**. Incluí também a **NBR 16415:2021** (caminhos e espaços), que é a base real da separação sinal/força citada na Seção 6.
+3. Cabo KNX: "2×2×0,8 mm²" → **0,8 mm de diâmetro**, não seção.
+4. Aterramento do rack: "Tabela 54F / 4 mm²" (inserido por mim mais cedo, por engano meu) → **Tabela 58**: PE com a mesma seção da fase até 16 mm².
+5. Ressalva 3: Landell **não assina** ART/RRT. Ele prepara; quem assina é o profissional habilitado.
+
+**Ressalvas que ficam em aberto (fonte não confirmada, verificar antes de usar em memorial):** NBR 5281 (coaxial), NBR 11785 (alarme), NBR 14159 (entrada de telecom) e a afirmação de que a "NBR 14565 veda" o compartilhamento de eletroduto com força (o mais provável é que isso esteja na NBR 5410 ou na 16415). A restrição "KNX nunca junto a 220 V" é mais conservadora que a própria diretriz KNX. Pode ser mantida como boa prática, mas não como regra normativa.
+
+**Sobreposição (Princípio 15):** nenhuma duplicação real. A `nbr5410-eletrica-automacao` só cita a 14565 como fora de escopo. Ajuste menor: os protocolos (KNX/Zigbee) também estão na Skill 5410, não só em `automacao-residencial-tendencias`.
+
+**Geografia (Barra/Recreio):** coerente, mas genérica. Falta uma nota sobre névoa salina: em área externa a menos de ~1 km da orla, usar conectores e caixas com proteção contra corrosão, e não só IP65.
+
+**Fonte:** as NBRs são pagas e nenhuma foi lida na íntegra. Os números de norma foram checados em catálogo público (Target/normas.com.br). Os valores técnicos não foram checados.
