@@ -2,7 +2,7 @@
 
 **Status:** Ativo  
 **Mês:** Setembro 2026  
-**Atualização:** 24/09/2026 (sem Skill nova — Baumgart fundações Barra/Recreio → v1.1 [NBR 6484:2020 + paralisação SPT + NBR 8036]; adendo Art. 64 na LC 301)
+**Atualização:** 23/09/2026
 
 ---
 

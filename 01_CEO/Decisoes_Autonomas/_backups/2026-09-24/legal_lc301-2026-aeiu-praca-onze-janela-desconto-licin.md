@@ -133,13 +133,3 @@ Trechos sobre "construção de prédios mais altos em vias de Copacabana" foram 
 **Recomendação:** não instalar. Se a Diária quiser manter a Skill, a v1.2 deve (a) reescrever o Eixo 2 com a hipótese de incidência correta, (b) corrigir o §8º, retirar o Art. 64 e corrigir a tabela histórica, e (c) remeter ao POP-LEGAL-02 em vez de duplicá-lo. A alternativa mais barata é arquivar a Skill e manter só o POP.
 
 **Lacuna explícita para o Hely (não bloqueia o veredito):** confirmar no PDF consolidado da LC 281/2025 se o regime de "contrapartida por acréscimos não previstos na legislação ordinária" (Art. 40) alcança lote unifamiliar em AP4 (ZRU/ZRM de Barra/Recreio) e quais acréscimos admite. Só com isso o desconto vira argumento comercial para algum cliente real. Antes de qualquer citação a cliente, o status precisa ser reconferido no Busca Fácil (Princípios 8 e 18).
-
----
-
-## ADENDO 24/09/2026 — Conciliação "Art. 64" (Diária Skills, sem alterar o veredito do Kelsen)
-
-A LegisWeb (id=498025) exibe um **Art. 64**, mas no texto consolidado da **LC 229/2021 (Reviver Centro) com a redação dada pela LC 301/2026** — não no articulado próprio da LC 301, que termina no Art. 63. Kelsen (23/09) e a leitura desta rodada se conciliam: o dispositivo existe, só que na lei alterada.
-
-Conteúdo lido (Art. 64 da LC 229, inc. III, "a", 1-2): titulares de Certidão de Operação Interligada do Reviver Centro com potencial não utilizado até 01/06/2026 → **isenção da contrapartida** na aplicação em áreas receptoras da **AP 3 + Tijuca + Praça da Bandeira** e **adicional de 100%** do saldo, ambos **até 31/12/2027**; depois, Anexo VII (Fator de Ajuste Locacional). Incisos I-II: regra de transição 30/06/2026 e 01/12/2026 para licenças nas AP 1/2/3.
-
-**Efeito para STTK:** nenhum em Barra/Recreio (AP4 não é área receptora). Confirma o veredito de Kelsen — é Operação Interligada, não desconto de protocolo. Pendência "Art. 64" da rodada de 23/09 **encerrada**. Decisão sobre arquivar a Skill continua com Claudemberg.

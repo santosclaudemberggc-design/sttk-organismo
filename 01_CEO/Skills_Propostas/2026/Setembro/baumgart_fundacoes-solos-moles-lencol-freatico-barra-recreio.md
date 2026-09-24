@@ -1,9 +1,10 @@
 ---
 name: fundacoes-solos-moles-lencol-freatico-barra-recreio
 description: "Critérios de projeto de fundações em solos moles e com lençol freático alto — condicionantes geotécnicos da Barra da Tijuca, Recreio dos Bandeirantes e Jacarepaguá: SPT, tipos de estaca e soluções recomendadas."
-version: "1.0"
+version: "1.1"
 status: ativa-com-ressalva
 created: 2026-09-21
+updated: 2026-09-24 (v1.1 — R5 fechada: NBR 6484:2020 confirmada; critério de paralisação SPT adicionado; R7 nova)
 author: Rotina Diária Skills v3.2
 gestor_validador: cardozo
 agente_principal: baumgart
@@ -54,7 +55,7 @@ A Barra da Tijuca, o Recreio dos Bandeirantes e a Baixada de Jacarepaguá têm p
 
 - **Solo raso incompetente** → fundação direta (sapata, radier em solo) é inviável na maioria dos casos
 - **Lençol freático alto** → perfuração seca (tradagem) não funciona para profundidades > lençol
-- **Aterro irregular** → sondagem SPT **obrigatória antes de qualquer dimensionamento** (NBR 6122:2019, item 6.3 — mínimo 1 furo por 200 m² de área construída, mínimo 3 furos)
+- **Aterro irregular** → sondagem SPT **obrigatória antes de qualquer dimensionamento** (programação de furos pela **NBR 8036** — 1 furo/200 m² de projeção até 1.200 m²; mín. 2 furos até 200 m², mín. 3 entre 200–400 m² — ver R7)
 
 ---
 
@@ -64,10 +65,22 @@ A Barra da Tijuca, o Recreio dos Bandeirantes e a Baixada de Jacarepaguá têm p
 
 - Fornece perfil estratigráfico + resistência N por metro
 - **Identifica nível do lençol freático** quando interceptado
-- Mínimo de furos por NBR 6122 — em Barra/Recreio, ampliar para 1 furo a cada 100–150 m² (solos heterogêneos por aterro)
+- Mínimo de furos pela NBR 8036 — em Barra/Recreio, ampliar para 1 furo a cada 100–150 m² (solos heterogêneos por aterro)
 - Solicitar análise granulométrica nas amostras de camadas moles (argila × silte × areia) para aferir coesão
 
 **Atenção:** em lotes que eram banhado ou lagoa até décadas recentes, a sondagem pode revelar turfas (matéria orgânica decomposta) com N = 0 — camada que exige tratamento especial ou transposição total.
+
+### Critério de paralisação do SPT — NBR 6484:2020 (v1.1, 24/09/2026)
+
+A NBR 6484:2020 **cancela e substitui** a NBR 6484:2001. O critério de paralisação é responsabilidade técnica do **contratante** (Baumgart/Cardozo, na especificação da sondagem) — se nada for especificado, a norma manda avançar até atingir um destes:
+
+| Trecho contínuo | NSPT em todos os metros do trecho |
+|---|---|
+| 10 m | ≥ 25 golpes/30 cm |
+| 8 m | ≥ 30 golpes/30 cm |
+| 6 m | ≥ 35 golpes/30 cm |
+
+**Brecha/armadilha na Barra/Recreio:** paralisação normativa **não é rocha nem garantia de camada competente contínua** — só atesta que o ensaio terminou. Se a estaca prevista (hélice 12–20 m) precisar ir abaixo do fundo do furo, ou se houver dúvida de continuidade, matacão ou embutimento em rocha, **especificar sondagem mista/rotativa** complementar. Regra prática: na especificação da sondagem, Baumgart fixa profundidade mínima ≥ ponta estimada da estaca + margem, em vez de deixar o critério default da norma decidir.
 
 ---
 
@@ -140,7 +153,9 @@ A Barra da Tijuca, o Recreio dos Bandeirantes e a Baixada de Jacarepaguá têm p
 
 **R4 — Não substituir Skill NBR 6122:** esta Skill complementa, não substitui, a Skill de fundações NBR 6122:2019 (07/09/2026) que trata de dimensionamento. Aqui o foco é o condicionante geográfico da Barra/Recreio.
 
-**R5 ALTA — Verificar existência da NBR 6484:2020 (Cardozo, 21/09):** a Skill cita "NBR 6484/2020" para SPT. A edição anterior consolidada era NBR 6484:2001. Se a versão 2020 não existir como publicação ABNT vigente, a citação normativa está errada — erro que invalida a base normativa em memorial de cálculo. Baumgart deve confirmar a edição atual antes de qualquer citação formal.
+**R5 — ✅ FECHADA 24/09/2026:** NBR 6484:2020 existe e **cancela e substitui a NBR 6484:2001** (Target Normas / catálogo ABNT; confirmado por múltiplas fontes técnicas). Citação "NBR 6484:2020" em memorial está correta. Texto integral continua não lido (norma paga).
+
+**R7 — Mínimo de furos depende da área (Cardozo, 24/09/2026):** a atribuição antiga a "NBR 6122 item 6.3" estava errada. A regra é da **NBR 8036** (programação de sondagens): 1 furo/200 m² de projeção até 1.200 m²; mín. 2 furos até 200 m²; mín. 3 entre 200–400 m². As Skills `nbr6122-2019-fundacoes` ("mín. 2") e esta ("mín. 3") estão ambas parcialmente certas. **Ressalva:** valores da NBR 8036 vêm do conhecimento de Cardozo, não de leitura da norma — Baumgart confere antes de citar em memorial. Na Barra/Recreio, manter como prática 1 furo/100–150 m².
 
 **R6 ALTA — Capacidade de carga 60-120 kN/estaca sem método declarado (Cardozo, 21/09):** os valores de capacidade de carga citados (60–120 kN para hélice Ø 30–40 cm em areia média) não especificam o método de cálculo utilizado (Aoki-Velloso ou Décourt-Quaresma produzem resultados distintos para o mesmo perfil SPT). Baumgart não pode usar esses valores como referência em memorial de dimensionamento real sem declarar o método — são apenas orientação de ordem de grandeza para estimativa preliminar de viabilidade, não valores de projeto.
 
@@ -154,3 +169,7 @@ A Barra da Tijuca, o Recreio dos Bandeirantes e a Baixada de Jacarepaguá têm p
 - GF Engenharia SP — "Sondagem de simples reconhecimento do solo com SPT" (secundária ✓)
 - TCC UENF 2026 — "Projeto de fundações profundas em solo mole" — PDF binário, não lido na íntegra (mencionado, não citado como fonte de valores)
 - **NBR 6484/2020 e NBR 6122:2019+Em.1/2022** — normas de referência (não lidas na íntegra — ABNT pagas)
+- Target Normas — ficha ABNT NBR 6484 (edição 2020 substitui 2001) (secundária ✓, 24/09)
+- APL Engenharia — "Sondagem SPT paralisada pela NBR 6484: quando avançar para sondagem rotativa?" (secundária ✓ lida, 24/09 — critério 10/8/6 m)
+- boletimsondagem.com.br — "NBR 6484:2020: guia prático para boletim de sondagem SPT" (secundária ✓ lida, 24/09)
+- YouTube "QUANDO PARAR A SONDAGEM | NBR 6484 2020 ATUALIZADA" — localizado, **não assistido** (/watch bloqueado por HTTP 429/403 do YouTube em 24/09)

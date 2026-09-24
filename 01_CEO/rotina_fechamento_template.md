@@ -22,6 +22,33 @@ metadata:
 
 ---
 
+## [2026-09-24] — Diária Skills v3.2 (Quinta) — RODADA COMPLETA (0 Skill nova, 2 correções)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Skill nova:** 0. Material de SPT seria duplicata da Skill de fundações da Barra (21/09), então foi feita correção, conforme o Princípio 15.
+- [x] **Correção Baumgart → v1.1** (`fundacoes-solos-moles-lencol-freatico-barra-recreio`): R5 FECHADA, porque a NBR 6484:2020 substitui a 2001. Entrou o critério de paralisação do SPT (10 m/N≥25, 8 m/N≥30, 6 m/N≥35) e a regra "paralisação ≠ rocha → sondagem mista". O nº mínimo de furos foi reatribuído da NBR 6122 para a NBR 8036. Cardozo: PROCEDE COM RESSALVA. Skill reinstalada em `.claude/skills/`.
+- [x] **Adendo Kelsen LC 301:** o "Art. 64" existe na **LC 229/2021 com a redação da LC 301** (a LC 301 termina no Art. 63). Ele trata de isenção de Operação Interligada em AP3 + Tijuca/Praça da Bandeira até 31/12/2027. Sem efeito na Barra/Recreio. Confirma o veredito NÃO PROCEDE (23/09). Pendência "Art. 64" ENCERRADA.
+- [x] **Feed:** 2 eventos (skill Cardozo + decisão Wallenberg), ambos OK.
+- [x] **Backups:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-24/` (4 arquivos)
+- [x] **Lúcio:** sem Skill. A busca só trouxe material genérico sobre ventilação/mofo e brise, tema já coberto pelas Skills de 16/09, 17/09 e 22/09.
+- [ ] **/watch (v3.3.1):** tentado no vídeo de Cardozo (NBR 6484). **Falhou**: YouTube HTTP 429 nas legendas e 403 no áudio, no mesmo yt-dlp que funcionou em 22/09. Kelsen: busca de vídeo sem resultado relevante (só notícias). Lúcio: só vídeo genérico em tema já coberto.
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **yt-dlp voltou a dar 403/429 (24/09)** — aviso de "impersonation target" ausente. Checar `curl_cffi`/atualização do yt-dlp antes da próxima rodada com vídeo.
+- **NBR 8036 (valores de nº mínimo de furos):** vêm da memória de Cardozo, sem leitura da norma. Baumgart confere antes de usar em memorial. Considerar harmonizar a Skill `nbr6122-2019-fundacoes` ("mín. 2") com esta regra por faixa de área.
+- **LC 301 cadeia de 30% (Art. 40 LC 281) em AP4:** continua aberta para Hely (lacuna registrada por Kelsen em 23/09).
+- **Art. 106 LC 270/2024:** continua aberto.
+
+### O QUE NÃO FAZER (Avoid retrabalho)
+
+- ❌ **NBR 6484:2020 / sondagem SPT: não crie Skill separada.** Está coberta pela Skill de fundações Barra/Recreio v1.1.
+- ❌ **Art. 64 LC 301: não pesquise de novo.** Resolvido (é LC 229, AP3/Tijuca, fora da AP4).
+- ❌ Todos os itens de "NÃO FAZER" das rodadas anteriores continuam válidos.
+
+---
+
 ## [2026-09-23] — Diária Skills v3.2 (Quarta) — RODADA COMPLETA
 
 ### RODADA ATUAL (O que foi entregue)
@@ -494,6 +521,6 @@ metadata:
 
 ---
 
-**Última atualização:** 23/09/2026 (quarta-feira — Diária Skills v3.2, Rodada COMPLETA — 1 Skill nova Landell NBR 14565 ativa-com-ressalva + correção LC 301/2026 v1.1)  
-**Próxima leitura:** 24/09/2026 (quinta-feira) — Diária Skills Seg-Qui  
+**Última atualização:** 24/09/2026 (quinta-feira — Diária Skills v3.2 — 0 Skill nova, Baumgart fundações v1.1 + adendo Art. 64 LC 301)  
+**Próxima leitura:** 25/09/2026 (sexta-feira) — Diária Skills fluxo de Sexta  
 **Painel pendente para:** 26/09/2026 (sexta)
