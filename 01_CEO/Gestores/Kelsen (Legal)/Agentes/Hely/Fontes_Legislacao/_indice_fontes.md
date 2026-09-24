@@ -283,6 +283,8 @@ Cadeia do prazo: 1º/12/2025 (original) -> 1º/06/2026 (LC 291) -> **1º/12/2026
 
 Não confundir com os descontos do **Art. 19** da LC 281 (50% até 1º/12/2025; 30% de 1º/12/2025 a 02/03/2026), **ambos expirados**. São dispositivos diferentes.
 
+**[COMPLEMENTO KELSEN 24/09/2026] Alcance para unifamiliar AP4:** alcança, por texto expresso (LC 281 Art. 18, II e §1º, II, "a"; Art. 12 §1º), sem exclusão de ZRU/ZRM/AP4 (as exclusões dos Arts. 2º §4º, 4º §2º, 10 §2º, 14 §2º e 15 p.ú. não atingem unifamiliar). Acréscimos: Art. 9º (+1 pav. de cobertura ≤ 50%, p.ú. "legislação específica"), Art. 12 (horizontal, inclusive sobre afastamento frontal acima do 1º pav.), Art. 16 (legalização até +1 pav.). **Divergência de prazo não resolvida:** Art. 16 §5º (não alterado) = 30/06/2026 para legalização × Art. 40 (LC 301) = 01/12/2026 com legalização incluída. Detalhe e dúvidas abertas: `POPs/POP-LEGAL-02_outorga_onerosa_cab_cam.md`, R.7.1. Backup: `01_CEO/Decisoes_Autonomas/_backups/2026-09-24/kelsen_POP-LEGAL-02_R7_e_indice_Art40_ANTES.md`.
+
 ## [ATENÇÃO] Obrigação nova em TODA nova edificação — COES Art. 35 § 7º
 
 > "§ 7º É obrigatória a instalação de dutos nos passeios diante das novas edificações para enterramento da fiação de energia e de telecomunicações, obedecendo-se às regras e às normas técnicas definidas pelo órgão municipal responsável pelo licenciamento da obra." *(acrescentado pela LC 283 de 14/07/2025)*

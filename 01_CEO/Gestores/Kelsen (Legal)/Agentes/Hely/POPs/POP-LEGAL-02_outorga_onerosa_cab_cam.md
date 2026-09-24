@@ -246,3 +246,29 @@ Confirma, verbatim, o que a Seção 2 do POP suspenso já afirmava sobre este ar
 - **Arts. 18, 19 (redação vigente) e 20 conferidos linha por linha** contra o PDF consolidado — nenhuma divergência de texto, símbolo ou número encontrada. A seleção da "segunda ocorrência" do Art. 19 (redação pós-LC 291/2025, não a redação original riscada) está correta.
 - **Decisão: quarentena da Seção 0 ENCERRADA.** Ver Seção 0.0 no topo do arquivo. Este POP volta a valer como fundamento de peça, parecer, orientação a cliente ou protocolo, usando R.2-R.5 (e R.7 para o Art. 40).
 - **Pendência que sobrevive, não fechada por esta auditoria:** TRAVA A (escolha de instrumento — Maurício Costa) e TRAVA C (Fórmula 1 literal do Anexo XXV da LC 270/2024) continuam abertas.
+
+#### R.7.1 [COMPLEMENTO KELSEN 24/09/2026] Alcance do Art. 40 para unifamiliar AP4 (Barra/Recreio)
+
+Hely leu a LC 281 consolidada de forma linear (28/28 pp.); Kelsen conferiu contra o primário (pp.1-10 e 26-28). Citações abaixo verbatim. **Análise preliminar — não é parecer (Gate do Maurício pendente).** Backup do antes: `01_CEO/Decisoes_Autonomas/_backups/2026-09-24/kelsen_POP-LEGAL-02_R7_e_indice_Art40_ANTES.md`.
+
+- **O Art. 40 não cria regime próprio: é prazo + desconto de 30% à vista sobre o regime das Seções III a VI da LC 281.** A expressão "contrapartida por acréscimos não previstos na legislação ordinária" é a mesma do Art. 16 §5º (p.5) — é o nome do regime da própria lei, não uma hipótese separada. (Leitura de Kelsen; a lei não faz a remissão por escrito.)
+- **(1) Alcança unifamiliar — SIM, por texto expresso, sem exclusão de ZRU/ZRM/AP4.**
+  - Art. 1º (p.1): "condições especiais para o licenciamento de construções e acréscimos nas edificações no Município do Rio de Janeiro" — sem recorte territorial.
+  - Art. 18, II (p.5): "se praticada por particular proprietário, em unidade de imóvel unifamiliar ou bifamiliar, antes ou após a concessão do 'habite-se' [...]"; fórmula própria no §1º, II, "a" (p.6).
+  - Art. 12 §1º (p.4, redação LC 291): "[...] exceto em edificações uni ou bifamiliares" — benefício específico do unifamiliar.
+  - Exclusões que existem são pontuais e **não atingem unifamiliar**: Art. 2º §4º (ZRU 1/2, ZRM 1 — só ICS de uso não residencial); Art. 4º §2º (AP4 — só hotel na Orla); Art. 10 §2º (RP 4.2 — só transformação do pavimento de uso comum); Arts. 14 §2º/15 p.ú. (LC 229, Grajaú, RP 3.7).
+  - Nota de Kelsen: o Art. 11 (p.3) fala das subzonas A-1, A-20 e A-21 B da XXIV RA (acredito ser a RA da Barra da Tijuca, subzonas do Decreto 3046/81 — não confirmado no primário nesta rodada), mas remete ao Art. 7º (multifamiliar). Não se aplica a unifamiliar.
+- **(2) Acréscimos admitidos para unifamiliar (texto):**
+  - **+1 pavimento de cobertura** acima do último permitido, ocupação ≤ 50% do último pavimento, afastamento ≥ 3 m do plano da fachada da testada, demais afastamentos pelo COES (Art. 9º, I-III, pp.2-3). **p.ú.: "deverá observar a legislação específica, quando houver"** — em Barra/Recreio (Decreto 3046/81 via LC 270) pode travar; não resolvido.
+  - **Ampliação horizontal** em áreas descobertas, em qualquer nível, e nos pavimentos de cobertura (Art. 12, p.3), **inclusive sobre o afastamento frontal acima do 1º pavimento** no uni/bifamiliar (§1º); prismas pelo COES (§2º).
+  - **Legalização** de obra existente (pisos e cobertura construídos, Art. 16 §1º), até **+1 pavimento** acima do aprovado ou altura máxima do projeto aprovado (Art. 16 §2º, III); uso conforme (§2º, II).
+  - Serve para **obra nova** ("projetos a serem licenciados", Art. 40; "antes [...] do habite-se", Art. 18, II) **e legalização**.
+  - **Não há** artigo que autorize, por nome, TO, CAM/ATE ou gabarito extra para unifamiliar fora do Art. 9º/12. ATE +50% só em bem tombado (Art. 17).
+- **Condições gerais (Art. 22, p.8):** segurança/salubridade/habitabilidade; iluminação/ventilação; **"não ocupar áreas de recuo, áreas não edificáveis, faixas de escoamento [...] e de proteção de mares, rios e lagoas"** (III); orla (§1º); aprovação condicionada a órgãos competentes (§3º). Licença só com contrapartida quitada (Art. 20).
+- **Pagamento em AP4:** desconto de 30% **só à vista** (Art. 40, até 01/12/2026). O desconto parcelado do Art. 19, II **não alcança AP4** (só AP3, AP5, RA XVI, RA XXXIV, Rio das Pedras). Isenção do Art. 18, IV (única propriedade, ≤ 80 m²) vale em qualquer AP, mas raramente se aplica ao nosso perfil.
+- **Dúvidas abertas (sobem como julgamento, não decididas):**
+  1. **Prazo da legalização:** o Art. 16 §5º (não alterado) fixa **30/06/2026**, que já venceu. O Art. 40 (LC 301, posterior) inclui "requerimentos de legalização" até 01/12/2026. Leitura provável: prevalece a lei posterior. **Não confirmado.** Não prometer prazo de legalização a cliente sem resolver isso.
+  2. **Art. 22 §2º** ("Na hipótese de não atendimento dos parâmetros urbanísticos legais em vigor incidente sobre o imóvel, será cobrada contrapartida"): pode abrir o regime a qualquer parâmetro ou só confirmar as hipóteses listadas. É decisivo para a pergunta (2).
+  3. **"Áreas de recuo" (Art. 22, III):** recuo de alinhamento (PAA) ou afastamento frontal? Na 2ª leitura, colide com o Art. 12 §1º.
+  4. **"Legislação específica" (Art. 9º p.ú.)** × Decreto 3046/81 em Barra/Recreio.
+  5. **Condomínio** (ex.: caso Daniel-OB): regra privada mais restritiva continua valendo. A LC 281 não afasta convenção.

@@ -838,19 +838,6 @@
       "desde": "2026-09-23",
       "res": "Lacuna aberta na avaliação da LC 301 v1.1: não confirmado se o regime de 'contrapartida por acréscimos não previstos na legislação ordinária' (Art. 40 LC 281/2025, redação LC 301 Art. 58, prazo 01/12/2026) alcança lote unifamiliar em AP4 (Barra/Recreio) e quais acréscimos admite.",
       "acao": "Kelsen aciona Hely para ler o PDF consolidado da LC 281/2025 (Art. 40 e correlatos) e responder: (1) alcança unifamiliar em ZRU/ZRM de Barra/Recreio? (2) quais acréscimos admite? Kelsen audita contra o primário e atualiza POP-LEGAL-02 R.7 / _indice_fontes.md se houver mudança.",
-      "status": "resolvida",
-      "resolvido_em": "2026-09-24",
-      "resultado": "Drenagem 24/09: Hely leu a LC 281 consolidada, Kelsen auditou contra o primário (CONFERE). (1) Sim, alcança unifamiliar em Barra/Recreio por texto expresso (Arts. 1º, 18 II, 12 §1º), nenhuma exclusão atinge unifamiliar. (2) Acréscimos: +1 pavimento de cobertura até 50% (Art. 9º), ampliação horizontal inclusive afastamento frontal acima do 1º pav. no uni/bifamiliar (Art. 12), legalização de até 1 pavimento (Art. 16 §2º III); desconto parcelado do Art. 19 II não vale na AP4. Adicionado R.7.1 ao POP-LEGAL-02 (.md+.pdf) e complemento no _indice_fontes.md; backup em _backups/2026-09-24/. Análise preliminar, sem Gate do Maurício."
-    },
-    {
-      "id": "kelsen-lc281-art16-vs-art40-prazo-legalizacao",
-      "owner": "Kelsen",
-      "agente": "Artigas",
-      "crit": "media",
-      "alc": "humano",
-      "desde": "2026-09-24",
-      "res": "Dúvidas de interpretação que sobraram da auditoria do Art. 40 da LC 281 (24/09): (a) conflito de prazo de legalização — Art. 16 §5º (30/06/2026, vencido, não alterado pela LC 301) x Art. 40 novo (01/12/2026); (b) alcance do Art. 22 §2º (o regime cobre qualquer parâmetro?); (c) 'áreas de recuo' do Art. 22 III x Art. 12 §1º; (d) se a 'legislação específica' do Art. 9º p.ú. inclui o Decreto 3046/81 e trava a cobertura extra em Barra/Recreio.",
-      "acao": "Levar ao Gate do Maurício (via Artigas) com decisão de Claudemberg. Até lá, ninguém promete prazo de legalização nem cobertura extra a cliente em Barra/Recreio com base no Art. 40.",
       "status": "aberta",
       "resolvido_em": null
     }

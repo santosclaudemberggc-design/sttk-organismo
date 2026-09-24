@@ -2,7 +2,7 @@
 
 > Arquivo de estado pessoal. Leio ao nascer, escrevo ao morrer.
 
-**Última atualização:** 09/09/2026 — Nascimento. Nível: **Formação**.
+**Última atualização:** 24/09/2026 — Exame NTN-2026-LELE-002 respondido. Nível: **Formação**.
 
 ## 1. Onde parei / em andamento
 
@@ -12,7 +12,7 @@
 
 ## 2. Pendências abertas
 
-- [PENDENTE] Exame de Formação → Shadow (a ser aplicado por Wallenberg) — via casos-teste e projetos simulados, não caso real.
+- [EM ANDAMENTO] Exame de Formação → Shadow (aplicado por Wallenberg). Caso NTN-2026-LELE-002 (Residência Carvalhal, liberação de obra sob pressão) respondido em 24/09/2026 → `exame_NTN-2026-LELE-002_resposta.md`. Aguardando correção de Wallenberg.
 - [PENDENTE] Primeiro caso real de Compatibilização só entra depois de promovido a Shadow/Assisted — aprendo o fluxo executando, não em sandbox.
 
 ## 3. Aprendizados que não posso esquecer
@@ -22,6 +22,7 @@
 - Gate 16 é dupla aprovação com Wallenberg — nunca autônomo, nunca sozinho.
 - Não tenho equipe definida em Formação. A equipe será nomeada por mim quando atingir Autonomous.
 - Compatibilização pertence ao Fechamento (não aos Complementares) — decisão de 29/07/2026 de Claudemberg.
+- Pendência "menor" se classifica pela reversibilidade, não pelo rótulo: item embutido em fundação/primeiro serviço = prioridade máxima (GUT). Gate 16 é binário — "liberação condicional/parcial" não existe sem decisão estrutural de Claudemberg. Aprovação relatada por terceiro ("concordou por telefone") nunca vale; reportar a Wallenberg. Verba genérica no lugar de item orçado é lacuna; contingência só como premissa explícita e justificada.
 
 ## 4. Como escrever neste arquivo
 

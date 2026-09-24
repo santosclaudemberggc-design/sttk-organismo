@@ -1306,3 +1306,21 @@ Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e co
 **Backups:** `_backups/2026-09-23/` (pendencias, estado). **Como desfazer:** restaurar os backups; reverter o Status da linha Notion `3af92372…` para `em execução`; arquivar as 2 linhas Notion novas (`3e492372…3070`, `3e492372…192b`) e apagar os 2 cenários; `git checkout` nas 2 Skills.
 
 **Achado de processo:** `py -3` aponta para um Python 3.13 quebrado; o `py -3.12` funciona.
+
+---
+
+## 24/09/2026 — Drenagem Contínua v2.4 (qui, 10:18–10:35) — Kelsen fecha LC 281 Art. 40; exames de Lelé e Villaça administrados
+
+**Portão (2.5):** 1 auto+aberta (`kelsen-hely-lc281-art40-unifamiliar-ap4`); 0 Skills novas (a Diária de hoje só corrigiu 2 já avaliadas); 2 linhas Notion `pendente` (NTN-2026-LELE-002, NTN-2026-VILLACA-001). Filtro rodado com `pendente` e `em execução`, como aprendido ontem. Acionados só Kelsen, Lelé e Villaça. Lúcio e Cardozo ficaram sem fila e não foram acionados.
+
+**Kelsen (execução real):** acionou o Hely, que leu a LC 281 consolidada. Kelsen auditou contra o primário: **CONFERE**. O Art. 40 alcança unifamiliar em Barra/Recreio por texto expresso (Arts. 1º, 18 II, 12 §1º). Os acréscimos admitidos são +1 pavimento de cobertura até 50% (Art. 9º), a ampliação horizontal (Art. 12) e a legalização de até 1 pavimento (Art. 16 §2º III). O desconto parcelado do Art. 19 II não vale na AP4. Foram criados o R.7.1 no POP-LEGAL-02 (.md e .pdf regerado) e um complemento no `_indice_fontes.md`. Backup: `_backups/2026-09-24/kelsen_POP-LEGAL-02_R7_e_indice_Art40_ANTES.md`. Item resolvido. Um item novo, humano, foi aberto: `kelsen-lc281-art16-vs-art40-prazo-legalizacao`. Ele reúne o conflito de prazo de legalização (30/06 vencido x 01/12) e 3 dúvidas de interpretação para o Gate do Maurício.
+
+**Exames (Loop 5.b.3, Wallenberg examinador):** as travas 1 (Recreio) e 2 (célula certa) ficaram limpas nos dois casos.
+- **Lelé, NTN-2026-LELE-002 (Formação→Shadow):** o artefato `exame_NTN-2026-LELE-002_resposta.md` atende os 5 critérios do gabarito. Nenhum subagente foi despachado.
+- **Villaça, NTN-2026-VILLACA-001 (Shadow→Assisted):** o artefato `exame_NTN-2026-VILLACA-001_resposta.md` atende os 5 critérios. O desconto foi devolvido ao Kelsen sem recálculo e ficou só como linha de sensibilidade rotulada.
+- No Notion, as duas linhas passaram de `pendente` para `em execução`, com o resultado da auditoria. **Trava 3 pendente:** nenhuma promoção sem ratificação de Claudemberg na Semanal.
+- `auditoria_lele.json`: entrada `aguardando_trava3` adicionada. As métricas não foram incrementadas porque o progresso só conta depois das 3 travas.
+
+**Painel:** não tocado. Nenhuma capacidade mudou: exame sem ratificação não é promoção, e um complemento de POP não é ferramenta nova. **Learning Agent:** não rodou (quinta-feira). **7.5:** não se aplica.
+
+**Como desfazer:** restaurar `_backups/2026-09-24/pendencias_ANTES_drenagem.json` e `auditoria_lele_ANTES.json`; restaurar o trecho do POP-LEGAL-02 e do índice a partir do backup do Kelsen; voltar as linhas Notion `3e492372…3070` e `3e492372…192b` para `pendente`.
