@@ -22,51 +22,6 @@ metadata:
 
 ---
 
-## [2026-09-25] — Diária Skills v3.2 (Sexta) — FLUXO DE SEXTA (Passos 6, 7, 9 e 10)
-
-### RODADA ATUAL (O que foi entregue)
-
-- [x] **Dia confirmado:** `(Get-Date).DayOfWeek` = Friday. Sem pesquisa de Skill nova, que é tarefa de seg-qui.
-- [x] **Passo 6, Painel:** 4 eventos novos no `feed.jsonl` via `Append-STTKLog.ps1`, 4/4 OK (LC 281 Art. 40; exames Lelé/Villaça; resumo da semana; Dashboard). 2 eventos de 23/09 **normalizados**: tinham tipo inválido (`skill_proposta`/`skill_correcao`) e o Gestor no lugar da descrição, e o Painel exibia "Cardozo / Landell" como texto.
-- [x] **Passo 7, Learning Agent:** 2 vídeos assistidos com `/watch` (o yt-dlp funcionou hoje). Técnica: "LLM Wiki" (Karpathy), com índice/mapa e passada agendada que conecta o conteúdo novo ao antigo. Virou **proposta** de "Lint semanal de Skills" na sexta. Não foi implantada no SKILL.md (exige sincronizar 3 locais e alinhar antes).
-- [x] **Passo 9, Dashboard:** setembro tem 28 Skills únicas; semana 21-25/09 teve 6 novas, 6 ativadas com ressalva e **0 testadas em caso real**. Por Gestor: Cardozo 3, Lúcio 2, Kelsen 1. 39 Skills instaladas em `.claude/skills/`.
-- [x] **Passo 10, Análise:** abaixo.
-- [x] **Livro-razão:** entrada 25/09 em `Setembro.md`.
-- [x] **Backups:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-25/` (3 arquivos).
-
-### ANÁLISE SEMANAL (21-25/09)
-
-**Fraquezas primeiro:**
-1. **Uso real = 0%.** Em setembro foram 28 Skills e nenhuma foi usada em caso real. A produção está alta, mas ninguém confirma se as Skills servem. O gargalo é aplicar, não produzir.
-2. **Livro-razão sem registro da Diária desde 10/09.** O prompt agendado v3.2 não cita o livro-razão, embora a Regra de Governança o torne obrigatório. As Skills de 15 a 24/09 não têm "como desfazer" registrado. **Decisão de Claudemberg.**
-3. **O Lint (1ª passada, só leitura) achou 4 problemas:**
-   - `indice.md` de Setembro: as linhas de 18/09 (Tenreiro 8995-1 e Glaziou FPJ/SMAC) aparecem 2 vezes (30 linhas para 28 Skills). O bloco "Estatísticas" está velho: diz "acumulado 15" e dá Glaziou/Tenreiro com 2.
-   - **Contradição entre Skills instaladas:** `nbr6122-2019-fundacoes` diz "unifamiliar STTK 2 sondagens é o mínimo usual", mas `fundacoes-solos-moles-lencol-freatico-barra-recreio` R7 (NBR 8036) pede mín. 3 entre 200 e 400 m² de projeção. Cardozo/Baumgart harmonizam.
-   - A referência cruzada é só de ida: `iluminacao-interiores-nbr-iso-8995-1-residencial` cita a Skill de 31/08, mas `nbr15575-4-nbr8995-1-interiores` não cita a de 18/09 (pendência aberta desde 18/09).
-   - A Skill LC 301 v1.1 está com NÃO PROCEDE desde 23/09 e continua em `Skills_Propostas/` à espera de decisão.
-4. **Painel com a data parada em 11/09** (`<span id="updated">`, ainda diz "15 membros"). O prompt agendado proíbe editar o HTML; a referência 6.c manda atualizar. As duas instruções se contradizem.
-
-**Pontos fortes:** foco geográfico Barra/Recreio cumprido nas 6 Skills; Kelsen fechou a LC 281 Art. 40 contra o texto primário; exames de Lelé e Villaça aplicados sem atalho; `/watch` funcionou em 3 dos 4 dias em que foi tentado.
-
-**Próximas prioridades (28/09 em diante):**
-- (1) Claudemberg decide: livro-razão no prompt da Diária, LC 301, travas 3 de Lelé/Villaça, span do Painel e a proposta de Lint semanal.
-- (2) Cardozo harmoniza a regra de furos entre nbr6122 e fundações Barra.
-- (3) Limpar a duplicata e recalcular as estatísticas do `indice.md`, com backup.
-- (4) Pôr pelo menos 1 Skill da semana à prova no Ensaio Sombra 002, para testar uso real.
-
-### O QUE FICOU PENDENTE (Cuidado: não repita)
-
-- Os 4 achados do Lint acima, mais os pendentes de 24/09 (NBR 8036 sem leitura primária; Art. 106 LC 270/2024 em aberto; LC 281 Art. 16 x Art. 40, prazo de legalização, com o Gate do Maurício).
-- yt-dlp: funcionou hoje (25/09) só com legendas. O 403/429 de 24/09 pode voltar, então não trate como resolvido.
-
-### O QUE NÃO FAZER (Avoid retrabalho)
-
-- ❌ **Não assistir de novo** os vídeos 0-QDPnEIkvw e VUCChmNYpKU: técnica já extraída (LLM Wiki / Lint).
-- ❌ **Não editar `painel_fundador_sttk.html`** até Claudemberg resolver o conflito do span.
-- ❌ Todos os itens de "NÃO FAZER" das rodadas anteriores continuam válidos.
-
----
-
 ## [2026-09-24] — Diária Skills v3.2 (Quinta) — RODADA COMPLETA (0 Skill nova, 2 correções)
 
 ### RODADA ATUAL (O que foi entregue)
@@ -566,6 +521,6 @@ metadata:
 
 ---
 
-**Última atualização:** 25/09/2026 (sexta-feira — Diária Skills v3.2, fluxo de Sexta — Painel, Learning, Dashboard, Análise)  
-**Próxima leitura:** 28/09/2026 (segunda-feira) — Diária Skills pipeline seg-qui  
-**Painel pendente para:** 02/10/2026 (sexta)
+**Última atualização:** 24/09/2026 (quinta-feira — Diária Skills v3.2 — 0 Skill nova, Baumgart fundações v1.1 + adendo Art. 64 LC 301)  
+**Próxima leitura:** 25/09/2026 (sexta-feira) — Diária Skills fluxo de Sexta  
+**Painel pendente para:** 26/09/2026 (sexta)

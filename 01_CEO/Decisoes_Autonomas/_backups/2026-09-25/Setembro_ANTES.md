@@ -1324,26 +1324,3 @@ Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e co
 **Painel:** não tocado. Nenhuma capacidade mudou: exame sem ratificação não é promoção, e um complemento de POP não é ferramenta nova. **Learning Agent:** não rodou (quinta-feira). **7.5:** não se aplica.
 
 **Como desfazer:** restaurar `_backups/2026-09-24/pendencias_ANTES_drenagem.json` e `auditoria_lele_ANTES.json`; restaurar o trecho do POP-LEGAL-02 e do índice a partir do backup do Kelsen; voltar as linhas Notion `3e492372…3070` e `3e492372…192b` para `pendente`.
-
----
-
-## 25/09/2026 — Rotina Diária Skills v3.2, fluxo de SEXTA (Passos 6, 7, 9 e 10) — rodada automática
-
-**Dia confirmado:** `(Get-Date).DayOfWeek` = Friday. Não houve pesquisa de Skill nova (Passos 1-4 são de seg-qui).
-
-**Passo 6, Painel (`feed.jsonl`):**
-- **Correção de dados:** 2 eventos de 23/09 (Landell NBR 14565 e LC 301 v1.1) estavam fora do schema. Tinham `d` = "23/09/2026", `et` = `skill_proposta`/`skill_correcao` (tipos inválidos) e o Gestor no campo `p`, com a descrição em `rec`. Por isso o Painel mostrava "Cardozo / Landell" como texto do evento. As 2 linhas foram normalizadas: `d` = "23/09", `et` = `skill`/`correcao`, `who` = Gestor e `p` = descrição. O conteúdo não mudou.
-- **4 eventos novos** via `Append-STTKLog.ps1`, os 4 com OK: LC 281 Art. 40 (24/09, decisão); exames Lelé/Villaça aguardando a trava 3 (24/09, decisão); resumo da semana 21-25/09 (decisão); Dashboard 25/09 (sistema).
-- **Não feito:** `<span id="updated">` do HTML está parado em 11/09 e ainda diz "15 membros". A tarefa agendada proíbe editar o HTML; o arquivo de referência (6.c) manda atualizar a data. Há conflito entre as duas fontes, então a decisão fica com Claudemberg.
-
-**Passo 7, Learning Agent:** 2 vídeos assistidos de verdade (`/watch`, transcrição por legenda; o yt-dlp funcionou hoje): "Build a Self Improving Claude Knowledge Base" (youtube.com/watch?v=0-QDPnEIkvw) e "Claude Knowledge Base + Scheduled Loop" (youtube.com/watch?v=VUCChmNYpKU). Os dois aplicam o "LLM Wiki" de Karpathy: pasta de fontes brutas, wiki sintetizada, um índice (mapa) que a IA lê primeiro, e uma tarefa agendada que integra o material novo ao mapa **e liga cada item aos já existentes**. **Técnica aplicável:** uma passada semanal de "lint" das Skills, que procura duplicata no índice, contradição entre Skills irmãs, referência cruzada faltando e estatística velha. Rodei a passada uma vez hoje, só leitura, e ela achou 4 problemas reais (ver Passo 10). **Implementado no SKILL.md: NÃO.** Fica como proposta, porque mexer na rotina exige atualizar os 3 locais de execução (SKILL.md, Checklist_Sexta e prompt da tarefa agendada) e a regra de ritmo pede alinhamento antes. Proposta: incluir o "Lint semanal de Skills" no fluxo de sexta.
-
-**Passo 9 e 10, Dashboard e Análise:** ver o fechamento em `01_CEO/rotina_fechamento_template.md` (entrada 25/09).
-
-**Achado de governança (importante):** desde 10/09 a Rotina Diária **não registra nada neste livro-razão**. As entradas de 15 a 24/09 são só da Drenagem, de Villaça e das Reuniões. A causa: o prompt da tarefa agendada (v3.2) não menciona o livro-razão em nenhum passo, embora a Regra de Governança o torne obrigação inegociável. As Skills de 15 a 24/09 estão rastreáveis por `indice.md`, pelo fechamento, pelo feed e pelos commits, mas não têm "como desfazer" escrito aqui. Não corrigi o prompt da tarefa agendada, por ser mudança de governança da rotina. **Pendente decisão de Claudemberg.**
-
-**Backups:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-25/` (`feed_ANTES.jsonl`, `Setembro_ANTES.md`, `rotina_fechamento_template_ANTES.md`).
-
-**Como desfazer:** copiar `feed_ANTES.jsonl` por cima de `01_CEO/Painel_Fundador/feed.jsonl`. Isso desfaz a normalização das 2 linhas de 23/09 e os 4 eventos novos. Restaurar os outros 2 arquivos a partir dos backups de mesmo nome.
-
-**Aguardando:** ☐ RATIFICADO
