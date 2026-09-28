@@ -3,7 +3,9 @@
 > Arquivo de estado pessoal. Leio ao nascer (início de toda conversa), escrevo ao morrer (fim de toda conversa).
 > Memória privada minha — não repete o Registro Diário, que é o que sobe pra Claudemberg via Wallenberg.
 
-**Última atualização:** 28/09/2026 (noite). Correções do treino APLICADAS por decisão de Claudemberg. Baumgart, Glaziou e Landell trabalharam em paralelo e eu auditei com Grep. Backups estão em `01_CEO/Decisoes_Autonomas/_backups/2026-09-28/` (6 arquivos). Versões: fundações 1.2, nativas 1.1, 14565 v1.1. A Skill 14565 voltou a ser acionável porque o `name:` foi corrigido. Pendências abertas:
+**Última atualização:** 28/09/2026 (noite, 2ª rodada). Contradições de coerência CORRIGIDAS por autorização de Claudemberg, com backups `*_pre-coerencia.md` em `_backups/2026-09-28/`. Versões: nbr15220-3 v1.1 (deixou de mandar trocar ZB 8 por ZB 4A), nativas v1.2 (ZB 4A vira indício), nbr5626-8160 v1.1 ("30 cm/NBR 5410" a confirmar; nenhuma fonte achada), nbr14565 v1.2 (16415 a confirmar). As 2 pendências abaixo sobre 16415 linha 43 e 5626 linha 85 estão FECHADAS. Grep final: nenhuma Skill da minha equipe afirma ZB 4A como fato. Ainda aberto: fonte real dos 30 cm e o ano e escopo da 16415.
+
+**Rodada anterior:** 28/09/2026 (noite). Correções do treino APLICADAS por decisão de Claudemberg. Baumgart, Glaziou e Landell trabalharam em paralelo e eu auditei com Grep. Backups estão em `01_CEO/Decisoes_Autonomas/_backups/2026-09-28/` (6 arquivos). Versões: fundações 1.2, nativas 1.1, 14565 v1.1. A Skill 14565 voltou a ser acionável porque o `name:` foi corrigido. Pendências abertas:
 - fundações: NBR 8036 acima de 1.200 m², a confirmar;
 - nativas: raiz do Jerivá, Decreto 10.629 e fauna na 16636-4;
 - 14565: norma da separação sinal/força (candidata 16415) e U do NVR. A linha 43 da tabela de normas ainda lista a "NBR 16415:2021" sem marca; o ano não foi conferido;

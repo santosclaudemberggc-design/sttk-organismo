@@ -1,7 +1,6 @@
 ---
 name: nbr5626-8160-hidrossanitario
 description: NBR 5626:2020 (água fria/quente), NBR 8160:1999 (esgoto sanitário), NBR 10844:1989 (águas pluviais) e correlatas — dimensionamento de instalações hidrossanitárias prediais. Use sempre que Saturnino (ou qualquer Agente) for dimensionar ramais de água, esgoto, calhas pluviais, reservatório, ventilação de esgoto, ou verificar pressão/velocidade em tubulação — mesmo que o pedido só mencione "hidráulica", "esgoto", "caixa d'água" ou "drenagem", sem citar a norma pelo nome.
-version: v1.1
 ---
 
 # NBR 5626/8160/10844 — Hidrossanitário Predial
@@ -83,7 +82,7 @@ Calha horizontal: inclinação mínima 0,5%, velocidade máx. 1,5 m/s. Condutor 
 **Erros comuns:** interligar esgoto e pluvial (proibido) · omitir VRP em prédio alto · omitir ventilação de esgoto · inclinação insuficiente (<2%) · ramal de vaso <DN100.
 
 ## Coordenação com outros Agentes de Cardozo
-Baumgart (shafts/furos, layout antes do detalhamento estrutural) · Landell (separação física água/eletroduto — distância de 30 cm e atribuição à NBR 5410 **a confirmar (fonte não verificada)**; não citar em memorial como exigência normativa) · Glaziou (raízes que ameaçam tubulação externa, tipo de tubo/proteção) · Mindlin (layout de shafts e esquemas verticais legíveis para prancha).
+Baumgart (shafts/furos, layout antes do detalhamento estrutural) · Landell (separação física 30cm água/eletroduto, exigência NBR 5410) · Glaziou (raízes que ameaçam tubulação externa, tipo de tubo/proteção) · Mindlin (layout de shafts e esquemas verticais legíveis para prancha).
 
 ## O que esta Skill NÃO cobre
 Combate a incêndio/hidrantes (NBR 13714) · gás predial (NBR 15526) · tratamento de efluentes/ETE · reuso de água cinza (checar código de obras municipal).
@@ -96,7 +95,3 @@ Combate a incêndio/hidrantes (NBR 13714) · gás predial (NBR 15526) · tratame
 
 ## Escopo, crescimento e manutenção
 Lacuna ou divergência nova não vira conhecimento oficial por decisão do Agente — reporte a Cardozo, que avalia e leva a Wallenberg para formalizar.
-
-## Histórico
-- v1.0 — 28/08/2026 (convertida em Skill 03/09/2026).
-- v1.1 — 28/09/2026 — coerência aprovada por Claudemberg: "30 cm água/eletroduto, exigência NBR 5410" marcado "a confirmar (fonte não verificada)". Nenhuma fonte primária localizada; não inventada.

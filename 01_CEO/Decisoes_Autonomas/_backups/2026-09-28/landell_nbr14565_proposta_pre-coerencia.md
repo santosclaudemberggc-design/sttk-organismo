@@ -1,7 +1,7 @@
 ---
 name: nbr14565-2019-cabeamento-estruturado-automacao-residencial
 description: NBR 14565:2019 (cabeamento estruturado, comercial) como complemento da NBR 16264 (residencial) para a infraestrutura física de automação residencial de alto padrão — hierarquia DG/DA/TO, cabos por aplicação (Cat6A, KNX, coaxial, som, CFTV), dimensionamento de rack (incl. NVR/DVR), pré-conduit e interface com a NBR 5410. Use sempre que Landell (ou qualquer Agente) for planejar rack, sala técnica, eletrodutos de sinal, pontos de rede/TV/KNX por ambiente ou CFTV — mesmo que o pedido só mencione "rede", "rack", "cabeamento", "home theater" ou "pré-conduit", sem citar a norma pelo nome.
-version: v1.2
+version: v1.1
 status: ativa-com-ressalva
 data: 2026-09-23
 tipo: Inteligência (Trilha A)
@@ -40,7 +40,7 @@ Apesar do título "comercial", é o padrão adotado por profissionais de alto pa
 |-------|--------|
 | ABNT NBR 14565:2019 | Cabeamento estruturado (infraestrutura física) |
 | ABNT NBR 16264 (ed. 2016) | Cabeamento estruturado **residencial** (TIC + broadcast + automação residencial) — referência primária para residência; ver Avaliação do Gestor |
-| ABNT NBR 16415 **[a confirmar (ano e escopo não verificados)]** | Candidata a norma de caminhos e espaços para cabeamento estruturado (eletrodutos, shafts, separação de força) — não citar em memorial até conferir; ver §6 |
+| ABNT NBR 16415:2021 | Caminhos e espaços para cabeamento estruturado (eletrodutos, shafts, separação de força) |
 | ABNT NBR 16665:2019 | Cabeamento estruturado para data centers (corrigido pelo Gestor; a versão original citava "NBR 16065:2012", número incorreto) |
 | ISO/IEC 11801:2017 | Equivalente internacional (referência premium) |
 | ABNT NBR 5410:2004 | Instalações elétricas de baixa tensão (camada de força) |
@@ -177,12 +177,28 @@ Landell consulta esta Skill sempre que o briefing mencionar:
 
 ## Avaliação do Gestor (Cardozo, 23/09/2026)
 
-Veredito: **PROCEDE COM RESSALVA**. Não é ratificação de Claudemberg. Correções aplicadas: NBR 16264 (residencial) existe e é a referência primária; data center = NBR 16665:2019 (não 16065); cabo KNX 0,8 mm de diâmetro; PE do rack pela Tabela 58 da NBR 5410 (mesma seção da fase); Landell não assina ART/RRT. Não confirmados: NBR 5281, NBR 11785, NBR 14159 e a atribuição da separação sinal/força à 14565. Avaliação completa no arquivo-fonte em `01_CEO/Skills_Propostas/2026/Setembro/`.
+**Veredito: PROCEDE COM RESSALVA.** Avaliação do Gestor dono. **Não é** ratificação de Claudemberg, que continua pendente.
+
+**O que está certo e se aproveita:** hierarquia DG → DA → TO; limite de 90 m no cabeamento horizontal (enlace permanente); Cat6A para dados/AP; pré-conduit antes da alvenaria; circuito dedicado ao rack; separação física entre sinal e força; tabela de pontos por ambiente como referência de briefing.
+
+**Correções que fiz diretamente (fonte + cópia instalada em `.claude/skills/`):**
+1. **Premissa errada (a mais grave):** a Skill dizia que não existe norma ABNT residencial. Existe a **NBR 16264** (cabeamento estruturado residencial, ed. 2016). Ressalva 1 reescrita e norma incluída na tabela. Recomendo que, na v1.1, o título e a Seção 2 passem a ter a 16264 como base, com a 14565 como complemento.
+2. "NBR 16065:2012 (data centers)" estava errado → **NBR 16665:2019**. Incluí também a **NBR 16415:2021** (caminhos e espaços), que é a base real da separação sinal/força citada na Seção 6.
+3. Cabo KNX: "2×2×0,8 mm²" → **0,8 mm de diâmetro**, não seção.
+4. Aterramento do rack: "Tabela 54F / 4 mm²" (inserido por mim mais cedo, por engano meu) → **Tabela 58**: PE com a mesma seção da fase até 16 mm².
+5. Ressalva 3: Landell **não assina** ART/RRT. Ele prepara; quem assina é o profissional habilitado.
+
+**Ressalvas que ficam em aberto (fonte não confirmada, verificar antes de usar em memorial):** NBR 5281 (coaxial), NBR 11785 (alarme), NBR 14159 (entrada de telecom) e a afirmação de que a "NBR 14565 veda" o compartilhamento de eletroduto com força (o mais provável é que isso esteja na NBR 5410 ou na 16415). A restrição "KNX nunca junto a 220 V" é mais conservadora que a própria diretriz KNX. Pode ser mantida como boa prática, mas não como regra normativa.
+
+**Sobreposição (Princípio 15):** nenhuma duplicação real. A `nbr5410-eletrica-automacao` só cita a 14565 como fora de escopo. Ajuste menor: os protocolos (KNX/Zigbee) também estão na Skill 5410, não só em `automacao-residencial-tendencias`.
+
+**Geografia (Barra/Recreio):** coerente, mas genérica. Falta uma nota sobre névoa salina: em área externa a menos de ~1 km da orla, usar conectores e caixas com proteção contra corrosão, e não só IP65.
+
+**Fonte:** as NBRs são pagas e nenhuma foi lida na íntegra. Os números de norma foram checados em catálogo público (Target/normas.com.br). Os valores técnicos não foram checados.
 
 ---
 
 ## Histórico de versões
 
 - **v1.0 — 23/09/2026:** versão proposta por Landell, corrigida e avaliada por Cardozo (procede com ressalva).
-- **v1.1 — 28/09/2026 — correções do treino aprovadas por Claudemberg:** (1) §6: separação sinal/força marcada "a confirmar (norma candidata: NBR 16415)", deixa de ser atribuída como fato à NBR 14565; (2) frontmatter: `name:` alinhado ao nome da pasta e `description:` incluída; (3) §5: linha do gravador de CFTV (NVR/DVR) incluída na tabela do rack, espaço em U "a confirmar (depende do modelo)". Registro do treino: `01_CEO/Gestores/Cardozo (Complementares)/Casos_TESTE/treino_skills/2026-09-28_nbr14565-2019-cabeamento-estruturado-automacao-residencial.md`.
-- **v1.2 — 28/09/2026 — coerência aprovada por Claudemberg:** §2, tabela de normas: NBR 16415 marcada "a confirmar (ano e escopo não verificados)", coerente com a §6 (antes aparecia como "NBR 16415:2021" sem marca).
+- **v1.1 — 28/09/2026 — correções do treino aprovadas por Claudemberg:** (1) §6: separação sinal/força marcada "a confirmar (norma candidata: NBR 16415)", deixa de ser atribuída como fato à NBR 14565; (2) frontmatter: `name:` alinhado ao nome da pasta da Skill instalada e `description:` incluída; (3) §5: linha do gravador de CFTV (NVR/DVR) incluída na tabela do rack, espaço em U "a confirmar (depende do modelo)". Registro do treino: `01_CEO/Gestores/Cardozo (Complementares)/Casos_TESTE/treino_skills/2026-09-28_nbr14565-2019-cabeamento-estruturado-automacao-residencial.md`.

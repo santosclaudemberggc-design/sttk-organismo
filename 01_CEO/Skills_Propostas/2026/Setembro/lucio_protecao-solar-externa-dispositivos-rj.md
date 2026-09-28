@@ -11,7 +11,8 @@ metadata:
   criado_em: 17/09/2026
   criado_por: Wallenberg (Rotina Diária Skills v3.2)
   foco_geografico: Barra da Tijuca / Recreio dos Bandeirantes — Zona Oeste RJ
-  versao: "1.1"
+  versao: "1.2"
+  alterado_em: 28/09/2026 (Lúcio, autorizado por Claudemberg) — ZB 4A rebaixada a indício não confirmado, alinhada à nbr15220-3-bioclimatica-rj e à NBR 15575-4
 ---
 
 > ⚠️ **RESSALVAS (ativa-com-ressalva — validado por Lúcio em 17/09/2026):**
@@ -26,14 +27,14 @@ metadata:
 
 **Gestor dono:** Lúcio (Arquitetura)  
 **Agentes que usam:** Oscar (implantação + detalhamento), Tenreiro (conforto e iluminação natural), Baumgart (fixação/carga sobre fachada)  
-**Norma de referência:** NBR 15220-3:2024 (determina "sombrear fachadas" na ZB 4A — esta Skill traz o HOW: qual dispositivo, por orientação, com que parâmetros)  
+**Norma de referência:** NBR 15220-3:2024 (o Rio saiu da ZB 8 na reclassificação de 8 para 12 zonas; a nova zona — ZB 4A — é **indício não confirmado em fonte primária**, ver Skill `nbr15220-3-bioclimatica-rj`; confirmar a zona e a diretriz de sombreamento antes de citá-las em projeto — esta Skill traz o HOW: qual dispositivo, por orientação, com que parâmetros)  
 **Complementa:** `lucio_partido-arquitetonico-conforto-termico-passivo` (16/09/2026)
 
 ---
 
 ## 1. Princípio Fundamental — Por Que Sombrear por Fora
 
-Dispositivo de proteção solar **externo** bloqueia a radiação antes de atingir o vidro — elimina o ganho térmico na origem. Cortina/persiana interna só dispersa a radiação já dentro do ambiente (transforma em calor difuso). Para o RJ/ZB 4A, a diferença de carga de resfriamento entre sombreamento externo e interno pode chegar a 60-80%.
+Dispositivo de proteção solar **externo** bloqueia a radiação antes de atingir o vidro — elimina o ganho térmico na origem. Cortina/persiana interna só dispersa a radiação já dentro do ambiente (transforma em calor difuso). Para o clima do RJ (zona bioclimática pós-2024 ainda a confirmar na fonte primária; ZB 4A é indício), a diferença de carga de resfriamento entre sombreamento externo e interno pode chegar a 60-80%.
 
 **Regra de ouro:** sombrear por fora, nunca confiar só na cortina interna.
 

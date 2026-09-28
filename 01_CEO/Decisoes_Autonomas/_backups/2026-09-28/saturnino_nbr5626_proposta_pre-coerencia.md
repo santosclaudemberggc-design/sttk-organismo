@@ -4,7 +4,6 @@
 **Saturnino** (Hidrossanitário) — equipe de Cardozo (Gestor Complementares). Esta é uma Skill de **Trilha A (Inteligência)**: normas técnicas e técnicas de projetar, não ferramenta de software. Alimenta o saber-fazer de Saturnino em projetos de instalações prediais de água fria, água quente, esgoto sanitário, e drenagem pluvial.
 
 ## Status
-**Versão:** 1.1 (28/09/2026 — coerência: "30 cm / NBR 5410" marcado a confirmar)
 ratificada — 03/09/2026, Claudemberg (rodada de auditoria com Wallenberg)
 
 **Convertida em Skill real em 03/09/2026:** `.claude/skills/nbr5626-8160-hidrossanitario/SKILL.md`. Este arquivo permanece como registro histórico da pesquisa original.
@@ -138,7 +137,7 @@ Q = C × I × A / 360
 ### 5. Coordenação com Outros Agentes de Cardozo
 
 - **Baumgart (Estrutural):** compatibilizar furos/shafts com a estrutura — apresentar layout de shafts antes do detalhamento estrutural
-- **Landell (Elétrica):** separação física entre tubulações de água e eletrodutos — distância de 30 cm e atribuição à NBR 5410 **a confirmar (fonte não verificada)** (corrigido 28/09/2026, v1.1)
+- **Landell (Elétrica):** separação física de 30 cm entre tubulações de água e eletrodutos (NBR 5410 exige)
 - **Glaziou (Paisagismo):** atenção a raízes que podem entupir/romper tubulações de esgoto externas — especificar tipo de tubo e proteção
 - **Mindlin (Apresentação):** fornecer layout de shafts e esquemas verticais em formato legível para pranchas
 

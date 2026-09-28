@@ -1,9 +1,9 @@
 ---
 name: nbr15575-4-emenda2025-desempenho-termico-edificacoes-rj
-description: "NBR 15575-4:2021 + Emenda 2025 — desempenho térmico de edificações residenciais no Rio de Janeiro (zona provável ZB 4A — indício não confirmado em fonte primária, ver Skill nbr15220-3-bioclimatica-rj)"
-version: "1.1"
+description: "NBR 15575-4:2021 + Emenda 2025 — desempenho térmico de edificações residenciais no Rio de Janeiro (RJ — zona bioclimática a confirmar; indício ZB 4A, não confirmado em fonte primária, ver Skill nbr15220-3-bioclimatica-rj)"
+version: "1.2"
 fonte_primaria_lida: "não — todas as fontes abaixo são secundárias (blogs/sites técnicos); nem a NBR 15575-4 nem a Emenda 2025 nem a NBR 15220-3 foram lidas"
-changelog: "1.1 (28/09/2026, Lúcio, aprovado por Claudemberg) — correções do treino em caso fictício: ZB 4A rebaixada a indício não confirmado (alinhada com nbr15220-3-bioclimatica-rj); absortância de cobertura movida para a tabela de Coberturas; fontes declaradas secundárias no cabeçalho. 1.0 = versão de 22/09/2026 sem campo de versão."
+changelog: "1.2 (28/09/2026, Lúcio, autorizado por Claudemberg) — título, Escopo e §§2-5 alinhados: toda ZB 4A usada como premissa marcada como indício não confirmado (aviso por seção, remete ao §1). 1.1 (28/09/2026, Lúcio, aprovado por Claudemberg) — correções do treino em caso fictício: ZB 4A rebaixada a indício não confirmado (alinhada com nbr15220-3-bioclimatica-rj); absortância de cobertura movida para a tabela de Coberturas; fontes declaradas secundárias no cabeçalho. 1.0 = versão de 22/09/2026 sem campo de versão."
 metadata:
   type: inteligencia
   status: ativa-com-ressalva
@@ -23,9 +23,9 @@ metadata:
     - R4: método simplificado vs simulação computacional: a Emenda 2025 tornou a simulação anual obrigatória para obras novas — verificar se o Decreto 55.622/2025 (LICIN 2.0) já exige isso como condicionante de aprovação no RJ
 ---
 
-# NBR 15575-4:2021 + Emenda 2025 — Desempenho Térmico de Edificações Residenciais (ZB 4A, RJ)
+# NBR 15575-4:2021 + Emenda 2025 — Desempenho Térmico de Edificações Residenciais (RJ — zona bioclimática a confirmar; indício ZB 4A)
 
-**Escopo:** requisitos de desempenho térmico de sistemas de vedações verticais (paredes) e coberturas de edificações residenciais no Rio de Janeiro, com foco nas mudanças trazidas pela migração para ZB 4A e pela Emenda de 2025.
+**Escopo:** requisitos de desempenho térmico de sistemas de vedações verticais (paredes) e coberturas de edificações residenciais no Rio de Janeiro, com foco nas mudanças trazidas pela saída do RJ da ZB 8 (nova zona a confirmar; indício ZB 4A, ver §1) e pela Emenda de 2025.
 
 **Norma principal:** ABNT NBR 15575-4:2021 (Sistemas de vedações verticais externas e internas) + Emenda publicada ao final de 2025
 
@@ -44,6 +44,8 @@ A NBR 15220-3:2024 substituiu o mapa bioclimático de 8 zonas por 12 zonas (1R, 
 
 ## 2. O Que Mudou com a Emenda de 2025 (Partes 1, 4 e 5)
 
+> Aviso: "ZB 4A" nesta seção = indício não confirmado (ressalva do §1).
+
 Conforme fontes secundárias consultadas (seedsolution.com.br, sienge.com.br):
 
 | Aspecto | Antes (2021) | Depois (Emenda 2025) |
@@ -56,7 +58,9 @@ Conforme fontes secundárias consultadas (seedsolution.com.br, sienge.com.br):
 
 ---
 
-## 3. Parâmetros de Referência para ZB 4A (confirmar via Emenda ABNT)
+## 3. Parâmetros de Referência para ZB 4A (indício não confirmado — confirmar a zona no §1 e os valores via Emenda ABNT)
+
+> Aviso: todas as tabelas desta seção partem da premissa ZB 4A, que é indício não confirmado (ressalva do §1). Se a zona oficial do lote for outra, os valores não se aplicam.
 
 ⚠️ **Atenção (R1):** os valores abaixo são referências de fontes secundárias — **a tabela oficial está na Emenda ABNT de 2025.** Oscar deve consultar a norma antes de citar em memorial de projeto.
 
@@ -79,6 +83,8 @@ Conforme fontes secundárias consultadas (seedsolution.com.br, sienge.com.br):
 
 ## 4. Método de Verificação Obrigatório (Obras Novas — Emenda 2025)
 
+> Aviso: calibrar a simulação para a zona **confirmada** do lote; "ZB 4A" abaixo = indício não confirmado (ressalva do §1).
+
 A Emenda 2025 tornou a **simulação computacional anual** obrigatória para obras novas, substituindo o método simplificado como padrão:
 
 1. **Modelo de simulação:** envoltória + cargas internas (ocupação por ambiente, iluminação artificial, equipamentos)
@@ -91,6 +97,8 @@ A Emenda 2025 tornou a **simulação computacional anual** obrigatória para obr
 ---
 
 ## 5. Implicações para o Partido Arquitetônico (Oscar)
+
+> Aviso: "ZB 4A" nesta seção = indício não confirmado (ressalva do §1); as diretrizes valem para o clima quente-úmido do RJ, mas não citar a zona como fato em memorial ou peça de cliente.
 
 - **Fachada poente (Oeste) é o caso crítico** em ZB 4A — insolação direta da tarde. Estratégias passivas (brises, cobogó, veneziana — ver Skill `lucio-protecao-solar-externa-dispositivos-rj`) reduzem carga térmica e facilitam atingir nível I/S na simulação
 - **Ventilação cruzada** favorece desempenho térmico ZB 4A — a COE LC 198/2019 define os percentuais mínimos de abertura (ver Skill `coe-lc198-2019-ventilacao-iluminacao-pe-direito-residencial-rj`)

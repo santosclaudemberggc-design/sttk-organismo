@@ -4,7 +4,7 @@ description: "Espécies nativas da Mata Atlântica para paisagismo residencial e
 metadata:
   type: inteligencia
   status: ativa-com-ressalva
-  versao: "1.1"
+  versao: "1.2"
   para: Glaziou (Paisagismo, principal) — cross: Saturnino (drenagem natural), Oscar (partido paisagístico)
   gestor: Cardozo
   criada: 22/09/2026
@@ -25,7 +25,7 @@ metadata:
 
 # Espécies Nativas da Mata Atlântica para Paisagismo Residencial em Lotes Privados no RJ
 
-**Escopo:** seleção de espécies nativas do bioma Mata Atlântica adequadas a lotes privados urbanos no Rio de Janeiro, com foco em clima tropical úmido (ZB 4A), espaços compactos e coexistência com infraestrutura predial.
+**Escopo:** seleção de espécies nativas do bioma Mata Atlântica adequadas a lotes privados urbanos no Rio de Janeiro, com foco em clima tropical úmido (zona bioclimática: o Rio saiu da ZB 8; ZB 4A é indício não confirmado — ver `nbr15220-3-bioclimatica-rj`), espaços compactos e coexistência com infraestrutura predial.
 
 **Referência primária:** Flora e Funga do Brasil — Jardim Botânico do Rio de Janeiro (floradobrasil.jbrj.gov.br) — ver R5.
 
@@ -131,3 +131,4 @@ Antes de especificar qualquer espécie em projeto real, verificar no Flora e Fun
 
 - 22/09/2026 — v1.0 — criada na Diária Skills v3.2.
 - 28/09/2026 — v1.1 — correções do treino aprovadas por Claudemberg: precedência explícita na Seção 3; "raiz não invasiva" do Jerivá marcada como sem fonte — a confirmar; Decreto 10.629/1987 e exigência de fauna atribuída à NBR 16636-4 marcados como não verificados; ressalvas R1–R5 repetidas no corpo (Seção 0 + notas "ver R#").
+- 28/09/2026 — v1.2 — coerência aprovada por Claudemberg: "ZB 4A" do Escopo marcada como indício não confirmado, alinhada com `nbr15220-3-bioclimatica-rj` v1.1 e `nbr15575-4-emenda2025` v1.1.

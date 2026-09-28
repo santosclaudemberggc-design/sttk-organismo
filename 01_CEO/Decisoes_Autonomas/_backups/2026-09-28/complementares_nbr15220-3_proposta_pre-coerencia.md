@@ -1,6 +1,6 @@
-# NBR 15220-3:2024 — Reclassificação Bioclimática do Rio de Janeiro (saiu da ZB 8; ZB 4A é indício não confirmado)
+# NBR 15220-3:2024 — Reclassificação Bioclimática do Rio de Janeiro (ZB 8 → ZB 4A)
 
-**Versão:** 1.1 (28/09/2026 — coerência: ZB 4A marcada como indício não confirmado; ver nota abaixo de "O que mudou")  
+**Versão:** 1.0  
 **Status:** ratificada  
 **Data:** 01/09/2026  
 **Ratificado em:** 03/09/2026 — Claudemberg, em rodada de auditoria com Wallenberg (correção: versão anterior deste arquivo alegava aprovação "ao vivo pós-Drenagem Contínua" que não aconteceu de fato — autodeclaração indevida de uma rotina autônoma, corrigida nesta data)  
@@ -15,7 +15,7 @@
 
 A NBR 15220-3:2024 substituiu o zoneamento bioclimático de 8 zonas (ZB 1-8, vigente desde 2005) por 12 novas zonas baseadas em dados meteorológicos atualizados. As novas zonas usam nomenclatura alfanumérica: 1R, 1M, 2R, 2M, 3A, 3B, 4A, 4B, 5A, 5B, 6A, 6B.
 
-**Rio de Janeiro (município) saiu da ZB 8.** O código da nova zona, **ZB 4A, é indício não confirmado** (única fonte secundária, Lato Qualitas) até ler a fonte primária (ABNT ou ferramenta "Busca ZB"). Toda menção a ZB 4A abaixo deve ser lida com essa ressalva.
+**Rio de Janeiro (município) foi reclassificado de ZB 8 para ZB 4A.**
 
 Outras cidades afetadas: Porto Alegre (ZB 3 → ZB 2R), Porto Seguro (ZB 8 → ZB 4A).
 
@@ -44,19 +44,19 @@ Intervalo de 6 meses entre a vigência da NBR 15220-3 (publicada 2024) e as emen
 ### Tenreiro (Interiores)
 - NBR ISO/CIE 8995-1:2013 (iluminação) não muda — é por tarefa, não por zona bioclimática.
 - Desempenho térmico de vedações internas: transmitância e CTpar das paredes internas compartilhadas com envoltória passam a ter requisito ZB 4A.
-- A Skill anterior (NBR 15575-4 Emenda 1/2025 + NBR 8995-1, de 31/08/2026) mencionou a mudança de 8→12 zonas como pendência. Esta Skill avança essa pendência, mas o código da nova zona do Rio ainda não está confirmado em fonte primária.
+- A Skill anterior (NBR 15575-4 Emenda 1/2025 + NBR 8995-1, de 31/08/2026) mencionou a mudança de 8→12 zonas como pendência. **Esta Skill resolve essa pendência** com dados confirmados.
 
 ### Baumgart (Estrutural)
 - Impacto indireto: sistemas construtivos que não atendem CTpar ≥ 130 prescritivamente exigem simulação — o projetista estrutural deve saber que a escolha do sistema (concreto armado, alvenaria estrutural, LSF) tem implicação térmica que pode gerar requisito de simulação.
 - Concreto armado e alvenaria estrutural convencional geralmente atendem CTpar ≥ 130 sem problema. LSF e pré-moldados leves podem não atender.
 
 ### Glaziou (Paisagismo)
-- Cobertura verde: a carga térmica da cobertura e o desempenho do substrato/vegetação como isolante agora são avaliados contra ZB 4A, não ZB 8. O dimensionamento da cobertura verde (extensiva: 80-150 kg/m²) já adotado por Glaziou permanece adequado, mas o memorial não deve referenciar ZB 8; a nova zona fica "a confirmar (indício: ZB 4A)".
+- Cobertura verde: a carga térmica da cobertura e o desempenho do substrato/vegetação como isolante agora são avaliados contra ZB 4A, não ZB 8. O dimensionamento da cobertura verde (extensiva: 80-150 kg/m²) já adotado por Glaziou permanece adequado, mas o memorial deve referenciar ZB 4A.
 - Jardim de chuva e paisagismo exterior: sem impacto direto da reclassificação bioclimática.
 
 ## O que cada Agente deve fazer
 
-1. **Retirar a referência a ZB 8 para o Rio.** Não substituir automaticamente por ZB 4A (indício não confirmado); registrar "zona a confirmar (indício: ZB 4A)" até ler a fonte primária.
+1. **Atualizar referências de ZB 8 para ZB 4A** em qualquer memorial, especificação ou cálculo.
 2. **Verificar CTpar ≥ 130 kJ/(m².K)** para vedações de envoltória em projetos residenciais novos no RJ.
 3. **Documentar adoção da Emenda 1/2025** da NBR 15575 em projetos iniciados após dezembro/2025.
 4. **Não usar "padrão histórico" de ZB 8** como referência — é inválido desde 2024.
