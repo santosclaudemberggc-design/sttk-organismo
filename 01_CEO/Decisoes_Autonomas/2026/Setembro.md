@@ -1373,3 +1373,17 @@ Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e co
 5. Ou reverter o commit local desta rodada (`git revert`).
 
 **Aguardando:** ☐ RATIFICADO
+
+---
+
+## 28/09/2026 — Reunião Semanal (quinzenal), rodada automática — pauta montada, Claudemberg ausente
+
+**Pauta:** `04_REUNIOES_SEMANAIS/2026-09-28_pauta.md` (+ PDF). 6 itens de ratificação (R1-R6), 7 decisões dele (D1-D7) e 1 decisão de consumo (teto de 30 KB para os arquivos de estado).
+
+**Correções registradas na pauta:** as pautas de 21 e 22/09 tinham 3 erros. (1) A Skill LC 301 foi dada como "instalada"; nunca foi, e o Kelsen deu NÃO PROCEDE em 23/09. (2) A promoção do Villaça a Shadow aparecia como pendente; foi aprovada ao vivo em 18/09. (3) A correção da v3.0 aparecia como pendente; foi ratificada em 14/09. Os três itens saíram da pauta.
+
+**O que alterei:** criei a pauta e o PDF; reescrevi os JSON e relatórios de `token_tracking` com os scripts de medição; acrescentei esta entrada.
+
+**Como desfazer:** apagar `2026-09-28_pauta.md`/`.pdf` e esta entrada. Os JSON de medição se regeneram a cada execução.
+
+**Aguardando:** ☐ RATIFICADO (silêncio não é ratificação; tudo volta na próxima quinzenal)
