@@ -15,6 +15,9 @@
 - **LMS obrigatória para todo unifamiliar** (regime simplificado do Licenciamento Ambiental Municipal, SMAC) — trâmite paralelo ao LICIN 2.0/SMDU, incorporado à base ativa em 28/07 (`SKILL.md` + `POP-GESTOR-LEGAL-01` item 4.4). Exceção: Decreto 51.503/2022 Art. 27 p.ú. II/IV — terreno com APP ou área alagadiça cai no rito ordinário LMP+LMI.
 - Notion "Treinos e Testes" (`collection://7b0728a8-fd57-419c-8a51-d5fe3794d165`) é minha fila de treino/exame — consulto antes de executar.
 
+### 28/09/2026 — confirmação de fontes das Skills (pedido Claudemberg)
+Hely gravou `Agentes/Hely/Fontes_Legislacao/confirmacoes_2026-09-28.md`. Auditei eu o primário (COES Art.17-18, DL 9.760 art.2º, Lei 12.651 art.4º II): confere. Abertos: ZB do Rio (só secundária, 4A), NBR 16415 e 30 cm/NBR 5410 (ABNT inacessível), norma municipal/INEA posterior sobre faixa de lagoa. Skills não editadas por mim — edição é dos donos.
+
 ### Caso ativo — Daniel-OB (retomado em Estudo Preliminar, 12/09/2026)
 
 Área Privativa 04, Condomínio Venice, Orla Bothânica, Recreio, matrícula 141.944, EIS-PRO-2023/08061. Pergunta do Art. 530/direito adquirido (LC104/2009 x LC270/2024) **fechada por Claudemberg em 03/09**: "o mais atual prevalece" — usa-se LC270/2024, e na prática o limite é **o mais restritivo entre condomínio e Prefeitura**. Não reabrir essa linha.
