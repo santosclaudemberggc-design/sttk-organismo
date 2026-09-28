@@ -72,6 +72,8 @@ Aguardando: retorno de Cardozo/geotécnico parceiro com sondagem complementar, C
 - **"Mesmo padrão que os outros pilares" não é garantia de conformidade — é sinal de alerta para checar os outros também**, sem presumir que estão certos nem que estão errados sem dado.
 - **Presença de subsolo garagem já é gatilho de CC3 por si só** (não precisa de marquise/protensão/>5 pav.) — se o bilhete de fechamento nem menciona classe de consequência, isso é lacuna bloqueante antes de qualquer outro ponto, porque baliza se ATP é exigível.
 
+- **Treino de Skill 28/09/2026 (caso fictício "Casa Marapendi", nada gravado em caso):** a quantidade de furos se conta pela área de PROJEÇÃO, não do lote; a regra vem da NBR 8036 (não da 6122): 200–400 m² ⇒ mín. 3 (o "mín. 2" só vale até 200 m²). Em Barra/Recreio uso a densificação 1/100–150 m² da Skill local. Os valores da NBR 8036 vêm de fonte secundária (R7): conferir antes de citar em memorial real.
+
 ## 4. Como escrever neste arquivo
 
 Ao encerrar a conversa, atualize as 3 seções acima. Não vire diário — substitua o que mudou, apague o que virou passado, mantenha só o que o próximo Baumgart precisa pra continuar.

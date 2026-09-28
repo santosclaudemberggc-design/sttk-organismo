@@ -22,6 +22,8 @@ Trabalho residual dos casos-teste (não é caso real): análise de sítio (Glazi
 
 Nenhum caso real acionado ainda.
 
+**Treino de Skill 28/09/2026 (fictício "Casa Pontal", nada gravado em pasta de cliente):** uso da `especies-nativas-mata-atlantica-paisagismo-lotes-rj`. Recusei Jerivá na frente (Seção 3 manda evitar no recuo ≤2 m + fiação), Juçara no fundo (ameaçada + Seção 3 manda evitar; fundo úmido pede Cana-do-brejo/Pitangueira) e Embaúba na lateral (porte 6–15 m, não listada p/ lateral). Contraproposta: Jerivá migra p/ lateral. Respondido a Cardozo.
+
 ## 2. Pendências abertas
 
 [RESOLVIDO 12/09/2026] Caso E3 complementar retroativo (playground/guarda-corpo Recreio) e Exame 3 (Assisted → Autonomous, caso "Residência Joá") — ambos aprovados; promovida a Autonomous, confirmado por Claudemberg, auditado por Wallenberg. No Exame 3, escalei a Cardozo dois pontos que não decido sozinha: (a) exposição financeira da compra de mudas já fechada incluindo espécie depois reprovada (Leucena) — possível interface com Kelsen sobre implicação contratual; (b) pedido para avaliar sustar/reter o protocolo que o fornecedor mandou direto pro Gate (Maurício) sem passar pela minha validação nem pela de Cardozo. Sinalizei também a Cardozo a lacuna já registrada de a Skill `nbr16636-paisagismo-predial` não trazer os parâmetros numéricos internos da NBR 14718/NBR 16071. Fora isso, nenhuma pendência minha — Exame 2 original (2 casos) já aprovado 2/2, promovido a Assisted. Próximo: veredito de Cardozo sobre os dois exames pendentes, ou acionamento com Briefing aprovado de Lúcio (produção real).
@@ -51,6 +53,8 @@ Nenhum caso real acionado ainda.
 - **Compromisso comercial/protocolo fechado antes do meu OK técnico é violação de processo, não fato consumado a validar (Exame 3, 12/09):** fornecedor fechou compra de mudas e mandou o projeto direto pro Gate antes da minha aprovação — recusei validar retroativamente e escalei a Cardozo, inclusive com pedido de avaliar sustar o protocolo já enviado. Pressão de prazo comercial ("desconto vence essa semana") nunca é critério técnico.
 - **Norma desatualizada citada por terceiro precisa ser conferida, não só os pontos que o próprio terceiro destacou (Exame 3):** memorial do fornecedor citava NBR 9575:2010 (correto: 9575:2024) num trecho que ele nem sinalizou como pendência — reforça checar o documento inteiro, não só a lista de "ajustes" que quem envia aponta.
 - **Divergência entre desenho e especificação técnica não se aceita como "só visual" sem checar qual dos dois está certo (Exame 3)** — pode ser sintoma de erro de especificação, não só estética de representação.
+
+- **Falhas da Skill de nativas (28/09, sinalizar a Cardozo):** cita "R4" sem seção de regras numeradas; Seção 3 se contradiz (lote >300 m² prioriza Juçara/Embaúba, mas as linhas por espaço vetam); "raiz não invasiva" do Jerivá conflita com a lacuna que manda consultar Baumgart; Decreto RJ 10.629/1987 só citado, não verificado; tabelas não declaram ter sido conferidas no Flora e Funga. Pitangueira chega a 8 m — sob fiação só com poda/controle.
 
 ## 4. Como escrever neste arquivo
 

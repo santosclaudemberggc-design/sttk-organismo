@@ -228,9 +228,9 @@
 
 | Data | Título | Tipo | Para Quem | Status |
 |------|--------|------|-----------|--------|
-| 21/09 | COE RJ — Ventilação Natural, Iluminação e Pé-Direito em Edificações Residenciais (LC 198/2019) | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart, Landell | ✅ **ativa-com-ressalva** (Lúcio 21/09 — R5: H/4 verificar multi-pav; R6: nota banheiro; R7: H real inclui laje; instalada em `.claude/skills/coe-lc198-2019-ventilacao-iluminacao-pe-direito-residencial-rj/`) |
-| 21/09 | Fundações em Solos Moles e Lençol Freático Alto — Barra da Tijuca, Recreio e Jacarepaguá | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Glaziou | ✅ **ativa-com-ressalva** (Cardozo 21/09 — R5 ALTA: verificar NBR 6484 edição; R6 ALTA: 60-120 kN sem método declarado; instalada em `.claude/skills/fundacoes-solos-moles-lencol-freatico-barra-recreio/`) |
-| 21/09 | Base Legal para Licenciamento LICIN 2.0 na Barra da Tijuca e Recreio — Decreto 3046/81 (ZE-5) e LC 270/2024 | Inteligência (Trilha A) | Kelsen/Hely (Legal, principal) — cross: Oscar (Arquitetura) | ✅ **ativa-com-ressalva** (Kelsen 21/09 + Claudemberg ratificou 21/09 — R1 CRÍTICA: Art.106 OODC sem confirmar; R5: LMS adicionada; R8: checklist OODC corrigido; instalada em `.claude/skills/decreto3046-81-lc270-2024-licin-barra-recreio/`) |
+| 21/09 | COE RJ — Ventilação Natural, Iluminação e Pé-Direito em Edificações Residenciais (LC 198/2019) | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart, Landell | ✅ **ativa-com-ressalva** (Lúcio 21/09 — R5: H/4 verificar multi-pav; R6: nota banheiro; R7: H real inclui laje; instalada em `.claude/skills/coe-lc198-2019-ventilacao-iluminacao-pe-direito-residencial-rj/`) · **treino: ok 28/09** |
+| 21/09 | Fundações em Solos Moles e Lençol Freático Alto — Barra da Tijuca, Recreio e Jacarepaguá | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Glaziou | ✅ **ativa-com-ressalva** (Cardozo 21/09 — R5 ALTA: verificar NBR 6484 edição; R6 ALTA: 60-120 kN sem método declarado; instalada em `.claude/skills/fundacoes-solos-moles-lencol-freatico-barra-recreio/`) · **treino: ok 28/09** |
+| 21/09 | Base Legal para Licenciamento LICIN 2.0 na Barra da Tijuca e Recreio — Decreto 3046/81 (ZE-5) e LC 270/2024 | Inteligência (Trilha A) | Kelsen/Hely (Legal, principal) — cross: Oscar (Arquitetura) | ✅ **ativa-com-ressalva** (Kelsen 21/09 + Claudemberg ratificou 21/09 — R1 CRÍTICA: Art.106 OODC sem confirmar; R5: LMS adicionada; R8: checklist OODC corrigido; instalada em `.claude/skills/decreto3046-81-lc270-2024-licin-barra-recreio/`) · **treino: ok 28/09** |
 
 ---
 
@@ -238,8 +238,8 @@
 
 | Data | Título | Tipo | Para Quem | Status |
 |------|--------|------|-----------|--------|
-| 22/09 | Espécies Nativas da Mata Atlântica para Paisagismo Residencial em Lotes Privados no RJ | Inteligência (Trilha A) | Glaziou (Paisagismo, principal) — cross: Saturnino, Oscar | ✅ **ativa-com-ressalva** (Cardozo 22/09 — R2 ALTA: análise por lote obrigatória; R4: Palmito-Juçara ameaçada; R5: verificar Flora e Funga; instalada em `.claude/skills/especies-nativas-mata-atlantica-paisagismo-lotes-rj/`) |
-| 22/09 | NBR 15575-4:2021 + Emenda 2025 — Desempenho Térmico de Edificações Residenciais (ZB 4A, RJ) | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | ✅ **ativa-com-ressalva** (Lúcio 22/09 — R1 CRÍTICA: valores U/CT na Emenda ABNT paga; correção aplicada: "Hely/Oscar" → "Oscar"; instalada em `.claude/skills/nbr15575-4-emenda2025-desempenho-termico-edificacoes-rj/`) |
+| 22/09 | Espécies Nativas da Mata Atlântica para Paisagismo Residencial em Lotes Privados no RJ | Inteligência (Trilha A) | Glaziou (Paisagismo, principal) — cross: Saturnino, Oscar | ✅ **ativa-com-ressalva** (Cardozo 22/09 — R2 ALTA: análise por lote obrigatória; R4: Palmito-Juçara ameaçada; R5: verificar Flora e Funga; instalada em `.claude/skills/especies-nativas-mata-atlantica-paisagismo-lotes-rj/`) · **treino: ok 28/09** |
+| 22/09 | NBR 15575-4:2021 + Emenda 2025 — Desempenho Térmico de Edificações Residenciais (ZB 4A, RJ) | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Baumgart | ✅ **ativa-com-ressalva** (Lúcio 22/09 — R1 CRÍTICA: valores U/CT na Emenda ABNT paga; correção aplicada: "Hely/Oscar" → "Oscar"; instalada em `.claude/skills/nbr15575-4-emenda2025-desempenho-termico-edificacoes-rj/`) · **treino: ok 28/09** |
 
 ---
 
@@ -247,7 +247,7 @@
 
 | Data | Título | Tipo | Para Quem | Status |
 |------|--------|------|-----------|--------|
-| 23/09 | NBR 14565:2019 — Cabeamento Estruturado como Base para Automação Residencial de Alto Padrão | Inteligência (Trilha A) | Landell (Automação+Elétrica, principal) — cross: Oscar (eletrodutos em planta), Baumgart (shaft técnico, rack) | ✅ **ativa-com-ressalva** (Cardozo 23/09 — R1: aterramento rack com cabo verde-amarelo dedicado; R2: gatilho R$8k/m² é indicativo não critério normativo; R3: NBR 14159 (fibra GPON) não coberta — verificar em projetos com GPON/XGS-PON; instalada em `.claude/skills/nbr14565-2019-cabeamento-estruturado-automacao-residencial/`) |
+| 23/09 | NBR 14565:2019 — Cabeamento Estruturado como Base para Automação Residencial de Alto Padrão | Inteligência (Trilha A) | Landell (Automação+Elétrica, principal) — cross: Oscar (eletrodutos em planta), Baumgart (shaft técnico, rack) | ✅ **ativa-com-ressalva** (Cardozo 23/09 — R1: aterramento rack com cabo verde-amarelo dedicado; R2: gatilho R$8k/m² é indicativo não critério normativo; R3: NBR 14159 (fibra GPON) não coberta — verificar em projetos com GPON/XGS-PON; instalada em `.claude/skills/nbr14565-2019-cabeamento-estruturado-automacao-residencial/`) · **treino: ok 28/09** |
 
 **Correção aplicada (não nova Skill):** LC 301/2026 (Kelsen, 18/09) → v1.1 (23/09): Art. 20, §8º lido via legisweb confirma **+20% adicional exclusivo para subsetores AEIU Praça Onze**, com prazo de 24 meses (~ago/2028) — separado e acumulável com cadeia de 30% geral. Cadeia de 30% (RJ-amplo vs. AEIU) continua em aberto. Art. 64 (isenção transitória áreas receptoras até 31/12/2027) adicionado como nova questão para Hely.
 
