@@ -1387,33 +1387,3 @@ Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e co
 **Como desfazer:** apagar `2026-09-28_pauta.md`/`.pdf` e esta entrada. Os JSON de medição se regeneram a cada execução.
 
 **Aguardando:** ☐ RATIFICADO (silêncio não é ratificação; tudo volta na próxima quinzenal)
-
-
----
-
-## 28/09/2026 — Ajustes nas rotinas decididos por Claudemberg (sessão ao vivo, após auditoria da semana 21-25/09)
-
-**O que decidiu e por quê:** a auditoria mostrou que as 3 rotinas rodaram todos os dias, mas com 6 falhas. Claudemberg decidiu:
-1. **Livro-razão obrigatório na Diária.** O prompt da tarefa agendada não tinha esse passo desde 10/09. Agora está no Passo 4.6, sincronizado nos 3 lugares: tarefa, referência e Checklist.
-2. **Rótulos de versão corrigidos.** Diária v3.4.0; Drenagem v2.4.2; referências cruzadas acertadas; títulos das tarefas atualizados.
-3. **PDFs.** O CronJob continua gerando PDF de Skill. A Diária faz o commit deles na manhã seguinte. O texto v3.1 dizia que o CronJob tinha parado, e isso era falso.
-4. **Topo do Painel automático.** O HTML agora lê o evento `et: "status"` mais recente do `feed.jsonl`. A Diária de sexta grava esse evento, e ninguém edita mais o HTML. O primeiro evento `status` foi gravado hoje.
-5. **Permissões.** `settings.local.json` agora libera `cp`, `mkdir -p`, `Copy-Item`, `New-Item -ItemType Directory`, a limpeza de pastas em Temp, `git commit` e `git status`.
-6. **LC 301 arquivada.** Kelsen deu parecer "não procede" em 23/09. Nova regra: esse parecer arquiva a Skill na hora, na Diária e na Drenagem.
-7. **Promoções ratificadas (trava 3):** Lelé Formação→Shadow (NTN-2026-LELE-002) e Villaça Shadow→Assisted (NTN-2026-VILLACA-001).
-8. **Fundações harmonizadas.** A `nbr6122-2019-fundacoes` dizia "2 sondagens é o mínimo usual" e agora remete à NBR 8036 (mín. 2 até 200 m², mín. 3 entre 200 e 400 m² de projeção). A de Barra/Recreio ganhou o bloco "Relação com outras Skills" como complemento local. Nova regra permanente de coerência: uma Skill complementa, é diferente ou substitui (vale a mais atualizada), e contradição não resolvida bloqueia a ativação.
-9. **Treino em caso fictício.** Toda Skill ativada é treinada pelo Agente dono num mini-caso fictício de Barra/Recreio. O Dashboard mede "treinadas" ao lado de "usadas em caso real".
-
-**O que alterou:**
-- Tarefas agendadas `wallenberg-rotina-diaria-skills-v2-7` e `wallenberg-drenagem-continua-local`.
-- `01_CEO/wallenberg-rotina-diaria-skills-v2_SKILL.md` (v3.4.0) e `01_CEO/wallenberg-drenagem-continua-v2_SKILL.md` (v2.4.2, adendo J.7).
-- `Checklist_Diaria.html`, `Checklist_Sexta.html` e `Painel_Fundador/painel_fundador_sttk.html` (topo lido do feed).
-- `feed.jsonl` (3 eventos).
-- `.claude/agents/lele.md`, `villaca.md`, `_estado_lele.md` e `_estado_villaca.md`.
-- `.claude/skills/nbr6122-2019-fundacoes` e `fundacoes-solos-moles-lencol-freatico-barra-recreio`.
-- LC 301 movida para `Skills_Propostas/_Arquivadas/2026/` e `indice.md` de setembro.
-- `.claude/settings.local.json`.
-
-**Backup:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-28/` (sufixos `_pre-ajustes`, `_pre-promocao`, `_pre-harmonizacao`, `_pre-status-automatico`).
-
-**Como desfazer:** copiar de volta cada arquivo do backup; para a LC 301, mover de `_Arquivadas/2026/` para `Skills_Propostas/2026/Setembro/`; para o Painel, restaurar `painel_fundador_sttk_pre-status-automatico.html`; as permissões novas são as últimas 10 linhas do `allow` em `settings.local.json`.

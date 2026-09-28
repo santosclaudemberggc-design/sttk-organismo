@@ -129,7 +129,17 @@
       "Bash(timeout 300 git push -u origin main)",
       "Bash(git commit -m ' *)",
       "Bash(git pull *)",
-      "Bash(awk '{print $2}')"
+      "Bash(awk '{print $2}')",
+      "Bash(mkdir -p *)",
+      "Bash(cp *)",
+      "PowerShell(Copy-Item *)",
+      "PowerShell(New-Item -ItemType Directory *)",
+      "Bash(rm -rf /tmp/*)",
+      "Bash(rm -rf C:/Users/santo/AppData/Local/Temp/*)",
+      "Bash(rm -rf /c/Users/santo/AppData/Local/Temp/*)",
+      "PowerShell(Remove-Item -Recurse -Force \"C:\\\\Users\\\\santo\\\\AppData\\\\Local\\\\Temp\\\\*)",
+      "Bash(git commit *)",
+      "Bash(git status *)"
     ]
   }
 }

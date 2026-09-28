@@ -250,7 +250,7 @@
   </div>
 
   <div class="note">
-    <b>Nota importante [v3.4.0, 28/09/2026 — corrige a nota v3.1]:</b> o CronJob PDF roda seg-sex 20:00 e continua gerando PDF gêmeo das Skills; a Diária da manhã seguinte faz o commit deles. Na sexta, depois do Dashboard (que agora mede também "treinadas em caso fictício"), grave um evento <code>-Et "status"</code> com o resumo da semana e a contagem de membros: é ele que atualiza o topo do Painel sozinho. Segunda você começa ciclo diário novo (Passo 1-4+8 novamente).
+    <b>Nota importante [v3.1, 16/09/2026]:</b> CronJob PDF roda SEXTA 20:00, mas só gera PDF de pauta de reunião e livro-razão — Skills e índice do mês NÃO geram mais PDF gêmeo (são arquivo de máquina, lidos via Read; regenerar PDF delas é custo sem leitor). Você não precisa fazer nada com o CronJob. Segunda você começa ciclo diário novo (Passo 1-4+8 novamente).
   </div>
 
   <div class="footer">

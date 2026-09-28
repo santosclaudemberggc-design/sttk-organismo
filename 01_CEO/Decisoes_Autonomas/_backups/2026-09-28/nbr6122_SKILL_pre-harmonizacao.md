@@ -19,9 +19,7 @@ Norma-irmã da NBR 6118 (concreto armado): a 6118 dimensiona a superestrutura, a
 
 Nenhum projeto de fundação sem laudo de sondagem prévio (Art. 5.2). SPT é dado de entrada do Briefing (Lúcio/Oscar) — Baumgart não produz a sondagem, só a exige.
 
-**Quantidade de furos — a regra vem da NBR 8036, não da 6122** (harmonizado em 28/09/2026): 1 furo a cada 200 m² de projeção até 1.200 m²; **mínimo 2 furos até 200 m² de projeção e mínimo 3 entre 200 e 400 m²**. Conte pela área de projeção da edificação, não pela área do lote. Em Barra/Recreio/Jacarepaguá (aterro, solo mole), vale a densificação local da Skill `fundacoes-solos-moles-lencol-freatico-barra-recreio` (1 furo a cada 100–150 m²) — ela complementa esta, não a contradiz.
-
-> ⚠️ Os números da NBR 8036 vieram de fonte secundária (a norma não foi lida). Baumgart confere a norma antes de citá-los em memorial.
+Regra prática: até 1.200 m² em planta, 1 sondagem/200 m², **mínimo 2 furos**. Unifamiliar STTK (lote 360-600 m²): 2 sondagens SPT é o mínimo usual.
 
 Não confundir NSPT (índice de resistência) com capacidade de carga admissível — precisa de correlação (Aoki-Velloso, Decourt-Quaresma).
 

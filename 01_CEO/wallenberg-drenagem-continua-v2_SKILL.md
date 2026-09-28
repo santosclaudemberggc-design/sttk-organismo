@@ -1,6 +1,6 @@
 ---
 name: wallenberg-drenagem-continua-v2-3
-version: 2.4.1
+version: 2.4.2
 created: 2026-07-27
 recriado: 2026-08-28
 based_on: "Especificação completa fornecida por Claudemberg em 28/08/2026 — campos B e C copiados integralmente, sem reescrita, a pedido dele"
@@ -857,12 +857,17 @@ Incidente real: a rodada de 17/09/2026 (10:22) da tarefa agendada foi interrompi
 
 **Como desfazer:** reverter esta seção J.6 via git revert.
 
+**J.7 — Coerência entre Skills, arquivamento imediato e treino fictício (28/09/2026, decisão de Claudemberg).** Espelha a v3.4.0 da Rotina Diária. No Passo 3: (1) parecer "NÃO PROCEDE" do Gestor dono → arquiva na mesma rodada em `Skills_Propostas/_Arquivadas/{Ano}/` (motivo + como desfazer + `indice.md` + livro-razão), nunca "aguardando Claudemberg"; (2) antes de ativar/implantar, `Grep` em `.claude/skills/` pelo tema — contradição com Skill existente bloqueia até o Gestor classificar (complementa / diferente / substitui pela mais atualizada) e harmonizar; (3) Skill ativa sem `treino:` no `indice.md` recebe treino em caso fictício quando o Gestor dono já estiver acionado na rodada. Também corrigido o rótulo da Diária no prompt (era "version: 3.3.0", real 3.4.0).
+
+**Como desfazer:** reverter esta seção J.7 e o bloco `[v2.4.2]` do Passo 3 na tarefa agendada (backups em `_backups/2026-09-28/`).
+
 ---
 
 ## HISTÓRICO DE VERSÕES
 
 | Versão | Data | Mudança |
 |--------|------|---------|
+| 2.4.2 (adendo J.7) | 28/09/2026 | Coerência entre Skills (complementa/diferente/substitui), arquivamento imediato de "não procede", treino em caso fictício; rótulo de versão da Diária corrigido. |
 | 2.4.1 (adendo J.6) | 17/09/2026 | **Blindagem de permissão.** Proibido `Bash` encadeando `cd "..." && powershell -Command "..."` — sempre tool `PowerShell` nativa direta. Causa raiz confirmada de incidente real: rodada 17/09 interrompida no Passo 2 por rejeição automática de permissão (comando Bash+PowerShell nunca antes aprovado, ninguém presente pra aprovar), sessão morreu sem acionar Gestor, sem commit, sem relatório — mas `list_task_runs` reportou `"succeeded"` (falso positivo). |
 | 2.4 (adendo J.5) | 16/09/2026 | **Mesclagem, não substituição.** Filtro geográfico (Barra/Recreio via `INDICE_PRIORIDADES.md`), mecanismo antifrail de refação de teste mal atribuído no Notion, staging de MCP antes de instalar (`staging_mcp.json`), Passo 8c migrado de edição direta de HTML para `Append-STTKLog.ps1`, auditoria do nó terminal Lelé (`auditoria_lele.json`). Pedido original era sobrescrita integral; recusado depois de confirmar que apagaria Portão de Trabalho, hierarquia de Gestor, gate de Autonomous e fronteira crítica — nenhum dos quais estava no texto novo. |
 | 2.3 (adendo J.4) | 14/09/2026 | **Sincronização de divergência real** — 2 decisões já aplicadas na tarefa agendada (`wallenberg-drenagem-continua-local`) desde 02/09 e 08/09 nunca tinham chegado a este arquivo-fonte: Portão de Trabalho Opção B/Alvo A (skill já avaliada não conta na fila; só abre Gestor com item real) e Learning Agent restrito a segunda-feira + execução real, além do Passo 7.5 (varredura mensal de Drive) inteiro. Achado por Claudemberg no mesmo dia da correção da Rotina Diária Skills v3.0. |

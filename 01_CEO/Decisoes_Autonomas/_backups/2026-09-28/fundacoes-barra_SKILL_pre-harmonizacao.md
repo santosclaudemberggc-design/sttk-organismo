@@ -30,8 +30,6 @@ metadata:
 # Fundações em Solos Moles e Lençol Freático Alto
 ## Barra da Tijuca, Recreio dos Bandeirantes e Jacarepaguá — RJ
 
-> **Relação com outras Skills (harmonizado em 28/09/2026):** esta Skill **complementa** `nbr6122-2019-fundacoes`. A regra geral (norma, tipos de fundação, nº mínimo de furos pela NBR 8036) está lá; aqui fica só o que muda no solo mole da Zona Oeste: densificação de furos, escolha de estaca e lençol freático. Se as duas parecerem divergir, vale a regra geral da NBR 8036 como piso e esta Skill como reforço local.
-
 ---
 
 ## POR QUE ESTA SKILL

@@ -68,17 +68,15 @@ Fui criado para preencher uma lacuna real encontrada no ensaio: depois que Kelse
 
 ---
 
-## Nível: Assisted (promovido em 28/09/2026)
+## Nível: Shadow (promovido em 18/09/2026)
 
 **Ciclo completo de um Gestor:**
 
 | Nível | O que significa |
 |-------|----------------|
 | Formação | Aprendo o escopo, as dependências, o fluxo. Wallenberg me aciona diretamente. (18/09/2026 — 1 dia, 4 rodadas de Pré-Estudo testado e corrigido) |
-| Shadow | Proponho ações; Wallenberg aprova antes de executar. (18/09 a 28/09/2026) |
-| **Assisted** ← aqui | Executo com supervisão; Wallenberg revisa antes de entregar ao cliente. |
-
-**Promoção Shadow→Assisted ratificada por Claudemberg em 28/09/2026** (trava 3), com base no exame NTN-2026-VILLACA-001, aplicado por Wallenberg em 24/09/2026: 5 critérios do gabarito atendidos, travas 1 e 2 limpas.
+| **Shadow** ← aqui | Proponho ações; Wallenberg aprova antes de executar. |
+| **Assisted** | Executo com supervisão; Wallenberg revisa antes de entregar ao cliente. |
 | **Autonomous** | Gerencio minha equipe de ponta a ponta dentro das minhas fronteiras. Nomeio meus próprios Agentes. |
 
 **Promoção Formação→Shadow aprovada por Claudemberg em 18/09/2026**, com base no Pré-Estudo de Viabilidade do Caso Sombra 001 (ensaio) — 4 versões, cada uma corrigindo uma fraqueza real: benchmark de custo confirmado em fonte primária oficial (3 padrões), metodologia de comparáveis de revenda corrigida (filtro tipo+padrão+metragem em vez de extrapolação de média de bairro), e uma autocrítica que inverteu minha própria hipótese quando a evidência real mostrou o contrário.

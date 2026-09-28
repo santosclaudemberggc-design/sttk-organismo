@@ -218,7 +218,7 @@
 |------|--------|------|-----------|--------|
 | 18/09 | Iluminação de Interiores Residencial — NBR ISO/CIE 8995-1: Parâmetros de Lux, Temperatura de Cor e IRC por Cômodo | Inteligência (Trilha A) | Tenreiro (Interiores, principal) — cross: Landell, Oscar | proposta — aguarda validação Cardozo |
 | 18/09 | Remoção de Árvores em Área Particular no RJ — FPJ/SMAC: Autorização, Documentação e Medida Compensatória | Inteligência (Trilha A) | Glaziou (Paisagismo, principal) — cross: Saturnino, Baumgart | proposta — aguarda validação Cardozo |
-| 18/09 | LC 301/2026 — AEIU Praça Onze Maravilha e Janela de Desconto LICIN até 01/12/2026 | Inteligência (Trilha A) | Kelsen/Hely (Legal, principal) — cross: Lúcio/Oscar | proposta — aguarda validação Kelsen |
+| 18/09 | LC 301/2026 — AEIU Praça Onze Maravilha e Janela de Desconto LICIN até 01/12/2026 | Inteligência (Trilha A) | Kelsen/Hely (Legal, principal) — cross: Lúcio/Oscar | **arquivada 28/09** — não procede para Barra/Recreio (Kelsen 23/09, confirmado por Claudemberg); movida para `Skills_Propostas/_Arquivadas/2026/` |
 
 ---
 

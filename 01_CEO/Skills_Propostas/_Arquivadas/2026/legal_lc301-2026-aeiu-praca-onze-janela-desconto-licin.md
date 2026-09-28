@@ -1,7 +1,7 @@
 ---
 name: lc301-2026-aeiu-praca-onze-janela-desconto-licin
 version: v1.1
-status: "avaliada — NÃO PROCEDE (Kelsen, 23/09/2026) — aguarda decisão de Claudemberg; não instalar"
+status: "arquivada — NÃO PROCEDE (Kelsen, 23/09/2026); arquivamento confirmado por Claudemberg em 28/09/2026. Não se aplica a Barra/Recreio. Como desfazer: mover de volta para Skills_Propostas/2026/Setembro/."
 data: 2026-09-18
 atualizado: 2026-09-23
 tipo: Inteligência (Trilha A)

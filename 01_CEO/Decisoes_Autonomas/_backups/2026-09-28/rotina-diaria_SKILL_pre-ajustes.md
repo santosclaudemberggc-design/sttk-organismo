@@ -1,6 +1,6 @@
 ---
 name: wallenberg-rotina-diaria-skills-v2-9
-version: 3.4.0
+version: 3.3.2
 created: 2026-08-28
 based_on: "v3.0 + Consolidação de Fonte Única 16/09/2026"
 enhancements: 
@@ -229,15 +229,6 @@ Skill de conhecimento técnico (Trilha A — normas, técnicas de projetar, regr
 2. **Ativação no mesmo dia.** Passando na validação do Gestor, a Skill entra em produção imediatamente — disponível para os Agentes daquele Gestor. Campo `Status` da Skill = `ativa` (ou `ativa-com-ressalva`, ver abaixo).
 3. **Claudemberg vê na Semanal como revisão retroativa**, não como portão de entrada. Pode mandar reverter uma Skill específica — por isso o "como desfazer" no livro-razão é obrigatório.
 
-**[v3.4.0 — 28/09/2026, decisão de Claudemberg] COERÊNCIA ENTRE SKILLS — "as Skills devem se complementar, ser diferentes, ou valer a mais atualizada; nunca se contradizer".** Origem: em 25/09 duas Skills instaladas davam números diferentes para o mínimo de sondagens (NBR 6122: "2 é o usual"; Barra/Recreio pela NBR 8036: "mín. 3 entre 200–400 m²"). Regra:
-- Antes da validação do Gestor, `Grep` em `.claude/skills/` pelos termos-chave da Skill nova; a lista de Skills que tocam o tema vai junto para o Gestor.
-- O Gestor classifica cada relação: **Complementa** (bloco "Relação com outras Skills" nas duas, com citação de ida e volta; a regra geral mora numa só, a outra remete a ela) · **Diferente** (uma linha dizendo por que não se sobrepõem) · **Substitui** (a mais atualizada/fonte primária vale; a antiga é corrigida ou arquivada no mesmo dia, com backup e livro-razão).
-- Contradição não resolvida **bloqueia a ativação**.
-
-**[v3.4.0] Parecer "NÃO PROCEDE" = arquivamento imediato.** Skill que o Gestor dono julga não aplicável é movida (`.md` + `.pdf`) para `Skills_Propostas/_Arquivadas/{Ano}/` na mesma rodada, com status "arquivada — motivo + como desfazer", `indice.md` e livro-razão atualizados. Não fica mais parada "aguardando Claudemberg" (caso LC 301, parado de 23 a 28/09).
-
-**[v3.4.0] TREINO EM CASO FICTÍCIO — decisão de Claudemberg 28/09/2026.** "Quanto mais Skills, mais inteligentes ficam os Agentes, mesmo sem caso real — mas eles devem aplicá-las em casos fictícios como teste, para estarem habituados quando o caso real chegar." Toda Skill ativada recebe, no mesmo dia, um mini-caso fictício de Barra/Recreio (marcado FICTÍCIO) resolvido pelo Agente principal e conferido pelo Gestor; resposta salva em `01_CEO/Gestores/{Gestor}/Casos_TESTE/treino_skills/`, resultado no `indice.md` (`treino: ok / falhou / pendente`). Pendentes são feitos primeiro na rodada seguinte. O Dashboard de sexta mede "treinadas em caso fictício" ao lado de "usadas em caso real".
-
 **Skill de Gestor ainda não implantado** (hoje: Fechamento) continua saindo como `proposta` — sem Gestor dono, não há quem valide nem Agente que consuma. Ela ativa quando o Gestor for criado.
 
 **Trilha B (ferramentas / GitHub — Passo 8) não muda:** segue o ciclo `proposta` → `aguardando implantação` → `implantada` da Drenagem Contínua, porque ferramenta exige instalar e testar antes de estar "ativa" de verdade. Isso não é portão de Claudemberg, é prontidão técnica.
@@ -273,8 +264,6 @@ Mantenha/atualize um `indice.md` do mês listando cada Skill do mês (data, nome
 
 ### 5. GERAR PDFs
 
-**[v3.4.0 — 28/09/2026, CORREÇÃO DE FATO] O texto abaixo estava errado:** a auditoria de 26/09 confirmou que o CronJob PDF 20:00 (`wallenberg-cronjob-pdf-2000`) **continua gerando PDF gêmeo de toda Skill** em `Skills_Propostas/` — o script nunca foi trocado. Decisão de Claudemberg (28/09/2026): os PDFs de Skill continuam, e **a Diária é a dona do commit deles** — no Fechamento de cada rodada, inclui no commit local os `.pdf` de `Skills_Propostas/` gerados na noite anterior. O CronJob segue proibido de commitar. Texto histórico (não vale mais):
-
 **[v2.9 — Item 6.4, 08/09/2026 | Confirmado v3.1, 16/09/2026] PDF gêmeo só do que sai do organismo pra Claudemberg ler/assinar:** pauta de reunião e livro-razão. **Skill e `indice.md` NÃO geram mais PDF gêmeo** — são arquivo de máquina, lidos por Gestor/Agente via Read, e cada regeneração é custo sem leitor. O CronJob PDF das 20:00 fica só com pauta + livro-razão (script real corrigido em 16/09/2026 para não mais varrer `Skills_Propostas/`). Se algum dia Claudemberg pedir o PDF de uma Skill específica, gera aquela sob demanda com `_ferramentas\md_to_pdf.py`.
 
 ---
@@ -291,7 +280,7 @@ powershell.exe -ExecutionPolicy Bypass -File "01_CEO\Painel_Fundador\Append-STTK
 ```
 Tipos válidos de `et`: `decisao`, `promocao`, `agente`, `skill`, `sistema`, `correcao`, `marco`, `capacidade`.
 
-**c. [v3.4.0 — 28/09/2026, substitui a edição manual da data] Topo do Painel automático.** Não edite o `<span id="updated">`. Desde 28/09/2026 o Painel preenche a data e o resumo do topo sozinho, lendo o evento mais recente com `et: "status"` do `feed.jsonl`. Na sexta, depois do Dashboard, grave esse evento com `Append-STTKLog.ps1 -Et "status" -T "Resumo da semana DD-DD/MM" -P "Semana DD-DD/MM: {marcos}. Organismo: {N} membros ({x} Auto · {y} Assisted · {z} Shadow · {w} Formação). Skills: {n} novas, {t} treinadas."` — N contado em `.claude/agents/*.md` (sem agentes utilitários) com o nível lido em cada arquivo. Isso elimina a contradição antiga (proibido editar o HTML × mandado atualizar a data).
+**c. Atualize a data**: em `<span class="updated" id="updated">Atualizado DD/MM/AAAA</span>`, ponha a data de hoje (só se houve evento real gravado — não é mais republicação de HTML, mas a data ainda vive nesse `<span>` do arquivo estático).
 
 **d. [Descontinuado v3.1]** Republicação via Artifact não se aplica mais a eventos de rotina — o HTML só muda de verdade quando alguém edita layout/estrutura (raro), não a cada evento novo. Eventos vivem só no `feed.jsonl`.
 

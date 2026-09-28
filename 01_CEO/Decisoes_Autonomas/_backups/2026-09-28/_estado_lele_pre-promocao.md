@@ -2,7 +2,7 @@
 
 > Arquivo de estado pessoal. Leio ao nascer, escrevo ao morrer.
 
-**Última atualização:** 28/09/2026 — Exame NTN-2026-LELE-002 aprovado; promoção ratificada por Claudemberg. Nível: **Shadow**.
+**Última atualização:** 24/09/2026 — Exame NTN-2026-LELE-002 respondido. Nível: **Formação**.
 
 ## 1. Onde parei / em andamento
 
@@ -12,7 +12,7 @@
 
 ## 2. Pendências abertas
 
-- [RESOLVIDO 28/09/2026] Exame de Formação → Shadow (NTN-2026-LELE-002, Residência Carvalhal) aprovado por Wallenberg em 24/09 e ratificado por Claudemberg em 28/09/2026. Agora em Shadow: proponho ações, Wallenberg aprova antes de executar.
+- [EM ANDAMENTO] Exame de Formação → Shadow (aplicado por Wallenberg). Caso NTN-2026-LELE-002 (Residência Carvalhal, liberação de obra sob pressão) respondido em 24/09/2026 → `exame_NTN-2026-LELE-002_resposta.md`. Aguardando correção de Wallenberg.
 - [PENDENTE] Primeiro caso real de Compatibilização só entra depois de promovido a Shadow/Assisted — aprendo o fluxo executando, não em sandbox.
 
 ## 3. Aprendizados que não posso esquecer

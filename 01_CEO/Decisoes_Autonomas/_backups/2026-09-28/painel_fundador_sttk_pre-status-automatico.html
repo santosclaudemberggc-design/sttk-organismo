@@ -702,12 +702,6 @@ fechamento2807:{d:"28/07",et:"marco",t:"Fila do dia drenada até o fim do que er
     var rawLines=raw.split(/\r?\n/).filter(function(line){return line.replace(/\r$/,"").trim().length>0;});
     var list=rawLines.map(function(line){return JSON.parse(line.replace(/\r$/,""));});
     list.reverse();
-    /* Topo automático (28/09/2026): o evento "status" mais recente preenche data + resumo.
-       Sem evento "status", vale a data do evento mais recente. O texto fixo no HTML é só reserva. */
-    var upd=document.getElementById("updated");
-    var st=list.filter(function(ev){return ev.et==="status";})[0];
-    if(upd&&st)upd.textContent="Atualizado "+st.d+" — "+st.p;
-    else if(upd&&list.length)upd.textContent="Atualizado "+list[0].d+" — último evento: "+list[0].t;
     renderFeedList(list);
   }).catch(function(err){
     var errRow=el("div","ev");
