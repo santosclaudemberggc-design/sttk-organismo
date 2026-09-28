@@ -66,6 +66,10 @@ Lacunas (4 ressalvas já marcadas na própria Skill, linhas 185-189):
 
 **Síntese:** Skill pronta para montagem de documentação Hely e treinamento do fluxo Legal em paralelo. NÃO pronta para cliente real até as lacunas críticas (isenção 2029 + custo LICIN 2025) serem resolvidas. Fila de Legal (16/09): nenhum treino/exame pendente; 1 Skill avaliada com ressalva.
 
+### Validação Skill Varandas COES Art. 8º (28/09/2026) — Rotina Diária, Fluxo v2.9
+
+`kelsen_varandas-nao-computaveis-ate-to-coes-lc198-rj.md` — **PROCEDE COM RESSALVA.** Conferi eu mesma o Art. 8º no `COES_..._CONSOLIDADO_SMU.pdf` (pp.5-6, gerado 07/01/2026): todos os números batem, sem nota de alteração. COES só foi alterado por LC 283 (Art. 35 §7º) e LC 291 (Art. 2º §7º) — a dúvida "LC 270/274 alteraram o §4º" cai. Faltava o Dec. 45.917/2019 Art. 6º (5 m entre varandas sobre afastamento entre edificações — pega grupamento tipo Daniel-OB). Não é duplicata. Correção da Skill de Lúcio (20% é só não residencial) procede; "projeção 2 m / Dec. 7336/1988" sem lastro no COES. Sem Hely.
+
 ### Verificação Protocolo Bloqueador — POP-ARQ-PL-01 / Memorial Descritivo (11/09/2026)
 
 Wallenberg pediu auditoria das 5 correções legais que eu tinha apontado, executadas por ele via script Python/Google Docs API. Resolvi ler os dois docs eu mesma via `read_file_content` (tool que já tenho) em vez de acionar o Hely — verificação textual pontual, não pesquisa de legislação nem produção de documento. Resultado: **2 passaram, 1 passou com ressalva, 2 falharam**.

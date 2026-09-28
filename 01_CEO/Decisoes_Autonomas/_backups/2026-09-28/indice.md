@@ -278,24 +278,5 @@
 
 ---
 
-## Skills Criadas (Rodada 28/09/2026)
-
-| Data | Título | Tipo | Para Quem | Status |
-|------|--------|------|-----------|--------|
-| 28/09 | Reservatório de Retardo de Águas Pluviais no RJ — Decreto 23.940/2004 + Res. Conj. SMG/SMO/SMU 001/2005 (+ Lei Estadual 9.164/2020) | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart, Oscar, Hely | ✅ **ativa-com-ressalva** (Cardozo 28/09 — C1: arranjo "retardo embaixo" corrigido; C2: assinatura do Termo corrigida; R: Decretos 26.168/2006 e 32.119/2010 não lidos, Lei 9.164/2020 só fonte secundária, vigência do rito pós-LICIN 2.0, conflito de uso com NBR 16783; instalada em `.claude/skills/reservatorio-retardo-decreto23940-aguas-pluviais-rj/`) |
-| 28/09 | Varandas e Sacadas Não Computáveis na ATE e na TO — COES (LC 198/2019) Art. 8º + Dec. 45.917/2019 Art. 6º | Inteligência (Trilha A) | Kelsen/Hely (Legal, principal) — cross: Oscar/Lúcio, Baumgart, Tenreiro | ✅ **ativa-com-ressalva** (Kelsen 28/09 — Art. 8º conferido no consolidado oficial SMU, sem alteração; R1 aberta: regra própria de cômputo na Barra/Recreio sob LC 270; instalada em `.claude/skills/varandas-nao-computaveis-ate-to-coes-lc198-rj/`) |
-
-**Achado colateral:** a Skill de Lúcio `arquitetura_partido-conforto-termico-orientacao-solar-tipologias-rj.md` (16/09, linhas 70-72) aplica ao residencial o limite de 20% da área útil do COES Art. 8º §5º (que é só para não residencial) e cita uma projeção de 2 m sem conferir. Correção pendente com Lúcio (não editada nesta rodada).
-
-**Lúcio:** sem Skill. A busca sobre vidro de controle solar (fator solar) para fachada poente confirmou uma lacuna real (a Skill de proteção solar de 17/09 exclui a especificação de vidro), mas as fontes lidas (SindusCon-SP, AGC, Contramarco) não trazem valores numéricos. Não se força Skill: fica como prioridade de Lúcio para a próxima rodada, com fonte que traga FS/TL/U (PBE Edifica/INI-R, catálogo técnico de fabricante).
-
-## Estatísticas (Atualizado 28/09/2026)
-
-- **Skills Propostas (acumulado setembro):** 30 (28 + 2 desta rodada; as 2 linhas repetidas de 18/09 no topo continuam lá, pendência do Lint de 25/09)
-- **Cobertura Trilha A:** Saturnino 5 · Kelsen/Hely 8 · demais sem mudança
-- **Skills Testadas em caso real:** 0
-
----
-
-**Atualização:** 28/09/2026  
-**Próxima Atualização:** 29/09/2026 (ou próxima rodada útil)
+**Atualização:** 23/09/2026  
+**Próxima Atualização:** 24/09/2026 (ou próxima rodada útil)

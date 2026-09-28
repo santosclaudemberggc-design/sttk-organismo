@@ -1347,29 +1347,3 @@ Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e co
 **Como desfazer:** copiar `feed_ANTES.jsonl` por cima de `01_CEO/Painel_Fundador/feed.jsonl`. Isso desfaz a normalização das 2 linhas de 23/09 e os 4 eventos novos. Restaurar os outros 2 arquivos a partir dos backups de mesmo nome.
 
 **Aguardando:** ☐ RATIFICADO
-
----
-
-## 28/09/2026 — Rotina Diária Skills v3.2 (seg, 08:38) — 2 Skills ativadas (Saturnino e Kelsen), Lúcio sem Skill
-
-**Dia confirmado:** `(Get-Date).DayOfWeek` = Monday. Pipeline linear seg-qui. Foco: Barra/Recreio.
-
-**O que decidi e por quê:**
-- **Saturnino, `reservatorio-retardo-decreto23940-aguas-pluviais-rj` (v1.1, ativa-com-ressalva).** Lacuna real: nenhuma Skill cobria a obrigação municipal de reservatório de retardo, que condiciona o Habite-se e pesa na Barra (baixada, lençol raso). Decreto 23.940/2004 e Res. Conj. 001/2005 lidos no texto primário. Cardozo validou: PROCEDE COM RESSALVA, com 4 correções (C1: arranjo "retardo embaixo" contradizia o Art. 12 IV e o Art. 14 §2º; C2: quem assina o Termo; C3: "área impermeabilizada acrescida"; C4: marca de fonte secundária no checklist) e 7 ressalvas, todas aplicadas.
-- **Kelsen, `varandas-nao-computaveis-ate-to-coes-lc198-rj` (v1.1, ativa-com-ressalva).** Brecha válida: varanda residencial em balanço ou reentrante não entra na ATE nem na TO (COES Art. 8º §4º). Kelsen conferiu no consolidado oficial da SMU (07/01/2026): o Art. 8º não tem alteração. Acrescentou o Dec. 45.917/2019 Art. 6º (5 m entre varandas em grupamento) e as ressalvas R2 (reentrante > 1,50 m vira prisma) e R3 (brise fora da varanda). R1 continua aberta: regra própria de cômputo na Barra/Recreio sob a LC 270/2024.
-- **Lúcio: sem Skill.** Existe a lacuna de especificação de vidro (fator solar, fachada poente), mas nenhuma fonte trouxe número. Não se força.
-
-**Achado colateral:** a Skill de partido de Lúcio (16/09, linhas 70-72) aplica ao residencial o limite de 20% que o COES só dá ao não residencial. Não editei o arquivo: a correção é de Lúcio.
-
-**O que alterei:** 2 arquivos novos em `Skills_Propostas/2026/Setembro/` e 2 pastas novas em `.claude/skills/`; `indice.md` (nova seção 28/09); `feed.jsonl` (2 eventos); `rotina_fechamento_template.md`; este livro-razão.
-
-**Backups:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-28/` (`indice.md`, `Setembro_ANTES.md`, `rotina_fechamento_template_ANTES.md`).
-
-**Como desfazer:**
-1. Apagar as pastas `.claude/skills/reservatorio-retardo-decreto23940-aguas-pluviais-rj/` e `.claude/skills/varandas-nao-computaveis-ate-to-coes-lc198-rj/`.
-2. Apagar os 2 `.md` novos em `Skills_Propostas/2026/Setembro/` (`saturnino_reservatorio-retardo-...` e `kelsen_varandas-nao-computaveis-...`).
-3. Restaurar `indice.md` e `rotina_fechamento_template.md` a partir do backup.
-4. Remover as 2 últimas linhas com `"d":"28/09"` do `feed.jsonl`.
-5. Ou reverter o commit local desta rodada (`git revert`).
-
-**Aguardando:** ☐ RATIFICADO
