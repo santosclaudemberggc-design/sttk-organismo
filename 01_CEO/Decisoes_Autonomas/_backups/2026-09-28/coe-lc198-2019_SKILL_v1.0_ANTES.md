@@ -1,8 +1,8 @@
+<!-- Backup 28/09/2026 (Lúcio) antes da correção pós-treino. Conteúdo idêntico em .claude/skills/coe-lc198-2019-ventilacao-iluminacao-pe-direito-residencial-rj/SKILL.md e 01_CEO/Skills_Propostas/2026/Setembro/lucio_coe-lc198-2019-ventilacao-iluminacao-pe-direito-residencial-rj.md (conferido por leitura integral dos dois). -->
 ---
 name: coe-lc198-2019-ventilacao-iluminacao-pe-direito-residencial-rj
 description: "Parâmetros de ventilação natural, iluminação natural e pé-direito mínimo para edificações residenciais no RJ — COE (LC 198/2019), prismas, dutos e vãos."
-version: "1.1"
-changelog: "1.1 (28/09/2026, Lúcio, aprovado por Claudemberg) — correções do treino em caso fictício: §3 PV como alternativa ao duto longo; §4 regra de vão para banheiro com exaustão mecânica marcada 'a confirmar'; nota em R6."
+version: "1.0"
 status: ativa-com-ressalva
 created: 2026-09-21
 author: Rotina Diária Skills v3.2
@@ -92,9 +92,7 @@ Toda aprovação LICIN 2.0 no Rio de Janeiro precisa atender ao COE (LC 198/2019
 - **Comprimento horizontal máximo: 6 m** (além disso, exige ventilação mecânica)
 - Uso típico: ventilação de banheiros internos em apartamentos compactos
 
-**Implicação de projeto:** banheiro distante mais de 6 m da fachada ou de um PV não pode usar duto natural longo. **Antes de cair em exaustão mecânica, a alternativa natural é o PV (Prisma de Ventilação, §2 — lado ≥ 1,00 m e ≥ H/20):** criar um PV mais próximo do banheiro encurta o duto para ≤ 6 m ou elimina o duto. Ordem de decisão: (1) encurtar o duto para ≤ 6 m; (2) PV junto ao compartimento; (3) só então exaustão mecânica (ver §5 e §4 sobre o vão). Planejamento de planta deve prever isso antes do lançamento estrutural.
-
-**A confirmar (28/09):** a leitura da fonte primária em 28/09 localizou a regra dos 6 m no **Art. 18, § 1º**, não no Art. 17 — Hely confirma a numeração antes de citar em memorial.
+**Implicação de projeto:** banheiro distante mais de 6 m da fachada ou de um PV não pode usar duto natural — requer exaustão mecânica. Planejamento de plant deve prever isso antes do lançamento estrutural.
 
 ---
 
@@ -107,9 +105,6 @@ Toda aprovação LICIN 2.0 no Rio de Janeiro precisa atender ao COE (LC 198/2019
 | Conjunto sala-cozinha integrada | **1/8 da área total integrada** |
 | Banheiros com ventilação natural | **1/10** |
 | Banheiros com ventilação por duto | **1/8** |
-| Banheiros com exaustão mecânica | **A confirmar** — a tabela do Art. 18 só traz natural (1/10) e duto (1/8); a leitura de 28/09 não encontrou regra de vão para exaustão mecânica. Hely confirma no Art. 18 (e em regulamento complementar, se houver) antes de uso real. Até lá, não reduzir o vão abaixo de 1/10 sem essa confirmação |
-
-**Banheiros (texto do Art. 18, lido em 28/09):** para banheiros e lavabos, "apenas a ventilação é obrigatória" — a proporção de vão se refere à ventilação, não à iluminação.
 
 **Exemplo:** quarto de 12 m² → vão mínimo = 12/8 = **1,5 m²** de janela.
 
@@ -150,7 +145,7 @@ O COE aceita as seguintes formas de ventilação natural:
 
 **R5 — Denominador H/4 do PVI não verificado por memória para edifícios altos (Lúcio, 21/09):** o COE anterior (Decreto-Lei 322/76) usava denominadores menores (H/5 ou H/6). Se LC 198/2019 realmente usa H/4, isso é endurecimento material. Para o contexto da Barra/Recreio (gabarito 2 pavimentos, H ≈ 5m), o mínimo absoluto de 3m prevalece sempre — risco operacional baixo. Para projetos multi-pavimento fora de zona de gabarito restrito, Hely deve confirmar o denominador exato no Art. 5º da LC 198/2019 antes do primeiro uso de Oscar.
 
-**R6 — Tabela de banheiros carece de nota explicativa (Lúcio, 21/09):** a tabela mostra "banheiro com duto → 1/8" maior que "banheiro com ventilação natural → 1/10", o que é contraintuitivo. A lógica: quando o duto serve o ar, a janela atende APENAS à iluminação (exigência maior: 1/8); quando a mesma abertura serve luz E ar, a proporção pode ser menor (1/10). Oscar DEVE ter ciência desse detalhe antes de parametrizar janelas de banheiro no Revit. **Nota 28/09:** o texto do Art. 18 diz que em banheiros "apenas a ventilação é obrigatória", o que não sustenta a leitura "janela só para luz" acima — essa explicação fica **a confirmar** com Hely; os números 1/10 e 1/8 continuam valendo como estão na lei.
+**R6 — Tabela de banheiros carece de nota explicativa (Lúcio, 21/09):** a tabela mostra "banheiro com duto → 1/8" maior que "banheiro com ventilação natural → 1/10", o que é contraintuitivo. A lógica: quando o duto serve o ar, a janela atende APENAS à iluminação (exigência maior: 1/8); quando a mesma abertura serve luz E ar, a proporção pode ser menor (1/10). Oscar DEVE ter ciência desse detalhe antes de parametrizar janelas de banheiro no Revit.
 
 **R7 — Altura H dos prismas deve incluir espessura de lajes (Lúcio, 21/09):** os exemplos usam "H = n_pavimentos × pé-direito". H real inclui a espessura das lajes (≈ 20–25 cm por andar). Para 4 pavimentos, H real ≈ 10,8–11,0 m vs. 10 m estimado. O erro se torna material em edifícios de 10+ pavimentos. Oscar deve parametrizar o Revit com a altura total real do prisma (piso do 1º compartimento servido ao topo do último), não com estimativa simplificada.
 

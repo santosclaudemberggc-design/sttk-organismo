@@ -1,6 +1,7 @@
 ---
-name: landell-nbr14565-2019-cabeamento-estruturado-automacao-residencial
-version: v1.0
+name: nbr14565-2019-cabeamento-estruturado-automacao-residencial
+description: NBR 14565:2019 (cabeamento estruturado, comercial) como complemento da NBR 16264 (residencial) para a infraestrutura física de automação residencial de alto padrão — hierarquia DG/DA/TO, cabos por aplicação (Cat6A, KNX, coaxial, som, CFTV), dimensionamento de rack (incl. NVR/DVR), pré-conduit e interface com a NBR 5410. Use sempre que Landell (ou qualquer Agente) for planejar rack, sala técnica, eletrodutos de sinal, pontos de rede/TV/KNX por ambiente ou CFTV — mesmo que o pedido só mencione "rede", "rack", "cabeamento", "home theater" ou "pré-conduit", sem citar a norma pelo nome.
+version: v1.1
 status: ativa-com-ressalva
 data: 2026-09-23
 tipo: Inteligência (Trilha A)
@@ -96,6 +97,7 @@ DG (Distribuidor Geral) — rack principal, entrada de operadoras
 | Interface KNX (IP Gateway) | 0,5U ou DIN |
 | Amplificador de som distribuído | 2U |
 | UPS (no-break) | 2–3U |
+| Gravador de CFTV (NVR/DVR) | a confirmar (depende do modelo) |
 | Organizador de cabos | 1U por patch panel |
 
 ### Localização do rack
@@ -116,7 +118,7 @@ O investimento mais barato e mais valioso em residencial de alto padrão: instal
 | Do rack aos pontos do mesmo andar | PVC corrugado Ø 32–40 mm (tubulação de percurso) |
 | Externo / intempéries | PVC rígido com luvas de vedação |
 
-**Coordenação com Oscar:** identificar na planta de implantação o shaft técnico de telecom separado do shaft elétrico de força — a NBR 14565 veda a passagem de cabos de dados no mesmo eletroduto que cabos de alimentação 220V/127V (exceto quando separados por divisória metálica).
+**Coordenação com Oscar:** identificar na planta de implantação o shaft técnico de telecom separado do shaft elétrico de força. **[A confirmar (norma candidata: NBR 16415)]** Não passar cabos de dados no mesmo eletroduto que cabos de alimentação 220V/127V (exceto quando separados por divisória metálica). A atribuição dessa vedação à NBR 14565 não foi confirmada em fonte; usar como boa prática, não citar em memorial como exigência normativa até conferir o texto da norma.
 
 ---
 
@@ -176,3 +178,10 @@ Landell consulta esta Skill sempre que o briefing mencionar:
 ## Avaliação do Gestor (Cardozo, 23/09/2026)
 
 Veredito: **PROCEDE COM RESSALVA**. Não é ratificação de Claudemberg. Correções aplicadas: NBR 16264 (residencial) existe e é a referência primária; data center = NBR 16665:2019 (não 16065); cabo KNX 0,8 mm de diâmetro; PE do rack pela Tabela 58 da NBR 5410 (mesma seção da fase); Landell não assina ART/RRT. Não confirmados: NBR 5281, NBR 11785, NBR 14159 e a atribuição da separação sinal/força à 14565. Avaliação completa no arquivo-fonte em `01_CEO/Skills_Propostas/2026/Setembro/`.
+
+---
+
+## Histórico de versões
+
+- **v1.0 — 23/09/2026:** versão proposta por Landell, corrigida e avaliada por Cardozo (procede com ressalva).
+- **v1.1 — 28/09/2026 — correções do treino aprovadas por Claudemberg:** (1) §6: separação sinal/força marcada "a confirmar (norma candidata: NBR 16415)", deixa de ser atribuída como fato à NBR 14565; (2) frontmatter: `name:` alinhado ao nome da pasta e `description:` incluída; (3) §5: linha do gravador de CFTV (NVR/DVR) incluída na tabela do rack, espaço em U "a confirmar (depende do modelo)". Registro do treino: `01_CEO/Gestores/Cardozo (Complementares)/Casos_TESTE/treino_skills/2026-09-28_nbr14565-2019-cabeamento-estruturado-automacao-residencial.md`.

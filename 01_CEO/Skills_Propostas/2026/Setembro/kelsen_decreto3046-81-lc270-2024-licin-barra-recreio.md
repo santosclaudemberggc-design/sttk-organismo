@@ -1,9 +1,12 @@
 ---
 name: decreto3046-81-lc270-2024-licin-barra-recreio
 description: "Base legal para licenciamento LICIN 2.0 na Barra da Tijuca e Recreio dos Bandeirantes: Decreto 3046/81 (ZE-5/Zona Plano Piloto) incorporado à LC 270/2024, e como Hely identifica os parâmetros por subzona via RIU antes de cada consulta prévia."
-version: "1.0"
+version: "1.1"
 status: ativa-com-ressalva
 created: 2026-09-21
+updated: 2026-09-28
+changelog:
+  - "1.1 (28/09/2026, Kelsen, aprovado por Claudemberg): treino de 28/09. §2 fonte do RIU alinhada a mapas.rio.rj.gov.br; §3 menção 'ZPR – Zona de Proteção de Ruas' removida (sem fonte); §4 faixa de marinha reescrita (os 33 m são a própria faixa); §4 APP de lagoa marcada 'a confirmar' com distinção urbano/rural. Ver R10."
 author: Rotina Diária Skills v3.2
 gestor_validador: kelsen
 agente_principal: hely
@@ -65,7 +68,7 @@ os parâmetros de referência são os do Decreto 3046/81
 **Passo obrigatório antes de qualquer consulta prévia:**
 
 1. Acessar o **RIU digital — SMU** (Relatório de Informações Urbanísticas)
-   - Portal: [geoinfo.rio/smdu](https://geoinfo.rio/smdu) ou via SMU balcão digital
+   - Portal oficial da casa: `mapas.rio.rj.gov.br` (Certidão/Relatório de Informações Urbanísticas) — fonte oficial que vence qualquer fonte secundária
    - Inserir endereço completo ou matrícula do imóvel
    - O RIU retorna: zona (ZPP = ex-ZE-5), subzona, parâmetros aplicáveis
 
@@ -99,7 +102,7 @@ os parâmetros de referência são os do Decreto 3046/81
 
 - Possibilidade de uso da **OODC / Outorga Onerosa** para ultrapassar o CA básico (ver Skill OODC)
 - **TDC (Transferência do Direito de Construir)** pode ser disponível em alguns setores da Barra (ver Skill TDC/LICIN 2.0)
-- Integração com novos instrumentos da LC 270/2024: ZPR (Zona de Proteção de Ruas), AEIS, etc.
+- Sobreposição de outros instrumentos da LC 270/2024 (ex.: AEIS) — conferir no RIU do lote
 
 ### O que NÃO mudou
 
@@ -113,11 +116,11 @@ os parâmetros de referência são os do Decreto 3046/81
 
 | Condição do lote | Legislação adicional a verificar |
 |---|---|
-| Lote com testada para praia | Faixa de marinha (SPU), recuo mínimo de 33 m do limite da faixa |
+| Lote com testada para praia | Terreno de marinha (SPU): a faixa **é** a própria largura de 33 m, medida a partir da linha do preamar médio de 1831 — não é recuo adicional além dela (DL 9.760/1946, art. 2º — **a confirmar** em fonte primária). Parte do lote dentro da faixa exige regularização junto à SPU |
 | Lote próximo a lagoa | APA Estadual + plano de manejo específico |
 | Lote em área de antigas "Superquadras" | Normas específicas do Plano Piloto de Lúcio Costa — gabarito máximo fixo |
 | Condomínio horizontal já aprovado (ex: Orla Bothanica) | Regramentos internos do Estatuto do Condomínio (Hely deve ler o Anexo II — Regramento Construtivo) |
-| Área de preservação permanente (APP) | Lei Federal 12.651/2012 (Código Florestal) — 30 m de beira de lagoa |
+| Área de preservação permanente (APP) | Lei Federal 12.651/2012 (Código Florestal), art. 4º — largura da faixa no entorno de lagoa natural **depende de zona urbana x rural** (e do tamanho do corpo d'água na zona rural); o valor de 30 m vale, em tese, só para zona urbana. **A confirmar** em fonte primária, inclusive eventual regra municipal de APP urbana posterior. Nunca aplicar 30 m sem essa conferência |
 
 ---
 
@@ -156,6 +159,8 @@ os parâmetros de referência são os do Decreto 3046/81
 ---
 
 **R9 — Ratificada por Claudemberg (21/09/2026):** status promovido de `proposta-com-ressalvas` para `ativa-com-ressalva` por Claudemberg em sessão manual. Todas as ressalvas acima permanecem ativas — uso pelo Hely condicionado às ressalvas R1, R5 e R8 especialmente.
+
+**R10 — Correções do treino de 28/09/2026 (Kelsen, aprovado por Claudemberg):** (a) fonte do RIU alinhada à oficial da casa, `mapas.rio.rj.gov.br` (antes apontava `geoinfo.rio/smdu`); (b) "ZPR – Zona de Proteção de Ruas" removida — nenhuma fonte encontrada para esse instrumento; se reaparecer, só volta com artigo da LC 270/2024 citado; (c) faixa de marinha reescrita — os 33 m são a própria faixa, não recuo além dela (**a confirmar** DL 9.760/1946 em fonte primária); (d) APP de lagoa — largura depende de zona urbana x rural (Lei 12.651/2012, art. 4º), **a confirmar** em fonte primária. Registro do treino: `01_CEO/Gestores/Kelsen (Legal)/Casos_TESTE/treino_skills/2026-09-28_decreto3046-81-lc270-2024.md`.
 
 ---
 

@@ -1,6 +1,9 @@
 ---
 name: nbr15575-4-emenda2025-desempenho-termico-edificacoes-rj
-description: "NBR 15575-4:2021 + Emenda 2025 — desempenho térmico de edificações residenciais para ZB 4A (Rio de Janeiro)"
+description: "NBR 15575-4:2021 + Emenda 2025 — desempenho térmico de edificações residenciais no Rio de Janeiro (zona provável ZB 4A — indício não confirmado em fonte primária, ver Skill nbr15220-3-bioclimatica-rj)"
+version: "1.1"
+fonte_primaria_lida: "não — todas as fontes abaixo são secundárias (blogs/sites técnicos); nem a NBR 15575-4 nem a Emenda 2025 nem a NBR 15220-3 foram lidas"
+changelog: "1.1 (28/09/2026, Lúcio, aprovado por Claudemberg) — correções do treino em caso fictício: ZB 4A rebaixada a indício não confirmado (alinhada com nbr15220-3-bioclimatica-rj); absortância de cobertura movida para a tabela de Coberturas; fontes declaradas secundárias no cabeçalho. 1.0 = versão de 22/09/2026 sem campo de versão."
 metadata:
   type: inteligencia
   status: ativa-com-ressalva
@@ -28,14 +31,14 @@ metadata:
 
 ---
 
-## 1. Mudança de Zoneamento: ZB 8 → ZB 4A (RJ)
+## 1. Mudança de Zoneamento: RJ saiu da ZB 8 (nova zona: provável ZB 4A — indício não confirmado)
 
-A NBR 15220-3:2024 (publicada dez/2024) substituiu o mapa bioclimático de 8 zonas por 12 zonas (1R, 1M, 2R, 2M, 3A, 3B, 4A, 4B, 5A, 5B, 6A, 6B). O Rio de Janeiro **migrou de ZB 8 para ZB 4A** — essa mudança é a base para todas as alterações de parâmetros térmicos em projetos residenciais cariocas.
+A NBR 15220-3:2024 substituiu o mapa bioclimático de 8 zonas por 12 zonas (1R, 1M, 2R, 2M, 3A, 3B, 4A, 4B, 5A, 5B, 6A, 6B). O Rio de Janeiro **mudou de categoria**: não usar mais "ZB 8" como referência. O código da nova zona, **"ZB 4A", é indício não confirmado em fonte primária** — mesma posição da Skill irmã `nbr15220-3-bioclimatica-rj`, que é a dona desse ponto. Antes de usar "ZB 4A" em memorial, simulação ou peça de cliente, confirmar na ferramenta oficial "Busca ZB" (normadedesempenho.com.br/busca-zb) ou no relatório técnico ABNT TR 15220-3-1. Toda menção a "ZB 4A" nesta Skill deve ser lida com essa ressalva.
 
 **Impacto prático:**
 - Parâmetros de U (transmitância térmica) e CT (capacidade térmica) associados à ZB 8 **não se aplicam mais** ao RJ
-- Soluções construtivas que atendiam ZB 8 podem **não atender** ZB 4A — projeto existente precisa ser reverificado
-- A requalificação para ZB 4A é a razão da publicação das Emendas de 2025
+- Soluções construtivas que atendiam ZB 8 podem **não atender** a nova zona — projeto existente precisa ser reverificado
+- A reclassificação das zonas é a razão da publicação das Emendas de 2025
 
 ---
 
@@ -63,14 +66,14 @@ Conforme fontes secundárias consultadas (seedsolution.com.br, sienge.com.br):
 |-----------|-----------|-------|
 | CT ≥ 130 kJ/(m²·K) | NBR 15220-3:2024 (skill 01/09/2026) | Mínimo |
 | U ≤ x W/(m²·K) | **Confirmar na Emenda ABNT 2025** | M/I/S |
-| Absortância cobertura ≤ 0,6 | Referência geral Norma Desempenho | Mínimo |
 
 ### Coberturas — ZB 4A
 
 | Parâmetro | Referência | Nível |
 |-----------|-----------|-------|
 | U cobertura ≤ x W/(m²·K) | **Confirmar na Emenda ABNT 2025** | M/I/S |
-| Absortância ≤ 0,4–0,6 | Referência geral | M/I/S |
+| Absortância da cobertura ≤ 0,6 | Referência geral Norma Desempenho (fonte secundária — a confirmar) | Mínimo |
+| Absortância ≤ 0,4–0,6 | Referência geral (fonte secundária — a confirmar) | M/I/S |
 
 ---
 

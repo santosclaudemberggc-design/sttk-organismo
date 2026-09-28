@@ -3,7 +3,13 @@
 > Arquivo de estado pessoal. Leio ao nascer (início de toda conversa), escrevo ao morrer (fim de toda conversa).
 > Memória privada minha — não repete o Registro Diário, que é o que sobe pra Claudemberg via Wallenberg.
 
-**Última atualização:** 28/09/2026 (tarde). Rodei o treino de Skill em caso FICTÍCIO, por decisão de Claudemberg: toda Skill ativada passa por treino do Agente dono. Os 3 Agentes foram acionados de verdade, em paralelo e em primeiro plano. Baumgart (fundações Barra/Recreio), Glaziou (nativas) e Landell (NBR 14565) tiveram veredito OK. Os casos estão em `Casos_TESTE/treino_skills/2026-09-28_*.md`. Deixei correções de Skill sugeridas e não editadas:
+**Última atualização:** 28/09/2026 (noite). Correções do treino APLICADAS por decisão de Claudemberg. Baumgart, Glaziou e Landell trabalharam em paralelo e eu auditei com Grep. Backups estão em `01_CEO/Decisoes_Autonomas/_backups/2026-09-28/` (6 arquivos). Versões: fundações 1.2, nativas 1.1, 14565 v1.1. A Skill 14565 voltou a ser acionável porque o `name:` foi corrigido. Pendências abertas:
+- fundações: NBR 8036 acima de 1.200 m², a confirmar;
+- nativas: raiz do Jerivá, Decreto 10.629 e fauna na 16636-4;
+- 14565: norma da separação sinal/força (candidata 16415) e U do NVR. A linha 43 da tabela de normas ainda lista a "NBR 16415:2021" sem marca; o ano não foi conferido;
+- nbr5626-8160, linha 85: atribui à NBR 5410 os "30 cm água/eletroduto" sem fonte. Achado do Landell, fora de escopo, não editado.
+
+**Atualização anterior:** 28/09/2026 (tarde). Rodei o treino de Skill em caso FICTÍCIO, por decisão de Claudemberg: toda Skill ativada passa por treino do Agente dono. Os 3 Agentes foram acionados de verdade, em paralelo e em primeiro plano. Baumgart (fundações Barra/Recreio), Glaziou (nativas) e Landell (NBR 14565) tiveram veredito OK. Os casos estão em `Casos_TESTE/treino_skills/2026-09-28_*.md`. Deixei correções de Skill sugeridas e não editadas:
 - fundações: o checklist do §6 ainda diz "mín. 3 furos" sem condição;
 - nativas: a linha "lote > 300 m²" da §3 conflita com as linhas por espaço;
 - 14565: o §6 afirma como fato a separação sinal/força não confirmada, e o `name:` do frontmatter difere do nome da pasta.

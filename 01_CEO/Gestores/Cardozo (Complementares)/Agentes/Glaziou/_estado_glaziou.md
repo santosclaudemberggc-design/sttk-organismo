@@ -22,7 +22,9 @@ Trabalho residual dos casos-teste (não é caso real): análise de sítio (Glazi
 
 Nenhum caso real acionado ainda.
 
-**Treino de Skill 28/09/2026 (fictício "Casa Pontal", nada gravado em pasta de cliente):** uso da `especies-nativas-mata-atlantica-paisagismo-lotes-rj`. Recusei Jerivá na frente (Seção 3 manda evitar no recuo ≤2 m + fiação), Juçara no fundo (ameaçada + Seção 3 manda evitar; fundo úmido pede Cana-do-brejo/Pitangueira) e Embaúba na lateral (porte 6–15 m, não listada p/ lateral). Contraproposta: Jerivá migra p/ lateral. Respondido a Cardozo.
+**Treino de Skill 28/09/2026 (fictício "Casa Pontal", nada gravado em pasta de cliente):** uso da `especies-nativas-mata-atlantica-paisagismo-lotes-rj`. Recusei Jerivá na frente (Seção 3 manda evitar no recuo ≤2 m + fiação), Juçara no fundo (ameaçada + Seção 3 manda evitar; fundo úmido pede Cana-do-brejo/Pitangueira) e Embaúba na lateral (porte 6–15 m, não listada p/ lateral). Contraproposta: Jerivá migra p/ lateral. Respondido a Cardozo. Veredito OK (erro meu: R1–R5 existiam no frontmatter).
+
+**28/09/2026 — correções do treino aplicadas (aprovadas por Claudemberg via Wallenberg/Cardozo):** Skill nativas v1.0 -> v1.1, conteúdo idêntico em `.claude/skills/.../SKILL.md` e `Skills_Propostas/2026/Setembro/glaziou_...md`; backups em `01_CEO/Decisoes_Autonomas/_backups/2026-09-28/`. Grep de coerência sem contradição. Reportado a Cardozo.
 
 ## 2. Pendências abertas
 
@@ -54,7 +56,7 @@ Nenhum caso real acionado ainda.
 - **Norma desatualizada citada por terceiro precisa ser conferida, não só os pontos que o próprio terceiro destacou (Exame 3):** memorial do fornecedor citava NBR 9575:2010 (correto: 9575:2024) num trecho que ele nem sinalizou como pendência — reforça checar o documento inteiro, não só a lista de "ajustes" que quem envia aponta.
 - **Divergência entre desenho e especificação técnica não se aceita como "só visual" sem checar qual dos dois está certo (Exame 3)** — pode ser sintoma de erro de especificação, não só estética de representação.
 
-- **Falhas da Skill de nativas (28/09, sinalizar a Cardozo):** cita "R4" sem seção de regras numeradas; Seção 3 se contradiz (lote >300 m² prioriza Juçara/Embaúba, mas as linhas por espaço vetam); "raiz não invasiva" do Jerivá conflita com a lacuna que manda consultar Baumgart; Decreto RJ 10.629/1987 só citado, não verificado; tabelas não declaram ter sido conferidas no Flora e Funga. Pitangueira chega a 8 m — sob fiação só com poda/controle.
+- **Skill de nativas v1.1 (28/09):** as linhas por espaço governam, e "lote >300 m²" é só nota de contexto. Continuam a confirmar: a raiz do Jerivá, o Decreto RJ 10.629/1987, a exigência de fauna na NBR 16636-4 e a conferência das tabelas no Flora e Funga. Sempre leio as ressalvas do frontmatter; errei isso no treino.
 
 ## 4. Como escrever neste arquivo
 

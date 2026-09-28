@@ -270,11 +270,11 @@
   <section class="ov" aria-label="Visão geral do organismo">
     <div class="ov-head">
       <h2>Onde o organismo está</h2>
-      <span class="when">retrato de 11/09/2026</span>
+      <span class="when" id="ov-when">retrato de 11/09/2026</span>
       <p>Números apurados do livro-razão (<code>01_CEO/Decisoes_Autonomas/2026</code>). O painel é vista, não verdade — quando divergir, vale o livro-razão e a Reunião Semanal. Rumo ao <b>MVP de Dezembro/2026</b>.</p>
     </div>
 
-    <div class="ov-kpis">
+    <div class="ov-kpis" id="ov-kpis">
       <div class="kpi"><b>3&thinsp;/&thinsp;4</b><span>Gestores Autonomous<i>Legal, Arquitetura e Complementares · Fechamento (Lelé) criado 09/09, Formação</i></span></div>
       <div class="kpi"><b>15</b><span>Gestores + Agentes<i>4 Autonomous · 9 Assisted · 0 Shadow · 1 Formação · + Artigas (canal do Gate)</i></span></div>
       <div class="kpi"><b>43&thinsp;/&thinsp;49</b><span>Pendências fechadas<i>6 ativas — 1 crítica, 1 alta, 2 média, 2 baixa</i></span></div>
@@ -311,7 +311,7 @@
         </svg>
       </figure>
 
-      <figure class="ovc">
+      <figure class="ovc" id="ov-niveis">
         <figcaption>Gestores + Agentes por nível &mdash; 15 no total (+ Artigas)</figcaption>
         <svg viewBox="0 0 300 40" role="img" aria-label="4 Autonomous, 9 Assisted, 0 Shadow, 1 Formação">
           <rect x="6"     y="6" width="82.3"  height="24" rx="3" class="sw-good"/>
@@ -695,6 +695,29 @@ fechamento2807:{d:"28/07",et:"marco",t:"Fila do dia drenada até o fim do que er
       fw.appendChild(row);
     });
   }
+  /* Cartões "Onde o organismo está" (28/09/2026): lidos de painel_status.json, que a Diária de sexta reescreve.
+     Sem o arquivo, ficam os números fixos do HTML (reserva). */
+  fetch("./painel_status.json").then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json();}).then(function(s){
+    function esc(v){return String(v).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+    function par(a){return esc(a[0])+"&thinsp;/&thinsp;"+esc(a[1]);}
+    var m=s.membros,tot=m.autonomous+m.assisted+m.shadow+m.formacao;
+    var cards=[
+      ["",par(s.gestores_autonomous),"Gestores Autonomous",s.gestores_autonomous[2]],
+      ["",esc(tot),"Gestores + Agentes",m.autonomous+" Autonomous · "+m.assisted+" Assisted · "+m.shadow+" Shadow · "+m.formacao+" Formação · "+m.nota],
+      ["",par(s.pendencias),"Pendências fechadas",s.pendencias[2]],
+      [" alert",par(s.caso_real),"Caso real em produção / concluído",s.caso_real[2]],
+      ["",par(s.marcos),"Marcos até o MVP",s.marcos[2]],
+      ["",par(s.skills_semana),"Skills criadas na semana / treinadas",s.skills_semana[2]]
+    ];
+    document.getElementById("ov-kpis").innerHTML=cards.map(function(c){return '<div class="kpi'+c[0]+'"><b>'+c[1]+'</b><span>'+esc(c[2])+'<i>'+esc(c[3])+'</i></span></div>';}).join("");
+    document.getElementById("ov-when").textContent="retrato de "+s.data;
+    var fig=document.getElementById("ov-niveis");
+    var seg=[["sw-good","bg-good","Autonomous",m.autonomous],["sw-move","bg-move","Assisted",m.assisted],["sw-warn","bg-warn","Shadow",m.shadow],["sw-line","bg-line","Formação",m.formacao]];
+    var x=6,W=288,svg='<svg viewBox="0 0 300 40" role="img" aria-label="'+seg.map(function(g){return g[3]+" "+g[2];}).join(", ")+'">';
+    seg.forEach(function(g){if(!g[3])return;var w=W*g[3]/tot;svg+='<rect x="'+x.toFixed(1)+'" y="6" width="'+w.toFixed(1)+'" height="24" rx="3" class="'+g[0]+'"/><text x="'+(x+w/2).toFixed(1)+'" y="22" font-size="11" text-anchor="middle" fill="#fff" font-weight="600">'+g[3]+'</text>';x+=w;});
+    svg+='</svg><div class="ov-lgd">'+seg.map(function(g){return '<span><i class="'+g[1]+'"></i>'+g[2]+' '+g[3]+'</span>';}).join("")+'</div>';
+    fig.innerHTML='<figcaption>Gestores + Agentes por nível &mdash; '+tot+' no total</figcaption>'+svg;
+  }).catch(function(err){console.warn("painel_status.json indisponível, mantendo números fixos:",err);});
   fetch("./feed.jsonl").then(function(resp){
     if(!resp.ok)throw new Error("HTTP "+resp.status);
     return resp.text();

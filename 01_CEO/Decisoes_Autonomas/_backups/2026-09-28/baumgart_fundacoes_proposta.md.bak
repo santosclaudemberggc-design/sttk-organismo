@@ -1,10 +1,10 @@
 ---
 name: fundacoes-solos-moles-lencol-freatico-barra-recreio
 description: "Critérios de projeto de fundações em solos moles e com lençol freático alto — condicionantes geotécnicos da Barra da Tijuca, Recreio dos Bandeirantes e Jacarepaguá: SPT, tipos de estaca e soluções recomendadas."
-version: "1.2"
+version: "1.1"
 status: ativa-com-ressalva
 created: 2026-09-21
-updated: 2026-09-28 (v1.2 — correções do treino aprovadas por Claudemberg: checklist §6 com mínimo NBR 8036 condicionado à projeção; R6/R7 reordenadas)
+updated: 2026-09-24 (v1.1 — R5 fechada: NBR 6484:2020 confirmada; critério de paralisação SPT adicionado; R7 nova)
 author: Rotina Diária Skills v3.2
 gestor_validador: cardozo
 agente_principal: baumgart
@@ -29,8 +29,6 @@ metadata:
 
 # Fundações em Solos Moles e Lençol Freático Alto
 ## Barra da Tijuca, Recreio dos Bandeirantes e Jacarepaguá — RJ
-
-> **Relação com outras Skills (harmonizado em 28/09/2026):** esta Skill **complementa** `nbr6122-2019-fundacoes`. A regra geral (norma, tipos de fundação, nº mínimo de furos pela NBR 8036) está lá; aqui fica só o que muda no solo mole da Zona Oeste: densificação de furos, escolha de estaca e lençol freático. Se as duas parecerem divergir, vale a regra geral da NBR 8036 como piso e esta Skill como reforço local.
 
 ---
 
@@ -136,7 +134,7 @@ A NBR 6484:2020 **cancela e substitui** a NBR 6484:2001. O critério de paralisa
 
 **Checklist mínimo para projetos na Barra/Recreio:**
 
-- [ ] Contratar sondagem SPT — **mínimo normativo pela NBR 8036** (contado pela área de projeção da edificação, não do lote): 1 furo a cada 200 m² de projeção até 1.200 m²; mínimo 2 furos até 200 m² e mínimo 3 entre 200 e 400 m² (ver R7). **Reforço local Barra/Recreio:** 1 furo a cada 100–150 m² de projeção — recomendação de projeto desta Skill, acima do mínimo normativo, não exigência da norma
+- [ ] Contratar sondagem SPT (mínimo 3 furos, preferencialmente 1/100–150 m²)
 - [ ] Verificar se o histórico do lote inclui aterro, banhado ou lagoa (mapa histórico ou vizinhança)
 - [ ] Identificar nível do lençol freático médio anual (pode ser diferente da profundidade no dia da sondagem)
 - [ ] Checar se há camada de turfa (N ≈ 0 com cores escuras/cheiro orgânico na amostra)
@@ -157,9 +155,9 @@ A NBR 6484:2020 **cancela e substitui** a NBR 6484:2001. O critério de paralisa
 
 **R5 — ✅ FECHADA 24/09/2026:** NBR 6484:2020 existe e **cancela e substitui a NBR 6484:2001** (Target Normas / catálogo ABNT; confirmado por múltiplas fontes técnicas). Citação "NBR 6484:2020" em memorial está correta. Texto integral continua não lido (norma paga).
 
-**R6 ALTA — Capacidade de carga 60-120 kN/estaca sem método declarado (Cardozo, 21/09):** os valores de capacidade de carga citados (60–120 kN para hélice Ø 30–40 cm em areia média) não especificam o método de cálculo utilizado (Aoki-Velloso ou Décourt-Quaresma produzem resultados distintos para o mesmo perfil SPT). Baumgart não pode usar esses valores como referência em memorial de dimensionamento real sem declarar o método — são apenas orientação de ordem de grandeza para estimativa preliminar de viabilidade, não valores de projeto.
+**R7 — Mínimo de furos depende da área (Cardozo, 24/09/2026):** a atribuição antiga a "NBR 6122 item 6.3" estava errada. A regra é da **NBR 8036** (programação de sondagens): 1 furo/200 m² de projeção até 1.200 m²; mín. 2 furos até 200 m²; mín. 3 entre 200–400 m². As Skills `nbr6122-2019-fundacoes` ("mín. 2") e esta ("mín. 3") estão ambas parcialmente certas. **Ressalva:** valores da NBR 8036 vêm do conhecimento de Cardozo, não de leitura da norma — Baumgart confere antes de citar em memorial. Na Barra/Recreio, manter como prática 1 furo/100–150 m².
 
-**R7 — Mínimo de furos depende da área (Cardozo, 24/09/2026; harmonizado 28/09/2026):** a atribuição antiga a "NBR 6122 item 6.3" estava errada. A regra é da **NBR 8036** (programação de sondagens): 1 furo/200 m² de projeção até 1.200 m²; mín. 2 furos até 200 m²; mín. 3 entre 200–400 m². Desde a v1.2 esta Skill e `nbr6122-2019-fundacoes` usam a mesma redação (o antigo "mínimo 3 furos" sem condição do checklist §6 foi corrigido). **Ressalva:** valores da NBR 8036 vêm do conhecimento de Cardozo, não de leitura da norma — Baumgart confere antes de citar em memorial. Regra para projeção acima de 1.200 m²: **a confirmar** (não coberta pela fonte). Na Barra/Recreio, manter como recomendação de projeto (acima do mínimo normativo) 1 furo/100–150 m².
+**R6 ALTA — Capacidade de carga 60-120 kN/estaca sem método declarado (Cardozo, 21/09):** os valores de capacidade de carga citados (60–120 kN para hélice Ø 30–40 cm em areia média) não especificam o método de cálculo utilizado (Aoki-Velloso ou Décourt-Quaresma produzem resultados distintos para o mesmo perfil SPT). Baumgart não pode usar esses valores como referência em memorial de dimensionamento real sem declarar o método — são apenas orientação de ordem de grandeza para estimativa preliminar de viabilidade, não valores de projeto.
 
 ---
 
@@ -175,11 +173,3 @@ A NBR 6484:2020 **cancela e substitui** a NBR 6484:2001. O critério de paralisa
 - APL Engenharia — "Sondagem SPT paralisada pela NBR 6484: quando avançar para sondagem rotativa?" (secundária ✓ lida, 24/09 — critério 10/8/6 m)
 - boletimsondagem.com.br — "NBR 6484:2020: guia prático para boletim de sondagem SPT" (secundária ✓ lida, 24/09)
 - YouTube "QUANDO PARAR A SONDAGEM | NBR 6484 2020 ATUALIZADA" — localizado, **não assistido** (/watch bloqueado por HTTP 429/403 do YouTube em 24/09)
-
----
-
-## HISTÓRICO DE VERSÕES
-
-- **1.0** — 21/09/2026 — criação (Rotina Diária Skills v3.2).
-- **1.1** — 24/09/2026 — R5 fechada (NBR 6484:2020 confirmada); critério de paralisação SPT adicionado; R7 nova.
-- **1.2** — 28/09/2026 — correções do treino aprovadas por Claudemberg: checklist §6 troca "mínimo 3 furos" sem condição pelo mínimo da NBR 8036 por área de projeção, com o reforço local 1/100–150 m² explicitado como recomendação de projeto; R6 e R7 reordenadas (R6 antes de R7).

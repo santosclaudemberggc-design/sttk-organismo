@@ -1,0 +1,10 @@
+{
+  "_comentario": "Números dos cartões 'Onde o organismo está' do Painel. Reescrito inteiro pela Rotina Diária de sexta (Passo 9), nunca editado no HTML. Cada campo: [valor, total_ou_segundo_valor, nota]. Níveis contados pela linha '**Nível atual:**' de .claude/agents/*.md; pendências de 01_CEO/Pendencias/pendencias.json (fechadas = resolvida + descartada + fechada-*).",
+  "data": "28/09/2026",
+  "gestores_autonomous": [3, 5, "Legal, Arquitetura e Complementares · Viabilidade (Villaça) Assisted · Fechamento (Lelé) Shadow"],
+  "membros": { "autonomous": 10, "assisted": 4, "shadow": 1, "formacao": 3, "nota": "inclui Artigas (canal do Gate) · Mascaró/Fiker sem exame ainda" },
+  "pendencias": [50, 56, "6 ativas — 1 crítica, 2 alta, 2 média, 1 baixa"],
+  "caso_real": [1, 0, "Interiores Daniel–OB (v3) no Gate do Maurício · nenhum aceito ponta a ponta"],
+  "marcos": [7, 9, "faltam caso real aprovado no Gate · cliente aceito"],
+  "skills_semana": [6, 6, "semana 21-25/09 · 6/6 treinadas em caso fictício (28/09) · 0 usadas em caso real"]
+}

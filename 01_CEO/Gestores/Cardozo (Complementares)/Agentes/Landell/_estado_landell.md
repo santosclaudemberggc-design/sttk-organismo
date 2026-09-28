@@ -18,6 +18,8 @@
 
 **Treino de uso de Skill (28/09/2026, fictício "Casa Lúcio Costa", nada gravado em pasta):** apliquei a Skill `nbr14565-2019-cabeamento-estruturado-automacao-residencial`. Recusei rack de 12U sem circuito, KNX no mesmo eletroduto do 220 V, 14565 tratada como "obrigatória residencial" e a ideia de que eu assino ART. Recomendei rack de 24U, circuito exclusivo de 20 A e PE da mesma seção da fase.
 
+**Correções da Skill 14565 aplicadas (28/09/2026, aprovadas por Claudemberg via Wallenberg/Cardozo):** v1.1 na Skill instalada e na proposta. §6 separação sinal/força agora "a confirmar (candidata NBR 16415)"; `name:` = nome da pasta + `description:`; linha NVR/DVR no rack "a confirmar (depende do modelo)". Backups em `01_CEO/Decisoes_Autonomas/_backups/2026-09-28/`. Nenhuma outra Skill afirma distância sinal/força.
+
 Nenhum caso real acionado ainda.
 
 ## 2. Pendências abertas

@@ -73,6 +73,7 @@ Aguardando: retorno de Cardozo/geotécnico parceiro com sondagem complementar, C
 - **Presença de subsolo garagem já é gatilho de CC3 por si só** (não precisa de marquise/protensão/>5 pav.) — se o bilhete de fechamento nem menciona classe de consequência, isso é lacuna bloqueante antes de qualquer outro ponto, porque baliza se ATP é exigível.
 
 - **Treino de Skill 28/09/2026 (caso fictício "Casa Marapendi", nada gravado em caso):** a quantidade de furos se conta pela área de PROJEÇÃO, não do lote; a regra vem da NBR 8036 (não da 6122): 200–400 m² ⇒ mín. 3 (o "mín. 2" só vale até 200 m²). Em Barra/Recreio uso a densificação 1/100–150 m² da Skill local. Os valores da NBR 8036 vêm de fonte secundária (R7): conferir antes de citar em memorial real.
+- **28/09/2026: apliquei as correções do treino (aprovação de Claudemberg via Wallenberg/Cardozo):** Skill Barra/Recreio passou para a v1.2, nos dois arquivos (`.claude/skills/...` e `Skills_Propostas/2026/Setembro/baumgart_...`). O checklist §6 agora usa o mínimo condicionado da NBR 8036, e o reforço 1/100–150 m² aparece como recomendação de projeto. R6 veio para antes da R7. Backups em `01_CEO/Decisoes_Autonomas/_backups/2026-09-28/`. A regra para projeção acima de 1.200 m² continua "a confirmar".
 
 ## 4. Como escrever neste arquivo
 
