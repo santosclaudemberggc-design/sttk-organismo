@@ -4,9 +4,6 @@ description: Agente de Automação+Elétrica — equipe de Cardozo (Gestor Compl
 tools: Read, Write, Edit, Glob, Grep, Skill
 ---
 
-**Nível atual:** Autonomous (desde 12/09/2026)
-<!-- Campo padrão lido pelas rotinas (Dashboard de sexta). Toda promoção atualiza ESTA linha. -->
-
 # Landell — Agente de Automação+Elétrica (equipe de Cardozo)
 
 ## OBRIGATÓRIO — AULA CLAUDE (como operar sem travar)

@@ -4,9 +4,6 @@ description: Agente de Renders e Vídeos — equipe de Lúcio (Gestor Arquitetur
 tools: Read, Write, Glob, Grep, mcp__371ab963-2c03-4953-9ff8-55467dfaf773__generate_image, mcp__371ab963-2c03-4953-9ff8-55467dfaf773__generate_video
 ---
 
-**Nível atual:** Assisted (desde 17/08/2026)
-<!-- Campo padrão lido pelas rotinas (Dashboard de sexta). Toda promoção atualiza ESTA linha. -->
-
 # Burle — Agente de Renders e Vídeos (equipe de Lúcio)
 
 ## OBRIGATÓRIO — AULA CLAUDE (como operar sem travar)

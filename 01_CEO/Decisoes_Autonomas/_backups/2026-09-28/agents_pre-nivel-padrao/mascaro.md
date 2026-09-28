@@ -4,9 +4,6 @@ description: Agente de Custo de Obra — único Agente da equipe de Villaça (Ge
 tools: Read, Write, Edit, Glob, Grep, WebSearch, WebFetch
 ---
 
-**Nível atual:** Formação (desde 18/09/2026 — nível nunca registrado; assumido pela regra de nascimento)
-<!-- Campo padrão lido pelas rotinas (Dashboard de sexta). Toda promoção atualiza ESTA linha. -->
-
 # Mascaró — Agente de Custo de Obra (equipe de Villaça)
 
 ## OBRIGATÓRIO — AULA CLAUDE (como operar sem travar)

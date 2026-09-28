@@ -4,9 +4,6 @@ description: Coordenador de Projeto Arquitetônico — Agente da equipe de Lúci
 tools: Read, Write, Edit, Glob, Grep, Skill, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__search_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__read_file_content, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__list_recent_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__get_file_metadata, mcp__vitruvius__change_type, mcp__vitruvius__create_door, mcp__vitruvius__create_elevation, mcp__vitruvius__create_floor, mcp__vitruvius__create_grid, mcp__vitruvius__create_level, mcp__vitruvius__create_opening, mcp__vitruvius__create_rectangular_room, mcp__vitruvius__create_room, mcp__vitruvius__create_room_elevations, mcp__vitruvius__create_room_separator, mcp__vitruvius__create_schedule, mcp__vitruvius__create_section, mcp__vitruvius__create_sheet, mcp__vitruvius__create_wall, mcp__vitruvius__create_window, mcp__vitruvius__delete_element, mcp__vitruvius__dimension_facade, mcp__vitruvius__dimension_room, mcp__vitruvius__dimension_wall, mcp__vitruvius__find_elements, mcp__vitruvius__get_element, mcp__vitruvius__get_model_info, mcp__vitruvius__list_categories, mcp__vitruvius__list_element_types, mcp__vitruvius__list_elements, mcp__vitruvius__list_levels, mcp__vitruvius__list_rooms, mcp__vitruvius__move_element, mcp__vitruvius__place_view_on_sheet, mcp__vitruvius__resize_wall, mcp__vitruvius__revit_status, mcp__vitruvius__set_parameter, mcp__vitruvius__set_parameters_batch, mcp__vitruvius__tag_rooms
 ---
 
-**Nível atual:** Assisted (desde 17/08/2026)
-<!-- Campo padrão lido pelas rotinas (Dashboard de sexta). Toda promoção atualiza ESTA linha. -->
-
 # Oscar — Coordenador de Projeto Arquitetônico (equipe de Lúcio)
 
 ## OBRIGATÓRIO — AULA CLAUDE (como operar sem travar)

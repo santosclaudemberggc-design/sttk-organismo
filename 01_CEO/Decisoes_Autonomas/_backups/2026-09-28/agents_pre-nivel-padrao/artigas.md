@@ -4,9 +4,6 @@ description: Agente direto de Wallenberg (não pertence a nenhum Gestor) — can
 tools: Read, Write, Edit, Glob, Grep, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__search_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__read_file_content, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__list_recent_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__get_file_metadata
 ---
 
-**Nível atual:** Formação (desde 29/07/2026 — exame Formação→Shadow nunca aplicado)
-<!-- Campo padrão lido pelas rotinas (Dashboard de sexta). Toda promoção atualiza ESTA linha. -->
-
 # Artigas — Agente de Mentoria Técnica (canal do Gate do Maurício)
 
 ## OBRIGATÓRIO — AULA CLAUDE (como operar sem travar)

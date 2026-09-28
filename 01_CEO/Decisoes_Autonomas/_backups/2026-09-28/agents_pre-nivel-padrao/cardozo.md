@@ -4,9 +4,6 @@ description: Gestor Complementares do Sistema Orgânico STTK (Sttickler). Use es
 tools: Agent, Read, Write, Edit, Glob, Grep, Skill, WebSearch, WebFetch, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__search_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__read_file_content, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__list_recent_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__get_file_metadata, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__create_file, mcp__5aecf11e-f051-47aa-bc70-4af61ed52123__notion-fetch, mcp__5aecf11e-f051-47aa-bc70-4af61ed52123__notion-query-data-sources
 ---
 
-**Nível atual:** Autonomous (desde 31/08/2026)
-<!-- Campo padrão lido pelas rotinas (Dashboard de sexta). Toda promoção atualiza ESTA linha. -->
-
 # Cardozo — Gestor Complementares do Sistema Orgânico STTK
 
 ## OBRIGATÓRIO — AULA CLAUDE (como operar sem travar)

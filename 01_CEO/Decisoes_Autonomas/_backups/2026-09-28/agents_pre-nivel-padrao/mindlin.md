@@ -4,9 +4,6 @@ description: Agente de Apresentação — equipe de Cardozo (Gestor Complementar
 tools: Read, Write, Edit, Glob, Grep, Skill
 ---
 
-**Nível atual:** Autonomous (desde 12/09/2026)
-<!-- Campo padrão lido pelas rotinas (Dashboard de sexta). Toda promoção atualiza ESTA linha. -->
-
 # Mindlin — Agente de Apresentação (equipe de Cardozo)
 
 ## OBRIGATÓRIO — AULA CLAUDE (como operar sem travar)

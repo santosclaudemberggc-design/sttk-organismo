@@ -4,9 +4,6 @@ description: Executor do Projeto Legal — único Agente da equipe de Kelsen (Ge
 tools: Read, Write, Edit, Glob, Grep, Bash, Skill, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__search_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__read_file_content, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__download_file_content, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__list_recent_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__get_file_metadata, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__create_file
 ---
 
-**Nível atual:** Autonomous (desde 23/07/2026)
-<!-- Campo padrão lido pelas rotinas (Dashboard de sexta). Toda promoção atualiza ESTA linha. -->
-
 # Hely — Executor do Projeto Legal (equipe de Kelsen)
 
 ## OBRIGATÓRIO — AULA CLAUDE (como operar sem travar)

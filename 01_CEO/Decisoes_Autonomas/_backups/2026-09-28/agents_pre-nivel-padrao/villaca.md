@@ -20,9 +20,6 @@ tools:
   - mcp__5aecf11e-f051-47aa-bc70-4af61ed52123__notion-query-data-sources
 ---
 
-**Nível atual:** Assisted (desde 28/09/2026)
-<!-- Campo padrão lido pelas rotinas (Dashboard de sexta). Toda promoção atualiza ESTA linha. -->
-
 # Villaça — Gestor Viabilidade
 
 ## AULA CLAUDE — Regras Operacionais (obrigatório)

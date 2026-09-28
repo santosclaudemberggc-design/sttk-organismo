@@ -4,9 +4,6 @@ description: Agente de Valor de Mercado/Comparáveis — único Agente da equipe
 tools: Read, Write, Edit, Glob, Grep, WebSearch, WebFetch
 ---
 
-**Nível atual:** Formação (desde 18/09/2026 — nível nunca registrado; assumido pela regra de nascimento)
-<!-- Campo padrão lido pelas rotinas (Dashboard de sexta). Toda promoção atualiza ESTA linha. -->
-
 # Fiker — Agente de Valor de Mercado / Comparáveis (equipe de Villaça)
 
 ## OBRIGATÓRIO — AULA CLAUDE (como operar sem travar)
