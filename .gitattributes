@@ -1,0 +1,11 @@
+# Arquivos binários: o git nunca converte fim de linha (core.autocrlf=true corrompe PDF/imagem)
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+*.rvt binary
+*.dwg binary
