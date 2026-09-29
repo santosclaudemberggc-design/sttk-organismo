@@ -3,7 +3,34 @@
 > Arquivo de estado pessoal. Leio ao nascer (início de toda conversa), escrevo ao morrer (fim de toda conversa).
 > Memória privada minha — não repete o Registro Diário, que é o que sobe pra Claudemberg via Wallenberg.
 
-**Última atualização:** 28/09/2026 (noite, 2ª rodada). Contradições de coerência CORRIGIDAS por autorização de Claudemberg, com backups `*_pre-coerencia.md` em `_backups/2026-09-28/`. Versões: nbr15220-3 v1.1 (deixou de mandar trocar ZB 8 por ZB 4A), nativas v1.2 (ZB 4A vira indício), nbr5626-8160 v1.1 ("30 cm/NBR 5410" a confirmar; nenhuma fonte achada), nbr14565 v1.2 (16415 a confirmar). As 2 pendências abaixo sobre 16415 linha 43 e 5626 linha 85 estão FECHADAS. Grep final: nenhuma Skill da minha equipe afirma ZB 4A como fato. Ainda aberto: fonte real dos 30 cm e o ano e escopo da 16415.
+**Última atualização:** 29/09/2026 (Rotina Diária v3.4.0, Passo 4.7). Treinei a Skill `rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio` v1.1 num caso FICTÍCIO ("Tijucas-R"). Acionei Baumgart de verdade, em primeiro plano. **Veredito: OK**, com as 7 iscas barradas. Achados próprios dele: a piscina a 1,6 m também fica abaixo do NA, e falta sondagem abaixo de 14 m. Registro em `Casos_TESTE/treino_skills/2026-09-29_rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio.md`. Deixei 4 correções sugeridas e NÃO editei a Skill:
+- ruptura de fundo por cisalhamento e deformação da contenção em argila mole;
+- monitoramento do vizinho também no recinto estanque (§4.2);
+- flutuação da piscina vazia;
+- profundidade da sondagem no §6.
+
+Padrão de formato a cobrar: Agentes passam do limite de 15 linhas (Saturnino e Baumgart).
+
+**Rodada anterior:** 29/09/2026 (Rotina Diária v3.4.0, Passo 4.2). Validei a Skill proposta `baumgart_rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio.md` e editei o arquivo para a v1.1. **Veredito: PROCEDE COM RESSALVA.** Conferi a Lei 5.234 na ALERJ e ela é emenda da Lei 4.247/2003, que é a lei de COBRANÇA. Usar os 5.000 L/dia como dispensa de outorga depende da INEA 63, que só foi lida por transcrição (R1). Correções técnicas feitas no arquivo:
+- a ponteira não drena em argila;
+- recalque por adensamento da argila e por carreamento de finos;
+- tampão de fundo e ruptura hidráulica do fundo no recinto estanque;
+- NA máximo, e não o médio, para subpressão e flutuação;
+- conta do esgotamento inicial (~70 m³);
+- rede pluvial é municipal e pede decantação;
+- a analogia com a NBR 16783 no canteiro.
+
+Na coerência, corrigi a nbr6122 de "diferente" para "complementa". As outras 4 classificações de Wallenberg foram confirmadas. Falta treinar a Skill com Baumgart em caso fictício. Observação à parte: a Skill nbr6122 cita a NBR 11682 para escavações, mas essa é a norma de encostas; a candidata é a NBR 9061, a confirmar. Não editei. (Treino feito na rodada acima.)
+
+**Rodada anterior:** 29/09/2026 (Rotina Diária v3.4.0, Passo 4.7). Treinei a Skill `reservatorio-retardo-decreto23940-aguas-pluviais-rj` num caso FICTÍCIO ("Pontal-K"). Acionei Saturnino de verdade, em primeiro plano. **Veredito: OK**, com as 5 iscas barradas. Registro em `Casos_TESTE/treino_skills/2026-09-29_reservatorio-retardo-decreto23940-aguas-pluviais-rj.md`. Deixei 4 correções sugeridas e NÃO editei a Skill:
+- escopo dos Arts. 3º a 9º no reuso voluntário;
+- §2 explícito de que o limiar é por área, não por tipologia;
+- exemplos para a R5 (piscina e deck);
+- ajuste da `description`.
+
+Aguardam decisão de Claudemberg/Wallenberg. Observação sobre o Saturnino: a resposta passou de 15 linhas e ele afirmou a obrigatoriedade sem condicionar à isenção dos decretos não lidos.
+
+**Rodada anterior:** 28/09/2026 (noite, 2ª rodada). Contradições de coerência CORRIGIDAS por autorização de Claudemberg, com backups `*_pre-coerencia.md` em `_backups/2026-09-28/`. Versões: nbr15220-3 v1.1 (deixou de mandar trocar ZB 8 por ZB 4A), nativas v1.2 (ZB 4A vira indício), nbr5626-8160 v1.1 ("30 cm/NBR 5410" a confirmar; nenhuma fonte achada), nbr14565 v1.2 (16415 a confirmar). As 2 pendências abaixo sobre 16415 linha 43 e 5626 linha 85 estão FECHADAS. Grep final: nenhuma Skill da minha equipe afirma ZB 4A como fato. Ainda aberto: fonte real dos 30 cm e o ano e escopo da 16415.
 
 **Rodada anterior:** 28/09/2026 (noite). Correções do treino APLICADAS por decisão de Claudemberg. Baumgart, Glaziou e Landell trabalharam em paralelo e eu auditei com Grep. Backups estão em `01_CEO/Decisoes_Autonomas/_backups/2026-09-28/` (6 arquivos). Versões: fundações 1.2, nativas 1.1, 14565 v1.1. A Skill 14565 voltou a ser acionável porque o `name:` foi corrigido. Pendências abertas:
 - fundações: NBR 8036 acima de 1.200 m², a confirmar;

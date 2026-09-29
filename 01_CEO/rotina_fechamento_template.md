@@ -22,6 +22,41 @@ metadata:
 
 ---
 
+## [2026-09-29] — Diária Skills v3.4.0 (Terça) — RODADA COMPLETA (2 Skills ativadas, 4 treinos OK)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** `(Get-Date).DayOfWeek` = Tuesday. Início às 08:14. Pipeline seg-qui.
+- [x] **Passo 0.5, treinos atrasados:** as 2 Skills de 28/09 foram treinadas, ambas OK. Reservatório (Saturnino): v1.2 com 4 esclarecimentos. Varandas (Hely): as 3 lacunas da Skill ficam pendentes com Kelsen (ver abaixo).
+- [x] **Cardozo/Baumgart, `rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio` v1.2:** ativa-com-ressalva e instalada. Fonte primária: Lei 5.234/2008 (ALERJ). Cardozo: PROCEDE COM RESSALVA, com v1.1 e correções técnicas. Treino do Baumgart OK (7 de 7 iscas).
+- [x] **Lúcio/Oscar, `vidro-fachada-poente-ini-r-fator-solar-transmitancia-rj` v1.2:** ativa-com-ressalva e instalada. Fecha a lacuna de vidro de 28/09. Fonte primária: Portaria Inmetro 309/2022, Anexo II. Lúcio: PROCEDE COM RESSALVA e corrigiu uma contradição com a Skill de proteção solar (no poente, sombreamento vertical). Treino do Oscar OK (6 de 6 iscas).
+- [x] **Coerência v3.4.0:** remissões de volta gravadas na Skill de fundações da Barra (linha 129) e na de proteção solar (seção 6).
+- [x] **Kelsen:** sem Skill. A busca achou a LC 299/2026 (MCMV, fora do perfil STTK) e o Decreto Estadual 50.473/2026 (SELCA, ver pendência).
+- [x] **/watch:** vídeo jXFca_Az9f8 (ponteiras filtrantes), aproveitado só pela transcrição. O download do vídeo deu 403 e as legendas vieram na 2ª tentativa (a 1ª deu 429). As buscas de vídeo para Kelsen e Lúcio não acharam material relevante.
+- [x] **Feed:** 2 eventos, 2/2 OK. **Livro-razão:** entrada 29/09 mais adendo. **Backups:** `_backups/2026-09-29/` (8 arquivos).
+- [ ] **Passo 8 (Trilha B):** não rodou, porque nenhum `_estado_` trouxe lacuna de ferramenta.
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **Varandas (Kelsen), 3 lacunas do treino:** como lançar no projeto uma varanda que já nasce com vidro retrátil (COES caput e §10, LC 145/2014); se casas geminadas contam como uma edificação para os 5 m e para o §3º; varanda gourmet como cômodo disfarçado. Só editar a Skill depois de ler o texto.
+- **Reservatório:** reuso voluntário de unifamiliar sob os Arts. 3º a 9º da Res. Conj. (Kelsen).
+- **Rebaixamento, Hely:** R1, confirmar na INEA 63/2012 ou na CERHI 221/2020 que os 5.000 L/dia valem como dispensa de **outorga** (a Lei 5.234 é de cobrança); R3, qual órgão autoriza o lançamento na rede pluvial municipal.
+- **Vidro, Lúcio:** R1, confirmar 0,87 / 5,70 / 17% na NBR 15575-1 §11.4.7.2; R2, zona da INI-R para o Rio depois da NBR 15220-3:2024.
+- **SELCA, Decreto Estadual 50.473 de 15/09/2026 (novo licenciamento ambiental do RJ):** Hely verifica o que muda para obra residencial perto de lagoa na Barra/Recreio.
+- **Cardozo, fora do escopo:** a `nbr6122-2019-fundacoes` remete escavação à NBR 11682 (encostas); a candidata certa pode ser a NBR 9061, a confirmar.
+- **Formato dos treinos:** 4 de 4 Agentes passaram das 15 linhas. Cardozo e Lúcio vão cobrar isso como padrão.
+- **Continuam valendo:** Skill de partido de 16/09 (linhas 70-72, os 20% do §5º), que o Lúcio confirmou; bug do `/watch` (`-vsync`, 429/403); pendências de Lint de 25/09.
+
+### O QUE NÃO FAZER (Avoid retrabalho)
+
+- ❌ **Rebaixamento de lençol / outorga INEA de obra:** não duplique. É a Skill Baumgart de 29/09.
+- ❌ **Vidro, fator solar e INI-R:** não duplique. É a Skill Lúcio de 29/09. Valor de FS de produto só com catálogo do fabricante.
+- ❌ **Não assistir de novo** o vídeo jXFca_Az9f8 (conteúdo já extraído).
+- ❌ **LC 299/2026 (MCMV):** fora do perfil de cliente STTK, não crie Skill sem caso real.
+- ❌ Todos os itens de "NÃO FAZER" das rodadas anteriores continuam válidos.
+
+---
+
 ## [2026-09-28] — Diária Skills v3.2 (Segunda) — RODADA COMPLETA (2 Skills ativadas)
 
 ### RODADA ATUAL (O que foi entregue)
@@ -600,6 +635,6 @@ metadata:
 
 ---
 
-**Última atualização:** 28/09/2026 (segunda-feira — Diária Skills v3.2, pipeline seg-qui, 2 Skills)  
-**Próxima leitura:** 29/09/2026 (terça-feira) — Diária Skills pipeline seg-qui  
+**Última atualização:** 29/09/2026 (terça-feira — Diária Skills v3.4.0, pipeline seg-qui, 2 Skills + 4 treinos)  
+**Próxima leitura:** 30/09/2026 (quarta-feira) — Diária Skills pipeline seg-qui  
 **Painel pendente para:** 02/10/2026 (sexta)

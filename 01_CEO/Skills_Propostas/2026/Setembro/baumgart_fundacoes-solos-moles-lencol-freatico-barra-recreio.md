@@ -126,7 +126,7 @@ A NBR 6484:2020 **cancela e substitui** a NBR 6484:2001. O critério de paralisa
 
 ## 5. PARCERIA COM OUTROS AGENTES
 
-- **Saturnino:** lençol freático alto impacta sistema de drenagem de águas servidas. Verificar cota de saída do esgoto — pode ser necessária elevatória ou rebaixamento do lençol durante a obra.
+- **Saturnino:** lençol freático alto impacta sistema de drenagem de águas servidas. Verificar cota de saída do esgoto — pode ser necessária elevatória ou rebaixamento do lençol durante a obra. **Rebaixamento (outorga INEA, recalque de vizinhos, alternativas sem bombear): ver `rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio` (29/09/2026, complementa).**
 - **Glaziou:** jardins de chuva e jardins de infiltração na Barra/Recreio devem verificar se o lençol não está já saturado na cota de infiltração — paisagismo superficial pode acumular água se o subsolo estiver impermeável.
 - **NBR 6122:2019 + Em.1/2022 (Skill existente de Baumgart):** esta Skill é complemento geográfico da Skill de fundações geral. Aqui o foco é o solo específico da Barra/Recreio, não os cálculos gerais da norma.
 

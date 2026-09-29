@@ -72,6 +72,7 @@ Lacunas (4 ressalvas já marcadas na própria Skill, linhas 185-189):
 ### Validação Skill Varandas COES Art. 8º (28/09/2026) — Rotina Diária, Fluxo v2.9
 
 `kelsen_varandas-nao-computaveis-ate-to-coes-lc198-rj.md` — **PROCEDE COM RESSALVA.** Conferi eu mesma o Art. 8º no `COES_..._CONSOLIDADO_SMU.pdf` (pp.5-6, gerado 07/01/2026): todos os números batem, sem nota de alteração. COES só foi alterado por LC 283 (Art. 35 §7º) e LC 291 (Art. 2º §7º) — a dúvida "LC 270/274 alteraram o §4º" cai. Faltava o Dec. 45.917/2019 Art. 6º (5 m entre varandas sobre afastamento entre edificações — pega grupamento tipo Daniel-OB). Não é duplicata. Correção da Skill de Lúcio (20% é só não residencial) procede; "projeção 2 m / Dec. 7336/1988" sem lastro no COES. Sem Hely.
+**29/09 — treino fictício da v1.1 com Hely: OK** (5/5 iscas). Registro: `Casos_TESTE/treino_skills/2026-09-29_varandas-nao-computaveis-ate-to-coes-lc198-rj.md`. 3 lacunas sugeridas (vidro retrátil no projeto licenciado x "aberta"; geminadas x "entre edificações"; varanda gourmet como cômodo disfarçado) — a confirmar no primário, Skill não editada. Hely passa de 15 linhas pela 2ª vez seguida.
 
 ### Verificação Protocolo Bloqueador — POP-ARQ-PL-01 / Memorial Descritivo (11/09/2026)
 

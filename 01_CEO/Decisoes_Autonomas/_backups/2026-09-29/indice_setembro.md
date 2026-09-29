@@ -282,8 +282,8 @@
 
 | Data | Título | Tipo | Para Quem | Status |
 |------|--------|------|-----------|--------|
-| 28/09 | Reservatório de Retardo de Águas Pluviais no RJ — Decreto 23.940/2004 + Res. Conj. SMG/SMO/SMU 001/2005 (+ Lei Estadual 9.164/2020) | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart, Oscar, Hely | ✅ **ativa-com-ressalva** (Cardozo 28/09 — C1: arranjo "retardo embaixo" corrigido; C2: assinatura do Termo corrigida; R: Decretos 26.168/2006 e 32.119/2010 não lidos, Lei 9.164/2020 só fonte secundária, vigência do rito pós-LICIN 2.0, conflito de uso com NBR 16783; instalada em `.claude/skills/reservatorio-retardo-decreto23940-aguas-pluviais-rj/`) · **treino: ok 29/09** (v1.2: 4 esclarecimentos do treino aplicados) |
-| 28/09 | Varandas e Sacadas Não Computáveis na ATE e na TO — COES (LC 198/2019) Art. 8º + Dec. 45.917/2019 Art. 6º | Inteligência (Trilha A) | Kelsen/Hely (Legal, principal) — cross: Oscar/Lúcio, Baumgart, Tenreiro | ✅ **ativa-com-ressalva** (Kelsen 28/09 — Art. 8º conferido no consolidado oficial SMU, sem alteração; R1 aberta: regra própria de cômputo na Barra/Recreio sob LC 270; instalada em `.claude/skills/varandas-nao-computaveis-ate-to-coes-lc198-rj/`) · **treino: ok 29/09** (3 lacunas da Skill a confirmar no COES — Kelsen) |
+| 28/09 | Reservatório de Retardo de Águas Pluviais no RJ — Decreto 23.940/2004 + Res. Conj. SMG/SMO/SMU 001/2005 (+ Lei Estadual 9.164/2020) | Inteligência (Trilha A) | Saturnino (Hidrossanitário, principal) — cross: Glaziou, Baumgart, Oscar, Hely | ✅ **ativa-com-ressalva** (Cardozo 28/09 — C1: arranjo "retardo embaixo" corrigido; C2: assinatura do Termo corrigida; R: Decretos 26.168/2006 e 32.119/2010 não lidos, Lei 9.164/2020 só fonte secundária, vigência do rito pós-LICIN 2.0, conflito de uso com NBR 16783; instalada em `.claude/skills/reservatorio-retardo-decreto23940-aguas-pluviais-rj/`) |
+| 28/09 | Varandas e Sacadas Não Computáveis na ATE e na TO — COES (LC 198/2019) Art. 8º + Dec. 45.917/2019 Art. 6º | Inteligência (Trilha A) | Kelsen/Hely (Legal, principal) — cross: Oscar/Lúcio, Baumgart, Tenreiro | ✅ **ativa-com-ressalva** (Kelsen 28/09 — Art. 8º conferido no consolidado oficial SMU, sem alteração; R1 aberta: regra própria de cômputo na Barra/Recreio sob LC 270; instalada em `.claude/skills/varandas-nao-computaveis-ate-to-coes-lc198-rj/`) |
 
 **Achado colateral:** a Skill de Lúcio `arquitetura_partido-conforto-termico-orientacao-solar-tipologias-rj.md` (16/09, linhas 70-72) aplica ao residencial o limite de 20% da área útil do COES Art. 8º §5º (que é só para não residencial) e cita uma projeção de 2 m sem conferir. Correção pendente com Lúcio (não editada nesta rodada).
 
@@ -297,27 +297,5 @@
 
 ---
 
-## Skills Criadas (Rodada 29/09/2026)
-
-| Data | Título | Tipo | Para Quem | Status |
-|------|--------|------|-----------|--------|
-| 29/09 | Rebaixamento de Lençol Freático em Obra na Barra/Recreio — Outorga INEA (Lei 5.234/2008, CERHI 221/2020, INEA 63/2012), Recalque de Vizinhos e a Brecha de Não Bombear | Inteligência (Trilha A) | Baumgart (Estrutural, principal) — cross: Saturnino, Oscar/Lúcio, Hely/Kelsen | ✅ **ativa-com-ressalva** (Cardozo 29/09 — v1.1 com correções técnicas; R1: 5.000 L/dia vem da lei de cobrança, confirmar como dispensa de outorga na INEA 63; R2: "dispensa para obra" sem fonte, não usar; R3: órgão do lançamento em rede pluvial; R4: números de ponteira secundários; instalada em `.claude/skills/rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio/`) · **treino: ok 29/09 (Baumgart barrou 7/7 iscas; v1.2 com 4 verificações de checklist)** |
-| 29/09 | Vidro na Fachada Poente — Fator Solar, Transmitância e Percentual de Vidro (INI-R, Portaria Inmetro 309/2022) | Inteligência (Trilha A) | Lúcio/Oscar (Arquitetura, principal) — cross: Tenreiro, Burle | ✅ **ativa-com-ressalva** (Lúcio 29/09 — v1.1: §3.3 alinhado à Skill de proteção solar, com sombreamento vertical no poente; R1: FS 0,87/U 5,70/Pt 17% da minuta, confirmar na NBR 15575-1; R2: zona da INI-R para o Rio; R3: INI-R voluntária × NBR 15575; instalada em `.claude/skills/vidro-fachada-poente-ini-r-fator-solar-transmitancia-rj/`) · **treino: ok 29/09 (Oscar pegou 6/6 iscas; v1.2 com 4 melhorias de checklist)** |
-
-**Remissões de volta (coerência v3.4.0):** a linha 129 de `fundacoes-solos-moles-lencol-freatico-barra-recreio` remete agora à Skill de rebaixamento, e a seção 6 de `lucio-protecao-solar-externa-dispositivos-rj` à Skill de vidro. Não houve mudança de regra nas duas.
-
-**Kelsen:** sem Skill. Achado para Hely: o **Decreto Estadual 50.473, de 15/09/2026**, reorganiza o SELCA (licenciamento ambiental estadual). Falta saber o que muda para obra residencial perto de lagoa na Barra/Recreio.
-
-**Treinos de 28/09 feitos hoje:** reservatório de retardo (Saturnino) OK; varandas (Hely) OK. As duas linhas estão marcadas acima.
-
-## Estatísticas (Atualizado 29/09/2026)
-
-- **Skills Propostas (acumulado setembro):** 32 (30 + 2 desta rodada; as 2 linhas repetidas de 18/09 continuam lá, pendência do Lint)
-- **Cobertura Trilha A:** Baumgart 8 · Lúcio/Oscar 6 · demais sem mudança
-- **Skills treinadas em caso fictício:** 10 (6 em 28/09, 2 de 28/09 treinadas hoje, 2 novas de hoje)
-- **Skills Testadas em caso real:** 0
-
----
-
-**Atualização:** 29/09/2026  
-**Próxima Atualização:** 30/09/2026 (ou próxima rodada útil)
+**Atualização:** 28/09/2026  
+**Próxima Atualização:** 29/09/2026 (ou próxima rodada útil)

@@ -1417,33 +1417,3 @@ Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e co
 **Backup:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-28/` (sufixos `_pre-ajustes`, `_pre-promocao`, `_pre-harmonizacao`, `_pre-status-automatico`).
 
 **Como desfazer:** copiar de volta cada arquivo do backup; para a LC 301, mover de `_Arquivadas/2026/` para `Skills_Propostas/2026/Setembro/`; para o Painel, restaurar `painel_fundador_sttk_pre-status-automatico.html`; as permissões novas são as últimas 10 linhas do `allow` em `settings.local.json`.
----
-
-## 29/09/2026 — Rotina Diária Skills v3.4.0 (ter, 08:14) — 2 Skills novas ativadas + 4 treinos + 2 Skills corrigidas
-
-**O que decidi e por quê:**
-1. **Treinos atrasados de 28/09 (Passo 0.5).** As Skills de 28/09 (reservatório de retardo e varandas) foram ativadas antes da regra do treino e estavam sem ele. Treinei as duas primeiro: Saturnino e Hely deram OK.
-2. **Reservatório v1.1 → v1.2.** Apliquei os 4 esclarecimentos do treino: o limiar é por área (unifamiliar não é dispensada); o reuso voluntário fica a confirmar com Kelsen; a lista de áreas sem definição conta pelo lado conservador; e a description foi ajustada. Nenhuma regra mudou. **As correções sugeridas no treino de varandas não foram aplicadas**, porque exigem leitura do COES (caput e §10) e da LC 145/2014 antes. Ficaram como pendência de Kelsen.
-3. **Skill nova, Cardozo/Baumgart:** `rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio` v1.1. Fonte primária lida: Lei 5.234/2008 (ALERJ). Parecer de Cardozo: PROCEDE COM RESSALVA (R1-R4). Checagem de coerência: complementa `fundacoes-...-barra-recreio`, `nbr16783`, `nbr9575` e `nbr6122`; é diferente de `reservatorio-retardo`. Ativa-com-ressalva e instalada.
-4. **Skill nova, Lúcio/Oscar:** `vidro-fachada-poente-ini-r-fator-solar-transmitancia-rj`. Fonte primária lida: Portaria Inmetro 309/2022, Anexo II. Parecer de Lúcio: PROCEDE COM RESSALVA (R1-R3). Ele corrigiu uma contradição com a Skill de proteção solar: no poente, sombreamento vertical, não só a varanda. Complementa 5 Skills. Depois do treino do Oscar (OK), subiu para v1.2 com 4 itens de checklist. Ativa-com-ressalva e instalada.
-5. **Remissões de volta:** a linha 129 da Skill de fundações da Barra passou a apontar para a de rebaixamento, e a seção 6 da Skill de proteção solar para a de vidro. As duas foram alteradas na proposta e na instalada.
-6. **Kelsen sem Skill.** O achado Decreto 50.473/2026 (SELCA) ficou como pendência para Hely.
-
-**O que alterei:**
-- **Novos:** `01_CEO/Skills_Propostas/2026/Setembro/baumgart_rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio.md`, `lucio_vidro-fachada-poente-ini-r-fator-solar-transmitancia-rj.md`, `.claude/skills/rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio/` e `.claude/skills/vidro-fachada-poente-ini-r-fator-solar-transmitancia-rj/`
-- **Editados (proposta e instalada):** `saturnino_reservatorio-...` e a Skill instalada correspondente (v1.2); `baumgart_fundacoes-...-barra-recreio`, linha 129; `lucio_protecao-solar-externa-dispositivos-rj`, seção 6
-- **Índice:** `indice.md` de setembro, com a seção 29/09 e as marcas de treino nas linhas de 28/09
-- **Feed:** `feed.jsonl` (2 eventos `skill`)
-- **Registros de treino (4):** em `Gestores/{Cardozo,Kelsen,Lúcio}/Casos_TESTE/treino_skills/2026-09-29_*.md`
-
-**Backup:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-29/` contém `indice_setembro.md`, `reservatorio_SKILL.md`/`_proposta.md`, `fundacoes-barra_SKILL.md`/`_proposta.md`, `protecao-solar_SKILL.md`/`_proposta.md` e `livro-razao_Setembro.md`.
-
-**Como desfazer:**
-- **Skills novas:** apagar `.claude/skills/rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio/` e `.claude/skills/vidro-fachada-poente-ini-r-fator-solar-transmitancia-rj/`, e voltar o `status` dos dois `.md` em `Skills_Propostas` para `proposta`.
-- **Edições nas Skills existentes:** copiar de volta os 6 arquivos do backup (`reservatorio`, `fundacoes-barra`, `protecao-solar`, cada um em `_SKILL` e `_proposta`) para os caminhos de origem.
-- **Índice:** restaurar `indice_setembro.md`.
-- **Feed:** remover as 2 linhas `"d":"29/09"` do `feed.jsonl`.
-
-**Aguardando:** ☐ RATIFICADO (revisão retroativa na Semanal)
-
-**Adendo (fim da rodada 29/09):** os 2 treinos das Skills novas deram OK. Baumgart barrou 7 de 7 iscas; Oscar barrou 6 de 6. As duas Skills subiram para a **v1.2** só com itens de checklist sugeridos no treino (rebaixamento: sondagem abaixo da argila, ruptura de fundo por cisalhamento e deformação da contenção, vistoria também em contenção estanque, flutuação de piscina vazia; vidro: piso de FS 0,20, recusa de sombreamento registrada, TL × COES, etiqueta A/B não sai pelo prescritivo). Nenhuma regra mudou. **Como desfazer a v1.2:** remover o bloco "Verificações acrescentadas pelo treino" (rebaixamento) e os 4 trechos marcados v1.2 no changelog (vidro), e recopiar para `.claude/skills/`.

@@ -123,7 +123,7 @@ Dispositivo de proteção solar **externo** bloqueia a radiação antes de ating
 
 ## 6. O Que Esta Skill NÃO Cobre (Lacunas Declaradas)
 
-- Cálculo de fator solar (FS) de vidro + dispositivo: depende de especificação de vidro (não desta Skill) — **ver `vidro-fachada-poente-ini-r-fator-solar-transmitancia-rj` (29/09/2026, complementa)**
+- Cálculo de fator solar (FS) de vidro + dispositivo: depende de especificação de vidro (não desta Skill)
 - Dimensionamento preciso do ângulo de brise para lat. 23°S: usar carta solar LABEE/Analysis SOL-AR
 - Resistência ao vento (cargas de vento em fachadas): NBR 6123:1988 + NBR 6120:2019 — laudo de Baumgart
 - Propriedades de absorção/refletância de materiais específicos de brise: INMETRO/fabricante

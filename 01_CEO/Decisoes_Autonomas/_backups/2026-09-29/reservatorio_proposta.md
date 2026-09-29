@@ -1,14 +1,14 @@
 ---
 name: reservatorio-retardo-decreto23940-aguas-pluviais-rj
-description: Reservatório de retardo (e de reuso) de águas pluviais obrigatório no Rio de Janeiro — Decreto 23.940/2004 + Resolução Conjunta SMG/SMO/SMU 001/2005 — quando é exigido, fórmula de volume (V = 0,15 × Ai × h; AP4 Barra/Recreio h = 0,06 m), orifício de descarga, regras de projeto, condição de Habite-se e o limiar baixo da Lei Estadual 9.164/2020 para unifamiliar. O limiar do decreto é por área impermeabilizada, então casa unifamiliar acima de 500 m² impermeabilizados também está sujeita. Use sempre que Saturnino (ou Glaziou/Baumgart) for projetar drenagem de lote, reservatório pluvial, cisterna, ou conferir o que trava o Habite-se — mesmo que o pedido só mencione "caixa de retenção", "cisterna", "drenagem do lote" ou "alagamento", sem citar o decreto pelo nome.
-version: v1.2
+description: Reservatório de retardo (e de reuso) de águas pluviais obrigatório no Rio de Janeiro — Decreto 23.940/2004 + Resolução Conjunta SMG/SMO/SMU 001/2005 — quando é exigido, fórmula de volume (V = 0,15 × Ai × h; AP4 Barra/Recreio h = 0,06 m), orifício de descarga, regras de projeto, condição de Habite-se e o limiar baixo da Lei Estadual 9.164/2020 para unifamiliar. Use sempre que Saturnino (ou Glaziou/Baumgart) for projetar drenagem de lote, reservatório pluvial, cisterna, ou conferir o que trava o Habite-se — mesmo que o pedido só mencione "caixa de retenção", "cisterna", "drenagem do lote" ou "alagamento", sem citar o decreto pelo nome.
+version: v1.1
 status: ativa-com-ressalva
 data: 2026-09-28
 tipo: Inteligência (Trilha A)
 gestor_alvo: Cardozo (Complementares)
 agente_principal: Saturnino (Hidrossanitário)
 agentes_cross: Glaziou (área permeável, jardim de chuva), Baumgart (reservatório enterrado em solo mole / lençol alto), Oscar (implantação no lote), Hely via Kelsen (Termo de Responsabilidade no licenciamento)
-validacao: Cardozo 28/09/2026 — PROCEDE COM RESSALVA (C1-C4 aplicadas na v1.1; R1-R7 registradas abaixo). v1.2 (29/09) — 4 esclarecimentos do treino fictício de Saturnino, sem mudança de regra
+validacao: Cardozo 28/09/2026 — PROCEDE COM RESSALVA (C1-C4 aplicadas na v1.1; R1-R7 registradas abaixo)
 ---
 
 # Skill: Reservatório de Retardo de Águas Pluviais no Rio de Janeiro (Decreto 23.940/2004 + Resolução Conjunta SMG/SMO/SMU 001/2005)
@@ -32,9 +32,7 @@ As Skills que Saturnino já tem (`nbr10844-1989-aguas-pluviais` para calha/condu
 
 **Divergência de redação:** o decreto diz "superior a 500 m²" e a resolução diz "igual ou superior", tanto no retardo (Art. 1º) quanto no reuso (Art. 3º × Art. 2º). Em lote com exatamente 500 m², adote o texto mais exigente (resolução) e sinalize a dúvida.
 
-**O limiar é por área impermeabilizada, não por tipo de casa [v1.2, treino 29/09].** Casa unifamiliar **não é dispensada** por ser unifamiliar: acima de 500 m² impermeabilizados ela está sujeita ao decreto, **salvo isenção nos Decretos 26.168/2006 e 32.119/2010, que não foram lidos** (ressalva do topo). Sempre que disser "é obrigatório", diga junto essa condição.
-
-**Casa unifamiliar STTK típica (lote de 360 a 600 m²):** quase sempre fica **abaixo** dos 500 m² impermeabilizados, então o decreto municipal não se aplica. Lote grande na Barra/Recreio (1.000 m² ou mais) pode passar do limiar. **Confira também a Lei Estadual 9.164/2020 (seção 6)**, que tem um limiar muito mais baixo para unifamiliar.
+**Casa unifamiliar STTK típica (lote de 360 a 600 m²):** quase sempre fica **abaixo** dos 500 m² impermeabilizados, então o decreto municipal não se aplica. **Mas confira a Lei Estadual 9.164/2020 (seção 6)**, que tem um limiar muito mais baixo para unifamiliar.
 
 ## 3. COMO DIMENSIONAR (fórmula oficial)
 
@@ -88,13 +86,13 @@ Para o Q pré-impermeabilização, **inferência não lida**: a norma de drenage
 - ponto de água a **1,80 m do piso**, em nicho com portinhola e fecho, com a placa "ÁGUA IMPRÓPRIA PARA CONSUMO HUMANO" (Art. 9º);
 - **nenhuma ligação** com a rede potável (Decreto, Art. 4º III; Res. Conj., Art. 8º).
 
-**Nota cruzada com `nbr16783-reuso-agua`:** a NBR 16783 admite água não potável para descarga sanitária. Mas, quando o reuso vier da **obrigação municipal** (Art. 3º do decreto), o texto municipal lido (Res. Conj., Art. 6º) só autoriza lavagem de carro, piso e rega. Descarga sanitária com essa água não está coberta pelo texto municipal: confirmar com Vigilância Sanitária/Kelsen antes de projetar. **[v1.2, treino 29/09] A confirmar com Kelsen:** as regras dos Arts. 3º a 9º da Res. Conj. valem também para o reuso **voluntário** de uma unifamiliar que não está obrigada pelo Art. 3º? Até a resposta, aplique-as como o lado conservador.
+**Nota cruzada com `nbr16783-reuso-agua`:** a NBR 16783 admite água não potável para descarga sanitária. Mas, quando o reuso vier da **obrigação municipal** (Art. 3º do decreto), o texto municipal lido (Res. Conj., Art. 6º) só autoriza lavagem de carro, piso e rega. Descarga sanitária com essa água não está coberta pelo texto municipal: confirmar com Vigilância Sanitária/Kelsen antes de projetar.
 
 Água de piso descoberto (estacionamento, pátio) vai **direto para o retardo**, nunca para o reuso (Res. Conj., Art. 10).
 
 ## 5. O QUE O PROFISSIONAL EXPERIENTE FAZ NA BARRA/RECREIO (brecha válida)
 
-1. **Reduzir Ai em vez de aumentar o reservatório.** Prática de projeto, **interpretação a confirmar**: nenhum dos dois textos define "área impermeabilizada". O decreto só trata piso drenante como permeável para estacionamento comercial (Art. 5º). A leitura de que piso drenante, jardim sobre solo natural e jardim de chuva ficam fora de Ai é razoável, mas precisa ser confirmada com SMDU/Rio-Águas via Kelsen antes de usar para ficar abaixo do limiar. Integra com a Skill `paisagismo-jardim-de-chuva` (Glaziou). **[v1.2, treino 29/09] Casos sem definição, a contar como impermeabilizados (lado conservador) até a confirmação:** piscina, espelho d'água, deck sobre brita, piso drenante fora de estacionamento comercial e cobertura verde.
+1. **Reduzir Ai em vez de aumentar o reservatório.** Prática de projeto, **interpretação a confirmar**: nenhum dos dois textos define "área impermeabilizada". O decreto só trata piso drenante como permeável para estacionamento comercial (Art. 5º). A leitura de que piso drenante, jardim sobre solo natural e jardim de chuva ficam fora de Ai é razoável, mas precisa ser confirmada com SMDU/Rio-Águas via Kelsen antes de usar para ficar abaixo do limiar. Integra com a Skill `paisagismo-jardim-de-chuva` (Glaziou).
 2. **Infiltrar é a regra, mas o lençol da Barra costuma impedir.** O decreto (Art. 2º §1º) já prevê reservatório "com ou sem revestimento, dependendo da altura do lençol freático". Com lençol a 1 ou 2 m (ver Skill `fundacoes-solos-moles-lencol-freatico-barra-recreio`), infiltração é inviável. Reservatório enterrado precisa de **verificação de empuxo (flutuação) com Baumgart**. Em lençol muito raso, considere reservatório elevado ou semienterrado.
 3. **Retardo e reuso num único corpo** (prática de projeto, não texto normativo): câmaras **lado a lado**, ou o retardo na **cota mais alta compatível com a rede**. O reuso extravasa para o retardo com antirretorno (Art. 4º VII-VIII). **Nunca pôr o retardo embaixo do reuso**: o extravasor do retardo precisa chegar à rede por gravidade (Art. 12 IV) e o orifício tem que ficar acima da rede (Art. 14 §2º). Com lençol e rede rasos na Barra, retardo fundo não descarrega. Confirmar as cotas com Baumgart (empuxo) e com o levantamento da rede.
 4. **Reforma: calcule só a área impermeabilizada acrescida** (Art. 6º). O cliente não precisa de reservatório para a casa inteira.
