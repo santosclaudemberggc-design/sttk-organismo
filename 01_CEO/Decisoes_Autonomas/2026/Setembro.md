@@ -1447,3 +1447,42 @@ Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e co
 **Aguardando:** ☐ RATIFICADO (revisão retroativa na Semanal)
 
 **Adendo (fim da rodada 29/09):** os 2 treinos das Skills novas deram OK. Baumgart barrou 7 de 7 iscas; Oscar barrou 6 de 6. As duas Skills subiram para a **v1.2** só com itens de checklist sugeridos no treino (rebaixamento: sondagem abaixo da argila, ruptura de fundo por cisalhamento e deformação da contenção, vistoria também em contenção estanque, flutuação de piscina vazia; vidro: piso de FS 0,20, recusa de sombreamento registrada, TL × COES, etiqueta A/B não sai pelo prescritivo). Nenhuma regra mudou. **Como desfazer a v1.2:** remover o bloco "Verificações acrescentadas pelo treino" (rebaixamento) e os 4 trechos marcados v1.2 no changelog (vidro), e recopiar para `.claude/skills/`.
+
+
+---
+
+## 29/09/2026 — Acervo de normas reorganizado + 2 rotinas novas (decisão de Claudemberg ao vivo)
+
+**O que decidiu e por quê:** os PDFs de normas estavam espalhados em 5 lugares, com duplicatas (NBR 6492 ×4, COE ×4). Claudemberg aprovou as 5 recomendações:
+1. A legislação continua na pasta do Hely.
+2. `D:\009_NORMAS` foi incorporada à 008.
+3. Versão antiga vai para Substituídas, nunca é apagada.
+4. Duas rotinas novas.
+5. Lista de compra.
+
+**O que alterou:**
+- **Nova estrutura de `D:\008_Normas ABNT\`:**
+  - pastas `001_ABNT` (com 01 a 05 por disciplina), `002_Prefeitura_RJ`, `003_Condominios` e `004_Substituidas`;
+  - arquivos renomeados no padrão `NBR NNNNN-AAAA Título`;
+  - índice novo `_indice_acervo.md`;
+  - `D:\009_NORMAS` e `010_Regras Prefeitura` removidas depois de ficarem vazias;
+  - folheto de telha movido para `D:\007_MATERIAIS`; página web salva e guia do MS movidos para `D:\005_CONHECIMENTO\0002_PROJETOS`.
+- **Substituídas:** NBR 6492-1994, extrato da 6492-2021 e NBR 15220-3-2005 (nela o Rio era ZB 8).
+- **Achados:**
+  - a NBR 9050 do acervo é de 2015, desatualizada;
+  - a NBR 13532-1995 possivelmente foi substituída pela NBR 16636;
+  - o projeto de revisão da NBR 15220-3 (jun/2024) põe o Rio em ZB 4A.
+- **Rotinas criadas:**
+  - `wallenberg-rotina-acervo-normas`: toda segunda às 07:00, dona Kelsen/Hely; baixa só o que é gratuito e oficial e mantém os índices e a lista de compra;
+  - `wallenberg-rotina-macetes-profissionais`: seg-sex às 14:00; no máximo 1 Skill por Gestor por dia; /watch de verdade; o Gestor valida e o Agente treina em caso fictício.
+- **Skills corrigidas hoje:**
+  - COE v1.2 (Oscar/Lúcio);
+  - LICIN Barra/Recreio v1.2 (Hely/Kelsen);
+  - nbr14565 v1.3, nbr5410 v1.1 e nbr5626-8160 v1.2 (Landell/Saturnino/Cardozo, contra os PDFs reais).
+
+**Backup:** nenhum arquivo foi apagado; tudo foi só movido e renomeado. Backups das Skills em `_backups/2026-09-29/`.
+
+**Como desfazer:**
+- **Pastas:** mover os arquivos de volta seguindo a tabela do `_indice_acervo.md`.
+- **Rotinas:** desativar pelo painel Agendadas (ou `update_scheduled_task enabled:false`).
+- **Skills:** restaurar pelos backups.
