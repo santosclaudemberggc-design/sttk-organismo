@@ -20,6 +20,8 @@
 
 **Correções da Skill 14565 aplicadas (28/09/2026, aprovadas por Claudemberg via Wallenberg/Cardozo):** v1.1 na Skill instalada e na proposta. §6 separação sinal/força agora "a confirmar (candidata NBR 16415)"; `name:` = nome da pasta + `description:`; linha NVR/DVR no rack "a confirmar (depende do modelo)". Backups em `01_CEO/Decisoes_Autonomas/_backups/2026-09-28/`. Nenhuma outra Skill afirma distância sinal/força.
 
+**Normas reais lidas (29/09/2026, PDFs em `D:\008_Normas ABNT`):** Skill 14565 foi para a v1.3 e a Skill 5410 para a v1.1 (instaladas + propostas). Backups em `01_CEO/Decisoes_Autonomas/_backups/2026-09-29/`. NBR 16415 é **2015** (não 2021): 6.1.1 veda infraestrutura compartilhada sinal/força, e nenhuma norma dá distância em cm. NBR 5410 corrigida: sem "1.500 W/TUG" nem "luz exclusiva por cômodo" (regra real 9.5.3); PEN separado na entrada é obrigatório (5.4.3.6); DR 5.1.3.2.2 inclui garagem e tomadas externas; DPS por 5.4.2.1.1/5.4.2.2.1. Macetes com fonte entraram nas 2 Skills.
+
 Nenhum caso real acionado ainda.
 
 ## 2. Pendências abertas
@@ -53,7 +55,8 @@ Nenhum caso real acionado ainda.
 - **Cronograma e agenda de terceiro (fornecedor, instalação piloto) nunca pressionam aprovação técnica**, e submissão a Gate de validação sem passar pela minha revisão e pela de Cardozo é quebra de cadeia de comando — escalo, não valido a posteriori.
 - **Bilhete de fechamento em tom "só faltam detalhes de acabamento" pode camuflar violação grave dentro da lista de itens cosméticos** (ex.: chuveiro dividindo disjuntor com TUG descrito como economia de espaço) — tratar cada item da lista com o mesmo rigor, não relaxar o crivo por causa do enquadramento de quem escreveu o bilhete.
 
-- **Skill NBR 14565 (procede com ressalva, não ratificada):** para residência, a referência primária é a NBR 16264; a 14565 é comercial e só complementa. Nenhuma das duas é exigência legal para casa unifamiliar. A separação sinal/força também não tem atribuição confirmada à 14565 (a NBR 16415 é candidata), e as NBR 5281, 11785 e 14159 não foram confirmadas. Nada disso entra em memorial sem conferir antes. O KNX segue a EN 50090. O PE do rack segue a Tabela 58 da NBR 5410 (mesma seção da fase).
+- **Skill NBR 14565 (procede com ressalva, não ratificada):** para residência, a referência primária é a NBR 16264; a 14565 é comercial e só complementa. Nenhuma das duas é exigência legal para casa unifamiliar. A separação sinal/força vem da NBR 16415:2015 6.1.1 e da NBR 5410 6.2.9.5 (lidas), sem distância em cm. As NBR 14565, 16264, 5281, 11785 e 14159 seguem não lidas.
+- **Tenho os PDFs reais da NBR 5410:2004 e da NBR 16415:2015 em `D:\008_Normas ABNT`.** Em dúvida, ler o item antes de afirmar. No PDF da 5410, página da norma + 8 = página do PDF; na 16415, + 6. Nada disso entra em memorial sem conferir antes. O KNX segue a EN 50090. O PE do rack segue a Tabela 58 da NBR 5410 (mesma seção da fase).
 
 ## 4. Como escrever neste arquivo
 

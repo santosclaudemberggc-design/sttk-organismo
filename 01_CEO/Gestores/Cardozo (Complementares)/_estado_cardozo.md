@@ -3,7 +3,16 @@
 > Arquivo de estado pessoal. Leio ao nascer (início de toda conversa), escrevo ao morrer (fim de toda conversa).
 > Memória privada minha — não repete o Registro Diário, que é o que sobe pra Claudemberg via Wallenberg.
 
-**Última atualização:** 29/09/2026 (Rotina Diária v3.4.0, Passo 4.7). Treinei a Skill `rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio` v1.1 num caso FICTÍCIO ("Tijucas-R"). Acionei Baumgart de verdade, em primeiro plano. **Veredito: OK**, com as 7 iscas barradas. Achados próprios dele: a piscina a 1,6 m também fica abaixo do NA, e falta sondagem abaixo de 14 m. Registro em `Casos_TESTE/treino_skills/2026-09-29_rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio.md`. Deixei 4 correções sugeridas e NÃO editei a Skill:
+**Última atualização:** 29/09/2026 (noite). Usei os PDFs reais de `D:\008_Normas ABNT`. Landell e Saturnino rodaram em paralelo e em primeiro plano; auditei com Grep.
+- **Resultado:** nbr14565 v1.3 (NBR 16415 é de 2015; item 6.1.1 proíbe infraestrutura compartilhada; distância em cm fica "a confirmar"). nbr5410 v1.1 (TN-S obrigatório, 5.4.3.6; DR, 5.1.3.2.2; "1.500 W/TUG" removido). nbr5626-8160 v1.2 (declividade 2% até DN 75 e 1% a partir de DN 100; ventilação pelo Anexo C; os 30 cm NÃO existem, 6.2.9.4).
+- **Coerência:** conferida. As 3 Skills concordam sobre o 6.2.9.4.
+- **Macetes:** entraram apenas com a própria norma como fonte (21 no total). Os Agentes não têm web.
+- **Pendências:**
+  - macetes de fabricante ou vídeo (fonte externa) ficam para a Rotina;
+  - Anexo C da 8160 ainda não foi lido;
+  - reavaliar o memorial do Exame 2 de Saturnino (Tijuca): o item dos 15 cm não se sustenta pela norma.
+
+**Rodada anterior:** 29/09/2026 (Rotina Diária v3.4.0, Passo 4.7). Treinei a Skill `rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio` v1.1 num caso FICTÍCIO ("Tijucas-R"). Acionei Baumgart de verdade, em primeiro plano. **Veredito: OK**, com as 7 iscas barradas. Achados próprios dele: a piscina a 1,6 m também fica abaixo do NA, e falta sondagem abaixo de 14 m. Registro em `Casos_TESTE/treino_skills/2026-09-29_rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio.md`. Deixei 4 correções sugeridas e NÃO editei a Skill:
 - ruptura de fundo por cisalhamento e deformação da contenção em argila mole;
 - monitoramento do vizinho também no recinto estanque (§4.2);
 - flutuação da piscina vazia;

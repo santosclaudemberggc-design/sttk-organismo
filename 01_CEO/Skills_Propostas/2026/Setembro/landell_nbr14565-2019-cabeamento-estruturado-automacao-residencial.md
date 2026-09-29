@@ -1,7 +1,8 @@
 ---
 name: nbr14565-2019-cabeamento-estruturado-automacao-residencial
 description: NBR 14565:2019 (cabeamento estruturado, comercial) como complemento da NBR 16264 (residencial) para a infraestrutura física de automação residencial de alto padrão — hierarquia DG/DA/TO, cabos por aplicação (Cat6A, KNX, coaxial, som, CFTV), dimensionamento de rack (incl. NVR/DVR), pré-conduit e interface com a NBR 5410. Use sempre que Landell (ou qualquer Agente) for planejar rack, sala técnica, eletrodutos de sinal, pontos de rede/TV/KNX por ambiente ou CFTV — mesmo que o pedido só mencione "rede", "rack", "cabeamento", "home theater" ou "pré-conduit", sem citar a norma pelo nome.
-version: v1.2
+version: v1.3
+fonte_primaria_lida: sim (NBR 16415:2015 itens 1, 6.1.1, 6.1.5, 7.2.2, 7.6.1.3.2, 7.6.2.1.4, 7.6.2.2.3 e Anexo B; NBR 5410:2004 item 6.2.9.5 — PDFs em D:\008_Normas ABNT) — NBR 14565 e NBR 16264 continuam não lidas
 status: ativa-com-ressalva
 data: 2026-09-23
 tipo: Inteligência (Trilha A)
@@ -40,7 +41,7 @@ Apesar do título "comercial", é o padrão adotado por profissionais de alto pa
 |-------|--------|
 | ABNT NBR 14565:2019 | Cabeamento estruturado (infraestrutura física) |
 | ABNT NBR 16264 (ed. 2016) | Cabeamento estruturado **residencial** (TIC + broadcast + automação residencial) — referência primária para residência; ver Avaliação do Gestor |
-| ABNT NBR 16415 **[a confirmar (ano e escopo não verificados)]** | Candidata a norma de caminhos e espaços para cabeamento estruturado (eletrodutos, shafts, separação de força) — não citar em memorial até conferir; ver §6 |
+| ABNT NBR 16415:2015 (1ª ed. 06/08/2015, válida desde 06/09/2015) — **lida** | Caminhos e espaços para cabeamento estruturado conforme a NBR 14565, em edifícios monousuário e multiusuário (item 1). Exige compartimento dedicado, sem compartilhar infraestrutura com cabos elétricos (6.1.1). **Não dá distância de separação sinal/força**: segurança elétrica, incêndio e compatibilidade eletromagnética estão fora do escopo (item 1). Ver §6 |
 | ABNT NBR 16665:2019 | Cabeamento estruturado para data centers (corrigido pelo Gestor; a versão original citava "NBR 16065:2012", número incorreto) |
 | ISO/IEC 11801:2017 | Equivalente internacional (referência premium) |
 | ABNT NBR 5410:2004 | Instalações elétricas de baixa tensão (camada de força) |
@@ -77,7 +78,7 @@ DG (Distribuidor Geral) — rack principal, entrada de operadoras
 | Controle de acesso / interfone | Par trançado 4×0,5 mm² | Especificação fabricante |
 | Alarme / sensores | 4×0,5 mm² blindado | NBR 11785 |
 
-> **Para projetos KNX:** o cabo KNX TP (verde) é dedicado e NUNCA dividido com outros sistemas. Distância máxima por segmento: 1.000 m (TP1). Pode ser roteado junto a outros cabos de sinal (NÃO junto a 220V).
+> **Para projetos KNX:** o cabo KNX TP (verde) é dedicado e NUNCA dividido com outros sistemas. Distância máxima por segmento: 1.000 m (TP1). Pode ser roteado junto a outros cabos de sinal (NÃO junto a 220V — coerente com NBR 16415 6.1.1 e NBR 5410 6.2.9.5; ver §6).
 
 ---
 
@@ -118,7 +119,27 @@ O investimento mais barato e mais valioso em residencial de alto padrão: instal
 | Do rack aos pontos do mesmo andar | PVC corrugado Ø 32–40 mm (tubulação de percurso) |
 | Externo / intempéries | PVC rígido com luvas de vedação |
 
-**Coordenação com Oscar:** identificar na planta de implantação o shaft técnico de telecom separado do shaft elétrico de força. **[A confirmar (norma candidata: NBR 16415)]** Não passar cabos de dados no mesmo eletroduto que cabos de alimentação 220V/127V (exceto quando separados por divisória metálica). A atribuição dessa vedação à NBR 14565 não foi confirmada em fonte; usar como boa prática, não citar em memorial como exigência normativa até conferir o texto da norma.
+**Separação sinal/força — o que a norma confirma (lida em 29/09/2026):**
+- **Confirmado, NBR 16415:2015 item 6.1.1:** o cabeamento estruturado deve ficar em compartimentos (eletrodutos, eletrocalhas etc.) dedicados a ele e **não pode usar a mesma infraestrutura de distribuição que os cabos elétricos**. Pode ser citado em memorial.
+- **Confirmado, NBR 16415 6.1.1:** shaft compartilhado com cabos elétricos é admitido, desde que atenda às IEC 60364-4-41, 60364-4-44 e 60364-5-52. Para reduzir interferência, a norma **recomenda** (não exige) caminhos separados, barreiras na infraestrutura e separação dentro de caixas que terminem os dois sistemas. A separação deve ser mantida ao longo de todo o caminho.
+- **Confirmado, NBR 5410:2004 item 6.2.9.5:** circuitos de faixa I e de faixa II (anexo A) não compartilham a mesma linha, a menos que todos os condutores sejam isolados para a tensão mais alta, que fiquem em compartimentos separados do conduto ou que se usem eletrodutos separados.
+- **A confirmar — distância mínima sinal/força:** nenhuma das duas normas dá distância em cm. A 16415 deixa EMC fora do escopo (item 1). A NBR 5410 6.2.9.5 (nota) remete a 5.4 e 6.4, e 5.4.3.5 f) pede "separação adequada, por distanciamento ou blindagem" e cruzamento em ângulo reto, também sem número. Não inventar valor.
+- **Corrigido:** a exceção "salvo divisória metálica" da v1.2 não aparece nessas palavras. O texto real é "compartimentos separados do conduto" (5410 6.2.9.5 a)) e "barreiras" como recomendação (16415 6.1.1). Não exige que a divisória seja metálica.
+- **Atribuição:** a vedação vem da NBR 16415 (6.1.1) e da NBR 5410 (6.2.9.5), não da NBR 14565, que segue não lida.
+
+**Laje — ressalva lida:** a NBR 16415 6.1.5 diz que eletrodutos embutidos no piso (cobertos por concreto) em geral não oferecem a flexibilidade do cabeamento estruturado e devem ser evitados. Esse texto foi pensado para leiaute de escritório (6.1.5 b), d)). A linha "trecho horizontal em laje" da tabela acima segue válida para residência, que tem leiaute fixo, mas é **escolha de projeto, não recomendação da norma**. Onde passar pela laje, terminar o eletroduto a pelo menos 50 mm acima do piso acabado (7.6.2.2.3).
+
+**Ocupação dos eletrodutos da tabela:** pela Tabela B.1 (Anexo B, informativo, 40 %), cabem 4 cabos Cat6A U/UTP (Ø 8,6 mm) em 1" (25,4 mm) e 2 em 3/4" (19 mm). O "Ø 25 mm" da tabela precisa ser o **diâmetro interno**; corrugado comercial "25" pode ter interno menor (a confirmar no catálogo).
+
+### Macetes de quem faz (só onde a norma deixa escolha ao projetista; fonte = texto lido)
+
+1. **Folga de ocupação: projetar a 40 % e parar em 60 %.** NBR 16415 7.6.2.1.4: o eletroduto é dimensionado para 40 % e considerado "cheio" aos 60 %. Cabo novo depois disso só entra se os cabos já instalados forem retirados. Escolha mais econômica: subir uma bitola já no projeto quando a conta der perto de 40 %. A diferença de custo de um tubo maior na obra é pequena; a alternativa, pelo próprio texto, é arrancar os cabos existentes para passar o novo.
+2. **Eletroduto de reserva vs. tubo único maior.** NBR 16415 7.6.1.3.2 recomenda planejar o caminho para a capacidade máxima, por **estruturas com capacidade para crescimento ou por espaço para caminhos adicionais no futuro**. A norma deixa as duas opções. Mais barata e sem retrabalho em residência: um eletroduto vazio de reserva com guia, no mesmo trajeto do rack ao ponto. Ele não disputa a ocupação de 40 % do tubo em uso, e ampliar depois não mexe no cabeamento que já funciona (conclusão tirada de 7.6.2.1.4).
+3. **Trecho reto longo, curvas contadas.** NBR 16415 7.6.2.1.4: sem curvas, até 70 m entre pontos de acesso; com curvas, no máximo 2 curvas de até 90° e 15 m entre pontos de acesso. Escolha econômica: traçar os trechos retos (shaft, prumada) sem curva, o que dispensa caixas de passagem intermediárias. Quando a curva for inevitável, concentrá-las perto das caixas. Curva em "U" (180°) é proibida, e a conversão exige caixa (6.1.5).
+4. **Separação sinal/força: eletroduto separado ou compartimento separado.** A NBR 5410 6.2.9.5 aceita três caminhos: isolar tudo para a tensão mais alta, compartimentos separados do mesmo conduto ou eletrodutos separados. A NBR 16415 6.1.1 exige infraestrutura dedicada. Para o trecho **embutido**, o eletroduto separado atende as duas normas sem depender de especificar cabo de sinal com isolação de 450/750 V. Para trecho **aparente** (canaleta/eletrocalha), uma canaleta de múltiplos compartimentos (16415 Tabela 1: "único ou múltiplos compartimentos") atende 5410 6.2.9.5 a) com uma peça só. Não há distância mínima em norma lida; ver §6.
+5. **Tubo que atravessa laje sai 50 mm acima do piso acabado.** NBR 16415 7.6.2.2.3 (nota): a sobra evita que o concreto obstrua o tubo durante a concretagem e protege contra água. Custo zero no projeto; evita desentupir ou refazer o trecho depois da laje pronta.
+
+Fora destes, nenhum macete entra sem fonte lida.
 
 ---
 
@@ -203,3 +224,4 @@ Landell consulta esta Skill sempre que o briefing mencionar:
 - **v1.0 — 23/09/2026:** versão proposta por Landell, corrigida e avaliada por Cardozo (procede com ressalva).
 - **v1.1 — 28/09/2026 — correções do treino aprovadas por Claudemberg:** (1) §6: separação sinal/força marcada "a confirmar (norma candidata: NBR 16415)", deixa de ser atribuída como fato à NBR 14565; (2) frontmatter: `name:` alinhado ao nome da pasta da Skill instalada e `description:` incluída; (3) §5: linha do gravador de CFTV (NVR/DVR) incluída na tabela do rack, espaço em U "a confirmar (depende do modelo)". Registro do treino: `01_CEO/Gestores/Cardozo (Complementares)/Casos_TESTE/treino_skills/2026-09-28_nbr14565-2019-cabeamento-estruturado-automacao-residencial.md`.
 - **v1.2 — 28/09/2026 — coerência aprovada por Claudemberg:** §2, tabela de normas: NBR 16415 marcada "a confirmar (ano e escopo não verificados)", coerente com a §6; nota acrescentada à Avaliação do Gestor, item 2.
+- **v1.3 — 29/09/2026 — fonte primária lida (PDFs reais em `D:\008_Normas ABNT`), pedido de Claudemberg via Wallenberg/Cardozo:** (1) NBR 16415 confirmada como **2015** (não 2021) e escopo lido (item 1); a EMC fica fora do escopo. (2) §6: vedação de infraestrutura compartilhada confirmada (16415 6.1.1 + 5410 6.2.9.5). A distância sinal/força segue "a confirmar", porque nenhuma das duas dá número. A "divisória metálica" foi corrigida para "compartimento separado", que é o texto real. (3) Ressalva sobre eletroduto em laje (16415 6.1.5) e terminação a 50 mm (7.6.2.2.3). (4) Ocupação Cat6A por Tabela B.1. (5) Seção "Macetes de quem faz" com 5 itens, cada um com o item da norma. A nota do item 2 da Avaliação do Gestor foi fechada: a NBR 16415 é de 2015 e a separação está no item 6.1.1. Não lidas ainda: NBR 14565, 16264, 5281, 11785, 14159 e o limite de 90 m. Backup em `01_CEO/Decisoes_Autonomas/_backups/2026-09-29/`.

@@ -4,8 +4,7 @@
 **Saturnino** (Hidrossanitário) — equipe de Cardozo (Gestor Complementares). Esta é uma Skill de **Trilha A (Inteligência)**: normas técnicas e técnicas de projetar, não ferramenta de software. Alimenta o saber-fazer de Saturnino em projetos de instalações prediais de água fria, água quente, esgoto sanitário, e drenagem pluvial.
 
 ## Status
-**Versão:** 1.2 (29/09/2026 — NBR 8160:1999 e NBR 5410:2004 item 6.2.9.4 conferidas no PDF real em D:\008_Normas ABNT; NBR 5626 e NBR 10844 seguem com ressalva, fonte primária não lida. O texto técnico completo e atualizado está na Skill real; esta cópia recebe só as correções.)
-fonte_primaria_lida: sim (NBR 8160 itens 4.1 a 4.5, 5.1 a 5.2, Tabelas 1 a 8; NBR 5410 item 6.2.9.4 — PDF em D:\008_Normas ABNT)
+**Versão:** 1.1 (28/09/2026 — coerência: "30 cm / NBR 5410" marcado a confirmar)
 ratificada — 03/09/2026, Claudemberg (rodada de auditoria com Wallenberg)
 
 **Convertida em Skill real em 03/09/2026:** `.claude/skills/nbr5626-8160-hidrossanitario/SKILL.md`. Este arquivo permanece como registro histórico da pesquisa original.
@@ -70,29 +69,28 @@ O dimensionamento de água fria usa o **método dos pesos relativos** (Hunter me
 - **Coletor predial:** leva o esgoto até a rede pública ou fossa
 
 #### Critérios de Dimensionamento
-- **Inclinação mínima (4.2.3.2):** 2% para DN ≤ 75; 1% para DN ≥ 100 *(corrigido v1.2)*
-- **Inclinação máxima (4.2.5.2):** 5%
-- **Velocidade de autolimpeza 0,6 m/s / enchimento 75%:** NÃO localizados no texto lido — não citar em memorial *(v1.2)*
+- **Inclinação mínima:** 2% (1 cm por metro) para tubulações DN ≤ 100 mm
+- **Inclinação mínima:** 1% para tubulações DN > 100 mm
+- **Velocidade crítica de autolimpeza:** mín. 0,6 m/s (garantir limpeza por arraste)
+- **Grau de enchimento máximo:** 75% da seção (para manter ventilação interna)
 
-#### Unidades de Hunter de Contribuição (UHC) — Tabela 3 da NBR 8160 *(corrigido v1.2)*
+#### Unidades Hunter de Esgoto (UHE) por Aparelho
 
-| Aparelho | UHC | DN mínimo do ramal |
+| Aparelho | UHE | DN mínimo do ramal |
 |----------|-----|-------------------|
-| Lavatório de residência | 1 | 40 |
-| Bacia sanitária | 6 | 100 (nota 1: DN 75 só com cálculo pelo Anexo B + bacia específica) |
-| Chuveiro de residência | 2 | 40 |
-| Banheira de residência | 2 | 40 |
-| Bidê | 1 | 40 |
-| Pia de cozinha residencial | 3 | 50 |
-| Tanque | 3 | 40 |
-| Máquina de lavar louças | 2 | 50 |
-| Máquina de lavar roupa | 3 | 50 |
+| Lavatório | 1 | 40 mm |
+| Vaso sanitário (cx. acoplada) | 4 | 100 mm |
+| Vaso sanitário (válvula) | 6 | 100 mm |
+| Chuveiro | 2 | 40 mm |
+| Banheira | 3 | 50 mm |
+| Pia de cozinha | 2 | 50 mm |
+| Máquina de lavar roupa | 3 | 50 mm |
 
-**Regra padrão:** ramal de bacia em DN 100. A exceção DN 75 é condicionada (Tabela 3, nota 1); sem o cálculo do Anexo B, DN 75 é não conforme.
+**Regra de ouro:** ramal de esgoto de vaso sanitário nunca abaixo de DN 100 mm.
 
-#### Ventilação do Sistema de Esgoto *(corrigido v1.2)*
-- A regra "coluna obrigatória acima de 5 andares" **não existe** na norma. A norma admite só ventilação primária se ela for verificada pelo Anexo C (4.3.1 e 4.3.2); caso contrário, ventilação secundária (ramais e colunas, ou VAA, conforme 4.3.4)
-- **Ventilação primária** (prolongamento do tubo de queda acima da cobertura)
+#### Ventilação do Sistema de Esgoto
+- **Coluna de ventilação** obrigatória em tubos de queda que atendem mais de 5 andares
+- **Ventilação primária** (prolongamento do tubo de queda acima da cobertura) — o mínimo
 - Colunas sem ventilação adequada provocam sifonamento e mau cheiro
 
 ---
@@ -123,8 +121,8 @@ Q = C × I × A / 360
 - [ ] Verificar: se pressão supera 400 kPa em algum ponto → especificar VRP
 - [ ] Dimensionar: ramais de água fria e quente pelo método Hunter adaptado
 - [ ] Dimensionar: ramais de esgoto (mín. DN 100 para vaso sanitário)
-- [ ] Dimensionar: inclinações de esgoto (mín. 2% para DN ≤ 75, 1% para DN ≥ 100, máx. 5%)
-- [ ] Especificar: ventilação do esgoto (só primária verificada pelo Anexo C, ou secundária/VAA)
+- [ ] Dimensionar: inclinações de esgoto (mín. 2% para DN ≤ 100 mm, 1% para DN > 100 mm)
+- [ ] Especificar: ventilação do sistema de esgoto (primária obrigatória, secundária se >5 andares)
 - [ ] Dimensionar: calhas e condutores pluviais pela fórmula Q = C×I×A/360 com IDF local RJ
 - [ ] Confirmar: separação absoluta entre rede pluvial e rede de esgoto
 
@@ -132,17 +130,15 @@ Q = C × I × A / 360
 1. Interligar esgoto sanitário com drenagem pluvial (proibido pela norma)
 2. Não prever VRP em edifícios altos (pressão > 400 kPa nos andares inferiores)
 3. Omitir ventilação de esgoto (gera sifonamento de sifões e mau cheiro)
-4. Inclinação de esgoto insuficiente (<2% em DN ≤ 75; <1% em DN ≥ 100)
-5. Ramal de bacia sanitária em DN <100 sem o cálculo do Anexo B (Tabela 3, nota 1)
-
-**Macetes de quem faz:** ver a seção de mesmo nome na Skill real (v1.2). São 10 alternativas, todas com item da NBR 8160 citado.
+4. Inclinação de esgoto insuficiente (<2%) — provoca entupimento recorrente
+5. Ramal de vaso sanitário em DN <100 mm — viola a norma
 
 ---
 
 ### 5. Coordenação com Outros Agentes de Cardozo
 
 - **Baumgart (Estrutural):** compatibilizar furos/shafts com a estrutura — apresentar layout de shafts antes do detalhamento estrutural
-- **Landell (Elétrica):** A NBR 5410:2004 **não fixa 30 cm** (nem outra distância). Exige afastamento que evite dano mútuo em intervenção (6.2.9.4.1), anteparo ou afastamento de canalização quente (6.2.9.4.2) e proíbe a linha elétrica abaixo de tubulação de água no mesmo percurso, salvo proteção contra condensação (6.2.9.4.4). Os 30 cm valem só como critério interno, nunca como exigência normativa (corrigido 29/09/2026, v1.2)
+- **Landell (Elétrica):** separação física entre tubulações de água e eletrodutos — distância de 30 cm e atribuição à NBR 5410 **a confirmar (fonte não verificada)** (corrigido 28/09/2026, v1.1)
 - **Glaziou (Paisagismo):** atenção a raízes que podem entupir/romper tubulações de esgoto externas — especificar tipo de tubo e proteção
 - **Mindlin (Apresentação):** fornecer layout de shafts e esquemas verticais em formato legível para pranchas
 
@@ -162,7 +158,6 @@ Q = C × I × A / 360
 ## Fontes
 - NBR 5626:2020 — norma vigente (ABNT; conteúdo via fontes secundárias verificadas: nptengenharia.com.br, normas.com.br — WebSearch 28/08/2026)
 - NPT Engenharia — "Projeto Hidráulico Predial: Guia Completo 2026" (nptengenharia.com.br — WebSearch 28/08/2026)
-- ABNT NBR 8160:1999 — **PDF real lido em 29/09/2026** (D:\008_Normas ABNT; capa "SET 1999")
-- ABNT NBR 5410:2004 (versão corrigida 17.03.2008) — **PDF real, item 6.2.9.4 lido em 29/09/2026**
+- ABNT NBR 8160:1999 — conteúdo via fontes técnicas de referência do setor
 - ABNT NBR 10844:1989 — conteúdo via fontes técnicas de referência do setor
 - Data de verificação: 28/08/2026

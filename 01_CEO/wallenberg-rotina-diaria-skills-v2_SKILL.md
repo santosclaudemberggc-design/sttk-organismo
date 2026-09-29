@@ -244,6 +244,11 @@ Skill de conhecimento técnico (Trilha A — normas, técnicas de projetar, regr
 
 ---
 
+#### [v3.4.0 — 29/09/2026] ACERVO DE NORMAS + MACETES DE QUEM FAZ
+
+- **Acervo:** `D:\008_Normas ABNT\` guarda os PDFs reais de normas (NBR 5410, 16415, 8160, 9050, 6492, 13532, 16861, COE-RJ...). Antes de aplicar o selo de ressalva abaixo, liste a pasta: norma presente = ler o item e ativar como fonte primária lida. Norma ausente e recorrente = "sugestão de compra" no relatório.
+- **Macetes:** decisão de Claudemberg — a Skill não é só "o que diz a norma", é também "como os melhores profissionais resolvem na prática". Toda Skill tem a seção "Macetes de quem faz", cada item com fonte real (profissional + onde disse). Complementa a mentalidade de "Malandragem: brechas válidas" já em vigor desde a v3.0.
+
 #### [NOVO v2.9 — 08/09/2026, Item 2] SELO DE RESSALVA — lacuna de fonte primária
 
 Skill de Trilha A que **não pôde ser conferida contra a fonte primária** (texto ABNT não lido, decreto/LC acessado só via agregador, parâmetro urbanístico vindo de compilação de terceiro) ativa com **selo de ressalva**:

@@ -31,6 +31,8 @@ Nenhum caso real acionado ainda.
 
 ## 2. Pendências abertas
 
+**29/09/2026:** Skill `nbr5626-8160-hidrossanitario` v1.2 entregue a Cardozo (NBR 8160 e NBR 5410 6.2.9.4 lidas no PDF real). Em aberto: (a) a Skill `nbr5410-eletrica-automacao` (Landell), linhas 54 e 61, ainda afirma "separação mínima 30cm", o que contradiz a v1.2; a correção cabe a Cardozo/Landell; (b) ler o Anexo C da NBR 8160 antes do primeiro uso real dos macetes 1 e 2; (c) NBR 5626 e NBR 10844 seguem sem fonte primária; (d) exames anteriores citaram "15 cm < 30 cm Landell" como não conformidade normativa, mas a nota não se sustenta como exigência NBR 5410.
+
 [RESOLVIDO 12/09/2026] Exame 3 (Assisted → Autonomous) aprovado — promovido a Autonomous, confirmado por Claudemberg, auditado por Wallenberg. Dentro do próprio caso "Residência Grajaú", pendências que apontei para Cardozo resolver (não são minhas de resolver sozinho): esclarecer se reuso está de fato no escopo do Briefing; decidir com Kelsen o destino do protocolo já feito na INEA; avisar o Gate (Maurício) que a planta enviada é inválida; cobrar nova medição de pressão de rede pós-troca CEDAE; cobrar cota do passeio para declividade real do esgoto. Próximo: à espera de acionamento de Cardozo com Briefing aprovado de Lúcio (produção real), ou veredito do Exame 3.
 
 **Achado registrado (não é meu, é do organismo):** peso normativo de "ducha higiênica"/bidê não consta na tabela de UP/UHE da minha Skill (`nbr5626-8160-hidrossanitario`) — só cobre aparelhos padrão (lavatório, vaso, chuveiro, banheira, pia, máquinas). Se aparecer em Briefing real, tratar como pendência a confirmar, não presumir por analogia.
@@ -40,7 +42,7 @@ Nenhum caso real acionado ainda.
 - Minha função é elaborar e ajustar o projeto hidrossanitário (água fria, água quente, esgoto, reuso de água não potável).
 - **NBR 5626:2020 unificou água fria + quente** (substituiu NBR 7198). NBR 8160:1999 (esgoto); NBR 10844:1989 (pluvial); NBR 15527:2019 (reuso chuva); NBR 16783:2019 (fontes alternativas não potável).
 - **Nº banheiros/pontos é dado do projeto Oscar**, não de "padrão da casa". Sem nº e tipo aparelhos não há ΣUP água, ΣUHC esgoto, volume reserva, demanda — tudo pendência Oscar.
-- **Inclinação esgoto depende do DN da tubulação**, não valor único. DN ≤ 100mm exige ≥2%; DN > 100mm exige ≥1%.
+- **[CORRIGIDO 29/09/2026 pelo PDF real da NBR 8160:1999]** Declividade: 2% para DN ≤ 75, 1% para DN ≥ 100, máximo 5% (4.2.3.2 e 4.2.5.2). A versão antiga ("2% até DN 100") estava errada. Bacia tem 6 UHC (Tabela 3); DN 100 é o padrão, mas a nota 1 admite DN 75 só com cálculo pelo Anexo B e bacia específica. Não existe regra de "coluna de ventilação acima de 5 andares": só primária é aceita se verificada pelo Anexo C (4.3.1 e 4.3.2). A NBR 5410 não tem 30 cm; ver 6.2.9.4. Skill em v1.2.
 - **Rio é sistema separador absoluto** — esgoto e pluvial em redes independentes. Interligar = proibido por NBR 8160/10844. Extravasor cisterna reuso deve descarregar com **air gap** na **rede pluvial separativa**, nunca esgoto.
 - **Chuva de projeto (intensidade i)** é de tabela da NBR 10844 (Tabela norma ou IDF local) + duração + período retorno T. Não número redondo porque facilita.
 - Não defino reuso sem instrução Cardozo — **Briefing deve mencionar**.

@@ -24,13 +24,11 @@ ratificada — 03/09/2026, Claudemberg (rodada de auditoria com Wallenberg)
 
 ### 1. Parâmetros Fundamentais (NBR 5410:2004 Vigente)
 
-> **[Corrigido em 29/09/2026 contra o texto real (PDF NBR 5410:2004 em D:\008_Normas ABNT) — versão v1.1 da Skill instalada]** Os itens riscados abaixo não estão na norma. Regra real: 9.5.3.1 (equipamento > 10 A = circuito independente), 9.5.3.2 (tomadas de cozinha/serviço em circuitos exclusivos) e 9.5.3.3 (iluminação + tomadas podem dividir circuito comum com IB ≤ 16 A, sem concentrar toda a luz ou todas as tomadas num só circuito). DR: lista completa em 5.1.3.2.2 (inclui garagem e tomadas externas). DPS: 5.4.2.1.1 / 5.4.2.2.1. PEN separado na entrada (5.4.3.6). Detalhe e macetes na Skill instalada.
-
 #### Divisão de Circuitos Obrigatória
-- ~~**Iluminação:** circuito exclusivo por cômodo/área~~ (não está no texto; ver 9.5.3.3)
-- **Tomadas de uso geral (TUG):** circuitos separados da iluminação, **salvo a exceção de 9.5.3.3**
-- **Tomadas de uso específico (TUE):** circuito exclusivo por equipamento com corrente nominal > 10 A (9.5.3.1)
-- ~~**Potência máxima por circuito monofásico:** 1.500 W (tomadas gerais)~~ (não está no texto; o limite do circuito comum é IB ≤ 16 A, 9.5.3.3)
+- **Iluminação:** circuito exclusivo por cômodo/área
+- **Tomadas de uso geral (TUG):** circuitos separados da iluminação
+- **Tomadas de uso específico (TUE):** circuito exclusivo por equipamento (chuveiro, ar-condicionado, forno, etc.)
+- **Potência máxima por circuito monofásico:** 1.500 W (tomadas gerais) / sem limite fixo em TUE (definido pelo equipamento)
 
 #### Capacidade de Condutores
 - Dimensionar por **método de referência** (forma de instalação) e **corrente de projeto**
@@ -38,9 +36,9 @@ ratificada — 03/09/2026, Claudemberg (rodada de auditoria com Wallenberg)
 - Cabos não halogenados (LSHF): recomendados em áreas de escape e ambientes críticos — a revisão 2026 os incorporará formalmente, mas já é boa prática atual
 
 #### Aterramento e Proteção
-- **Sistema TN-S:** ~~recomendado~~ o PEN **deve** ser separado no ponto de entrada/quadro principal (5.4.3.6), salvo a exceção da nota 1
-- **DPS (Dispositivo de Proteção contra Surtos):** ~~obrigatório em instalações com equipamentos sensíveis~~ obrigatório em linha aérea em região AQ2 ou em região AQ3 (5.4.2.1.1) e em toda linha externa de sinal (5.4.2.2.1); equipamento sensível = DPS adicional (6.3.5.2.1 nota 3)
-- **DR (Diferencial Residual):** obrigatório 30 mA para banheiro/chuveiro, cozinha, copa, lavanderia, área de serviço, **garagem**, áreas internas molhadas, tomadas externas e tomadas internas que alimentem o exterior (5.1.3.2.2)
+- **Sistema TN-S:** recomendado em edificações novas (condutor neutro e PE separados)
+- **DPS (Dispositivo de Proteção contra Surtos):** obrigatório em instalações com equipamentos sensíveis
+- **DR (Diferencial Residual):** obrigatório para circuitos de banheiro, área de serviço e cozinha (30 mA)
 
 ---
 
@@ -89,7 +87,7 @@ Landell cobre elétrica E automação. Pontos técnicos básicos de automação 
 - [ ] Calcular: corrente de projeto por circuito, fator de demanda, dimensionar condutores (NBR 5410:2004)
 - [ ] Especificar: disjuntores (curva B/C), DRs 30 mA nos circuitos úmidos, DPS em painel
 - [ ] Verificar: há previsão de VE, solar ou automação? → reservar circuitos/dutos agora
-- [ ] Verificar: compatibilizar shafts elétricos com Saturnino (água/esgoto) — separação mínima 30 cm (NBR 5410 + NBR 5419) **[a confirmar, 29/09/2026: o valor não está no texto lido da NBR 5410; 6.2.9.4.1 pede só afastamento que evite dano mútuo]**
+- [ ] Verificar: compatibilizar shafts elétricos com Saturnino (água/esgoto) — separação mínima 30 cm (NBR 5410 + NBR 5419)
 - [ ] Verificar: acesso a ABNT NBR 5410:2004 atualização caso nova versão seja publicada antes do protocolo
 
 **Erros comuns que Landell deve evitar:**
@@ -119,7 +117,7 @@ Landell cobre elétrica E automação. Pontos técnicos básicos de automação 
 ## Limitações honestas
 - A revisão da NBR 5410 ainda está em segunda consulta pública (junho/2026) — as mudanças listadas são previstas, não confirmadas. Qualquer projeto protocolado agora segue obrigatoriamente a versão 2004.
 - Tabelas de correntes admissíveis da norma 2004 não foram reproduzidas nesta Skill — Landell deve consultar a norma diretamente para dimensionamento de cabos.
-- Valores de potência por tomada e previsão de carga: **corrigido em 29/09/2026** — estão em 9.5.2 (600 VA até 3 tomadas em área molhada, 100 VA nas demais; 9.5.2.2.2), não nos capítulos 3 e 4.
+- Valores de potência por tomada (100 W/TUG) e metodologia completa de cálculo de carga: ver NBR 5410:2004, capítulos 3 e 4.
 
 ## Fontes
 - GreenGold Engenharia — "Revisão da NBR 5410 entra em segunda consulta nacional em 2026" (greengoldengenharia.com.br — WebFetch 28/08/2026)
