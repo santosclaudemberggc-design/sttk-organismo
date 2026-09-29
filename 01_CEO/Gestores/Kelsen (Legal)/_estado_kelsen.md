@@ -17,6 +17,7 @@
 
 ### 28/09/2026 — confirmação de fontes das Skills (pedido Claudemberg)
 Hely gravou `Agentes/Hely/Fontes_Legislacao/confirmacoes_2026-09-28.md`. Auditei eu o primário (COES Art.17-18, DL 9.760 art.2º, Lei 12.651 art.4º II): confere. Abertos: ZB do Rio (só secundária, 4A), NBR 16415 e 30 cm/NBR 5410 (ABNT inacessível), norma municipal/INEA posterior sobre faixa de lagoa. Skills não editadas por mim — edição é dos donos.
+**29/09:** Hely aplicou os itens 2 e 3 na Skill `decreto3046-81-lc270-2024-licin-barra-recreio`, que foi da v1.1 para a v1.2 (SKILL.md + Skills_Propostas; backups em `01_CEO/Decisoes_Autonomas/_backups/2026-09-29/decreto3046_*`). Eu mesmo conferi a p. 80 do PDF da LC 270: o §2º é do Art. 215 caput (incisos II e III), não do inciso II. Entraram os macetes M1 (lagoa < 10.000 m²) e M2 (sem maré, sem marinha). Pendente: regerar o PDF irmão em Propostas (continua na v1.1), a FMP/INEA e a norma municipal posterior.
 
 ### Caso ativo — Daniel-OB (retomado em Estudo Preliminar, 12/09/2026)
 
