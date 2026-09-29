@@ -1,6 +1,6 @@
 # NBR 9575:2024 — Impermeabilização: Seleção e Projeto
 
-**Versão:** 1.1 (29/09/2026, Rotina Macetes v1.0; macetes validados por Cardozo)  
+**Versão:** 1.0  
 **Status:** ratificada  
 **Data:** 02/09/2026  
 **Ratificado em:** 03/09/2026 — Claudemberg, em rodada de auditoria com Wallenberg (correção: versão anterior deste arquivo alegava aprovação "ao vivo pós-Drenagem Contínua" que não aconteceu de fato — autodeclaração indevida de uma rotina autônoma, corrigida nesta data)  
@@ -80,46 +80,6 @@ A norma classifica os sistemas de impermeabilização pelo material predominante
 1. **Saturnino:** Referenciar NBR 9575:2024 como base de projeto de impermeabilização. Especificar sistema por área (box, cobertura, subsolos) com tipo de material, camadas, caimento e arremate em tubulações.
 2. **Baumgart:** Compatibilizar juntas de dilatação estrutural com juntas no sistema impermeabilizante. Dimensionar laje de cobertura incluindo carga do sistema impermeabilizante completo.
 3. **Tenreiro:** Nunca especificar revestimento de área molhada sem confirmar com Saturnino que o sistema impermeabilizante está definido. Fixação de deck de piscina = apoios ventilados, informar a Saturnino.
-
-## Macetes de quem faz
-
-Todos do tipo **B** (ficha técnica de fabricante). A técnica vale para qualquer produto equivalente. Validados por Cardozo em 29/09/2026. NÃO entra: o caimento de 0,5% em área interna aceito pela ficha Votorantim, porque a STTK mantém o que esta Skill diz.
-
-**M1: tela de reforço no encontro piso-parede e nos ralos, entre demãos.**
-- **O que fazer:** inserir tela de poliéster resinada compatível com a membrana logo após a 1ª demão ainda fresca. Ela fica com 10 cm na parede e 10 cm no piso, e as emendas se sobrepõem em no mínimo 5 cm. As demãos seguintes cobrem a tela. O mesmo vale ao redor dos ralos e nas juntas de concretagem.
-- **Por que funciona:** o canto e o ralo concentram movimentação e fissura, e a tela aumenta a resistência da membrana à tração e ao rasgo.
-- **Quem disse:** MC-Bauchemie, FT MC-TopMesh Tela Rodapé, ed. 01/2024; Votorantim Cimentos, FT Votomassa Impermax 1000, rev. 00.
-- **Onde:** https://mc-bauchemie.com.br/assets/downloads/products/pt-BR/fichas_tecnicas/MC-TopMesh%20Tela%20Rodap%C3%A9.pdf (pp. 1-2); https://www.votorantimcimentos.com.br/wp-content/uploads/2024/01/FT-IMPERMAX-1000-REV.00-2-1-1.pdf (p. 4 e p. 3).
-- **Tipo:** B.
-- **Limite:** a tela não é autoadesiva. Tela sem resina se degrada em sistema cimentício. A tela é só reforço: o rodapé impermeável continua com no mínimo 20 cm.
-
-**M2: preparar a base para o sistema, e não o contrário.**
-- **O que fazer:** deixar as paredes prontas antes, para que piso e rodapé saiam juntos. A regularização não leva cal nem hidrofugante, tem cura mínima de 7 dias e cantos e arestas arredondados. Não aplicar argamassa polimérica direto sobre bloco cerâmico ou celular sem revestimento. Fixar rigidamente as tubulações antes dos arremates.
-- **Por que funciona:** garante a aderência, evita que o canto vivo rasgue a membrana e evita que o tubo solto descole o arremate.
-- **Quem disse:** Votorantim, FT Impermax 1000, rev. 00.
-- **Onde:** URL acima, pp. 2-3.
-- **Tipo:** B.
-- **Limite:** vale para sistema cimentício. Na manta asfáltica, seguir o preparo do próprio sistema.
-
-**M3: teste de 72 h com lâmina d'água antes do revestimento, e proteção mecânica logo depois.**
-- **O que fazer:** fazer o teste de estanqueidade por 72 h (NBR 9574). Logo após retirar a água, executar a proteção mecânica: argamassa 1:3 com no mínimo 2 cm na horizontal, e chapisco antes do reboco na vertical.
-- **Por que funciona:** a falha aparece antes do porcelanato, quando o reparo ainda é barato.
-- **Quem disse:** Votorantim, FT Impermax 1000, rev. 00.
-- **Onde:** URL acima, pp. 3-4.
-- **Tipo:** B.
-- **Limite:** em reservatório e piscina, aguardar 7 dias de cura antes do teste e fazer o teste de carga da estrutura (72 h) antes de impermeabilizar. Revestir no dia seguinte à impermeabilização é incompatível com este macete.
-
-**M4: sistema rígido só onde não há movimentação.**
-- **O que fazer:** a argamassa polimérica rígida serve apenas para box térreo sobre base apoiada no solo, área de serviço térrea e baldrame. Laje, marquise, terraço e estruturas elevadas pedem sistema flexível. A argamassa rígida não serve de barreira de vapor para piso vinílico ou de madeira sobre laje apoiada no solo.
-- **Por que funciona:** o sistema rígido fissura junto com o substrato.
-- **Quem disse:** Votorantim, FT Impermax 1000, rev. 00.
-- **Onde:** URL acima, pp. 1, 3 e 4.
-- **Tipo:** B.
-- **Limite:** box sobre laje de pavimento superior conta como estrutura elevada e leva sistema flexível (manta asfáltica ou membrana líquida, conforme esta Skill). A escolha final segue a NBR 9575.
-
-## Changelog
-- **v1.1 (29/09/2026):** entrou a seção "Macetes de quem faz" (M1-M4, tipo B), pela Rotina Macetes v1.0, validada por Cardozo. A busca por fonte tipo A foi tentada, mas só havia vídeos sem autor identificável, e nada entrou.
-- v1.0 (02/09/2026): versão inicial.
 
 ## Fontes
 

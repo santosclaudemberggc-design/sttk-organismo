@@ -1486,3 +1486,35 @@ Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e co
 - **Pastas:** mover os arquivos de volta seguindo a tabela do `_indice_acervo.md`.
 - **Rotinas:** desativar pelo painel Agendadas (ou `update_scheduled_task enabled:false`).
 - **Skills:** restaurar pelos backups.
+
+---
+
+## 29/09/2026 — Rotina de Macetes de Profissionais v1.0 (1ª rodada, autônoma, 18:09)
+
+**O que foi feito:** 8 macetes com fonte entraram em 2 Skills. Os dois Gestores validaram e os dois treinos deram OK.
+
+- **lucio-protecao-solar-externa-dispositivos-rj, v1.2 → v1.3 (validação de Lúcio):**
+  - M1: mancha de temperatura em duas cartas semestrais (Lamberts, Dutra e Pereira, *EEA* 3ª ed., pp. 135-136);
+  - M2: brise misto, com parte fixa e parte móvel (idem, p. 136);
+  - M3: ajuste ângulo a ângulo, com γ/α (Marcelo Nudel, Ca2/ex-Arup, vídeo Rb5tB_Wiphs, 29:43–30:11, assistido com /watch via Whisper; a legenda deu 429);
+  - M4: lâmina microperfurada (Hunter Douglas, fichas AECweb, tipo B).
+  - Treino do Oscar: OK. Ele passou um pouco das 15 linhas e não atualizou o próprio estado; Lúcio vai cobrar.
+- **nbr9575-impermeabilizacao, → v1.1 (validação de Cardozo):**
+  - M1: tela de reforço entre demãos (MC-Bauchemie e Votorantim);
+  - M2: preparo da base;
+  - M3: teste de 72 h e proteção mecânica;
+  - M4: sistema rígido só onde não há movimentação. Cardozo restringiu o "box" ao térreo, porque sem isso o macete contradizia a Skill.
+  - Caimento de 0,5% da ficha: não entrou.
+  - Treino do Saturnino: OK. Pendência que ele apontou: nicho e soleira de transição.
+- **varandas (Kelsen): nenhum macete.** As fontes A e B foram tentadas e nada tinha autor ou conteúdo verificável. A Skill volta à frente da fila.
+- **Fontes arquivadas** em `01_CEO\Skills_Propostas\_macetes_fontes\2026-09-29\`. **Fila criada** em `01_CEO\Skills_Propostas\_macetes_fila.md`.
+- **Fontes tipo A em impermeabilização:** só apareceram vídeos de canais sem autor identificável, que não contam.
+
+**Backup:** `_backups/2026-09-29/*_pre-macetes.md` (4 arquivos).
+
+**Como desfazer:**
+1. Copie cada `*_pre-macetes.md` de volta para o arquivo de origem:
+   - `.claude/skills/<skill>/SKILL.md`;
+   - a cópia em `Skills_Propostas/2026/Setembro/`.
+2. Apague os 2 treinos `2026-09-29_macete_*`.
+3. Reverta as linhas de 29/09 em `_estado_lucio.md` e `_estado_cardozo.md`.

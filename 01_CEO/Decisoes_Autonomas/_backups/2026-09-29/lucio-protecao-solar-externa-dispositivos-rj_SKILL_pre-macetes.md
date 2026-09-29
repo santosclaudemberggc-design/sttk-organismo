@@ -11,11 +11,8 @@ metadata:
   criado_em: 17/09/2026
   criado_por: Wallenberg (Rotina Diária Skills v3.2)
   foco_geografico: Barra da Tijuca / Recreio dos Bandeirantes — Zona Oeste RJ
-  versao: "1.3"
-  alterado_em: 29/09/2026 (Rotina Macetes v1.0, validado por Lúcio) — nova seção 8 "Macetes de quem faz" (4 macetes aprovados); nota na 3.1 remetendo ao método da mancha de temperatura
-  changelog:
-    - "1.3 (29/09/2026): seção 8 Macetes de quem faz (M1 a M4); regra de bolso da 3.1 mantida, com remissão ao método rigoroso. Rotina Macetes v1.0, validado por Lúcio."
-    - "1.2 (28/09/2026): ZB 4A rebaixada a indício não confirmado, alinhada à nbr15220-3-bioclimatica-rj e à NBR 15575-4 (Lúcio, autorizado por Claudemberg)."
+  versao: "1.2"
+  alterado_em: 28/09/2026 (Lúcio, autorizado por Claudemberg) — ZB 4A rebaixada a indício não confirmado, alinhada à nbr15220-3-bioclimatica-rj e à NBR 15575-4
 ---
 
 > ⚠️ **RESSALVAS (ativa-com-ressalva — validado por Lúcio em 17/09/2026):**
@@ -71,7 +68,6 @@ Dispositivo de proteção solar **externo** bloqueia a radiação antes de ating
 
 **Parâmetros de dimensionamento (Brise Horizontal — Fachada N):**
 - Profundidade do beiral `p` recomendada: cobre ângulo solar do solstício de verão (dezembro) — ~1,0–1,5× a altura da janela `h` (referência de mercado RJ; cálculo exato via carta solar ou software)
-  - *Nota 1.3:* essa regra de bolso serve para a primeira conversa de partido. O método rigoroso não parte de uma data fixa: define o período a sombrear pela mancha de temperatura e ajusta α, β e γ na carta. Ver seção 8, macetes M1 e M3.
 - Inclinação 0° (horizontal) ou ligeiramente inclinado para baixo para não interferir com ventilação
 
 **Parâmetros de dimensionamento (Brise Vertical — Fachada O/L):**
@@ -143,35 +139,3 @@ Dispositivo de proteção solar **externo** bloqueia a radiação antes de ating
 - [ ] Carga do brise checada com Baumgart?
 - [ ] Carta solar rodada para confirmar profundidade do brise?
 - [ ] Material do brise adequado ao ambiente costeiro (anticorrosão)?
-
----
-
-## 8. Macetes de quem faz
-
-> Validados por Lúcio em 29/09/2026 (Rotina Macetes v1.0). Complementam as seções 2 e 3; não substituem nenhuma regra delas. Tipo A = método de fonte técnica/acadêmica; tipo B = prática de mercado/produto.
-
-### M1. Defina o período a sombrear pela mancha de temperatura, não por uma data fixa (tipo A)
-- **O que fazer:** sobreponha à carta solar os horários em que a temperatura do ar passa de 20 °C (mancha de sombreamento). Faça duas cartas, uma para 21/dez a 21/jun e outra para 21/jun a 21/dez, porque as necessidades mudam muito entre os semestres. Com carga térmica interna alta (home office, cozinha gourmet integrada), a sombra passa a ser necessária abaixo de 20 °C (Tabela 4-4: carga nenhuma, sombra acima de 20 °C; carga existente, abaixo de 20 °C; carga muita, muito abaixo). Depois desenhe α, β e γ para bloquear toda a mancha indesejável e o mínimo possível do resto.
-- **Por que funciona:** brise dimensionado para uma única data ou sombreia pouco ou rouba o sol de inverno. A regra de bolso da seção 3.1 ("cobre o solstício de verão") continua valendo para a primeira conversa; este é o método para fechar o desenho.
-- **Quem disse:** Roberto Lamberts (Prof. Titular UFSC, supervisor do LabEEE), Luciano Dutra e Fernando O. R. Pereira.
-- **Onde:** *Eficiência Energética na Arquitetura*, 3ª ed., Eletrobras/Procel, 2014, Cap. 4, §4.10, pp. 135-136. https://labeee.ufsc.br/sites/default/files/apostilas/eficiencia_energetica_na_arquitetura.pdf (páginas arquivadas em `01_CEO/Skills_Propostas/_macetes_fontes/2026-09-29/`).
-- **Limite:** o limiar de 20 °C é o critério do Analysis-BIO; o SOL-AR mostra faixas de temperatura e traz a mancha pronta só para 14 cidades (p. 135). Não está confirmado se o Rio é uma delas; se não for, a mancha sai do arquivo climático do Rio. É estudo de partido e não substitui a verificação de desempenho da NBR 15575.
-
-### M2. Brise com parte fixa e parte móvel (tipo A)
-- **O que fazer:** a parte fixa sombreia o sol indesejável comum aos dois semestres. A parte móvel sombreia só o do período mais quente e deixa a abóbada celeste livre no período frio.
-- **Por que funciona:** o fixo resolve o que nunca muda sem depender do usuário; o móvel devolve o sol e a luz do inverno.
-- **Quem disse / onde:** Lamberts, Dutra e Pereira, mesma obra, p. 136.
-- **Limite:** a parte móvel custa mais e exige manutenção; na orla da Barra e do Recreio precisa de material marinizado (ver 3.1 e 3.3). Se o cliente não quer manutenção, fique só no fixo, dimensionado pelo M1.
-
-### M3. Ajuste ângulo a ângulo na carta, não "brise maior" (tipo A)
-- **O que fazer:** para estender a sombra até um horário mais tardio (ex.: 16h no verão), alongue o brise horizontal lateralmente além da janela (γ menor). Para cobrir o sol de inverno, aprofunde o brise (α menor). Quando o sol cai fora de α ou γ, a sombra é só parcial.
-- **Por que funciona:** cada ângulo controla uma parte da mancha; aumentar tudo por igual encarece e escurece sem necessidade.
-- **Quem disse:** Marcelo Nudel, arquiteto, sócio-diretor da Ca2 Consultores Ambientais Associados, ex-consultor de sustentabilidade da Arup (Sydney, Madri, São Paulo), professor de pós-graduação no Mackenzie (perfil: https://www.aecweb.com.br/revista/artigos/articulista/marcelo-nudel/180/1).
-- **Onde:** vídeo "Carta Solar p/ Brises – A explicação definitiva", https://www.youtube.com/watch?v=Rb5tB_Wiphs, trecho 29:43 a 30:11. No mesmo vídeo, 09:45 a 10:28: "bate sol na fachada sul no verão", o que reforça a ressalva da seção 2 sobre a fachada Sul.
-- **Limite:** exige carta solar e transferidor de ângulos da latitude certa (~23°S).
-
-### M4. Lâmina microperfurada quando a vista importa (tipo B)
-- **O que fazer:** em fachada com vista (mar ou lagoa na Barra), especifique lâmina de brise microperfurada, com furos de 2,5 a 3 mm e 16 a 20% de abertura. Mesmo fechada, ela deixa ver para fora e passa luz difusa.
-- **Por que funciona:** resolve o conflito entre fechar o brise contra o sol e perder a vista, que é o que o cliente de orla mais valoriza.
-- **Quem disse / onde:** Hunter Douglas, fichas técnicas dos Brises Aeroscreen Plano (furo 3 mm com 20% de abertura; 2,5 mm com 16%), https://www.aecweb.com.br/produto/brises-aeroscreen-plano/20485, e SL4/SL0/SL5/H2 (microperfurado, furo de 2 mm a cada 5 mm), https://www.aecweb.com.br/produto/brises-sl4-sl0-sl5-e-h2/20480. A técnica vale para qualquer lâmina perfurada equivalente; não é indicação de marca.
-- **Limite:** a perfuração deixa passar parte da radiação direta, então sombreia menos que a lâmina cega. Confirme o fator de sombra com o fabricante e com a Skill `vidro-fachada-poente-ini-r-fator-solar-transmitancia-rj`.

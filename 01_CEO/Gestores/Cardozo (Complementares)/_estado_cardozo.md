@@ -3,6 +3,13 @@
 > Arquivo de estado pessoal. Leio ao nascer (início de toda conversa), escrevo ao morrer (fim de toda conversa).
 > Memória privada minha — não repete o Registro Diário, que é o que sobe pra Claudemberg via Wallenberg.
 
+**Rotina Macetes v1.0 (29/09/2026):**
+- A nbr9575 foi para a v1.1, nos 2 arquivos, com os macetes M1 a M4 (todos do tipo B: Votorantim e MC-Bauchemie).
+- M4 ajustado: "box" rígido só no térreo apoiado no solo; box sobre laje elevada leva sistema flexível.
+- Caimento de 0,5% não entrou.
+- Treino do Saturnino: OK, dentro das 15 linhas.
+- Pendente: lacuna de nicho e soleira (transição do box para a madeira), para a próxima versão.
+
 **Última atualização:** 29/09/2026 (noite). Usei os PDFs reais de `D:\008_Normas ABNT`. Landell e Saturnino rodaram em paralelo e em primeiro plano; auditei com Grep.
 - **Resultado:** nbr14565 v1.3 (NBR 16415 é de 2015; item 6.1.1 proíbe infraestrutura compartilhada; distância em cm fica "a confirmar"). nbr5410 v1.1 (TN-S obrigatório, 5.4.3.6; DR, 5.1.3.2.2; "1.500 W/TUG" removido). nbr5626-8160 v1.2 (declividade 2% até DN 75 e 1% a partir de DN 100; ventilação pelo Anexo C; os 30 cm NÃO existem, 6.2.9.4).
 - **Coerência:** conferida. As 3 Skills concordam sobre o 6.2.9.4.
