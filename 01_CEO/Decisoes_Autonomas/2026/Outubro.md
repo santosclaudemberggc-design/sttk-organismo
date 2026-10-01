@@ -46,3 +46,28 @@
 
 **2. Passo 7.5 — varredura mensal de Drive (Kelsen).** 3 correções objetivas (POP-ARQ-PL-01 seção 7.1 e versão; Memorial com caractere corrompido). **Não aplicadas:** `update_file` do MCP só altera título/pasta; a via Service Account é vetada no automático. Registrado item `kelsen-drive-varredura-mensal-01-10-correcoes` (humano) em `pendencias.json` com texto literal antes/depois. Lúcio e Cardozo não foram acionados nesta rodada (sem fila) — a varredura mensal deles fica para a próxima rodada em que forem acionados no mês.
 
+## 01/10/2026 — Kelsen (Legal): correções pós-Ensaio 003, etapa 1 (ordem direta de Claudemberg, via Wallenberg)
+
+- **O que mudou:**
+  - **Skill `legal-oodc-mais-valera-mais-valia` v1.1**, instalada e proposta. Janela da LC 281 Art. 40 aberta até 01/12/2026, 30% só à vista (LC 301 Art. 58). Os dois regimes foram separados: OODC pura (LC 270 Art. 111, Fórmula 1 do Anexo XXV) e LC 281 (Art. 18 §1º). Entrou a isenção de 5 anos da **LC 270 Art. 110**, com exceções no §1º, §3º e §8º.
+  - **Skill `decreto3046` v1.3.** R1 reescrita (a isenção está no Art. 110, e não no 106), M3 (VII->XI, unifamiliar), M4 (Art. 111 §5º), §7 sobre como checar a vigência do Dec. 3.046. Exemplo sem artigo marcado.
+  - **Skill `varandas` v1.2.** Nova §4.1 sobre o regime da ZPP (VII, XI e XIV). A minha proposta "VII mais restritivo" ficou restrita a multifamiliar.
+  - **Skill `habite-se`.** Arts. 4º, 6º e 8º conferidos no PDF oficial. O item de documentos estava errado (Art. 6º é requerimento, não Habite-se).
+  - **POP-GESTOR-LEGAL-01 §4.3.** Sai "POP-LEGAL-02 SUSPENSO"; entra a regra de ler o `status:` do próprio POP.
+  - **POP-LEGAL-02.** Nova R.8 (LC 270 Arts. 106-111).
+  - **`hely.md`.** Corpo: checklist de 7 itens e correção da menção a WebSearch/WebFetch. O frontmatter não foi tocado.
+  - **`auditoria_kelsen_003.md`.** Errata 4.1.
+  - Pelo Hely: `_indice_fontes` (Dec. 3.046 e LC 270 Arts. 106-111), `_estado_hely` (checklist), cópias proposta = instalada (md5 conferido) e 8 PDFs regerados e conferidos visualmente.
+- **Por quê:** parecer do Bardi, seção "O que corrigir", e a minha auditoria. Ao reler o primário, LC 270 pp. 40-41, achei dois erros a mais, um meu e um do Bardi:
+  - a isenção de 5 anos existe, no Art. 110;
+  - o Anexo XXV é sim a fonte da fórmula da OODC pura.
+- **Backup:** `01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_*` (20 arquivos, cópia feita pelo Hely antes de qualquer edição).
+- **Como desfazer:** copiar cada `kelsen_ANTES_*` de volta ao caminho original. Nos arquivos `_SKILL_instalada`, o destino é `.claude/skills/<nome>/SKILL.md`. Depois, regerar os PDFs a partir dos .md restaurados (ou restaurar os .pdf do backup).
+- **Sobe a Wallenberg:** pedido formal de ferramenta para o Hely (WebFetch + WebSearch), sem edição de frontmatter. As dúvidas de mérito, Art. 110 §8º na AP4 e VII x XI na unifamiliar, vão ao Gate do Maurício.
+
+## 01/10/2026 — Wallenberg: aprovação da etapa 1 do Ensaio 003 e cadeia de pedido de ferramenta
+
+- **Claudemberg aprovou ao vivo a etapa 1** ("Aprovo a etapa 1"). No `_estado_ensaio_003.json`: `etapa_atual` 2, `status_etapa` a_criar, `proxima_acao` criar_caso, e histórico `aprovada_por_claudemberg`. A próxima Rotina Ensaio Sombra (Bardi) monta a etapa 2 (Viabilidade, Villaça).
+- **Ordem de Claudemberg (regra durável):** o Gestor corrige os erros que o seu Agente cometeu no ensaio e capacita esse Agente. A ferramenta ou plugin que o Gestor não consegue dar sobe a Wallenberg. O que Wallenberg não tem permissão de fazer sobe a Claudemberg na Reunião Semanal. Kelsen executou a ordem (entrada acima).
+- **Pedido de WebFetch + WebSearch para o Hely:** tentei adicionar as duas ao `tools:` do `.claude/agents/hely.md`. O classificador de permissão do modo automático negou a edição (auto-modificação). Não contornei. Foi para a pauta da Semanal como `hely-ferramentas-webfetch-websearch-semanal` em `pendencias.json`. O `hely.md` não foi alterado. Existe um backup preventivo em `_backups/2026-10-01/wallenberg_ANTES_hely_tools.md`, que pode ser descartado.
+

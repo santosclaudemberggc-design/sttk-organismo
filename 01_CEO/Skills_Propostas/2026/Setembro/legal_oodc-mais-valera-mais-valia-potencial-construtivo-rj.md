@@ -1,91 +1,98 @@
 # OODC, Mais-Valerá e Mais-Valia — Instrumentos de Potencial Construtivo no Rio de Janeiro
 
-**Versão:** 1.0  
-**Status:** proposta  
-**Data:** 15/09/2026  
+**Versão:** 1.1  
+**Status:** ratificada por Claudemberg em 15/09/2026 e instalada em `.claude/skills/legal-oodc-mais-valera-mais-valia/SKILL.md`. A v1.1 foi corrigida por Kelsen em 01/10/2026 (ordem de Claudemberg após o Ensaio Sombra 003, etapa 1). Este arquivo é espelho da instalada.  
+**Data:** 15/09/2026 (v1.0) · 01/10/2026 (v1.1)  
 **Tipo:** Inteligência (Trilha A)  
-**Para:** Kelsen/Hely (Legal) — cross: Lúcio/Oscar (Arquitetura)  
-**Gestor:** Kelsen (Legal)
+**Para:** Kelsen/Hely (Legal) — cross: Lúcio/Oscar (Arquitetura), Villaça (Viabilidade)  
+**Gestor:** Kelsen (Legal)  
+**Coerência:** esta Skill e o `POP-LEGAL-02` (bloco R e R.8) dizem a mesma coisa. Se um mudar, o outro muda na mesma rodada.
+
+> **Changelog v1.1 (Kelsen, 01/10/2026):**
+> - A janela não está vencida. O Art. 40 da LC 281/2025, na redação da LC 301/2026 (Art. 58), vai até **01/12/2026**, com 30% de desconto **só à vista**. A v1.0 dizia "ambos os prazos expirados", e isso contradizia o primário.
+> - Há duas fórmulas, de dois regimes diferentes. A v1.0 misturava as duas.
+>   - OODC pura (CAB->CAM): LC 270 **Art. 111**, Fórmula 1 do **Anexo XXV**.
+>   - Contrapartida da LC 281 (acréscimos não previstos na legislação ordinária): LC 281, **Art. 18 §1º**.
+> - A "isenção de 5 anos" existe. Está no **LC 270, Art. 110**, e não no Art. 106. Tem exceções: §3º, §8º e a transição do §1º.
+> - Saem as atribuições à LC 274/2024. Os artigos dela que tratavam disso foram revogados pela LC 281, Art. 42, II.
+> - Backup do antes: `01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_legal_oodc-mais-valera-mais-valia-potencial-construtivo-rj.md`.
 
 ---
 
 ## O que é
 
-Três instrumentos urbanísticos que permitem construir acima do Coeficiente de Aproveitamento Básico (CAB) até o Coeficiente de Aproveitamento Máximo (CAM) mediante pagamento de contrapartida financeira ao município do Rio de Janeiro. Regulados pela LC 270/2024, LC 274/2024 e LC 281/2025, com base no Estatuto da Cidade (Lei Federal 10.257/2001, Arts. 28-31).
+São dois regimes de contrapartida financeira ao Município do Rio. **Não confundir os dois**: base legal, fórmula, prazo e desconto são diferentes.
 
-## Contexto regulatório
+| | **OODC (LC 270/2024)** | **Contrapartida da LC 281/2025 ("Mais Valerá / Mais Valia")** |
+|---|---|---|
+| O que compra | Construir **acima do CAB até o CAM** (Art. 106) | Acréscimos **não previstos na legislação ordinária**, tanto em obra nova quanto em legalização (Arts. 9º, 12, 16, 18 e 40) |
+| Fórmula | **Art. 111**: "Fórmula 1 do Anexo XXV". O texto literal do Anexo **ainda não foi extraído** (TRAVA C do POP-LEGAL-02) | **Art. 18 §1º**, no texto verbatim do POP-LEGAL-02 R.3. Unifamiliar: `C = (0,8 Ac + 0,4 Ad + 0,4 Acpp) x VR/m2 x P x TR` |
+| Isenção / desconto | **Art. 110**: isenção nos 5 primeiros anos de vigência da LC 270, com exceções (ver abaixo) | **Art. 40** (redação LC 301, Art. 58): **30% à vista até 01/12/2026**. **Art. 19, II**: 60x com 30%, **só** AP3, AP5, RA XVI, RA XXXIV e Rio das Pedras (**não alcança AP4**) |
+| Parcelamento | Art. 110 §5º: até 36 cotas, IPCA-E | Art. 19, I: até 60 cotas, IPCA-E, sem desconto, qualquer AP |
+| Licença | Art. 110 §6º: a licença sai com a **1ª cota** paga; o habite-se, com o valor **integral** | Art. 20: a licença só sai com a contrapartida **quitada por inteiro** |
 
-O LICIN 2.0 (Decreto 55.622, D.O. 01/01/2025) regulamenta a LC 270/2024, que é a base legal do licenciamento integrado de edificações no RJ. A OODC está no Art. 106 da LC 270/2024. A LC 274/2024 e a LC 281/2025 regulamentam a implementação dos instrumentos e criam as janelas especiais Mais-Valerá e Mais-Valia.
+"Mais Valerá" e "Mais Valia" são os nomes de programa que a Prefeitura usa. **A lei a citar é a LC 281/2025**, nunca o apelido.
 
-## Os 3 instrumentos
+## 1. OODC — LC 270/2024 (lido no primário, `LC270_2024_PlanoDiretorLUOS.pdf`, pp. 40-41, por Kelsen em 01/10/2026)
 
-### 1. OODC (Outorga Onerosa do Direito de Construir)
+- **Art. 106:** permite construir acima do CAB até o CAM, mediante outorga onerosa (Estatuto da Cidade, Arts. 28-31).
+- **Art. 107:** o CAM vem por Macrozona/AP (Anexo XV). O CAM usado no licenciamento está no Título V, Cap. III, Seção I e no **Anexo XXI**.
+- **Art. 108:** em edificação preexistente, só incide sobre a área que ultrapassar a preexistente.
+- **Art. 110 (a "isenção de 5 anos"):**
+  - caput: empreendimento licenciado nos **5 primeiros anos de vigência** da LC 270 "não será autuado com a cobrança de Contrapartida Financeira";
+  - §1º: depois disso há transição, com diminuição de 20%, 40%, 60% e 80% da diferença CAM-CAB do 6º ao 9º ano;
+  - §3º: AP1 e AP3 ficam isentas durante toda a vigência;
+  - §4º: OUC Porto Maravilha e LC 229/2021 (Reviver Centro) seguem as leis próprias;
+  - **§8º: o caput não vale para áreas onde já havia cobrança de contrapartida de instrumentos onerosos na data de publicação da LC 270.**
+- **Art. 111:** a fórmula é a Fórmula 1 do Anexo XXV. **§3º**: se a ATE for menor que S x CAB, não incide outorga. **§5º**: os decretos olímpicos 24.241, 30.650, 32.886, 36.795 e 47.880, que modificaram o Dec. 3.046/81, **prevalecem** sobre a LC 270.
 
-- **Base legal:** LC 270/2024 Art. 106, Lei Federal 10.257/2001 Arts. 28-31
-- **O que faz:** permite construir de CAB até CAM pagando contrapartida ao município
-- **Quando se aplica:** projetos novos em zonas onde CAM > CAB (verificar no zoneamento da LC 270/2024 por subzona)
-- **Fórmula:** definida no Anexo XXV da LC 270/2024 — **NÃO OBTIDA** nesta pesquisa (texto integral do Anexo XXV indisponível em fontes públicas)
-- **Processo:** 100% digital via requerimentossmu.rio.rj.gov.br
-- **Contato SMU:** (21) 2273-6096 | lic.urb.rio.cau.smdu@prefeitura.rio
+**O que ainda não está fechado (Gate do Maurício antes de falar com cliente):**
+- se o lote está numa área do **§8º**, em que já havia cobrança onerosa antes. Na Barra/Recreio isso **não foi verificado**;
+- a data exata de início de vigência da LC 270, que conta os 5 anos. Conferir na Busca Fácil;
+- o texto literal da Fórmula 1 do Anexo XXV;
+- na ZPP (ex-ZE-5), o Hely leu no Ensaio 003 que o CAM é o IAA da subzona (Art. 345 §5º). Se CAB = CAM, não há OODC possível. Leitura do Hely, não conferida por Kelsen.
 
-### 2. Mais-Valerá (licenciamento preventivo para obras futuras)
+## 2. Contrapartida da LC 281/2025 (primário `LC281_2025_CondicoesEspeciais_CONSOLIDADO.pdf` e `LC301_2026_...pdf`, Art. 58)
 
-- **Base legal:** LC 274/2024 (criou o instrumento), LC 281/2025 (estendeu prazos)
-- **O que faz:** permite protocolar licenciamento com OODC para obras que AINDA NÃO FORAM EXECUTADAS — antecipa o direito de construir acima do CAB antes de iniciar a obra
-- **1ª janela (LC 274/2024):** prazo até **01/12/2025**, com desconto de **50%** na contrapartida para pagamento à vista em 30 dias após DARM
-- **2ª janela (LC 281/2025):** estendeu prazo até **01/06/2026**, com desconto de **30%** para pagamentos até 02/03/2026
-- **⚠️ AMBOS OS PRAZOS EXPIRADOS** — projetos que não protocolaram perderam as duas janelas
-- **Atenção:** verificar se houve nova extensão legislativa após junho/2026 antes de informar cliente
-
-### 3. Mais-Valia (regularização de obras existentes)
-
-- **Base legal:** LC 274/2024, LC 281/2025
-- **O que faz:** permite regularizar obras JÁ EXECUTADAS sem licença que excedem o CAB, mediante pagamento de contrapartida — funciona como legalização de construção irregular que ultrapassa o potencial básico
-- **Prazo:** requerimento deveria ser apresentado até **30/06/2026**
-- **⚠️ PRAZO EXPIRADO em 30/06/2026** — clientes que não protocolaram perderam a janela
-- **Contrapartida:** mesmas condições de desconto (50% na 1ª janela LC 274, 30% na 2ª janela LC 281)
+- **Art. 40, na redação da LC 301/2026, Art. 58:** "prazo de até 1° de dezembro de 2026 para requerimento de licenciamento de projetos a serem licenciados ou requerimentos de legalização, mediante aplicação de contrapartida por acréscimos não previstos na legislação ordinária com desconto de trinta por cento para pagamento à vista". **Janela ABERTA**. O PDF consolidado da LC 281 da base está um degrau atrás neste artigo; o texto vigente é o da LC 301.
+- **Art. 19, III e IV:** 50% à vista até 01/12/2025 e 30% à vista de 01/12/2025 a 02/03/2026. **Os dois venceram.** Não confundir com o Art. 40.
+- **Alcança unifamiliar:** Art. 18, II e §1º, II, "a" (POP-LEGAL-02, R.7.1).
+- **Prazo de legalização em aberto:** o Art. 16 §5º (30/06/2026, não alterado) colide com o Art. 40 (01/12/2026). **Não prometer prazo de legalização** antes do Gate do Maurício.
+- **Condições gerais (Art. 22, III):** não ocupar recuo, área não edificável nem faixa de proteção de mares, rios e lagoas.
 
 ## Brecha válida (mentalidade v3.0)
 
-A maioria dos projetistas no RJ trata o CAB como o limite absoluto e ignora que o CAM existe e é alcançável. Profissionais experientes:
-
-1. **Verificam CAM no zoneamento ANTES de definir o programa:** se o CAM permite 20% a mais que o CAB, o cliente pode comprar essa área extra. Muitos terrenos no RJ têm CAM significativamente maior que o CAB.
-2. **Calculam se a contrapartida compensa:** a equação bruta é: (valor do m² que se ganha × m² extras) vs. (custo da contrapartida). Em bairros valorizados (Leblon, Ipanema, Barra), o m² ganho geralmente vale mais que a contrapartida.
-3. **Usam a OODC como argumento de viabilidade:** em estudos de viabilidade para incorporação, a OODC pode ser a diferença entre um projeto inviável (só no CAB) e viável (com CAM).
-4. **Conhecem que os prazos especiais (Mais-Valerá/Mais-Valia) já expiraram:** evitam prometer ao cliente janelas que já fecharam.
+1. **Verificar CAB e CAM antes de definir o programa.** Se CAM = CAB (caso típico da ZPP), a OODC não existe para aquele lote, e o caminho para área extra, se houver, é a LC 281.
+2. **Art. 110 é argumento de viabilidade:** dentro dos 5 anos, e fora do §8º, a outorga até o CAM não é cobrada. Confirmar o §8º antes de usar com cliente.
+3. **A LC 281 tem prazo: 01/12/2026, 30% só à vista.** Em AP4 não há parcelado com desconto. Isso entra no fluxo de caixa do cliente; não basta mencionar o percentual.
+4. **A pergunta "quanto custa" vem depois de "qual regime incide".** Escolher o instrumento é julgamento (TRAVA A do POP-LEGAL-02) e passa pelo Kelsen.
 
 ## Impacto no fluxo STTK
 
 ### Para Kelsen/Hely (Projeto Legal)
-
-- **No Levantamento:** verificar CAB e CAM da subzona do terreno na LC 270/2024. Se CAM > CAB, informar Lúcio sobre o potencial construtivo adicional disponível mediante OODC.
-- **No Estudo Preliminar:** se o programa do cliente excede o CAB mas está dentro do CAM, iniciar diálogo sobre contrapartida antes de Oscar fechar o partido.
-- **Cálculo da contrapartida:** obter fórmula do Anexo XXV da LC 270/2024 (texto integral necessário — ver Limitações). Enquanto não obtida, consultar diretamente o SMU pelo canal indicado.
-- **Mais-Valerá/Mais-Valia:** informar que ambos os prazos já expiraram (01/06/2026 e 30/06/2026). Para projetos que protocolaram dentro do prazo, verificar andamento no requerimentossmu.rio.rj.gov.br.
+- **Levantamento:** CAB e CAM da subzona pelo RIU/Anexo XXI. Comparar o programa do cliente com o teto computável, **lado a lado**.
+- **Estudo Preliminar:** se o programa passa do CAB, dizer qual regime incide (LC 270 ou LC 281), com artigo, antes de o Oscar fechar o partido.
+- **Cálculo:** LC 281 -> Art. 18 §1º. OODC pura -> Fórmula 1 do Anexo XXV, ainda não extraída; até lá, consultar a SMU e não estimar.
+- **Vigência:** checar na Busca Fácil no dia do uso, porque a LC 281 já foi alterada duas vezes (LC 291 e LC 301).
 
 ### Para Lúcio/Oscar (Arquitetura)
-
-- **No Estudo Preliminar:** se Kelsen confirmar que CAM > CAB e a OODC é viável, Oscar pode considerar programa ampliado no partido.
-- **Na definição de gabarito:** a área adicional via OODC pode permitir um pavimento a mais ou ampliação de área por pavimento, dependendo dos demais parâmetros urbanísticos (TO, gabarito, afastamentos).
+- Área via OODC ou via LC 281 só entra no partido depois de o Kelsen confirmar o regime e o artigo.
+- TO, gabarito e afastamentos **não** mudam com a OODC. A LC 281 tem regras próprias de acréscimo (Arts. 9º e 12), que não valem como regra geral.
 
 ## O que NÃO muda
-
-- LICIN 2.0 (Decreto 55.622) continua como processo integrado.
-- LC 270/2024 permanece vigente como base legal geral.
-- TO, gabarito e afastamentos NÃO são alterados pela OODC — ela só aumenta o potencial construtivo (CA), não os demais parâmetros.
-- A OODC NÃO exime de ART/RRT, DULI, nem de qualquer outro requisito do licenciamento regular.
+- LICIN 2.0 (Dec. 55.622/2025) continua sendo o processo integrado.
+- A contrapartida não dispensa ART/RRT, DULI nem qualquer outro requisito do licenciamento.
+- Convenção ou regramento de condomínio mais restritivo continua valendo. A lei não afasta a regra privada.
 
 ## Limitações desta Skill
-
-1. **Fórmula de cálculo NÃO obtida:** o Anexo XXV da LC 270/2024, que contém a fórmula de cálculo da contrapartida, não está disponível em fontes públicas gratuitas. Antes de calcular contrapartida em caso real, obter o texto integral junto ao SMU.
-2. **Valores de CAB e CAM por subzona NÃO listados:** dependem do zoneamento específico da LC 270/2024 para cada terreno. Consultar via LICIN 2.0 ou diretamente pelo sistema requerimentossmu.rio.rj.gov.br.
-3. **Isenção de 5 anos (até 2029):** uma fonte secundária mencionou possível isenção de OODC para projetos aprovados nos primeiros 5 anos da LC 270/2024 — **NÃO CONFIRMADA por fonte primária**. Não assumir como verdadeira sem verificação junto ao SMU.
-4. **Fontes:** página oficial SMDU/Rio (última atualização verificada: 27/01/2026), LC 270/2024, LC 274/2024, LC 281/2025, Lei Federal 10.257/2001. Nenhuma fonte primária integral (textos completos das LCs) foi lida — informações extraídas de resumos oficiais e secundários.
+1. O texto literal da Fórmula 1 do Anexo XXV da LC 270 ainda não foi extraído.
+2. O alcance do Art. 110 §8º na Barra/Recreio não foi verificado.
+3. O Art. 16 §5º colide com o Art. 40 da LC 281 (pendência `kelsen-lc281-art16-vs-art40-prazo-legalizacao`).
+4. CAB e CAM não estão listados aqui. Vêm do RIU/Anexo XXI, lote a lote.
 
 ## Fontes
-
-- SMDU/Rio — Página oficial OODC (acessada 15/09/2026, última atualização do conteúdo: 27/01/2026)
-- LC 270/2024 (Art. 106 e Anexo XXV — referenciados, não lidos integralmente)
-- LC 274/2024 (regulamentação OODC — referenciada, não lida integralmente)
-- LC 281/2025 (Mais-Valerá/Mais-Valia — cross-referência com Skill existente `legal_lc281-2025-condicoes-especiais-licenciamento-rj.md`)
-- Lei Federal 10.257/2001, Arts. 28-31 (Estatuto da Cidade — base federal)
+- **LC 270/2024**, Arts. 106-111: `Fontes_Legislacao/LC270_2024_PlanoDiretorLUOS.pdf`, pp. 40-41 (lido por Kelsen em 01/10/2026)
+- **LC 281/2025**, Arts. 18-20, 22 e 42 II: `Fontes_Legislacao/LC281_2025_CondicoesEspeciais_CONSOLIDADO.pdf`, pp. 5-8 (Kelsen, 28/07 e 01/10/2026)
+- **LC 301/2026**, Art. 58 (nova redação do Art. 40 da LC 281): `Fontes_Legislacao/LC301_2026_AEIUPracaOnze_AlteraLC270e281.pdf` (Kelsen, 28/07/2026)
+- `POP-LEGAL-02` (bloco R, R.7.1 e R.8), texto operativo com a transcrição verbatim
+- Lei Federal 10.257/2001, Arts. 28-31

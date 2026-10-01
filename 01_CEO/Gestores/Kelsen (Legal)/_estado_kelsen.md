@@ -10,7 +10,7 @@
 ## 1. Onde parei / em andamento
 
 - Aprovado por Claudemberg em **13/07/2026**. Equipe: **Hely**, único Agente. Sou **Autonomous** desde 22/07/2026.
-- Base legislativa: **AP4** — Recreio / Barra da Tijuca / Vargem Grande. Fontes em `Agentes/Hely/Fontes_Legislacao/`, índice `_indice_fontes.md`. POPs de Hely em `Agentes/Hely/POPs/` (RIU-01, **02 SUSPENSO**, 03, 04, 05, 06) + `POP-GESTOR-LEGAL-01` na minha pasta.
+- Base legislativa: **AP4** — Recreio / Barra da Tijuca / Vargem Grande. Fontes em `Agentes/Hely/Fontes_Legislacao/`, índice `_indice_fontes.md`. POPs de Hely em `Agentes/Hely/POPs/` (RIU-01, 02 [liberado 28/07, R.8 em 01/10], 03, 04, 05, 06) + `POP-GESTOR-LEGAL-01` na minha pasta.
 - **Sttickler é UNIFAMILIAR** — segue o rito completo, não existe rito de baixa complexidade. Único tratamento diferenciado vigente: **Anexo IV no lugar do III** (Decreto 55.622/2025, Art. 10, p.ú.) — peça, não rito.
 - **LMS obrigatória para todo unifamiliar** (regime simplificado do Licenciamento Ambiental Municipal, SMAC) — trâmite paralelo ao LICIN 2.0/SMDU, incorporado à base ativa em 28/07 (`SKILL.md` + `POP-GESTOR-LEGAL-01` item 4.4). Exceção: Decreto 51.503/2022 Art. 27 p.ú. II/IV — terreno com APP ou área alagadiça cai no rito ordinário LMP+LMI.
 - Notion "Treinos e Testes" (`collection://7b0728a8-fd57-419c-8a51-d5fe3794d165`) é minha fila de treino/exame — consulto antes de executar.
@@ -26,7 +26,20 @@ Hely gravou `Agentes/Hely/Fontes_Legislacao/confirmacoes_2026-09-28.md`. Auditei
 Varridos: POP-ARQ-PL-01 (`1YxwEvEDvBohMdteDJ4T6TBrxMXiSEImqQUKwB5tjRCQ`), Memorial PL (`17qZXyMUIEOjqPr10HnDkRMouBKbDksIpfeI7ogvQrG8`), forms Validação/Aprovação PL, link da planilha de entregáveis (existe, ok). Seção 7.5 do POP já cita Gate do Maurício (corrigido). Achados entregues a Wallenberg: 7.1 ainda "DULI Anexos I/II" (substituto proposto), cabeçalho "Versão 1.0" sem changelog, mojibake "ð" antes do link no Memorial. Cópias POP-LEGAL-0x .md/.pdf no Drive não aparecem mais na busca — provável remoção, falta confirmar e fechar `drive-legal-pops-copias-desatualizadas`. Duas pastas "GESTOR LEGAL" continuam.
 
 ### 01/10/2026 — Ensaio Sombra 003, Etapa 01 (Legal base), fictício, Drenagem v2.5.0
-O Hely produziu `Casos_TESTE/ensaio_003/etapa_01_legal_base/entrega/parecer_legal_base_003.md`. Auditei e gravei `auditoria_kelsen_003.md` com o resultado **LIBERA COM RESSALVA**. No primário, conferi LC 281 Arts. 19-22 (pp. 7-8), LC 270 Art. 215 (pp. 79-80) e LICIN Arts. 2º-4º (pp. 1-3). Aguarda a correção de Bardi e o veredito de Claudemberg. **Pendência minha:** o POP-GESTOR-LEGAL-01 §4.3 diz que o POP-LEGAL-02 está "SUSPENSO", mas o cabeçalho do POP-02 e a Skill de bairro dizem "liberado 28/07". Reconciliar com backup. Passei a instrução desatualizada ao Hely.
+O Hely produziu `Casos_TESTE/ensaio_003/etapa_01_legal_base/entrega/parecer_legal_base_003.md`. Auditei e gravei `auditoria_kelsen_003.md` com o resultado **LIBERA COM RESSALVA**. No primário, conferi LC 281 Arts. 19-22 (pp. 7-8), LC 270 Art. 215 (pp. 79-80) e LICIN Arts. 2º-4º (pp. 1-3). O Bardi recomendou APROVAR e **Claudemberg aprovou ao vivo**.
+
+**Correções aplicadas na mesma data** (ordem de Claudemberg via Wallenberg; livro-razão `Decisoes_Autonomas/2026/Outubro.md`; backup `_backups/2026-10-01/kelsen_ANTES_*`):
+- Skills oodc v1.1, decreto3046 v1.3, varandas v1.2 e habite-se;
+- POP-GESTOR-LEGAL-01 §4.3, agora sem "suspenso";
+- POP-LEGAL-02 R.8;
+- `hely.md` (checklist no corpo) e errata 4.1 na minha auditoria;
+- pelo Hely, 8 PDFs regerados e conferidos e as cópias proposta = instalada.
+
+**Ainda abertos:**
+- o pedido formal de WebFetch e WebSearch para o Hely está com Wallenberg;
+- vão ao Gate do Maurício: LC 270 Art. 110 §8º na AP4, Dec. 3.046 VII x XI na casa unifamiliar e XI x XXIII;
+- a Skill TDC (em proposta) precisa ser alinhada ao Art. 110 antes de ser instalada;
+- layout: a tabela da Skill oodc fica espremida no PDF (é limite do `md_to_pdf.py`).
 
 ### Caso ativo — Daniel-OB (retomado em Estudo Preliminar, 12/09/2026)
 
@@ -175,6 +188,9 @@ Fonte de verdade é `01_CEO/Pendencias/pendencias.json` — aqui só os ponteiro
 - **Antes de avaliar Skill proposta, grep na base pela lei — o primário pode já estar arquivado.** Em 23/09 a Skill LC 301 dizia "PDF binário, ilegível" e se apoiava no legisweb; o PDF integral estava em `Fontes_Legislacao/` desde julho, auditado artigo por artigo em 24/07. Em 18/09 avaliei a v1.0 sem abrir o primário e herdei uma cadeia errada (LC 274 em vez de LC 281). "Desconto geral" e "desconto que incide para o meu cliente" são perguntas diferentes: a hipótese de incidência decide antes da geografia.
 - **Artigo alterado por lei nova pode deixar um irmão não alterado dizendo o contrário.** Em 24/09 o Art. 40 da LC 281 (via LC 301) passou a incluir legalização até 01/12/2026, mas o Art. 16 §5º da mesma lei continua com 30/06/2026. Quem só lê o artigo alterado vê um prazo; quem lê a lei inteira vê dois. Ao auditar alteração pontual, procurar na lei-mãe a mesma expressão (aqui, "acréscimos não previstos na legislação ordinária") para achar o dispositivo irmão.
 - **Editei `.md` com gêmeo `.pdf`? Regerar na mesma rodada, pelo Hely, e conferir a página nova eu mesma.** Em 24/09 funcionou em ~2 min. Não deixar "PDF pendente" como nota.
+- **"Não existe" exige ler a Subseção inteira, não o artigo citado.** Em 01/10 o Hely leu só o Art. 106 da LC 270 e concluiu que não havia isenção de 5 anos. Eu propus fechar a R1 com base nisso. A isenção estava no Art. 110, uma página adiante. Mesma classe do Dec. 3.046 VII, cuja última frase manda para o XI. Uma conclusão negativa é a mais fácil de errar por leitura curta.
+- **A correção do corretor também se confere no primário.** O Bardi mandou trocar "Anexo XXV" por "LC 281 Art. 18 §1º". Aplicar ao pé da letra teria trocado um erro por outro, porque o Art. 111 da LC 270 confirma que o Anexo XXV é a fonte da OODC pura. Quando a Skill mistura dois regimes, o certo é separar os dois, e não escolher um.
+- **Backup de muitos arquivos: o Hely faz com `cp` antes de eu editar.** Reescrever o "antes" à mão custa caro e arrisca erro. Pedir a cópia com md5/tamanho e só então editar.
 
 ---
 

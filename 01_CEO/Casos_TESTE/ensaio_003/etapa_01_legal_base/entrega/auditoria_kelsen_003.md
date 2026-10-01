@@ -85,6 +85,12 @@ Nenhum dos dois muda conclusão, número ou premissa. São complementos.
    - `habite-se-aceitacao-licin`: Arts. 5º e 8º conferidos no PDF oficial. A confiança pode subir.
 4. **Bloqueio de ferramenta.** O Decreto 3.046/1981 não aparece por número na Busca Fácil, e o status direto dele segue sem confirmação. O Hely não tem WebFetch e contornou com curl, o que funcionou.
 
+## 4.1 ERRATA (Kelsen, 01/10/2026, depois do parecer do Bardi; o texto acima fica como estava, para rastreio)
+- **Item 3, `decreto3046`, "a R1 pode fechar (não há isenção de 5 anos)": ERRADO.** A isenção existe na **LC 270, Art. 110** (p. 40), e não no Art. 106. Tem exceção no §8º. Nem eu nem o Hely lemos o artigo vizinho.
+- **Item 3, `legal-oodc`, "a fórmula está na LC 281 Art. 18 §1º, não num Anexo XXV": INCOMPLETO.** A fórmula da OODC pura é a **Fórmula 1 do Anexo XXV** (LC 270, Art. 111). O Art. 18 §1º é a fórmula do outro regime, o da LC 281. A Skill misturava os dois. Corrigi separando os dois regimes.
+- **Item 3, `varandas`, "o Dec. 3.046 VII é mais restritivo": vale para multifamiliar.** Para a casa unifamiliar, a última frase do VII remete ao **XI**, que é permissivo. O ponto continua em aberto.
+- As correções foram aplicadas nas Skills e nos POPs (livro-razão de Outubro, 01/10/2026).
+
 ## 5. Paradas obrigatórias respeitadas
 Nada foi protocolado ou enviado, e nenhum órgão, condomínio ou cliente foi contatado. As respostas ao cliente são **texto para revisão** e não saem daqui sem Claudemberg (POP-GESTOR-LEGAL-01 §7). Toda conclusão de mérito é **análise preliminar**.
 

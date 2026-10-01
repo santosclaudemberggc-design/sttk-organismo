@@ -4,13 +4,6 @@
 
 > **Revisão de 23/07/2026 (drenagem de pendências) — o que mudou:** removida a exigência de formato **A1**, que era invenção sem lastro (3.4); acrescentado o passo obrigatório de **status jurídico na Busca Fácil** (4.1); acrescentada a checagem de **APAC** (4.2); acrescentada a regra de **documento em quarentena** (4.3); decididas duas pendências que estavam paradas esperando julgamento meu — **Anexo III vs. IV** (3.5) e **convenção de cores em obra nova** (3.6).
 >
-> **Revisão de 01/10/2026 (ordem de Claudemberg após o Ensaio Sombra 003) — o que mudou:**
-> - §4.3 deixa de dizer que o POP-LEGAL-02 está "suspenso". Ele foi liberado em 28/07/2026.
-> - Entra a regra de ler o `status:` do próprio POP antes de citá-lo.
-> - Os dois regimes de contrapartida (LC 270 e LC 281) passam a ser nomeados separadamente.
->
-> Backup em `01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_POP-GESTOR-LEGAL-01_conferencia_pre_validacao.md`.
->
 > **Revisão de 28/07/2026 (decisão de Claudemberg sobre o achado B9) — o que mudou:** acrescentado o passo obrigatório de **Licença Municipal Ambiental Simplificada (LMS)** (4.4) — todo caso unifamiliar padrão precisa dela mapeada como trâmite paralelo na SMAC, mesmo sem gatilho ambiental do Anexo II do LICIN 2.0.
 
 ---
@@ -134,9 +127,7 @@ Dois usos distintos, não confundir: **status do ato** ("ainda vale?") -> Busca 
 
 ### 4.3 Documento em quarentena não fundamenta nada *(acrescentado por Kelsen em 23/07/2026)*
 
-- [ ] **Nenhuma conclusão da peça se apoia em POP suspenso.** **Hoje não há POP suspenso.** O `POP-LEGAL-02` (outorga onerosa) ficou suspenso de 23/07 a 28/07/2026 e foi **reconstruído e liberado por Kelsen em 28/07/2026**. O fundamento vigente é o **bloco R** dele (R.2 a R.8), e não as Seções 3, 4 e 6 antigas. *(Corrigido em 01/10/2026: este item continuou dizendo "SUSPENSO" por dois meses depois da liberação, e essa instrução desatualizada foi passada ao Hely no Ensaio 003. Backup em `01_CEO/Decisoes_Autonomas/_backups/2026-10-01/`.)*
-- [ ] **Antes de citar o status de qualquer POP, ler o cabeçalho `status:` do próprio POP**, e não a lista deste item. Se houver divergência entre os dois, vale o cabeçalho, e este POP é corrigido na mesma rodada.
-- [ ] Outorga/contrapartida: o primário continua sendo a fonte da conferência, nos dois regimes. **LC 270, Arts. 106-111**, para OODC CAB->CAM, incluída a isenção do Art. 110 e o seu §8º. **LC 281, Arts. 18-20**, mais o **Art. 40 na redação da LC 301, Art. 58**, para acréscimos não previstos.
+- [ ] **Nenhuma conclusão da peça se apoia em POP suspenso.** Hoje: **`POP-LEGAL-02`** (outorga onerosa) está **SUSPENSO desde 23/07/2026** — fundamento parcialmente revogado. Matéria de outorga vai ao primário `LC281_2025_CondicoesEspeciais_CONSOLIDADO.pdf`, Arts. 18-20.
 - [ ] **Nenhuma conclusão se apoia em paráfrase interna nossa** — incluído o `_indice_fontes.md`. Ele é endereço, não fonte. Já esteve errado duas vezes ao ser auditado contra o primário.
 
 **Documento aprovado como oficial pode nascer errado.** POP-LEGAL-02 e POP-LEGAL-04 foram ambos aprovados em 20/07/2026 e ambos continham erro de artigo. **Aprovação não é verificação.**

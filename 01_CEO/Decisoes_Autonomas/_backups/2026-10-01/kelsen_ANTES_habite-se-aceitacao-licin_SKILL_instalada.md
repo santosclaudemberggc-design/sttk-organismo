@@ -15,15 +15,13 @@ O Decreto 55.622/2025 (LICIN 2.0), **Art. 5º**, obriga o requerente a informar 
 
 **Art. 8º:** a vistoria para Habite-se/Aceitação verifica atendimento aos itens do **Art. 3º** (dimensões do lote, gabarito, afastamentos etc.) **por comparação com o projeto aprovado**. Qualquer divergência obra-x-projeto é o que trava o Habite-se — reforça que a prancha compilada é a fonte de verdade, não a obra construída em si.
 
-## 3. Documentos: o que o decreto exige e em qual momento *(corrigido em 01/10/2026 por Kelsen, no PDF oficial)*
+## 3. Documentos exigidos: DULI + 3 declarações de conformidade
 
-- **No requerimento da licença (Art. 6º e parágrafo único):** o DULI vem acompanhado de documento em que o PRPA, o PREO e o requerente declaram que atendem ao Plano Diretor, à LUOS, ao COES e às demais normas (modelo no **Anexo II**). Isso é do **início** do processo, e não do Habite-se. A v1.0 desta Skill tratava essas declarações como documento do Habite-se, o que estava errado.
-- **Antes de começar a obra (Art. 4º §4º):** declaração do PRPA, do PREO e do requerente de que as liberações dos órgãos consultados correspondem ao projeto licenciado (**Anexo V**). Se a licença saiu antes das anuências, ela vale **3 meses** e é prorrogável ou revalidável enquanto a obra não começa (§2º).
-- **Para o Habite-se ou a Aceitação (Art. 8º):** o decreto só exige a **vistoria** dos itens do Art. 3º, os 13 incisos: dimensões do lote, alinhamento, cota de soleira, TO, superfície drenante, ATE, gabarito, afastamentos, profundidade, área coletiva, uso e tipologia, nº de unidades e ICS. **Não lista documento próprio.** Se a SMDU pedir algo a mais, é exigência do caso; confirmar na hora e não presumir.
+**Art. 6º e parágrafo único:** DULI (já emitido no início) + declarações de conformidade do PRPA (responsável pelo projeto), do PREO (responsável pela execução) e do requerente, nos modelos dos Anexos I e II do decreto.
 
 ## 4. Dois desfechos distintos — não confundir
 
-**Habite-se** (obra nova, com criação de unidade) vs. **Aceitação de Obra** (modificação/reforma sem criação de unidade nova) — mesma distinção já aplicada para demolição. Usar sempre a nomenclatura correta, nunca "conclusão de obra" genérica. *(Nota de 01/10/2026: o Art. 8º só nomeia os dois desfechos. O critério "unidade nova x modificação" é prática da casa e **não está escrito no decreto**. Não citar o Art. 8º como fonte desse critério.)*
+**Habite-se** (obra nova, com criação de unidade) vs. **Aceitação de Obra** (modificação/reforma sem criação de unidade nova) — mesma distinção já aplicada para demolição. Usar sempre a nomenclatura correta, nunca "conclusão de obra" genérica.
 
 ## 5. Ferramenta de consulta pública, sem chamado
 
@@ -35,7 +33,7 @@ O Decreto 55.622/2025 (LICIN 2.0), **Art. 5º**, obriga o requerente a informar 
 - O processo de obra em si (execução, mestre de obras, PREO) — fora do escopo de Construção do Zero da Sttickler.
 
 ## Fontes e confiabilidade
-- Decreto 55.622/2025, Arts. 3º, 4º, 5º, 6º e 8º: **conferidos no PDF oficial da base** (`Fontes_Legislacao/Decreto55622_2025_LICIN2.0.pdf`, pp. 2-3) por Kelsen em 01/10/2026. **Confiança alta** para o texto. O §3 foi corrigido nessa conferência. A v1.0 usava o agregador LegisWeb, com confiança média. Continua valendo checar a vigência na Busca Fácil no dia do uso. Backup do antes: `01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_habite-se-aceitacao-licin_SKILL_instalada.md`.
+- Decreto 55.622/2025, Arts. 3º, 5º, 6º e 8º — consultado via agregador LegisWeb, **confiança média** (Diário Oficial/Portal bloqueiam fetch direto, HTTP 403). Confirmar no PDF oficial antes de uso real.
 - Portal Carioca Digital — página de Certidão de Habite-se/Aceitação
 
 ## Escopo, crescimento e manutenção

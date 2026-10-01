@@ -1,9 +1,10 @@
 ---
 name: varandas-nao-computaveis-ate-to-coes-lc198-rj
 description: Varandas e sacadas não computáveis na ATE e na Taxa de Ocupação no Rio de Janeiro — COES (LC 198/2019) Art. 8º §§1º-11 + Decreto 45.917/2019 Art. 6º — distâncias à testada e às divisas, brise vazado ≥ 50%, laje técnica de ar-condicionado, envidraçamento retrátil sem licença, e a brecha de área útil fora da conta. Use sempre que Hely montar quadro de áreas/DULI, ou Oscar/Lúcio definir varanda, sacada, terraço de cobertura ou brise em projeto residencial no RJ — mesmo que o pedido só mencione "área computável", "ATE", "taxa de ocupação", "varanda" ou "fechamento de varanda", sem citar o COES pelo nome.
-version: v1.1
+version: v1.2
 status: ativa-com-ressalva
 data: 2026-09-28
+atualizado: 2026-10-01 (v1.2, Kelsen, ordem de Claudemberg após o Ensaio Sombra 003. Nova §4.1 sobre o regime da ZPP: Dec. 3.046/81 VII e XI. Backup em 01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_varandas-nao-computaveis-ate-to-coes-lc198-rj_SKILL_instalada.md)
 tipo: Inteligência (Trilha A)
 gestor_alvo: Kelsen (Legal)
 agente_principal: Hely (Projeto Legal: quadro de áreas, DULI)
@@ -13,7 +14,7 @@ validacao: Kelsen 28/09/2026 — PROCEDE COM RESSALVA (C1-C3 aplicadas na v1.1; 
 
 # Skill: Varandas e Sacadas Não Computáveis na ATE e na Taxa de Ocupação (COES, LC 198/2019, Art. 8º)
 
-> ⚠️ RESSALVA DE FONTE — (1) Conferido no texto consolidado oficial da SMU (PDF de 07/01/2026, arquivado em `Gestores\Kelsen (Legal)\Agentes\Hely\Fontes_Legislacao\COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`): o Art. 8º não tem alteração. O COES só foi alterado pela LC 283/2025 (Art. 35 §7º) e pela LC 291/2025 (Art. 2º §7º). Falta conferir, na Busca Fácil, se existe ato posterior a 07/01/2026. (2) **Não confirmado:** se o regime da Barra/Recreio — **LC 270/2024, que incorporou o Decreto 3046/81 (ZE-5)** — tem regra própria de cômputo de varanda que prevaleça sobre o COES. Ao aplicar em caso real, Hely confirma esse ponto no RIU/SMDU e trata o benefício como provisório até lá.
+> ⚠️ RESSALVA DE FONTE — (1) Conferido no texto consolidado oficial da SMU (PDF de 07/01/2026, arquivado em `Gestores\Kelsen (Legal)\Agentes\Hely\Fontes_Legislacao\COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`): o Art. 8º não tem alteração. O COES só foi alterado pela LC 283/2025 (Art. 35 §7º) e pela LC 291/2025 (Art. 2º §7º). Falta conferir, na Busca Fácil, se existe ato posterior a 07/01/2026. (2) **Confirmado em 01/10/2026:** a Barra/Recreio (ZPP, Dec. 3.046/81 incorporado pela LC 270/2024) **tem regra própria** de varanda, que está na §4.1. Ainda não se sabe qual regra prevalece quando o COES e o Dec. 3.046 divergem, e isso vai ao Gate do Maurício. Em caso real, o Hely confirma a subzona no RIU e trata o benefício como provisório até lá.
 
 ## 1. POR QUE ESSA SKILL EXISTE
 
@@ -55,6 +56,20 @@ Em lote onde cada m² de ATE é disputado, saber **o que não entra na conta** v
 - Condomínios da Barra costumam ter **regulamento construtivo próprio**, mais restritivo que a lei (caso Daniel-OB, Anexo II). A varanda pode ser legal e mesmo assim barrada pelo condomínio. É matéria civil: sinalize ao cliente.
 - Em caso real, tudo é análise preliminar até passar pelo **Gate do Maurício** (R4).
 
+### 4.1 O regime da ZPP: Dec. 3.046/81, Disposições Gerais VII e XI (lido por Kelsen em 01/10/2026, `Decreto3046_1981_PlanoPilotoBaixadaJacarepagua.pdf`, pp. 2-3)
+
+| Situação na ZPP | Regra | Diferença em relação ao COES |
+|---|---|---|
+| **Multifamiliar e outros usos (VII)** | Varandas abertas, cobertas ou descobertas, **não computam** na ATE, na área útil mínima nem na TO. Devem **respeitar o afastamento frontal mínimo** da subzona, **sem balanço sobre ele** | **Mais restritivo** que o COES Art. 8º §1º, que deixa a varanda avançar até 1,00 m da testada |
+| **Casa unifamiliar (VII, última frase -> XI)** | O VII termina com "Nos casos de edificações residenciais unifamiliares será aplicado o disposto no inciso XI". O **XI** permite, com **frontal menor que 10,00 m**, ocupar os **afastamentos laterais do térreo** com **varandas ou abrigos de veículos**, abertos e cobertos por **telha-vã**, fora da ATE e da TO | **Mais permissivo** que o COES §2º e §3º no térreo lateral, mas só nessas condições |
+| **Saliência na fachada (XIV)** | Até 0,40 m sobre o afastamento frontal, acima do térreo, só para jardineira e ar-condicionado, fora da ATE e da TO | Parecido com a laje técnica do §8º do COES, com limite menor |
+
+**Em aberto (Gate do Maurício; até lá, leitura conservadora):**
+- a vedação de balanço sobre o afastamento frontal do VII também vale para a **unifamiliar**, ou o XI substitui o VII por inteiro para a casa? **Até decidir: não projetar varanda de casa em balanço sobre o afastamento frontal mínimo na ZPP.**
+- quando o COES (lei geral posterior) e o Dec. 3.046 (regime especial preservado pela LC 270) dizem coisas diferentes, qual prevalece? Hoje, aplicar o **mais restritivo** dos dois em cada ponto, salvo o benefício expresso do XI.
+
+**Erro registrado:** na validação de 28/09 e na auditoria do Ensaio 003, eu (Kelsen) disse "o Dec. 3.046 VII é mais restritivo que o COES §1º" sem ler a última frase do VII. Para a casa unifamiliar, que é o nosso caso, o VII manda aplicar o XI. A regra serve para multifamiliar; para a casa é tensão em aberto.
+
 ## 5. CHECKLIST DE HELY (quadro de áreas)
 
 - [ ] A varanda é aberta (sem esquadria que a incorpore ao cômodo)?
@@ -64,6 +79,7 @@ Em lote onde cada m² de ATE é disputado, saber **o que não entra na conta** v
 - [ ] Reentrante com > 1,50 m de profundidade servindo cômodo? Então vira prisma (COES, Art. 5º §5º)
 - [ ] Brise/cobogó com ≥ 50% de aeração, se houver
 - [ ] Subzona da LC 270/2024 (Dec. 3046/81 incorporado) com regra própria de cômputo? (RIU/SMDU)
+- [ ] Lote na ZPP? Aplicar a §4.1: ler o Dec. 3.046 VII **até a última frase**. Unifamiliar segue o XI (frontal < 10 m, lateral do térreo, aberto, telha-vã). Sem balanço sobre o frontal mínimo até o Gate
 - [ ] Regulamento do condomínio conferido
 - [ ] Varanda lançada **fora** da ATE e da TO no quadro de áreas, com citação do Art. 8º §4º da LC 198/2019
 
@@ -75,7 +91,7 @@ A Skill de partido de 16/09 (`arquitetura_partido-conforto-termico-orientacao-so
 
 ## 7. RESSALVAS DA VALIDAÇÃO (Kelsen, 28/09/2026)
 
-- **R1 (aberta):** regra própria de cômputo na Barra/Recreio sob a LC 270/2024 (Dec. 3046/81 incorporado). A remissão ao COES Art. 1º §3º não foi conferida por Kelsen.
+- **R1 (parcialmente fechada em 01/10/2026):** a regra própria da ZPP existe e está na §4.1 (Dec. 3.046 VII, XI e XIV, lidos no primário). Continuam abertos: o alcance da vedação frontal do VII sobre a unifamiliar; qual prevalece, COES ou Dec. 3.046, nos pontos em que divergem; a remissão ao COES Art. 1º §3º, que não foi conferida; e os decretos olímpicos (LC 270, Art. 111 §5º) que possam ter mexido na subzona.
 - **R2:** limite de profundidade da varanda reentrante que serve cômodo (COES, Art. 5º §5º), incorporado na seção 3.
 - **R3:** brise sobre afastamento fora da varanda segue o Art. 4º §3º, incorporado na seção 3.
 - **R4:** Gate do Maurício antes de parecer final; o condomínio pode ser mais restritivo.
@@ -84,6 +100,7 @@ A Skill de partido de 16/09 (`arquitetura_partido-conforto-termico-orientacao-so
 
 - **COES (LC 198/2019) consolidado oficial da SMU**, PDF gerado em 07/01/2026, pp. 5-6 (lido por Kelsen 28/09/2026): `01_CEO\Gestores\Kelsen (Legal)\Agentes\Hely\Fontes_Legislacao\COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`
 - **Decreto 45.917/2019** (regulamenta o COES), Art. 6º (lido por Kelsen 28/09/2026): `...\Fontes_Legislacao\Decreto45917_2019_RegulamentaCOES.pdf`
+- **Decreto 3.046/1981**, Instruções Normativas, Disp. Gerais VII, XI, XIV e XXIII (lido por Kelsen em 01/10/2026, pp. 2-4): `...\Fontes_Legislacao\Decreto3046_1981_PlanoPilotoBaixadaJacarepagua.pdf`
 - LC 198/2019, Art. 8º, texto original, Câmara Municipal RJ (lido 28/09/2026): https://e.camara.rj.gov.br/Arquivo/Documents/legislacao/html/c1982019.html
 - LC 198/2019, LegisWeb (lido 28/09/2026, §6º a §11): https://www.legisweb.com.br/legislacao/?id=373951
 - Dicionário de Termos Técnicos da LC 270/2024, 2ª ed., dez/2025, SMDU (consultado: não define o cômputo de varanda): https://desenvolvimentourbano.prefeitura.rio/wp-content/uploads/sites/52/2025/12/Dicionario-de-Termos-LC-270-2a-edicao-04_12_2025.pdf

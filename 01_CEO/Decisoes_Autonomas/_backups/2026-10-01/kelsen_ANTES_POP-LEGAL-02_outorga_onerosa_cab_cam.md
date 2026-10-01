@@ -5,7 +5,7 @@ area: Legal — base legislativa por bairro/subzona
 autor: Hely (Agente executor, equipe de Kelsen); reconstrução verbatim auditada e liberada por Kelsen em 28/07/2026
 criado: 2026-07-20
 origem: Conteúdo pesquisado e testado contra fonte oficial por Wallenberg em 16/07/2026; formalizado como POP/Skill oficial por Claudemberg na Reunião Semanal de 20/07/2026
-status: RECONSTRUÍDO E LIBERADO EM 28/07/2026 POR KELSEN (complementado em 24/09/2026 com R.7.1 e em 01/10/2026 com R.8, LC 270 Arts. 106-111) — quarentena de 23/07/2026 encerrada após auditoria verbatim do bloco R.1-R.6 contra LC281_2025_CondicoesEspeciais_CONSOLIDADO.pdf (Arts. 18, 19, 20, 42 II) e contra LC301_2026 Art. 58 (Art. 40). Ver Seção 0 (histórico da quarentena, preservado) e bloco R (texto operativo vigente).
+status: RECONSTRUÍDO E LIBERADO EM 28/07/2026 POR KELSEN — quarentena de 23/07/2026 encerrada após auditoria verbatim do bloco R.1-R.6 contra LC281_2025_CondicoesEspeciais_CONSOLIDADO.pdf (Arts. 18, 19, 20, 42 II) e contra LC301_2026 Art. 58 (Art. 40). Ver Seção 0 (histórico da quarentena, preservado) e bloco R (texto operativo vigente).
 principios: 8 (Rastreabilidade), 9 (Padronização), 18 (Ética e conformidade), 20 (Revisão periódica)
 ---
 
@@ -272,20 +272,3 @@ Hely leu a LC 281 consolidada de forma linear (28/28 pp.); Kelsen conferiu contr
   3. **"Áreas de recuo" (Art. 22, III):** recuo de alinhamento (PAA) ou afastamento frontal? Na 2ª leitura, colide com o Art. 12 §1º.
   4. **"Legislação específica" (Art. 9º p.ú.)** × Decreto 3046/81 em Barra/Recreio.
   5. **Condomínio** (ex.: caso Daniel-OB): regra privada mais restritiva continua valendo. A LC 281 não afasta convenção.
-
-#### R.8 [ACRESCENTADO POR KELSEN, 01/10/2026] OODC pura na LC 270/2024: Arts. 106-111, com a isenção do Art. 110
-
-Kelsen leu no primário (`LC270_2024_PlanoDiretorLUOS.pdf`, pp. 40-41). Este bloco **complementa** a TRAVA C e a Seção 3, item 2, sem substituí-las. Backup do antes: `01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_POP-LEGAL-02_outorga_onerosa_cab_cam.md`.
-
-- **Art. 111 caput:** "A contrapartida financeira que corresponde à outorga onerosa será calculada pela Fórmula 1 do Anexo XXV". O endereço da fórmula da OODC pura está, portanto, **confirmado no corpo da lei**. Falta só o texto do Anexo (TRAVA C continua aberta).
-  - **A fórmula do Art. 18 §1º da LC 281 é do outro regime** (acréscimos não previstos na legislação ordinária). As duas não se substituem.
-- **Art. 110 caput, a "isenção de 5 anos":** "O empreendimento que for licenciado nos cinco primeiros anos de vigência deste Plano Diretor não será autuado com a cobrança de Contrapartida Financeira".
-  - §1º: transição do 6º ao 9º ano, com diminuição de 20%, 40%, 60% e 80% da diferença CAM-CAB;
-  - §3º: AP1 e AP3 isentas durante toda a vigência;
-  - §5º: parcelamento em até 36 cotas, IPCA-E;
-  - §6º: licença com a 1ª cota paga, habite-se com o pagamento integral;
-  - **§8º: o caput não vale nas áreas onde já ocorria cobrança de contrapartida de instrumentos onerosos na data de publicação.**
-- **Art. 111 §3º:** se a ATE for menor que S x CAB, não incide outorga. **§5º:** os decretos olímpicos (24.241, 30.650, 32.886, 36.795 e 47.880) que modificaram o Dec. 3.046/81 prevalecem sobre a LC 270.
-- **Erro corrigido:** no Ensaio 003 (01/10/2026), o Hely leu só o Art. 106 e concluiu "sem isenção de 5 anos", e Kelsen propôs fechar a R1 da Skill `decreto3046` nessa base. O artigo que decidia era o 110. **Lição:** a regra que interessa pode estar no artigo vizinho da mesma Subseção. Ler a Subseção inteira.
-- **Dúvidas abertas (Gate do Maurício, não decididas):** (1) o alcance do §8º na AP4 e na Barra/Recreio; (2) a data de início de vigência da LC 270, que conta os 5 anos; (3) a interação entre a isenção do Art. 110 e a contrapartida da LC 281 num mesmo projeto.
-- **Coerência:** a Skill instalada `legal-oodc-mais-valera-mais-valia` v1.1 diz exatamente isto. Se um dos dois mudar, o outro muda na mesma rodada.
