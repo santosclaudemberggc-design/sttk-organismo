@@ -31,5 +31,12 @@ Acervo (norma nova muda Skill) ──> pendencias.json ──> Drenagem corrige
 Todas ──> Fechamento do Dia (passagem + diário de funcionamento) ──> Reunião (verifica ensaios + candidatas)
 ```
 
+## Candidatas gerais (valem para todas as rotinas e Agentes)
+- **(nova 30/09) Arquivo temporário solto na raiz do projeto.**
+  - Evidência: `t.bin`, de cerca de 25 KB, criado em 30/09 às 13:41 durante a pesquisa CAU/CONFEA + ANPD do Kelsen/Hely. Era uma página HTML do CONFEA salva incompleta ("Carregando conteúdo…"). Ficou fora do git, sem valor de fonte. Apagado em 30/09 com autorização de Claudemberg.
+  - Sugestão: regra para todos os Agentes e rotinas: arquivo temporário (download para leitura, rascunho, saída de script) vai para uma pasta de rascunho (ex.: `_tmp/`, no `.gitignore`) e é apagado ao fim da tarefa, nunca deixado na raiz. Fonte que vale guardar vai para o acervo certo (`Fontes_Legislacao` do Hely ou `D:\008`).
+  - Também detectar no Fechamento do Dia: arquivo novo não rastreado na raiz → candidata.
+  - Decisão: Reunião de 05/10.
+
 ## Teste único do organismo
 Ensaio Sombra 003. O treino fictício foi retirado da Diária e dos Macetes em 30/09. O Notion "Treinos e Testes" ficou só para exames de nível.
