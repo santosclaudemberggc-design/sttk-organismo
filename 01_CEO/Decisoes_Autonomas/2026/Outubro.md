@@ -32,3 +32,17 @@
 **Painel:** 2 eventos `skill` gravados no `feed.jsonl` via `Append-STTKLog.ps1`, 2/2 OK.
 
 **Fonte de verdade para rever:** `01_CEO/rotina_fechamento_template.md`, rodada de 01/10/2026.
+
+---
+
+## 01/10/2026 — Drenagem Contínua v2.5.0 (qui, 11:04) — Ensaio 003 etapa 1 executada e corrigida
+
+**1. Ensaio Sombra 003, etapa 1 (Legal base) — Kelsen/Hely executaram, Bardi corrigiu.**
+- **O que decidiu:** executar a etapa liberada (`proxima_acao: executar`). Lacre do gabarito conferido antes e depois (SHA256 48867C3C…C9F9 = histórico). Ninguém abriu `_gabaritos_LACRADO/` além do Bardi.
+- **Resultado:** entrega em `01_CEO/Casos_TESTE/ensaio_003/etapa_01_legal_base/entrega/` (`parecer_legal_base_003.md` do Hely, `auditoria_kelsen_003.md` do Kelsen — LIBERA COM RESSALVA). Parecer do Bardi: `etapa_01_legal_base/parecer_bardi.md` — **recomendação APROVAR** (8/8 itens, 4/4 iscas, contas refeitas e corretas; 6 correções não bloqueantes: Skill OODC × LC 301 Art. 58; leitura do Dec. 3.046 inciso XI; 520 m² × teto 457,44 m² computáveis; lençol 0,90 m × piscina/escavação; divergência POP-GESTOR-LEGAL-01 §4.3 × POP-LEGAL-02; Hely sem WebFetch). Bardi registrou erro do próprio gabarito ("computáveis") sem alterá-lo.
+- **O que alterou:** `_estado_ensaio_003.json` → `aguardando_aprovacao` / `aguardar_claudemberg`, histórico `executada_e_corrigida`. Evento `marco` no `feed.jsonl` (1/1 OK).
+- **Como desfazer:** voltar o JSON a `aguardando_execucao`/`executar`, remover a última linha do histórico e apagar `entrega/` + `parecer_bardi.md`.
+- **Sobe a Claudemberg:** aprovar/reprovar a etapa 1 (só ele). Kelsen sinalizou: PRPA não definido; propostas de correção em 4 Skills (OODC, Dec. 3046, varandas, habite-se) — não aplicadas nesta rodada (Kelsen as trata como dono; Bardi alerta que a de varandas precisa reler o fim do inciso VII).
+
+**2. Passo 7.5 — varredura mensal de Drive (Kelsen).** 3 correções objetivas (POP-ARQ-PL-01 seção 7.1 e versão; Memorial com caractere corrompido). **Não aplicadas:** `update_file` do MCP só altera título/pasta; a via Service Account é vetada no automático. Registrado item `kelsen-drive-varredura-mensal-01-10-correcoes` (humano) em `pendencias.json` com texto literal antes/depois. Lúcio e Cardozo não foram acionados nesta rodada (sem fila) — a varredura mensal deles fica para a próxima rodada em que forem acionados no mês.
+
