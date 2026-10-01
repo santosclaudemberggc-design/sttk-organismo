@@ -3,6 +3,8 @@
 > Arquivo de estado pessoal. Leio ao nascer (início de toda conversa), escrevo ao morrer (fim de toda conversa).
 > Memória privada minha — não repete o Registro Diário, que é o que sobe pra Claudemberg via Wallenberg.
 
+**Rotina Macetes v1.2 (01/10/2026):** a Skill fundações Barra/Recreio passou para a v1.3, nos 2 arquivos, com M1 a M4. Todos são do tipo A: Alonso/IE 2023 e a dissertação UERJ de Danziger/Gerscovich (2017). Nenhum foi rejeitado e não houve treino. **Pendência:** na `nbr6122-2019-fundacoes` (linhas 33-34), Anexo J aparece como hélice e Anexo N como escavada com fluido, mas Alonso cita o Anexo N para hélice. O pedrisco 4,75-12,5 mm combina mais com hélice, então suspeito que as letras estejam trocadas na nbr6122. Não editei; falta conferir na norma.
+
 **Rotina Macetes v1.0 (29/09/2026):**
 - A nbr9575 foi para a v1.1, nos 2 arquivos, com os macetes M1 a M4 (todos do tipo B: Votorantim e MC-Bauchemie).
 - M4 ajustado: "box" rígido só no térreo apoiado no solo; box sobre laje elevada leva sistema flexível.

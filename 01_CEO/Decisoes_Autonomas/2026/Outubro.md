@@ -71,3 +71,27 @@
 - **Ordem de Claudemberg (regra durável):** o Gestor corrige os erros que o seu Agente cometeu no ensaio e capacita esse Agente. A ferramenta ou plugin que o Gestor não consegue dar sobe a Wallenberg. O que Wallenberg não tem permissão de fazer sobe a Claudemberg na Reunião Semanal. Kelsen executou a ordem (entrada acima).
 - **Pedido de WebFetch + WebSearch para o Hely:** tentei adicionar as duas ao `tools:` do `.claude/agents/hely.md`. O classificador de permissão do modo automático negou a edição (auto-modificação). Não contornei. Foi para a pauta da Semanal como `hely-ferramentas-webfetch-websearch-semanal` em `pendencias.json`. O `hely.md` não foi alterado. Existe um backup preventivo em `_backups/2026-10-01/wallenberg_ANTES_hely_tools.md`, que pode ser descartado.
 
+
+## 01/10/2026 — Rotina Macetes de Profissionais v1.2: 7 macetes em 2 Skills (quinta, 14:14)
+
+- **Fila do dia** (máx. 1 por Gestor; Villaça não tem Skill e não foi aberto):
+  - Kelsen: `varandas-nao-computaveis-ate-to-coes-lc198-rj`. Prioridade 0a: Bardi apontou a leitura do Dec. 3.046 VII/XI. Era a 2ª rodada.
+  - Lúcio: `nbr15220-3-bioclimatica-rj`. Prioridade 0b: a etapa 3 do Ensaio é o Levantamento. A Skill é cross; Cardozo ficou registrado como co-dono.
+  - Cardozo: `fundacoes-solos-moles-lencol-freatico-barra-recreio`. Prioridade 1.
+- **nbr15220-3 v1.1 → v1.2 (Lúcio), 3 macetes tipo A.** Fontes: Lamberts/LabEEE (ENCAC 2025) e o Projeto de Revisão ABNT de jun/2024, pp. 1, 13, 20-23.
+  - M1: a zona se confirma no mapa do LabEEE. O Rio é 4A e é a cidade característica da zona (TMYx, estação 837550).
+  - M2: a 2024 não tem diretrizes construtivas por zona; a indústria pediu a retirada.
+  - M3: o microclima entra como premissa, sem trocar de zona.
+  - A ressalva da zona passou de "indício" para "confirmada no texto de Consulta Nacional; texto final não lido". A seção Limbo recebeu a regra dos 180 dias do prefácio, marcada como "só no texto de projeto".
+- **fundacoes-solos-moles 1.2 → 1.3 (Cardozo), 4 macetes tipo A.**
+  - M1 a M3 vêm de Urbano R. Alonso (Instituto de Engenharia, 2023): teste do trado junto ao furo de sondagem; leitura do perfil de consumo de concreto; erros de execução a proibir na especificação.
+  - M4 vem de Danziger/Gerscovich (UERJ, 2017): atrito negativo na argila da Baixada de Jacarepaguá.
+- **varandas: sem macete na 2ª rodada → lista "Sem fonte pública".** Tentativas: tipo A (CAU/RJ, arquitetos) e tipo C (Ademi-RJ, Sinduscon-Rio, CAU/RJ, SMU). A única fonte C achada foi a ata do COMPUR de 13/09/2007 (Ademi/AsBEA). Ela traz só opinião sobre fechamento de varanda e nenhuma técnica nova.
+- **Backup:** `01_CEO/Decisoes_Autonomas/_backups/2026-10-01/macetes_ANTES_*` (2 arquivos).
+- **Como desfazer:**
+  - Copiar cada `macetes_ANTES_<skill>_SKILL_instalada.md` para `.claude/skills/<skill>/SKILL.md`.
+  - Nas cópias de `Skills_Propostas/2026/Setembro/`, reverter pelo git (`git checkout <commit>~1 -- <arquivo>`).
+  - Reverter também `_estado_lucio.md` e `_estado_cardozo.md`.
+- **Pendências geradas (não resolvidas aqui; ficam para a Drenagem/Reunião):**
+  - (1) Cinco Skills ainda tratam a ZB 4A como "indício": nbr15575-4-emenda2025, lucio-protecao-solar, vidro-fachada-poente, especies-nativas e cobertura-transmitancia. É preciso alinhar com a 15220-3 v1.2 (donos: Lúcio, e Cardozo para especies-nativas).
+  - (2) Divergência de anexo na `nbr6122-2019-fundacoes`. A Skill diz Anexo J para hélice; Alonso cita o Anexo N. Cardozo suspeita que o erro está na Skill. É preciso conferir na norma.

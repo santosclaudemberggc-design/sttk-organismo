@@ -1,10 +1,10 @@
 ---
 name: fundacoes-solos-moles-lencol-freatico-barra-recreio
 description: "Critérios de projeto de fundações em solos moles e com lençol freático alto — condicionantes geotécnicos da Barra da Tijuca, Recreio dos Bandeirantes e Jacarepaguá: SPT, tipos de estaca e soluções recomendadas."
-version: "1.3"
+version: "1.2"
 status: ativa-com-ressalva
 created: 2026-09-21
-updated: 2026-10-01 (v1.3 — seção "Macetes de quem faz", M1-M4, Rotina de Macetes v1.2)
+updated: 2026-09-28 (v1.2 — correções do treino aprovadas por Claudemberg: checklist §6 com mínimo NBR 8036 condicionado à projeção; R6/R7 reordenadas)
 author: Rotina Diária Skills v3.2
 gestor_validador: cardozo
 agente_principal: baumgart
@@ -145,46 +145,6 @@ A NBR 6484:2020 **cancela e substitui** a NBR 6484:2001. O critério de paralisa
 
 ---
 
-## Macetes de quem faz
-
-> Entrou na v1.3 (01/10/2026, Rotina de Macetes v1.2), conferido por Cardozo contra esta Skill, a `nbr6122-2019-fundacoes` e a norma (até onde ela foi lida). Macete **não é norma**: é como o profissional experiente resolve. Os números citados vêm da fonte e precisam ser conferidos no texto da NBR antes de entrar em memorial.
-
-**M1 — Monitoramento não é controle: calibrar o equipamento num furo de sondagem**
-- **O que fazer:** no início do estaqueamento, fazer um teste de introdução do trado ao lado de um furo de sondagem, sem concretar (retirar girando ao contrário), anotando a cada metro rotação, velocidade de avanço e pressão de torque. Se o gráfico não se parecer com o NSPT, pedir nova sondagem a empresa qualificada. Se parecer, a parada das demais estacas daquela obra pode ser controlada pela pressão de torque daquele equipamento.
-- **Por que funciona:** o computador de bordo só registra; a hélice contínua é de "controle pouco abrangente". A qualidade do SPT caiu (Alonso cita Menezes 2013 e Medeiros Silva 2014), e na Barra o aterro heterogêneo já é o erro nº 4 desta Skill. O teste cruza duas medições independentes do mesmo solo.
-- **Quem disse / onde:** Eng. Urbano Rodriguez Alonso, Instituto de Engenharia, 2023 (F1, slides 26-27).
-- **Tipo:** A (profissional/autor técnico).
-- **Limite:** vale só para aquele equipamento e aquela obra. Não substitui a profundidade de projeto (§2, Baumgart fixa) nem prova de carga (NBR 16903:2020). O furo de teste fica fora da posição das estacas definitivas.
-
-**M2 — Ler o "perfil" da estaca como % de consumo, não como forma**
-- **O que fazer:** no relatório da hélice, olhar em que trechos houve sobreconsumo de concreto. Esses trechos têm de coincidir com as camadas moles da sondagem. Se não coincidirem, questionar a sondagem.
-- **Por que funciona:** o software desenha a estaca supondo um cilindro simétrico; a "forma" desenhada é ficção, o consumo por trecho é dado medido.
-- **Quem disse / onde:** Alonso (F1, slide 28).
-- **Tipo:** A.
-- **Limite:** não prova a integridade do fuste.
-
-**M3 — Erros de execução que Baumgart proíbe na especificação de hélice contínua**
-- **O que fazer:** escrever na especificação:
-  - (a) limitar a "prolonga" do trado em argila muito mole abaixo do NA. Exemplo de Alonso: prolonga de 6 m num equipamento de trado de 18 m; em trado menor, prolonga ≤ 10% do comprimento;
-  - (b) não parar a concretagem na cota de arrasamento quando ela fica abaixo do terreno, e não deixar a cabeça da estaca sem armadura depois do arrasamento;
-  - (c) armadura com no mínimo 4 m, e concha da escavadeira com no máximo 50% do espaço entre as estacas do bloco (evita quebra por impacto na escavação);
-  - (d) armadura longa: espaçadores tipo rolete no pé e no topo; concreto dosado com tecnólogo. Slump acima de 26 cm não resolve: em areia acima do NA, usar aditivo modificador de viscosidade/antissegregante (Alonso: ≤ 1% do cimento).
-- **Por que funciona:** são as patologias mais comuns que Alonso relata da execução (Geofix/Sondasa). Proibir na especificação é mais barato que discutir depois com a executora.
-- **Quem disse / onde:** Alonso (F1, slides 19-20, 29, 32), citando NBR 6122:2019, Anexo N, itens N4 (prolonga) e N6 (armadura).
-- **Tipo:** A.
-- **Limite:** conferir os valores no texto da NBR 6122 antes de citar em memorial. Registrar a técnica do aditivo, não a marca que Alonso cita. **Divergência a resolver:** Alonso põe a hélice contínua no Anexo N; a Skill `nbr6122-2019-fundacoes` (tabela da Emenda 1) chama o Anexo N de "escavadas com fluido" e o Anexo J de "hélice contínua". Uma das duas está com a letra trocada. Até conferir na norma, citar "Anexo da hélice contínua (N segundo Alonso)", não a letra seca.
-
-**M4 — Atrito negativo na argila da Baixada de Jacarepaguá**
-- **O que fazer:** se o lote vai receber aterro (alteamento de greide para fugir de alagamento, comum na Barra/Recreio) ou recebeu aterro recente, Baumgart considera atrito negativo com ponto neutro conservador (mais baixo) e, se possível, aterra ou pré-carrega antes de estaquear.
-- **Por que funciona:** o adensamento da argila sob o aterro "puxa" a estaca para baixo durante anos (ver erro nº 5 desta Skill). O estudo concluiu que, em argila extremamente compressível sob aterro, o ponto neutro fica bem mais baixo que nos métodos usuais, e o atrito negativo calculado pelos métodos correntes pode ficar contra a segurança.
-- **Quem disse / onde:** AZEVEDO, R. S., orientação Profªs Bernadete Ragoni Danziger e Denise M. S. Gerscovich, dissertação UERJ, 2017 (F2, Resumo).
-- **Tipo:** A (pesquisa acadêmica aplicada a caso real da região).
-- **Limite:** caso de estaca metálica sob talude de aterro; é previsão, não medição. A ordem de grandeza exige cálculo por caso. Pré-carga leva meses: entra no cronograma, não é decisão só de Baumgart.
-
-**Tipo B (executora/fabricante) e vídeo:** tentados, nada acessível (manuais de Geofix, Brasfond, Fundesp não localizados; nenhum vídeo). Fica para a próxima rodada.
-
----
-
 ## RESSALVAS
 
 **R1 (CRÍTICA) — Fonte primária:** dados de SPT médio e profundidade de camadas competentes NÃO foram obtidos de laudo geotécnico real da Barra/Recreio — são valores típicos de referência da literatura técnica (AECweb, APL Engenharia). Baumgart DEVE solicitar sondagem real antes de qualquer dimensionamento.
@@ -215,8 +175,6 @@ A NBR 6484:2020 **cancela e substitui** a NBR 6484:2001. O critério de paralisa
 - APL Engenharia — "Sondagem SPT paralisada pela NBR 6484: quando avançar para sondagem rotativa?" (secundária ✓ lida, 24/09 — critério 10/8/6 m)
 - boletimsondagem.com.br — "NBR 6484:2020: guia prático para boletim de sondagem SPT" (secundária ✓ lida, 24/09)
 - YouTube "QUANDO PARAR A SONDAGEM | NBR 6484 2020 ATUALIZADA" — localizado, **não assistido** (/watch bloqueado por HTTP 429/403 do YouTube em 24/09)
-- **F1** — ALONSO, Urbano Rodriguez. "Estacas Hélice Contínua — sua história no Brasil... controles da capacidade de carga e patologias mais comuns". Instituto de Engenharia (SP), 2023. https://www.institutodeengenharia.org.br/site/wp-content/uploads/2023/08/Helice-continua.pdf — slides 19, 20, 26-29, 32 (lida por Wallenberg em 01/10/2026; base de M1-M3)
-- **F2** — AZEVEDO, R. S. (orient. B. R. Danziger e D. M. S. Gerscovich). "Evolução do atrito negativo no tempo: estudo de um caso de estaca metálica em argila muito compressível". Dissertação UERJ, 2017. https://www.bdtd.uerj.br:8443/bitstream/1/11644/1/Rachel%20da%20Silva%20Azevedo1.pdf — Resumo (lido por Wallenberg em 01/10/2026; base de M4)
 
 ---
 
@@ -225,4 +183,3 @@ A NBR 6484:2020 **cancela e substitui** a NBR 6484:2001. O critério de paralisa
 - **1.0** — 21/09/2026 — criação (Rotina Diária Skills v3.2).
 - **1.1** — 24/09/2026 — R5 fechada (NBR 6484:2020 confirmada); critério de paralisação SPT adicionado; R7 nova.
 - **1.2** — 28/09/2026 — correções do treino aprovadas por Claudemberg: checklist §6 troca "mínimo 3 furos" sem condição pelo mínimo da NBR 8036 por área de projeção, com o reforço local 1/100–150 m² explicitado como recomendação de projeto; R6 e R7 reordenadas (R6 antes de R7).
-- **1.3** — 01/10/2026 — Rotina de Macetes v1.2: seção "Macetes de quem faz" com M1-M4 (F1 Alonso; F2 Azevedo/Danziger/Gerscovich UERJ), todos aprovados por Cardozo. M3 com divergência de letra de anexo (N × J) contra a `nbr6122-2019-fundacoes`, a conferir na norma.
