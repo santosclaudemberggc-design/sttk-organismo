@@ -26,7 +26,7 @@ Cimentícios (argamassa polimérica, cristalizante) · Asfálticos (manta tipo I
 
 **Áreas molhadas internas (box, cozinha, área de serviço):** impermeabilização de piso obrigatória em box/chuveiro; manta asfáltica ou membrana líquida com altura mínima **20cm nas paredes** (rodapé impermeável). **Rejunte não é impermeabilização** — o sistema fica abaixo do piso/revestimento, sempre.
 
-**Coberturas planas/acessíveis:** manta asfáltica estruturada tipo III/IV ou membrana PVC. Camadas: regularização → primer → impermeabilização → proteção mecânica → isolamento térmico (se aplicável; quando é aplicável: ver `cobertura-transmitancia-ucob-absortancia-atico-ventilado-nbr15575-5-rj`) → piso. Caimento mínimo 1% aos ralos.
+**Coberturas planas/acessíveis:** manta asfáltica estruturada tipo III/IV ou membrana PVC. Camadas: regularização → primer → impermeabilização → proteção mecânica → isolamento térmico (se aplicável) → piso. Caimento mínimo 1% aos ralos.
 
 **Subsolos e fundações:** contato com solo úmido usa impermeabilização rígida (cristalizante) ou flexível (manta) conforme lençol freático. Cortina de contenção: impermeabilização pelo lado externo (positiva) sempre que acessível.
 

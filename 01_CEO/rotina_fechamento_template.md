@@ -24,6 +24,30 @@ metadata:
 
 ---
 
+## [2026-10-01] — Diária Skills v3.5.0 (Quinta) — RODADA COMPLETA (2 Skills ativadas com ressalva)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** `(Get-Date).DayOfWeek` = Thursday. Início às 09:07. Pipeline seg-qui.
+- [x] **Passo 0:** `_passagem_do_dia.md` de 30/09 lido; a v1.0 da passagem foi lida corretamente. Prioridade zero conferida: a etapa 1 do Ensaio 003 (legal_base) **já foi criada hoje pelo Bardi** e está com status `aguardando_execucao`, pronta para a Drenagem. Só leitura, nada tocado. O último evento `status` do feed é de 28/09.
+- [x] **Kelsen/Hely, `selca-decreto50473-2026-licenciamento-ambiental-estadual-obra-residencial-rj` v1.1:** ativa-com-ressalva e instalada. Fecha a pendência SELCA de 29/09. O texto integral do DOERJ foi lido (pypdf). Kelsen fez 6 correções factuais; ressalvas R1 a R5. Primeira Skill nova de Kelsen desde 25/09.
+- [x] **Lúcio/Oscar, `cobertura-transmitancia-ucob-absortancia-atico-ventilado-nbr15575-5-rj` v1.1:** ativa-com-ressalva e instalada. Fecha o "U cobertura ≤ x" aberto na Skill da NBR 15575-4. Lúcio corrigiu o §4 (IPT), limitou a brecha do FT e retirou 2 macetes sem fonte.
+- [x] **Coerência:** remissões de volta em 5 Skills (legal-base, rebaixamento, nbr15575-4, nbr15220-3, nbr9575). Backups em `_backups/2026-10-01/` (5 arquivos). Sem contradição de valor.
+- [x] **Cardozo:** sem Skill (contenção/NBR 9061 sem fonte primária).
+- [x] **Feed:** 2 eventos, 2/2 OK. **Livro-razão:** `Decisoes_Autonomas/2026/Outubro.md` criado, com "como desfazer".
+- [~] **/watch:** as 3 buscas de vídeo (uma por Gestor) não acharam URL de vídeo assistível sobre os eixos. Só apareceram artigos e uma matéria que cita um vídeo (Talita Catelani), sem link. Nada assistido nesta rodada.
+- [ ] **Passo 8 (Trilha B):** não rodou, porque nenhum `_estado_` trouxe lacuna de ferramenta.
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **SELCA, R1:** competência SMAC × INEA (LC 140/2011, Art. 9º, XIV, e a resolução do CONEMA sobre impacto local). Kelsen achou também que lote com APP ou área alagadiça sai da LMS e vai para LMP+LMI, ainda municipal (Dec. 51.503/2022, Art. 27, parágrafo único). Dono: Hely.
+- **SELCA, R4:** lei estadual de outorga (Lei 3.239/1999, a confirmar) não lida. Dono: Hely.
+- **Cobertura, R1:** confirmar a Tabela 5 e o FT no texto publicado da NBR 15575-5:2021 (norma paga, fora do acervo). **Sugestão de compra:** NBR 15575 partes 1, 4 e 5, recorrentes em 3 Skills térmicas.
+- **Cardozo, candidata:** contenção de escavação em argila mole (NBR 9061 / cortina / estaca-prancha). Só criar com fonte primária ou fonte técnica de profissional lida.
+- **Continuam valendo:** varandas (3 lacunas, Kelsen); reservatório (reuso voluntário, Kelsen); rebaixamento R1/R3 (Hely); vidro R1/R2 (Lúcio); bug do /watch (`-vsync`).
+
+---
+
 ## [2026-09-29] — Diária Skills v3.4.0 (Terça) — RODADA COMPLETA (2 Skills ativadas, 4 treinos OK)
 
 ### RODADA ATUAL (O que foi entregue)
@@ -89,6 +113,10 @@ Consolidado em 30/09/2026 a partir de todas as rodadas de 01/09 a 29/09 (movidas
 - NBR 5419:2001 (SPDA) — não use como base; obsoleta, use a NBR 5419:2026 (Skill de 15/09).
 - LC 291/2025 — não crie Skill separada; coberta como histórico na Skill LC 301.
 - Regime de Licenciamento de Portugal (out/2026) — fora de escopo, não é RJ.
+- SELCA / Decreto Estadual 50.473/2026 — não duplique; Skill de 01/10 v1.1.
+
+**Lúcio — cobertura:**
+- Ucob, absortância de telha, ático ventilado e FT (NBR 15575-5) — não duplique; Skill de 01/10 v1.1.
 
 **Lúcio (Arquitetura):**
 - Ventilação cruzada / fachada poente / vidro de controle solar — não duplique sem parâmetro numérico real; coberta por Partido (16/09), Proteção Solar (17/09, v1.1→v1.3) e Vidro/INI-R (29/09 v1.2).

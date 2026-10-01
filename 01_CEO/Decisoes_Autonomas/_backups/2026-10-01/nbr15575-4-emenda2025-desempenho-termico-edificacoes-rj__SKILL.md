@@ -79,8 +79,6 @@ Conforme fontes secundárias consultadas (seedsolution.com.br, sienge.com.br):
 | Absortância da cobertura ≤ 0,6 | Referência geral Norma Desempenho (fonte secundária — a confirmar) | Mínimo |
 | Absortância ≤ 0,4–0,6 | Referência geral (fonte secundária — a confirmar) | M/I/S |
 
-> Ucob e absortância da cobertura: ver `cobertura-transmitancia-ucob-absortancia-atico-ventilado-nbr15575-5-rj` (01/10/2026, complementa). Na Tabela 5 a absortância não é limite isolado: escolhe a linha do limite de Ucob.
-
 ---
 
 ## 4. Método de Verificação Obrigatório (Obras Novas — Emenda 2025)

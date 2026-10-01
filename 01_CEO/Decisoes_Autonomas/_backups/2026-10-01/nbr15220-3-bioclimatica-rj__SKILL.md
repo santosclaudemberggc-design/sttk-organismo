@@ -27,7 +27,7 @@ A Emenda 1/2025 da NBR 15575 alinha os requisitos às 12 novas zonas:
 |---|---|---|
 | Capacidade Térmica (CTpar) | Isenta para sistemas de baixa inércia | **Obrigatória — mín. 130 kJ/(m².K)** para vedações |
 | Temperatura Operativa Mínima | Verificação exigida | **Não exigida** — só a máxima |
-| Isolamento em Cobertura | Obrigatório | **Não obrigatório** (mas desempenho térmico ainda precisa ser verificado por transmitância/CTpar) (isolante como premissa de desempenho: ver `cobertura-transmitancia-ucob-absortancia-atico-ventilado-nbr15575-5-rj`, §4) |
+| Isolamento em Cobertura | Obrigatório | **Não obrigatório** (mas desempenho térmico ainda precisa ser verificado por transmitância/CTpar) |
 
 Sistemas de baixa inércia (Light Steel Frame, pré-moldados leves) que não atendem CTpar ≥ 130 prescritivamente **precisam de simulação computacional** para comprovar desempenho.
 
