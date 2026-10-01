@@ -1,0 +1,37 @@
+{
+  "ensaio": "003",
+  "criado_em": "2026-09-30",
+  "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar.",
+  "etapa_atual": 1,
+  "status_etapa": "a_criar",
+  "proxima_acao": "criar_caso",
+  "valores_possiveis": {
+    "status_etapa": ["a_criar", "aguardando_execucao", "aguardando_aprovacao", "aprovada", "reprovada", "concluido"],
+    "proxima_acao": {
+      "criar_caso": "Rotina Ensaio Sombra (Bardi) monta enunciado + gabarito da etapa_atual",
+      "executar": "Drenagem aciona o Gestor dono, que executa com a equipe; depois Bardi corrige",
+      "refazer": "Drenagem corrige o que o parecer apontou e refaz a mesma etapa; depois Bardi corrige de novo",
+      "aguardar_claudemberg": "Ninguem faz nada. So Claudemberg muda este estado (aprovando ou reprovando)"
+    }
+  },
+  "etapas": [
+    {"n": 1,  "nome": "legal_base",              "titulo": "Legal — leis e parametros para o projeto nascer dentro das normas", "gestor": "kelsen",  "agentes": ["hely"]},
+    {"n": 2,  "nome": "viabilidade",             "titulo": "Viabilidade — Pre-Estudo CAB x CAM",                                 "gestor": "villaca", "agentes": ["mascaro", "fiker"]},
+    {"n": 3,  "nome": "levantamento",            "titulo": "Arquitetura — Levantamento",                                          "gestor": "lucio",   "agentes": ["oscar"]},
+    {"n": 4,  "nome": "briefing",                "titulo": "Arquitetura — Briefing",                                              "gestor": "lucio",   "agentes": ["oscar"]},
+    {"n": 5,  "nome": "estudo_preliminar",       "titulo": "Arquitetura — Estudo Preliminar",                                     "gestor": "lucio",   "agentes": ["oscar", "burle", "portinari"]},
+    {"n": 6,  "nome": "anteprojeto",             "titulo": "Arquitetura — Anteprojeto",                                           "gestor": "lucio",   "agentes": ["oscar", "burle", "portinari"]},
+    {"n": 7,  "nome": "legal_entrada",           "titulo": "Legal — entrada na prefeitura e no condominio (SIMULADA)",           "gestor": "kelsen",  "agentes": ["hely"]},
+    {"n": 8,  "nome": "estrutural",              "titulo": "Complementares — Estrutural",                                         "gestor": "cardozo", "agentes": ["baumgart"]},
+    {"n": 9,  "nome": "hidrossanitario",         "titulo": "Complementares — Hidrossanitario",                                    "gestor": "cardozo", "agentes": ["saturnino"]},
+    {"n": 10, "nome": "eletrico",                "titulo": "Complementares — Eletrico",                                           "gestor": "cardozo", "agentes": ["landell"]},
+    {"n": 11, "nome": "interiores",              "titulo": "Complementares — Interiores",                                         "gestor": "cardozo", "agentes": ["tenreiro"]},
+    {"n": 12, "nome": "paisagismo",              "titulo": "Complementares — Paisagismo",                                         "gestor": "cardozo", "agentes": ["glaziou"]},
+    {"n": 13, "nome": "automacao",               "titulo": "Complementares — Automacao",                                          "gestor": "cardozo", "agentes": ["landell"]},
+    {"n": 14, "nome": "compatibilizacao",        "titulo": "Fechamento — Compatibilizacao",                                       "gestor": "lele",    "agentes": []},
+    {"n": 15, "nome": "executivo",               "titulo": "Fechamento — Projeto Executivo",                                      "gestor": "lele",    "agentes": []},
+    {"n": 16, "nome": "orcamento",               "titulo": "Fechamento — Orcamento Executivo e Premissas",                        "gestor": "lele",    "agentes": []},
+    {"n": 17, "nome": "liberacao_obra",          "titulo": "Fechamento — Liberacao de Obra",                                      "gestor": "lele",    "agentes": []}
+  ],
+  "historico": []
+}

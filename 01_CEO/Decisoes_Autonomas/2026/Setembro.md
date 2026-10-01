@@ -1518,3 +1518,111 @@ Status atualizado de "proposta" para "ratificada" em cada arquivo, com data e co
    - a cópia em `Skills_Propostas/2026/Setembro/`.
 2. Apague os 2 treinos `2026-09-29_macete_*`.
 3. Reverta as linhas de 29/09 em `_estado_lucio.md` e `_estado_cardozo.md`.
+
+---
+
+## 30/09/2026 — Revisão das rotinas com Claudemberg (ao vivo): Ensaio Sombra 003 + Bardi
+
+**O que decidiu (Claudemberg):**
+- Um único mecanismo de teste, o **Ensaio Sombra 003**, com 17 etapas: as 16 do fluxograma mais a Viabilidade depois da Legal base.
+- O Notion fica só para os exames de nível.
+- O treino fictício da Diária sai.
+- Novo **Agente Examinador Bardi**, direto de Wallenberg. O nome foi escolhido por Wallenberg.
+- As operações começam às 08:30.
+
+**Por quê:**
+- A Drenagem rodava com a fila vazia, porque a Diária já ativa as Skills desde 08/09.
+- Nenhuma das Skills criadas em setembro foi usada em caso real.
+
+**O que alterou:**
+- Criados:
+  - `.claude/agents/bardi.md`
+  - `01_CEO/Agentes_Diretos/Bardi (Examinador)/_estado_bardi.md`
+  - `01_CEO/Casos_TESTE/ensaio_003/_estado_ensaio_003.json`
+  - `01_CEO/wallenberg-rotina-ensaio-sombra_SKILL.md`
+  - a tarefa `wallenberg-rotina-ensaio-sombra` (seg-sex 08:30)
+- Diária v3.5.0 (09:00): prompt agendado, referência e os dois checklists.
+- Drenagem v2.5.0 (11:00): prompt agendado com Passo 2.4 e FASE 4.5, referência com o adendo J.8.
+- Acervo passa para segunda 13:00. PLAYBOOK e COMECE_AQUI atualizados.
+- Macetes seguem pausados até a revisão.
+
+**Backup:** `_backups/2026-09-30/` (8 arquivos).
+
+**Como desfazer:**
+1. Restaure os arquivos do backup, incluindo `task_diaria_SKILL.md` e `task_drenagem_SKILL.md`, que voltam para as pastas das tarefas agendadas.
+2. Volte os cron: Diária `8 8 * * 1-5`, Drenagem `15 10 * * 1-5`, Acervo `0 7 * * 1`.
+3. Apague a tarefa `wallenberg-rotina-ensaio-sombra`, o `bardi.md` e `ensaio_003/`.
+
+**Adendo 30/09/2026: Rotina Macetes v1.2, aprovada por Claudemberg ao vivo.**
+
+O que mudou:
+- O treino fictício foi retirado.
+- A prioridade da fila agora segue o Ensaio 003:
+  - (0a) Skills apontadas pelo Bardi;
+  - (0b) Skills da próxima etapa.
+- Kelsen ganhou a fonte C (legal).
+- Regra das 2 tentativas: a Skill sai da fila e vai para "Sem fonte pública".
+- Portão de custo:
+  - Gestor sem Skill na fila não é aberto.
+  - Se a fila principal estiver esgotada, a rotina só trabalha às terças e quintas.
+- A tarefa foi religada. Próxima rodada: 01/10 às 14:00.
+
+Backup:
+- `_backups/2026-09-30/task_macetes_SKILL.md`
+- `_backups/2026-09-30/_macetes_fila.md`
+
+Como desfazer: copie os dois arquivos de volta para o lugar de origem.
+
+**Adendo 30/09/2026: o CronJob PDF virou Fechamento do Dia v1.0 (decisão de Claudemberg ao vivo).**
+
+Claudemberg não usa PDF. A intenção da rotina das 20:00 é deixar pronto para a Diária do dia seguinte o que já foi criado, em que data e por onde seguir.
+
+O que mudou:
+- **Tarefa `wallenberg-cronjob-pdf-2000`:** o prompt foi reescrito. Às 20:00 ela escreve `01_CEO/_passagem_do_dia.md` e mantém o `rotina_fechamento_template.md` com as 2 últimas rodadas e o "NÃO FAZER" acumulado. As rodadas antigas vão para `rotina_fechamento_historico.md`, sem apagar nada.
+- **Os 86 PDFs:** foram movidos para `Skills_Propostas/_Arquivo_PDF/2026/` (opção b).
+- **Diária:** no Passo 0 passa a ler a passagem. O commit dos PDFs saiu e deu lugar ao commit da passagem.
+- **Drenagem:** as menções a "PDF gêmeo" foram retiradas.
+- **Documentação:** os Checklists, o PLAYBOOK, o COMECE_AQUI e as duas referências foram atualizados.
+- **Primeira passagem:** escrita à mão por Wallenberg.
+
+Backup: `_backups/2026-09-30/task_pdf_SKILL.md`, `task_diaria_SKILL_v3.5.0.md` e `task_drenagem_SKILL_v2.5.0.md`.
+
+Como desfazer:
+1. Restaure os 3 prompts.
+2. Mova os PDFs de volta com `git mv _Arquivo_PDF/2026/* 2026/`.
+3. Apague `_passagem_do_dia.md`.
+
+**Adendo 30/09/2026: Reunião Semanal v2.0 (decisão de Claudemberg ao vivo).**
+
+O que mudou:
+- A reunião volta a ser **semanal**, às segundas 17:00. O teste quinzenal foi encerrado antes de 08/10, por decisão dele.
+- A pauta começa pela **Verificação dos Ensaios**. Ela confere se os ajustes das reprovações foram feitos e se o erro se repetiu.
+- Depois vem o resto do organismo: ratificação, com a linha "COMO RESPONDER" e um contador ⏳ de reuniões em espera; as decisões dele; a saúde de consumo.
+- O livro-razão lido passa a ser o do mês atual mais o anterior.
+- Sem PDF.
+- **Aprovar ou reprovar uma etapa do ensaio não depende mais da reunião.** Claudemberg responde direto na sessão da Drenagem que corrigiu a etapa (o relatório termina pedindo isso) ou em qualquer conversa.
+- `wallenberg-rotina-ensaio-sombra_SKILL.md` foi para a v1.1.
+
+Backup: `_backups/2026-09-30/task_reuniao_SKILL.md` e `wallenberg-rotina-ensaio-sombra_SKILL_v1.0.md`.
+
+Como desfazer:
+1. Restaure os 2 arquivos.
+2. Volte o cron para `30 10 * * 1`.
+
+**Adendo 30/09/2026: Rotina Acervo de Normas v1.2 (decisão de Claudemberg ao vivo).**
+
+O que mudou:
+- **Texto:** horário corrigido para segunda 13:00. O dono é Wallenberg; Kelsen/Hely só entram para legislação. O evento no Painel sai em nome de "Wallenberg (CEO)".
+- **Modo semanal leve:** confere só o que mudou, com um portão que encerra a rodada se nada mudou.
+- **Modo completo:** na 1ª segunda do mês.
+- **Prioridade:**
+  - P1: normas que o Bardi não conseguiu verificar;
+  - P2: normas das Skills da etapa atual e da próxima do Ensaio;
+  - P3: o que mudou na semana;
+  - P4: tudo, só no modo completo.
+- Norma que trava o Ensaio vai para o topo da lista de compra.
+- `bardi.md`: o parecer ganhou a seção "Fonte primária não verificada".
+
+Backup: `_backups/2026-09-30/task_acervo_SKILL.md` e `bardi_v1.md`.
+
+Como desfazer: restaure os 2 arquivos.

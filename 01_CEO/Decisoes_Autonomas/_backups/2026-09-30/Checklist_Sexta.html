@@ -114,16 +114,16 @@
     <h2 class="sec-title">Cronograma da Sexta</h2>
     <div class="timeline">
       <div class="time-slot">
-        <div class="slot-time">09:00–11:00</div>
+        <div class="slot-time">08:00–10:00</div>
         <div class="slot-info"><b>Passo 6 + 7 + 9 + 10</b> — Painel, Learning, Dashboard, Análise (90-120 min combinados)</div>
       </div>
       <div class="time-slot">
-        <div class="slot-time">até 11:00</div>
+        <div class="slot-time">10:00–10:15</div>
         <div class="slot-info"><b>Fechamento</b> — preencher template, anotações pro ciclo seguinte</div>
       </div>
       <div class="time-slot">
         <div class="slot-time">20:00 (noite)</div>
-        <div class="slot-info"><b>Automático 20:00</b> — Fechamento do Dia escreve a passagem para a Diária de amanhã (você não faz nada)</div>
+        <div class="slot-info"><b>Automático</b> — CronJob PDF roda (você não faz nada)</div>
       </div>
     </div>
   </div>
@@ -250,7 +250,7 @@
   </div>
 
   <div class="note">
-    <b>Nota importante [v3.4.0, 28/09/2026 — corrige a nota v3.1]:</b> [v3.5.0, 30/09] PDF não é mais gerado; às 20:00 roda o Fechamento do Dia (<code>01_CEO/_passagem_do_dia.md</code>) e a Diária da manhã seguinte faz o commit. Na sexta, depois do Dashboard (<b>[v3.5.0]</b> que agora mede a etapa atual do Ensaio Sombra 003 no lugar de "treinadas em caso fictício"; Diária começa 09:00), grave um evento <code>-Et "status"</code> com o resumo da semana e a contagem de membros: é ele que atualiza o topo do Painel sozinho. Segunda você começa ciclo diário novo (Passo 1-4+8 novamente).
+    <b>Nota importante [v3.4.0, 28/09/2026 — corrige a nota v3.1]:</b> o CronJob PDF roda seg-sex 20:00 e continua gerando PDF gêmeo das Skills; a Diária da manhã seguinte faz o commit deles. Na sexta, depois do Dashboard (que agora mede também "treinadas em caso fictício"), grave um evento <code>-Et "status"</code> com o resumo da semana e a contagem de membros: é ele que atualiza o topo do Painel sozinho. Segunda você começa ciclo diário novo (Passo 1-4+8 novamente).
   </div>
 
   <div class="footer">

@@ -1,6 +1,6 @@
 ---
 name: wallenberg-rotina-diaria-skills-v2-9
-version: 3.5.0
+version: 3.4.0
 created: 2026-08-28
 based_on: "v3.0 + Consolidação de Fonte Única 16/09/2026"
 enhancements: 
@@ -23,13 +23,6 @@ enhancements:
 ---
 
 # Wallenberg Rotina Diária Skills v3.0
-
-> **[v3.5.0 — 30/09/2026, decisões de Claudemberg — PREVALECE sobre qualquer trecho abaixo]**
-> 1. **Horário: seg-sex 09:00** (operações começam 08:30). Onde este arquivo disser "08:00" ou que a Drenagem roda "10:15", leia 09:00 e 11:00. Ordem do dia: Ensaio Sombra 08:30 → Diária 09:00 → Drenagem 11:00 → Macetes 14:00 → PDF 20:00.
-> 2. **Treino em caso fictício RETIRADO** (Passo 0.5, Passo 4.7, métricas "treinadas" da sexta). Único mecanismo de teste: **Ensaio Sombra 003** — `01_CEO/wallenberg-rotina-ensaio-sombra_SKILL.md`, Agente Examinador `bardi`, execução pela Drenagem, aprovação de Claudemberg etapa por etapa. Notion "Treinos e Testes" fica só para exames de nível.
-> 3. Do `rotina_fechamento_template.md`, ler só a rodada mais recente + "O QUE NÃO FAZER" (economia de ~26 mil tokens por rodada).
-> 4. Não tocar em `01_CEO/Casos_TESTE/ensaio_003/`.
-> 5. **PDF aposentado.** Skills e livro-razão ficam só em `.md`; o antigo CronJob PDF 20:00 virou **Fechamento do Dia**, que escreve `01_CEO/_passagem_do_dia.md` (lido no Passo 0) e mantém o template enxuto (rodadas antigas em `rotina_fechamento_historico.md`). PDFs antigos em `Skills_Propostas/_Arquivo_PDF/`. Ignore a seção "5. GERAR PDFs" e toda menção a "PDF gêmeo" abaixo.
 
 **REDEFINIDA COM CHECKLISTS VISUAIS + DASHBOARD + AGENDADOR**
 
@@ -243,7 +236,7 @@ Skill de conhecimento técnico (Trilha A — normas, técnicas de projetar, regr
 
 **[v3.4.0] Parecer "NÃO PROCEDE" = arquivamento imediato.** Skill que o Gestor dono julga não aplicável é movida (`.md` + `.pdf`) para `Skills_Propostas/_Arquivadas/{Ano}/` na mesma rodada, com status "arquivada — motivo + como desfazer", `indice.md` e livro-razão atualizados. Não fica mais parada "aguardando Claudemberg" (caso LC 301, parado de 23 a 28/09).
 
-**[RETIRADO em v3.5.0 — 30/09/2026: substituído pelo Ensaio Sombra 003. Texto mantido só como histórico.]** **[v3.4.0] TREINO EM CASO FICTÍCIO — decisão de Claudemberg 28/09/2026.** "Quanto mais Skills, mais inteligentes ficam os Agentes, mesmo sem caso real — mas eles devem aplicá-las em casos fictícios como teste, para estarem habituados quando o caso real chegar." Toda Skill ativada recebe, no mesmo dia, um mini-caso fictício de Barra/Recreio (marcado FICTÍCIO) resolvido pelo Agente principal e conferido pelo Gestor; resposta salva em `01_CEO/Gestores/{Gestor}/Casos_TESTE/treino_skills/`, resultado no `indice.md` (`treino: ok / falhou / pendente`). Pendentes são feitos primeiro na rodada seguinte. O Dashboard de sexta mede "treinadas em caso fictício" ao lado de "usadas em caso real".
+**[v3.4.0] TREINO EM CASO FICTÍCIO — decisão de Claudemberg 28/09/2026.** "Quanto mais Skills, mais inteligentes ficam os Agentes, mesmo sem caso real — mas eles devem aplicá-las em casos fictícios como teste, para estarem habituados quando o caso real chegar." Toda Skill ativada recebe, no mesmo dia, um mini-caso fictício de Barra/Recreio (marcado FICTÍCIO) resolvido pelo Agente principal e conferido pelo Gestor; resposta salva em `01_CEO/Gestores/{Gestor}/Casos_TESTE/treino_skills/`, resultado no `indice.md` (`treino: ok / falhou / pendente`). Pendentes são feitos primeiro na rodada seguinte. O Dashboard de sexta mede "treinadas em caso fictício" ao lado de "usadas em caso real".
 
 **Skill de Gestor ainda não implantado** (hoje: Fechamento) continua saindo como `proposta` — sem Gestor dono, não há quem valide nem Agente que consuma. Ela ativa quando o Gestor for criado.
 

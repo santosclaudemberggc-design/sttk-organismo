@@ -1,14 +1,12 @@
 ---
 name: wallenberg-drenagem-continua-v2-3
-version: 2.5.0
+version: 2.4.2
 created: 2026-07-27
 recriado: 2026-08-28
 based_on: "Especificação completa fornecida por Claudemberg em 28/08/2026 — campos B e C copiados integralmente, sem reescrita, a pedido dele"
 ---
 
 # 📋 WALLENBERG DRENAGEM CONTÍNUA v2.3 — ESPECIFICAÇÃO COMPLETA
-
-> **[v2.5.0 — 30/09/2026 — PREVALECE sobre qualquer horário/trecho abaixo]** Drenagem roda **seg-sex 11:00** (não 10:15); Diária 09:00; Ensaio Sombra 08:30. A Drenagem passa a **executar o Ensaio Sombra 003** (Passo 2.4 + FASE 4.5 da tarefa agendada, detalhe no adendo J.8 no fim deste arquivo). Treino em caso fictício retirado (J.7 item 3 revogado). **PDF aposentado:** nenhum "PDF gêmeo" é gerado (livro-razão, SKILL, Skills ficam só em `.md`); às 20:00 roda o Fechamento do Dia.
 
 ## A. METADADOS (Configuração Básica)
 
@@ -863,17 +861,12 @@ Incidente real: a rodada de 17/09/2026 (10:22) da tarefa agendada foi interrompi
 
 **Como desfazer:** reverter esta seção J.7 e o bloco `[v2.4.2]` do Passo 3 na tarefa agendada (backups em `_backups/2026-09-28/`).
 
-**J.8 — Execução do Ensaio Sombra 003 (30/09/2026, decisão de Claudemberg).** Diagnóstico: desde a v2.9 da Diária (08/09) ela mesma valida/ativa as Skills, e a Drenagem passou a rodar com fila vazia (29/09: ~1 min). Decisão: o teste do organismo passa a ser um só — o Ensaio Sombra 003, 17 etapas (Legal base → Viabilidade → Levantamento → Briefing → EP → Anteprojeto → Legal entrada (simulada) → Estrutural → Hidrossanitário → Elétrico → Interiores → Paisagismo → Automação → Compatibilização → Executivo → Orçamento → Liberação de Obra). Divisão: Rotina Ensaio Sombra (08:30) aciona o **Bardi**, que monta enunciado + gabarito lacrado (hash SHA256 no `_estado_ensaio_003.json`); a **Drenagem (11:00)** executa (Passo 2.4 lê o estado; Passo 5.5 Gestor dono executa com a equipe, confere o lacre, Bardi corrige; Passo 5.6 refaz a mesma etapa se reprovada); **só Claudemberg aprova/reprova**, ao vivo — nenhuma rotina escreve aprovação. Sem etapa liberada, as duas rotinas encerram lendo 1 arquivo. Revogado: treino em caso fictício (J.7 item 3).
-
-**Como desfazer:** restaurar `task_drenagem_SKILL.md` e este arquivo de `_backups/2026-09-30/`; desativar a tarefa `wallenberg-rotina-ensaio-sombra`.
-
 ---
 
 ## HISTÓRICO DE VERSÕES
 
 | Versão | Data | Mudança |
 |--------|------|---------|
-| 2.5.0 (adendo J.8) | 30/09/2026 | Drenagem executa o Ensaio Sombra 003 (Bardi corrige, Claudemberg aprova); horário 10:15 → 11:00; treino fictício revogado. |
 | 2.4.2 (adendo J.7) | 28/09/2026 | Coerência entre Skills (complementa/diferente/substitui), arquivamento imediato de "não procede", treino em caso fictício; rótulo de versão da Diária corrigido. |
 | 2.4.1 (adendo J.6) | 17/09/2026 | **Blindagem de permissão.** Proibido `Bash` encadeando `cd "..." && powershell -Command "..."` — sempre tool `PowerShell` nativa direta. Causa raiz confirmada de incidente real: rodada 17/09 interrompida no Passo 2 por rejeição automática de permissão (comando Bash+PowerShell nunca antes aprovado, ninguém presente pra aprovar), sessão morreu sem acionar Gestor, sem commit, sem relatório — mas `list_task_runs` reportou `"succeeded"` (falso positivo). |
 | 2.4 (adendo J.5) | 16/09/2026 | **Mesclagem, não substituição.** Filtro geográfico (Barra/Recreio via `INDICE_PRIORIDADES.md`), mecanismo antifrail de refação de teste mal atribuído no Notion, staging de MCP antes de instalar (`staging_mcp.json`), Passo 8c migrado de edição direta de HTML para `Append-STTKLog.ps1`, auditoria do nó terminal Lelé (`auditoria_lele.json`). Pedido original era sobrescrita integral; recusado depois de confirmar que apagaria Portão de Trabalho, hierarquia de Gestor, gate de Autonomous e fronteira crítica — nenhum dos quais estava no texto novo. |

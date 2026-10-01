@@ -7,7 +7,7 @@
 ## 📌 O Que Mudou?
 
 Antes: Pesquisa + Consolidação + Redação = processo longo e manual  
-Depois: **Mesmo processo, checklist visual + automação 20:00 (PDFs)**
+Depois: **Mesmo processo, checklist visual + Fechamento do Dia às 20:00**
 
 ---
 
@@ -41,8 +41,10 @@ Depois: **Mesmo processo, checklist visual + automação 20:00 (PDFs)**
 
 ## ⚙️ Automação (você não controla)
 
-- **20:00 toda noite:** CronJob gera PDFs das Skills
-- **08:00 toda manhã:** Agendador dispara rotina
+- **20:00 seg-sex:** Fechamento do Dia (passagem para a Diária de amanhã, sem PDF)
+- **08:30 seg-sex:** Ensaio Sombra (Bardi monta o caso, se liberado)
+- **09:00 seg-sex:** Rotina Diária de Skills
+- **11:00 seg-sex:** Drenagem Contínua (executa o Ensaio)
 
 ---
 

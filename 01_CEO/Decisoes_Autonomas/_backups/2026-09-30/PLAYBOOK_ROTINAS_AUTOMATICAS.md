@@ -17,21 +17,14 @@ Atualizar sempre que uma rotina mudar de forma que afete o comportamento esperad
 
 | Rotina | Arquivo | Frequencia | Papel |
 |--------|---------|------------|-------|
-| Ensaio Sombra | `wallenberg-rotina-ensaio-sombra_SKILL.md` | seg-sex 08:30 | Bardi monta o caso da etapa liberada do Ensaio 003 (so anda com aprovacao de Claudemberg) |
-| Diaria Skills | `wallenberg-rotina-diaria-skills-v2_SKILL.md` | seg-sex 09:00 | Descobrir, documentar e ativar Skills (com validacao do Gestor dono) |
-| Drenagem Continua | `wallenberg-drenagem-continua-v2_SKILL.md` | seg-sex 11:00 | Executar a etapa do Ensaio 003, drenar pendencias, exames de nivel, implantar ferramentas |
-| Reuniao | tarefa agendada | segunda 17:00 (semanal) | Verificacao dos ensaios + ratificacao e decisoes com Claudemberg |
-| Acervo de Normas | tarefa agendada | segunda 13:00 | Manter D:\008_Normas ABNT |
-| Macetes | tarefa agendada | seg-sex 14:00 | Macetes de profissionais e empresas |
-| Fechamento do Dia | tarefa agendada (ex-CronJob PDF) | seg-sex 20:00 | Escreve 01_CEO/_passagem_do_dia.md e enxuga o rotina_fechamento_template.md. Sem PDF desde 30/09/2026 |
+| Diaria Skills | `wallenberg-rotina-diaria-skills-v2_SKILL.md` | Todo dia (08:00) | Descobrir e documentar ferramentas e conhecimento novo |
+| Drenagem Continua | `wallenberg-drenagem-continua-v2_SKILL.md` | Todo dia (10:15, seg-sex) | Drenar fila de pendencias, acionar Gestores, implantar Skills |
 
-### Como as rotinas se relacionam [atualizado 30/09/2026]
+### Como as rotinas se relacionam
 
 ```
-Ensaio Sombra (Bardi) -> caso + gabarito lacrado da etapa liberada
-Diaria Skills         -> Skills novas, validadas e ativas
-Drenagem              -> Gestor executa a etapa -> Bardi corrige -> aguarda Claudemberg
-Claudemberg           -> aprova (proxima etapa) ou reprova (Drenagem corrige e refaz)
+Diaria Skills  ->  produz Skills com Status: proposta
+Drenagem       ->  le Skills com Status: proposta  ->  implanta  ->  atualiza Status
 ```
 
 Regra fundamental: a Drenagem nao busca ferramenta. A Diaria Skills nao implanta.
@@ -48,7 +41,7 @@ prontas para implantacao pela Drenagem Continua.
 
 ### Quando roda
 
-Seg-sex as 09:00 (desde 30/09/2026). Disparo automatico agendado.
+Todo dia as 08:00. Disparo automatico agendado.
 
 ### Fronteira — o que nao faz
 
@@ -209,7 +202,7 @@ O indice alimenta a Reuniao Mensal.
 
 ---
 
-### PASSO 5 — Gerar PDFs [APOSENTADO 30/09/2026: Skills ficam so em .md; PDFs antigos em Skills_Propostas/_Arquivo_PDF/]
+### PASSO 5 — Gerar PDFs
 
 **O que:** Gerar PDF gemeo de cada `.md` criado ou alterado nesta rodada (Skill e indice).
 

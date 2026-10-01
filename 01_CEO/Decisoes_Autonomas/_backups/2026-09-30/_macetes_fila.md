@@ -2,17 +2,10 @@
 
 Arquivo da rotina `wallenberg-rotina-macetes-profissionais` (seg–sex, 14:00). Serve para não repetir uma Skill enquanto houver outras na fila.
 
-**Prioridade [v1.2 — 30/09/2026]:**
-- 0a. Skill apontada pelo Bardi no Ensaio Sombra 003 (não usada / isca em que caiu).
-- 0b. Skill da próxima etapa do Ensaio 003 ainda sem macete.
-- 1. Skill sem a seção "Macetes de quem faz".
-- 2. Skill com macetes só tirados da norma.
-
-Skill que chegar à 2ª rodada sem macete aprovado vai para "Sem fonte pública" (fim do arquivo) e sai da fila. Treino fictício retirado em v1.2 — a coluna "Treino" abaixo é histórica.
-
-## Sem fonte pública (fora da fila até aparecer pista nova)
-
-*(vazio)*
+**Prioridade:**
+1. Skill sem a seção "Macetes de quem faz".
+2. Skill com macetes só tirados da norma.
+3. Skill mais usada em treinos e casos.
 
 ## Histórico
 
