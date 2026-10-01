@@ -3,8 +3,8 @@
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar.",
   "etapa_atual": 1,
-  "status_etapa": "a_criar",
-  "proxima_acao": "criar_caso",
+  "status_etapa": "aguardando_execucao",
+  "proxima_acao": "executar",
   "valores_possiveis": {
     "status_etapa": ["a_criar", "aguardando_execucao", "aguardando_aprovacao", "aprovada", "reprovada", "concluido"],
     "proxima_acao": {
@@ -33,5 +33,7 @@
     {"n": 16, "nome": "orcamento",               "titulo": "Fechamento — Orcamento Executivo e Premissas",                        "gestor": "lele",    "agentes": []},
     {"n": 17, "nome": "liberacao_obra",          "titulo": "Fechamento — Liberacao de Obra",                                      "gestor": "lele",    "agentes": []}
   ],
-  "historico": []
+  "historico": [
+    {"etapa": 1, "evento": "caso_criado", "data": "2026-10-01", "gabarito_sha256": "48867C3CAFF7ADE3F3CD805ACD54B79F09A24CFD1BEC4A350DF7EB1FEE85C9F9"}
+  ]
 }
