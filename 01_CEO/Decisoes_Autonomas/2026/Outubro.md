@@ -113,3 +113,16 @@
 - **Como desfazer:**
   - Copiar cada `_ANTES` de volta ao caminho original.
   - No `feed.jsonl`, apagar as 5 últimas linhas (30/09 marco Ensaio/Bardi; 01/10 marco etapa 1; 02/10 marco etapa 2; 02/10 sistema Dashboard; 02/10 status Resumo).
+
+---
+
+## 02/10/2026 — Drenagem Contínua v2.5.0 (sex, 11:03–~11:30) — Ensaio 003, etapa 2 executada e corrigida
+
+- **Portão:** 0 itens auto+aberta; 0 Skills novas (as 2 de outubro já estão `ativa-com-ressalva`); Notion com 0 `pendente` e 2 `em execução` (LELE-002 e VILLACA-001, aguardando a Trava 3); ensaio_pend=SIM (etapa 2, `executar`).
+- **Execução:** Villaça (Gestor Viabilidade) executou com Mascaró (custo de obra) e Fiker (revenda). Entrega em `01_CEO/Casos_TESTE/ensaio_003/etapa_02_viabilidade/entrega/` (3 arquivos).
+- **Incidente de processo:** na 1ª passada, Villaça delegou Mascaró e Fiker em segundo plano e devolveu sem integrar, o mesmo antipadrão de delegação órfã de 09/09. Wallenberg vigiou o disco até os 2 arquivos existirem e retomou Villaça (SendMessage), que auditou e integrou. Villaça registrou a lição no próprio `_estado_villaca.md`.
+- **Lacre:** SHA256 `36FC592A…C88` conferido antes da execução e antes da correção. Íntegro.
+- **Correção do Bardi:** recomendação **APROVAR COM RESSALVA**. Iscas pegas: 1 (OODC), 3 (radier × sondagem) e 4 (corretor e crédito). Iscas parciais: 2 e 5 (CUB e revenda aplicados sobre a área computável, e não sobre a construída). Parecer em `etapa_02_viabilidade/parecer_bardi.md`.
+- **JSON do ensaio:** `aguardando_aprovacao` / `aguardar_claudemberg`. O histórico recebeu o evento `executada_e_corrigida`.
+- **Painel:** 1 evento `marco` gravado via Append-STTKLog (OK).
+- **Como desfazer:** reverter o commit desta rodada. No `feed.jsonl`, apagar a última linha (02/10, marco, Bardi, etapa 2 corrigida).

@@ -3,8 +3,8 @@
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar.",
   "etapa_atual": 2,
-  "status_etapa": "aguardando_execucao",
-  "proxima_acao": "executar",
+  "status_etapa": "aguardando_aprovacao",
+  "proxima_acao": "aguardar_claudemberg",
   "valores_possiveis": {
     "status_etapa": ["a_criar", "aguardando_execucao", "aguardando_aprovacao", "aprovada", "reprovada", "concluido"],
     "proxima_acao": {
@@ -37,6 +37,7 @@
     {"etapa": 1, "evento": "caso_criado", "data": "2026-10-01", "gabarito_sha256": "48867C3CAFF7ADE3F3CD805ACD54B79F09A24CFD1BEC4A350DF7EB1FEE85C9F9"},
     {"etapa": 1, "evento": "executada_e_corrigida", "data": "2026-10-01", "veredito_recomendado": "aprovar"},
     {"etapa": 1, "evento": "aprovada_por_claudemberg", "data": "2026-10-01", "obs": "Aprovada ao vivo na sessao da Drenagem. Claudemberg determinou que Kelsen corrija os erros do parecer do Bardi e capacite Hely; ferramenta/plugin que Kelsen nao consiga dar sobe a Wallenberg, e o que Wallenberg nao puder sobe a Claudemberg na Reuniao Semanal."},
-    {"etapa": 2, "evento": "caso_criado", "data": "2026-10-02", "gabarito_sha256": "36FC592A7222063187C50CA4FAAA25C03E25DB217C69C19A56153C8C3F382C88"}
+    {"etapa": 2, "evento": "caso_criado", "data": "2026-10-02", "gabarito_sha256": "36FC592A7222063187C50CA4FAAA25C03E25DB217C69C19A56153C8C3F382C88"},
+    {"etapa": 2, "evento": "executada_e_corrigida", "data": "2026-10-02", "veredito_recomendado": "aprovar_com_ressalva"}
   ]
 }

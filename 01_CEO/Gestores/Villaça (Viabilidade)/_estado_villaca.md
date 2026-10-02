@@ -20,7 +20,16 @@
 - Respondido: `01_CEO/Gestores/Villaça (Viabilidade)/exame_NTN-2026-VILLACA-001_resposta.md`. Aceitei o Legal preliminar só como insumo condicional (matriz por hipótese de subzona). Devolvi: a OODC com 30% da LC 301 (fora da fronteira de Mascaró/Fiker; aplicabilidade não confirmada segundo o veredito do Kelsen de 23/09, Art. 58 da LC 301 → Art. 40 da LC 281; prazo de 01/12 inviável), a revenda pela média Barra+Recreio misturada (Fiker) e o CAM da subzona mais favorável (escolha da hipótese mais favorável). Recusei a frase "lucro garantido". Entrego só a Wallenberg, aguardando aprovação. Nada ao cliente nem a Lúcio.
 - **[28/09/2026] Exame aprovado e promoção Shadow→Assisted ratificada por Claudemberg (trava 3).** Nível atual: **Assisted** — executo com supervisão; Wallenberg revisa antes de qualquer entrega ao cliente.
 
+## 1.3 Ensaio Sombra 003 — Etapa 02 (02/10/2026) — CONCLUÍDA na 2ª rodada
+- Entrega: `01_CEO/Casos_TESTE/ensaio_003/etapa_02_viabilidade/entrega/pre_estudo_viabilidade_003.md` (8 seções), integrando os arquivos de Mascaró e Fiker após auditoria item por item (seção 6). Devoluções registradas: Mascaró (SINAPI hélice RJ, tabela CAU, piso da demolição); Fiker (PDF FipeZAP, comparáveis de 2 pavimentos em lote de 600 m², base de área). Aguarda revisão de Wallenberg e correção de Bardi.
+- Histórico da 1ª rodada (incompleta):
+- Li enunciado, caso base, parecer Hely e auditoria Kelsen, Skill OODC v1.1 e Skill fundações. Deleguei de verdade (Agent, em segundo plano) a Mascaró (custo, `entrega/custo_obra_mascaro_003.md`) e Fiker (revenda, `entrega/revenda_fiker_003.md`).
+- O harness exigiu meu retorno antes de os dois devolverem; nenhum arquivo existia no disco (Glob). `pre_estudo_viabilidade_003.md` NÃO foi gravado: não integro sem auditar.
+- Achados já prontos para integrar: CAB = CAM = 1,0 -> OODC = R$ 0, não aplicável (LC 270 Art. 345 §3º); cenários reais são de área (S1 457,44 / S2 480 / S3 297,28 m²); 28,20 m² = 4,70% da área (< 1/20, CC Art. 500 §1º presume referência enunciativa; Art. 501 decadência de 1 ano do registro, 07/2026) -> pergunta a Kelsen; proporcional aritmético 3,3 mi x 28,20/600 = R$ 155.100 (referência, não valor); aluguel R$ 18.000 x 20 meses de obra = R$ 360.000; FipeZap Raio-X 1T2026: desconto médio de 9% (13% onde houve desconto), nacional; banco: teto de R$ 3 mi, 60% sobre terreno + obra executada pelo laudo do banco (o "R$ 5 mi" do Rodrigo não existe).
+- Lição: delegação em segundo plano + exigência de retorno do harness = risco de órfão. Próxima vez, delegar com run_in_background false (bloqueante) quando a integração depender do retorno.
+
 ## 2. Pendências abertas
+- [PENDENTE] Ensaio 003 Etapa 02: perguntas a Kelsen (CC 500/501; Regramento Art. 8 x fundação; CAB=CAM não relido por Kelsen) e a Wallenberg (Cardozo/radier; banco); devoluções a Mascaró e Fiker (ver seção 6 do pré-estudo).
 - [ABERTO, achado no Caso 002] Custo da OODC não calculável (falta VUP/FIS reais) — estrutural ao ensaio (lote fictício), mas registrar como padrão: em caso real, é o primeiro dado a buscar via RIU antes de fechar comparativo CAB x CAM.
 - [ABERTO, achado no Caso 002] Amostra de revenda do cenário CAM (Fiker) ficou com 1 comparável direto só — amostra fraca, sinalizado à parte para Claudemberg.
 - [RESOLVIDO 18/09/2026] Promoção Formação→Shadow — aprovada por Claudemberg.
