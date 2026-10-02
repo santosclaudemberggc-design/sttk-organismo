@@ -24,7 +24,8 @@ Tarefa `wallenberg-drenagem-continua-local` · seg-sex 11:00 · referência `01_
 | 28/09 | sim | sessão aberta por cerca de 24 h | — | Anomalia: last_activity 29/09 10:11 |
 | 29/09 | sim | ~1 min | fila vazia | Sintoma que motivou a v2.5.0 |
 | 30/09 | pausada | — | — | Revisão das rotinas |
+| 01/10 | sim | ~2h25min (14:04-16:28) | Ensaio 003 etapa 1 executada e corrigida; varredura mensal de Drive; pós-aprovação: Kelsen corrigiu 4 Skills + 2 POPs e capacitou Hely | Duração bem acima da média das rodadas reais (~14 min, excluindo a anomalia de 28/09) — explicada pelo volume: 1ª execução do Ensaio + correções ordenadas ao vivo por Claudemberg na mesma sessão |
 
 ## 3. Candidatas a melhoria
 - (aberta) **Sessão de 28/09 ficou aberta cerca de 24 h.** Verificar se ela se repete.
-- (aberta) **Primeira execução do Ensaio em 01/10.** Observar duração, custo e se o Gestor respeita o gabarito lacrado.
+- (confirmada 01/10) **Primeira execução do Ensaio em 01/10.** Durou ~2h25min, cerca de 10x a média das rodadas anteriores (23-29/09, excluindo a anomalia de 28/09). Gabarito lacrado respeitado (SHA256 conferido antes/depois). Observar se a duração cai nas próximas etapas ou se é o novo normal com o Ensaio rodando.

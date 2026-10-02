@@ -13,7 +13,33 @@ Rodadas completas movidas aqui, sem edição, a partir de `01_CEO/rotina_fechame
 O template mantém só as 2 rodadas mais recentes + a seção consolidada "O QUE NÃO FAZER (acumulado)".
 Os itens ❌ de todas as rodadas abaixo já foram incorporados nessa seção consolidada — não precisa reler tudo aqui para saber o que não fazer; venha aqui só para o detalhe completo de uma rodada específica.
 
-**Movido em:** 30/09/2026, pelo Fechamento do Dia v1.0 (primeira execução deste formato).
+**Movido em:** 30/09/2026, pelo Fechamento do Dia v1.0 (primeira execução deste formato). Nova rodada movida em 01/10/2026.
+
+---
+
+## [2026-09-28] — Diária Skills v3.2 (Segunda) — RODADA COMPLETA (2 Skills ativadas)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** `(Get-Date).DayOfWeek` = Monday. Início às 08:38. Pipeline seg-qui.
+- [x] **Saturnino, `reservatorio-retardo-decreto23940-aguas-pluviais-rj` v1.1:** ativa-com-ressalva e instalada. Decreto 23.940/2004 e Res. Conj. 001/2005 lidos no texto primário (PDFs extraídos com pypdf porque o WebFetch devolveu binário). Cardozo leu os dois PDFs inteiros: PROCEDE COM RESSALVA, com 4 correções aplicadas.
+- [x] **Kelsen, `varandas-nao-computaveis-ate-to-coes-lc198-rj` v1.1:** ativa-com-ressalva e instalada. COES Art. 8º §4º (varanda residencial fora da ATE e da TO). Kelsen conferiu no consolidado da SMU, sem alteração, e acrescentou o Dec. 45.917 Art. 6º (5 m entre varandas em grupamento).
+- [x] **Lúcio:** sem Skill. A lacuna de vidro de controle solar é real, mas as fontes não trazem números.
+- [x] **Feed:** 2 eventos, 2/2 OK.
+- [x] **Livro-razão:** entrada 28/09 em `Setembro.md`, com "como desfazer". Primeira entrada da Diária seg-qui desde 10/09.
+- [x] **Backups:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-28/` (3 arquivos).
+- [~] **/watch (v3.3.1):** Lúcio assistiu de verdade "EP14 - Vidros com controlo solar" (youtube.com/shorts/Z0buYmS8fDE), mas as legendas deram 429 e a extração de quadros do script falhou (o ffmpeg novo não aceita `-vsync`). Tirei os quadros com ffmpeg direto e vi 4. É conversa comercial (Portugal) sem parâmetro técnico, então não gerou Skill. Kelsen e Cardozo: a busca de vídeo não achou material relevante (só notícias e texto).
+- [ ] **Passo 8 (Trilha B):** não rodou. Nenhum `_estado_` trouxe lacuna de ferramenta nesta rodada.
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **Lúcio corrige a Skill de partido de 16/09** (linhas 70-72). O limite de 20% da área útil vem do §5º do COES (não residencial). Kelsen recomenda retirar a "projeção máxima 2 m (Dec. 7336/1988)".
+- **Kelsen R1:** a Barra/Recreio (LC 270/2024 com o Dec. 3046/81 incorporado) tem regra própria de cômputo de varanda? Hely confirma no RIU/SMDU.
+- **Remissão cruzada:** `legal-base-legislativa-bairro`, linha 85, apontar para a Skill de varandas (Kelsen, com backup).
+- **Saturnino:** texto da Lei Estadual 9.164/2020 na ALERJ; Decretos 26.168/2006 e 32.119/2010; vigência do rito pós-LICIN 2.0; conflito de uso com a NBR 16783 (descarga sanitária).
+- **Bug do /watch:** `scripts/frames.py` usa `-vsync`, que o ffmpeg instalado já não aceita (trocar por `-fps_mode`). É plugin de terceiro, então não editei; decisão de Claudemberg. O 429 nas legendas voltou (o mesmo de 24/09).
+- **Orçamento:** foram 7 WebSearch, e não 6. A 7ª localizou o texto primário da LC 198, porque a busca de Kelsen só trouxe a matéria indireta.
+- Continuam valendo as pendências de 25/09 (Lint: duplicata no `indice.md`, contradição nbr6122 x fundações Barra, LC 301, span do Painel, livro-razão no prompt agendado).
 
 ---
 

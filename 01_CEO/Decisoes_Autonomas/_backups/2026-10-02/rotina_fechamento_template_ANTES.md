@@ -24,39 +24,6 @@ metadata:
 
 ---
 
-## [2026-10-02] — Diária Skills v3.5.0 (Sexta) — FLUXO DE SEXTA (Passos 6, 9, 10; sem Skill nova)
-
-### RODADA ATUAL (O que foi entregue)
-
-- [x] **Dia confirmado:** `(Get-Date).DayOfWeek` = Friday. Início às 09:06. Fluxo de sexta, sem pesquisa e sem Skill nova.
-- [x] **Passo 0:** passagem de 01/10 lida. Ensaio 003 está na etapa 2/17 (Viabilidade), `aguardando_execucao`; só leitura. O último `status` do feed era de 28/09.
-- [x] **Pendência órfã corrigida:** `hely-ferramentas-webfetch-websearch-semanal` era citada no livro-razão de 01/10, mas não existia no `pendencias.json`. Agora está registrada (média, humano, pauta da Semanal). Backup em `_backups/2026-10-02/`.
-- [x] **Passo 6 (Painel):** 3 eventos de marco: Ensaio 003 + Bardi (30/09), etapa 1 aprovada (01/10), etapa 2 criada (02/10). 3/3 OK.
-- [ ] **Passo 7 (Learning Agent):** não rodou. É opcional e não havia vídeo novo na fila.
-- [x] **Passo 9 (Dashboard):** evento `sistema` e evento `status` gravados por último, 2/2 OK. `painel_status.json` reescrito com contagem real: 19 membros (10 Auto, 4 Assisted, 1 Shadow, 4 Formação; Bardi entrou), 3 de 5 Gestores Autonomous, pendências 50 de 58 fechadas (8 ativas: 1 crítica, 2 alta, 3 média, 2 baixa), 6 Skills na semana. `caso_real` e `marcos` mantidos, porque não há evidência nova no livro-razão.
-- [x] **Passo 10 (Análise):** abaixo.
-
-### ANÁLISE DA SEMANA 28/09–02/10
-
-- **Produção:** 6 Skills (2 por Gestor), todas ativas com ressalva, 1 arquivada (LC 301) e macetes em 4 Skills. Ao todo, 45 instaladas.
-- **Fraqueza principal:** são 2 semanas seguidas com 0 Skill usada em caso real. O primeiro teste de verdade, a etapa 1 do Ensaio 003, obrigou o Kelsen a corrigir 4 Skills que já estavam "ativas" (OODC, Decreto 3046, varandas e habite-se). Achou erro de artigo (Art. 106 em vez de 110) e de documento. Isso mostra que "ativa com ressalva" não quer dizer "certa". O Ensaio corrige mais do que a Diária produz.
-- **Bloqueadores recorrentes:**
-  - (1) NBR 15575 partes 1, 4 e 5 fora do acervo. Trava a ressalva de 3 Skills térmicas. Sugestão de compra.
-  - (2) Hely sem WebFetch/WebSearch. Decisão da Semanal.
-  - (3) Drive sem ferramenta de escrita de conteúdo. 3 correções esperam Claudemberg.
-  - (4) `/watch` com 0 vídeo assistido em 01/10. A busca não achou vídeo assistível, e o bug de 403/429 continua.
-- **Próximas prioridades:**
-  - (a) Etapa 2 do Ensaio. Villaça é Assisted, mas Mascaró e Fiker estão em Formação, nunca examinados. Risco alto de reprovação, porque é a primeira vez da equipe.
-  - (b) Segunda: Cardozo volta à contenção em argila mole só com fonte primária.
-  - (c) Pauta da Semanal: ferramentas do Hely, compra da NBR 15575 e as correções de Drive. Também a pendência órfã do `CLAUDE.md` (validação de 31/07 nunca fechada).
-- **Sugestão (não aplicada, para a Semanal):** a Diária poderia priorizar as Skills que a próxima etapa do Ensaio vai usar, em vez de criar Skill de tema novo. A etapa 3 é o Levantamento, de Lúcio.
-
-### O QUE FICOU PENDENTE (Cuidado: não repita)
-
-- Tudo que estava em 01/10 continua valendo: SELCA R1/R4, Cobertura R1, contenção (Cardozo), varandas, reservatório, rebaixamento R1/R3, vidro R1/R2 e o bug do /watch.
-
----
-
 ## [2026-10-01] — Diária Skills v3.5.0 (Quinta) — RODADA COMPLETA (2 Skills ativadas com ressalva)
 
 ### RODADA ATUAL (O que foi entregue)

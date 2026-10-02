@@ -1,7 +1,7 @@
 {
   "_comentario": "Fonte única e estruturada da fila de pendências do organismo. A rotina wallenberg-drenagem-continua lê este arquivo a cada disparo: itens com alc='auto' e status='aberta' são executados sozinhos pelo Gestor dono (via seu Agente, quando aplicável); os demais (humano/tecnico/planejado) só são reconciliados, nunca forçados. O Painel do Fundador (painel_fundador_sttk.html) espelha este arquivo — ao alterar aqui, regerar o array `pendencias` do painel e republicar.",
   "schema_versao": 1,
-  "atualizado_em": "2026-10-02 (Diária Skills v3.5.0 — item hely-ferramentas registrado)",
+  "atualizado_em": "2026-09-23 (Drenagem Contínua v2.4 — 2 itens novos)",
   "itens": [
     {
       "id": "wallenberg-drive-write-tool-gap",
@@ -863,18 +863,6 @@
       "desde": "2026-10-01",
       "res": "Varredura mensal de Drive (Passo 7.5, 01/10/2026) achou 3 correções objetivas. O MCP de Drive só altera título/pasta (update_file não edita conteúdo), e a via Service Account/googleapiclient é vetada no modo automático — precisa de Claudemberg presente ou edição manual.",
       "acao": "(1) Doc 1YxwEvEDvBohMdteDJ4T6TBrxMXiSEImqQUKwB5tjRCQ (POP-ARQ-PL-01), seção 7.1 item 2: trocar 'e anexos (DULI) — DULI Anexos I/II' por 'e anexos — DULI (Anexo I) + Declaração de Responsabilidade (Anexo II); Quadro Explicativo de Áreas no Anexo IV (unifamiliar, Art. 10, p.ú.) ou Anexo III'. (2) Mesmo doc, cabeçalho: 'Versão: 1.0' -> 'Versão: 1.1 (rev. 12/09/2026 — Gate do Maurício em 7.5/9; Anexo IV)'. (3) Doc 17qZXyMUIEOjqPr10HnDkRMouBKbDksIpfeI7ogvQrG8 (Memorial Projeto Legal), última linha: remover caractere corrompido 'ð' antes de '[ Planilha de Enviáveis Externos'. Recomendação (não autônoma): Seção 2 do POP diz 'DULI nos anexos aplicáveis (I, II, III, IV)' — DULI é só o Anexo I. Kelsen também indica que as cópias antigas de POP-LEGAL-0x não aparecem mais no Drive (confirmar e fechar drive-legal-pops-copias-desatualizadas) e que seguem 2 pastas 'GESTOR LEGAL'.",
-      "status": "aberta",
-      "resolvido_em": null
-    },
-    {
-      "id": "hely-ferramentas-webfetch-websearch-semanal",
-      "owner": "Wallenberg",
-      "agente": "Hely",
-      "crit": "media",
-      "alc": "humano",
-      "desde": "2026-10-01",
-      "res": "Pedido de Kelsen pós-Ensaio 003 etapa 1 (01/10): dar WebFetch + WebSearch ao Hely para ler legislação no primário. Wallenberg tentou adicionar ao `tools:` de `.claude/agents/hely.md` e o classificador de permissão do modo automático negou (auto-modificação). Não foi contornado. O livro-razão de 01/10 citava este id, mas ele não tinha sido gravado aqui — registrado pela Diária de 02/10.",
-      "acao": "Levar à Reunião Semanal: Claudemberg decide e, se aprovar, edita ele mesmo o frontmatter `tools:` do hely.md (ou autoriza a edição ao vivo). Até lá, Hely lê fonte só via Kelsen.",
       "status": "aberta",
       "resolvido_em": null
     }

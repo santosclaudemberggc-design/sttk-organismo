@@ -24,39 +24,6 @@ metadata:
 
 ---
 
-## [2026-10-02] — Diária Skills v3.5.0 (Sexta) — FLUXO DE SEXTA (Passos 6, 9, 10; sem Skill nova)
-
-### RODADA ATUAL (O que foi entregue)
-
-- [x] **Dia confirmado:** `(Get-Date).DayOfWeek` = Friday. Início às 09:06. Fluxo de sexta, sem pesquisa e sem Skill nova.
-- [x] **Passo 0:** passagem de 01/10 lida. Ensaio 003 está na etapa 2/17 (Viabilidade), `aguardando_execucao`; só leitura. O último `status` do feed era de 28/09.
-- [x] **Pendência órfã corrigida:** `hely-ferramentas-webfetch-websearch-semanal` era citada no livro-razão de 01/10, mas não existia no `pendencias.json`. Agora está registrada (média, humano, pauta da Semanal). Backup em `_backups/2026-10-02/`.
-- [x] **Passo 6 (Painel):** 3 eventos de marco: Ensaio 003 + Bardi (30/09), etapa 1 aprovada (01/10), etapa 2 criada (02/10). 3/3 OK.
-- [ ] **Passo 7 (Learning Agent):** não rodou. É opcional e não havia vídeo novo na fila.
-- [x] **Passo 9 (Dashboard):** evento `sistema` e evento `status` gravados por último, 2/2 OK. `painel_status.json` reescrito com contagem real: 19 membros (10 Auto, 4 Assisted, 1 Shadow, 4 Formação; Bardi entrou), 3 de 5 Gestores Autonomous, pendências 50 de 58 fechadas (8 ativas: 1 crítica, 2 alta, 3 média, 2 baixa), 6 Skills na semana. `caso_real` e `marcos` mantidos, porque não há evidência nova no livro-razão.
-- [x] **Passo 10 (Análise):** abaixo.
-
-### ANÁLISE DA SEMANA 28/09–02/10
-
-- **Produção:** 6 Skills (2 por Gestor), todas ativas com ressalva, 1 arquivada (LC 301) e macetes em 4 Skills. Ao todo, 45 instaladas.
-- **Fraqueza principal:** são 2 semanas seguidas com 0 Skill usada em caso real. O primeiro teste de verdade, a etapa 1 do Ensaio 003, obrigou o Kelsen a corrigir 4 Skills que já estavam "ativas" (OODC, Decreto 3046, varandas e habite-se). Achou erro de artigo (Art. 106 em vez de 110) e de documento. Isso mostra que "ativa com ressalva" não quer dizer "certa". O Ensaio corrige mais do que a Diária produz.
-- **Bloqueadores recorrentes:**
-  - (1) NBR 15575 partes 1, 4 e 5 fora do acervo. Trava a ressalva de 3 Skills térmicas. Sugestão de compra.
-  - (2) Hely sem WebFetch/WebSearch. Decisão da Semanal.
-  - (3) Drive sem ferramenta de escrita de conteúdo. 3 correções esperam Claudemberg.
-  - (4) `/watch` com 0 vídeo assistido em 01/10. A busca não achou vídeo assistível, e o bug de 403/429 continua.
-- **Próximas prioridades:**
-  - (a) Etapa 2 do Ensaio. Villaça é Assisted, mas Mascaró e Fiker estão em Formação, nunca examinados. Risco alto de reprovação, porque é a primeira vez da equipe.
-  - (b) Segunda: Cardozo volta à contenção em argila mole só com fonte primária.
-  - (c) Pauta da Semanal: ferramentas do Hely, compra da NBR 15575 e as correções de Drive. Também a pendência órfã do `CLAUDE.md` (validação de 31/07 nunca fechada).
-- **Sugestão (não aplicada, para a Semanal):** a Diária poderia priorizar as Skills que a próxima etapa do Ensaio vai usar, em vez de criar Skill de tema novo. A etapa 3 é o Levantamento, de Lúcio.
-
-### O QUE FICOU PENDENTE (Cuidado: não repita)
-
-- Tudo que estava em 01/10 continua valendo: SELCA R1/R4, Cobertura R1, contenção (Cardozo), varandas, reservatório, rebaixamento R1/R3, vidro R1/R2 e o bug do /watch.
-
----
-
 ## [2026-10-01] — Diária Skills v3.5.0 (Quinta) — RODADA COMPLETA (2 Skills ativadas com ressalva)
 
 ### RODADA ATUAL (O que foi entregue)
@@ -105,6 +72,32 @@ metadata:
 - **Cardozo, fora do escopo:** a `nbr6122-2019-fundacoes` remete escavação à NBR 11682 (encostas); a candidata certa pode ser a NBR 9061, a confirmar.
 - **Formato dos treinos:** 4 de 4 Agentes passaram das 15 linhas. Cardozo e Lúcio vão cobrar isso como padrão.
 - **Continuam valendo:** Skill de partido de 16/09 (linhas 70-72, os 20% do §5º), que o Lúcio confirmou; bug do `/watch` (`-vsync`, 429/403); pendências de Lint de 25/09.
+
+---
+
+## [2026-09-28] — Diária Skills v3.2 (Segunda) — RODADA COMPLETA (2 Skills ativadas)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** `(Get-Date).DayOfWeek` = Monday. Início às 08:38. Pipeline seg-qui.
+- [x] **Saturnino, `reservatorio-retardo-decreto23940-aguas-pluviais-rj` v1.1:** ativa-com-ressalva e instalada. Decreto 23.940/2004 e Res. Conj. 001/2005 lidos no texto primário (PDFs extraídos com pypdf porque o WebFetch devolveu binário). Cardozo leu os dois PDFs inteiros: PROCEDE COM RESSALVA, com 4 correções aplicadas.
+- [x] **Kelsen, `varandas-nao-computaveis-ate-to-coes-lc198-rj` v1.1:** ativa-com-ressalva e instalada. COES Art. 8º §4º (varanda residencial fora da ATE e da TO). Kelsen conferiu no consolidado da SMU, sem alteração, e acrescentou o Dec. 45.917 Art. 6º (5 m entre varandas em grupamento).
+- [x] **Lúcio:** sem Skill. A lacuna de vidro de controle solar é real, mas as fontes não trazem números.
+- [x] **Feed:** 2 eventos, 2/2 OK.
+- [x] **Livro-razão:** entrada 28/09 em `Setembro.md`, com "como desfazer". Primeira entrada da Diária seg-qui desde 10/09.
+- [x] **Backups:** `01_CEO/Decisoes_Autonomas/_backups/2026-09-28/` (3 arquivos).
+- [~] **/watch (v3.3.1):** Lúcio assistiu de verdade "EP14 - Vidros com controlo solar" (youtube.com/shorts/Z0buYmS8fDE), mas as legendas deram 429 e a extração de quadros do script falhou (o ffmpeg novo não aceita `-vsync`). Tirei os quadros com ffmpeg direto e vi 4. É conversa comercial (Portugal) sem parâmetro técnico, então não gerou Skill. Kelsen e Cardozo: a busca de vídeo não achou material relevante (só notícias e texto).
+- [ ] **Passo 8 (Trilha B):** não rodou. Nenhum `_estado_` trouxe lacuna de ferramenta nesta rodada.
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **Lúcio corrige a Skill de partido de 16/09** (linhas 70-72). O limite de 20% da área útil vem do §5º do COES (não residencial). Kelsen recomenda retirar a "projeção máxima 2 m (Dec. 7336/1988)".
+- **Kelsen R1:** a Barra/Recreio (LC 270/2024 com o Dec. 3046/81 incorporado) tem regra própria de cômputo de varanda? Hely confirma no RIU/SMDU.
+- **Remissão cruzada:** `legal-base-legislativa-bairro`, linha 85, apontar para a Skill de varandas (Kelsen, com backup).
+- **Saturnino:** texto da Lei Estadual 9.164/2020 na ALERJ; Decretos 26.168/2006 e 32.119/2010; vigência do rito pós-LICIN 2.0; conflito de uso com a NBR 16783 (descarga sanitária).
+- **Bug do /watch:** `scripts/frames.py` usa `-vsync`, que o ffmpeg instalado já não aceita (trocar por `-fps_mode`). É plugin de terceiro, então não editei; decisão de Claudemberg. O 429 nas legendas voltou (o mesmo de 24/09).
+- **Orçamento:** foram 7 WebSearch, e não 6. A 7ª localizou o texto primário da LC 198, porque a busca de Kelsen só trouxe a matéria indireta.
+- Continuam valendo as pendências de 25/09 (Lint: duplicata no `indice.md`, contradição nbr6122 x fundações Barra, LC 301, span do Painel, livro-razão no prompt agendado).
 
 ---
 
@@ -172,5 +165,5 @@ Consolidado em 30/09/2026 a partir de todas as rodadas de 01/09 a 29/09 (movidas
 
 ---
 
-**Última atualização:** 01/10/2026 (Fechamento do Dia v1.0 — rodada de 28/09 movida para `rotina_fechamento_historico.md`; template de volta a 2 rodadas + consolidado)
-**Próxima leitura:** 02/10/2026 (sexta-feira) — Diária Skills fluxo de sexta (Passos 6-10)
+**Última atualização:** 30/09/2026 (Fechamento do Dia v1.0 — 1ª execução deste formato: template reduzido a 2 rodadas + consolidado; rodadas de 01/09 a 25/09 movidas para `rotina_fechamento_historico.md`)
+**Próxima leitura:** 01/10/2026 (quinta-feira) — Diária Skills pipeline seg-qui

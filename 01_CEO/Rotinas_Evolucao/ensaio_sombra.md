@@ -17,6 +17,7 @@ Tarefa `wallenberg-rotina-ensaio-sombra` · seg-sex 08:30 · referência `01_CEO
 | Data | Etapa | Evento | Veredito Bardi | Decisão Claudemberg | Observação |
 |---|---|---|---|---|---|
 | 30/09 | 1 | estado criado (`a_criar`) | — | — | 1ª montagem em 01/10 08:30 |
+| 01/10 | 1 | caso criado (08:36, ~8min); executada por Kelsen+Hely e corrigida por Bardi (11:04, via Drenagem) | aprovar (8/8 itens, 4/4 iscas, 6 correções não bloqueantes) | aprovada ao vivo | 1ª etapa do organismo aprovada; etapa avançou para 2 (Viabilidade, Villaça), status `a_criar` |
 
 ## 3. Candidatas a melhoria
 - (observar) A 1ª etapa calibra o próprio Bardi: o caso ficou realista e difícil o bastante?

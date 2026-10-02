@@ -13,6 +13,8 @@ Tarefa `wallenberg-cronjob-pdf-2000` (id antigo mantido) · seg-sex 20:00 · esc
 | Data | Rodou? | Resultado | Observação |
 |---|---|---|---|
 | 30/09 | sim (20:02) | Passagem escrita; template enxugado (rodadas 01-25/09 → histórico) | 1ª rodada v1.0. Sugeriu à Diária "confirmar com o Bardi", o que não é papel dela (o Ensaio roda antes) |
+| 01/10 | sim (~20:05) | Passagem escrita; rodada de 28/09 movida para o histórico (template de volta a 2 rodadas + consolidado); diário de funcionamento das 4 rotinas do dia atualizado via `list_task_runs` | Recomendação à Diária desta vez ficou restrita ao papel dela (pesquisar/criar Skill); não recomendou nada do Ensaio |
 
 ## 3. Candidatas a melhoria
-- (observar) A passagem recomenda à Diária ações que não são dela (30/09). Se repetir, explicitar no prompt o que cabe à Diária.
+- (observar) A passagem recomenda à Diária ações que não são dela (30/09). Se repetir, explicitar no prompt o que cabe à Diária. Não se repetiu em 01/10.
+- (nova 01/10) `kelsen-drive-varredura-mensal-01-10-correcoes` ficou aberta em `pendencias.json`, e o item citado no livro-razão (`hely-ferramentas-webfetch-websearch-semanal`) não foi encontrado lá — o livro-razão descreve uma gravação em `pendencias.json` que não aconteceu. Verificar se é lapso pontual ou se `pendencias.json` está ficando para trás do livro-razão.

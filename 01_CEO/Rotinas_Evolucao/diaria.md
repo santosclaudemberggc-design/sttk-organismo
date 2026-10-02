@@ -26,8 +26,9 @@ Tarefa `wallenberg-rotina-diaria-skills-v2-7` · seg-sex 09:00 · referência `0
 | 28/09 | sim | ~12 min | 2 Skills ativas | 7 buscas (orçamento era 6) |
 | 29/09 | sim | ~16 min | 2 Skills ativas, 4 treinos | — |
 | 30/09 | interrompida | 8 s | — | Interrompida por Claudemberg para a revisão |
+| 01/10 | sim | ~12 min | 2 Skills ativas-com-ressalva (SELCA Kelsen/Hely; Cobertura Lúcio/Oscar) | Passo 0 leu `_passagem_do_dia.md` corretamente (1ª vez); Cardozo sem Skill |
 
 ## 3. Candidatas a melhoria
 - (aberta) **Uso real de Skill = 0%.** Em setembro foram cerca de 28 Skills e nenhuma usada em caso real. O Ensaio 003 é a resposta; acompanhar se as Skills aparecem nos pareceres do Bardi.
 - (aberta) **Bug do /watch:** `-vsync` no ffmpeg novo e 429/403 do YouTube, recorrentes desde 24/09.
-- (aberta) **Kelsen sem Skill nova** desde 28/09.
+- (fechada 01/10) **Kelsen sem Skill nova** desde 28/09 — rompido em 01/10 com a Skill SELCA v1.1.

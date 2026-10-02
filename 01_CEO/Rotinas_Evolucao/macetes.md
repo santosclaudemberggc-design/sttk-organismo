@@ -16,6 +16,7 @@ Tarefa `wallenberg-rotina-macetes-profissionais` · seg-sex 14:00 · fila `01_CE
 |---|---|---|---|---|
 | 29/09 | sim | ~11 min | 8 macetes em 2 Skills; varandas sem macete | Rodou às 18:09 (1ª execução no dia da criação) |
 | 30/09 | pausada | — | — | Revisão das rotinas |
+| 01/10 | sim | ~9 min | 7 macetes em 2 Skills (nbr15220-3 Lúcio v1.1→v1.2; fundacoes-solos-moles Cardozo 1.2→1.3); varandas sem macete (2ª rodada) | — |
 
 ## 3. Candidatas a melhoria
-- (observar) A fonte C destrava o Kelsen? Se varandas falhar de novo, ela vai para "Sem fonte pública".
+- (confirmada 01/10) A fonte C não destravou o Kelsen: varandas falhou pela 2ª rodada seguida (tipo A e C tentados, só achada a ata do COMPUR 2007 com opinião, sem técnica nova) e foi para "Sem fonte pública", como esta candidata antecipava em 29/09.
