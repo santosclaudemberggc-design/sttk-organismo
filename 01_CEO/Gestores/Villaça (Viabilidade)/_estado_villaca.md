@@ -20,7 +20,39 @@
 - Respondido: `01_CEO/Gestores/Villaça (Viabilidade)/exame_NTN-2026-VILLACA-001_resposta.md`. Aceitei o Legal preliminar só como insumo condicional (matriz por hipótese de subzona). Devolvi: a OODC com 30% da LC 301 (fora da fronteira de Mascaró/Fiker; aplicabilidade não confirmada segundo o veredito do Kelsen de 23/09, Art. 58 da LC 301 → Art. 40 da LC 281; prazo de 01/12 inviável), a revenda pela média Barra+Recreio misturada (Fiker) e o CAM da subzona mais favorável (escolha da hipótese mais favorável). Recusei a frase "lucro garantido". Entrego só a Wallenberg, aguardando aprovação. Nada ao cliente nem a Lúcio.
 - **[28/09/2026] Exame aprovado e promoção Shadow→Assisted ratificada por Claudemberg (trava 3).** Nível atual: **Assisted** — executo com supervisão; Wallenberg revisa antes de qualquer entrega ao cliente.
 
-## 1.3 Ensaio Sombra 003 — Etapa 02 (02/10/2026) — CONCLUÍDA na 2ª rodada
+## 1.8 Ensaio 003 Etapa 02 — v6 (05/10/2026), após parecer_bardi_v5 (recomenda REPROVAR, tolerância zero)
+- Entrega em `entrega/v6/`: `pre_estudo_viabilidade_003.md`, `custo_obra_mascaro_003_v6.md` (Mascaró, delegação bloqueante) e `revenda_fiker_003_v5.md` (Fiker, bloqueante, acionado porque a minha varredura achou erro nele). v1 a v5 intactas. Nenhum número mudou. Aguarda Wallenberg/Bardi.
+- Correções pedidas: (1) linha f: alternativa ago/26 = "índice do mês anterior ao da proposta, leitura usada em alguns contratos" [PV, sem fonte lida], sem "último divulgado"; (2) Mascaró [DOC — Etapa 01] → [PL], "Dossiê inclui a Etapa 01" apagada; (3) Skill v1.4 nas 2 cópias (§2.4 literal do PDF: "playground (quando não classificado como área construída)", "emolumentos cartoriais", "ajardinamento"; regra de citar termo e condição literais). Backups INTEGRAIS da v1.3 em `_backups/2026-10-05/*_v1.3_INTEGRAL_ANTES_v1.4.md`. Nenhum macete ligado ao ponto.
+- Varredura (54 itens no Pré-Estudo; 71 de Mascaró; 11 correções de Fiker): achados extra corrigidos — "preço de 02/01/2026" (é data da página), "preço de 24/08/2026" e faixas com obra civil (data do artigo; soma é [ECF]), "aterro até +3,20 m" (é cota de soleira), 5.14 citada sem literalidade, "m² construído" × CUB (é área equivalente), W6/W7 sem data, "maior anúncio" (só da faixa S1/S2), [PV] de Fiker cobrindo coluna do Legal, divergência Skill×PDF declarada. 4 ajustes meus de auditoria nos arquivos dos Agentes, declarados.
+- Aberto: faixas de busca de Fiker vêm da área computável (W8 e W13 fora); decidi manter nesta rodada sem número novo e refazer na próxima. 3ª cópia da Skill em `.agents/skills/` (espelho Codex) segue v1.3 — fora da ordem, sinalizado a Wallenberg.
+- **LIÇÃO: varredura de rótulo não basta; toda data precisa dizer DE QUE é a data (da página, do artigo, da emissão, do preço). Data de página ≠ data do preço. Cota ≠ altura de aterro. Citação com aspas ou [FP] tem de levar termo E condição literais. Título de seção com rótulo não pode cobrir coluna de outra origem. E toda frase de justificativa sem fonte lida leva [PV] dita como tal.**
+
+## 1.7 Ensaio 003 Etapa 02 — v5 (02/10/2026), após parecer_bardi_v4 (REPROVADA, tolerância zero)
+- Entrega: `entrega/v5/pre_estudo_viabilidade_003.md` + `custo_obra_mascaro_003_v5.md` (Mascaró, bloqueante) + `revenda_fiker_003_v4.md` (cópia sem alteração; Fiker não acionado, varredura não achou nada). v1-v4 intactas.
+- Correções: índice-base INCC-M set/2026 agora [PV], alternativa ago/2026 = +R$ 8.562 a 9.459 na via f do S1; rótulo novo [PL] (premissa do Legal) para 457,44, OODC R$ 0 e CAM−CAB = 0, que estavam como [FP]; varredura linha por linha (§6.2 Pré-Estudo, 38 itens; §6.3 Fiker, 19; Mascaró no topo do arquivo dele).
+- Skill v1.3 nas 2 cópias ("aproxima-se de"; §2.7 antes da §2.8; regra de rótulo na §2.8). Backups INTEGRAIS da v1.2: `_backups/2026-10-02/*_v1.2_INTEGRAL_ANTES_v1.3.md`. Linha 13 do backup parcial da v1.0 corrigida.
+- Grep pós-gravação: "não premissa" só aparece descrevendo o erro corrigido; "equivale a reajustar" zero na Skill.
+- **LIÇÃO (2ª repetição do mesmo erro, v3 e v4): [FP] só para o literal. Data literal ≠ número-índice. Varredura de TODOS os rótulos antes de gravar, inclusive os herdados de versões anteriores.**
+
+## 1.6 Ensaio 003 Etapa 02 — v4 (02/10/2026), após parecer_bardi_v3 (REPROVADA, tolerância zero)
+- Entrega: `entrega/v4/pre_estudo_viabilidade_003.md` + `custo_obra_mascaro_003_v4.md` + `revenda_fiker_003_v4.md` (ambos bloqueantes). v1-v3 intactas.
+- Correções: 5.12 declara data-base (29/09/2026) e periodicidade ("INCC-M mensal a partir da data desta proposta"); plataforma (R$ 46.754–196.337) e demolição (R$ 27.542–59.653, INCC-M real 2026) reajustadas; S1 linha e R$ 2.339.938–2.830.995; % teto c/ plataforma 57–72% e 83–95%; fator do piso = "fator no mês médio" (média exata 1,04687); conferência literal de 5.1–5.15 (achados: fim de obra dez/2028 era [PV]; C3 base não declarada; escritura, mensagens 5.15 e rodapé 5.13 citados sem literalidade).
+- Skill v1.2 (2 cópias): §2.6 cláusula de reajuste literal, §2.8 citação de documento, M7 só apoio, R5. Backups integrais da v1.1 em `_backups/2026-10-02/*_v1.1_INTEGRAL_ANTES_v1.2.md`; cabeçalhos dos backups parciais da v1.0 corrigidos (v1.0 integral perdida).
+- **REGRA (Wallenberg, 02/10/2026): backup é SEMPRE a cópia integral do arquivo (Read inteiro e Write inteiro, ou cópia de arquivo), nunca um trecho. Nunca escrever "sem alteração" num backup que não é integral.**
+- Lição: antes de dizer que um documento "não declara" algo, transcrever a cláusula ao lado; dado do documento ≠ dedução minha.
+
+## 1.5 Ensaio 003 Etapa 02 — v3 (02/10/2026), após parecer_bardi_v2 (recomenda REPROVAR, 4 erros)
+- Entrega: `entrega/v3/pre_estudo_viabilidade_003.md` + `custo_obra_mascaro_003_v3.md` (Mascaró, bloqueante) + `revenda_fiker_003_v2.md` (cópia sem alteração). v1 e v2 intactas.
+- Correções: INCC em todo o desembolso mai/27–dez/28 (piso linear 1,087293; teto no fim 1,154922); S1 R$ 2,34–2,83 mi (CUB) e R$ 3,42–3,78 mi (5.12); sobra Rodrigo R$ 416–638 mil; % teto 56–67% / 82–90%; aluguel 27 meses = R$ 486 mil; Helena sem conclusão jurídica.
+- Skill v1.1 (2 cópias; backups em `_backups/2026-10-02/`): §2.6 reajuste no cronograma, §2.7 moradia, M7 (minuta PF, conferida por mim no PDF), R4.
+- Lição: reajuste vale até cada pagamento, não até o início; custo de tempo conta desde hoje; ao cliente, nunca conclusão jurídica, só o peso em R$ e "está com o Legal". Aguarda Wallenberg/Bardi.
+
+## 1.4 Ensaio 003 Etapa 02 — v2 após REPROVAÇÃO (02/10/2026, tolerância zero)
+- Claudemberg reprovou a v1 (custo e revenda sobre área computável; 520 m² x H1 não dito; lago sem R$; plataforma fora da lista; garagem x TO). Criei e sou dono da Skill `viabilidade-cub-nbr12721-area-equivalente-nbr14653-revenda-rj` v1.0 (ativa-com-ressalva; cópia em Skills_Propostas/2026/Outubro; índice atualizado).
+- Delegação BLOQUEANTE a Mascaró e Fiker (v2 em `entrega/v2/`), auditada com contas refeitas; integrada em `entrega/v2/pre_estudo_viabilidade_003.md`. v1 intacta. Aguarda Wallenberg e Bardi.
+- Lição: toda conta declara a base de área; custo = área equivalente; revenda = mesma base do comparável; anúncio sempre com fator de oferta; todo cenário ganha ordem de grandeza em R$; dizer explicitamente quando um programa não cabe.
+
+## 1.3 Ensaio Sombra 003 — Etapa 02 (02/10/2026) — v1 (REPROVADA)
 - Entrega: `01_CEO/Casos_TESTE/ensaio_003/etapa_02_viabilidade/entrega/pre_estudo_viabilidade_003.md` (8 seções), integrando os arquivos de Mascaró e Fiker após auditoria item por item (seção 6). Devoluções registradas: Mascaró (SINAPI hélice RJ, tabela CAU, piso da demolição); Fiker (PDF FipeZAP, comparáveis de 2 pavimentos em lote de 600 m², base de área). Aguarda revisão de Wallenberg e correção de Bardi.
 - Histórico da 1ª rodada (incompleta):
 - Li enunciado, caso base, parecer Hely e auditoria Kelsen, Skill OODC v1.1 e Skill fundações. Deleguei de verdade (Agent, em segundo plano) a Mascaró (custo, `entrega/custo_obra_mascaro_003.md`) e Fiker (revenda, `entrega/revenda_fiker_003.md`).

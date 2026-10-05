@@ -153,3 +153,13 @@
   - (3) Landell: baixar à mão a RECON-BT 2024 (o download automático devolveu HTML) e confirmar carga instalada × demandada no limite de 75 kW.
   - (4) Sugestão de compra: ABNT NBR 13133:2021 (levantamento topográfico).
   - (5) Kelsen sugeriu citar o Art. 13 §2º da LC 140 na linha de supressão do checklist §9 da SELCA (não aplicado, fora do pedido).
+
+## 05/10/2026 — Drenagem Contínua v2.5.0 (11:03, segunda) — Ensaio 003 etapa 2, refazer v6
+- **O que foi decidido:** o estado do ensaio (`proxima_acao: refazer`) e o parecer v5 do Bardi (REPROVAR, 3 itens) mandavam refazer a etapa 2. Lacre do gabarito conferido (SHA256 36FC592A…C88 = histórico).
+- **Villaça (Gestor) + Mascaró + Fiker:** entrega `01_CEO/Casos_TESTE/ensaio_003/etapa_02_viabilidade/entrega/v6/` (pre_estudo_viabilidade_003.md, custo_obra_mascaro_003_v6.md, revenda_fiker_003_v5.md). 3 itens da v5 corrigidos + varredura (10 correções no Pré-Estudo, 11 no Fiker). Nenhum número mudou.
+- **Skill alterada:** `viabilidade-cub-nbr12721-area-equivalente-nbr14653-revenda-rj` v1.3→v1.4 (§2.4 playground "quando não classificado como área construída" + nota literal do CUB) nas 2 cópias (`.claude/skills/` e `Skills_Propostas/2026/Outubro/`). Backups integrais: `_backups/2026-10-05/viabilidade_SKILL_instalada_v1.3_INTEGRAL_ANTES_v1.4.md` e `villaca_viabilidade_SKILL_copia_v1.3_INTEGRAL_ANTES_v1.4.md`.
+- **Bardi:** `parecer_bardi_v6.md` — recomenda **REPROVAR**: faixas de metragem do controle web do Fiker sobre área computável (erro desde a v2; W8/W13 fora; S1 topo +~R$ 711 mil; isca 4 caiu para parcial); W1 omitido na "Limitação de tipo"; Skill §3.1/3.2 sem a regra de base de área do filtro; espelho `.agents/skills/` em v1.3.
+- **Estado do ensaio:** `status_etapa: aguardando_aprovacao`, `proxima_acao: aguardar_claudemberg`; histórico += `refeita_e_corrigida` v6 (com nota de que v2–v5 de 02/10 não tinham sido registradas no histórico).
+- **Painel:** 1 evento `marco` (Bardi) via Append-STTKLog.ps1 — OK.
+- **Learning Agent (8a, segunda):** 2 propostas anexadas a `01_CEO/wallenberg-drenagem-continua-v2_SKILL.md` (não executadas). Backup integral em `_backups/2026-10-05/wallenberg-drenagem-continua-v2_SKILL_INTEGRAL_ANTES_learning_05_10.md`.
+- **Como desfazer:** apagar `entrega/v6/` e `parecer_bardi_v6.md`; copiar os 2 backups v1.3 de volta para as cópias da Skill; voltar o JSON do ensaio para `reprovada`/`refazer` e remover a última linha do histórico; remover a linha de 05/10 (Bardi, marco) do `feed.jsonl`; copiar o backup da SKILL da Drenagem por cima.

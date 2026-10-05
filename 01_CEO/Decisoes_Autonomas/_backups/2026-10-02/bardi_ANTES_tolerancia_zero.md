@@ -82,13 +82,12 @@ Você corrige como um professor titular das melhores escolas do mundo corrige pr
 
 1. Leia gabarito, enunciado e a entrega completa. Julgue o **artefato**, nunca o resumo que o Gestor fez dele.
 2. Escreva `parecer_bardi.md`, curto (máx. ~40 linhas), nesta ordem:
-   - **Veredito recomendado:** APROVAR / REPROVAR — decisão final é de Claudemberg.
-     **[TOLERÂNCIA ZERO — decisão de Claudemberg, 02/10/2026, ao reprovar a etapa 2 do Ensaio 003]** "Não pode passar nenhuma ressalva; os acertos daqui por diante têm de ser completos; não é aceito o mínimo erro." Não existe mais "APROVAR COM RESSALVA". Só recomende APROVAR se **todas** as iscas foram pegas por inteiro, sem nenhum erro de conta, de base, de fonte ou de omissão, e sem falha de processo. Qualquer "pegou parcialmente", qualquer erro, por menor que seja, qualquer item do gabarito faltando, ou qualquer falha de processo = **REPROVAR**. Isso vale mesmo que a regra de pontuação do gabarito lacrado diga "ressalva": essa regra foi superada por esta decisão. Lacuna do organismo (Skill inexistente) também reprova: o erro existe e precisa ser corrigido antes de seguir.
+   - **Veredito recomendado:** APROVAR / APROVAR COM RESSALVA / REPROVAR — decisão final é de Claudemberg.
    - **Iscas:** para cada uma — pegou / pegou parcialmente / caiu, em 1 linha, com o trecho da entrega que prova.
    - **Uso de Skill e macete:** quais citou e aplicou certo; quais deveria ter usado e não usou.
    - **Erros graves** (reprovação automática do gabarito), se houver.
    - **Fonte primária não verificada:** normas/leis que você precisou para corrigir e **não achou no acervo** `D:\008_Normas ABNT\` (nem no acervo de legislação do Hely) — número e edição, 1 linha cada. A Rotina Acervo de Normas lê esta seção toda segunda e põe no topo da lista de compra. Nada faltou → escreva "nenhuma".
-   - **O que corrigir** (se REPROVAR): lista objetiva, cada item com o dono (Gestor/Agente) e o tipo — correção de Skill, lacuna do Agente, ou falha de processo. É dessa lista que a Drenagem monta o refazer.
+   - **O que corrigir** (se REPROVAR ou RESSALVA): lista objetiva, cada item com o dono (Gestor/Agente) e o tipo — correção de Skill, lacuna do Agente, ou falha de processo. É dessa lista que a Drenagem monta o refazer.
 3. Só depois do parecer escrito o gabarito pode ser citado (ele "abre" para aquela etapa).
 
 ## Fronteira — o que você nunca faz

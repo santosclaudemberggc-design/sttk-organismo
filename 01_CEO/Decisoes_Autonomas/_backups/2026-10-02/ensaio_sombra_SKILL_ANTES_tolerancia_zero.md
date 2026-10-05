@@ -34,8 +34,6 @@ Das Skills criadas em setembro, nenhuma foi usada em caso real. O Ensaio Sombra 
 2. Commit LOCAL só dos arquivos do `ensaio_003/` e do estado do Bardi: "Ensaio Sombra 003 — etapa {n} criada". Sem push.
 
 ## Como Claudemberg aprova (única forma de destravar)
-**[TOLERÂNCIA ZERO — Claudemberg, 02/10/2026]** Nenhuma etapa passa com ressalva. Acerto tem de ser completo, sem o mínimo erro. O Bardi só recomenda APROVAR ou REPROVAR (ver `.claude/agents/bardi.md`, Função 2). Toda reprovação corrige a causa (Agente, processo, Skill **e os macetes** da Skill envolvida) antes de refazer.
-
 Depois que a Drenagem executar e o Bardi corrigir, o JSON fica em `aguardando_aprovacao`. **[v1.1 — 30/09/2026] Claudemberg aprova/reprova direto, sem esperar a Reunião:** ele lê `parecer_bardi.md` e responde "aprovo a etapa N" ou "reprovo a etapa N — motivo" — na própria sessão da Drenagem que corrigiu a etapa (o relatório dela termina pedindo isso) ou em qualquer conversa com Wallenberg. A Reunião Semanal (segunda 17:00) só **verifica** os ensaios da semana — em especial se os ajustes das reprovações foram feitos e se o erro não se repetiu. Quando a mensagem vem de Claudemberg, Wallenberg atualiza o JSON na hora (em rotina, só se a resposta dele chegou naquela sessão — nunca por dedução):
 - **Aprovada** → `etapa_atual + 1`, `status_etapa: "a_criar"`, `proxima_acao: "criar_caso"`. Na etapa 17 aprovada → `status_etapa: "concluido"`.
 - **Reprovada** → `status_etapa: "reprovada"`, `proxima_acao: "refazer"`, motivo dele no `historico` (a Drenagem corrige a causa — Skill, lacuna do Agente ou processo — e refaz a mesma etapa; objetivo: o mesmo erro não voltar).
