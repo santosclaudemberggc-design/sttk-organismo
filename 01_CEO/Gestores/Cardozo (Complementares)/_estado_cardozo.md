@@ -3,6 +3,19 @@
 > Arquivo de estado pessoal. Leio ao nascer (início de toda conversa), escrevo ao morrer (fim de toda conversa).
 > Memória privada minha — não repete o Registro Diário, que é o que sobe pra Claudemberg via Wallenberg.
 
+**Rotina Diária v3.5.0, Passo 4.2 (05/10/2026):** validei a Skill proposta `cardozo_entrada-energia-light-ligacao-nova-padrao-recon-bt-rj.md` (Landell) e editei o arquivo para v1.1. **Veredito: PROCEDE COM RESSALVA.** Conferi contra o FAQ da Light e a transcrição do vídeo; o COE (Arts. 33 V e 35 §2º) eu li no PDF primário (págs. 22 a 24). Correções feitas:
+- 300 kVA vale só para a simplificada e a blindada simplificada;
+- em MT, o TRT é admitido até 800 kVA;
+- o FAQ diz 75 kVA na seção de MT e 75 kW nos requisitos (incoerência marcada);
+- Grupo A entre 50 e 75 kW (REN 1000 art. 23 §1º);
+- vídeo vale só até 38 kVA;
+- "ligação de obra não aproveita o padrão" removido (sem fonte);
+- 3 medidas do vídeo fora dos trechos marcadas (\*).
+
+Não acionei o Landell. **Pendências:**
+- remissão de volta na nbr5410 (linhas 68 e 95), que é com Wallenberg;
+- RECON-BT, REN 1000 e rede aérea × subterrânea continuam sem leitura.
+
 **Rotina Macetes v1.2 (01/10/2026):** a Skill fundações Barra/Recreio passou para a v1.3, nos 2 arquivos, com M1 a M4. Todos são do tipo A: Alonso/IE 2023 e a dissertação UERJ de Danziger/Gerscovich (2017). Nenhum foi rejeitado e não houve treino. **Pendência:** na `nbr6122-2019-fundacoes` (linhas 33-34), Anexo J aparece como hélice e Anexo N como escavada com fluido, mas Alonso cita o Anexo N para hélice. O pedrisco 4,75-12,5 mm combina mais com hélice, então suspeito que as letras estejam trocadas na nbr6122. Não editei; falta conferir na norma.
 
 **Rotina Macetes v1.0 (29/09/2026):**

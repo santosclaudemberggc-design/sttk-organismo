@@ -137,7 +137,7 @@ A NBR 6484:2020 **cancela e substitui** a NBR 6484:2001. O critério de paralisa
 **Checklist mínimo para projetos na Barra/Recreio:**
 
 - [ ] Contratar sondagem SPT — **mínimo normativo pela NBR 8036** (contado pela área de projeção da edificação, não do lote): 1 furo a cada 200 m² de projeção até 1.200 m²; mínimo 2 furos até 200 m² e mínimo 3 entre 200 e 400 m² (ver R7). **Reforço local Barra/Recreio:** 1 furo a cada 100–150 m² de projeção — recomendação de projeto desta Skill, acima do mínimo normativo, não exigência da norma
-- [ ] Verificar se o histórico do lote inclui aterro, banhado ou lagoa (mapa histórico ou vizinhança) — o levantamento topográfico registra o nível atual, o RN do meio-fio e sinais de aterro, e o DULI pede as maiores cotas de corte/aterro: ver Skill `levantamento-topografico-cadastral-orientado-duli-licin-rj`
+- [ ] Verificar se o histórico do lote inclui aterro, banhado ou lagoa (mapa histórico ou vizinhança)
 - [ ] Identificar nível do lençol freático médio anual (pode ser diferente da profundidade no dia da sondagem)
 - [ ] Checar se há camada de turfa (N ≈ 0 com cores escuras/cheiro orgânico na amostra)
 - [ ] Cotizar hélice contínua como opção padrão e escavada com camisa como alternativa

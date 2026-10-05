@@ -65,7 +65,7 @@ Pontos que precisam estar definidos no Briefing antes de projetar:
 
 1. Tipo de edificação + carga total estimada (kVA)
 2. Planta com pontos de tomada/iluminação + lista de equipamentos > 10 A (circuito independente, 9.5.3.1)
-3. Fornecimento da concessionária (mono/bi/trifásico) e se a linha de chegada é aérea (gatilho de DPS, 5.4.2.1.1) — faixas, limite de 75 kW e padrão da Light: ver Skill `entrada-energia-light-ligacao-nova-padrao-recon-bt-rj`
+3. Fornecimento da concessionária (mono/bi/trifásico) e se a linha de chegada é aérea (gatilho de DPS, 5.4.2.1.1)
 4. Separação do PEN na entrada, com TN-S dali para dentro (5.4.3.6)
 5. Corrente de projeto por circuito, fator de demanda, dimensionar condutores (6.2.6.1.2)
 6. Disjuntores multipolares nos circuitos com mais de uma fase (9.5.4), DR 30 mA nos casos de 5.1.3.2.2, DPS conforme 5.4.2 e 6.3.5
@@ -92,7 +92,7 @@ Saturnino (shafts: afastamento por 6.2.9.4.1 e linha elétrica fora de baixo da 
 
 ## O que esta Skill NÃO cobre
 
-Média tensão (ANEEL + concessionária; gatilho na Light: carga instalada > 75 kW, ou Grupo A por estudo entre 50 e 75 kW — ver `entrada-energia-light-ligacao-nova-padrao-recon-bt-rj`) · telecomunicações/cabeamento estruturado (NBR 14565, NBR 16264, NBR 16415 — ver Skill `nbr14565-...`) · CFTV/segurança eletrônica · SPDA detalhado (NBR 5419).
+Média tensão (ANEEL + concessionária) · telecomunicações/cabeamento estruturado (NBR 14565, NBR 16264, NBR 16415 — ver Skill `nbr14565-...`) · CFTV/segurança eletrônica · SPDA detalhado (NBR 5419).
 
 ## Limitações honestas
 

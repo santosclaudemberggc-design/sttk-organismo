@@ -24,32 +24,6 @@ metadata:
 
 ---
 
-## [2026-10-05] — Diária Skills v3.5.0 (Segunda) — RODADA COMPLETA (2 Skills ativadas com ressalva + SELCA v1.2)
-
-### RODADA ATUAL (O que foi entregue)
-
-- [x] **Dia confirmado:** `(Get-Date).DayOfWeek` = Monday. Início às 09:06. Pipeline seg-qui.
-- [x] **Passo 0:** a `_passagem_do_dia.md` é de **01/10**. Não existe passagem de 02/10: o Fechamento do Dia de sexta não deixou passagem nova (registrar como falha a checar). Usei o bloco "O QUE NÃO FAZER" e a rodada de 02/10 do template. Ensaio 003: etapa 2 aguardando aprovação de Claudemberg; só leitura. Último `status` do feed: 02/10.
-- [x] **Lúcio/Oscar, `levantamento-topografico-cadastral-orientado-duli-licin-rj` v1.1:** ativa-com-ressalva e instalada. Escolhida porque a etapa 3 do Ensaio é o Levantamento (sugestão da análise de 02/10). Fonte primária: Decreto 55.622/2025 (PDF da SMDU, lido) e COE do acervo. Lúcio corrigiu páginas, o PRPA e uma remissão falsa (as Skills de Kelsen **não** têm limite de cota de soleira).
-- [x] **Cardozo/Landell, `entrada-energia-light-ligacao-nova-padrao-recon-bt-rj` v1.1:** ativa-com-ressalva e instalada. Fonte primária: FAQ oficial de Ligação Nova da Light + vídeo oficial da Light. Cardozo fez 8 correções, entre elas o Grupo A por estudo entre 50 e 75 kW. Fim de 2 rodadas sem Skill de Cardozo.
-- [x] **Kelsen:** sem Skill nova. As 2 buscas não acharam lei nova da Barra/Recreio. Em vez disso, SELCA foi para a v1.2: R1 parcialmente fechada com a LC 140/2011 lida no Planalto; nova R7 (APA).
-- [x] **Coerência:** remissões de volta em `nbr5410-eletrica-automacao`, `habite-se-aceitacao-licin` e `fundacoes-solos-moles-...`. Nenhuma contradição de valor.
-- [x] **/watch:** vídeo oficial da Light `2RG3FdAizUQ` assistido (transcrição Whisper/Groq + 15 quadros). O bug do `-vsync` continua: a extração de quadros do script falhou e foi feita à mão com ffmpeg. As legendas deram 429. As buscas de vídeo para Kelsen e Lúcio não acharam vídeo relevante.
-- [x] **Feed:** 3 eventos, 3/3 OK. **Livro-razão:** entrada 05/10 em `Decisoes_Autonomas/2026/Outubro.md`, com "como desfazer". **Backups:** `_backups/2026-10-05/` (7 arquivos).
-- [ ] **Passo 8 (Trilha B):** não rodou; nenhuma lacuna de ferramenta nova trazida pelos Gestores.
-
-### O QUE FICOU PENDENTE (Cuidado: não repita)
-
-- **Não duplicar:** levantamento topográfico/DULI (Skill de 05/10) e entrada de energia Light/RECON-BT (Skill de 05/10).
-- **Hely (R2 do levantamento):** regra numérica de cota de soleira e de "terreno natural" na Barra/Recreio. Nenhuma Skill tem isso hoje.
-- **Kelsen:** `habite-se-aceitacao-licin` linha 16 ("compara com o projeto aprovado") não bate com o Art. 8º do Decreto 55.622. Não editado.
-- **Landell:** RECON-BT 2024 (o download automático devolveu HTML; baixar à mão) e carga instalada × demandada no limite de 75 kW.
-- **SELCA:** R1 falta a resolução do CONEMA de impacto local; R4 falta a Lei Estadual 3.239/1999; R7, as APAs da Barra (esfera, plano de manejo, órgão gestor).
-- **Sugestão de compra nova:** NBR 13133:2021. Continua a da NBR 15575 partes 1, 4 e 5.
-- **Continuam valendo:** Cobertura R1, contenção em argila mole (Cardozo), varandas, reservatório, rebaixamento R1/R3, vidro R1/R2, bug do /watch.
-
----
-
 ## [2026-10-02] — Diária Skills v3.5.0 (Sexta) — FLUXO DE SEXTA (Passos 6, 9, 10; sem Skill nova)
 
 ### RODADA ATUAL (O que foi entregue)
