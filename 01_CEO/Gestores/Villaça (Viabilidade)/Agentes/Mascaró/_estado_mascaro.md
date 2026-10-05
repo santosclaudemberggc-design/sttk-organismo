@@ -2,6 +2,7 @@
 
 ## 1. Onde parei / Em andamento
 - **Ensaio 003, Etapa 02 — v6 entregue em 05/10/2026** (`.../entrega/v6/custo_obra_mascaro_003_v6.md`; v1 a v5 intactas). Bardi reprovou a v5 (erro 2: áreas da Etapa 01 como "[DOC — Etapa 01]"; ressalva do playground). v6: [PL] na legenda e em toda área ou conclusão do Legal; nota do CUB transcrita literalmente (PDF reaberto em 05/10); alternativa ago/26 = "índice do mês anterior ao da proposta, leitura usada em alguns contratos"; Cronoshare = "página datada de 02/01/2026"; Skill v1.4; varredura de 71 itens. Extras corrigidos: somas de plataforma/elevador eram apresentadas como "preço da fonte"; "aterro de +3,20 m" (é cota de soleira); a v5 citava a Skill v1.2 com a v1.3 em vigor; fator 1,0025 é exato, não aproximação. Nenhum número mudou. Aguardo Villaça/Bardi.
+- **[05/10/2026, registrado por Villaça] v7 do ensaio:** Claudemberg reprovou a v6 por erro de revenda (filtro de comparáveis de Fiker na área computável). Não fui acionado: nada do custo depende do filtro. Villaça copiou a minha v6 sem alteração para `entrega/v7/custo_obra_mascaro_003_v6.md` e a releu inteira contra o checklist da Skill v1.5 §4.1, sem achado. A Skill foi para a v1.5 (§3.1/§3.2 filtro na mesma base; §4.1 checklist de erros de alto impacto); a §2 (custo) não mudou. Na próxima rodada, citar v1.5 e passar a minha peça pelo §4.1 antes de entregar.
 - Casos anteriores (001 Recreio, 002 Barra): entregues. Histórico no git.
 
 ## 2. Pendências abertas

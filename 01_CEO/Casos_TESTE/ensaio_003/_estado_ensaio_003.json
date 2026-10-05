@@ -40,6 +40,8 @@
     {"etapa": 2, "evento": "caso_criado", "data": "2026-10-02", "gabarito_sha256": "36FC592A7222063187C50CA4FAAA25C03E25DB217C69C19A56153C8C3F382C88"},
     {"etapa": 2, "evento": "executada_e_corrigida", "data": "2026-10-02", "veredito_recomendado": "aprovar_com_ressalva"},
     {"etapa": 2, "evento": "reprovada_por_claudemberg", "data": "2026-10-02", "motivo": "Nao pode passar nenhuma ressalva. Daqui por diante os acertos tem de ser completos, sem nenhum erro; nao e aceito o minimo erro. Os erros devem ser corrigidos e as Skills e os macetes que tiveram erro, ajustados."},
-    {"etapa": 2, "evento": "refeita_e_corrigida", "data": "2026-10-05", "versao": "v6", "obs": "Refeitas v2-v5 ao vivo em 02/10 (pareceres v2-v5, sem registro aqui na epoca); v6 pela Drenagem 05/10. Parecer: parecer_bardi_v6.md", "veredito_recomendado": "reprovar"}
+    {"etapa": 2, "evento": "refeita_e_corrigida", "data": "2026-10-05", "versao": "v6", "obs": "Refeitas v2-v5 ao vivo em 02/10 (pareceres v2-v5, sem registro aqui na epoca); v6 pela Drenagem 05/10. Parecer: parecer_bardi_v6.md", "veredito_recomendado": "reprovar"},
+    {"etapa": 2, "evento": "reprovada_por_claudemberg", "data": "2026-10-05", "versao": "v6", "motivo": "Reprovada conforme parecer v6 do Bardi. Refazer e melhorar as Skills para os agentes nao cometerem erros grandes que impactem o processo de projeto do cliente; repetir ate alinhar sem erros."},
+    {"etapa": 2, "evento": "refeita_e_corrigida", "data": "2026-10-05", "versao": "v7", "obs": "Refazer conforme parecer v6 do Bardi (faixas de metragem, W1, Skill v1.5 com checklist de erros de alto impacto). Parecer: parecer_bardi_v7.md", "veredito_recomendado": "aprovar"}
   ]
 }
