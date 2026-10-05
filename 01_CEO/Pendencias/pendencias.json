@@ -877,6 +877,48 @@
       "acao": "Levar à Reunião Semanal: Claudemberg decide e, se aprovar, edita ele mesmo o frontmatter `tools:` do hely.md (ou autoriza a edição ao vivo). Até lá, Hely lê fonte só via Kelsen.",
       "status": "aberta",
       "resolvido_em": null
+    },
+    {
+      "id": "acervo-compra-normas-ensaio-etapa2",
+      "owner": "Villaça",
+      "agente": null,
+      "cardId": "villaca",
+      "txt": "ABNT NBR 12721:2006 (CUB — coeficientes de área equivalente) e ABNT NBR 14653-2:2011 (método comparativo direto, revenda) NÃO estão no acervo D:\\008_Normas ABNT\\. A Skill viabilidade-cub-nbr12721 usa ambas sem leitura do texto oficial. O Bardi apontou como 'Fonte primária não verificada' nos pareceres v6 e v7 do Ensaio 003 etapa 2.",
+      "desde": "2026-10-05",
+      "crit": "alta",
+      "alc": "humano",
+      "res": "Normas pagas — compra deve ser autorizada por Claudemberg. Alternativa: verificar acesso via CAU-RJ ou CREA-RJ (associados podem ter coleção ABNT inclusa). Sem as normas no acervo, o Bardi não consegue verificar o método completo em fonte primária.",
+      "acao": "Claudemberg autoriza a compra das 2 normas (ABNT NBR 12721:2006 + NBR 14653-2:2011) ou confirma canal de acesso gratuito via CAU-RJ/CREA-RJ. Depois da compra, Wallenberg move os PDFs para D:\\008_Normas ABNT\\001_ABNT\\06_Avaliacao_e_Custos\\ (criar pasta) e atualiza o índice _indice_acervo.md. A Skill viabilidade-cub-nbr12721 NÃO é editada nesta rotina — só na Drenagem Contínua, depois de Villaça confirmar que o conteúdo procede contra o oficial.",
+      "status": "aberta",
+      "resolvido_em": null
+    },
+    {
+      "id": "acervo-compra-normas-ensaio-etapa3",
+      "owner": "Lúcio",
+      "agente": null,
+      "cardId": "lucio",
+      "txt": "ABNT NBR 13133:2021 (execução de levantamento topográfico, edição corrigida mar/2025) NÃO está no acervo D:\\008_Normas ABNT\\. A Skill levantamento-topografico-cadastral-duli cita a norma e registra como 'R1: sugestão de compra'. O Ensaio 003 etapa 3 é Levantamento (Lúcio/Oscar) — sem a norma, o Bardi não consegue verificar as tolerâncias planialtimétrica e a cadência de furos SPT em levantamento.",
+      "desde": "2026-10-05",
+      "crit": "alta",
+      "alc": "humano",
+      "res": "Norma paga — compra deve ser autorizada por Claudemberg. Alternativa: verificar acesso via CAU-RJ ou CREA-RJ.",
+      "acao": "Claudemberg autoriza a compra da ABNT NBR 13133:2021 (ou confirma canal gratuito). Depois da compra, Wallenberg move o PDF para D:\\008_Normas ABNT\\001_ABNT\\01_Arquitetura\\ e atualiza o índice. A Skill NÃO é editada nesta rotina.",
+      "status": "aberta",
+      "resolvido_em": null
+    },
+    {
+      "id": "acervo-compra-normas-gerais-05-10-2026",
+      "owner": "Wallenberg",
+      "agente": null,
+      "cardId": "sistema",
+      "txt": "Rotina Acervo v1.2 COMPLETO (05/10/2026) mapeou 22 normas ABNT citadas nas Skills ativas e ausentes do acervo (excluindo as 3 críticas do Ensaio, já em itens próprios). Prioridade 4-25 do índice _indice_acervo.md. Inclui: NBR 9050:2020 (acessibilidade, acervo tem 2015), NBR 6122:2019 (fundações), NBR 6484:2020 (SPT), NBR 9575:2024 (impermeabilização), NBR 6118:2026 (concreto), NBR 6120:2019 (cargas), NBR 10844:1989 (pluviais), NBR 5626:2020 (água fria), NBR 14565:2019 (cabeamento), NBR 15575:2025 (desempenho acústico), NBR 16537:2024 (piso tátil), NBR 8681:2025 (segurança estruturas), NBR 16415:2021 (conflito com 2015 no acervo), NBR 15220-3:2024 publicada, e outras.",
+      "desde": "2026-10-05",
+      "crit": "media",
+      "alc": "humano",
+      "res": "Todas são normas ABNT pagas. Compra em lote pode ser viabilizada via CAU-RJ/CREA-RJ (acesso à coleção para associados). Sem compra, as Skills continuam operando via fontes secundárias com ressalva.",
+      "acao": "Levar à Reunião Semanal: Claudemberg decide prioridade de compra e canal (assinatura CAU-RJ/CREA-RJ vs. compra avulsa). A lista completa está no índice _indice_acervo.md, seção 'Lista de compra'.",
+      "status": "aberta",
+      "resolvido_em": null
     }
   ]
 }

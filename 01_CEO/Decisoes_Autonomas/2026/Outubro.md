@@ -1,5 +1,21 @@
 # Livro-razão de Decisões Autônomas — Outubro/2026
 
+## 05/10/2026 — Rotina Acervo de Normas v1.2 (seg, 1ª do mês — modo COMPLETO)
+
+- **O que decidiu:** atualizar o índice do acervo `D:\008_Normas ABNT\_indice_acervo.md` com todas as normas levantadas no modo COMPLETO (P1+P2+P3+P4) e criar 3 itens de pendência no `pendencias.json`.
+- **Por quê:** modo COMPLETO (dia 5 ≤ 7). P1 (Bardi): 2 normas apontadas como "fonte primária não verificada" no parecer v7 da etapa 2. P4: 22 normas adicionais mapeadas nas Skills ativas e ausentes do acervo.
+- **O que alterou:**
+  1. `D:\008_Normas ABNT\_indice_acervo.md` — índice expandido: coluna "Etapa Ensaio" adicionada; lista de compra atualizada de 6 para 25 itens com tabela de urgência (3 normas travando o Ensaio no topo).
+  2. `01_CEO\Pendencias\pendencias.json` — 3 novos itens abertos adicionados (alçada humana, compra requer Claudemberg): `acervo-compra-normas-ensaio-etapa2`, `acervo-compra-normas-ensaio-etapa3`, `acervo-normas-compra-geral-05-10-2026`.
+  3. `03_REGISTROS_DIARIOS\2026\10\2026-10-05.md` — entrada adicionada.
+- **Bloqueios:** nenhum. Raiz de `D:\008_Normas ABNT\` limpa (zero arquivo solto). Nenhuma norma gratuita e oficial identificada para download imediato.
+- **Como desfazer:**
+  1. Restaurar `_indice_acervo.md` da versão anterior via `git checkout` (último commit antes desta rotina).
+  2. Remover os 3 itens adicionados ao `pendencias.json` (ids: `acervo-compra-normas-ensaio-etapa2`, `acervo-compra-normas-ensaio-etapa3`, `acervo-normas-compra-geral-05-10-2026`).
+  3. Editar `2026-10-05.md` removendo o bloco da rotina de acervo.
+
+---
+
 ## 01/10/2026 — Rotina Diária Skills v3.5.0 (qui, 09:07) — 2 Skills novas ativadas com ressalva
 
 **1. Skill `selca-decreto50473-2026-licenciamento-ambiental-estadual-obra-residencial-rj` (Kelsen/Hely), v1.1, ativa-com-ressalva.**
