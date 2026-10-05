@@ -1,7 +1,6 @@
 ---
 name: nbr6122-2019-fundacoes
 description: NBR 6122:2019 + Emenda 1/2022 — projeto e execução de fundações (rasas e profundas), investigação geotécnica obrigatória, consumo mínimo de cimento. Use sempre que Baumgart (Estrutural) for dimensionar sapata, radier, estaca (hélice contínua, escavada, raiz, pré-moldada) ou tubulão — mesmo que o pedido só mencione "fundação", "sondagem SPT" ou "capacidade de carga", sem citar a norma pelo nome.
-version: v1.3
 ---
 
 # NBR 6122:2019 + Emenda 1/2022 — Projeto e Execução de Fundações
@@ -56,18 +55,8 @@ Economia de até 12,5% no consumo de cimento, mantendo segurança via NBR 12655.
 5. Subestimar recalque diferencial (ELS) — mais comum que ruptura por capacidade de carga em unifamiliar.
 6. Usar consumo de cimento pré-Emenda (400 kg/m³) em vez do vigente (350 kg/m³).
 
-## Macetes de quem faz
-
-**M1 — Tipo A | Frederico Falconi (coordenador revisão NBR 6122 desde 2016, USP/Sinduscon-Rio):**
-Ao usar a Emenda 1/2022 para reduzir o consumo de cimento de 400 para 350 kg/m³ em hélice contínua, não basta citar a Emenda no memorial — é preciso declarar explicitamente que todos os critérios de desempenho da NBR 12655 foram atendidos. A norma mudou o foco de insumo (quantidade de cimento) para resultado (concreto com desempenho verificado). O limite foi relaxado exatamente para incentivar o controle de desempenho, não para dispensá-lo.
-Limite: só para estacas moldadas in loco. Pré-moldadas têm especificação própria.
-
-**M2 — Tipo B | Fernando Holanda (Votorantim Cimentos, webinar Sinduscon-Rio):**
-Em hélice contínua, a granulometria do agregado é tão crítica quanto a quantidade de cimento. O Anexo J da Emenda 1/2022 fixa 9,5–25,0 mm para hélice contínua — diferente do Anexo N (escavadas com fluido estabilizante: 4,75–12,5 mm). Verificar a granulometria disponível na obra antes de fechar o traço: se a brita estiver fora de 9,5–25,0 mm, o bombeamento pelo trado em alta pressão falha e não tem conserto aumentando o cimento.
-Limite: hélice contínua. Tubulões e estacas escavadas seguem o Anexo N e especificações próprias.
-
 ## Lacunas conhecidas
 
 Texto integral da ABNT não lido (fontes secundárias verificadas). Correlações de capacidade de carga (Aoki-Velloso, Decourt-Quaresma) não detalhadas — Skill futura pode expandir. Contenções/escavações fora de escopo (ver NBR 11682).
 
-**Fonte primária:** ABNT NBR 6122:2019 + Emenda 1/2022. **Confiança:** média (fontes secundárias verificadas: Sienge, APL Engenharia, Qualitab, Trevisano, Mobuss — 07/09/2026). **Versão:** v1.3 — macetes M1 e M2 adicionados em 05/10/2026.
+**Fonte primária:** ABNT NBR 6122:2019 + Emenda 1/2022. **Confiança:** média (fontes secundárias verificadas: Sienge, APL Engenharia, Qualitab, Trevisano, Mobuss — 07/09/2026).

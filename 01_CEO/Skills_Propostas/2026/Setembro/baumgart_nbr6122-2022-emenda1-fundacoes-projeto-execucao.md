@@ -1,6 +1,6 @@
 # NBR 6122:2019 + Emenda 1/2022 — Projeto e Execucao de Fundacoes
 
-**Versao:** v1.0
+**Versao:** v1.1
 **Status:** proposta
 **Data:** 07/09/2026
 **Tipo:** Inteligencia (Trilha A)
@@ -172,3 +172,17 @@ Antes de dimensionar, confirmar:
 - [Qualitab — NBR 6122](https://blog.qualitab.com.br/nbr-6122/) — verificado 07/09/2026
 - [Trevisano Fundacoes — ABNT NBR 6122](https://www.trevisano.com.br/abnt-nbr-6122-o-que-todo-engenheiro-precisa-saber/) — verificado 07/09/2026
 - [Mobuss Construcao — NBR 6122](https://www.mobussconstrucao.com.br/blog/nbr-6122/) — verificado 07/09/2026
+
+---
+
+## 11. Macetes de Quem Faz
+
+**M1 — Tipo A | Frederico Falconi (coordenador revisao NBR 6122 desde 2016, USP/Sinduscon-Rio):**
+Ao usar a Emenda 1/2022 para reduzir o consumo de cimento de 400 para 350 kg/m3 em helice continua, nao basta citar a Emenda no memorial — e preciso declarar explicitamente que todos os criterios de desempenho da NBR 12655 foram atendidos. A norma mudou o foco de insumo (quantidade de cimento) para resultado (concreto com desempenho verificado). O limite foi relaxado exatamente para incentivar o controle de desempenho, nao para dispensa-lo.
+Limite: so para estacas moldadas in loco. Pre-moldadas tem especificacao propria.
+Fonte: Sinduscon-Rio — https://www.sinduscon-rio.com.br/wp/noticias/nbr-6122-mudancas-de-uma-das-principais-normas-de-fundacao/
+
+**M2 — Tipo B | Fernando Holanda (Votorantim Cimentos, webinar Sinduscon-Rio):**
+Em helice continua, a granulometria do agregado e tao critica quanto a quantidade de cimento. O Anexo J da Emenda 1/2022 fixa 9,5–25,0 mm para helice continua — diferente do Anexo N (estacas escavadas com fluido estabilizante: 4,75–12,5 mm). Verificar a granulometria disponivel na obra antes de fechar o traco: se a brita estiver fora de 9,5–25,0 mm, o bombeamento pelo trado em alta pressao falha e nao tem conserto aumentando o cimento.
+Limite: helice continua. Tubuloes e estacas escavadas seguem o Anexo N e especificacoes proprias.
+Fonte: Sinduscon-Rio — https://www.sinduscon-rio.com.br/wp/noticias/nbr-6122-mudancas-de-uma-das-principais-normas-de-fundacao/

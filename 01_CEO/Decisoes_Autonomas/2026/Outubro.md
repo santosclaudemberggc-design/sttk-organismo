@@ -1,5 +1,26 @@
 # Livro-razão de Decisões Autônomas — Outubro/2026
 
+## 05/10/2026 — Rotina Macetes de Profissionais v1.2 (seg, 14:00)
+
+- **O que decidiu:** acrescentar 2 macetes (M1 + M2) à Skill `nbr6122-2019-fundacoes` (Cardozo/Baumgart), elevando de v1.2 para v1.3. Fontes: Sinduscon-Rio, webinar sobre revisão NBR 6122 — Frederico Falconi (coord. revisão, USP) e Fernando Holanda (Votorantim Cimentos).
+- **Por quê:** Skill selecionada por prioridade 1 (sem seção "Macetes de quem faz"). Pesquisa trouxe fontes tipo A + B verificáveis. Cardozo confirmou que nenhum macete contradiz a norma.
+- **O que alterou:**
+  1. `.claude\skills\nbr6122-2019-fundacoes\SKILL.md` — versão v1.2→v1.3; seção "Macetes de quem faz" (M1 + M2) adicionada.
+  2. `01_CEO\Skills_Propostas\2026\Setembro\baumgart_nbr6122-2022-emenda1-fundacoes-projeto-execucao.md` — Versao v1.0→v1.1; seção "## 11. Macetes de Quem Faz" adicionada.
+  3. `01_CEO\Skills_Propostas\_macetes_fila.md` — 3 novas linhas no histórico; Próximas da fila atualizada.
+  4. `01_CEO\Decisoes_Autonomas\_backups\2026-10-05\cardozo_ANTES_nbr6122-2019-fundacoes_SKILL.md` — backup criado.
+  5. `03_REGISTROS_DIARIOS\2026\10\2026-10-05.md` — entrada adicionada.
+  6. `01_CEO\Painel_Fundador\feed.jsonl` — evento skill/Cardozo adicionado.
+- **Rodadas sem macete:** Kelsen (`legal-oodc-mais-valera-mais-valia`) — 1ª rodada (tipo C, 3 fontes sem OAB). Lúcio (`levantamento-topografico-cadastral-orientado-duli-licin-rj`) — 1ª rodada (tipos A+B, 4 fontes sem autor CREA para DULI/LICIN). Ambas retornam na próxima semana.
+- **Bloqueios:** Machado Meyer retornou 403. Legalizzar e N Partners sem autor com OAB identificado. NBR 13133 não comprada (acervo).
+- **Como desfazer:**
+  1. Restaurar backup: `01_CEO\Decisoes_Autonomas\_backups\2026-10-05\cardozo_ANTES_nbr6122-2019-fundacoes_SKILL.md` → `.claude\skills\nbr6122-2019-fundacoes\SKILL.md`.
+  2. Reverter versão no espelho `Skills_Propostas\2026\Setembro\baumgart_nbr6122...md` manualmente (remover seção 11 e ajustar Versao para v1.0).
+  3. Remover as 3 linhas de 05/10 do histórico do `_macetes_fila.md`.
+  4. Remover evento do `feed.jsonl`.
+
+---
+
 ## 05/10/2026 — Rotina Acervo de Normas v1.2 (seg, 1ª do mês — modo COMPLETO)
 
 - **O que decidiu:** atualizar o índice do acervo `D:\008_Normas ABNT\_indice_acervo.md` com todas as normas levantadas no modo COMPLETO (P1+P2+P3+P4) e criar 3 itens de pendência no `pendencias.json`.
