@@ -7,6 +7,11 @@
 **Backups:** `_backups/2026-10-06/` (bardi_ANTES_lacuna, diaria_SKILL_ANTES, drenagem_SKILL_ANTES, scheduled_*_ANTES).
 **Como desfazer:** restaurar os 6 arquivos a partir dos backups.
 
+## 06/10/2026 — Lúcio: Skill `levantamento-topografico-cadastral-orientado-duli-licin-rj` v1.3 → v1.4 (pós-reprovação da v3 da Etapa 03)
+**O quê:** item de forma/extensão do §5-bis: contagem só com ferramenta; sem ferramenta, pedir a Wallenberg antes de declarar conformidade; nunca número estimado. Aplicado em `.claude/skills/.../SKILL.md` e na cópia de `Skills_Propostas/2026/Outubro/`, índice atualizado.
+**Por quê:** parecer_bardi_v3 (itens 2 e 3 do "O que corrigir"): nota v3 declarou ~2.100 palavras "dentro do teto"; real 2.702.
+**Como desfazer:** backup `_backups/2026-10-06/levantamento-topografico-cadastral-orientado-duli-licin-rj_SKILL_v1.3_ANTES_v1.4.md` (restaurar a linha do §5-bis, version v1.3, remover changelog v1.4).
+
 ## 06/10/2026 — Lúcio: Skill `levantamento-topografico-cadastral-orientado-duli-licin-rj` v1.2 → v1.3 (pós-reprovação da v2 da Etapa 03 por extensão)
 **O quê:** §5-bis ganhou 1 item: conferência de forma e extensão contra o enunciado (limite de páginas, contado; conclusão primeiro; contas em anexo citado por número; matriz uma linha por decisão). Aplicado em `.claude/skills/.../SKILL.md` e na cópia de `Skills_Propostas/2026/Outubro/`, índice atualizado.
 **Por quê:** parecer_bardi_v2 (item 2 do "O que corrigir"); Claudemberg reprovou a v2 só pela extensão.

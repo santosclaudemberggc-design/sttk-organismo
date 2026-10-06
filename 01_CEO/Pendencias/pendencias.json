@@ -961,6 +961,21 @@
       "txt": "Lucio (06/10) corrigiu uma frase da Skill nbr6492-representacao-grafica (dono: Cardozo) ao harmonizar com a Skill nova nbr6492-2021-memoriais-por-etapa-projeto (backup integral em _backups/2026-10-06/). O espelho .agents/skills/nbr6492-representacao-grafica/SKILL.md (fora do git, criado 03/10) ainda tem a frase antiga.",
       "res": "Edicao foi harmonizacao objetiva (a frase contrariava a Secao 1 da norma). Espelho .agents/ ja tinha divergido antes (Skill de Viabilidade, 05/10) sem dono definido. 06/10: Claudemberg aprovou. Cardozo avisado via _estado_cardozo.md. Sincronizar o espelho .agents/skills/ com .claude/skills/ (7 Skills divergentes + 1 ausente) foi BLOQUEADO pela permissao automatica (sobrescrita de arquivos fora do git) — fica com Claudemberg.",
       "acao": "Claudemberg: autorizar a sincronizacao do espelho .agents/skills/ (copia de .claude/skills/, fonte unica) ou fazer ele mesmo; definir se o espelho deve ter sincronizacao regular."
+    },
+    {
+      "id": "lacuna-kelsen-dimensao-minima-vaga-06-10-2026",
+      "tipo": "lacuna_conhecimento",
+      "owner": "Kelsen",
+      "agente": "hely",
+      "cardId": "sistema",
+      "desde": "2026-10-06",
+      "crit": "media",
+      "alc": "auto",
+      "status": "aberta",
+      "resolvido_em": null,
+      "txt": "Ensaio 003 etapa 3 (parecer_bardi_v4, Lacunas do organismo): dimensao minima legal de vaga de garagem residencial no RJ nao esta em nenhuma Skill; o Levantamento usou faixa 12,50-15,00 m2/vaga do parecer do Bardi, sem fonte legal.",
+      "res": "Primeira lacuna aberta pela regra 'Lacuna do organismo' (Claudemberg 06/10).",
+      "acao": "Rotina Diaria de 07/10, prioridade zero: acionar Kelsen (que aciona Hely) para achar na fonte primaria (LC 270/2024, COE LC 198/2019, Decreto 3046/81 se aplicavel) a dimensao minima de vaga e criar/corrigir a Skill correspondente; fechar este item com a Skill criada."
     }
   ]
 }

@@ -1,7 +1,7 @@
 ---
 name: levantamento-topografico-cadastral-orientado-duli-licin-rj
 description: O que o levantamento topográfico/cadastral do lote precisa entregar para o projeto passar no LICIN 2.0 do Rio (Decreto Municipal 55.622/2025) — mapeia cada um dos 13 parâmetros que o técnico da SMDU confere (Art. 3º) e cada item obrigatório da planta de situação e dos cortes do DULI (Anexo I: RN do meio-fio, curvas de nível, perfil natural, cota de soleira, subsolo aflorado, cortes e aterros, medidas do título × medidas locais) ao dado que o topógrafo tem de medir. Use sempre que Oscar/Lúcio for encomendar, conferir ou usar um levantamento na etapa de Levantamento, ou montar planta de situação e cortes para o DULI, mesmo que o pedido só mencione "topografia", "planialtimétrico", "medir o terreno", "cota do meio-fio", "nível do terreno", "aterro" ou "a escritura diz uma medida e o muro outra".
-version: v1.3
+version: v1.4
 status: ativa-com-ressalva
 fonte_primaria_lida: "Decreto Municipal RJ 55.622, de 01/01/2025 (DO Rio nº 195, págs. 17-21, PDF da SMDU), Arts. 2º §§3º-4º, 3º, 8º, 9º e Anexo I (Planta de Situação itens 1-13; Cortes itens 1-6; Condições gerais IV.2 e IV.4); COE LC 198/2019 (acervo D:\\008_Normas ABNT\\002_Prefeitura_RJ), Art. 35 e glossário (COTA DE SOLEIRA, PAA, PAL, SUBSOLO, ALINHAMENTO)"
 data: 2026-10-05
@@ -92,7 +92,7 @@ Nasceu da reprovação da Etapa 03 do Ensaio Sombra 003 (06/10/2026): as contas 
 - [ ] **Toda pergunta do enunciado/pedido** tem resposta localizável (tabela pergunta → peça/seção).
 - [ ] Relatório confere com a NBR 6492:2021 5.1.2 (dados ambientais incl. marés, áreas alagáveis, registro fotográfico): ver Skill `nbr6492-2021-memoriais-por-etapa-projeto` §2.
 - [ ] Os enunciados e documentos de **todas** as etapas anteriores foram lidos antes de declarar "sem fonte".
-- [ ] **Forma e extensão conferidas contra o enunciado (v1.3, reprovação da v2 do Ensaio 003 por extensão):** o relatório respeita o limite de páginas pedido (ex.: "5-8 páginas" ≈ até 2.500 palavras; contar, não estimar de olho); conclusão primeiro, uma frase por decisão; contas completas em anexo de memória de cálculo citado por número; a matriz do Briefing tem **uma linha curta por decisão** (questão | status | impacto em 1 frase | dono), sem parágrafo nas células. Conteúdo certo em forma errada reprova.
+- [ ] **Forma e extensão conferidas contra o enunciado (v1.3, reprovação da v2 do Ensaio 003 por extensão):** o relatório respeita o limite de páginas pedido (ex.: "5-8 páginas" ≈ até 2.500 palavras); **contagem só com ferramenta (v1.4):** quem tem ferramenta de contagem (ex.: `wc -w`) conta e registra número + método na nota; quem não tem (Oscar, Lúcio hoje) **pede a contagem a Wallenberg antes de declarar conformidade** e escreve na nota "Contagem: a ser feita por Wallenberg com ferramenta"; **nunca declarar número estimado** nem concluir "dentro do teto" sem medição (reprovação da v3: estimado ~2.100, real 2.702); conclusão primeiro, uma frase por decisão; contas completas em anexo de memória de cálculo citado por número; a matriz do Briefing tem **uma linha curta por decisão** (questão | status | impacto em 1 frase | dono), sem parágrafo nas células. Conteúdo certo em forma errada reprova.
 
 ## 6. MACETES DE QUEM FAZ
 
