@@ -30,21 +30,16 @@ Skill que chegar à 2ª rodada sem macete aprovado vai para "Sem fonte pública"
 | 05/10/2026 | Kelsen | legal-oodc-mais-valera-mais-valia (0a) | **1ª rodada sem macete** | C tentado: Machado Meyer (403 Forbidden), Legalizzar (sem OAB identificado), N Partners (sem OAB + desatualizado) | — |
 | 05/10/2026 | Lúcio | levantamento-topografico-cadastral-orientado-duli-licin-rj (0b) | **1ª rodada sem macete** | A e B tentados: empresas de topografia sem autor CREA identificado; nenhuma fonte com macete específico DULI/LICIN/RJ | — |
 | 05/10/2026 | Cardozo | nbr6122-2019-fundacoes (1) | v1.2→v1.3 | 2 (A: Frederico Falconi/coord.revisão NBR 6122/USP+Sinduscon-Rio; B: Fernando Holanda/Votorantim+Sinduscon-Rio); divergência J×N encerrada | — |
-| 06/10/2026 | Kelsen | decreto3046-81-lc270-2024-licin-barra-recreio (2) | 1.3 → 1.4 | 2 aprovados (C: Dicionário de Termos LC 270, SMDU 2ª ed. dez/2025 — M5 índice remissivo, com limite: verbete OODC não remete ao Art. 110; M7 afastamento frontal medido do alinhamento/PAA, Art. 363 lido). 1 rejeitado: M6 (ATC) — o Art. 151 II remetido não define ATC | — |
-| 06/10/2026 | Cardozo | nbr5410-eletrica-automacao (2) | v1.1 → v1.2 | 3 (A+B: manual Elektro/Pirelli/Procobre 2003, rev. téc. Prof. Hilton Moreno, secretário da CE da NBR 5410 — E1 evitar DR único geral, fundido no item 2; E2 iluminação seca × molhada, **corrigido**: o exemplo do manual deixa o banheiro sem DR, contra 5.1.3.2.2 a); E3 TUG de cozinha em circuitos de 2–3 pontos). Todos conferidos contra o texto 2004 | — |
 
 ## Próximas da fila (sugestão)
 
 - **Kelsen:** `legal-oodc-mais-valera-mais-valia` (0a — **2ª rodada em 07/10 ou 08/10**; se falhar → Sem fonte pública). Tentar: Ademi-RJ publicação com autor, palestra CAU/RJ com nome, ou artigo de advogado urbanista OAB sobre janela LC 301/Art. 40.
 - **Lúcio:** `levantamento-topografico-cadastral-orientado-duli-licin-rj` (0b — **2ª rodada na próxima semana**; se falhar → Sem fonte pública). Tentar: canal de topógrafo com CREA no YouTube sobre levantamento para aprovação RJ, ou artigo técnico de engenheiro geotécnico sobre DULI.
-- **Cardozo:** concluídas `nbr6122-2019-fundacoes` (05/10) e `nbr5410-eletrica-automacao` (06/10, fonte externa). Próxima: `nbr6118-estrutural-concreto` (prioridade 2) ou Skills da etapa 8 do Ensaio (Estrutural/Baumgart) sem macete.
-- **Kelsen (prioridade 2):** `decreto3046-81` recebeu fonte C em 06/10. Pendência dele: conferir se o Dec. 3.046 tem regra própria de medição do afastamento frontal (limite b do M7).
+- **Cardozo:** concluída `nbr6122-2019-fundacoes` (05/10). Próxima: `nbr6118-estrutural-concreto` (prioridade 2 — só macetes da norma) ou Skills da etapa 8 do Ensaio (Estrutural/Baumgart) sem macete.
 
 ## Com macetes só da norma (prioridade 2, rever depois)
 
-coe-lc198, nbr14565, nbr5626-8160. (decreto3046-81-lc270 e nbr5410 receberam fonte externa em 06/10.)
-
-Estado do portão em 06/10: 0a e 0b estão em espera de 2ª rodada com data marcada (Kelsen OODC 07–08/10; Lúcio levantamento na próxima semana), e não há Skill sem a seção de macetes (prioridade 1 vazia). Enquanto isso, modo fila esgotada: prioridade 2 só às terças e quintas.
+coe-lc198, decreto3046-81-lc270, nbr14565, nbr5410, nbr5626-8160.
 
 ## Pistas para varandas (próxima rodada)
 

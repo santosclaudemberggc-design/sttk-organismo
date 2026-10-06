@@ -1,12 +1,11 @@
 ---
 name: decreto3046-81-lc270-2024-licin-barra-recreio
 description: "Base legal para licenciamento LICIN 2.0 na Barra da Tijuca e Recreio dos Bandeirantes: Decreto 3046/81 (ZE-5/Zona Plano Piloto) incorporado à LC 270/2024, e como Hely identifica os parâmetros por subzona via RIU antes de cada consulta prévia."
-version: "1.4"
+version: "1.3"
 status: ativa-com-ressalva
 created: 2026-09-21
-updated: 2026-10-06
+updated: 2026-10-01
 changelog:
-  - "1.4 (06/10/2026, Kelsen, Rotina de Macetes v1.2): §6 ganha M5 (Dicionário de Termos da SMDU como índice remissivo da LC 270; limite concreto: o verbete OODC não remete ao Art. 110) e M7 (afastamento frontal medido do alinhamento, inclusive o projetado por PAA; LC 270 Art. 363 lido, pp. 129-130 do PDF); §5 ganha o item 'Consultar PAA sobre o lote'. M6 (ATC) rejeitado: o Art. 151, II, para onde o Dicionário remete, não define ATC (trata de imóvel subutilizado, p. 57 do PDF). Fonte tipo C: Dicionário de Termos Técnicos do Plano Diretor LC 270/2024, SMDU, 2ª ed., dez/2025. Backup: 01_CEO/Decisoes_Autonomas/_backups/2026-10-06/macetes_ANTES_decreto3046-81-lc270-2024_SKILL_instalada.md"
   - "1.3 (01/10/2026, Kelsen, ordem de Claudemberg após o Ensaio Sombra 003, etapa 1). R1 reescrita: a isenção de 5 anos EXISTE, mas está no Art. 110 da LC 270, e não no Art. 106 (lido no PDF oficial, pp. 40-41). Tem exceção no §8º e transição no §1º. Checklist de OODC corrigido. Nova §6 com M3 (Dec. 3.046, Disp. Gerais VII->XI: varanda e abrigo de veículos de casa unifamiliar no afastamento lateral) e M4 (LC 270 Art. 111 §5º: decretos olímpicos prevalecem). Nova §7 sobre como checar a vigência do Dec. 3.046, que não aparece por número na Busca Fácil. Backup: 01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_decreto3046-81-lc270-2024-licin-barra-recreio_SKILL_instalada.md"
   - "1.2 (29/09/2026, Hely a pedido de Kelsen, aprovado por Claudemberg): §4 faixa de marinha e APP de lagoa conferidas em fonte primária (DL 9.760/1946 art. 2º; Lei 12.651/2012 art. 4º II; LC 270/2024 Arts. 214-215, p. 80 do PDF); acrescentada dispensa de faixa para lagoa < 10.000 m² (LC 270 Art. 215 §2º); nova §6 Macetes de quem faz. Ver R11."
   - "1.1 (28/09/2026, Kelsen, aprovado por Claudemberg): treino de 28/09. §2 fonte do RIU alinhada a mapas.rio.rj.gov.br; §3 menção 'ZPR – Zona de Proteção de Ruas' removida (sem fonte); §4 faixa de marinha reescrita (os 33 m são a própria faixa); §4 APP de lagoa marcada 'a confirmar' com distinção urbano/rural. Ver R10."
@@ -15,7 +14,7 @@ gestor_validador: kelsen
 agente_principal: hely
 cross_disciplina:
   - oscar
-fonte_primaria_lida: "parcial — LC 270/2024 Arts. 363-364 (pp. 129-130) e Art. 151 (p. 57) no PDF oficial da base, Kelsen 06/10/2026; Dicionário de Termos LC 270 SMDU 2ª ed. (fonte C), pp. impressas 13-14, 27, 47, 81-82, Kelsen 06/10/2026; Decreto 3046/81, Disp. Gerais I-XXIII no PDF da base (pp. 2-4, Kelsen 01/10/2026); LC 270/2024 Arts. 106-111 no PDF oficial da base (pp. 40-41, Kelsen 01/10/2026); LC 270/2024 Arts. 214-216 lidos no PDF oficial da base (pp. 79-80); DL 9.760/1946 art. 2º e Lei 12.651/2012 art. 4º lidos no planalto.gov.br (28/09/2026)"
+fonte_primaria_lida: "parcial — Decreto 3046/81, Disp. Gerais I-XXIII no PDF da base (pp. 2-4, Kelsen 01/10/2026); LC 270/2024 Arts. 106-111 no PDF oficial da base (pp. 40-41, Kelsen 01/10/2026); LC 270/2024 Arts. 214-216 lidos no PDF oficial da base (pp. 79-80); DL 9.760/1946 art. 2º e Lei 12.651/2012 art. 4º lidos no planalto.gov.br (28/09/2026)"
 metadata:
   tipo: Inteligência (Trilha A)
   norma_base: "Decreto 3046/81 (ZE-5) + LC 270/2024 Plano Diretor + LICIN 2.0 (Decreto 55.622/2025)"
@@ -139,7 +138,6 @@ os parâmetros de referência são os do Decreto 3046/81
 - [ ] Unifamiliar: ler o Dec. 3.046, Disp. Gerais VII **até a última frase** (remete ao XI) e aplicar o XI (§6, M3)
 - [ ] Verificar LMS (Licença Municipal de Supressão) se houver árvores no lote — obrigatória para todo unifamiliar; em APP/área alagadiça pode tornar-se LMP+LMI (Decreto 51.503/2022 Art. 27 p.ú. II/IV)
 - [ ] Se condomínio existente: ler Regramento Construtivo (Anexo do Estatuto) antes de propor implantação
-- [ ] Consultar PAA sobre o lote (e linha de fachada ou afastamento definido por projeto em vigor, LC 270 Art. 363 §1º II) antes de fixar a implantação: o afastamento frontal se mede do alinhamento, e não do muro atual (§6, M7)
 - [ ] Confirmar com Lúcio/Oscar se o partido arquitetônico proposto cabe nos parâmetros levantados
 
 ---
@@ -163,30 +161,6 @@ Só entra aqui o que tem artigo e fonte primária lida. Cada macete é ponto de 
 - **Complemento:** o XIV permite saliência de até 0,40 m sobre o afastamento frontal, acima do térreo, para jardineira e ar-condicionado, fora da ATE e da TO.
 
 **M4 — Decretos olímpicos prevalecem sobre a LC 270 onde alteraram o Dec. 3.046.** Fonte: LC 270/2024, Art. 111 §5º (p. 41), que cita os Decretos 24.241, 30.650, 32.886, 36.795 e 47.880. Num lote cuja subzona foi tocada por eles, o parâmetro vigente pode vir do decreto olímpico, e não do texto de 1981. Conferir no RIU.
-
-**M5 — Use o Dicionário da SMDU como índice remissivo, nunca como ponto final.**
-- **O que fazer:** antes de concluir sobre um termo da LC 270 (ATE, OODC, edícula, afastamento frontal etc.), abra o verbete no Dicionário e leia, no PDF oficial da lei, cada artigo listado no "Vide Art. ...". Exemplos conferidos por Kelsen em 06/10/2026:
-  - **ATE** (p. impressa 27): Arts. 102, 111 §3º, 121, 122 IV, 123 III, 124 I-II, 125 II, 344 II, 345, 346, 347, 375 I, 392, 398 IX e p.ú., 410 II, Anexo XV-A e Anexo XXV (Fórmula 1);
-  - **OODC** (pp. impressas 81-82): Arts. 104, 106 IV §2º, 114, 120 §2º, 121 III §3º, 122 IV, 131 IV-V §4º, 191 I, 261 VIII, 270 II, 272 II, 345 §1º II e §3º, 347 IX §1º, 395 III "c" §2º, Anexo XVI (item II, "b"), Anexo XXV (Fórmula 1), e LC 274/2024 Arts. 13 §1º e 14 p.ú.;
-  - **Edícula** (p. impressa 47): Arts. 347 V, 350 IV, 355, 390 §1º, 410 II, e LC 272/2024 Art. 13 XV;
-  - **Afastamento frontal** (pp. impressas 13-14): Arts. 363 (caput, §§1º, 2º e 5º), 365 III, 375 II, 398 I, 401, 406, 418 I "b", 439 IV, 466 II, 467 §1º III e Anexo XXI.
-- **Por que funciona:** obriga a sair do primeiro artigo encontrado. Foi esse o erro do Ensaio 003 (R1): o Art. 106 foi lido, mas a isenção estava no Art. 110.
-- **Fonte:** "Dicionário de Termos Técnicos do Plano Diretor — LC 270/2024", 2ª ed. revista e ampliada, dez/2025, SMDU/Prefeitura do Rio (coord. Valéria Magiano Hazan, DU/SUBPU/CTPU). Arquivo local: `01_CEO/Skills_Propostas/_macetes_fontes/2026-10-06/SMDU_Dicionario_Termos_LC270_2a_ed_dez2025.pdf`. A p. impressa N fica na p. N+1 do PDF. Origem: https://desenvolvimentourbano.prefeitura.rio/wp-content/uploads/sites/52/2025/12/Dicionario-de-Termos-LC-270-2a-edicao-04_12_2025.pdf. **Tipo C.**
-- **Limites:**
-  - (a) **O índice é incompleto, e justamente no ponto que mais importa.** O verbete OODC **não remete ao Art. 110** (isenção de 5 anos), e o verbete ATE também não (conferido por Kelsen em 06/10/2026). Quem confiasse só no índice repetiria o erro do Ensaio 003. Ler os artigos vizinhos de cada remissão continua obrigatório.
-  - (b) O Dicionário não tem força normativa: a lei prevalece.
-  - (c) O Dicionário não cobre o Dec. 3.046/81 (subzonas da ZPP), que continua a ser lido no PDF próprio.
-  - (d) A definição do Dicionário pode divergir da redação da lei. Exemplo: o verbete de afastamento frontal diz "testada", e o Art. 363 diz "alinhamento" (ver M7). Também não remete a definição para onde ela está na lei: o verbete ATC remete ao Art. 151, II, que não define ATC (trata de imóvel subutilizado, p. 57 do PDF).
-
-**M7 — O afastamento frontal se mede do alinhamento, e o alinhamento pode ser o projetado (PAA), e não o muro atual.**
-- **O que fazer:** antes de fixar a implantação, verificar se há Projeto Aprovado de Alinhamento (PAA) incidindo sobre o lote. Se houver, medir o afastamento frontal a partir do novo alinhamento projetado, e não da testada existente.
-- **Por que funciona:** a LC 270, Art. 363 caput (PDF oficial, p. 129), mede o afastamento a partir do "alinhamento do terreno", e não da testada nem do muro. O Dicionário (p. impressa 13) explicita que, havendo PAA, "esta distância será considerada a partir do novo alinhamento projetado". Como a testada atual pode ser diferente do alinhamento de projeto, o recuo pode avançar sobre a área útil do lote.
-- **Fonte:** LC 270/2024, Art. 363 caput e §1º, `LC270_2024_PlanoDiretorLUOS.pdf`, pp. 129-130, lido por Kelsen em 06/10/2026, mais o Dicionário SMDU, verbete "Afastamento Frontal", pp. impressas 13-14. **Tipo C**: a regra do PAA está na publicação técnica, e o termo "alinhamento" está na lei.
-- **Limites:**
-  - (a) A frase sobre o PAA **não está no texto do Art. 363**: é interpretação oficial da SMDU, não norma.
-  - (b) **Na Barra/Recreio, o valor do afastamento frontal vem do Dec. 3.046/81** (Art. 363 §1º III, p. 130), e não do mínimo de 3 m. O macete diz só de onde medir. Se o próprio Decreto tem regra de medição, isso não foi conferido.
-  - (c) O §1º II (pp. 129-130) já admite "linha de fachada ou afastamento definido por projeto em vigor": conferir também esses projetos, e não só o PAA.
-  - (d) O caminho da consulta ao PAA (mapas.rio, certidão) fica a confirmar pelo Hely no primeiro caso real.
 
 ---
 

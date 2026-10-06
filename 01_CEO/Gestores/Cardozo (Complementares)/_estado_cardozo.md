@@ -3,6 +3,13 @@
 > Arquivo de estado pessoal. Leio ao nascer (início de toda conversa), escrevo ao morrer (fim de toda conversa).
 > Memória privada minha — não repete o Registro Diário, que é o que sobe pra Claudemberg via Wallenberg.
 
+**Rotina Macetes v1.2 (06/10/2026 — nbr5410):** apliquei na Skill instalada `nbr5410-eletrica-automacao`, que passou de v1.1 para v1.2. A cópia em Skills_Propostas/Agosto não foi tocada, porque é registro histórico. Não acionei o Landell. A fonte é o manual Elektro/Pirelli de 2003, com revisão técnica de Hilton Moreno (tipo A+B), e conferi tudo no PDF da 5410:2004.
+- E1: fundido no item 2 (o DR único soma as fugas).
+- E2: entrou CORRIGIDO como item 7. O exemplo da p. 63 deixa a iluminação do banheiro só com DTM, mas a 5.1.3.2.2 a) exige DR. A nota 3 vale só para a alínea d), e o 9.1.3 não abre exceção. O próprio manual se contradiz entre as p. 62 e 63.
+- E3: entrou como item 8, como escolha de projeto e não como limite normativo.
+
+Páginas no PDF da norma: impressa = PDF − 8. Assim, 5.1.3.2.2 fica no PDF 57-58 e 9.5.3 no PDF 192. No manual, impressa ≈ PDF − 1.
+
 **Rotina Macetes v1.2 (05/10/2026 — nbr6122):** validei e apliquei 2 macetes (M1 e M2, ambos APROVADOS) na `nbr6122-2019-fundacoes`. M1 (Falconi/Sinduscon-Rio, tipo A): citar Emenda 1/2022 para 350 kg/m³ exige declarar desempenho NBR 12655 no memorial — não basta citar a emenda. M2 (Holanda/Votorantim, tipo B): verificar granulometria do agregado (9,5–25,0 mm, Anexo J) antes de fechar o traço em hélice contínua. Skill .claude: version v1.3 no frontmatter + seção "Macetes de quem faz". Skills_Propostas: v1.0 → v1.1 + seção 11. M2 confirma definitivamente: Anexo J = hélice contínua (9,5–25,0 mm) e Anexo N = escavadas com fluido (4,75–12,5 mm) — a suspeita de troca de letras registrada em 01/10/2026 estava errada. Suspeita encerrada.
 
 **Rotina Diária v3.5.0, Passo 4.2 (05/10/2026):** validei a Skill proposta `cardozo_entrada-energia-light-ligacao-nova-padrao-recon-bt-rj.md` (Landell) e editei o arquivo para v1.1. **Veredito: PROCEDE COM RESSALVA.** Conferi contra o FAQ da Light e a transcrição do vídeo; o COE (Arts. 33 V e 35 §2º) eu li no PDF primário (págs. 22 a 24). Correções feitas:
