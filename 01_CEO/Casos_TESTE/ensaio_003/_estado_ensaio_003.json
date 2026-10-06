@@ -3,8 +3,8 @@
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar.",
   "etapa_atual": 3,
-  "status_etapa": "aguardando_aprovacao",
-  "proxima_acao": "aguardar_claudemberg",
+  "status_etapa": "reprovada",
+  "proxima_acao": "refazer",
   "valores_possiveis": {
     "status_etapa": [
       "a_criar",
@@ -317,6 +317,13 @@
       "versao": "v3",
       "veredito_recomendado": "reprovar",
       "obs": "Conteudo certo (4/4 iscas, numeros iguais a v2, matriz legivel). Reprova: Peca 2 com 2.702 palavras (limite 2.500 da propria Skill v1.3) e nota de auditoria do Lucio afirmou contagem estimada falsa. Parecer: parecer_bardi_v3.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-06",
+      "versao": "v3",
+      "motivo": "Reprovada conforme parecer_bardi_v3: Peca 2 com 2.702 palavras (> 2.500) e nota de auditoria com contagem estimada falsa. v4: cortar Peca 2 sem mudar numeros; contagem real feita por Wallenberg (Lucio/Oscar sem ferramenta de contagem)."
     }
   ],
   "gabaritos_em": "01_CEO/Agentes_Diretos/Bardi (Examinador)/_gabaritos_LACRADO/ensaio_003/"
