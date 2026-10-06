@@ -339,7 +339,13 @@
       "data": "2026-10-06",
       "versao": "v4",
       "motivo": "Reprovada conforme parecer_bardi_v4 (3 erros de forma). Refazer v5 na Drenagem de 07/10: Oscar/Lucio corrigem os 3 pontos (nota tabela E; tabela G credito na Peca 2; nota linha 7 e Peca 1 §9 desatualizadas). Wallenberg NAO edita a entrega, so conta palavras com ferramenta e anota."
+    },
+    {
+      "etapa": null,
+      "evento": "gabaritos_movidos",
+      "data": "2026-10-06",
+      "obs": "Decisao de Claudemberg: saiu de 01_CEO (buscas em 01_CEO listavam o nome) para a raiz do repo _gabaritos_LACRADO_bardi/ensaio_003/ via git mv."
     }
   ],
-  "gabaritos_em": "01_CEO/Agentes_Diretos/Bardi (Examinador)/_gabaritos_LACRADO/ensaio_003/"
+  "gabaritos_em": "_gabaritos_LACRADO_bardi/ensaio_003/"
 }
