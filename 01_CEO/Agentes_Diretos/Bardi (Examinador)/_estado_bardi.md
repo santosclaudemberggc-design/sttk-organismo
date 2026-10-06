@@ -1,7 +1,9 @@
 # Estado — Bardi (Agente Examinador, direto de Wallenberg)
 
 ## 1. Onde parei
-05/10/2026, 22:30 — Examinei v9-final da Etapa 02. Gravei `parecer_bardi_v9-final.md` com veredito **APROVAR**.
+06/10/2026 — Corrigi a Etapa 03 (Levantamento), 1ª versão, Lúcio + Oscar. `etapa_03_levantamento\parecer_bardi.md`: **REPROVAR**. Isca 2 pega; Iscas 1, 3 e 4 parciais (4 com erro: "cabe em H0" sem descontar a garagem). Zero reprovações automáticas. As 13 contradições do enunciado apontadas pelo Lúcio estão corretas, o erro é meu. O incidente da listagem dos nomes do gabarito não compromete o ensaio. Próximo: corrigir o refazer da Etapa 03.
+
+(Histórico anterior) 05/10/2026, 22:30 — Examinei v9-final da Etapa 02. Gravei `parecer_bardi_v9-final.md` com veredito **APROVAR**.
 
 **v9 vs v8:**
 - ✅ Isca 1 — PEGOU (CAB=CAM=1,0; OODC R$0; sem fundamento legal citado, lacuna menor)
@@ -21,6 +23,8 @@
 **Próximo acionamento:** Etapa 03 (se Claudemberg aprovar v9) ou v10 (se reprovar).
 
 ## 2. Pendências abertas
+- Mover `_gabaritos_LACRADO` para fora da árvore do ensaio (Glob na raiz lista os nomes), com Wallenberg. Proposto no parecer da Etapa 03.
+- No refazer da Etapa 03, julgar a Isca 4 pela área computável (−(n−1) × vaga sobre os 457,44), não pelas contas do gabarito (×2 errado). Julgar a Isca 1 pela tensão VII × XI, não pela "vedação certa".
 - Gabarito da Etapa 01, seção 8, e gabarito da Etapa 02, seção 9: fatos reservados para as Etapas 03, 04, 05/06, 07 e 16. Decidir na montagem de cada etapa, de forma coerente com a entrega aprovada. Na Etapa 04, a entrega já registrou o COES Art. 31 V (unifamiliar dispensada de acessibilidade), o que é correto. A isca da suíte de D. Lourdes tem de ser cobrada como exigência do programa, não da lei.
 - Na correção da Etapa 02, conferir na fonte primária o que só verifiquei por fonte secundária: NBR 12721:2006, itens 8.3.5 e 5.7.3, e o R1-A; NBR 14653-2:2011. Nenhuma das duas está no acervo, e as duas entram em "Fonte primária não verificada" no parecer. Também não localizei no projeto o PDF do CUB do Sinduscon-Rio.
 - Fontes ainda não conferidas por mim em primário: Lei 6.015 art. 213; CC 1.301-1.302 e 1.333-1.334; Lei 12.651 art. 4º §4º; LC 270 Art. 216 V; Dec. 51.503 Arts. 26-27.
@@ -44,6 +48,9 @@
 - O PDF do CUB Sinduscon-Rio vem só como binário pelo WebFetch. O caminho é Read no arquivo salvo em tool-results, que extrai o texto.
 - Backup: conferir se é integral. Skill nova fica fora do git até o commit, então backup parcial = versão perdida.
 - A 1ª correção das respostas ao cliente não flagrou a frase sobre o prazo jurídico. Daqui em diante, ler cada resposta ao cliente procurando conclusão jurídica sem fonte lida.
+
+- **Etapa 03 (06/10), erros MEUS:** o enunciado tinha 13 contradições com o dossiê (casa "demolida", 1,60 m "da lei", Art. 353 III como "lote mínimo", soleira "atual", NA no 5.2, custo e crédito trocados, "~150 m²", DULI na Etapa 15...). Também montei a Isca 1 sobre uma leitura (VII veda o balanço frontal na unifamiliar) que a ERRATA 4.1 da etapa aprovada já tinha corrigido, e o primário confirma a ERRATA (p. 3: "unifamiliares → XI"). Na Isca 4, multipliquei a projeção reduzida por 2, quando o andar superior pode ficar sobre a garagem. Regras: (1) antes de emitir, cruzar cada frase factual do enunciado com o dossiê; (2) toda isca legal precisa ser conferida no primário e contra as ERRATAS das etapas aprovadas; (3) conta de isca precisa ter área e pavimento explícitos (térreo × superior, computável × projeção).
+- Uma isca de "conta" só é pega se a conta aparece. O mecanismo certo sem números = parcial. Uma conclusão ("cabe") que omite a condição da isca = erro.
 
 ## v8-final (05/10/2026): Tolerância zero + Método não é Resultado
 

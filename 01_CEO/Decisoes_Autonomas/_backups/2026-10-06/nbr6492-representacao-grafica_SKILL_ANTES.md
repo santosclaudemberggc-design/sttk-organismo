@@ -54,7 +54,7 @@ Dobra segundo NBR 13142 — toda prancha deve ser dobrada ao formato A4 (210×29
 ## Limitações honestas
 
 - **Texto integral da norma não foi lido** — valores e convenções acima vêm de resumos técnicos confirmados em múltiplas fontes. Antes de usar como referência definitiva em prancha entregável ao cliente, adquirir ou acessar o texto completo via ABNT ou Target Normas.
-- **Complementar, não substituta, da NBR 16636** (que define etapas e serviços de projeto e diretrizes). **Corrigido em 06/10/2026 (Lúcio, harmonização com `nbr6492-2021-memoriais-por-etapa-projeto`; backup em `01_CEO/Decisoes_Autonomas/_backups/2026-10-06/`):** a versão anterior dizia que "a NBR 6492 só define COMO representar, não O QUE incluir". O texto primário diz o contrário: o título da edição 2021 é "Documentação técnica para projetos arquitetônicos e urbanísticos — Requisitos", e a Seção 1 (Escopo, p. 1) estabelece os requisitos "em função das etapas de projeto, especificando, em cada uma delas, os documentos pertinentes e os respectivos conteúdos". O que a norma **não** cobre são critérios e diretrizes de projeto (Seção 1, Nota → NBR 16636). Esta Skill trata da **representação** (Seção 4 e Anexo A, informativo); **o que entregar por etapa** está na Skill `nbr6492-2021-memoriais-por-etapa-projeto` (Seção 5). Co-dono: Cardozo — informado via Wallenberg.
+- **Complementar, não substituta, da NBR 16636** (que define etapas/conteúdo do projeto de paisagismo) — a NBR 6492 só define COMO representar, não O QUE incluir.
 
 ## Escopo, crescimento e manutenção
 

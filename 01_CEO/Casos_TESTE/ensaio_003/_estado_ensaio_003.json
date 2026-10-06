@@ -3,8 +3,8 @@
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar.",
   "etapa_atual": 3,
-  "status_etapa": "aguardando_execucao",
-  "proxima_acao": "executar",
+  "status_etapa": "aguardando_aprovacao",
+  "proxima_acao": "aguardar_claudemberg",
   "valores_possiveis": {
     "status_etapa": ["a_criar", "aguardando_execucao", "aguardando_aprovacao", "aprovada", "reprovada", "concluido"],
     "proxima_acao": {
@@ -48,6 +48,7 @@
     {"etapa": 2, "evento": "reprovada_por_claudemberg", "data": "2026-10-05", "versao": "v8", "motivo": "Método não explícito. Isca 4: matriz C1-C6 não tabulada (motivo exclusão não declarado). Isca 2: exclusões CUB genéricas (falta tabulação elevador/ar-cond/paisagismo/piscina com R$). Auditoria Villaça: resumo não detalha linha-por-linha. Resultado correto mas rastreabilidade zero. Refazer v9 com tabulações visíveis."},
     {"etapa": 2, "evento": "refeita_e_corrigida", "data": "2026-10-05", "versao": "v9", "obs": "Fiker: matriz C1–C6 tabulada com motivo exclusão. Mascaró: exclusões CUB tabuladas (elevador/ar-cond/paisagismo/piscina/fundação com R$). Villaça: auditoria Seção 8 detalha linha-por-linha (9+10+integração critérios). Parecer: parecer_bardi_v9-final.md", "veredito_recomendado": "aprovar"},
     {"etapa": 2, "evento": "aprovada_por_claudemberg", "data": "2026-10-05", "versao": "v9", "obs": "Aprovada. Todas 5 iscas pegadas (1–5). Zero erros. Método explícito e auditável. Tolerância zero confirmada: metodologia de rastreabilidade vale mais que resultado correto."},
-    {"etapa": 3, "evento": "caso_criado", "data": "2026-10-06", "gabarito_sha256": "3F55C997783556B7E4BE5AA195A0655D93300EBA6DBD004A04EE6068A67180C3"}
+    {"etapa": 3, "evento": "caso_criado", "data": "2026-10-06", "gabarito_sha256": "3F55C997783556B7E4BE5AA195A0655D93300EBA6DBD004A04EE6068A67180C3"},
+    {"etapa": 3, "evento": "executada_e_corrigida", "data": "2026-10-06", "veredito_recomendado": "reprovar", "obs": "Drenagem 06/10: Lucio+Oscar entregaram 4 pecas em entrega/; lacre OK; Bardi: 1 isca inteira (2) + 3 parciais (1,3,4); gabarito com 3 erros proprios registrados no parecer; incidente de listagem de nomes do _gabaritos_LACRADO avaliado como nao comprometedor. Parecer: parecer_bardi.md"}
   ]
 }

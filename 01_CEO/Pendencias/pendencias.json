@@ -1,7 +1,7 @@
 {
   "_comentario": "Fonte única e estruturada da fila de pendências do organismo. A rotina wallenberg-drenagem-continua lê este arquivo a cada disparo: itens com alc='auto' e status='aberta' são executados sozinhos pelo Gestor dono (via seu Agente, quando aplicável); os demais (humano/tecnico/planejado) só são reconciliados, nunca forçados. O Painel do Fundador (painel_fundador_sttk.html) espelha este arquivo — ao alterar aqui, regerar o array `pendencias` do painel e republicar.",
   "schema_versao": 1,
-  "atualizado_em": "2026-10-02 (Diária Skills v3.5.0 — item hely-ferramentas registrado)",
+  "atualizado_em": "2026-10-06 (Drenagem Continua v2.5.0 — 3 itens novos do Ensaio 003 etapa 3)",
   "itens": [
     {
       "id": "wallenberg-drive-write-tool-gap",
@@ -919,6 +919,48 @@
       "acao": "Levar à Reunião Semanal: Claudemberg decide prioridade de compra e canal (assinatura CAU-RJ/CREA-RJ vs. compra avulsa). A lista completa está no índice _indice_acervo.md, seção 'Lista de compra'.",
       "status": "aberta",
       "resolvido_em": null
+    },
+    {
+      "cardId": "sistema",
+      "desde": "2026-10-06",
+      "resolvido_em": null,
+      "status": "aberta",
+      "agente": null,
+      "id": "ensaio-gabarito-fora-da-pasta-06-10-2026",
+      "owner": "Wallenberg",
+      "crit": "media",
+      "alc": "humano",
+      "txt": "Ensaio 003 etapa 3 (06/10): busca do Lucio na raiz de ensaio_003 listou os NOMES dos arquivos de _gabaritos_LACRADO (sem conteudo; SHA confere; Bardi avaliou que nao compromete). Causa estrutural: gabarito mora dentro da pasta que o Gestor recebe.",
+      "res": "Bardi propoe tirar _gabaritos_LACRADO da pasta do ensaio (ex.: 01_CEO/Agentes_Diretos/Bardi (Examinador)/_gabaritos/). Muda caminhos na SKILL do Ensaio Sombra, no bardi.md e na Drenagem (Passo 5.5.3).",
+      "acao": "Levar a Claudemberg: aprovar a mudanca de local do gabarito. Se aprovada, mover com hash conferido antes/depois e atualizar as 3 referencias no mesmo dia."
+    },
+    {
+      "cardId": "sistema",
+      "desde": "2026-10-06",
+      "resolvido_em": null,
+      "status": "aberta",
+      "agente": "villaca",
+      "id": "villaca-credito-3mi-sem-fonte-06-10-2026",
+      "owner": "Villaça",
+      "crit": "media",
+      "alc": "humano",
+      "txt": "Lucio (Ensaio 003 etapa 3, 06/10) achou no pre_estudo_viabilidade_003_v9.md §5 a afirmacao 'credito R$ 3 mi', valor que nao esta no dossie (enunciado da etapa 3 cita R$ 4,2 mi ate 30/06/2027). Etapa 2 ja foi aprovada por Claudemberg em 05/10.",
+      "res": "Etapa aprovada nao se reabre sozinha; pode ser erro de digitacao ou dado sem fonte.",
+      "acao": "Villaca confere a origem do valor na proxima rodada em que for acionado; Claudemberg decide se vira errata da v9 ou reabertura da etapa 2."
+    },
+    {
+      "cardId": "sistema",
+      "desde": "2026-10-06",
+      "resolvido_em": null,
+      "status": "aberta",
+      "agente": null,
+      "id": "cardozo-aviso-edicao-skill-nbr6492-06-10-2026",
+      "owner": "Wallenberg",
+      "crit": "baixa",
+      "alc": "humano",
+      "txt": "Lucio (06/10) corrigiu uma frase da Skill nbr6492-representacao-grafica (dono: Cardozo) ao harmonizar com a Skill nova nbr6492-2021-memoriais-por-etapa-projeto (backup integral em _backups/2026-10-06/). O espelho .agents/skills/nbr6492-representacao-grafica/SKILL.md (fora do git, criado 03/10) ainda tem a frase antiga.",
+      "res": "Edicao foi harmonizacao objetiva (a frase contrariava a Secao 1 da norma). Espelho .agents/ ja tinha divergido antes (Skill de Viabilidade, 05/10) sem dono definido.",
+      "acao": "Cardozo toma ciencia na proxima rodada; Claudemberg define quem e dono do espelho .agents/skills/ (ou se ele deve ser apagado/sincronizado)."
     }
   ]
 }

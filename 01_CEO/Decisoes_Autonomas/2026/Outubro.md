@@ -1,5 +1,44 @@
 # Livro-razão de Decisões Autônomas — Outubro/2026
 
+## 06/10/2026 — Wallenberg, Drenagem Contínua v2.5.0: Ensaio 003 etapa 3 executada e corrigida
+
+**O que foi feito:** Lúcio acionado (único Gestor com fila: etapa 3 do Ensaio + Skill proposta nova). Lúcio acionou Oscar; entrega em `01_CEO/Casos_TESTE/ensaio_003/etapa_03_levantamento/entrega/` (4 arquivos). Lacre conferido antes da correção (SHA256 `3F55C997…180C3` = histórico). Bardi corrigiu: recomenda **REPROVAR** (isca 2 inteira; iscas 1, 3, 4 parciais — falta conta de vagas cobertas × 457,44 m² computáveis, efeito da varanda no envelope sem linha na matriz, argumento do cliente sobre a edícula sem resposta). Bardi também registrou 3 erros do próprio gabarito no parecer, sem reescrevê-lo.
+**Incidente:** busca do Lúcio listou os nomes dos arquivos de `_gabaritos_LACRADO` (sem conteúdo). Bardi: não compromete. Virou pendência `ensaio-gabarito-fora-da-pasta-06-10-2026` (decisão de Claudemberg).
+**Arquivos alterados:** `_estado_ensaio_003.json` (→ `aguardando_aprovacao` / `aguardar_claudemberg`, histórico += executada_e_corrigida); `pendencias.json` (+3 itens: gabarito fora da pasta; crédito R$ 3 mi sem fonte na v9 do Villaça; aviso ao Cardozo + espelho `.agents/`); `feed.jsonl` (+2 eventos: marco do Ensaio, skill NBR 6492).
+**Como desfazer:** reverter o commit local desta rodada (`git revert`); o estado do ensaio volta para `executar`.
+
+## 06/10/2026 — Lúcio (Arquitetura), Drenagem Contínua: Skill `nbr6492-2021-memoriais-por-etapa-projeto` ATIVA-COM-RESSALVA + harmonização
+
+**Decisão (alçada de Gestor dono):** v1.0 (proposta da Diária de hoje) → v1.1 `ativa-com-ressalva`, instalada em `.claude/skills/nbr6492-2021-memoriais-por-etapa-projeto/SKILL.md`; cópia em `Skills_Propostas/2026/Outubro/` e `indice.md` atualizados.
+**Conferência no primário:** NBR 6492:2021 do acervo (`D:\008_Normas ABNT\001_ABNT\04_Desenho_Tecnico\`), capa, sumário, prefácio, Seções 1-3 e Seção 5 inteira (pp. 6-11). Erros corrigidos: título da norma; R1 da v1.0 (dizia 5.6-5.8 não lidas "pp. 21-40" — estão nas pp. 10-11); EV-ARQ confundido com pré-estudo financeiro; condição inventada para o memorial do EP; jogo do AP incompleto; LV sem ambientais/marés/fotos; As Built com itens que não são da norma; Gate atribuído ao Artigas e REGRA-ARQ-01 citada fora de contexto.
+**Contradição encontrada (Grep em `.claude/skills/`):** `nbr6492-representacao-grafica` (Cardozo/Mindlin) dizia que a NBR 6492 "só define COMO representar, não O QUE incluir" — contraria a Seção 1 da norma. Classificação: **complementa** (mesma norma, Seção 4/Anexo A × Seção 5). Harmonizado: linha corrigida na Skill do Cardozo com nota de origem. Backups: `_backups/2026-10-06/nbr6492-representacao-grafica_SKILL_ANTES.md` (integral) e `..._memoriais-por-etapa-projeto_v1.0_ANTES.md` (frontmatter integral + resumo; texto integral no commit 2ee07aa).
+**Como desfazer:** restaurar a Skill do Cardozo pelo backup; restaurar a v1.0 pelo git (2ee07aa) e apagar a pasta da Skill instalada.
+**Pendências:** Cardozo ciente da edição na Skill dele (via Wallenberg). Espelho `.agents/skills/nbr6492-representacao-grafica/SKILL.md` (não versionado) ainda com a frase antiga — não editei, governança do espelho desconhecida. Não aplicada ao Ensaio 003 etapa 3 (validada depois e separadamente).
+**Registrador:** Lúcio.
+
+---
+
+## 05/10/2026 — Reunião Semanal v2.0 (seg, 17:00) — RATIFICAÇÕES EM BLOCO
+
+**Contexto:** Pauta `2026-10-05_pauta.md` apresentada. Claudemberg ratificou via asserção direta sobre assertividade de Skills.
+
+**RATIFICADO — 3 itens:**
+1. ✅ R1: Rotina Acervo de Normas v1.2 (05/10) — levantamento P1+P2+P3+P4, índice expandido 6→25 normas, 3 itens críticos em `pendencias.json`
+2. ✅ R2: Rotina Macetes de Profissionais v1.2 (05/10) — 2 macetes Cardozo/NBR 6122 v1.3 (Falconi/Votorantim)
+3. ✅ R3: Rotina Diária Skills v3.5.0 (05/10) — 2 Skills ativadas (Lúcio/Levantamento, Landell/Entrada Light)
+
+**DECIDIDO — 2 itens:**
+- ✅ **D1a:** Aplicar regra permanente — arquivo temporário em `_tmp/` (gitignore), nunca na raiz. Detectação no Fechamento do Dia via Glob. Efetivo imediato: atualizar `.gitignore`, POPs de Agentes, rotinas de limpeza.
+- ✅ **D2a:** Autorizar trim de `_estado_kelsen.md` + `_estado_hely.md` — represado 3 semanas (14/09 Claudemberg sinalizou). Contexto sobe 48,9% vs. baseline; trim comprovado zero perda de histórico. Início 07/10 (próxima segunda).
+
+**Status:** ✅ COMPLETO. Pauta 2026-10-05_pauta.md marcada "Ratificado Claudemberg 05/10/2026".
+
+**Registrador:** Wallenberg  
+**Ratificador:** Claudemberg (CEO)  
+**Data Ratificação:** 05/10/2026, 17:30 UTC
+
+---
+
 ## 05/10/2026 — Rotina Macetes de Profissionais v1.2 (seg, 14:00)
 
 - **O que decidiu:** acrescentar 2 macetes (M1 + M2) à Skill `nbr6122-2019-fundacoes` (Cardozo/Baumgart), elevando de v1.2 para v1.3. Fontes: Sinduscon-Rio, webinar sobre revisão NBR 6122 — Frederico Falconi (coord. revisão, USP) e Fernando Holanda (Votorantim Cimentos).
