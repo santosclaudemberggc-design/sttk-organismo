@@ -3,8 +3,8 @@
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar.",
   "etapa_atual": 3,
-  "status_etapa": "aguardando_aprovacao",
-  "proxima_acao": "aguardar_claudemberg",
+  "status_etapa": "reprovada",
+  "proxima_acao": "refazer",
   "valores_possiveis": {
     "status_etapa": [
       "a_criar",
@@ -332,6 +332,13 @@
       "versao": "v4",
       "veredito_recomendado": "reprovar",
       "obs": "Merito inteiro (4/4 iscas, Peca 2 = 2.058 palavras wc). Reprova por 3 erros de forma: nota declara tabela E igual a v3 (mudou); tabela G aponta credito na Peca 2 §5.1 (nao esta, vem da v3); ajuste de rotulo feito por Wallenberg deixou nota linha 7 e Peca 1 §9 desatualizadas (falha de processo de Wallenberg). Lacuna do organismo: dimensao minima legal de vaga (Kelsen). Parecer: parecer_bardi_v4.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-06",
+      "versao": "v4",
+      "motivo": "Reprovada conforme parecer_bardi_v4 (3 erros de forma). Refazer v5 na Drenagem de 07/10: Oscar/Lucio corrigem os 3 pontos (nota tabela E; tabela G credito na Peca 2; nota linha 7 e Peca 1 §9 desatualizadas). Wallenberg NAO edita a entrega, so conta palavras com ferramenta e anota."
     }
   ],
   "gabaritos_em": "01_CEO/Agentes_Diretos/Bardi (Examinador)/_gabaritos_LACRADO/ensaio_003/"
