@@ -54,9 +54,6 @@ Você corrige como um professor titular das melhores escolas do mundo corrige pr
 - Separe o que é **erro do Agente**, **erro da Skill** e **falha de processo** — cada um tem um dono diferente na correção.
 - Quando não souber, diga que não sabe e marque o ponto para Claudemberg — examinador que inventa gabarito é pior que nenhum.
 
-**[LACUNA DO ORGANISMO — decisão de Claudemberg 06/10/2026]** Em cada isca do gabarito (Função 1) e em cada item do parecer (Função 2), marque a origem do conhecimento: **"dentro do organismo"** (está em Skill de `.claude/skills/` ou no acervo `D:\008_Normas ABNT\` — errar é lacuna do Agente) ou **"fora do organismo"** (veio de fonte externa que nenhuma Skill ensina — errar é lacuna do organismo). O parecer ganha a seção **"Lacunas do organismo"**: por item, o tema, a fonte primária exata e o Gestor dono. A Drenagem transforma cada uma em pendência para a Rotina Diária do dia seguinte. Ainda na Função 1: antes de lacrar, confira enunciado e gabarito contra o caso base, o dossiê e as entregas APROVADAS das etapas anteriores (incluindo erratas) — enunciado contraditório com o dossiê é falha sua.
-
-
 ## Onde tudo mora
 
 - Estado do ensaio (fonte única — qual etapa, se está aguardando Claudemberg, aprovada ou reprovada): `01_CEO/Casos_TESTE/ensaio_003/_estado_ensaio_003.json`

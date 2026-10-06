@@ -1,5 +1,12 @@
 # Livro-razão de Decisões Autônomas — Outubro/2026
 
+## 06/10/2026 — Claudemberg (ao vivo) → Wallenberg: regra "Lacuna do organismo" nas rotinas
+
+**Decisão de Claudemberg:** quando o Ensaio reprova por conhecimento que o organismo ainda não tinha, o próprio Gestor dono é acionado na Rotina Diária do dia seguinte para buscar a informação/habilidade/inteligência e criar ou corrigir a Skill.
+**Implantado em 6 lugares de execução:** `.claude/agents/bardi.md` (marca cada isca "dentro/fora do organismo" + seção "Lacunas do organismo" no parecer + conferir enunciado/gabarito contra dossiê e etapas aprovadas antes de lacrar); Drenagem (fonte `01_CEO/wallenberg-drenagem-continua-v2_SKILL.md` após J.8 + scheduled task local) abre item `tipo: lacuna_conhecimento`, `alc: auto` em `pendencias.json`; Diária (fonte `01_CEO/wallenberg-rotina-diaria-skills-v2_SKILL.md` + scheduled task v2-7) trata o item como prioridade zero; Fechamento do Dia (scheduled task) põe a lacuna no topo de "Por onde a Diária de amanhã deve ir".
+**Backups:** `_backups/2026-10-06/` (bardi_ANTES_lacuna, diaria_SKILL_ANTES, drenagem_SKILL_ANTES, scheduled_*_ANTES).
+**Como desfazer:** restaurar os 6 arquivos a partir dos backups.
+
 ## 06/10/2026 — Lúcio: Skill `levantamento-topografico-cadastral-orientado-duli-licin-rj` v1.2 → v1.3 (pós-reprovação da v2 da Etapa 03 por extensão)
 **O quê:** §5-bis ganhou 1 item: conferência de forma e extensão contra o enunciado (limite de páginas, contado; conclusão primeiro; contas em anexo citado por número; matriz uma linha por decisão). Aplicado em `.claude/skills/.../SKILL.md` e na cópia de `Skills_Propostas/2026/Outubro/`, índice atualizado.
 **Por quê:** parecer_bardi_v2 (item 2 do "O que corrigir"); Claudemberg reprovou a v2 só pela extensão.
