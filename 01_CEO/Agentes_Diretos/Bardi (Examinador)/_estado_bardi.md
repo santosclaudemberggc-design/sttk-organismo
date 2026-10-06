@@ -1,6 +1,8 @@
 # Estado — Bardi (Agente Examinador, direto de Wallenberg)
 
 ## 1. Onde parei
+06/10/2026 (3º acionamento) — Corrigi a v3 da Etapa 03. `parecer_bardi_v3.md`: **REPROVAR**. Mérito intacto (4/4, números iguais aos da v2, nada sumiu). Reprova porque a Peça 2 tem 2.702 palavras, acima do teto de 2.500 da própria Skill §5-bis v1.3, e porque a nota do Lúcio afirma "~2.000–2.200 / dentro do teto" sem medir (Peça 1: "~1.900", real 2.388). Próximo: v4 (só corte contado).
+
 06/10/2026 (2º acionamento) — Corrigi o REFAZER v2 da Etapa 03. `etapa_03_levantamento\parecer_bardi_v2.md`: **REPROVAR**. 4/4 iscas pegas, todas as contas refeitas e certas. O único erro é a extensão da Peça 2 (~25–30 páginas contra "~5–8 páginas" e "Brevidade" do enunciado e do entregável mínimo), e eu já devia ter apontado isso na v1. Próximo: corrigir a v3 (só a forma; nenhum número deve mudar, conferir se mudou).
 
 (Anterior) 06/10/2026 — Corrigi a Etapa 03 (Levantamento), 1ª versão, Lúcio + Oscar. `etapa_03_levantamento\parecer_bardi.md`: **REPROVAR**. Isca 2 pega; Iscas 1, 3 e 4 parciais (4 com erro: "cabe em H0" sem descontar a garagem). Zero reprovações automáticas. As 13 contradições do enunciado apontadas pelo Lúcio estão corretas, o erro é meu. O incidente da listagem dos nomes do gabarito não compromete o ensaio. Próximo: corrigir o refazer da Etapa 03.
@@ -53,6 +55,7 @@
 
 - **Etapa 03 (06/10), erros MEUS:** o enunciado tinha 13 contradições com o dossiê (casa "demolida", 1,60 m "da lei", Art. 353 III como "lote mínimo", soleira "atual", NA no 5.2, custo e crédito trocados, "~150 m²", DULI na Etapa 15...). Também montei a Isca 1 sobre uma leitura (VII veda o balanço frontal na unifamiliar) que a ERRATA 4.1 da etapa aprovada já tinha corrigido, e o primário confirma a ERRATA (p. 3: "unifamiliares → XI"). Na Isca 4, multipliquei a projeção reduzida por 2, quando o andar superior pode ficar sobre a garagem. Regras: (1) antes de emitir, cruzar cada frase factual do enunciado com o dossiê; (2) toda isca legal precisa ser conferida no primário e contra as ERRATAS das etapas aprovadas; (3) conta de isca precisa ter área e pavimento explícitos (térreo × superior, computável × projeção).
 - Etapa 03 v2: na 1ª correção não conferi os requisitos de FORMA do entregável mínimo (páginas, legibilidade da matriz). Na 1ª leitura de cada entrega, medir a extensão contra o enunciado antes do mérito. Para a v3, conferir também se, ao enxugar, algum número ou condição sumiu.
+- Etapa 03 v3: num refazer só de forma, a nota de auditoria diz o tamanho "de olho". Sempre comparar a contagem real com a régua que o próprio organismo escreveu na Skill. Afirmação de conformidade sem medir é erro de auditoria, mesmo quando o artefato está perto do limite.
 - Uma isca de "conta" só é pega se a conta aparece. O mecanismo certo sem números = parcial. Uma conclusão ("cabe") que omite a condição da isca = erro.
 
 ## v8-final (05/10/2026): Tolerância zero + Método não é Resultado

@@ -1,5 +1,10 @@
 # Livro-razão de Decisões Autônomas — Outubro/2026
 
+## 06/10/2026 — Lúcio: Skill `levantamento-topografico-cadastral-orientado-duli-licin-rj` v1.2 → v1.3 (pós-reprovação da v2 da Etapa 03 por extensão)
+**O quê:** §5-bis ganhou 1 item: conferência de forma e extensão contra o enunciado (limite de páginas, contado; conclusão primeiro; contas em anexo citado por número; matriz uma linha por decisão). Aplicado em `.claude/skills/.../SKILL.md` e na cópia de `Skills_Propostas/2026/Outubro/`, índice atualizado.
+**Por quê:** parecer_bardi_v2 (item 2 do "O que corrigir"); Claudemberg reprovou a v2 só pela extensão.
+**Como desfazer:** backup `01_CEO/Decisoes_Autonomas/_backups/2026-10-06/levantamento-topografico-cadastral-orientado-duli-licin-rj_SKILL_v1.2_ANTES_v1.3.md` (apagar o item novo e o changelog v1.3, voltar version para v1.2).
+
 ## 06/10/2026 — Lúcio: Skill `levantamento-topografico-cadastral-orientado-duli-licin-rj` v1.1 → v1.2 (pós-reprovação Ensaio 003 Etapa 03)
 
 **O que foi feito:** checklist §5-bis de fechamento do relatório de Levantamento (toda área não computável com conta contra computável e programa; "cabe" sempre com condições; premissa conservadora vira regra com número + linha na matriz; todo pedido do cliente respondido com conflito Legal × cliente explícito; tabela pergunta × seção; NBR 6492 5.1.2; ler enunciados de todas as etapas anteriores). §5 curvas a cada 1 m (NBR 6492 5.1.1 b — antes deixava o intervalo ao topógrafo, em tensão com a Skill `nbr6492-2021-memoriais-por-etapa-projeto`). §7: varandas Diferente → Complementa.

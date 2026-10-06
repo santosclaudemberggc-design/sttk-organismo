@@ -302,6 +302,21 @@
       "versao": "v2",
       "veredito_recomendado": "reprovar",
       "obs": "v2 em entrega/v2/; Skill levantamento v1.2 (checklist 5-bis). Bardi: 4/4 iscas inteiras, zero erro tecnico, contas conferidas; reprova so pela extensao (Peca 2 ~25-30 pag vs 5-8 pedidas; matriz 24 linhas densas). Parecer: parecer_bardi_v2.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-06",
+      "versao": "v2",
+      "motivo": "Reprovada conforme parecer_bardi_v2: extensao (Peca 2 ~25-30 pag vs 5-8; matriz 24 linhas densas). Refazer v3 enxugando, numeros inalterados."
+    },
+    {
+      "etapa": 3,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-06",
+      "versao": "v3",
+      "veredito_recomendado": "reprovar",
+      "obs": "Conteudo certo (4/4 iscas, numeros iguais a v2, matriz legivel). Reprova: Peca 2 com 2.702 palavras (limite 2.500 da propria Skill v1.3) e nota de auditoria do Lucio afirmou contagem estimada falsa. Parecer: parecer_bardi_v3.md"
     }
   ],
   "gabaritos_em": "01_CEO/Agentes_Diretos/Bardi (Examinador)/_gabaritos_LACRADO/ensaio_003/"
