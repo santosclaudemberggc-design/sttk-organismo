@@ -1,5 +1,12 @@
 # Livro-razão de Decisões Autônomas — Outubro/2026
 
+## 06/10/2026 — Lúcio: Skill `levantamento-topografico-cadastral-orientado-duli-licin-rj` v1.1 → v1.2 (pós-reprovação Ensaio 003 Etapa 03)
+
+**O que foi feito:** checklist §5-bis de fechamento do relatório de Levantamento (toda área não computável com conta contra computável e programa; "cabe" sempre com condições; premissa conservadora vira regra com número + linha na matriz; todo pedido do cliente respondido com conflito Legal × cliente explícito; tabela pergunta × seção; NBR 6492 5.1.2; ler enunciados de todas as etapas anteriores). §5 curvas a cada 1 m (NBR 6492 5.1.1 b — antes deixava o intervalo ao topógrafo, em tensão com a Skill `nbr6492-2021-memoriais-por-etapa-projeto`). §7: varandas Diferente → Complementa.
+**Coerência:** só remissões a Skills existentes (nbr6492-memoriais §2, varandas §4.1); nenhum limite legal novo; Art. 350 III citado como premissa do parecer Legal aprovado.
+**Arquivos:** `.claude/skills/.../SKILL.md`; `Skills_Propostas/2026/Outubro/lucio_levantamento-...md`; `indice.md`. Espelho `.agents/skills/` NÃO atualizado (pendência já aberta).
+**Como desfazer:** backup `01_CEO/Decisoes_Autonomas/_backups/2026-10-06/levantamento-topografico-cadastral-orientado-duli-licin-rj_SKILL_ANTES.md`. Também: o "crédito R$ 3 mi sem fonte" (pendência desta data) é alarme falso — fonte 5.14 do enunciado da Etapa 02; pendência pode ser fechada por Wallenberg.
+
 ## 06/10/2026 — Wallenberg, Drenagem Contínua v2.5.0: Ensaio 003 etapa 3 executada e corrigida
 
 **O que foi feito:** Lúcio acionado (único Gestor com fila: etapa 3 do Ensaio + Skill proposta nova). Lúcio acionou Oscar; entrega em `01_CEO/Casos_TESTE/ensaio_003/etapa_03_levantamento/entrega/` (4 arquivos). Lacre conferido antes da correção (SHA256 `3F55C997…180C3` = histórico). Bardi corrigiu: recomenda **REPROVAR** (isca 2 inteira; iscas 1, 3, 4 parciais — falta conta de vagas cobertas × 457,44 m² computáveis, efeito da varanda no envelope sem linha na matriz, argumento do cliente sobre a edícula sem resposta). Bardi também registrou 3 erros do próprio gabarito no parecer, sem reescrevê-lo.

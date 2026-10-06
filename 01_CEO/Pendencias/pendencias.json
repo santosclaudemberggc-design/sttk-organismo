@@ -1,7 +1,7 @@
 {
   "_comentario": "Fonte única e estruturada da fila de pendências do organismo. A rotina wallenberg-drenagem-continua lê este arquivo a cada disparo: itens com alc='auto' e status='aberta' são executados sozinhos pelo Gestor dono (via seu Agente, quando aplicável); os demais (humano/tecnico/planejado) só são reconciliados, nunca forçados. O Painel do Fundador (painel_fundador_sttk.html) espelha este arquivo — ao alterar aqui, regerar o array `pendencias` do painel e republicar.",
   "schema_versao": 1,
-  "atualizado_em": "2026-10-06 (Drenagem Continua v2.5.0 — 3 itens novos do Ensaio 003 etapa 3)",
+  "atualizado_em": "2026-10-06 (Claudemberg ao vivo: etapa 3 reprovada; 2 pendencias resolvidas)",
   "itens": [
     {
       "id": "wallenberg-drive-write-tool-gap",
@@ -923,29 +923,29 @@
     {
       "cardId": "sistema",
       "desde": "2026-10-06",
-      "resolvido_em": null,
-      "status": "aberta",
+      "resolvido_em": "2026-10-06",
+      "status": "resolvida",
       "agente": null,
       "id": "ensaio-gabarito-fora-da-pasta-06-10-2026",
       "owner": "Wallenberg",
       "crit": "media",
       "alc": "humano",
       "txt": "Ensaio 003 etapa 3 (06/10): busca do Lucio na raiz de ensaio_003 listou os NOMES dos arquivos de _gabaritos_LACRADO (sem conteudo; SHA confere; Bardi avaliou que nao compromete). Causa estrutural: gabarito mora dentro da pasta que o Gestor recebe.",
-      "res": "Bardi propoe tirar _gabaritos_LACRADO da pasta do ensaio (ex.: 01_CEO/Agentes_Diretos/Bardi (Examinador)/_gabaritos/). Muda caminhos na SKILL do Ensaio Sombra, no bardi.md e na Drenagem (Passo 5.5.3).",
+      "res": "Bardi propoe tirar _gabaritos_LACRADO da pasta do ensaio (ex.: 01_CEO/Agentes_Diretos/Bardi (Examinador)/_gabaritos/). Muda caminhos na SKILL do Ensaio Sombra, no bardi.md e na Drenagem (Passo 5.5.3). RESOLVIDO: aprovado por Claudemberg 06/10; git mv para 01_CEO/Agentes_Diretos/Bardi (Examinador)/_gabaritos_LACRADO/ensaio_003/, SHA256 identico; caminhos atualizados em bardi.md, wallenberg-rotina-ensaio-sombra_SKILL.md e nas 2 scheduled tasks (Ensaio e Drenagem). Backups em _backups/2026-10-06/.",
       "acao": "Levar a Claudemberg: aprovar a mudanca de local do gabarito. Se aprovada, mover com hash conferido antes/depois e atualizar as 3 referencias no mesmo dia."
     },
     {
       "cardId": "sistema",
       "desde": "2026-10-06",
-      "resolvido_em": null,
-      "status": "aberta",
+      "resolvido_em": "2026-10-06",
+      "status": "resolvida",
       "agente": "villaca",
       "id": "villaca-credito-3mi-sem-fonte-06-10-2026",
       "owner": "Villaça",
       "crit": "media",
       "alc": "humano",
       "txt": "Lucio (Ensaio 003 etapa 3, 06/10) achou no pre_estudo_viabilidade_003_v9.md §5 a afirmacao 'credito R$ 3 mi', valor que nao esta no dossie (enunciado da etapa 3 cita R$ 4,2 mi ate 30/06/2027). Etapa 2 ja foi aprovada por Claudemberg em 05/10.",
-      "res": "Etapa aprovada nao se reabre sozinha; pode ser erro de digitacao ou dado sem fonte.",
+      "res": "DECISAO WALLENBERG (delegada por Claudemberg 06/10): NAO PROCEDE. O credito de R$ 3.000.000,00 esta no dossie — item 5.14 (carta do banco) do enunciado da etapa 2; o teto de R$ 4,2 mi = credito R$ 3,0 mi + recursos proprios R$ 1,2 mi. A v9 do Villaca esta correta; quem errou foi o enunciado da etapa 3 (chama o teto de credito). Causa do alarme falso: falha de processo de Wallenberg — o pedido ao Lucio passou so as entregas das etapas anteriores, nao os enunciados (que fazem parte do dossie). Correcao: no refazer e nas proximas etapas, passar tambem os enunciados das etapas anteriores aprovadas.",
       "acao": "Villaca confere a origem do valor na proxima rodada em que for acionado; Claudemberg decide se vira errata da v9 ou reabertura da etapa 2."
     },
     {
@@ -959,8 +959,8 @@
       "crit": "baixa",
       "alc": "humano",
       "txt": "Lucio (06/10) corrigiu uma frase da Skill nbr6492-representacao-grafica (dono: Cardozo) ao harmonizar com a Skill nova nbr6492-2021-memoriais-por-etapa-projeto (backup integral em _backups/2026-10-06/). O espelho .agents/skills/nbr6492-representacao-grafica/SKILL.md (fora do git, criado 03/10) ainda tem a frase antiga.",
-      "res": "Edicao foi harmonizacao objetiva (a frase contrariava a Secao 1 da norma). Espelho .agents/ ja tinha divergido antes (Skill de Viabilidade, 05/10) sem dono definido.",
-      "acao": "Cardozo toma ciencia na proxima rodada; Claudemberg define quem e dono do espelho .agents/skills/ (ou se ele deve ser apagado/sincronizado)."
+      "res": "Edicao foi harmonizacao objetiva (a frase contrariava a Secao 1 da norma). Espelho .agents/ ja tinha divergido antes (Skill de Viabilidade, 05/10) sem dono definido. 06/10: Claudemberg aprovou. Cardozo avisado via _estado_cardozo.md. Sincronizar o espelho .agents/skills/ com .claude/skills/ (7 Skills divergentes + 1 ausente) foi BLOQUEADO pela permissao automatica (sobrescrita de arquivos fora do git) — fica com Claudemberg.",
+      "acao": "Claudemberg: autorizar a sincronizacao do espelho .agents/skills/ (copia de .claude/skills/, fonte unica) ou fazer ele mesmo; definir se o espelho deve ter sincronizacao regular."
     }
   ]
 }

@@ -25,7 +25,7 @@ Das Skills criadas em setembro, nenhuma foi usada em caso real. O Ensaio Sombra 
 
 ## PASSO 1 — CRIAR O CASO (só se `proxima_acao = criar_caso`)
 1. Acione o agente `bardi` (Agent, subagent_type `bardi`) com: número e nome da etapa, Gestor e Agentes donos (do próprio JSON), e a instrução "Função 1 — montar o caso". Se for a Etapa 1, peça também o caso base `caso_sombra_003.md` (cliente, lote em Barra/Recreio, programa — tudo fictício, mais difícil que o Ensaio 002).
-2. Confira no retorno, sem abrir o gabarito: existe `enunciado.md` na pasta da etapa; existe `01_CEO/Agentes_Diretos/Bardi (Examinador)/_gabaritos_LACRADO/ensaio_003/etapa_{NN}_gabarito.md` **[06/10/2026 — Claudemberg: gabarito fora da pasta do ensaio, para o Gestor nunca nem listar o nome]**; o retorno informa ≥ 3 iscas.
+2. Confira no retorno, sem abrir o gabarito: existe `enunciado.md` na pasta da etapa; existe `_gabaritos_LACRADO/etapa_{NN}_gabarito.md`; o retorno informa ≥ 3 iscas.
 3. Lacre: calcule o hash do gabarito (`Get-FileHash -Algorithm SHA256`, tool PowerShell) e grave no `historico` do JSON — assim qualquer alteração depois da execução aparece.
 4. Atualize o JSON: `status_etapa: "aguardando_execucao"`, `proxima_acao: "executar"`, e acrescente no `historico` `{etapa, evento: "caso_criado", data, gabarito_sha256}`.
 

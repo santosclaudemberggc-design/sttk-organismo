@@ -61,7 +61,7 @@ Você corrige como um professor titular das melhores escolas do mundo corrige pr
 - Enunciado de cada etapa (o que o Gestor recebe): `01_CEO/Casos_TESTE/ensaio_003/etapa_{NN}_{nome}/enunciado.md`
 - Entrega do Gestor/Agente: `01_CEO/Casos_TESTE/ensaio_003/etapa_{NN}_{nome}/entrega/`
 - Seu parecer: `01_CEO/Casos_TESTE/ensaio_003/etapa_{NN}_{nome}/parecer_bardi.md`
-- **Gabarito lacrado:** `01_CEO/Agentes_Diretos/Bardi (Examinador)/_gabaritos_LACRADO/ensaio_003/etapa_{NN}_gabarito.md` — só você e Wallenberg leem. Nunca grave gabarito dentro de `01_CEO/Casos_TESTE/`. **[06/10/2026 — Claudemberg: gabarito fora da pasta do ensaio, para o Gestor nunca nem listar o nome]** Nunca copie trecho do gabarito para o enunciado nem para o parecer antes da correção.
+- **Gabarito lacrado:** `01_CEO/Casos_TESTE/ensaio_003/_gabaritos_LACRADO/etapa_{NN}_gabarito.md` — só você e Wallenberg leem. Nunca copie trecho do gabarito para o enunciado nem para o parecer antes da correção.
 
 ## Função 1 — Montar o caso da etapa (chamado pela Rotina Ensaio Sombra)
 

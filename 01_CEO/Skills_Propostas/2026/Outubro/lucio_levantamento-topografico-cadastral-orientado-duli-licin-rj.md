@@ -1,12 +1,13 @@
 ---
 name: levantamento-topografico-cadastral-orientado-duli-licin-rj
 description: O que o levantamento topográfico/cadastral do lote precisa entregar para o projeto passar no LICIN 2.0 do Rio (Decreto Municipal 55.622/2025) — mapeia cada um dos 13 parâmetros que o técnico da SMDU confere (Art. 3º) e cada item obrigatório da planta de situação e dos cortes do DULI (Anexo I: RN do meio-fio, curvas de nível, perfil natural, cota de soleira, subsolo aflorado, cortes e aterros, medidas do título × medidas locais) ao dado que o topógrafo tem de medir. Use sempre que Oscar/Lúcio for encomendar, conferir ou usar um levantamento na etapa de Levantamento, ou montar planta de situação e cortes para o DULI, mesmo que o pedido só mencione "topografia", "planialtimétrico", "medir o terreno", "cota do meio-fio", "nível do terreno", "aterro" ou "a escritura diz uma medida e o muro outra".
-version: v1.1
+version: v1.2
 status: ativa-com-ressalva
 fonte_primaria_lida: "Decreto Municipal RJ 55.622, de 01/01/2025 (DO Rio nº 195, págs. 17-21, PDF da SMDU), Arts. 2º §§3º-4º, 3º, 8º, 9º e Anexo I (Planta de Situação itens 1-13; Cortes itens 1-6; Condições gerais IV.2 e IV.4); COE LC 198/2019 (acervo D:\\008_Normas ABNT\\002_Prefeitura_RJ), Art. 35 e glossário (COTA DE SOLEIRA, PAA, PAL, SUBSOLO, ALINHAMENTO)"
 data: 2026-10-05
 validacao: "Lúcio, 05/10/2026 — PROCEDE COM RESSALVA. Citações do Decreto 55.622 e do COE conferidas contra o texto primário; corrigidos págs. do DO e do glossário, a afirmação de que as Skills legais já trazem a regra de cota de soleira (não trazem), o PRPA atribuído só a Claudemberg e a remissão a Skill da Light ainda não instalada. Ressalvas R1-R3 seguem abertas (NBR 13133 não lida; regra numérica de soleira/terreno natural é do Hely; canal do PAA/PAL)."
 changelog:
+  - "v1.2 (06/10/2026, Lúcio, pós-reprovação Ensaio 003 Etapa 03): §5-bis checklist de fechamento (conta de não computável × computável × programa; condições do 'cabe'; premissa conservadora com número; pedido do cliente respondido; pergunta × seção; NBR 6492 5.1.2); §5 curvas a cada 1 m (NBR 6492 5.1.1 b); §7 varandas Diferente→Complementa. Backup em _backups/2026-10-06/."
   - "v1.1 (05/10/2026, Lúcio): págs. DO 18-21→17-21; glossário COE 32-41→31-40; §1 PRPA = parceiro ou Claudemberg, Art. 2º §4º descrito pelo texto e Art. 9º acrescido; §2 linha V ajustada; §3 item 3 da situação e definição de SUBSOLO acrescidos; §4/§7/ressalva 3: regra de cota de soleira NÃO está em decreto3046 nem legal-base (lacuna do Hely); checklist cita Anexo I IV.2 e IV.4; Skill da Light marcada como proposta não instalada; §7 completado com varandas e remoção de árvores."
   - "v1.0 (05/10/2026, Wallenberg): proposta."
 tipo: Inteligência (Trilha A)
@@ -70,7 +71,7 @@ Ou seja: levantamento só planimétrico (só medidas) **não basta**. Precisa se
 
 ## 5. CHECKLIST DE ENCOMENDA AO TOPÓGRAFO (Oscar usa)
 
-- [ ] Planialtimétrico **cadastral**, com curvas de nível (intervalo a combinar com o topógrafo, pela NBR 13133, ressalva 2)
+- [ ] Planialtimétrico **cadastral**, com curvas de nível **a cada 1,00 m** (NBR 6492:2021 5.1.1 b, via Skill `nbr6492-2021-memoriais-por-etapa-projeto` §2); classe e precisão pelo topógrafo, NBR 13133 (ressalva 2)
 - [ ] **RN no meio-fio da testada**, com a cota escrita na planta
 - [ ] Medidas locais de todas as divisas + área calculada; quadro comparando com o título/PAL
 - [ ] Alinhamento (nº do PAA, se o cliente tiver) e largura do passeio
@@ -79,6 +80,17 @@ Ou seja: levantamento só planimétrico (só medidas) **não basta**. Precisa se
 - [ ] PVs, PVIs, postes (anotar se o poste da Light está **na mesma calçada ou do outro lado da rua** — muda o padrão de entrada, ver `entrada-energia-light-ligacao-nova-padrao-recon-bt-rj`, **Skill de Cardozo ainda em proposta, não instalada**), árvores
 - [ ] Pontos de aterro aparente e diferença entre o nível do lote e o do meio-fio
 - [ ] Arquivo em DWG/DXF georreferenciado para entrar no Revit (Vitruvius) sem redesenho
+
+## 5-bis. CHECKLIST DE FECHAMENTO DO RELATÓRIO DE LEVANTAMENTO (Oscar antes de entregar; Lúcio na auditoria)
+
+Nasceu da reprovação da Etapa 03 do Ensaio Sombra 003 (06/10/2026): as contas presentes estavam certas; reprovou a conta que faltou e a conclusão deixada implícita. É checklist de processo, não traz limite legal novo.
+- [ ] **Toda área não computável citada** (garagem coberta, varanda, edícula) tem a conta **contra a área computável e contra o programa da Viabilidade**, com fórmula. Garagem: só 1 vaga coberta fica fora da TO em unifamiliar (LC 270 Art. 350 III, conforme o parecer Legal do caso); cada vaga coberta a mais sai do térreo computável: térreo = projeção − (n−1)·a.
+- [ ] **Todo "cabe" tem as condições escritas** (nº de vagas cobertas, m² não computáveis confirmados, como o condomínio mede a TO) e é igual em todas as peças.
+- [ ] **Toda premissa "conservadora" do Legal vira regra operacional com número** (ex.: varanda/balanço/saliência sobre cada afastamento → coordenadas do envelope) e ganha linha na matriz com dono.
+- [ ] **Todo pedido do cliente** (caso, mensagens, dossiê) tem resposta escrita, o argumento dele respondido (ex.: "já está pronta, economiza") e o conflito Legal × cliente explícito para o Briefing.
+- [ ] **Toda pergunta do enunciado/pedido** tem resposta localizável (tabela pergunta → peça/seção).
+- [ ] Relatório confere com a NBR 6492:2021 5.1.2 (dados ambientais incl. marés, áreas alagáveis, registro fotográfico): ver Skill `nbr6492-2021-memoriais-por-etapa-projeto` §2.
+- [ ] Os enunciados e documentos de **todas** as etapas anteriores foram lidos antes de declarar "sem fonte".
 
 ## 6. MACETES DE QUEM FAZ
 
@@ -89,7 +101,7 @@ Nenhum macete com fonte nesta rodada. As 2 buscas (texto e vídeo) não acharam 
 - `habite-se-aceitacao-licin` — **Complementa.** Ela diz que a vistoria do Habite-se confere os 13 itens do Art. 3º; esta diz de onde sai o dado medido de cada um. A lista dos 13 itens é a mesma nas duas.
 - `decreto3046-81-lc270-2024-licin-barra-recreio` e `legal-base-legislativa-bairro` — **Complementa.** Elas têm os **limites** (gabarito, afastamentos, TO, ATE); esta tem **o dado de campo** para medir contra eles. Nenhum número de limite aqui. **Cota de soleira não está em nenhuma das duas** (R2).
 - `nbr6492-representacao-grafica` — **Diferente.** Ela trata de como desenhar a prancha (escala 1:500/1:1000 da situação). Esta trata do conteúdo exigido pelo DULI.
-- `varandas-nao-computaveis-ate-to-coes-lc198-rj` — **Diferente.** Varanda é decisão de projeto (situação, item 7); esta só entrega a testada e as divisas medidas que ela usa para as distâncias.
+- `varandas-nao-computaveis-ate-to-coes-lc198-rj` — **Complementa.** O desenho da varanda é do EP, mas a **premissa** de varanda/balanço sobre cada afastamento define o envelope já no Levantamento (§5-bis, itens 2-3). Esta entrega a testada e as divisas medidas; aquela, as distâncias e a regra da ZPP (§4.1).
 - `rebaixamento-lencol-freatico-...` e `fundacoes-solos-moles-...` — **Complementa** (subsolo, aterro existente e alteamento de greide previsto).
 - `remocao-arvores-smac-fpj-autorizacao-compensacao-rj` — **Complementa.** Ela pede identificar as árvores no Levantamento; esta põe a árvore (posição, espécie, DAP) no checklist do topógrafo.
 
