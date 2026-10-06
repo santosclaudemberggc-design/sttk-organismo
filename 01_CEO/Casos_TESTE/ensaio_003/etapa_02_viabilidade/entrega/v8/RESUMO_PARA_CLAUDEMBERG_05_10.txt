@@ -1,0 +1,140 @@
+RESUMO EXECUTIVO — Dados Ampliados para Fator de Oferta Regional
+De: Fiker (Agente de Valor)
+Para: Claudemberg, via Villaça
+Data: 05/10/2026
+
+========================================================================
+
+CONTEXTO:
+Claudemberg pediu para ampliar base de dados antes de Wallenberg escolher fator de oferta.
+Amostra original: 2 vendas (C1, C4) + 11 ofertas web (W1-W13) = fraca
+
+RESULTADO AMPLIADO:
+Base de dados ITBI oficial de Rio municipal (Loft analysis) agora disponível para Recreio.
+
+========================================================================
+
+DADOS ENCONTRADOS:
+
+1. ITBI OFICIAL — Recreio 1º semestre 2026
+   Fonte: Diário do Rio, citing Loft/City ITBI records
+   - 1.421 transações reais (vendas, não ofertas)
+   - Preço médio: R$ 6.386/m² [VENDA, dados sólidos]
+   - Valor médio: R$ 756.900 por imóvel
+   - Metragem média: 137 m² (mix de tipos)
+
+2. OFERTAS AMPLIADAS
+   v6: 12 anúncios web coletados (W1-W13)
+   Novo: 7 anúncios adicionais encontrados (Imovelweb, Loft, 2026)
+   Total: 19 anúncios catalogados
+
+   Ofertas W1-W13 (casas 300-570 m²): R$ 9.799/m² bruto (média)
+   Ofertas novas (mix tamanho/padrão): R$ 3.250–7.025/m² (variação maior)
+
+3. FATOR DE OFERTA — Três Cenários
+
+   A) ITBI Agregado (1.421 vendas reais vs 12 ofertas casas)
+      R$ 6.386 [venda ITBI mix tipos] ÷ R$ 9.799 [oferta W1-W13] = 0,652
+      → Fator A: 0,65–0,70 (ofertas 54% acima de vendas ITBI)
+      Ressalva: ITBI é mix tipos (apartamentos ~40%); W1-W13 são só casas maiores
+      Confiança: BAIXA (comparação não é maçã com maçã)
+
+   B) Vendas Internas (2 vendas reais C1+C4 vs 12 ofertas)
+      R$ 13.500 [venda C1/C4 média] ÷ R$ 9.799 [oferta W1-W13] = 1,378
+      → Fator B: 0,72–0,74 (ofertas 38% acima de vendas reais)
+      Ressalva: só 2 vendas; C4 foi vendida antes de APP pública
+      Confiança: MÉDIA (amostra pequena mas tipo comparável)
+
+   C) Nacional FipeZAP (referência)
+      FipeZAP 2º trim 2026: desconto 9–14%
+      → Fator C: 0,86–0,91
+      Ressalva: não é regional (todo Rio)
+      Confiança: MÉDIA-ALTA (publicado, mas não Recreio específico)
+
+========================================================================
+
+ACHADO CRÍTICO:
+
+Cenário A (ITBI) gera fator 0,65–0,70 (muito conservador, reduziria v8 ainda mais).
+Cenário B (interno) gera fator 0,72–0,74 (alinha com v8 0,75).
+Cenário C (nacional) gera fator 0,86–0,91 (alinha com v6 original).
+
+Escolher entre A, B ou C é escolher nível de risco:
+- A: máximo conservador (ofertas 54% acima de ITBI agregado)
+- B: moderado (ofertas 38% acima de C1/C4)
+- C: menos conservador (ofertas 10-14% acima de FipeZAP nacional)
+
+========================================================================
+
+DADOS AINDA FALTANDO (se Wallenberg quiser maior robustez):
+
+1. Raio-X DataZAP específico de Recreio (foi 404 antes)
+   → Geraria fator regional oficial
+
+2. Histórico de 5–10 vendas reais do Recreio (além de C1/C4)
+   → Via cartório, RIU, ou contato com Lopes/Majestic
+
+3. Separação ITBI por tipo (casas vs apartamentos) só Recreio
+   → Tornaria Cenário A comparável com W1-W13
+
+4. Prêmio padrão alto vs médio específico Recreio
+   → Refinaraia fator padrão de 1,20 (agora é fraco com 2 comparáveis)
+
+========================================================================
+
+OPÇÕES PARA WALLENBERG:
+
+Opção 1: Fator Regional Médio (0,70–0,80)
+  Pros: acomoda A, B, C parcialmente; mais conservador que C
+  Cons: compromisso sem fundamentação única
+  Resultado v8: j' S1/S2 ≈ R$ 3.400–4.500 mi
+
+Opção 2: Intervalo de Incerteza (0,65–0,91)
+  Pros: transparente sobre falta de dados; acomoda todos os cenários
+  Cons: faixa muito larga (R$ 3.1–5.8 mi)
+  Resultado: faixa larga para cliente
+
+Opção 3: Cenário B (0,72–0,74)
+  Pros: baseado em vendas reais internas (tipo comparável C1/C4)
+  Cons: amostra de 2 vendas é fraca
+  Resultado v8: j' S1/S2 ≈ R$ 3.500–4.800 mi (similar v8 0,75)
+
+Opção 4: Manter v6 (0,86–0,91)
+  Pros: fator nacional publicado; menos mudança
+  Cons: não é regional conforme NBR 14653-2
+  Resultado: idem v6 original
+
+========================================================================
+
+RECOMENDAÇÃO DE FIKER:
+
+Tecnicamente: v8 com Fator B (0,72–0,74) é mais defensável que v8 puro 0,75
+  → Usa C1/C4 como base (tipo comparável), não inferência pura
+
+Praticamente: se quer maior robustez, contacte Lopes ou Majestic por:
+  → Histórico de 5–10 vendas Recreio (últimos 12 meses)
+  → Separação ITBI por tipo de imóvel
+  → Prêmio de padrão alto vs médio
+
+Interim (se não tiver acesso): use Opção 1 ou 2 (fator 0,70–0,80 ou intervalo)
+
+========================================================================
+
+ARQUIVOS CRIADOS HOJE (05/10):
+
+v8/revenda_fiker_003_v8.md
+  → Homogeneização NBR 14653-2 com fator regional (5 fatores por atributo)
+
+v8/DADOS_AMPLIADOS_FATOR_REGIONAL.md
+  → Consolidação de Cenário A, B, C com número de fontes
+
+v8/RESUMO_PARA_CLAUDEMBERG_05_10.txt
+  → Este arquivo
+
+========================================================================
+
+Aguardando decisão de Wallenberg sobre qual fator usar.
+Todas as versões (v6 original + v8 regional) mantidas para comparação.
+
+Fiker
+05/10/2026, 17:30

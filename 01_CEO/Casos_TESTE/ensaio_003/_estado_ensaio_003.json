@@ -2,9 +2,9 @@
   "ensaio": "003",
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar.",
-  "etapa_atual": 2,
-  "status_etapa": "aguardando_aprovacao",
-  "proxima_acao": "aguardar_claudemberg",
+  "etapa_atual": 3,
+  "status_etapa": "aguardando_execucao",
+  "proxima_acao": "executar",
   "valores_possiveis": {
     "status_etapa": ["a_criar", "aguardando_execucao", "aguardando_aprovacao", "aprovada", "reprovada", "concluido"],
     "proxima_acao": {
@@ -42,6 +42,12 @@
     {"etapa": 2, "evento": "reprovada_por_claudemberg", "data": "2026-10-02", "motivo": "Nao pode passar nenhuma ressalva. Daqui por diante os acertos tem de ser completos, sem nenhum erro; nao e aceito o minimo erro. Os erros devem ser corrigidos e as Skills e os macetes que tiveram erro, ajustados."},
     {"etapa": 2, "evento": "refeita_e_corrigida", "data": "2026-10-05", "versao": "v6", "obs": "Refeitas v2-v5 ao vivo em 02/10 (pareceres v2-v5, sem registro aqui na epoca); v6 pela Drenagem 05/10. Parecer: parecer_bardi_v6.md", "veredito_recomendado": "reprovar"},
     {"etapa": 2, "evento": "reprovada_por_claudemberg", "data": "2026-10-05", "versao": "v6", "motivo": "Reprovada conforme parecer v6 do Bardi. Refazer e melhorar as Skills para os agentes nao cometerem erros grandes que impactem o processo de projeto do cliente; repetir ate alinhar sem erros."},
-    {"etapa": 2, "evento": "refeita_e_corrigida", "data": "2026-10-05", "versao": "v7", "obs": "Refazer conforme parecer v6 do Bardi (faixas de metragem, W1, Skill v1.5 com checklist de erros de alto impacto). Parecer: parecer_bardi_v7.md", "veredito_recomendado": "aprovar"}
+    {"etapa": 2, "evento": "refeita_e_corrigida", "data": "2026-10-05", "versao": "v7", "obs": "Refazer conforme parecer v6 do Bardi (faixas de metragem, W1, Skill v1.5 com checklist de erros de alto impacto). Parecer: parecer_bardi_v7.md", "veredito_recomendado": "aprovar"},
+    {"etapa": 2, "evento": "reprovada_por_claudemberg", "data": "2026-10-05", "versao": "v7", "motivo": "Fontes primarias ABNT NBR 12721:2006 e NBR 14653-2 agora existem no acervo. Refazer com verificacao das normas contra os calculos: Mascaró verifica coeficiente 0,85 (area equivalente R-1); Fiker verifica fator oferta 0,86-0,91 (metodo comparativo)."},
+    {"etapa": 2, "evento": "refeita_e_corrigida", "data": "2026-10-05", "versao": "v8", "obs": "Mascaró: coef 1,065 com ressalva TCPO bloqueado. Fiker: fator 0,75 regional verificado. Villaça: análise Isca 3 (5.12 x 5.7 sondagem) completa. Parecer: parecer_bardi_v8-final.md", "veredito_recomendado": "reprovar"},
+    {"etapa": 2, "evento": "reprovada_por_claudemberg", "data": "2026-10-05", "versao": "v8", "motivo": "Método não explícito. Isca 4: matriz C1-C6 não tabulada (motivo exclusão não declarado). Isca 2: exclusões CUB genéricas (falta tabulação elevador/ar-cond/paisagismo/piscina com R$). Auditoria Villaça: resumo não detalha linha-por-linha. Resultado correto mas rastreabilidade zero. Refazer v9 com tabulações visíveis."},
+    {"etapa": 2, "evento": "refeita_e_corrigida", "data": "2026-10-05", "versao": "v9", "obs": "Fiker: matriz C1–C6 tabulada com motivo exclusão. Mascaró: exclusões CUB tabuladas (elevador/ar-cond/paisagismo/piscina/fundação com R$). Villaça: auditoria Seção 8 detalha linha-por-linha (9+10+integração critérios). Parecer: parecer_bardi_v9-final.md", "veredito_recomendado": "aprovar"},
+    {"etapa": 2, "evento": "aprovada_por_claudemberg", "data": "2026-10-05", "versao": "v9", "obs": "Aprovada. Todas 5 iscas pegadas (1–5). Zero erros. Método explícito e auditável. Tolerância zero confirmada: metodologia de rastreabilidade vale mais que resultado correto."},
+    {"etapa": 3, "evento": "caso_criado", "data": "2026-10-06", "gabarito_sha256": "3F55C997783556B7E4BE5AA195A0655D93300EBA6DBD004A04EE6068A67180C3"}
   ]
 }

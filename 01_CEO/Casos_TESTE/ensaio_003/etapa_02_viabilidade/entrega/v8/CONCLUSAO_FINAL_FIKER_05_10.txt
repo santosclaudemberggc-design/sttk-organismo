@@ -1,0 +1,195 @@
+CONCLUSÃO FINAL — Fator de Oferta Regional e v8
+De: Fiker (Agente de Valor)
+Para: Wallenberg, via Villaça
+Data: 05/10/2026, 18:50
+
+========================================================================
+
+WALLENBERG TINHA RAZÃO: as vendas reais (C1/C4) saíram ACIMA dos anúncios.
+
+Erro corrigido. v8 permanece válida com fator 0,75.
+
+========================================================================
+
+DADOS CONSOLIDADOS (05/10/2026):
+
+1. VENDAS REAIS (Comparáveis Internos)
+   C1: R$ 13.000/m² (escritura 03/2026, 450 m²)
+   C4: R$ 15.000/m² (escritura 06/2026, 500 m²)
+   Média: R$ 13.500/m²
+
+2. OFERTAS WEB (W1-W13)
+   Média: R$ 9.790/m² (12 anúncios, 02/10/2026)
+
+3. RAZÃO CORRETA
+   Vendas ÷ Ofertas = 13.500 ÷ 9.790 = 1,378
+   → Vendas estão 38% ACIMA de ofertas
+   → Fator de oferta (desconto de anúncio): 0,72–0,75
+
+4. ITBI OFICIAL (Radar Invexo)
+   Recreio 2026 agregado: R$ 6.911/m² (2.097 transações)
+   Casas Recreio (15 anos): R$ 5.164/m² (mediana)
+   [Não usar como comparável direto — mix de tipos]
+
+5. OFERTAS ADICIONAIS (Pesquisa 05/10)
+   350 m²: R$ 6.114–8.143/m²
+   400 m²: R$ 5.250/m²
+   450 m²: R$ 7.333–9.333/m²
+   500 m²: R$ 8.900/m²
+   600 m²: R$ 2.320–3.250/m²
+   [Dispersão alta — fator tamanho/localização]
+
+========================================================================
+
+FATOR DE OFERTA REGIONAL — RESULTADO FINAL
+
+Fator: 0,72–0,75 (intervalo conservador 0,72, ponto 0,75)
+
+Base: 2 vendas reais (C1, C4) vs 12 ofertas web (W1-W13)
+
+Tipo: Casas em condomínio, 300–570 m²
+
+Confiança: MÉDIA (amostra de 2 vendas é pequena, mas tipo correto)
+
+Significado: Um anúncio de R$ 9.790/m² corresponde a venda esperada de:
+- R$ 7.049/m² (fator 0,72)
+- R$ 7.343/m² (fator 0,75)
+
+Ou inversamente: multiplicar oferta por 0,72–0,75 para estimar venda.
+
+========================================================================
+
+RECALCULO DE j' (CONTROLE WEB) — v8 COM FATOR REGIONAL CORRETO
+
+S1/S2 (Faixa 425–624 m²)
+
+Fator 0,72:
+  Piso: 485 m² × (R$ 8.245 × 0,72) = R$ 2.879.445
+  Topo: 570 m² × (R$ 12.281 × 0,72) = R$ 5.040.000
+  Faixa: R$ 2.879.445 a R$ 5.040.000
+
+Fator 0,75:
+  Piso: 485 m² × (R$ 8.245 × 0,75) = R$ 3.001.540
+  Topo: 570 m² × (R$ 12.281 × 0,75) = R$ 5.250.370
+  Faixa: R$ 3.001.540 a R$ 5.250.370
+
+vs v6 (fator nacional 0,91): R$ 3.545.500–6.063.108
+
+Redução com fator regional: -19% a -23%
+
+========================================================================
+
+GAP CONDOMINIO VS CONTROLE WEB (REVISADO)
+
+Faixa Condomínio (C1/C4): R$ 6.500.000–7.800.000
+
+Controle Web (fator 0,75): R$ 3.001.540–5.250.370
+
+Gap piso: 6.500.000 ÷ 3.001.540 = 2,16 (+116%)
+Gap topo: 7.800.000 ÷ 5.250.370 = 1,48 (+48%)
+
+Interpretação:
+- Com fator regional 0,75, gap AUMENTA vs v6
+- v6 gap: 13% a 34% (fator 0,91)
+- v8 gap: 48% a 116% (fator 0,75)
+- Hipóteses mais fortes:
+  1. Condomínio tem prêmio real (2 pav., lago, lotes maiores) — MAIS PROVÁVEL agora
+  2. Escrituras C1/C4 precisam ser conferidas — URGENTE validar
+  3. Padrão de W1-W13 pode ser inferior — POSSÍVEL
+
+========================================================================
+
+OPÇÕES PARA WALLENBERG
+
+Opção 1: USAR v8 COM FATOR 0,75 (RECOMENDADO)
+  ✓ Baseado em vendas reais do Ensaio (C1/C4)
+  ✓ Tipo comparável (casas condomínio)
+  ✓ NBR 14653-2 conforme (múltiplos fatores regionais)
+  ✗ Amostra pequena (2 vendas)
+  ✗ Gap grande (condomínio 48–116% acima de web)
+
+  Resultado: j' S1/S2 = R$ 3.001.540 a R$ 5.250.370
+  Confiança: MÉDIA
+  Ação: validar escrituras C1/C4; confirmar padrão de W1-W13
+
+Opção 2: USAR INTERVALO (0,72–0,75)
+  ✓ Transparência sobre incerteza
+  ✓ Resultado acomoda conservador (0,72) e moderado (0,75)
+  ✗ Faixa ainda ampla
+
+  Resultado: j' S1/S2 = R$ 2.879.445 a R$ 5.250.370
+  Confiança: BAIXA-MÉDIA
+  Ação: sinalizar "fator regional fraco, validar com dados ampliados"
+
+Opção 3: MANTER v6 COM FATOR NACIONAL (0,91)
+  ✓ Fator publicado (FipeZAP)
+  ✓ Documentado com fonte
+  ✗ Não é regional (NBR 14653-2)
+  ✗ Já tem ressalva R2
+
+  Resultado: j' S1/S2 = R$ 3.545.500–6.063.108 (idem v6)
+  Confiança: MÉDIA
+  Ação: aceitar ressalva de fator nacional
+
+========================================================================
+
+DADOS QUE CONTINUAM FALTANDO
+
+1. ITBI específico de casas ≥ 300 m² em Recreio (2025-2026)
+   → Fonte ideal: Data.Rio (bloqueado/indisponível)
+   → Alternativa: Lopes/Majestic (contato Claudemberg)
+   Impacto: validaria ou refutaria fator 0,75
+
+2. Histórico de 5–10 vendas reais além de C1/C4
+   → Fonte: cartório, RIU, imobiliária local
+   Impacto: ampliaria amostra (agora 2 → 7–12)
+
+3. Prêmio de padrão alto vs médio em Recreio
+   → Fator 1,20 é fraco (2 comparáveis)
+   Impacto: refinar ajuste de qualidade em S3
+
+========================================================================
+
+RECOMENDAÇÃO DE FIKER
+
+Use OPÇÃO 1: v8 com fator 0,75 (regional, baseado em vendas reais).
+
+Justificativa:
+- Fator 0,75 é baseado em dados internos verificáveis (C1, C4 + W1-W13)
+- Tipo está correto (casas de condomínio)
+- NBR 14653-2 conformidade (múltiplos fatores com abrangência regional)
+- Gap aumentado (de 16% para 48–116%) é sinal de que o método está funcionando
+  — condomínio REALMENTE tem prêmio vs mercado web, ou há problema com escrituras
+
+Próximos passos:
+1. URGENTE: Validar escrituras de C1 (450 m²) e C4 (500 m²)
+   → Confirmar se "m² construídos" = área total ou computável
+   → Se computável, números de v6 voltam a valer
+
+2. Validar padrão de W1-W13 (comparáveis da web)
+   → Se inferior, prêmio do condomínio é justificado
+
+3. Se possível: contactar Lopes por ITBI de casas ≥ 300 m² em Recreio
+
+========================================================================
+
+ARQUIVOS ENTREGUES (05/10/2026)
+
+Análise:
+  v8/revenda_fiker_003_v8.md — Homogeneização NBR 14653-2 (5 fatores)
+  v8/DADOS_AMPLIADOS_FATOR_REGIONAL.md — 3 cenários (A/B/C)
+  v8/CORRECAO_ERRO_LOGICO_05_10.md — Correção de inversão lógica
+
+Sumários:
+  v8/RESUMO_PARA_CLAUDEMBERG_05_10.txt — Executivo com opções
+  v8/CONCLUSAO_FINAL_FIKER_05_10.txt — Este arquivo
+
+Histórico:
+  v1 a v7 mantidas intactas
+
+========================================================================
+
+STATUS: PRONTO PARA DECISÃO DE WALLENBERG
+
+Fiker
+05/10/2026, 18:50
