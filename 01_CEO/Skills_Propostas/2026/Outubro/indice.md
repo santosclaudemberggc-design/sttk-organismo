@@ -16,11 +16,15 @@
 
 **Rodada 05/10 — remissões de volta:** `nbr5410-eletrica-automacao` (itens 3 e fora de escopo → Light), `habite-se-aceitacao-licin` (linha 22 → levantamento), `fundacoes-solos-moles-...` (checklist de aterro → levantamento). **SELCA v1.2 (Kelsen 05/10):** R1 parcialmente fechada com a LC 140/2011 lida (Art. 9º XIV-XV, Art. 12, Art. 13); nova R7 (APA: esfera, plano de manejo e órgão gestor). **Kelsen:** sem Skill nova (nenhuma lei nova da Barra/Recreio achada). Backups em `Decisoes_Autonomas/_backups/2026-10-05/`.
 
-## Estatísticas (Atualizado 05/10/2026)
+| 06/10 | NBR 6492:2021 — Memoriais e documentação por etapa de projeto (LV → As Built): o que entregar em cada etapa, o que é obrigatório vs. opcional, conteúdo de cada memorial e como usar nas aprovações de Gate | Inteligência (Trilha A) | Lúcio/Oscar (principal); cross: Hely (PL-ARQ/DULI), Baumgart/Complementares (PE-ARQ), Lelé (PE-ARQ) | 📋 **proposta** (06/10, v1.0: seções 5.1-5.5 da NBR 6492:2021 lidas no texto primário; seções 5.6-5.8 PE-ARQ/As Built não lidas — R1; aguarda validação de Lúcio) |
 
-- **Skills Propostas (acumulado outubro):** 5 (a 3ª em 02/10, Villaça; 4ª e 5ª em 05/10, Lúcio e Cardozo)
+**Rodada 06/10 — Skill nova:** `nbr6492-2021-memoriais-por-etapa-projeto` originada do sinal de Claudemberg (06/10) de que gestores e equipes carecem de mapa formal de entregáveis escritos por etapa e de como estruturar aprovações. Skill proposta, status `proposta`, aguarda Lúcio.
+
+## Estatísticas (Atualizado 06/10/2026)
+
+- **Skills Propostas (acumulado outubro):** 6 (a 3ª em 02/10, Villaça; 4ª e 5ª em 05/10, Lúcio e Cardozo; 6ª em 06/10, Lúcio/Oscar)
 - **Skills Testadas em caso real:** 0
 
 ---
 
-**Atualização:** 05/10/2026
+**Atualização:** 06/10/2026
