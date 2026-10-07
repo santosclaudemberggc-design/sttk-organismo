@@ -20,20 +20,8 @@
 - Respondido: `01_CEO/Gestores/Villaça (Viabilidade)/exame_NTN-2026-VILLACA-001_resposta.md`. Aceitei o Legal preliminar só como insumo condicional (matriz por hipótese de subzona). Devolvi: a OODC com 30% da LC 301 (fora da fronteira de Mascaró/Fiker; aplicabilidade não confirmada segundo o veredito do Kelsen de 23/09, Art. 58 da LC 301 → Art. 40 da LC 281; prazo de 01/12 inviável), a revenda pela média Barra+Recreio misturada (Fiker) e o CAM da subzona mais favorável (escolha da hipótese mais favorável). Recusei a frase "lucro garantido". Entrego só a Wallenberg, aguardando aprovação. Nada ao cliente nem a Lúcio.
 - **[28/09/2026] Exame aprovado e promoção Shadow→Assisted ratificada por Claudemberg (trava 3).** Nível atual: **Assisted** — executo com supervisão; Wallenberg revisa antes de qualquer entrega ao cliente.
 
-## 1.11 Ensaio 003 Etapa 02 — v8-INTERIM (05/10/2026), Fiker confirmado + Mascaró aguardando TCPO
-- Entrega em `entrega/v8/`: `pre_estudo_viabilidade_003_v8-INTERIM.md` (versão provisória, pronta para Bardi revisar assim que Mascaró retornar).
-  - **Fiker confirmado:** Fator de oferta regional **0,75** [VERIFICADO - Dados Internos Recreio]. j' S1/S2 recalculado: **R$ 3.001.540–5.250.370** (vs v7 R$ 3.545.500–6.063.108). Gap condomínio × web: **41–63%** (vs 16% em v7).
-  - **Mascaró em placeholder:** Coeficiente R-1 aguardando TCPO (em busca). Seção 2.2 linhas b–e marcadas `[PENDENTE - TCPO, Mascaró]` até confirmação. Se TCPO falhar, volta a 1,065 com ressalva fraca.
-  - v1 a v7 intactas. **Todos os 5 "acertos" ("iscas") mantidos:** CAB/CAM (0), programa não cabe H1, aluguel 486k, lago 2,1-2,4 mi, divisa 0,17-0,23 mi.
-  - Respostas aos stakeholders (Rodrigo ×2, Helena) atualizadas com j' nova (0,75 Fiker confirmado).
-  - **Próximo passo:** quando Mascaró retornar com TCPO, recalcular linhas b–e e k'; depois, finalizador v8 para Bardi.
-
-## 1.10 Ensaio 003 Etapa 02 — v8 (05/10/2026), consolidação parcial (SUPERSEDIDA por v8-INTERIM)
-- Versão anterior propondo coeficiente 1,065 e fator 0,73 (antes da confirmação de Fiker e da busca de TCPO de Mascaró).
-- Supersedida por v8-INTERIM assim que Fiker confirmou 0,75 e Mascaró iniciou busca de TCPO.
-
 ## 1.9 Ensaio 003 Etapa 02 — v7 (05/10/2026), após REPROVAÇÃO ao vivo de Claudemberg da v6 (parecer_bardi_v6)
-- Entrega em `entrega/v7/`: `pre_estudo_viabilidade_003.md`, `revenda_fiker_003_v6.md` (Fiker, bloqueante) e `custo_obra_mascaro_003_v6.md` (cópia SEM alteração da v6; Mascaró não acionado, nada do custo depende do filtro). v1 a v6 intactas. Supersedida por v8.
+- Entrega em `entrega/v7/`: `pre_estudo_viabilidade_003.md`, `revenda_fiker_003_v6.md` (Fiker, bloqueante) e `custo_obra_mascaro_003_v6.md` (cópia SEM alteração da v6; Mascaró não acionado, nada do custo depende do filtro). v1 a v6 intactas. Aguarda Wallenberg/Bardi.
 - Correção: filtro de metragem do controle web na construída de trabalho, ±15% sobre os extremos [PV] (S1/S2 425-624, n = 7 com W8; S3 289-414, n = 5 com W13, W9, W5). R$/m² sobre preço e área exatos (W8, W9, W3, W4, W11 tinham arredondamento intermediário). Números: j' S1 5,10 → 5,81 mi (topo); S2 5,32 → 6,06 mi; S3 "só W10" 3,94-4,42 → W10+W13 3,15-4,42 mi; k' S1 topo −539.778 → +171.062; S2 −427.483 → +314.197; S3 piso −1.334.258 → −2.125.746; distância 33% → 16% (R$ 1,66 mi → 0,95 mi). Custo, j, k, lago, divisa, aluguel e Helena reconferidos: iguais.
 - Skill v1.5 nas 3 cópias (inclusive o espelho `.agents`, que estava em v1.3): §3.1/§3.2 filtro na mesma base com tolerância declarada; conta sobre valor exato; nova §4.1 "Erros de alto impacto ao cliente" (10 itens); roteiro 3 e M5. Backups INTEGRAIS em `_backups/2026-10-05/*_INTEGRAL_ANTES_v1.5.md`. Grep: "version: v1.5" nas 3.
 - 4 ajustes meus no arquivo de Fiker (piso da ordem de grandeza de S3 3,2 → 3,1 mi para conter W5; "não declarado" × "não registrado" em W9).
