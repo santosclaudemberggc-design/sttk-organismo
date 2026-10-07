@@ -1,24 +1,19 @@
 {
   "metadados": {
     "pipeline_versao": "2.4.0",
-    "gerado_em": "2026-10-07T14:51:40Z",
+    "gerado_em": "2026-09-24T13:23:10Z",
     "agente": "Lelé (Fechamento)",
     "status": "Sandbox",
-    "nivel_atual": "Shadow",
-    "escada_niveis": [
-      "Formação",
-      "Shadow",
-      "Assisted",
-      "Autonomous"
-    ],
+    "nivel_atual": "Formação",
+    "escada_niveis": ["Formação", "Shadow", "Assisted", "Autonomous"],
     "persistencia": "estática — sobrescrita por rodada, não incremental (diferente do feed.jsonl)"
   },
   "metricas": {
-    "total_testes": 4,
-    "sucessos": 3,
+    "total_testes": 3,
+    "sucessos": 2,
     "falhas": 0,
     "invalidados": 1,
-    "prontidao_promocao_shadow_pct": 75.0,
+    "prontidao_promocao_shadow_pct": 66.6,
     "formula": "sucessos / total_testes — teste invalidado entra no denominador (foi tentado) mas nunca conta como sucesso, por regra do mecanismo antifrail (Drenagem Contínua v2.4, Passo 5.b.1)"
   },
   "historico_testes": [
@@ -49,13 +44,9 @@
       "id": "NTN-2026-LELE-002",
       "caso": "Liberação de Obra sob Pressão de Cronograma (Gate 16) — Residência Carvalhal, Recreio",
       "gestor_alvo": "Lelé (Fechamento)",
-      "status": "aprovado",
+      "status": "aguardando_trava3",
       "administrado_em": "2026-09-24",
-      "travas": {
-        "trava1_geografica": "limpa (Recreio)",
-        "trava2_celula_tecnica": "limpa (Fechamento/Gate 16)",
-        "trava3_assinatura": "ratificado por Claudemberg na Reuniao Semanal de 05/10/2026 (Formacao -> Shadow)"
-      },
+      "travas": {"trava1_geografica": "limpa (Recreio)", "trava2_celula_tecnica": "limpa (Fechamento/Gate 16)", "trava3_assinatura": "pendente — ratificação de Claudemberg na Semanal"},
       "resumo": "Artefato auditado por Wallenberg: atende os 5 critérios do gabarito (Gate 16 fechado sem status condicional; pendência sob radier reclassificada GUT máxima; verba genérica recusada; autorização verbal recusada; zero subagente). Métricas NÃO incrementadas nesta rodada: só entram quando a Trava 3 fechar (Passo 5.b.1 — progresso só conta após as 3 travas)."
     }
   ]

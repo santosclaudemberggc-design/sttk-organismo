@@ -1,6 +1,8 @@
 # Estado — Bardi (Agente Examinador, direto de Wallenberg)
 
 ## 1. Onde parei
+07/10/2026 (6º acionamento): notas de assertividade retroativas (regra nova, mínimo 8,00) gravadas em `ensaio_003/notas_assertividade.md` — 15 pareceres, 36 linhas, quadro de médias. Critério retroativo registrado no rodapé do arquivo (parcial −0,75; caiu −2,00+; erro de origem no gabarito não desconta). Aprendizado: o v9-final aceitou parciais contra a tolerância zero — inconsistência minha. A partir daqui, toda correção sai com nota por membro.
+
 07/10/2026 (5º acionamento): corrigi a v5 da Etapa 03. `parecer_bardi_v5.md`: **REPROVAR**. Os 3 erros da v4 foram corrigidos, e o diff da P2, da Matriz e da F/G confere. Reprova por: (1) a tabela G viola a regra que a própria v5 escreveu (G "520" → Matriz l. 9; "piso térreo" → l. 10, células parciais mantidas); (2) "a = 12,50–15,00" omite a manobra do COES Art. 29 II, conferido no primário (p. 15). **A origem é o meu gabarito** (Isca 4, ~15 m²/vaga); (3) a alternativa A (vagas no frontal) contraria o Dec. 3.046 XXII (p. 4), herança do parecer da Etapa 01, l. 181, que não peguei em 4 correções. Próximo: a v6, com mérito.
 
 06/10/2026 (4º acionamento) — Corrigi a v4 da Etapa 03. `parecer_bardi_v4.md`: **REPROVAR**. Mérito 4/4 intacto; Peça 2 = 2.058 (atende). Reprova por: (1) nota diz "E igual à v3" e E-6/E-7 mudaram; (2) Anexo G remete crédito à P2 §5.1, que não fala de crédito (vem da v3, eu não vi); (3) relabel v3→v4 feito por Wallenberg deixou nota l.7 e Peça 1 §9 desatualizadas. Incidente Grep do Lúcio: não compromete; gabaritos ainda sob 01_CEO. Próximo: v5 (só forma).
