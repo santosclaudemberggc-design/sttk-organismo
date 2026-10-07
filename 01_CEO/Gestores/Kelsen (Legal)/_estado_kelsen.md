@@ -26,6 +26,13 @@ Hely gravou `Agentes/Hely/Fontes_Legislacao/confirmacoes_2026-09-28.md`. Auditei
 ### 06/10/2026 — Rotina de Macetes v1.2, Skill decreto3046 → v1.4
 Os macetes M5 (o Dicionário de Termos LC 270 da SMDU como índice remissivo) e M7 (afastamento frontal medido do alinhamento/PAA, Art. 363 lido nas pp. 129-130) entraram na instalada e na proposta. A §5 ganhou o item PAA. **O M6 (ATC) foi REJEITADO**, porque o Art. 151, II (p. 57), para onde o Dicionário remete, trata de imóvel subutilizado e não define ATC. Conferido por mim: o verbete OODC **não remete ao Art. 110**, e o verbete ATE também não. Isso entrou como limite (a) do M5. O PDF irmão da Skill em Propostas não foi regerado. Em aberto: verificar se o Dec. 3.046 tem regra própria de medição do afastamento frontal.
 
+### 07/10/2026 — Lacuna do organismo: dimensão mínima de vaga (Drenagem 5.c)
+Hely pesquisou no primário (bloqueante). Eu conferi COES pp.14-17, LC 270 pp.124-125/129-132 e Dec. 3.046 pp.4-5. O resultado virou a Skill nova `vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj` v1.0, ativa-com-ressalva (instalada, cópia em Propostas, índice e livro-razão).
+- Valores: COES Art. 29 dá vaga 2,50x5,00 (paralela 6,00), manobra 2,50x5,00, circulação 2,50 e 25 m²/vaga; o Art. 31 III dispensa a uni de "vagas".
+- O "12,50-15,00 m²/vaga" do Ensaio esquecia a manobra.
+- Vão ao Gate: R1 (Art. 31 III × LC 270 Art. 368 §4º; minha leitura é que a dispensa é só de quantidade), R2 (1/4 da LC 270 × 1/5 do Dec. 3.046 XXI em grupamento) e R3 (vaga/subsolo no afastamento frontal na ZPP, Dec. 3.046 XXII/XXIII a).
+- Dec. 45.917 Art. 10 não foi reconferido por mim.
+
 ### 01/10/2026 — varredura mensal de Drive (Drenagem v2.5.0, Passo 7.5)
 Varridos: POP-ARQ-PL-01 (`1YxwEvEDvBohMdteDJ4T6TBrxMXiSEImqQUKwB5tjRCQ`), Memorial PL (`17qZXyMUIEOjqPr10HnDkRMouBKbDksIpfeI7ogvQrG8`), forms Validação/Aprovação PL, link da planilha de entregáveis (existe, ok). Seção 7.5 do POP já cita Gate do Maurício (corrigido). Achados entregues a Wallenberg: 7.1 ainda "DULI Anexos I/II" (substituto proposto), cabeçalho "Versão 1.0" sem changelog, mojibake "ð" antes do link no Memorial. Cópias POP-LEGAL-0x .md/.pdf no Drive não aparecem mais na busca — provável remoção, falta confirmar e fechar `drive-legal-pops-copias-desatualizadas`. Duas pastas "GESTOR LEGAL" continuam.
 

@@ -3,8 +3,8 @@
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar.",
   "etapa_atual": 3,
-  "status_etapa": "reprovada",
-  "proxima_acao": "refazer",
+  "status_etapa": "aguardando_aprovacao",
+  "proxima_acao": "aguardar_claudemberg",
   "valores_possiveis": {
     "status_etapa": [
       "a_criar",
@@ -345,6 +345,14 @@
       "evento": "gabaritos_movidos",
       "data": "2026-10-06",
       "obs": "Decisao de Claudemberg: saiu de 01_CEO (buscas em 01_CEO listavam o nome) para a raiz do repo _gabaritos_LACRADO_bardi/ensaio_003/ via git mv."
+    },
+    {
+      "etapa": 3,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-07",
+      "versao": "v5",
+      "veredito_recomendado": "reprovar",
+      "obs": "Drenagem 07/10: Lucio+Oscar em entrega/v5/; Skill levantamento v1.5. Lacre OK. wc -w (Wallenberg, sem editar a entrega): nota 865, P1 2.431, P2 2.058, P3 1.063, anexo 4.668. Bardi: 3 erros da v4 corrigidos, 4/4 iscas; reprova por (1) forma: tabela G aplica a regra 'afirmacao parcial = —' so em parte (linhas 520/3 condicoes e piso terreo); (2) merito, origem no gabarito: 12,50-15,00 m2/vaga omite manobra (COES Art. 29 II-III, 25 m2/vaga); (3) merito, heranca da Etapa 01 l.181: vagas descobertas no afastamento frontal vedadas pelo Dec. 3.046 XXII. Parecer: parecer_bardi_v5.md"
     }
   ],
   "gabaritos_em": "_gabaritos_LACRADO_bardi/ensaio_003/"

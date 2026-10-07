@@ -1,6 +1,8 @@
 # Estado — Bardi (Agente Examinador, direto de Wallenberg)
 
 ## 1. Onde parei
+07/10/2026 (5º acionamento): corrigi a v5 da Etapa 03. `parecer_bardi_v5.md`: **REPROVAR**. Os 3 erros da v4 foram corrigidos, e o diff da P2, da Matriz e da F/G confere. Reprova por: (1) a tabela G viola a regra que a própria v5 escreveu (G "520" → Matriz l. 9; "piso térreo" → l. 10, células parciais mantidas); (2) "a = 12,50–15,00" omite a manobra do COES Art. 29 II, conferido no primário (p. 15). **A origem é o meu gabarito** (Isca 4, ~15 m²/vaga); (3) a alternativa A (vagas no frontal) contraria o Dec. 3.046 XXII (p. 4), herança do parecer da Etapa 01, l. 181, que não peguei em 4 correções. Próximo: a v6, com mérito.
+
 06/10/2026 (4º acionamento) — Corrigi a v4 da Etapa 03. `parecer_bardi_v4.md`: **REPROVAR**. Mérito 4/4 intacto; Peça 2 = 2.058 (atende). Reprova por: (1) nota diz "E igual à v3" e E-6/E-7 mudaram; (2) Anexo G remete crédito à P2 §5.1, que não fala de crédito (vem da v3, eu não vi); (3) relabel v3→v4 feito por Wallenberg deixou nota l.7 e Peça 1 §9 desatualizadas. Incidente Grep do Lúcio: não compromete; gabaritos ainda sob 01_CEO. Próximo: v5 (só forma).
 
 06/10/2026 (3º acionamento) — Corrigi a v3 da Etapa 03. `parecer_bardi_v3.md`: **REPROVAR**. Mérito intacto (4/4, números iguais aos da v2, nada sumiu). Reprova porque a Peça 2 tem 2.702 palavras, acima do teto de 2.500 da própria Skill §5-bis v1.3, e porque a nota do Lúcio afirma "~2.000–2.200 / dentro do teto" sem medir (Peça 1: "~1.900", real 2.388). Próximo: v4 (só corte contado).
@@ -33,6 +35,8 @@
 - No refazer da Etapa 03, julgar a Isca 4 pela área computável (−(n−1) × vaga sobre os 457,44), não pelas contas do gabarito (×2 errado). Julgar a Isca 1 pela tensão VII × XI, não pela "vedação certa".
 - Gabarito da Etapa 01, seção 8, e gabarito da Etapa 02, seção 9: fatos reservados para as Etapas 03, 04, 05/06, 07 e 16. Decidir na montagem de cada etapa, de forma coerente com a entrega aprovada. Na Etapa 04, a entrega já registrou o COES Art. 31 V (unifamiliar dispensada de acessibilidade), o que é correto. A isca da suíte de D. Lourdes tem de ser cobrada como exigência do programa, não da lei.
 - Na correção da Etapa 02, conferir na fonte primária o que só verifiquei por fonte secundária: NBR 12721:2006, itens 8.3.5 e 5.7.3, e o R1-A; NBR 14653-2:2011. Nenhuma das duas está no acervo, e as duas entram em "Fonte primária não verificada" no parecer. Também não localizei no projeto o PDF do CUB do Sinduscon-Rio.
+- Na Etapa 04 (Briefing): cobrar que a garagem chegue com vaga e manobra separadas (COES Art. 29) e que a alternativa A tenha sido revista contra o Dec. 3.046 XXII. Conferir se a Etapa 01 recebeu errata na l. 181.
+- O espelho `.agents/skills/levantamento-…` está na v1.1 e a Skill de vaga não tem espelho. Conferir na próxima correção.
 - Fontes ainda não conferidas por mim em primário: Lei 6.015 art. 213; CC 1.301-1.302 e 1.333-1.334; Lei 12.651 art. 4º §4º; LC 270 Art. 216 V; Dec. 51.503 Arts. 26-27.
 
 ## 3. Aprendizados
@@ -59,6 +63,7 @@
 - Etapa 03 v2: na 1ª correção não conferi os requisitos de FORMA do entregável mínimo (páginas, legibilidade da matriz). Na 1ª leitura de cada entrega, medir a extensão contra o enunciado antes do mérito. Para a v3, conferir também se, ao enxugar, algum número ou condição sumiu.
 - Etapa 03 v3: num refazer só de forma, a nota de auditoria diz o tamanho "de olho". Sempre comparar a contagem real com a régua que o próprio organismo escreveu na Skill. Afirmação de conformidade sem medir é erro de auditoria, mesmo quando o artefato está perto do limite.
 - Etapa 03 v4: tabelas de remissão/coerência (Anexo E, F, G) apodrecem em silêncio quando o corpo é enxugado. A cada versão, conferir cada remissão contra o corpo atual, e fazer diff do anexo contra a versão anterior, sem confiar no "igual" da nota. Toda edição feita por quem não é o autor (inclusive a troca de rótulo) torna desatualizadas as declarações do artefato.
+- Etapa 03 v5 (erro MEU, grave): o gabarito da Isca 4 usou "~15 m²/vaga" sem fonte, o Oscar copiou o número do meu parecer, e o primário (COES Art. 29 II) soma a manobra. **Todo parâmetro numérico do gabarito precisa de artigo lido. Sem ele, entra como "ponto de julgamento", nunca como número de conta.** Também deixei passar por 4 correções uma premissa (b) da Etapa 01 (frontal admite estacionamento) que o Dec. 3.046 XXII contraria. Ao corrigir, ler no primário cada inciso da ZPP vizinho ao tema da isca, não só o citado. Regra autoimposta pela entrega ("afirmação parcial = —") deve ser testada em todas as células, não só nas que mudaram.
 - Uma isca de "conta" só é pega se a conta aparece. O mecanismo certo sem números = parcial. Uma conclusão ("cabe") que omite a condição da isca = erro.
 
 ## v8-final (05/10/2026): Tolerância zero + Método não é Resultado
