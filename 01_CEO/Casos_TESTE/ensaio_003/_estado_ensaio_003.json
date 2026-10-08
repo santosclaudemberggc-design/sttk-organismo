@@ -2,9 +2,9 @@
   "ensaio": "003",
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar.",
-  "etapa_atual": 3,
-  "status_etapa": "aguardando_aprovacao",
-  "proxima_acao": "aguardar_claudemberg",
+  "etapa_atual": 4,
+  "status_etapa": "a_criar",
+  "proxima_acao": "criar_caso",
   "valores_possiveis": {
     "status_etapa": [
       "a_criar",
@@ -395,6 +395,13 @@
       "versao": "v7",
       "veredito_recomendado": "aprovar",
       "obs": "Lúcio+Oscar em entrega/v7/ (Peça 2 = 2.066 palavras, teto 2.500). Bardi: 4/4 iscas; notas todas >= 8,00 (Oscar 8,50; Lúcio 8,20; Skill vaga 8,70; Skill levantamento 8,50; Skill decreto3046 8,60). Pendências: C3 NÃO atendido (Gate da R6 não declarado na v7); COES Art. 31 III–IV não tratados; Art. 29 IV citado para manobra compartilhada. Gabarito com 3 erros do Bardi (G1 isca 1, G2 isca 4, G4 isca 2), não descontados. Parecer: parecer_bardi_v7.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "aprovada_por_claudemberg",
+      "data": "2026-10-08",
+      "versao": "v7",
+      "obs": "Aprovada por Claudemberg. Pendências (C3 Gate da R6, Art. 31 III-IV, Art. 29 IV, erros de gabarito G1/G2/G4) enviadas à rotina diária de skills. Etapa 4 liberada para criar_caso."
     }
   ],
   "gabaritos_em": "_gabaritos_LACRADO_bardi/ensaio_003/"

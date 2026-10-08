@@ -134,6 +134,48 @@
       "acao": "Rotina Diaria de amanha aciona o Bardi para refazer a checagem de conta de cada isca antes de qualquer lacre futuro (regra da casa 08/10)."
     },
     {
+      "id": "skill-nova-bardi-checagem-gabarito-08-10",
+      "tipo": "skill_nova",
+      "owner": "Bardi",
+      "agente": "Bardi (Examinador)",
+      "cardId": "bardi",
+      "desde": "2026-10-08",
+      "crit": "alta",
+      "alc": "auto",
+      "status": "aberta",
+      "resolvido_em": null,
+      "txt": "Erros de gabarito da etapa 3 (G1 isca 1: inciso aplicado a caso que nao e o dele; G2 isca 4: conta contraditoria; G4 isca 2: area do envelope errada). Decisao de Claudemberg 08/10: erro de gabarito e do Bardi e ele deve melhorar a propria inteligencia.",
+      "acao": "Rotina Diaria de Skill (Passo de skills, prioridade): criar Skill 'ensaio-sombra-checagem-gabarito-antes-lacre' com checklist obrigatorio antes de lacrar: (1) refazer toda conta da isca; (2) conferir se o inciso/artigo se aplica a situacao da isca; (3) testar a isca contra o primario com pagina. Ajustar tambem a Skill ensaio-sombra-criterios-aprovacao-por-etapa."
+    },
+    {
+      "id": "skill-melhoria-kelsen-vaga-art31-art29iv-08-10",
+      "tipo": "skill_melhoria",
+      "owner": "Kelsen",
+      "agente": "hely",
+      "cardId": "kelsen",
+      "desde": "2026-10-08",
+      "crit": "media",
+      "alc": "auto",
+      "status": "aberta",
+      "resolvido_em": null,
+      "txt": "Etapa 03 v7 (Bardi): COES Art. 31 III-IV (p. 17) nao tratados na garagem; Art. 29 IV citado para manobra compartilhada sem fonte conferida, nas Skills de vaga e de levantamento.",
+      "acao": "Rotina Diaria de Skill: Kelsen melhora a Skill vaga-estacionamento (acrescenta Art. 31 III-IV com pagina e corrige o uso do Art. 29 IV) e harmoniza com a Skill de levantamento (Lucio) antes de qualquer caso novo."
+    },
+    {
+      "id": "c3-gate-r6-declaracao-e-aprovacao-08-10",
+      "tipo": "decisao_humana",
+      "owner": "Claudemberg",
+      "agente": "Artigas (canal do Gate)",
+      "cardId": "claudemberg",
+      "desde": "2026-10-08",
+      "crit": "alta",
+      "alc": "humano",
+      "status": "aberta",
+      "resolvido_em": null,
+      "txt": "C3 (Claudemberg 08/10): uso real da interpretacao R6 (25 m2 por vaga) so depois de Gate aprovado pelo Mauricio e por Claudemberg. Pendente: (a) texto da v7 declarando isso; (b) pedido de Gate registrado pelo Artigas; (c) aprovacao do Mauricio; (d) aprovacao de Claudemberg.",
+      "acao": "Passos: (1) Lucio inclui na v8 da etapa 3 (ou na proxima entrega que use R6) o paragrafo de declaracao do Gate; (2) Artigas prepara o pedido de Gate da R6 com o texto da Skill de vaga v1.1 e o Art. 29 III p. 15; (3) Claudemberg envia ao Mauricio; (4) Gate aprovado por escrito pelos dois registra-se em pendencias e no estado da Kelsen."
+    },
+    {
       "id": "bardi-melhoria-inteligencia-gabarito-08-10",
       "tipo": "melhoria_examinador",
       "owner": "Bardi",
