@@ -23,3 +23,9 @@ Fonte: COES consolidado SMU, p. 17 do PDF (Capítulo IV, Seção I, Condições 
 ## 3. Claim do AUTO_TESTE_R6 corrigido
 
 A frase "zero ocorrências de LACRADO" foi substituída pelo que foi verificado: o termo "LACRADO" aparece só no registro AUTO_TESTE_R6, como referência ao nome da pasta de gabaritos; nenhuma ocorrência em peça, conta ou tabela.
+
+## 4. Respostas de Claudemberg às decisões da etapa 3 (08/10/2026)
+
+- **C1 — número de vagas no Briefing: 4 vagas.** A v8 usa 4 vagas no Briefing.
+- **C2 — vaga descoberta no afastamento frontal: SIM, entra como alternativa nova.** Status jurídico, sem afirmar viabilidade: vedada na ZE-5 pelo Dec. 3.046 XXII (p. 4), salvo exceção específica da subzona, que não foi verificada; LC 270 Art. 363 §2º XII é divergente e está em Gate. A alternativa só pode ser apresentada como possibilidade a verificar, não como solução viável.
+- **C3 — uso real da interpretação R6:** reprovada por Claudemberg e Maurício em 08/10/2026. Não pode ser usada em caso real; a v8 não a usa.
