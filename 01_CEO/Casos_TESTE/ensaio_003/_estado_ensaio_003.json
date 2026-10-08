@@ -402,6 +402,14 @@
       "data": "2026-10-08",
       "versao": "v7",
       "obs": "Aprovada por Claudemberg. Pendências (C3 Gate da R6, Art. 31 III-IV, Art. 29 IV, erros de gabarito G1/G2/G4) enviadas à rotina diária de skills. Etapa 4 liberada para criar_caso."
+    },
+    {
+      "etapa": 3,
+      "evento": "verificacao_v8_r6",
+      "data": "2026-10-08",
+      "versao": "v8",
+      "veredito_recomendado": "aprovar",
+      "obs": "Verificação da R6 reprovada: ausente da v8 (grep e leitura). Alternativa B confirmada no Dec. 3.046 XI (p. 3). Erro de conta de Oscar (M-a não depende de a) registrado. Notas todas >= 8,00 (Oscar 8,50; Lúcio 8,70; Skill vaga 8,30; Skill levantamento 9,20; Skill viabilidade 9,40). Pendências: Skill de vaga l. 52 e l. 91 ainda com resíduo da soma I+II; Art. 31 III-IV não usados; contagem de palavras da Peça 2 (2.154, feita pela Drenagem). Parecer: parecer_bardi_v8.md"
     }
   ],
   "gabaritos_em": "_gabaritos_LACRADO_bardi/ensaio_003/"
