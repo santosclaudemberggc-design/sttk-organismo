@@ -44,6 +44,8 @@ Skill que chegar à 2ª rodada sem macete aprovado vai para "Sem fonte pública"
 | 08/10/2026 | Lúcio | ia-generativa-estudo-preliminar (0b) | **sem macete, 2ª tentativa no mesmo dia (antecipada a pedido), permanece na fila** | Busca estendida: apostila Lamberts/LabEEE "Eficiência Energética na Arquitetura" encontrada, mas o PDF (>10 MB) não pôde ser lido; dissertações LabEEE sem trecho de fase inicial verificado | — |
 | 08/10/2026 | Kelsen | legal-base-legislativa-bairro (1) | **sem macete, 2ª tentativa no mesmo dia (antecipada a pedido), permanece na fila** | Busca estendida: só LC 270/274, dicionário de termos e textos de projeto de lei; nenhum advogado com OAB sobre a base do bairro | — |
 | 08/10/2026 | Cardozo | nbr6118-estrutural-concreto (1) | **sem macete, 2ª tentativa no mesmo dia (antecipada a pedido), permanece na fila** | Busca estendida: artigo APL (empresa de engenharia, tipo B fraco) com checklist de revisão; dica de vibrador vem da norma de 2003, não de profissional | — |
+| 08/10/2026 | Lúcio | ia-generativa-estudo-preliminar (0b), vídeo | **vídeo não assistido** | /watch --detail transcript em S9PHoPP_Leo ("Estratégias de Iluminação Natural", base Lamberts) e sNtwmSBcNqI (privado): YouTube 429 e pedido de verificação "não sou robô"; sem transcrição | — |
+| 08/10/2026 | Cardozo | nbr6118-estrutural-concreto (1), vídeo | **vídeo não assistido** | /watch --detail transcript em 6FhWYjRWKfk ("Cobertura Mínima das Armaduras", Inspeção de Obras): mesmo bloqueio do YouTube | — |
 
 ## Próximas da fila (sugestão)
 
