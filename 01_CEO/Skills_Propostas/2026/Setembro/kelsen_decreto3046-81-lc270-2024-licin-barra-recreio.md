@@ -1,11 +1,12 @@
 ---
 name: decreto3046-81-lc270-2024-licin-barra-recreio
 description: "Base legal para licenciamento LICIN 2.0 na Barra da Tijuca e Recreio dos Bandeirantes: Decreto 3046/81 (ZE-5/Zona Plano Piloto) incorporado à LC 270/2024, e como Hely identifica os parâmetros por subzona via RIU antes de cada consulta prévia."
-version: "1.4"
+version: "1.5"
 status: ativa-com-ressalva
 created: 2026-09-21
-updated: 2026-10-06
+updated: 2026-10-08
 changelog:
+  - "1.5 (08/10/2026, Kelsen, Rotina Diária v3.5.0): §5 Protocolo Hely ganha checklist nova linha sobre vagas em afastamento frontal (Dec. 3.046 XXII veda); §6 Macetes ganha M8 com referência ao Disp. Gerais XXII; R2 nova ressalva de harmonização com Skill de vaga v1.0 (07/10). Errata parecer Legal Etapa 01 Ensaio 003 aberta (linha 181). Backup: 01_CEO/Decisoes_Autonomas/_backups/2026-10-08/decreto3046-81-lc270-2024-licin-barra-recreio_ANTES_08_10_2026.md"
   - "1.4 (06/10/2026, Kelsen, Rotina de Macetes v1.2): §6 ganha M5 (Dicionário de Termos da SMDU como índice remissivo da LC 270; limite concreto: o verbete OODC não remete ao Art. 110) e M7 (afastamento frontal medido do alinhamento, inclusive o projetado por PAA; LC 270 Art. 363 lido, pp. 129-130 do PDF); §5 ganha o item 'Consultar PAA sobre o lote'. M6 (ATC) rejeitado: o Art. 151, II, para onde o Dicionário remete, não define ATC (trata de imóvel subutilizado, p. 57 do PDF). Fonte tipo C: Dicionário de Termos Técnicos do Plano Diretor LC 270/2024, SMDU, 2ª ed., dez/2025. Backup: 01_CEO/Decisoes_Autonomas/_backups/2026-10-06/macetes_ANTES_decreto3046-81-lc270-2024_proposta.md"
   - "1.3 (01/10/2026, Kelsen, ordem de Claudemberg após o Ensaio Sombra 003, etapa 1). R1 reescrita: a isenção de 5 anos EXISTE, mas está no Art. 110 da LC 270, e não no Art. 106 (lido no PDF oficial, pp. 40-41). Tem exceção no §8º e transição no §1º. Checklist de OODC corrigido. Nova §6 com M3 (Dec. 3.046, Disp. Gerais VII->XI: varanda e abrigo de veículos de casa unifamiliar no afastamento lateral) e M4 (LC 270 Art. 111 §5º: decretos olímpicos prevalecem). Nova §7 sobre como checar a vigência do Dec. 3.046, que não aparece por número na Busca Fácil. Backup: 01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_decreto3046-81-lc270-2024-licin-barra-recreio_SKILL_instalada.md"
   - "1.2 (29/09/2026, Hely a pedido de Kelsen, aprovado por Claudemberg): §4 faixa de marinha e APP de lagoa conferidas em fonte primária (DL 9.760/1946 art. 2º; Lei 12.651/2012 art. 4º II; LC 270/2024 Arts. 214-215, p. 80 do PDF); acrescentada dispensa de faixa para lagoa < 10.000 m² (LC 270 Art. 215 §2º); nova §6 Macetes de quem faz. Ver R11."
@@ -139,6 +140,7 @@ os parâmetros de referência são os do Decreto 3046/81
 - [ ] Unifamiliar: ler o Dec. 3.046, Disp. Gerais VII **até a última frase** (remete ao XI) e aplicar o XI (§6, M3)
 - [ ] Verificar LMS (Licença Municipal de Supressão) se houver árvores no lote — obrigatória para todo unifamiliar; em APP/área alagadiça pode tornar-se LMP+LMI (Decreto 51.503/2022 Art. 27 p.ú. II/IV)
 - [ ] Se condomínio existente: ler Regramento Construtivo (Anexo do Estatuto) antes de propor implantação
+- [ ] Estacionamento em afastamento frontal: Dec. 3.046 Disp. Gerais XXII veda. Vaga obrigatória dimensão 2,50 m × 5,00 m + 2,50 m × 5,00 m manobra (25 m²/vaga). Consultar Skill `vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj` v1.0 (07/10) para harmonização com LC 270 Art. 363 §2º XII
 - [ ] Consultar PAA sobre o lote (e linha de fachada ou afastamento definido por projeto em vigor, LC 270 Art. 363 §1º II) antes de fixar a implantação: o afastamento frontal se mede do alinhamento, e não do muro atual (§6, M7)
 - [ ] Confirmar com Lúcio/Oscar se o partido arquitetônico proposto cabe nos parâmetros levantados
 
@@ -188,6 +190,8 @@ Só entra aqui o que tem artigo e fonte primária lida. Cada macete é ponto de 
   - (c) O §1º II (pp. 129-130) já admite "linha de fachada ou afastamento definido por projeto em vigor": conferir também esses projetos, e não só o PAA.
   - (d) O caminho da consulta ao PAA (mapas.rio, certidão) fica a confirmar pelo Hely no primeiro caso real.
 
+**M8 — Vagas fora do afastamento frontal (Dec. 3.046 XXII).** O Disp. Gerais XXII veda estacionamento coberto no afastamento frontal mínimo da ZPP. Vaga obrigatória fica no subsolo ou piso de garagem (pavimento-garagem). Se subsolo: exige altura mínima (COES Art. 17 II "c") e ventilação (COES Art. 17 II "g"). Se pavimento-garagem descoberto: precisa recuo mínimo conforme o RIU da subzona (LC 270 Art. 363 §2º XII aplicável a unifamiliar — conferir). Fonte: Decreto 3.046/1981, Disp. Gerais XXII (PDF da base `Decreto3046_1981_PlanoPilotoBaixadaJacarepagua.pdf`, p. 4), lido por Kelsen em 08/10/2026; COES Arts. 17 II "c" e "g"; LC 270 Art. 363 §2º XII. **Tipo B.** Consultar Skill `vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj` v1.0 para harmonização (R2).
+
 ---
 
 ## 7. COMO CHECAR A VIGÊNCIA DO DEC. 3.046/81 (bloqueio registrado em 01/10/2026)
@@ -201,6 +205,8 @@ A Busca Fácil da SMU **não devolve o Dec. 3.046 quando a busca é pelo número
 ---
 
 ## RESSALVAS
+
+**R2 (08/10/2026, Kelsen, Rotina Diária v3.5.0) — Harmonização Estacionamento: Dec. 3.046 Disp. Gerais XXII (Skill v1.5, M8) com Skill de vaga v1.0.** O XXII foi confirmado em fonte primária (PDF Decreto 3046/81, p. 4, Kelsen 08/10/2026) — veda estacionamento coberto no afastamento frontal mínimo da ZPP. A Skill de vaga `vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj` v1.0 (ativada 07/10 pela Drenagem) harmoniza dimensões com a LC 270 Art. 363 §2º XII. Pendência: confirmar se o Art. 363 §2º XII aplica-se a unifamiliar com COES Art. 31 (que exime unifamiliar de certas normas) — Gate do Maurício. **Errata aberta:** parecer Legal Etapa 01 Ensaio 003 (linha 181) admitiu vagas "descobertas no afastamento frontal", contradição com o XXII agora confirmado. Status do parecer: ANÁLISE PRELIMINAR marcado desde o início — errata registrada, parecer mantém valor histórico.
 
 **R1 (CRÍTICA, reescrita em 01/10/2026 por Kelsen) — a isenção de OODC por 5 anos EXISTE, no Art. 110 da LC 270/2024, e não no Art. 106.** Kelsen leu o PDF oficial da base, pp. 40-41.
 - **Art. 106:** só a regra geral, CAB até CAM.

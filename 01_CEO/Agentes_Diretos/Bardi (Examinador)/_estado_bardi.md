@@ -1,7 +1,7 @@
 # Estado — Bardi (Agente Examinador, direto de Wallenberg)
 
 ## 1. Onde parei
-07/10/2026 (6º acionamento): notas de assertividade retroativas (regra nova, mínimo 8,00) gravadas em `ensaio_003/notas_assertividade.md` — 15 pareceres, 36 linhas, quadro de médias. Critério retroativo registrado no rodapé do arquivo (parcial −0,75; caiu −2,00+; erro de origem no gabarito não desconta). Aprendizado: o v9-final aceitou parciais contra a tolerância zero — inconsistência minha. A partir daqui, toda correção sai com nota por membro.
+08/10/2026 (7º acionamento, Rotina Diária v3.5.0): criada Skill proposta `ensaio-sombra-criterios-aprovacao-por-etapa-017-etapas` v1.0, documentando os critérios de aprovação que aplico ao auditar cada etapa do Ensaio 003. Tabela 1–17 com o que procuro / reprova / aceita; blocos "O que Bardi encontrou" com histórico das 3 etapas executadas. Arquivo gravado em `01_CEO/Skills_Propostas/2026/10/bardi_ensaio-sombra-criterios-aprovacao-por-etapa-017.md` (status proposta, validação Claudemberg). Índice e livro-razão atualizados.
 
 07/10/2026 (5º acionamento): corrigi a v5 da Etapa 03. `parecer_bardi_v5.md`: **REPROVAR**. Os 3 erros da v4 foram corrigidos, e o diff da P2, da Matriz e da F/G confere. Reprova por: (1) a tabela G viola a regra que a própria v5 escreveu (G "520" → Matriz l. 9; "piso térreo" → l. 10, células parciais mantidas); (2) "a = 12,50–15,00" omite a manobra do COES Art. 29 II, conferido no primário (p. 15). **A origem é o meu gabarito** (Isca 4, ~15 m²/vaga); (3) a alternativa A (vagas no frontal) contraria o Dec. 3.046 XXII (p. 4), herança do parecer da Etapa 01, l. 181, que não peguei em 4 correções. Próximo: a v6, com mérito.
 

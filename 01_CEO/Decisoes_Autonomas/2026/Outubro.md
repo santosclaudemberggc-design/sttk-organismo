@@ -71,6 +71,50 @@
 **Arquivos:** `.claude/skills/.../SKILL.md`; `Skills_Propostas/2026/Outubro/lucio_levantamento-...md`; `indice.md`. Espelho `.agents/skills/` NÃO atualizado (pendência já aberta).
 **Como desfazer:** backup `01_CEO/Decisoes_Autonomas/_backups/2026-10-06/levantamento-topografico-cadastral-orientado-duli-licin-rj_SKILL_ANTES.md`. Também: o "crédito R$ 3 mi sem fonte" (pendência desta data) é alarme falso — fonte 5.14 do enunciado da Etapa 02; pendência pode ser fechada por Wallenberg.
 
+## 08/10/2026 — Kelsen (Legal), Rotina Diária v3.5.0 (qua, 08:00–~08:20): Dec. 3.046 XXII + harmonização vaga v1.0 + errata parecer Legal
+
+**O quê:** Skill `decreto3046-81-lc270-2024-licin-barra-recreio` atualizada v1.4→v1.5 (checklist §5 nova linha sobre vagas frontal/XXII; M8 nova sobre Dec. 3.046 XXII; R2 nova harmonização com vaga v1.0); errata do parecer Legal Etapa 01 aberta; índice de Skills atualizado; livro-razão de decisões registrada.
+
+**Por quê:** Ensaio 003 etapa 3 v5 foi reprovada por Bardi com motivo "vagas no afastamento frontal, que o Dec. 3.046 XXII veda". A Skill de vaga v1.0 foi ativada ontem (07/10) pela Drenagem, mas a Skill de LICIN (v1.4, ativa) não citava o XXII. O parecer Legal da Etapa 01 (linha 181) admitiu "vagas descobertas no afastamento frontal", contradição com a norma confirmada. **Ação:** Kelsen leu o Decreto 3046/81, PDF da base, pp. 2-4, e confirmou o XXII em fonte primária. Atualizou a Skill com M8, harmonização com vaga v1.0, e ressalva R2. Abriu errata do parecer (status não alterado: era PRELIMINAR desde o início). Registrou tudo em backups, índice e livro-razão.
+
+**O que alterou:**
+- `.claude/skills/decreto3046-81-lc270-2024-licin-barra-recreio/SKILL.md`: v1.4→v1.5, changelog, checklist §5, M8, R2.
+- `01_CEO/Casos_TESTE/ensaio_003/parecer_legal_etapa_01_ERRATA_08_10_2026.md`: novo arquivo, 5 seções.
+- `01_CEO/Skills_Propostas/2026/10/indice.md`: seção "Atualizações de Skills Ativas" com entry de 08/10.
+- `01_CEO/Decisoes_Autonomas/_backups/2026-10-08/decreto3046-81-lc270-2024-licin-barra-recreio_ANTES_08_10_2026.md`: backup v1.4 completo.
+- Este livro-razão (entrada 08/10).
+
+**Status:** ✅ COMPLETO. Skill em ativa-com-ressalva; errata registrada; Claudemberg revisor na Semanal se achar necessário.
+
+**Como desfazer:**
+1. Restaurar backup `decreto3046-81-lc270-2024-licin-barra-recreio_ANTES_08_10_2026.md` para `.claude/skills/.../SKILL.md` e `Skills_Propostas/2026/Setembro/`.
+2. Apagar `parecer_legal_etapa_01_ERRATA_08_10_2026.md`.
+3. Remover a linha de atualizações (tabela) do `indice.md` de 2026/10.
+4. Apagar a linha de 08/10 deste livro-razão (esta entrada).
+
+**Registrador:** Kelsen.
+
+---
+
+## 08/10/2026 — Bardi (Examinador), Rotina Diária v3.5.0: Skill proposta `ensaio-sombra-criterios-aprovacao-por-etapa-017-etapas` v1.0
+
+**O quê:** Skill documentando os critérios de aprovação que Bardi aplica ao auditar cada uma das 17 etapas do Ensaio Sombra 003. Tabela com 17 linhas (uma por etapa): colunas = O que Bardi procura / O que reprova / O que aceita (mínimo viável). Blocos "O que Bardi encontrou" com histórico de reprova real das Etapas 1–3 (confirmadas por 5 acionamentos do Bardi e pelos pareceres).
+
+**Por quê:** Drenagem Contínua identificou que etapas do Ensaio reprovam constantemente, mas o organismo não documentava os critérios de aprovação. Cada reprova era lição isolada (não acumulava em conhecimento). Regra: "Lacuna do organismo vira Diária do dia seguinte" (Claudemberg 06/10). Bardi criou a Skill para capturar o conhecimento acumulado em Etapas 1–3 e servir como referência pré-execução (Gestor/Agente checam tabela antes de entregar) + durante auditoria (Bardi relê contra a tabela).
+
+**O que alterou:**
+- `01_CEO/Skills_Propostas/2026/10/bardi_ensaio-sombra-criterios-aprovacao-por-etapa-017.md` (nova Skill, status proposta, v1.0)
+- `01_CEO/Skills_Propostas/2026/10/indice.md` (linha adicionada)
+- `01_CEO/Painel_Fundador/feed.jsonl` (+1 evento skill/Bardi)
+
+**Status:** Proposta. Validação vai para Claudemberg na Reunião Semanal.
+
+**Como desfazer:** apagar `bardi_ensaio-sombra-criterios-aprovacao-por-etapa-017.md` e remover sua linha do `indice.md`. Remover a última linha (skill/Bardi) do `feed.jsonl`.
+
+**Registrador:** Bardi (agente Examinador, Rotina Diária autônoma — prioridade zero, Ensaio 003).
+
+---
+
 ## 06/10/2026 — Wallenberg, Drenagem Contínua v2.5.0: Ensaio 003 etapa 3 executada e corrigida
 
 **O que foi feito:** Lúcio acionado (único Gestor com fila: etapa 3 do Ensaio + Skill proposta nova). Lúcio acionou Oscar; entrega em `01_CEO/Casos_TESTE/ensaio_003/etapa_03_levantamento/entrega/` (4 arquivos). Lacre conferido antes da correção (SHA256 `3F55C997…180C3` = histórico). Bardi corrigiu: recomenda **REPROVAR** (isca 2 inteira; iscas 1, 3, 4 parciais — falta conta de vagas cobertas × 457,44 m² computáveis, efeito da varanda no envelope sem linha na matriz, argumento do cliente sobre a edícula sem resposta). Bardi também registrou 3 erros do próprio gabarito no parecer, sem reescrevê-lo.

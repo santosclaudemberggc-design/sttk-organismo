@@ -13,7 +13,117 @@ Rodadas completas movidas aqui, sem edição, a partir de `01_CEO/rotina_fechame
 O template mantém só as 2 rodadas mais recentes + a seção consolidada "O QUE NÃO FAZER (acumulado)".
 Os itens ❌ de todas as rodadas abaixo já foram incorporados nessa seção consolidada — não precisa reler tudo aqui para saber o que não fazer; venha aqui só para o detalhe completo de uma rodada específica.
 
-**Movido em:** 30/09/2026, pelo Fechamento do Dia v1.0 (primeira execução deste formato). Nova rodada movida em 01/10/2026.
+**Movido em:** 30/09/2026, pelo Fechamento do Dia v1.0 (primeira execução deste formato). Nova rodada movida em 01/10/2026. Rodadas de 29/09, 01/10, 02/10 e 05/10 movidas em 08/10/2026 (Fechamento do Dia de 07/10).
+
+---
+
+## [2026-10-05] â€” DiÃ¡ria Skills v3.5.0 (Segunda) â€” RODADA COMPLETA (2 Skills ativadas com ressalva + SELCA v1.2)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** `(Get-Date).DayOfWeek` = Monday. InÃ­cio Ã s 09:06. Pipeline seg-qui.
+- [x] **Passo 0:** a `_passagem_do_dia.md` Ã© de **01/10**. NÃ£o existe passagem de 02/10: o Fechamento do Dia de sexta nÃ£o deixou passagem nova (registrar como falha a checar). Usei o bloco "O QUE NÃƒO FAZER" e a rodada de 02/10 do template. Ensaio 003: etapa 2 aguardando aprovaÃ§Ã£o de Claudemberg; sÃ³ leitura. Ãšltimo `status` do feed: 02/10.
+- [x] **LÃºcio/Oscar, `levantamento-topografico-cadastral-orientado-duli-licin-rj` v1.1:** ativa-com-ressalva e instalada. Escolhida porque a etapa 3 do Ensaio Ã© o Levantamento (sugestÃ£o da anÃ¡lise de 02/10). Fonte primÃ¡ria: Decreto 55.622/2025 (PDF da SMDU, lido) e COE do acervo. LÃºcio corrigiu pÃ¡ginas, o PRPA e uma remissÃ£o falsa (as Skills de Kelsen **nÃ£o** tÃªm limite de cota de soleira).
+- [x] **Cardozo/Landell, `entrada-energia-light-ligacao-nova-padrao-recon-bt-rj` v1.1:** ativa-com-ressalva e instalada. Fonte primÃ¡ria: FAQ oficial de LigaÃ§Ã£o Nova da Light + vÃ­deo oficial da Light. Cardozo fez 8 correÃ§Ãµes, entre elas o Grupo A por estudo entre 50 e 75 kW. Fim de 2 rodadas sem Skill de Cardozo.
+- [x] **Kelsen:** sem Skill nova. As 2 buscas nÃ£o acharam lei nova da Barra/Recreio. Em vez disso, SELCA foi para a v1.2: R1 parcialmente fechada com a LC 140/2011 lida no Planalto; nova R7 (APA).
+- [x] **CoerÃªncia:** remissÃµes de volta em `nbr5410-eletrica-automacao`, `habite-se-aceitacao-licin` e `fundacoes-solos-moles-...`. Nenhuma contradiÃ§Ã£o de valor.
+- [x] **/watch:** vÃ­deo oficial da Light `2RG3FdAizUQ` assistido (transcriÃ§Ã£o Whisper/Groq + 15 quadros). O bug do `-vsync` continua: a extraÃ§Ã£o de quadros do script falhou e foi feita Ã  mÃ£o com ffmpeg. As legendas deram 429. As buscas de vÃ­deo para Kelsen e LÃºcio nÃ£o acharam vÃ­deo relevante.
+- [x] **Feed:** 3 eventos, 3/3 OK. **Livro-razÃ£o:** entrada 05/10 em `Decisoes_Autonomas/2026/Outubro.md`, com "como desfazer". **Backups:** `_backups/2026-10-05/` (7 arquivos).
+- [ ] **Passo 8 (Trilha B):** nÃ£o rodou; nenhuma lacuna de ferramenta nova trazida pelos Gestores.
+
+### O QUE FICOU PENDENTE (Cuidado: nÃ£o repita)
+
+- **NÃ£o duplicar:** levantamento topogrÃ¡fico/DULI (Skill de 05/10) e entrada de energia Light/RECON-BT (Skill de 05/10).
+- **Hely (R2 do levantamento):** regra numÃ©rica de cota de soleira e de "terreno natural" na Barra/Recreio. Nenhuma Skill tem isso hoje.
+- **Kelsen:** `habite-se-aceitacao-licin` linha 16 ("compara com o projeto aprovado") nÃ£o bate com o Art. 8Âº do Decreto 55.622. NÃ£o editado.
+- **Landell:** RECON-BT 2024 (o download automÃ¡tico devolveu HTML; baixar Ã  mÃ£o) e carga instalada Ã— demandada no limite de 75 kW.
+- **SELCA:** R1 falta a resoluÃ§Ã£o do CONEMA de impacto local; R4 falta a Lei Estadual 3.239/1999; R7, as APAs da Barra (esfera, plano de manejo, Ã³rgÃ£o gestor).
+- **SugestÃ£o de compra nova:** NBR 13133:2021. Continua a da NBR 15575 partes 1, 4 e 5.
+- **Continuam valendo:** Cobertura R1, contenÃ§Ã£o em argila mole (Cardozo), varandas, reservatÃ³rio, rebaixamento R1/R3, vidro R1/R2, bug do /watch.
+
+---
+
+## [2026-10-02] â€” DiÃ¡ria Skills v3.5.0 (Sexta) â€” FLUXO DE SEXTA (Passos 6, 9, 10; sem Skill nova)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** `(Get-Date).DayOfWeek` = Friday. InÃ­cio Ã s 09:06. Fluxo de sexta, sem pesquisa e sem Skill nova.
+- [x] **Passo 0:** passagem de 01/10 lida. Ensaio 003 estÃ¡ na etapa 2/17 (Viabilidade), `aguardando_execucao`; sÃ³ leitura. O Ãºltimo `status` do feed era de 28/09.
+- [x] **PendÃªncia Ã³rfÃ£ corrigida:** `hely-ferramentas-webfetch-websearch-semanal` era citada no livro-razÃ£o de 01/10, mas nÃ£o existia no `pendencias.json`. Agora estÃ¡ registrada (mÃ©dia, humano, pauta da Semanal). Backup em `_backups/2026-10-02/`.
+- [x] **Passo 6 (Painel):** 3 eventos de marco: Ensaio 003 + Bardi (30/09), etapa 1 aprovada (01/10), etapa 2 criada (02/10). 3/3 OK.
+- [ ] **Passo 7 (Learning Agent):** nÃ£o rodou. Ã‰ opcional e nÃ£o havia vÃ­deo novo na fila.
+- [x] **Passo 9 (Dashboard):** evento `sistema` e evento `status` gravados por Ãºltimo, 2/2 OK. `painel_status.json` reescrito com contagem real: 19 membros (10 Auto, 4 Assisted, 1 Shadow, 4 FormaÃ§Ã£o; Bardi entrou), 3 de 5 Gestores Autonomous, pendÃªncias 50 de 58 fechadas (8 ativas: 1 crÃ­tica, 2 alta, 3 mÃ©dia, 2 baixa), 6 Skills na semana. `caso_real` e `marcos` mantidos, porque nÃ£o hÃ¡ evidÃªncia nova no livro-razÃ£o.
+- [x] **Passo 10 (AnÃ¡lise):** abaixo.
+
+### ANÃLISE DA SEMANA 28/09â€“02/10
+
+- **ProduÃ§Ã£o:** 6 Skills (2 por Gestor), todas ativas com ressalva, 1 arquivada (LC 301) e macetes em 4 Skills. Ao todo, 45 instaladas.
+- **Fraqueza principal:** sÃ£o 2 semanas seguidas com 0 Skill usada em caso real. O primeiro teste de verdade, a etapa 1 do Ensaio 003, obrigou o Kelsen a corrigir 4 Skills que jÃ¡ estavam "ativas" (OODC, Decreto 3046, varandas e habite-se). Achou erro de artigo (Art. 106 em vez de 110) e de documento. Isso mostra que "ativa com ressalva" nÃ£o quer dizer "certa". O Ensaio corrige mais do que a DiÃ¡ria produz.
+- **Bloqueadores recorrentes:**
+  - (1) NBR 15575 partes 1, 4 e 5 fora do acervo. Trava a ressalva de 3 Skills tÃ©rmicas. SugestÃ£o de compra.
+  - (2) Hely sem WebFetch/WebSearch. DecisÃ£o da Semanal.
+  - (3) Drive sem ferramenta de escrita de conteÃºdo. 3 correÃ§Ãµes esperam Claudemberg.
+  - (4) `/watch` com 0 vÃ­deo assistido em 01/10. A busca nÃ£o achou vÃ­deo assistÃ­vel, e o bug de 403/429 continua.
+- **PrÃ³ximas prioridades:**
+  - (a) Etapa 2 do Ensaio. VillaÃ§a Ã© Assisted, mas MascarÃ³ e Fiker estÃ£o em FormaÃ§Ã£o, nunca examinados. Risco alto de reprovaÃ§Ã£o, porque Ã© a primeira vez da equipe.
+  - (b) Segunda: Cardozo volta Ã  contenÃ§Ã£o em argila mole sÃ³ com fonte primÃ¡ria.
+  - (c) Pauta da Semanal: ferramentas do Hely, compra da NBR 15575 e as correÃ§Ãµes de Drive. TambÃ©m a pendÃªncia Ã³rfÃ£ do `CLAUDE.md` (validaÃ§Ã£o de 31/07 nunca fechada).
+- **SugestÃ£o (nÃ£o aplicada, para a Semanal):** a DiÃ¡ria poderia priorizar as Skills que a prÃ³xima etapa do Ensaio vai usar, em vez de criar Skill de tema novo. A etapa 3 Ã© o Levantamento, de LÃºcio.
+
+### O QUE FICOU PENDENTE (Cuidado: nÃ£o repita)
+
+- Tudo que estava em 01/10 continua valendo: SELCA R1/R4, Cobertura R1, contenÃ§Ã£o (Cardozo), varandas, reservatÃ³rio, rebaixamento R1/R3, vidro R1/R2 e o bug do /watch.
+
+---
+
+## [2026-10-01] â€” DiÃ¡ria Skills v3.5.0 (Quinta) â€” RODADA COMPLETA (2 Skills ativadas com ressalva)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** `(Get-Date).DayOfWeek` = Thursday. InÃ­cio Ã s 09:07. Pipeline seg-qui.
+- [x] **Passo 0:** `_passagem_do_dia.md` de 30/09 lido; a v1.0 da passagem foi lida corretamente. Prioridade zero conferida: a etapa 1 do Ensaio 003 (legal_base) **jÃ¡ foi criada hoje pelo Bardi** e estÃ¡ com status `aguardando_execucao`, pronta para a Drenagem. SÃ³ leitura, nada tocado. O Ãºltimo evento `status` do feed Ã© de 28/09.
+- [x] **Kelsen/Hely, `selca-decreto50473-2026-licenciamento-ambiental-estadual-obra-residencial-rj` v1.1:** ativa-com-ressalva e instalada. Fecha a pendÃªncia SELCA de 29/09. O texto integral do DOERJ foi lido (pypdf). Kelsen fez 6 correÃ§Ãµes factuais; ressalvas R1 a R5. Primeira Skill nova de Kelsen desde 25/09.
+- [x] **LÃºcio/Oscar, `cobertura-transmitancia-ucob-absortancia-atico-ventilado-nbr15575-5-rj` v1.1:** ativa-com-ressalva e instalada. Fecha o "U cobertura â‰¤ x" aberto na Skill da NBR 15575-4. LÃºcio corrigiu o Â§4 (IPT), limitou a brecha do FT e retirou 2 macetes sem fonte.
+- [x] **CoerÃªncia:** remissÃµes de volta em 5 Skills (legal-base, rebaixamento, nbr15575-4, nbr15220-3, nbr9575). Backups em `_backups/2026-10-01/` (5 arquivos). Sem contradiÃ§Ã£o de valor.
+- [x] **Cardozo:** sem Skill (contenÃ§Ã£o/NBR 9061 sem fonte primÃ¡ria).
+- [x] **Feed:** 2 eventos, 2/2 OK. **Livro-razÃ£o:** `Decisoes_Autonomas/2026/Outubro.md` criado, com "como desfazer".
+- [~] **/watch:** as 3 buscas de vÃ­deo (uma por Gestor) nÃ£o acharam URL de vÃ­deo assistÃ­vel sobre os eixos. SÃ³ apareceram artigos e uma matÃ©ria que cita um vÃ­deo (Talita Catelani), sem link. Nada assistido nesta rodada.
+- [ ] **Passo 8 (Trilha B):** nÃ£o rodou, porque nenhum `_estado_` trouxe lacuna de ferramenta.
+
+### O QUE FICOU PENDENTE (Cuidado: nÃ£o repita)
+
+- **SELCA, R1:** competÃªncia SMAC Ã— INEA (LC 140/2011, Art. 9Âº, XIV, e a resoluÃ§Ã£o do CONEMA sobre impacto local). Kelsen achou tambÃ©m que lote com APP ou Ã¡rea alagadiÃ§a sai da LMS e vai para LMP+LMI, ainda municipal (Dec. 51.503/2022, Art. 27, parÃ¡grafo Ãºnico). Dono: Hely.
+- **SELCA, R4:** lei estadual de outorga (Lei 3.239/1999, a confirmar) nÃ£o lida. Dono: Hely.
+- **Cobertura, R1:** confirmar a Tabela 5 e o FT no texto publicado da NBR 15575-5:2021 (norma paga, fora do acervo). **SugestÃ£o de compra:** NBR 15575 partes 1, 4 e 5, recorrentes em 3 Skills tÃ©rmicas.
+- **Cardozo, candidata:** contenÃ§Ã£o de escavaÃ§Ã£o em argila mole (NBR 9061 / cortina / estaca-prancha). SÃ³ criar com fonte primÃ¡ria ou fonte tÃ©cnica de profissional lida.
+- **Continuam valendo:** varandas (3 lacunas, Kelsen); reservatÃ³rio (reuso voluntÃ¡rio, Kelsen); rebaixamento R1/R3 (Hely); vidro R1/R2 (LÃºcio); bug do /watch (`-vsync`).
+
+---
+
+## [2026-09-29] â€” DiÃ¡ria Skills v3.4.0 (TerÃ§a) â€” RODADA COMPLETA (2 Skills ativadas, 4 treinos OK)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** `(Get-Date).DayOfWeek` = Tuesday. InÃ­cio Ã s 08:14. Pipeline seg-qui.
+- [x] **Passo 0.5, treinos atrasados:** as 2 Skills de 28/09 foram treinadas, ambas OK. ReservatÃ³rio (Saturnino): v1.2 com 4 esclarecimentos. Varandas (Hely): as 3 lacunas da Skill ficam pendentes com Kelsen (ver abaixo).
+- [x] **Cardozo/Baumgart, `rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio` v1.2:** ativa-com-ressalva e instalada. Fonte primÃ¡ria: Lei 5.234/2008 (ALERJ). Cardozo: PROCEDE COM RESSALVA, com v1.1 e correÃ§Ãµes tÃ©cnicas. Treino do Baumgart OK (7 de 7 iscas).
+- [x] **LÃºcio/Oscar, `vidro-fachada-poente-ini-r-fator-solar-transmitancia-rj` v1.2:** ativa-com-ressalva e instalada. Fecha a lacuna de vidro de 28/09. Fonte primÃ¡ria: Portaria Inmetro 309/2022, Anexo II. LÃºcio: PROCEDE COM RESSALVA e corrigiu uma contradiÃ§Ã£o com a Skill de proteÃ§Ã£o solar (no poente, sombreamento vertical). Treino do Oscar OK (6 de 6 iscas).
+- [x] **CoerÃªncia v3.4.0:** remissÃµes de volta gravadas na Skill de fundaÃ§Ãµes da Barra (linha 129) e na de proteÃ§Ã£o solar (seÃ§Ã£o 6).
+- [x] **Kelsen:** sem Skill. A busca achou a LC 299/2026 (MCMV, fora do perfil STTK) e o Decreto Estadual 50.473/2026 (SELCA, ver pendÃªncia).
+- [x] **/watch:** vÃ­deo jXFca_Az9f8 (ponteiras filtrantes), aproveitado sÃ³ pela transcriÃ§Ã£o. O download do vÃ­deo deu 403 e as legendas vieram na 2Âª tentativa (a 1Âª deu 429). As buscas de vÃ­deo para Kelsen e LÃºcio nÃ£o acharam material relevante.
+- [x] **Feed:** 2 eventos, 2/2 OK. **Livro-razÃ£o:** entrada 29/09 mais adendo. **Backups:** `_backups/2026-09-29/` (8 arquivos).
+- [ ] **Passo 8 (Trilha B):** nÃ£o rodou, porque nenhum `_estado_` trouxe lacuna de ferramenta.
+
+### O QUE FICOU PENDENTE (Cuidado: nÃ£o repita)
+
+- **Varandas (Kelsen), 3 lacunas do treino:** como lanÃ§ar no projeto uma varanda que jÃ¡ nasce com vidro retrÃ¡til (COES caput e Â§10, LC 145/2014); se casas geminadas contam como uma edificaÃ§Ã£o para os 5 m e para o Â§3Âº; varanda gourmet como cÃ´modo disfarÃ§ado. SÃ³ editar a Skill depois de ler o texto.
+- **ReservatÃ³rio:** reuso voluntÃ¡rio de unifamiliar sob os Arts. 3Âº a 9Âº da Res. Conj. (Kelsen).
+- **Rebaixamento, Hely:** R1, confirmar na INEA 63/2012 ou na CERHI 221/2020 que os 5.000 L/dia valem como dispensa de **outorga** (a Lei 5.234 Ã© de cobranÃ§a); R3, qual Ã³rgÃ£o autoriza o lanÃ§amento na rede pluvial municipal.
+- **Vidro, LÃºcio:** R1, confirmar 0,87 / 5,70 / 17% na NBR 15575-1 Â§11.4.7.2; R2, zona da INI-R para o Rio depois da NBR 15220-3:2024.
+- **SELCA, Decreto Estadual 50.473 de 15/09/2026 (novo licenciamento ambiental do RJ):** Hely verifica o que muda para obra residencial perto de lagoa na Barra/Recreio.
+- **Cardozo, fora do escopo:** a `nbr6122-2019-fundacoes` remete escavaÃ§Ã£o Ã  NBR 11682 (encostas); a candidata certa pode ser a NBR 9061, a confirmar.
+- **Formato dos treinos:** 4 de 4 Agentes passaram das 15 linhas. Cardozo e LÃºcio vÃ£o cobrar isso como padrÃ£o.
+- **Continuam valendo:** Skill de partido de 16/09 (linhas 70-72, os 20% do Â§5Âº), que o LÃºcio confirmou; bug do `/watch` (`-vsync`, 429/403); pendÃªncias de Lint de 25/09.
 
 ---
 
