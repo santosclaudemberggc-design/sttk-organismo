@@ -1,5 +1,29 @@
 # Livro-razão de Decisões Autônomas — Outubro/2026
 
+## 08/10/2026 — Rotina Macetes de Profissionais v1.2 (qui, 14:00) — 1ª rodada sem macete em 3 Skills
+
+**Portão:** quinta (ter/qui liberado). 0a sem Skill pendente (Kelsen OODC e varandas já em "Sem fonte pública"). 0b: etapa 4 (Briefing) em `a_criar`, etapa 5 (Estudo Preliminar, Lúcio) sem macete em `ia-generativa-estudo-preliminar`. Prioridade 1 com 40 Skills sem seção de macetes.
+
+**Escolhidas (máx. 3, 1 por Gestor):**
+- Lúcio: `ia-generativa-estudo-preliminar` (0b). Tipos A e B. Gensler "Design Forecast 2026" (press release) não cita simulação de luz/acústica; a cobertura de imprensa é secundária. Dissertação UFSC "simulação preliminar" sem autor verificável (repositório dá 404). Zero macete.
+- Kelsen: `legal-base-legislativa-bairro` (prioridade 1). Tipo C. Buscas sobre advogado urbanista OAB-RJ e zoneamento Barra/Recreio sem fonte verificável (só anúncios e textos de outros municípios). Zero macete.
+- Cardozo: `nbr6118-estrutural-concreto` (prioridade 1). Tipos A e B. Só síntese de checklist de artigos acadêmicos, sem profissional nomeado com credencial e sem manual de fabricante. Zero macete.
+
+**Resultado:** nenhum macete aprovado. Nenhum Gestor acionado (nada a validar). As 3 Skills ficam na fila com a 1ª rodada registrada; 2ª rodada conta para a Regra das 2 Tentativas.
+
+**Arquivos alterados:**
+- `01_CEO/Skills_Propostas/_macetes_fila.md` (histórico + próximas da fila)
+- `03_REGISTROS_DIARIOS/2026/10/2026-10-08.md` (linha da rotina)
+- Nenhuma Skill em `.claude/skills/` alterada. Nenhum evento no Painel.
+
+**Como desfazer:** remover as linhas de 08/10 do histórico de `_macetes_fila.md`, a linha do registro diário e esta entrada.
+
+**Pendência:** 2ª rodada das 3 Skills em data futura. Lúcio também tem o levantamento DULI na 2ª rodada na próxima semana.
+
+**Registrador:** Wallenberg (rotina de macetes).
+
+---
+
 ## 07/10/2026 — Rotina Macetes de Profissionais v1.2 (qua, 14:00) — Skill `legal-oodc-mais-valera-mais-valia` (0a) 2ª rodada → "Sem fonte pública"
 
 **Portão:** quarta. 0a (Kelsen OODC) com 2ª rodada marcada **HOJE**. 0b em espera. Prioridade 1 vazia. Prioridade 2 só ter/qui → quarta bloqueado.
