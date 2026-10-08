@@ -170,8 +170,9 @@
       "desde": "2026-10-08",
       "crit": "alta",
       "alc": "humano",
-      "status": "aberta",
+      "status": "em_andamento",
       "resolvido_em": null,
+      "resultado": "08/10: (a) declaracao de condicionamento feita em entrega/v7/ADENDO_gate_R6_08-10-2026.md (pecas aprovadas nao alteradas); (b) pedido de Gate preparado pelo Artigas em 01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/pedido_gate_R6_2026-10-08.md. Faltam (c) envio ao Mauricio por Claudemberg e (d) aprovacoes por escrito dos dois. Paginas 19 e 435 e excecao de subzona ZE-5 ainda nao verificadas no primario.",
       "txt": "C3 (Claudemberg 08/10): uso real da interpretacao R6 (25 m2 por vaga) so depois de Gate aprovado pelo Mauricio e por Claudemberg. Pendente: (a) texto da v7 declarando isso; (b) pedido de Gate registrado pelo Artigas; (c) aprovacao do Mauricio; (d) aprovacao de Claudemberg.",
       "acao": "Passos: (1) Lucio inclui na v8 da etapa 3 (ou na proxima entrega que use R6) o paragrafo de declaracao do Gate; (2) Artigas prepara o pedido de Gate da R6 com o texto da Skill de vaga v1.1 e o Art. 29 III p. 15; (3) Claudemberg envia ao Mauricio; (4) Gate aprovado por escrito pelos dois registra-se em pendencias e no estado da Kelsen."
     },
