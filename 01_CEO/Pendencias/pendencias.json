@@ -170,11 +170,25 @@
       "desde": "2026-10-08",
       "crit": "alta",
       "alc": "humano",
-      "status": "em_andamento",
-      "resolvido_em": null,
-      "resultado": "08/10: (a) declaracao de condicionamento feita em entrega/v7/ADENDO_gate_R6_08-10-2026.md (pecas aprovadas nao alteradas); (b) pedido de Gate preparado pelo Artigas em 01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/pedido_gate_R6_2026-10-08.md. Faltam (c) envio ao Mauricio por Claudemberg e (d) aprovacoes por escrito dos dois. Paginas 19 e 435 e excecao de subzona ZE-5 ainda nao verificadas no primario.",
+      "status": "resolvida",
+      "resolvido_em": "2026-10-08",
+      "resultado": "REPROVADA pelo Claudemberg e pelo Mauricio (08/10): a R6 NAO pode ser usada em caso real. Criterio: regra so entra em caso real se seguir norma ou regra de mercado que a valide. Consequencias: itens auto de retirada da R6 em Skills e entregas (Kelsen, Villaca, Lucio). Anterior: (a) declaracao de condicionamento feita em entrega/v7/ADENDO_gate_R6_08-10-2026.md (pecas aprovadas nao alteradas); (b) pedido de Gate preparado pelo Artigas em 01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/pedido_gate_R6_2026-10-08.md. Faltam (c) envio ao Mauricio por Claudemberg e (d) aprovacoes por escrito dos dois. Paginas 19 e 435 e excecao de subzona ZE-5 ainda nao verificadas no primario.",
       "txt": "C3 (Claudemberg 08/10): uso real da interpretacao R6 (25 m2 por vaga) so depois de Gate aprovado pelo Mauricio e por Claudemberg. Pendente: (a) texto da v7 declarando isso; (b) pedido de Gate registrado pelo Artigas; (c) aprovacao do Mauricio; (d) aprovacao de Claudemberg.",
       "acao": "Passos: (1) Lucio inclui na v8 da etapa 3 (ou na proxima entrega que use R6) o paragrafo de declaracao do Gate; (2) Artigas prepara o pedido de Gate da R6 com o texto da Skill de vaga v1.1 e o Art. 29 III p. 15; (3) Claudemberg envia ao Mauricio; (4) Gate aprovado por escrito pelos dois registra-se em pendencias e no estado da Kelsen."
+    },
+    {
+      "id": "r6-retirar-skills-entregas-08-10",
+      "tipo": "skill_retirada",
+      "owner": "Kelsen",
+      "agente": "hely",
+      "cardId": "kelsen",
+      "desde": "2026-10-08",
+      "crit": "alta",
+      "alc": "auto",
+      "status": "aberta",
+      "resolvido_em": null,
+      "txt": "R6 (25 m2 por vaga como area de garagem) REPROVADA em 08/10 por Claudemberg e Mauricio: so entra em caso real regra que siga norma ou regra de mercado que a valide. Hoje a R6 esta em Skill de vaga v1.1.",
+      "acao": "Rotina Diaria de Skill: Kelsen suspende a R6 na Skill de vaga (marcar REPROVADA, com backup e motivo), sem apagar o texto do Art. 29 III. Villaca reverte a conta de 25 m2/vaga na Skill de viabilidade v1.6 (volta para o texto sem a R6, com backup). Lucio retira a frase de garagem com 25 m2/vaga da Skill de levantamento v1.7 e da entrega v7 (com adendo de correcao)."
     },
     {
       "id": "bardi-melhoria-inteligencia-gabarito-08-10",
