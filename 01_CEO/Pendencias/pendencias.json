@@ -106,6 +106,34 @@
       "acao": "Resolvido: etapa 3 reprovada por Claudemberg 08/10 (motivo: abaixo da media)."
     },
     {
+      "id": "etapa3-v7-c3-gate-r6-nao-declarado-08-10",
+      "tipo": "erro_ensaio",
+      "owner": "Lúcio",
+      "agente": "Lúcio (Gestor)",
+      "cardId": "lucio",
+      "desde": "2026-10-08",
+      "crit": "alta",
+      "alc": "auto",
+      "status": "aberta",
+      "resolvido_em": null,
+      "txt": "Etapa 03 v7 (Bardi): C3 de Claudemberg NAO atendido. A v7 nao declara que o uso real da interpretacao R6 depende de Gate do Mauricio + Claudemberg. Lucio informou que estava declarado; nao estava.",
+      "acao": "Antes da aprovacao: incluir a declaracao do Gate da R6 na v7 (ou v8 se a etapa for reprovada). Tambem tratar COES Art. 31 III-IV (p. 17), nao tratados pela Oscar, e o citado Art. 29 IV para manobra compartilhada nas Skills vaga e levantamento."
+    },
+    {
+      "id": "bardi-gabarito-g4-isca2-08-10",
+      "tipo": "melhoria_examinador",
+      "owner": "Bardi",
+      "agente": "Bardi (Examinador)",
+      "cardId": "bardi",
+      "desde": "2026-10-08",
+      "crit": "media",
+      "alc": "auto",
+      "status": "aberta",
+      "resolvido_em": null,
+      "txt": "Etapa 03 v7 (Bardi): G4 do gabarito: isca 2 diz que o envelope cai 170-190 m2, mas cai cerca de 20 m2. Erro do gabarito, nao descontado do executor. Junto com G1 (isca 1) e G2 (isca 4) do v6: 3 erros de gabarito na etapa 3.",
+      "acao": "Rotina Diaria de amanha aciona o Bardi para refazer a checagem de conta de cada isca antes de qualquer lacre futuro (regra da casa 08/10)."
+    },
+    {
       "id": "bardi-melhoria-inteligencia-gabarito-08-10",
       "tipo": "melhoria_examinador",
       "owner": "Bardi",

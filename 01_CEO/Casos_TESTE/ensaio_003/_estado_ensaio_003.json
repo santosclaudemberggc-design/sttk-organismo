@@ -3,8 +3,8 @@
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar.",
   "etapa_atual": 3,
-  "status_etapa": "reprovada",
-  "proxima_acao": "refazer",
+  "status_etapa": "aguardando_aprovacao",
+  "proxima_acao": "aguardar_claudemberg",
   "valores_possiveis": {
     "status_etapa": [
       "a_criar",
@@ -387,6 +387,14 @@
       "evento": "decisoes_v7_respondidas",
       "data": "2026-10-08",
       "obs": "Claudemberg: C1 = 4 vagas no Briefing; C2 = Sim (vaga descoberta no frontal entra como alternativa nova; vedacao XXII segue valendo na ZE-5, Kelsen verifica); C3 = Sim (Gate do Maurico aprovado pelos dois, Maurico e Claudemberg, antes de uso real da R6). Peca 2 v6 = 2.545 palavras (teto 2.500). Refazer v7 pela Drenagem (Passo 5.6)."
+    },
+    {
+      "etapa": 3,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-08",
+      "versao": "v7",
+      "veredito_recomendado": "aprovar",
+      "obs": "Lúcio+Oscar em entrega/v7/ (Peça 2 = 2.066 palavras, teto 2.500). Bardi: 4/4 iscas; notas todas >= 8,00 (Oscar 8,50; Lúcio 8,20; Skill vaga 8,70; Skill levantamento 8,50; Skill decreto3046 8,60). Pendências: C3 NÃO atendido (Gate da R6 não declarado na v7); COES Art. 31 III–IV não tratados; Art. 29 IV citado para manobra compartilhada. Gabarito com 3 erros do Bardi (G1 isca 1, G2 isca 4, G4 isca 2), não descontados. Parecer: parecer_bardi_v7.md"
     }
   ],
   "gabaritos_em": "_gabaritos_LACRADO_bardi/ensaio_003/"
