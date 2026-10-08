@@ -18,7 +18,11 @@ Tarefa `wallenberg-rotina-ensaio-sombra` · seg-sex 08:30 · referência `01_CEO
 |---|---|---|---|---|---|
 | 30/09 | 1 | estado criado (`a_criar`) | — | — | 1ª montagem em 01/10 08:30 |
 | 01/10 | 1 | caso criado (08:36, ~8min); executada por Kelsen+Hely e corrigida por Bardi (11:04, via Drenagem) | aprovar (8/8 itens, 4/4 iscas, 6 correções não bloqueantes) | aprovada ao vivo | 1ª etapa do organismo aprovada; etapa avançou para 2 (Viabilidade, Villaça), status `a_criar` |
+| 07/10 | 3 | 08:36–08:41 (~5 min): encerrou no portão (etapa `reprovada`, nada a criar). v5 refeita e corrigida na Drenagem (11:04) | reprovar (tabela G parcial; m²/vaga sem manobra, COES Art. 29; vaga no afastamento frontal, Dec. 3.046 XXII, herdada da Etapa 01 l. 181) | reprovada; regra nova: nota 0-10 por Gestor/Agente, mínimo 8,00 | 5ª reprovação da etapa 3 (v1–v4 em 06/10, v5 em 07/10). Diário sem linhas de 02 a 06/10 (Fechamento não registrou) |
 
 ## 3. Candidatas a melhoria
 - (observar) A 1ª etapa calibra o próprio Bardi: o caso ficou realista e difícil o bastante?
 - (observar) Fechamento (etapas 14-17): o Lelé não tem Agentes. Deve aparecer como lacuna.
+- (nova 07/10) **Etapa 3 reprovada 5 vezes em 2 dias; erro de forma repetido e erro herdado de etapa aprovada.**
+  - Evidência: `_estado_ensaio_003.json`. 06/10: v1, v2 (extensão), v3 (contagem de palavras falsa), v4 (3 erros de forma em nota e remissões). 07/10: v5 (forma da tabela G de novo e 2 erros de mérito). Um deles, a vaga no afastamento frontal, vem do parecer Legal da Etapa 01, aprovado em 01/10 (l. 181). A auditoria do Lúcio não pegou os erros de forma em v3 nem em v4.
+  - Sugestão: (a) quando o Bardi achar erro herdado de etapa já aprovada, abrir errata da etapa de origem junto com a lacuna. Isso já foi feito em 07/10; a sugestão é tornar regra. (b) Entrar na pauta da Reunião: forma (nota, remissões, contagem) reprovou 3 versões seguidas.

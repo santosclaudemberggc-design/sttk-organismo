@@ -17,6 +17,11 @@ Tarefa `wallenberg-rotina-macetes-profissionais` · seg-sex 14:00 · fila `01_CE
 | 29/09 | sim | ~11 min | 8 macetes em 2 Skills; varandas sem macete | Rodou às 18:09 (1ª execução no dia da criação) |
 | 30/09 | pausada | — | — | Revisão das rotinas |
 | 01/10 | sim | ~9 min | 7 macetes em 2 Skills (nbr15220-3 Lúcio v1.1→v1.2; fundacoes-solos-moles Cardozo 1.2→1.3); varandas sem macete (2ª rodada) | — |
+| 07/10 | sim | sem dado (início 14:14; a sessão ainda aparece "running", com última atividade em 08/10 07:19) | 0 macetes; `legal-oodc-mais-valera-mais-valia` (Kelsen), 2ª rodada sem macete → "Sem fonte pública" | Prioridade 1 vazia; prioridade 2 só ter/qui. Diário sem linhas de 02 a 06/10 |
 
 ## 3. Candidatas a melhoria
 - (confirmada 01/10) A fonte C não destravou o Kelsen: varandas falhou pela 2ª rodada seguida (tipo A e C tentados, só achada a ata do COMPUR 2007 com opinião, sem técnica nova) e foi para "Sem fonte pública", como esta candidata antecipava em 29/09.
+- (nova 07/10) **As Skills de interpretação jurídica do Kelsen saem da fila sem macete.**
+  - Evidência (`_macetes_fila.md`): varandas (29/09 e 01/10) e OODC (05/10 e 07/10), 2 rodadas cada, zero fonte A/B/C com credencial. Contraexemplo: `decreto3046` recebeu macete tipo C (Dicionário da SMDU) em 06/10.
+  - Sugestão: para Skills de decisão jurídica caso a caso, ir direto à fonte C oficial (dicionário, cartilha ou parecer da SMDU) na 1ª rodada, em vez de A/B.
+- (nova 07/10) Sessão de 07/10 ainda "running" na manhã de 08/10. Observar se repete.

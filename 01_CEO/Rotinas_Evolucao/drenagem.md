@@ -25,7 +25,9 @@ Tarefa `wallenberg-drenagem-continua-local` · seg-sex 11:00 · referência `01_
 | 29/09 | sim | ~1 min | fila vazia | Sintoma que motivou a v2.5.0 |
 | 30/09 | pausada | — | — | Revisão das rotinas |
 | 01/10 | sim | ~2h25min (14:04-16:28) | Ensaio 003 etapa 1 executada e corrigida; varredura mensal de Drive; pós-aprovação: Kelsen corrigiu 4 Skills + 2 POPs e capacitou Hely | Duração bem acima da média das rodadas reais (~14 min, excluindo a anomalia de 28/09) — explicada pelo volume: 1ª execução do Ensaio + correções ordenadas ao vivo por Claudemberg na mesma sessão |
+| 07/10 | sim | ~50 min (11:04–11:54) | Ensaio 003 etapa 3 v5 (Lúcio→Oscar) + Bardi (reprovar); lacuna da vaga → Skill nova do Kelsen; +2 lacunas abertas; Notion VILLACA-001 → aprovado | Fez a lacuna que a Diária não tratou. Notion LELE-002 e `auditoria_lele.json` negados pela permissão automática. Diário sem linhas de 02 a 06/10 |
 
 ## 3. Candidatas a melhoria
 - (aberta) **Sessão de 28/09 ficou aberta cerca de 24 h.** Verificar se ela se repete.
 - (confirmada 01/10) **Primeira execução do Ensaio em 01/10.** Durou ~2h25min, cerca de 10x a média das rodadas anteriores (23-29/09, excluindo a anomalia de 28/09). Gabarito lacrado respeitado (SHA256 conferido antes/depois). Observar se a duração cai nas próximas etapas ou se é o novo normal com o Ensaio rodando.
+- (dados novos 07/10, para a candidata "sessão aberta 24 h") Pelo `list_task_runs`, a sessão de 05/10 ficou aberta ~8h30 (11:03–19:33) e a de 06/10 ~9h09 (11:04–20:13). Nas duas datas o livro-razão registra decisões de Claudemberg ao vivo na mesma sessão, o que provavelmente explica a duração. 07/10 voltou a ~50 min. Sugestão: separar no diário "tempo da rotina" e "sessão ao vivo com Claudemberg", para a média não se misturar.

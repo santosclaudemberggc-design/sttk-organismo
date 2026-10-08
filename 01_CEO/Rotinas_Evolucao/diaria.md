@@ -27,8 +27,13 @@ Tarefa `wallenberg-rotina-diaria-skills-v2-7` · seg-sex 09:00 · referência `0
 | 29/09 | sim | ~16 min | 2 Skills ativas, 4 treinos | — |
 | 30/09 | interrompida | 8 s | — | Interrompida por Claudemberg para a revisão |
 | 01/10 | sim | ~12 min | 2 Skills ativas-com-ressalva (SELCA Kelsen/Hely; Cobertura Lúcio/Oscar) | Passo 0 leu `_passagem_do_dia.md` corretamente (1ª vez); Cardozo sem Skill |
+| 07/10 | sim | ~5h38min (09:07–14:45) | 0 Skill nova; 6 buscas (2/Gestor); contenção em argila mole já coberta pela Skill de fundações v1.3 | Passo 0 leu a passagem de **05/10** (a de 06/10 não existe). **Não tratou a lacuna `lacuna-kelsen-dimensao-minima-vaga-06-10-2026`** (prioridade zero), que a Drenagem acabou executando. LC 198 com PDF corrompido; /watch sem vídeo. Diário sem linhas de 02 a 06/10 |
 
 ## 3. Candidatas a melhoria
 - (aberta) **Uso real de Skill = 0%.** Em setembro foram cerca de 28 Skills e nenhuma usada em caso real. O Ensaio 003 é a resposta; acompanhar se as Skills aparecem nos pareceres do Bardi.
 - (aberta) **Bug do /watch:** `-vsync` no ffmpeg novo e 429/403 do YouTube, recorrentes desde 24/09.
 - (fechada 01/10) **Kelsen sem Skill nova** desde 28/09 — rompido em 01/10 com a Skill SELCA v1.1.
+- (nova 07/10) **Duração fora do padrão e lacuna de prioridade zero ignorada.**
+  - Evidência (`list_task_runs`): 07/10 durou ~5h38min (09:07–14:45) contra ~14 min em 05/10, ~1h51min em 06/10, ~12 min em 01/10 e ~16 min em 29/09. É mais que o dobro da média, e a rodada não produziu Skill nova. No mesmo dia, a lacuna da vaga, aberta em 06/10 como prioridade zero da Diária, ficou para a Drenagem (livro-razão de 07/10).
+  - Provável causa: a passagem estava velha (05/10), porque o Fechamento de 06/10 encerrou em 4 s. A lacuna só aparecia na passagem.
+  - Sugestão: o Passo 0 da Diária deve ler direto em `pendencias.json` os itens `tipo: lacuna_conhecimento` abertos, sem depender só da passagem, e checar a data da passagem.
