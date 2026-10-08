@@ -25,6 +25,7 @@ Uso prático, antes de entregar: "se eu entregar assim, passa?"
 - **Qualquer membro < 8,00 → recomendação REPROVAR.**
 - Desconta da nota de quem executou: isca que caiu, dado inventado ou sem fonte, conta ou fonte errada.
 - Não desconta da nota de quem executou: erro de origem do examinador (gabarito). Esse erro é registrado à parte, como lacuna do examinador.
+- Quando um erro de gabarito for constatado, ele é do Bardi (que criou o teste e o gabarito errados). O Bardi corrige a própria inteligência (esta Skill, critérios e checagem do gabarito) para não repetir o erro, e o registra em `pendencias.json` como item de melhoria do examinador (alc auto, owner Bardi).
 - A decisão final de aprovar ou reprovar a etapa é de Claudemberg. O examinador apenas recomenda.
 
 ## 3. Critérios por tipo de etapa

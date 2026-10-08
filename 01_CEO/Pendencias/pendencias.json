@@ -100,10 +100,38 @@
       "desde": "2026-10-08",
       "crit": "alta",
       "alc": "humano",
+      "status": "resolvida",
+      "resolvido_em": "2026-10-08",
+      "txt": "Ensaio 003 etapa 3 v6 aguardando aprovacao (Bardi: reprovar). REPROVADA por Claudemberg 08/10 (motivo: abaixo da media). Restam as decisoes C1-C3 para a v7 (item etapa3-v7-decisoes-c1-c3-08-10). Decidir: C1 numero de vagas no Briefing (4 ou 6); C2 se o cliente quiser vaga descoberta no frontal, vira alternativa nova; C3 Gate do Maurico antes de uso real da interpretacao R6; contagem de palavras da Peca 2 (teto 2.500) ainda nao feita por Wallenberg.",
+      "acao": "Resolvido: etapa 3 reprovada por Claudemberg 08/10 (motivo: abaixo da media)."
+    },
+    {
+      "id": "bardi-melhoria-inteligencia-gabarito-08-10",
+      "tipo": "melhoria_examinador",
+      "owner": "Bardi",
+      "agente": "Bardi (Examinador)",
+      "cardId": "bardi",
+      "desde": "2026-10-08",
+      "crit": "alta",
+      "alc": "auto",
       "status": "aberta",
       "resolvido_em": null,
-      "txt": "Ensaio 003 etapa 3 v6 aguardando aprovacao (Bardi: reprovar). Decidir: C1 numero de vagas no Briefing (4 ou 6); C2 se o cliente quiser vaga descoberta no frontal, vira alternativa nova; C3 Gate do Maurico antes de uso real da interpretacao R6; contagem de palavras da Peca 2 (teto 2.500) ainda nao feita por Wallenberg.",
-      "acao": "Responda aqui: aprovo a etapa 3 ou reprovo a etapa 3 — motivo."
+      "txt": "Etapa 03 v6: iscas 1 e 4 do gabarito estavam erradas (isca 1 manda aplicar o XI, que trata laterais; isca 4 tem conta contraditoria: 407 m2 'cabe' em 520). Decisao de Claudemberg 08/10: erro de gabarito e do Bardi, nao desconta do executor.",
+      "acao": "Rotina Diaria de amanha aciona o Bardi para (1) revisar a propria checagem de gabarito antes de lacrar (conta fechada, fonte conferida, isca testada contra o primario); (2) atualizar a Skill ensaio-sombra-criterios-aprovacao-por-etapa com essa checagem. Nao reescrever o gabarito lacrado da etapa 3 sem nova ordem de Claudemberg."
+    },
+    {
+      "id": "etapa3-v7-decisoes-c1-c3-08-10",
+      "tipo": "decisao_humana",
+      "owner": "Claudemberg",
+      "agente": null,
+      "cardId": "claudemberg",
+      "desde": "2026-10-08",
+      "crit": "alta",
+      "alc": "humano",
+      "status": "aberta",
+      "resolvido_em": null,
+      "txt": "Para a v7 da etapa 3: C1 numero de vagas no Briefing (4 ou 6); C2 se o cliente quiser vaga descoberta no frontal, vira alternativa nova; C3 Gate do Maurico antes de uso real da interpretacao R6. Contagem de palavras da Peca 2 (teto 2.500) ainda nao feita por Wallenberg.",
+      "acao": "Responder C1, C2 e C3 antes da refazer (Passo 5.6 da Drenagem)."
     },
     {
       "id": "criterio-erro-gabarito-vs-nota-08-10",
@@ -114,8 +142,9 @@
       "desde": "2026-10-08",
       "crit": "media",
       "alc": "humano",
-      "status": "aberta",
-      "resolvido_em": null,
+      "status": "resolvida",
+      "resolvido_em": "2026-10-08",
+      "resultado": "Decisao de Claudemberg 08/10: erro de gabarito nao desconta do executor; erro do gabarito e do Bardi, que melhora a propria inteligencia quando constatado (item bardi-melhoria-inteligencia-gabarito-08-10). Destino da proposta original com iscas: ARQUIVADA em Skills_Propostas/_Arquivadas/2026/.",
       "txt": "Conflito nos criterios do Ensaio: erro de gabarito nao desconta do executor (versao publica da Skill de criterios) vs erro grave do gabarito puxa nota abaixo de 8,00 (brief). A versao publica adotou 'nao desconta' e registrou o erro a parte.",
       "acao": "Decidir a regra definitiva. Destino da proposta original de criterios (Skills_Propostas/2026/10, com iscas) tambem a decidir: apagar, arquivar ou manter so como registro de gabarito."
     },

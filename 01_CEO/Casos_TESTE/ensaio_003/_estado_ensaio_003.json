@@ -3,8 +3,8 @@
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar.",
   "etapa_atual": 3,
-  "status_etapa": "aguardando_aprovacao",
-  "proxima_acao": "aguardar_claudemberg",
+  "status_etapa": "reprovada",
+  "proxima_acao": "refazer",
   "valores_possiveis": {
     "status_etapa": [
       "a_criar",
@@ -371,10 +371,16 @@
     },
     {
       "etapa": 3,
-      "evento": "reprovada_por_bardi_aguardando_claudemberg",
+      "evento": "reprovada_por_claudemberg",
       "data": "2026-10-08",
       "versao": "v6",
-      "obs": "Veredito recomendado REPROVAR. Decisao final (aprovar/reprovar) e de Claudemberg. Pendencias de decisao: C1 numero de vagas (4 ou 6); C2 vaga descoberta no frontal vira alternativa nova se o cliente quiser; C3 Gate do Maurico antes de uso real (R6); contagem de palavras da Peca 2 (teto 2.500) ainda nao feita."
+      "motivo": "Motivo abaixo da média: Lúcio 7,20; Skill de vaga 7,60; Skill de levantamento 7,40 (todos abaixo de 8,00). Erros de citação (COES Art. 29 III p. 19) e de texto apontados no parecer v6. Erros do gabarito (isca 1, isca 4) são do Bardi e não descontam do executor (decisão 08/10)."
+    },
+    {
+      "etapa": 3,
+      "evento": "regra_gabarito_definida",
+      "data": "2026-10-08",
+      "obs": "Decisão de Claudemberg: erro de gabarito não desconta do executor. Se o gabarito estiver errado, o erro é do Bardi (criou o teste e o gabarito errados); o Bardi deve melhorar a própria inteligência quando constatado. Aplicado na Skill pública de critérios."
     }
   ],
   "gabaritos_em": "_gabaritos_LACRADO_bardi/ensaio_003/"
