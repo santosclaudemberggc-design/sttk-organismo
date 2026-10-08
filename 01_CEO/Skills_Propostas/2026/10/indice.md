@@ -2,7 +2,8 @@
 
 | Data | Nome da Skill | Criada por | Status | Arquivo | Validação |
 |------|--------------|-----------|--------|---------|-----------|
-| 08/10 | ensaio-sombra-criterios-aprovacao-por-etapa-017-etapas | Bardi | proposta | `bardi_ensaio-sombra-criterios-aprovacao-por-etapa-017.md` | Claudemberg (Semanal) |
+| 08/10 | ensaio-sombra-criterios-aprovacao-por-etapa (versão pública, instalada) | Bardi | ativa-com-ressalva | `.claude/skills/ensaio-sombra-criterios-aprovacao-por-etapa/SKILL.md` (cópia pública: `bardi_ensaio-sombra-criterios-aprovacao-por-etapa-017_publica.md`) | Pendente de ratificação de Claudemberg; citações não verificadas na seção 7 |
+| 08/10 | ensaio-sombra-criterios-aprovacao-por-etapa-017-etapas (ORIGINAL, NÃO INSTALADA, contém iscas — destino com Claudemberg) | Bardi | proposta | `bardi_ensaio-sombra-criterios-aprovacao-por-etapa-017.md` | Claudemberg (Semanal) |
 | 07/10 | vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj | Kelsen | ativa-com-ressalva | `kelsen_vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj.md` | ✅ Claudemberg (ratif. Drenagem 07/10) |
 | 07/10 | entrada-energia-light-ligacao-nova-padrao-recon-bt-rj | Cardozo | ativa-com-ressalva | `cardozo_entrada-energia-light-ligacao-nova-padrao-recon-bt-rj.md` | ✅ Claudemberg (ratif. Diária 05/10) |
 | 05/10 | levantamento-topografico-cadastral-orientado-duli-licin-rj | Lúcio | ativa-com-ressalva | `lucio_levantamento-topografico-cadastral-orientado-duli-licin-rj.md` | ✅ Claudemberg (ratif. Diária 05/10) |

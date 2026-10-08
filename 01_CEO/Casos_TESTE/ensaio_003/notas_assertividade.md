@@ -40,6 +40,11 @@ Regra de Claudemberg (07/10/2026): o Bardi dá uma nota de 0,00 a 10,00 ao Gesto
 | 06/10/2026 | 03 Levantamento | v4 | Oscar | Agente | 9,25 | Remissão falsa no Anexo G (crédito); Peça 1 §9 desatualizada |
 | 07/10/2026 | 03 Levantamento | v5 | Lúcio | Gestor | 8,75 | Auditoria afirmou 27 células da G conferidas; alternativa A sem a tensão do Dec. 3.046 XXII (erro 2, m²/vaga sem manobra, é origem do gabarito: não descontado) |
 | 07/10/2026 | 03 Levantamento | v5 | Oscar | Agente | 9,00 | Tabela G viola a regra "afirmação parcial = —"; alternativa A contra o XXII sem registrar a tensão |
+| 08/10/2026 | 03 Levantamento | v6 | Lúcio | Gestor | 7,20 | Levantamento v1.6 com COES Art. 29 III p.15 não checado no primário (correto: p.19; III é limiar de demarcação); "Atendido (auditoria minha feita)" contra a própria admissão de não ter refeito a G; não leu Peças e anexo, não viu "área oficial 571,80" |
+| 08/10/2026 | 03 Levantamento | v6 | Oscar | Agente | 8,20 | Fonte do "a" copiada da Skill (p.15/III), não checada; "área oficial 571,80" (P1 §1); "vedada" sem qualificador (P2 §1, Matriz 9); XI do Dec. 3.046 lido sem as condições (C-9); errata já existente tratada como pendente (C-8); C-10 sem marca; Peça 2 sem contagem |
+| 08/10/2026 | 03 Levantamento | v6 | Skill vaga-estacionamento v1.0 (dona Kelsen) | Skill | 7,60 | Art. 29 III citado com página e artigo errados; III tratado como tamanho de garagem; paráfrase entre aspas com condição cortada. Composição 25 m² (I+II) é defensável e não foi o erro |
+| 08/10/2026 | 03 Levantamento | v6 | Skill levantamento-topografico v1.6 (Arquitetura, aplicada por Lúcio) | Skill | 7,40 | §5-bis novo com COES Art. 29 III p.15; sem a condição do III e sem a composição I+II |
+| 08/10/2026 | 03 Levantamento | v6 | Skill decreto3046-81 v1.5 (dona Kelsen) | Skill | 8,50 | R6 apontada como obstáculo da K1, quando a intro do Cap. II responde à aplicação geral; §6 sem regra de balanço frontal de unifamiliar (VII→XI). Acerto: XXII e XXIII a conferem no primário |
 
 ## Média por membro (retroativo, Ensaio 003 até 07/10/2026)
 

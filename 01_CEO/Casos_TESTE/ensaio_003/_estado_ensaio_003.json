@@ -3,8 +3,8 @@
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar.",
   "etapa_atual": 3,
-  "status_etapa": "reprovada",
-  "proxima_acao": "refazer",
+  "status_etapa": "aguardando_aprovacao",
+  "proxima_acao": "aguardar_claudemberg",
   "valores_possiveis": {
     "status_etapa": [
       "a_criar",
@@ -360,6 +360,21 @@
       "data": "2026-10-07",
       "versao": "v5",
       "motivo": "Reprovada conforme parecer_bardi_v5 (tabela G parcial; m2/vaga sem manobra - COES Art. 29; vagas no afastamento frontal vedadas pelo Dec. 3.046 XXII). v6 muda numeros. Adendo do mesmo dia: a partir de agora cada correcao recebe nota 0-10 por Gestor e por Agente; minimo 8,00 para passar; erros se corrigem com informacao comprovada, ja aplicada na pratica e autorizada."
+    },
+    {
+      "etapa": 3,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-08",
+      "versao": "v6",
+      "veredito_recomendado": "reprovar",
+      "obs": "Drenagem 08/10: Lucio+Oscar em entrega/v6/ (garagem 25 m2/vaga; alternativa A vedada; tabela G revisada). Bardi: 4/4 iscas; reprova por notas abaixo de 8,00 (Lucio 7,20; Skill de vaga 7,60; Skill de levantamento 7,40). Erros: COES Art. 29 III esta na p. 19 e e limiar de demarcacao; 571,80 chamado de area oficial; vedada sem qualificador; C-9 le o XI pela metade; errata l.181 dada como pendente (existe desde 08/10). Gabarito com 2 erros proprios (isca 1, isca 4) registrados a parte. Parecer: parecer_bardi_v6.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "reprovada_por_bardi_aguardando_claudemberg",
+      "data": "2026-10-08",
+      "versao": "v6",
+      "obs": "Veredito recomendado REPROVAR. Decisao final (aprovar/reprovar) e de Claudemberg. Pendencias de decisao: C1 numero de vagas (4 ou 6); C2 vaga descoberta no frontal vira alternativa nova se o cliente quiser; C3 Gate do Maurico antes de uso real (R6); contagem de palavras da Peca 2 (teto 2.500) ainda nao feita."
     }
   ],
   "gabaritos_em": "_gabaritos_LACRADO_bardi/ensaio_003/"

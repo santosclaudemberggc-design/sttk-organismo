@@ -18,7 +18,7 @@ validacao: Kelsen 07/10/2026 — ativa-com-ressalva (R1-R5 abaixo)
 
 ## 1. POR QUE ESSA SKILL EXISTE
 
-No Ensaio 003 (etapa 3) o Levantamento usou "12,50-15,00 m²/vaga" sem fonte. Os dois números até coincidem com a lei (2,50 x 5,00 = 12,50 m²; vaga paralela 2,50 x 6,00 = 15,00 m²), mas **só a vaga**: a lei soma uma **área de manobra de 2,50 x 5,00 m (mais 12,50 m²)** e dá **25 m²/vaga** como a proporção que dispensa demarcar as vagas. Contar 12,50 m²/vaga como área de garagem subestima a garagem pela metade.
+No Ensaio 003 (etapa 3) o Levantamento usou "12,50-15,00 m²/vaga" sem fonte. Os dois números até coincidem com a lei (2,50 x 5,00 = 12,50 m²; vaga paralela 2,50 x 6,00 = 15,00 m²), mas **só a vaga**: a manobra do Art. 29 II é de 2,50 x 5,00 m (mais 12,50 m²), e o Art. 29 III dá **25 m²/vaga** como a proporção que dispensa demarcar as vagas. **O texto do III diz "área de estacionamento por vaga" e não cita a manobra**; que o 25 m² inclua vaga + manobra é leitura (ver R6). Contar 12,50 m²/vaga como área de garagem subestima a garagem pela metade.
 
 ## 2. O TEXTO QUE IMPORTA
 
@@ -47,7 +47,7 @@ No Ensaio 003 (etapa 3) o Levantamento usou "12,50-15,00 m²/vaga" sem fonte. Os
 
 ## 3. COMO USAR NA CONTA (Levantamento, EP, quadro de áreas, viabilidade)
 
-- **Vaga perpendicular:** 2,50 x 5,00 = 12,50 m² de vaga + 12,50 m² de manobra. Para pré-dimensionar área de garagem, usar **25 m²/vaga** (a própria lei usa esse número no Art. 29 III), não 12,50.
+- **Vaga perpendicular:** 2,50 x 5,00 = 12,50 m² de vaga + 12,50 m² de manobra. Para pré-dimensionar área de garagem, usar **25 m²/vaga** como proporção do Art. 29 III (texto: "25 m² de área de estacionamento por vaga"), não 12,50. A composição vaga + manobra é a leitura conservadora (R6), e deve ser citada como tal.
 - **Vaga paralela:** 2,50 x 6,00 = 15,00 m²; manobra pode cair para faixa de 3,00 m ao longo do lado maior (Dec. 45.917 Art. 10).
 - **Manobra compartilhada:** a lei pede a manobra "contígua à menor dimensão" de cada vaga; duas vagas lado a lado podem dividir a mesma faixa de circulação/manobra se ela atender 2,50 m (Art. 29 IV). O "25 m²/vaga" é média, não regra por vaga — com várias vagas a conta fica menor; com 1 vaga isolada, é o que é.
 - **Pé-direito da garagem e da rampa: 2,20 m livres** (Art. 28 II). Viga e duto contam.
@@ -82,6 +82,8 @@ No Ensaio 003 (etapa 3) o Levantamento usou "12,50-15,00 m²/vaga" sem fonte. Os
 **R4 — Remissões não lidas.** COES Art. 29 V (vaga de pessoa com deficiência: Lei Federal + ABNT/NBR 9050) e COES Art. 28 §9º / LC 270 Art. 368 §2º ("norma específica" para vagas especiais) — norma específica não localizada. Dec. 3.046 XXI remete ao "Quadro VII, área B-1" do Regulamento de Zoneamento (Dec. 322/1976), revogado pela LC 270 Art. 536 XIX: o destino da remissão morreu.
 
 **R5 — Manobra com acesso direto do logradouro.** O Art. 29 §3º dispensa demarcar a faixa de circulação quando a vaga abre direto para a rua, mas não diz que a manobra do inciso II também é dispensada. Não presumir que a rua serve de manobra.
+
+**R6 — Os 25 m²/vaga incluem a manobra? (interpretação, 08/10/2026).** Conferido por Kelsen no COES consolidado SMU, p. 15: o Art. 29 II define a manobra (2,50 x 5,00 m), e o Art. 29 III diz "25 m² de área de estacionamento por vaga", sem nomear a manobra. A soma vaga + manobra = 25 m² é a leitura conservadora para pré-dimensionar. Quem cita o número precisa escrever "Art. 29 III (25 m²/vaga; composição vaga + manobra = leitura)". Não citar como texto de lei que a manobra está incluída. Ao Gate do Maurício, se o cálculo de garagem for para cliente real.
 
 ## FONTES (primárias, arquivadas)
 

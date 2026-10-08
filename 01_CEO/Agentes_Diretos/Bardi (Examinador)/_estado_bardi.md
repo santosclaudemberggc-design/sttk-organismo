@@ -1,6 +1,8 @@
 # Estado — Bardi (Agente Examinador, direto de Wallenberg)
 
 ## 1. Onde parei
+08/10/2026 (Drenagem Contínua, Claudemberg ausente): corrigi a v6 da Etapa 03. `etapa_03_levantamento/parecer_bardi_v6.md`: **REPROVAR**. Iscas 4/4 pegas. Notas: Oscar 8,20; Lúcio 7,20 (abaixo); Skill vaga 7,60 (abaixo); Skill levantamento v1.6 7,40 (abaixo); Skill decreto 8,50. Gravado em `notas_assertividade.md`. Achado central: o COES Art. 29 III está na p. 19 (não p. 15) e é limiar de dispensa de demarcação, não tamanho de garagem; o 25 m² tem base em I+II. Dois erros graves do gabarito (Isca 1: VII→XI, não veda balanço frontal; Isca 4: conta internamente contraditória, "407 cabe em 520"). Contagem da Peça 2 não feita (sem ferramenta). Próximo: refazer da Etapa 03 (v7) ou correção da Etapa 04, conforme a Drenagem.
+
 08/10/2026 (7º acionamento, Rotina Diária v3.5.0): criada Skill proposta `ensaio-sombra-criterios-aprovacao-por-etapa-017-etapas` v1.0, documentando os critérios de aprovação que aplico ao auditar cada etapa do Ensaio 003. Tabela 1–17 com o que procuro / reprova / aceita; blocos "O que Bardi encontrou" com histórico das 3 etapas executadas. Arquivo gravado em `01_CEO/Skills_Propostas/2026/10/bardi_ensaio-sombra-criterios-aprovacao-por-etapa-017.md` (status proposta, validação Claudemberg). Índice e livro-razão atualizados.
 
 07/10/2026 (5º acionamento): corrigi a v5 da Etapa 03. `parecer_bardi_v5.md`: **REPROVAR**. Os 3 erros da v4 foram corrigidos, e o diff da P2, da Matriz e da F/G confere. Reprova por: (1) a tabela G viola a regra que a própria v5 escreveu (G "520" → Matriz l. 9; "piso térreo" → l. 10, células parciais mantidas); (2) "a = 12,50–15,00" omite a manobra do COES Art. 29 II, conferido no primário (p. 15). **A origem é o meu gabarito** (Isca 4, ~15 m²/vaga); (3) a alternativa A (vagas no frontal) contraria o Dec. 3.046 XXII (p. 4), herança do parecer da Etapa 01, l. 181, que não peguei em 4 correções. Próximo: a v6, com mérito.
@@ -33,6 +35,11 @@
 **Próximo acionamento:** Etapa 03 (se Claudemberg aprovar v9) ou v10 (se reprovar).
 
 ## 2. Pendências abertas
+- Etapa 03 v6 (08/10): Oscar corrige a fonte do "a" (COES Art. 29 I e II, p. 19; III só como limiar); Kelsen corrige a Skill vaga v1.0 (§1, §3, R6); Lúcio corrige a Skill levantamento v1.6 §5-bis. Confirmar na próxima correção.
+- Gabarito Etapa 03: Isca 1 (VII→XI) e Isca 4 (conta "407 cabe em 520") estão erradas. Registrar para Claudemberg. Não reescrever o gabarito.
+- Kelsen: K1 agora estreitada pela intro do Cap. II do Dec. 3.046 (p. 2). Gate: LC 270 Art. 363 §2º XII × Dec. 3.046 XXII. Gate: interpretação R6 (composição da vaga).
+- Peça 2 da Etapa 03 sem contagem de palavras (teto 2.500). Pedir a Wallenberg antes de aprovar.
+- Fontes que não verifiquei: COES Art. 8º §§1º–2º e Art. 31 p.ú. (não achei nas pp. 9–10 e 17); LC 270 Art. 350 III (p. 125).
 - Mover `_gabaritos_LACRADO` para fora da árvore do ensaio (Glob na raiz lista os nomes), com Wallenberg. Proposto no parecer da Etapa 03.
 - No refazer da Etapa 03, julgar a Isca 4 pela área computável (−(n−1) × vaga sobre os 457,44), não pelas contas do gabarito (×2 errado). Julgar a Isca 1 pela tensão VII × XI, não pela "vedação certa".
 - Gabarito da Etapa 01, seção 8, e gabarito da Etapa 02, seção 9: fatos reservados para as Etapas 03, 04, 05/06, 07 e 16. Decidir na montagem de cada etapa, de forma coerente com a entrega aprovada. Na Etapa 04, a entrega já registrou o COES Art. 31 V (unifamiliar dispensada de acessibilidade), o que é correto. A isca da suíte de D. Lourdes tem de ser cobrada como exigência do programa, não da lei.
@@ -67,6 +74,9 @@
 - Etapa 03 v4: tabelas de remissão/coerência (Anexo E, F, G) apodrecem em silêncio quando o corpo é enxugado. A cada versão, conferir cada remissão contra o corpo atual, e fazer diff do anexo contra a versão anterior, sem confiar no "igual" da nota. Toda edição feita por quem não é o autor (inclusive a troca de rótulo) torna desatualizadas as declarações do artefato.
 - Etapa 03 v5 (erro MEU, grave): o gabarito da Isca 4 usou "~15 m²/vaga" sem fonte, o Oscar copiou o número do meu parecer, e o primário (COES Art. 29 II) soma a manobra. **Todo parâmetro numérico do gabarito precisa de artigo lido. Sem ele, entra como "ponto de julgamento", nunca como número de conta.** Também deixei passar por 4 correções uma premissa (b) da Etapa 01 (frontal admite estacionamento) que o Dec. 3.046 XXII contraria. Ao corrigir, ler no primário cada inciso da ZPP vizinho ao tema da isca, não só o citado. Regra autoimposta pela entrega ("afirmação parcial = —") deve ser testada em todas as células, não só nas que mudaram.
 - Uma isca de "conta" só é pega se a conta aparece. O mecanismo certo sem números = parcial. Uma conclusão ("cabe") que omite a condição da isca = erro.
+- Etapa 03 v6 (08/10): ao citar artigo, conferir a página e o que o inciso diz de fato. O COES Art. 29 III é limiar de dispensa de demarcação, não tamanho de garagem; a Skill e a entrega copiaram o número com a fonte errada. Regra: toda citação de inciso lida no primário com página, e a paráfrase entre aspas não pode cortar a condição.
+- Gabarito: erro de conta interna (Isca 4: "407 m² cabe em 520") e erro de leitura do inciso (Isca 1: VII manda aplicar XI, e XI trata laterais). Antes de lacrar, refazer a conta do gabarito e ler o inciso inteiro, como já estava escrito.
+- Bash não está entre as minhas ferramentas: contagem de palavras depende de Wallenberg. Declarar "não medido" em vez de estimar.
 
 ## v8-final (05/10/2026): Tolerância zero + Método não é Resultado
 
