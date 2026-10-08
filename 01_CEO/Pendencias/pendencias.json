@@ -128,8 +128,9 @@
       "desde": "2026-10-08",
       "crit": "alta",
       "alc": "humano",
-      "status": "aberta",
-      "resolvido_em": null,
+      "status": "resolvida",
+      "resolvido_em": "2026-10-08",
+      "resultado": "Respondido por Claudemberg 08/10: C1 = 4 vagas no Briefing. C2 = Sim: vaga descoberta no frontal entra como alternativa nova na v7 (vedacao XXII segue valendo na ZE-5; Kelsen verifica). C3 = Sim: Gate do Maurico aprovado pelos dois (Maurico e Claudemberg) antes de uso real da R6. Contagem da Peca 2 v6: 2.545 palavras (teto 2.500), cortar pelo menos 45 na v7.",
       "txt": "Para a v7 da etapa 3: C1 numero de vagas no Briefing (4 ou 6); C2 se o cliente quiser vaga descoberta no frontal, vira alternativa nova; C3 Gate do Maurico antes de uso real da interpretacao R6. Contagem de palavras da Peca 2 (teto 2.500) ainda nao feita por Wallenberg.",
       "acao": "Responder C1, C2 e C3 antes da refazer (Passo 5.6 da Drenagem)."
     },

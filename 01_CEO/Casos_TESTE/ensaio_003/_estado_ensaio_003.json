@@ -381,6 +381,12 @@
       "evento": "regra_gabarito_definida",
       "data": "2026-10-08",
       "obs": "Decisão de Claudemberg: erro de gabarito não desconta do executor. Se o gabarito estiver errado, o erro é do Bardi (criou o teste e o gabarito errados); o Bardi deve melhorar a própria inteligência quando constatado. Aplicado na Skill pública de critérios."
+    },
+    {
+      "etapa": 3,
+      "evento": "decisoes_v7_respondidas",
+      "data": "2026-10-08",
+      "obs": "Claudemberg: C1 = 4 vagas no Briefing; C2 = Sim (vaga descoberta no frontal entra como alternativa nova; vedacao XXII segue valendo na ZE-5, Kelsen verifica); C3 = Sim (Gate do Maurico aprovado pelos dois, Maurico e Claudemberg, antes de uso real da R6). Peca 2 v6 = 2.545 palavras (teto 2.500). Refazer v7 pela Drenagem (Passo 5.6)."
     }
   ],
   "gabaritos_em": "_gabaritos_LACRADO_bardi/ensaio_003/"
