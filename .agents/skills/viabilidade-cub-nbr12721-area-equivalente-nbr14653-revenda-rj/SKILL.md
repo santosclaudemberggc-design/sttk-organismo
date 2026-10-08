@@ -1,7 +1,7 @@
 ---
 name: viabilidade-cub-nbr12721-area-equivalente-nbr14653-revenda-rj
 description: Pré-Estudo de Viabilidade de casa unifamiliar no Rio — como estimar custo de obra pelo CUB (NBR 12721) sobre a base de área certa (área real, área equivalente, nunca área computável), o que o CUB exclui (fundação especial, elevador/plataforma, piscina, paisagismo, AC, projetos, demolição, BDI), como tratar casa de 2 pavimentos com o projeto-padrão R-1 (térreo), e como estimar valor de revenda pelo método comparativo direto da NBR 14653-2 (homogeneização, fator de oferta anúncio x venda, base de área IGUAL entre comparável e avaliando). Use sempre que Villaça, Mascaró ou Fiker forem montar custo de obra, valor de revenda, comparação CAB x CAM ou cenários de área — mesmo que o pedido só mencione "quanto custa construir", "CUB", "R$/m²", "quanto vale a casa pronta", "comparáveis", "anúncio" ou "área construída", sem citar a norma pelo nome.
-version: v1.5
+version: v1.7
 status: ativa-com-ressalva
 fonte_primaria_lida: "Nenhuma das duas normas (ABNT NBR 12721:2006 e NBR 14653-2:2011) foi lida no texto oficial — são pagas e não estão em D:\\008_Normas ABNT\\. Lido no primário: PDF do CUB/m² Sinduscon-Rio set/2026 (lista de exclusões, por Mascaró em 02/10/2026; reaberto e transcrito por Mascaró em 05/10/2026). O resto vem de fontes secundárias citadas na seção 7."
 data: 2026-10-05
@@ -13,6 +13,8 @@ changelog:
   - "v1.3 (02/10/2026, Villaça): §2.6 coerente — o piso linear 'aproxima-se de' reajustar no mês médio (não 'equivale'). §2.7 e §2.8 reordenadas. §2.8 ganha a regra de rótulo: [FP]/[DOC] só para o que está literal na fonte; o que se deduz dela (ex.: qual número-índice corresponde a uma data) é [PV]/[INF], com a alternativa e o efeito. Origem: parecer_bardi_v4. Backup INTEGRAL da v1.2 em 01_CEO/Decisoes_Autonomas/_backups/2026-10-02/*_v1.2_INTEGRAL_ANTES_v1.3.md."
   - "v1.4 (05/10/2026, Villaça): §2.4 alinhada ao texto literal da nota do PDF do CUB Sinduscon-Rio (reaberto por Mascaró em 05/10/2026): 'playground (quando não classificado como área construída)' — a v1.3 omitia a condição —, 'impostos, taxas e emolumentos cartoriais', 'ajardinamento', 'recreação (piscinas, campos de esporte)', 'calefação', 'incineração'; o que é leitura de Villaça (fundações especiais, plataforma) ficou marcado como leitura. Regra nova na §2.4: item citado como [FP] leva termo e condição literais. F3 atualizada. Nenhum macete trata desse ponto (M3 fala de fundações especiais, elevadores, legalizações e projetos, sem playground): nenhum macete alterado. Origem: parecer_bardi_v5. Backup INTEGRAL da v1.3 em 01_CEO/Decisoes_Autonomas/_backups/2026-10-05/*_v1.3_INTEGRAL_ANTES_v1.4.md."
   - "v1.5 (05/10/2026, Villaça): §3.1 e §3.2 ganham a regra do FILTRO de metragem — a faixa de busca dos comparáveis é calculada sobre a área do avaliando na MESMA base (construída ou privativa, nunca a computável), com tolerância declarada (no Ensaio 003, ±15% sobre os extremos da construída de trabalho), e refeita sempre que a área de trabalho mudar; R$/m² homogeneizado calculado sobre preço e área exatos, arredondando só no fim. Nova §4.1 'Erros de alto impacto ao cliente — checar antes de entregar' (checklist dos erros já pegos no Ensaio 003). Roteiro item 3 e macete M5 ajustados ao filtro. Origem: parecer_bardi_v6 (faixas 430-520 e 280-330 m² vinham da área computável desde a v1; W8, W13, W9 e W5 ficaram fora) e reprovação de Claudemberg em 05/10/2026. Espelho .agents/skills (que estava na v1.3) sincronizado nesta versão. Backups INTEGRAIS das 3 cópias em 01_CEO/Decisoes_Autonomas/_backups/2026-10-05/*_INTEGRAL_ANTES_v1.5.md."
+  - "v1.6 (08/10/2026, Villaça, Drenagem Contínua): §2.3 ganha a conta de garagem por vaga — 25 m² de área de estacionamento por vaga (COES Art. 29 III), com a ressalva de que a lei não diz que o número inclui a manobra (leitura de composição vaga + manobra, R6 da Skill vaga-estacionamento). §4 item 5 cita a regra de 1 vaga coberta fora da projeção (LC 270 Art. 350 III) e a mesma conta de 25 m². Nenhum número de caso real alterado. Origem: lacuna lacuna-kelsen-manobra-m2-por-vaga-07-10-2026 (parte Villaça). Backup INTEGRAL da v1.5 em 01_CEO/Decisoes_Autonomas/_backups/2026-10-08/*_SKILL_ANTES_vaga.md."
+  - "v1.7 (08/10/2026, Villaça): retirada da R6 (25 m² por vaga como área de garagem), REPROVADA por Claudemberg e Maurício em 08/10/2026 — regra só entra em caso real se seguir norma ou regra de mercado que a valide. §2.3 e §4 item 5 deixam de usar a conta: fica 'área de garagem por vaga: pendente de verificação primária; ver Skill de vaga (R6 reprovada em 08/10)'. A regra de vaga coberta fora da projeção (LC 270 Art. 350 III) é mantida, pois não depende da R6. Nenhum caso real alterado. Backup da v1.6 em 01_CEO/Decisoes_Autonomas/_backups/2026-10-08/*_SKILL_v1.6_ANTES_r6_reprovada.md. Entrada v1.6 acima fica como histórico."
 tipo: Inteligência (Trilha A)
 gestor_alvo: Villaça (Viabilidade)
 agente_principal: Mascaró (custo) e Fiker (revenda)
@@ -63,6 +65,8 @@ Sem quadro de áreas por tipo, faça **faixa**: piso = área computável × 1,00
 Fonte: reprodução secundária do item 5.7.3 (busca de 02/10/2026; ver seção 7, F1) e aplicação real em orçamento paramétrico público (macete M2: interno 1,00; externo coberto 0,70; externo descoberto sobre laje ou solo 0,30; cobertura externa 0,60; barrilete/casa de máquinas 0,70). A norma admite coeficiente próprio quando houver demonstração; os médios valem **na falta** dela.
 
 Garagem coberta **no térreo** de casa não é "subsolo": o coeficiente aplicável não está na lista acima de forma literal. Usar a faixa 0,50 a 0,75 por analogia, **declarando que é analogia**, ou a de "externo coberto" (0,70 do M2).
+
+**Área de garagem por vaga (v1.7):** área de garagem por vaga: pendente de verificação primária; ver Skill de vaga (R6 reprovada em 08/10).
 
 ### 2.4 O que o CUB NÃO inclui (PDF Sinduscon-Rio, lido no primário)
 
@@ -146,7 +150,7 @@ Comparar o avaliando com dados de mercado semelhantes (tipo, padrão, localizaç
 2. Mascaró: área equivalente (faixa) × CUB R-1 do padrão + itens fora do CUB (checklist 2.4) + BDI + INCC ao longo do cronograma de desembolso (§2.6). Villaça soma à parte o custo de moradia do período pré-obra + obra (§2.7).
 3. Fiker: filtro de metragem na mesma base de área do avaliando, com tolerância declarada (§3.1, §3.2); comparáveis com base de área declarada linha por linha; fator de oferta nos anúncios; mesma base no avaliando; ordem de grandeza para todo cenário.
 4. Villaça: refaz as contas, confere bases iguais, e diz explicitamente quando um programa **não cabe** num cenário.
-5. Efeito da **garagem coberta na TO**: vaga coberta fora da área computável pode **ocupar a projeção** (taxa de ocupação). Cada m² de garagem coberta dentro da projeção tira 1 m² da área computável do térreo. Mostrar isso em m² e em R$.
+5. Efeito da **garagem coberta na TO**: vaga coberta fora da área computável pode **ocupar a projeção** (taxa de ocupação). Cada m² de garagem coberta dentro da projeção tira 1 m² da área computável do térreo. Mostrar isso em m² e em R$. Na uni/bifamiliar, só **1 vaga coberta** fica fora da projeção (LC 270 Art. 350 III), e a área de garagem por vaga: pendente de verificação primária; ver Skill de vaga (R6 reprovada em 08/10).
 
 ### 4.1 Erros de alto impacto ao cliente — checar antes de entregar (v1.5)
 
@@ -207,6 +211,7 @@ Todos os macetes complementam a norma; nenhum a contraria.
 - R5 (v1.2): a v1.0 desta Skill não tem cópia integral preservada (backups parciais); a partir da v1.1, backup é sempre cópia integral do arquivo antes de editar.
 
 ---
+*v1.7 (08/10/2026, Villaça): retirada da conta de 25 m² por vaga (R6 reprovada por Claudemberg e Maurício) de §2.3 e §4 item 5; regra de vaga coberta fora da projeção (LC 270 Art. 350 III) mantida. Backup da v1.6 em _backups/2026-10-08/.*
 *v1.5 (05/10/2026, Villaça): filtro de metragem dos comparáveis na mesma base de área do avaliando, com tolerância declarada (§3.1, §3.2); conta sobre valor exato; nova §4.1 de erros de alto impacto ao cliente; roteiro item 3 e M5 ajustados; espelho .agents sincronizado. Origem: parecer_bardi_v6 e reprovação de Claudemberg, Ensaio 003, Etapa 02.*
 *v1.4 (05/10/2026, Villaça): §2.4 com o texto literal da nota do PDF do CUB ("playground (quando não classificado como área construída)", "emolumentos cartoriais", "ajardinamento") e a regra de citar termo e condição literais. Origem: parecer_bardi_v5, Ensaio 003, Etapa 02.*
 *v1.3 (02/10/2026, Villaça): §2.6 sem contradição ("aproxima-se de", nunca "equivale"); §2.7 antes da §2.8; regra de rótulo na §2.8 ([FP] só para o literal; dedução é premissa). Origem: parecer_bardi_v4, Ensaio 003, Etapa 02.*

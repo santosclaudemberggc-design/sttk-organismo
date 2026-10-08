@@ -19,7 +19,7 @@
 
 ## 3. Verificação de Lúcio sobre a pasta v8
 
-- Grep por `25,00`, `25 m²`, `LACRADO`, `37,56`, `382,44`, `153,72`, `75,00`, `125,00`: **zero ocorrências** nos arquivos v8.
+- Grep por `25,00`, `25 m²`, `37,56`, `382,44`, `153,72`, `75,00`, `125,00`: **zero ocorrências** nos arquivos v8. O termo "LACRADO" aparece só neste registro, como referência ao nome da pasta de gabaritos; nenhuma ocorrência em peça, conta ou tabela.
 - Os cinco arquivos existem em `entrega/v8/`.
 
 ## 4. Resultado

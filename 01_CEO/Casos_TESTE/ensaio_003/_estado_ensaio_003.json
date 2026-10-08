@@ -410,7 +410,23 @@
       "versao": "v8",
       "veredito_recomendado": "aprovar",
       "obs": "Verificação da R6 reprovada: ausente da v8 (grep e leitura). Alternativa B confirmada no Dec. 3.046 XI (p. 3). Erro de conta de Oscar (M-a não depende de a) registrado. Notas todas >= 8,00 (Oscar 8,50; Lúcio 8,70; Skill vaga 8,30; Skill levantamento 9,20; Skill viabilidade 9,40). Pendências: Skill de vaga l. 52 e l. 91 ainda com resíduo da soma I+II; Art. 31 III-IV não usados; contagem de palavras da Peça 2 (2.154, feita pela Drenagem). Parecer: parecer_bardi_v8.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "v8_aprovada_como_referencia",
+      "data": "2026-10-08",
+      "versao": "v8",
+      "obs": "Claudemberg aprovou a v8 como referência da etapa 3 (substitui a v7 como referência; v5-v7 ficam no histórico). Pendências da v8 sendo corrigidas: resíduos da soma I+II na Skill de vaga (l. 52 e 91), Art. 29 IV na Skill de levantamento (l. 93), Art. 31 III-IV (p. 17) não usados, AUTO_TESTE_R6 com claim incorreto, espelhos .agents."
+    }
+    ,
+    {
+      "etapa": 3,
+      "evento": "pendencias_v8_corrigidas",
+      "data": "2026-10-08",
+      "versao": "v8",
+      "obs": "Skill de vaga v1.4 (Kelsen): linha de manobra corrigida; soma I+II retirada da interpretacao; Art. 31 III-IV lido na p. 17 e registrado. Skill de levantamento v1.9 (Lucio): Art. 29 IV corrigido. AUTO_TESTE_R6 com claim corrigido. ADENDO_pendencias_08-10-2026.md criado na v8. Espelhos .agents sincronizados (viabilidade, levantamento; vaga sem espelho)."
     }
   ],
+  "versao_referencia": "v8",
   "gabaritos_em": "_gabaritos_LACRADO_bardi/ensaio_003/"
 }
