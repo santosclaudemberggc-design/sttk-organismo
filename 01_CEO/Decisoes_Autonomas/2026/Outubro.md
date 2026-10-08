@@ -1,5 +1,21 @@
 # Livro-razão de Decisões Autônomas — Outubro/2026
 
+## 08/10/2026 — Rotina Macetes v1.2, 2ª tentativa a pedido (busca estendida) — sem macete
+
+**O que foi feito:** rodada estendida nas mesmas 3 Skills da 1ª tentativa de hoje (ia-generativa-estudo-preliminar, legal-base-legislativa-bairro, nbr6118-estrutural-concreto). Não houve macete aprovado; nenhum Gestor foi acionado.
+
+**Por que não entrou nada:** ia-generativa — leitura da apostila Lamberts/LabEEE bloqueada (PDF acima de 10 MB); Kelsen — sem advogado com OAB; Cardozo — o artigo do APL é de empresa de engenharia e a dica de vibrador vem da norma de 2003.
+
+**Decisão sobre a Regra das 2 Tentativas:** a 2ª tentativa foi antecipada para o mesmo dia a pedido. Por isso as 3 Skills **não saíram** para "Sem fonte pública"; continuam na fila para uma rodada em data posterior.
+
+**Arquivos alterados:** `01_CEO/Skills_Propostas/_macetes_fila.md` (3 linhas de 2ª tentativa). Nenhuma Skill alterada.
+
+**Como desfazer:** apagar as 3 linhas de 2ª tentativa do histórico e esta entrada.
+
+**Registrador:** Wallenberg.
+
+---
+
 ## 08/10/2026 — Rotina Macetes de Profissionais v1.2 (qui, 14:00) — 1ª rodada sem macete em 3 Skills
 
 **Portão:** quinta (ter/qui liberado). 0a sem Skill pendente (Kelsen OODC e varandas já em "Sem fonte pública"). 0b: etapa 4 (Briefing) em `a_criar`, etapa 5 (Estudo Preliminar, Lúcio) sem macete em `ia-generativa-estudo-preliminar`. Prioridade 1 com 40 Skills sem seção de macetes.

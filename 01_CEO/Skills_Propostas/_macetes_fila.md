@@ -41,6 +41,9 @@ Skill que chegar à 2ª rodada sem macete aprovado vai para "Sem fonte pública"
 | 08/10/2026 | Lúcio | ia-generativa-estudo-preliminar (0b, Ensaio etapa 5) | **sem macete, 1ª rodada** | A e B tentados: Gensler press release sem menção a simulação de luz/acústica; dissertação UFSC "simulação preliminar" sem autor verificável (404) | — |
 | 08/10/2026 | Kelsen | legal-base-legislativa-bairro (1) | **sem macete, 1ª rodada** | C tentado: nenhuma fonte com OAB sobre zoneamento Barra/Recreio (só anúncios e outros municípios) | — |
 | 08/10/2026 | Cardozo | nbr6118-estrutural-concreto (1) | **sem macete, 1ª rodada** | A e B tentados: só síntese de checklist acadêmico, sem profissional nomeado nem manual de fabricante | — |
+| 08/10/2026 | Lúcio | ia-generativa-estudo-preliminar (0b) | **sem macete, 2ª tentativa no mesmo dia (antecipada a pedido), permanece na fila** | Busca estendida: apostila Lamberts/LabEEE "Eficiência Energética na Arquitetura" encontrada, mas o PDF (>10 MB) não pôde ser lido; dissertações LabEEE sem trecho de fase inicial verificado | — |
+| 08/10/2026 | Kelsen | legal-base-legislativa-bairro (1) | **sem macete, 2ª tentativa no mesmo dia (antecipada a pedido), permanece na fila** | Busca estendida: só LC 270/274, dicionário de termos e textos de projeto de lei; nenhum advogado com OAB sobre a base do bairro | — |
+| 08/10/2026 | Cardozo | nbr6118-estrutural-concreto (1) | **sem macete, 2ª tentativa no mesmo dia (antecipada a pedido), permanece na fila** | Busca estendida: artigo APL (empresa de engenharia, tipo B fraco) com checklist de revisão; dica de vibrador vem da norma de 2003, não de profissional | — |
 
 ## Próximas da fila (sugestão)
 
