@@ -185,8 +185,9 @@
       "desde": "2026-10-08",
       "crit": "alta",
       "alc": "auto",
-      "status": "aberta",
-      "resolvido_em": null,
+      "status": "resolvida",
+      "resolvido_em": "2026-10-08",
+      "resultado": "Executado 08/10: Kelsen Skill vaga v1.2 (R6 marcada reprovada, texto da lei mantido); Villaca Skill viabilidade v1.7 (conta de 25 m2 retirada); Lucio Skill levantamento v1.8 e ADENDO_r6_reprovada_08-10-2026.md na entrega v7 (pecas aprovadas nao reescritas). Backups em _backups/2026-10-08/. Peças v7 que usam a R6 listadas no adendo, para a v8.",
       "txt": "R6 (25 m2 por vaga como area de garagem) REPROVADA em 08/10 por Claudemberg e Mauricio: so entra em caso real regra que siga norma ou regra de mercado que a valide. Hoje a R6 esta em Skill de vaga v1.1.",
       "acao": "Rotina Diaria de Skill: Kelsen suspende a R6 na Skill de vaga (marcar REPROVADA, com backup e motivo), sem apagar o texto do Art. 29 III. Villaca reverte a conta de 25 m2/vaga na Skill de viabilidade v1.6 (volta para o texto sem a R6, com backup). Lucio retira a frase de garagem com 25 m2/vaga da Skill de levantamento v1.7 e da entrega v7 (com adendo de correcao)."
     },

@@ -1,0 +1,124 @@
+---
+name: levantamento-topografico-cadastral-orientado-duli-licin-rj
+description: O que o levantamento topográfico/cadastral do lote precisa entregar para o projeto passar no LICIN 2.0 do Rio (Decreto Municipal 55.622/2025) — mapeia cada um dos 13 parâmetros que o técnico da SMDU confere (Art. 3º) e cada item obrigatório da planta de situação e dos cortes do DULI (Anexo I: RN do meio-fio, curvas de nível, perfil natural, cota de soleira, subsolo aflorado, cortes e aterros, medidas do título × medidas locais) ao dado que o topógrafo tem de medir. Use sempre que Oscar/Lúcio for encomendar, conferir ou usar um levantamento na etapa de Levantamento, ou montar planta de situação e cortes para o DULI, mesmo que o pedido só mencione "topografia", "planialtimétrico", "medir o terreno", "cota do meio-fio", "nível do terreno", "aterro" ou "a escritura diz uma medida e o muro outra".
+version: v1.7
+status: ativa-com-ressalva
+fonte_primaria_lida: "Decreto Municipal RJ 55.622, de 01/01/2025 (DO Rio nº 195, págs. 17-21, PDF da SMDU), Arts. 2º §§3º-4º, 3º, 8º, 9º e Anexo I (Planta de Situação itens 1-13; Cortes itens 1-6; Condições gerais IV.2 e IV.4); COE LC 198/2019 (acervo D:\\008_Normas ABNT\\002_Prefeitura_RJ), Art. 35 e glossário (COTA DE SOLEIRA, PAA, PAL, SUBSOLO, ALINHAMENTO)"
+data: 2026-10-05
+validacao: "Lúcio, 05/10/2026 — PROCEDE COM RESSALVA. Citações do Decreto 55.622 e do COE conferidas contra o texto primário; corrigidos págs. do DO e do glossário, a afirmação de que as Skills legais já trazem a regra de cota de soleira (não trazem), o PRPA atribuído só a Claudemberg e a remissão a Skill da Light ainda não instalada. Ressalvas R1-R3 seguem abertas (NBR 13133 não lida; regra numérica de soleira/terreno natural é do Hely; canal do PAA/PAL)."
+changelog:
+  - "v1.7 (08/10/2026, Lúcio, pós-parecer Bardi v6 da Etapa 03, Ensaio 003): só a frase de garagem do §5-bis. O Art. 29 III (p. 15 do PDF consolidado SMU; parecer v6 dizia p. 19, divergência em verificação) passa a ser citado como limiar de dispensa de demarcação, não tamanho de garagem; a fonte de dimensão é Art. 29 I e II; o total por vaga fica pendente de verificação primária, remetendo à Skill de vaga v1.1. Backup _backups/2026-10-08/levantamento-topografico-cadastral-orientado-duli-licin-rj_SKILL_v1.6_ANTES_v1.7.md."
+  - "v1.6 (08/10/2026, Lúcio, pós-reprovação da v5 do Ensaio 003 — parecer Bardi, item 3 da ordem de correção): §5-bis, primeiro item, frase de garagem cita a = 25,00 m²/vaga pelo COES Art. 29 III (p. 15), composição vaga + manobra, remetendo à Skill de vaga v1.0 §3 e R6; sai a faixa antiga 12,50–15,00 (só a vaga) e a referência ao 'parecer Legal do caso' (remissão a documento de caso, não a Skill). Sem alteração de número de limite nem de checklist. Backup _backups/2026-10-08/..._v1.5_ANTES_v1.6.md."
+  - "v1.5 (07/10/2026, Lúcio, pós-reprovação da v4): §5-bis ganhou o item de remissões — a cada versão, conferir as tabelas de remissão (E, F, G…) contra o corpo atual e declarar toda alteração na nota; célula de coerência só cita a seção que afirma a frase inteira; declaração de leitura reescrita a cada versão; quem não é autor não edita artefato sob exame. Backup _backups/2026-10-07/..._v1.4_ANTES_v1.5.md."
+  - "v1.4 (06/10/2026, Lúcio, pós-reprovação da v3): §5-bis diz quem conta palavras e com que ferramenta; sem ferramenta, pede a Wallenberg; nunca número estimado. Backup _backups/2026-10-06/..._v1.3_ANTES_v1.4.md."
+  - "v1.3 (06/10/2026, Lúcio, pós-reprovação da v2 por extensão): §5-bis ganhou conferência de forma e extensão (limite de páginas do enunciado; matriz uma linha por decisão; contas em anexo). Backup em _backups/2026-10-06/."
+  - "v1.2 (06/10/2026, Lúcio, pós-reprovação Ensaio 003 Etapa 03): §5-bis checklist de fechamento (conta de não computável × computável × programa; condições do 'cabe'; premissa conservadora com número; pedido do cliente respondido; pergunta × seção; NBR 6492 5.1.2); §5 curvas a cada 1 m (NBR 6492 5.1.1 b); §7 varandas Diferente→Complementa. Backup em _backups/2026-10-06/."
+  - "v1.1 (05/10/2026, Lúcio): págs. DO 18-21→17-21; glossário COE 32-41→31-40; §1 PRPA = parceiro ou Claudemberg, Art. 2º §4º descrito pelo texto e Art. 9º acrescido; §2 linha V ajustada; §3 item 3 da situação e definição de SUBSOLO acrescidos; §4/§7/ressalva 3: regra de cota de soleira NÃO está em decreto3046 nem legal-base (lacuna do Hely); checklist cita Anexo I IV.2 e IV.4; Skill da Light marcada como proposta não instalada; §7 completado com varandas e remoção de árvores."
+  - "v1.0 (05/10/2026, Wallenberg): proposta."
+tipo: Inteligência (Trilha A)
+gestor_alvo: Lúcio (Arquitetura)
+agente_principal: Oscar (Levantamento → Estudo Preliminar)
+agentes_cross: Hely (DULI e parâmetros — Kelsen), Baumgart (sondagem e aterro), Saturnino (cotas de drenagem e ramal de esgoto), Glaziou (superfície drenante)
+---
+
+# Skill: Levantamento topográfico/cadastral orientado ao DULI (LICIN 2.0, Rio)
+
+> ⚠️ RESSALVA DE FONTE. (1) **Lido no texto primário:** Decreto 55.622/2025 (DO Rio de 01/01/2025, PDF publicado pela SMDU) e COE LC 198/2019 (PDF do acervo). (2) **Não lido:** a **ABNT NBR 13133:2021** (Execução de levantamento topográfico — norma paga, fora do acervo). Classes de levantamento, tolerâncias e precisão **não estão nesta Skill**; quem define é o topógrafo pela norma. **Sugestão de compra.** (3) **Não lido:** a regra de **altura máxima/mínima da cota de soleira** em relação ao meio-fio e a forma de medir "perfil natural" para gabarito na Barra/Recreio. Não está neste decreto, e **também não está nas Skills `decreto3046-81-lc270-2024-licin-barra-recreio` nem `legal-base-legislativa-bairro`** (conferido em 05/10/2026: nenhuma das duas trata de cota de soleira). Onde mora (Decreto 3046/81, LC 270/2024, COES ou PAL do loteamento) **não foi verificado**. Esta Skill só diz **que o dado tem de existir no levantamento**; o limite numérico é do Hely, via Kelsen (R2).
+
+## 1. POR QUE ESSA SKILL EXISTE
+
+O LICIN 2.0 é **declaratório**. O técnico da SMDU confere só 13 parâmetros (Art. 3º). Todo o resto é responsabilidade pessoal do PRPA, do PREO e do requerente, por declaração (Art. 3º, parágrafo único; Art. 2º, §3º). Se for verificado, nos dados declarados, desrespeito ao Plano Diretor, à LPUOS ou ao COES, **a licença é revogada e o Conselho profissional é notificado** (Art. 2º, §4º); a fiscalização pode agir **a qualquer tempo** (Art. 9º). E no Habite-se a vistoria volta a conferir **os mesmos 13 itens** (Art. 8º), agora na obra pronta.
+
+Consequência prática: um levantamento ruim não aparece na aprovação; aparece **na vistoria final**, com a casa construída. Quase todos os 13 itens dependem de um número medido no terreno. O levantamento é a base de prova da declaração que o PRPA assina (o arquiteto parceiro, ou Claudemberg via CAU quando o projeto é desenhado pela própria STTK).
+
+## 2. OS 13 PARÂMETROS DO ART. 3º × O QUE O LEVANTAMENTO TEM DE ENTREGAR
+
+| Art. 3º | Parâmetro conferido pela SMDU | O que o levantamento precisa medir/trazer |
+|---|---|---|
+| I | dimensões do lote | Medidas **locais** de todas as divisas + confronto com o **título averbado** ou o **PAL** (ver §4) |
+| II | alinhamento incidente | Linha do **PAA** locada no terreno; posição real do muro/meio-fio em relação a ela |
+| III | cota de soleira da edificação | **RN do meio-fio** na testada + curvas de nível, para fixar a cota de implantação (COE: "cota de soleira = cota de implantação da edificação") |
+| IV | taxa de ocupação | Área real do lote (sai do I) |
+| V | superfície mínima drenante | Área real do lote; em modificação, também o que já é impermeável e vai permanecer (construções, pisos existentes) |
+| VI | ATE | Área real do lote (base do coeficiente) |
+| VII | gabarito | **Perfil natural do terreno** (o corte do DULI pede; ver §3) |
+| VIII | afastamentos | Divisas, construções vizinhas encostadas, árvores, postes, PV/PVI |
+| IX | limite de profundidade | Profundidade real do lote a partir do alinhamento |
+| X | área coletiva | Só em grupamento — limites internos |
+| XI-XIII | uso, nº de unidades, ICS | Não dependem de topografia |
+
+## 3. O QUE O DULI (ANEXO I) EXIGE QUE SÓ O LEVANTAMENTO DÁ
+
+**Planta de situação:**
+- Item 1: dimensões do terreno **conforme o título** (ou PAL) **e as medidas locais quando houver divergência**. As duas vão para a prancha.
+- Item 2: alinhamento, **com o nº do PAA**, e o passeio com a largura.
+- Item 3: afastamento frontal, limite máximo de profundidade e área coletiva, quando houver (dependem do alinhamento e da profundidade medidos).
+- Item 4: em caso de recuo ou investidura, cotas do lote de origem, do lote remanescente, do recuo, da investidura e as áreas.
+- Item 5: imóveis confrontantes e a numeração deles.
+- Item 6: afastamentos às divisas e entre edificações, **PVIs e PVs**.
+- Item 8: **RN do meio-fio do logradouro na testada do terreno e curvas de nível.**
+
+**Cortes:**
+- Item 3: **perfil natural do terreno.**
+- Item 4: **nível do meio-fio e cota de soleira.**
+- Item 5: desnível do subsolo aflorado em relação ao **terreno natural**, no ponto onde a maior parte do subsolo aflora.
+- Item 6: **cotas de corte e aterro** nos pontos onde forem maiores.
+
+Ou seja: levantamento só planimétrico (só medidas) **não basta**. Precisa ser **planialtimétrico**, com RN no meio-fio da testada e curvas de nível. E precisa ser cadastral, com PVs, PVIs, postes e árvores.
+
+## 4. ARMADILHAS DA BARRA/RECREIO
+
+- **Terreno natural × aterro.** Muitos lotes da Barra/Recreio foram aterrados no loteamento ou por obra anterior. O corte pede o perfil **natural** e as maiores cotas de aterro. Se o levantamento registra só o nível atual, não dá para provar o que é natural. Peça ao topógrafo que registre **o nível atual e a referência do meio-fio**, e que marque sinais de aterro recente. A decisão de qual cota vale como "natural" é do Hely (ressalva 3), não do topógrafo.
+- **Subsolo e lençol alto.** O item 5 dos cortes pede o desnível do subsolo aflorado. O COE (glossário, SUBSOLO) define subsolo como pavimento sob o nível de acesso, "enterrado ou semienterrado em relação ao nível natural do terreno": sem o nível natural registrado, não se prova que o pavimento é subsolo. Na Barra/Recreio o subsolo também puxa a discussão de rebaixamento de lençol (Skill `rebaixamento-lencol-freatico-obra-outorga-inea-barra-recreio`). Levantamento + sondagem precisam chegar juntos à mesa do Oscar.
+- **Título × medida local.** Divergência é comum. O DULI aceita as duas, mas a área que entra na TO, ATE e superfície drenante tem de ser coerente na prancha inteira. Escolha qual vale **com o Hely** antes de calcular índices.
+- **Passeio e acessos.** O COE (Art. 35, §2º) proíbe degrau, rampa de acesso ao lote e portão **fora do alinhamento**. O §3º só permite rebaixar meio-fio onde for estritamente necessário para pedestre e veículo. O levantamento precisa mostrar o meio-fio, o passeio, árvores e postes da testada para o Oscar posicionar o acesso de veículos sem esbarrar nisso.
+- **Árvore na testada ou no lote.** COE Art. 35, §4º: arborização do passeio obrigatória em edificação nova. Árvore existente no lote puxa a Skill `remocao-arvores-smac-fpj-autorizacao-compensacao-rj`. O levantamento cadastral tem de trazer as árvores (posição e, se possível, espécie e DAP).
+
+## 5. CHECKLIST DE ENCOMENDA AO TOPÓGRAFO (Oscar usa)
+
+- [ ] Planialtimétrico **cadastral**, com curvas de nível **a cada 1,00 m** (NBR 6492:2021 5.1.1 b, via Skill `nbr6492-2021-memoriais-por-etapa-projeto` §2); classe e precisão pelo topógrafo, NBR 13133 (ressalva 2)
+- [ ] **RN no meio-fio da testada**, com a cota escrita na planta
+- [ ] Medidas locais de todas as divisas + área calculada; quadro comparando com o título/PAL
+- [ ] Alinhamento (nº do PAA, se o cliente tiver) e largura do passeio
+- [ ] Construções existentes (para modificação: com cores do DULI depois — amarelo demolir, vermelho novo/legalizar, preto existente; Anexo I, IV.2). Modificação sem acréscimo de área dispensa plantas e cortes do DULI (Anexo I, IV.4), mas não dispensa a medição do lote
+- [ ] Confrontantes com numeração
+- [ ] PVs, PVIs, postes (anotar se o poste da Light está **na mesma calçada ou do outro lado da rua** — muda o padrão de entrada, ver `entrada-energia-light-ligacao-nova-padrao-recon-bt-rj`, **Skill de Cardozo ainda em proposta, não instalada**), árvores
+- [ ] Pontos de aterro aparente e diferença entre o nível do lote e o do meio-fio
+- [ ] Arquivo em DWG/DXF georreferenciado para entrar no Revit (Vitruvius) sem redesenho
+
+## 5-bis. CHECKLIST DE FECHAMENTO DO RELATÓRIO DE LEVANTAMENTO (Oscar antes de entregar; Lúcio na auditoria)
+
+Nasceu da reprovação da Etapa 03 do Ensaio Sombra 003 (06/10/2026): as contas presentes estavam certas; reprovou a conta que faltou e a conclusão deixada implícita. É checklist de processo, não traz limite legal novo.
+- [ ] **Toda área não computável citada** (garagem coberta, varanda, edícula) tem a conta **contra a área computável e contra o programa da Viabilidade**, com fórmula. Garagem: só 1 vaga coberta fica fora da TO em unifamiliar (LC 270 Art. 350 III); cada vaga coberta a mais sai do térreo computável: térreo = projeção − (n−1)·a. Dimensões de vaga 2,50 × 5,00 m (COES LC 198/2019, Art. 29 I) e de manobra 2,50 × 5,00 m (Art. 29 II), p. 15 do PDF consolidado SMU. O Art. 29 III (mesma página) é limiar de dispensa de demarcação ("25 m² de área de estacionamento por vaga"), não tamanho de garagem: não usar 25 m²/vaga como área de garagem. O total por vaga é pendente de verificação primária; ver Skill vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj v1.1 §3 e R6. Não usar 12,50 m² (só a vaga). A manobra compartilhada (Art. 29 IV) não reduz o valor por vaga sem confirmação de Hely/Kelsen.
+- [ ] **Todo "cabe" tem as condições escritas** (nº de vagas cobertas, m² não computáveis confirmados, como o condomínio mede a TO) e é igual em todas as peças.
+- [ ] **Toda premissa "conservadora" do Legal vira regra operacional com número** (ex.: varanda/balanço/saliência sobre cada afastamento → coordenadas do envelope) e ganha linha na matriz com dono.
+- [ ] **Todo pedido do cliente** (caso, mensagens, dossiê) tem resposta escrita, o argumento dele respondido (ex.: "já está pronta, economiza") e o conflito Legal × cliente explícito para o Briefing.
+- [ ] **Toda pergunta do enunciado/pedido** tem resposta localizável (tabela pergunta → peça/seção).
+- [ ] Relatório confere com a NBR 6492:2021 5.1.2 (dados ambientais incl. marés, áreas alagáveis, registro fotográfico): ver Skill `nbr6492-2021-memoriais-por-etapa-projeto` §2.
+- [ ] Os enunciados e documentos de **todas** as etapas anteriores foram lidos antes de declarar "sem fonte".
+- [ ] **Forma e extensão conferidas contra o enunciado (v1.3, reprovação da v2 do Ensaio 003 por extensão):** o relatório respeita o limite de páginas pedido (ex.: "5-8 páginas" ≈ até 2.500 palavras); **contagem só com ferramenta (v1.4):** quem tem ferramenta de contagem (ex.: `wc -w`) conta e registra número + método na nota; quem não tem (Oscar, Lúcio hoje) **pede a contagem a Wallenberg antes de declarar conformidade** e escreve na nota "Contagem: a ser feita por Wallenberg com ferramenta"; **nunca declarar número estimado** nem concluir "dentro do teto" sem medição (reprovação da v3: estimado ~2.100, real 2.702); conclusão primeiro, uma frase por decisão; contas completas em anexo de memória de cálculo citado por número; a matriz do Briefing tem **uma linha curta por decisão** (questão | status | impacto em 1 frase | dono), sem parágrafo nas células. Conteúdo certo em forma errada reprova.
+- [ ] **Remissões conferidas a cada versão (v1.5, reprovação da v4 do Ensaio 003):** a cada versão, conferir as tabelas de remissão (E, F, G…) contra o corpo atual e declarar toda alteração na nota. Na prática: (1) Oscar abre cada seção/linha citada em toda tabela de remissão e em toda remissão cruzada do corpo, e confirma que ela trata do assunto afirmado; na tabela de coerência, a célula só cita a seção que afirma a frase inteira, com a mesma condição (afirmação parcial = "—"); (2) a declaração de leitura ("li X e Y") é reescrita a cada versão com o que foi lido de fato nela; (3) a nota de auditoria do Lúcio traz o diff real arquivo por arquivo (inclusive troca de rótulo e de remissão) e nenhuma frase que o rodapé ou outro texto contradiga — "igual à versão anterior" só depois de comparar; (4) ajuste em artefato sob exame volta ao autor (Oscar), nunca é feito por quem não é o autor. Remissão herdada sem conferência reprova.
+
+## 6. MACETES DE QUEM FAZ
+
+Nenhum macete com fonte nesta rodada. As 2 buscas (texto e vídeo) não acharam profissional reconhecido falando do tema com fonte citável. Não foram inventados macetes. Fica como lacuna para a próxima rodada de Macetes.
+
+## 7. RELAÇÃO COM OUTRAS SKILLS
+
+- `habite-se-aceitacao-licin` — **Complementa.** Ela diz que a vistoria do Habite-se confere os 13 itens do Art. 3º; esta diz de onde sai o dado medido de cada um. A lista dos 13 itens é a mesma nas duas.
+- `decreto3046-81-lc270-2024-licin-barra-recreio` e `legal-base-legislativa-bairro` — **Complementa.** Elas têm os **limites** (gabarito, afastamentos, TO, ATE); esta tem **o dado de campo** para medir contra eles. Nenhum número de limite aqui. **Cota de soleira não está em nenhuma das duas** (R2).
+- `nbr6492-representacao-grafica` — **Diferente.** Ela trata de como desenhar a prancha (escala 1:500/1:1000 da situação). Esta trata do conteúdo exigido pelo DULI.
+- `varandas-nao-computaveis-ate-to-coes-lc198-rj` — **Complementa.** O desenho da varanda é do EP, mas a **premissa** de varanda/balanço sobre cada afastamento define o envelope já no Levantamento (§5-bis, itens 2-3). Esta entrega a testada e as divisas medidas; aquela, as distâncias e a regra da ZPP (§4.1).
+- `rebaixamento-lencol-freatico-...` e `fundacoes-solos-moles-...` — **Complementa** (subsolo, aterro existente e alteamento de greide previsto).
+- `remocao-arvores-smac-fpj-autorizacao-compensacao-rj` — **Complementa.** Ela pede identificar as árvores no Levantamento; esta põe a árvore (posição, espécie, DAP) no checklist do topógrafo.
+
+## 8. RESSALVAS ABERTAS (dono)
+
+- **R1 (Oscar/Lúcio):** NBR 13133:2021 não lida — sugestão de compra.
+- **R2 (Hely/Kelsen):** regra numérica de cota de soleira e de "terreno natural" para gabarito na Barra/Recreio — e em qual norma ela mora (não está nas Skills legais instaladas).
+- **R3 (Hely):** onde o cliente obtém o PAA/PAL do lote (canal oficial da SMDU) — não verificado nesta rodada.
+
+## FONTES
+
+- Decreto Municipal 55.622/2025 — https://desenvolvimentourbano.prefeitura.rio/wp-content/uploads/sites/52/2025/05/Decreto-55.622-Versao-DO.pdf (lido via pypdf em 05/10/2026)
+- COE LC 198/2019 — `D:\008_Normas ABNT\002_Prefeitura_RJ\COE LC 198-2019 Codigo de Obras e Edificacoes do Rio.pdf`, pág. 24-25 (Art. 35) e glossário págs. 31-40 (ALINHAMENTO p. 31, COTA DE SOLEIRA p. 33, PAA/PAL p. 39, SUBSOLO p. 40)
