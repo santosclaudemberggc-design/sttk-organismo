@@ -1,5 +1,27 @@
 # Livro-razão de Decisões Autônomas — Outubro/2026
 
+## 07/10/2026 — Rotina Macetes de Profissionais v1.2 (qua, 14:00) — Skill `legal-oodc-mais-valera-mais-valia` (0a) 2ª rodada → "Sem fonte pública"
+
+**Portão:** quarta. 0a (Kelsen OODC) com 2ª rodada marcada **HOJE**. 0b em espera. Prioridade 1 vazia. Prioridade 2 só ter/qui → quarta bloqueado.
+
+**Rodada 2 (07/10):** Tentou tipos A/B/C (Ademi-RJ publicações, CAU-RJ palestras, OAB-RJ pareceres). Resultado: zero macete. Análise: decisão jurídica caso-a-caso (qual regime OODC incide), não "macete" de profissional generalizável.
+
+**Resultado:** Skill move para "Sem fonte pública" — **Regra das 2 Tentativas acionada** (05/10 zero + 07/10 zero = saída). Kelsen confirmou e anotou a Skill com limitação "Nenhuma fonte pública tipo A/B/C com credencial nomeada em 2 rodadas".
+
+**Arquivos alterados:**
+- `01_CEO/Skills_Propostas/2026/Setembro/legal_oodc-mais-valera-mais-valia-potencial-construtivo-rj.md` (limitação adicionada)
+- `01_CEO/Skills_Propostas/_macetes_fila.md` (linha no Histórico + "Próximas da fila" atualizado + Skill movida para "Sem fonte pública")
+
+**Backup:** `01_CEO/Decisoes_Autonomas/_backups/2026-10-07/` (oodc_SKILL_ANTES_limitacao.md, macetes_fila_ANTES_oodc_saida.md).
+
+**Como desfazer:** restaurar os 2 backups. Remover linha de 07/10 do Histórico do `_macetes_fila.md`. Mover Skill de volta da seção "Sem fonte pública" para "Próximas da fila" com status "2ª rodada em 07/10, falhou".
+
+**Pendência:** volta só se surgir fonte primária credenciada (OAB-RJ, CAU-RJ palestra, Ademi com autor).
+
+**Registrador:** Wallenberg (agente Kelsen executou as atualizações).
+
+---
+
 ## 07/10/2026 — Claudemberg ao vivo: etapa 3 v5 REPROVADA + regra da nota de assertividade (mínimo 8,00)
 **O quê:** (1) JSON do ensaio: etapa 3 `reprovada`/`refazer`, com o motivo no histórico. A v6 muda os números. (2) Nota de 0,00 a 10,00 para o Gestor e para cada Agente em toda correção do Bardi. Mínimo 8,00; abaixo disso, reprova. Os erros se corrigem só com informação comprovada, já aplicada na prática e autorizada. Aplicada em `.claude/agents/bardi.md` (Função 2), em `01_CEO/wallenberg-rotina-ensaio-sombra_SKILL.md` ("Como Claudemberg aprova") e no prompt agendado da Drenagem (`~/.claude/scheduled-tasks/wallenberg-drenagem-continua-local/SKILL.md`, passo 5.5.6.5, fora do repo). Criado `ensaio_003/notas_assertividade.md`.
 **Backup:** `_backups/2026-10-07/bardi_ANTES_nota.md`, `wallenberg-rotina-ensaio-sombra_SKILL_ANTES_nota.md`, `wallenberg-drenagem-continua-v2_SKILL_ANTES_nota.md`. O prompt agendado não tem backup; para desfazer, apague a linha 6.5 e "as notas de cada membro" no item 7.

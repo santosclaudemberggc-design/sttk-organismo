@@ -85,6 +85,7 @@ São dois regimes de contrapartida financeira ao Município do Rio. **Não confu
 - Convenção ou regramento de condomínio mais restritivo continua valendo. A lei não afasta a regra privada.
 
 ## Limitações desta Skill
+0. Nenhuma fonte pública tipo A/B/C com credencial nomeada encontrada em 2 rodadas (05/10, 07/10/2026). Skill candidata a fechar como julgamento jurídico caso-a-caso, não "macete" generalizável.
 1. O texto literal da Fórmula 1 do Anexo XXV da LC 270 ainda não foi extraído.
 2. O alcance do Art. 110 §8º na Barra/Recreio não foi verificado.
 3. O Art. 16 §5º colide com o Art. 40 da LC 281 (pendência `kelsen-lc281-art16-vs-art40-prazo-legalizacao`).

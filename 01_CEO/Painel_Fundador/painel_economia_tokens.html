@@ -46,23 +46,23 @@ h1 { font-size:22px; margin:0 0 2px; }
 .foot { color:var(--ink-faint); font-size:12px; margin-top:20px; }
 </style></head><body><div class="wrap">
 <h1>Economia de Tokens STTK &mdash; medicao real</h1>
-<div class="sub">Fonte: 187 transcripts de sessao (2026-07-16 &rarr; 2026-09-28). Gerado 2026-09-28T10:36:20 por <code>medir_tokens.py</code>. Sem projecao.</div>
+<div class="sub">Fonte: 206 transcripts de sessao (2026-07-16 &rarr; 2026-10-05). Gerado 2026-10-05T17:03:13 por <code>medir_tokens.py</code>. Sem projecao.</div>
 
 <div class="grid">
   <div class="card"><div class="k">Contexto inicial / conversa (atual)</div>
-    <div class="v">107.1k <small>mediana 2026-S40</small></div></div>
+    <div class="v">86.5k <small>mediana 2026-S41</small></div></div>
   <div class="card"><div class="k">Variacao vs. base (tamanho do contexto)</div>
-    <div class="v">+51.9%<small> &nbsp;maior</small></div></div>
+    <div class="v">+48.9%<small> &nbsp;maior</small></div></div>
   <div class="card"><div class="k">Prompt caching</div>
-    <div class="v">91%<small> hit &middot; 187/187 sessoes</small></div></div>
+    <div class="v">91%<small> hit &middot; 206/206 sessoes</small></div></div>
   <div class="card"><div class="k">Conversas medidas</div>
-    <div class="v">186<small> &nbsp;&ge;3 turnos</small></div></div>
+    <div class="v">204<small> &nbsp;&ge;3 turnos</small></div></div>
 </div>
 
-<div class="verd warn">Contexto por conversa: <b>sem reducao</b> — 67.1k &rarr; 101.9k tokens (-51.9%). Os slices de CLAUDE.md e a consolidacao de MEMORY.md nao moveram esta curva.</div>
+<div class="verd warn">Contexto por conversa: <b>sem reducao</b> — 67.1k &rarr; 99.9k tokens (-48.9%). Os slices de CLAUDE.md e a consolidacao de MEMORY.md nao moveram esta curva.</div>
 
 <div class="chart"><h2>Mediana do contexto inicial por semana ISO (tokens)</h2>
-<div class="bars"><div class="bar"><div class="fill" style="height:46%"></div><div class="bl">S29</div><div class="bv">49k</div></div><div class="bar"><div class="fill" style="height:64%"></div><div class="bl">S30</div><div class="bv">68k</div></div><div class="bar"><div class="fill" style="height:61%"></div><div class="bl">S31</div><div class="bv">65k</div></div><div class="bar"><div class="fill" style="height:63%"></div><div class="bl">S32</div><div class="bv">67k</div></div><div class="bar"><div class="fill" style="height:64%"></div><div class="bl">S33</div><div class="bv">68k</div></div><div class="bar"><div class="fill" style="height:57%"></div><div class="bl">S34</div><div class="bv">61k</div></div><div class="bar"><div class="fill" style="height:59%"></div><div class="bl">S35</div><div class="bv">63k</div></div><div class="bar"><div class="fill" style="height:70%"></div><div class="bl">S36</div><div class="bv">74k</div></div><div class="bar"><div class="fill" style="height:74%"></div><div class="bl">S37</div><div class="bv">79k</div></div><div class="bar"><div class="fill" style="height:80%"></div><div class="bl">S38</div><div class="bv">85k</div></div><div class="bar"><div class="fill" style="height:90%"></div><div class="bl">S39</div><div class="bv">96k</div></div><div class="bar"><div class="fill" style="height:100%"></div><div class="bl">S40</div><div class="bv">107k</div></div></div></div>
+<div class="bars"><div class="bar"><div class="fill" style="height:44%"></div><div class="bl">S29</div><div class="bv">49k</div></div><div class="bar"><div class="fill" style="height:61%"></div><div class="bl">S30</div><div class="bv">68k</div></div><div class="bar"><div class="fill" style="height:58%"></div><div class="bl">S31</div><div class="bv">65k</div></div><div class="bar"><div class="fill" style="height:60%"></div><div class="bl">S32</div><div class="bv">67k</div></div><div class="bar"><div class="fill" style="height:61%"></div><div class="bl">S33</div><div class="bv">68k</div></div><div class="bar"><div class="fill" style="height:54%"></div><div class="bl">S34</div><div class="bv">61k</div></div><div class="bar"><div class="fill" style="height:56%"></div><div class="bl">S35</div><div class="bv">63k</div></div><div class="bar"><div class="fill" style="height:66%"></div><div class="bl">S36</div><div class="bv">74k</div></div><div class="bar"><div class="fill" style="height:70%"></div><div class="bl">S37</div><div class="bv">79k</div></div><div class="bar"><div class="fill" style="height:76%"></div><div class="bl">S38</div><div class="bv">85k</div></div><div class="bar"><div class="fill" style="height:79%"></div><div class="bl">S39</div><div class="bv">89k</div></div><div class="bar"><div class="fill" style="height:100%"></div><div class="bl">S40</div><div class="bv">113k</div></div><div class="bar"><div class="fill" style="height:76%"></div><div class="bl">S41</div><div class="bv">86k</div></div></div></div>
 
 <div class="foot">Contexto inicial = input + cache_creation + cache_read do 1o turno real do assistente.
 Marcos: 29/07 consolidacao MEMORY.md &middot; 30/07 slices CLAUDE.md &middot; 05/08 estado JSON &middot; 13/08 cache Drive.
