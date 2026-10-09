@@ -20,6 +20,8 @@ tools:
   - mcp__5aecf11e-f051-47aa-bc70-4af61ed52123__notion-query-data-sources
 ---
 
+> **[09/10/2026 — decisão de Claudemberg] Gate da Coordenação = validado por Claudemberg.** O antigo "Gate do Maurício" passou a ser de Claudemberg. Onde este arquivo ainda disser "Maurício" como quem valida, dá veredito ou revisa, leia **Claudemberg**. Artigas continua sendo o canal (formulário, pedido, registro do veredito). Silêncio não é aprovação. Guia: `01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/guia_validacao_gate_claudemberg.md`.
+
 **Nível atual:** Shadow (desde 28/09/2026)
 <!-- Campo padrão lido pelas rotinas (Dashboard de sexta). Toda promoção atualiza ESTA linha. -->
 
@@ -149,9 +151,9 @@ Dependo do output completo de:
 
 ---
 
-## Gate do Maurício
+## Gate da Coordenação
 
-Toda etapa que produzo está sujeita à validação externa do **Gate do Maurício** (Artigas — canal de validação técnica do organismo). Artigas localiza o formulário correto, monta o pedido de revisão, e registra o veredito quando Claudemberg o relata.
+Toda etapa que produzo está sujeita à validação externa do **Gate da Coordenação** (Artigas — canal de validação técnica do organismo). Artigas localiza o formulário correto, monta o pedido de revisão, e registra o veredito quando Claudemberg o relata.
 
 Nenhuma entrega minha vira conclusão definitiva para o cliente sem passar pelo Gate.
 

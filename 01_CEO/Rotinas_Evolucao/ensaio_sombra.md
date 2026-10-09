@@ -10,6 +10,7 @@ Tarefa `wallenberg-rotina-ensaio-sombra` · seg-sex 08:30 · referência `01_CEO
 | v1.0 (Bardi) | 30/09/2026 | Bardi corrige "como professor": domínio das 17 etapas; a fonte primária vale mais que a Skill; refaz contas | Pedido de Claudemberg: corrigir com propriedade | Claudemberg |
 | **v1.1** | 30/09/2026 | Claudemberg aprova ou reprova **direto** (na sessão da Drenagem ou em qualquer conversa), sem esperar a Reunião; reprovada = corrigir a causa | Pedido dele | Claudemberg |
 | v1.1 (Bardi) | 30/09/2026 | Parecer ganha a seção "Fonte primária não verificada" (alimenta o Acervo) | Ligar o Acervo ao Ensaio | Claudemberg |
+| **v1.2** | 09/10/2026 | Teto de 3 versões por etapa (na 3ª reprovação: `diagnostico_repeticao.md` + decisão de Claudemberg); Bardi confere por amostragem as afirmações de auditoria do Gestor (prova colada); **mapa de prontidão das etapas 4–17** (`01_CEO/Casos_TESTE/ensaio_003/mapa_prontidao_etapas_04_17.md`) para saber antes onde o ensaio vai travar por falta de ferramenta | Etapa 2 com 9 versões, etapa 3 com 8; etapas 5–17 dependem de ferramentas nunca validadas (Revit/Vitruvius, render, equipe do Lelé) | Claudemberg (análise do organismo, 09/10) |
 
 **Herdado do Ensaio 002:** o Oscar fez o Anteprojeto só em texto, porque o Vitruvius/Revit não estava carregado.
 

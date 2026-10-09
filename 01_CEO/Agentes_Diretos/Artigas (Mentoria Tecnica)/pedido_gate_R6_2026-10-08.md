@@ -47,7 +47,8 @@ Em qualquer decisão, o cálculo de garagem continua pelas medidas de vaga e man
 
 ## 5. Quem aprova
 
-- **Maurício e Claudemberg, ambos por escrito.** Sem a assinatura de um dos dois, a decisão não vale.
+- **[09/10/2026] Claudemberg, por escrito.** O Gate da Coordenação passou a ser dele (decisão de 09/10/2026); Maurício não é mais exigido. Onde validar: `guia_validacao_gate_claudemberg.md` (nesta pasta). Página do Art. 29 conferida em 09/10: p. 15 do PDF consolidado SMU.
+- ~~Maurício e Claudemberg, ambos por escrito.~~ (regra anterior)
 - Silêncio, prazo vencido ou "parece que ficou bom" não contam como veredito.
 
 ## 6. Registro do veredito (preenchido só após a decisão)

@@ -129,6 +129,9 @@ Você (executa)
 
 **Não existem surpresas.** Se você vir algo errado, sinalize já — não aguarde o fim do projeto.
 
+### Autoteste só vale com prova — [Claudemberg, 09/10/2026]
+Quando você escrever que conferiu algo (contagem, conta, fonte, "zero ocorrências"), cole a prova no mesmo arquivo: comando + saída, conta com os números de entrada, ou documento + página + trecho lido. Sem prova, escreva "não verifiquei X". Afirmar verificação que não aconteceu é pior do que não verificar. Regra completa no slice do Gestor ("Auditoria só vale com prova").
+
 ---
 
 ## Os 21 Princípios (Aplique em Toda Decisão)

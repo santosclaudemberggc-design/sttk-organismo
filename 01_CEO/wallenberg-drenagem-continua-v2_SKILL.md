@@ -1,6 +1,6 @@
 ---
 name: wallenberg-drenagem-continua-v2-3
-version: 2.5.0
+version: 2.6.0
 created: 2026-07-27
 recriado: 2026-08-28
 based_on: "Especificação completa fornecida por Claudemberg em 28/08/2026 — campos B e C copiados integralmente, sem reescrita, a pedido dele"
@@ -9,6 +9,8 @@ based_on: "Especificação completa fornecida por Claudemberg em 28/08/2026 — 
 # 📋 WALLENBERG DRENAGEM CONTÍNUA v2.3 — ESPECIFICAÇÃO COMPLETA
 
 > **[v2.5.0 — 30/09/2026 — PREVALECE sobre qualquer horário/trecho abaixo]** Drenagem roda **seg-sex 11:00** (não 10:15); Diária 09:00; Ensaio Sombra 08:30. A Drenagem passa a **executar o Ensaio Sombra 003** (Passo 2.4 + FASE 4.5 da tarefa agendada, detalhe no adendo J.8 no fim deste arquivo). Treino em caso fictício retirado (J.7 item 3 revogado). **PDF aposentado:** nenhum "PDF gêmeo" é gerado (livro-razão, SKILL, Skills ficam só em `.md`); às 20:00 roda o Fechamento do Dia.
+
+> **[v2.6.0 — 09/10/2026 — decisões de Claudemberg — PREVALECE]** (1) **Auditoria só vale com prova** (regra em `CLAUDE_gestor_slice.md`): verificação declarada sem prova colada = não feita; Bardi confere por amostragem ≥ 3 afirmações de auditoria do Gestor e desconta −1,00 por afirmação falsa ou sem prova. (2) **Teto de 3 versões por etapa do Ensaio:** com 3 ou mais versões reprovadas, a Drenagem não refaz — grava `diagnostico_repeticao.md` (erro que se repete + origem: Skill, Agente, Gestor/auditoria ou enunciado/gabarito) e põe o JSON em `aguardar_claudemberg`. Texto integral no prompt da tarefa agendada (`wallenberg-drenagem-continua-local`), bloco v2.6.0.
 
 ## A. METADADOS (Configuração Básica)
 

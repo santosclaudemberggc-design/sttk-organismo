@@ -15,7 +15,7 @@ Pasta criada em 30/09/2026 por decisão de Claudemberg. É a **memória das roti
 | seg-sex 09:00 | Diária de Skills | `diaria.md` | `wallenberg-rotina-diaria-skills-v2-7` |
 | seg-sex 11:00 | Drenagem Contínua | `drenagem.md` | `wallenberg-drenagem-continua-local` |
 | seg 13:00 | Acervo de Normas | `acervo.md` | `wallenberg-rotina-acervo-normas` |
-| seg-sex 14:00 | Macetes | `macetes.md` | `wallenberg-rotina-macetes-profissionais` |
+| ~~seg-sex 14:00~~ **PAUSADA desde 09/10** | Macetes | `macetes.md` (condição de volta na seção 1) | `wallenberg-rotina-macetes-profissionais` |
 | seg 17:00 | Reunião Semanal | `reuniao.md` | `wallenberg-reuniao-semanal` |
 | seg-sex 20:00 | Fechamento do Dia | `fechamento_do_dia.md` | `wallenberg-cronjob-pdf-2000` (id antigo, mantido) |
 

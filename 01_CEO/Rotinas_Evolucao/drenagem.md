@@ -12,6 +12,7 @@ Tarefa `wallenberg-drenagem-continua-local` · seg-sex 11:00 · referência `01_
 | v2.4.1 | 17/09/2026 | Proibido `Bash cd && powershell` | Rodada de 17/09 morreu por permissão negada e mesmo assim apareceu como "succeeded" | Wallenberg (incidente) |
 | v2.4.2 | 28/09/2026 | Coerência entre Skills, arquivamento imediato, treino fictício | Espelho da Diária v3.4.0 | Claudemberg |
 | **v2.5.0** | 30/09/2026 | Horário 10:15 → 11:00; **passa a EXECUTAR o Ensaio Sombra 003** (Passo 2.4 + FASE 4.5); refazer etapa reprovada; pede aprovação no fim do relatório; sem treino; sem PDF | Desde 08/09 a Diária ativa as Skills e a Drenagem rodava vazia (29/09 durou cerca de 1 min) | Claudemberg |
+| **v2.6.0** | 09/10/2026 | (1) Auditoria só vale com prova (Bardi confere ≥ 3 afirmações por amostragem, −1,00 por afirmação falsa/sem prova); (2) teto de 3 versões por etapa do Ensaio: na 3ª reprovação a Drenagem para e grava `diagnostico_repeticao.md` para Claudemberg decidir | Etapa 2 com 9 versões e etapa 3 com 8; nota caiu de 10,00 (v7) para 7,00 (v8) na etapa 2; 4 declarações de verificação falsas do Gestor na etapa 3 | Claudemberg (análise do organismo, 09/10) |
 
 **Tentado e revertido:** treino fictício (J.7 item 3, revogado em 30/09).
 

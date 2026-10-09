@@ -8,6 +8,7 @@ Tarefa `wallenberg-rotina-macetes-profissionais` · seg-sex 14:00 · fila `01_CE
 | v1.0 | 29/09/2026 | Criada: macetes de profissionais, validados pelo Gestor dono, com treino fictício | "Os macetes dos melhores profissionais são o essencial para a inteligência dos agentes" | Claudemberg |
 | v1.1 | 29/09/2026 | Duas fontes obrigatórias: (A) profissional renomado e (B) grande empresa; `/watch` em modo legenda; yt-dlp atualizado às segundas | Falha do /watch em 24/09 | Claudemberg |
 | **v1.2** | 30/09/2026 | Treino retirado; prioridade 0a/0b ligada ao Ensaio; fonte C (legal) para o Kelsen; regra das 2 tentativas; portão de custo (Gestor sem Skill não é aberto; fila esgotada → só ter/qui) | Varandas travou o Kelsen; 36 de 43 Skills sem macete (cerca de 12 dias úteis e depois rodaria vazia) | Claudemberg |
+| **pausa** | 09/10/2026 | Tarefa agendada desligada (`enabled: false`). Volta quando: (a) uma rodada manual com o `/watch` no motor Gemini assistir de fato pelo menos 1 vídeo do YouTube, e (b) a fila tiver Skills com fonte A/B/C provável (Skills jurídicas do Kelsen vão direto à fonte C) | Rodadas de 07/10 e 08/10 (3 commits) com 0 macetes: prioridade vazia, Skills jurídicas sem fonte pública, vídeos bloqueados pelo YouTube | Claudemberg (análise do organismo, 09/10) |
 
 **Tentado e revertido:** treino fictício (29/09 → 30/09).
 

@@ -3,12 +3,14 @@
 > Arquivo de estado pessoal. Leio ao nascer, escrevo ao morrer.
 > Memória privada minha — não repete o Registro Diário nem o caso do cliente.
 
-**Última atualização:** 01/09/2026
+**Última atualização:** 09/10/2026 — Gate da Coordenação passou a ser de Claudemberg.
 
 ---
 
 ## 1. Onde parei / em andamento
 
+- **[09/10/2026 — decisão de Claudemberg] O Gate da Coordenação agora é validado por Claudemberg** (antes, "Gate do Maurício"). Onde qualquer arquivo disser "Gate do Maurício" ou "veredito de Maurício", leia "veredito de Claudemberg". Meu papel não muda: formulário certo, pedido montado, veredito registrado com fidelidade. Guia de onde ele valida cada pedido: `guia_validacao_gate_claudemberg.md` (nesta pasta).
+- **[09/10/2026] Gate do Daniel-OB aponta para arquivo que não existe mais.** `Apresentacao_Interiores_Daniel-OB.html` foi abandonado; o entregável real é `Daniel-OB_Interiores_Slides.html` (mesma pasta). Corrigido no guia; a linha da seção 2 abaixo fica como histórico.
 - **Criado em 29/07/2026.** Modelo do Gate = "relato manual" (decisão Claudemberg). Não mexo em formulário de produção; aponto o link certo, Wallenberg/Claudemberg relatam o veredito de volta.
 - Os 39 links reais dos formulários estão em `memory/referencia/sttickler_formularios_fluxograma_links.md` — não duplico aqui.
 - **01/09/2026 — 1º Gate real preparado (Cardozo / Interiores) — REABERTO para v3.** Deck HTML de apresentação de Interiores do cliente Daniel – OB (Recreio/RJ), mesmo caminho, sobrescrito v3. Reabertura autorizada por Wallenberg/Claudemberg (a tentativa anterior de registro caiu por limite de sessão da API). Pedido de validação atualizado para o Formulário de Validação da Coordenação de **Projeto de Interiores** (Complementares). Status: **v3 aguardando veredito manual de Maurício** — a ser relatado por Wallenberg/Claudemberg. Detalhe na seção 2.

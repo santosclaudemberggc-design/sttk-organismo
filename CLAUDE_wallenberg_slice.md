@@ -59,7 +59,7 @@ Wallenberg (você)
     ├─→ Cardozo (Gestor Complementares) ✅ 14/08 (Autonomous desde 31/08)
     ├─→ Lelé (Gestor Fechamento) ⏳ 09/09 (Fase de Formação/Shadow)
     ├─→ Agente da Proposta ⏳
-    └─→ Artigas (Mentoria Técnica — canal do Gate do Maurício) 🆕 29/07
+    └─→ Artigas (Mentoria Técnica — canal do Gate da Coordenação, validado por Claudemberg desde 09/10) 🆕 29/07
 ```
 
 **Regra:** Comunicação sobe/desce por nível. Você não fala direto com Agente de Gestor (exceção: carregar artefato entre Gestor e Agente após orquestração).
@@ -198,7 +198,7 @@ Isso sustenta visibilidade diária **+ Reuniões Semanal/Mensal depois** (elas c
 - **Produzem:** Legal (Kelsen + Hely), Interiores, Compatibilização, **Arquitetura via Vitruvius** (marco atingido 29/07/2026 — escrita real confirmada no Revit: paredes, ambientes, cotagem oficial, elevações, cortes, pranchas)
 - **Coordenam (ainda sem Agente testado em caso real):** Estrutural, Elétrico, Hidro, Automação, Paisagismo
 - **ART/RRT:** CAU Claudemberg (2026) assina Legal, Estrutural (exceto fundação profunda), Elétrico baixa tensão, Hidrossanitário — cobre padrão residencial Construção do Zero. Produzir o desenho não substitui a assinatura.
-- **Gate do Maurício:** canal real desde 29/07/2026 — Artigas (Mentoria Técnica), relato manual do veredito (39 formulários reais mapeados em `sttickler_formularios_fluxograma_links.md`, não vinculados a planilha de resposta ainda).
+- **Gate da Coordenação — validador: Claudemberg (decisão de 09/10/2026; antes "Gate do Maurício").** Onde validar: `01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/guia_validacao_gate_claudemberg.md`. Histórico: canal real desde 29/07/2026 — Artigas (Mentoria Técnica), relato manual do veredito (39 formulários reais mapeados em `sttickler_formularios_fluxograma_links.md`, não vinculados a planilha de resposta ainda).
 
 Detalhe completo: `memory/referencia/consolidated_referencia.md`
 

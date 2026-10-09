@@ -1,6 +1,6 @@
 # Inventário de Capacidade — Sistema Orgânico STTK
 
-**Dono:** Wallenberg · **Criado:** 08/09/2026 (Item 5 da lista de melhorias do organismo)
+**Dono:** Wallenberg · **Criado:** 08/09/2026 (Item 5 da lista de melhorias do organismo) · **Revisado:** 09/10/2026 (análise do organismo — linhas marcadas [09/10])
 
 ## Para que serve
 
@@ -22,11 +22,12 @@ Fonte única do que o organismo **realmente tem** e **realmente funciona**. Exis
 | **Google Drive — conector MCP** (create / update / trash / search / read) | Wallenberg, Kelsen, Cardozo | ✅ | 08/09/2026 | Criou Google Doc novo + `trash_file` + `get_file_metadata` depois = "not found". Auth OAuth `santosclaudemberggc@gmail.com`. Não apaga em definitivo (trash ≠ delete). |
 | **Google Drive — Service Account (Python SDK)** | Kelsen/Hely | ✅ editar / ❌ criar | 30/07/2026 | Editou POP-LEGAL-04 real (timestamp confirmado). Criar arquivo novo = 403 (sem quota). Deletar/trashear = 403 nesse caminho — usar o MCP acima. |
 | **Notion — conector MCP** (query data sources, fetch) | Wallenberg, Kelsen, Cardozo | ✅ | 07/09/2026 | `notion-query-data-sources` na base "Treinos e Testes" (SQL direto), retorno OK. `notion-fetch` exige ID exato salvo no estado. |
-| **`Agent` (spawn de subagente)** | Wallenberg→Gestor; Kelsen→Hely; Lúcio→Oscar; Cardozo→6 Agentes | ✅ cadeia Kelsen/Lúcio | 07-08/2026 | Kelsen→Hely e Lúcio→Oscar rodaram ponta a ponta. Cardozo tem `Agent` no frontmatter; cadeia Cardozo→6 Agentes ainda não exercida em caso real. |
-| **WebSearch / WebFetch** | Kelsen, Lúcio, Cardozo | ✅ Gestores / ❌ 6 Agentes de Cardozo | 08-09/2026 | Gestores usam nas rotinas. Os 6 Agentes de Complementares (Baumgart et al.) **não têm** web tools nem Bash — trava fechamento autônomo de lacuna de fonte primária (achado 31/08, decisão pendente). |
-| **`/watch:watch` (plugin)** | Wallenberg (Learning Agent, Passo 1) | ✅ | 09/2026 | Usado nas rotinas para assistir vídeo de verdade (download + transcrição). |
-| **Vitruvius — MCP Revit (35 tools)** | Oscar | ⚠️ nunca em caso real | — | Presente na lista de tools. Nunca exercido num projeto real. Catálogo de achados/alternativas em `vitruvius_achados_candidatos.md`. |
-| **Higgsfield — MCP imagem/vídeo** (`371ab963-…`) | Burle | ⚠️ conectado, pausado | 17/08/2026 | UUID na lista de tools. Geração real de render/vídeo do projeto **não validada**. Pausado por orçamento (Claudemberg). |
+| **`Agent` (spawn de subagente)** | Wallenberg→Gestor; Kelsen→Hely; Lúcio→Oscar; Villaça→Mascaró/Fiker; Cardozo→6 Agentes; Lelé | ✅ Kelsen, Lúcio, Villaça / ⚠️ Cardozo / ❌ Lelé | [09/10] 01–08/10/2026 | Kelsen→Hely, Villaça→Mascaró+Fiker e Lúcio→Oscar rodaram no Ensaio 003 (etapas 1–3). Cadeia Cardozo→6 Agentes nunca exercida depois de 12/09. **Lelé não tem Agente nenhum** — etapas 14–17 sem executor. |
+| **WebSearch / WebFetch** | Gestores, Fiker, Mascaró, Bardi | ✅ Gestores, Fiker, Mascaró, Bardi / ⚠️ Hely / ❌ 6 Agentes de Cardozo | [09/10] 09/10/2026 (leitura dos `tools:`) | **Hely ganhou WebSearch + WebFetch em 09/10** (aplicado com autorização de Claudemberg, fora do modo automático). Ainda não usado numa tarefa real: vira ✅ no 1º uso com resultado. Os 6 Agentes de Cardozo continuam sem web. |
+| **`/watch:watch` (plugin)** | Wallenberg (Learning Agent, Passo 1), Macetes | ⚠️ | [09/10] 08/10/2026 | YouTube bloqueou o motor local em 08/10; plugin trocado para o motor Gemini no mesmo dia. **Ainda não testado num vídeo do YouTube depois da troca.** Rotina Macetes pausada até esse teste. |
+| **Vitruvius — MCP Revit (51 tools)** | Oscar | ⚠️ ligação corrigida, sem teste | [09/10] 09/10/2026 — **corrigido no mesmo dia:** `oscar.md` com os 51 nomes reais e `settings.json` com o caminho certo; falta o teste de fumaça com o Revit aberto. Diagnóstico original: | O servidor tem 51 tools validadas visualmente por Claudemberg (até 10/09). Mas: (1) o `tools:` do Oscar usa nomes antigos (`mcp__vitruvius__create_wall`) e o servidor expõe `mcp__vitruvius__vitruvius_create_wall` — **o Oscar não tem nenhuma tool que funcione**; 10 nomes da lista nem existem mais; (2) `~/.claude/settings.json` aponta o MCP para `D:\011_VITRUVIUS_V3\src\Server\mcp-server.js`, pasta que não existe (só o app desktop usa o caminho certo `D:\011_VITRUVIUS\MCP_Server\dist\index.js`). Plano: `D:\011_VITRUVIUS\PLANO_AGENTE_GUIADO.md`. |
+| **Higgsfield — MCP imagem/vídeo** (`371ab963-…`) | Burle | ❌ na prática | [09/10] 01/09/2026 | Pausado por orçamento. Em 01/09 o Burle não conseguiu gerar render: faltam as tools de envio da imagem-base (`media_upload_widget`/`media_import_url`) e de recuperação (`show_generation_by_ids`). |
+| **Bardi — gabarito lacrado** | Bardi, Wallenberg | ✅ por instrução | [09/10] 30/09–08/10/2026 | Gabarito em `_gabaritos_LACRADO_bardi/` (fora de `01_CEO`), SHA256 conferido antes/depois. O lacre é por regra, não por permissão: qualquer agente com `Read`/`Glob` conseguiria abrir. |
 | **Claude in Chrome (extensão)** | Wallenberg, Kelsen | ⚠️ intermitente | 03/08/2026 | Leu Google Forms renderizado (família "Validação da Coordenação") — contorna mime `google-apps.form`. Frequentemente "indisponível na sessão automática". |
 | **`md_to_pdf.py` / `gerar_prancha_legal.py`** | Kelsen/Hely, rotinas | ✅ | 07-08/2026 | Geração de PDF gêmeo e prancha legal A1 rodando; acentuação/latin-1 corrigidas. |
 | **`medir_tokens.py` / `custo_por_agente.py`** | Wallenberg (Semanal, Passo 2.5) | ✅ | 03/09/2026 | Leem transcripts reais (128 sessões), geram `token_metrics.json` + `custo_por_agente.json`. |
@@ -37,7 +38,8 @@ Fonte única do que o organismo **realmente tem** e **realmente funciona**. Exis
 
 ## Pendências de verificação (próxima janela)
 
-- Vitruvius: primeiro uso em caso real (fica pronto quando houver projeto de Arquitetura ativo).
+- [09/10] Vitruvius: Fase 0 do `PLANO_AGENTE_GUIADO.md` (consertar caminho do MCP + nomes no `tools:` do Oscar), depois 1º teste do Oscar desenhando.
 - Higgsfield/Burle: teste de render real quando orçamento reabrir.
-- Cadeia Cardozo→6 Agentes: exercer em caso real (ligada ao Exame 2, 08–12/09).
-- Web tools para os 6 Agentes de Complementares: decisão de Claudemberg (conceder read-only ou formalizar que Cardozo faz a pesquisa).
+- Cadeia Cardozo→6 Agentes: exercer nas etapas 8–13 do Ensaio 003.
+- [09/10] `/watch` motor Gemini: 1 vídeo do YouTube de verdade antes de religar a Rotina Macetes.
+- Web tools para Hely (pedido desde 01/10) e para os 6 Agentes de Complementares: decisão de Claudemberg na Reunião de 12/10.

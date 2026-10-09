@@ -1,6 +1,6 @@
 ---
 name: nbr6492-2021-memoriais-por-etapa-projeto
-description: O que a NBR 6492:2021 (Documentação técnica para projetos arquitetônicos e urbanísticos — Requisitos) exige como documentos gráficos e escritos (relatórios, planilhas, memoriais, lista de pranchas) em cada etapa do projeto arquitetônico — LV, PN, EV, EP, AP, PL, PE e As Built — e o que é obrigatório ou opcional. Use sempre que Oscar/Lúcio for montar ou conferir o jogo de peças de uma etapa, preparar a etapa para o Gate do Maurício ou para o cliente, ou orientar o arquiteto parceiro sobre o que documentar, mesmo que o pedido só mencione "memorial", "o que entregar no anteprojeto", "jogo de pranchas" ou "relatório do levantamento".
+description: O que a NBR 6492:2021 (Documentação técnica para projetos arquitetônicos e urbanísticos — Requisitos) exige como documentos gráficos e escritos (relatórios, planilhas, memoriais, lista de pranchas) em cada etapa do projeto arquitetônico — LV, PN, EV, EP, AP, PL, PE e As Built — e o que é obrigatório ou opcional. Use sempre que Oscar/Lúcio for montar ou conferir o jogo de peças de uma etapa, preparar a etapa para o Gate da Coordenação (Claudemberg) ou para o cliente, ou orientar o arquiteto parceiro sobre o que documentar, mesmo que o pedido só mencione "memorial", "o que entregar no anteprojeto", "jogo de pranchas" ou "relatório do levantamento".
 version: v1.1
 status: ativa-com-ressalva
 fonte_primaria_lida: "ABNT NBR 6492:2021, 2ª edição, 16/06/2021 — 'Documentação técnica para projetos arquitetônicos e urbanísticos — Requisitos'. D:\\008_Normas ABNT\\001_ABNT\\04_Desenho_Tecnico\\NBR 6492-2021 Representacao de Projetos de Arquitetura.pdf. Lido por Lúcio em 06/10/2026: capa, sumário, prefácio, introdução, Seções 1-3 (pp. 1-2) e Seção 5 inteira, 5.1 a 5.8 (pp. 6-11 da norma = pp. 14-19 do PDF). Não lidos: Seção 4 (pp. 3-5), Seções 6-12 (urbanístico) e Anexo A (informativo, representação gráfica)."
@@ -51,7 +51,7 @@ Fecho da Seção 5: o conjunto compõe o projeto arquitetônico completo e "deve
 
 ## 4. COMO USAR NA CONFERÊNCIA DE ETAPA (antes do Gate)
 
-Fluxo da casa: **Agente confere → Lúcio audita → Maurício Costa valida (Gate do Maurício; Artigas é o canal que localiza o formulário e registra o veredito, não aprova) → cliente aprova.**
+Fluxo da casa: **Agente confere → Lúcio audita → Maurício Costa valida (Gate da Coordenação (Claudemberg); Artigas é o canal que localiza o formulário e registra o veredito, não aprova) → cliente aprova.**
 
 Jogo mínimo que Lúcio confere antes de mandar ao Gate:
 

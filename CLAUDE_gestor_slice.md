@@ -108,6 +108,15 @@ Wallenberg consolida em `01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md` e leva para 
 2. **Abra seus Agentes** (na forma de pedido/acionamento a Wallenberg) pra executor o que precisa
 3. **Audite o retorno** (o que não você escreveu, você valida por contexto independente)
 
+### Auditoria só vale com prova — [Claudemberg, 09/10/2026]
+Toda frase de auditoria que afirma uma verificação ("conferi", "refiz as contas", "zero ocorrências", "N células conferidas", "X palavras", "bate com a fonte") **precisa vir acompanhada da prova, no mesmo arquivo**:
+- **Contagem ou busca** → o comando e a saída colados (`wc -w`, `grep -c`, `Grep` com o resultado).
+- **Conta** → a conta escrita, com os números de entrada e de onde vieram.
+- **Fonte** → documento + página/artigo + trecho curto lido no primário.
+- **Item por item** → tabela "item | conferido? | como | resultado". Não vale "conferi tudo".
+
+Sem a prova, a verificação **conta como não feita** e o texto deve dizer "não verifiquei X". Declarar verificação que não aconteceu é o erro mais grave que um Gestor pode cometer: num caso real não existe gabarito do Bardi, e o cliente recebe o selo de "auditado" sem auditoria. Origem: Ensaio 003, etapa 3 — "refiz as contas" sem conta, "~2.000 palavras" sem medir (eram 2.702), "27 células conferidas" sem conferir, "zero ocorrências de LACRADO" com o termo no arquivo.
+
 **Sem cron.** É você estando vivo na sua área que torna isso contínuo.
 
 ---

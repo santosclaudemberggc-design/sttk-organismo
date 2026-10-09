@@ -1,7 +1,7 @@
 {
   "_comentario": "Fonte única e estruturada da fila de pendências do organismo. A rotina wallenberg-drenagem-continua lê este arquivo a cada disparo: itens com alc='auto' e status='aberta' são executados sozinhos pelo Gestor dono (via seu Agente, quando aplicável); os demais (humano/tecnico/planejado) só são reconciliados, nunca forçados. O Painel do Fundador (painel_fundador_sttk.html) espelha este arquivo — ao alterar aqui, regerar o array `pendencias` do painel e republicar.",
   "schema_versao": 1,
-  "atualizado_em": "2026-10-07 (Drenagem 11:00: lacuna vaga resolvida; +2 lacunas do parecer_bardi_v5)",
+  "atualizado_em": "2026-10-09 (Wallenberg: +5 itens da analise do organismo)",
   "itens": [
     {
       "id": "lacuna-kelsen-dec3046-xxii-vaga-afastamento-frontal-07-10-2026",
@@ -1209,6 +1209,73 @@
       "txt": "Ensaio 003 etapa 3 (parecer_bardi_v4, Lacunas do organismo): dimensao minima legal de vaga de garagem residencial no RJ nao esta em nenhuma Skill; o Levantamento usou faixa 12,50-15,00 m2/vaga do parecer do Bardi, sem fonte legal.",
       "res": "Primeira lacuna aberta pela regra 'Lacuna do organismo' (Claudemberg 06/10).",
       "acao": "Rotina Diaria de 07/10, prioridade zero: acionar Kelsen (que aciona Hely) para achar na fonte primaria (LC 270/2024, COE LC 198/2019, Decreto 3046/81 se aplicavel) a dimensao minima de vaga e criar/corrigir a Skill correspondente; fechar este item com a Skill criada."
+    },
+    {
+      "id": "trim-estados-lucio-cardozo-hely-09-10",
+      "tipo": "manutencao",
+      "owner": "Wallenberg",
+      "agente": null,
+      "cardId": "sistema",
+      "desde": "2026-10-09",
+      "status": "aberta",
+      "crit": "media",
+      "alc": "auto",
+      "txt": "Arquivos de estado viraram diario, contra a regra deles: _estado_lucio.md 114 KB, _estado_cardozo.md 96 KB, _estado_hely.md 96 KB. Todo acionamento le o arquivo inteiro.",
+      "acao": "Drenagem: mesmo procedimento do trim de 15/09 (Kelsen/Hely): copia integral em _backups, move o passado para _estado_{nome}_HISTORICO.md, deixa so as 4 secoes vivas (meta: abaixo de 30 KB cada). Zero perda: conferir com wc -c e diff que o conteudo removido esta no HISTORICO."
+    },
+    {
+      "id": "lele-nomear-equipe-fechamento-09-10",
+      "tipo": "estrutura",
+      "owner": "Lele",
+      "agente": null,
+      "cardId": "sistema",
+      "desde": "2026-10-09",
+      "status": "aberta",
+      "crit": "alta",
+      "alc": "humano",
+      "txt": "Etapas 14-17 do fluxo (Compatibilizacao, Executivo, Orcamento, Liberacao) nao tem nenhum Agente. Lele esta em Shadow. Ver 01_CEO/Casos_TESTE/ensaio_003/mapa_prontidao_etapas_04_17.md.",
+      "acao": "Reuniao Semanal 12/10: Claudemberg decide se Lele propoe a equipe agora (Regra de Cascata) mesmo em Shadow, para o Ensaio 003 chegar na etapa 14 com quem executar."
+    },
+    {
+      "id": "claudemberg-editar-agents-tools-gate-09-10",
+      "tipo": "permissao",
+      "owner": "Wallenberg",
+      "agente": null,
+      "cardId": "sistema",
+      "desde": "2026-10-09",
+      "status": "resolvida",
+      "crit": "alta",
+      "alc": "humano",
+      "txt": "Edicoes em .claude/agents/*.md sao negadas pela permissao automatica (Self-Modification), negado de novo em 09/10. Pendentes: (1) hely.md: acrescentar WebSearch, WebFetch em tools (pedido desde 01/10); (2) 8 arquivos citam 'Gate do Mauricio' (artigas, burle, hely, kelsen, lele, lucio, oscar, portinari): trocar para Gate da Coordenacao validado por Claudemberg (decisao 09/10); (3) oscar.md: tools do Vitruvius com nomes errados (Fase 0 do Plano Vitruvius).",
+      "acao": "Claudemberg aplica ao vivo (ou autoriza na sessao) as linhas exatas listadas na pagina da Reuniao de 12/10.",
+      "resolvido_em": "2026-10-09",
+      "resolucao": "Aplicado em 09/10 com autorizacao explicita de Claudemberg (fora do modo automatico): (1) hely.md ganhou WebSearch, WebFetch; (2) 8 agentes: termo trocado para Gate da Coordenacao + nota de decisao no topo; 6 Skills: termo trocado; backups em Decisoes_Autonomas/_backups/2026-10-09/; (3) oscar.md com as 51 tools nos nomes reais (mcp__vitruvius__vitruvius_*). Espelho .agents/skills/ (fora do git) NAO foi sincronizado."
+    },
+    {
+      "id": "vitruvius-fase0-ligacao-oscar-09-10",
+      "tipo": "ferramenta",
+      "owner": "Lucio",
+      "agente": "oscar",
+      "cardId": "sistema",
+      "desde": "2026-10-09",
+      "status": "em_andamento",
+      "crit": "alta",
+      "alc": "tecnico",
+      "txt": "Oscar nao tem nenhuma tool do Vitruvius que funcione: tools: usa mcp__vitruvius__create_wall e o servidor expoe mcp__vitruvius__vitruvius_create_wall; 10 nomes da lista nem existem. Alem disso ~/.claude/settings.json aponta o MCP para D:\\011_VITRUVIUS_V3\\src\\Server\\mcp-server.js, que nao existe (o app desktop usa D:\\011_VITRUVIUS\\MCP_Server\\dist\\index.js).",
+      "acao": "Feito em 09/10: nomes no oscar.md + caminho no ~/.claude/settings.json. Falta: teste de fumaca com o Revit aberto (Lucio aciona Oscar -> get_revit_status -> get_levels -> cria e apaga 1 nivel), com prova no _estado_oscar.md; e confirmar se subagente em rotina agendada enxerga o MCP."
+    },
+    {
+      "id": "cardozo-6-agentes-nivel-provisorio-09-10",
+      "tipo": "decisao",
+      "owner": "Wallenberg",
+      "agente": null,
+      "cardId": "sistema",
+      "desde": "2026-10-09",
+      "status": "aberta",
+      "crit": "media",
+      "alc": "humano",
+      "txt": "Os 6 Agentes do Cardozo foram promovidos a Autonomous em 12/09 so por exames e nao executaram nada depois (nem Ensaio, nem caso real).",
+      "acao": "Reuniao 12/10: Claudemberg decide se o nivel fica marcado como provisorio ate as etapas 8-13 do Ensaio 003 passarem com nota >= 8,00."
     }
   ]
 }
