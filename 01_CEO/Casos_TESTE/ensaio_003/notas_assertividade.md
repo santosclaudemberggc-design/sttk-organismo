@@ -45,6 +45,16 @@ Regra de Claudemberg (07/10/2026): o Bardi dá uma nota de 0,00 a 10,00 ao Gesto
 | 08/10/2026 | 03 Levantamento | v6 | Skill vaga-estacionamento v1.0 (dona Kelsen) | Skill | 7,60 | Art. 29 III citado com página e artigo errados; III tratado como tamanho de garagem; paráfrase entre aspas com condição cortada. Composição 25 m² (I+II) é defensável e não foi o erro |
 | 08/10/2026 | 03 Levantamento | v6 | Skill levantamento-topografico v1.6 (Arquitetura, aplicada por Lúcio) | Skill | 7,40 | §5-bis novo com COES Art. 29 III p.15; sem a condição do III e sem a composição I+II |
 | 08/10/2026 | 03 Levantamento | v6 | Skill decreto3046-81 v1.5 (dona Kelsen) | Skill | 8,50 | R6 apontada como obstáculo da K1, quando a intro do Cap. II responde à aplicação geral; §6 sem regra de balanço frontal de unifamiliar (VII→XI). Acerto: XXII e XXIII a conferem no primário |
+| 08/10/2026 | 03 Levantamento | v7 | Lúcio | Gestor | 8,20 | Declarou C3 aplicado sem estar na Peça 2 nem na Matriz (erro de auditoria); divergência p.15×p.19 deixada "em verificação" com o PDF aberto; "não contradiz" a Skill de vaga sem ver o Art. 29 IV citado para manobra |
+| 08/10/2026 | 03 Levantamento | v7 | Oscar | Agente | 8,50 | C3 não aplicado (Gate da R6); COES Art. 31 III–IV (p. 17), lidos na Skill, não tratados; "limite superior" de 25 m² sem base; "em verificação" após checagem; [nv] de fontes já verificáveis |
+| 08/10/2026 | 03 Levantamento | v7 | Skill vaga-estacionamento v1.1 (dona Kelsen) | Skill | 8,70 | Art. 29 IV citado para manobra compartilhada; brecha 3 misturando Art. 31 IV com XI (lateral) e sem o XXIII (p. 4) |
+| 08/10/2026 | 03 Levantamento | v7 | Skill levantamento-topografico v1.7 (Lúcio) | Skill | 8,50 | Art. 29 IV citado para manobra; espelho `.agents` na v1.1; §5-bis sem o Gate da R6 (C3) |
+| 08/10/2026 | 03 Levantamento | v7 | Skill decreto3046-81 v1.5 (dona Kelsen) | Skill | 8,60 | Intro do Cap. II (p. 2) ausente; "aplicar o XI" ao frontal de unifamiliar com VII×XI em aberto; espelho `.agents` na v1.3 |
+| 08/10/2026 | 03 Levantamento | v8 | Oscar | Agente | 8,50 | M-a "depende de a" com sobra constante 18,82 (conta); COES Art. 31 III–IV lidos na Skill e não tratados (carry-over); "em verificação" do p. 15 fechável; "revogado" sem artigo; [nv] de fontes lidas; C-6 "condição para caber" |
+| 08/10/2026 | 03 Levantamento | v8 | Lúcio | Gestor | 8,70 | AUTO_TESTE afirma "zero ocorrências de LACRADO" e o próprio arquivo contém o termo (verificação falsa); alternativa B e álgebra de M-a deixadas sem conferir no primário disponível |
+| 08/10/2026 | 03 Levantamento | v8 | Skill vaga-estacionamento v1.3 (dona Kelsen) | Skill | 8,30 | l. 91 mantém "a soma I+II sustenta a leitura" após a reprovação da R6; l. 52 cita Art. 29 IV para manobra compartilhada; brecha 3 sem o XXIII a/b |
+| 08/10/2026 | 03 Levantamento | v8 | Skill levantamento-topografico v1.8 (Lúcio) | Skill | 9,20 | §5-bis l. 93 cita Art. 29 IV para manobra (v7 item 10 não concluído); espelho `.agents` na v1.1 não verificado |
+| 08/10/2026 | 03 Levantamento | v8 | Skill viabilidade-cub v1.7 (Villaça) | Skill | 9,40 | v1.6 incorporou a conta de 25 m² por vaga (corrigida na v1.7 do mesmo dia); escopo restrito a R6 e Art. 350 III |
 
 ## Média por membro (retroativo, Ensaio 003 até 07/10/2026)
 

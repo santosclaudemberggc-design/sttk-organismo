@@ -3,8 +3,8 @@
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar.",
   "etapa_atual": 4,
-  "status_etapa": "a_criar",
-  "proxima_acao": "criar_caso",
+  "status_etapa": "aguardando_execucao",
+  "proxima_acao": "executar",
   "valores_possiveis": {
     "status_etapa": [
       "a_criar",
@@ -425,6 +425,12 @@
       "data": "2026-10-08",
       "versao": "v8",
       "obs": "Skill de vaga v1.4 (Kelsen): linha de manobra corrigida; soma I+II retirada da interpretacao; Art. 31 III-IV lido na p. 17 e registrado. Skill de levantamento v1.9 (Lucio): Art. 29 IV corrigido. AUTO_TESTE_R6 com claim corrigido. ADENDO_pendencias_08-10-2026.md criado na v8. Espelhos .agents sincronizados (viabilidade, levantamento; vaga sem espelho)."
+    },
+    {
+      "etapa": 4,
+      "evento": "caso_criado",
+      "data": "2026-10-09",
+      "gabarito_sha256": "EB7F99BC2FC29262FBACC6ECF47705CE7B460886BBDCD7790D80A9749CE6CE87"
     }
   ],
   "versao_referencia": "v8",
