@@ -3,8 +3,8 @@
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar. [09/10/2026 Claudemberg] Teto de 3 versoes: com 3 ou mais versoes reprovadas na mesma etapa, a Drenagem NAO refaz; grava etapa_NN/diagnostico_repeticao.md e poe proxima_acao=aguardar_claudemberg. Auditoria do Gestor so vale com prova colada.",
   "etapa_atual": 4,
-  "status_etapa": "aguardando_execucao",
-  "proxima_acao": "executar",
+  "status_etapa": "aguardando_aprovacao",
+  "proxima_acao": "aguardar_claudemberg",
   "valores_possiveis": {
     "status_etapa": [
       "a_criar",
@@ -431,6 +431,13 @@
       "evento": "caso_criado",
       "data": "2026-10-09",
       "gabarito_sha256": "EB7F99BC2FC29262FBACC6ECF47705CE7B460886BBDCD7790D80A9749CE6CE87"
+    },
+    {
+      "etapa": 4,
+      "evento": "executada_e_corrigida",
+      "data": "2026-10-09",
+      "veredito_recomendado": "reprovar",
+      "obs": "Lúcio (nota 7,75) com Oscar (nota 6,25): ambas abaixo de 8,00. Lacre conferido antes e depois (SHA256 OK). Parecer: etapa_04_briefing/parecer_bardi.md; notas: notas_assertividade.md. Gabarito tem 6 erros próprios do Bardi (GE-1 a GE-6), registrados no parecer e não descontados do executor. Contagem de palavras do corpo pendente de Wallenberg."
     }
   ],
   "versao_referencia": "v8",

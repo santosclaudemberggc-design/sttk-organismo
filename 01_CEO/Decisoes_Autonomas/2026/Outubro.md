@@ -417,3 +417,11 @@
 - **Ainda aberto:** PDF gêmeo da Skill decreto3046 na v1.4 (precisa do Hely); Art. 433 x 435 da LC 270 não resolvido; contagem de palavras da Peça 2 (teto 2.500) não feita; espelho .agents/skills desatualizado.
 
 - **08/10/2026 — decisões de Claudemberg (ao vivo, após a Drenagem):** (1) Etapa 3 v6 REPROVADA, motivo abaixo da média (Lúcio 7,20; Skill de vaga 7,60; Skill de levantamento 7,40). Estado: reprovada / refazer. (2) Erro de gabarito NÃO desconta do executor; se o gabarito está errado, o erro é do Bardi, que melhora a própria inteligência quando constatado (item bardi-melhoria-inteligencia-gabarito-08-10, auto). Aplicado na Skill pública de critérios. (3) Proposta original de critérios (com iscas) ARQUIVADA em Skills_Propostas/_Arquivadas/2026/ (reversível: mover de volta). Pendentes para a v7: C1 vagas (4 ou 6), C2 vaga descoberta no frontal, C3 Gate do Maurício.
+
+## 09/10/2026 — Drenagem Contínua (sex, rodada agendada local)
+
+- **Kelsen (execução real):** Skill vaga-estacionamento v1.4 → v1.5 (backup em _backups/2026-10-09/). Item erro-ensaio003-etapa3-v6-skill-vaga-08-10 resolvido: citação de Art. 29 III corrigida (não há "p. 19" na cópia SMU). Item skill-melhoria-kelsen-vaga-art31-art29iv-08-10 resolvido: Art. 31 III–IV (p. 17) e Art. 29 IV corrigido. R6 segue reprovada.
+- **Bardi (execução real):** checagem_gabarito_etapa3_09-10-2026.md (G1, G2, G4 confirmados). Proposta ensaio-sombra-checagem-gabarito-antes-lacre em Skills_Propostas/2026/10 (NÃO instalada). Skill ensaio-sombra-criterios-aprovacao-por-etapa v1.0 → v1.1 (backup integral). Gabarito lacrado não alterado.
+- **Ensaio 003 etapa 4 (Briefing) executada e corrigida:** Lúcio (7,75) e Oscar (6,25); Bardi recomenda REPROVAR. Lacre conferido antes da correção. Aguardando Claudemberg. Itens abertos: lacuna-lucio-nbr9050-edicao-09-10-2026; bardi-gabarito-etapa4-erros-09-10; kelsen-coes-paginacao-divergente-09-10.
+- **Pendência não fechada:** erro-ensaio003-etapa3-v6-lucio-08-10 segue aberta (C-9 do anexo de contas ainda sem leitura do XI no primário).
+- **Não executado nesta rodada:** trim-estados-lucio-cardozo-hely-09-10 (3 arquivos de estado, ~300 KB, fica para a próxima rodada); geração de exame novo para Villaça e Lelé (fila zero, abaixo de Autonomous; fica para a próxima rodada).

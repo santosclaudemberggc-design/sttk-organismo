@@ -1,6 +1,10 @@
 # Estado — Bardi (Agente Examinador, direto de Wallenberg)
 
 ## 1. Onde parei
+09/10/2026 (Drenagem Contínua, Função 2, Etapa 04 Briefing, Lúcio + Oscar): parecer gravado em `01_CEO/Casos_TESTE/ensaio_003/etapa_04_briefing/parecer_bardi.md`. **REPROVAR recomendado.** Oscar 6,25; Lúcio 7,75. Iscas: 2, 4 e 5 pegas; 1 e 3 parciais (Isca 3 sem CAB = CAM). Notas gravadas em `notas_assertividade.md`. Gabarito 04 não alterado; erros próprios registrados como GE-1 a GE-6 no parecer (principal: GE-1, minha leitura de páginas do COES estava errada para a cópia do Hely; Art. 29 p. 15 e Art. 31 p. 17 lá, p. 19 e p. 21 no acervo D:\008). Próximo: aguardar decisão de Claudemberg sobre a Etapa 04 e sobre a errata do gabarito.
+
+09/10/2026 (Drenagem Contínua, rodada agendada, 3 pendências auto): (a) checagem do gabarito da Etapa 03 em `checagem_gabarito_etapa3_09-10-2026.md` (nesta pasta): G1, G2 e G4 confirmados com conta refeita e página; gabarito lacrado não alterado. Erros novos no mesmo arquivo: fórmula impressa do envelope (Isca 2) aritmeticamente errada; "cabe" da Isca 4 contradito pela própria conta (407 < 520; em nenhuma combinação de vagas testada cabe); páginas erradas (COES Art. 8 §2º é p. 6; Art. 31 p.ú. é p. 21; Art. 29 I–III é p. 19, não p. 15). (b) Skill proposta `bardi_ensaio-sombra-checagem-gabarito-antes-lacre.md` em `01_CEO/Skills_Propostas/2026/10/` (não instalada). (c) backup integral em `_backups/2026-10-09/` e Skill de critérios v1.0 → v1.1 com seção 8 (checagem antes de lacrar; critérios de nota inalterados). Pendências marcadas resolvidas com prova. Gabarito da Etapa 04 foi lacrado antes desta checagem e ainda não foi revisto (ver seção 2).
+
 09/10/2026 (Função 1, Etapa 04 — Briefing, pedido de Wallenberg): criei o caso da Etapa 04. Enunciado em `01_CEO/Casos_TESTE/ensaio_003/etapa_04_briefing/enunciado.md` (Gestor Lúcio, Agente Oscar, PN-ARQ da NBR 6492:2021 item 5.2). Gabarito lacrado em `_gabaritos_LACRADO_bardi/ensaio_003/etapa_04_gabarito.md` (fora de 01_CEO). 5 iscas (no gabarito, seção 1). Não executei o caso, não li gabarito de outra etapa além do estado, não escrevi veredito. `_estado_ensaio_003.json` não foi alterado (é da Drenagem). Sem ferramenta de shell nesta execução: SHA256 do gabarito e contagem de palavras ficaram para Drenagem e Wallenberg.
 Fontes primárias lidas no COES (`002_Prefeitura_RJ\COE LC 198-2019`): pp. 17-21 e NBR 6492-2021 p. 15 (5.2). Achado de página: o Art. 29 está nas pp. 19-20 (não p. 15, como eu escrevi no parecer v7 da Etapa 03 e como consta na v8); o Art. 31 está na p. 21 (não p. 17, como consta no parecer da Etapa 01 e na v8). Corrigir na próxima correção desses artefatos.
 
@@ -42,7 +46,9 @@ Fontes primárias lidas no COES (`002_Prefeitura_RJ\COE LC 198-2019`): pp. 17-21
 **Próximo acionamento:** Etapa 03 (se Claudemberg aprovar v9) ou v10 (se reprovar).
 
 ## 2. Pendências abertas
-- Etapa 04 (09/10): aguardando execução de Lúcio/Oscar pela Drenagem. Na correção, montar a seção "Fonte primária não verificada" com as lacunas da seção 6 do gabarito (NBR 9050:2020 fora do acervo; LC 270 Art. 19 II e Art. 111; LC 281/LC 301 Art. 40; LC 274/2024 Art. 38; Dec. 3.046 fora do acervo `D:\008`). Gate do Maurício (COES Art. 28 IV e Art. 31 IV × Dec. 3.046 XXII) segue aberto e fica com Kelsen.
+- Etapa 04 corrigida (09/10, parecer escrito, REPROVAR). Fonte primária não verificada: NBR 9050:2020 só 2015 no acervo; Lei 13.146/2015 e Lei 12.651/2012 não localizadas (acervo D:\008 nem Fontes_Legislacao); LC 274/2024 existe em Fontes_Legislacao (`LC274_2024.pdf`), não lido; CC 1.301–1.302 não conferido. Gate do Maurício (COES Art. 28 IV e Art. 31 IV × Dec. 3.046 XXII; LC 270 Art. 363 §2º X) segue aberto e fica com Kelsen.
+- Gabarito Etapa 04: GE-1 a GE-6 aguardam decisão de Claudemberg (errata ou arquivar, como na Etapa 03). Não reescrito.
+- Mover `_gabaritos_LACRADO_bardi` para fora do repositório: aparece no git status de toda sessão (Oscar viu o nome, 06 l. 37). Pedido à Drenagem/Wallenberg.
 - Skill `arquitetura-nbr9050-acessibilidade`: linha 15 ("obrigatório para habite-se") contradiz linha 21 e o COES Art. 31 V. Enviar a Lúcio como erro de Skill.
 - Erro de página nas peças da Etapa 03 (Art. 29 p. 19 e Art. 31 p. 21): Lúcio/Oscar corrigem na próxima versão. Não reprovar por página; cobrar artigo.
 - Etapa 03 v8 (08/10, verificação): Oscar corrige C-7 (M-a, sobra 18,82), trata COES Art. 31 III–IV, fecha "em verificação" do Art. 29 III com p. 15 e cita LC 281 Art. 42 II. Lúcio retira o termo do gabarito do AUTO_TESTE e corrige a Skill levantamento §5-bis l. 93. Kelsen limpa a Skill vaga (l. 91, l. 52, brecha 3). Espelhos `.agents` e contagem da Peça 2 seguem abertos.
@@ -59,7 +65,19 @@ Fontes primárias lidas no COES (`002_Prefeitura_RJ\COE LC 198-2019`): pp. 17-21
 - O espelho `.agents/skills/levantamento-…` está na v1.1 e a Skill de vaga não tem espelho. Conferir na próxima correção.
 - Fontes ainda não conferidas por mim em primário: Lei 6.015 art. 213; CC 1.301-1.302 e 1.333-1.334; Lei 12.651 art. 4º §4º; LC 270 Art. 216 V; Dec. 51.503 Arts. 26-27.
 
+- Gabarito da Etapa 03 com erros G1, G2 e G4 confirmados (09/10). Decisão para Claudemberg: manter lacrado com errata ou arquivar (item criterio-erro-gabarito-vs-nota-08-10). Não reescrito.
+- Gabarito da Etapa 04 lacrado em 09/10, antes da checklist nova. Não revisado nesta rodada. Aplicar a checklist (conta, inciso, fonte) antes de qualquer correção dela.
+- Fonte não verificada (09/10): texto do item 1 do Anexo I do Dec. 55.622 (o PDF do Anexo I é só modelo gráfico); CC art. 1.301 (fora de `D:\008` e do excerto do Hely).
+- Acervo: Dec. 3.046 e LC 270 estão no acervo do Hely (`Fontes_Legislacao`), não em `D:\008`. Rotina Acervo de Normas deve copiá-los.
+- Dec. 3.046 VII × XI: a leitura literal é que o VII remete a casa unifamiliar ao XI. Continua em Gate (Skill decreto3046, M3).
+
 ## 3. Aprendizados
+- **09/10, Etapa 04 (correção), erro meu de página:** existem DUAS cópias do COES com paginação diferente. Acervo D:\008 (`002_Prefeitura_RJ`): Art. 29 I–III p. 19, IV p. 20, Art. 28 IV p. 18, Art. 31 p. 21. Cópia do Hely (`Fontes_Legislacao`): Art. 8 §§1–9 p. 5, Art. 29 I–V p. 15, Art. 31 p. 17. Qualquer página citada precisa do nome da cópia. Minha "correção" de 09/10 em Etapa 03 (p. 19 = certo; p. 15 = erro) valia só para o acervo: rever a cobrança de página da Etapa 03.
+- **09/10, Isca 5 mal calibrada no gabarito:** o limiar do LC 270 Art. 215 §2º é "inferior a 10.000 m²"; "1 ha" está no limite. Não escrever "não é pequeno" como conclusão. Citar o artigo.
+- **09/10, herança que o gabarito não planta:** Etapa 01 l. 36 (SMD "10%" = 20% × 50%, com TO do RIU; com TO 40% dá 12%) e Viabilidade v9 §2 (S3/H1 340–360 m² vs 297,28). Antes de lacrar Briefing, cruzar áreas e percentuais das etapas anteriores com a conta.
+- **09/10, lei citada por número errado:** Art. 19 II do Mais-Valerá é da LC 281, não da LC 270. Conferir o número da lei na cópia, antes de lacrar.
+- **09/10, "não está no acervo":** antes de escrever, procurar em `Fontes_Legislacao` do Hely (LC 270, 274, 281 e 301 estão lá; Dec. 3.046 também).
+- **09/10, auditoria de Gestor:** "entrega completa" sem checar o entregável mínimo item por item é afirmação sem prova (−1,00). Exigir a tabela dos 11 itens.
 - **Etapa 04 (09/10, Função 1):** página de artigo de COES só vale depois de abrir o PDF nessa página. Errei duas vezes (Art. 31 "p. 17" na Etapa 01; Art. 29 "p. 15" no parecer v7). Regra nova: toda página que eu escrever no caso ou no parecer é conferida no PDF antes.
 - **Etapa 04, calibração das iscas:** a Isca 3 (Mais-Valerá 60x com 30% em AP4) tem resposta na própria Skill `legal-oodc` (linha 30). Quem ler a Skill pega; é fácil demais para um Gestor que leu. Para a próxima, plantar a isca onde a Skill não responde direto. A Isca 1 (acessibilidade) tem Skill contraditória; se o Gestor cair por causa da linha 15, é erro da Skill, não do executor. Está escrito no gabarito, mas não esquecer na correção.
 - **Etapa 04, dispensa legal que o caso não usou:** COES Art. 31 III dispensa residência unifamiliar de vagas de estacionamento. Os "4 vagas" são decisão do cliente, não exigência legal. Não virou isca; considerar na próxima etapa de garagem.
@@ -105,6 +123,14 @@ Fontes primárias lidas no COES (`002_Prefeitura_RJ\COE LC 198-2019`): pp. 17-21
 - Gabarito 3 (Etapa 03) com 3 erros de conta ou de leitura: Isca 1 (VII manda ler XI, que é lateral), Isca 2 (impacto no envelope, cuja conta não fecha), Isca 4 (407 "cabe" em 520). Regra nova para lacrar: toda conta de impacto no gabarito é refeita com a área explícita, e o gabarito declara o regime de medição (computável, construída, projeção). Iscas de "cabe/não cabe" sem regime fixado geram gabarito falso.
 - Entrega v7 mostrou um padrão: o Agente lê a Skill inteira e deixa de usar o que ela já traz (Art. 31 III–IV na Skill vaga §2). Ao corrigir, comparar a lista de fontes lidas com as citações da peça, e apontar a fonte lida que não aparece.
 - Auditoria de Gestor (Lúcio v7) afirmou que um Gate foi "declarado" sem a frase existir. Regra: quando a nota diz "declarado em X", grep o termo em X antes de dar por cumprido.
+
+- **09/10 (checagem Etapa 03):** dei o Dec. 3.046 e a LC 270 como ausentes do acervo, mas estavam na pasta `Fontes_Legislacao` do Hely. Antes de escrever "não está no acervo", procurar também ali.
+- **09/10:** a referência "Art. 29 III, p. 15" dos pareceres v7 e v8 estava errada (p. 15 = Arts. 22–24). Eu tinha dito "conferido". Página só vale depois de lida no PDF.
+- **09/10, isca de conta:** a Isca 4 tinha a conta certa e a conclusão invertida ("407 cabe em 520"). Checar a conclusão contra o número, não só refazer o número.
+- **09/10, envelope de implantação:** (frente − 2 laterais) × (profundidade − frontal − fundos). O gabarito misturou a medida frontal na largura.
+- **09/10, dossiê:** 14,30 × 40,00 = 572,00, não 571,80 (dossiê 5.2). Conferir o produto de qualquer área declarada no enunciado.
+- **09/10, Skill nova:** "gabarito" em urbanismo é altura máxima, então o Grep de "gabarito" traz ruído. Buscar também por "isca" e "lacre" antes de criar Skill.
+- **09/10, dois limites do mesmo lote:** calcular TO e envelope, e dizer qual vale (o menor). A isca de treino da Skill proposta mostra o erro.
 
 ## 4. Como escrever neste arquivo
 Seção 1 reescrita a cada acionamento. Seção 2: uma linha por pendência, apagada ao fechar. Seção 3: só o que muda a forma de montar ou corrigir o próximo caso (isca fácil demais, isca injusta, enunciado ambíguo, erro de gabarito).

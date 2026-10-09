@@ -1,7 +1,7 @@
 {
   "_comentario": "Fonte única e estruturada da fila de pendências do organismo. A rotina wallenberg-drenagem-continua lê este arquivo a cada disparo: itens com alc='auto' e status='aberta' são executados sozinhos pelo Gestor dono (via seu Agente, quando aplicável); os demais (humano/tecnico/planejado) só são reconciliados, nunca forçados. O Painel do Fundador (painel_fundador_sttk.html) espelha este arquivo — ao alterar aqui, regerar o array `pendencias` do painel e republicar.",
   "schema_versao": 1,
-  "atualizado_em": "2026-10-09 (Wallenberg: +5 itens da analise do organismo)",
+  "atualizado_em": "2026-10-09",
   "itens": [
     {
       "id": "lacuna-kelsen-dec3046-xxii-vaga-afastamento-frontal-07-10-2026",
@@ -72,8 +72,9 @@
       "desde": "2026-10-08",
       "crit": "alta",
       "alc": "auto",
-      "status": "aberta",
-      "resolvido_em": null,
+      "status": "resolvida",
+      "resolvido_em": "2026-10-09",
+      "res": "PROVA (09/10, Kelsen): (1) Read do PDF COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf, pagina 15: Art. 29 III verbatim = 'deverao estar obrigatoriamente demarcadas, exceto quando estiver atendida a proporcao minima de vinte cinco metros quadrados de area de estacionamento por vaga'. (2) Art. 29 I e II (mesma p. 15) = so 2,50x5,00 (vaga) e 2,50x5,00 (manobra); o 25 m2 NAO esta em I nem em II. A premissa do item ('base dos 25 m2 em Art. 29 I+II') nao confere com o primario e NAO foi adotada. (3) Skill v1.5: citacao 'COES (p. 15) | Art. 29 III'; grep de 'p. 19' = 0 ocorrencias. (4) R6 continua REPROVADA (SKILL.md, linha de R6, 08/10); texto da lei mantido. Backup: _backups/2026-10-09/vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj_SKILL_ANTES_pendencias_09-10.md (md5 4EF6A0A8770CF67BB72CB0C184DF1819 = origem).",
       "txt": "Skill vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj v1.0 (nota 7,60 no parecer v6): R6 atribui a 25 m2 o sentido de manobra; a citacao de Art. 29 III esta errada (p. 19, limiar de demarcacao). Reconferir com Art. 29 I+II e corrigir.",
       "acao": "Rotina Diaria de amanha aciona Kelsen para corrigir a Skill de vaga (R6 e citacoes) com backup e harmonizar com a Skill de levantamento."
     },
@@ -128,8 +129,9 @@
       "desde": "2026-10-08",
       "crit": "media",
       "alc": "auto",
-      "status": "aberta",
-      "resolvido_em": null,
+      "status": "resolvida",
+      "resolvido_em": "2026-10-09",
+      "prova": "01_CEO/Agentes_Diretos/Bardi (Examinador)/checagem_gabarito_etapa3_09-10-2026.md: tabela isca a isca com conta refeita, saida, fonte e pagina. G1 (Isca 1, VII remete a XI), G2 (Isca 4, 407 nao cabe em 520) e G4 (Isca 2, envelope cai ~20,30 m2, nao 170-190) CONFIRMADOS contra COES p. 6/7/19/21, Dec. 3.046 pp. 2-3 (Hely Fontes_Legislacao) e LC 270 PDF p. 125. Gabarito lacrado nao alterado. Nao verificado: texto do item 1 do Anexo I do Dec. 55.622 e CC art. 1.301 (secao 4 da checagem).",
       "txt": "Etapa 03 v7 (Bardi): G4 do gabarito: isca 2 diz que o envelope cai 170-190 m2, mas cai cerca de 20 m2. Erro do gabarito, nao descontado do executor. Junto com G1 (isca 1) e G2 (isca 4) do v6: 3 erros de gabarito na etapa 3.",
       "acao": "Rotina Diaria de amanha aciona o Bardi para refazer a checagem de conta de cada isca antes de qualquer lacre futuro (regra da casa 08/10)."
     },
@@ -142,8 +144,9 @@
       "desde": "2026-10-08",
       "crit": "alta",
       "alc": "auto",
-      "status": "aberta",
-      "resolvido_em": null,
+      "status": "resolvida",
+      "resolvido_em": "2026-10-09",
+      "prova": "PROPOSTA criada em 01_CEO/Skills_Propostas/2026/10/bardi_ensaio-sombra-checagem-gabarito-antes-lacre.md (status proposta, NAO instalada em .claude/skills). Grep previo em .claude/skills: nenhuma Skill de checagem de gabarito de examinador (Grep de conteudo: as linhas lidas usam 'gabarito' como altura urbanistica, exceto a Skill de criterios do Ensaio; 6 linhas longas omitidas pelo Grep nao foram lidas). Checklist com as 3 checagens obrigatorias e caso de treino ficticio. Ativacao depende de validacao de Claudemberg.",
       "txt": "Erros de gabarito da etapa 3 (G1 isca 1: inciso aplicado a caso que nao e o dele; G2 isca 4: conta contraditoria; G4 isca 2: area do envelope errada). Decisao de Claudemberg 08/10: erro de gabarito e do Bardi e ele deve melhorar a propria inteligencia.",
       "acao": "Rotina Diaria de Skill (Passo de skills, prioridade): criar Skill 'ensaio-sombra-checagem-gabarito-antes-lacre' com checklist obrigatorio antes de lacrar: (1) refazer toda conta da isca; (2) conferir se o inciso/artigo se aplica a situacao da isca; (3) testar a isca contra o primario com pagina. Ajustar tambem a Skill ensaio-sombra-criterios-aprovacao-por-etapa."
     },
@@ -156,8 +159,9 @@
       "desde": "2026-10-08",
       "crit": "media",
       "alc": "auto",
-      "status": "aberta",
-      "resolvido_em": null,
+      "status": "resolvida",
+      "resolvido_em": "2026-10-09",
+      "res": "PROVA (09/10, Kelsen): (1) Art. 31 III 'vagas de estacionamento;' e IV 'afastamento frontal, para estacionamento coberto de veiculos, em telha va, com um pavimento de altura;' lidos na p. 17 do COES consolidado SMU (render da pagina); transcritos verbatim na secao 2-bis da Skill v1.5. (2) Art. 29 IV corrigido na Skill v1.5, secao 3, 'Manobra compartilhada': IV = acesso as faixas de circulacao, minimo 2,50 m (p. 15); nao trata de manobra. (3) Harmonia com a Skill de levantamento (Lucio): grep no SKILL.md da Skill levantamento mostra v1.9 (08/10), linha 10: 'Art. 29 IV corrigido para o que o texto diz'. Manobra compartilhada segue como leitura, nao texto. Backup: _backups/2026-10-09/vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj_SKILL_ANTES_pendencias_09-10.md (md5 4EF6A0A8770CF67BB72CB0C184DF1819).",
       "txt": "Etapa 03 v7 (Bardi): COES Art. 31 III-IV (p. 17) nao tratados na garagem; Art. 29 IV citado para manobra compartilhada sem fonte conferida, nas Skills de vaga e de levantamento.",
       "acao": "Rotina Diaria de Skill: Kelsen melhora a Skill vaga-estacionamento (acrescenta Art. 31 III-IV com pagina e corrige o uso do Art. 29 IV) e harmoniza com a Skill de levantamento (Lucio) antes de qualquer caso novo."
     },
@@ -200,8 +204,9 @@
       "desde": "2026-10-08",
       "crit": "alta",
       "alc": "auto",
-      "status": "aberta",
-      "resolvido_em": null,
+      "status": "resolvida",
+      "resolvido_em": "2026-10-09",
+      "prova": "Backup integral 01_CEO/Decisoes_Autonomas/_backups/2026-10-09/ensaio-sombra-criterios-aprovacao-por-etapa_SKILL_ANTES_checagem_gabarito.md (64 linhas nao vazias = original). Skill .claude/skills/ensaio-sombra-criterios-aprovacao-por-etapa v1.0 -> v1.1 com secao 8 (3 checagens antes de lacrar; registro isca a isca). Secao 2 (nota minima 8,00; erro de gabarito nao desconta) inalterada. Grep confirma. Gabarito da etapa 3 nao reescrito.",
       "txt": "Etapa 03 v6: iscas 1 e 4 do gabarito estavam erradas (isca 1 manda aplicar o XI, que trata laterais; isca 4 tem conta contraditoria: 407 m2 'cabe' em 520). Decisao de Claudemberg 08/10: erro de gabarito e do Bardi, nao desconta do executor.",
       "acao": "Rotina Diaria de amanha aciona o Bardi para (1) revisar a propria checagem de gabarito antes de lacrar (conta fechada, fonte conferida, isca testada contra o primario); (2) atualizar a Skill ensaio-sombra-criterios-aprovacao-por-etapa com essa checagem. Nao reescrever o gabarito lacrado da etapa 3 sem nova ordem de Claudemberg."
     },
@@ -1262,7 +1267,7 @@
       "crit": "alta",
       "alc": "tecnico",
       "txt": "Oscar nao tem nenhuma tool do Vitruvius que funcione: tools: usa mcp__vitruvius__create_wall e o servidor expoe mcp__vitruvius__vitruvius_create_wall; 10 nomes da lista nem existem. Alem disso ~/.claude/settings.json aponta o MCP para D:\\011_VITRUVIUS_V3\\src\\Server\\mcp-server.js, que nao existe (o app desktop usa D:\\011_VITRUVIUS\\MCP_Server\\dist\\index.js).",
-      "acao": "Feito em 09/10: nomes no oscar.md + caminho no ~/.claude/settings.json. Falta: teste de fumaca com o Revit aberto (Lucio aciona Oscar -> get_revit_status -> get_levels -> cria e apaga 1 nivel), com prova no _estado_oscar.md; e confirmar se subagente em rotina agendada enxerga o MCP."
+      "acao": "Passos 1-3 da Fase 0 FEITOS em 09/10: nomes no oscar.md, caminho no settings.json, teste de fumaca PASSOU ao vivo (Lucio->Oscar: status, niveis, cria TESTE_OSCAR id 16746401, apaga, contagem 3-4-3; conferido por Wallenberg com get_levels direto). Falta o passo 4: confirmar se subagente acionado dentro de rotina agendada enxerga o MCP (Revit precisa estar aberto no horario). Depois disso, Fase 1-A do plano."
     },
     {
       "id": "cardozo-6-agentes-nivel-provisorio-09-10",
@@ -1276,6 +1281,49 @@
       "alc": "humano",
       "txt": "Os 6 Agentes do Cardozo foram promovidos a Autonomous em 12/09 so por exames e nao executaram nada depois (nem Ensaio, nem caso real).",
       "acao": "Reuniao 12/10: Claudemberg decide se o nivel fica marcado como provisorio ate as etapas 8-13 do Ensaio 003 passarem com nota >= 8,00."
+    },
+    {
+      "id": "lacuna-lucio-nbr9050-edicao-09-10-2026",
+      "tipo": "lacuna_conhecimento",
+      "owner": "Lúcio",
+      "agente": "oscar",
+      "cardId": "lucio",
+      "desde": "2026-10-09",
+      "crit": "media",
+      "alc": "auto",
+      "status": "aberta",
+      "resolvido_em": null,
+      "txt": "Ensaio 003 etapa 4 (parecer_bardi etapa_04): isca 1 parcial. Falta a edição da NBR 9050:2020 (suíte térrea e banheiro acessível). O acervo D:\\008 só tem a NBR 9050 de 2015, desatualizada. FORA DO ORGANISMO.",
+      "res": "Lacuna do organismo (regra Claudemberg 06/10).",
+      "acao": "Rotina Diária de amanhã aciona Lúcio para obter a NBR 9050:2020 no acervo (ou registrar o canal de acesso) e criar/corrigir a Skill nbr9050 com o texto da edição vigente; Tenreiro entra se a suíte afetar interiores."
+    },
+    {
+      "id": "bardi-gabarito-etapa4-erros-09-10",
+      "tipo": "melhoria_examinador",
+      "owner": "Bardi",
+      "agente": "Bardi (Examinador)",
+      "cardId": "bardi",
+      "desde": "2026-10-09",
+      "crit": "alta",
+      "alc": "auto",
+      "status": "aberta",
+      "resolvido_em": null,
+      "txt": "Gabarito da etapa 4 com 6 erros próprios (parecer_bardi etapa_04, GE-1 a GE-6): páginas do COES divergentes entre cópias; Isca 5 diz 'não é pequeno' (1 ha no limite do LC 270 Art. 215 §2º); 'LC 270 Art. 19 II' é LC 281; 'vedada' mais forte que a errata; herança não plantada (Viabilidade v9 340–360 m² x 297,28; SMD 10% x 20%); LC 270 Art. 363 §2º X omitido. Gabarito lacrado não alterado.",
+      "acao": "Rotina Diária de amanhã aciona Bardi para rodar a checklist ensaio-sombra-checagem-gabarito-antes-lacre sobre o gabarito da etapa 4 e registrar errata à parte. Não reescrever o gabarito lacrado sem ordem de Claudemberg. Erro de gabarito não desconta do executor."
+    },
+    {
+      "id": "kelsen-coes-paginacao-divergente-09-10",
+      "tipo": "melhoria_skill",
+      "owner": "Kelsen",
+      "agente": "hely",
+      "cardId": "kelsen",
+      "desde": "2026-10-09",
+      "crit": "media",
+      "alc": "auto",
+      "status": "aberta",
+      "resolvido_em": null,
+      "txt": "Duas cópias do COES com paginação diferente: Hely/Kelsen citam Art. 29 III na p. 15 e Art. 31 III–IV na p. 17 (consolidado SMU); o acervo (impressaoWeb) cita pp. 19 e 21. Bardi afirma que p. 15 = Arts. 22–24 em uma das cópias. Conflito não resolvido: as Skills e as pareceres v7/v8 citam páginas sem dizer qual cópia.",
+      "acao": "Rotina Diária de amanhã aciona Kelsen (com Hely) para ler as duas cópias, dizer por escrito qual é a oficial e corrigir as citações de página das Skills de vaga e de levantamento para indicar o arquivo usado."
     }
   ]
 }

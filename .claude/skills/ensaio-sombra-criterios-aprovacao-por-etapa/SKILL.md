@@ -1,9 +1,9 @@
 ---
 name: ensaio-sombra-criterios-aprovacao-por-etapa
 description: Critérios genéricos de aprovação por tipo de etapa do Ensaio Sombra (Legal, Viabilidade, Arquitetura, Complementares, Fechamento) — forma da entrega, conferência de fonte primária, regra de nota 0 a 10 (mínimo 8,00 por membro) e lista de citações não verificadas. Use sempre que um Gestor ou Agente for preparar, revisar ou se preparar para a auditoria de uma etapa do Ensaio Sombra — mesmo que o pedido só mencione "ensaio", "auditoria da etapa", "nota de assertividade" ou "critério de aprovação", sem citar a Skill pelo nome.
-version: v1.0
+version: v1.1
 status: ativa-com-ressalva
-data: 2026-10-08
+data: 2026-10-09
 origem: "Proposta do Bardi (08/10/2026). Versão pública reescrita na Drenagem de 08/10/2026 (lacuna lacuna-criterios-ensaio-sombra-003), sem iscas, sem caso e sem gabarito. A proposta original não foi alterada."
 tipo: Processo (Examinador)
 validacao: "Instalada pela Drenagem de 08/10/2026; ratificação de Claudemberg pendente. Citações não verificadas listadas na seção 7."
@@ -78,4 +78,16 @@ Citações usadas nesta Skill que **não foram conferidas no texto primário**. 
 - **NBR 9050**: no acervo, a versão de 2015 está marcada como desatualizada; o texto de 2020 não foi conferido.
 - Não estão no acervo local: NBR 15575-4, NBR 14565, NBR 16264, NBR 16636-4, NBR 14037, NBR 5626, NBR 10844, NBR 16783, NBR 9575, NBR 6120, NBR 6122, NBR 8681.
 - Estão no acervo, mas os itens citados não foram conferidos nesta rodada: NBR 5410 (§4.2), NBR 14653-2 (itens C1 a C6), NBR 12721, COE LC 198/2019 (artigos citados).
-- **LC 270/2024** e **Decreto 3.046/81**: não estão no acervo local; o acervo de legislação do Hely não foi consultado nesta rodada.
+- **LC 270/2024** e **Decreto 3.046/81**: não estão no acervo `D:\008`, mas estão no acervo de legislação do Hely (`01_CEO\Gestores\Kelsen (Legal)\Agentes\Hely\Fontes_Legislacao\`). Conferidos em 09/10/2026: Dec. 3.046, pp. 2–3 (Disp. Gerais VII, XI); LC 270, PDF p. 125 (Art. 350 III). Conferência pontual, não integral.
+
+## 8. Checagem de gabarito antes de lacrar (examinador)
+
+Antes de lacrar qualquer gabarito do Ensaio Sombra, o examinador cumpre três checagens obrigatórias (detalhadas na Skill proposta `ensaio-sombra-checagem-gabarito-antes-lacre`, ainda não ativa):
+
+1. **Refazer toda conta da isca**, com área, pavimento e regime de medição explícitos. A conclusão ("cabe", "não cabe", "falta") tem de bater com o número. Número sem artigo lido é ponto de julgamento, não conta.
+2. **Conferir se o inciso ou artigo se aplica à situação da isca**, lendo o dispositivo até o último período, inclusive remissões a outro inciso. Permissão não se usa como restrição.
+3. **Testar a isca contra a fonte primária, com página** lida no PDF. Fonte não lida vira "não verificado" na checagem.
+
+Registro: a checagem sai em arquivo, isca a isca (conta refeita, saída, fonte e página), na pasta do examinador. Erro de gabarito é do examinador e não desconta do executor. Ele entra em `pendencias.json` como item de melhoria do examinador. O gabarito lacrado não é reescrito sem ordem de Claudemberg.
+
+Esta seção não muda a regra de nota da seção 2 (mínimo 8,00 por membro; erro de gabarito não desconta do executor).

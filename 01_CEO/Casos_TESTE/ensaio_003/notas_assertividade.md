@@ -55,6 +55,8 @@ Regra de Claudemberg (07/10/2026): o Bardi dá uma nota de 0,00 a 10,00 ao Gesto
 | 08/10/2026 | 03 Levantamento | v8 | Skill vaga-estacionamento v1.3 (dona Kelsen) | Skill | 8,30 | l. 91 mantém "a soma I+II sustenta a leitura" após a reprovação da R6; l. 52 cita Art. 29 IV para manobra compartilhada; brecha 3 sem o XXIII a/b |
 | 08/10/2026 | 03 Levantamento | v8 | Skill levantamento-topografico v1.8 (Lúcio) | Skill | 9,20 | §5-bis l. 93 cita Art. 29 IV para manobra (v7 item 10 não concluído); espelho `.agents` na v1.1 não verificado |
 | 08/10/2026 | 03 Levantamento | v8 | Skill viabilidade-cub v1.7 (Villaça) | Skill | 9,40 | v1.6 incorporou a conta de 25 m² por vaga (corrigida na v1.7 do mesmo dia); escopo restrito a R6 e Art. 350 III |
+| 09/10/2026 | 04 Briefing | v1 | Lúcio | Gestor | 7,75 | "Entrega completa em formato" sem prova e contrariada pelo entregável mínimo (−1,00); A2 omitiu o aviso do gabarito no git status (−0,50); não checou os 11 itens do entregável nem as 10 Skills (−0,75) |
+| 09/10/2026 | 04 Briefing | v1 | Oscar | Agente | 6,25 | Isca 1 parcial (edição da NBR 9050) −0,75; Isca 3 parcial (CAB = CAM ausente) −0,75; 3 de 10 Skills declaradas −0,75; organograma e esquemas só em texto −0,50; 520 m² sem separação numérica −0,50; SMD (P6 "fechada", conta de 12% não feita) −0,25; páginas do COES sem nome da cópia −0,25 |
 
 ## Média por membro (retroativo, Ensaio 003 até 07/10/2026)
 
