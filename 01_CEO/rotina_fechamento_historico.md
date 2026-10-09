@@ -1,4 +1,4 @@
----
+﻿---
 name: rotina-fechamento-historico
 description: "Histórico de rodadas antigas do Fechamento de Rotina — movidas do template quando ele passa de 2 rodadas recentes. Nada é apagado, só sai da leitura obrigatória do template."
 metadata:
@@ -10,6 +10,28 @@ metadata:
 # Histórico de Rodadas — Fechamento de Rotina
 
 Rodadas completas movidas aqui, sem edição, a partir de `01_CEO/rotina_fechamento_template.md`.
+
+## [2026-10-06] -- Diaria Skills v3.5.0 (Terca) -- RODADA COM SINAL DE CLAUDEMBERG (1 Skill proposta -- NBR 6492:2021)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** 06/10/2026, terca-feira. Inicio na sequencia da sessao de segunda.
+- [x] **Sinal de Claudemberg:** lacuna real identificada -- gestores e equipes nao tem mapa formal de como entregar Memoriais e documentacoes por etapa, nem como estruturar aprovacoes de etapa. Pediu que "a inteligencia disso entre para a criacao de Skill".
+- [x] **Pesquisa de fonte primaria:** NBR 6492:2021 localizada no acervo. Paginas 1-20 de 40 lidas via pypdf. Secoes 1-5.5 cobertas (LV-ARQ ate AP-ARQ inclusive).
+- [x] **Skill criada:** `nbr6492-2021-memoriais-por-etapa-projeto` v1.0 -- proposta para Oscar/Lucio. Mapa de obrigatorio vs. opcional por etapa, conteudo de cada memorial, como usar nas aprovacoes de Gate. Status: proposta (secoes 5.6-5.8 nao lidas -- R1; aguarda validacao de Lucio).
+- [x] **Decisao de escopo:** Skills analogas para outros Gestores (Kelsen, Cardozo, Villaca, Lele) ficam como item futuro da rotina. Cada Gestor pesquisa sua propria cadeia.
+- [x] **Feed:** 1 evento `skill` registrado (06/10). Indice de Outubro atualizado (6a Skill de Outubro).
+- [ ] **Passo 8 (Trilha B):** nao rodou -- nenhum `_estado_` trouxe lacuna de ferramenta.
+
+### O QUE FICOU PENDENTE (Cuidado: nao repita)
+
+- **Nao duplicar:** `nbr6492-2021-memoriais-por-etapa-projeto` -- Skill criada 06/10.
+- **R1 da nova Skill (Oscar/Lucio):** secoes 5.6-5.8 da NBR 6492:2021 (PE-ARQ, As Built) nao lidas. Confirmar antes de usar em Executivo real.
+- **Validacao pendente:** Lucio precisa validar a Skill antes de ativar com ressalva.
+- **Skills analogas para outros Gestores:** item de trabalho futuro da rotina (Passo 1 de cada Gestor). Nao criar agora.
+- **Continuam valendo todos os itens de 05/10:** Hely (R2 levantamento), Landell (RECON-BT), SELCA R1/R4/R7, NBR 13133, bug do /watch (-vsync).
+
+---
 O template mantém só as 2 rodadas mais recentes + a seção consolidada "O QUE NÃO FAZER (acumulado)".
 Os itens ❌ de todas as rodadas abaixo já foram incorporados nessa seção consolidada — não precisa reler tudo aqui para saber o que não fazer; venha aqui só para o detalhe completo de uma rodada específica.
 

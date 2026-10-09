@@ -1,4 +1,4 @@
----
+﻿---
 name: rotina-fechamento-template
 description: "Template de Fechamento de Rotina — preenchido ao fim de cada rodada, lido no início da próxima"
 metadata:
@@ -21,6 +21,25 @@ metadata:
 - O que tomar cuidado
 
 **Manutenção [v1.0 — 30/09/2026]:** o Fechamento do Dia (20:00) mantém este arquivo com só as 2 rodadas mais recentes + a seção consolidada "O QUE NÃO FAZER (acumulado)" no fim. Rodadas mais antigas vão, inteiras, para `01_CEO/rotina_fechamento_historico.md` — nada é apagado.
+
+---
+
+## [2026-10-09] -- Diaria Skills v3.5.0 (Sexta) -- RODADA DE SEXTA (Painel e métricas)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** 09/10/2026, sexta-feira. DayOfWeek = Friday (máquina). Pipeline de sexta (Passos 6, 9, 10).
+- [x] **Passo 0:** `_passagem_do_dia.md` lida (dizia que a rodada de 09/10 não tinha rastro; registrado aqui). Feed: último evento `status` era 02/10 (7 dias de defasagem), corrigido nesta rodada.
+- [x] **Passo 9 (Dashboard):** `painel_status.json` reescrito. Membros recontados pela linha `**Nível atual:**`: 10 Auto · 4 Assisted · 1 Shadow · 4 Formação (19, sem mudança). Pendências recontadas: 18 abertas/em andamento e 61 fechadas (o valor de 02/10, 50/58 e "8 ativas", estava defasado). Skills: 8 arquivos em Outubro (inclui versões corrigidas, não só novas).
+- [x] **Evento `status` gravado** via `Append-STTKLog.ps1` (resumo da semana 05-09/10).
+- [ ] **Passo 6 (Painel):** nenhum evento de projeto novo além do resumo; a aprovação da etapa 3 do Ensaio entrou apenas no texto do resumo.
+- [ ] **Passo 7 (Learning Agent):** não executado (opcional, sem tempo útil após a limpeza de contagem).
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **Ensaio 003:** etapa 4 (Briefing) aguarda `criar_caso` pelo Bardi. Não criar caso aqui: fora do escopo da Diária.
+- **Pendências:** a lista de 1215 linhas não foi lida por completo; o detalhamento por criticidade do Painel continua sem recontagem.
+- **Skills da semana:** o número de "ativas" não foi recontado; só o total de arquivos em Outubro.
 
 ---
 
@@ -73,27 +92,6 @@ metadata:
 
 ---
 
-## [2026-10-06] -- Diaria Skills v3.5.0 (Terca) -- RODADA COM SINAL DE CLAUDEMBERG (1 Skill proposta -- NBR 6492:2021)
-
-### RODADA ATUAL (O que foi entregue)
-
-- [x] **Dia confirmado:** 06/10/2026, terca-feira. Inicio na sequencia da sessao de segunda.
-- [x] **Sinal de Claudemberg:** lacuna real identificada -- gestores e equipes nao tem mapa formal de como entregar Memoriais e documentacoes por etapa, nem como estruturar aprovacoes de etapa. Pediu que "a inteligencia disso entre para a criacao de Skill".
-- [x] **Pesquisa de fonte primaria:** NBR 6492:2021 localizada no acervo. Paginas 1-20 de 40 lidas via pypdf. Secoes 1-5.5 cobertas (LV-ARQ ate AP-ARQ inclusive).
-- [x] **Skill criada:** `nbr6492-2021-memoriais-por-etapa-projeto` v1.0 -- proposta para Oscar/Lucio. Mapa de obrigatorio vs. opcional por etapa, conteudo de cada memorial, como usar nas aprovacoes de Gate. Status: proposta (secoes 5.6-5.8 nao lidas -- R1; aguarda validacao de Lucio).
-- [x] **Decisao de escopo:** Skills analogas para outros Gestores (Kelsen, Cardozo, Villaca, Lele) ficam como item futuro da rotina. Cada Gestor pesquisa sua propria cadeia.
-- [x] **Feed:** 1 evento `skill` registrado (06/10). Indice de Outubro atualizado (6a Skill de Outubro).
-- [ ] **Passo 8 (Trilha B):** nao rodou -- nenhum `_estado_` trouxe lacuna de ferramenta.
-
-### O QUE FICOU PENDENTE (Cuidado: nao repita)
-
-- **Nao duplicar:** `nbr6492-2021-memoriais-por-etapa-projeto` -- Skill criada 06/10.
-- **R1 da nova Skill (Oscar/Lucio):** secoes 5.6-5.8 da NBR 6492:2021 (PE-ARQ, As Built) nao lidas. Confirmar antes de usar em Executivo real.
-- **Validacao pendente:** Lucio precisa validar a Skill antes de ativar com ressalva.
-- **Skills analogas para outros Gestores:** item de trabalho futuro da rotina (Passo 1 de cada Gestor). Nao criar agora.
-- **Continuam valendo todos os itens de 05/10:** Hely (R2 levantamento), Landell (RECON-BT), SELCA R1/R4/R7, NBR 13133, bug do /watch (-vsync).
-
----
 ## O QUE NÃO FAZER (acumulado)
 
 Consolidado em 30/09/2026 a partir de todas as rodadas de 01/09 a 29/09 (movidas para `01_CEO/rotina_fechamento_historico.md`). Itens já resolvidos/superados por rodada mais nova não aparecem de novo — quem quiser o detalhe completo lê o histórico.
