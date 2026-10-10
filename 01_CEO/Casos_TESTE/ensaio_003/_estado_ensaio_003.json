@@ -417,8 +417,7 @@
       "data": "2026-10-08",
       "versao": "v8",
       "obs": "Claudemberg aprovou a v8 como referência da etapa 3 (substitui a v7 como referência; v5-v7 ficam no histórico). Pendências da v8 sendo corrigidas: resíduos da soma I+II na Skill de vaga (l. 52 e 91), Art. 29 IV na Skill de levantamento (l. 93), Art. 31 III-IV (p. 17) não usados, AUTO_TESTE_R6 com claim incorreto, espelhos .agents."
-    }
-    ,
+    },
     {
       "etapa": 3,
       "evento": "pendencias_v8_corrigidas",
@@ -448,5 +447,11 @@
     }
   ],
   "versao_referencia": "v8",
-  "gabaritos_em": "_gabaritos_LACRADO_bardi/ensaio_003/"
+  "gabaritos_em": "_gabaritos_LACRADO_bardi/ensaio_003/",
+  "trava_etapa_5": {
+    "liberada": false,
+    "decisao": "D4 - Claudemberg, 10/10/2026",
+    "motivo": "Etapa 5 (Estudo Preliminar) so comeca depois do exame do Oscar desenhando no Revit (Fase 3 do D:/011_VITRUVIUS/PLANO_AGENTE_GUIADO.md, depois dos Blocos 0-3 do PLANO_ITEM2). A etapa 4 (Briefing) segue normalmente.",
+    "quem_libera": "Claudemberg"
+  }
 }

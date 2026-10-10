@@ -28,9 +28,11 @@ Tarefa `wallenberg-rotina-diaria-skills-v2-7` · seg-sex 09:00 · referência `0
 | 30/09 | interrompida | 8 s | — | Interrompida por Claudemberg para a revisão |
 | 01/10 | sim | ~12 min | 2 Skills ativas-com-ressalva (SELCA Kelsen/Hely; Cobertura Lúcio/Oscar) | Passo 0 leu `_passagem_do_dia.md` corretamente (1ª vez); Cardozo sem Skill |
 | 07/10 | sim | ~5h38min (09:07–14:45) | 0 Skill nova; 6 buscas (2/Gestor); contenção em argila mole já coberta pela Skill de fundações v1.3 | Passo 0 leu a passagem de **05/10** (a de 06/10 não existe). **Não tratou a lacuna `lacuna-kelsen-dimensao-minima-vaga-06-10-2026`** (prioridade zero), que a Drenagem acabou executando. LC 198 com PDF corrompido; /watch sem vídeo. Diário sem linhas de 02 a 06/10 |
+| 09/10 | sim | ~13 min (09:07–09:20) | 0 Skill nova. Painel e métricas reescritos (10 Auto · 4 Assisted · 1 Shadow · 4 Formação); evento `status` gravado | Passo 0 leu a passagem das 08:23 de 09/10 (sem rastro de 09/10 na época). Passo 7 (Learning) não rodou |
 
 ## 3. Candidatas a melhoria
 - (aberta) **Uso real de Skill = 0%.** Em setembro foram cerca de 28 Skills e nenhuma usada em caso real. O Ensaio 003 é a resposta; acompanhar se as Skills aparecem nos pareceres do Bardi.
+  - (09/10) Primeiro dado de uso: na etapa 4 do Ensaio, Oscar declarou 3 de 10 Skills do enunciado, e o Bardi registrou que a Skill legal-oodc não foi lida (`parecer_bardi.md` da etapa 4, §3 e §6). Uso real ainda baixo.
 - (aberta) **Bug do /watch:** `-vsync` no ffmpeg novo e 429/403 do YouTube, recorrentes desde 24/09.
 - (fechada 01/10) **Kelsen sem Skill nova** desde 28/09 — rompido em 01/10 com a Skill SELCA v1.1.
 - (nova 07/10) **Duração fora do padrão e lacuna de prioridade zero ignorada.**

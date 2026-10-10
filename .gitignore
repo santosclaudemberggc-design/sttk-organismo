@@ -1,0 +1,5 @@
+# Gabaritos lacrados do Bardi (Ensaio Sombra) — decisão de Claudemberg D9a, 10/10/2026.
+# Enquanto a etapa está aberta, o gabarito não pode aparecer no `git status` de nenhum agente.
+# Depois que a etapa é aprovada/encerrada, a rotina inclui o gabarito de propósito com `git add -f`.
+# Os gabaritos já versionados continuam versionados.
+_gabaritos_LACRADO_bardi/

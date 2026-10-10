@@ -24,7 +24,29 @@ metadata:
 
 ---
 
+## [2026-10-07] -- Diaria Skills v3.5.0 (Quarta) -- RODADA SEM SKILL NOVA (Pesquisa validou Skill existente)
 
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** 07/10/2026, quarta-feira. DayOfWeek = Wednesday. Horário: 09:30-10:30 (60 min).
+- [x] **Passo 0:** leitura de `_passagem_do_dia.md` (05/10), `rotina_fechamento_template.md` (bloqueadores) e `feed.jsonl`. Sem pendências críticas novas desde 06/10.
+- [x] **Pesquisa seg-qui — 6 buscas, 2 por Gestor:**
+  - **Kelsen:** (1) LICIN 2.0/Decreto 55.622/2025 validado (entrada 01/01/2025, Processo.Rio, 30 dias); (2) LC 198 varandas bloqueado (PDF corrompido no site da prefeitura).
+  - **Lúcio:** (1) conforto térmico poente Zona Oeste — pesquisa genérica, sem vídeo achado; (2) busca de vídeo arquiteto brise — sem resultado YouTube específico.
+  - **Cardozo:** (1) lençol freático Barra/Recreio — sem dados específicos da região; (2) contenção argila mole + hélice contínua — validado com fonte APL blog + literatura acadêmica.
+- [x] **Checagem de coerência:** Cardozo/contenção argila mole JÁ COBERTO pela Skill `fundacoes-solos-moles-lencol-freatico-barra-recreio` v1.3 (ativa-com-ressalva, 01/10/2026, Rotina de Macetes). Tabela 3.1 compara hélice × escavada × pré-moldada. Macetes M1-M4 de Alonso (F1) já documentados. Coerência: 100%.
+- [x] **Passo 3 (Feed):** nenhum evento. Pesquisa não gerou Skill nova, validou recobertura de lacuna existente.
+- [ ] **Passo 4 (Fluxo de Ativação):** N/A (sem Skill).
+- [ ] **Passo 8 (Trilha B):** não rodou. Nenhuma lacuna de ferramenta.
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **Não duplicar:** quarta-feira já confirma cobertura de `fundacoes-solos-moles-lencol-freatico-barra-recreio`.
+- **Bloqueador: LC 198 varandas:** PDF fonte primária corrompido. Kelsen validará se usar varandas em caso real.
+- **Bloqueador: /watch YouTube:** 2 buscas de vídeo sem resultado específico (Lúcio brises, Cardozo hélice). Bug do -vsync continua.
+- **Continuam:** Hely (R2 levantamento cota soleira), Landell (RECON-BT), SELCA R1/R4/R7, varandas LC 198, NBR 13133, Ensaio 003 etapa 3.
+
+---
 
 ## [2026-10-06] -- Diaria Skills v3.5.0 (Terca) -- RODADA COM SINAL DE CLAUDEMBERG (1 Skill proposta -- NBR 6492:2021)
 

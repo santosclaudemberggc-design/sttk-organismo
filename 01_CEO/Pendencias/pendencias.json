@@ -1,7 +1,7 @@
 {
   "_comentario": "Fonte única e estruturada da fila de pendências do organismo. A rotina wallenberg-drenagem-continua lê este arquivo a cada disparo: itens com alc='auto' e status='aberta' são executados sozinhos pelo Gestor dono (via seu Agente, quando aplicável); os demais (humano/tecnico/planejado) só são reconciliados, nunca forçados. O Painel do Fundador (painel_fundador_sttk.html) espelha este arquivo — ao alterar aqui, regerar o array `pendencias` do painel e republicar.",
   "schema_versao": 1,
-  "atualizado_em": "2026-10-09",
+  "atualizado_em": "2026-10-10 (Wallenberg: decisoes D4-D9)",
   "itens": [
     {
       "id": "lacuna-kelsen-dec3046-xxii-vaga-afastamento-frontal-07-10-2026",
@@ -1235,11 +1235,11 @@
       "agente": null,
       "cardId": "sistema",
       "desde": "2026-10-09",
-      "status": "aberta",
+      "status": "em_andamento",
       "crit": "alta",
       "alc": "humano",
       "txt": "Etapas 14-17 do fluxo (Compatibilizacao, Executivo, Orcamento, Liberacao) nao tem nenhum Agente. Lele esta em Shadow. Ver 01_CEO/Casos_TESTE/ensaio_003/mapa_prontidao_etapas_04_17.md.",
-      "acao": "Reuniao Semanal 12/10: Claudemberg decide se Lele propoe a equipe agora (Regra de Cascata) mesmo em Shadow, para o Ensaio 003 chegar na etapa 14 com quem executar."
+      "acao": "D5 aprovada por Claudemberg em 10/10: Lele escreve a proposta de equipe em 01_CEO/Gestores/Lele (Fechamento)/proposta_equipe_fechamento_10-10-2026.md. Claudemberg aprova os nomes antes de qualquer arquivo de agente ser criado."
     },
     {
       "id": "claudemberg-editar-agents-tools-gate-09-10",
@@ -1276,11 +1276,13 @@
       "agente": null,
       "cardId": "sistema",
       "desde": "2026-10-09",
-      "status": "aberta",
+      "status": "resolvida",
       "crit": "media",
       "alc": "humano",
       "txt": "Os 6 Agentes do Cardozo foram promovidos a Autonomous em 12/09 so por exames e nao executaram nada depois (nem Ensaio, nem caso real).",
-      "acao": "Reuniao 12/10: Claudemberg decide se o nivel fica marcado como provisorio ate as etapas 8-13 do Ensaio 003 passarem com nota >= 8,00."
+      "acao": "Reuniao 12/10: Claudemberg decide se o nivel fica marcado como provisorio ate as etapas 8-13 do Ensaio 003 passarem com nota >= 8,00.",
+      "resolvido_em": "2026-10-10",
+      "resolucao": "D6 aprovada por Claudemberg em 10/10: os 6 agentes (baumgart, landell, saturnino, glaziou, tenreiro, mindlin) marcados como Autonomous provisorio no campo Nivel atual do .claude/agents/*.md (backups em _backups/2026-10-09/*_ANTES_D6.md). Voltam a pleno quando a etapa da disciplina (8-13) do Ensaio 003 passar com nota >= 8,00."
     },
     {
       "id": "lacuna-lucio-nbr9050-edicao-09-10-2026",
@@ -1337,6 +1339,60 @@
       "alc": "humano",
       "txt": "Decisao de Claudemberg 09/10: familias Revit que faltarem ao Oscar (porta de correr interna, portao etc.) sao pedidas pela cadeia ao Tenreiro (Interiores), que cria e implementa na etapa dele. Hoje o Tenreiro nao tem nenhuma ferramenta de Revit e o Vitruvius nao cria familia (editor de familias).",
       "acao": "Antes da etapa 11 (Interiores) do Ensaio 003: decidir com Claudemberg como o Tenreiro cria familia (ferramenta nova no Vitruvius para o editor de familias, ou outro caminho). Lista inicial de familias pedidas: porta de correr interna, portao de garagem (D:\\011_VITRUVIUS\\PLANO_ITEM2_FERRAMENTAS_OSCAR.md, secao 3-bis)."
+    },
+    {
+      "id": "kelsen-skill-vaga-redacao-r6-gate-10-10",
+      "tipo": "skill",
+      "owner": "Kelsen",
+      "agente": "hely",
+      "cardId": "kelsen",
+      "desde": "2026-10-10",
+      "status": "resolvida",
+      "resolvido_em": "2026-10-10",
+      "resultado": "Ordem de Claudemberg 10/10 ('Vaga + manobra = 25 m2: se nao for comprovado por lei, isso deve sumir'). Hely varreu o primario inteiro (COES 30/30 pp., Dec. 45.917 2/2, LC 270 384/384, Dec. 3.046 87/87): NAO ha texto que diga vaga + manobra = 25 m2 nem m2 de garagem por vaga; unico 25 m2/vaga e o COES Art. 29 III (p. 15, limiar de dispensa de demarcacao), conferido por Kelsen. Skill de vaga -> v1.6: R6 retirada inteira, Sec.1 e Sec.3 sem soma nem 'pendente de verificacao primaria', fica so linha 'Erro a evitar'. Backup _backups/2026-10-10/vaga-..._SKILL_ANTES_25m2_gate_10-10.md (md5 d55c5b0e...). Instalada = .agents = proposta Outubro (md5 5639c65b..., diff -q rc=0). Proposta decreto3046 (Setembro) l.143 tinha '(25 m2/vaga)': corrigida + PDF gemeo regerado pelo Hely (p. 5). Propagacao para Lucio (levantamento l.94) e Villaca (viabilidade l.69 e l.153): nao editado por Kelsen; lista entregue a Wallenberg.",
+      "crit": "media",
+      "alc": "auto",
+      "txt": "Gate da Coordenacao (Claudemberg, 10/10) aprovou a R6 da Skill vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj COM RESSALVA: a soma 12,50 + 12,50 = 25 m2 (vaga + manobra) e coincidencia aritmetica e nao deve ser citada ao cliente como regra; COES Art. 29 III (p. 15 do PDF consolidado SMU) trata de demarcacao. A redacao obrigatoria atual da R6 (v1.1 secao 6) ainda diz \"a soma vaga + manobra = 25 m2 e leitura\".",
+      "acao": "Kelsen decide e ajusta a redacao da R6 para o texto ao cliente nao citar a soma como regra (pode ficar como nota interna). Backup integral antes; versao nova da Skill; copiar para .agents/skills (o Fechamento do Dia tambem sincroniza). Registro do veredito: 01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/pedido_gate_R6_2026-10-08.md secao 6."
+    },
+    {
+      "cardId": "sistema",
+      "desde": "2026-10-10",
+      "status": "aberta",
+      "crit": "media",
+      "alc": "auto",
+      "tipo": "skill",
+      "id": "lucio-skill-levantamento-sem-m2-por-vaga-10-10",
+      "owner": "Lucio",
+      "agente": "oscar",
+      "txt": "Ordem de Claudemberg 10/10: \"Vaga + manobra = 25 m2: se nao for comprovado por lei, isso deve sumir\". Kelsen varreu COES, Dec. 45.917, LC 270 e Dec. 3.046 inteiros: nao ha lei que fixe m2 de garagem por vaga (Skill de vaga v1.6). Na Skill levantamento-topografico-cadastral-orientado-duli-licin-rj, l. 94 (secao 5-bis) ainda diz \"Area de garagem por vaga: pendente de verificacao primaria (R6 reprovada em 08/10)\" e \"nao reduz o valor por vaga\".",
+      "acao": "Lucio troca por \"A lei nao fixa area de garagem em m2 por vaga; a garagem sai das medidas do Art. 29 I e II desenhadas\" e tira \"nao reduz o valor por vaga\". Changelog (l. 11 e 13) fica a criterio dele. Backup integral antes; versao nova; copiar para .agents/skills."
+    },
+    {
+      "cardId": "sistema",
+      "desde": "2026-10-10",
+      "status": "aberta",
+      "crit": "media",
+      "alc": "auto",
+      "tipo": "skill",
+      "id": "villaca-skill-viabilidade-sem-m2-por-vaga-10-10",
+      "owner": "Villaca",
+      "agente": "mascaro",
+      "txt": "Ordem de Claudemberg 10/10: \"Vaga + manobra = 25 m2: se nao for comprovado por lei, isso deve sumir\". Kelsen varreu COES, Dec. 45.917, LC 270 e Dec. 3.046 inteiros: nao ha lei que fixe m2 de garagem por vaga (Skill de vaga v1.6). Na Skill viabilidade-cub-nbr12721-area-equivalente-nbr14653-revenda-rj, l. 69 (\"Area de garagem por vaga (v1.7): ... pendente de verificacao primaria\") e l. 153 (item 5).",
+      "acao": "Villaca troca as duas linhas pela mesma redacao (a lei nao fixa m2 de garagem por vaga; garagem sai das medidas do Art. 29 I e II). Changelog (l. 16) a criterio dele. Backup integral antes; versao nova; copiar para .agents/skills."
+    },
+    {
+      "cardId": "sistema",
+      "desde": "2026-10-10",
+      "status": "aberta",
+      "crit": "baixa",
+      "alc": "auto",
+      "tipo": "skill",
+      "id": "kelsen-proposta-decreto3046-sincronizar-10-10",
+      "owner": "Kelsen",
+      "agente": "hely",
+      "txt": "A proposta 01_CEO/Skills_Propostas/2026/Setembro/kelsen_decreto3046-81-lc270-2024-licin-barra-recreio.md diverge da Skill instalada (ja divergia antes de 10/10) e a l. 143 ainda cita \"Skill de vaga v1.0\".",
+      "acao": "Kelsen sincroniza a proposta com a instalada (instalada e a fonte), com backup integral antes."
     }
   ]
 }

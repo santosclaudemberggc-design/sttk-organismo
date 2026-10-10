@@ -140,7 +140,7 @@ os parâmetros de referência são os do Decreto 3046/81
 - [ ] Unifamiliar: ler o Dec. 3.046, Disp. Gerais VII **até a última frase** (remete ao XI) e aplicar o XI (§6, M3)
 - [ ] Verificar LMS (Licença Municipal de Supressão) se houver árvores no lote — obrigatória para todo unifamiliar; em APP/área alagadiça pode tornar-se LMP+LMI (Decreto 51.503/2022 Art. 27 p.ú. II/IV)
 - [ ] Se condomínio existente: ler Regramento Construtivo (Anexo do Estatuto) antes de propor implantação
-- [ ] Estacionamento em afastamento frontal: Dec. 3.046 Disp. Gerais XXII veda. Vaga obrigatória dimensão 2,50 m × 5,00 m + 2,50 m × 5,00 m manobra (25 m²/vaga). Consultar Skill `vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj` v1.0 (07/10) para harmonização com LC 270 Art. 363 §2º XII
+- [ ] Estacionamento em afastamento frontal: Dec. 3.046 Disp. Gerais XXII veda. Medidas de vaga 2,50 m × 5,00 m (COES Art. 29 I) e de manobra 2,50 m × 5,00 m (Art. 29 II), p. 15; a lei não fixa m² de garagem por vaga (não somar vaga + manobra = 25 m²; corrigido 10/10/2026, ordem de Claudemberg). Consultar Skill `vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj` v1.0 (07/10) para harmonização com LC 270 Art. 363 §2º XII
 - [ ] Consultar PAA sobre o lote (e linha de fachada ou afastamento definido por projeto em vigor, LC 270 Art. 363 §1º II) antes de fixar a implantação: o afastamento frontal se mede do alinhamento, e não do muro atual (§6, M7)
 - [ ] Confirmar com Lúcio/Oscar se o partido arquitetônico proposto cabe nos parâmetros levantados
 

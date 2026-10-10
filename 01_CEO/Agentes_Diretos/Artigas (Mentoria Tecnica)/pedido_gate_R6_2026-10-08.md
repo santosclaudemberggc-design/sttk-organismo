@@ -53,9 +53,9 @@ Em qualquer decisão, o cálculo de garagem continua pelas medidas de vaga e man
 
 ## 6. Registro do veredito (preenchido só após a decisão)
 
-- **Data:** ____ / ____ / ________
-- **Decisão:** [ ] Aprovar  [ ] Aprovar com ressalva  [ ] Reprovar
-- **Ressalva ou motivo (se houver):** ______________________________________________
-- **Maurício Costa (coordenação técnica):** assinatura ______________________________
-- **Claudemberg (decisão final):** assinatura ______________________________
+- **Data:** 10 / 10 / 2026
+- **Decisão:** [ ] Aprovar  [x] Aprovar com ressalva  [ ] Reprovar
+- **Ressalva ou motivo (se houver):** o texto do COES Art. 29 III (p. 15 do PDF consolidado SMU) fala de demarcação (limiar de dispensa de demarcação, 25 m²/vaga); a soma 12,50 + 12,50 = 25 m² (vaga + manobra) é coincidência aritmética e não deve ser citada ao cliente como regra. A garagem continua dimensionada pelos incisos I e II do Art. 29.
+- **Maurício Costa (coordenação técnica):** não exigido — Gate da Coordenação passou a Claudemberg em 09/10/2026.
+- **Claudemberg (decisão final):** Claudemberg — aprovado por escrito na conversa de 10/10/2026 (decisão D7 da pauta da Reunião Semanal, relatada por Wallenberg; registrado por Artigas).
 - **Registro de origem:** Kelsen (`_estado_kelsen.md`) aponta o resultado. Wallenberg registra no livro-razão (Função 12) se a decisão for relevante.

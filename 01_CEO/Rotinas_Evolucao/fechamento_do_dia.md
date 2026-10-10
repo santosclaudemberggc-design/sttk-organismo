@@ -8,6 +8,7 @@ Tarefa `wallenberg-cronjob-pdf-2000` (id antigo mantido) · seg-sex 20:00 · esc
 | CronJob PDF | 28/08/2026 | Gerava o PDF gêmeo das Skills às 20:00 | Leitura humana das Skills | Claudemberg |
 | **Fechamento do Dia v1.0** | 30/09/2026 | Sem PDF; escreve a passagem do dia para a Diária; deixa o template enxuto (2 rodadas + "NÃO FAZER" acumulado; o resto vai para `rotina_fechamento_historico.md`); 86 PDFs arquivados | Claudemberg não lê PDF; a intenção real era a Diária saber o que foi criado, quando e por onde ir | Claudemberg |
 | v1.1 | 30/09/2026 | Escreve o diário de funcionamento (seção 2) e marca candidatas (seção 3) em `01_CEO/Rotinas_Evolucao/` | Pedido de Claudemberg: memória das rotinas com dados do dia a dia | Claudemberg |
+| v1.2 | 10/10/2026 | Passo 3.6: compara `.claude/skills` com `.agents/skills` toda noite e copia o que mudou (não copia quando o espelho é mais novo; não apaga nada), com prova na passagem | Espelho divergiu 2 vezes (12 diferenças em 09/10) | Claudemberg (D9b, 10/10) |
 
 ## 2. Diário de funcionamento
 | Data | Rodou? | Resultado | Observação |
@@ -15,6 +16,7 @@ Tarefa `wallenberg-cronjob-pdf-2000` (id antigo mantido) · seg-sex 20:00 · esc
 | 30/09 | sim (20:02) | Passagem escrita; template enxugado (rodadas 01-25/09 → histórico) | 1ª rodada v1.0. Sugeriu à Diária "confirmar com o Bardi", o que não é papel dela (o Ensaio roda antes) |
 | 01/10 | sim (~20:05) | Passagem escrita; rodada de 28/09 movida para o histórico (template de volta a 2 rodadas + consolidado); diário de funcionamento das 4 rotinas do dia atualizado via `list_task_runs` | Recomendação à Diária desta vez ficou restrita ao papel dela (pesquisar/criar Skill); não recomendou nada do Ensaio |
 | 07/10 | sim, com atraso (disparo 20:02; execução em 08/10 a partir de ~07:18) | Passagem de 07/10 escrita; rodadas de 29/09, 01/10, 02/10 e 05/10 → histórico; consolidado ganhou os temas de 05-07/10; mojibake do cabeçalho e do consolidado do template corrigido; diário das 5 rotinas do dia atualizado | Os diários das rotinas estavam sem linhas de 02 a 06/10, e não foram preenchidos agora porque não há registro do resultado de cada dia |
+| 09/10 | sim (disparo das 20:02; a rodada de 08/10 só saiu às 08:23 de 09/10) | Passagem de 09/10 escrita. Rodada de 07/10 movida para o histórico; template com 09 e 08/10 e consolidado sem alteração (nenhuma rodada traz ❌). Diário das rotinas atualizado via `list_task_runs` | Diário preenchido só com o que o registro mostra. Macetes pausada; Acervo e Reunião só rodam na segunda |
 
 ## 3. Candidatas a melhoria
 - (observar) A passagem recomenda à Diária ações que não são dela (30/09). Se repetir, explicitar no prompt o que cabe à Diária. Não se repetiu em 01/10.
@@ -23,3 +25,4 @@ Tarefa `wallenberg-cronjob-pdf-2000` (id antigo mantido) · seg-sex 20:00 · esc
   - Evidência: 02/10 sem passagem (Diária de 05/10 registrou "falha a checar"). 06/10 durou 4 s (`list_task_runs`: 23:02:41 → 23:02:45 UTC), sem passagem nem diário. 07/10 disparou às 20:02 e só rodou na manhã de 08/10. Os diários das rotinas ficaram de 02 a 06/10 sem linha.
   - Consequência: a Diária de 07/10 trabalhou com a passagem de 05/10 e perdeu a lacuna de prioridade zero (ver `diaria.md`).
   - Sugestão: investigar a execução de 06/10 (`list_events` da sessão `local_b719c6d6-...`). Na Diária, alarme quando a passagem tiver data anterior a ontem útil.
+  - (09/10) Mais uma ocorrência: o disparo de 08/10 só rodou às 08:23 de 09/10 (a própria passagem registra isso). Com 02, 06, 07 e 08/10, são 4 ocorrências em 5 dias úteis. O disparo de 09/10 (20:02) saiu no horário.

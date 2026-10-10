@@ -100,6 +100,9 @@ Aguardam decisão de Claudemberg/Wallenberg. Observação sobre o Saturnino: a r
 ---
 
 ## 1. Onde Parei / Em Andamento
+- **[10/10/2026 — decisão D6 de Claudemberg, registrada por Wallenberg] Seus 6 Agentes passaram a "Autonomous provisório"** (campo "Nível atual" de cada `.claude/agents/*.md`): foram promovidos só por exames e não fizeram trabalho real depois. Cada um volta a pleno quando a etapa da disciplina dele no Ensaio 003 (8 a 13) passar com nota ≥ 8,00. Até lá, toda entrega deles passa pela sua auditoria (com prova) antes de qualquer uso.
+
+- **[10/10/2026 — Gate da Coordenação, registrado por Artigas] Interiores Daniel-OB (Tenreiro + Mindlin): APROVADO COM RESSALVA por Claudemberg (por escrito, 10/10/2026), como estudo de ambientação, não como projeto de Interiores.** Ressalva e registro completo: `01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/_estado_artigas.md`, seção 1. Artefato correto: `Daniel-OB_Interiores_Slides.html`.
 
 **Rodada 12/09/2026 (tarde) — Exame 3 (Assisted → Autonomous), 6/6 Agentes. Acionado por Wallenberg por decisão de Claudemberg. Tarefa classificada CRÍTICA (primeira aplicação de Exame 3 a Agentes de equipe, não a Gestor).**
 

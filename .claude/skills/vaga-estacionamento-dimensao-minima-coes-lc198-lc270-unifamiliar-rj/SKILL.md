@@ -1,15 +1,15 @@
 ---
 name: vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj
 description: Dimensão mínima legal de vaga de garagem no Rio de Janeiro (COES, LC 198/2019, Arts. 28-29 e 31; Dec. 45.917/2019 Art. 10; LC 270/2024 Arts. 347 II, 350 III, 363 §2º XII e §3º, 368; Dec. 3.046/81 XXI-XXIV na Barra/Recreio) — vaga 2,50 x 5,00 m (paralela 6,00 m), manobra 2,50 x 5,00 m, circulação 2,50 m, rampa 20% e pé-direito 2,20 m, a dispensa da casa unifamiliar e o número de vagas na AP4/ZPP. Use sempre que Oscar/Lúcio, Hely ou Villaça dimensionarem garagem, abrigo, vaga coberta ou descoberta, rampa de subsolo, conta de m² por vaga ou o efeito da vaga coberta na TO/ATE em casa unifamiliar ou condomínio de casas no RJ — mesmo que o pedido só mencione "garagem", "vaga", "carro", "abrigo", "m² por vaga" ou "rampa", sem citar o COES pelo nome.
-version: v1.5
+version: v1.6
 status: ativa-com-ressalva
-data: 2026-10-08
+data: 2026-10-10
 origem: "Lacuna do organismo `lacuna-kelsen-dimensao-minima-vaga-06-10-2026` (Ensaio 003, etapa 3: Levantamento usou 12,50-15,00 m²/vaga sem fonte legal). Pesquisa no primário: Hely, 07/10/2026. Auditoria no primário: Kelsen, 07/10/2026 (COES consolidado SMU pp. 14-17; LC 270 pp. 124-125, 129-132; Dec. 3.046 pp. 4-5)."
 tipo: Inteligência (Trilha A)
 gestor_alvo: Kelsen (Legal)
 agente_principal: Hely (quadro de áreas, DULI, conferência de garagem)
 agentes_cross: Oscar/Lúcio (implantação, garagem, rampa), Villaça (área não computável na viabilidade), Baumgart (subsolo/rampa)
-validacao: Kelsen 07/10/2026 — ativa-com-ressalva (R1-R5 abaixo). R6 REPROVADA em 08/10/2026 (Claudemberg e Maurício Costa): não usar em caso real.
+validacao: Kelsen 07/10/2026 — ativa-com-ressalva (R1-R5 abaixo). R6 RETIRADA em 10/10/2026 por ordem de Claudemberg (não há lei que some vaga + manobra = 25 m²).
 ---
 
 # Skill: Dimensão mínima de vaga de garagem no Rio (COES + LC 270/2024 + Dec. 3.046 na ZPP)
@@ -18,7 +18,7 @@ validacao: Kelsen 07/10/2026 — ativa-com-ressalva (R1-R5 abaixo). R6 REPROVADA
 
 ## 1. POR QUE ESSA SKILL EXISTE
 
-No Ensaio 003 (etapa 3) o Levantamento usou "12,50-15,00 m²/vaga" sem fonte. Os dois números até coincidem com a lei (2,50 x 5,00 = 12,50 m²; vaga paralela 2,50 x 6,00 = 15,00 m²), mas **só a vaga**: a manobra do Art. 29 II é de 2,50 x 5,00 m (mais 12,50 m²), e o Art. 29 III dá **25 m²/vaga** como a proporção que dispensa demarcar as vagas. **O texto do III diz "área de estacionamento por vaga" e não cita a manobra.** A leitura de que os 25 m² seriam área de garagem (vaga + manobra) foi **REPROVADA** (R6). Contar só a vaga (12,50 m²) como área de garagem deixa de fora a manobra do Art. 29 II.
+No Ensaio 003 (etapa 3) o Levantamento usou "12,50-15,00 m²/vaga" sem fonte. Os dois números até coincidem com a lei (2,50 x 5,00 = 12,50 m²; vaga paralela 2,50 x 6,00 = 15,00 m²), mas **só a vaga**: a manobra do Art. 29 II (2,50 x 5,00 m, livre, contígua à menor dimensão da vaga) é medida própria e tem de caber no desenho. A lei não fixa área de garagem em m² por vaga: a garagem sai das medidas dos incisos I e II desenhadas no lote.
 
 ## 2. O TEXTO QUE IMPORTA
 
@@ -57,9 +57,9 @@ O que o texto diz: o III dispensa "vagas de estacionamento" como exigência; o I
 
 ## 3. COMO USAR NA CONTA (Levantamento, EP, quadro de áreas, viabilidade)
 
-- **Vaga perpendicular:** as dimensões de vaga (2,50 x 5,00, Art. 29 I) e de manobra (2,50 x 5,00, Art. 29 II) são texto da lei e servem para checar se a vaga cabe no lote. **A área total de garagem NÃO é calculada por soma de 25 m² (vaga + manobra) e fica pendente de verificação primária** (R6 reprovada em 08/10/2026). O 25 m² do Art. 29 III é só o limiar de dispensa de demarcação.
+- **Vaga perpendicular:** as dimensões de vaga (2,50 x 5,00, Art. 29 I) e de manobra (2,50 x 5,00, Art. 29 II) são texto da lei e servem para checar se a vaga cabe no lote. **A lei não fixa área de garagem em m² por vaga** (varredura do COES, Dec. 45.917, LC 270 e Dec. 3.046 em 10/10/2026, sem achado): a garagem sai das medidas de vaga e de manobra desenhadas. O Art. 29 III é só o limiar de dispensa de demarcação.
 - **Vaga paralela:** 2,50 x 6,00 = 15,00 m²; manobra pode cair para faixa de 3,00 m ao longo do lado maior (Dec. 45.917 Art. 10).
-- **Manobra compartilhada:** o Art. 29 II pede área de manobra "contígua à menor dimensão" de cada vaga (2,50 x 5,00 m). O Art. 29 IV trata de outra coisa: acesso direto e desimpedido às faixas de circulação, de no mínimo 2,50 m de largura (COES p. 15). Ele não diz nada sobre manobra compartilhada. Que duas vagas dividam a mesma manobra é **leitura, não texto**. A área total de garagem **não é calculada por soma de 25 m² por vaga**. Os textos citados nesta linha foram conferidos no primário em 09/10/2026 (Art. 29 II e IV, p. 15).
+- **Manobra compartilhada:** o Art. 29 II pede área de manobra "contígua à menor dimensão" de cada vaga (2,50 x 5,00 m). O Art. 29 IV trata de outra coisa: acesso direto e desimpedido às faixas de circulação, de no mínimo 2,50 m de largura (COES p. 15). Ele não diz nada sobre manobra compartilhada. Que duas vagas dividam a mesma manobra é **leitura, não texto**. Não existe m² de garagem por vaga em lei. Os textos citados nesta linha foram conferidos no primário em 09/10/2026 (Art. 29 II e IV, p. 15).
 - **Pé-direito da garagem e da rampa: 2,20 m livres** (Art. 28 II). Viga e duto contam.
 - **TO:** só **1 vaga coberta** fica fora da projeção na uni/bifamiliar, e só se for "nos termos do COES" (Art. 350 III). Cada vaga coberta a mais entra na TO. **ATE:** vaga, acesso e manobra, cobertos ou não, ficam fora da ATE (Art. 347 II) — sem limite de número.
 - Sempre escrever no relatório: nº de vagas, tipo (coberta/descoberta, perpendicular/paralela), m² de vaga e m² de manobra separados, e o artigo.
@@ -93,13 +93,9 @@ O que o texto diz: o III dispensa "vagas de estacionamento" como exigência; o I
 
 **R5 — Manobra com acesso direto do logradouro.** O Art. 29 §3º dispensa demarcar a faixa de circulação quando a vaga abre direto para a rua, mas não diz que a manobra do inciso II também é dispensada. Não presumir que a rua serve de manobra.
 
-**R6 — O que o 25 m² do Art. 29 III é, e o que é leitura (Kelsen, COES consolidado SMU, p. 15; revisada na v1.1, 08/10/2026).**
+**R6 — RETIRADA em 10/10/2026** (ordem de Claudemberg: "Vaga + manobra = 25 m²: se não for comprovado por lei, isso deve sumir"). Varredura no primário (Hely, 10/10/2026; p. 15 do COES conferida por Kelsen) não achou texto que comprove. O que a lei diz está na §2: Art. 29 I, II, III (limiar de demarcação) e IV.
 
-> **R6 — REPROVADA em 08/10/2026** (decisão de Claudemberg e Maurício Costa). Motivo: a leitura de que os 25 m² do Art. 29 III são área de garagem (vaga + manobra) não tem norma que a valide; pela regra vigente, só entra em caso real regra que siga norma ou regra de mercado que a valide. **Não usar em caso real nem como conta de garagem.** O texto abaixo fica só como histórico. Único que segue válido: o Art. 29 III é limiar de dispensa de demarcação (p. 15), e as dimensões 2,50 x 5,00 (I e II) são texto de lei.
-- *Texto da lei:* Art. 29 III — vagas "deverão estar obrigatoriamente demarcadas, exceto quando estiver atendida a proporção mínima de vinte cinco metros quadrados de área de estacionamento por vaga". Função: limiar para dispensar a demarcação. O texto não cita manobra e não diz que o número é tamanho de garagem.
-- *Texto da lei (outros incisos):* Art. 29 I (vaga 2,50 x 5,00) e Art. 29 II (manobra 2,50 x 5,00).
-- *Interpretação (não é texto):* que o 25 m² do III seja a soma vaga + manobra. Após a reprovação, não citar essa leitura: citar só o limiar de demarcação do Art. 29 III.
-- *Não fazer:* usar o 25 m² como área de garagem a pré-dimensionar, nem afirmar que a lei inclui a manobra no número. Ao Gate da Coordenação (Claudemberg), se o cálculo de garagem for para cliente real.
+**Erro a evitar:** não somar vaga + manobra para chegar a 25 m²; o Art. 29 III é limiar de dispensa de demarcação (COES consolidado SMU, p. 15), não área de garagem.
 
 ## FONTES (primárias, arquivadas)
 
@@ -111,6 +107,7 @@ O que o texto diz: o III dispensa "vagas de estacionamento" como exigência; o I
 
 ## CHANGELOG
 
+- **v1.6 (10/10/2026) — ordem de Claudemberg de 10/10/2026 ("Vaga + manobra = 25 m²: se não for comprovado por lei, isso deve sumir"), após o Gate da Coordenação aprovar a R6 com ressalva (`01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/pedido_gate_R6_2026-10-08.md`, seção 6); pendência `kelsen-skill-vaga-redacao-r6-gate-10-10`.** Varredura no primário (Hely, 10/10): COES 30/30 pp., Dec. 45.917 2/2, LC 270 384/384, Dec. 3.046 87/87; nenhum texto diz que a área por vaga é vaga + manobra = 25 m² nem fixa m² de garagem por vaga. Kelsen conferiu a p. 15 do COES. Retirados: §1 (frase da leitura reprovada), §3 "Vaga perpendicular" e "Manobra compartilhada" (soma de 25 m² e "pendente de verificação primária"), R6 inteira (texto histórico da leitura). Fica a linha "Erro a evitar". As entradas antigas deste changelog são só registro do que mudou, não regra. Backup: `01_CEO/Decisoes_Autonomas/_backups/2026-10-10/vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj_SKILL_ANTES_25m2_gate_10-10.md` (md5 d55c5b0ea14766439adcf084823f4120).
 - **v1.5 (09/10/2026) — pendências `erro-ensaio003-etapa3-v6-skill-vaga-08-10` e `skill-melhoria-kelsen-vaga-art31-art29iv-08-10`.** (a) Linha "Manobra compartilhada" (§3): Art. 29 IV separado da manobra; o IV é só acesso às faixas de circulação (2,50 m), conferido em COES p. 15. (b) Art. 31 III–IV (p. 17) já constavam na §2-bis desde a v1.4, conferidos de novo. (c) Citação do Art. 29 III mantida na p. 15; não há citação à p. 19 na Skill. Sem alteração de R6 (continua REPROVADA). Harmonizada com a Skill de levantamento v1.9 (Lúcio), que já corrigiu o Art. 29 IV. Backup: `01_CEO/Decisoes_Autonomas/_backups/2026-10-09/vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj_SKILL_ANTES_pendencias_09-10.md` (md5 4EF6A0A8770CF67BB72CB0C184DF1819).
 - **v1.4 (08/10/2026) — correção de pendências da etapa 3 (v8 aprovada como referência).** (a) Linha "Manobra compartilhada" (§3) reescrita: que a manobra seja dividida entre vagas é leitura, não texto; a área total não é calculada por soma de 25 m²/vaga; o texto de lei citado precisa ser conferido no primário antes de ser usado. (b) R6, item "Interpretação": retirada a frase que dizia que a soma I + II "sustenta a leitura" (a soma não sustenta conta de garagem; R6 reprovada em 08/10/2026). (c) Nova seção 2-bis: Art. 31 III e IV transcritos verbatim da p. 17 do PDF consolidado SMU, conferidos por Kelsen. Backup: `01_CEO/Decisoes_Autonomas/_backups/2026-10-08/vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj_SKILL_ANTES_v9.md`.
 - **v1.3 (08/10/2026) — correção de contradição na seção 3.** A linha "Vaga perpendicular" dizia para dimensionar a garagem pela soma I + II e, na mesma linha, que a soma não serve de conta de garagem. Reescrita: as dimensões de vaga e de manobra (2,50 x 5,00, Art. 29 I e II) são texto da lei e servem para checar se a vaga cabe no lote; a área total de garagem não é calculada por soma de 25 m² e fica pendente de verificação primária (R6 reprovada em 08/10/2026). Backup: `01_CEO/Decisoes_Autonomas/_backups/2026-10-08/vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj_SKILL_ANTES_v8.md`. Frontmatter `version` acompanhou para v1.3.

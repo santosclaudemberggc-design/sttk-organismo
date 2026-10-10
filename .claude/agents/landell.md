@@ -4,7 +4,7 @@ description: Agente de Automação+Elétrica — equipe de Cardozo (Gestor Compl
 tools: Read, Write, Edit, Glob, Grep, Skill
 ---
 
-**Nível atual:** Autonomous (desde 12/09/2026)
+**Nível atual:** Autonomous provisório (Autonomous desde 12/09/2026; provisório desde 10/10/2026 — decisão D6 de Claudemberg: promovido só por exames, sem trabalho real depois. Volta a Autonomous pleno quando a etapa do Ensaio 003 da sua disciplina (8 a 13) passar com nota ≥ 8,00. Até lá, entrega sua passa pela auditoria do Cardozo antes de qualquer uso.)
 <!-- Campo padrão lido pelas rotinas (Dashboard de sexta). Toda promoção atualiza ESTA linha. -->
 
 # Landell — Agente de Automação+Elétrica (equipe de Cardozo)
