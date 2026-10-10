@@ -94,10 +94,36 @@ footer{font-size:13px;color:var(--ink-2);border-top:1px solid var(--line);paddin
     <div><div class="lbl">Data da reunião</div><div class="val">seg 12/10/2026, 17:00</div></div>
     <div><div class="lbl">Preparado por</div><div class="val">Wallenberg (CEO)</div></div>
     <div><div class="lbl">Para</div><div class="val">Claudemberg</div></div>
-    <div class="row2"><div class="lbl">Revisão</div><div class="val">R02 · 09/10/2026</div></div>
-    <div class="row2"><div class="lbl">Ensaio 003</div><div class="val">etapa 4 de 17</div></div>
-    <div class="row2"><div class="lbl">Decisões suas</div><div class="val">5 itens (D4–D8)</div></div>
+    <div class="row2"><div class="lbl">Revisão</div><div class="val">R03 · 09/10/2026 (noite)</div></div>
+    <div class="row2"><div class="lbl">Ensaio 003</div><div class="val">etapa 4 de 17 (refazer v2)</div></div>
+    <div class="row2"><div class="lbl">Decisões suas</div><div class="val">6 itens (D4–D9)</div></div>
   </header>
+
+  <section>
+    <h2><span class="n">R03</span>Atualização da noite de 09/10</h2>
+    <div class="acoes">
+      <article class="acao"><div class="num">✓</div><div class="corpo">
+        <div class="topo"><h3>Oscar desenhando no Revit</h3><span class="pill feito">Testado</span></div>
+        <p>Teste de fumaça passou (cria e apaga nível). Teste de desenho passou no básico: casa 10 × 8 m com paredes, piso, porta, janelas, ambientes e folha. As cotas de parede e de ambiente saíram erradas com "sucesso". Você viu os erros no Revit, e eles viraram o plano do item 2 (<code>D:\011_VITRUVIUS\PLANO_ITEM2_FERRAMENTAS_OSCAR.md</code>), aprovado.</p>
+      </div></article>
+      <article class="acao"><div class="num">✓</div><div class="corpo">
+        <div class="topo"><h3>Template ARQ.Sttk - 2026 e Bloco 0</h3><span class="pill parcial">Em desenvolvimento</span></div>
+        <p>O template serve para Construção do Zero. O Oscar escreveu os pedidos técnicos das ferramentas do Bloco 0 (ajustar tipos, abrir/salvar como template, escolher selo). Você inseriu os selos A0–A4 e decidiu: M02 é erro, os ambientes pré-criados saem, prefixo "STTK", famílias novas vão para o Tenreiro. A sessão de desenvolvimento do Vitruvius está programando; ainda não há entrega no disco.</p>
+      </div></article>
+      <article class="acao"><div class="num">✓</div><div class="corpo">
+        <div class="topo"><h3>Caminho do servidor do Vitruvius</h3><span class="pill feito">Resolvido</span></div>
+        <p>Pela documentação oficial, a aba Code e as tarefas agendadas leem o <code>claude_desktop_config.json</code> (que já estava certo). A chave no <code>settings.json</code> não é fonte documentada e foi removida, com cópia antes. Agora há uma fonte só.</p>
+      </div></article>
+      <article class="acao"><div class="num">✓</div><div class="corpo">
+        <div class="topo"><h3>Espelho das Skills (<code>.agents/skills</code>)</h3><span class="pill feito">Sincronizado</span></div>
+        <p>Faltavam 2 Skills e 10 estavam desatualizadas (em todas, a original era a mais nova). Agora 51 = 51, sem diferença. Ele está dentro do git, ao contrário do que se anotava. Volta a divergir sempre que uma Skill muda e ninguém copia (D9).</p>
+      </div></article>
+      <article class="acao"><div class="num">!</div><div class="corpo">
+        <div class="topo"><h3>Primeiro efeito da regra "auditoria com prova"</h3><span class="pill decidir">Funcionou</span></div>
+        <p>Na etapa 4 (Briefing), no mesmo dia em que a regra entrou, o Bardi tirou 1,00 do Lúcio por "Entrega completa em formato" sem prova. Etapa reprovada (Oscar 6,25, Lúcio 7,75); refazer é a 2ª versão, dentro do teto de 3. Alerta: o gabarito da etapa 4 aparece no <code>git status</code> como arquivo novo, e a nota do Lúcio cita isso. O nome do gabarito fica visível para qualquer agente que rode <code>git status</code> (D9).</p>
+      </div></article>
+    </div>
+  </section>
 
   <section>
     <p class="lead">Claudemberg, em 09/10 você me autorizou a executar o que recomendei, por ordem de impacto. Fiz o que estava na minha alçada. Três coisas tinham travado na permissão automática; com a sua autorização, ainda em 09/10, apliquei as três (Hely com web, Gate nos agentes e nas Skills, ligação do Oscar com o Vitruvius) e fiz o commit local. Abaixo: seus 3 ajustes, o que foi feito, o comparativo de como estava e como fica, e as 5 decisões que ainda dependem de você na segunda.</p>
@@ -243,6 +269,11 @@ footer{font-size:13px;color:var(--ink-2);border-top:1px solid var(--line);paddin
       <div class="dec">
         <div class="q">D8 · Confirmar a pausa da Rotina Macetes</div>
         <div class="rec"><b>Recomendo: manter pausada</b> até 1 vídeo do YouTube ser assistido com o motor Gemini. Se você preferir religar já, é uma linha na tarefa agendada.</div>
+      </div>
+
+      <div class="dec">
+        <div class="q">D9 · Duas proteções pequenas (novas, 09/10 noite)</div>
+        <div class="rec">(a) <b>Gabarito fora do <code>git status</code>:</b> acrescentar <code>_gabaritos_LACRADO_bardi/</code> ao <code>.gitignore</code>, para nenhum agente ver o nome do gabarito ao rodar <code>git status</code>. Hoje o lacre é só por regra. <b>Recomendo: sim.</b> (b) <b>Espelho das Skills sempre igual:</b> o Fechamento do Dia (20:00) compara <code>.claude/skills</code> com <code>.agents/skills</code> e copia o que mudou, registrando na passagem do dia. <b>Recomendo: sim</b>, porque já divergiu duas vezes.</div>
       </div>
 
     </div>

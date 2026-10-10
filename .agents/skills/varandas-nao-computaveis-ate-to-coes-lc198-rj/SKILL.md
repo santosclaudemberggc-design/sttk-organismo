@@ -14,7 +14,7 @@ validacao: Kelsen 28/09/2026 — PROCEDE COM RESSALVA (C1-C3 aplicadas na v1.1; 
 
 # Skill: Varandas e Sacadas Não Computáveis na ATE e na Taxa de Ocupação (COES, LC 198/2019, Art. 8º)
 
-> ⚠️ RESSALVA DE FONTE — (1) Conferido no texto consolidado oficial da SMU (PDF de 07/01/2026, arquivado em `Gestores\Kelsen (Legal)\Agentes\Hely\Fontes_Legislacao\COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`): o Art. 8º não tem alteração. O COES só foi alterado pela LC 283/2025 (Art. 35 §7º) e pela LC 291/2025 (Art. 2º §7º). Falta conferir, na Busca Fácil, se existe ato posterior a 07/01/2026. (2) **Confirmado em 01/10/2026:** a Barra/Recreio (ZPP, Dec. 3.046/81 incorporado pela LC 270/2024) **tem regra própria** de varanda, que está na §4.1. Ainda não se sabe qual regra prevalece quando o COES e o Dec. 3.046 divergem, e isso vai ao Gate do Maurício. Em caso real, o Hely confirma a subzona no RIU e trata o benefício como provisório até lá.
+> ⚠️ RESSALVA DE FONTE — (1) Conferido no texto consolidado oficial da SMU (PDF de 07/01/2026, arquivado em `Gestores\Kelsen (Legal)\Agentes\Hely\Fontes_Legislacao\COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`): o Art. 8º não tem alteração. O COES só foi alterado pela LC 283/2025 (Art. 35 §7º) e pela LC 291/2025 (Art. 2º §7º). Falta conferir, na Busca Fácil, se existe ato posterior a 07/01/2026. (2) **Confirmado em 01/10/2026:** a Barra/Recreio (ZPP, Dec. 3.046/81 incorporado pela LC 270/2024) **tem regra própria** de varanda, que está na §4.1. Ainda não se sabe qual regra prevalece quando o COES e o Dec. 3.046 divergem, e isso vai ao Gate da Coordenação (Claudemberg). Em caso real, o Hely confirma a subzona no RIU e trata o benefício como provisório até lá.
 
 ## 1. POR QUE ESSA SKILL EXISTE
 
@@ -54,7 +54,7 @@ Em lote onde cada m² de ATE é disputado, saber **o que não entra na conta** v
 
 - O lote pode estar sob o regime da **LC 270/2024, que incorporou o Decreto 3046/81** (Skill `decreto3046-81-lc270-2024-licin-barra-recreio`), com parâmetros próprios por subzona. **Antes de contar com o §4º, Hely confirma na SMDU/RIU se a subzona tem regra própria de cômputo de varanda** (R1).
 - Condomínios da Barra costumam ter **regulamento construtivo próprio**, mais restritivo que a lei (caso Daniel-OB, Anexo II). A varanda pode ser legal e mesmo assim barrada pelo condomínio. É matéria civil: sinalize ao cliente.
-- Em caso real, tudo é análise preliminar até passar pelo **Gate do Maurício** (R4).
+- Em caso real, tudo é análise preliminar até passar pelo **Gate da Coordenação (Claudemberg)** (R4).
 
 ### 4.1 O regime da ZPP: Dec. 3.046/81, Disposições Gerais VII e XI (lido por Kelsen em 01/10/2026, `Decreto3046_1981_PlanoPilotoBaixadaJacarepagua.pdf`, pp. 2-3)
 
@@ -64,7 +64,7 @@ Em lote onde cada m² de ATE é disputado, saber **o que não entra na conta** v
 | **Casa unifamiliar (VII, última frase -> XI)** | O VII termina com "Nos casos de edificações residenciais unifamiliares será aplicado o disposto no inciso XI". O **XI** permite, com **frontal menor que 10,00 m**, ocupar os **afastamentos laterais do térreo** com **varandas ou abrigos de veículos**, abertos e cobertos por **telha-vã**, fora da ATE e da TO | **Mais permissivo** que o COES §2º e §3º no térreo lateral, mas só nessas condições |
 | **Saliência na fachada (XIV)** | Até 0,40 m sobre o afastamento frontal, acima do térreo, só para jardineira e ar-condicionado, fora da ATE e da TO | Parecido com a laje técnica do §8º do COES, com limite menor |
 
-**Em aberto (Gate do Maurício; até lá, leitura conservadora):**
+**Em aberto (Gate da Coordenação (Claudemberg); até lá, leitura conservadora):**
 - a vedação de balanço sobre o afastamento frontal do VII também vale para a **unifamiliar**, ou o XI substitui o VII por inteiro para a casa? **Até decidir: não projetar varanda de casa em balanço sobre o afastamento frontal mínimo na ZPP.**
 - quando o COES (lei geral posterior) e o Dec. 3.046 (regime especial preservado pela LC 270) dizem coisas diferentes, qual prevalece? Hoje, aplicar o **mais restritivo** dos dois em cada ponto, salvo o benefício expresso do XI.
 
@@ -94,7 +94,7 @@ A Skill de partido de 16/09 (`arquitetura_partido-conforto-termico-orientacao-so
 - **R1 (parcialmente fechada em 01/10/2026):** a regra própria da ZPP existe e está na §4.1 (Dec. 3.046 VII, XI e XIV, lidos no primário). Continuam abertos: o alcance da vedação frontal do VII sobre a unifamiliar; qual prevalece, COES ou Dec. 3.046, nos pontos em que divergem; a remissão ao COES Art. 1º §3º, que não foi conferida; e os decretos olímpicos (LC 270, Art. 111 §5º) que possam ter mexido na subzona.
 - **R2:** limite de profundidade da varanda reentrante que serve cômodo (COES, Art. 5º §5º), incorporado na seção 3.
 - **R3:** brise sobre afastamento fora da varanda segue o Art. 4º §3º, incorporado na seção 3.
-- **R4:** Gate do Maurício antes de parecer final; o condomínio pode ser mais restritivo.
+- **R4:** Gate da Coordenação (Claudemberg) antes de parecer final; o condomínio pode ser mais restritivo.
 
 ## 8. FONTES
 

@@ -46,7 +46,7 @@ São dois regimes de contrapartida financeira ao Município do Rio. **Não confu
   - **§8º: o caput não vale para áreas onde já havia cobrança de contrapartida de instrumentos onerosos na data de publicação da LC 270.**
 - **Art. 111:** a fórmula é a Fórmula 1 do Anexo XXV. **§3º**: se a ATE for menor que S x CAB, não incide outorga. **§5º**: os decretos olímpicos 24.241, 30.650, 32.886, 36.795 e 47.880, que modificaram o Dec. 3.046/81, **prevalecem** sobre a LC 270.
 
-**O que ainda não está fechado (Gate do Maurício antes de falar com cliente):**
+**O que ainda não está fechado (Gate da Coordenação (Claudemberg) antes de falar com cliente):**
 - se o lote está numa área do **§8º**, em que já havia cobrança onerosa antes. Na Barra/Recreio isso **não foi verificado**;
 - a data exata de início de vigência da LC 270, que conta os 5 anos. Conferir na Busca Fácil;
 - o texto literal da Fórmula 1 do Anexo XXV;
@@ -57,7 +57,7 @@ São dois regimes de contrapartida financeira ao Município do Rio. **Não confu
 - **Art. 40, na redação da LC 301/2026, Art. 58:** "prazo de até 1° de dezembro de 2026 para requerimento de licenciamento de projetos a serem licenciados ou requerimentos de legalização, mediante aplicação de contrapartida por acréscimos não previstos na legislação ordinária com desconto de trinta por cento para pagamento à vista". **Janela ABERTA**. O PDF consolidado da LC 281 da base está um degrau atrás neste artigo; o texto vigente é o da LC 301.
 - **Art. 19, III e IV:** 50% à vista até 01/12/2025 e 30% à vista de 01/12/2025 a 02/03/2026. **Os dois venceram.** Não confundir com o Art. 40.
 - **Alcança unifamiliar:** Art. 18, II e §1º, II, "a" (POP-LEGAL-02, R.7.1).
-- **Prazo de legalização em aberto:** o Art. 16 §5º (30/06/2026, não alterado) colide com o Art. 40 (01/12/2026). **Não prometer prazo de legalização** antes do Gate do Maurício.
+- **Prazo de legalização em aberto:** o Art. 16 §5º (30/06/2026, não alterado) colide com o Art. 40 (01/12/2026). **Não prometer prazo de legalização** antes do Gate da Coordenação (Claudemberg).
 - **Condições gerais (Art. 22, III):** não ocupar recuo, área não edificável nem faixa de proteção de mares, rios e lagoas.
 
 ## Brecha válida (mentalidade v3.0)
