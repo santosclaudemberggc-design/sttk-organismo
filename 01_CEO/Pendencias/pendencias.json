@@ -1324,6 +1324,19 @@
       "resolvido_em": null,
       "txt": "Duas cópias do COES com paginação diferente: Hely/Kelsen citam Art. 29 III na p. 15 e Art. 31 III–IV na p. 17 (consolidado SMU); o acervo (impressaoWeb) cita pp. 19 e 21. Bardi afirma que p. 15 = Arts. 22–24 em uma das cópias. Conflito não resolvido: as Skills e as pareceres v7/v8 citam páginas sem dizer qual cópia.",
       "acao": "Rotina Diária de amanhã aciona Kelsen (com Hely) para ler as duas cópias, dizer por escrito qual é a oficial e corrigir as citações de página das Skills de vaga e de levantamento para indicar o arquivo usado."
+    },
+    {
+      "id": "tenreiro-criar-familias-revit-09-10",
+      "tipo": "ferramenta",
+      "owner": "Cardozo",
+      "agente": "tenreiro",
+      "cardId": "sistema",
+      "desde": "2026-10-09",
+      "status": "aberta",
+      "crit": "media",
+      "alc": "humano",
+      "txt": "Decisao de Claudemberg 09/10: familias Revit que faltarem ao Oscar (porta de correr interna, portao etc.) sao pedidas pela cadeia ao Tenreiro (Interiores), que cria e implementa na etapa dele. Hoje o Tenreiro nao tem nenhuma ferramenta de Revit e o Vitruvius nao cria familia (editor de familias).",
+      "acao": "Antes da etapa 11 (Interiores) do Ensaio 003: decidir com Claudemberg como o Tenreiro cria familia (ferramenta nova no Vitruvius para o editor de familias, ou outro caminho). Lista inicial de familias pedidas: porta de correr interna, portao de garagem (D:\\011_VITRUVIUS\\PLANO_ITEM2_FERRAMENTAS_OSCAR.md, secao 3-bis)."
     }
   ]
 }
