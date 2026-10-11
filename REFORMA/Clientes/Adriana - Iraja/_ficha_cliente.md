@@ -28,3 +28,5 @@ Feedback recebido (14 áudios + documento + 12 fotos). Ver relatório analítico
 - **Preço do projeto:** perto de R$ 3 a 4 mil, abatido da obra. Não mostrar o "valor real" riscado na apresentação.
 - **Implantação (comentário de Claudemberg no deck, 11/10/2026):** a casa fica mais ao centro. O corredor faz um **L abraçando o fundo da casa**, com a **escada no fim do L**.
 - **Bancada:** **paralela ao muro**, para não atrapalhar a passagem. São duas opções: (A) uma bancada só; (B) duas bancadas com um corredor entre elas, com a churrasqueira e o apoio na frente, e atrás a bancada de cortar e limpar, com a pia.
+- **Casa (comentário no deck, 11/10/2026):** a casa fica no centro e também ocupa o fundo do Corredor 1 e metade do L do Corredor 2.
+- **Garagem = área de lazer:** as mesas e a churrasqueira ficam no espaço da garagem. Nas reuniões, o carro sai e o pessoal fica ali.
