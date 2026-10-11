@@ -26,3 +26,5 @@ Feedback recebido (14 áudios + documento + 12 fotos). Ver relatório analítico
 - **Escada:** no ponto mostrado nas fotos 10 e 11.
 - **Espaço da frente:** área de lazer gourmet para reunir as pessoas, junto à churrasqueira. Não é "garagem que vira salão".
 - **Preço do projeto:** perto de R$ 3 a 4 mil, abatido da obra. Não mostrar o "valor real" riscado na apresentação.
+- **Implantação (comentário de Claudemberg no deck, 11/10/2026):** a casa fica mais ao centro. O corredor faz um **L abraçando o fundo da casa**, com a **escada no fim do L**.
+- **Bancada:** **paralela ao muro**, para não atrapalhar a passagem. São duas opções: (A) uma bancada só; (B) duas bancadas com um corredor entre elas, com a churrasqueira e o apoio na frente, e atrás a bancada de cortar e limpar, com a pia.

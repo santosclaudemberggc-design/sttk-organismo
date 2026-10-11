@@ -336,6 +336,7 @@ const DuasFotos = ({ children }: { children: ReactNode }) => (
 
 const Recomenda = ({ children }: { children: ReactNode }) => (
   <div style={{ background: VERDE_CLARO, color: VERDE, borderRadius: 12, padding: '14px 22px', fontSize: 28 }}>
+    {/* @slide-comment id="c-45ec5fe0" ts="2026-10-11T19:14:02.314Z" text="eyJub3RlIjoiVGVzdG8gY29ydGFkbyAsIG1lbGhvcmFyIGEgZGlzdHJpYnVpw6fDo28gZGVzc2Ugc2xpZGUifQ" */}
     {children}
   </div>
 );
@@ -592,7 +593,11 @@ const Gourmet: Page = () => (
       />
       <Card estilo={{ padding: '20px 26px' }}>
         <div style={{ fontSize: 30, fontWeight: 700 }}>O que vai na bancada</div>
-        <Nota>Já certo: bancada reta com a churrasqueira e armário fechado embaixo de tudo.</Nota>
+        <Nota>
+          Já certo: bancada <b>paralela ao muro</b>, sem atrapalhar a passagem, com armário fechado embaixo. Duas
+          formas: <b>uma bancada só</b>, ou <b>duas bancadas com um corredor entre elas</b> (na frente, churrasqueira
+          e apoio; atrás, a bancada de cortar e limpar, com a pia).
+        </Nota>
         <OpPrograma titulo="A · Churrasqueira + cooktop + chapa + cuba" rec>
           <ProsContras
             pros={<><li>Cozinha completa: a da casa fica longe</li><li>Chapa para 2 a 4 sem acender a churrasqueira</li></>}
@@ -836,43 +841,51 @@ const LuzPlanta: Page = () => (
     <div style={{ display: 'grid', gridTemplateColumns: '760px 1fr', gap: 56, alignItems: 'start' }}>
       <div style={{ background: ESCURO_2, borderRadius: 'var(--osd-radius)', padding: 18 }}>
         <svg viewBox="0 0 300 260" width={724} height={560} role="img" aria-label="Planta simples com os pontos de luz">
+          {/* Lote: casa no centro; Corredor 1 à esquerda; Corredor 2 à direita, virando em L pelo fundo da casa. */}
           <rect x="10" y="10" width="280" height="225" fill="none" stroke="#8a8a80" strokeWidth="2" />
-          <rect x="70" y="10" width="160" height="95" fill="#3a4540" stroke="#8a8a80" />
-          <text x="150" y="60" fill="#cfc8ba" fontSize="11" textAnchor="middle">CASA</text>
-          <text x="40" y="60" fill="#cfc8ba" fontSize="9" textAnchor="middle">Corredor 1</text>
-          <text x="40" y="72" fill="#cfc8ba" fontSize="9" textAnchor="middle">(lavabo)</text>
-          <text x="260" y="45" fill="#cfc8ba" fontSize="9" textAnchor="middle">Corredor 2</text>
-          <text x="260" y="57" fill="#cfc8ba" fontSize="9" textAnchor="middle">(jardim)</text>
-          <rect x="282" y="12" width="6" height="105" fill="#4f7a4f" />
-          <rect x="240" y="14" width="40" height="14" fill="none" stroke="#cfc8ba" strokeDasharray="3 2" />
-          <text x="260" y="24" fill="#cfc8ba" fontSize="7" textAnchor="middle">escada</text>
-          <rect x="235" y="118" width="50" height="12" fill="#8a7a62" />
-          <text x="260" y="142" fill="#cfc8ba" fontSize="8" textAnchor="middle">bancada reta</text>
-          <rect x="70" y="135" width="120" height="55" rx="6" fill="#2a5a74" />
-          <text x="130" y="166" fill="#e8f2f7" fontSize="10" textAnchor="middle">piscina</text>
-          <rect x="205" y="160" width="60" height="30" rx="3" fill="none" stroke="#cfc8ba" />
-          <text x="235" y="179" fill="#cfc8ba" fontSize="8" textAnchor="middle">mesas</text>
+          <rect x="60" y="36" width="180" height="94" fill="#3a4540" stroke="#8a8a80" />
+          <text x="150" y="88" fill="#cfc8ba" fontSize="11" textAnchor="middle">CASA</text>
+          <text x="35" y="78" fill="#cfc8ba" fontSize="8" textAnchor="middle">Corredor 1</text>
+          <text x="35" y="90" fill="#cfc8ba" fontSize="8" textAnchor="middle">(lavabo)</text>
+          <text x="265" y="78" fill="#cfc8ba" fontSize="8" textAnchor="middle">Corredor 2</text>
+          <text x="265" y="90" fill="#cfc8ba" fontSize="8" textAnchor="middle">(jardim)</text>
+          {/* Jardim rente ao muro: lateral direita e fundo, até o fim do L */}
+          <rect x="282" y="12" width="6" height="128" fill="#4f7a4f" />
+          <rect x="62" y="12" width="226" height="6" fill="#4f7a4f" />
+          <rect x="64" y="20" width="34" height="14" fill="none" stroke="#cfc8ba" strokeDasharray="3 2" />
+          <text x="81" y="30" fill="#cfc8ba" fontSize="7" textAnchor="middle">escada</text>
+          <text x="170" y="30" fill="#cfc8ba" fontSize="7" textAnchor="middle">fim do L, no fundo da casa</text>
+          {/* Gourmet na frente do Corredor 2: bancada paralela ao muro, sem cortar a circulação */}
+          <rect x="274" y="148" width="12" height="58" fill="#8a7a62" />
+          <rect x="250" y="148" width="10" height="58" fill="#8a7a62" opacity="0.55" strokeDasharray="2 2" stroke="#cfc8ba" />
+          <text x="262" y="218" fill="#cfc8ba" fontSize="7" textAnchor="middle">bancada paralela</text>
+          <text x="262" y="226" fill="#cfc8ba" fontSize="7" textAnchor="middle">ao muro (A ou B)</text>
+          <rect x="40" y="145" width="120" height="55" rx="6" fill="#2a5a74" />
+          <text x="100" y="176" fill="#e8f2f7" fontSize="10" textAnchor="middle">piscina</text>
+          <rect x="178" y="160" width="58" height="30" rx="3" fill="none" stroke="#cfc8ba" />
+          <text x="207" y="179" fill="#cfc8ba" fontSize="8" textAnchor="middle">mesas</text>
           <line x1="10" y1="235" x2="290" y2="235" stroke="#cfc8ba" strokeWidth="4" />
           <rect x="120" y="231" width="60" height="8" fill={ESCURO} stroke="#cfc8ba" />
           <text x="150" y="254" fill="#cfc8ba" fontSize="9" textAnchor="middle">muro e portão · rua</text>
-          <Ponto x={245} y={124} r={5} cor="#ffffff" />
-          <Ponto x={260} y={124} r={5} cor="#ffffff" />
-          <Ponto x={275} y={124} r={5} cor="#ffffff" />
-          <Ponto x={235} y={175} r={4} cor="#f2b84b" />
-          <Ponto x={85} y={162} r={4} cor="#5fd0ff" />
-          <Ponto x={175} y={162} r={4} cor="#5fd0ff" />
-          <Ponto x={270} y={35} r={3} cor="#9bd27a" />
-          <Ponto x={270} y={60} r={3} cor="#9bd27a" />
-          <Ponto x={270} y={85} r={3} cor="#9bd27a" />
-          <Ponto x={270} y={108} r={3} cor="#9bd27a" />
-          <Ponto x={60} y={200} r={3} cor="#9bd27a" />
-          <Ponto x={200} y={210} r={3} cor="#9bd27a" />
-          <Ponto x={233} y={40} r={3} cor="#f2b84b" />
-          <Ponto x={233} y={80} r={3} cor="#f2b84b" />
+          <Ponto x={280} y={158} r={5} cor="#ffffff" />
+          <Ponto x={280} y={177} r={5} cor="#ffffff" />
+          <Ponto x={280} y={196} r={5} cor="#ffffff" />
+          <Ponto x={228} y={168} r={4} cor="#f2b84b" />
+          <Ponto x={55} y={172} r={4} cor="#5fd0ff" />
+          <Ponto x={145} y={172} r={4} cor="#5fd0ff" />
+          <Ponto x={270} y={40} r={3} cor="#9bd27a" />
+          <Ponto x={270} y={70} r={3} cor="#9bd27a" />
+          <Ponto x={270} y={100} r={3} cor="#9bd27a" />
+          <Ponto x={270} y={130} r={3} cor="#9bd27a" />
+          <Ponto x={108} y={25} r={3} cor="#9bd27a" />
+          <Ponto x={236} y={25} r={3} cor="#9bd27a" />
+          <Ponto x={170} y={215} r={3} cor="#9bd27a" />
+          <Ponto x={243} y={60} r={3} cor="#f2b84b" />
+          <Ponto x={243} y={110} r={3} cor="#f2b84b" />
           <Ponto x={110} y={228} r={3} cor="#e46a6a" />
           <Ponto x={190} y={228} r={3} cor="#e46a6a" />
           <Ponto x={60} y={228} r={3} cor="#e46a6a" />
-          <Ponto x={240} y={228} r={3} cor="#e46a6a" />
+          <Ponto x={222} y={228} r={3} cor="#e46a6a" />
         </svg>
         <p style={{ margin: '6px 0 0', fontSize: 22, color: '#cfc8ba' }}>
           Desenho simples, sem escala. Posições a confirmar na medição de 14/10.
