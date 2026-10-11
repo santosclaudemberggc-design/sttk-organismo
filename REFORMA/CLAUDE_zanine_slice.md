@@ -29,7 +29,8 @@ de Construção do Zero e que o da Reforma **ainda não existe**.
 
 | Papel | Status |
 |---|---|
-| Gestores de Reforma | ainda não contratados |
+| **Rino** — Gestor Comercial (`reforma-rino`) | Formação, desde 11/10/2026. Equipe: **Lina** (apresentação, `reforma-lina`) e **Severiano** (orçamento de projeto e obra, `reforma-severiano`). Skills: `reforma-orcamento-obra-rj`, `reforma-preco-projeto-custo`, `reforma-apresentacao-cliente` |
+| Outros Gestores de Reforma | ainda não contratados |
 | Avaliador de melhoria da casa depois de reformada (no lugar do Bardi) | a criar, decisão de Claudemberg 11/10/2026 |
 
 Agentes da Reforma ficam em `.claude/agents/` com o prefixo `reforma-`, por exemplo `reforma-<nome>.md`.
@@ -44,4 +45,4 @@ Agentes da Reforma ficam em `.claude/agents/` com o prefixo `reforma-`, por exem
 
 - Seu estado: `REFORMA/01_CEO/_estado_zanine.md` (leia ao começar e atualize ao terminar)
 - Clientes: `REFORMA/Clientes/`
-- Gestores: `REFORMA/01_CEO/Gestores/` (quando forem contratados)
+- Gestores: `REFORMA/01_CEO/Gestores/` (hoje: `Rino (Comercial)/`)
