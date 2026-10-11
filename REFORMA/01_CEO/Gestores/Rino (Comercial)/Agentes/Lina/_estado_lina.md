@@ -15,7 +15,10 @@
 
 - 11/10/2026: v7 (`Proposta_Visual_Adriana_Iraja_v7.html`, 22 slides), pedida por Rino. A v6 foi mantida. Segue o layout de Claudemberg: churrasqueira na frente do Corredor 2, bancada reta, jardim no C2 rente ao muro, lavabo = foto 01 (11.23.22), escada = fotos 10 e 11 (11.25.10 e 11.25.33). Troquei 6 referências para fotos de casa no mesmo uso, todas vistas com WebFetch e Read. O slide de luz foi reescrito com planta SVG e 4 cenas. O preço segue a v3 (R$ 3.500), sem valor riscado. A busca por termos proibidos não achou nada.
 
+- 11/10/2026: TESTE open-slide (aprovado por Claudemberg, via Rino). Passei a v7 para React em `REFORMA/_apresentacoes/adriana-iraja/slides/adriana-proposta/index.tsx`, com 25 páginas (v7 tinha 22). Separei em duas páginas: gourmet (bancada e mesas), Corredor 2 (jardim e escada) e luz (planta e cenas). Usei Steps (cenas, recomendação, passos, checagem), transição RISE e SETTLE, e notes em todas. Números só os da v7. Não rodei o build.
+
 ## 2. Pendências abertas
+- open-slide: o build (Zanine) pode revelar: tipo de módulo para importar `.jpeg` com espaço no nome; `Steps` e `Step` dentro de grid; `Page.transition` no tipo. O createdAt foi digitado, sem rodar node. As páginas de ambiente e de decisão estão no limite de altura e o texto de prós e contras ficou em 26px, abaixo do mínimo de 28 da Skill. Conferir na tela. Os links dos créditos viraram texto, sem âncora.
 - v7: a foto do vidro espelhado é de obra de arte em forma de casa ("Mirage"), não de muro de casa. A do metal da escada mostra escada caracol, não reta. Falta foto da trapezoidal. A planta da luz é esquemática, com lados de C1 e C2 supostos. Não abri o deck no navegador.
 - v6: as opções de programa foram propostas pela Lina (prainha × cascata, bancada A × B, mesas, pergolado, escada reta × L, lavabo × pia, portão). Precisam do aval do Rino/Claudemberg. Nenhuma tem foto própria. Os slides 5 a 9 ficaram densos e não abri na tela. O relatório (3.1 e 3.3) ainda fala em "garagem" e "área de festa": avisei o Rino.
 - v5: 10 opções sem foto do mesmo produto. São elas: piso B, borda B, bancada B, fachada B, muro B, cobertura B (sem foto nenhuma), escada A e B, iluminação A e B. Achar foto aplicada da trapezoidal sanduíche. Não consegui abrir o deck na tela para ver se há texto cortado nos slides de opção, que são densos.
@@ -36,6 +39,8 @@
 - 11/10/2026: foto aplicada do mesmo produto aparece nos estudos de caso do AECweb (`api.aecweb.com.br/matoutros/img_figuras/..._Olho$$<id>.webp`, por `/empresa/<marca>/<id>/conteudo/...`). Também aparece nas fotos "mosaico" ou "ambi" do site do fabricante. Conferir se não é foto de banco de imagens.
 
 - 11/10/2026: o estudo de caso do AECweb traz a foto em `api.aecweb.com.br/matoutros/img_figuras/olho_340x216_Olho$$<id>.webp`. O nome exato aparece na lista "estudos de caso" de outra página da marca. Antes de usar, confira se o caso é de casa ou de prédio.
+
+- 11/10/2026: no open-slide, a tela tem 1920x1080 fixos e não rola. Slide denso da v7 vira duas páginas. Para pôr `<Steps>` numa grade, cada coluna precisa do seu próprio `<Steps>`.
 
 ## 4. Como escrever nele
 Curto e datado. Seções 1 e 2 se reescrevem; a seção 3 só cresce.
