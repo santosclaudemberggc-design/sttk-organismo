@@ -9,7 +9,10 @@
 
 - 11/10/2026: v4 (`Proposta_Visual_Adriana_Iraja_v4.html`), pedida por Rino. A v3 foi mantida. Troquei 4 materiais por outros com foto do mesmo produto aplicado: Coral virou Minerale Quartzolit, Bela Vista virou Pisadeira Eco Verde, Belgotex virou PlayGrama 20 mm Bicolor e Termovale virou Isotelha Colonial Kingspan Isoeste. Agora os 7 materiais têm foto aplicada do mesmo produto. Vi as 7 imagens novas com WebFetch e Read.
 
+- 11/10/2026: v5 (`Proposta_Visual_Adriana_Iraja_v5.html`, 21 slides), pedida por Rino. A v4 foi mantida. São 8 decisões com 2 opções cada (16 no total), com benefícios, desvantagens, foto e recomendação. Na cobertura, a equipe recomenda a trapezoidal, que está sem foto. O slide de custo mostra R$ 13.209,25 riscado e R$ 1.750, números do Severiano (v2). A obra segue "aguardando orçamento". Conferi as 22 imagens remotas por WebFetch, sem falha; as 8 novas também vi com Read.
+
 ## 2. Pendências abertas
+- v5: 10 opções sem foto do mesmo produto. São elas: piso B, borda B, bancada B, fachada B, muro B, cobertura B (sem foto nenhuma), escada A e B, iluminação A e B. Achar foto aplicada da trapezoidal sanduíche. Não consegui abrir o deck na tela para ver se há texto cortado nos slides de opção, que são densos.
 - v4: nenhuma loja no Rio foi confirmada. Ressalvas: a Isotelha tem formato colonial, o que tem a ver com o gosto minimalista. Confirmar com Claudemberg ou trocar pela trapezoidal, que ainda está sem foto aplicada. A foto aplicada da Eco Verde é pequena (260 px). Na foto aplicada da PlayGrama, só o fabricante afirma que o produto é o mesmo. Na página da 20 mm, a outra foto "ambiente" parece de banco de imagens e não foi usada.
 - Adriana: orçamento do Severiano (projeto e obra), medições de 14/10, modelo da piscina, 2º pavimento, chapa a gás ou a carvão, lavabo, porcelanato 82×82, condomínio.
 - Deck v2: não consegui abrir no navegador (não tenho ferramenta de browser). Conferi as imagens pelo download e o texto pelo código. Falta conferir na tela se há texto cortado. PDF ainda não gerado.

@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa da Adriana (Irajá) | Proposta visual v5</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Deck no padrão html-ppt-skill (tema claro editorial-serif). v5 (Lina, 11/10/2026): cada uma das 8 decisões com 2 opções (benefícios, desvantagens, foto real, recomendação da equipe) e slide de custo do projeto com os números do Severiano (Orcamento_Projeto_Adriana_v2.md). A v4 fica intacta. -->
+<style>
+:root{--bg-1:#f7f4ee;--surface:#fff;--text-1:#211f1b;--text-2:#6a645a;--line:#e3ddd2;--accent:#a8582a;--accent-2:#3f5a4a;--warn:#8a5a00;--warn-bg:#fff4dc}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg-1);color:var(--text-1);font:20px/1.45 Inter,system-ui,sans-serif;overflow:hidden}
+.slide{position:absolute;inset:0;padding:4.5vh 5vw 7vh;display:none;flex-direction:column;gap:1.6vh}
+.slide.is-active{display:flex}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.1;margin:0}
+h1{font-size:clamp(2.2rem,5.4vw,4.2rem)}
+h2{font-size:clamp(1.5rem,3vw,2.3rem)}
+h3{font-size:1.05rem;margin-bottom:.2em}
+p{margin:0}
+.eyebrow{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.lead{color:var(--text-2);font-size:1.05rem;max-width:62ch}
+.row{display:grid;gap:2vw;flex:1;min-height:0}
+.c2{grid-template-columns:1fr 1fr}.c3{grid-template-columns:repeat(3,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
+.c12{grid-template-columns:1fr 1.25fr}
+figure{margin:0;display:flex;flex-direction:column;min-height:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+figure img{width:100%;flex:1;min-height:0;object-fit:cover;display:block;background:#ddd}
+figure img.contain{object-fit:contain;background:#fff}
+figcaption{padding:.4em .7em;font-size:.6rem;color:var(--text-2);line-height:1.3}
+figcaption b{color:var(--text-1);font-size:.7rem}
+figcaption a{color:var(--accent)}
+.tag{display:inline-block;font-size:.56rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;margin-right:6px}
+.t-hoje{background:#e9e4da;color:#4b463d}.t-ref{background:#e2ece5;color:var(--accent-2)}.t-prod{background:#f4e3d7;color:var(--accent)}
+.same{color:#2e6b3f;font-weight:600}.like{color:var(--warn);font-weight:600}
+ul.k{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.7em}
+ul.k li{padding-left:1.3em;position:relative}
+ul.k li:before{content:"";position:absolute;left:0;top:.55em;width:.55em;height:.55em;border-radius:50%;background:var(--accent-2)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.1em 1.2em}
+.alert{background:var(--warn-bg);color:var(--warn);border-radius:8px;padding:.45em .8em;font-size:.8rem;font-weight:600;display:inline-block}
+.quote{font-family:Fraunces,Georgia,serif;font-size:1.05rem;border-left:3px solid var(--accent);padding-left:.8em}
+.why{font-size:.85rem;color:var(--text-2)}
+.cover{background:#1d2422;color:#f3eee4}
+.cover .lead{color:#cfc8ba}
+.cover figure{border:none}
+.scenes{display:grid;grid-template-columns:repeat(4,1fr);gap:.8em}
+.scene{border-radius:10px;padding:.8em;color:#eee;font-size:.8rem;min-height:5.5em}
+/* opções */
+.opt{display:grid;grid-template-rows:minmax(0,1fr) auto;gap:.5em;min-height:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.6em}
+.opt.is-rec{border:2px solid var(--accent-2)}
+.opt .pics{display:grid;grid-template-columns:1fr;gap:.5em;min-height:0}
+.opt .pics.two{grid-template-columns:1fr 1fr}
+.opt figure{border:none;border-radius:8px}
+.nophoto{display:flex;align-items:center;justify-content:center;text-align:center;background:#efebe3;border-radius:8px;color:var(--warn);font-size:.8rem;font-weight:600;padding:1em}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:.8em;font-size:.72rem;line-height:1.35}
+.pc b{display:block;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2em}
+.pc .pro b{color:#2e6b3f}.pc .con b{color:#9a3b1f}
+.pc ul{margin:0;padding-left:1em}
+.recbar{background:#e2ece5;color:var(--accent-2);border-radius:10px;padding:.5em .9em;font-size:.8rem}
+.recbar b{font-weight:700}
+.badge{display:inline-block;background:var(--accent-2);color:#fff;font-size:.56rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:4px;margin-left:6px;vertical-align:middle}
+.price-old{font-size:1.6rem;color:var(--text-2);text-decoration:line-through;text-decoration-thickness:3px;text-decoration-color:#9a3b1f}
+.price-new{font-family:Fraunces,Georgia,serif;font-size:3.2rem;color:var(--accent-2);font-weight:600;line-height:1}
+.footer{position:fixed;bottom:2vh;left:5vw;right:5vw;display:flex;justify-content:space-between;font-size:.62rem;color:var(--text-2);pointer-events:none}
+img.broken{outline:3px solid #c00}
+@media print{html,body{overflow:visible;height:auto}.slide{position:relative;display:flex;height:100vh;page-break-after:always}.footer{display:none}}
+</style>
+</head>
+<body>
+
+<!-- 1. CAPA -->
+<section class="slide cover is-active">
+  <div class="row c12" style="align-items:center">
+    <div style="display:flex;flex-direction:column;gap:1.2em">
+      <span class="eyebrow">Sttickler · Proposta visual · v5 · 11/10/2026</span>
+      <h1>Adriana, a sua área de lazer em Irajá</h1>
+      <p class="lead">Piscina, cantinho do churrasco, jardim e um muro que faz a rua parar para olhar. Tudo fácil de limpar e dentro do possível.</p>
+      <p class="lead" style="font-size:.8rem">Responsável pelo projeto: Claudemberg, arquiteto (CAU ativo).</p>
+    </div>
+    <figure style="height:70vh"><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.45.01.jpeg" alt="Fachada atual">
+      <figcaption><span class="tag t-hoje">Hoje</span>A sua casa vista da rua, 10/10/2026.</figcaption></figure>
+  </div>
+</section>
+
+<!-- 2. O QUE VOCÊ PEDIU -->
+<section class="slide">
+  <span class="eyebrow">O que você pediu</span>
+  <h2>Ouvimos você antes de desenhar</h2>
+  <div class="row c3" style="align-content:start">
+    <div class="card"><h3>Lazer de verdade</h3><ul class="k"><li>Piscina onde hoje está a brita</li><li>Churrasqueira, fogão e chapa para 2 a 4 pessoas</li><li>Lavabo de apoio</li><li>Jardim com pergolado</li><li>Garagem que vira salão de festa</li></ul></div>
+    <div class="card"><h3>Fácil de cuidar</h3><ul class="k"><li>"Não quero limpar a casa o tempo todo"</li><li>Linhas retas, sem nichos, sem prateleira aberta</li><li>Armário fechado embaixo da bancada</li><li>Sem cobertura de plástico que amarela</li><li>Piso que escoa água, sem limo</li></ul></div>
+    <div class="card"><h3>Ficar bonita</h3><ul class="k"><li>Muro e portão que impressionam</li><li>Fachadas novas, num estilo só</li><li>Fios escondidos, nada pendurado</li><li>Luz que muda o clima num botão</li><li>Escada nova e confortável</li></ul></div>
+  </div>
+  <p class="quote">Bonita, barata de fazer e fácil de limpar. Essa é a regra de cada escolha deste projeto.</p>
+</section>
+
+<!-- 3. HOJE -->
+<section class="slide">
+  <span class="eyebrow">O ponto de partida</span>
+  <h2>Como está hoje</h2>
+  <div class="row c4">
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.23.31.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Brita onde vai a piscina, muitos fios.</figcaption></figure>
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.23.41.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Cobertura de alumínio e portões.</figcaption></figure>
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.24.39.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Corredor 2, parede descascando.</figcaption></figure>
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.23.22.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Corredor 1, limo no pé da parede.</figcaption></figure>
+  </div>
+</section>
+
+<!-- 4. FRENTE -->
+<section class="slide">
+  <span class="eyebrow">Ambiente 1 · Área da frente</span>
+  <h2>Piscina, garagem e nenhum fio à vista</h2>
+  <div class="row c3">
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.24.08.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>O poste preto que você já comprou, no chão.</figcaption></figure>
+    <div class="card"><h3>O que muda</h3><ul class="k">
+      <li><b>Piscina</b> no lugar da brita. Modelo e medidas: confirmar com quem vai dar a piscina.</li>
+      <li><b>Garagem</b> quase no nível da calçada: carro na rua, mesas no lugar, sem rampa.</li>
+      <li><b>Fios</b>: a luz entra pelo seu poste e segue por baixo do chão até a casa.</li></ul>
+      <p class="why" style="margin-top:1em">A loja da piscina é responsável pela piscina. Escavação, casa de máquinas e a parte elétrica dela ainda precisam ser combinadas (loja ou obra).</p></div>
+    <figure><img src="https://api.aecweb.com.br/cls/anuncios/pes_32969/borda_de_piscina_med.webp" alt=""><figcaption><span class="tag t-ref">Referência – não é projeto da Sttickler</span>Borda clara e lisa ao lado da água. Foto do fabricante Braston, via <a href="https://www.aecweb.com.br/produto/borda-de-piscina-braston/32969">AECweb</a></figcaption></figure>
+  </div>
+</section>
+
+<!-- 5. CORREDOR 2 GOURMET -->
+<section class="slide">
+  <span class="eyebrow">Ambiente 2 · Corredor 2 (lado direito)</span>
+  <h2>O cantinho do churrasco</h2>
+  <span class="alert">Local a confirmar em 14/10: proposta no Corredor 2, onde hoje está a cobertura de alumínio.</span>
+  <div class="row c3">
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.24.39.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Corredor 2.</figcaption></figure>
+    <div class="card"><h3>O que muda</h3><ul class="k">
+      <li><b>Bancada em L</b> com churrasqueira pequena, fogão e pia.</li>
+      <li><b>Chapa</b> para 2 a 4 pessoas, sem acender a churrasqueira (a gás ou a carvão: você escolhe).</li>
+      <li><b>Armário fechado</b> embaixo de toda a bancada: a cozinha fica longe, tudo se guarda ali.</li></ul>
+      <p class="why" style="margin-top:1em">Sai a cobertura de alumínio. A nova cobertura você escolhe mais à frente.</p></div>
+    <figure><img src="https://images.unsplash.com/photo-1762117360871-f11fbad00ee1?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência – não é projeto da Sttickler</span>Bancada lisa, fogão embutido, armário embaixo. Foto: Alef Morais / <a href="https://unsplash.com/photos/YTnLXCH0jWw">Unsplash</a></figcaption></figure>
+  </div>
+</section>
+
+<!-- 6. CORREDOR 2 JARDIM E ESCADA -->
+<section class="slide">
+  <span class="eyebrow">Ambiente 2 · Corredor 2 (continuação)</span>
+  <h2>Jardim com pergolado e escada nova</h2>
+  <div class="row c3">
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.25.33.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Corredor lateral visto do fundo. A escada caracol de hoje sai.</figcaption></figure>
+    <div class="card"><h3>O que muda</h3><ul class="k">
+      <li><b>Jardim simples com pergolado</b>, de frente para a garagem.</li>
+      <li><b>Piso do jardim</b> e <b>escada</b>: você escolhe entre duas opções (veja à frente).</li></ul>
+      <p class="why" style="margin-top:1em">Pergunta para quarta: você pensa em construir em cima? Se sim, desenhamos junto, sem custo a mais no projeto.</p></div>
+    <figure><img src="https://images.unsplash.com/photo-1785250777298-36f2cab8ceec?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência – não é projeto da Sttickler</span>Pergolado de linhas retas com plantas. Foto: Timur Seyfelmlyukov / <a href="https://unsplash.com/photos/MyOSSs0JbPM">Unsplash</a></figcaption></figure>
+  </div>
+</section>
+
+<!-- 7. CORREDOR 1 -->
+<section class="slide">
+  <span class="eyebrow">Ambiente 3 · Corredor 1 (lado esquerdo)</span>
+  <h2>O lavabo de apoio</h2>
+  <div class="row c3">
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.25.10.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Fundo do corredor, com ponto de água.</figcaption></figure>
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.23.22.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Limo no pé da parede: água parada.</figcaption></figure>
+    <div class="card"><h3>O que muda</h3><ul class="k">
+      <li><b>Lavabo</b> no fundo do corredor, se a medida de quarta permitir.</li>
+      <li><b>Piso com caimento e ralo</b>: a água vai embora e o limo não volta.</li>
+      <li><b>Canos e fios</b> de piscina, churrasqueira, jardim e lavabo num projeto só, para não quebrar o chão duas vezes.</li></ul>
+      <p class="why" style="margin-top:1em">O porcelanato 82×82 que você já comprou pode entrar aqui. Vamos ver juntos na quarta.</p></div>
+  </div>
+</section>
+
+<!-- 8. MURO E FACHADA -->
+<section class="slide">
+  <span class="eyebrow">O cartão de visita</span>
+  <h2>Muro, portão e fachadas</h2>
+  <div class="row c3">
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.45.01.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Muro e portões atuais.</figcaption></figure>
+    <div class="card"><h3>O que muda</h3><ul class="k">
+      <li><b>Muro que impressiona</b>: duas ideias para você escolher (veja à frente).</li>
+      <li><b>Portão de impacto</b>: ao abrir, mostra o projeto.</li>
+      <li><b>Fachadas lisas</b>, no mesmo estilo do muro.</li></ul>
+      <p class="why" style="margin-top:1em">No muro, só acabamento: a estrutura dele não muda.</p></div>
+    <figure><img src="https://blob.cebrace.com.br/cebrace/wp-content/uploads/2021/12/Nobile-Centro-Empresarial-2.jpg" alt=""><figcaption><span class="tag t-ref">Referência – não é projeto da Sttickler</span>Vidro espelhado refletindo a rua (Nobile Centro Empresarial). Foto da página do produto <a href="https://www.cebrace.com.br/produtos/para-fachadas-comerciais/cebrace-reflecta/">Cebrace Reflecta</a></figcaption></figure>
+  </div>
+</section>
+
+<!-- 9. PONTO ALTO -->
+<section class="slide cover">
+  <span class="eyebrow">O ponto alto</span>
+  <h2>Um botão, um clima diferente</h2>
+  <div class="row c12">
+    <figure><img src="https://images.unsplash.com/photo-1788619371179-b3031f2cbe23?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência – não é projeto da Sttickler</span>Jardim iluminado à noite. Foto: Val Vesa / <a href="https://unsplash.com/photos/Zd8bUNJqzdQ">Unsplash</a></figcaption></figure>
+    <div style="display:flex;flex-direction:column;gap:1em">
+      <p class="lead">A luz é separada em grupos. Cada botão (ou o celular) acende um clima.</p>
+      <div class="scenes" style="grid-template-columns:1fr 1fr">
+        <div class="scene" style="background:#2d3a33"><b>Chegada</b><br>Muro e portão acesos.</div>
+        <div class="scene" style="background:#3b3022"><b>Churrasco</b><br>Luz forte na bancada, jardim baixo.</div>
+        <div class="scene" style="background:#1f3340"><b>Piscina</b><br>Só a água acesa. Combinar com a loja da piscina.</div>
+        <div class="scene" style="background:#33283a"><b>Festa</b><br>Tudo aceso: garagem, jardim, pergolado.</div>
+      </div>
+      <p class="lead" style="font-size:.8rem">Luz embutida no piso do jardim e arandelas na parede do Corredor 2. Como ligar: veja as duas opções à frente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10. COMO LER AS ESCOLHAS -->
+<section class="slide">
+  <span class="eyebrow">As suas escolhas</span>
+  <h2>8 decisões, 2 caminhos em cada uma</h2>
+  <div class="row c2" style="align-content:start">
+    <div class="card"><h3>Como ler as próximas páginas</h3><ul class="k">
+      <li>Cada página mostra <b>duas opções</b>, com o que é bom e o que é ruim em cada uma.</li>
+      <li>A moldura verde e o selo <b>"a equipe recomenda"</b> mostram a nossa sugestão, com o porquê. <b>A escolha é sua.</b></li>
+      <li>Comparamos sempre por 5 coisas: <b>preço, limpeza, durar muito, calor no sol e estilo simples</b>.</li>
+      <li>Legenda verde <span class="same">"mesmo produto"</span>: é a foto do produto que vamos usar. Legenda amarela <span class="like">"material parecido"</span>: é só para você ter ideia.</li></ul></div>
+    <div class="card"><h3>O que já ficou de fora</h3><ul class="k">
+      <li><b>Policarbonato</b>: amarela, suja e dá trabalho.</li>
+      <li><b>Revestimento cerâmico na fachada inteira</b>: caro e demorado.</li>
+      <li><b>Nichos e prateleiras abertas</b>: juntam poeira.</li></ul>
+      <p class="why" style="margin-top:1em">Os preços de cada opção chegam com o orçamento da obra. Por enquanto, "mais caro" e "mais barato" é comparação entre as duas, sem número.</p></div>
+  </div>
+</section>
+
+<!-- 11. DECISÃO 1 · PISO DO JARDIM -->
+<section class="slide">
+  <span class="eyebrow">Decisão 1 de 8 · Chão do jardim</span>
+  <h2>Placas com grama no meio, ou piso inteiro?</h2>
+  <div class="row c2">
+    <div class="opt is-rec">
+      <div class="pics two">
+        <figure><img src="https://api.aecweb.com.br/cls/anuncios/pes_33379/pisadeira-de-concreto-ecoverde-med.webp" alt=""><figcaption><span class="same">Mesmo produto</span>: <b>Pisadeira de Concreto, Eco Verde</b>, assentada. Foto do fabricante via <a href="https://www.aecweb.com.br/produto/pisadeira-de-concreto/33379">AECweb</a></figcaption></figure>
+        <figure><img src="https://www.playgrama.com.br/wp-content/uploads/2020/07/mosaicocapa20mmbicolor.jpg" alt=""><figcaption><span class="same">Mesmo produto</span>: <b>Grama Sintética 20 mm Bicolor, PlayGrama</b>, instalada. Foto do fabricante, <a href="https://www.playgrama.com.br/grama-sintetica-20mm-bicolor/">PlayGrama</a></figcaption></figure>
+      </div>
+      <div><h3>A · Placa de concreto + grama sintética <span class="badge">A equipe recomenda</span></h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>A chuva some pelas juntas: sem poça, sem limo</li><li>Sempre verde, sem cortar nem regar</li><li>Assenta na areia, sem contrapiso</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Grama sintética esquenta no sol forte</li><li>Folha e sujeira presas na grama pedem vassoura</li></ul></div></div></div>
+    </div>
+    <div class="opt">
+      <div class="pics"><figure><img src="https://images.unsplash.com/photo-1788398913509-89f16ab3ab9c?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência</span><span class="like">Material parecido</span>: piso cerâmico inteiro em área externa. Foto: David Marquez / <a href="https://unsplash.com/photos/3bRxBh2yiVc">Unsplash</a></figcaption></figure></div>
+      <div><h3>B · Piso inteiro (porcelanato de área externa)</h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Limpa com rodo e mangueira</li><li>Visual liso e contínuo</li><li>Pode usar o mesmo piso da casa</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Precisa de contrapiso, caimento e ralo</li><li>Rejunte escurece com o tempo</li><li>Pode escorregar molhado se não for antiderrapante</li></ul></div></div></div>
+    </div>
+  </div>
+  <p class="recbar"><b>Por que a equipe recomenda A:</b> você não quer limo nem trabalho. A água infiltra sozinha e não há grama de verdade para cuidar.</p>
+</section>
+
+<!-- 12. DECISÃO 2 · BORDA DA PISCINA -->
+<section class="slide">
+  <span class="eyebrow">Decisão 2 de 8 · Borda da piscina</span>
+  <h2>Borda que não esquenta, ou borda de cerâmica?</h2>
+  <div class="row c2">
+    <div class="opt is-rec">
+      <div class="pics"><figure><img src="https://api.aecweb.com.br/cls/anuncios/pes_32969/borda_de_piscina_med.webp" alt=""><figcaption><span class="tag t-ref">Referência – não é projeto da Sttickler</span><span class="same">Mesmo produto</span>: <b>Borda de Piscina Braston, textura atérmica fulgê</b>, instalada. Foto do fabricante via <a href="https://www.aecweb.com.br/produto/borda-de-piscina-braston/32969">AECweb</a></figcaption></figure></div>
+      <div><h3>A · Borda atérmica clara (Braston) <span class="badge">A equipe recomenda</span></h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Não queima o pé no sol</li><li>Não escorrega</li><li>Branco, crema, areia ou cinza: combina com estilo simples</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Clara, mostra sujeira e precisa de lavagem</li><li>Revenda no Rio ainda a confirmar</li></ul></div></div></div>
+    </div>
+    <div class="opt">
+      <div class="pics"><figure><img src="https://images.unsplash.com/photo-1759854909332-b73cdb19b705?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência</span><span class="like">Material parecido</span>: borda em lajota cerâmica. Foto: Joachim Lesne / <a href="https://unsplash.com/photos/GmJ7m4wZ3fU">Unsplash</a></figcaption></figure></div>
+      <div><h3>B · Borda de cerâmica comum</h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Fácil de achar em qualquer loja</li><li>Muitas cores e tamanhos</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Esquenta muito no sol do Rio</li><li>Rejunte junta limo perto da água</li><li>Pode escorregar molhada</li></ul></div></div></div>
+    </div>
+  </div>
+  <p class="recbar"><b>Por que a equipe recomenda A:</b> em Irajá o sol é forte. Uma borda que queima o pé estraga o uso da piscina.</p>
+</section>
+
+<!-- 13. DECISÃO 3 · BANCADA -->
+<section class="slide">
+  <span class="eyebrow">Decisão 3 de 8 · Bancada do churrasco</span>
+  <h2>Bancada escura, ou bancada clara?</h2>
+  <div class="row c2">
+    <div class="opt is-rec">
+      <div class="pics two">
+        <figure><img src="https://api.aecweb.com.br/cls/anuncios/pes_124214/pq-preto-sao-gabriel.webp" alt=""><figcaption><span class="tag t-prod">Produto</span><b>Granito Preto São Gabriel</b> (chapa, Kadosh Stone). <a href="https://www.aecweb.com.br/produto/granito-preto-sao-gabriel/124214">AECweb</a></figcaption></figure>
+        <figure><img src="https://thumb-cdn.soluall.net/prod/shp_products/sp1024mw/611a7066-46cc-4341-a0fb-2e4fac1e09ff/611a7066-2488-4b7d-9982-2e4fac1e09ff.jpg" alt=""><figcaption><span class="same">Mesmo produto</span> (mesma pedra), em bancada gourmet. Foto: R.R Marmoraria, via <a href="https://www.solutudo.com.br/classificados/pia-balcao-e-revestimento-de-churrasqueira-no-granito-preto-sao-gabriel-478504">Solutudo</a></figcaption></figure>
+      </div>
+      <div><h3>A · Granito Preto São Gabriel <span class="badge">A equipe recomenda</span></h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Aguenta panela quente e carvão</li><li>Quase não mancha: gordura sai com pano</li><li>Pedra comum nas marmorarias do Rio</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Escura, esquenta se pegar sol direto</li><li>Mostra marca de dedo e de água</li></ul></div></div></div>
+    </div>
+    <div class="opt">
+      <div class="pics"><figure><img src="https://images.unsplash.com/photo-1783125126725-d91c486fe6a3?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência</span><span class="like">Material parecido</span>: bancada clara em área gourmet externa. Foto: Salvo Media LLC / <a href="https://unsplash.com/photos/1pL7kM4YD2E">Unsplash</a></figcaption></figure></div>
+      <div><h3>B · Bancada clara (pedra ou quartzo branco)</h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Visual leve e mais minimalista</li><li>Esquenta menos no sol</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Mancha com gordura, vinho e carvão</li><li>Quartzo pode marcar com panela quente</li><li>Pede mais cuidado na limpeza</li></ul></div></div></div>
+    </div>
+  </div>
+  <p class="recbar"><b>Por que a equipe recomenda A:</b> numa bancada de churrasco, mancha é o maior problema. A pedra escura esconde e limpa fácil.</p>
+</section>
+
+<!-- 14. DECISÃO 4 · FACHADA -->
+<section class="slide">
+  <span class="eyebrow">Decisão 4 de 8 · Fachadas</span>
+  <h2>Revestimento que já vem na cor, ou pintura?</h2>
+  <div class="row c2">
+    <div class="opt is-rec">
+      <div class="pics two">
+        <figure><img class="contain" src="https://api.aecweb.com.br/cls/anuncios/pes_51191/minerale-quartzolit-atualiza%C3%A7ao.webp" alt=""><figcaption><span class="tag t-prod">Produto</span><b>Minerale, Quartzolit</b>. <a href="https://www.aecweb.com.br/produto/textura-minerale-m-quartzolit/51191">AECweb</a></figcaption></figure>
+        <figure><img src="https://api.aecweb.com.br/matoutros/img_figuras/weber_245x260_Olho$$2070.webp" alt=""><figcaption><span class="same">Mesmo produto</span>: Minerale nas fachadas de um condomínio. <a href="https://www.aecweb.com.br/empresa/quartzolit/6/conteudo/argamassa-decorativa-revestiu-fachadas-de-condominio-residencial-com-rapidez/2070">Estudo de caso Quartzolit</a></figcaption></figure>
+      </div>
+      <div><h3>A · Revestimento mineral colorido (Minerale) <span class="badge">A equipe recomenda</span></h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Já vem na cor: não precisa pintar</li><li>Dura mais que tinta na chuva e no sol</li><li>Qualquer pedreiro de reboco sabe aplicar</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Cores limitadas ao catálogo</li><li>Retoque pode ficar com tom diferente</li></ul></div></div></div>
+    </div>
+    <div class="opt">
+      <div class="pics"><figure><img src="https://images.unsplash.com/photo-1577793093235-c653e83d29ba?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência</span><span class="like">Material parecido</span>: parede lisa pintada. Foto: Laura Cleffmann / <a href="https://unsplash.com/photos/tJxnuLFLB-I">Unsplash</a></figcaption></figure></div>
+      <div><h3>B · Massa lisa + tinta para área externa</h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Qualquer cor que você quiser</li><li>Fácil de retocar e trocar de cor</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Precisa repintar de tempos em tempos</li><li>Suja e descasca mais fácil (como o Corredor 2 hoje)</li></ul></div></div></div>
+    </div>
+  </div>
+  <p class="recbar"><b>Por que a equipe recomenda A:</b> você não quer manutenção. Hoje a parede descasca; o revestimento mineral evita repintar.</p>
+</section>
+
+<!-- 15. DECISÃO 5 · MURO E VIDRO -->
+<section class="slide">
+  <span class="eyebrow">Decisão 5 de 8 · Muro da frente</span>
+  <h2>Faixas de vidro espelhado, ou ripas verticais?</h2>
+  <div class="row c2">
+    <div class="opt is-rec">
+      <div class="pics"><figure><img src="https://blob.cebrace.com.br/cebrace/wp-content/uploads/2021/12/Nobile-Centro-Empresarial-2.jpg" alt=""><figcaption><span class="tag t-ref">Referência – não é projeto da Sttickler</span><span class="same">Mesmo produto</span>: <b>Cebrace Reflecta</b> na fachada do Nobile Centro Empresarial. <a href="https://www.cebrace.com.br/produtos/para-fachadas-comerciais/cebrace-reflecta/">Página do produto</a></figcaption></figure></div>
+      <div><h3>A · Faixas de vidro espelhado laminado <span class="badge">A equipe recomenda</span></h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Quem passa vê o reflexo; você vê a rua</li><li>Efeito de impacto que você pediu</li><li>Laminado não estilhaça</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Mostra poeira e marca de chuva: limpar com rodo</li><li>À noite, com luz acesa dentro, fica transparente</li><li>Vidraçaria no Rio a confirmar</li></ul></div></div></div>
+    </div>
+    <div class="opt">
+      <div class="pics"><figure><img src="https://images.unsplash.com/photo-1645005049014-ddf1e055f090?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência</span><span class="like">Material parecido</span>: ripas verticais na frente de uma construção. Foto: Nenyasha Manzvera / <a href="https://unsplash.com/photos/xw-C_tvjxn0">Unsplash</a></figcaption></figure></div>
+      <div><h3>B · Ripas verticais (metal com pintura de madeira)</h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Visual quente e de linhas retas</li><li>Não mostra poeira como o vidro</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Pintura precisa de retoque com o sol</li><li>Entre as ripas junta folha e poeira</li><li>Menos "uau" que o espelho</li></ul></div></div></div>
+    </div>
+  </div>
+  <p class="recbar"><b>Por que a equipe recomenda A:</b> foi o seu pedido de muro que impressiona. O vidro se limpa com rodo, sem pintura.</p>
+</section>
+
+<!-- 16. DECISÃO 6 · COBERTURA -->
+<section class="slide">
+  <span class="eyebrow">Decisão 6 de 8 · Cobertura do churrasco</span>
+  <h2>Telha que não esquenta: formato de telha colonial, ou reta?</h2>
+  <div class="row c2">
+    <div class="opt">
+      <div class="pics two">
+        <figure><img class="contain" src="https://api.aecweb.com.br/cls/anuncios/pes_18190/1_260x240.webp" alt=""><figcaption><span class="tag t-prod">Produto</span><b>Isotelha Colonial, Kingspan Isoeste</b> (corte com isolante). <a href="https://www.aecweb.com.br/produto/isotelha-colonial/18190">AECweb</a></figcaption></figure>
+        <figure><img src="https://api.aecweb.com.br/matoutros/img_figuras/olho_245x260_Olho$$6449.webp" alt=""><figcaption><span class="same">Mesmo produto</span>: Isotelha Colonial instalada. <a href="https://www.aecweb.com.br/empresa/kingspan-isoeste/115/conteudo/isotelha-colonial-une-a-resistencia-do-aco-a-aparencia-de-ceramica/6449">Matéria Kingspan Isoeste</a></figcaption></figure>
+      </div>
+      <div><h3>A · Telha sanduíche colonial (Isotelha)</h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Isolante no meio: esquenta menos, chuva faz menos barulho</li><li>Parece telha de barro, mas é leve</li><li>Já tem foto do mesmo produto instalado</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Formato ondulado foge do estilo de linhas retas</li><li>Ondas juntam folha e sujeira</li></ul></div></div></div>
+    </div>
+    <div class="opt is-rec">
+      <div class="pics"><div class="nophoto">Sem foto aplicada.<br>Ainda não encontramos foto da telha trapezoidal sanduíche instalada. Mostraremos amostra ou obra real antes da escolha.</div></div>
+      <div><h3>B · Telha sanduíche trapezoidal (reta) <span class="badge">A equipe recomenda</span></h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Mesmo isolante: esquenta menos, menos barulho</li><li>Linhas retas, combina com o estilo simples</li><li>Por baixo, forro liso e fácil de limpar</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Visual mais "de galpão" se ficar à mostra</li><li>Ainda sem foto do produto instalado</li></ul></div></div></div>
+    </div>
+  </div>
+  <p class="recbar"><b>Por que a equipe recomenda B:</b> as duas isolam igual; a reta conversa com o seu gosto por linhas retas. Antes de decidir, vamos mostrar uma foto real dela instalada.</p>
+</section>
+
+<!-- 17. DECISÃO 7 · ESCADA -->
+<section class="slide">
+  <span class="eyebrow">Decisão 7 de 8 · Escada nova</span>
+  <h2>Escada de concreto, ou de metal?</h2>
+  <div class="row c2">
+    <div class="opt is-rec">
+      <div class="pics"><figure><img src="https://images.unsplash.com/photo-1593145134471-e91fe115022e?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência</span><span class="like">Material parecido</span>: escada reta de concreto com corrimão. Foto: Ronan Furuta / <a href="https://unsplash.com/photos/cvM7AC22dSI">Unsplash</a></figcaption></figure></div>
+      <div><h3>A · Concreto, degrau largo <span class="badge">A equipe recomenda</span></h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Não enferruja, quase sem manutenção</li><li>Firme, não balança nem faz barulho</li><li>Pode receber o mesmo piso da casa</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Obra mais demorada (forma e cura)</li><li>Pesada: precisa de base calculada</li></ul></div></div></div>
+    </div>
+    <div class="opt">
+      <div class="pics"><figure><img src="https://images.unsplash.com/photo-1564929413477-c2a0fd1c2482?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência</span><span class="like">Material parecido</span>: escada de metal presa na parede. Foto: Mika Wegelius / <a href="https://unsplash.com/photos/I5_XV5UkeIY">Unsplash</a></figcaption></figure></div>
+      <div><h3>B · Metal (chapa dobrada)</h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Leve e rápida de montar</li><li>Visual fino e moderno</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Área externa: pode enferrujar, pede pintura</li><li>Faz barulho ao pisar</li><li>Esquenta no sol</li></ul></div></div></div>
+    </div>
+  </div>
+  <p class="recbar"><b>Por que a equipe recomenda A:</b> fica ao tempo e você não quer manutenção. Se você for construir em cima, a escolha final depende desse projeto.</p>
+</section>
+
+<!-- 18. DECISÃO 8 · ILUMINAÇÃO -->
+<section class="slide">
+  <span class="eyebrow">Decisão 8 de 8 · Como ligar a luz</span>
+  <h2>Climas num botão, ou interruptores comuns?</h2>
+  <div class="row c2">
+    <div class="opt is-rec">
+      <div class="pics"><figure><img src="https://images.unsplash.com/photo-1788619371179-b3031f2cbe23?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência – não é projeto da Sttickler</span><span class="like">Material parecido</span>: jardim com luz por grupos. Foto: Val Vesa / <a href="https://unsplash.com/photos/Zd8bUNJqzdQ">Unsplash</a></figcaption></figure></div>
+      <div><h3>A · Cenas: um botão (ou o celular) para cada clima <span class="badge">A equipe recomenda</span></h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Chegada, Churrasco, Piscina, Festa: um toque</li><li>Liga e desliga pelo celular ou por horário</li><li>Pode crescer depois para o resto da casa</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Mais caro que interruptor comum</li><li>Precisa de configuração e Wi-Fi bom</li></ul></div></div></div>
+    </div>
+    <div class="opt">
+      <div class="pics"><figure><img src="https://images.unsplash.com/photo-1556217994-22de7face210?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência</span><span class="like">Material parecido</span>: interruptor simples na parede. Foto: Isabella Fischer / <a href="https://unsplash.com/photos/ynfmVbvunQU">Unsplash</a></figcaption></figure></div>
+      <div><h3>B · Interruptores comuns, um por grupo de luz</h3>
+        <div class="pc"><div class="pro"><b>Benefícios</b><ul><li>Mais barato e simples</li><li>Qualquer eletricista conserta</li></ul></div>
+        <div class="con"><b>Desvantagens</b><ul><li>Para "Festa", liga um por um</li><li>Mais teclas na parede</li><li>Sem controle pelo celular</li></ul></div></div></div>
+    </div>
+  </div>
+  <p class="recbar"><b>Por que a equipe recomenda A:</b> é o ponto alto do projeto. E os fios já vão ser refeitos: deixar pronto agora custa menos que mexer depois.</p>
+</section>
+
+<!-- 19. CUSTO -->
+<section class="slide">
+  <span class="eyebrow">Quanto custa</span>
+  <h2>Projeto e obra, separados</h2>
+  <div class="row c2" style="align-content:start">
+    <div class="card"><h3>Projeto completo</h3>
+      <p class="why" style="margin-top:.4em">O projeto vale</p>
+      <p class="price-old">R$ 13.209,25</p>
+      <p class="why" style="margin-top:.6em">Para você</p>
+      <p class="price-new">R$ 1.750</p>
+      <ul class="k" style="margin-top:1em;font-size:.85rem">
+        <li><b>Revisões sem limite.</b></li>
+        <li><b>2º pavimento de presente.</b></li>
+        <li><b>Abatido da obra se você fizer com a gente.</b></li></ul>
+      <p class="why" style="margin-top:.8em;font-size:.62rem">Fonte: Severiano (orçamentista Sttickler), Orçamento do Projeto Adriana v2, 11/10/2026. Inclui levantamento, estudo com 3 perspectivas, os 4 ambientes, iluminação em cenas, elétrica e hidráulica das áreas externas, quantitativo, marcenaria da gourmet, reunião com o fornecedor da piscina e apresentação final. Não inclui: acompanhamento de obra, projeto estrutural, projeto da piscina, aprovação em prefeitura ou condomínio, ART/RRT e honorários de terceiros.</p></div>
+    <div class="card"><h3>Obra</h3><p class="alert">Aguardando orçamento</p><p class="why" style="margin-top:.8em">Vamos mostrar uma faixa (mínimo e máximo) e o que não está incluído, já com as opções que você escolher aqui. Nenhum número aparece antes do orçamento pronto.</p></div>
+  </div>
+</section>
+
+<!-- 20. PRÓXIMOS PASSOS -->
+<section class="slide">
+  <span class="eyebrow">Próximos passos</span>
+  <h2>Como vamos caminhar juntos</h2>
+  <div class="row c4" style="align-content:start">
+    <div class="card"><h3>1 · Quarta, 14/10, 16h</h3><p class="why">Medir tudo, confirmar o lugar do churrasco e do lavabo, falar da piscina e do andar de cima.</p></div>
+    <div class="card"><h3>2 · Suas escolhas</h3><p class="why">Você escolhe uma opção em cada uma das 8 decisões. Pode mudar depois: revisões sem limite.</p></div>
+    <div class="card"><h3>3 · Projeto</h3><p class="why">Desenho, imagens do depois e o projeto único de canos e fios. Orçamento da obra com as suas escolhas.</p></div>
+    <div class="card"><h3>4 · Obra</h3><p class="why">Previsão: janeiro de 2027.</p></div>
+  </div>
+</section>
+
+<!-- 21. CHECAGEM -->
+<section class="slide cover">
+  <span class="eyebrow">Antes de seguir</span>
+  <h2>Me conta com as suas palavras</h2>
+  <div class="row c2" style="align-content:start">
+    <div class="card" style="background:#26302c;border-color:#34403a;color:#f3eee4"><ul class="k">
+      <li>Onde vai ficar o churrasco?</li><li>O que acontece com os fios da frente?</li><li>Das 8 decisões, qual você já sabe e qual quer pensar mais?</li></ul></div>
+    <div class="card" style="background:#26302c;border-color:#34403a;color:#f3eee4"><ul class="k">
+      <li>O que acontece com o valor do projeto se você fizer a obra com a gente?</li><li>Qual botão de luz você usaria numa festa?</li><li>O que ainda ficou sem resposta para você?</li></ul></div>
+  </div>
+  <p class="lead">Não existe pergunta boba. Se algo não ficou claro, a culpa é nossa, e explicamos de novo.</p>
+</section>
+
+<div class="footer"><span>Sttickler · Casa da Adriana · Irajá · v5</span><span id="num"></span></div>
+
+<script>
+(function(){
+  var s=[].slice.call(document.querySelectorAll('.slide')),i=0,n=document.getElementById('num');
+  function go(k){i=Math.max(0,Math.min(s.length-1,k));s.forEach(function(e,j){e.classList.toggle('is-active',j===i)});n.textContent=(i+1)+' / '+s.length;history.replaceState(null,'','#/'+(i+1));}
+  document.addEventListener('keydown',function(e){
+    if(['ArrowRight','PageDown',' '].indexOf(e.key)>-1)go(i+1);
+    if(['ArrowLeft','PageUp'].indexOf(e.key)>-1)go(i-1);
+    if(e.key==='Home')go(0); if(e.key==='End')go(s.length-1);
+    if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();}
+  });
+  document.addEventListener('click',function(e){if(e.target.tagName!=='A')go(e.clientX>innerWidth/2?i+1:i-1);});
+  [].forEach.call(document.images,function(im){im.addEventListener('error',function(){im.classList.add('broken');im.alt='IMAGEM NÃO CARREGOU';});});
+  var h=location.hash.match(/#\/(\d+)/);go(h?+h[1]-1:0);
+})();
+</script>
+</body>
+</html>
