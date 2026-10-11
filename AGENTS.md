@@ -11,7 +11,7 @@ Decisão de Claudemberg em 11/10/2026: o organismo tem **duas frentes separadas*
 | Frente | Pasta | CEO |
 |---|---|---|
 | Construção do Zero | `CONSTRUCAO_DO_ZERO/` | Wallenberg |
-| Reforma | `REFORMA/` | a definir (nome em escolha por Claudemberg) |
+| Reforma | `REFORMA/` | Zanine (slice: `REFORMA/CLAUDE_zanine_slice.md`) |
 
 A raiz guarda só o que é **compartilhado** pelas duas frentes: este arquivo, `AGENTS.md`, `memory/`,
 `_ferramentas/`, `06_Credenciais/`, `02_PROPOSTAS/` e `.claude/` (agentes e Skills precisam ficar ali).
