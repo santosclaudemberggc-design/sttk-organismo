@@ -7,7 +7,11 @@
 
 - 11/10/2026: a v3 foi entregue (`..._v3.html`). Tem foto do mesmo produto aplicado em vidro (Cebrace Reflecta, no lugar do Stopray, que saiu de linha), borda (Braston) e granito. Coral, placa, grama e telha ficaram com "material parecido". Saíram as fotos com pessoas. Nenhuma loja no RJ foi confirmada.
 
+- 11/10/2026: o preço do projeto foi entregue (`Orcamento_Projeto_Adriana_v1.md`). Essencial: 66 h, R$ 7.134,49. Recomendado: 100 h, R$ 10.807,41. Completo: 117 h, R$ 12.683,86. A v4 foi entregue com 7 de 7 materiais com foto do mesmo produto aplicado.
+
 ## 2. Pendências abertas
+- Preço do projeto: o deslocamento (R$ 60 por visita, sem fonte) pode estar cobrado duas vezes, porque a planilha já tem R$ 500/mês de transporte. A impressão está sem fonte. A tabela do CAU/BR não foi verificada; fazer a comparação com a calculadora oficial depois do custo de obra. O 2º pavimento foi prometido "sem custo" (6 a 10 h): Claudemberg decide. Precisam de responsável técnico: piscina, estrutura do pergolado e da escada, elétrica da piscina e da entrada, e a cobertura se for laje.
+- v4: a telha Isotelha é colonial e foge do minimalismo; Claudemberg decide se fica. Nenhuma loja no RJ foi confirmada para os 4 materiais novos. O deck não foi aberto no navegador.
 - v3: abrir no navegador, buscar foto do mesmo produto aplicado para placa, grama, telha e Coral (ou trocar a marca), confirmar lojas no RJ e checar se a borda Braston pixela.
 - Adriana v2: abrir no navegador e gerar o PDF. Trocar a foto do slide 5 (a cliente aparece nela) e a foto da Coral (mostra a lata). Corrigir o relatório 3.2 (gourmet no Corredor 1) e confirmar na visita de 14/10. Confirmar com o Severiano as marcas que são vendidas no RJ.
 - O Severiano precisa ler a planilha SINAPI-RJ oficial da Caixa. Hoje só existe o preço nacional, vindo de um agregador.
@@ -16,6 +20,7 @@
 
 ## 3. Aprendizados que não posso esquecer
 - 11/10: só peça ao Severiano itens que estejam no escopo do relatório. Exija sempre o preço do RJ da fonte oficial, não a média nacional.
+- 11/10: esquecer de atualizar o estado é falha. Atualizo o meu e cobro o dos Agentes antes de devolver a Zanine.
 
 ## 4. Como escrever nele
 Curto e datado. Seções 1 e 2 se reescrevem; a seção 3 só cresce.

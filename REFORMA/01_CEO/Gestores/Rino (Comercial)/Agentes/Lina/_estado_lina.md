@@ -7,8 +7,10 @@
 
 - 11/10/2026: v3 (`Proposta_Visual_Adriana_Iraja_v3.html`), pedida por Rino depois da conferência da Zanine. A v2 foi mantida. Saíram as fotos com pessoas (11.23.48 com a família, 11.24.58 com reflexo do fotógrafo). O vidro passou a ser Cebrace Reflecta, com foto aplicada da página do produto; o Stopray Lamismart dá 404 no site da AGC Brasil. A borda passou a ser Braston, com foto aplicada. O granito tem foto aplicada da R.R Marmoraria. Coral, placa, grama e telha estão como "material parecido". As 5 imagens novas foram vistas por WebFetch e Read.
 
+- 11/10/2026: v4 (`Proposta_Visual_Adriana_Iraja_v4.html`), pedida por Rino. A v3 foi mantida. Troquei 4 materiais por outros com foto do mesmo produto aplicado: Coral virou Minerale Quartzolit, Bela Vista virou Pisadeira Eco Verde, Belgotex virou PlayGrama 20 mm Bicolor e Termovale virou Isotelha Colonial Kingspan Isoeste. Agora os 7 materiais têm foto aplicada do mesmo produto. Vi as 7 imagens novas com WebFetch e Read.
+
 ## 2. Pendências abertas
-- v3: nenhuma loja no Rio foi confirmada para os materiais. Faltam fotos aplicadas do mesmo produto para Coral, placa Bela Vista, grama Belgotex e telha Termovale.
+- v4: nenhuma loja no Rio foi confirmada. Ressalvas: a Isotelha tem formato colonial, o que tem a ver com o gosto minimalista. Confirmar com Claudemberg ou trocar pela trapezoidal, que ainda está sem foto aplicada. A foto aplicada da Eco Verde é pequena (260 px). Na foto aplicada da PlayGrama, só o fabricante afirma que o produto é o mesmo. Na página da 20 mm, a outra foto "ambiente" parece de banco de imagens e não foi usada.
 - Adriana: orçamento do Severiano (projeto e obra), medições de 14/10, modelo da piscina, 2º pavimento, chapa a gás ou a carvão, lavabo, porcelanato 82×82, condomínio.
 - Deck v2: não consegui abrir no navegador (não tenho ferramenta de browser). Conferi as imagens pelo download e o texto pelo código. Falta conferir na tela se há texto cortado. PDF ainda não gerado.
 - Coral Textura Acrílica: a foto do fabricante mostra a lata, não a superfície. Trocar quando achar a foto da amostra.
@@ -21,6 +23,8 @@
 
 - 11/10/2026: antes de usar uma foto local, abra todas. Gente da família, operário ou reflexo do fotógrafo: fica fora.
 - 11/10/2026: o AECweb quase só mostra embalagem ou amostra, não o produto aplicado. A loja Coral (VTEX, `/api/catalog_system/pub/products/search/...`) também só tem a lata. Os sites de fabricante de vidro têm foto de obra (Cebrace: `blob.cebrace.com.br`). Classificado de marmoraria serve para pedra natural.
+
+- 11/10/2026: foto aplicada do mesmo produto aparece nos estudos de caso do AECweb (`api.aecweb.com.br/matoutros/img_figuras/..._Olho$$<id>.webp`, por `/empresa/<marca>/<id>/conteudo/...`). Também aparece nas fotos "mosaico" ou "ambi" do site do fabricante. Conferir se não é foto de banco de imagens.
 
 ## 4. Como escrever nele
 Curto e datado. Seções 1 e 2 se reescrevem; a seção 3 só cresce.
