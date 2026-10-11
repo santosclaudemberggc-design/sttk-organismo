@@ -14,8 +14,9 @@ Cobra-se pelo projeto **só o custo de produzi-lo**; o ganho está em **fechar a
 1. **Lista de entregáveis** do projeto (ex.: levantamento e medição, estudo com imagens, projeto executivo das áreas, iluminação, detalhamento de piscina e gourmet, quantitativo para o orçamento de obra, reuniões).
 2. **Horas por entregável e por pessoa** (arquiteto, desenhista, render). Estime com base em projetos parecidos; quando não houver histórico, declare "estimativa sem histórico".
 3. **Custo da hora** de cada pessoa: (salário ou retirada + encargos + rateio de custo fixo do escritório) ÷ horas produtivas do mês. **Esses números são da Sttickler e precisam vir de Claudemberg.** Não invente.
+   **Fonte atual:** `_financeiro/custo_hora_claudemberg.xlsx` (fora do git, porque são finanças pessoais). Em 11/10/2026, o piso era **R$ 105,67/h**, e um ambiente médio de 5 h custava R$ 528,37. Leia sempre a planilha, porque o valor muda. O projeto é emitido como **pessoa física**, e a obra como CNPJ (Sttickler Empreendimento).
 4. **Despesas diretas**: deslocamento até a obra (Irajá), impressão, render terceirizado, taxas.
-5. **Impostos sobre a nota**: alíquota efetiva real, confirmada com o contador.
+5. **Impostos**: o projeto é emitido como pessoa física. A reserva de INSS e IR já está dentro do custo da hora da planilha (estimativa, a confirmar com o contador). Não some imposto duas vezes.
 6. **Preço** = (horas × custo da hora + despesas) ÷ (1 − impostos). Lucro zero ou mínimo, por estratégia.
 
 ## Conferência de sanidade
