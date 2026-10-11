@@ -30,6 +30,11 @@ Cliente de reforma costuma ser leigo e ter orçamento apertado. Ele vê a casa t
 
 - Foto real da casa (pasta `Fotos` do cliente) no "antes".
 - Referência visual do "depois": imagem de referência com crédito, ou render quando houver ferramenta. Nunca apresente referência como se fosse o projeto pronto. Escreva "referência".
+- **Material nunca aparece só como cor ou quadradinho chapado** (decisão de Claudemberg, 11/10/2026). Cada material entra com **duas imagens reais**:
+  1. **A textura real** do produto: foto do fabricante ou da loja, de um produto que existe à venda, com nome, fabricante e linha.
+  2. **Uma foto real do material aplicado** num ambiente parecido (área externa, piscina, gourmet), não a amostra solta.
+  Cada imagem leva o crédito e o link da página de origem. Use o endereço da imagem direto no deck (sem baixar arquivo) e confira, abrindo o deck, se ela carregou. Imagem que não carregar é trocada, nunca deixada quebrada.
+- Prefira produtos vendidos no Rio, de faixa de preço compatível com o orçamento do cliente, para o Severiano conseguir cotar o mesmo item.
 
 ## Ferramenta
 

@@ -46,6 +46,10 @@ Para não reinventar, consulte em `CONSTRUCAO_DO_ZERO/`: as Skills `ia-orcamento
 `viabilidade-cub-nbr12721-area-equivalente-nbr14653-revenda-rj`, e o método do Mascaró
 (`.claude/agents/mascaro.md`). Lembre que o CUB é de obra nova.
 
+## Preço SINAPI-RJ oficial
+
+Rode `python _ferramentas/sinapi_consulta.py <código ou palavras> --uf RJ` (acrescente `--desonerado` quando for o caso). Use isso no lugar de site intermediário. Cite o código, o mês, a aba (CSD ou CCD) e o %AS.
+
 ## Regras de honestidade
 
 - Todo preço com **fonte + mês/ano + local**. Sem fonte, marque "estimativa sem fonte — confirmar".

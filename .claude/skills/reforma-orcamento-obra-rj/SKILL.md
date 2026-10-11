@@ -12,6 +12,7 @@ Estrutura adaptada de `afrexai-construction-estimator` (MIT, github.com/ndesv21/
 Todo preço vem de uma destas fontes, nesta ordem de preferência, e é citado com **fonte + mês/ano + local**:
 1. **Cotação real** de fornecedor ou empreiteiro para esta obra (melhor).
 2. **SINAPI** (Caixa/IBGE), estado RJ, mês de referência. Diga se é **desonerado ou não desonerado**. Use a composição (código) quando existir.
+   **Como consultar:** `python _ferramentas/sinapi_consulta.py <código ou palavras> --uf RJ [--desonerado]`. A ferramenta lê a planilha oficial mais recente em `_referencias_precos/SINAPI/` e mostra o mês. Se o mês tiver mais de 2 meses de atraso, avise o Rino para atualizar (veja o `LEIA-ME.md` dessa pasta). Não use site intermediário (orcamentor etc.) quando a planilha oficial estiver disponível. O SINAPI não tem caçamba de entulho comum: esse item é sempre cotação.
 3. **CUB/m² Sinduscon-Rio** (NBR 12721), só para estimativa paramétrica de área. O CUB é de obra nova: em reforma, ele serve apenas de ordem de grandeza.
 4. Preço de varejo (site de loja) apenas para material de acabamento, com link e data.
 

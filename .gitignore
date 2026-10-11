@@ -3,3 +3,7 @@
 # Depois que a etapa é aprovada/encerrada, a rotina inclui o gabarito de propósito com `git add -f`.
 # Os gabaritos já versionados continuam versionados.
 CONSTRUCAO_DO_ZERO/_gabaritos_LACRADO_bardi/
+
+# Planilhas SINAPI (~33 MB/mês): dado público, baixável de novo; ver _referencias_precos/SINAPI/LEIA-ME.md
+_referencias_precos/SINAPI/**/*.zip
+_referencias_precos/SINAPI/**/*.xlsx
