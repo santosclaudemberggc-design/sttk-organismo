@@ -1,0 +1,141 @@
+---
+name: rotina-fechamento-template
+description: "Template de Fechamento de Rotina — preenchido ao fim de cada rodada, lido no início da próxima"
+metadata:
+  type: operacional
+  lido_por: wallenberg-rotina-diaria-skills-v2, wallenberg-drenagem-continua-v2
+  escrito_por: ambas rotinas
+  frequencia: toda rodada (Diária: daily, Drenagem: 3x/semana)
+---
+
+# Fechamento de Rotina — Template Reutilizável
+
+**Leia isto ao INÍCIO de cada rodada para saber:**
+- O que foi feito na rodada anterior
+- O que ficou pendente
+- O que não fazer (evitar retrabalho) — ver a seção consolidada no fim deste arquivo
+
+**Preencha isto ao FIM de cada rodada para que a próxima saiba:**
+- O que foi entregue
+- O que ficou bloqueado e por quê
+- O que tomar cuidado
+
+**Manutenção [v1.0 — 30/09/2026]:** o Fechamento do Dia (20:00) mantém este arquivo com só as 2 rodadas mais recentes + a seção consolidada "O QUE NÃO FAZER (acumulado)" no fim. Rodadas mais antigas vão, inteiras, para `CONSTRUCAO_DO_ZERO/01_CEO/rotina_fechamento_historico.md` — nada é apagado.
+
+---
+
+## [2026-10-09] -- Diaria Skills v3.5.0 (Sexta) -- RODADA DE SEXTA (Painel e métricas)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** 09/10/2026, sexta-feira. DayOfWeek = Friday (máquina). Pipeline de sexta (Passos 6, 9, 10).
+- [x] **Passo 0:** `_passagem_do_dia.md` lida (dizia que a rodada de 09/10 não tinha rastro; registrado aqui). Feed: último evento `status` era 02/10 (7 dias de defasagem), corrigido nesta rodada.
+- [x] **Passo 9 (Dashboard):** `painel_status.json` reescrito. Membros recontados pela linha `**Nível atual:**`: 10 Auto · 4 Assisted · 1 Shadow · 4 Formação (19, sem mudança). Pendências recontadas: 18 abertas/em andamento e 61 fechadas (o valor de 02/10, 50/58 e "8 ativas", estava defasado). Skills: 8 arquivos em Outubro (inclui versões corrigidas, não só novas).
+- [x] **Evento `status` gravado** via `Append-STTKLog.ps1` (resumo da semana 05-09/10).
+- [ ] **Passo 6 (Painel):** nenhum evento de projeto novo além do resumo; a aprovação da etapa 3 do Ensaio entrou apenas no texto do resumo.
+- [ ] **Passo 7 (Learning Agent):** não executado (opcional, sem tempo útil após a limpeza de contagem).
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **Ensaio 003:** etapa 4 (Briefing) aguarda `criar_caso` pelo Bardi. Não criar caso aqui: fora do escopo da Diária.
+- **Pendências:** a lista de 1215 linhas não foi lida por completo; o detalhamento por criticidade do Painel continua sem recontagem.
+- **Skills da semana:** o número de "ativas" não foi recontado; só o total de arquivos em Outubro.
+
+---
+
+## [2026-10-08] -- Diaria Skills v3.5.0 (Quinta) -- RODADA PRIORIDADE ZERO (3 lacunas críticas resolvidas)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** 08/10/2026, quinta-feira. DayOfWeek = Thursday. Horário: 09:00-10:50 (~110 min, prioridade zero absorveu orçamento).
+- [x] **Passo 0:** leitura de `_passagem_do_dia.md` (07/10, escrito com atraso), bloqueadores conhecidos (NBR 6492 R1, LC 198 varandas, /watch bug), feed.jsonl atualizado 07/10.
+- [x] **PRIORIDADE ZERO — Lacunas Críticas (3 de 3 resolvidas):**
+  - **Lacuna 1 (Bardi/Ensaio):** Skill nova `ensaio-sombra-criterios-aprovacao-por-etapa-017.md` (proposta, status pendente validação Claudemberg). Tabela 17 etapas + histórico etapas 1-3 (1 aprovada, 2-3 reprovada com motivos reais do Ensaio). Fluxo de Ativação completo (Bardi criou, índice e livro-razão atualizados).
+  - **Lacuna 2 (Kelsen/LICIN):** Skill `decreto3046-81-lc270-2024-licin-barra-recreio` v1.4 → v1.5. Adicionado Dec. 3.046 XXII (veda estacionamento em afastamento frontal minimo) na §5 Protocolo Hely (novo checklist) e §6 M8 Macetes (fonte primária Dec. 3.046, p. 4). R2 nova ressalva (harmonização com Skill de vaga v1.0). Errata parecer Legal Etapa 01 (l. 181, admitia vagas frontal) aberta em arquivo dedicado. Backup pré-edição. Livro-razão atualizado.
+  - **Lacuna 3 (Kelsen/Propagação):** Avisos a Lúcio (Levantamento, 25 m²/vaga com COES Art. 29 + LC 270 Art. 347 II) e Villaça (Viabilidade, idem). Não editei as Skills (apenas avisos) — execução pelos Gestores conforme oportunidade. Livro-razão atualizado.
+- [x] **Passo 3 (Feed):** 3 eventos registrados (Bardi Skill, Kelsen harmonização, avisos propagação).
+- [x] **Passo 4 (Fluxo de Ativação):** 1 Skill proposta (Bardi), 1 Skill atualizada (Kelsen), avisos 2 Gestores.
+- [ ] **Passo 2 (Pesquisa normal 6 buscas, 2 por Gestor):** Não necessário. Prioridade zero consumiu orçamento de 50 min; seg-qui 60-90 min. Sem bloqueadores adicionais.
+- [ ] **Passo 8 (Trilha B):** Não necessário. Sem lacuna de ferramenta ativa hoje.
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **Não duplicar:** Bardi critérios Ensaio (proposta 08/10), Kelsen LICIN v1.5 (editada 08/10), Kelsen avisos propagação (despachados 08/10).
+- **Validação pendente:** Skill Bardi (critérios Ensaio) sobe para Claudemberg na Semanal — única validadora é a cúpula (Bardi não valida a si mesma).
+- **Execução pendente:** Lúcio atualizar Levantamento com 25 m²/vaga (recebeu aviso, conforme oportunidade); Villaça atualizar Viabilidade com idem.
+- **Harmonia pendente:** Lúcio/Villaça confirmarem não há contradição ao inserir 25 m²/vaga (complementa com Skill de vaga v1.0 de 07/10).
+- **Continuam:** Hely (R2 levantamento cota soleira), Landell (RECON-BT), SELCA R1/R4/R7, LC 198 varandas (PDF corrompido), NBR 13133, /watch bug, NBR 6492 R1 (secoes 5.6-5.8).
+
+---
+
+## O QUE NÃO FAZER (acumulado)
+
+Consolidado em 30/09/2026 a partir de todas as rodadas de 01/09 a 29/09 (movidas para `CONSTRUCAO_DO_ZERO/01_CEO/rotina_fechamento_historico.md`). Itens já resolvidos/superados por rodada mais nova não aparecem de novo — quem quiser o detalhe completo lê o histórico.
+
+**Kelsen (Legal):**
+- Vaga de estacionamento — dimensão mínima (COES Art. 29, 25 m²/vaga com manobra) — não duplique; Skill de 07/10 v1.0 (`vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj`).
+- LC 301/2026 (AEIU Praça Onze, cadeia de 30%, Art. 64) — não crie Skill nova; coberta e corrigida nas Skills de 18/09 v1.1, 23/09 e 24/09 (Art. 64 fechado: é LC 229, fora da AP4).
+- Decreto 3046/81 + LC 270/2024 LICIN Barra/Recreio — não duplique; Skill de 21/09 (ratificada).
+- Varanda não computável (COES Art. 8º) — não duplique; Skill de 28/09 v1.1.
+- OODC/Mais-Valerá/Mais-Valia — não duplique; Skill de 15/09 v1.1.
+- NBR 5419:2001 (SPDA) — não use como base; obsoleta, use a NBR 5419:2026 (Skill de 15/09).
+- LC 291/2025 — não crie Skill separada; coberta como histórico na Skill LC 301.
+- Regime de Licenciamento de Portugal (out/2026) — fora de escopo, não é RJ.
+- SELCA / Decreto Estadual 50.473/2026 — não duplique; Skill de 01/10 v1.1.
+
+**Lúcio — cobertura:**
+- Ucob, absortância de telha, ático ventilado e FT (NBR 15575-5) — não duplique; Skill de 01/10 v1.1.
+
+**Lúcio (Arquitetura):**
+- Levantamento topográfico/cadastral orientado ao DULI (LICIN 2.0) — não duplique; Skill de 05/10 (v1.5 em 07/10).
+- NBR 6492:2021 — memoriais e entregáveis por etapa — não duplique; Skill de 06/10 (v1.1 ativa-com-ressalva).
+- Ventilação cruzada / fachada poente / vidro de controle solar — não duplique sem parâmetro numérico real; coberta por Partido (16/09), Proteção Solar (17/09, v1.1→v1.3) e Vidro/INI-R (29/09 v1.2).
+- COE LC 198/2019 ventilação/iluminação/pé-direito — não duplique; Skill de 21/09.
+- NBR 15575-4 Emenda 2025 (desempenho térmico) — não duplique; Skill de 22/09.
+- TDC/LICIN 2.0 e Partido/Conforto Térmico — não duplique; Skills de 16/09.
+- NBR 9050:2020 (acessibilidade) — não duplique; Skill de 15/09 v1.1.
+
+**Cardozo/Complementares (Baumgart, Saturnino, Landell, Tenreiro, Glaziou, Mindlin):**
+- Entrada de energia Light / ligação nova RECON-BT — não duplique; Skill Landell de 05/10 v1.1.
+- Contenção de escavação em argila mole / hélice contínua — não crie Skill nova; coberta pela Skill de fundações em solos moles v1.3 (confirmado 07/10).
+- Rebaixamento de lençol / outorga INEA de obra — não duplique; Skill Baumgart de 29/09 v1.2.
+- NBR 6484:2020 / sondagem SPT — não crie Skill separada; coberta pela Skill de fundações Barra/Recreio v1.1.
+- Fundações em solos moles Barra/Recreio — não duplique; Skill Baumgart de 21/09.
+- Reservatório de retardo (Dec. 23.940) — não duplique; Skill Saturnino de 28/09 v1.1.
+- NBR 6122:2022 (fundações) — não duplique; Skill de 07/09.
+- NBR 6120:2019 (cargas) — não duplique; Skill de 08/09.
+- NBR 8681:2025 (segurança/fatores) — não duplique; Skill de 09/09.
+- NBR 10844:1989 (águas pluviais) — não duplique; Skill de 10/09.
+- NBR 9575:2024 (impermeabilização) — não duplique; Skill de 02/09.
+- NBR 5410 (elétrica) — não duplique; Skill de 28/08.
+- NBR 14565:2019 (cabeamento estruturado) — não duplique; Skill Landell de 23/09.
+- COSCIP/CBMERJ Decreto 42/2018 — não duplique; Skill de 04/09 v1.1.
+- Resolução SMDU 10/2026 (RDT) — não duplique; Skill de 03/09.
+- NBR 15575:2025 (desempenho acústico de pisos) — não duplique; Skill de 03/09.
+- NBR 15220-3:2024 (zoneamento bioclimático) — não duplique; Skill de 01/09.
+- NBR 7229:1993, NBR 13969:1997, NBR 10521:1988 — não crie Skill separada; substituídas pela NBR 17076:2024.
+- Iluminação de interiores NBR ISO/CIE 8995-1 — não duplique; Skill Tenreiro de 18/09.
+- Remoção de árvores FPJ/SMAC — não duplique; Skill Glaziou de 18/09.
+- Espécies nativas da Mata Atlântica — não duplique; Skill Glaziou de 22/09.
+- APA Barra (condicionantes por lote) — não tente de novo; dados públicos insuficientes (confirmado 22/09).
+- Proteção Solar Externa (brises/cobogó/venezianas) — não duplique; Skill Lúcio/Oscar de 17/09 (v1.1→v1.3).
+- Memorial Descritivo/Apresentação Técnica (Mindlin) — não duplique; Skill de 16/09.
+
+**Ferramentas/Vitruvius (padrão vigente: tudo fica dentro do Revit):**
+- PyNite, anaStruct, StructPy, CBE Clima Tool, EasyEletric, PyFlo/pipedream, open-garden-planner, Blueprint3d — não proponha; standalone, não integram Revit.
+- RevitCortex 173, BIMwright/rvt-mcp 229, UV-Tech/revit-claude-mcp 40, LuDattilo/revit-mcp-server 138, IbrahimFahdah/revit-claude-mcp 46, Simone-Balin/Sam-AEC 100+ — não crie Skill isolada; já registrados em `vitruvius_achados`.
+- pyRevit-MCP, mcp-servers-for-revit, Autodesk APS Sample MCP Server — não crie Skill; pago ou arquivado/inativo.
+- Luw.ai, Remodel AI, Redraw, Leonardo AI, Modly — não crie Skill; cloud (vazamento de dados) ou foco errado.
+- Blender MCP, Architecture MCP (sceneview-tools) — não pesquise/proponha de novo; já coberto (01/08) ou retorna 404.
+- Apresentação interativa ao cliente — busca PAUSADA; só retomar quando um caso real forçar a decisão.
+
+**Vídeos já assistidos via /watch (não repetir):**
+- jXFca_Az9f8, Z0buYmS8fDE, 0-QDPnEIkvw, VUCChmNYpKU — conteúdo já extraído, sem novidade em reassistir.
+
+**Painel/Sistema:**
+- `painel_fundador_sttk.html` — não editar até Claudemberg resolver o conflito do span `id="updated"` travado.
+
+---
+
+**Última atualização:** 08/10/2026 (Fechamento do Dia de 07/10, rodou com atraso — rodadas de 29/09, 01/10, 02/10 e 05/10 movidas para `rotina_fechamento_historico.md`; consolidado ganhou os temas de 05-07/10)
+**Próxima leitura:** 08/10/2026 (quinta-feira) — Diária Skills pipeline seg-qui

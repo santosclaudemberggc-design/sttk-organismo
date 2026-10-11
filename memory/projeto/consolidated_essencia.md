@@ -84,8 +84,8 @@ Toda decisão importante cita os princípios aplicáveis:
 - Eliminar Gestor/Agente (destrutivo)
 
 **Obrigações:**
-1. **Backup antes de alterar** → `01_CEO/Decisoes_Autonomas/_backups/{AAAA-MM-DD}/`
-2. **Livro-razão no mesmo dia** → `01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md` (data, decisão, por quê, como desfazer)
+1. **Backup antes de alterar** → `CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/{AAAA-MM-DD}/`
+2. **Livro-razão no mesmo dia** → `CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md` (data, decisão, por quê, como desfazer)
 
 ---
 
@@ -129,9 +129,9 @@ Cada agente tem **um** arquivo privado de estado (memória entre execuções):
   4. Como escrever nele
 
 **Exemplo de caminhos:**
-- Wallenberg: `01_CEO\_estado_wallenberg.md`
-- Kelsen: `01_CEO\Gestores\Kelsen (Legal)\_estado_kelsen.md`
-- Hely: `01_CEO\Gestores\Kelsen (Legal)\Agentes\Hely\_estado_hely.md`
+- Wallenberg: `CONSTRUCAO_DO_ZERO\01_CEO\_estado_wallenberg.md`
+- Kelsen: `CONSTRUCAO_DO_ZERO\01_CEO\Gestores\Kelsen (Legal)\_estado_kelsen.md`
+- Hely: `CONSTRUCAO_DO_ZERO\01_CEO\Gestores\Kelsen (Legal)\Agentes\Hely\_estado_hely.md`
 
 **Convive com Registro Diário, não substitui:** Estado é memória privada ("de onde parei"); Registro Diário é input/output consolidado pro Claudemberg.
 
@@ -209,7 +209,7 @@ Todas testadas por Wallenberg antes de levar pra Reunião Semanal (fonte boa ≠
 - Wallenberg audita o retorno do Gestor
 - Claudemberg tem palavra final no que ninguém consegue julgar
 
-**Mecanismo:** Wallenberg mantém **Registro Diário** (`03_REGISTROS_DIARIOS/{Ano}/{Mês}/{data}.md`):
+**Mecanismo:** Wallenberg mantém **Registro Diário** (`CONSTRUCAO_DO_ZERO/03_REGISTROS_DIARIOS/{Ano}/{Mês}/{data}.md`):
 - Por Gestor, consolidado
 - Input recebido, Output entregue
 - Percurso: o que foi tentado, o que mudou, onde travou

@@ -3,8 +3,8 @@ Gera o array `var pendencias = [...]` do Painel do Fundador a partir de pendenci
 substituindo a copia manual que ja causou 2 bugs de sincronia (04/08 e 07/08/2026).
 
 Uso: python sync_painel_pendencias.py
-Le:    01_CEO/Pendencias/pendencias.json
-Edita: 01_CEO/Painel_Fundador/painel_fundador_sttk.html (so o bloco var pendencias = [...];)
+Le:    CONSTRUCAO_DO_ZERO/01_CEO/Pendencias/pendencias.json
+Edita: CONSTRUCAO_DO_ZERO/01_CEO/Painel_Fundador/painel_fundador_sttk.html (so o bloco var pendencias = [...];)
 
 So itens com status == "aberta" entram no Painel (mesmo criterio ja usado a mao).
 Nao mexe em nenhum outro trecho do HTML (feed, R, cards, recToCard).
@@ -15,8 +15,8 @@ import sys
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent
-PENDENCIAS_JSON = BASE / "01_CEO" / "Pendencias" / "pendencias.json"
-PAINEL_HTML = BASE / "01_CEO" / "Painel_Fundador" / "painel_fundador_sttk.html"
+PENDENCIAS_JSON = BASE / "CONSTRUCAO_DO_ZERO/01_CEO" / "Pendencias" / "pendencias.json"
+PAINEL_HTML = BASE / "CONSTRUCAO_DO_ZERO/01_CEO" / "Painel_Fundador" / "painel_fundador_sttk.html"
 
 
 def js_string(s):

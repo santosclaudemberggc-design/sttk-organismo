@@ -2,4 +2,4 @@
 # Enquanto a etapa está aberta, o gabarito não pode aparecer no `git status` de nenhum agente.
 # Depois que a etapa é aprovada/encerrada, a rotina inclui o gabarito de propósito com `git add -f`.
 # Os gabaritos já versionados continuam versionados.
-_gabaritos_LACRADO_bardi/
+CONSTRUCAO_DO_ZERO/_gabaritos_LACRADO_bardi/

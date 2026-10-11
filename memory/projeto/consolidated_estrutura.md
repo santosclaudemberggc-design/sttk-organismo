@@ -80,7 +80,7 @@ WALLENBERG (CEO)
 - **Hely** (Executor do Projeto Legal) — Único agente, nível Assisted
 
 **Arquivo de Estado:**  
-`01_CEO\Gestores\Kelsen (Legal)\_estado_kelsen.md` (4 seções fixas)
+`CONSTRUCAO_DO_ZERO\01_CEO\Gestores\Kelsen (Legal)\_estado_kelsen.md` (4 seções fixas)
 
 **Autoridade:**
 - Autônomo em decisões internas (criar/alterar POP, método de trabalho)
@@ -118,7 +118,7 @@ WALLENBERG (CEO)
 - ❌ Não assina como PREO (Kelsen sinaliza quando PREO está undefined)
 
 **Arquivo de Estado:**  
-`01_CEO\Gestores\Kelsen (Legal)\Agentes\Hely\_estado_hely.md` (4 seções fixas)
+`CONSTRUCAO_DO_ZERO\01_CEO\Gestores\Kelsen (Legal)\Agentes\Hely\_estado_hely.md` (4 seções fixas)
 
 **Cadeia de Comando:**
 - Recebe de: Kelsen
@@ -179,7 +179,7 @@ WALLENBERG (CEO)
 | **Mensal (Conselho)** | 1ª seg do mês, 09:00 | inujhgm0kd5a3ecngrfer3cb14 | 1h 30m | Wallenberg + Gestores aprovados + Claudemberg |
 
 **Conteúdo Semanal:**
-- Leitura de `01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md` (livro-razão da semana)
+- Leitura de `CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/{Ano}/{Mês}.md` (livro-razão da semana)
 - Wallenberg apresenta cada decisão autônoma: data, o que decidiu, por quê (princípios), como desfazer
 - Claudemberg ratifica ou manda reverter, item por item
 

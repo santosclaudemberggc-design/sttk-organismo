@@ -7,7 +7,7 @@ validacao: "Kelsen 01/10/2026 — PROCEDE COM RESSALVA (R1-R6, seção 12). Todo
 changelog:
   - "v1.0 (01/10/2026, Wallenberg) — proposta, Rotina Diária de Skills v3.5.0"
   - "v1.1 (01/10/2026, Kelsen) — validação de Gestor dono: 6 correções factuais, prazos novos conferidos nos Arts. 46-52, leitura da seção 8 reescrita como tese condicionada, exceção APP/alagadiça do Dec. 51.503/2022 incluída, ressalvas R1-R6"
-  - "v1.2 (05/10/2026, Kelsen) — LC Federal 140/2011 lida no Planalto (Art. 9º, XIV e XV; Art. 12; Art. 13, §§ 1º-2º). R1 passa a PARCIALMENTE FECHADA (CONEMA de impacto local continua pendente); ressalva (2) do topo reescrita; nova R7 (lote em APA: a APA não define competência, Art. 9º, XIV, b, e Art. 12). Backup: 01_CEO/Decisoes_Autonomas/_backups/2026-10-05/selca_SKILL_ANTES_v1.2.md"
+  - "v1.2 (05/10/2026, Kelsen) — LC Federal 140/2011 lida no Planalto (Art. 9º, XIV e XV; Art. 12; Art. 13, §§ 1º-2º). R1 passa a PARCIALMENTE FECHADA (CONEMA de impacto local continua pendente); ressalva (2) do topo reescrita; nova R7 (lote em APA: a APA não define competência, Art. 9º, XIV, b, e Art. 12). Backup: CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/2026-10-05/selca_SKILL_ANTES_v1.2.md"
 fonte_primaria_lida: "Decreto Estadual 50.473/2026, texto integral do DOERJ de 16/09/2026 (Arts. 5º-13, 27, 37-52, 74, 89-94, 101-102, 116-120 e Anexo I, Grupo XXVI), conferido por Kelsen em 01/10/2026; LC Federal 140/2011, texto do Planalto (Arts. 9º, XIV-XV; 12; 13), conferido por Kelsen em 05/10/2026"
 data: 2026-10-01
 tipo: Inteligência (Trilha A)

@@ -9,7 +9,7 @@ Skill da área Legal do Sistema Orgânico STTK. Quem consome na prática: **Hely
 
 ## Para quem é isto, de fato
 
-A Sttickler assina a maior parte do escopo residencial com **RRT do CAU** (Claudemberg, ou o arquiteto parceiro externo — ver regra de PRPA no `CLAUDE_gestor_slice.md`). **Esta Skill não é sobre isso.** Ela existe para a fatia do trabalho que ainda depende de um **profissional CREA** — tipicamente um engenheiro terceirizado (calculista estrutural, engenheiro de fundação, engenheiro civil de obra), quando o escopo do projeto exige uma Anotação de Responsabilidade Técnica em vez de, ou além de, o RRT do arquiteto.
+A Sttickler assina a maior parte do escopo residencial com **RRT do CAU** (Claudemberg, ou o arquiteto parceiro externo — ver regra de PRPA no `CONSTRUCAO_DO_ZERO/CLAUDE_gestor_slice.md`). **Esta Skill não é sobre isso.** Ela existe para a fatia do trabalho que ainda depende de um **profissional CREA** — tipicamente um engenheiro terceirizado (calculista estrutural, engenheiro de fundação, engenheiro civil de obra), quando o escopo do projeto exige uma Anotação de Responsabilidade Técnica em vez de, ou além de, o RRT do arquiteto.
 
 **Se o caso é 100% RRT/CAU, esta Skill não se aplica** — não force o enquadramento.
 
@@ -39,7 +39,7 @@ Ao lidar com ART de engenheiro terceirizado (não CAU do Claudemberg) num caso r
 Existe uma proposta de Skill separada sobre a **Deliberação Plenária CAU/RJ nº 009/2026**, que sugere alterar o Art. 8º da Resolução CAU/BR 91/2014 (RRT). **Essa proposta não virou Skill formal** — decisão de Kelsen em 03/09/2026, mantida deliberadamente fora daqui:
 
 - É **sugestão do CAU/RJ ao CAU/BR**, não texto vigente — o CAU/RJ só propõe, quem altera a Resolução 91 é o CAU/BR, e isso não aconteceu até hoje.
-- **A proposta colide com a numeração já vigente do próprio Art. 8º**: o artigo já tem §5º (RRT Social) e vai até §8º; RRT Derivado já é matéria do inciso IV + §4º (Res. CAU/BR 184/2019). A sugestão da CEP-RJ tenta inserir um §5º novo onde já existe um — achado confirmado por Kelsen/Hely em 31/08/2026, registrado em `01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/_indice_fontes.md`, seção "REGISTRO — 31/08/2026 — DOMÍNIO CAU/RRT".
+- **A proposta colide com a numeração já vigente do próprio Art. 8º**: o artigo já tem §5º (RRT Social) e vai até §8º; RRT Derivado já é matéria do inciso IV + §4º (Res. CAU/BR 184/2019). A sugestão da CEP-RJ tenta inserir um §5º novo onde já existe um — achado confirmado por Kelsen/Hely em 31/08/2026, registrado em `CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/_indice_fontes.md`, seção "REGISTRO — 31/08/2026 — DOMÍNIO CAU/RRT".
 - Fica como **monitoramento apenas**, não como base ativa — mesmo tendo sido incluída na ratificação em bloco de 03/09/2026 junto com as demais 4 propostas desta rodada. Kelsen não formaliza como Skill um texto que colide com a norma vigente que ele mesmo já conferiu; recomendação registrada de volta à Diária de Skills antes de qualquer nova tentativa de ratificação (`pendencias.json`, item `skill-caurj-rrt-009-2026-lacuna-numeracao`).
 - Gatilho de recheck: qualquer Resolução nova do CAU/BR alterando o Art. 8º da Resolução 91/2014, ou providência formal do CAU/BR sobre a DP CAU/RJ 009/2026.
 

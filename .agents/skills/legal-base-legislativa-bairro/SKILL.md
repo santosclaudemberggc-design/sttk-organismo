@@ -124,7 +124,7 @@ Lacuna que você encontrar **não vira conhecimento oficial por decisão sua**. 
 
 ## Fontes arquivadas
 
-Em `01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/`, com índice comentado (data de download, proveniência e **status jurídico**) em `_indice_fontes.md`. A seção COES do índice **foi corrigida em 20/07/2026** contra o texto literal, com o histórico do erro preservado — mas a regra de sempre continua: **o número final sai do PDF primário, não do índice**.
+Em `CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/`, com índice comentado (data de download, proveniência e **status jurídico**) em `_indice_fontes.md`. A seção COES do índice **foi corrigida em 20/07/2026** contra o texto literal, com o histórico do erro preservado — mas a regra de sempre continua: **o número final sai do PDF primário, não do índice**.
 
 **Núcleo:**
 - `LC270_2024_PlanoDiretorLUOS.pdf` — Plano Diretor / LUOS (384 p.)
@@ -170,7 +170,7 @@ POPs em `.../Agentes/Hely/POPs/` (local — fonte única, Princípio 15): `POP-L
 - **Mas grupamentos de até 6 casas/lotes são isentos só de Dispositivos Fixos de Prevenção de Incêndio** (não de tudo) — e a leitura corrente na praça é que **grupamentos com mais de 6 unidades NÃO são isentos**: o empreendimento como um todo (não cada casa) precisa de aprovação CBMERJ.
 - **Relevância direta para o caso ativo Daniel-OB:** o Condomínio Venice (Área Privativa 04) é um grupamento A-4. Se o número de unidades do condomínio for maior que 6, esta pista sugere que o empreendimento como um todo (não a Área Privativa 04 isolada) pode estar sujeito a aprovação CBMERJ — questão nunca levantada nas apurações de zoneamento já feitas para este caso.
 - **Não fechado como a B10:** o texto exato do limiar de 6 unidades e a base normativa (é o próprio Art. 3º §2º, uma NT específica de grupamento, ou orientação de praça sem força de decreto?) não foram confirmados por leitura de artigo primário nesta rodada — só por fontes secundárias (CREA-RJ, sites jurídicos). **Antes de aplicar ao caso Daniel-OB ou a qualquer caso real, Hely precisa localizar e ler o dispositivo exato** (provavelmente no próprio Anexo II ou numa NT de grupamento/condomínio ainda não identificada) — mesmo padrão de rigor que fechou a B10.
-- **Skill técnica complementar:** mapa completo das Notas Técnicas do CBMERJ por relevância a cada disciplina de projeto (Landell/elétrica-alarme-SPDA, Baumgart/estrutural-resistência ao fogo) em `01_CEO/Skills_Propostas/2026/Setembro/complementares_coscip-cbmerj-decreto42-2018-seguranca-incendio-rj.md` — Trilha A para Complementares, não substitui nem duplica esta seção (que é a competência de Kelsen: isenção/exigibilidade de aprovação).
+- **Skill técnica complementar:** mapa completo das Notas Técnicas do CBMERJ por relevância a cada disciplina de projeto (Landell/elétrica-alarme-SPDA, Baumgart/estrutural-resistência ao fogo) em `CONSTRUCAO_DO_ZERO/01_CEO/Skills_Propostas/2026/Setembro/complementares_coscip-cbmerj-decreto42-2018-seguranca-incendio-rj.md` — Trilha A para Complementares, não substitui nem duplica esta seção (que é a competência de Kelsen: isenção/exigibilidade de aprovação).
 
 ## Trâmite paralelo obrigatório — Consulta Prévia de Diretrizes Territoriais (RDT), terrenos grandes
 

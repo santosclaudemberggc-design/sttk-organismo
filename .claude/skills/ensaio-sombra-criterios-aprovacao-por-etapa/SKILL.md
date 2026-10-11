@@ -78,7 +78,7 @@ Citações usadas nesta Skill que **não foram conferidas no texto primário**. 
 - **NBR 9050**: no acervo, a versão de 2015 está marcada como desatualizada; o texto de 2020 não foi conferido.
 - Não estão no acervo local: NBR 15575-4, NBR 14565, NBR 16264, NBR 16636-4, NBR 14037, NBR 5626, NBR 10844, NBR 16783, NBR 9575, NBR 6120, NBR 6122, NBR 8681.
 - Estão no acervo, mas os itens citados não foram conferidos nesta rodada: NBR 5410 (§4.2), NBR 14653-2 (itens C1 a C6), NBR 12721, COE LC 198/2019 (artigos citados).
-- **LC 270/2024** e **Decreto 3.046/81**: não estão no acervo `D:\008`, mas estão no acervo de legislação do Hely (`01_CEO\Gestores\Kelsen (Legal)\Agentes\Hely\Fontes_Legislacao\`). Conferidos em 09/10/2026: Dec. 3.046, pp. 2–3 (Disp. Gerais VII, XI); LC 270, PDF p. 125 (Art. 350 III). Conferência pontual, não integral.
+- **LC 270/2024** e **Decreto 3.046/81**: não estão no acervo `D:\008`, mas estão no acervo de legislação do Hely (`CONSTRUCAO_DO_ZERO\01_CEO\Gestores\Kelsen (Legal)\Agentes\Hely\Fontes_Legislacao\`). Conferidos em 09/10/2026: Dec. 3.046, pp. 2–3 (Disp. Gerais VII, XI); LC 270, PDF p. 125 (Art. 350 III). Conferência pontual, não integral.
 
 ## 8. Checagem de gabarito antes de lacrar (examinador)
 

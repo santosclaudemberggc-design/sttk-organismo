@@ -1,0 +1,317 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Pauta Semanal STTK 12/10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: uma "prancha" de pauta — carimbo no topo, faixas numeradas por ordem de impacto, comparativo antes/depois em tabela larga com rolagem própria */
+:root{
+  --paper:#f6f7f8; --sheet:#ffffff; --ink:#18212e; --ink-2:#4a5566; --line:#d5dbe3;
+  --accent:#1f4e8c; --redline:#c0392b; --ok:#1e7a4c; --warn:#a86a00; --soft:#eef2f7;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --sheet:#161d27; --ink:#e7ecf3; --ink-2:#a3aebd; --line:#2c3745;
+  --accent:#7fb0ef; --redline:#ff8a7a; --ok:#5fd19a; --warn:#f0b54a; --soft:#1c2531; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --sheet:#161d27; --ink:#e7ecf3; --ink-2:#a3aebd; --line:#2c3745;
+  --accent:#7fb0ef; --redline:#ff8a7a; --ok:#5fd19a; --warn:#f0b54a; --soft:#1c2531; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:16px;padding-block:28px 64px;display:grid;gap:28px}
+h1,h2,h3{font-family:var(--display);letter-spacing:.01em;text-wrap:balance;margin:0;line-height:1.1}
+h1{font-size:clamp(30px,5vw,44px);font-weight:700}
+h2{font-size:26px;font-weight:600;display:flex;gap:12px;align-items:baseline}
+h2 .n{font-family:var(--mono);font-size:13px;color:var(--ink-2);font-weight:500}
+h3{font-size:19px;font-weight:600}
+p{margin:0;max-width:68ch}
+code,.mono{font-family:var(--mono);font-size:12.5px;word-break:break-word}
+a{color:var(--accent)}
+section{display:grid;gap:14px}
+.muted{color:var(--ink-2)}
+/* carimbo */
+.carimbo{background:var(--sheet);border:1.5px solid var(--ink);display:grid;grid-template-columns:2fr 1fr 1fr 1fr}
+.carimbo>div{padding:10px 14px;border-left:1px solid var(--ink);min-width:0}
+.carimbo>div:first-child{border-left:0;grid-row:span 2}
+.carimbo .lbl{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:11.5px;color:var(--ink-2)}
+.carimbo .val{font-weight:600}
+.carimbo .row2{border-top:1px solid var(--ink)}
+@media (max-width:700px){.carimbo{grid-template-columns:1fr 1fr}.carimbo>div:first-child{grid-column:1/-1;grid-row:auto}.carimbo>div{border-top:1px solid var(--ink)}.carimbo>div:nth-child(even){border-left:0}}
+.lead{font-size:17px;max-width:72ch}
+/* ajustes */
+.ajustes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.aj{background:var(--sheet);border:1px solid var(--line);padding:14px 16px;display:grid;gap:6px;align-content:start}
+.aj .lbl{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:12px;color:var(--accent)}
+/* ações */
+.acoes{display:grid;gap:10px}
+.acao{background:var(--sheet);border:1px solid var(--line);display:grid;grid-template-columns:56px 1fr;min-width:0}
+.acao .num{font-family:var(--display);font-size:30px;font-weight:700;color:var(--ink-2);display:grid;place-items:start center;padding-top:12px;border-right:1px solid var(--line)}
+.acao .corpo{padding:12px 16px;display:grid;gap:6px;min-width:0}
+.acao .topo{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.pill{font-family:var(--display);text-transform:uppercase;letter-spacing:.07em;font-size:12px;font-weight:600;padding:2px 9px;border:1.5px solid currentColor;white-space:nowrap}
+.pill.feito{color:var(--ok)} .pill.parcial{color:var(--warn)} .pill.decidir{color:var(--redline)} .pill.retirada{color:var(--ink-2)}
+.acao.ret{opacity:.8}
+.acao.ret h3{text-decoration:line-through;text-decoration-color:var(--redline)}
+.prova{font-size:13px;color:var(--ink-2)}
+/* tabela */
+.tw{overflow-x:auto;background:var(--sheet);border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font-family:var(--display);text-transform:uppercase;letter-spacing:.07em;font-size:12.5px;color:var(--ink-2);background:var(--soft)}
+td:first-child{font-weight:600;width:19%}
+td.antes{border-left:3px solid var(--redline)}
+td.depois{border-left:3px solid var(--ok)}
+tr:last-child td{border-bottom:0}
+/* decisões */
+.decisoes{display:grid;gap:10px;counter-reset:d}
+.dec{background:var(--sheet);border:1px solid var(--line);border-left:4px solid var(--redline);padding:12px 16px;display:grid;gap:8px;min-width:0}
+.dec .q{font-weight:600}
+.dec .rec{font-size:14px}
+.dec .rec b{color:var(--accent)}
+.copybox{display:grid;gap:6px}
+.copybox pre{margin:0;background:var(--soft);border:1px solid var(--line);padding:10px 12px;font-family:var(--mono);font-size:12px;white-space:pre-wrap;word-break:break-all;max-height:160px;overflow:auto}
+.copybox button{justify-self:start;font-family:var(--display);text-transform:uppercase;letter-spacing:.07em;font-size:12.5px;font-weight:600;background:var(--ink);color:var(--sheet);border:0;padding:6px 12px;cursor:pointer}
+.copybox button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* fases */
+.fases{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.fase{background:var(--sheet);border:1px solid var(--line);padding:12px 14px;display:grid;gap:6px;align-content:start}
+.fase .k{font-family:var(--mono);font-size:12px;color:var(--accent)}
+.fase .s{font-size:12.5px;color:var(--ink-2);font-family:var(--mono)}
+ul{margin:0;padding-left:20px;display:grid;gap:4px}
+.arquivos li{font-size:13.5px}
+footer{font-size:13px;color:var(--ink-2);border-top:1px solid var(--line);padding-top:14px}
+@media (prefers-reduced-motion:no-preference){.copybox button{transition:opacity .15s}.copybox button:hover{opacity:.85}}
+</style>
+
+<div class="wrap">
+
+  <header class="carimbo" aria-label="Carimbo da pauta">
+    <div>
+      <div class="lbl">Sistema Orgânico STTK · Reunião Semanal</div>
+      <h1>Pauta de 12/10 — análise do organismo</h1>
+    </div>
+    <div><div class="lbl">Data da reunião</div><div class="val">seg 12/10/2026, 17:00</div></div>
+    <div><div class="lbl">Preparado por</div><div class="val">Wallenberg (CEO)</div></div>
+    <div><div class="lbl">Para</div><div class="val">Claudemberg</div></div>
+    <div class="row2"><div class="lbl">Revisão</div><div class="val">R01 · 09/10/2026</div></div>
+    <div class="row2"><div class="lbl">Ensaio 003</div><div class="val">etapa 4 de 17</div></div>
+    <div class="row2"><div class="lbl">Decisões suas</div><div class="val">8 itens</div></div>
+  </header>
+
+  <section>
+    <p class="lead">Claudemberg, em 09/10 você me autorizou a executar o que recomendei, por ordem de impacto. Fiz o que estava na minha alçada. Três coisas travaram na permissão automática, que não deixa editar os arquivos dos agentes; deixei o texto exato para você aplicar. Abaixo: seus 3 ajustes, o que foi feito, o comparativo de como estava e como fica, e as 8 decisões que dependem de você na segunda.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">A</span>Seus ajustes de 09/10 e como entraram</h2>
+    <div class="ajustes">
+      <div class="aj">
+        <div class="lbl">Gate passa a ser seu</div>
+        <p>O "Gate do Maurício" virou Gate da Coordenação, validado por você. O Artigas continua como canal. Escrevi o guia de onde olhar para validar cada pedido aberto (seção F).</p>
+      </div>
+      <div class="aj">
+        <div class="lbl">Testes são o treino antes do cliente</div>
+        <p>Entendido, e concordo. <b>Retirei</b> a recomendação de retomar o Daniel-OB em paralelo. O Ensaio continua sendo o treino. Mudei só o que trava o aprendizado: o teto de versões e o mapa de onde cada etapa vai travar por falta de ferramenta.</p>
+      </div>
+      <div class="aj">
+        <div class="lbl">Vitruvius pausado, poucas tools</div>
+        <p>Plano de implantação pronto (seção E). Achei um problema antes da falta de tools: <b>hoje o Oscar não consegue usar nenhuma das 51 tools existentes</b>, porque a lista dele usa nomes antigos. A configuração do servidor também está apontando para uma pasta que não existe.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">B</span>O que foi feito, por ordem de impacto</h2>
+    <div class="acoes">
+
+      <article class="acao">
+        <div class="num">1</div>
+        <div class="corpo">
+          <div class="topo"><h3>Auditoria só vale com prova</h3><span class="pill feito">Feito</span></div>
+          <p>Todo "conferi", "refiz as contas", "zero ocorrências" precisa vir com a prova no mesmo arquivo: comando e saída, conta com os números, ou documento, página e trecho. Sem prova, conta como não feito. O Bardi passa a conferir por amostragem pelo menos 3 afirmações de auditoria do Gestor e tira 1,00 ponto por afirmação falsa.</p>
+          <p class="prova">Origem: na etapa 3 o Lúcio declarou 4 verificações que não fez. Gravado em <code>CONSTRUCAO_DO_ZERO/CLAUDE_gestor_slice.md</code>, <code>CONSTRUCAO_DO_ZERO/CLAUDE_agente_slice.md</code>, Drenagem v2.6.0 (prompt agendado e arquivo de referência), <code>Rotinas_Evolucao/drenagem.md</code>, memória.</p>
+        </div>
+      </article>
+
+      <article class="acao">
+        <div class="num">2</div>
+        <div class="corpo">
+          <div class="topo"><h3>Destravar o que dependia de você</h3><span class="pill parcial">Em parte</span></div>
+          <p><b>Gate:</b> transferido para você nos arquivos que eu consigo editar; guia de validação pronto. <b>Hely com acesso à web:</b> tentei aplicar e a permissão automática negou de novo ("autoedição de agente"). Não contornei. A linha exata está na decisão D1.</p>
+          <p class="prova">Feito em: <code>_estado_artigas.md</code>, <code>pedido_gate_R6_2026-10-08.md</code>, <code>CONSTRUCAO_DO_ZERO/CLAUDE_wallenberg_slice.md</code>, <code>guia_validacao_gate_claudemberg.md</code>. Ainda dizem "Gate do Maurício": 8 arquivos de agente e 6 Skills (D2).</p>
+        </div>
+      </article>
+
+      <article class="acao">
+        <div class="num">3</div>
+        <div class="corpo">
+          <div class="topo"><h3>Ensaio: teto de 3 versões e mapa de prontidão</h3><span class="pill feito">Feito</span></div>
+          <p>Na 3ª reprovação da mesma etapa, a Drenagem para de refazer, escreve um diagnóstico de 1 página (qual erro se repete e se vem da Skill, do Agente, do Gestor ou do gabarito) e espera sua decisão. O mapa das etapas 4 a 17 mostra que a 4 segue normal, a 5 e a 6 travam no Revit e no render, as 8 a 13 saem em texto e as 14 a 17 não têm ninguém para executar.</p>
+          <p class="prova">Origem: etapa 2 com 9 versões, etapa 3 com 8; na etapa 2 a nota caiu de 10,00 (v7) para 7,00 (v8). Arquivos: <code>_estado_ensaio_003.json</code>, <code>Casos_TESTE/ensaio_003/mapa_prontidao_etapas_04_17.md</code>, <code>Rotinas_Evolucao/ensaio_sombra.md</code> (v1.2).</p>
+        </div>
+      </article>
+
+      <article class="acao">
+        <div class="num">4</div>
+        <div class="corpo">
+          <div class="topo"><h3>Plano do Vitruvius para ser guiado pelo Oscar</h3><span class="pill feito">Plano pronto</span></div>
+          <p>Cinco fases: consertar a ligação, criar as tools que faltam para uma casa de verdade, pôr proteções para o agente não estragar o modelo, fazer um exame do Oscar desenhando o lote do Ensaio 003, e ligar o resultado ao Burle, ao Hely e ao Lelé. Resumo na seção E.</p>
+          <p class="prova"><code>D:\011_VITRUVIUS\PLANO_AGENTE_GUIADO.md</code></p>
+        </div>
+      </article>
+
+      <article class="acao">
+        <div class="num">5</div>
+        <div class="corpo">
+          <div class="topo"><h3>Cortar trabalho que não rende</h3><span class="pill feito">Feito</span></div>
+          <p><b>Rotina Macetes pausada</b> (0 macetes nas rodadas de 07 e 08/10, YouTube bloqueado). Volta quando o <code>/watch</code> com o motor Gemini assistir 1 vídeo do YouTube de verdade. <b>Inventário de Capacidade atualizado</b>: estava parado desde 10/09. <b>Arquivos de estado inchados</b> (Lúcio 114 KB, Cardozo 96 KB, Hely 96 KB): pendência aberta para a Drenagem enxugar, sem perder conteúdo.</p>
+          <p class="prova">Tarefa <code>wallenberg-rotina-macetes-profissionais</code> com <code>enabled: false</code>; <code>Rotinas_Evolucao/macetes.md</code>; <code>_mapa_das_rotinas.md</code>; <code>inventario_capacidade_sttk.md</code>; <code>pendencias.json</code> (+5 itens, cópia de segurança em <code>_backups</code>).</p>
+        </div>
+      </article>
+
+      <article class="acao">
+        <div class="num">6</div>
+        <div class="corpo">
+          <div class="topo"><h3>Nível dos 6 Agentes do Cardozo</h3><span class="pill decidir">Para você decidir</span></div>
+          <p>Promovidos a Autonomous em 12/09 só por exames, sem nenhum trabalho depois. Proponho marcar como provisório até as etapas 8 a 13 do Ensaio passarem com nota 8,00 ou mais (D6).</p>
+        </div>
+      </article>
+
+      <article class="acao ret">
+        <div class="num">–</div>
+        <div class="corpo">
+          <div class="topo"><h3>Retomar o Daniel-OB em paralelo</h3><span class="pill retirada">Retirada</span></div>
+          <p>Retirada depois do seu esclarecimento: os testes existem justamente para os agentes chegarem treinados no próximo cliente.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">C</span>Comparativo: como estava → como fica</h2>
+    <div class="tw" role="region" aria-label="Comparativo antes e depois" tabindex="0">
+      <table>
+        <thead><tr><th>Ponto</th><th>Como estava (até 08/10)</th><th>Como fica (com o recomendado)</th></tr></thead>
+        <tbody>
+          <tr><td>Auditoria do Gestor</td><td class="antes">Bastava escrever "conferi". Na etapa 3 houve 4 verificações declaradas que não aconteceram. Num cliente real, ninguém pegaria.</td><td class="depois">Verificação só vale com prova colada. O Bardi confere por amostragem e desconta. O erro passa a aparecer no ensaio, antes de chegar a um cliente.</td></tr>
+          <tr><td>Repetição de versões</td><td class="antes">Sem limite: 9 versões na etapa 2 e 8 na etapa 3, com a nota às vezes piorando entre versões.</td><td class="depois">No máximo 3. Depois disso, um diagnóstico da causa e decisão sua: refazer, aprovar com pendências ou corrigir a Skill antes.</td></tr>
+          <tr><td>Etapas 5 a 17</td><td class="antes">Ninguém sabia onde o ensaio ia travar. A descoberta viria na hora, etapa por etapa.</td><td class="depois">Mapa pronto: a 4 segue; a 5 e a 6 dependem do Vitruvius; as 8 a 13 saem como memorial; as 14 a 17 precisam de equipe para o Lelé.</td></tr>
+          <tr><td>Gate da Coordenação</td><td class="antes">Dependia do Maurício. O 1º Gate real estava parado havia 38 dias e apontava para um arquivo abandonado.</td><td class="depois">Validado por você, com guia de onde olhar. Arquivo do Daniel-OB corrigido. Página do COES conferida no PDF.</td></tr>
+          <tr><td>Hely pesquisando lei</td><td class="antes">Sem acesso à web desde sempre; pedido parado desde 01/10.</td><td class="depois">Depende de você aplicar 1 linha (D1). Depois disso, ele lê a fonte primária sozinho.</td></tr>
+          <tr><td>Oscar no Revit</td><td class="antes">51 tools existentes, nenhuma utilizável pelo Oscar (nomes errados e caminho de configuração inexistente). O Ensaio 002 saiu só em texto.</td><td class="depois">Fase 0 conserta a ligação em 1 sessão. Depois: tools que faltam, proteções e exame do Oscar desenhando, antes da etapa 5.</td></tr>
+          <tr><td>Rotinas por dia útil</td><td class="antes">7 rotinas. Macetes rodando com zero resultado.</td><td class="depois">6 rotinas. Macetes volta quando o <code>/watch</code> funcionar de verdade.</td></tr>
+          <tr><td>Inventário de Capacidade</td><td class="antes">Parado desde 10/09. Ainda dizia que o Vitruvius tinha 35 tools e não citava Villaça, Bardi nem Lelé.</td><td class="depois">Atualizado em 09/10, com o que funciona, o que não funciona e por quê.</td></tr>
+          <tr><td>Arquivos de estado</td><td class="antes">Lúcio 114 KB, Cardozo 96 KB, Hely 96 KB, lidos inteiros a cada acionamento.</td><td class="depois">Meta abaixo de 30 KB cada, com o passado movido para o histórico. Pendência aberta para a Drenagem.</td></tr>
+          <tr><td>Agentes do Cardozo</td><td class="antes">Autonomous sem nenhum trabalho real depois da promoção.</td><td class="depois">Se você aprovar: provisórios até passarem nas etapas 8 a 13.</td></tr>
+          <tr><td>Equipe do Lelé</td><td class="antes">Nenhum Agente. As etapas 14 a 17 não têm quem execute.</td><td class="depois">Se você aprovar: o Lelé propõe a equipe agora, antes de o ensaio chegar lá.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">D</span>Decisões que dependem de você na segunda</h2>
+    <div class="decisoes">
+
+      <div class="dec">
+        <div class="q">D1 · Dar WebSearch e WebFetch ao Hely</div>
+        <div class="rec"><b>Recomendo: sim.</b> Ele é quem pesquisa legislação. Em <code>.claude/agents/hely.md</code>, linha 4, acrescente <code>WebSearch, WebFetch,</code> logo depois de <code>Skill,</code>.</div>
+        <div class="copybox"><pre id="d1">Read, Write, Edit, Glob, Grep, Bash, Skill, WebSearch, WebFetch,</pre><button type="button" data-copy="d1">Copiar trecho</button></div>
+      </div>
+
+      <div class="dec">
+        <div class="q">D2 · Trocar "Gate do Maurício" nos arquivos que eu não consigo editar</div>
+        <div class="rec"><b>Recomendo:</b> autorizar ao vivo, na reunião, que eu faça a troca para "Gate da Coordenação (validado por Claudemberg)". Agentes: artigas, burle, hely, kelsen, lele, lucio, oscar, portinari. Skills: vaga, varandas, decreto3046, OODC, SELCA, memoriais NBR 6492. Até lá, a regra já vale pelo estado do Artigas e pelo slice do Wallenberg.</div>
+      </div>
+
+      <div class="dec">
+        <div class="q">D3 · Fase 0 do Vitruvius: consertar a ligação do Oscar</div>
+        <div class="rec"><b>Recomendo: fazer nesta semana.</b> Duas edições suas: (a) no <code>~/.claude/settings.json</code>, trocar o caminho do servidor para <code>D:\011_VITRUVIUS\MCP_Server\dist\index.js</code>; (b) no <code>.claude/agents/oscar.md</code>, linha 4, substituir a linha <code>tools:</code> inteira por esta (51 tools com os nomes reais):</div>
+        <div class="copybox"><pre id="d3">tools: Read, Write, Edit, Glob, Grep, Skill, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__search_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__read_file_content, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__list_recent_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__get_file_metadata, mcp__vitruvius__vitruvius_batch_modify, mcp__vitruvius__vitruvius_change_type, mcp__vitruvius__vitruvius_copy_element, mcp__vitruvius__vitruvius_create_arc_wall, mcp__vitruvius__vitruvius_create_door, mcp__vitruvius__vitruvius_create_element_type, mcp__vitruvius__vitruvius_create_elevation, mcp__vitruvius__vitruvius_create_floor, mcp__vitruvius__vitruvius_create_grid, mcp__vitruvius__vitruvius_create_group, mcp__vitruvius__vitruvius_create_level, mcp__vitruvius__vitruvius_create_linked_model, mcp__vitruvius__vitruvius_create_rectangular_room, mcp__vitruvius__vitruvius_create_roof, mcp__vitruvius__vitruvius_create_room, mcp__vitruvius__vitruvius_create_schedule, mcp__vitruvius__vitruvius_create_section, mcp__vitruvius__vitruvius_create_sheet, mcp__vitruvius__vitruvius_create_spot_elevation, mcp__vitruvius__vitruvius_create_topography, mcp__vitruvius__vitruvius_create_wall, mcp__vitruvius__vitruvius_create_window, mcp__vitruvius__vitruvius_delete_element, mcp__vitruvius__vitruvius_dimension_between, mcp__vitruvius__vitruvius_dimension_facade, mcp__vitruvius__vitruvius_dimension_room, mcp__vitruvius__vitruvius_dimension_vertical, mcp__vitruvius__vitruvius_dimension_wall, mcp__vitruvius__vitruvius_find_elements, mcp__vitruvius__vitruvius_get_category_parameters, mcp__vitruvius__vitruvius_get_document_info, mcp__vitruvius__vitruvius_get_door_types, mcp__vitruvius__vitruvius_get_doors, mcp__vitruvius__vitruvius_get_element, mcp__vitruvius__vitruvius_get_floor_types, mcp__vitruvius__vitruvius_get_floors, mcp__vitruvius__vitruvius_get_levels, mcp__vitruvius__vitruvius_get_parameter, mcp__vitruvius__vitruvius_get_revit_status, mcp__vitruvius__vitruvius_get_rooms, mcp__vitruvius__vitruvius_get_wall_types, mcp__vitruvius__vitruvius_get_walls, mcp__vitruvius__vitruvius_get_window_types, mcp__vitruvius__vitruvius_get_windows, mcp__vitruvius__vitruvius_list_categories, mcp__vitruvius__vitruvius_list_element_types, mcp__vitruvius__vitruvius_list_elements, mcp__vitruvius__vitruvius_move_element, mcp__vitruvius__vitruvius_place_view_on_sheet, mcp__vitruvius__vitruvius_resize_element, mcp__vitruvius__vitruvius_set_parameter</pre><button type="button" data-copy="d3">Copiar linha</button></div>
+      </div>
+
+      <div class="dec">
+        <div class="q">D4 · Etapa 5 do Ensaio: segurar ou rodar em texto?</div>
+        <div class="rec"><b>Recomendo: segurar até o exame do Oscar no Revit (Fase 3).</b> A etapa 4 (Briefing) roda normalmente enquanto isso. Rodar a 5 em texto repetiria o Ensaio 002 e não treinaria o que o Oscar vai precisar fazer num cliente real.</div>
+      </div>
+
+      <div class="dec">
+        <div class="q">D5 · O Lelé monta a equipe agora?</div>
+        <div class="rec"><b>Recomendo: sim, proposta agora, mesmo em Shadow.</b> Você aprova os nomes. Sem isso o ensaio para na etapa 14.</div>
+      </div>
+
+      <div class="dec">
+        <div class="q">D6 · Agentes do Cardozo como "Autonomous provisório"</div>
+        <div class="rec"><b>Recomendo: sim.</b> O nível volta a ser pleno quando passarem nas etapas 8 a 13 com nota 8,00 ou mais.</div>
+      </div>
+
+      <div class="dec">
+        <div class="q">D7 · Vereditos dos 2 Gates abertos</div>
+        <div class="rec">Gate R6 (vaga): <b>recomendo aprovar com ressalva</b> (o texto do Art. 29 III fala de demarcação; a soma 12,50 + 12,50 é coincidência e não deve ser citada como regra). Gate de Interiores do Daniel-OB: <b>aprovar com ressalva como estudo de ambientação</b>, não como projeto de Interiores (falta compatibilizar). Onde validar: seção F.</div>
+      </div>
+
+      <div class="dec">
+        <div class="q">D8 · Confirmar a pausa da Rotina Macetes</div>
+        <div class="rec"><b>Recomendo: manter pausada</b> até 1 vídeo do YouTube ser assistido com o motor Gemini. Se você preferir religar já, é uma linha na tarefa agendada.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">E</span>Plano do Vitruvius, resumido</h2>
+    <p class="muted">Meta nova: o Oscar entregar as etapas 5 e 6 do Ensaio desenhando no Revit, com nota 8,00 ou mais e o quadro de áreas do modelo batendo com o Levantamento. Número de tools deixa de ser meta. As sessões são estimativa, não compromisso.</p>
+    <div class="fases">
+      <div class="fase"><div class="k">Fase 0 · ligação</div><p>Caminho do servidor, nomes no Oscar, teste de fumaça com prova; ver se funciona dentro de rotina agendada.</p><div class="s">1 sessão · depende de D3</div></div>
+      <div class="fase"><div class="k">Fase 1-A · tools da etapa 5</div><p>Imagem da vista (o agente vê o que fez), abrir/salvar cópia, resumo do modelo, escada, guarda-corpo, vão de laje, tags.</p><div class="s">3–4 sessões</div></div>
+      <div class="fase"><div class="k">Fase 2 · proteções</div><p>Sempre em cópia; comando repetido não duplica; desfazer por passo; conferência depois de cada escrita; tools por etapa; template do escritório; Skill de modelagem guiada.</p><div class="s">2 sessões</div></div>
+      <div class="fase"><div class="k">Fase 3 · exame do Oscar</div><p>Modela a casa do Ensaio 003. Passa se o quadro de áreas bater (≤ 1%), sem duplicatas, e você conferir no Revit.</p><div class="s">1 sessão · Revit aberto</div></div>
+      <div class="fase"><div class="k">Fase 1-B / 1-C · depois</div><p>Quadro de áreas, pranchas, PDF/DWG (etapas 6–7); IFC, interferências e quantitativos (etapas 14–16).</p><div class="s">3 sessões + após etapa 13</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">F</span>Onde validar os Gates</h2>
+    <p>Guia completo: <code>CONSTRUCAO_DO_ZERO/01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/guia_validacao_gate_claudemberg.md</code></p>
+    <ul>
+      <li><b>Gate R6 (vaga):</b> abra <code>Hely/Fontes_Legislacao/COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf</code> na <b>página 15 do PDF</b>, Art. 29, incisos I a III (conferi em 09/10: a página certa é a 15, não a 19). Depois, <code>Decreto3046_1981_PlanoPilotoBaixadaJacarepagua.pdf</code>, p. 4, inciso XXII (vaga fora do afastamento frontal, com 1 árvore por vaga). Por último, o pedido <code>pedido_gate_R6_2026-10-08.md</code>.</li>
+      <li><b>Gate Interiores Daniel-OB:</b> o arquivo certo é <code>…\Daniel - OB\01_Projeto\Interiores\Apresentacao\Daniel-OB_Interiores_Slides.html</code> (o pedido antigo apontava para um arquivo que não existe mais). Insumos na mesma pasta. Formulário oficial: <a href="https://docs.google.com/forms/d/1dVKTNuB44lZdbphH0TdRSUBEhS9x3MdtubfpAypRCRQ/edit">Validação da Coordenação — Projeto de Interiores</a>.</li>
+      <li><b>Como responder:</b> em qualquer conversa, "Gate R6: aprovado / com ressalva (qual) / reprovado (motivo)". O Artigas registra. Silêncio não é aprovação.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">G</span>Arquivos alterados em 09/10</h2>
+    <ul class="arquivos">
+      <li><code>CONSTRUCAO_DO_ZERO/CLAUDE_gestor_slice.md</code>, <code>CONSTRUCAO_DO_ZERO/CLAUDE_agente_slice.md</code>, <code>CONSTRUCAO_DO_ZERO/CLAUDE_wallenberg_slice.md</code></li>
+      <li><code>CONSTRUCAO_DO_ZERO/01_CEO/wallenberg-drenagem-continua-v2_SKILL.md</code> (v2.6.0) e o prompt da tarefa agendada da Drenagem (título v2.6.0)</li>
+      <li><code>CONSTRUCAO_DO_ZERO/01_CEO/Casos_TESTE/ensaio_003/_estado_ensaio_003.json</code> e <code>mapa_prontidao_etapas_04_17.md</code> (novo)</li>
+      <li><code>CONSTRUCAO_DO_ZERO/01_CEO/Rotinas_Evolucao/</code>: drenagem, ensaio_sombra, macetes, _mapa_das_rotinas</li>
+      <li><code>CONSTRUCAO_DO_ZERO/01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/</code>: estado, pedido R6, guia de validação (novo)</li>
+      <li><code>CONSTRUCAO_DO_ZERO/01_CEO/Inventario_Capacidade/inventario_capacidade_sttk.md</code></li>
+      <li><code>CONSTRUCAO_DO_ZERO/01_CEO/Pendencias/pendencias.json</code> (+5 itens)</li>
+      <li><code>D:\011_VITRUVIUS\PLANO_AGENTE_GUIADO.md</code> (novo)</li>
+      <li>Tarefa agendada da Rotina Macetes: pausada</li>
+    </ul>
+    <p class="muted">Nada foi commitado ainda. Faço o commit local quando você confirmar.</p>
+  </section>
+
+  <footer>Preparado por Wallenberg, CEO do Sistema Orgânico STTK, em 09/10/2026. Base: estados de todos os agentes, notas e pareceres do Ensaio 003, <code>pendencias.json</code> (86 itens), mapa e diários das rotinas, Inventário de Capacidade, <code>D:\011_VITRUVIUS</code>. Custo de referência: cerca de US$ 700 em subagentes até 28/09.</footer>
+</div>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var el=document.getElementById(btn.getAttribute('data-copy'));
+    var txt=el.textContent;
+    var done=function(){var o=btn.textContent;btn.textContent='Copiado';setTimeout(function(){btn.textContent=o;},1500);};
+    var fallback=function(){var r=document.createRange();r.selectNodeContents(el);var s=window.getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selecionado — use Ctrl+C';};
+    try{navigator.clipboard.writeText(txt).then(done,fallback);}catch(e){fallback();}
+  });
+});
+</script>
+
+</body></html>

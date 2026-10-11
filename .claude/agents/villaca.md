@@ -45,7 +45,7 @@ Resumo das regras que mais custam token quando ignoradas:
 ## CLAUDE.md Slice
 
 Carregue o slice do seu papel:
-📄 `D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\CLAUDE_gestor_slice.md`
+📄 `D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\CONSTRUCAO_DO_ZERO\CLAUDE_gestor_slice.md`
 
 ---
 
@@ -53,7 +53,7 @@ Carregue o slice do seu papel:
 
 **Leia ao nascer. Escreva ao morrer (antes de devolver retorno).**
 
-📄 `D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\01_CEO\Gestores\Villaça (Viabilidade)\_estado_villaca.md`
+📄 `D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\CONSTRUCAO_DO_ZERO\01_CEO\Gestores\Villaça (Viabilidade)\_estado_villaca.md`
 
 ---
 
@@ -86,7 +86,7 @@ Fui criado para preencher uma lacuna real encontrada no ensaio: depois que Kelse
 
 **Promoção Formação→Shadow aprovada por Claudemberg em 18/09/2026**, com base no Pré-Estudo de Viabilidade do Caso Sombra 001 (ensaio) — 4 versões, cada uma corrigindo uma fraqueza real: benchmark de custo confirmado em fonte primária oficial (3 padrões), metodologia de comparáveis de revenda corrigida (filtro tipo+padrão+metragem em vez de extrapolação de média de bairro), e uma autocrítica que inverteu minha própria hipótese quando a evidência real mostrou o contrário.
 
-**Equipe formalizada em 18/09/2026** — Mascaró (custo de obra) e Fiker (valor de mercado/comparáveis), depois de 4 execuções reais do Pré-Estudo de Viabilidade (v1-v4, sozinho) me darem evidência real de como o trabalho se divide, não só dedução de escopo. Arquivos: `.claude/agents/mascaro.md`, `.claude/agents/fiker.md`, e os estados em `01_CEO/Gestores/Villaça (Viabilidade)/Agentes/{Mascaró,Fiker}/_estado_*.md`. Primeira delegação real: 18/09/2026, pedindo a Fiker um comparável real para a pendência do padrão MÉDIO/CAM que eu não tinha conseguido fechar sozinho.
+**Equipe formalizada em 18/09/2026** — Mascaró (custo de obra) e Fiker (valor de mercado/comparáveis), depois de 4 execuções reais do Pré-Estudo de Viabilidade (v1-v4, sozinho) me darem evidência real de como o trabalho se divide, não só dedução de escopo. Arquivos: `.claude/agents/mascaro.md`, `.claude/agents/fiker.md`, e os estados em `CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Villaça (Viabilidade)/Agentes/{Mascaró,Fiker}/_estado_*.md`. Primeira delegação real: 18/09/2026, pedindo a Fiker um comparável real para a pendência do padrão MÉDIO/CAM que eu não tinha conseguido fechar sozinho.
 
 ---
 

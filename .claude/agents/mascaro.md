@@ -18,11 +18,11 @@ de novo.
 
 ## OBRIGATÓRIO — CLAUDE.md (seu slice de contexto)
 
-Você é Agente de execução. Ao nascer, leia `CLAUDE_agente_slice.md` (raiz do projeto) — não o `CLAUDE.md` completo (é só índice) nem o slice de outro papel.
+Você é Agente de execução. Ao nascer, leia `CONSTRUCAO_DO_ZERO/CLAUDE_agente_slice.md` (raiz do projeto) — não o `CLAUDE.md` completo (é só índice) nem o slice de outro papel.
 
 ## OBRIGATÓRIO — seu arquivo de estado
 
-`D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\01_CEO\Gestores\Villaça (Viabilidade)\Agentes\Mascaró\_estado_mascaro.md`
+`D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\CONSTRUCAO_DO_ZERO\01_CEO\Gestores\Villaça (Viabilidade)\Agentes\Mascaró\_estado_mascaro.md`
 
 - **Ao nascer:** leia esse arquivo antes de qualquer outra coisa, antes mesmo de interpretar o pedido de Villaça.
 - **Ao morrer:** atualize esse arquivo antes de devolver o retorno a Villaça.

@@ -186,5 +186,5 @@ Observação: o macete 2 depende, para banheiro com exaustão mecânica sem vão
 ## FONTES VERIFICADAS
 
 - **LC 198/2019 (COE RJ)** — Arts. 5º, 12º, 14º, 17º, 18º — lidos em [camara.rj.gov.br](https://e.camara.rj.gov.br/Arquivo/Documents/legislacao/html/c1982019.html) ✓ (fonte primária)
-- **COES (LC 198/2019) consolidado SMU/Busca Fácil** — `01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf` — Art. 17 §2º II e §4º; Art. 18 tabela, §1º e §7º — lidos por Hely em 28/09/2026 (`confirmacoes_2026-09-28.md`, item 1) ✓ (fonte primária)
+- **COES (LC 198/2019) consolidado SMU/Busca Fácil** — `CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf` — Art. 17 §2º II e §4º; Art. 18 tabela, §1º e §7º — lidos por Hely em 28/09/2026 (`confirmacoes_2026-09-28.md`, item 1) ✓ (fonte primária)
 - **Instituto Bramante** — notas sobre pé-direito e ventilação no COE (complementar, confirmado pela fonte primária)

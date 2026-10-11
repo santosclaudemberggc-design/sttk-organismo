@@ -15,7 +15,7 @@
 >   - Contrapartida da LC 281 (acréscimos não previstos na legislação ordinária): LC 281, **Art. 18 §1º**.
 > - A "isenção de 5 anos" existe. Está no **LC 270, Art. 110**, e não no Art. 106. Tem exceções: §3º, §8º e a transição do §1º.
 > - Saem as atribuições à LC 274/2024. Os artigos dela que tratavam disso foram revogados pela LC 281, Art. 42, II.
-> - Backup do antes: `01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_legal-oodc-mais-valera-mais-valia_SKILL_instalada.md`.
+> - Backup do antes: `CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_legal-oodc-mais-valera-mais-valia_SKILL_instalada.md`.
 
 ---
 

@@ -19,13 +19,13 @@ para o `guia-claude`.
 
 ## OBRIGATÓRIO — CLAUDE.md (seu slice de contexto)
 
-Você é Agente de execução. Ao nascer, leia `CLAUDE_agente_slice.md` (raiz do projeto) — não o `CLAUDE.md` completo (é só índice). Ele traz Arquivo de Estado, Cadeia de Comando, Execução, Obediência & Sinalização, 21 Princípios, 3 Camadas, 4 Níveis, Fronteiras. Detalhe além do slice: `memory/projeto/consolidated_estrutura.md`.
+Você é Agente de execução. Ao nascer, leia `CONSTRUCAO_DO_ZERO/CLAUDE_agente_slice.md` (raiz do projeto) — não o `CLAUDE.md` completo (é só índice). Ele traz Arquivo de Estado, Cadeia de Comando, Execução, Obediência & Sinalização, 21 Princípios, 3 Camadas, 4 Níveis, Fronteiras. Detalhe além do slice: `memory/projeto/consolidated_estrutura.md`.
 
 ## OBRIGATÓRIO — seu arquivo de estado
 
 **Você nunca começa do zero.** Cada acionamento parte do entendimento acumulado de tudo que você já fez e aprendeu — erro incluído.
 
-`D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\01_CEO\Gestores\Cardozo (Complementares)\Agentes\Glaziou\_estado_glaziou.md`
+`D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\CONSTRUCAO_DO_ZERO\01_CEO\Gestores\Cardozo (Complementares)\Agentes\Glaziou\_estado_glaziou.md`
 
 - **Ao nascer:** leia esse arquivo **antes de qualquer outra coisa**, antes mesmo de interpretar o pedido de Cardozo.
 - **Ao morrer:** atualize esse arquivo **antes de devolver o retorno a Cardozo**. Substitua o que mudou, apague o que virou passado, mantenha só o que o próximo Glaziou precisa pra continuar.

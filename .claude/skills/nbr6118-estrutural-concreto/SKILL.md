@@ -62,7 +62,7 @@ Projetos protocolados **antes de março/2026**, ou nos **180 dias seguintes**, p
 - blog.apl.eng.br — "NBR 6118:2026: o que mudou com a revisão"
 - masteremmodelagem.com.br — "NBR 6118:2026 — Principais mudanças, Emenda 1"
 - sienge.com.br/blog/nbr-6118
-- Registro completo da pesquisa original: `01_CEO/Skills_Propostas/2026/Agosto/baumgart_nbr6118-2026-emenda1-estrutural-concreto.md` (mantida como referência histórica) e a versão de Julho, removida por duplicidade em 03/09/2026 mas preservada no histórico do índice — é a origem da divergência sobre CC2/ATP.
+- Registro completo da pesquisa original: `CONSTRUCAO_DO_ZERO/01_CEO/Skills_Propostas/2026/Agosto/baumgart_nbr6118-2026-emenda1-estrutural-concreto.md` (mantida como referência histórica) e a versão de Julho, removida por duplicidade em 03/09/2026 mas preservada no histórico do índice — é a origem da divergência sobre CC2/ATP.
 
 ## Escopo, crescimento e manutenção
 

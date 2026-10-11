@@ -9,21 +9,21 @@ Dependendo do seu papel, carregue o slice apropriado:
 ## 📋 Slices Especializados
 
 ### Para Wallenberg (CEO)
-📄 [`CLAUDE_wallenberg_slice.md`](./CLAUDE_wallenberg_slice.md)  
+📄 [`CONSTRUCAO_DO_ZERO/CLAUDE_wallenberg_slice.md`](./CONSTRUCAO_DO_ZERO/CLAUDE_wallenberg_slice.md)  
 **Conteúdo:** Regra de Ouro, 21 Princípios, 12 Funções, Reuniões, Drenagem de Fila, Hierarquia, 3 Camadas, 4 Níveis, Arquivo de Estado  
 **Tamanho:** ~25 KB | **Redução:** 150 KB → 25 KB
 
 ---
 
 ### Para Gestores (Legal, Arquitetura, Complementares, Fechamento)
-📄 [`CLAUDE_gestor_slice.md`](./CLAUDE_gestor_slice.md)  
+📄 [`CONSTRUCAO_DO_ZERO/CLAUDE_gestor_slice.md`](./CONSTRUCAO_DO_ZERO/CLAUDE_gestor_slice.md)  
 **Conteúdo:** Autonomia, 4 Níveis, Contratação de Agentes, Drenagem de Fila, Cascata de Formação, Obrigações, Reuniões  
 **Tamanho:** ~15 KB | **Redução:** 150 KB → 15 KB
 
 ---
 
 ### Para Agentes (Execução)
-📄 [`CLAUDE_agente_slice.md`](./CLAUDE_agente_slice.md)  
+📄 [`CONSTRUCAO_DO_ZERO/CLAUDE_agente_slice.md`](./CONSTRUCAO_DO_ZERO/CLAUDE_agente_slice.md)  
 **Conteúdo:** Arquivo de Estado (obrigatório), Cadeia de Comando, Execução, Obediência & Sinalização, 21 Princípios, 3 Camadas, 4 Níveis, Fronteiras  
 **Tamanho:** ~20 KB | **Redução:** 150 KB → 20 KB
 
@@ -75,7 +75,7 @@ Para detalhes **ainda mais** compactados:
 
 Se você precisar do arquivo **AGENTS.md completo** (original, não slices):
 
-📄 [`00_HISTORICO/CLAUDE_full_20260727.md`](./00_HISTORICO/CLAUDE_full_20260727.md)  
+📄 [`CONSTRUCAO_DO_ZERO/00_HISTORICO/CLAUDE_full_20260727.md`](./CONSTRUCAO_DO_ZERO/00_HISTORICO/CLAUDE_full_20260727.md)  
 **Conteúdo:** Tudo (150 KB) | **Uso:** Referência apenas, não carregue em execução
 
 ---
@@ -83,9 +83,9 @@ Se você precisar do arquivo **AGENTS.md completo** (original, não slices):
 ## 🎯 Como Usar
 
 1. **Identifique seu papel:**
-   - CEO? → Carregue `CLAUDE_wallenberg_slice.md`
-   - Gestor? → Carregue `CLAUDE_gestor_slice.md`
-   - Agente? → Carregue `CLAUDE_agente_slice.md`
+   - CEO? → Carregue `CONSTRUCAO_DO_ZERO/CLAUDE_wallenberg_slice.md`
+   - Gestor? → Carregue `CONSTRUCAO_DO_ZERO/CLAUDE_gestor_slice.md`
+   - Agente? → Carregue `CONSTRUCAO_DO_ZERO/CLAUDE_agente_slice.md`
 
 2. **Carregue APENAS o slice do seu role**
    - Reduz overhead de contexto
@@ -94,14 +94,14 @@ Se você precisar do arquivo **AGENTS.md completo** (original, não slices):
 
 3. **Para referência completa:**
    - Consulte `consolidated_essencia.md`, `consolidated_estrutura.md`, `consolidated_referencia.md`
-   - Ou `00_HISTORICO/CLAUDE_full_20260727.md` (histórico)
+   - Ou `CONSTRUCAO_DO_ZERO/00_HISTORICO/CLAUDE_full_20260727.md` (histórico)
 
 ---
 
 ## ✅ Status
 
 - ✅ 3 slices criados (27/07/2026)
-- ✅ Backup do original em 00_HISTORICO
+- ✅ Backup do original em CONSTRUCAO_DO_ZERO/00_HISTORICO
 - ✅ Sincronia com pasta organismo (local)
 - ✅ Impacto esperado: 8-12% redução tokens/conversa
 - ✅ `.Codex/agents/*.md` referenciam o slice do próprio papel — **[Corrigido 17/09/2026]** lista não é fixa, cresce conforme o organismo contrata: confira a lista real via `.Codex/agents/*.md`, nunca hardcode nomes aqui (mesma lição já aplicada às rotinas agendadas). Confirmado em 17/09/2026: 15 arquivos reais (Gestores kelsen/lucio/cardozo/lele + hely/artigas + as equipes de Lúcio, Cardozo e futuros).

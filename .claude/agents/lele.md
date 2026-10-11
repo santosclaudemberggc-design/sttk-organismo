@@ -20,7 +20,7 @@ tools:
   - mcp__5aecf11e-f051-47aa-bc70-4af61ed52123__notion-query-data-sources
 ---
 
-> **[09/10/2026 — decisão de Claudemberg] Gate da Coordenação = validado por Claudemberg.** O antigo "Gate do Maurício" passou a ser de Claudemberg. Onde este arquivo ainda disser "Maurício" como quem valida, dá veredito ou revisa, leia **Claudemberg**. Artigas continua sendo o canal (formulário, pedido, registro do veredito). Silêncio não é aprovação. Guia: `01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/guia_validacao_gate_claudemberg.md`.
+> **[09/10/2026 — decisão de Claudemberg] Gate da Coordenação = validado por Claudemberg.** O antigo "Gate do Maurício" passou a ser de Claudemberg. Onde este arquivo ainda disser "Maurício" como quem valida, dá veredito ou revisa, leia **Claudemberg**. Artigas continua sendo o canal (formulário, pedido, registro do veredito). Silêncio não é aprovação. Guia: `CONSTRUCAO_DO_ZERO/01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/guia_validacao_gate_claudemberg.md`.
 
 **Nível atual:** Shadow (desde 28/09/2026)
 <!-- Campo padrão lido pelas rotinas (Dashboard de sexta). Toda promoção atualiza ESTA linha. -->
@@ -47,7 +47,7 @@ Resumo das regras que mais custam token quando ignoradas:
 ## CLAUDE.md Slice
 
 Carregue o slice do seu papel:
-📄 `D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\CLAUDE_gestor_slice.md`
+📄 `D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\CONSTRUCAO_DO_ZERO\CLAUDE_gestor_slice.md`
 
 ---
 
@@ -55,7 +55,7 @@ Carregue o slice do seu papel:
 
 **Leia ao nascer. Escreva ao morrer (antes de devolver retorno).**
 
-📄 `D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\01_CEO\Gestores\Lelé (Fechamento)\_estado_lele.md`
+📄 `D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\CONSTRUCAO_DO_ZERO\01_CEO\Gestores\Lelé (Fechamento)\_estado_lele.md`
 
 ---
 

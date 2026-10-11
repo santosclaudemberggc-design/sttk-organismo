@@ -10,9 +10,9 @@ metadata:
 
 Decisão de Claudemberg em **20/07/2026**: todo agente do Sistema Orgânico STTK tem **um** arquivo de estado — memória privada entre execuções. Lê ao nascer (antes de interpretar o pedido), escreve ao morrer (antes de devolver o retorno pro nível de cima). Cada um escreve só no próprio.
 
-- Wallenberg: `01_CEO\_estado_wallenberg.md`
-- Kelsen: `01_CEO\Gestores\Kelsen (Legal)\_estado_kelsen.md`
-- Hely: `01_CEO\Gestores\Kelsen (Legal)\Agentes\Hely\_estado_hely.md`
+- Wallenberg: `CONSTRUCAO_DO_ZERO\01_CEO\_estado_wallenberg.md`
+- Kelsen: `CONSTRUCAO_DO_ZERO\01_CEO\Gestores\Kelsen (Legal)\_estado_kelsen.md`
+- Hely: `CONSTRUCAO_DO_ZERO\01_CEO\Gestores\Kelsen (Legal)\Agentes\Hely\_estado_hely.md`
 
 Estrutura fixa de 4 seções: onde parei / pendências abertas / aprendizados que não posso esquecer / como escrever nele.
 

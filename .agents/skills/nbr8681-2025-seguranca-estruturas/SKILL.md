@@ -59,4 +59,4 @@ ELU Excepcional: gf = 1,2 (G) / 1,0 (Qexc) / 1,0 (demais Q com psi2).
 
 Texto integral ABNT 2025 nao lido. Valores provisorios. Fechar antes de uso em caso real.
 
-Fonte completa: `01_CEO/Skills_Propostas/2026/Setembro/baumgart_nbr8681-2025-acao-seguranca-estruturas.md`
+Fonte completa: `CONSTRUCAO_DO_ZERO/01_CEO/Skills_Propostas/2026/Setembro/baumgart_nbr8681-2025-acao-seguranca-estruturas.md`

@@ -35,7 +35,7 @@ O Decreto 55.622/2025 (LICIN 2.0), **Art. 5º**, obriga o requerente a informar 
 - O processo de obra em si (execução, mestre de obras, PREO) — fora do escopo de Construção do Zero da Sttickler.
 
 ## Fontes e confiabilidade
-- Decreto 55.622/2025, Arts. 3º, 4º, 5º, 6º e 8º: **conferidos no PDF oficial da base** (`Fontes_Legislacao/Decreto55622_2025_LICIN2.0.pdf`, pp. 2-3) por Kelsen em 01/10/2026. **Confiança alta** para o texto. O §3 foi corrigido nessa conferência. A v1.0 usava o agregador LegisWeb, com confiança média. Continua valendo checar a vigência na Busca Fácil no dia do uso. Backup do antes: `01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_habite-se-aceitacao-licin_SKILL_instalada.md`.
+- Decreto 55.622/2025, Arts. 3º, 4º, 5º, 6º e 8º: **conferidos no PDF oficial da base** (`Fontes_Legislacao/Decreto55622_2025_LICIN2.0.pdf`, pp. 2-3) por Kelsen em 01/10/2026. **Confiança alta** para o texto. O §3 foi corrigido nessa conferência. A v1.0 usava o agregador LegisWeb, com confiança média. Continua valendo checar a vigência na Busca Fácil no dia do uso. Backup do antes: `CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_habite-se-aceitacao-licin_SKILL_instalada.md`.
 - Portal Carioca Digital — página de Certidão de Habite-se/Aceitação
 
 ## Escopo, crescimento e manutenção

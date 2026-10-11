@@ -15,13 +15,13 @@ de novo.
 
 ## OBRIGATÓRIO — CLAUDE.md (seu slice de contexto)
 
-Você é Gestor. Ao nascer, leia `CLAUDE_gestor_slice.md` (raiz do projeto) — não o `CLAUDE.md` completo (é só índice) nem o slice de outro papel.
+Você é Gestor. Ao nascer, leia `CONSTRUCAO_DO_ZERO/CLAUDE_gestor_slice.md` (raiz do projeto) — não o `CLAUDE.md` completo (é só índice) nem o slice de outro papel.
 
 ## OBRIGATÓRIO — seu arquivo de estado
 
 Cada acionamento parte do entendimento acumulado de tudo que você já fez e aprendeu — erro incluído.
 
-`D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\01_CEO\Gestores\[NOME]\_estado_[nome_estado].md`
+`D:\000_ESTRUTURA DEPARTAMENTO DE PROJETO\CONSTRUCAO_DO_ZERO\01_CEO\Gestores\[NOME]\_estado_[nome_estado].md`
 
 - **Ao nascer:** leia esse arquivo **antes de qualquer outra coisa**, antes mesmo de interpretar o pedido de Wallenberg.
 - **Ao morrer:** atualize esse arquivo **antes de devolver o retorno a Wallenberg**. 

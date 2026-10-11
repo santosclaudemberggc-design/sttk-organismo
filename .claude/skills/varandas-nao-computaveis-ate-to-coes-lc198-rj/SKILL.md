@@ -4,7 +4,7 @@ description: Varandas e sacadas não computáveis na ATE e na Taxa de Ocupação
 version: v1.2
 status: ativa-com-ressalva
 data: 2026-09-28
-atualizado: 2026-10-01 (v1.2, Kelsen, ordem de Claudemberg após o Ensaio Sombra 003. Nova §4.1 sobre o regime da ZPP: Dec. 3.046/81 VII e XI. Backup em 01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_varandas-nao-computaveis-ate-to-coes-lc198-rj_SKILL_instalada.md)
+atualizado: 2026-10-01 (v1.2, Kelsen, ordem de Claudemberg após o Ensaio Sombra 003. Nova §4.1 sobre o regime da ZPP: Dec. 3.046/81 VII e XI. Backup em CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/2026-10-01/kelsen_ANTES_varandas-nao-computaveis-ate-to-coes-lc198-rj_SKILL_instalada.md)
 tipo: Inteligência (Trilha A)
 gestor_alvo: Kelsen (Legal)
 agente_principal: Hely (Projeto Legal: quadro de áreas, DULI)
@@ -98,7 +98,7 @@ A Skill de partido de 16/09 (`arquitetura_partido-conforto-termico-orientacao-so
 
 ## 8. FONTES
 
-- **COES (LC 198/2019) consolidado oficial da SMU**, PDF gerado em 07/01/2026, pp. 5-6 (lido por Kelsen 28/09/2026): `01_CEO\Gestores\Kelsen (Legal)\Agentes\Hely\Fontes_Legislacao\COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`
+- **COES (LC 198/2019) consolidado oficial da SMU**, PDF gerado em 07/01/2026, pp. 5-6 (lido por Kelsen 28/09/2026): `CONSTRUCAO_DO_ZERO\01_CEO\Gestores\Kelsen (Legal)\Agentes\Hely\Fontes_Legislacao\COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`
 - **Decreto 45.917/2019** (regulamenta o COES), Art. 6º (lido por Kelsen 28/09/2026): `...\Fontes_Legislacao\Decreto45917_2019_RegulamentaCOES.pdf`
 - **Decreto 3.046/1981**, Instruções Normativas, Disp. Gerais VII, XI, XIV e XXIII (lido por Kelsen em 01/10/2026, pp. 2-4): `...\Fontes_Legislacao\Decreto3046_1981_PlanoPilotoBaixadaJacarepagua.pdf`
 - LC 198/2019, Art. 8º, texto original, Câmara Municipal RJ (lido 28/09/2026): https://e.camara.rj.gov.br/Arquivo/Documents/legislacao/html/c1982019.html
