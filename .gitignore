@@ -7,3 +7,11 @@ CONSTRUCAO_DO_ZERO/_gabaritos_LACRADO_bardi/
 # Planilhas SINAPI (~33 MB/mês): dado público, baixável de novo; ver _referencias_precos/SINAPI/LEIA-ME.md
 _referencias_precos/SINAPI/**/*.zip
 _referencias_precos/SINAPI/**/*.xlsx
+
+# Dados pessoais de clientes (áudio, fotos, documentos): ficam só no disco, nunca no git. Decisão de Claudemberg, 11/10/2026
+REFORMA/Clientes/**/Feedback/
+REFORMA/Clientes/**/Fotos/
+CONSTRUCAO_DO_ZERO/Clientes/**/Feedback/
+CONSTRUCAO_DO_ZERO/Clientes/**/Fotos/
+# Finanças pessoais de Claudemberg
+_financeiro/
