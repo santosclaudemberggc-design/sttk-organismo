@@ -2,7 +2,32 @@
 
 **Versão consolidada em 27/07/2026**
 
-Dependendo do seu papel, carregue o slice apropriado:
+---
+
+## 🔀 PRIMEIRA PERGUNTA DE TODA CONVERSA: Construção do Zero ou Reforma?
+
+Decisão de Claudemberg em 11/10/2026: o organismo tem **duas frentes separadas**, cada uma com o seu CEO.
+
+| Frente | Pasta | CEO |
+|---|---|---|
+| Construção do Zero | `CONSTRUCAO_DO_ZERO/` | Wallenberg |
+| Reforma | `REFORMA/` | a definir (nome em escolha por Claudemberg) |
+
+A raiz guarda só o que é **compartilhado** pelas duas frentes: este arquivo, `AGENTS.md`, `memory/`,
+`_ferramentas/`, `06_Credenciais/`, `02_PROPOSTAS/` e `.claude/` (agentes e Skills precisam ficar ali).
+
+**Regra:** em conversa aberta por Claudemberg, a primeira resposta pergunta **"Construção do Zero ou
+Reforma?"** antes de qualquer trabalho, exceto se a mensagem já disser qual é. A partir daí, só leia e
+escreva na pasta da frente escolhida, mais o que for compartilhado.
+
+**Não pergunte** quando quem abriu a conversa foi uma rotina agendada ou um subagente. A frente já
+vem definida: as rotinas `wallenberg-*` e os agentes Kelsen, Lúcio, Cardozo, Lelé, Villaça, Bardi,
+Artigas e suas equipes são de **Construção do Zero**. Perguntar ali travaria a rotina, porque ninguém
+responde.
+
+---
+
+Dependendo do seu papel, carregue o slice apropriado (os slices abaixo são da frente Construção do Zero):
 
 ---
 
