@@ -9,7 +9,18 @@ description: Como calcular o preço do PROJETO de reforma pelo custo de produzi-
 
 Cobra-se pelo projeto **só o custo de produzi-lo**; o ganho está em **fechar a obra**. Então o preço do projeto tem piso: nunca abaixo do custo real. Projeto dado de graça vira prejuízo quando a obra não fecha.
 
-## A conta
+## Modo "valor simbólico" (decisão de Claudemberg, 11/10/2026, caso Adriana)
+
+Para cliente simples, com orçamento apertado, o preço de custo cheio (horas × custo da hora) **não** é cobrado. Neste modo:
+- Entrega-se **o projeto completo**, o melhor possível, **sem limite de revisões** e com tudo o que o cliente precisa para a obra.
+- O preço é **simbólico**: cobre só o que sai do bolso durante o projeto, ou seja, alimentação na rua e deslocamento nas visitas, mais a parte de luz e internet do escritório em casa no período. O teto para o caso Adriana é **R$ 5.000**.
+- O valor do projeto é **abatido do preço da obra** se o cliente contratar a obra com a Sttickler.
+- Pode haver **presente** de fidelização (Adriana: o 2º pavimento entra sem custo, por fazer a obra com a gente).
+- A conta de horas × custo da hora continua sendo feita, **só para mostrar ao cliente o valor real** do projeto e o desconto que ele está recebendo, e para Claudemberg saber quanto está investindo para fechar a obra.
+
+Quem decide se o cliente entra neste modo é Claudemberg.
+
+## A conta (modo custo, quando não for simbólico)
 
 1. **Lista de entregáveis** do projeto (ex.: levantamento e medição, estudo com imagens, projeto executivo das áreas, iluminação, detalhamento de piscina e gourmet, quantitativo para o orçamento de obra, reuniões).
 2. **Horas por entregável e por pessoa** (arquiteto, desenhista, render). Estime com base em projetos parecidos; quando não houver histórico, declare "estimativa sem histórico".

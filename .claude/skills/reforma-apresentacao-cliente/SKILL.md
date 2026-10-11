@@ -1,6 +1,6 @@
 ---
 name: reforma-apresentacao-cliente
-description: Roteiro e regras para apresentar um projeto de reforma residencial a cliente leigo — antes e depois por ambiente, imagem no lugar de termo técnico, o ponto alto que encanta o cliente (ex.: iluminação em cenas), orçamento explicado sem susto e checagem de entendimento ao fim de cada decisão. Usa a html-ppt-skill para gerar o deck. Use sempre que Lina (ou qualquer Agente da Reforma) for montar apresentação, proposta visual, moodboard ou material para reunião com cliente de reforma, mesmo que o pedido só diga "apresentação", "slides", "proposta visual", "mostrar para a cliente" ou "reunião".
+description: "Roteiro e regras para apresentar um projeto de reforma residencial a cliente leigo — antes e depois por ambiente, imagem no lugar de termo técnico, o ponto alto que encanta o cliente (ex.: iluminação em cenas), orçamento explicado sem susto e checagem de entendimento ao fim de cada decisão. Usa a html-ppt-skill para gerar o deck. Use sempre que Lina (ou qualquer Agente da Reforma) for montar apresentação, proposta visual, moodboard ou material para reunião com cliente de reforma, mesmo que o pedido só diga 'apresentação', 'slides', 'proposta visual', 'mostrar para a cliente' ou 'reunião'."
 ---
 
 # Apresentação de Reforma ao Cliente
@@ -19,6 +19,11 @@ Cliente de reforma costuma ser leigo e ter orçamento apertado. Ele vê a casa t
 6. **Quanto custa**: projeto e obra separados. Na obra, mostre a faixa e a precisão da etapa (vem do Severiano), nunca um número seco. Mostre o que não está incluído.
 7. **Próximos passos e prazos**.
 8. **"Me conta com as suas palavras"**: slide de checagem de entendimento.
+
+## Toda decisão com 2 ou mais opções (decisão de Claudemberg, 11/10/2026)
+
+Material, cobertura, piso, escada, iluminação, layout: cada decisão vem com **duas ou mais opções**, e cada opção traz os seus **benefícios e desvantagens**, em linguagem simples, e uma foto real. Nada de opção única "porque é a melhor". Diga qual a equipe recomenda e por quê, mas a escolha é do cliente.
+Os critérios para comparar vêm do perfil do cliente. No caso Adriana: preço, facilidade de limpar, durabilidade, calor no sol e estilo minimalista.
 
 ## Regras de linguagem
 
