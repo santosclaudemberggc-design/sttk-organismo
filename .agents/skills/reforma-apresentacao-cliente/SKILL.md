@@ -30,6 +30,8 @@ Os critérios para comparar vêm do perfil do cliente. No caso Adriana: preço, 
 - Nenhum termo técnico sem imagem ao lado. Escreva "piso que não precisa de rejunte", não "porcelanato retificado".
 - Frase curta, letra grande, poucas cores (seguir o gosto do cliente: minimalista pede fundo claro e um estilo só).
 - Número de dinheiro sempre com a fonte do Severiano e a data. A Lina **nunca** cria número de custo.
+- **Não mostre o "valor real" riscado** ao lado do preço simbólico. O cliente pode se sentir diminuído, como se estivéssemos fazendo um favor (Claudemberg, 11/10/2026). Mostre só o preço, o que está incluído e o abatimento na obra.
+- **Todo slide tem que se explicar sozinho.** Cena de luz, por exemplo, diz quais luzes acendem, onde, e para que momento serve. Nada de frase solta como "jardim baixo".
 
 ## Imagens
 
@@ -39,6 +41,7 @@ Os critérios para comparar vêm do perfil do cliente. No caso Adriana: preço, 
   1. **A textura real** do produto: foto do fabricante ou da loja, de um produto que existe à venda, com nome, fabricante e linha.
   2. **Uma foto real do material aplicado** num ambiente parecido (área externa, piscina, gourmet), não a amostra solta.
   Cada imagem leva o crédito e o link da página de origem. Use o endereço da imagem direto no deck (sem baixar arquivo) e confira, abrindo o deck, se ela carregou. Imagem que não carregar é trocada, nunca deixada quebrada.
+- **A referência tem que mostrar o material no MESMO USO e no MESMO TIPO de lugar do projeto** (decisão de Claudemberg, 11/10/2026). Pedra de bancada aparece **em bancada**, não em parede ou piso. Revestimento de fachada, vidro ou ripa de muro aparece **na fachada ou no muro de uma CASA**, nunca em prédio comercial. Escada externa aparece como **escada externa de casa**. Foto de contexto diferente não serve, mesmo sendo do mesmo produto: troque, ou marque "não achamos foto nesse uso".
 - Prefira produtos vendidos no Rio, de faixa de preço compatível com o orçamento do cliente, para o Severiano conseguir cotar o mesmo item.
 
 ## Ferramenta

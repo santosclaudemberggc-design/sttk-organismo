@@ -13,7 +13,10 @@
 
 - 11/10/2026: v6 (`Proposta_Visual_Adriana_Iraja_v6.html`, 22 slides), pedida por Rino depois da correção de Claudemberg. A v5 foi mantida. "O que você pediu" agora vai POR ESPAÇO, em 2 slides (piscina, gourmet, jardim e pergolado / lavabo, muro e fachada, escada). Cada espaço tem "já sabemos" e opções com o lugar de cada uma. Não existe mais "garagem" nem "salão": agora é área de lazer gourmet junto à churrasqueira. Os 5 slides de ambiente têm opções de programa (A/B com benefícios e desvantagens). Não entrou imagem nova. Os valores em R$ continuam só os 2 do Severiano.
 
+- 11/10/2026: v7 (`Proposta_Visual_Adriana_Iraja_v7.html`, 22 slides), pedida por Rino. A v6 foi mantida. Segue o layout de Claudemberg: churrasqueira na frente do Corredor 2, bancada reta, jardim no C2 rente ao muro, lavabo = foto 01 (11.23.22), escada = fotos 10 e 11 (11.25.10 e 11.25.33). Troquei 6 referências para fotos de casa no mesmo uso, todas vistas com WebFetch e Read. O slide de luz foi reescrito com planta SVG e 4 cenas. O preço segue a v3 (R$ 3.500), sem valor riscado. A busca por termos proibidos não achou nada.
+
 ## 2. Pendências abertas
+- v7: a foto do vidro espelhado é de obra de arte em forma de casa ("Mirage"), não de muro de casa. A do metal da escada mostra escada caracol, não reta. Falta foto da trapezoidal. A planta da luz é esquemática, com lados de C1 e C2 supostos. Não abri o deck no navegador.
 - v6: as opções de programa foram propostas pela Lina (prainha × cascata, bancada A × B, mesas, pergolado, escada reta × L, lavabo × pia, portão). Precisam do aval do Rino/Claudemberg. Nenhuma tem foto própria. Os slides 5 a 9 ficaram densos e não abri na tela. O relatório (3.1 e 3.3) ainda fala em "garagem" e "área de festa": avisei o Rino.
 - v5: 10 opções sem foto do mesmo produto. São elas: piso B, borda B, bancada B, fachada B, muro B, cobertura B (sem foto nenhuma), escada A e B, iluminação A e B. Achar foto aplicada da trapezoidal sanduíche. Não consegui abrir o deck na tela para ver se há texto cortado nos slides de opção, que são densos.
 - v4: nenhuma loja no Rio foi confirmada. Ressalvas: a Isotelha tem formato colonial, o que tem a ver com o gosto minimalista. Confirmar com Claudemberg ou trocar pela trapezoidal, que ainda está sem foto aplicada. A foto aplicada da Eco Verde é pequena (260 px). Na foto aplicada da PlayGrama, só o fabricante afirma que o produto é o mesmo. Na página da 20 mm, a outra foto "ambiente" parece de banco de imagens e não foi usada.
@@ -31,6 +34,8 @@
 - 11/10/2026: o AECweb quase só mostra embalagem ou amostra, não o produto aplicado. A loja Coral (VTEX, `/api/catalog_system/pub/products/search/...`) também só tem a lata. Os sites de fabricante de vidro têm foto de obra (Cebrace: `blob.cebrace.com.br`). Classificado de marmoraria serve para pedra natural.
 
 - 11/10/2026: foto aplicada do mesmo produto aparece nos estudos de caso do AECweb (`api.aecweb.com.br/matoutros/img_figuras/..._Olho$$<id>.webp`, por `/empresa/<marca>/<id>/conteudo/...`). Também aparece nas fotos "mosaico" ou "ambi" do site do fabricante. Conferir se não é foto de banco de imagens.
+
+- 11/10/2026: o estudo de caso do AECweb traz a foto em `api.aecweb.com.br/matoutros/img_figuras/olho_340x216_Olho$$<id>.webp`. O nome exato aparece na lista "estudos de caso" de outra página da marca. Antes de usar, confira se o caso é de casa ou de prédio.
 
 ## 4. Como escrever nele
 Curto e datado. Seções 1 e 2 se reescrevem; a seção 3 só cresce.
