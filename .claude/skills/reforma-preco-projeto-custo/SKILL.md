@@ -17,7 +17,7 @@ Cobra-se pelo projeto **só o custo de produzi-lo**; o ganho está em **fechar a
    **Fonte atual:** `_financeiro/custo_hora_claudemberg.xlsx` (fora do git, porque são finanças pessoais). Em 11/10/2026, o piso era **R$ 105,67/h**, e um ambiente médio de 5 h custava R$ 528,37. Leia sempre a planilha, porque o valor muda. O projeto é emitido como **pessoa física**, e a obra como CNPJ (Sttickler Empreendimento).
 4. **Despesas diretas**: deslocamento até a obra (Irajá), impressão, render terceirizado, taxas.
 5. **Impostos**: o projeto é emitido como pessoa física. A reserva de INSS e IR já está dentro do custo da hora da planilha (estimativa, a confirmar com o contador). Não some imposto duas vezes.
-6. **Preço** = (horas × custo da hora + despesas) ÷ (1 − impostos). Lucro zero ou mínimo, por estratégia.
+6. **Preço** = horas × custo da hora + despesas diretas. O imposto já está no custo da hora. Lucro zero ou mínimo, por estratégia.
 
 ## Conferência de sanidade
 
