@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa da Adriana (Irajá) | Proposta visual v2</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Deck no padrão html-ppt-skill (tema claro editorial-serif), com tokens e runtime embutidos para abrir sozinho na pasta do cliente. -->
+<style>
+:root{--bg-1:#f7f4ee;--surface:#fff;--text-1:#211f1b;--text-2:#6a645a;--line:#e3ddd2;--accent:#a8582a;--accent-2:#3f5a4a;--warn:#8a5a00;--warn-bg:#fff4dc}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg-1);color:var(--text-1);font:20px/1.45 Inter,system-ui,sans-serif;overflow:hidden}
+.slide{position:absolute;inset:0;padding:4.5vh 5vw 7vh;display:none;flex-direction:column;gap:2vh}
+.slide.is-active{display:flex}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.1;margin:0}
+h1{font-size:clamp(2.2rem,5.4vw,4.2rem)}
+h2{font-size:clamp(1.6rem,3.4vw,2.6rem)}
+h3{font-size:1.15rem;margin-bottom:.3em}
+p{margin:0}
+.eyebrow{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.lead{color:var(--text-2);font-size:1.05rem;max-width:62ch}
+.row{display:grid;gap:2vw;flex:1;min-height:0}
+.c2{grid-template-columns:1fr 1fr}.c3{grid-template-columns:repeat(3,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
+.c12{grid-template-columns:1fr 1.25fr}
+figure{margin:0;display:flex;flex-direction:column;min-height:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+figure img{width:100%;flex:1;min-height:0;object-fit:cover;display:block;background:#ddd}
+figcaption{padding:.5em .8em;font-size:.68rem;color:var(--text-2);line-height:1.35}
+figcaption b{color:var(--text-1);font-size:.78rem}
+figcaption a{color:var(--accent)}
+.tag{display:inline-block;font-size:.62rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:4px;margin-right:6px}
+.t-hoje{background:#e9e4da;color:#4b463d}.t-ref{background:#e2ece5;color:var(--accent-2)}.t-prod{background:#f4e3d7;color:var(--accent)}
+ul.k{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.7em}
+ul.k li{padding-left:1.3em;position:relative}
+ul.k li:before{content:"";position:absolute;left:0;top:.55em;width:.55em;height:.55em;border-radius:50%;background:var(--accent-2)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.1em 1.2em}
+.alert{background:var(--warn-bg);color:var(--warn);border-radius:8px;padding:.45em .8em;font-size:.8rem;font-weight:600;display:inline-block}
+.quote{font-family:Fraunces,Georgia,serif;font-size:1.05rem;border-left:3px solid var(--accent);padding-left:.8em}
+.mat{display:grid;grid-template-rows:auto 1fr auto;gap:.6em;min-height:0}
+.mat .pair{display:grid;grid-template-columns:1fr 1fr;gap:.8em;min-height:0}
+.why{font-size:.85rem;color:var(--text-2)}
+.cover{background:#1d2422;color:#f3eee4}
+.cover .lead{color:#cfc8ba}
+.cover figure{border:none}
+.scenes{display:grid;grid-template-columns:repeat(4,1fr);gap:.8em}
+.scene{border-radius:10px;padding:.8em;color:#eee;font-size:.8rem;min-height:5.5em}
+.footer{position:fixed;bottom:2vh;left:5vw;right:5vw;display:flex;justify-content:space-between;font-size:.62rem;color:var(--text-2);pointer-events:none}
+.notes{display:none}
+img.broken{outline:3px solid #c00}
+@media print{html,body{overflow:visible;height:auto}.slide{position:relative;display:flex;height:100vh;page-break-after:always}.footer{display:none}}
+</style>
+</head>
+<body>
+
+<!-- 1. CAPA -->
+<section class="slide cover is-active">
+  <div class="row c12" style="align-items:center">
+    <div style="display:flex;flex-direction:column;gap:1.2em">
+      <span class="eyebrow">Sttickler · Proposta visual · v2 · 11/10/2026</span>
+      <h1>Adriana, a sua área de lazer em Irajá</h1>
+      <p class="lead">Piscina, cantinho do churrasco, jardim e um muro que faz a rua parar para olhar. Tudo fácil de limpar e dentro do possível.</p>
+      <p class="lead" style="font-size:.8rem">Responsável pelo projeto: Claudemberg, arquiteto (CAU ativo).</p>
+    </div>
+    <figure style="height:70vh"><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.45.01.jpeg" alt="Fachada atual">
+      <figcaption><span class="tag t-hoje">Hoje</span>A sua casa vista da rua, 10/10/2026.</figcaption></figure>
+  </div>
+</section>
+
+<!-- 2. O QUE VOCÊ PEDIU -->
+<section class="slide">
+  <span class="eyebrow">O que você pediu</span>
+  <h2>Ouvimos você antes de desenhar</h2>
+  <div class="row c3" style="align-content:start">
+    <div class="card"><h3>Lazer de verdade</h3><ul class="k"><li>Piscina onde hoje está a brita</li><li>Churrasqueira, fogão e chapa para 2 a 4 pessoas</li><li>Lavabo de apoio</li><li>Jardim com pergolado</li><li>Garagem que vira salão de festa</li></ul></div>
+    <div class="card"><h3>Fácil de cuidar</h3><ul class="k"><li>"Não quero limpar a casa o tempo todo"</li><li>Linhas retas, sem nichos, sem prateleira aberta</li><li>Armário fechado embaixo da bancada</li><li>Sem cobertura de plástico que amarela</li><li>Piso que escoa água, sem limo</li></ul></div>
+    <div class="card"><h3>Ficar bonita</h3><ul class="k"><li>Muro e portão que impressionam</li><li>Fachadas novas, num estilo só</li><li>Fios escondidos, nada pendurado</li><li>Luz que muda o clima num botão</li><li>Escada nova e confortável</li></ul></div>
+  </div>
+  <p class="quote">Bonita, barata de fazer e fácil de limpar. Essa é a regra de cada escolha deste projeto.</p>
+</section>
+
+<!-- 3. HOJE -->
+<section class="slide">
+  <span class="eyebrow">O ponto de partida</span>
+  <h2>Como está hoje</h2>
+  <div class="row c4">
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.23.31.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Brita onde vai a piscina, muitos fios.</figcaption></figure>
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.23.41.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Cobertura de alumínio e portões.</figcaption></figure>
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.24.39.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Corredor 2, parede descascando.</figcaption></figure>
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.23.22.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Corredor 1, limo no pé da parede.</figcaption></figure>
+  </div>
+</section>
+
+<!-- 4. FRENTE -->
+<section class="slide">
+  <span class="eyebrow">Ambiente 1 · Área da frente</span>
+  <h2>Piscina, garagem e nenhum fio à vista</h2>
+  <div class="row c3">
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.24.08.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>O poste preto que você já comprou, no chão.</figcaption></figure>
+    <div class="card"><h3>O que muda</h3><ul class="k">
+      <li><b>Piscina</b> no lugar da brita. Modelo e medidas: confirmar com quem vai dar a piscina.</li>
+      <li><b>Garagem</b> quase no nível da calçada: carro na rua, mesas no lugar, sem rampa.</li>
+      <li><b>Fios</b>: a luz entra pelo seu poste e segue por baixo do chão até a casa.</li></ul>
+      <p class="why" style="margin-top:1em">A loja da piscina é responsável pela piscina. Escavação, casa de máquinas e a parte elétrica dela ainda precisam ser combinadas (loja ou obra).</p></div>
+    <figure><img src="https://images.unsplash.com/photo-1511933801659-156d99ebea3e?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência</span>Borda clara e lisa ao lado da água. Não é projeto da Sttickler. Foto: Autumn Studio / <a href="https://unsplash.com/photos/PaM7SD5wM6g">Unsplash</a></figcaption></figure>
+  </div>
+</section>
+
+<!-- 5. CORREDOR 2 GOURMET -->
+<section class="slide">
+  <span class="eyebrow">Ambiente 2 · Corredor 2 (lado direito)</span>
+  <h2>O cantinho do churrasco</h2>
+  <span class="alert">Local a confirmar na visita de 14/10: proposta no Corredor 2, onde hoje está a cobertura de alumínio.</span>
+  <div class="row c3">
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.23.48.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Área coberta com pilar.</figcaption></figure>
+    <div class="card"><h3>O que muda</h3><ul class="k">
+      <li><b>Bancada em L</b> com churrasqueira pequena, fogão e pia.</li>
+      <li><b>Chapa</b> para 2 a 4 pessoas, sem acender a churrasqueira (a gás ou a carvão: você escolhe).</li>
+      <li><b>Armário fechado</b> embaixo de toda a bancada: a cozinha fica longe, tudo se guarda ali.</li></ul>
+      <p class="why" style="margin-top:1em">Sai a cobertura de alumínio. Entra telha que não esquenta e não amarela (veja nos materiais).</p></div>
+    <figure><img src="https://images.unsplash.com/photo-1762117360871-f11fbad00ee1?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência</span>Bancada lisa, fogão embutido, armário embaixo. Não é projeto da Sttickler. Foto: Alef Morais / <a href="https://unsplash.com/photos/YTnLXCH0jWw">Unsplash</a></figcaption></figure>
+  </div>
+</section>
+
+<!-- 6. CORREDOR 2 JARDIM E ESCADA -->
+<section class="slide">
+  <span class="eyebrow">Ambiente 2 · Corredor 2 (continuação)</span>
+  <h2>Jardim com pergolado e escada nova</h2>
+  <div class="row c3">
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.24.58.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Escada caracol, que sai.</figcaption></figure>
+    <div class="card"><h3>O que muda</h3><ul class="k">
+      <li><b>Jardim simples com pergolado</b>, de frente para a garagem.</li>
+      <li><b>Piso</b> de placas de concreto com grama sintética entre elas: barato e sem manutenção.</li>
+      <li><b>Escada confortável</b>, de degrau largo (concreto ou metal). Depende do que você planeja para o andar de cima.</li></ul>
+      <p class="why" style="margin-top:1em">Pergunta para quarta: você pensa em construir em cima? Se sim, desenhamos junto, sem custo a mais no projeto.</p></div>
+    <figure><img src="https://images.unsplash.com/photo-1785250777298-36f2cab8ceec?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência</span>Pergolado de linhas retas com plantas. Não é projeto da Sttickler. Foto: Timur Seyfelmlyukov / <a href="https://unsplash.com/photos/MyOSSs0JbPM">Unsplash</a></figcaption></figure>
+  </div>
+</section>
+
+<!-- 7. CORREDOR 1 -->
+<section class="slide">
+  <span class="eyebrow">Ambiente 3 · Corredor 1 (lado esquerdo)</span>
+  <h2>O lavabo de apoio</h2>
+  <div class="row c3">
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.25.10.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Fundo do corredor, com ponto de água.</figcaption></figure>
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.23.22.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Limo no pé da parede: água parada.</figcaption></figure>
+    <div class="card"><h3>O que muda</h3><ul class="k">
+      <li><b>Lavabo</b> no fundo do corredor, se a medida de quarta permitir.</li>
+      <li><b>Piso com caimento e ralo</b>: a água vai embora e o limo não volta.</li>
+      <li><b>Canos e fios</b> de piscina, churrasqueira, jardim e lavabo num projeto só, para não quebrar o chão duas vezes.</li></ul>
+      <p class="why" style="margin-top:1em">O porcelanato 82×82 que você já comprou (foto 7) pode entrar aqui. Vamos ver juntos na quarta.</p></div>
+  </div>
+</section>
+
+<!-- 8. MURO E FACHADA -->
+<section class="slide">
+  <span class="eyebrow">O cartão de visita</span>
+  <h2>Muro, portão e fachadas</h2>
+  <div class="row c3">
+    <figure><img src="Fotos/WhatsApp%20Image%202026-10-10%20at%2011.45.01.jpeg" alt=""><figcaption><span class="tag t-hoje">Hoje</span>Muro e portões atuais.</figcaption></figure>
+    <div class="card"><h3>O que muda</h3><ul class="k">
+      <li><b>Faixas de vidro no muro</b>: quem está dentro vê a rua, quem está na rua não vê dentro.</li>
+      <li><b>Portão de impacto</b>: ao abrir, mostra o projeto.</li>
+      <li><b>Fachadas lisas e pintadas</b>, no mesmo estilo do muro.</li></ul>
+      <p class="why" style="margin-top:1em">No muro, só acabamento: a estrutura dele não muda.</p></div>
+    <figure><img src="https://images.unsplash.com/photo-1780964418135-f54dc5f3314a?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência</span>Painéis de vidro sobre muro baixo. Não é projeto da Sttickler. Foto: Yanhao Fang / <a href="https://unsplash.com/photos/hqGCNk57LB4">Unsplash</a></figcaption></figure>
+  </div>
+</section>
+
+<!-- 9. PONTO ALTO -->
+<section class="slide cover">
+  <span class="eyebrow">O ponto alto</span>
+  <h2>Um botão, um clima diferente</h2>
+  <div class="row c12">
+    <figure><img src="https://images.unsplash.com/photo-1788619371179-b3031f2cbe23?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Referência</span>Jardim iluminado à noite. Não é projeto da Sttickler. Foto: Val Vesa / <a href="https://unsplash.com/photos/Zd8bUNJqzdQ">Unsplash</a></figcaption></figure>
+    <div style="display:flex;flex-direction:column;gap:1em">
+      <p class="lead">A luz é separada em grupos. Cada botão (ou o celular) acende um clima.</p>
+      <div class="scenes" style="grid-template-columns:1fr 1fr">
+        <div class="scene" style="background:#2d3a33"><b>Chegada</b><br>Muro e portão acesos.</div>
+        <div class="scene" style="background:#3b3022"><b>Churrasco</b><br>Luz forte na bancada, jardim baixo.</div>
+        <div class="scene" style="background:#1f3340"><b>Piscina</b><br>Só a água acesa. Combinar com a loja da piscina.</div>
+        <div class="scene" style="background:#33283a"><b>Festa</b><br>Tudo aceso: garagem, jardim, pergolado.</div>
+      </div>
+      <p class="lead" style="font-size:.8rem">Luz embutida no piso do jardim e arandelas na parede do Corredor 2.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10. MATERIAIS 1 -->
+<section class="slide">
+  <span class="eyebrow">Materiais · 1 de 4 · Chão do jardim</span>
+  <h2>Placa de concreto com grama entre elas</h2>
+  <div class="row c2">
+    <div class="mat"><h3>Placa de concreto 40×40</h3>
+      <div class="pair">
+        <figure><img src="https://api.aecweb.com.br/cls/anuncios/pes_41342/placa_para_jardim_2_med.webp" alt=""><figcaption><span class="tag t-prod">Produto</span><b>Placa para Jardim 40×40×6 cm, Bela Vista</b> (linha Pavimentação). <a href="https://www.aecweb.com.br/produto/placa-para-jardim/41342">AECweb</a></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1753805280522-79497abdf4d2?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Aplicado</span>Faixas de concreto com grama. Referência. Foto: Zoshua Colah / <a href="https://unsplash.com/photos/xpNKle_-vs4">Unsplash</a></figcaption></figure>
+      </div>
+      <p class="why">Por quê: assenta sem contrapiso nem rejunte, a água infiltra nas juntas.</p></div>
+    <div class="mat"><h3>Grama sintética</h3>
+      <div class="pair">
+        <figure><img src="https://api.aecweb.com.br/cls/anuncios/pes_19551/grama-sintetica-summer-1-med.webp" alt=""><figcaption><span class="tag t-prod">Produto</span><b>Grama Sintética Summer, Belgotex</b> (linha Beaulieu Residencial). <a href="https://www.aecweb.com.br/produto/grama-sintetica-summer/19551">AECweb</a></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1784225350757-2880ef8c1ecf?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Aplicado</span>Faixa de grama entre pisos. Referência. Foto: alexey mansvetov / <a href="https://unsplash.com/photos/OJcQUJTB3n8">Unsplash</a></figcaption></figure>
+      </div>
+      <p class="why">Por quê: sempre verde, não precisa cortar nem regar.</p></div>
+  </div>
+</section>
+
+<!-- 11. MATERIAIS 2 -->
+<section class="slide">
+  <span class="eyebrow">Materiais · 2 de 4 · Piscina e churrasco</span>
+  <h2>Borda que não esquenta e bancada escura</h2>
+  <div class="row c2">
+    <div class="mat"><h3>Borda da piscina que não queima o pé</h3>
+      <div class="pair">
+        <figure><img src="https://api.aecweb.com.br/cls/anuncios/pes_54137/Atermika-Borda-E-reta-med.webp" alt=""><figcaption><span class="tag t-prod">Produto</span><b>Atermika Borda E Reta 30×50, Cimartex</b>. <a href="https://www.aecweb.com.br/produto/atermika-borda-e-reta-30x50/54137">AECweb</a></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1511933801659-156d99ebea3e?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Aplicado</span>Borda clara junto da água. Referência. Foto: Autumn Studio / <a href="https://unsplash.com/photos/PaM7SD5wM6g">Unsplash</a></figcaption></figure>
+      </div>
+      <p class="why">Por quê: não esquenta no sol e não escorrega.</p></div>
+    <div class="mat"><h3>Bancada em granito preto</h3>
+      <div class="pair">
+        <figure><img src="https://api.aecweb.com.br/cls/anuncios/pes_124214/pq-preto-sao-gabriel.webp" alt=""><figcaption><span class="tag t-prod">Produto</span><b>Granito Preto São Gabriel, Kadosh Stone</b>. <a href="https://www.aecweb.com.br/produto/granito-preto-sao-gabriel/124214">AECweb</a></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1778272617899-038ae0330471?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Aplicado</span>Bancada de pedra preta com cuba. Referência. Foto: krishna kumar c / <a href="https://unsplash.com/photos/RKi6pLKBayg">Unsplash</a></figcaption></figure>
+      </div>
+      <p class="why">Por quê: aguenta calor, quase não mancha, limpa com pano úmido.</p></div>
+  </div>
+</section>
+
+<!-- 12. MATERIAIS 3 -->
+<section class="slide">
+  <span class="eyebrow">Materiais · 3 de 4 · Muro e fachadas</span>
+  <h2>Parede lisa pintada e faixa de vidro</h2>
+  <div class="row c2">
+    <div class="mat"><h3>Reboco liso com pintura de fachada</h3>
+      <div class="pair">
+        <figure><img src="https://api.aecweb.com.br/cls/anuncios/pes_22453/textura_acrilica_med.webp" alt=""><figcaption><span class="tag t-prod">Produto</span><b>Textura Acrílica, Coral (AkzoNobel)</b>, aplicação em baixo relevo. <a href="https://www.aecweb.com.br/produto/textura-acrilica/22453">AECweb</a></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1653339403747-b320e831a723?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Aplicado</span>Fachada branca e lisa. Referência. Foto: Ayrton [avid.seq] / <a href="https://unsplash.com/photos/kw_IrxWU4nA">Unsplash</a></figcaption></figure>
+      </div>
+      <p class="why">Por quê: mais barato e rápido que revestimento cerâmico, e qualquer pintor sabe fazer.</p></div>
+    <div class="mat"><h3>Vidro espelhado no muro</h3>
+      <div class="pair">
+        <figure><img src="https://api.aecweb.com.br/cls/anuncios/pes_29766/stopray-lamismart-1-med.webp" alt=""><figcaption><span class="tag t-prod">Produto</span><b>Vidro refletivo laminado Stopray Lamismart 24, AGC Brasil</b>. <a href="https://www.aecweb.com.br/produto/vidro-refletivo-stopray-lamismart-24/29766">AECweb</a></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1780964418135-f54dc5f3314a?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Aplicado</span>Painéis de vidro sobre muro (aqui fosco). Referência. Foto: Yanhao Fang / <a href="https://unsplash.com/photos/hqGCNk57LB4">Unsplash</a></figcaption></figure>
+      </div>
+      <p class="why">Por quê: de dia, quem está na rua vê o reflexo; quem está dentro vê a rua. Laminado não estilhaça.</p></div>
+  </div>
+</section>
+
+<!-- 13. MATERIAIS 4 -->
+<section class="slide">
+  <span class="eyebrow">Materiais · 4 de 4 · Cobertura</span>
+  <h2>Telha que não esquenta, no lugar do alumínio</h2>
+  <div class="row c12">
+    <div class="mat"><h3>Telha sanduíche (termoacústica)</h3>
+      <div class="pair">
+        <figure><img src="https://api.aecweb.com.br/cls/anuncios/pes_43924/Telha_Pr%C3%A9-Pintada_e_P%C3%B3s-Pintada_TP40_med.webp" alt=""><figcaption><span class="tag t-prod">Produto</span><b>Telha TP 40 termoacústica pintada, Termovale</b> (20 cores; a da foto é vermelha). <a href="https://www.aecweb.com.br/produto/telha-pre-pintada-e-pos-pintada-tp-40-termoacustica-sanduiche-pintada/43924">AECweb</a></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1643857880448-a46e0ad132fe?fm=jpg&q=70&w=600" alt=""><figcaption><span class="tag t-ref">Aplicado</span>Telha metálica cobrindo área de churrasco. Referência. Foto: carsyn Damron / <a href="https://unsplash.com/photos/UKcXHqIEIIY">Unsplash</a></figcaption></figure>
+      </div>
+      <p class="why">Por quê: tem isolante no meio, esquenta menos e faz menos barulho na chuva. Por baixo, forro liso.</p></div>
+    <div class="card"><h3>O que fica de fora</h3><ul class="k">
+      <li><b>Policarbonato</b>: amarela, suja e dá trabalho.</li>
+      <li><b>Revestimento cerâmico na fachada inteira</b>: caro e demorado. Só em faixas, se couber no orçamento.</li>
+      <li><b>Nichos e prateleiras abertas</b>: juntam poeira.</li></ul></div>
+  </div>
+</section>
+
+<!-- 14. CUSTO -->
+<section class="slide">
+  <span class="eyebrow">Quanto custa</span>
+  <h2>Projeto e obra, separados</h2>
+  <div class="row c2" style="align-content:start">
+    <div class="card"><h3>Projeto</h3><p class="alert">Aguardando orçamento</p><p class="why" style="margin-top:.8em">O valor do projeto será apresentado com a fonte e a data, depois das medições de quarta (14/10).</p></div>
+    <div class="card"><h3>Obra</h3><p class="alert">Aguardando orçamento</p><p class="why" style="margin-top:.8em">Vamos mostrar uma faixa (mínimo e máximo) e o que não está incluído. Nenhum número aparece aqui antes do orçamento pronto.</p></div>
+  </div>
+</section>
+
+<!-- 15. PRÓXIMOS PASSOS -->
+<section class="slide">
+  <span class="eyebrow">Próximos passos</span>
+  <h2>Como vamos caminhar juntos</h2>
+  <div class="row c4" style="align-content:start">
+    <div class="card"><h3>1 · Quarta, 14/10, 16h</h3><p class="why">Medir tudo, confirmar o lugar do churrasco e do lavabo, falar da piscina e do andar de cima.</p></div>
+    <div class="card"><h3>2 · Orçamento</h3><p class="why">Projeto e faixa de obra, com o que entra e o que não entra.</p></div>
+    <div class="card"><h3>3 · Projeto</h3><p class="why">Desenho, imagens do depois e o projeto único de canos e fios.</p></div>
+    <div class="card"><h3>4 · Obra</h3><p class="why">Previsão: janeiro de 2027.</p></div>
+  </div>
+</section>
+
+<!-- 16. CHECAGEM -->
+<section class="slide cover">
+  <span class="eyebrow">Antes de seguir</span>
+  <h2>Me conta com as suas palavras</h2>
+  <div class="row c2" style="align-content:start">
+    <div class="card" style="background:#26302c;border-color:#34403a;color:#f3eee4"><ul class="k">
+      <li>Onde vai ficar o churrasco?</li><li>O que acontece com os fios da frente?</li><li>Por que o chão do jardim não precisa cortar grama?</li></ul></div>
+    <div class="card" style="background:#26302c;border-color:#34403a;color:#f3eee4"><ul class="k">
+      <li>O que o vidro do muro deixa ver?</li><li>Qual botão de luz você usaria numa festa?</li><li>O que ainda ficou sem resposta para você?</li></ul></div>
+  </div>
+  <p class="lead">Não existe pergunta boba. Se algo não ficou claro, a culpa é nossa, e explicamos de novo.</p>
+</section>
+
+<div class="footer"><span>Sttickler · Casa da Adriana · Irajá · v2</span><span id="num"></span></div>
+
+<script>
+(function(){
+  var s=[].slice.call(document.querySelectorAll('.slide')),i=0,n=document.getElementById('num');
+  function go(k){i=Math.max(0,Math.min(s.length-1,k));s.forEach(function(e,j){e.classList.toggle('is-active',j===i)});n.textContent=(i+1)+' / '+s.length;history.replaceState(null,'','#/'+(i+1));}
+  document.addEventListener('keydown',function(e){
+    if(['ArrowRight','PageDown',' '].indexOf(e.key)>-1)go(i+1);
+    if(['ArrowLeft','PageUp'].indexOf(e.key)>-1)go(i-1);
+    if(e.key==='Home')go(0); if(e.key==='End')go(s.length-1);
+    if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();}
+  });
+  document.addEventListener('click',function(e){if(e.target.tagName!=='A')go(e.clientX>innerWidth/2?i+1:i-1);});
+  [].forEach.call(document.images,function(im){im.addEventListener('error',function(){im.classList.add('broken');im.alt='IMAGEM NÃO CARREGOU';});});
+  var h=location.hash.match(/#\/(\d+)/);go(h?+h[1]-1:0);
+})();
+</script>
+</body>
+</html>
