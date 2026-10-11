@@ -11,7 +11,10 @@
 
 - 11/10/2026: chegaram as decisões de Claudemberg (preço simbólico, uma faixa). O Severiano entregou `Orcamento_Projeto_Adriana_v2.md`: valor simbólico de R$ 1.750 (conta de R$ 1.746,66 = 6 idas × R$ 91,11 + 3 meses × R$ 400) e valor real de R$ 13.209,25 (125 h). A Lina entregou a v5, com 21 slides e 8 decisões de 2 opções cada (16 opções). Dessas, 10 estão sem foto do mesmo produto. Conferi o deck: só tem 2 valores em R$, ambos do Severiano.
 
+- 11/10/2026: Lina entregou a v6 (22 slides, v5 mantida). O antigo slide 2 foi refeito por espaço e virou os slides 2 e 3. A "garagem/salão" virou área de lazer gourmet junto à churrasqueira. 9 slides mudaram, mais ajustes de texto em 1, 21 e 22. Não há imagem nova.
+
 ## 2. Pendências abertas
+- v6 (11/10): as opções de programa foram propostas pela Lina e não vieram da cliente; precisam do aval de Claudemberg. Essas opções não têm foto. O deck não foi aberto na tela, e os slides 5 a 9 estão densos. O relatório analítico ainda fala em garagem como área de festa (3.1, linha 42; 3.3, linha 64; linha 95), e na 3.2 o gourmet está no Corredor 1: avisar a Zanine.
 - v2/v5 (11/10): a distância de 50 km e o consumo de 10 km/l não têm fonte, e o preço da refeição é de 2024. Luz e internet entraram cheias, mas a casa-escritório atende outros projetos; Claudemberg decide. Na cobertura, a Lina recomendou a trapezoidal, que é a única opção sem foto; Claudemberg dá o aval. A v5 não foi aberta no navegador e pode ter texto cortado.
 - Preço do projeto: o deslocamento (R$ 60 por visita, sem fonte) pode estar cobrado duas vezes, porque a planilha já tem R$ 500/mês de transporte. A impressão está sem fonte. A tabela do CAU/BR não foi verificada; fazer a comparação com a calculadora oficial depois do custo de obra. O 2º pavimento foi prometido "sem custo" (6 a 10 h): Claudemberg decide. Precisam de responsável técnico: piscina, estrutura do pergolado e da escada, elétrica da piscina e da entrada, e a cobertura se for laje.
 - v4: a telha Isotelha é colonial e foge do minimalismo; Claudemberg decide se fica. Nenhuma loja no RJ foi confirmada para os 4 materiais novos. O deck não foi aberto no navegador.

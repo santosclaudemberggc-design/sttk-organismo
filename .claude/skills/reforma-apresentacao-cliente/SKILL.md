@@ -12,7 +12,7 @@ Cliente de reforma costuma ser leigo e ter orçamento apertado. Ele vê a casa t
 ## Roteiro (uma ideia por slide)
 
 1. **Capa**: nome do cliente e foto da casa hoje.
-2. **O que você pediu**: os desejos dele com as palavras dele (vêm do relatório do comercial).
+2. **O que você pediu**: organizado **por espaço** (ex.: "Espaço da piscina", "Espaço gourmet"), não como lista de itens fechados. Cada espaço diz o que já sabemos e **abre a conversa com o que mais pode entrar e onde**. Ex.: "o que mais você quer na piscina (cascata, prainha, luz na água, espreguiçadeiras) e onde fica cada coisa"; "além da churrasqueira, o que mais pode ir na bancada (cooktop, chapa, cuba, frigobar)". Corrija sempre o nome do espaço conforme a intenção real do cliente, e não pelo uso de hoje (Adriana: não é "garagem que vira salão", é **área de lazer gourmet junto à churrasqueira**).
 3. **Para cada ambiente**: foto de hoje → o que muda → imagem de referência do depois. No máximo 3 decisões por ambiente.
 4. **O ponto alto**: o que encantou o cliente no primeiro contato (no caso da Adriana, iluminação em cenas) ganha slide próprio.
 5. **Materiais**: poucas amostras, cada uma com o porquê (barato, fácil de limpar, durável).
