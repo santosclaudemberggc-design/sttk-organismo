@@ -1297,7 +1297,7 @@
       "resolvido_em": null,
       "txt": "Ensaio 003 etapa 4 (parecer_bardi etapa_04): isca 1 parcial. Falta a edição da NBR 9050:2020 (suíte térrea e banheiro acessível). O acervo D:\\008 só tem a NBR 9050 de 2015, desatualizada. FORA DO ORGANISMO.",
       "res": "Lacuna do organismo (regra Claudemberg 06/10).",
-      "acao": "Rotina Diária de amanhã aciona Lúcio para obter a NBR 9050:2020 no acervo (ou registrar o canal de acesso) e criar/corrigir a Skill nbr9050 com o texto da edição vigente; Tenreiro entra se a suíte afetar interiores."
+      "acao": "Rotina Diária de amanhã aciona Lúcio para obter a NBR 9050:2020 no acervo (ou registrar o canal de acesso) e criar/corrigir a Skill nbr9050 com o texto da edição vigente; Tenreiro entra se a suíte afetar interiores. BLOQUEIO 12/10/2026 (Diária): acervo D:\\008 segue sem a edição 2020 (só a de 2015, marcada DESATUALIZADA); busca web de 12/10 não trouxe o texto oficial. Sugestão de compra registrada para Claudemberg. Item segue aberto, sem Skill criada."
     },
     {
       "id": "bardi-gabarito-etapa4-erros-09-10",
