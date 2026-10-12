@@ -19,3 +19,6 @@ _financeiro/
 # Fotos de cliente copiadas para apresentações open-slide
 REFORMA/_apresentacoes/**/slides/*/assets/
 CONSTRUCAO_DO_ZERO/_apresentacoes/**/slides/*/assets/
+
+# Senha da revisão remota (open-slide)
+REFORMA/_apresentacoes/_revisao_remota/senha.txt
