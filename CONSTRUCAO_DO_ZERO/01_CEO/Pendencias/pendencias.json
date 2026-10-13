@@ -86,11 +86,11 @@
                       "cardId":  "kelsen",
                       "desde":  "2026-10-08",
                       "crit":  "media",
-                      "alc":  "tecnico",
+                      "alc":  "humano",
                       "status":  "aberta",
                       "resolvido_em":  null,
-                      "txt":  "K1 (levantado por LÃºcio, 08/10): o Dec. 3.046 XXII incide na subzona A-ENS? A aplicacao do inciso depende da subzona do lote, nao so da ZE-5. Sem resposta primaria ainda.",
-                      "acao":  null
+                      "txt":  "K1 (levantado por LÃºcio, 08/10): o Dec. 3.046 XXII incide na subzona A-ENS? Hely leu o PDF local do Dec. 3.046 (13/10): a designacao A-ENS nao existe no Dec. 3.046/81 nem na LC 270/2024 (subzonas reais A-1 a A-46); aparece so no dossie fictício do Ensaio 003 (caso_sombra_003.md l. 65). ZRM1-B tambem nao consta do Dec. 3.046. Cap. III com excecoes por subzona ainda nao lido por inteiro.",
+                      "acao":  "Decisao humana (Claudemberg): corrigir o dossie do Ensaio 003 (ZPP, subzona A-ENS, caso 5.3) ou marcar a designacao como ficticia. Subzona real so se confirma no RIU do lote. Pendente: regerar _indice_fontes.pdf (POP-LEGAL-06)."
                   },
                   {
                       "id":  "decisao-ensaio003-etapa3-claudemberg-08-10",
@@ -1404,8 +1404,9 @@
                       "desde":  "2026-10-12",
                       "crit":  "media",
                       "alc":  "auto",
-                      "status":  "aberta",
-                      "resolvido_em":  null,
+                      "status":  "resolvida",
+                      "resolvido_em":  "2026-10-13",
+                      "resolucao":  "Texto oficial obtido: Lei 13.146/2015 (integral) e Lei 12.651/2012 Art. 4o (caput a par. 10; termina no XI, sem XII/XIII). Fonte: planalto.gov.br via curl, 13/10/2026; texto de site consolidado, conferir DOU para citacao formal. Gravado em Fontes_Legislacao/Lei13146_2015_EstatutoPessoaComDeficiencia.md e Lei12651_2012_CodigoFlorestal_Art4.md. Indice atualizado (PDF do indice ainda nao regerado).",
                       "txt":  "Ensaio 003 etapa 4 (parecer_bardi etapa_04, item 10): Lei 13.146/2015 e Lei 12.651/2012 art. 4o nao estao no acervo (D:\\008 nem Fontes_Legislacao). FORA DO ORGANISMO. Kelsen tentou obter em planalto.gov.br em 12/10: ECONNRESET; camara.leg.br mostra ficha da 12.651 sem o corpo do art. 4o.",
                       "acao":  "Rotina Diaria de amanha aciona Kelsen para obter o texto oficial (outra fonte primaria) e gravar em Fontes_Legislacao; sem texto, nao inventar artigo."
                   }

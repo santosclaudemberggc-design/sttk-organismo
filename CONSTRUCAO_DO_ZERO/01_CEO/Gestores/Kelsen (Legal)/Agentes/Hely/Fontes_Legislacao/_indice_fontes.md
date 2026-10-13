@@ -817,3 +817,23 @@ Art. 16: "Os processos autuados para licenciamento de projetos de parcelamento, 
 - Na peça, escrever: "vigência inferida por remissão; status direto não localizado em [data]".
 
 **(b) LC 270/2024, Arts. 106-111 (`LC270_2024_PlanoDiretorLUOS.pdf`, pp. 40-41), lidos por Kelsen.** A isenção de 5 anos da contrapartida está no **Art. 110** (exceções no §1º, §3º e §8º), não no Art. 106 (que traz só a regra geral, CAB até CAM). A fórmula da OODC é a Fórmula 1 do Anexo XXV (Art. 111). O Art. 18 §1º da LC 281/2025 é de outro regime.
+
+---
+
+## REGISTRO — 13/10/2026 — [Kelsen via Hely] — Lacuna `lacuna-kelsen-lei13146-lei12651-art4-12-10` (texto oficial)
+
+**(a) Lei 13.146/2015 (Estatuto da Pessoa com Deficiência) — OBTIDA, texto integral vigente.** Arquivo: `Lei13146_2015_EstatutoPessoaComDeficiencia.md`. Fonte: Planalto, `https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm`, acessada em 13/10/2026 via curl com cabeçalho de navegador. Trechos riscados no HTML foram excluídos (redação revogada). Art. 1º e Art. 127 conferidos; o próprio Planalto avisa que o texto não substitui o DOU de 07/07/2015. Ressalva: texto de site, não DOU.
+
+**(b) Lei 12.651/2012 (Código Florestal), Art. 4º — OBTIDO, lido de forma completa, caput e incisos I a XI, §§ 1º a 10.** Arquivo: `Lei12651_2012_CodigoFlorestal_Art4.md`. Fonte: Planalto, `https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm`, acessada em 13/10/2026 via curl. **Correção ao pedido:** o Art. 4º não tem incisos XII nem XIII; o último é o XI (veredas). O §10 (incluído pela Lei 14.285/2021) tem incisos I a III próprios.
+
+**Fontes tentadas nesta rodada (registro de tentativas):**
+- `planalto.gov.br` (13146 e 12651), WebFetch: não testado nesta rodada. Por curl com cabeçalho de navegador: **funcionou** (HTTP 200, 13/10/2026).
+- `legislacao.presidencia.gov.br`, WebFetch (12651 e 13146): **falhou**, `read ECONNRESET`. Por curl: HTTP 200 com página de verificação ("Please enable JavaScript" + código de segurança); **bloqueada** para extração.
+- `lexml.gov.br`, curl (`urn:lex:br:federal:lei:2015-07-06;13146` e `...2012-05-25;12651`): HTTP 200, apenas ficha de metadados (ementa, apelido, data), com links para Planalto, Senado e Câmara. **Sem corpo de texto.**
+- `legis.senado.leg.br/norma/589574` (Lei 12.651), curl: HTTP 200, mas o conteúdo é índice de jurisprudência do STF por dispositivo (Art. 4º, caput inciso 3 e 4, §§ 1, 4, 5, 6 com notas de constitucionalidade/interpretação conforme). **Não traz o corpo do Art. 4º**; não foi usado como texto.
+- `senado.leg.br` (página de busca de legislação, curl): **bloqueada**, página de verificação de segurança exigindo JavaScript.
+- `camara.leg.br`: não reabrido nesta rodada (já sabido que mostra só a ficha da 12.651, sem o corpo do Art. 4º, segundo a lacuna).
+
+**Arquivos gravados (criados, novos; sem edição de conteúdo existente):** `Lei13146_2015_EstatutoPessoaComDeficiencia.md` e `Lei12651_2012_CodigoFlorestal_Art4.md`, ambos nesta pasta. PDF não gerado nesta rodada.
+**Backup pré-edição deste índice:** `CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/2026-10-13/_indice_fontes_pre-lei13146-lei12651.md`, md5 `20994eabe21f053caea3967c6bfe747a` (igual ao original, conferido antes da edição).
+**Pendente:** `_indice_fontes.pdf` não regenerado (regra do POP-LEGAL-06 pede PDF após edição; fica para Kelsen ou para a próxima rodada de geração). Lacuna em `pendencias.json` não fechada aqui: decisão de Kelsen.
