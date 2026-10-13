@@ -464,6 +464,12 @@
                           "evento":  "lacre_violado_nao_corrigida",
                           "data":  "2026-10-12",
                           "obs":  "LACRE VIOLADO: SHA256 atual do gabarito etapa_04 = 11F5F1D0725B35EBBABC3010E7900ECC5D6FAEF9380A9C1C845799314F5939EC; registrado em caso_criado (09/10) = EB7F99BC2FC29262FBACC6ECF47705CE7B460886BBDCD7790D80A9749CE6CE87. Bardi NAO acionado para correcao. Aguarda Claudemberg."
+                      },
+                      {
+                          "etapa":  4,
+                          "evento":  "correcao_v2_pelo_gestor",
+                          "data":  "2026-10-13",
+                          "obs":  "Kelsen (LC 270 Art. 352, p. 125): SMD = 20% da area livre (terreno x (1-TO)); com TO 50% = 57,18 m2. 68,62 m2 usava TO 40% da convencao (privada). Oscar corrigiu 01-07 _v2 e checagem_oscar_v2.md; Lucio reescreveu 08_auditoria_lucio_003_v2.md com prova. Abertos: P1 terreno 571,80 (briefing) x 600,00 (cadastro); TO 50% do ZPP nao conferida no Dec. 3.046; citacao de copia faltante em 06 linhas 44 e 49; \u0027ASCII\u0027 residual em 01 s8 item 4. Lacre do gabarito continua violado: proxima_acao segue aguardar_claudemberg."
                       }
                   ],
     "versao_referencia":  "v8",

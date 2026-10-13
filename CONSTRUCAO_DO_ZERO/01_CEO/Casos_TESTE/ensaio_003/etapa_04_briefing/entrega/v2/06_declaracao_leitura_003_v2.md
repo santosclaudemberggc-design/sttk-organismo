@@ -33,7 +33,7 @@
 
 ## C. Pastas que não foram tocadas
 
-- A pasta de gabaritos lacrados (`_gabaritos_LACRADO_bardi`), na raiz do projeto: **nenhum arquivo aberto, lido, citado, listado ou buscado nesta execução.** Não fiz Glob nem Grep na raiz.
+- O material de gabarito lacrado do ensaio, não aberto: **nenhum arquivo aberto, lido, citado, listado ou buscado nesta execução.** Não fiz Glob nem Grep sobre essa pasta. As buscas Glob desta rodada foram feitas só dentro de `ensaio_003` e de `Fontes_Legislacao`.
 - Nenhum arquivo de outro agente ou gestor foi editado. Só o estado de Oscar foi atualizado.
 - A v1 (`entrega/`) ficou intacta. Nenhum arquivo foi apagado.
 
@@ -41,7 +41,7 @@
 
 - Etapa 02 v9 (`pre_estudo_viabilidade_003_v9.md`): S1, S2, S3 e a construída de 340–360 m² vêm da v1 e do enunciado.
 - Etapa 03 v8 (`03_matriz`, `anexo_contas`, `02_relatorio`): C-4, C-5, C-7, C-15, Peça 2 §5.2 e Matriz 9 vêm da v1.
-- LC 270 (pp. 79-80, 97, 123, 126, 130, Anexo XXI), COES (pp. 3, 13, 29), Dec. 3.046 (pp. 2-5), LC 281 (pp. 2-8), LC 301 (p. 38), NBR 6492 (PDF pp. 14-15): citados pela v1 ou pela Etapa 01, não reabertos aqui.
+- LC 270 (pp. 79-80, 97, 123, 126, 130, Anexo XXI; cópia LC270_2024_PlanoDiretorLUOS.pdf), COES (pp. 3, 13, 29; cópia COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf), Dec. 3.046 (pp. 2-5; cópia Decreto3046_1981_PlanoPilotoBaixadaJacarepagua.pdf), LC 281 (pp. 2-8; cópia LC281_2025_CondicoesEspeciais_CONSOLIDADO.pdf), LC 301 (p. 38; cópia LC301_2026_AEIUPracaOnze_AlteraLC270e281.pdf), NBR 6492 (PDF pp. 14-15): citados pela v1 ou pela Etapa 01, não reabertos aqui.
 - Lei federal 13.146/2015, Lei 12.651/2012, Código Civil: não abertos.
 
 ## E. Ferramentas usadas
@@ -51,4 +51,4 @@
 - Glob: pasta de normas 9050 (nome do arquivo), pasta de entregas da Etapa 03 e da Etapa 02 (nomes).
 - Write: criação dos 9 arquivos da v2 (8 peças e `checagem_oscar_v2.md`) em `...\etapa_04_briefing\entrega\v2\`.
 - Revit (Vitruvius): não usado. A Etapa 04 não exige desenho.
-- Contagem de palavras: **não feita** (sem ferramenta). Pendente de Wallenberg.
+- Contagem de palavras: a fazer por Wallenberg com ferramenta. Nenhum número estimado.
