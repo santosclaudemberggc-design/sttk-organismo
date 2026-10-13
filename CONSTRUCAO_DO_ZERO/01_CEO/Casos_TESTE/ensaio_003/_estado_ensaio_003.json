@@ -3,8 +3,8 @@
     "criado_em":  "2026-09-30",
     "regra":  "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar. [09/10/2026 Claudemberg] Teto de 3 versoes: com 3 ou mais versoes reprovadas na mesma etapa, a Drenagem NAO refaz; grava etapa_NN/diagnostico_repeticao.md e poe proxima_acao=aguardar_claudemberg. Auditoria do Gestor so vale com prova colada.",
     "etapa_atual":  4,
-    "status_etapa":  "reprovada",
-    "proxima_acao":  "aguardar_claudemberg",
+    "status_etapa":  "a_criar",
+    "proxima_acao":  "criar_caso",
     "valores_possiveis":  {
                               "status_etapa":  [
                                                    "a_criar",
@@ -470,6 +470,12 @@
                           "evento":  "correcao_v2_pelo_gestor",
                           "data":  "2026-10-13",
                           "obs":  "Kelsen (LC 270 Art. 352, p. 125): SMD = 20% da area livre (terreno x (1-TO)); com TO 50% = 57,18 m2. 68,62 m2 usava TO 40% da convencao (privada). Oscar corrigiu 01-07 _v2 e checagem_oscar_v2.md; Lucio reescreveu 08_auditoria_lucio_003_v2.md com prova. Abertos: P1 terreno 571,80 (briefing) x 600,00 (cadastro); TO 50% do ZPP nao conferida no Dec. 3.046; citacao de copia faltante em 06 linhas 44 e 49; \u0027ASCII\u0027 residual em 01 s8 item 4. Lacre do gabarito continua violado: proxima_acao segue aguardar_claudemberg."
+                      },
+                      {
+                          "etapa":  4,
+                          "evento":  "etapa_4_anulada",
+                          "data":  "2026-10-13",
+                          "obs":  "Claudemberg escolheu anular a etapa 4 e recriar o caso. Gabarito alterado sem registro (mtime 11/10 09:49, SHA256 11F5F1D0725B35EBBABC3010E7900ECC5D6FAEF9380A9C1C845799314F5939EC) preservado como etapa_04_gabarito_ANULADO_alterado_11-10_preservado.md, nao apagado. Sem copia da versao de 09/10. Nova execucao: Bardi cria caso e gabarito novos (criar_caso). Reprovacao v1 nao conta como tentativa nova no teto. Entrega v2 antiga fica como registro."
                       }
                   ],
     "versao_referencia":  "v8",
