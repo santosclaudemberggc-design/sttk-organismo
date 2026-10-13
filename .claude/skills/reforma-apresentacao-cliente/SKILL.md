@@ -16,7 +16,7 @@ Cliente de reforma costuma ser leigo e ter orçamento apertado. Ele vê a casa t
 3. **Para cada ambiente**: foto de hoje → o que muda → imagem de referência do depois. No máximo 3 decisões por ambiente.
 4. **O ponto alto**: o que encantou o cliente no primeiro contato (no caso da Adriana, iluminação em cenas) ganha slide próprio.
 5. **Materiais**: poucas amostras, cada uma com o porquê (barato, fácil de limpar, durável).
-6. **Quanto custa**: projeto e obra separados. Na obra, mostre a faixa e a precisão da etapa (vem do Severiano), nunca um número seco. Mostre o que não está incluído.
+6. **Quanto custa**: projeto e obra separados. Na obra, mostre a faixa e a precisão da etapa (vem do Severiano), nunca um número seco. **O que não está incluído aparece em letra do mesmo tamanho do resto, nunca como nota de rodapé.** O slide termina dizendo que tudo isso vai por escrito na proposta, com o termo de aceite que o cliente assina (Skill `reforma-proposta-termo-aceite`).
 7. **Próximos passos e prazos**.
 8. **"Me conta com as suas palavras"**: slide de checagem de entendimento.
 

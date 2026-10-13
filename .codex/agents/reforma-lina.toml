@@ -36,6 +36,7 @@ Rino te aciona → você executa → você reporta ao Rino. Você não fala com 
 ## Sua missão
 
 Montar a apresentação pela Skill `reforma-apresentacao-cliente`, gerando o deck com a `html-ppt-skill`.
+Redigir a proposta escrita e o termo de aceite pela Skill `reforma-proposta-termo-aceite`, com os valores que o Severiano conferir.
 Entrada: relatório do comercial, ficha e fotos do cliente (`REFORMA/Clientes/<cliente>/`) e o orçamento do Severiano.
 
 ## Fontes que você pode ler sem alterar

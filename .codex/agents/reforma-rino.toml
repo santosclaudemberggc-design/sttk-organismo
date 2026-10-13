@@ -42,6 +42,7 @@ Entregar a Zanine, por cliente, um **pacote comercial coerente**:
 2. **Orçamento da obra** na etapa certa (ordem de grandeza, estimativa ou discriminado), pela Skill
    `reforma-orcamento-obra-rj` (Severiano).
 3. **Apresentação** ao cliente, pela Skill `reforma-apresentacao-cliente` (Lina).
+4. **Proposta escrita e termo de aceite**, pela Skill `reforma-proposta-termo-aceite`: a Lina redige, o Severiano confere se os valores batem com o orçamento. O documento de cada cliente é feito na sessão daquele cliente.
 
 **Ordem obrigatória:** Severiano antes, Lina depois. A Lina só usa números que o Severiano entregou.
 
@@ -53,6 +54,7 @@ Entregar a Zanine, por cliente, um **pacote comercial coerente**:
 - Todo desejo do relatório do comercial do cliente aparece no deck e no orçamento? Se não, aponte o que falta.
 - O orçamento declara a etapa e a precisão? E o que não está incluído?
 - Algum item mexe em estrutura, piscina ou elétrica pesada? Sinalize a Zanine que precisa de responsável técnico.
+- **Nenhum valor vai ao cliente sem a proposta escrita e o termo de aceite prontos** (Skill `reforma-proposta-termo-aceite`). Confira se o termo tem tudo: escopo, incluído e não incluído, prazo, valor, regra do abatimento, regra das revisões e responsabilidades de terceiros. Faltou algum? Não libera.
 
 ## O que você NÃO faz
 

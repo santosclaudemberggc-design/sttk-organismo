@@ -29,7 +29,7 @@ de Construção do Zero e que o da Reforma **ainda não existe**.
 
 | Papel | Status |
 |---|---|
-| **Rino** — Gestor Comercial (`reforma-rino`) | Formação, desde 11/10/2026. Equipe: **Lina** (apresentação, `reforma-lina`) e **Severiano** (orçamento de projeto e obra, `reforma-severiano`). Skills: `reforma-orcamento-obra-rj`, `reforma-preco-projeto-custo`, `reforma-apresentacao-cliente` |
+| **Rino** — Gestor Comercial (`reforma-rino`) | Formação, desde 11/10/2026. Equipe: **Lina** (apresentação, `reforma-lina`) e **Severiano** (orçamento de projeto e obra, `reforma-severiano`). Skills: `reforma-orcamento-obra-rj`, `reforma-preco-projeto-custo`, `reforma-apresentacao-cliente`, `reforma-proposta-termo-aceite` (nenhum valor vai ao cliente sem termo de aceite) |
 | Outros Gestores de Reforma | ainda não contratados |
 | Avaliador de melhoria da casa depois de reformada (no lugar do Bardi) | a criar, decisão de Claudemberg 11/10/2026 |
 

@@ -12,13 +12,15 @@ Cobra-se pelo projeto **só o custo de produzi-lo**; o ganho está em **fechar a
 ## Modo "valor simbólico" (decisão de Claudemberg, 11/10/2026, caso Adriana)
 
 Para cliente simples, com orçamento apertado, o preço de custo cheio (horas × custo da hora) **não** é cobrado. Neste modo:
-- Entrega-se **o projeto completo**, o melhor possível, **sem limite de revisões** e com tudo o que o cliente precisa para a obra.
+- Entrega-se **o projeto completo**, o melhor possível, com tudo o que o cliente precisa para a obra. **Revisões sem limite dentro do programa combinado na visita.** Mudança de programa (ex.: trocar a piscina por uma edícula) é projeto novo, e isso vai escrito no termo de aceite.
 - O preço é **simbólico**: cobre só o que sai do bolso durante o projeto, ou seja, alimentação na rua e deslocamento nas visitas, mais a parte de luz e internet do escritório em casa no período. O teto para o caso Adriana é **R$ 5.000**.
-- O valor do projeto é **abatido do preço da obra** se o cliente contratar a obra com a Sttickler.
+- O valor do projeto é **abatido do preço da obra** se o cliente contratar a obra com a Sttickler. O termo de aceite diz **até quando** o abatimento vale e **em qual parcela** da obra ele entra. Esses dois números são decididos por Claudemberg em cada caso.
 - Pode haver **presente** de fidelização (Adriana: o 2º pavimento entra sem custo, por fazer a obra com a gente).
-- A conta de horas × custo da hora continua sendo feita, **só para mostrar ao cliente o valor real** do projeto e o desconto que ele está recebendo, e para Claudemberg saber quanto está investindo para fechar a obra.
+- A conta de horas × custo da hora continua sendo feita, **só para uso interno**: Claudemberg sabe quanto está investindo para fechar a obra. **Não se mostra ao cliente** o valor real nem o desconto (decisão de 11/10/2026: o cliente pode se sentir diminuído).
 
 Quem decide se o cliente entra neste modo é Claudemberg.
+
+**Nenhum preço vai ao cliente sem a proposta escrita e o termo de aceite** (Skill `reforma-proposta-termo-aceite`).
 
 ## A conta (modo custo, quando não for simbólico)
 
