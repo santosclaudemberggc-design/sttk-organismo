@@ -22,7 +22,7 @@ No Ensaio 003 (etapa 3) o Levantamento usou "12,50-15,00 m²/vaga" sem fonte. Os
 
 ## 2. O TEXTO QUE IMPORTA
 
-| Fonte (pág. do PDF) | Dispositivo | Regra | Alcança unifamiliar? |
+| Fonte (pág. do PDF; "COES" = `COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`, cópia consolidada SMU) | Dispositivo | Regra | Alcança unifamiliar? |
 |---|---|---|---|
 | COES (p. 15) | Art. 29 caput e I | "As vagas de estacionamento, **quando projetadas**": retangulares, **2,50 m x 5,00 m**; paralelas ao eixo da circulação, **2,50 m x 6,00 m** | Ver R1 |
 | COES (p. 15) | Art. 29 II | **Área de manobra** livre, contígua à menor dimensão, **2,50 m x 5,00 m** | Ver R1 |

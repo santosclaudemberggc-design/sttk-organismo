@@ -1322,8 +1322,9 @@
                       "desde":  "2026-10-09",
                       "crit":  "media",
                       "alc":  "auto",
-                      "status":  "aberta",
-                      "resolvido_em":  null,
+                      "status":  "resolvida",
+                      "resolvido_em":  "2026-10-13",
+                      "resolucao":  "Copia oficial/vigente = COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf (consolidacao SMU, PDF gerado 07/01/2026, indice de fontes: Valido, referencia). Prova do conteudo: e a unica copia com as inser coes de LC 283/2025 (Art. 35 par. 7, p. 20 do PDF) e LC 291/2025 (Art. 2 par. 7, p. 2 do PDF); a impressaoWeb de 21/07/2026 nao tem o Art. 35 par. 7 (p. 19-20 terminam no par. 6). Paginacao medida em 13/10/2026: Art. 29 III = p. 15 (consolidado) e p. 16 (impressaoWeb); Art. 31 III-IV = p. 17 (consolidado) e p. 18 (impressaoWeb); original 2019: p. 15 = Arts. 26-28. Pp. 19 e 21 do acervo e 'p. 15 = Arts. 22-24' (Bardi) nao reproduzidos em nenhuma copia. Skills de vaga (v1.6, rotulo de copia) e levantamento (v1.11, corrige erro da v1.10 que trocou p. 15 por p. 19) indicam a copia. Ressalva: autenticidade frente ao Diario Oficial NAO conferida nesta rodada. Proposta de vaga em Skills_Propostas/2026/Outubro nao editada nesta rodada.",
                       "txt":  "Duas cÃ³pias do COES com paginaÃ§Ã£o diferente: Hely/Kelsen citam Art. 29 III na p. 15 e Art. 31 IIIâ€“IV na p. 17 (consolidado SMU); o acervo (impressaoWeb) cita pp. 19 e 21. Bardi afirma que p. 15 = Arts. 22â€“24 em uma das cÃ³pias. Conflito nÃ£o resolvido: as Skills e as pareceres v7/v8 citam pÃ¡ginas sem dizer qual cÃ³pia.",
                       "acao":  "Rotina DiÃ¡ria de amanhÃ£ aciona Kelsen (com Hely) para ler as duas cÃ³pias, dizer por escrito qual Ã© a oficial e corrigir as citaÃ§Ãµes de pÃ¡gina das Skills de vaga e de levantamento para indicar o arquivo usado."
                   },
@@ -1356,9 +1357,23 @@
                       "acao":  "Kelsen decide e ajusta a redacao da R6 para o texto ao cliente nao citar a soma como regra (pode ficar como nota interna). Backup integral antes; versao nova da Skill; copiar para .agents/skills (o Fechamento do Dia tambem sincroniza). Registro do veredito: CONSTRUCAO_DO_ZERO/01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/pedido_gate_R6_2026-10-08.md secao 6."
                   },
                   {
+                      "id":  "conflito-coes-paginacao-art29iii-13-10-2026",
+                      "owner":  "Claudemberg",
+                      "agente":  "",
+                      "txt":  "Conflito de paginacao do COES (LC 198/2019) entre leituras da mesma rodada de 13/10: Lucio le Art. 29 III na p. 19 (PDF do acervo, pp. 19-20); Kelsen mede p. 15 no consolidado SMU e restaurou p. 15 na Skill de levantamento v1.11, marcando a copia de D:\\008 (pp. 24-25) como nao batendo. Nao resolvido: autenticidade frente ao Diario Oficial nao conferida; a terceira copia nao foi conferida contra a consolidada.",
+                      "acao":  "Claudemberg (ou Kelsen com o Diario Oficial) decide qual copia e a referencia oficial; depois Lucio/Kelsen alinham todas as paginas citadas. Enquanto isso, citar COES sempre com o nome da copia.",
+                      "cardId":  "sistema",
+                      "desde":  "2026-10-13",
+                      "status":  "aberta",
+                      "crit":  "media",
+                      "alc":  "humano",
+                      "tipo":  "conflito_fonte"
+                  },
+                  {
                       "cardId":  "sistema",
                       "desde":  "2026-10-10",
-                      "status":  "aberta",
+                      "status":  "resolvida",
+                      "resolvido_em":  "2026-10-13",
                       "crit":  "media",
                       "alc":  "auto",
                       "tipo":  "skill",
@@ -1385,7 +1400,7 @@
                   {
                       "cardId":  "sistema",
                       "desde":  "2026-10-10",
-                      "status":  "aberta",
+                      "status":  "resolvida",
                       "crit":  "baixa",
                       "alc":  "auto",
                       "tipo":  "skill",
@@ -1393,7 +1408,9 @@
                       "owner":  "Kelsen",
                       "agente":  "hely",
                       "txt":  "A proposta CONSTRUCAO_DO_ZERO/01_CEO/Skills_Propostas/2026/Setembro/kelsen_decreto3046-81-lc270-2024-licin-barra-recreio.md diverge da Skill instalada (ja divergia antes de 10/10) e a l. 143 ainda cita \"Skill de vaga v1.0\".",
-                      "acao":  "Kelsen sincroniza a proposta com a instalada (instalada e a fonte), com backup integral antes."
+                      "acao":  "Kelsen sincroniza a proposta com a instalada (instalada e a fonte), com backup integral antes.",
+                      "resolvido_em":  "2026-10-13",
+                      "resolucao":  "Proposta Setembro sincronizada com a instalada (.claude/skills, v1.5 Drenagem de 08/10, com R12) por copia integral. Backup antes: CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/2026-10-13/kelsen_ANTES_sync-instalada_decreto3046_proposta_Setembro.md. Diff: as duas versoes foram lidas integralmente e conferidas por Grep (247 linhas em cada). A proposta tinha M8 e R2 (08/10, com referencia 'Skill de vaga v1.0') que a instalada nao tem; a instalada tem R12 e o trecho XXII/XXIII a da secao 5, que a proposta nao tinha. Referencia 'Skill de vaga v1.0 (07/10)' eliminada. Conteudo do M8 fica no backup; o tema e coberto pela secao 5 e pela R12 da instalada. Diferenca residual: fim de linha (instalada CRLF, proposta LF). Versao atual da Skill de vaga: v1.6 (frontmatter)."
                   },
                   {
                       "id":  "lacuna-kelsen-lei13146-lei12651-art4-12-10",
