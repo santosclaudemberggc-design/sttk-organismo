@@ -5,7 +5,7 @@ Carregue APENAS este arquivo em sessões de CEO. Para detalhes completos, consul
 
 **✅ OTIMIZAÇÃO ATIVADA (01/09/2026):**
 - Carregamento automático deste slice em todas as suas conversas
-- **Economia:** 87% ↓ no overhead de contexto CLAUDE (125 KB economizados por conversa)
+- **Economia:** 87% ↓ no overhead de contexto CLAUDE (tamanho do original medido em 29 KB; a economia por conversa não foi medida)
 - **Próximo:** Prompt caching nativo (adicional 15-20% ↓) quando API v1.9+ disponível
 
 ---

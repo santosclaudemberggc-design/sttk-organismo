@@ -36,21 +36,21 @@ Dependendo do seu papel, carregue o slice apropriado (os slices abaixo são da f
 ### Para Wallenberg (CEO)
 📄 [`CONSTRUCAO_DO_ZERO/CLAUDE_wallenberg_slice.md`](./CONSTRUCAO_DO_ZERO/CLAUDE_wallenberg_slice.md)  
 **Conteúdo:** Regra de Ouro, 21 Princípios, 12 Funções, Reuniões, Drenagem de Fila, Hierarquia, 3 Camadas, 4 Níveis, Arquivo de Estado  
-**Tamanho:** ~25 KB | **Redução:** 150 KB → 25 KB
+**Tamanho:** ~25 KB | **Redução:** 29 KB → 25 KB
 
 ---
 
 ### Para Gestores (Legal, Arquitetura, Complementares, Fechamento)
 📄 [`CONSTRUCAO_DO_ZERO/CLAUDE_gestor_slice.md`](./CONSTRUCAO_DO_ZERO/CLAUDE_gestor_slice.md)  
 **Conteúdo:** Autonomia, 4 Níveis, Contratação de Agentes, Drenagem de Fila, Cascata de Formação, Obrigações, Reuniões  
-**Tamanho:** ~15 KB | **Redução:** 150 KB → 15 KB
+**Tamanho:** ~15 KB | **Redução:** 29 KB → 15 KB
 
 ---
 
 ### Para Agentes (Execução)
 📄 [`CONSTRUCAO_DO_ZERO/CLAUDE_agente_slice.md`](./CONSTRUCAO_DO_ZERO/CLAUDE_agente_slice.md)  
 **Conteúdo:** Arquivo de Estado (obrigatório), Cadeia de Comando, Execução, Obediência & Sinalização, 21 Princípios, 3 Camadas, 4 Níveis, Fronteiras  
-**Tamanho:** ~20 KB | **Redução:** 150 KB → 20 KB
+**Tamanho:** ~20 KB | **Redução:** 29 KB → 20 KB
 
 ---
 
@@ -81,7 +81,7 @@ de tentar, não depois de falhar três vezes.
 
 | Métrica | Antes | Depois | Redução |
 |---------|-------|--------|---------|
-| Arquivo carregado | 150 KB (sempre) | 15-25 KB (por role) | **80-90% ↓** |
+| Arquivo carregado | 29 KB (sempre) | 15-25 KB (por role) | **80-90% ↓** |
 | Overhead de contexto | Completo em toda conversa | Apenas o necessário | ~8-12% economia |
 
 ---
@@ -101,7 +101,7 @@ Para detalhes **ainda mais** compactados:
 Se você precisar do arquivo **CLAUDE.md completo** (original, não slices):
 
 📄 [`CONSTRUCAO_DO_ZERO/00_HISTORICO/CLAUDE_full_20260727.md`](./CONSTRUCAO_DO_ZERO/00_HISTORICO/CLAUDE_full_20260727.md)  
-**Conteúdo:** Tudo (150 KB) | **Uso:** Referência apenas, não carregue em execução
+**Conteúdo:** Tudo (29 KB) | **Uso:** Referência apenas, não carregue em execução
 
 ---
 
