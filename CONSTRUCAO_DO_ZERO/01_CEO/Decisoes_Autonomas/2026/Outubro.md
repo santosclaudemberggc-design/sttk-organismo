@@ -508,3 +508,7 @@
 ---
 
 **14/10/2026 — Decisão do Claudemberg (COES Art. 29 III):** aprovada a opção A. Manter a página 15 do COES consolidado e citar sempre por artigo e arquivo. Como desfazer: voltar a referência para a página 19, o que não é recomendado (a p. 19 não contém o Art. 29 III). Pendente antes de protocolo: Art. 31 III, regra de reforma, LC 283/2025 e 291/2025. Registro: pendencias.json (`coes-art29iii-paginacao-14-10-2026`, resolvida).
+
+---
+
+**14/10/2026 — Consolidação da Etapa 04 (Briefing, v2), Ensaio 003:** as duas rodadas "v2" (12/10 sem sufixo e 13/10 com `_v2`) diferem em todos os 7 pares de arquivos. Foram reunidas em um único arquivo, `etapa_04_briefing_v2_CONSOLIDADO.md`, sem reescrever texto: Parte 1 = rodada de 13/10; Parte 2 = rodada de 12/10. Os originais estão em `_backups/2026-10-14/etapa04_v2_ANTES_consolidacao/`. Como desfazer: copiar os arquivos do backup de volta para `entrega/v2/`.
