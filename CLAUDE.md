@@ -131,7 +131,7 @@ Se você precisar do arquivo **CLAUDE.md completo** (original, não slices):
 - ✅ Impacto esperado: 8-12% redução tokens/conversa
 - ✅ `.claude/agents/*.md` referenciam o slice do próprio papel — **[Corrigido 17/09/2026]** lista não é fixa, cresce conforme o organismo contrata: confira a lista real via `.claude/agents/*.md`, nunca hardcode nomes aqui (mesma lição já aplicada às rotinas agendadas). Confirmado em 17/09/2026: 15 arquivos reais (Gestores kelsen/lucio/cardozo/lele + hely/artigas + as equipes de Lúcio, Cardozo e futuros).
 
-**Próximo:** **[REABERTO 14/10/2026 por Claudemberg]** Validação Items 1 & 2 (zero perda confirmada) — agendada para 31/07/2026, nunca fechada. Entra na Drenagem Contínua até ser validada de fato.
+**Próximo:** ~~Validação Items 1 & 2 (zero perda)~~ — **[VALIDADO 14/10/2026 por Claudemberg]**. Conferência linha a linha: 22 preservadas, 16 resumidas por decisão do slice, 2 perdidas e restauradas (commit 4caa033). Ver prova em `pendencias.json`.
 
 ---
 

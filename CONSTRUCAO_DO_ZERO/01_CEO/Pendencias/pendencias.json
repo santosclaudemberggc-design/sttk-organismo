@@ -56,7 +56,9 @@
                       "desde":  "2026-07-31",
                       "crit":  "media",
                       "alc":  "auto",
-                      "status":  "aberta",
+                      "status":  "resolvida",
+                      "resolvido_em":  "2026-10-14",
+                      "prova":  "Tabela de 40 linhas (classificadas: 22 preservadas, 16 resumidas, 2 perdidas). As 2 perdidas foram restauradas no slice Wallenberg (commit 4caa033). Tamanho do original corrigido de 150 KB para 29 KB (commit b833f9b). Confirmado por Claudemberg em 14/10/2026. Os princípios e as descrições de níveis seguem resumidos por decisão do slice (ver tabela).",
                       "txt":  "Validacao Items 1 e 2 (zero perda) reaberta por Claudemberg em 14/10. Estava agendada para 31/07 e nunca fechada.",
                       "res":  "CLAUDE.md, secao Proximo, marcado como REABERTO em 14/10.",
                       "acao":  "Wallenberg define o criterio de validacao com Claudemberg (o que conta como zero perda) e a Drenagem executa a checagem nos slices e no organismo. Fecha so com prova colada."
