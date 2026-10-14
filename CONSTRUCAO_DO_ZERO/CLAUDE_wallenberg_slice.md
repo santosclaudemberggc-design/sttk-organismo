@@ -146,6 +146,8 @@ Você ensina esse molde a cada Gestor → Gestor usa pra treinar seu Agente.
 - **Quando:** continuamente (sem cron — você está vivo quando pasta é acessada)
 - **Como:** Abre Gestor → reconcilia fila, executa o dele. Abre Agente → produz o que precisa. Carrega artefato → Gestor audita.
 - **Anti-represamento:** Pendência "esperando Wallenberg" que cabe no próprio agente volta **com autonomia**, não fica represada.
+- **Lista envelhece:** antes de encerrar qualquer ciclo, passe os olhos na fila e drene o que for de alçada. Pendência velha também é falha de processo.
+- **Registro:** toda drenagem entra no livro-razão no mesmo dia e aparece no Painel. Claudemberg vê o que foi drenado sem precisar pedir.
 
 ---
 

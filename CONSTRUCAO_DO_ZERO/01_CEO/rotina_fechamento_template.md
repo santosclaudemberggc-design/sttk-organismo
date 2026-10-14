@@ -63,22 +63,6 @@ metadata:
 
 ---
 
-## [2026-10-12] -- Diaria Skills v3.5.0 (Segunda) -- PIPELINE LINEAR (pesquisa sem entrega)
-
-### RODADA ATUAL (O que foi entregue)
-- Pesquisa (Passo 1, 6 buscas standard, 2 por Gestor): Kelsen (LC 281/2025 + LICIN 2.0; decreto 55.622), Lúcio (NBR 9050 vigente; conforto poente/ventilação RJ), Cardozo (SPT/hélice Barra-Recreio; macetes de armadura). Nenhum achado viável: nenhuma Skill criada, nada forçado.
-- Nenhum `/watch:watch` rodou: as buscas de vídeo não acharam conteúdo relevante ao eixo (registrado).
-- Lacuna `lacuna-lucio-nbr9050-edicao-09-10-2026`: segue aberta, com bloqueio escrito. Acervo só tem a edição de 2015.
-- Lacuna `lacuna-kelsen-dec3046-xxii...`: já resolvida em 08/10. Nada a fazer.
-- Painel: evento `marco` gravado (12/10). Backup de `pendencias.json` e `feed.jsonl` em `Decisoes_Autonomas/_backups/2026-10-12/`.
-
-### O QUE FICOU PENDENTE (Cuidado: não repita)
-- Compra sugerida para Claudemberg: NBR 9050:2020 (edição vigente). Sem ela, a Skill de acessibilidade continua na edição de 2015.
-- Atenção: o PDF "Decreto 55.622 Versao DO" na web tem conteúdo de outro tema (grupo de trabalho "Licenciamento Zero"). O `D:\008_Normas ABNT\ato_55622.pdf` é a fonte a checar antes de citar LICIN 2.0.
-- Não rodar a pesquisa sobre LC 281/2025 de novo sem fonte primária: a busca web não achou o texto consolidado.
-
----
-
 ## O QUE NÃO FAZER (acumulado)
 
 Consolidado em 30/09/2026 a partir de todas as rodadas de 01/09 a 29/09 (movidas para `CONSTRUCAO_DO_ZERO/01_CEO/rotina_fechamento_historico.md`). Itens já resolvidos/superados por rodada mais nova não aparecem de novo — quem quiser o detalhe completo lê o histórico.
