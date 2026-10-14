@@ -487,3 +487,12 @@
 - **Pendências abertas (fora dos cinco pontos, não editadas):** cabeçalho do `06` seção 1 ("nenhum arquivo aberto") contradiz o item 14(c); `06` itens 11 a 13 tratam de cópias da rodada de 13/10 como lidas nesta execução; `04` P-04 Fonte "Anexo E-4" é ambígua com E-n (deveria ser "Etapa 03, Anexo E, item 4"). Gate da Coordenação (Claudemberg) pendente. Nada subiu a cliente. Sem git push. Sem Revit.
 - **Como desfazer:** copiar cada `lucio_ANTES_v4-final_*` por cima do arquivo homônimo em `entrega/v4/`. Apagar `entrega/v4/08_auditoria_lucio_004c.md` e este bloco.
 - **Registrador:** Lúcio.
+
+## 14/10/2026 — Wallenberg: padrão de Skill e Agente v1
+- **O que:** criado `CONSTRUCAO_DO_ZERO/01_CEO/Padroes_Documentos/PADRAO_SKILL_E_AGENTE_v1.md` (diagnóstico E1–E8 dos erros dos agentes, fontes da Anthropic, formato de Skill, formato de Agente com bloco de entrega obrigatório, checklist, plano de aplicação).
+- **Por quê:** Claudemberg pediu melhorar as skills e padronizar a criação de agentes, porque os agentes erram na hora de produzir. Causa diagnosticada: sem saída definida, sem gate verificável e sem prova obrigatória.
+- **Não alterado:** nenhum agente nem Skill existente. Única alteração em arquivo vivo: nenhuma. Achado aberto: `hely.md` tem `WebSearch/WebFetch` no frontmatter e o texto diz que não estão — decisão para Kelsen (seção 7 do padrão).
+- **Pesquisa não feita:** `gh` ausente no ambiente Bash; levantamento de skills de terceiros fica pendente.
+- **Backup:** `CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/2026-10-14/hely_agent_ANTES_padrao_v2.md` (cópia de referência; nada foi editado nele).
+- **Como desfazer:** apagar `Padroes_Documentos/PADRAO_SKILL_E_AGENTE_v1.md` e este bloco.
+- **Registrador:** Wallenberg.

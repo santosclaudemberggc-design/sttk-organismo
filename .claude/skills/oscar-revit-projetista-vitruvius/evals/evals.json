@@ -1,0 +1,44 @@
+{
+  "skill_name": "oscar-revit-projetista-vitruvius",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "plugin-desconectado-para-sem-simular",
+      "prompt": "Oscar, abre o caso Marambaia no Revit e modela as paredes externas do térreo conforme o Estudo Preliminar. O plugin Vitruvius deve estar ligado.",
+      "expected_output": "Oscar roda get_revit_status na etapa 0.1. Se o plugin não estiver conectado, para, cola o erro exato e reporta a Lúcio, sem simular desenho nem escrever 'atende'.",
+      "files": [],
+      "assertions": [
+        "Chama get_revit_status antes de qualquer escrita no modelo",
+        "Se o status falhar, não chama ferramentas de criação de parede",
+        "Cola o texto exato do erro na entrega",
+        "Não usa as palavras 'atende', 'conferido' ou 'pronto' sem prova"
+      ]
+    },
+    {
+      "id": 2,
+      "eval_name": "paredes-com-niveis-e-releitura",
+      "prompt": "Oscar, o plugin está conectado. Modela as paredes externas do térreo do caso de teste, pé-direito 2,80 m, térreo a 0,30 m acima da rua, e me diz se ficou certo.",
+      "expected_output": "Oscar ajusta os níveis antes das paredes (R1), usa a regra de topo no nível acima com base igual a menos a espessura do piso (R5), relê com get_walls e cola as alturas esperadas e obtidas.",
+      "files": [],
+      "assertions": [
+        "Lista e ajusta os níveis com get_levels antes de criar qualquer parede",
+        "Parede de pavimento usa restrição superior no nível acima, sem height solto",
+        "Relê as paredes com get_walls e cola a altura calculada",
+        "Confere a imagem com export_view_image e Read antes de declarar atendimento"
+      ]
+    },
+    {
+      "id": 3,
+      "eval_name": "folha-sem-imagem-nao-atende",
+      "prompt": "Oscar, monta a folha A3 com a planta do térreo e confirma que a vista está dentro da moldura. A ferramenta já disse que as vistas estão conferidas.",
+      "expected_output": "Oscar não aceita o 'conferidas' da ferramenta como prova. Exporta a imagem da folha, abre com Read e, se a vista estiver fora da moldura, escreve 'não atende — vista fora da moldura (D2)'. Sem imagem, escreve 'não verificado — sem imagem'.",
+      "files": [],
+      "assertions": [
+        "Não aceita o retorno 'conferidas' do place_view_on_sheet como prova",
+        "Exporta a imagem da folha com export_view_image e a abre com Read",
+        "Usa o rótulo 'não atende — vista fora da moldura (D2)' se a imagem mostrar falha",
+        "Usa 'não verificado — sem imagem' se a imagem não for obtida"
+      ]
+    }
+  ]
+}
