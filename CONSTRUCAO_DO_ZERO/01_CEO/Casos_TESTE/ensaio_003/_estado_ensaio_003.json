@@ -1,10 +1,12 @@
 ﻿{
   "ensaio": "003",
   "criado_em": "2026-09-30",
-  "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar. [09/10/2026 Claudemberg] Teto de 3 versoes: com 3 ou mais versoes reprovadas na mesma etapa, a Drenagem NAO refaz; grava etapa_NN/diagnostico_repeticao.md e poe proxima_acao=aguardar_claudemberg. Auditoria do Gestor so vale com prova colada.",
+  "regra": "Uma etapa por vez. Reprovada = Drenagem corrige e refaz a MESMA etapa. [14/10/2026 Claudemberg, substitui a regra de 09/10] Limite de 3 tentativas por etapa: esgotadas as 3 sem aprovacao, a etapa e encerrada como reprovada e o ensaio AVANCA para a proxima etapa. Ao fim do ensaio, revisar todas as falhas e decidir o que ajustar, recriar, criar novo ou organizar. A Drenagem grava etapa_NN/diagnostico_repeticao.md ao esgotar as 3 tentativas. Auditoria do Gestor so vale com prova colada.",
   "etapa_atual": 5,
   "status_etapa": "reprovada",
-  "proxima_acao": "aguardar_claudemberg",
+  "tentativas_etapa_5": 2,
+  "limite_tentativas_por_etapa": 3,
+  "proxima_acao": "refazer",
   "valores_possiveis": {
     "status_etapa": [
       "a_criar",
