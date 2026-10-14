@@ -512,3 +512,7 @@
 ---
 
 **14/10/2026 — Consolidação da Etapa 04 (Briefing, v2), Ensaio 003:** as duas rodadas "v2" (12/10 sem sufixo e 13/10 com `_v2`) diferem em todos os 7 pares de arquivos. Foram reunidas em um único arquivo, `etapa_04_briefing_v2_CONSOLIDADO.md`, sem reescrever texto: Parte 1 = rodada de 13/10; Parte 2 = rodada de 12/10. Os originais estão em `_backups/2026-10-14/etapa04_v2_ANTES_consolidacao/`. Como desfazer: copiar os arquivos do backup de volta para `entrega/v2/`.
+
+---
+
+**14/10/2026 — Remoção da rodada de 12/10 de `entrega/`:** a pasta `v2_anterior_12-10/` foi removida. A rodada de 12/10 foi substituída pela de 13/10, que resolve as 8 correções dela. Os 7 arquivos permanecem em `_backups/2026-10-14/etapa04_v2_ANTES_consolidacao/` (conferidos byte a byte antes da remoção). Como desfazer: copiar do backup de volta para `entrega/v2_anterior_12-10/`.
