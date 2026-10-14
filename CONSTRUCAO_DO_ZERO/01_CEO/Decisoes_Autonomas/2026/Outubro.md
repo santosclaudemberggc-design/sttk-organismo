@@ -504,3 +504,7 @@
 - **Pendente:** rodada limpa dos casos (uma escrita por vez) só depois de o build corrigido sair ou de Claudemberg autorizar. Não houve commit deste bloco.
 - **Como desfazer:** restaurar `oscar.md` e `lucio.md` dos backups `_backups/2026-10-14/oscar_agent_ANTES_v8_vitruvius.md` e `lucio_agent_ANTES_v8_vitruvius.md`; restaurar a Skill de `oscar-revit-SKILL_ANTES_v1.2.2.md`; apagar `D:\011_VITRUVIUS\PEDIDOS_OSCAR\09_pedidos_melhoria_bloco1_v8_14-10.md`.
 - **Registrador:** Wallenberg.
+
+---
+
+**14/10/2026 — Decisão do Claudemberg (COES Art. 29 III):** aprovada a opção A. Manter a página 15 do COES consolidado e citar sempre por artigo e arquivo. Como desfazer: voltar a referência para a página 19, o que não é recomendado (a p. 19 não contém o Art. 29 III). Pendente antes de protocolo: Art. 31 III, regra de reforma, LC 283/2025 e 291/2025. Registro: pendencias.json (`coes-art29iii-paginacao-14-10-2026`, resolvida).

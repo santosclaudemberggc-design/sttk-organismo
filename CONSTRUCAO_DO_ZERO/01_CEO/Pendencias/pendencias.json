@@ -26,7 +26,9 @@
                       "desde":  "2026-10-14",
                       "crit":  "alta",
                       "alc":  "auto",
-                      "status":  "aberta",
+                      "status":  "resolvida",
+                      "resolvido_em":  "2026-10-14",
+                      "decisao_claudemberg":  "Opcao A: manter a pagina 15 do COES consolidado e citar sempre por artigo e arquivo. Corrigir a referencia de Lucio (p. 19 nao contem o Art. 29 III). Pendente antes de protocolo: Art. 31 III, regra de reforma, LC 283/2025 e 291/2025.",
                       "txt":  "Conflito de paginacao do COES LC 198/2019 Art. 29 III: Lucio le na p. 19, Kelsen restaurou p. 15. Claudemberg nao e da area juridica e pediu orientacao para escolher a resposta.",
                       "res":  "Kelsen acionado em 14/10 para conferir o PDF primario e propor 2 a 3 opcoes com pros, contras e recomendacao. Decisao final e de Claudemberg.",
                       "acao":  "Kelsen entrega o parecer de orientacao (sem editar arquivo). Wallenberg apresenta a Claudemberg em linguagem simples e registra a decisao."
