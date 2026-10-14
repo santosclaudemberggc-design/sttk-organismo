@@ -24,6 +24,24 @@ metadata:
 
 ---
 
+## [2026-10-14] -- Diaria Skills v3.5.0 (Quarta) -- PIPELINE LINEAR (lacunas com dono + pesquisa sem entrega)
+
+### RODADA ATUAL (O que foi entregue)
+- Prioridade zero (lacunas `auto` abertas): acionado Lúcio para `lacuna-lucio-nbr9050-edicao-09-10-2026` — bloqueada, sem texto da edição 2020 no acervo nem em fonte oficial; nada alterado. Sugestão de compra: NBR 9050:2020 no catálogo ABNT.
+- Acionado Kelsen para `kelsen-f1`, `kelsen-f4` (DL 9.760) e `kelsen-f5` (CC arts. 1.301-1.302). Kelsen entregou relatório parcial: delegou ao Hely em segundo plano e o resultado não voltou. Conferido no disco: nenhum dos três artefatos existe em `Fontes_Legislacao/` e o `_indice_fontes.md` não tem entrada nova. Os 3 itens seguem `aberta`.
+- Pesquisa (Passo 1, 6 buscas standard, 2 por Gestor): Kelsen (LC 281/2025 e LICIN 2.0 — só texto normativo, sem notícia verificável sobre Barra/Recreio; uma fonte indica alteração pela LC 291/2025, não verificada); Lúcio (brises fachada oeste RJ — coberto por `lucio-protecao-solar-externa-dispositivos-rj`); Cardozo (SPT/solo mole Barra — coberto por `fundacoes-solos-moles-lencol-freatico-barra-recreio`). Nenhum achado novo viável. Nenhuma Skill criada.
+- `/watch:watch`: 3 buscas de vídeo, nenhum vídeo técnico relevante encontrado. Nada assistido.
+- Passo 8 e Macetes não rodaram nesta rodada.
+- Feed do Painel: sem evento novo (não é sexta).
+
+### PENDÊNCIAS E BLOQUEIOS
+- Hely: confirmar se a execução em segundo plano de F-1/F-4/F-5 gravou algo; até lá, nenhum item fechado.
+- DL 9.760 e CC 1.301-1.302: a obtenção do texto oficial exige download de Planalto, que não foi feito nesta rodada sem confirmação de Claudemberg.
+- Pendências de decisão humana (K1, paginação COES, trava etapa 5 do Ensaio 003): seguem com Claudemberg.
+
+### O QUE TOMAR CUIDADO
+- Subagente que delega a outro e encerra antes do retorno deixa o trabalho órfão: exigir artefato verificável antes de marcar item como resolvido.
+
 ## [2026-10-13] -- Diaria Skills v3.5.0 (Terça) -- PIPELINE LINEAR (lacunas prioritárias + pesquisa sem entrega)
 
 ### RODADA ATUAL (O que foi entregue)
@@ -55,25 +73,6 @@ metadata:
 - Compra sugerida para Claudemberg: NBR 9050:2020 (edição vigente). Sem ela, a Skill de acessibilidade continua na edição de 2015.
 - Atenção: o PDF "Decreto 55.622 Versao DO" na web tem conteúdo de outro tema (grupo de trabalho "Licenciamento Zero"). O `D:\008_Normas ABNT\ato_55622.pdf` é a fonte a checar antes de citar LICIN 2.0.
 - Não rodar a pesquisa sobre LC 281/2025 de novo sem fonte primária: a busca web não achou o texto consolidado.
-
----
-
-## [2026-10-09] -- Diaria Skills v3.5.0 (Sexta) -- RODADA DE SEXTA (Painel e métricas)
-
-### RODADA ATUAL (O que foi entregue)
-
-- [x] **Dia confirmado:** 09/10/2026, sexta-feira. DayOfWeek = Friday (máquina). Pipeline de sexta (Passos 6, 9, 10).
-- [x] **Passo 0:** `_passagem_do_dia.md` lida (dizia que a rodada de 09/10 não tinha rastro; registrado aqui). Feed: último evento `status` era 02/10 (7 dias de defasagem), corrigido nesta rodada.
-- [x] **Passo 9 (Dashboard):** `painel_status.json` reescrito. Membros recontados pela linha `**Nível atual:**`: 10 Auto · 4 Assisted · 1 Shadow · 4 Formação (19, sem mudança). Pendências recontadas: 18 abertas/em andamento e 61 fechadas (o valor de 02/10, 50/58 e "8 ativas", estava defasado). Skills: 8 arquivos em Outubro (inclui versões corrigidas, não só novas).
-- [x] **Evento `status` gravado** via `Append-STTKLog.ps1` (resumo da semana 05-09/10).
-- [ ] **Passo 6 (Painel):** nenhum evento de projeto novo além do resumo; a aprovação da etapa 3 do Ensaio entrou apenas no texto do resumo.
-- [ ] **Passo 7 (Learning Agent):** não executado (opcional, sem tempo útil após a limpeza de contagem).
-
-### O QUE FICOU PENDENTE (Cuidado: não repita)
-
-- **Ensaio 003:** etapa 4 (Briefing) aguarda `criar_caso` pelo Bardi. Não criar caso aqui: fora do escopo da Diária.
-- **Pendências:** a lista de 1215 linhas não foi lida por completo; o detalhamento por criticidade do Painel continua sem recontagem.
-- **Skills da semana:** o número de "ativas" não foi recontado; só o total de arquivos em Outubro.
 
 ---
 

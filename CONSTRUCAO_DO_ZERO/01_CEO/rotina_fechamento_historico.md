@@ -7,6 +7,25 @@ metadata:
   frequencia: toda vez que o template excede 2 rodadas
 ---
 
+## [2026-10-09] -- Diaria Skills v3.5.0 (Sexta) -- RODADA DE SEXTA (Painel e métricas)
+
+### RODADA ATUAL (O que foi entregue)
+
+- [x] **Dia confirmado:** 09/10/2026, sexta-feira. DayOfWeek = Friday (máquina). Pipeline de sexta (Passos 6, 9, 10).
+- [x] **Passo 0:** `_passagem_do_dia.md` lida (dizia que a rodada de 09/10 não tinha rastro; registrado aqui). Feed: último evento `status` era 02/10 (7 dias de defasagem), corrigido nesta rodada.
+- [x] **Passo 9 (Dashboard):** `painel_status.json` reescrito. Membros recontados pela linha `**Nível atual:**`: 10 Auto · 4 Assisted · 1 Shadow · 4 Formação (19, sem mudança). Pendências recontadas: 18 abertas/em andamento e 61 fechadas (o valor de 02/10, 50/58 e "8 ativas", estava defasado). Skills: 8 arquivos em Outubro (inclui versões corrigidas, não só novas).
+- [x] **Evento `status` gravado** via `Append-STTKLog.ps1` (resumo da semana 05-09/10).
+- [ ] **Passo 6 (Painel):** nenhum evento de projeto novo além do resumo; a aprovação da etapa 3 do Ensaio entrou apenas no texto do resumo.
+- [ ] **Passo 7 (Learning Agent):** não executado (opcional, sem tempo útil após a limpeza de contagem).
+
+### O QUE FICOU PENDENTE (Cuidado: não repita)
+
+- **Ensaio 003:** etapa 4 (Briefing) aguarda `criar_caso` pelo Bardi. Não criar caso aqui: fora do escopo da Diária.
+- **Pendências:** a lista de 1215 linhas não foi lida por completo; o detalhamento por criticidade do Painel continua sem recontagem.
+- **Skills da semana:** o número de "ativas" não foi recontado; só o total de arquivos em Outubro.
+
+---
+
 ## [2026-10-08] -- Diaria Skills v3.5.0 (Quinta) -- RODADA PRIORIDADE ZERO (3 lacunas críticas resolvidas)
 
 ### RODADA ATUAL (O que foi entregue)
