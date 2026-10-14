@@ -1,7 +1,7 @@
 ---
 name: oscar-revit-projetista-vitruvius
 description: Procedimento passo a passo para o Oscar modelar, documentar, montar folhas e conferir um projeto de arquitetura no Revit pelas ferramentas Vitruvius (mcp__vitruvius__*), com as regras de Claudemberg de 14/10/2026 (níveis antes das paredes, ponto 0, parede pelo macete do nível acima com base −espessura do piso, vistas do template primeiro, corte pelo meio do edifício, limpeza visual, salvar como uma vez e depois só salvar), conferência pela imagem (export_view_image + Read) antes de qualquer "atende", tabela de defeitos conhecidos das ferramentas com contorno seguro, e a representação NBR 6492 exigida no EP e no AP. Use SEMPRE que o Oscar (ou qualquer Agente) for abrir, salvar, modelar paredes, pisos, aberturas, ambientes, criar ou ajustar níveis, elevações, cortes, plantas, cotas, etiquetas, folhas, carimbo, exportar imagem de vista, ou conferir um desenho no Revit — mesmo que o pedido só diga "desenhar", "modelar", "montar a prancha", "fazer o EP no Revit", "cotar", "elevação" ou "Vitruvius".
-version: v1.2.1
+version: v1.2.2
 status: ativa
 dona: Lúcio (Gestor Arquitetura)
 usuario: Oscar (Coordenador de Projeto Arquitetônico)
@@ -131,6 +131,12 @@ Siga nesta ordem; cada item com releitura (`get_walls`, `get_floors`, `get_doors
 | D13 | `list_elements` categoria "Vistas" + classe ViewSheet | Retorna 0 folhas, embora existam | Listar folhas com categoria "Folhas"; registrar a inconsistência com a saída colada |
 | D14 | `export_view_image` | Aceita ID de nível como vista e falha ("311 não é vista nem folha") | Antes de exportar, confirmar o ID da vista por `list_elements` (ex.: planta LV. Térreo = 312, não o nível 311) |
 | D15 | `create_wall` com `macete=true` | Falha "sem piso no nível e sem tipoPiso" quando o nível não tem piso | Passar `tipoPiso` explícito (tipo e espessura conferidos em `get_floor_types`) antes de criar; sem tipoPiso, não criar a parede |
+| D16 | `create_sheet` com selo | Não lê a moldura do selo: responde "não consegui ler a moldura visível na folha. Informe areaUtil." | Informar `areaUtil` manualmente e declarar na entrega que a moldura é premissa, não leitura (margens da NBR 10068 só se o caso disser) |
+| D17 | `place_view_on_sheet`, `export_view_image` | `Error: Connection closed` em sequência, com plugin conectado no status | Reconferir `get_revit_status`; repetir no máximo 2 vezes; se persistir, "não verificado — sem imagem" e reporte com o erro colado |
+| D18 | `list_elements` de folhas | Lista uma folha que ninguém criou no run, e o "Número da folha" da vista não bate com o da folha criada | Antes de criar folha, listar folhas e vistas e anotar IDs; depois de criar, reler e declarar qual ID recebeu a vista |
+| D19 | `set_parameter` em "Elevação" de nível | Responde sucesso e a releitura mostra outro valor | Só aceitar o valor depois da releitura (`get_levels`/`get_element`); se diferir, "não atende" e reporte |
+| D20 | coordenadas, comprimentos e elevações de elementos | Vêm em pés, sem rótulo de unidade | Converter (×0,3048) antes de comparar com o EP, e declarar a conversão na entrega |
+| D21 | escritas (`set_parameter`, `create_wall`) | `Timeout na resposta do Plugin` em série; uma parede pode ficar com base e topo no mesmo nível | Parar após o primeiro timeout; reler o elemento afetado; não repetir em lote; reportar o estado exato |
 | — | escada, vão de laje, cobertura inclinada, terreno/subregião | Não existem | Lacuna desenhada + declarada (seção 3) |
 
 **Quando uma ferramenta falhar:** cole o **erro exato** (texto da resposta e, se houver, a linha do log), o id do elemento e o que você fez em seguida. Nunca "deu erro" sem o texto. Nunca repita uma escrita que "travou" sem antes listar se o elemento já foi criado (risco de duplicar). Esta tabela vale até Wallenberg informar o build corrigido; build novo = reconferir cada linha antes de confiar.

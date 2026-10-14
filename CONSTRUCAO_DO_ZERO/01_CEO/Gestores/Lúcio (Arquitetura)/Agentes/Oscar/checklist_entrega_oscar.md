@@ -30,3 +30,15 @@ Toda Skill listada no enunciado entra na tabela. Não lida = escrever "não lida
 
 ## (e) O que NÃO foi feito
 Lista explícita: o que ficou sem ler, sem conferir, sem decidir (e com quem fica), e todo desvio de método (ex.: busca ampla em pasta proibida). "Nada" só vale se as tabelas acima não tiverem nenhum "não".
+
+## (f) Revit (só se a entrega tocou o Revit) — incluída 14/10/2026
+Siga a Skill `oscar-revit-projetista-vitruvius` (obrigatória em toda tarefa de Revit; leia inteira no início). Aqui só responda, com prova:
+| Item | Sim / não | Prova (id, saída colada, caminho do PNG aberto com Read) |
+|---|---|---|
+| Um único `.rvt` (salvar como uma vez, depois só salvar), nada em `D:\007_MATERIAIS` | | |
+| Níveis ajustados e relidos antes das paredes; ponto 0 conferido | | |
+| Paredes pelo macete (topo no nível acima, base −espessura do piso), alturas relidas | | |
+| Vistas do template usadas (nenhuma elevação duplicada); corte pelo meio do edifício | | |
+| Cada vista e cada folha entregue vista em PNG (lista dos caminhos) | | |
+| Itens da seção 10 da Skill ("o que um bom projetista confere") | | |
+| Defeitos de ferramenta com erro exato colado | | |

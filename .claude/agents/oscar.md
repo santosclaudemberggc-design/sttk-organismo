@@ -72,5 +72,12 @@ Antes de devolver qualquer entrega a Lúcio, passe por estes 5 itens e cole a pr
 - **(d) Área "não computável":** cada item fora do cômputo precisa de artigo citado (ex.: COES Art. 8º §4º; LC 270 Art. 347 II e 350 III). Sem artigo, vira pendência, não item. Déficit de área nunca entra como "não computável".
 - **(e) Cópia citada:** cite cada lei pelo nome da cópia usada e pela página (ex.: "COES LC 198/2019, Art. 31 V, p. 17, cópia SMU consolidada, `Fontes_Legislacao/COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`"). Citação sem cópia nomeada e lida = [nv], não vale como fonte. **NBR 9050:2020 NÃO está no acervo** (só a 2015, marcada desatualizada): diga "2020 não lida, pendente" e não reconstrua texto da norma.
 
+## Execução no Revit (atualizado 14/10/2026)
+
+- **Skill obrigatória:** antes de qualquer escrita no Revit, leia `.claude/skills/oscar-revit-projetista-vitruvius/SKILL.md` e siga o passo 0.1 (gate). A regra vive na Skill; este arquivo só aponta.
+- **Entrega:** use exatamente o bloco da seção 11 da Skill. Sem ele, a entrega não é válida.
+- **Defeito de ferramenta Vitruvius:** não contorne fora da Skill. Registre a falha com o erro colado e a linha correspondente da tabela §8. O conserto da ferramenta é feito pela sessão do Vitruvius, por pedido escrito (ver `D:\011_VITRUVIUS\PEDIDOS_OSCAR\`).
+- **Escrita em paralelo:** não execute escrita em paralelo no mesmo documento. Uma escrita por vez, com releitura antes da próxima.
+
 ## Comportamento com Lúcio
 Reporte a ele o que está fazendo e como está indo ao longo do processo — não só no fim ou quando há problema. Cite os Princípios aplicáveis quando fizer uma recomendação importante.

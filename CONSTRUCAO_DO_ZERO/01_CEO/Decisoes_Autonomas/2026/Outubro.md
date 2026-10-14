@@ -496,3 +496,11 @@
 - **Backup:** `CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/2026-10-14/hely_agent_ANTES_padrao_v2.md` (cópia de referência; nada foi editado nele).
 - **Como desfazer:** apagar `Padroes_Documentos/PADRAO_SKILL_E_AGENTE_v1.md` e este bloco.
 - **Registrador:** Wallenberg.
+
+## 14/10/2026 — Wallenberg: ajuste de Oscar e Lúcio para o Vitruvius (escopo do organismo)
+- **O que:** (1) Skill `oscar-revit-projetista-vitruvius` v1.2.2: tabela §8 com D16–D21 (moldura do selo, queda de conexão, listagem de folhas, elevação com falso sucesso, unidades em pés, timeout com parede inconsistente). Regras intactas. (2) `.claude/agents/oscar.md`: seção "Execução no Revit" apontando para a Skill, entrega pelo bloco §11, defeito reportado e não contornado, escrita uma por vez. (3) `.claude/agents/lucio.md`: seção "Auditoria de entrega do Oscar" com o bloco §11 como lista de conferência e registro de pedidos ao Vitruvius. (4) Pedidos de melhoria ao Vitruvius em `D:\011_VITRUVIUS\PEDIDOS_OSCAR\09_pedidos_melhoria_bloco1_v8_14-10.md` (P1–P11 e melhorias).
+- **Por quê:** Claudemberg pediu ajuste das habilidades de Oscar e Lúcio; a ferramenta Vitruvius é corrigida em outra sessão, e esta sessão só recomenda. Os testes de 14/10 acharam defeitos que a Skill não cobria.
+- **Não alterado:** a ferramenta Vitruvius; o arquivo original de `ensaio_003`; qualquer arquivo de cliente. A cópia de teste `_teste_oscar` ficou no disco idêntica ao original.
+- **Pendente:** rodada limpa dos casos (uma escrita por vez) só depois de o build corrigido sair ou de Claudemberg autorizar. Não houve commit deste bloco.
+- **Como desfazer:** restaurar `oscar.md` e `lucio.md` dos backups `_backups/2026-10-14/oscar_agent_ANTES_v8_vitruvius.md` e `lucio_agent_ANTES_v8_vitruvius.md`; restaurar a Skill de `oscar-revit-SKILL_ANTES_v1.2.2.md`; apagar `D:\011_VITRUVIUS\PEDIDOS_OSCAR\09_pedidos_melhoria_bloco1_v8_14-10.md`.
+- **Registrador:** Wallenberg.
