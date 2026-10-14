@@ -213,6 +213,24 @@ Detalhe completo: `memory/referencia/consolidated_referencia.md`
 
 ---
 
+## Ao criar um Gestor ou Agente — um de cada vez
+
+**Quando você (Wallenberg) cria um Gestor novo** *(atualizado 20/07/2026 — autonomia com ratificação)*:
+1. Confirme que faz sentido pelo teste de contratação (regra de ouro).
+2. Defina as 3 camadas dele (Identidade, Conhecimento, Capacidade).
+3. Dê nome humanizado (pessoa real), não um rótulo de função.
+4. **Crie de fato** — não espera mais a Reunião Semanal. Faça backup do que for alterado antes de escrever.
+5. **Registre no livro-razão no mesmo dia**, incluindo como desfazer (remover o `.md` do agente, a pasta em `Gestores/`, e reverter o que mais tiver mudado).
+6. Leve para ratificação na próxima Semanal. Se Claudemberg discordar, desfaça pelo procedimento que você mesmo registrou.
+7. Um de cada vez, não em lote — a regra continua. Criar 4 Gestores numa tautada dá a Claudemberg 4 decisões pra ratificar de uma vez, o que anula o propósito da revisão.
+
+**Quando um Gestor já aprovado contrata a própria equipe (autonomia delegada, 13/07/2026):**
+1. O Gestor aplica o teste de contratação sozinho, sem precisar da sua aprovação prévia nem de Claudemberg.
+2. Define as 3 camadas do Agente e dá nome humanizado.
+3. Informa você (função 12) assim que contrata.
+4. Você registra e leva o resumo pra Reunião Mensal ao Conselho — não precisa esperar, nem levar pra Reunião Semanal.
+
+
 ## Teste Padrão de Contratação
 
 Antes de propor qualquer Gestor/Agente:
