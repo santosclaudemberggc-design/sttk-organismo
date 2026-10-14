@@ -837,3 +837,32 @@ Art. 16: "Os processos autuados para licenciamento de projetos de parcelamento, 
 **Arquivos gravados (criados, novos; sem edição de conteúdo existente):** `Lei13146_2015_EstatutoPessoaComDeficiencia.md` e `Lei12651_2012_CodigoFlorestal_Art4.md`, ambos nesta pasta. PDF não gerado nesta rodada.
 **Backup pré-edição deste índice:** `CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/2026-10-13/_indice_fontes_pre-lei13146-lei12651.md`, md5 `20994eabe21f053caea3967c6bfe747a` (igual ao original, conferido antes da edição).
 **Pendente:** `_indice_fontes.pdf` não regenerado (regra do POP-LEGAL-06 pede PDF após edição; fica para Kelsen ou para a próxima rodada de geração). Lacuna em `pendencias.json` não fechada aqui: decisão de Kelsen.
+
+---
+
+## REGISTRO — 14/10/2026 (acionamento automático de Kelsen, Rotina Diária de Skills; 3 itens)
+
+### Item 1 — kelsen-f1-to-zpp-anexo-xxi-subzona-13-10-2026 — TO da ZPP / ZE-5 por subzona
+- **Status:** resolvida no nível de registro por subzona; **aberta no nível do lote** (nenhum lote identificado neste acionamento, logo sem consulta RIU).
+- **Achado:** LC 270/2024, Anexo XXI, bloco AP-4, linha "ZPP" (PDF p. 275, conferido por rasterização): CAM, TO, lote mínimo, gabarito e afastamento frontal = "ver Dec. nº 3046/1981". Não há número de TO da ZPP no anexo. Art. 345 §5º (CAM = IAA de cada subzona do Dec. 3.046), Art. 363 §1º III e Art. 433 remetem ao Dec. 3.046.
+- **Fonte lida:** `Decreto3046_1981_PlanoPilotoBaixadaJacarepagua.pdf` (pdftotext; Cap. III, pp. 6 a 86 do PDF). Mapa completo por subzona, uso, página e linha de TO: `TO_ZPP_ZE5_por_subzona_Dec3046_14-10-2026.md` (nesta pasta).
+- **Avisos:** subzonas revogadas pela LC 270 segundo nota do próprio Decreto (A-4 a A-12, A-23 a A-34, A-38, A-41 a A-45) não devem ser usadas sem checagem na LC 270. Subzona A-ENS não foi tocada (não existe no Dec. 3.046 nem na LC 270).
+- **Correção de extração:** pdftotext trouxe uma linha "ZPP B 2,00" no Anexo XXI que não existe na imagem da página. Vale a imagem.
+- **Arquivos criados:** `TO_ZPP_ZE5_por_subzona_Dec3046_14-10-2026.md`. `_indice_fontes.md` (este registro).
+- **Backup:** `CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/2026-10-14/_indice_fontes_pre-14-10-2026.md` (md5 933930c6d9507e13ddb0a9fd5e64dd9d).
+
+### Item 2 — kelsen-f4-dl9760-art2-faixa-marinha-13-10-2026 — Decreto-Lei 9.760/1946, Art. 2º
+- **Status:** resolvida.
+- **Fonte:** https://www.planalto.gov.br/ccivil_03/decreto-lei/del9760.htm, acesso em 14/10/2026 via curl com cabeçalho de navegador. HTTP 200, 309.144 bytes (HTML).
+- **Arquivo criado:** `DL9760_1946_BensImoveisUniao_Art2_TextoPlanalto.md` (164.010 bytes, texto da lei de "DECRETO-LEI Nº 9.760" até o fim do texto; script do Planalto removido).
+- **Trecho lido (Art. 2º):** "São terrenos de marinha, em uma profundidade de 33 (trinta e três) metros, medidos horizontalmente, para a parte da terra, da posição da linha do preamar-médio de 1831: a) os situados no continente, na costa marítima e nas margens dos rios e lagoas, até onde se faça sentir a influência das marés". Parágrafo único: influência das marés = oscilação periódica de 5 cm, no mínimo. Sem nota de revogação no Art. 2º.
+
+### Item 3 — kelsen-f5-cc-art1301-1302-texto-13-10-2026 — Código Civil, arts. 1.301 e 1.302
+- **Status:** resolvida.
+- **Fonte:** https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm, acesso em 14/10/2026 via curl com cabeçalho de navegador. HTTP 200, 923.899 bytes (HTML).
+- **Arquivo criado:** `CodigoCivil_Lei10406_2002_Arts1301-1302_TextoPlanalto.md` (texto dos arts. 1.301 com §§1º e 2º, e 1.302 com parágrafo único).
+- **Trecho lido (1.301):** "É defeso abrir janelas, ou fazer eirado, terraço ou varanda, a menos de metro e meio do terreno vizinho." (1.302): "O proprietário pode, no lapso de ano e dia após a conclusão da obra, exigir que se desfaça janela, sacada, terraço ou goteira sobre o seu prédio..."
+
+### Pendências deste acionamento
+- `_indice_fontes.pdf` **não regenerado** (POP-LEGAL-06 pede PDF após edição). Mesmo bloqueio de 13/10/2026; fica para Kelsen ou próxima rodada.
+- `pendencias.json` não alterado (decisão de Wallenberg).

@@ -69,6 +69,10 @@ Regra de Claudemberg (07/10/2026): o Bardi dá uma nota de 0,00 a 10,00 ao Gesto
 | 13/10/2026 | 04 Briefing | v4 | vaga-estacionamento v1.6 | Skill (dona Kelsen) | 8,50 | Mesma versão da v3, sem erro novo. Art. 31 III e IV verbatim conferidos no PDF p. 17. R1 em Gate; varredura negativa "sem achado" não reexecutada |
 | 13/10/2026 | 04 Briefing | v4 | varandas-nao-computaveis | Skill (dono a confirmar) | 9,00 | Coerente com COES Art. 8º §1º (1,00 m da testada) e com Dec. 3.046 VII para XI. Sem erro encontrado; §1º não relido no PDF nesta correção |
 | 13/10/2026 | 04 Briefing | v4 | decreto3046-81 | Skill (dona Kelsen) | 8,50 | Linha 160 indica corretamente o VII para XI em p. 3 (confere com PDF p. 2). -0,50: linha 91 mantém exemplo "sem artigo e não conferido"; XXIII × XI segue em Gate |
+| 14/10/2026 | 05 Estudo Preliminar | v1 | Lúcio | Gestor | 7,50 | Entrega 2 "não atende" no próprio checklist e não devolvida (-1,50); "NBR 6492 fora do acervo" aceito sem conferir e Skill só por Grep (-0,50); bloqueio do Burle aceito sem prova e registro da Etapa 03 v8 não conferido no estado (-0,50). Auditoria com prova, sem desconto |
+| 14/10/2026 | 05 Estudo Preliminar | v1 | Oscar | Agente | 5,25 | Revit sem implantação, plantas, cortes e elevações (-2,50; lacuna de ferramenta com prova atenua); NBR 6492 dada como fora do acervo, falso, e Skill só por Grep (-1,00); suíte térrea sem dimensões mínimas (-0,50); 3D não reportada (-0,25); "P-h não existe" (-0,25); citação errada da SMD (-0,25) |
+| 14/10/2026 | 05 Estudo Preliminar | v1 | Burle | Agente | 9,00 | "Tools não aparecem na lista" sem chamada nem prova (-0,50); "2 créditos por imagem" sem prova (-0,25); cita "Oscar 07 §7", que não existe (-0,25). Não invocou a tool pausada: correto |
+| 14/10/2026 | 05 Estudo Preliminar | v1 | Portinari | Agente | 9,25 | Entregou roteiro em texto, não a peça de apresentação (-0,75). Status PRELIMINAR, recusas e citações conferidas |
 
 
 ## Média por membro (retroativo, Ensaio 003 até 07/10/2026)

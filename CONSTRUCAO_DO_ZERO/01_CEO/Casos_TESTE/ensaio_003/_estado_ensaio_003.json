@@ -3,8 +3,8 @@
     "criado_em":  "2026-09-30",
     "regra":  "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar. [09/10/2026 Claudemberg] Teto de 3 versoes: com 3 ou mais versoes reprovadas na mesma etapa, a Drenagem NAO refaz; grava etapa_NN/diagnostico_repeticao.md e poe proxima_acao=aguardar_claudemberg. Auditoria do Gestor so vale com prova colada.",
     "etapa_atual":  5,
-    "status_etapa":  "aguardando_execucao",
-    "proxima_acao":  "executar",
+    "status_etapa":  "aguardando_aprovacao",
+    "proxima_acao":  "aguardar_claudemberg",
     "valores_possiveis":  {
                               "status_etapa":  [
                                                    "a_criar",
@@ -545,6 +545,13 @@
                           "data":  "2026-10-14",
                           "gabarito_sha256":  "730CBFC276C249170CF692C41CCD1600B43E740769F04202AFFF3D5E105E896B",
                           "obs":  "Bardi (Funcao 1) montou enunciado + gabarito da etapa 5 (Arquitetura — Estudo Preliminar; Gestor lucio; Agentes oscar, burle, portinari); 5 iscas. Hash gravado por Wallenberg (Get-FileHash) na rotina de 14/10/2026."
+                      },
+                      {
+                          "etapa":  5,
+                          "evento":  "executada_e_corrigida",
+                          "data":  "2026-10-14",
+                          "veredito_recomendado":  "reprovar",
+                          "obs":  "Drenagem 14/10: Lucio+Oscar+Burle+Portinari entregaram em entrega/ (01-09 + 00 auditoria). Lacre OK (SHA256 conferido antes e depois). Notas: Lucio 7,50; Oscar 5,25; Burle 9,00; Portinari 9,25. Entrega 2 (desenhos Revit) nao atendida; NBR 6492 disponivel em D:/008_Normas ABNT (Oscar disse fora do acervo). Erros do gabarito G1-G5 registrados no parecer, nao descontados. Parecer: etapa_05_estudo_preliminar/parecer_bardi.md"
                       }
                   ],
     "versao_referencia":  "v8",
