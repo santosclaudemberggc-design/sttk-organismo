@@ -22,6 +22,7 @@ Tarefa `wallenberg-rotina-macetes-profissionais` · seg-sex 14:00 · fila `CONST
 | 07/10 | sim | sem dado (início 14:14; a sessão ainda aparece "running", com última atividade em 08/10 07:19) | 0 macetes; `legal-oodc-mais-valera-mais-valia` (Kelsen), 2ª rodada sem macete → "Sem fonte pública" | Prioridade 1 vazia; prioridade 2 só ter/qui. Diário sem linhas de 02 a 06/10 |
 | 09/10 | não rodou | — | — | Tarefa pausada (`enabled: false`) em 09/10. Última execução: 08/10 (14:14 local), 0 macetes |
 | 13/10 | não rodou (pausada) | — | — | Tarefa desligada (`enabled: false`) desde 09/10. Volta só com o teste do `/watch` (D8, 10/10) |
+| 14/10 | não rodou (pausada) | — | — | Tarefa desligada (`enabled: false`) desde 09/10 |
 
 ## 3. Candidatas a melhoria
 - (confirmada 01/10) A fonte C não destravou o Kelsen: varandas falhou pela 2ª rodada seguida (tipo A e C tentados, só achada a ata do COMPUR 2007 com opinião, sem técnica nova) e foi para "Sem fonte pública", como esta candidata antecipava em 29/09.
