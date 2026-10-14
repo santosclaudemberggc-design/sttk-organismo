@@ -1,6 +1,6 @@
 # NBR 9050:2020 — Acessibilidade Integrada ao Projeto Residencial
 
-**Versão:** 1.1  
+**Versão:** 1.2 (revisão 13/10/2026, refação Etapa 04 do Ensaio 003: contradição sobre habite-se resolvida pelo COES Art. 31 V; lacuna F-3 NBR 9050-2020 registrada; versão anterior em `Decisoes_Autonomas/_backups/2026-10-13/lucio_ANTES_refazer-etapa4_SKILL_arquitetura-nbr9050.md`)  
 **Status:** instalada — ratificada Claudemberg 15/09/2026  
 **Data:** 15/09/2026  
 **Tipo:** Inteligência (Trilha A)  
@@ -12,13 +12,13 @@
 
 ## O que é
 
-NBR 9050:2020 — Acessibilidade a edificações, mobiliário, espaços e equipamentos urbanos. Publicada pela ABNT em 03/08/2020, substituiu a NBR 9050:2015. Define critérios e parâmetros técnicos de acessibilidade para projeto, construção, instalação e adaptação de edificações. Norma de caráter obrigatório — seu cumprimento é exigido para obtenção de habite-se e aprovação de projeto na Prefeitura do Rio de Janeiro.
+NBR 9050:2020 — Acessibilidade a edificações, mobiliário, espaços e equipamentos urbanos. Publicada pela ABNT em 03/08/2020, substituiu a NBR 9050:2015. Define critérios e parâmetros técnicos de acessibilidade para projeto, construção, instalação e adaptação de edificações. A exigência de cumprimento vem da legislação (Lei 13.146/2015 e regras municipais do RJ, ver contexto regulatório). Para edificação residencial unifamiliar e bifamiliar, o COES (LC 198/2019) Art. 31 V — p. 17 da cópia SMU consolidada — dispensa o atendimento às normas técnicas de acessibilidade, desde que mantidas as condições de salubridade e higiene da habitação. A exigência para habite-se em tipologias não unifamiliares/bifamiliares NÃO foi confirmada no texto primário lido: pendente (Kelsen/Hely).
 
 ## Contexto regulatório
 
 - **Federal:** Lei 13.146/2015 (Estatuto da Pessoa com Deficiência — LBI) torna a NBR 9050 de cumprimento obrigatório em edificações públicas E privadas de uso coletivo.
 - **Municipal RJ:** Código de Obras e regulamentações LICIN 2.0 exigem conformidade com NBR 9050 para aprovação de projetos e habite-se.
-- **Para residências unifamiliares:** a norma se aplica principalmente às áreas comuns de condomínios e a unidades adaptáveis. Casas isoladas unifamiliares têm exigências reduzidas, mas a incorporação proativa agrega valor e atende legislação federal.
+- **Para residências unifamiliares e bifamiliares:** COES (LC 198/2019) Art. 31 V (p. 17 da cópia SMU consolidada) dispensa o atendimento às normas técnicas de acessibilidade, com salubridade e higiene mantidas. A incorporação proativa é opção de projeto, não exigência do COES. Áreas comuns de condomínio de casas: não lidas no primário, confirmar com Kelsen.
 
 ## Parâmetros numéricos fundamentais
 
@@ -86,7 +86,7 @@ A maioria dos escritórios de arquitetura no RJ trata acessibilidade como "custo
 
 1. **Integram desde o partido:** quando a acessibilidade é pensada desde o estudo preliminar (e não adaptada depois), o custo adicional documentado fica abaixo de 5% do custo total da obra. Quando adaptada após o projeto pronto, o custo sobe para 10-20%.
 2. **Usam como argumento de valorização:** imóveis com acessibilidade integrada documentam valorização média de ~15% no mercado carioca, especialmente em bairros com população envelhecida.
-3. **Conhecem as isenções para unifamiliar isolada:** a NBR 9050 é mais branda para casas unifamiliares sem uso coletivo — o código não exige rampa, banheiro acessível ou vaga especial em residência unifamiliar privada sem acesso público. Mas em condomínio (mesmo de casas), as áreas comuns SÃO obrigatórias.
+3. **Conhecem as isenções para unifamiliar isolada:** o COES (Art. 31 V) dispensa unifamiliar e bifamiliar do atendimento às normas técnicas de acessibilidade. Em condomínio (mesmo de casas), a obrigação das áreas comuns vem de fonte secundária, não confirmada no COES lido (ver Limitações, item 3).
 4. **Antecipam fiscalização no habite-se:** a Prefeitura do RJ vem fiscalizando acessibilidade com mais rigor desde 2024 (LICIN 2.0). Projeto que não demonstra conformidade com NBR 9050 nas áreas comuns é devolvido.
 
 ## Impacto no fluxo STTK
@@ -125,9 +125,9 @@ A maioria dos escritórios de arquitetura no RJ trata acessibilidade como "custo
 
 ## Limitações desta Skill
 
-1. **Texto integral da NBR 9050:2020 NÃO lido:** norma paga da ABNT. Os parâmetros numéricos foram extraídos de fontes secundárias (portais de engenharia, artigos técnicos, guias de prefeituras). Antes de aplicar em projeto real, confirmar valores com o texto original.
+1. **Texto integral da NBR 9050:2020 NÃO lido:** norma paga da ABNT. Os parâmetros numéricos foram extraídos de fontes secundárias (portais de engenharia, artigos técnicos, guias de prefeituras). Antes de aplicar em projeto real, confirmar valores com o texto original. **Lacuna F-3 (13/10/2026):** o acervo D:\008_Normas ABNT tem só a NBR 9050-2015 (arquivo "DESATUALIZADA - vigente 2020"); a edição 2020 não foi lida nem está no acervo. Nenhum texto da 2020 foi reconstruído aqui; os números desta Skill seguem fontes secundárias até a compra/leitura da 2020.
 2. **Parâmetros parciais:** a norma tem ~150 páginas. Esta Skill cobre os parâmetros mais relevantes para projeto residencial (circulação, rampas, sanitários, estacionamento, elevadores). Itens como sinalização tátil (piso podotátil), comunicação visual, mobiliário urbano e espaços de espetáculos NÃO foram cobertos — consultar norma integral quando aplicável.
-3. **Isenções para unifamiliar isolada:** a extensão exata das isenções para residência unifamiliar privada sem acesso público não foi detalhada com precisão — a regra geral é que áreas privadas sem uso coletivo não são obrigatoriamente acessíveis, mas áreas comuns de condomínio sim. Verificar com Kelsen em caso de dúvida.
+3. **Isenções para unifamiliar e bifamiliar:** o texto primário lido é o COES (LC 198/2019) Art. 31 V, p. 17 da cópia SMU consolidada (`CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`): dispensa o atendimento às normas técnicas de acessibilidade, desde que mantidas salubridade e higiene. O alcance para áreas comuns de condomínio de casas NÃO foi lido no primário. Verificar com Kelsen antes de aplicar.
 4. **Custos (< 5% e ~15% valorização):** são referências de mercado (fontes secundárias de engenharia consultiva), não dados auditados. Usar como ordem de grandeza, não como garantia contratual.
 
 ## Fontes

@@ -13,6 +13,8 @@ Tarefa `wallenberg-rotina-acervo-normas` · segunda 13:00 · acervo `D:\008_Norm
 | Data | Rodou? | Modo | Resultado | Observação |
 |---|---|---|---|---|
 | — | nunca rodou | — | — | 1ª execução em 05/10 (modo completo, 1ª segunda do mês) |
+| 13/10 | sim, fora do cron (terça 08:03; cron é só segunda 13:00). Segunda 12/10 sem execução | fora do cron | ~2 min (08:03–08:05) | Sem rastro de resultado lido nesta rodada |
 
 ## 3. Candidatas a melhoria
 - (conhecida) NBR 15220-3 faltando no acervo (memória de referência).
+- (nova 13/10) **Segunda 12/10 sem execução; disparo recuperado na terça às 08:03.** Evidência: `list_task_runs` sem registro em 12/10 e execução em 13/10. Mesmo padrão do Fechamento e da Reunião naquela segunda. Sugestão: a checagem de segunda (Fechamento de sexta/segunda) deve verificar se o disparo do dia aconteceu.

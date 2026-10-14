@@ -24,6 +24,24 @@ metadata:
 
 ---
 
+## [2026-10-13] -- Diaria Skills v3.5.0 (Terça) -- PIPELINE LINEAR (lacunas prioritárias + pesquisa sem entrega)
+
+### RODADA ATUAL (O que foi entregue)
+- Prioridade zero (lacunas com dono): acionada Kelsen (agente kelsen) para `kelsen-k1-xxii-subzona-a-ens-08-10` (Dec. 3.046 XXII em A-ENS) e `lacuna-kelsen-lei13146-lei12651-art4-12-10` (texto oficial Lei 13.146 e Lei 12.651 art. 4º). Resultado: ver relatório da rodada.
+- Pesquisa (Passo 1, 6 buscas standard): Kelsen (LC 281/2025 e LICIN 2.0, sem texto de prazos); Lúcio (fachada poente/brise RJ, sem fonte primária nova); Cardozo (SPT/lençol raso Barra/Recreio). Nenhum achado novo: todos cobertos por Skills existentes. Nenhuma Skill criada.
+- `/watch:watch`: buscas de vídeo (2 de 6) não acharam vídeo técnico relevante ao eixo; registrado, sem vídeo assistido.
+- Lacuna `lacuna-lucio-nbr9050-edicao-09-10-2026`: não avançou. Depende de compra/autorização de Claudemberg (NBR 9050:2020 no acervo `D:\008_Normas ABNT\`).
+- Feed do Painel: último evento `status` é de 02/10 (Resumo da semana 28/09-02/10). Sem evento novo: não é sexta.
+
+### PENDÊNCIAS E BLOQUEIOS
+- Cardozo: fonte de sondagem Barra/Recreio só secundária nesta rodada; a Skill de fundações já cobre o tema.
+- Ensaio 003 etapa 4 (lacre violado) e etapa 5 (trava D4): só Claudemberg decide. Fora do escopo da Diária.
+
+### O QUE TOMAR CUIDADO
+- Pesquisa de Passo 1 volta cada vez mais redundante com o acervo. Antes de pesquisar, conferir `.claude/skills/` pelo tema (já foi feito nesta rodada).
+
+---
+
 ## [2026-10-12] -- Diaria Skills v3.5.0 (Segunda) -- PIPELINE LINEAR (pesquisa sem entrega)
 
 ### RODADA ATUAL (O que foi entregue)
@@ -56,31 +74,6 @@ metadata:
 - **Ensaio 003:** etapa 4 (Briefing) aguarda `criar_caso` pelo Bardi. Não criar caso aqui: fora do escopo da Diária.
 - **Pendências:** a lista de 1215 linhas não foi lida por completo; o detalhamento por criticidade do Painel continua sem recontagem.
 - **Skills da semana:** o número de "ativas" não foi recontado; só o total de arquivos em Outubro.
-
----
-
-## [2026-10-08] -- Diaria Skills v3.5.0 (Quinta) -- RODADA PRIORIDADE ZERO (3 lacunas críticas resolvidas)
-
-### RODADA ATUAL (O que foi entregue)
-
-- [x] **Dia confirmado:** 08/10/2026, quinta-feira. DayOfWeek = Thursday. Horário: 09:00-10:50 (~110 min, prioridade zero absorveu orçamento).
-- [x] **Passo 0:** leitura de `_passagem_do_dia.md` (07/10, escrito com atraso), bloqueadores conhecidos (NBR 6492 R1, LC 198 varandas, /watch bug), feed.jsonl atualizado 07/10.
-- [x] **PRIORIDADE ZERO — Lacunas Críticas (3 de 3 resolvidas):**
-  - **Lacuna 1 (Bardi/Ensaio):** Skill nova `ensaio-sombra-criterios-aprovacao-por-etapa-017.md` (proposta, status pendente validação Claudemberg). Tabela 17 etapas + histórico etapas 1-3 (1 aprovada, 2-3 reprovada com motivos reais do Ensaio). Fluxo de Ativação completo (Bardi criou, índice e livro-razão atualizados).
-  - **Lacuna 2 (Kelsen/LICIN):** Skill `decreto3046-81-lc270-2024-licin-barra-recreio` v1.4 → v1.5. Adicionado Dec. 3.046 XXII (veda estacionamento em afastamento frontal minimo) na §5 Protocolo Hely (novo checklist) e §6 M8 Macetes (fonte primária Dec. 3.046, p. 4). R2 nova ressalva (harmonização com Skill de vaga v1.0). Errata parecer Legal Etapa 01 (l. 181, admitia vagas frontal) aberta em arquivo dedicado. Backup pré-edição. Livro-razão atualizado.
-  - **Lacuna 3 (Kelsen/Propagação):** Avisos a Lúcio (Levantamento, 25 m²/vaga com COES Art. 29 + LC 270 Art. 347 II) e Villaça (Viabilidade, idem). Não editei as Skills (apenas avisos) — execução pelos Gestores conforme oportunidade. Livro-razão atualizado.
-- [x] **Passo 3 (Feed):** 3 eventos registrados (Bardi Skill, Kelsen harmonização, avisos propagação).
-- [x] **Passo 4 (Fluxo de Ativação):** 1 Skill proposta (Bardi), 1 Skill atualizada (Kelsen), avisos 2 Gestores.
-- [ ] **Passo 2 (Pesquisa normal 6 buscas, 2 por Gestor):** Não necessário. Prioridade zero consumiu orçamento de 50 min; seg-qui 60-90 min. Sem bloqueadores adicionais.
-- [ ] **Passo 8 (Trilha B):** Não necessário. Sem lacuna de ferramenta ativa hoje.
-
-### O QUE FICOU PENDENTE (Cuidado: não repita)
-
-- **Não duplicar:** Bardi critérios Ensaio (proposta 08/10), Kelsen LICIN v1.5 (editada 08/10), Kelsen avisos propagação (despachados 08/10).
-- **Validação pendente:** Skill Bardi (critérios Ensaio) sobe para Claudemberg na Semanal — única validadora é a cúpula (Bardi não valida a si mesma).
-- **Execução pendente:** Lúcio atualizar Levantamento com 25 m²/vaga (recebeu aviso, conforme oportunidade); Villaça atualizar Viabilidade com idem.
-- **Harmonia pendente:** Lúcio/Villaça confirmarem não há contradição ao inserir 25 m²/vaga (complementa com Skill de vaga v1.0 de 07/10).
-- **Continuam:** Hely (R2 levantamento cota soleira), Landell (RECON-BT), SELCA R1/R4/R7, LC 198 varandas (PDF corrompido), NBR 13133, /watch bug, NBR 6492 R1 (secoes 5.6-5.8).
 
 ---
 

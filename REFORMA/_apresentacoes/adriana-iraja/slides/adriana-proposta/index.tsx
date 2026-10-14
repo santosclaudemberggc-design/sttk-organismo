@@ -104,7 +104,7 @@ const Rodape = ({ escuro = false }: { escuro?: boolean }) => {
         color: escuro ? '#cfc8ba' : MUTED,
       }}
     >
-      <span>Sttickler · Casa da Adriana · Irajá</span>
+      <span style={{ translate: '0px 30.8px' }}>Sttickler · Casa da Adriana · Irajá</span>
       <span>
         {current} / {total}
       </span>
@@ -134,6 +134,7 @@ const Cabecalho = ({ eyebrow, titulo }: { eyebrow: string; titulo: ReactNode }) 
         margin: 0,
       }}
     >
+      {/* @slide-comment id="c-06c62c28" ts="2026-10-11T20:08:53.621Z" text="eyJub3RlIjoiQWNobyBxdWUgZSBzbGlkZSBuw6NvIHByZWNpc2EgZXhpc3RpciJ9" */}
       {titulo}
     </h2>
   </div>
@@ -197,6 +198,7 @@ const Foto = ({
       overflow: 'hidden',
     }}
   >
+    {/* @slide-comment id="c-0fbfa7ec" ts="2026-10-11T20:10:34.313Z" text="eyJub3RlIjoiRm90byBuw6NvIGNvbmRpeiBjb20gbyB0ZXh0byBzb2JyZSBiYW5jYWRhLCB0ZW0gcXVlIHNlciB1bWEgZm90byBkZSByZWZlcsOqbmNpYSBkZSB1bWEgYmFuY2FkYSBkZSBxdWFydHpvIGJyYW5jbyBvdSB1bWEgcGVkcmEgY2xhcmEifQ" */}
     <img
       src={src}
       alt=""
@@ -359,7 +361,7 @@ const TresColunas = ({ children }: { children: ReactNode }) => (
 );
 
 const Ambiente = ({ children }: { children: ReactNode }) => (
-  <div style={{ display: 'grid', gridTemplateColumns: '400px 1fr 400px', gap: 32, alignItems: 'start' }}>
+  <div style={{ display: 'grid', gridTemplateColumns: '400px 1fr 400px', gap: 32, alignItems: 'start', translate: '-1px 0px' }}>
     {children}
   </div>
 );

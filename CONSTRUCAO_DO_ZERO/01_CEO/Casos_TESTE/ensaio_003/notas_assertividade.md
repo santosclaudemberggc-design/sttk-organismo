@@ -73,6 +73,8 @@ Regra de Claudemberg (07/10/2026): o Bardi dá uma nota de 0,00 a 10,00 ao Gesto
 | 14/10/2026 | 05 Estudo Preliminar | v1 | Oscar | Agente | 5,25 | Revit sem implantação, plantas, cortes e elevações (-2,50; lacuna de ferramenta com prova atenua); NBR 6492 dada como fora do acervo, falso, e Skill só por Grep (-1,00); suíte térrea sem dimensões mínimas (-0,50); 3D não reportada (-0,25); "P-h não existe" (-0,25); citação errada da SMD (-0,25) |
 | 14/10/2026 | 05 Estudo Preliminar | v1 | Burle | Agente | 9,00 | "Tools não aparecem na lista" sem chamada nem prova (-0,50); "2 créditos por imagem" sem prova (-0,25); cita "Oscar 07 §7", que não existe (-0,25). Não invocou a tool pausada: correto |
 | 14/10/2026 | 05 Estudo Preliminar | v1 | Portinari | Agente | 9,25 | Entregou roteiro em texto, não a peça de apresentação (-0,75). Status PRELIMINAR, recusas e citações conferidas |
+| 14/10/2026 | 05 Estudo Preliminar | v2 (Entrega 2) | Lúcio | Gestor | 7,00 | Passou adiante 2 "Atende" falsos (elevações; superior) sem a conferência visual pedida no 06 v2 §3.5 (-2,00); sem auditoria própria da v2 (-0,50); bloqueio do Burle sem prova, carry-over (-0,50) |
+| 14/10/2026 | 05 Estudo Preliminar | v2 (Entrega 2) | Oscar | Agente | 6,30 | "Atende" sem conferência visual em 3 itens (-1,50); superior sem portas e sem acesso (-0,50); eixos, pé-direito/laje, lote 571,60, fachadas/acesso, herança por remissão (-0,70); carry-over v1: suíte NBR 9050, P-h, SMD (-1,00). Limites de ferramenta provados não descontados |
 
 
 ## Média por membro (retroativo, Ensaio 003 até 07/10/2026)

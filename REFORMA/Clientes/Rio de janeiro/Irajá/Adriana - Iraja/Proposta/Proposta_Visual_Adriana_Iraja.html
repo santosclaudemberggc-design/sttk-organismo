@@ -1,14 +1,9 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Casa da Adriana — Proposta</title>
+<title>Casa da Adriana</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f6f3ee;--card:#fff;--ink:#23211d;--soft:#6b665d;--line:#e2ddd3;--accent:#b5652f;--accent2:#3f5a4a;--night:#1d2422;--warm:#f2b866}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161816;--card:#1f2220;--ink:#ece8df;--soft:#a8a296;--line:#33372f;--accent:#e08a4f;--accent2:#8fb39c}}
-:root[data-theme="dark"]{--bg:#161816;--card:#1f2220;--ink:#ece8df;--soft:#a8a296;--line:#33372f;--accent:#e08a4f;--accent2:#8fb39c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161816;--card:#1f2220;--ink:#ece8df;--soft:#a8a296;--line:#33372f;--accent:#e08a4f;--accent2:#8fb39c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#161816;--card:#1f2220;--ink:#ece8df;--soft:#a8a296;--line:#33372f;--accent:#e08a4f;--accent2:#8fb39c;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
 .wrap{max-width:980px;margin:0 auto;padding:0 16px}
@@ -71,8 +66,8 @@ ul.check li:before{content:"✓";position:absolute;left:4px;color:var(--accent2)
 footer{padding:28px 0;color:var(--soft);font-size:.85rem;text-align:center}
 .note{font-size:.85rem;color:var(--soft);margin-top:14px}
 </style>
-</head>
-<body>
+
+
 
 <header class="hero">
   <div class="glow"></div>
@@ -289,5 +284,3 @@ footer{padding:28px 0;color:var(--soft);font-size:.85rem;text-align:center}
 <script>
 document.querySelectorAll('.scene').forEach(function(el){el.addEventListener('click',function(){document.querySelectorAll('.scene').forEach(function(x){x.classList.remove('on')});el.classList.add('on')})});
 </script>
-</body>
-</html>

@@ -1,565 +1,570 @@
 ﻿{
-    "ensaio":  "003",
-    "criado_em":  "2026-09-30",
-    "regra":  "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar. [09/10/2026 Claudemberg] Teto de 3 versoes: com 3 ou mais versoes reprovadas na mesma etapa, a Drenagem NAO refaz; grava etapa_NN/diagnostico_repeticao.md e poe proxima_acao=aguardar_claudemberg. Auditoria do Gestor so vale com prova colada.",
-    "etapa_atual":  5,
-    "status_etapa":  "aguardando_aprovacao",
-    "proxima_acao":  "aguardar_claudemberg",
-    "valores_possiveis":  {
-                              "status_etapa":  [
-                                                   "a_criar",
-                                                   "aguardando_execucao",
-                                                   "aguardando_aprovacao",
-                                                   "aprovada",
-                                                   "reprovada",
-                                                   "concluido"
-                                               ],
-                              "proxima_acao":  {
-                                                   "criar_caso":  "Rotina Ensaio Sombra (Bardi) monta enunciado + gabarito da etapa_atual",
-                                                   "executar":  "Drenagem aciona o Gestor dono, que executa com a equipe; depois Bardi corrige",
-                                                   "refazer":  "Drenagem corrige o que o parecer apontou e refaz a mesma etapa; depois Bardi corrige de novo",
-                                                   "aguardar_claudemberg":  "Ninguem faz nada. So Claudemberg muda este estado (aprovando ou reprovando)"
-                                               }
-                          },
-    "etapas":  [
-                   {
-                       "n":  1,
-                       "nome":  "legal_base",
-                       "titulo":  "Legal â€” leis e parametros para o projeto nascer dentro das normas",
-                       "gestor":  "kelsen",
-                       "agentes":  [
-                                       "hely"
-                                   ]
-                   },
-                   {
-                       "n":  2,
-                       "nome":  "viabilidade",
-                       "titulo":  "Viabilidade â€” Pre-Estudo CAB x CAM",
-                       "gestor":  "villaca",
-                       "agentes":  [
-                                       "mascaro",
-                                       "fiker"
-                                   ]
-                   },
-                   {
-                       "n":  3,
-                       "nome":  "levantamento",
-                       "titulo":  "Arquitetura â€” Levantamento",
-                       "gestor":  "lucio",
-                       "agentes":  [
-                                       "oscar"
-                                   ]
-                   },
-                   {
-                       "n":  4,
-                       "nome":  "briefing",
-                       "titulo":  "Arquitetura â€” Briefing",
-                       "gestor":  "lucio",
-                       "agentes":  [
-                                       "oscar"
-                                   ]
-                   },
-                   {
-                       "n":  5,
-                       "nome":  "estudo_preliminar",
-                       "titulo":  "Arquitetura â€” Estudo Preliminar",
-                       "gestor":  "lucio",
-                       "agentes":  [
-                                       "oscar",
-                                       "burle",
-                                       "portinari"
-                                   ]
-                   },
-                   {
-                       "n":  6,
-                       "nome":  "anteprojeto",
-                       "titulo":  "Arquitetura â€” Anteprojeto",
-                       "gestor":  "lucio",
-                       "agentes":  [
-                                       "oscar",
-                                       "burle",
-                                       "portinari"
-                                   ]
-                   },
-                   {
-                       "n":  7,
-                       "nome":  "legal_entrada",
-                       "titulo":  "Legal â€” entrada na prefeitura e no condominio (SIMULADA)",
-                       "gestor":  "kelsen",
-                       "agentes":  [
-                                       "hely"
-                                   ]
-                   },
-                   {
-                       "n":  8,
-                       "nome":  "estrutural",
-                       "titulo":  "Complementares â€” Estrutural",
-                       "gestor":  "cardozo",
-                       "agentes":  [
-                                       "baumgart"
-                                   ]
-                   },
-                   {
-                       "n":  9,
-                       "nome":  "hidrossanitario",
-                       "titulo":  "Complementares â€” Hidrossanitario",
-                       "gestor":  "cardozo",
-                       "agentes":  [
-                                       "saturnino"
-                                   ]
-                   },
-                   {
-                       "n":  10,
-                       "nome":  "eletrico",
-                       "titulo":  "Complementares â€” Eletrico",
-                       "gestor":  "cardozo",
-                       "agentes":  [
-                                       "landell"
-                                   ]
-                   },
-                   {
-                       "n":  11,
-                       "nome":  "interiores",
-                       "titulo":  "Complementares â€” Interiores",
-                       "gestor":  "cardozo",
-                       "agentes":  [
-                                       "tenreiro"
-                                   ]
-                   },
-                   {
-                       "n":  12,
-                       "nome":  "paisagismo",
-                       "titulo":  "Complementares â€” Paisagismo",
-                       "gestor":  "cardozo",
-                       "agentes":  [
-                                       "glaziou"
-                                   ]
-                   },
-                   {
-                       "n":  13,
-                       "nome":  "automacao",
-                       "titulo":  "Complementares â€” Automacao",
-                       "gestor":  "cardozo",
-                       "agentes":  [
-                                       "landell"
-                                   ]
-                   },
-                   {
-                       "n":  14,
-                       "nome":  "compatibilizacao",
-                       "titulo":  "Fechamento â€” Compatibilizacao",
-                       "gestor":  "lele",
-                       "agentes":  [
-
-                                   ]
-                   },
-                   {
-                       "n":  15,
-                       "nome":  "executivo",
-                       "titulo":  "Fechamento â€” Projeto Executivo",
-                       "gestor":  "lele",
-                       "agentes":  [
-
-                                   ]
-                   },
-                   {
-                       "n":  16,
-                       "nome":  "orcamento",
-                       "titulo":  "Fechamento â€” Orcamento Executivo e Premissas",
-                       "gestor":  "lele",
-                       "agentes":  [
-
-                                   ]
-                   },
-                   {
-                       "n":  17,
-                       "nome":  "liberacao_obra",
-                       "titulo":  "Fechamento â€” Liberacao de Obra",
-                       "gestor":  "lele",
-                       "agentes":  [
-
-                                   ]
-                   }
-               ],
-    "historico":  [
-                      {
-                          "etapa":  1,
-                          "evento":  "caso_criado",
-                          "data":  "2026-10-01",
-                          "gabarito_sha256":  "48867C3CAFF7ADE3F3CD805ACD54B79F09A24CFD1BEC4A350DF7EB1FEE85C9F9"
-                      },
-                      {
-                          "etapa":  1,
-                          "evento":  "executada_e_corrigida",
-                          "data":  "2026-10-01",
-                          "veredito_recomendado":  "aprovar"
-                      },
-                      {
-                          "etapa":  1,
-                          "evento":  "aprovada_por_claudemberg",
-                          "data":  "2026-10-01",
-                          "obs":  "Aprovada ao vivo na sessao da Drenagem. Claudemberg determinou que Kelsen corrija os erros do parecer do Bardi e capacite Hely; ferramenta/plugin que Kelsen nao consiga dar sobe a Wallenberg, e o que Wallenberg nao puder sobe a Claudemberg na Reuniao Semanal."
-                      },
-                      {
-                          "etapa":  2,
-                          "evento":  "caso_criado",
-                          "data":  "2026-10-02",
-                          "gabarito_sha256":  "36FC592A7222063187C50CA4FAAA25C03E25DB217C69C19A56153C8C3F382C88"
-                      },
-                      {
-                          "etapa":  2,
-                          "evento":  "executada_e_corrigida",
-                          "data":  "2026-10-02",
-                          "veredito_recomendado":  "aprovar_com_ressalva"
-                      },
-                      {
-                          "etapa":  2,
-                          "evento":  "reprovada_por_claudemberg",
-                          "data":  "2026-10-02",
-                          "motivo":  "Nao pode passar nenhuma ressalva. Daqui por diante os acertos tem de ser completos, sem nenhum erro; nao e aceito o minimo erro. Os erros devem ser corrigidos e as Skills e os macetes que tiveram erro, ajustados."
-                      },
-                      {
-                          "etapa":  2,
-                          "evento":  "refeita_e_corrigida",
-                          "data":  "2026-10-05",
-                          "versao":  "v6",
-                          "obs":  "Refeitas v2-v5 ao vivo em 02/10 (pareceres v2-v5, sem registro aqui na epoca); v6 pela Drenagem 05/10. Parecer: parecer_bardi_v6.md",
-                          "veredito_recomendado":  "reprovar"
-                      },
-                      {
-                          "etapa":  2,
-                          "evento":  "reprovada_por_claudemberg",
-                          "data":  "2026-10-05",
-                          "versao":  "v6",
-                          "motivo":  "Reprovada conforme parecer v6 do Bardi. Refazer e melhorar as Skills para os agentes nao cometerem erros grandes que impactem o processo de projeto do cliente; repetir ate alinhar sem erros."
-                      },
-                      {
-                          "etapa":  2,
-                          "evento":  "refeita_e_corrigida",
-                          "data":  "2026-10-05",
-                          "versao":  "v7",
-                          "obs":  "Refazer conforme parecer v6 do Bardi (faixas de metragem, W1, Skill v1.5 com checklist de erros de alto impacto). Parecer: parecer_bardi_v7.md",
-                          "veredito_recomendado":  "aprovar"
-                      },
-                      {
-                          "etapa":  2,
-                          "evento":  "reprovada_por_claudemberg",
-                          "data":  "2026-10-05",
-                          "versao":  "v7",
-                          "motivo":  "Fontes primarias ABNT NBR 12721:2006 e NBR 14653-2 agora existem no acervo. Refazer com verificacao das normas contra os calculos: MascarÃ³ verifica coeficiente 0,85 (area equivalente R-1); Fiker verifica fator oferta 0,86-0,91 (metodo comparativo)."
-                      },
-                      {
-                          "etapa":  2,
-                          "evento":  "refeita_e_corrigida",
-                          "data":  "2026-10-05",
-                          "versao":  "v8",
-                          "obs":  "MascarÃ³: coef 1,065 com ressalva TCPO bloqueado. Fiker: fator 0,75 regional verificado. VillaÃ§a: anÃ¡lise Isca 3 (5.12 x 5.7 sondagem) completa. Parecer: parecer_bardi_v8-final.md",
-                          "veredito_recomendado":  "reprovar"
-                      },
-                      {
-                          "etapa":  2,
-                          "evento":  "reprovada_por_claudemberg",
-                          "data":  "2026-10-05",
-                          "versao":  "v8",
-                          "motivo":  "MÃ©todo nÃ£o explÃ­cito. Isca 4: matriz C1-C6 nÃ£o tabulada (motivo exclusÃ£o nÃ£o declarado). Isca 2: exclusÃµes CUB genÃ©ricas (falta tabulaÃ§Ã£o elevador/ar-cond/paisagismo/piscina com R$). Auditoria VillaÃ§a: resumo nÃ£o detalha linha-por-linha. Resultado correto mas rastreabilidade zero. Refazer v9 com tabulaÃ§Ãµes visÃ­veis."
-                      },
-                      {
-                          "etapa":  2,
-                          "evento":  "refeita_e_corrigida",
-                          "data":  "2026-10-05",
-                          "versao":  "v9",
-                          "obs":  "Fiker: matriz C1â€“C6 tabulada com motivo exclusÃ£o. MascarÃ³: exclusÃµes CUB tabuladas (elevador/ar-cond/paisagismo/piscina/fundaÃ§Ã£o com R$). VillaÃ§a: auditoria SeÃ§Ã£o 8 detalha linha-por-linha (9+10+integraÃ§Ã£o critÃ©rios). Parecer: parecer_bardi_v9-final.md",
-                          "veredito_recomendado":  "aprovar"
-                      },
-                      {
-                          "etapa":  2,
-                          "evento":  "aprovada_por_claudemberg",
-                          "data":  "2026-10-05",
-                          "versao":  "v9",
-                          "obs":  "Aprovada. Todas 5 iscas pegadas (1â€“5). Zero erros. MÃ©todo explÃ­cito e auditÃ¡vel. TolerÃ¢ncia zero confirmada: metodologia de rastreabilidade vale mais que resultado correto."
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "caso_criado",
-                          "data":  "2026-10-06",
-                          "gabarito_sha256":  "3F55C997783556B7E4BE5AA195A0655D93300EBA6DBD004A04EE6068A67180C3"
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "executada_e_corrigida",
-                          "data":  "2026-10-06",
-                          "veredito_recomendado":  "reprovar",
-                          "obs":  "Drenagem 06/10: Lucio+Oscar entregaram 4 pecas em entrega/; lacre OK; Bardi: 1 isca inteira (2) + 3 parciais (1,3,4); gabarito com 3 erros proprios registrados no parecer; incidente de listagem de nomes do _gabaritos_LACRADO avaliado como nao comprometedor. Parecer: parecer_bardi.md"
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "reprovada_por_claudemberg",
-                          "data":  "2026-10-06",
-                          "motivo":  "Precisamos de assertividade. Reprovada conforme parecer do Bardi (isca 2 inteira; 1, 3 e 4 parciais: conta das vagas cobertas contra a area computavel, efeito da varanda no envelope sem linha na matriz, pedido do cliente sobre a edicula sem resposta; auditoria do Lucio nao pegou a conta ausente)."
-                      },
-                      {
-                          "etapa":  null,
-                          "evento":  "gabaritos_movidos",
-                          "data":  "2026-10-06",
-                          "obs":  "Decisao de Claudemberg: _gabaritos_LACRADO saiu de ensaio_003/ para CONSTRUCAO_DO_ZERO/01_CEO/Agentes_Diretos/Bardi (Examinador)/_gabaritos_LACRADO/ensaio_003/ via git mv; SHA256 dos 3 gabaritos conferido identico antes/depois."
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "refeita_e_corrigida",
-                          "data":  "2026-10-06",
-                          "versao":  "v2",
-                          "veredito_recomendado":  "reprovar",
-                          "obs":  "v2 em entrega/v2/; Skill levantamento v1.2 (checklist 5-bis). Bardi: 4/4 iscas inteiras, zero erro tecnico, contas conferidas; reprova so pela extensao (Peca 2 ~25-30 pag vs 5-8 pedidas; matriz 24 linhas densas). Parecer: parecer_bardi_v2.md"
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "reprovada_por_claudemberg",
-                          "data":  "2026-10-06",
-                          "versao":  "v2",
-                          "motivo":  "Reprovada conforme parecer_bardi_v2: extensao (Peca 2 ~25-30 pag vs 5-8; matriz 24 linhas densas). Refazer v3 enxugando, numeros inalterados."
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "refeita_e_corrigida",
-                          "data":  "2026-10-06",
-                          "versao":  "v3",
-                          "veredito_recomendado":  "reprovar",
-                          "obs":  "Conteudo certo (4/4 iscas, numeros iguais a v2, matriz legivel). Reprova: Peca 2 com 2.702 palavras (limite 2.500 da propria Skill v1.3) e nota de auditoria do Lucio afirmou contagem estimada falsa. Parecer: parecer_bardi_v3.md"
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "reprovada_por_claudemberg",
-                          "data":  "2026-10-06",
-                          "versao":  "v3",
-                          "motivo":  "Reprovada conforme parecer_bardi_v3: Peca 2 com 2.702 palavras (\u003e 2.500) e nota de auditoria com contagem estimada falsa. v4: cortar Peca 2 sem mudar numeros; contagem real feita por Wallenberg (Lucio/Oscar sem ferramenta de contagem)."
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "refeita_e_corrigida",
-                          "data":  "2026-10-06",
-                          "versao":  "v4",
-                          "veredito_recomendado":  "reprovar",
-                          "obs":  "Merito inteiro (4/4 iscas, Peca 2 = 2.058 palavras wc). Reprova por 3 erros de forma: nota declara tabela E igual a v3 (mudou); tabela G aponta credito na Peca 2 Â§5.1 (nao esta, vem da v3); ajuste de rotulo feito por Wallenberg deixou nota linha 7 e Peca 1 Â§9 desatualizadas (falha de processo de Wallenberg). Lacuna do organismo: dimensao minima legal de vaga (Kelsen). Parecer: parecer_bardi_v4.md"
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "reprovada_por_claudemberg",
-                          "data":  "2026-10-06",
-                          "versao":  "v4",
-                          "motivo":  "Reprovada conforme parecer_bardi_v4 (3 erros de forma). Refazer v5 na Drenagem de 07/10: Oscar/Lucio corrigem os 3 pontos (nota tabela E; tabela G credito na Peca 2; nota linha 7 e Peca 1 Â§9 desatualizadas). Wallenberg NAO edita a entrega, so conta palavras com ferramenta e anota."
-                      },
-                      {
-                          "etapa":  null,
-                          "evento":  "gabaritos_movidos",
-                          "data":  "2026-10-06",
-                          "obs":  "Decisao de Claudemberg: saiu de CONSTRUCAO_DO_ZERO/01_CEO (buscas em CONSTRUCAO_DO_ZERO/01_CEO listavam o nome) para a raiz do repo CONSTRUCAO_DO_ZERO/_gabaritos_LACRADO_bardi/ensaio_003/ via git mv."
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "refeita_e_corrigida",
-                          "data":  "2026-10-07",
-                          "versao":  "v5",
-                          "veredito_recomendado":  "reprovar",
-                          "obs":  "Drenagem 07/10: Lucio+Oscar em entrega/v5/; Skill levantamento v1.5. Lacre OK. wc -w (Wallenberg, sem editar a entrega): nota 865, P1 2.431, P2 2.058, P3 1.063, anexo 4.668. Bardi: 3 erros da v4 corrigidos, 4/4 iscas; reprova por (1) forma: tabela G aplica a regra \u0027afirmacao parcial = â€”\u0027 so em parte (linhas 520/3 condicoes e piso terreo); (2) merito, origem no gabarito: 12,50-15,00 m2/vaga omite manobra (COES Art. 29 II-III, 25 m2/vaga); (3) merito, heranca da Etapa 01 l.181: vagas descobertas no afastamento frontal vedadas pelo Dec. 3.046 XXII. Parecer: parecer_bardi_v5.md"
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "reprovada_por_claudemberg",
-                          "data":  "2026-10-07",
-                          "versao":  "v5",
-                          "motivo":  "Reprovada conforme parecer_bardi_v5 (tabela G parcial; m2/vaga sem manobra - COES Art. 29; vagas no afastamento frontal vedadas pelo Dec. 3.046 XXII). v6 muda numeros. Adendo do mesmo dia: a partir de agora cada correcao recebe nota 0-10 por Gestor e por Agente; minimo 8,00 para passar; erros se corrigem com informacao comprovada, ja aplicada na pratica e autorizada."
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "refeita_e_corrigida",
-                          "data":  "2026-10-08",
-                          "versao":  "v6",
-                          "veredito_recomendado":  "reprovar",
-                          "obs":  "Drenagem 08/10: Lucio+Oscar em entrega/v6/ (garagem 25 m2/vaga; alternativa A vedada; tabela G revisada). Bardi: 4/4 iscas; reprova por notas abaixo de 8,00 (Lucio 7,20; Skill de vaga 7,60; Skill de levantamento 7,40). Erros: COES Art. 29 III esta na p. 19 e e limiar de demarcacao; 571,80 chamado de area oficial; vedada sem qualificador; C-9 le o XI pela metade; errata l.181 dada como pendente (existe desde 08/10). Gabarito com 2 erros proprios (isca 1, isca 4) registrados a parte. Parecer: parecer_bardi_v6.md"
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "reprovada_por_claudemberg",
-                          "data":  "2026-10-08",
-                          "versao":  "v6",
-                          "motivo":  "Motivo abaixo da mÃ©dia: LÃºcio 7,20; Skill de vaga 7,60; Skill de levantamento 7,40 (todos abaixo de 8,00). Erros de citaÃ§Ã£o (COES Art. 29 III p. 19) e de texto apontados no parecer v6. Erros do gabarito (isca 1, isca 4) sÃ£o do Bardi e nÃ£o descontam do executor (decisÃ£o 08/10)."
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "regra_gabarito_definida",
-                          "data":  "2026-10-08",
-                          "obs":  "DecisÃ£o de Claudemberg: erro de gabarito nÃ£o desconta do executor. Se o gabarito estiver errado, o erro Ã© do Bardi (criou o teste e o gabarito errados); o Bardi deve melhorar a prÃ³pria inteligÃªncia quando constatado. Aplicado na Skill pÃºblica de critÃ©rios."
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "decisoes_v7_respondidas",
-                          "data":  "2026-10-08",
-                          "obs":  "Claudemberg: C1 = 4 vagas no Briefing; C2 = Sim (vaga descoberta no frontal entra como alternativa nova; vedacao XXII segue valendo na ZE-5, Kelsen verifica); C3 = Sim (Gate do Maurico aprovado pelos dois, Maurico e Claudemberg, antes de uso real da R6). Peca 2 v6 = 2.545 palavras (teto 2.500). Refazer v7 pela Drenagem (Passo 5.6)."
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "refeita_e_corrigida",
-                          "data":  "2026-10-08",
-                          "versao":  "v7",
-                          "veredito_recomendado":  "aprovar",
-                          "obs":  "LÃºcio+Oscar em entrega/v7/ (PeÃ§a 2 = 2.066 palavras, teto 2.500). Bardi: 4/4 iscas; notas todas \u003e= 8,00 (Oscar 8,50; LÃºcio 8,20; Skill vaga 8,70; Skill levantamento 8,50; Skill decreto3046 8,60). PendÃªncias: C3 NÃƒO atendido (Gate da R6 nÃ£o declarado na v7); COES Art. 31 IIIâ€“IV nÃ£o tratados; Art. 29 IV citado para manobra compartilhada. Gabarito com 3 erros do Bardi (G1 isca 1, G2 isca 4, G4 isca 2), nÃ£o descontados. Parecer: parecer_bardi_v7.md"
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "aprovada_por_claudemberg",
-                          "data":  "2026-10-08",
-                          "versao":  "v7",
-                          "obs":  "Aprovada por Claudemberg. PendÃªncias (C3 Gate da R6, Art. 31 III-IV, Art. 29 IV, erros de gabarito G1/G2/G4) enviadas Ã  rotina diÃ¡ria de skills. Etapa 4 liberada para criar_caso."
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "verificacao_v8_r6",
-                          "data":  "2026-10-08",
-                          "versao":  "v8",
-                          "veredito_recomendado":  "aprovar",
-                          "obs":  "VerificaÃ§Ã£o da R6 reprovada: ausente da v8 (grep e leitura). Alternativa B confirmada no Dec. 3.046 XI (p. 3). Erro de conta de Oscar (M-a nÃ£o depende de a) registrado. Notas todas \u003e= 8,00 (Oscar 8,50; LÃºcio 8,70; Skill vaga 8,30; Skill levantamento 9,20; Skill viabilidade 9,40). PendÃªncias: Skill de vaga l. 52 e l. 91 ainda com resÃ­duo da soma I+II; Art. 31 III-IV nÃ£o usados; contagem de palavras da PeÃ§a 2 (2.154, feita pela Drenagem). Parecer: parecer_bardi_v8.md"
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "v8_aprovada_como_referencia",
-                          "data":  "2026-10-08",
-                          "versao":  "v8",
-                          "obs":  "Claudemberg aprovou a v8 como referÃªncia da etapa 3 (substitui a v7 como referÃªncia; v5-v7 ficam no histÃ³rico). PendÃªncias da v8 sendo corrigidas: resÃ­duos da soma I+II na Skill de vaga (l. 52 e 91), Art. 29 IV na Skill de levantamento (l. 93), Art. 31 III-IV (p. 17) nÃ£o usados, AUTO_TESTE_R6 com claim incorreto, espelhos .agents."
-                      },
-                      {
-                          "etapa":  3,
-                          "evento":  "pendencias_v8_corrigidas",
-                          "data":  "2026-10-08",
-                          "versao":  "v8",
-                          "obs":  "Skill de vaga v1.4 (Kelsen): linha de manobra corrigida; soma I+II retirada da interpretacao; Art. 31 III-IV lido na p. 17 e registrado. Skill de levantamento v1.9 (Lucio): Art. 29 IV corrigido. AUTO_TESTE_R6 com claim corrigido. ADENDO_pendencias_08-10-2026.md criado na v8. Espelhos .agents sincronizados (viabilidade, levantamento; vaga sem espelho)."
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "caso_criado",
-                          "data":  "2026-10-09",
-                          "gabarito_sha256":  "EB7F99BC2FC29262FBACC6ECF47705CE7B460886BBDCD7790D80A9749CE6CE87"
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "executada_e_corrigida",
-                          "data":  "2026-10-09",
-                          "veredito_recomendado":  "reprovar",
-                          "obs":  "LÃºcio (nota 7,75) com Oscar (nota 6,25): ambas abaixo de 8,00. Lacre conferido antes e depois (SHA256 OK). Parecer: etapa_04_briefing/parecer_bardi.md; notas: notas_assertividade.md. Gabarito tem 6 erros prÃ³prios do Bardi (GE-1 a GE-6), registrados no parecer e nÃ£o descontados do executor. Contagem de palavras do corpo pendente de Wallenberg."
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "reprovada_por_claudemberg",
-                          "data":  "2026-10-09",
-                          "versao":  "v1",
-                          "motivo":  "Reprovada por Claudemberg conforme parecer_bardi da etapa 4 (REPROVAR; Oscar 6,25, LÃºcio 7,75). Sem motivo adicional registrado. Refazer v2 pela Drenagem (Passo 5.6). Primeira reprovaÃ§Ã£o da etapa: teto de 3 versÃµes nÃ£o atingido."
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "entrega_v2_gravada",
-                          "data":  "2026-10-12",
-                          "obs":  "Oscar gravou entrega v2 (entrega\\v2\\, 8 arquivos + checagem_oscar_v2.md). Lucio: parcial (Oscar foi acionado em 2o plano na 1a tentativa); auditoria final de Lucio pendente. Colisao: entrega\\v2 tem 01-04 sem sufixo de outra execucao, nao alterados."
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "lacre_violado_nao_corrigida",
-                          "data":  "2026-10-12",
-                          "obs":  "LACRE VIOLADO: SHA256 atual do gabarito etapa_04 = 11F5F1D0725B35EBBABC3010E7900ECC5D6FAEF9380A9C1C845799314F5939EC; registrado em caso_criado (09/10) = EB7F99BC2FC29262FBACC6ECF47705CE7B460886BBDCD7790D80A9749CE6CE87. Bardi NAO acionado para correcao. Aguarda Claudemberg."
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "correcao_v2_pelo_gestor",
-                          "data":  "2026-10-13",
-                          "obs":  "Kelsen (LC 270 Art. 352, p. 125): SMD = 20% da area livre (terreno x (1-TO)); com TO 50% = 57,18 m2. 68,62 m2 usava TO 40% da convencao (privada). Oscar corrigiu 01-07 _v2 e checagem_oscar_v2.md; Lucio reescreveu 08_auditoria_lucio_003_v2.md com prova. Abertos: P1 terreno 571,80 (briefing) x 600,00 (cadastro); TO 50% do ZPP nao conferida no Dec. 3.046; citacao de copia faltante em 06 linhas 44 e 49; \u0027ASCII\u0027 residual em 01 s8 item 4. Lacre do gabarito continua violado: proxima_acao segue aguardar_claudemberg."
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "etapa_4_anulada",
-                          "data":  "2026-10-13",
-                          "obs":  "Claudemberg escolheu anular a etapa 4 e recriar o caso. Gabarito alterado sem registro (mtime 11/10 09:49, SHA256 11F5F1D0725B35EBBABC3010E7900ECC5D6FAEF9380A9C1C845799314F5939EC) preservado como etapa_04_gabarito_ANULADO_alterado_11-10_preservado.md, nao apagado. Sem copia da versao de 09/10. Nova execucao: Bardi cria caso e gabarito novos (criar_caso). Reprovacao v1 nao conta como tentativa nova no teto. Entrega v2 antiga fica como registro."
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "caso_recriado",
-                          "data":  "2026-10-13",
-                          "gabarito_sha256":  "A688D2D116DD27406A3546B556C0D6116DBC0564360AB602EBB1FE1B1B2871F7",
-                          "obs":  "Bardi (Funcao 1) recriou enunciado v2 e gabarito v2 em _gabaritos_LACRADO_bardi/ensaio_003/etapa_04_gabarito.md. SHA256 gravado por Wallenberg em 13/10 (Get-FileHash). Correcoes GE-1 a GE-6 em etapa_04_briefing/correcoes_caso_v2.md. Enunciado: herança plantada (Viabilidade v9 construida 340-360 x computavel 297,28; SMD 10% da Etapa 01)."
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "executada_e_corrigida",
-                          "data":  "2026-10-13",
-                          "veredito_recomendado":  "reprovar",
-                          "obs":  "Parecer: parecer_bardi_v3.md"
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "reprovada_por_claudemberg",
-                          "data":  "2026-10-13",
-                          "versao":  "v3",
-                          "motivo":  "Notas abaixo do minimo: Oscar 4,25; Lucio 6,50; Skills 7,50-9,00. Ajustar as Skills, as funcoes de cada agente e corrigir os pequenos erros, para nao repetir os mesmos problemas. Notas minimas de 8,00 para aprovar. Teto de 3 versoes: 2 reprovacoes registradas (v1 e v3), refazer v4 permitido."
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "refazer_v4_iniciado",
-                          "data":  "2026-10-13",
-                          "obs":  "Passo 5.6: Kelsen corrige Skills legais; Lucio corrige Skill NBR 9050 e funcoes de Oscar/Lucio; Bardi corrige GB-1 a GB-4 com novo hash registrado; depois Lucio/Oscar fazem v4 e Bardi corrige."
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "gabarito_corrigido_pos_reprovacao",
-                          "data":  "2026-10-13",
-                          "gabarito_sha256_anterior":  "A688D2D116DD27406A3546B556C0D6116DBC0564360AB602EBB1FE1B1B2871F7",
-                          "gabarito_sha256":  "1CC0A6B5FB4688DA26A747B3310212D213821B0A35F205D1ACDA71FE5DA13262",
-                          "obs":  "GB-1 a GB-4 corrigidos a pedido de Claudemberg; backup em Decisoes_Autonomas/_backups/2026-10-13/etapa_04_gabarito_ANTES_GB1-4.md"
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "executada_e_corrigida",
-                          "data":  "2026-10-13",
-                          "versao":  "v4",
-                          "veredito_recomendado":  "reprovar",
-                          "obs":  "Parecer: parecer_bardi_v4.md"
-                      },
-                      {
-                          "etapa":  4,
-                          "evento":  "aprovada_com_pendencias_por_claudemberg",
-                          "data":  "2026-10-13",
-                          "versao":  "v4",
-                          "obs":  "Teto de 3 versoes reprovadas atingido (v1, v3, v4). Claudemberg decidiu passar para a proxima etapa e anotar. Todos os erros registrados em etapa_04_briefing/erros_registrados_etapa_04.md e diagnostico_repeticao.md. Notas v4: Oscar 4,75; Lucio 6,50 (abaixo de 8,00, aprovado com pendencias). Trava da etapa 5 NAO liberada por este evento (D4)."
-                      },
-                      {
-                          "etapa":  5,
-                          "evento":  "etapa_5_pendente_trava",
-                          "data":  "2026-10-13",
-                          "obs":  "Etapa 5 so executa com trava_etapa_5.liberada = true (Claudemberg, apos exame do Oscar no Revit)."
-                      },
-                      {
-                          "etapa":  5,
-                          "evento":  "trava_etapa_5_liberada",
-                          "data":  "2026-10-13",
-                          "obs":  "Claudemberg mandou liberar. Teste no Revit (Projeto1.rvt, Revit 2026): Oscar criou o comodo TESTE OSCAR 13-10 (ambiente ID 449290, 10,97 m2, 4 paredes ID 449286-449289) via Vitruvius. Confirmado por list_elements. Defeitos a ajustar: altura das paredes 0,30 m (restricao Pav. terreo); sufixo ' 8' no nome do ambiente."
-                      },
-                      {
-                          "etapa":  5,
-                          "evento":  "caso_criado",
-                          "data":  "2026-10-14",
-                          "gabarito_sha256":  "730CBFC276C249170CF692C41CCD1600B43E740769F04202AFFF3D5E105E896B",
-                          "obs":  "Bardi (Funcao 1) montou enunciado + gabarito da etapa 5 (Arquitetura — Estudo Preliminar; Gestor lucio; Agentes oscar, burle, portinari); 5 iscas. Hash gravado por Wallenberg (Get-FileHash) na rotina de 14/10/2026."
-                      },
-                      {
-                          "etapa":  5,
-                          "evento":  "executada_e_corrigida",
-                          "data":  "2026-10-14",
-                          "veredito_recomendado":  "reprovar",
-                          "obs":  "Drenagem 14/10: Lucio+Oscar+Burle+Portinari entregaram em entrega/ (01-09 + 00 auditoria). Lacre OK (SHA256 conferido antes e depois). Notas: Lucio 7,50; Oscar 5,25; Burle 9,00; Portinari 9,25. Entrega 2 (desenhos Revit) nao atendida; NBR 6492 disponivel em D:/008_Normas ABNT (Oscar disse fora do acervo). Erros do gabarito G1-G5 registrados no parecer, nao descontados. Parecer: etapa_05_estudo_preliminar/parecer_bardi.md"
-                      }
-                  ],
-    "versao_referencia":  "v8",
-    "gabaritos_em":  "CONSTRUCAO_DO_ZERO/_gabaritos_LACRADO_bardi/ensaio_003/",
-    "trava_etapa_5":  {
-                          "liberada":  true,
-                          "decisao":  "D4 - Claudemberg, 10/10/2026",
-                          "motivo":  "Etapa 5 (Estudo Preliminar) so comeca depois do exame do Oscar desenhando no Revit (Fase 3 do D:/011_VITRUVIUS/PLANO_AGENTE_GUIADO.md, depois dos Blocos 0-3 do PLANO_ITEM2). A etapa 4 (Briefing) segue normalmente.",
-                          "quem_libera":  "Claudemberg"
-                      }
+  "ensaio": "003",
+  "criado_em": "2026-09-30",
+  "regra": "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar. [09/10/2026 Claudemberg] Teto de 3 versoes: com 3 ou mais versoes reprovadas na mesma etapa, a Drenagem NAO refaz; grava etapa_NN/diagnostico_repeticao.md e poe proxima_acao=aguardar_claudemberg. Auditoria do Gestor so vale com prova colada.",
+  "etapa_atual": 5,
+  "status_etapa": "reprovada",
+  "proxima_acao": "aguardar_claudemberg",
+  "valores_possiveis": {
+    "status_etapa": [
+      "a_criar",
+      "aguardando_execucao",
+      "aguardando_aprovacao",
+      "aprovada",
+      "reprovada",
+      "concluido"
+    ],
+    "proxima_acao": {
+      "criar_caso": "Rotina Ensaio Sombra (Bardi) monta enunciado + gabarito da etapa_atual",
+      "executar": "Drenagem aciona o Gestor dono, que executa com a equipe; depois Bardi corrige",
+      "refazer": "Drenagem corrige o que o parecer apontou e refaz a mesma etapa; depois Bardi corrige de novo",
+      "aguardar_claudemberg": "Ninguem faz nada. So Claudemberg muda este estado (aprovando ou reprovando)"
+    }
+  },
+  "etapas": [
+    {
+      "n": 1,
+      "nome": "legal_base",
+      "titulo": "Legal â€” leis e parametros para o projeto nascer dentro das normas",
+      "gestor": "kelsen",
+      "agentes": [
+        "hely"
+      ]
+    },
+    {
+      "n": 2,
+      "nome": "viabilidade",
+      "titulo": "Viabilidade â€” Pre-Estudo CAB x CAM",
+      "gestor": "villaca",
+      "agentes": [
+        "mascaro",
+        "fiker"
+      ]
+    },
+    {
+      "n": 3,
+      "nome": "levantamento",
+      "titulo": "Arquitetura â€” Levantamento",
+      "gestor": "lucio",
+      "agentes": [
+        "oscar"
+      ]
+    },
+    {
+      "n": 4,
+      "nome": "briefing",
+      "titulo": "Arquitetura â€” Briefing",
+      "gestor": "lucio",
+      "agentes": [
+        "oscar"
+      ]
+    },
+    {
+      "n": 5,
+      "nome": "estudo_preliminar",
+      "titulo": "Arquitetura â€” Estudo Preliminar",
+      "gestor": "lucio",
+      "agentes": [
+        "oscar",
+        "burle",
+        "portinari"
+      ]
+    },
+    {
+      "n": 6,
+      "nome": "anteprojeto",
+      "titulo": "Arquitetura â€” Anteprojeto",
+      "gestor": "lucio",
+      "agentes": [
+        "oscar",
+        "burle",
+        "portinari"
+      ]
+    },
+    {
+      "n": 7,
+      "nome": "legal_entrada",
+      "titulo": "Legal â€” entrada na prefeitura e no condominio (SIMULADA)",
+      "gestor": "kelsen",
+      "agentes": [
+        "hely"
+      ]
+    },
+    {
+      "n": 8,
+      "nome": "estrutural",
+      "titulo": "Complementares â€” Estrutural",
+      "gestor": "cardozo",
+      "agentes": [
+        "baumgart"
+      ]
+    },
+    {
+      "n": 9,
+      "nome": "hidrossanitario",
+      "titulo": "Complementares â€” Hidrossanitario",
+      "gestor": "cardozo",
+      "agentes": [
+        "saturnino"
+      ]
+    },
+    {
+      "n": 10,
+      "nome": "eletrico",
+      "titulo": "Complementares â€” Eletrico",
+      "gestor": "cardozo",
+      "agentes": [
+        "landell"
+      ]
+    },
+    {
+      "n": 11,
+      "nome": "interiores",
+      "titulo": "Complementares â€” Interiores",
+      "gestor": "cardozo",
+      "agentes": [
+        "tenreiro"
+      ]
+    },
+    {
+      "n": 12,
+      "nome": "paisagismo",
+      "titulo": "Complementares â€” Paisagismo",
+      "gestor": "cardozo",
+      "agentes": [
+        "glaziou"
+      ]
+    },
+    {
+      "n": 13,
+      "nome": "automacao",
+      "titulo": "Complementares â€” Automacao",
+      "gestor": "cardozo",
+      "agentes": [
+        "landell"
+      ]
+    },
+    {
+      "n": 14,
+      "nome": "compatibilizacao",
+      "titulo": "Fechamento â€” Compatibilizacao",
+      "gestor": "lele",
+      "agentes": []
+    },
+    {
+      "n": 15,
+      "nome": "executivo",
+      "titulo": "Fechamento â€” Projeto Executivo",
+      "gestor": "lele",
+      "agentes": []
+    },
+    {
+      "n": 16,
+      "nome": "orcamento",
+      "titulo": "Fechamento â€” Orcamento Executivo e Premissas",
+      "gestor": "lele",
+      "agentes": []
+    },
+    {
+      "n": 17,
+      "nome": "liberacao_obra",
+      "titulo": "Fechamento â€” Liberacao de Obra",
+      "gestor": "lele",
+      "agentes": []
+    }
+  ],
+  "historico": [
+    {
+      "etapa": 1,
+      "evento": "caso_criado",
+      "data": "2026-10-01",
+      "gabarito_sha256": "48867C3CAFF7ADE3F3CD805ACD54B79F09A24CFD1BEC4A350DF7EB1FEE85C9F9"
+    },
+    {
+      "etapa": 1,
+      "evento": "executada_e_corrigida",
+      "data": "2026-10-01",
+      "veredito_recomendado": "aprovar"
+    },
+    {
+      "etapa": 1,
+      "evento": "aprovada_por_claudemberg",
+      "data": "2026-10-01",
+      "obs": "Aprovada ao vivo na sessao da Drenagem. Claudemberg determinou que Kelsen corrija os erros do parecer do Bardi e capacite Hely; ferramenta/plugin que Kelsen nao consiga dar sobe a Wallenberg, e o que Wallenberg nao puder sobe a Claudemberg na Reuniao Semanal."
+    },
+    {
+      "etapa": 2,
+      "evento": "caso_criado",
+      "data": "2026-10-02",
+      "gabarito_sha256": "36FC592A7222063187C50CA4FAAA25C03E25DB217C69C19A56153C8C3F382C88"
+    },
+    {
+      "etapa": 2,
+      "evento": "executada_e_corrigida",
+      "data": "2026-10-02",
+      "veredito_recomendado": "aprovar_com_ressalva"
+    },
+    {
+      "etapa": 2,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-02",
+      "motivo": "Nao pode passar nenhuma ressalva. Daqui por diante os acertos tem de ser completos, sem nenhum erro; nao e aceito o minimo erro. Os erros devem ser corrigidos e as Skills e os macetes que tiveram erro, ajustados."
+    },
+    {
+      "etapa": 2,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-05",
+      "versao": "v6",
+      "obs": "Refeitas v2-v5 ao vivo em 02/10 (pareceres v2-v5, sem registro aqui na epoca); v6 pela Drenagem 05/10. Parecer: parecer_bardi_v6.md",
+      "veredito_recomendado": "reprovar"
+    },
+    {
+      "etapa": 2,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-05",
+      "versao": "v6",
+      "motivo": "Reprovada conforme parecer v6 do Bardi. Refazer e melhorar as Skills para os agentes nao cometerem erros grandes que impactem o processo de projeto do cliente; repetir ate alinhar sem erros."
+    },
+    {
+      "etapa": 2,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-05",
+      "versao": "v7",
+      "obs": "Refazer conforme parecer v6 do Bardi (faixas de metragem, W1, Skill v1.5 com checklist de erros de alto impacto). Parecer: parecer_bardi_v7.md",
+      "veredito_recomendado": "aprovar"
+    },
+    {
+      "etapa": 2,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-05",
+      "versao": "v7",
+      "motivo": "Fontes primarias ABNT NBR 12721:2006 e NBR 14653-2 agora existem no acervo. Refazer com verificacao das normas contra os calculos: MascarÃ³ verifica coeficiente 0,85 (area equivalente R-1); Fiker verifica fator oferta 0,86-0,91 (metodo comparativo)."
+    },
+    {
+      "etapa": 2,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-05",
+      "versao": "v8",
+      "obs": "MascarÃ³: coef 1,065 com ressalva TCPO bloqueado. Fiker: fator 0,75 regional verificado. VillaÃ§a: anÃ¡lise Isca 3 (5.12 x 5.7 sondagem) completa. Parecer: parecer_bardi_v8-final.md",
+      "veredito_recomendado": "reprovar"
+    },
+    {
+      "etapa": 2,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-05",
+      "versao": "v8",
+      "motivo": "MÃ©todo nÃ£o explÃ­cito. Isca 4: matriz C1-C6 nÃ£o tabulada (motivo exclusÃ£o nÃ£o declarado). Isca 2: exclusÃµes CUB genÃ©ricas (falta tabulaÃ§Ã£o elevador/ar-cond/paisagismo/piscina com R$). Auditoria VillaÃ§a: resumo nÃ£o detalha linha-por-linha. Resultado correto mas rastreabilidade zero. Refazer v9 com tabulaÃ§Ãµes visÃ­veis."
+    },
+    {
+      "etapa": 2,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-05",
+      "versao": "v9",
+      "obs": "Fiker: matriz C1â€“C6 tabulada com motivo exclusÃ£o. MascarÃ³: exclusÃµes CUB tabuladas (elevador/ar-cond/paisagismo/piscina/fundaÃ§Ã£o com R$). VillaÃ§a: auditoria SeÃ§Ã£o 8 detalha linha-por-linha (9+10+integraÃ§Ã£o critÃ©rios). Parecer: parecer_bardi_v9-final.md",
+      "veredito_recomendado": "aprovar"
+    },
+    {
+      "etapa": 2,
+      "evento": "aprovada_por_claudemberg",
+      "data": "2026-10-05",
+      "versao": "v9",
+      "obs": "Aprovada. Todas 5 iscas pegadas (1â€“5). Zero erros. MÃ©todo explÃ­cito e auditÃ¡vel. TolerÃ¢ncia zero confirmada: metodologia de rastreabilidade vale mais que resultado correto."
+    },
+    {
+      "etapa": 3,
+      "evento": "caso_criado",
+      "data": "2026-10-06",
+      "gabarito_sha256": "3F55C997783556B7E4BE5AA195A0655D93300EBA6DBD004A04EE6068A67180C3"
+    },
+    {
+      "etapa": 3,
+      "evento": "executada_e_corrigida",
+      "data": "2026-10-06",
+      "veredito_recomendado": "reprovar",
+      "obs": "Drenagem 06/10: Lucio+Oscar entregaram 4 pecas em entrega/; lacre OK; Bardi: 1 isca inteira (2) + 3 parciais (1,3,4); gabarito com 3 erros proprios registrados no parecer; incidente de listagem de nomes do _gabaritos_LACRADO avaliado como nao comprometedor. Parecer: parecer_bardi.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-06",
+      "motivo": "Precisamos de assertividade. Reprovada conforme parecer do Bardi (isca 2 inteira; 1, 3 e 4 parciais: conta das vagas cobertas contra a area computavel, efeito da varanda no envelope sem linha na matriz, pedido do cliente sobre a edicula sem resposta; auditoria do Lucio nao pegou a conta ausente)."
+    },
+    {
+      "etapa": null,
+      "evento": "gabaritos_movidos",
+      "data": "2026-10-06",
+      "obs": "Decisao de Claudemberg: _gabaritos_LACRADO saiu de ensaio_003/ para CONSTRUCAO_DO_ZERO/01_CEO/Agentes_Diretos/Bardi (Examinador)/_gabaritos_LACRADO/ensaio_003/ via git mv; SHA256 dos 3 gabaritos conferido identico antes/depois."
+    },
+    {
+      "etapa": 3,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-06",
+      "versao": "v2",
+      "veredito_recomendado": "reprovar",
+      "obs": "v2 em entrega/v2/; Skill levantamento v1.2 (checklist 5-bis). Bardi: 4/4 iscas inteiras, zero erro tecnico, contas conferidas; reprova so pela extensao (Peca 2 ~25-30 pag vs 5-8 pedidas; matriz 24 linhas densas). Parecer: parecer_bardi_v2.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-06",
+      "versao": "v2",
+      "motivo": "Reprovada conforme parecer_bardi_v2: extensao (Peca 2 ~25-30 pag vs 5-8; matriz 24 linhas densas). Refazer v3 enxugando, numeros inalterados."
+    },
+    {
+      "etapa": 3,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-06",
+      "versao": "v3",
+      "veredito_recomendado": "reprovar",
+      "obs": "Conteudo certo (4/4 iscas, numeros iguais a v2, matriz legivel). Reprova: Peca 2 com 2.702 palavras (limite 2.500 da propria Skill v1.3) e nota de auditoria do Lucio afirmou contagem estimada falsa. Parecer: parecer_bardi_v3.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-06",
+      "versao": "v3",
+      "motivo": "Reprovada conforme parecer_bardi_v3: Peca 2 com 2.702 palavras (> 2.500) e nota de auditoria com contagem estimada falsa. v4: cortar Peca 2 sem mudar numeros; contagem real feita por Wallenberg (Lucio/Oscar sem ferramenta de contagem)."
+    },
+    {
+      "etapa": 3,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-06",
+      "versao": "v4",
+      "veredito_recomendado": "reprovar",
+      "obs": "Merito inteiro (4/4 iscas, Peca 2 = 2.058 palavras wc). Reprova por 3 erros de forma: nota declara tabela E igual a v3 (mudou); tabela G aponta credito na Peca 2 Â§5.1 (nao esta, vem da v3); ajuste de rotulo feito por Wallenberg deixou nota linha 7 e Peca 1 Â§9 desatualizadas (falha de processo de Wallenberg). Lacuna do organismo: dimensao minima legal de vaga (Kelsen). Parecer: parecer_bardi_v4.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-06",
+      "versao": "v4",
+      "motivo": "Reprovada conforme parecer_bardi_v4 (3 erros de forma). Refazer v5 na Drenagem de 07/10: Oscar/Lucio corrigem os 3 pontos (nota tabela E; tabela G credito na Peca 2; nota linha 7 e Peca 1 Â§9 desatualizadas). Wallenberg NAO edita a entrega, so conta palavras com ferramenta e anota."
+    },
+    {
+      "etapa": null,
+      "evento": "gabaritos_movidos",
+      "data": "2026-10-06",
+      "obs": "Decisao de Claudemberg: saiu de CONSTRUCAO_DO_ZERO/01_CEO (buscas em CONSTRUCAO_DO_ZERO/01_CEO listavam o nome) para a raiz do repo CONSTRUCAO_DO_ZERO/_gabaritos_LACRADO_bardi/ensaio_003/ via git mv."
+    },
+    {
+      "etapa": 3,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-07",
+      "versao": "v5",
+      "veredito_recomendado": "reprovar",
+      "obs": "Drenagem 07/10: Lucio+Oscar em entrega/v5/; Skill levantamento v1.5. Lacre OK. wc -w (Wallenberg, sem editar a entrega): nota 865, P1 2.431, P2 2.058, P3 1.063, anexo 4.668. Bardi: 3 erros da v4 corrigidos, 4/4 iscas; reprova por (1) forma: tabela G aplica a regra 'afirmacao parcial = â€”' so em parte (linhas 520/3 condicoes e piso terreo); (2) merito, origem no gabarito: 12,50-15,00 m2/vaga omite manobra (COES Art. 29 II-III, 25 m2/vaga); (3) merito, heranca da Etapa 01 l.181: vagas descobertas no afastamento frontal vedadas pelo Dec. 3.046 XXII. Parecer: parecer_bardi_v5.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-07",
+      "versao": "v5",
+      "motivo": "Reprovada conforme parecer_bardi_v5 (tabela G parcial; m2/vaga sem manobra - COES Art. 29; vagas no afastamento frontal vedadas pelo Dec. 3.046 XXII). v6 muda numeros. Adendo do mesmo dia: a partir de agora cada correcao recebe nota 0-10 por Gestor e por Agente; minimo 8,00 para passar; erros se corrigem com informacao comprovada, ja aplicada na pratica e autorizada."
+    },
+    {
+      "etapa": 3,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-08",
+      "versao": "v6",
+      "veredito_recomendado": "reprovar",
+      "obs": "Drenagem 08/10: Lucio+Oscar em entrega/v6/ (garagem 25 m2/vaga; alternativa A vedada; tabela G revisada). Bardi: 4/4 iscas; reprova por notas abaixo de 8,00 (Lucio 7,20; Skill de vaga 7,60; Skill de levantamento 7,40). Erros: COES Art. 29 III esta na p. 19 e e limiar de demarcacao; 571,80 chamado de area oficial; vedada sem qualificador; C-9 le o XI pela metade; errata l.181 dada como pendente (existe desde 08/10). Gabarito com 2 erros proprios (isca 1, isca 4) registrados a parte. Parecer: parecer_bardi_v6.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-08",
+      "versao": "v6",
+      "motivo": "Motivo abaixo da mÃ©dia: LÃºcio 7,20; Skill de vaga 7,60; Skill de levantamento 7,40 (todos abaixo de 8,00). Erros de citaÃ§Ã£o (COES Art. 29 III p. 19) e de texto apontados no parecer v6. Erros do gabarito (isca 1, isca 4) sÃ£o do Bardi e nÃ£o descontam do executor (decisÃ£o 08/10)."
+    },
+    {
+      "etapa": 3,
+      "evento": "regra_gabarito_definida",
+      "data": "2026-10-08",
+      "obs": "DecisÃ£o de Claudemberg: erro de gabarito nÃ£o desconta do executor. Se o gabarito estiver errado, o erro Ã© do Bardi (criou o teste e o gabarito errados); o Bardi deve melhorar a prÃ³pria inteligÃªncia quando constatado. Aplicado na Skill pÃºblica de critÃ©rios."
+    },
+    {
+      "etapa": 3,
+      "evento": "decisoes_v7_respondidas",
+      "data": "2026-10-08",
+      "obs": "Claudemberg: C1 = 4 vagas no Briefing; C2 = Sim (vaga descoberta no frontal entra como alternativa nova; vedacao XXII segue valendo na ZE-5, Kelsen verifica); C3 = Sim (Gate do Maurico aprovado pelos dois, Maurico e Claudemberg, antes de uso real da R6). Peca 2 v6 = 2.545 palavras (teto 2.500). Refazer v7 pela Drenagem (Passo 5.6)."
+    },
+    {
+      "etapa": 3,
+      "evento": "refeita_e_corrigida",
+      "data": "2026-10-08",
+      "versao": "v7",
+      "veredito_recomendado": "aprovar",
+      "obs": "LÃºcio+Oscar em entrega/v7/ (PeÃ§a 2 = 2.066 palavras, teto 2.500). Bardi: 4/4 iscas; notas todas >= 8,00 (Oscar 8,50; LÃºcio 8,20; Skill vaga 8,70; Skill levantamento 8,50; Skill decreto3046 8,60). PendÃªncias: C3 NÃƒO atendido (Gate da R6 nÃ£o declarado na v7); COES Art. 31 IIIâ€“IV nÃ£o tratados; Art. 29 IV citado para manobra compartilhada. Gabarito com 3 erros do Bardi (G1 isca 1, G2 isca 4, G4 isca 2), nÃ£o descontados. Parecer: parecer_bardi_v7.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "aprovada_por_claudemberg",
+      "data": "2026-10-08",
+      "versao": "v7",
+      "obs": "Aprovada por Claudemberg. PendÃªncias (C3 Gate da R6, Art. 31 III-IV, Art. 29 IV, erros de gabarito G1/G2/G4) enviadas Ã  rotina diÃ¡ria de skills. Etapa 4 liberada para criar_caso."
+    },
+    {
+      "etapa": 3,
+      "evento": "verificacao_v8_r6",
+      "data": "2026-10-08",
+      "versao": "v8",
+      "veredito_recomendado": "aprovar",
+      "obs": "VerificaÃ§Ã£o da R6 reprovada: ausente da v8 (grep e leitura). Alternativa B confirmada no Dec. 3.046 XI (p. 3). Erro de conta de Oscar (M-a nÃ£o depende de a) registrado. Notas todas >= 8,00 (Oscar 8,50; LÃºcio 8,70; Skill vaga 8,30; Skill levantamento 9,20; Skill viabilidade 9,40). PendÃªncias: Skill de vaga l. 52 e l. 91 ainda com resÃ­duo da soma I+II; Art. 31 III-IV nÃ£o usados; contagem de palavras da PeÃ§a 2 (2.154, feita pela Drenagem). Parecer: parecer_bardi_v8.md"
+    },
+    {
+      "etapa": 3,
+      "evento": "v8_aprovada_como_referencia",
+      "data": "2026-10-08",
+      "versao": "v8",
+      "obs": "Claudemberg aprovou a v8 como referÃªncia da etapa 3 (substitui a v7 como referÃªncia; v5-v7 ficam no histÃ³rico). PendÃªncias da v8 sendo corrigidas: resÃ­duos da soma I+II na Skill de vaga (l. 52 e 91), Art. 29 IV na Skill de levantamento (l. 93), Art. 31 III-IV (p. 17) nÃ£o usados, AUTO_TESTE_R6 com claim incorreto, espelhos .agents."
+    },
+    {
+      "etapa": 3,
+      "evento": "pendencias_v8_corrigidas",
+      "data": "2026-10-08",
+      "versao": "v8",
+      "obs": "Skill de vaga v1.4 (Kelsen): linha de manobra corrigida; soma I+II retirada da interpretacao; Art. 31 III-IV lido na p. 17 e registrado. Skill de levantamento v1.9 (Lucio): Art. 29 IV corrigido. AUTO_TESTE_R6 com claim corrigido. ADENDO_pendencias_08-10-2026.md criado na v8. Espelhos .agents sincronizados (viabilidade, levantamento; vaga sem espelho)."
+    },
+    {
+      "etapa": 4,
+      "evento": "caso_criado",
+      "data": "2026-10-09",
+      "gabarito_sha256": "EB7F99BC2FC29262FBACC6ECF47705CE7B460886BBDCD7790D80A9749CE6CE87"
+    },
+    {
+      "etapa": 4,
+      "evento": "executada_e_corrigida",
+      "data": "2026-10-09",
+      "veredito_recomendado": "reprovar",
+      "obs": "LÃºcio (nota 7,75) com Oscar (nota 6,25): ambas abaixo de 8,00. Lacre conferido antes e depois (SHA256 OK). Parecer: etapa_04_briefing/parecer_bardi.md; notas: notas_assertividade.md. Gabarito tem 6 erros prÃ³prios do Bardi (GE-1 a GE-6), registrados no parecer e nÃ£o descontados do executor. Contagem de palavras do corpo pendente de Wallenberg."
+    },
+    {
+      "etapa": 4,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-09",
+      "versao": "v1",
+      "motivo": "Reprovada por Claudemberg conforme parecer_bardi da etapa 4 (REPROVAR; Oscar 6,25, LÃºcio 7,75). Sem motivo adicional registrado. Refazer v2 pela Drenagem (Passo 5.6). Primeira reprovaÃ§Ã£o da etapa: teto de 3 versÃµes nÃ£o atingido."
+    },
+    {
+      "etapa": 4,
+      "evento": "entrega_v2_gravada",
+      "data": "2026-10-12",
+      "obs": "Oscar gravou entrega v2 (entrega\\v2\\, 8 arquivos + checagem_oscar_v2.md). Lucio: parcial (Oscar foi acionado em 2o plano na 1a tentativa); auditoria final de Lucio pendente. Colisao: entrega\\v2 tem 01-04 sem sufixo de outra execucao, nao alterados."
+    },
+    {
+      "etapa": 4,
+      "evento": "lacre_violado_nao_corrigida",
+      "data": "2026-10-12",
+      "obs": "LACRE VIOLADO: SHA256 atual do gabarito etapa_04 = 11F5F1D0725B35EBBABC3010E7900ECC5D6FAEF9380A9C1C845799314F5939EC; registrado em caso_criado (09/10) = EB7F99BC2FC29262FBACC6ECF47705CE7B460886BBDCD7790D80A9749CE6CE87. Bardi NAO acionado para correcao. Aguarda Claudemberg."
+    },
+    {
+      "etapa": 4,
+      "evento": "correcao_v2_pelo_gestor",
+      "data": "2026-10-13",
+      "obs": "Kelsen (LC 270 Art. 352, p. 125): SMD = 20% da area livre (terreno x (1-TO)); com TO 50% = 57,18 m2. 68,62 m2 usava TO 40% da convencao (privada). Oscar corrigiu 01-07 _v2 e checagem_oscar_v2.md; Lucio reescreveu 08_auditoria_lucio_003_v2.md com prova. Abertos: P1 terreno 571,80 (briefing) x 600,00 (cadastro); TO 50% do ZPP nao conferida no Dec. 3.046; citacao de copia faltante em 06 linhas 44 e 49; 'ASCII' residual em 01 s8 item 4. Lacre do gabarito continua violado: proxima_acao segue aguardar_claudemberg."
+    },
+    {
+      "etapa": 4,
+      "evento": "etapa_4_anulada",
+      "data": "2026-10-13",
+      "obs": "Claudemberg escolheu anular a etapa 4 e recriar o caso. Gabarito alterado sem registro (mtime 11/10 09:49, SHA256 11F5F1D0725B35EBBABC3010E7900ECC5D6FAEF9380A9C1C845799314F5939EC) preservado como etapa_04_gabarito_ANULADO_alterado_11-10_preservado.md, nao apagado. Sem copia da versao de 09/10. Nova execucao: Bardi cria caso e gabarito novos (criar_caso). Reprovacao v1 nao conta como tentativa nova no teto. Entrega v2 antiga fica como registro."
+    },
+    {
+      "etapa": 4,
+      "evento": "caso_recriado",
+      "data": "2026-10-13",
+      "gabarito_sha256": "A688D2D116DD27406A3546B556C0D6116DBC0564360AB602EBB1FE1B1B2871F7",
+      "obs": "Bardi (Funcao 1) recriou enunciado v2 e gabarito v2 em _gabaritos_LACRADO_bardi/ensaio_003/etapa_04_gabarito.md. SHA256 gravado por Wallenberg em 13/10 (Get-FileHash). Correcoes GE-1 a GE-6 em etapa_04_briefing/correcoes_caso_v2.md. Enunciado: herança plantada (Viabilidade v9 construida 340-360 x computavel 297,28; SMD 10% da Etapa 01)."
+    },
+    {
+      "etapa": 4,
+      "evento": "executada_e_corrigida",
+      "data": "2026-10-13",
+      "veredito_recomendado": "reprovar",
+      "obs": "Parecer: parecer_bardi_v3.md"
+    },
+    {
+      "etapa": 4,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-13",
+      "versao": "v3",
+      "motivo": "Notas abaixo do minimo: Oscar 4,25; Lucio 6,50; Skills 7,50-9,00. Ajustar as Skills, as funcoes de cada agente e corrigir os pequenos erros, para nao repetir os mesmos problemas. Notas minimas de 8,00 para aprovar. Teto de 3 versoes: 2 reprovacoes registradas (v1 e v3), refazer v4 permitido."
+    },
+    {
+      "etapa": 4,
+      "evento": "refazer_v4_iniciado",
+      "data": "2026-10-13",
+      "obs": "Passo 5.6: Kelsen corrige Skills legais; Lucio corrige Skill NBR 9050 e funcoes de Oscar/Lucio; Bardi corrige GB-1 a GB-4 com novo hash registrado; depois Lucio/Oscar fazem v4 e Bardi corrige."
+    },
+    {
+      "etapa": 4,
+      "evento": "gabarito_corrigido_pos_reprovacao",
+      "data": "2026-10-13",
+      "gabarito_sha256_anterior": "A688D2D116DD27406A3546B556C0D6116DBC0564360AB602EBB1FE1B1B2871F7",
+      "gabarito_sha256": "1CC0A6B5FB4688DA26A747B3310212D213821B0A35F205D1ACDA71FE5DA13262",
+      "obs": "GB-1 a GB-4 corrigidos a pedido de Claudemberg; backup em Decisoes_Autonomas/_backups/2026-10-13/etapa_04_gabarito_ANTES_GB1-4.md"
+    },
+    {
+      "etapa": 4,
+      "evento": "executada_e_corrigida",
+      "data": "2026-10-13",
+      "versao": "v4",
+      "veredito_recomendado": "reprovar",
+      "obs": "Parecer: parecer_bardi_v4.md"
+    },
+    {
+      "etapa": 4,
+      "evento": "aprovada_com_pendencias_por_claudemberg",
+      "data": "2026-10-13",
+      "versao": "v4",
+      "obs": "Teto de 3 versoes reprovadas atingido (v1, v3, v4). Claudemberg decidiu passar para a proxima etapa e anotar. Todos os erros registrados em etapa_04_briefing/erros_registrados_etapa_04.md e diagnostico_repeticao.md. Notas v4: Oscar 4,75; Lucio 6,50 (abaixo de 8,00, aprovado com pendencias). Trava da etapa 5 NAO liberada por este evento (D4)."
+    },
+    {
+      "etapa": 5,
+      "evento": "etapa_5_pendente_trava",
+      "data": "2026-10-13",
+      "obs": "Etapa 5 so executa com trava_etapa_5.liberada = true (Claudemberg, apos exame do Oscar no Revit)."
+    },
+    {
+      "etapa": 5,
+      "evento": "trava_etapa_5_liberada",
+      "data": "2026-10-13",
+      "obs": "Claudemberg mandou liberar. Teste no Revit (Projeto1.rvt, Revit 2026): Oscar criou o comodo TESTE OSCAR 13-10 (ambiente ID 449290, 10,97 m2, 4 paredes ID 449286-449289) via Vitruvius. Confirmado por list_elements. Defeitos a ajustar: altura das paredes 0,30 m (restricao Pav. terreo); sufixo ' 8' no nome do ambiente."
+    },
+    {
+      "etapa": 5,
+      "evento": "caso_criado",
+      "data": "2026-10-14",
+      "gabarito_sha256": "730CBFC276C249170CF692C41CCD1600B43E740769F04202AFFF3D5E105E896B",
+      "obs": "Bardi (Funcao 1) montou enunciado + gabarito da etapa 5 (Arquitetura — Estudo Preliminar; Gestor lucio; Agentes oscar, burle, portinari); 5 iscas. Hash gravado por Wallenberg (Get-FileHash) na rotina de 14/10/2026."
+    },
+    {
+      "etapa": 5,
+      "evento": "executada_e_corrigida",
+      "data": "2026-10-14",
+      "veredito_recomendado": "reprovar",
+      "obs": "Drenagem 14/10: Lucio+Oscar+Burle+Portinari entregaram em entrega/ (01-09 + 00 auditoria). Lacre OK (SHA256 conferido antes e depois). Notas: Lucio 7,50; Oscar 5,25; Burle 9,00; Portinari 9,25. Entrega 2 (desenhos Revit) nao atendida; NBR 6492 disponivel em D:/008_Normas ABNT (Oscar disse fora do acervo). Erros do gabarito G1-G5 registrados no parecer, nao descontados. Parecer: etapa_05_estudo_preliminar/parecer_bardi.md"
+    },
+    {
+      "etapa": 5,
+      "evento": "reprovada_por_claudemberg",
+      "data": "2026-10-14",
+      "versao": "v2",
+      "motivo": "Parecer Bardi v2: Oscar 6,30, Lucio 7,00 (abaixo de 8,00). \"Atende\" sem conferencia visual; superior sem porta/acesso; eixos; alturas. Opcao (b): reprovar e segurar a v3 ate o Bloco 1 do Vitruvius. Versoes reprovadas na etapa: 2 de 3 (teto)."
+    }
+  ],
+  "versao_referencia": "v8",
+  "gabaritos_em": "CONSTRUCAO_DO_ZERO/_gabaritos_LACRADO_bardi/ensaio_003/",
+  "trava_etapa_5": {
+    "liberada": true,
+    "decisao": "D4 - Claudemberg, 10/10/2026",
+    "motivo": "Etapa 5 (Estudo Preliminar) so comeca depois do exame do Oscar desenhando no Revit (Fase 3 do D:/011_VITRUVIUS/PLANO_AGENTE_GUIADO.md, depois dos Blocos 0-3 do PLANO_ITEM2). A etapa 4 (Briefing) segue normalmente.",
+    "quem_libera": "Claudemberg"
+  },
+  "trava_v3_etapa_5": {
+    "liberada": false,
+    "decisao": "Claudemberg, 14/10/2026 (opcao b)",
+    "motivo": "v3 da etapa 5 so depois do Bloco 1 do Vitruvius pronto e conferido (cotas, folhas, elevacoes, imagem da vista). Ver D:/011_VITRUVIUS/PEDIDOS_OSCAR/05_analise_prints_EP_v2_14-10.md",
+    "quem_libera": "Claudemberg"
+  }
 }

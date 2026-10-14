@@ -24,9 +24,20 @@ Feedback recebido (14 áudios + documento + 12 fotos). Ver relatório analítico
 - **Corredor 2:** jardim do início do corredor até o fim do L, rente ao muro.
 - **Corredor 1** (foto 01): onde fica o lavabo de apoio.
 - **Escada:** no ponto mostrado nas fotos 10 e 11.
-- **Espaço da frente:** área de lazer gourmet para reunir as pessoas, junto à churrasqueira. Não é "garagem que vira salão".
+- ~~**Espaço da frente:** área de lazer gourmet para reunir as pessoas, junto à churrasqueira. Não é "garagem que vira salão".~~ Substituído em 13/10/2026: ver "Respostas de Claudemberg".
 - **Preço do projeto:** perto de R$ 3 a 4 mil, abatido da obra. Não mostrar o "valor real" riscado na apresentação.
 - **Implantação (comentário de Claudemberg no deck, 11/10/2026):** a casa fica mais ao centro. O corredor faz um **L abraçando o fundo da casa**, com a **escada no fim do L**.
 - **Bancada:** **paralela ao muro**, para não atrapalhar a passagem. São duas opções: (A) uma bancada só; (B) duas bancadas com um corredor entre elas, com a churrasqueira e o apoio na frente, e atrás a bancada de cortar e limpar, com a pia.
 - **Casa (comentário no deck, 11/10/2026):** a casa fica no centro e também ocupa o fundo do Corredor 1 e metade do L do Corredor 2.
 - **Garagem = área de lazer:** as mesas e a churrasqueira ficam no espaço da garagem. Nas reuniões, o carro sai e o pessoal fica ali.
+
+## Respostas de Claudemberg (13/10/2026); prevalecem sobre tudo acima
+1. **Frente:** o uso **principal é a garagem**; a área de lazer é **secundária** e usa o mesmo espaço quando o carro sai. O carro manda no desenho (piso que aguenta o carro, manobra livre, separação segura da piscina, mesas soltas).
+2. **Condomínio:** eram ruas normais; o bairro fechou as ruas e criou um condomínio. Confirmar na visita se há associação e regras para muro, portão e obra.
+3. **Márcio:** cunhado de Maurício Fontes Fonseca (sócio, diretor financeiro e de novos negócios da Sttickler). Vende mármores e pedras para a Adriana e indicou a Sttickler. Ao recomendar pedra dele, mostrar sempre outra opção ao lado.
+4. **Piscina:** origem e modelo **ainda a confirmar**.
+5. **Proposta visual (v1 a v7):** é material de estudo de Claudemberg, **não vai à cliente**. A primeira visita é para ouvir.
+6. **Documentação (sócia Alessandra, áudio de 13/10/2026):** nada de valor vai à cliente sem proposta escrita e termo de aceite assinado. Ver `Proposta/Termo_Aceite_Adriana_RASCUNHO.md`.
+
+## Histórico
+- 13/10/2026: respostas acima registradas; roteiro da visita em `Levantameto/Roteiro_Visita_14_10.md`.

@@ -63,7 +63,7 @@ Da mais forte pra mais fraca. Fonte mais forte sempre vence a mais fraca, sem ex
 | Gabarito | LC 270/2024 Anexo XXI — valores distintos para "afastado" e "não afastado das divisas" |
 | Afastamento **frontal** | LC 270/2024 Art. 363 + Anexo XXI |
 | Afastamento **lateral e de fundos** | **Não está na LC 270/2024** — Art. 364 delega ao COES (LC 198/2019). Ver bloco próprio abaixo |
-| SMD / permeabilidade | LC 270/2024 Art. 351-353 |
+| SMD / permeabilidade | LC 270/2024 Art. 351-352 — **regra de cálculo no Art. 352** (SMD = 20% da área livre da TO máxima da zona); ver bloco "Superfície Mínima Drenante" nas armadilhas |
 | ATE (Área Total Edificável) | LC 270/2024 Art. 346-347, com as exclusões listadas |
 | Usos permitidos por zona | LC 270/2024 Art. 338 (categorias) + Decreto 56.561/2025 (detalhe por CNAE e por AP) |
 | Outorga onerosa (CAB->CAM) | **LC 281/2025, Arts. 18-19** — primário **arquivado** (`LC281_2025_CondicoesEspeciais_CONSOLIDADO.pdf`). Art. 18 traz as fórmulas por tipologia; Art. 19, o parcelamento e os descontos; Art. 20 condiciona a licença à quitação. `POP-LEGAL-02` foi reescrito em 28/07/2026 sobre a LC 281/2025 (verbatim, auditado por Kelsen) — quarentena encerrada, pode ser usado como fundamento novamente |
@@ -91,6 +91,18 @@ O erro histórico foi tratar isso como uma regra só. São quatro perguntas inde
 - **Contrapartida compra área, não compra habitabilidade** — leitura correta; o fundamento antigo (LC 274/2024 Art. 12 §2º) caiu no mesmo bloco revogado. Reconstrua também sobre a **LC 281/2025, Arts. 18-19**.
 - **Em modificação de preexistente, a outorga incide só sobre o que ultrapassa o preexistente** — LC 270/2024 Art. 108.
 
+### Superfície Mínima Drenante (SMD) — regra de cálculo (LC 270/2024 Arts. 351-352)
+- **Art. 352, verbatim** (LC 270/2024, p. 125 do PDF `LC270_2024_PlanoDiretorLUOS.pdf`, conferido por Kelsen em 13/10/2026): "A SMD corresponde a vinte por cento da área livre do terreno resultante da aplicação da Taxa de Ocupação máxima, definida no Anexo XXI desta Lei Complementar."
+- **Art. 351, mesma página:** SMD é "o percentual mínimo da área do terreno que deve ser mantida livre de impermeabilização em qualquer nível, preferencialmente com a cobertura vegetal existente".
+- **Conta:** SMD = 20% × [área do terreno × (1 − TO)]. A SMD sai da **área livre que sobra depois da ocupação**, não do terreno inteiro.
+- **Exemplo (terreno de 571,80 m²):**
+  - TO 50%: área livre = 571,80 × (1 − 0,50) = 285,90 m²; SMD = 20% × 285,90 = **57,18 m²** (10% do terreno).
+  - TO 40%: área livre = 571,80 × (1 − 0,40) = 343,08 m²; SMD = 20% × 343,08 = **68,62 m²**.
+  - Cada número vale só para a TO certa. A TO tem de vir de fonte (RIU ou Anexo XXI), não de suposição.
+- **A TO é a da ZONA** (Anexo XXI, pela Área de Planejamento e pela subzona do lote, confirmada no RIU). **Não é a TO do condomínio nem a TO de convenção/regramento privado.** Regramento privado mais restritivo pode valer como regra da casa, mas não é o parâmetro que o Art. 352 manda usar. Armadilha: trocar a TO da zona pela TO de convenção muda a SMD sem base legal.
+- **Art. 351, §§ 2º a 4º, mesma página:** infraestrutura verde pode ampliar a área drenante; em lote com drenagem insuficiente, a permeabilidade "será substituída por medidas compensatórias", que podem ser feitas fora do lote, na mesma sub-bacia, "de acordo com a avaliação e aceitação do órgão responsável pela drenagem urbana" (§ 4º). Não é desconto automático: sem aceite, a SMD vale.
+- **Anexo XXI, AP4, ZPP:** a TO está como "ver Dec. nº 3046/1981" (LC 270, p. 275). O valor por subzona não está na LC 270 — ver lacuna F-1 em `decreto3046-81-lc270-2024-licin-barra-recreio`. Não aplicar número de TO de ZPP sem registrar a fonte.
+
 ### Enquadramento e vigência
 - **Clínica privada com fins lucrativos não é "Uso Institucional de interesse público"** (Art. 338 XVI, reservado a entidades sem fins lucrativos), mesmo que a SMDU use "institucional de saúde" informalmente. Confirme o CNAE no anexo da AP correta do Decreto 56.561/2025.
 - **Lote abaixo do mínimo NÃO aumenta CAB/CAM.** Loteamento fechado legaliza o parcelamento (PAL/direito adquirido), não o coeficiente.
@@ -100,7 +112,7 @@ O erro histórico foi tratar isso como uma regra só. São quatro perguntas inde
 - **Sempre cheque se a lei foi substituída.** Se um texto aparece como "substituído por", busque o que substituiu e traga resultado concreto com fonte.
 
 ### Risco que não barra o protocolo, mas não some
-**Código Civil art. 1.301** (janela/varanda perto da divisa) é matéria **civil**: a SMDU não indefere por isso, mas o Alvará não blinda o cliente contra ação do vizinho, e o **COES Art. 39 §1º** joga a responsabilidade no autor do projeto. **Sinalize sempre** (Princípio 18) — sobretudo quando o PRPA for Claudemberg. Um projeto pode estar 100% conforme e ainda deixar o cliente exposto.
+**Código Civil art. 1.301** (janela/varanda perto da divisa; **texto NÃO arquivado no acervo — lacuna F-5 aberta em 13/10/2026: não citar o conteúdo do artigo até o texto ser arquivado em `Fontes_Legislacao/`**; o art. 1.302 também não está) é matéria **civil**: a SMDU não indefere por isso, mas o Alvará não blinda o cliente contra ação do vizinho, e o **COES Art. 39 §1º** joga a responsabilidade no autor do projeto. **Sinalize sempre** (Princípio 18) — sobretudo quando o PRPA for Claudemberg. Um projeto pode estar 100% conforme e ainda deixar o cliente exposto.
 
 ### Prazo da LC 281/2025 — cuidado com data errada em fonte secundária
 Uma proposta de Skill (Setembro/2026, integração de 03/09/2026) citou "prazo de legalização por contrapartida até 30/06/2026, já expirado" como se fosse a janela do **Art. 40** da LC 281/2025. **Essa data não bate com nenhum ponto da cadeia verbatim já auditada duas vezes contra o PDF primário** (ver linha "Janela de contrapartida com desconto" acima e a auditoria de 24/07/2026 no `_indice_fontes.md`): 1º/12/2025 (original) -> 1º/06/2026 (LC 291/2025) -> **1º/12/2026 (LC 301/2026, Art. 58) — ainda ABERTA**. Não confundir com os descontos do **Art. 19** da mesma lei (esses sim expirados: 50% até 1º/12/2025, 30% até 02/03/2026) — são dispositivos diferentes, e nenhum dos dois usa "30/06/2026". Antes de dizer a um cliente que a janela de contrapartida fechou, reconfira a linha da tabela acima, não uma proposta ou resumo de terceiro.
