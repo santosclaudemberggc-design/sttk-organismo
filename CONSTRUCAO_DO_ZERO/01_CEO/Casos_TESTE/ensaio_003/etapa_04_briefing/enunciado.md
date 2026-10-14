@@ -3,7 +3,7 @@
 
 **Execução:** Oscar (Agente)
 **Supervisão:** Lúcio (Gestor — Arquitetura)
-**Data de emissão:** 09/10/2026
+**Data de emissão:** 13/10/2026 (versão 2: caso recriado após a anulação da emissão de 09/10/2026)
 **Caso:** 100% fictício (ver `caso_sombra_003.md` para contexto)
 
 ---
@@ -18,6 +18,7 @@ Você recebe as entregas aprovadas das Etapas 01, 02 e 03. O ensaio é cumulativ
   - Taxa de ocupação de 40% pelo Regramento.
   - Projeção máxima de 228,72 m² por pavimento; teto volumétrico computável de 457,44 m² (2 pavimentos).
   - Permeabilidade mínima de 142,95 m².
+  - Superfície Mínima Drenante (SMD): 10% do terreno (Etapa 01, quadro, item 14).
   - Sem subsolo e sem rooftop.
   - Edícula: demolição recomendada.
   - APP/FMP nos fundos: em aberto (cenários H0 e H1).
@@ -27,6 +28,7 @@ Você recebe as entregas aprovadas das Etapas 01, 02 e 03. O ensaio é cumulativ
   - Cenário S1 = 457,44 m² computáveis (adotado para custo e revenda).
   - Cenário S2 = 480 m² (depende da divisa regularizada).
   - Cenário S3 = 297,28 m² (H1).
+  - Pré-Estudo v9, §2 (matriz CAB × CAM): S1 com 500–520 m² construídos de trabalho; S3/H1 com 340–360 m² construídos de trabalho.
   - Orçamento-teto de R$ 4,2 mi, sem terreno.
   - CAB = CAM = 1,0: não há outorga onerosa no lote.
   - O programa de 520 m² construídos depende de cerca de 62,56 m² não computáveis, decisão da Arquitetura.

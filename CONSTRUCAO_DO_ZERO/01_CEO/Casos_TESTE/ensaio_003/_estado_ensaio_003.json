@@ -2,9 +2,9 @@
     "ensaio":  "003",
     "criado_em":  "2026-09-30",
     "regra":  "Uma etapa por vez. So avanca com aprovacao de Claudemberg. Reprovada = Drenagem corrige e refaz a MESMA etapa. Sem aprovacao pendente resolvida, as rotinas encerram sem gastar. [09/10/2026 Claudemberg] Teto de 3 versoes: com 3 ou mais versoes reprovadas na mesma etapa, a Drenagem NAO refaz; grava etapa_NN/diagnostico_repeticao.md e poe proxima_acao=aguardar_claudemberg. Auditoria do Gestor so vale com prova colada.",
-    "etapa_atual":  4,
-    "status_etapa":  "a_criar",
-    "proxima_acao":  "criar_caso",
+    "etapa_atual":  5,
+    "status_etapa":  "aguardando_execucao",
+    "proxima_acao":  "executar",
     "valores_possiveis":  {
                               "status_etapa":  [
                                                    "a_criar",
@@ -476,12 +476,81 @@
                           "evento":  "etapa_4_anulada",
                           "data":  "2026-10-13",
                           "obs":  "Claudemberg escolheu anular a etapa 4 e recriar o caso. Gabarito alterado sem registro (mtime 11/10 09:49, SHA256 11F5F1D0725B35EBBABC3010E7900ECC5D6FAEF9380A9C1C845799314F5939EC) preservado como etapa_04_gabarito_ANULADO_alterado_11-10_preservado.md, nao apagado. Sem copia da versao de 09/10. Nova execucao: Bardi cria caso e gabarito novos (criar_caso). Reprovacao v1 nao conta como tentativa nova no teto. Entrega v2 antiga fica como registro."
+                      },
+                      {
+                          "etapa":  4,
+                          "evento":  "caso_recriado",
+                          "data":  "2026-10-13",
+                          "gabarito_sha256":  "A688D2D116DD27406A3546B556C0D6116DBC0564360AB602EBB1FE1B1B2871F7",
+                          "obs":  "Bardi (Funcao 1) recriou enunciado v2 e gabarito v2 em _gabaritos_LACRADO_bardi/ensaio_003/etapa_04_gabarito.md. SHA256 gravado por Wallenberg em 13/10 (Get-FileHash). Correcoes GE-1 a GE-6 em etapa_04_briefing/correcoes_caso_v2.md. Enunciado: herança plantada (Viabilidade v9 construida 340-360 x computavel 297,28; SMD 10% da Etapa 01)."
+                      },
+                      {
+                          "etapa":  4,
+                          "evento":  "executada_e_corrigida",
+                          "data":  "2026-10-13",
+                          "veredito_recomendado":  "reprovar",
+                          "obs":  "Parecer: parecer_bardi_v3.md"
+                      },
+                      {
+                          "etapa":  4,
+                          "evento":  "reprovada_por_claudemberg",
+                          "data":  "2026-10-13",
+                          "versao":  "v3",
+                          "motivo":  "Notas abaixo do minimo: Oscar 4,25; Lucio 6,50; Skills 7,50-9,00. Ajustar as Skills, as funcoes de cada agente e corrigir os pequenos erros, para nao repetir os mesmos problemas. Notas minimas de 8,00 para aprovar. Teto de 3 versoes: 2 reprovacoes registradas (v1 e v3), refazer v4 permitido."
+                      },
+                      {
+                          "etapa":  4,
+                          "evento":  "refazer_v4_iniciado",
+                          "data":  "2026-10-13",
+                          "obs":  "Passo 5.6: Kelsen corrige Skills legais; Lucio corrige Skill NBR 9050 e funcoes de Oscar/Lucio; Bardi corrige GB-1 a GB-4 com novo hash registrado; depois Lucio/Oscar fazem v4 e Bardi corrige."
+                      },
+                      {
+                          "etapa":  4,
+                          "evento":  "gabarito_corrigido_pos_reprovacao",
+                          "data":  "2026-10-13",
+                          "gabarito_sha256_anterior":  "A688D2D116DD27406A3546B556C0D6116DBC0564360AB602EBB1FE1B1B2871F7",
+                          "gabarito_sha256":  "1CC0A6B5FB4688DA26A747B3310212D213821B0A35F205D1ACDA71FE5DA13262",
+                          "obs":  "GB-1 a GB-4 corrigidos a pedido de Claudemberg; backup em Decisoes_Autonomas/_backups/2026-10-13/etapa_04_gabarito_ANTES_GB1-4.md"
+                      },
+                      {
+                          "etapa":  4,
+                          "evento":  "executada_e_corrigida",
+                          "data":  "2026-10-13",
+                          "versao":  "v4",
+                          "veredito_recomendado":  "reprovar",
+                          "obs":  "Parecer: parecer_bardi_v4.md"
+                      },
+                      {
+                          "etapa":  4,
+                          "evento":  "aprovada_com_pendencias_por_claudemberg",
+                          "data":  "2026-10-13",
+                          "versao":  "v4",
+                          "obs":  "Teto de 3 versoes reprovadas atingido (v1, v3, v4). Claudemberg decidiu passar para a proxima etapa e anotar. Todos os erros registrados em etapa_04_briefing/erros_registrados_etapa_04.md e diagnostico_repeticao.md. Notas v4: Oscar 4,75; Lucio 6,50 (abaixo de 8,00, aprovado com pendencias). Trava da etapa 5 NAO liberada por este evento (D4)."
+                      },
+                      {
+                          "etapa":  5,
+                          "evento":  "etapa_5_pendente_trava",
+                          "data":  "2026-10-13",
+                          "obs":  "Etapa 5 so executa com trava_etapa_5.liberada = true (Claudemberg, apos exame do Oscar no Revit)."
+                      },
+                      {
+                          "etapa":  5,
+                          "evento":  "trava_etapa_5_liberada",
+                          "data":  "2026-10-13",
+                          "obs":  "Claudemberg mandou liberar. Teste no Revit (Projeto1.rvt, Revit 2026): Oscar criou o comodo TESTE OSCAR 13-10 (ambiente ID 449290, 10,97 m2, 4 paredes ID 449286-449289) via Vitruvius. Confirmado por list_elements. Defeitos a ajustar: altura das paredes 0,30 m (restricao Pav. terreo); sufixo ' 8' no nome do ambiente."
+                      },
+                      {
+                          "etapa":  5,
+                          "evento":  "caso_criado",
+                          "data":  "2026-10-14",
+                          "gabarito_sha256":  "730CBFC276C249170CF692C41CCD1600B43E740769F04202AFFF3D5E105E896B",
+                          "obs":  "Bardi (Funcao 1) montou enunciado + gabarito da etapa 5 (Arquitetura — Estudo Preliminar; Gestor lucio; Agentes oscar, burle, portinari); 5 iscas. Hash gravado por Wallenberg (Get-FileHash) na rotina de 14/10/2026."
                       }
                   ],
     "versao_referencia":  "v8",
     "gabaritos_em":  "CONSTRUCAO_DO_ZERO/_gabaritos_LACRADO_bardi/ensaio_003/",
     "trava_etapa_5":  {
-                          "liberada":  false,
+                          "liberada":  true,
                           "decisao":  "D4 - Claudemberg, 10/10/2026",
                           "motivo":  "Etapa 5 (Estudo Preliminar) so comeca depois do exame do Oscar desenhando no Revit (Fase 3 do D:/011_VITRUVIUS/PLANO_AGENTE_GUIADO.md, depois dos Blocos 0-3 do PLANO_ITEM2). A etapa 4 (Briefing) segue normalmente.",
                           "quem_libera":  "Claudemberg"
