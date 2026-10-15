@@ -4,6 +4,20 @@
     "atualizado_em":  "2026-10-10 (Wallenberg: decisoes D4-D9)",
     "itens":  [
                   {
+                      "id":  "estado-cardozo-enxugar-sem-blocos-datados-15-10-2026",
+                      "tipo":  "processo",
+                      "owner":  "Wallenberg",
+                      "agente":  "cardozo",
+                      "cardId":  "sistema",
+                      "desde":  "2026-10-15",
+                      "crit":  "media",
+                      "alc":  "planejado",
+                      "status":  "aberta",
+                      "txt":  "Enxugar _estado_cardozo.md (433 linhas). Não foi feito porque as entradas antigas não têm blocos datados separados: o corte por data iria misturar histórico com o que ainda está em andamento. Lúcio e Hely já foram enxugados.",
+                      "res":  "Backup não feito ainda. Nenhuma alteração no arquivo.",
+                      "acao":  "Na próxima sessão, separar por julgamento (o que ainda está em andamento fica no topo; o resto vai para HISTÓRICO), com backup e conferência linha a linha."
+                  },
+                  {
                       "id":  "lei15437-dou-art12c-paragrafo-mp-pendente-15-10-2026",
                       "tipo":  "lacuna_conhecimento",
                       "owner":  "Kelsen",
