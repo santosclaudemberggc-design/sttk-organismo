@@ -1,0 +1,48 @@
+{
+  "caching": {
+    "enabled": true,
+    "prompts": [
+      "CLAUDE.md",
+      "CONSTRUCAO_DO_ZERO/CLAUDE_wallenberg_slice.md",
+      "CONSTRUCAO_DO_ZERO/CLAUDE_gestor_slice.md",
+      "CONSTRUCAO_DO_ZERO/CLAUDE_agente_slice.md",
+      "memory/projeto/consolidated_essencia.md",
+      "memory/projeto/consolidated_estrutura.md",
+      "memory/referencia/consolidated_referencia.md"
+    ],
+    "ttl_minutes": 60,
+    "activation_date": "2026-08-17T09:30:00Z",
+    "expected_reduction": "15-20%"
+  },
+  "system": {
+    "auto_memory": true,
+    "worktree_isolation": true,
+    "token_optimization": {
+      "item_4_sqlite": true,
+      "item_5_drive_cache": true,
+      "item_6_skills_json": true,
+      "item_7_prompt_caching": true,
+      "item_8_system_gestao": "planejamento"
+    }
+  },
+  "hooks": {
+    "PostSessionStart": [
+      {
+        "description": "STTK Item 5 — Sincronizar cache Google Drive (max 1x por sessão)",
+        "condition": "env.STTK_CACHE_FRESH_CHECK=true",
+        "command": "python \"CONSTRUCAO_DO_ZERO/01_CEO/_ferramentas/drive_cache/sync_incremental.py\"",
+        "error_handling": "log_only",
+        "timeout_seconds": 30
+      }
+    ],
+    "PostToolUse": [
+      {
+        "tool_pattern": "mcp__Google_Drive__*",
+        "description": "Auto-refresh cache após qualquer operação Google Drive",
+        "command": "python \"CONSTRUCAO_DO_ZERO/01_CEO/_ferramentas/drive_cache/sync_incremental.py\"",
+        "error_handling": "log_only",
+        "timeout_seconds": 30
+      }
+    ]
+  }
+}

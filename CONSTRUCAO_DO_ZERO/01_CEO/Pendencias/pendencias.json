@@ -12,7 +12,9 @@
                       "desde":  "2026-10-15",
                       "crit":  "media",
                       "alc":  "humano",
-                      "status":  "aberta",
+                      "status":  "resolvida",
+                      "resolvido_em":  "2026-10-15",
+                      "decisao_claudemberg":  "Resolver (15/10/2026). Ganchos removidos, não reescritos: o script sync_incremental.py, chamado sozinho, só roda autotestes (e quebra no Windows por um emoji); ele depende de um agente passar a lista de arquivos do Drive. Cache parado desde 13/08/2026. Backup em _backups/2026-10-15/settings.json. As chaves caching e system foram mantidas.",
                       "txt":  "O .claude/settings.json tem ganchos em formato que o Claude Code não reconhece (evento PostSessionStart inexistente; campos tool_pattern, condition e error_handling fora do esquema). Provavelmente nunca rodaram (sincronização do cache do Drive, Item 5). Arquivo com esquema inválido pode ser ignorado por inteiro.",
                       "res":  "Encontrado em 15/10/2026 ao instalar o gancho dos gabaritos, que foi posto no settings.local.json por isso. Claudemberg decidiu deixar para depois.",
                       "acao":  "Decidir se a sincronização do cache do Drive ainda é desejada. Se sim, reescrever os ganchos no formato oficial (SessionStart e PostToolUse com matcher), com backup e teste. Se não, removê-los."
