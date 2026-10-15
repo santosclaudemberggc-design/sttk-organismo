@@ -545,3 +545,9 @@
 ---
 
 **15/10/2026 — Promoção do Zanettini de Formação para Shadow (Compatibilização, etapa 14):** EXAME-ZAN-01 reprovado (falta da isca obrigatória I1); EXAME-ZAN-02 aprovado com ressalvas (5 de 5 obrigatórias; falso positivo J6; extras a revisar). Ratificado por Claudemberg em 15/10/2026. Arquivos: `.claude/agents/zanettini.md`, `Agentes/Zanettini/_estado_zanettini.md`, `Casos_TESTE/exame_zanettini_0{1,2}/`. Como desfazer: voltar o nível para Formação nos dois arquivos de definição e estado.
+
+---
+
+**15/10/2026 — EXAME-REI-01 anulado por defeito de montagem (decisão de Claudemberg):** a isca obrigatória R1 não estava no caso e o gabarito da R10 contradiz o caso. Nova tentativa com caso novo.
+
+**15/10/2026 — Correção de processo (apontada por Claudemberg):** os exames dos agentes do Lelé foram montados pelo próprio Lelé, que está em Shadow. Pela cascata de formação, só um gestor Autonomous examina os próprios agentes. A partir de agora, exames de agentes de gestor não-Autonomous são montados e corrigidos pelo Bardi (examinador independente), e o Wallenberg calcula e confere o hash. Os exames do Zanettini (ZAN-01 e ZAN-02, montados por Lelé) ficam registrados como foram feitos; a promoção dele está ratificada. O caso do Limmer (LIM-01, montado por Lelé, bloqueado) será revisto pelo Bardi antes de qualquer aplicação.
