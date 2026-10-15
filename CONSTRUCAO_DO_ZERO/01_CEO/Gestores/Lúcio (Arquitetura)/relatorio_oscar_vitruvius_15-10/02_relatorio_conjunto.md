@@ -11,10 +11,10 @@
 ## Decisão conjunta sobre C1–C4
 | # | Decisão | Fecha com |
 |---|---|---|
-| C1 cota vermelha | Indeterminado, provável **T** (tipo de cota do template). Não é A. | Teste em cópia: tipo das cotas da v2 + cota com tipo preto explícito, vista em PNG. Entra em T-a do arquivo 05 e P13. |
+| C1 cota vermelha | **T** (teste só leitura 15/10, arquivo 04): as 8 cotas usam o tipo 410239 "cotas externas 2,0mm", parâmetro "Cor" = 255 (vermelho); instância sem cor; id do tipo anterior ao desenho. Escolha do tipo pela ferramenta = P13. Não é A. | Fechado por leitura. Falta só a cota com tipo preto explícito (P13). |
 | C2 "NORTE" solto | **A** (origem T): remover era limpeza do Oscar. Regra na Skill §5. Pedido ao template de tirar o texto. | Já decidido. |
-| C3 pé-direito/alturas | Falta de justificativa = **A** (regra no checklist §10). Divergência texto × cotas: indeterminado (A, P5 ou P7). | Só leitura no v2_r1 + log de 14/10 — **não feito**, porque o arquivo é do ensaio; a autorizar por Wallenberg. |
-| C4 Cobertura 6,30→6,20 | Indeterminado, provável **B** (P7); a Skill L45 registra "323714 → 6,20" como chamada R1 do mesmo dia, então pode ser registro do Oscar. | Busca no log de 14/10 por "323714" + reprodução em cópia. A autorizar. |
+| C3 pé-direito/alturas | Falta de justificativa = **A** (regra no checklist §10). Divergência texto × modelo: **não existe** no v2_r1 (leitura 15/10: níveis 0,30/3,30/6,30, paredes 3,00 sem deslocamento, laje 0,15 = memorial 06_v2 L44–L55). Não é P5/P7. | Fechado por leitura (arquivo 04). |
+| C4 Cobertura 6,30→6,20 | **Não ocorre no v2_r1**: Cobertura 323714 = 6,30 (`get_levels`; `get_element` 20,6693 pés). O 6,20 é do arquivo de teste do Bloco 1 → só P7 (ferramenta). Qual chamada mudou: sem prova. | Reprodução no `TESTE_BLOCO1_14-10_v2.rvt` (exige abrir: a autorizar). |
 
 ## PARTE A — correções no Oscar (aplicadas)
 | Erro | Regra nova | Onde | D relacionado |
