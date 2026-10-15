@@ -567,3 +567,7 @@
 ---
 
 **15/10/2026 — Skill `orcamento-executivo-analitico-sinapi-rj` v1.0 ratificada por Claudemberg como ativa-com-ressalva.** Copiada para o espelho `.agents/skills/` (conferida com diff). Ressalva: Acórdão TCU 2.622/2013 e exclusões da NBR 12721 a ler no texto oficial. Destrava o exame do Limmer.
+
+---
+
+**15/10/2026 — Limmer reprovado no EXAME-LIM-01 (decisão de Claudemberg):** nota 7,90, corrigida pelo Bardi; a isca obrigatória L6 (serviço 1.7 sem preço na planilha) foi pega só em parte, e o teto do critério 1 limita a nota abaixo de 8,00. Regra mantida porque estava no gabarito lacrado antes da aplicação. Tentativa 1 de 3. Segunda tentativa: EXAME-LIM-02, caso novo do Bardi.

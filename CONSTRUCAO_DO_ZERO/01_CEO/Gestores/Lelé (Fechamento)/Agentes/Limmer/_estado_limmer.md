@@ -8,7 +8,7 @@
 - Próxima ação: exame de Formação para Shadow, com caso fictício e gabarito lacrado escrito antes da execução. Quem monta o caso é Lelé, e Wallenberg aprova antes de aplicar.
 
 ## 2. Pendências abertas
-- [PENDENTE] Exame de Formação para Shadow.
+- [PENDENTE] Exame de Formação para Shadow. Tentativa 1 de 3 (EXAME-LIM-01, 15/10/2026): REPROVADO, nota 7,90 (isca obrigatória L6 parcial: item de impermeabilização sem preço não apontado). Tentativa 2: EXAME-LIM-02, a montar pelo Bardi.
 - [PENDENTE] Decisões da proposta ainda sem resposta de Claudemberg: escrita no Vitruvius, ferramenta de detalhe 2D, skills (ver proposta, seção 7).
 
 ## 3. Aprendizados que não posso esquecer
