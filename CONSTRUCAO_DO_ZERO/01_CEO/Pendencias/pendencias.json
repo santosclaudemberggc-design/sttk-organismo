@@ -58,7 +58,9 @@
                       "desde":  "2026-10-15",
                       "crit":  "media",
                       "alc":  "planejado",
-                      "status":  "aberta",
+                      "status":  "resolvida",
+                      "resolvido_em":  "2026-10-15",
+                      "decisao_claudemberg":  "Divisão aprovada por Claudemberg. Rodadas de 31/08 a 12/09 (188 linhas) movidas para ## 1-H. HISTÓRICO, sem alteração de texto. Ficaram no topo as entradas de 10/10, o status geral, a equipe e a dependência com Lúcio. Seção 2 idêntica. Conferência: 0 linhas do original faltando; 10 marcadores de pendência antes e depois. Backup em _backups/2026-10-15/_estado_cardozo.md.",
                       "txt":  "Enxugar _estado_cardozo.md (433 linhas). Não foi feito porque as entradas antigas não têm blocos datados separados: o corte por data iria misturar histórico com o que ainda está em andamento. Lúcio e Hely já foram enxugados.",
                       "res":  "Backup não feito ainda. Nenhuma alteração no arquivo.",
                       "acao":  "Na próxima sessão, separar por julgamento (o que ainda está em andamento fica no topo; o resto vai para HISTÓRICO), com backup e conferência linha a linha."

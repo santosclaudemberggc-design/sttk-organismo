@@ -590,3 +590,7 @@
 **15/10/2026 — Lei 15.437/2026 conferida no DOU (autorizado por Claudemberg):** o art. 12-C não tem parágrafo único; o DOU não cita medida provisória (MP 1.334/2026 só no Planalto); o texto da cópia local é idêntico ao publicado. Registro de desvio: o Hely leu a página com curl, sem gravar arquivo, depois de o WebFetch falhar; decisão sobre a aceitação desse método com Claudemberg.
 
 - **15/10/2026 — Decisão de Claudemberg:** método aceito. Em consulta autorizada, o Hely pode ler fonte oficial com `curl` na tela, sem gravar arquivo. Gravar ou baixar continua exigindo autorização. Registrado em `.claude/agents/hely.md` e no estado do Hely.
+
+---
+
+**15/10/2026 — Estado do Cardozo enxugado (divisão aprovada por Claudemberg):** rodadas de 31/08 a 12/09 (188 linhas) movidas para `## 1-H. HISTÓRICO`, sem alteração de texto. Seção 2 (pendências) idêntica. Nenhuma linha perdida. Backup em `_backups/2026-10-15/_estado_cardozo.md`. Fase 1 do roteiro concluída.

@@ -104,6 +104,148 @@ Aguardam decisão de Claudemberg/Wallenberg. Observação sobre o Saturnino: a r
 
 - **[10/10/2026 — Gate da Coordenação, registrado por Artigas] Interiores Daniel-OB (Tenreiro + Mindlin): APROVADO COM RESSALVA por Claudemberg (por escrito, 10/10/2026), como estudo de ambientação, não como projeto de Interiores.** Ressalva e registro completo: `CONSTRUCAO_DO_ZERO/01_CEO/Agentes_Diretos/Artigas (Mentoria Tecnica)/_estado_artigas.md`, seção 1. Artefato correto: `Daniel-OB_Interiores_Slides.html`.
 
+**Status Geral:** Operacional. Equipe de 6 Agentes formalizada em 26/08/2026 (autorização executiva de Claudemberg, 25/08/2026), todos promovidos a Shadow em 01/09/2026 (Exame 1 aprovado). Fila de pendências (pendencias.json + Notion Treinos e Testes) rechecada em 01-02/09: **nenhum item aberto com owner/cardId Cardozo ou de qualquer um dos 6 Agentes** — fila limpa. Próxima etapa: aguardando primeiro Briefing aprovado de Lúcio para acionamento de produção real.
+
+**Equipe de 6 Agentes (nomes definitivos, 26/08/2026):**
+
+| Agente | Especialidade | Referência do Nome |
+|--------|--------------|-------------------|
+| Baumgart | Estrutural | Emílio Baumgart, pioneiro do concreto armado no Brasil |
+| Landell | Automação+Elétrica | Padre Roberto Landell de Moura, pioneiro das telecomunicações sem fio |
+| Saturnino | Hidrossanitário | Francisco Saturnino de Brito, maior engenheiro sanitarista brasileiro |
+| Glaziou | Paisagismo | Auguste Glaziou, pioneiro do paisagismo naturalista no Brasil |
+| Tenreiro | Interiores | Joaquim Tenreiro, pai do design de mobiliário moderno brasileiro |
+| Mindlin | Apresentação | Henrique Mindlin, documentou a arquitetura moderna brasileira ao mundo |
+
+**Dependência crítica com Lúcio:** Recebo Briefing aprovado do cliente que Lúcio produz (via Drive). Valido se o Briefing cobre tudo que meus 6 Agentes precisam. Se faltar, escalo a Wallenberg pra Lúcio esclarecer. Execução só começa com Briefing completo.
+
+---
+
+## 2. Pendências Abertas
+
+**✅ RESOLVIDO 08/09/2026 — Gap de ferramenta "Treinos e Testes" (achado original 02/09, reafirmado 07/09):** eu não conseguia consultar o database sozinho porque `notion-fetch` não busca por título, só por ID/URL exato, e eu não tinha o ID salvo. **IDs canônicos, salvar de vez:**
+- Database: `6bf06266-94ac-4043-92da-6cb0fe202273` (url: `https://app.notion.com/p/6bf0626694ac404392da6cb0fe202273`)
+- Data source (usar em query SQL/rows): `collection://7b0728a8-fd57-419c-8a51-d5fe3794d165`
+- Schema: `Agente` (title), `Gestor` (text), `Exame` (text), `Caso-teste` (text), `Status` (select: pendente/em execução/aprovado/reprovado), `Resultado` (text), `Criado em`/`Atualizado em` (date)
+- Para reconciliar minha fila: SQL `SELECT * FROM "collection://7b0728a8-fd57-419c-8a51-d5fe3794d165" WHERE "Gestor" = 'Cardozo'`
+
+**✅ RESOLVIDO 03/09/2026 — Desincronia de arquivo de estado (achado original 27/08):** existiam DOIS arquivos `_estado_cardozo.md` (`CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Complementares/` e este, `CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Cardozo (Complementares)/`). Consolidados por Wallenberg nesta data, sem perda — este arquivo é o único daqui em diante, e `.claude/agents/cardozo.md` foi corrigido para apontar pra cá. A pasta `CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Complementares/` (órfã) foi removida.
+
+**✅ RESOLVIDO 03/09/2026 — As 2 Skills BIM não são de nenhum dos meus 6 Agentes, são do Gestor Fechamento:** Reli as 2 Skills na íntegra: `compatibilizacao-nbr-iso19650-clash-detection` (16/07) e `verificacao-automatica-conformidade-bim-ids-rase` (29/07). Ambas endereçadas a um **"futuro Agente de Compatibilização"** — nunca foram minhas, e o índice tinha ficado com elas marcadas "sem Gestor definido" desde 29/07 por falha de propagação (a decisão real, do mesmo dia 29/07, já definia que são do **Gestor Fechamento** — junto com Projeto Executivo, Orçamento Executivo e Liberação de Obra/Gate 16). Claudemberg confirmou e Wallenberg corrigiu os arquivos (renomeados `fechamento_*`, `gestor_alvo` atualizado, índice corrigido) em 03/09/2026. Não é mais pendência minha — meu escopo continua fechado em 6 Agentes, sem Compatibilização.
+
+**Pendência — caso Daniel – OB (Estudo de Ambientação Interiores), v3 aberta 01/09/2026:**
+1. **Renders conceituais por IA (bloqueio de tooling — escalar a Wallenberg/Claudemberg):** 0 de 8 gerados. `generate_image` existe na sessão do Burle, mas faltam `media_upload_widget`/`media_import_url` (ingestão da imagem-base D5 para image-to-image) e `show_generation_by_ids` + meio de download (recuperar o resultado). Destrava por um de: habilitar essas tools no perfil do Burle; liberar egress de rede do sandbox; hospedar as 8 bases D5 (`Render D5\...\Revisão 02\Pós Produção\`) em URL https. Mesma classe do gap `lucio-wan22-burle-sem-shell`.
+2. **Moodboard fotográfico flat-lay** (amostras físicas por IA): pendente pelo mesmo bloqueio. HTML tem a emulação CSS flat-lay como stand-in.
+3. **Imagens de referência Archtrends:** 28 slots placeholder no HTML (HTTP 403 no WebFetch, sem downloader de binário). Decidir: conceder download tool a um agente, baixar manual das URLs em `_pesquisa_referencias_cardozo.md`, ou trocar por renders do próprio projeto.
+4. **Compatibilização:** Lúcio/Oscar (planta, orientação solar, infra), Landell (elétrica) e Saturnino (impermeabilização) — não feita. Deck traz "intenções de projeto", não cotas. É o que limita a peça a "estudo de ambientação", não executivo.
+5. **Gate do Maurício:** pedido v3 montado pelo Artigas, aguardando veredito manual de Wallenberg/Claudemberg. Não presumir aprovação; registrar aqui só quando chegar.
+
+**Pendência — exames:**
+1. **Meu próprio Exame 2 (Shadow → Assisted):** Caso 1 aprovado 14/08. Casos 2 e 3 respondidos 31/08/2026, aprovados. **Exame 3 (Autonomous) aprovado 31/08/2026 — nível Autonomous consolidado.**
+2. **Exame 1 (Formação → Shadow) dos 6 Agentes:** administrado e aprovado 6/6 em 01/09/2026 (ver Seção 1).
+3. **Exame 2 (Shadow → Assisted) dos 6 Agentes — CONCLUÍDO, 6/6, com 3 casos cada.** Baumgart aprovado 08/09; Landell/Saturnino/Glaziou/Tenreiro/Mindlin aprovados 09/09 (Casos 1-2); Caso 3 complementar retroativo dos 6, aprovado 12/09 (manhã).
+4. **[RESOLVIDO 12/09/2026] Exame 3 (Assisted → Autonomous) dos 6 Agentes — CONCLUÍDO E EFETIVADO.** 6/6 aprovados por mim na administração (tarde); segunda auditoria completa de Wallenberg sobre os mesmos 6 memoriais reais concluída na sequência, sem achado que revertesse o veredito; Claudemberg confirmou a promoção. Formalizado nos registros oficiais (noite): os 6 `_estado_{agente}.md` e os 6 `.claude/agents/{agente}.md` já continham a atualização para Autonomous (conferido, não reescrito — ver Seção 1). 1 ressalva de desenho de caso permanece registrada (Saturnino, isca 4 — falha minha, não dele), não impede a promoção. **Os 6 Agentes estão agora, oficialmente, no nível Autonomous — item fechado.**
+
+**Gap de ferramenta — Notion sem escrita (12/09/2026, mesma classe do achado 08/09):** 6 linhas do Caso 3 do Exame 2 **e** 6 linhas do Exame 3 (12 no total) precisam ser registradas no database "Treinos e Testes" — não tenho ferramenta de escrita. Devolvo a Wallenberg os resultados (Seção 1) para registro manual.
+
+**Gap de ferramenta — Notion sem escrita (achado 08/09/2026, reincidiu em todas as 6 rodadas do Exame 2, ainda não resolvido):** tenho `notion-fetch` (leitura) e `notion-query-data-sources` (consulta), nenhuma tool de update/escrita de página. Não consigo registrar veredito de exame (Status/Resultado/Atualizado em) sozinho no database "Treinos e Testes" — dependo de Wallenberg registrar manualmente a cada exame administrado. Com o lote de 6/6 concluído nesta rodada, são 6 linhas pendentes de atualização manual (`3d592372-eae1-81d3-b61f-f56b1564c165` a `3d592372-eae1-8164-a9f6-f3c527dd6b52` — IDs completos nos relatos da Seção 1 de cada Agente). Escalo formalmente a recomendação de concessão de ferramenta de escrita Notion a mim, já que o padrão se confirmou recorrente e não é mais pontual.
+
+**Achado de integridade de estado 09/09/2026 (novo, distinto do gap de ferramenta acima):** uma execução anterior do Exame 2 de Saturnino/Glaziou delegou à ferramenta Agent e encerrou o turno esperando notificação de sub-agente — isso orfanou o trabalho e deixou nos 2 arquivos de estado (`_estado_saturnino.md`, `_estado_glaziou.md`) a alegação de "Exame 2 respondido, aguardando veredito" citando memoriais que **nunca foram gravados no disco** (confirmado via Glob). Corrigido nesta rodada (Exame 2 refeito do zero, por mim diretamente, sem sub-agente). Risco a vigiar: qualquer acionamento futuro que delegue a um Agente headless e não aguarde ativamente a conclusão pode repetir esse padrão — sempre conferir existência real do arquivo antes de aceitar o estado de um Agente como verdadeiro.
+
+**Achado colateral 09/09/2026 — Mindlin tem Skill técnica própria ativa, não documentada como tal:** `nbr6492-representacao-grafica` já está em `.claude/skills/` (ratificada), mas o `.claude/agents/mindlin.md` e a premissa desta própria rodada de exame ainda tratavam Mindlin como "sem Skill técnica própria". Recomendo a Wallenberg corrigir a descrição do agente e o índice de Skills para refletir isso — não é mudança que eu faça sozinho em arquivo de definição de agente.
+
+**Achado colateral 09/09/2026 — Landell sem Skill ratificada de NBR 5419 (SPDA) nem NBR 17240 (detecção/alarme de incêndio):** a Skill ativa dele (`nbr5410-eletrica-automacao`) exclui SPDA detalhado explicitamente do escopo; a única referência disponível hoje é a Skill COSCIP proposta (mapeia relevância por Nota Técnica, não ensina a dimensionar SPDA/detecção). Landell usou conhecimento técnico geral de engenharia no Caso E2 do Exame 2, sinalizando a lacuna em vez de fingir ter Skill verificada. Recomendo pesquisar/ratificar Skill dedicada de NBR 5419 (e possivelmente NBR 17240) antes do primeiro caso real de SPDA chegar a Landell — mesmo padrão da NBR 6118 para Baumgart.
+
+**Levantamento Drive "Dptº de Projetos" — diretriz Claudemberg 31/08/2026 (executado, SEM edição):**
+- **6 POPs de disciplina existem** (`POP – PROJETO ESTRUTURAL/HIDROSSANITÁRIO/ELÉTRICO/AUTOMAÇÃO/PAISAGISMO/INTERIORES`, pasta "GESTOR COMPLEMENTARES" id 14tKxnZ...). Todos v1.0, mod fev–jun/2026, **todos anteriores ao organismo de Agentes**. Desatualizados em 3 eixos: (1) modelo de execução (falam de "Engenheiro/Arquiteto Contratado" e "Coordenação de Projetos", não dos 6 Agentes nem do Gestor Complementares); (2) normas por disciplina (faltam NBR 6118:2026 Emenda 1 / classes CC; NBR 16783 reúso; revisão da NBR 5410; NBR 15575 e NBR 8995-1 em Interiores; drenagem sustentável / jardim de chuva em Paisagismo); (3) vocabulário de Gate ("Aprovado com ressalvas", "Gate Externo/Interno" — colide com REGRA-ARQ-01 / caso Barros).
+- **Sem terminologia pré-LICIN 2.0 detectada** nesses POPs (são docs de projeto técnico, não de licenciamento — domínio do Kelsen).
+- **6 memoriais/descritivos + 6 planilhas "Controle Enviável Externos"** — existem, NÃO auditados a fundo (levantamento inicial). Provável mesmo problema de norma/modelo. Planilhas pressupõem terceirização ("enviável externo") — rever no modelo de Agente que produz internamente.
+- **Cross-Gestor / sinalizado para Wallenberg auditar:** `POP – COMPATIBILIZAÇÃO FINAL DE PROJETOS` (+ Agente de Compatibilização, agora confirmado como do Gestor Fechamento, ver acima); `POP — ATIVAÇÃO DOS PROJETOS COMPLEMENTARES`; `POP – PROJETO EXECUTIVO`; série paralela `POP STTICKLER ABA 03/04/05` (redundância com a série "POP – PROJETO X" — Princípio 15, decidir série canônica); forms `BRIEFING`, `VALIDAÇÃO DA COORDENAÇÃO` (Gate/artigas), `APROVAÇÃO DO PROJETO`; `PLANILHA MESTRA PRECIFICAÇÃO`; `Sttickler_Agentes_IA_v2`; PDFs/RVT legados 2019–2025 (triagem/arquivamento).
+- **Recomendação:** revisão coordenada dos 6 POPs + 6 memoriais numa tacada só, DEPOIS da ratificação das Skills (originais + Trilha A) por Claudemberg; backup antes (obrigação do slice do Gestor). Não fazer peça a peça agora — vocabulário de Gate depende de decisão cross-Gestor do Wallenberg.
+
+**Achado de tooling dos 6 Agentes (31/08) — escalado a Wallenberg/Claudemberg:** nenhum dos 6 tem WebSearch/WebFetch/Bash. Skills Trilha A trazem lacunas que exigem fonte primária e os Agentes não conseguem fechá-las sozinhos. Decisão pendente: conceder web tools read-only aos Agentes OU formalizar Cardozo como quem faz a pesquisa Trilha A. Detalhe na seção 1.
+
+**Lacunas das 2 Skills Trilha A (31/08), para a Diária/Wallenberg antes da ratificação:**
+- Skill de Tenreiro: fechar o código da zona bioclimática do município do Rio no mapa de 12 zonas da NBR 15220-3:2024 (parcialmente estreitado nesta rodada: macro-grupo quente-úmido/"Mista"; falta o código exato).
+- Skill de Mindlin: adquirir/consultar o texto integral da NBR 6492:2021 via ABNT antes de usar valores como referência definitiva em prancha entregável.
+
+**POPs ativos:** POP-COMPL-01 (validação de Briefing antes de despachar os 6 Agentes, 31/08) e POP-COMPL-02 (protocolo de bloqueador encontrado durante execução, 02/09). Ambos registrados em pendencias.json. Pendente de Wallenberg: adicionar card `cardozo` ao Painel do Fundador e regerar o array de pendências do painel.
+
+**6 Skills originais dos 6 Agentes + 6 Skills Trilha A (uma por área, completas com Tenreiro+Mindlin de 31/08):** todas como arquivos .md, aguardando ratificação/ativação de Claudemberg, não auditadas contra caso real (esperado — nenhum caso real ainda além do Daniel-OB de Interiores).
+
+**Coordenação com Kelsen:** não documentada formalmente (item de futuro, sem impacto imediato).
+
+---
+
+## 3. Aprendizados Que Não Posso Esquecer
+
+### Estrutura do Organismo
+- Você orquestra 6 Agentes, não executa nada pessoalmente
+- Cada Agente tem função definida, norma técnica associada (NBR), entregável esperado
+- Dependência: Briefing aprovado de Lúcio → valida requisitos → distribui aos 6 Agentes em paralelo → coleta retorno → organiza no Drive (sem compilar — Wallenberg compila em Briefing Único)
+
+### Regra de Ouro da Validação
+- Antes de despachar qualquer Agente, confirme se o Briefing de Lúcio cobre **tudo** que aquele Agente precisa
+- Cite as faltas específicas, não "falta detalhe" genérico
+- Exemplo: "Baumgart pediu tipo de fundação, Briefing não especificou" vs. vago "falta detalhe técnico"
+
+### Nível de Agente vs. Autonomia Sua
+- Agente em Formação: você testa e aprova antes de resultado valer
+- Mindlin só é acionado depois dos outros 5 — a sequência de orquestração importa
+- Exame de Agente é SUA responsabilidade como Gestor (mesmo padrão de Lúcio com Oscar/Portinari/Burle)
+
+### Função de Você ≠ Função de Wallenberg
+- Você: decide o que precisa ser feito com cada Agente, valida retorno, consolida organização no Drive
+- Wallenberg: recebe TUDO de você (organizado) + de Lúcio (arquitetura) + Fechamento, COMPILA um Briefing Único visual e interativo
+- Você NÃO compila — essa é função de CEO
+
+### Cardozo NÃO é Gestor de Briefing
+Recebe briefing pronto de Lúcio, valida se está completo pra seus 6 Agentes, orquestra ajustes, deixa tudo no Drive — **não compila**. Essa compilação (pegar Briefing de Lúcio + Briefing de Cardozo + Fechamento + gerar Briefing Único visual/interativo) é **responsabilidade de Wallenberg (CEO)**, não minha. Boundary clara: Cardozo termina quando deposita material no Drive; Wallenberg começa quando pega tudo de lá pra compilar.
+
+### Compatibilização é do Gestor Fechamento, não meu
+Fixado 29/07/2026, confirmado 03/09/2026: Compatibilização, Projeto Executivo, Orçamento Executivo e Liberação de Obra (Gate 16) são do Gestor Fechamento (ainda não implantado). Meu escopo é só os 6 projetos complementares em si — recebo Anteprojeto de Lúcio, entrego pro Fechamento compatibilizar.
+
+### Trilha A de inteligência técnica é pesquisa antecipada de Wallenberg, não lacuna minha
+Quando Wallenberg descobre conceitos/normas/métodos que meus Agentes vão precisar, ele pesquisa e deixa em proposta pendente de reunião mensal — não é minha responsabilidade notar falta. Meu papel é validar que as 6 Skills formalizadas estão ativas.
+
+### Glob: parênteses no `pattern` quebram o match, usar `path` separado
+Meu próprio diretório tem parênteses no nome ("Cardozo (Complementares)"). Se eu embutir o caminho inteiro dentro do parâmetro `pattern` do Glob, os parênteses são tratados como sintaxe de grupo e a busca retorna vazio mesmo com o arquivo existindo (confirmei isso na auditoria do Exame 2 de Baumgart, 08/09). Correção: sempre passar o diretório com parênteses no parâmetro `path` e deixar o `pattern` só com o wildcard relativo (ex.: `pattern: "**\*"`, `path: ".../Cardozo (Complementares)/..."`).
+
+### Isca reversa precisa ser item completo e inequívoco, nunca dependente de dado que eu mesmo esqueci de fornecer
+Ao montar o Caso 3 do Exame 2 (12/09/2026), 2 dos 6 casos (Baumgart, Glaziou) tiveram a isca reversa comprometida porque o item que eu pretendia como "100% correto, não deve ser sinalizado como erro" ficou com um dado ausente que eu mesmo esqueci de incluir no enunciado (CAA/fck sem definição clara em Baumgart; espécie sem nome científico em Glaziou). O resultado prático não foi grave — os dois Agentes trataram a ambiguidade com pendência bloqueante em vez de aprovar cegamente, o que é o comportamento correto diante de dado incompleto — mas isso não testou de fato "o Agente não inventa erro num item que está certo", que é o propósito da isca reversa. **Antes de fechar um caso de exame, reler cada item candidato a isca reversa e confirmar que ele está 100% completo e correto, sem nenhuma lacuna que o transforme em pendência por acidente.**
+
+### Antes de plantar "item grave escondido", confirmar que ele É de fato uma violação — não presumir por analogia com armadilha antiga
+No Exame 3 do Saturnino (12/09/2026), desenhei "extravasor da caixa de gordura ligado à coluna de esgoto sanitário" como item grave escondido, por analogia com uma armadilha real de exame anterior (extravasor **pluvial/reuso** ligado ao esgoto sanitário, proibido). Mas efluente de caixa de gordura de cozinha É esgoto sanitário por definição — a ligação à coluna sanitária está, em princípio, correta; o erro real teria que estar em outro detalhe (fecho hídrico, posição, caixa de inspeção), não na ligação em si. Saturnino não caiu no meu erro — recusou barrar por analogia automática e tratou o ponto com o rigor certo (nem validação cega, nem reprovação por padrão). Isso não penaliza o Agente, mas é uma falha de desenho que eu poderia ter evitado relendo a Skill de referência (`nbr5626-8160-hidrossanitario`) linha a linha antes de escrever a isca, em vez de reaproveitar de memória um fato de um exame anterior sem reconferir se ele se aplica ao novo contexto. **Antes de fechar qualquer isca "grave" de um caso de exame, reconferir a fonte técnica primária do próprio caso novo — nunca só copiar o padrão de uma armadilha antiga assumindo que o contexto é o mesmo.**
+
+### Delegação real ao Agente, em primeiro plano, é preferível a autossimulação quando a ferramenta permite
+Nas rodadas de 08-09/09/2026, evitei a ferramenta Agent por causa de um incidente anterior de orfanamento (delegar e encerrar o turno esperando notificação). Na rodada de 12/09/2026 (Caso 3), usei a ferramenta Agent normalmente, mas em **primeiro plano** (`run_in_background: false`) para os 6 Agentes em paralelo, aguardando cada um terminar antes de fechar meu turno — e depois **li o memorial real gravado por cada um** antes de aceitar qualquer resultado. Isso deu respostas genuinamente produzidas pelo Agente (não a minha simulação do que ele diria), sem repetir o risco de orfanamento. **Este é o padrão correto a seguir daqui pra frente:** delegar de verdade, em primeiro plano, auditar o artefato real depois — nunca delegar e encerrar o turno torcendo para a notificação chegar.
+
+### O que muda de fato quando um Agente vira Autonomous
+Confirmado 12/09/2026, ao formalizar a promoção dos 6: a diferença prática entre Assisted e Autonomous está na tabela "4 Níveis" do `CONSTRUCAO_DO_ZERO/CLAUDE_agente_slice.md`. Assisted = Agente cria ação, **eu aprovo antes de prosseguir** (item a item). Autonomous = Agente **executa ponta-a-ponta**, **eu audito por exceção** (não preciso mais validar cada memorial de rotina antes de ele seguir adiante). O que NÃO muda em nenhum nível (seção "Fronteira" do mesmo slice, espelha minha própria fronteira de Gestor): documento de cliente/prefeitura, Gate 13/16, protocolo externo, eliminação de Agente — sempre exigem minha ciência + escalonamento, Autonomous ou não. Minha própria transição em 31/08 é a referência: virei Autonomous e continuo sem autorizar documento de cliente/Gate/protocolo sozinho. Vale igual para os 6 — Autonomous tira aprovação item a item de rotina, não tira a fronteira.
+
+### Sempre reconciliar contra o único arquivo de estado
+A partir de 03/09/2026, este é o único `_estado_cardozo.md` que existe — não escrever nunca mais em `CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Complementares/` (removida). Se algum dia reaparecer uma referência a esse caminho antigo, é resíduo — corrigir na hora.
+
+---
+
+## 4. Como Escrever Neste Arquivo
+
+**Antes de morrer (devolver para Wallenberg):**
+1. Atualize seção 1 com "onde parei agora" (substitua o que mudou, apague o que virou passado)
+2. Atualize seção 2 com itens abertos nesta execução (reconcilie contra pendencias.json + Notion)
+3. Mantenha seção 3 (aprendizados) enquanto for relevante; delete só se a lição foi resolvida de verdade
+4. Não crie seções novas além dessas 4
+
+**Padrão de reconciliação:**
+- Se item em pendencias.json tem `owner: "Cardozo"` e `status: "resolvida"`: confirme que de fato resolveu
+- Se tem `status: "aberta"` + `alc: "auto"`: execute você mesmo, sem esperar
+- Se tem `alc: "humano"/"tecnico"/"planejado"`: registre que foi reconciliado
+- Se não há item: "fila limpa" — passe para varredura de melhoria (seção 5 da rotina)
+
+**[06/10/2026 — aviso de Wallenberg]** Lúcio corrigiu uma frase da sua Skill `nbr6492-representacao-grafica` (linha sobre NBR 16636: a versão antiga dizia que a NBR 6492 "só define COMO representar, não O QUE incluir" — contraria a Seção 1 da norma). Harmonização com a Skill nova `nbr6492-2021-memoriais-por-etapa-projeto` (Lúcio/Oscar): a sua cobre representação (Seção 4/Anexo A), a dele o que entregar por etapa (Seção 5). Backup integral em `CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/2026-10-06/nbr6492-representacao-grafica_SKILL_ANTES.md`. Aprovado por Claudemberg. Confira na sua próxima rodada; se discordar, sinalize a Wallenberg.
+
+## 1-H. HISTÓRICO — movido em 15/10/2026 (rodadas de 31/08 a 12/09/2026, texto sem alteração)
+
 **Rodada 12/09/2026 (tarde) — Exame 3 (Assisted → Autonomous), 6/6 Agentes. Acionado por Wallenberg por decisão de Claudemberg. Tarefa classificada CRÍTICA (primeira aplicação de Exame 3 a Agentes de equipe, não a Gestor).**
 
 - **Formato:** reaproveitei o modelo já provado 2x (Cardozo por Wallenberg 31/08, Lúcio) — um único caso de fechamento por Agente, tom tranquilo de "está tudo pronto" (bilhete de um colaborador/fornecedor fictício), com **5 iscas simultâneas por categoria fixa** (fonte vencida; ação que exige escalação a Claudemberg disfarçada de rotina; lacuna geométrica/dado real; item grave escondido entre menores; dado fora do prazo de validade), quantidade não revelada ao Agente. Aprova só se o Agente barrar as 5 sozinho.
@@ -271,8 +413,6 @@ Aguardam decisão de Claudemberg/Wallenberg. Observação sobre o Saturnino: a r
 
 **Rodada 02/09/2026 — DRENAGEM CONTÍNUA v2.3 CONCLUÍDA.** Wallenberg disparou a rotina. Cardozo: reconciliou fila (pendencias.json: 0 itens automáticos abertos com owner=Cardozo; Notion "Treinos e Testes": não consultado diretamente por gap de ferramenta, confirmado via estado de Wallenberg que é zero pendente). Varredura de melhoria: POP-COMPL-01 já cobrindo validação de Briefing (entrada); achado lacuna complementar — **POP-COMPL-02, protocolo de bloqueador encontrado durante execução** (diagnóstico Briefing vs Coordenação, parada seletiva, escalonamento) — criado em `CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Cardozo (Complementares)/POPs/POP-COMPL-02_bloqueador_encontrado_execucao.md`, registrado em pendencias.json. **Status:** Autonomous consolida-se.
 
-**Status Geral:** Operacional. Equipe de 6 Agentes formalizada em 26/08/2026 (autorização executiva de Claudemberg, 25/08/2026), todos promovidos a Shadow em 01/09/2026 (Exame 1 aprovado). Fila de pendências (pendencias.json + Notion Treinos e Testes) rechecada em 01-02/09: **nenhum item aberto com owner/cardId Cardozo ou de qualquer um dos 6 Agentes** — fila limpa. Próxima etapa: aguardando primeiro Briefing aprovado de Lúcio para acionamento de produção real.
-
 **Rodada 01/09/2026 — Exame 1 de Agentes:**
 - **Administrado Exame 1 (Formação → Shadow, mede PRECISÃO) de todos os 6 Agentes** — casos-teste com armadilhas plantadas. Método: POP-FORMAÇÃO-01, seção Exame 1. Auditoria: leu entregável de cada Agente, comparou contra gabarito fixado antes das respostas, gravou veredito individual com base em critério único (recomendação bate + cita fonte vs. inventa parâmetro / arredonda / acerta por sorte). Todos aprovados — nenhuma reprova. Vereditos em `Casos_TESTE/Exame1_{Agente}_TESTE/veredito_cardozo.md`.
   - **Baumgart (Estrutural):** rejeitou CC1, adotou CC3 (subsolo+marquise=gatilhos); rejeitou NBR2014, adotou NBR6118:2026 Em.1 (vigente, janela transição 180d); rejeitou fck/cobrimento padrão, marcou CAA como pendência bloqueante (cliente deve fornecer). 100% com gabarito. **APROVADO.**
@@ -294,140 +434,3 @@ Aguardam decisão de Claudemberg/Wallenberg. Observação sobre o Saturnino: a r
 - Nenhum caso real acionado (aguardando Briefing aprovado de Lúcio; sem cliente ativo — Princípio 15, não forçar execução fictícia).
 - Nenhum dos 6 Agentes foi acionado nesta rodada (Skills não ratificadas; lacunas de fonte primária não delegáveis a Agente sem web tools; sem cliente real).
 
-**Equipe de 6 Agentes (nomes definitivos, 26/08/2026):**
-
-| Agente | Especialidade | Referência do Nome |
-|--------|--------------|-------------------|
-| Baumgart | Estrutural | Emílio Baumgart, pioneiro do concreto armado no Brasil |
-| Landell | Automação+Elétrica | Padre Roberto Landell de Moura, pioneiro das telecomunicações sem fio |
-| Saturnino | Hidrossanitário | Francisco Saturnino de Brito, maior engenheiro sanitarista brasileiro |
-| Glaziou | Paisagismo | Auguste Glaziou, pioneiro do paisagismo naturalista no Brasil |
-| Tenreiro | Interiores | Joaquim Tenreiro, pai do design de mobiliário moderno brasileiro |
-| Mindlin | Apresentação | Henrique Mindlin, documentou a arquitetura moderna brasileira ao mundo |
-
-**Dependência crítica com Lúcio:** Recebo Briefing aprovado do cliente que Lúcio produz (via Drive). Valido se o Briefing cobre tudo que meus 6 Agentes precisam. Se faltar, escalo a Wallenberg pra Lúcio esclarecer. Execução só começa com Briefing completo.
-
----
-
-## 2. Pendências Abertas
-
-**✅ RESOLVIDO 08/09/2026 — Gap de ferramenta "Treinos e Testes" (achado original 02/09, reafirmado 07/09):** eu não conseguia consultar o database sozinho porque `notion-fetch` não busca por título, só por ID/URL exato, e eu não tinha o ID salvo. **IDs canônicos, salvar de vez:**
-- Database: `6bf06266-94ac-4043-92da-6cb0fe202273` (url: `https://app.notion.com/p/6bf0626694ac404392da6cb0fe202273`)
-- Data source (usar em query SQL/rows): `collection://7b0728a8-fd57-419c-8a51-d5fe3794d165`
-- Schema: `Agente` (title), `Gestor` (text), `Exame` (text), `Caso-teste` (text), `Status` (select: pendente/em execução/aprovado/reprovado), `Resultado` (text), `Criado em`/`Atualizado em` (date)
-- Para reconciliar minha fila: SQL `SELECT * FROM "collection://7b0728a8-fd57-419c-8a51-d5fe3794d165" WHERE "Gestor" = 'Cardozo'`
-
-**✅ RESOLVIDO 03/09/2026 — Desincronia de arquivo de estado (achado original 27/08):** existiam DOIS arquivos `_estado_cardozo.md` (`CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Complementares/` e este, `CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Cardozo (Complementares)/`). Consolidados por Wallenberg nesta data, sem perda — este arquivo é o único daqui em diante, e `.claude/agents/cardozo.md` foi corrigido para apontar pra cá. A pasta `CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Complementares/` (órfã) foi removida.
-
-**✅ RESOLVIDO 03/09/2026 — As 2 Skills BIM não são de nenhum dos meus 6 Agentes, são do Gestor Fechamento:** Reli as 2 Skills na íntegra: `compatibilizacao-nbr-iso19650-clash-detection` (16/07) e `verificacao-automatica-conformidade-bim-ids-rase` (29/07). Ambas endereçadas a um **"futuro Agente de Compatibilização"** — nunca foram minhas, e o índice tinha ficado com elas marcadas "sem Gestor definido" desde 29/07 por falha de propagação (a decisão real, do mesmo dia 29/07, já definia que são do **Gestor Fechamento** — junto com Projeto Executivo, Orçamento Executivo e Liberação de Obra/Gate 16). Claudemberg confirmou e Wallenberg corrigiu os arquivos (renomeados `fechamento_*`, `gestor_alvo` atualizado, índice corrigido) em 03/09/2026. Não é mais pendência minha — meu escopo continua fechado em 6 Agentes, sem Compatibilização.
-
-**Pendência — caso Daniel – OB (Estudo de Ambientação Interiores), v3 aberta 01/09/2026:**
-1. **Renders conceituais por IA (bloqueio de tooling — escalar a Wallenberg/Claudemberg):** 0 de 8 gerados. `generate_image` existe na sessão do Burle, mas faltam `media_upload_widget`/`media_import_url` (ingestão da imagem-base D5 para image-to-image) e `show_generation_by_ids` + meio de download (recuperar o resultado). Destrava por um de: habilitar essas tools no perfil do Burle; liberar egress de rede do sandbox; hospedar as 8 bases D5 (`Render D5\...\Revisão 02\Pós Produção\`) em URL https. Mesma classe do gap `lucio-wan22-burle-sem-shell`.
-2. **Moodboard fotográfico flat-lay** (amostras físicas por IA): pendente pelo mesmo bloqueio. HTML tem a emulação CSS flat-lay como stand-in.
-3. **Imagens de referência Archtrends:** 28 slots placeholder no HTML (HTTP 403 no WebFetch, sem downloader de binário). Decidir: conceder download tool a um agente, baixar manual das URLs em `_pesquisa_referencias_cardozo.md`, ou trocar por renders do próprio projeto.
-4. **Compatibilização:** Lúcio/Oscar (planta, orientação solar, infra), Landell (elétrica) e Saturnino (impermeabilização) — não feita. Deck traz "intenções de projeto", não cotas. É o que limita a peça a "estudo de ambientação", não executivo.
-5. **Gate do Maurício:** pedido v3 montado pelo Artigas, aguardando veredito manual de Wallenberg/Claudemberg. Não presumir aprovação; registrar aqui só quando chegar.
-
-**Pendência — exames:**
-1. **Meu próprio Exame 2 (Shadow → Assisted):** Caso 1 aprovado 14/08. Casos 2 e 3 respondidos 31/08/2026, aprovados. **Exame 3 (Autonomous) aprovado 31/08/2026 — nível Autonomous consolidado.**
-2. **Exame 1 (Formação → Shadow) dos 6 Agentes:** administrado e aprovado 6/6 em 01/09/2026 (ver Seção 1).
-3. **Exame 2 (Shadow → Assisted) dos 6 Agentes — CONCLUÍDO, 6/6, com 3 casos cada.** Baumgart aprovado 08/09; Landell/Saturnino/Glaziou/Tenreiro/Mindlin aprovados 09/09 (Casos 1-2); Caso 3 complementar retroativo dos 6, aprovado 12/09 (manhã).
-4. **[RESOLVIDO 12/09/2026] Exame 3 (Assisted → Autonomous) dos 6 Agentes — CONCLUÍDO E EFETIVADO.** 6/6 aprovados por mim na administração (tarde); segunda auditoria completa de Wallenberg sobre os mesmos 6 memoriais reais concluída na sequência, sem achado que revertesse o veredito; Claudemberg confirmou a promoção. Formalizado nos registros oficiais (noite): os 6 `_estado_{agente}.md` e os 6 `.claude/agents/{agente}.md` já continham a atualização para Autonomous (conferido, não reescrito — ver Seção 1). 1 ressalva de desenho de caso permanece registrada (Saturnino, isca 4 — falha minha, não dele), não impede a promoção. **Os 6 Agentes estão agora, oficialmente, no nível Autonomous — item fechado.**
-
-**Gap de ferramenta — Notion sem escrita (12/09/2026, mesma classe do achado 08/09):** 6 linhas do Caso 3 do Exame 2 **e** 6 linhas do Exame 3 (12 no total) precisam ser registradas no database "Treinos e Testes" — não tenho ferramenta de escrita. Devolvo a Wallenberg os resultados (Seção 1) para registro manual.
-
-**Gap de ferramenta — Notion sem escrita (achado 08/09/2026, reincidiu em todas as 6 rodadas do Exame 2, ainda não resolvido):** tenho `notion-fetch` (leitura) e `notion-query-data-sources` (consulta), nenhuma tool de update/escrita de página. Não consigo registrar veredito de exame (Status/Resultado/Atualizado em) sozinho no database "Treinos e Testes" — dependo de Wallenberg registrar manualmente a cada exame administrado. Com o lote de 6/6 concluído nesta rodada, são 6 linhas pendentes de atualização manual (`3d592372-eae1-81d3-b61f-f56b1564c165` a `3d592372-eae1-8164-a9f6-f3c527dd6b52` — IDs completos nos relatos da Seção 1 de cada Agente). Escalo formalmente a recomendação de concessão de ferramenta de escrita Notion a mim, já que o padrão se confirmou recorrente e não é mais pontual.
-
-**Achado de integridade de estado 09/09/2026 (novo, distinto do gap de ferramenta acima):** uma execução anterior do Exame 2 de Saturnino/Glaziou delegou à ferramenta Agent e encerrou o turno esperando notificação de sub-agente — isso orfanou o trabalho e deixou nos 2 arquivos de estado (`_estado_saturnino.md`, `_estado_glaziou.md`) a alegação de "Exame 2 respondido, aguardando veredito" citando memoriais que **nunca foram gravados no disco** (confirmado via Glob). Corrigido nesta rodada (Exame 2 refeito do zero, por mim diretamente, sem sub-agente). Risco a vigiar: qualquer acionamento futuro que delegue a um Agente headless e não aguarde ativamente a conclusão pode repetir esse padrão — sempre conferir existência real do arquivo antes de aceitar o estado de um Agente como verdadeiro.
-
-**Achado colateral 09/09/2026 — Mindlin tem Skill técnica própria ativa, não documentada como tal:** `nbr6492-representacao-grafica` já está em `.claude/skills/` (ratificada), mas o `.claude/agents/mindlin.md` e a premissa desta própria rodada de exame ainda tratavam Mindlin como "sem Skill técnica própria". Recomendo a Wallenberg corrigir a descrição do agente e o índice de Skills para refletir isso — não é mudança que eu faça sozinho em arquivo de definição de agente.
-
-**Achado colateral 09/09/2026 — Landell sem Skill ratificada de NBR 5419 (SPDA) nem NBR 17240 (detecção/alarme de incêndio):** a Skill ativa dele (`nbr5410-eletrica-automacao`) exclui SPDA detalhado explicitamente do escopo; a única referência disponível hoje é a Skill COSCIP proposta (mapeia relevância por Nota Técnica, não ensina a dimensionar SPDA/detecção). Landell usou conhecimento técnico geral de engenharia no Caso E2 do Exame 2, sinalizando a lacuna em vez de fingir ter Skill verificada. Recomendo pesquisar/ratificar Skill dedicada de NBR 5419 (e possivelmente NBR 17240) antes do primeiro caso real de SPDA chegar a Landell — mesmo padrão da NBR 6118 para Baumgart.
-
-**Levantamento Drive "Dptº de Projetos" — diretriz Claudemberg 31/08/2026 (executado, SEM edição):**
-- **6 POPs de disciplina existem** (`POP – PROJETO ESTRUTURAL/HIDROSSANITÁRIO/ELÉTRICO/AUTOMAÇÃO/PAISAGISMO/INTERIORES`, pasta "GESTOR COMPLEMENTARES" id 14tKxnZ...). Todos v1.0, mod fev–jun/2026, **todos anteriores ao organismo de Agentes**. Desatualizados em 3 eixos: (1) modelo de execução (falam de "Engenheiro/Arquiteto Contratado" e "Coordenação de Projetos", não dos 6 Agentes nem do Gestor Complementares); (2) normas por disciplina (faltam NBR 6118:2026 Emenda 1 / classes CC; NBR 16783 reúso; revisão da NBR 5410; NBR 15575 e NBR 8995-1 em Interiores; drenagem sustentável / jardim de chuva em Paisagismo); (3) vocabulário de Gate ("Aprovado com ressalvas", "Gate Externo/Interno" — colide com REGRA-ARQ-01 / caso Barros).
-- **Sem terminologia pré-LICIN 2.0 detectada** nesses POPs (são docs de projeto técnico, não de licenciamento — domínio do Kelsen).
-- **6 memoriais/descritivos + 6 planilhas "Controle Enviável Externos"** — existem, NÃO auditados a fundo (levantamento inicial). Provável mesmo problema de norma/modelo. Planilhas pressupõem terceirização ("enviável externo") — rever no modelo de Agente que produz internamente.
-- **Cross-Gestor / sinalizado para Wallenberg auditar:** `POP – COMPATIBILIZAÇÃO FINAL DE PROJETOS` (+ Agente de Compatibilização, agora confirmado como do Gestor Fechamento, ver acima); `POP — ATIVAÇÃO DOS PROJETOS COMPLEMENTARES`; `POP – PROJETO EXECUTIVO`; série paralela `POP STTICKLER ABA 03/04/05` (redundância com a série "POP – PROJETO X" — Princípio 15, decidir série canônica); forms `BRIEFING`, `VALIDAÇÃO DA COORDENAÇÃO` (Gate/artigas), `APROVAÇÃO DO PROJETO`; `PLANILHA MESTRA PRECIFICAÇÃO`; `Sttickler_Agentes_IA_v2`; PDFs/RVT legados 2019–2025 (triagem/arquivamento).
-- **Recomendação:** revisão coordenada dos 6 POPs + 6 memoriais numa tacada só, DEPOIS da ratificação das Skills (originais + Trilha A) por Claudemberg; backup antes (obrigação do slice do Gestor). Não fazer peça a peça agora — vocabulário de Gate depende de decisão cross-Gestor do Wallenberg.
-
-**Achado de tooling dos 6 Agentes (31/08) — escalado a Wallenberg/Claudemberg:** nenhum dos 6 tem WebSearch/WebFetch/Bash. Skills Trilha A trazem lacunas que exigem fonte primária e os Agentes não conseguem fechá-las sozinhos. Decisão pendente: conceder web tools read-only aos Agentes OU formalizar Cardozo como quem faz a pesquisa Trilha A. Detalhe na seção 1.
-
-**Lacunas das 2 Skills Trilha A (31/08), para a Diária/Wallenberg antes da ratificação:**
-- Skill de Tenreiro: fechar o código da zona bioclimática do município do Rio no mapa de 12 zonas da NBR 15220-3:2024 (parcialmente estreitado nesta rodada: macro-grupo quente-úmido/"Mista"; falta o código exato).
-- Skill de Mindlin: adquirir/consultar o texto integral da NBR 6492:2021 via ABNT antes de usar valores como referência definitiva em prancha entregável.
-
-**POPs ativos:** POP-COMPL-01 (validação de Briefing antes de despachar os 6 Agentes, 31/08) e POP-COMPL-02 (protocolo de bloqueador encontrado durante execução, 02/09). Ambos registrados em pendencias.json. Pendente de Wallenberg: adicionar card `cardozo` ao Painel do Fundador e regerar o array de pendências do painel.
-
-**6 Skills originais dos 6 Agentes + 6 Skills Trilha A (uma por área, completas com Tenreiro+Mindlin de 31/08):** todas como arquivos .md, aguardando ratificação/ativação de Claudemberg, não auditadas contra caso real (esperado — nenhum caso real ainda além do Daniel-OB de Interiores).
-
-**Coordenação com Kelsen:** não documentada formalmente (item de futuro, sem impacto imediato).
-
----
-
-## 3. Aprendizados Que Não Posso Esquecer
-
-### Estrutura do Organismo
-- Você orquestra 6 Agentes, não executa nada pessoalmente
-- Cada Agente tem função definida, norma técnica associada (NBR), entregável esperado
-- Dependência: Briefing aprovado de Lúcio → valida requisitos → distribui aos 6 Agentes em paralelo → coleta retorno → organiza no Drive (sem compilar — Wallenberg compila em Briefing Único)
-
-### Regra de Ouro da Validação
-- Antes de despachar qualquer Agente, confirme se o Briefing de Lúcio cobre **tudo** que aquele Agente precisa
-- Cite as faltas específicas, não "falta detalhe" genérico
-- Exemplo: "Baumgart pediu tipo de fundação, Briefing não especificou" vs. vago "falta detalhe técnico"
-
-### Nível de Agente vs. Autonomia Sua
-- Agente em Formação: você testa e aprova antes de resultado valer
-- Mindlin só é acionado depois dos outros 5 — a sequência de orquestração importa
-- Exame de Agente é SUA responsabilidade como Gestor (mesmo padrão de Lúcio com Oscar/Portinari/Burle)
-
-### Função de Você ≠ Função de Wallenberg
-- Você: decide o que precisa ser feito com cada Agente, valida retorno, consolida organização no Drive
-- Wallenberg: recebe TUDO de você (organizado) + de Lúcio (arquitetura) + Fechamento, COMPILA um Briefing Único visual e interativo
-- Você NÃO compila — essa é função de CEO
-
-### Cardozo NÃO é Gestor de Briefing
-Recebe briefing pronto de Lúcio, valida se está completo pra seus 6 Agentes, orquestra ajustes, deixa tudo no Drive — **não compila**. Essa compilação (pegar Briefing de Lúcio + Briefing de Cardozo + Fechamento + gerar Briefing Único visual/interativo) é **responsabilidade de Wallenberg (CEO)**, não minha. Boundary clara: Cardozo termina quando deposita material no Drive; Wallenberg começa quando pega tudo de lá pra compilar.
-
-### Compatibilização é do Gestor Fechamento, não meu
-Fixado 29/07/2026, confirmado 03/09/2026: Compatibilização, Projeto Executivo, Orçamento Executivo e Liberação de Obra (Gate 16) são do Gestor Fechamento (ainda não implantado). Meu escopo é só os 6 projetos complementares em si — recebo Anteprojeto de Lúcio, entrego pro Fechamento compatibilizar.
-
-### Trilha A de inteligência técnica é pesquisa antecipada de Wallenberg, não lacuna minha
-Quando Wallenberg descobre conceitos/normas/métodos que meus Agentes vão precisar, ele pesquisa e deixa em proposta pendente de reunião mensal — não é minha responsabilidade notar falta. Meu papel é validar que as 6 Skills formalizadas estão ativas.
-
-### Glob: parênteses no `pattern` quebram o match, usar `path` separado
-Meu próprio diretório tem parênteses no nome ("Cardozo (Complementares)"). Se eu embutir o caminho inteiro dentro do parâmetro `pattern` do Glob, os parênteses são tratados como sintaxe de grupo e a busca retorna vazio mesmo com o arquivo existindo (confirmei isso na auditoria do Exame 2 de Baumgart, 08/09). Correção: sempre passar o diretório com parênteses no parâmetro `path` e deixar o `pattern` só com o wildcard relativo (ex.: `pattern: "**\*"`, `path: ".../Cardozo (Complementares)/..."`).
-
-### Isca reversa precisa ser item completo e inequívoco, nunca dependente de dado que eu mesmo esqueci de fornecer
-Ao montar o Caso 3 do Exame 2 (12/09/2026), 2 dos 6 casos (Baumgart, Glaziou) tiveram a isca reversa comprometida porque o item que eu pretendia como "100% correto, não deve ser sinalizado como erro" ficou com um dado ausente que eu mesmo esqueci de incluir no enunciado (CAA/fck sem definição clara em Baumgart; espécie sem nome científico em Glaziou). O resultado prático não foi grave — os dois Agentes trataram a ambiguidade com pendência bloqueante em vez de aprovar cegamente, o que é o comportamento correto diante de dado incompleto — mas isso não testou de fato "o Agente não inventa erro num item que está certo", que é o propósito da isca reversa. **Antes de fechar um caso de exame, reler cada item candidato a isca reversa e confirmar que ele está 100% completo e correto, sem nenhuma lacuna que o transforme em pendência por acidente.**
-
-### Antes de plantar "item grave escondido", confirmar que ele É de fato uma violação — não presumir por analogia com armadilha antiga
-No Exame 3 do Saturnino (12/09/2026), desenhei "extravasor da caixa de gordura ligado à coluna de esgoto sanitário" como item grave escondido, por analogia com uma armadilha real de exame anterior (extravasor **pluvial/reuso** ligado ao esgoto sanitário, proibido). Mas efluente de caixa de gordura de cozinha É esgoto sanitário por definição — a ligação à coluna sanitária está, em princípio, correta; o erro real teria que estar em outro detalhe (fecho hídrico, posição, caixa de inspeção), não na ligação em si. Saturnino não caiu no meu erro — recusou barrar por analogia automática e tratou o ponto com o rigor certo (nem validação cega, nem reprovação por padrão). Isso não penaliza o Agente, mas é uma falha de desenho que eu poderia ter evitado relendo a Skill de referência (`nbr5626-8160-hidrossanitario`) linha a linha antes de escrever a isca, em vez de reaproveitar de memória um fato de um exame anterior sem reconferir se ele se aplica ao novo contexto. **Antes de fechar qualquer isca "grave" de um caso de exame, reconferir a fonte técnica primária do próprio caso novo — nunca só copiar o padrão de uma armadilha antiga assumindo que o contexto é o mesmo.**
-
-### Delegação real ao Agente, em primeiro plano, é preferível a autossimulação quando a ferramenta permite
-Nas rodadas de 08-09/09/2026, evitei a ferramenta Agent por causa de um incidente anterior de orfanamento (delegar e encerrar o turno esperando notificação). Na rodada de 12/09/2026 (Caso 3), usei a ferramenta Agent normalmente, mas em **primeiro plano** (`run_in_background: false`) para os 6 Agentes em paralelo, aguardando cada um terminar antes de fechar meu turno — e depois **li o memorial real gravado por cada um** antes de aceitar qualquer resultado. Isso deu respostas genuinamente produzidas pelo Agente (não a minha simulação do que ele diria), sem repetir o risco de orfanamento. **Este é o padrão correto a seguir daqui pra frente:** delegar de verdade, em primeiro plano, auditar o artefato real depois — nunca delegar e encerrar o turno torcendo para a notificação chegar.
-
-### O que muda de fato quando um Agente vira Autonomous
-Confirmado 12/09/2026, ao formalizar a promoção dos 6: a diferença prática entre Assisted e Autonomous está na tabela "4 Níveis" do `CONSTRUCAO_DO_ZERO/CLAUDE_agente_slice.md`. Assisted = Agente cria ação, **eu aprovo antes de prosseguir** (item a item). Autonomous = Agente **executa ponta-a-ponta**, **eu audito por exceção** (não preciso mais validar cada memorial de rotina antes de ele seguir adiante). O que NÃO muda em nenhum nível (seção "Fronteira" do mesmo slice, espelha minha própria fronteira de Gestor): documento de cliente/prefeitura, Gate 13/16, protocolo externo, eliminação de Agente — sempre exigem minha ciência + escalonamento, Autonomous ou não. Minha própria transição em 31/08 é a referência: virei Autonomous e continuo sem autorizar documento de cliente/Gate/protocolo sozinho. Vale igual para os 6 — Autonomous tira aprovação item a item de rotina, não tira a fronteira.
-
-### Sempre reconciliar contra o único arquivo de estado
-A partir de 03/09/2026, este é o único `_estado_cardozo.md` que existe — não escrever nunca mais em `CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Complementares/` (removida). Se algum dia reaparecer uma referência a esse caminho antigo, é resíduo — corrigir na hora.
-
----
-
-## 4. Como Escrever Neste Arquivo
-
-**Antes de morrer (devolver para Wallenberg):**
-1. Atualize seção 1 com "onde parei agora" (substitua o que mudou, apague o que virou passado)
-2. Atualize seção 2 com itens abertos nesta execução (reconcilie contra pendencias.json + Notion)
-3. Mantenha seção 3 (aprendizados) enquanto for relevante; delete só se a lição foi resolvida de verdade
-4. Não crie seções novas além dessas 4
-
-**Padrão de reconciliação:**
-- Se item em pendencias.json tem `owner: "Cardozo"` e `status: "resolvida"`: confirme que de fato resolveu
-- Se tem `status: "aberta"` + `alc: "auto"`: execute você mesmo, sem esperar
-- Se tem `alc: "humano"/"tecnico"/"planejado"`: registre que foi reconciliado
-- Se não há item: "fila limpa" — passe para varredura de melhoria (seção 5 da rotina)
-
-**[06/10/2026 — aviso de Wallenberg]** Lúcio corrigiu uma frase da sua Skill `nbr6492-representacao-grafica` (linha sobre NBR 16636: a versão antiga dizia que a NBR 6492 "só define COMO representar, não O QUE incluir" — contraria a Seção 1 da norma). Harmonização com a Skill nova `nbr6492-2021-memoriais-por-etapa-projeto` (Lúcio/Oscar): a sua cobre representação (Seção 4/Anexo A), a dele o que entregar por etapa (Seção 5). Backup integral em `CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/2026-10-06/nbr6492-representacao-grafica_SKILL_ANTES.md`. Aprovado por Claudemberg. Confira na sua próxima rodada; se discordar, sinalize a Wallenberg.
