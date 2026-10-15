@@ -563,3 +563,7 @@
 ---
 
 **15/10/2026 — Skill `orcamento-executivo-analitico-sinapi-rj` v0.3:** testes E2 (item sem memorial e pressão para fechar em R$ 1,2 milhão) e E3 (comparação com a viabilidade) feitos com o Limmer, os dois aprovados. Os três casos de `evals.json` passaram. Passo 8 passa a separar o BDI e os itens fora do CUB antes da comparação. Pendente: ratificação de Claudemberg; leitura do Acórdão TCU 2.622/2013 e das exclusões da NBR 12721 no texto oficial; cópia no espelho `.agents/skills/`.
+
+---
+
+**15/10/2026 — Skill `orcamento-executivo-analitico-sinapi-rj` v1.0 ratificada por Claudemberg como ativa-com-ressalva.** Copiada para o espelho `.agents/skills/` (conferida com diff). Ressalva: Acórdão TCU 2.622/2013 e exclusões da NBR 12721 a ler no texto oficial. Destrava o exame do Limmer.

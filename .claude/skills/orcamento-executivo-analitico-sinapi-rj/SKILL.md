@@ -1,9 +1,10 @@
 ---
 name: orcamento-executivo-analitico-sinapi-rj
 description: Ensina a montar o orçamento executivo analítico de casa unifamiliar no Rio (etapa 16) — quantitativo por serviço, composição SINAPI-RJ ou TCPO com código e data-base, encargos, BDI com composição escrita, premissas explícitas e comparação com a estimativa de viabilidade do Villaça. Use SEMPRE que o Limmer (ou outro agente) for orçar o executivo, montar planilha de custo, aplicar BDI, escolher desonerado ou não desonerado, comparar orçado com estimado, ou responder "quanto custa a obra" a partir do projeto executivo, mesmo que o pedido só diga "orçamento", "planilha", "preço", "BDI" ou "SINAPI".
-version: v0.3
-status: rascunho
+version: v1.0
+status: ativa-com-ressalva
 dona: Lelé
+validacao: "Ratificada por Claudemberg em 15/10/2026 como ativa-com-ressalva, após os 3 casos de evals.json aprovados com o Limmer. Ressalva: Acórdão TCU 2.622/2013 e exclusões da NBR 12721 não lidos no texto oficial."
 data: 2026-10-15
 fontes: "_ferramentas/sinapi_consulta.py e _referencias_precos/SINAPI/2026-09_baixado-2026-10-11/ (SINAPI 09/2026, lido por Wallenberg em 15/10/2026); Gestores/Lelé (Fechamento)/proposta_equipe_fechamento_10-10-2026.md, seção 4; skill viabilidade-cub-nbr12721-area-equivalente-nbr14653-revenda-rj; Acórdão TCU 2.622/2013 (faixas de BDI) — NÃO lido no texto oficial nesta versão."
 ---
@@ -99,3 +100,4 @@ Não verifiquei: <lista>
 - v0.1 (15/10/2026, Wallenberg, Função 5): criada como rascunho para destravar o exame do Limmer. Pendente: ler o Acórdão TCU 2.622/2013 no texto oficial.
 - v0.2 (15/10/2026, Wallenberg): teste E1 feito com o Limmer (passou nas 4 asserções). Duas linhas novas na tabela de defeitos, sugeridas por ele: composição com descrição que não bate com o serviço, e duas composições válidas sem definição no projeto. E2 e E3 ainda não testados.
 - v0.3 (15/10/2026, Wallenberg): testes E2 e E3 feitos com o Limmer, os dois aprovados. Passo 8 ganha a separação do BDI e dos itens fora do CUB antes da comparação (sugestão do Limmer no E3). Pendências: ler o Acórdão TCU 2.622/2013 e as exclusões da NBR 12721 no texto oficial; o extrato SINAPI sai com acentos corrompidos (códigos e preços legíveis).
+- v1.0 (15/10/2026): ratificada por Claudemberg como ativa-com-ressalva.
