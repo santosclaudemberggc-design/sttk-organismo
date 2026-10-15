@@ -84,6 +84,8 @@ Isso **não** é trabalho novo — é o que você já sabe fazer bem (passar em 
 
 ## 3. Aprendizados que não posso esquecer
 
+- **Regra de leitura de fonte oficial (decisão de Claudemberg, 15/10/2026):** em consulta já autorizada, se o WebFetch falhar, pode ler a página com `curl` mostrando a saída na tela, **sem gravar arquivo**. Gravar, baixar ou salvar continua exigindo autorização expressa de Claudemberg.
+
 ### Checklist do Ensaio 003 (Bardi apontou, Kelsen aprovou, 01/10/2026) — versão durável em `.claude/agents/hely.md`, seção "Checklist obrigatório de parecer legal base"
 
 1. Programa pedido x teto computável sempre lado a lado, com a diferença em m² (Ensaio 003: 520 x 457,44 m²).
