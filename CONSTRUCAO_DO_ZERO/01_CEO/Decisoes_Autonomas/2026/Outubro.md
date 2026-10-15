@@ -516,3 +516,7 @@
 ---
 
 **14/10/2026 — Remoção da rodada de 12/10 de `entrega/`:** a pasta `v2_anterior_12-10/` foi removida. A rodada de 12/10 foi substituída pela de 13/10, que resolve as 8 correções dela. Os 7 arquivos permanecem em `_backups/2026-10-14/etapa04_v2_ANTES_consolidacao/` (conferidos byte a byte antes da remoção). Como desfazer: copiar do backup de volta para `entrega/v2_anterior_12-10/`.
+
+---
+
+**15/10/2026 — Vigência do DL 9.760/1946 (Kelsen, com Hely; autorizado por Claudemberg):** o Art. 2º e o parágrafo único seguem sem alteração identificada. A Lei 15.437/2026 altera o art. 12-C (prazo da SPU para identificar terrenos de marinha, até 31/12/2028). Texto obtido no Planalto em 15/10/2026, salvo em `Agentes/Hely/Fontes_Legislacao/Lei15437_2026_18-06_DOU-19-06_Planalto_DL9760_art12C.htm` (25.293 bytes, md5 c5a29b16ee900dc5aeb3518ab78a883, conferido). Pendências: validar no DOU de 19/06/2026; confirmar se o parágrafo único do art. 12-C foi removido ou apenas não reproduzido (o Planalto mostra "....."). Como desfazer: apagar o arquivo salvo e esta entrada. Registro do desvio: o Hely baixou o DL 9.760 do Planalto em 14/10 antes da permissão; a partir de 15/10 a busca foi autorizada.
