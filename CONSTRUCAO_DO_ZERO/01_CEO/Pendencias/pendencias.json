@@ -4,6 +4,20 @@
     "atualizado_em":  "2026-10-10 (Wallenberg: decisoes D4-D9)",
     "itens":  [
                   {
+                      "id":  "settings-json-ganchos-formato-invalido-15-10-2026",
+                      "tipo":  "processo",
+                      "owner":  "Wallenberg",
+                      "agente":  "",
+                      "cardId":  "sistema",
+                      "desde":  "2026-10-15",
+                      "crit":  "media",
+                      "alc":  "humano",
+                      "status":  "aberta",
+                      "txt":  "O .claude/settings.json tem ganchos em formato que o Claude Code não reconhece (evento PostSessionStart inexistente; campos tool_pattern, condition e error_handling fora do esquema). Provavelmente nunca rodaram (sincronização do cache do Drive, Item 5). Arquivo com esquema inválido pode ser ignorado por inteiro.",
+                      "res":  "Encontrado em 15/10/2026 ao instalar o gancho dos gabaritos, que foi posto no settings.local.json por isso. Claudemberg decidiu deixar para depois.",
+                      "acao":  "Decidir se a sincronização do cache do Drive ainda é desejada. Se sim, reescrever os ganchos no formato oficial (SessionStart e PostToolUse com matcher), com backup e teste. Se não, removê-los."
+                  },
+                  {
                       "id":  "gabaritos-exame-acessiveis-aos-agentes-15-10-2026",
                       "tipo":  "processo",
                       "owner":  "Claudemberg",
