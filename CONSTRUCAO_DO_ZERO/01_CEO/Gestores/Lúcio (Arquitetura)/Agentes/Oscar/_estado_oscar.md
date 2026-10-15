@@ -4,6 +4,8 @@
 
 ## 1. Onde parei / em andamento
 
+- **15/10/2026 — Relatório conjunto Oscar × Vitruvius: resposta ao diagnóstico do Bardi ENTREGUE a Lúcio** em `Gestores/Lúcio (Arquitetura)/relatorio_oscar_vitruvius_15-10/01b_resposta_oscar.md`. Concordei com A1–A13; B: 9 concordo, 8 em parte, B5 discordo para o build atual (annotate tem norte/texto/etiqueta). C2 = A (origem T); C1, C3 (parte numérica), C4 indeterminados com teste proposto. 13 regras novas (parte c) e 16 limites fora de P/C/N (L1–L16). Achado: Skill v1.2.2 atrás das descrições atuais (document.salvar, view_setup ajustarExistente, create_wall base_deslocamento) — não testado. Nenhuma tool Vitruvius chamada.
+
 - 14/10/2026 — Skill `oscar-revit-projetista-vitruvius` v1.0 (dona Lúcio) lida inteira; obrigatória em toda tarefa de Revit; checklist de entrega ganhou parte (f) Revit; teste de leitura respondido a Lúcio.
 
 - **14/10/2026 (tarde) — Teste do Bloco 1 do Vitruvius (build v7), ENTREGUE a Lúcio.** Resultado: `D:\011_VITRUVIUS\_testes_bloco1\RESULTADO_TESTE_BLOCO1_14-10.md`. Arquivo final: `TESTE_BLOCO1_14-10_v2.rvt`. PNGs: `D:\011_VITRUVIUS\_imagens\bloco1_14-10\`. Funcionaram: R1 (níveis 3,25/6,20), paredes 2,80 e topo preso, parede_total/cadeia/ambiente com valor conferido, annotate, folha por nome, A1, A2, A4. Defeitos graves: salvar_copia gravou em D:\007_MATERIAIS (arquivo `_teste_proibido_oscar\X.rvt` precisa ser apagado), vistas fora da moldura do selo A3, elevação sul atrás do muro, abrir 3/3 com falha (e o plugin caiu na 4ª), niveisCotovelo com falha e success:true. **O plugin ficou desconectado e o v2 não está aberto no Revit.**
