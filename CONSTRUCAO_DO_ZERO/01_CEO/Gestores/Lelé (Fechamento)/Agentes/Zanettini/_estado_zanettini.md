@@ -1,7 +1,7 @@
 # Estado — Zanettini (equipe de Lelé, Fechamento)
 
 **Última atualização:** 15/10/2026 — criado após aprovação da proposta de equipe de Lelé (revisão 2, aprovada por Claudemberg em 15/10/2026).
-**Nível atual:** Formação.
+**Nível atual:** Shadow (promovido em 15/10/2026, EXAME-ZAN-02 com ressalvas, ratificado por Claudemberg).
 
 ## 1. Onde parei / em andamento
 - Criado. Sem caso-teste administrado.

@@ -541,3 +541,7 @@
 ---
 
 **15/10/2026 — Criação da equipe do Fechamento (Lelé), proposta revisão 2, aprovada por Claudemberg:** criados 3 Agentes em Formação: Zanettini (etapa 14), Reidy (etapa 15 e dossiê do Gate 16) e Limmer (etapa 16). Arquivos de definição em `.claude/agents/zanettini.md`, `reidy.md` e `limmer.md`; estados em `Gestores/Lelé (Fechamento)/Agentes/`. Limites: só leitura no Vitruvius, sem shell, sem poder de liberar gate. **Não aprovado nesta decisão:** escrita do Reidy no Vitruvius, ferramenta de detalhe 2D, skill de orçamento analítico, skill do Memorial (itens 2 a 8 da proposta). Como desfazer: apagar os três arquivos de agente e a pasta `Agentes/`.
+
+---
+
+**15/10/2026 — Promoção do Zanettini de Formação para Shadow (Compatibilização, etapa 14):** EXAME-ZAN-01 reprovado (falta da isca obrigatória I1); EXAME-ZAN-02 aprovado com ressalvas (5 de 5 obrigatórias; falso positivo J6; extras a revisar). Ratificado por Claudemberg em 15/10/2026. Arquivos: `.claude/agents/zanettini.md`, `Agentes/Zanettini/_estado_zanettini.md`, `Casos_TESTE/exame_zanettini_0{1,2}/`. Como desfazer: voltar o nível para Formação nos dois arquivos de definição e estado.
