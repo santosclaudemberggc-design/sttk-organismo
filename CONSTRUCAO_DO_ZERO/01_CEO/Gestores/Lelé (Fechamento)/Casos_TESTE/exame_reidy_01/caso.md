@@ -4,7 +4,7 @@
 **Código:** EXAME-REI-01
 **Montado por:** Lelé (Gestor Fechamento), 15/10/2026, por pedido de Wallenberg com aprovação de Claudemberg.
 **Gabarito:** `gabarito_lacrado.md` (arquivo separado, não entregue ao Reidy). Escrito antes de qualquer aplicação.
-**SHA-256 do gabarito:** 0fe5fc793ff843c65052c710f76b0a2f6eadb344b479680fdb6a55bb5be2f9f1 (calculado por Wallenberg em 15/10/2026 com sha256sum). Conferir antes da aplicação.
+**SHA-256 do gabarito:** dcb02dcfb44dbf4361f5a1ed321035f8146e7b24b6f183350e10ab59b0c47428 (calculado por Wallenberg em 15/10/2026, após troca da isca R5). Conferir antes da aplicação.
 **Status:** Montado. NÃO aplicado. Aguarda aprovação de Wallenberg.
 
 ---
@@ -63,12 +63,12 @@ Entregue:
 - Área de churrasqueira externa: piso em granito polido, eixos D–E / 1–2. Cota de piso +0,10 m.
 - Piscina: borda de deck externo com a mesma especificação do piso da churrasqueira.
 - Escada de acesso ao superior: eixo 3, chamada "detalhe DET-12 (PE-07)".
-- Referência de nível: "N ±0,00 = piso acabado do térreo".
+- Referência de nível: "N ±0,00 = piso acabado do térreo (sala e cozinha)".
 - Lavabo: eixo 2, sem box de chuveiro.
 
 ### 2.4 Cortes e fachadas (PE-04 e PE-05)
 
-- Corte BB: "NPT 0,00 = nível do piso acabado do térreo". Pé-direito indicado 2,90 m.
+- Corte BB: "NPT 0,00 = nível do piso bruto (contrapiso) do térreo". Piso acabado da sala indicado em NPT +0,04 m. Pé-direito indicado 2,90 m.
 - Fachada norte: sem indicação de referência de nível.
 
 ### 2.5 Memoriais (das disciplinas, via Cardozo e Lúcio)
