@@ -555,3 +555,7 @@
 ---
 
 **15/10/2026 — Promoção do Reidy de Formação para Shadow (Projeto Executivo, etapa 15):** EXAME-REI-01 anulado (defeito de montagem); EXAME-REI-02, montado e corrigido pelo Bardi, nota 9,18 (mínimo 8,00). Ratificado por Claudemberg em 15/10/2026. Nota: o arquivo `resposta_reidy.md` é transcrição condensada da resposta, não cópia literal. Como desfazer: voltar o nível para Formação em `.claude/agents/reidy.md` e no estado do Reidy.
+
+---
+
+**15/10/2026 — Skill nova `orcamento-executivo-analitico-sinapi-rj` v0.2 (Função 5 de Wallenberg), status rascunho:** criada para destravar o exame do Limmer (etapa 16). Testada no caso E1 com o Limmer: passou nas 4 asserções (código e mês em toda linha, regime único, BDI não inventado, nenhum preço sem fonte). Ele recusou a argamassa por m³ como preço de contrapiso e a textura de fachada como pintura interna. E2 e E3 não testados. Pendente: ler o Acórdão TCU 2.622/2013 no texto oficial; ratificação de Claudemberg. Como desfazer: apagar a pasta `.claude/skills/orcamento-executivo-analitico-sinapi-rj/`.

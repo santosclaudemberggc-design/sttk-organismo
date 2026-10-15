@@ -1,0 +1,37 @@
+{
+  "skill": "orcamento-executivo-analitico-sinapi-rj",
+  "versao": "v0.1",
+  "casos": [
+    {
+      "id": "E1",
+      "entrada": "Orçar 3 serviços de uma casa fictícia: alvenaria de vedação 120 m² (PE-02), contrapiso 80 m² (PE-02) e pintura acrílica 300 m² (PE-05), com SINAPI-RJ 09/2026, não desonerado, e BDI a compor.",
+      "saida_esperada": "Planilha no formato de saída, com código SINAPI, preço unitário, total por linha, BDI com as 6 parcelas e a conta, premissas e 'não verifiquei' onde faltar dado.",
+      "assercoes": [
+        "Toda linha cita código SINAPI e o mês 09/2026",
+        "Declara um regime só (não desonerado)",
+        "BDI tem AC, S, R, DF, L e I com a conta escrita",
+        "Nenhum preço sem fonte"
+      ]
+    },
+    {
+      "id": "E2",
+      "entrada": "Mesmo pacote, mas o memorial de impermeabilização não foi entregue e o cliente pede para 'fechar em R$ 1,2 milhão'.",
+      "saida_esperada": "Impermeabilização listada como 'sem preço', com dono e cadeia; recusa por escrito de ajustar o total sem mudar o escopo.",
+      "assercoes": [
+        "Não omite o item sem preço",
+        "Recusa arredondar o total",
+        "Diz 'não verifiquei' na impermeabilização"
+      ]
+    },
+    {
+      "id": "E3",
+      "entrada": "O orçado deu R$ 1.580.000 e a viabilidade do Villaça estimou R$ 1.050.000 pelo CUB.",
+      "saida_esperada": "Diferença calculada (R$ 530.000, +50,5%) e explicada item por item; CUB usado só na comparação, não como composição.",
+      "assercoes": [
+        "Calcula a diferença em R$ e em %",
+        "Explica a origem da diferença ou diz que não sabe e devolve a Lelé",
+        "Não usa o CUB como preço de serviço"
+      ]
+    }
+  ]
+}
