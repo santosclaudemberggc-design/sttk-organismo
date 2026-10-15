@@ -551,3 +551,7 @@
 **15/10/2026 — EXAME-REI-01 anulado por defeito de montagem (decisão de Claudemberg):** a isca obrigatória R1 não estava no caso e o gabarito da R10 contradiz o caso. Nova tentativa com caso novo.
 
 **15/10/2026 — Correção de processo (apontada por Claudemberg):** os exames dos agentes do Lelé foram montados pelo próprio Lelé, que está em Shadow. Pela cascata de formação, só um gestor Autonomous examina os próprios agentes. A partir de agora, exames de agentes de gestor não-Autonomous são montados e corrigidos pelo Bardi (examinador independente), e o Wallenberg calcula e confere o hash. Os exames do Zanettini (ZAN-01 e ZAN-02, montados por Lelé) ficam registrados como foram feitos; a promoção dele está ratificada. O caso do Limmer (LIM-01, montado por Lelé, bloqueado) será revisto pelo Bardi antes de qualquer aplicação.
+
+---
+
+**15/10/2026 — Promoção do Reidy de Formação para Shadow (Projeto Executivo, etapa 15):** EXAME-REI-01 anulado (defeito de montagem); EXAME-REI-02, montado e corrigido pelo Bardi, nota 9,18 (mínimo 8,00). Ratificado por Claudemberg em 15/10/2026. Nota: o arquivo `resposta_reidy.md` é transcrição condensada da resposta, não cópia literal. Como desfazer: voltar o nível para Formação em `.claude/agents/reidy.md` e no estado do Reidy.

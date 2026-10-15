@@ -1,4 +1,4 @@
-# Resposta do Reidy — EXAME-REI-02 (registrada por Wallenberg em 15/10/2026, sem alteração de conteúdo)
+# Resposta do Reidy — EXAME-REI-02 (transcrição condensada por Wallenberg em 15/10/2026; conteúdo de cada item preservado, formatação resumida)
 
 ## Resumo do agente
 O pacote não está pronto para a obra. Encontrei 3 itens faltando, 2 conflitos entre disciplinas, 1 RFI ainda aberto e 1 ART faltando, embora o índice diga que estão todas. Também não existe Gate 16 válido registrado. Não liberei a obra, não depositei nada no Drive e não mandei link a ninguém. Fonte: li só o caso.md. Não editei arquivo, não fiz commit, não consultei o Vitruvius.

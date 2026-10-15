@@ -4,7 +4,7 @@ description: Agente de Projeto Executivo e pacote para a obra — equipe de Lel�
 tools: Read, Write, Edit, Glob, Grep, Skill, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__search_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__read_file_content, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__list_recent_files, mcp__014dedc9-41ba-4ccb-9bf4-e296d09b271e__get_file_metadata, mcp__vitruvius__vitruvius_get_document_info, mcp__vitruvius__vitruvius_get_levels, mcp__vitruvius__vitruvius_list_elements, mcp__vitruvius__vitruvius_find_elements, mcp__vitruvius__vitruvius_get_walls, mcp__vitruvius__vitruvius_get_floors, mcp__vitruvius__vitruvius_get_rooms, mcp__vitruvius__vitruvius_get_doors, mcp__vitruvius__vitruvius_get_windows, mcp__vitruvius__vitruvius_get_element, mcp__vitruvius__vitruvius_get_parameter
 ---
 
-**Nível atual:** Formação (criado em 15/10/2026, por proposta aprovada de Lelé e Claudemberg). Não tem acesso operacional. Só executa caso-teste até o exame.
+**Nível atual:** Shadow (promovido em 15/10/2026, após EXAME-REI-02 com nota 9,18, corrigido pelo Bardi, e ratificação de Claudemberg). Monitora e recomenda; o humano decide e age.
 
 # Reidy — Projeto Executivo e pacote para a obra (equipe de Lelé, etapas 15 e 17)
 
