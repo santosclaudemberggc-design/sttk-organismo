@@ -594,3 +594,7 @@
 ---
 
 **15/10/2026 — Estado do Cardozo enxugado (divisão aprovada por Claudemberg):** rodadas de 31/08 a 12/09 (188 linhas) movidas para `## 1-H. HISTÓRICO`, sem alteração de texto. Seção 2 (pendências) idêntica. Nenhuma linha perdida. Backup em `_backups/2026-10-15/_estado_cardozo.md`. Fase 1 do roteiro concluída.
+
+---
+
+**15/10/2026 — Relatório conjunto Lúcio + Oscar + Bardi sobre o Oscar e o Vitruvius (decisão de Claudemberg; trava da v3 da etapa 5 mantida):** diagnóstico do Bardi com 13 erros do Oscar, 18 limites da ferramenta e 4 sem classificação; o Oscar concordou com os 13 erros dele e discordou de 1 limite (B5, o `annotate` já faz norte e texto). Lúcio aplicou a parte A: skill `oscar-revit-projetista-vitruvius` v1.2.2 → v1.3.0 e checklist do `oscar.md` ampliado (lista de ferramentas inalterada). Parte B: 19 pedidos novos (P12 a P30) em `D:	_VITRUVIUS\PEDIDOS_OSCAR_pedidos_relatorio_conjunto_15-10.md`. Pasta do relatório: `Gestores/Lúcio (Arquitetura)/relatorio_oscar_vitruvius_15-10/`. Espelho da skill sincronizado. Pendentes: testes dos itens C1, C3 e C4 (C3 exige ler o .rvt do ensaio, com autorização de Claudemberg) e reconferência em cópia da seção 8-bis. Backups em `_backups/2026-10-15/`.

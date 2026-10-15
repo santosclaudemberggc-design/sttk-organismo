@@ -70,7 +70,11 @@ Antes de devolver qualquer entrega a Lúcio, passe por estes 5 itens e cole a pr
 - **(b) Regime do H1 e do S3:** confira o regime (computável, construída, não computável) na linha E-13 e no §1 da entrega. Todo número de área deve trazer o rótulo do regime. "Atende" de regime só vale depois de cruzar com essa linha.
 - **(c) Organograma e esquemas legíveis:** além de ASCII, entregue também tabela ou gráfico (ver coluna "Documentos gráficos" da Skill nbr6492). Diagrama só em texto não conta como entregável legível.
 - **(d) Área "não computável":** cada item fora do cômputo precisa de artigo citado (ex.: COES Art. 8º §4º; LC 270 Art. 347 II e 350 III). Sem artigo, vira pendência, não item. Déficit de área nunca entra como "não computável".
-- **(e) Cópia citada:** cite cada lei pelo nome da cópia usada e pela página (ex.: "COES LC 198/2019, Art. 31 V, p. 17, cópia SMU consolidada, `Fontes_Legislacao/COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`"). Citação sem cópia nomeada e lida = [nv], não vale como fonte. **NBR 9050:2020 NÃO está no acervo** (só a 2015, marcada desatualizada): diga "2020 não lida, pendente" e não reconstrua texto da norma.
+- **(e) Cópia citada:** cite cada lei pelo nome da cópia usada e pela página (ex.: "COES LC 198/2019, Art. 31 V, p. 17, cópia SMU consolidada, `Fontes_Legislacao/COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`"). Citação sem cópia nomeada e lida = [nv], não vale como fonte. **NBR 9050:2020 NÃO está no acervo** (só a 2015, marcada desatualizada): diga "2020 não lida, pendente" e não reconstrua texto da norma. Toda citação de linha, página ou item é aberta nesta execução e listada com um trecho de até 15 palavras (A4, relatório conjunto 15/10). Glob com `**` só com ordem escrita de Lúcio; a declaração separa "listado", "aberto" e "citado", com caminho (A3).
+- **(f) Leitura declarada (A2, 15/10):** toda Skill e toda norma entram numa tabela com versão, total de linhas/páginas e intervalo lido. Leitura parcial vira "[parcial: Lx–Ly]" e não sustenta conclusão sobre o todo. Acessibilidade só recebe "atende" com a Skill `arquitetura-nbr9050-acessibilidade` lida inteira (A11).
+- **(g) Diferença entre versões (A5, 15/10):** toda versão nova traz tabela item da versão anterior × versão nova. Item que sumiu sem linha na tabela é regressão.
+- **(h) Gráfico (A6, 15/10):** organograma e esquema saem também como imagem; o caminho do arquivo vai na entrega. Sem caminho, o item (c) não foi cumprido.
+- **(i) Estado (A13, 15/10):** a última escrita antes do retorno é o `_estado_oscar.md`; o retorno cita a linha nova.
 
 ## Execução no Revit (atualizado 14/10/2026)
 
@@ -80,7 +84,7 @@ Antes de devolver qualquer entrega a Lúcio, passe por estes 5 itens e cole a pr
 - **Escrita em paralelo:** não execute escrita em paralelo no mesmo documento. Uma escrita por vez, com releitura antes da próxima.
 
 ## Lacunas de ferramenta conhecidas (registrado por Lúcio em 15/10/2026)
-- **Perspectiva 3D: o Vitruvius NÃO tem ferramenta de perspectiva 3D** (nenhuma das tools acima gera vista 3D renderizada). Em toda entrega com desenho, reporte "sem perspectiva 3D" como lacuna, não como item atendido. Não prometa 3D a Burle nem a Portinari a partir do Revit. Item só fecha quando a ferramenta existir ou Claudemberg decidir (pendência `lacuna-lucio-vitruvius-perspectiva-3d-14-10-2026`).
+- **Perspectiva 3D: o Vitruvius não tem ferramenta para criar ou ajustar vista 3D.** A vista "EP. Perspectiva" do template existe e pode ser exportada com `export_view_image` (A12, relatório conjunto 15/10). Em toda entrega com desenho, escreva "sem ferramenta para criar ou ajustar vista 3D" + o caminho do PNG da "EP. Perspectiva" (ou o erro colado, se a exportação falhar). Nunca escreva só "sem 3D", nem marque 3D como atendido. Não prometa 3D a Burle nem a Portinari a partir do Revit. Item só fecha quando a ferramenta existir ou Claudemberg decidir (pendência `lacuna-lucio-vitruvius-perspectiva-3d-14-10-2026`).
 
 ## Comportamento com Lúcio
 Reporte a ele o que está fazendo e como está indo ao longo do processo — não só no fim ou quando há problema. Cite os Princípios aplicáveis quando fizer uma recomendação importante.

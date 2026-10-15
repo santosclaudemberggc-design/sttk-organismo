@@ -1,13 +1,15 @@
 ---
 name: oscar-revit-projetista-vitruvius
 description: Procedimento passo a passo para o Oscar modelar, documentar, montar folhas e conferir um projeto de arquitetura no Revit pelas ferramentas Vitruvius (mcp__vitruvius__*), com as regras de Claudemberg de 14/10/2026 (níveis antes das paredes, ponto 0, parede pelo macete do nível acima com base −espessura do piso, vistas do template primeiro, corte pelo meio do edifício, limpeza visual, salvar como uma vez e depois só salvar), conferência pela imagem (export_view_image + Read) antes de qualquer "atende", tabela de defeitos conhecidos das ferramentas com contorno seguro, e a representação NBR 6492 exigida no EP e no AP. Use SEMPRE que o Oscar (ou qualquer Agente) for abrir, salvar, modelar paredes, pisos, aberturas, ambientes, criar ou ajustar níveis, elevações, cortes, plantas, cotas, etiquetas, folhas, carimbo, exportar imagem de vista, ou conferir um desenho no Revit — mesmo que o pedido só diga "desenhar", "modelar", "montar a prancha", "fazer o EP no Revit", "cotar", "elevação" ou "Vitruvius".
-version: v1.2.2
+version: v1.3.0
 status: ativa
 dona: Lúcio (Gestor Arquitetura)
 usuario: Oscar (Coordenador de Projeto Arquitetônico)
-data: 2026-10-14
+data: 2026-10-15
 fontes: "D:\\011_VITRUVIUS\\PEDIDOS_OSCAR\\06_regras_claudemberg_niveis_vistas_carimbo_14-10.md (R1-R4); 07_feedback_claudemberg_teste_bloco1_14-10.md (F1-F8, R5, R6 — prevalece); 05_analise_prints_EP_v2_14-10.md; 08_resultado_teste_bloco1_14-10.md (D1-D12); D:\\011_VITRUVIUS\\BLOCO1_ENTREGA.md (contratos, build 2026-10-14-bloco1-v7); STATUS_PROJETO.md; parecer_bardi_v2.md da Etapa 05 do Ensaio 003; Skills nbr6492-2021-memoriais-por-etapa-projeto v1.1 e nbr6492-representacao-grafica."
 changelog:
+  - "v1.3.0 (15/10/2026, Lúcio, relatório conjunto Lúcio + Oscar sobre o diagnóstico Bardi, `Gestores/Lúcio (Arquitetura)/relatorio_oscar_vitruvius_15-10/02_relatorio_conjunto.md`, PARTE A): §6 e §11 com linha 'Atende' amarrada ao PNG (A1); §9 EP desenha 5.4.2 a–d mesmo em esquema (A8); §3 e §10 com prova de porta por pavimento, eixos e escada-lacuna (A9); §2 e §10 com tolerância de área do lote e justificativa de partido (A10); §10 acessibilidade só com Skill nbr9050 lida inteira (A11); §5 texto do template é limpeza do Oscar (C2); §8-bis: recursos que as descrições atuais das tools prometem (salvar, ajustarExistente, base_deslocamento) ficam 'não testado' até reconferência em cópia. Regras de leitura, citação, diferença entre versões e estado (A2–A7, A13) foram para .claude/agents/oscar.md."
+  - "v1.2.2 (14/10/2026, Wallenberg): D16–D21 a partir de P1–P11."
   - "v1.2.1 (14/10/2026, Wallenberg): tabela de defeitos D13–D15 (listagem de folhas, ID de vista × nível, macete sem tipoPiso); build atual v8; nenhuma regra alterada."
   - "v1.2 (14/10/2026, Wallenberg, padrão v1): formato only, regras intactas. Gate de entrada explícito; formato de entrega fixo (seção 11); checklist final exige prova colada; evals em evals/evals.json (3 casos)."
   - "v1.1 (14/10/2026, Lúcio, após teste de leitura do Oscar, nota 9,50): §0.5 e D/F6 dizem que não há ação salvar; §1.3 e §2 citam o teste de 14/10 como prova; §3.10 cotas verticais (mode=nivel) e cota de nível."
@@ -50,7 +52,7 @@ changelog:
 
 - `list_elements` na categoria do ponto base do projeto (OST_ProjectBasePoint) e do ponto de levantamento (OST_SharedBasePoint); cole as coordenadas (a posição sai pela bbox; `location` vem nula). Funcionou no teste de 14/10 (ids 111429 e 111426, ambos em 0,0,0).
 - O canto de referência do lote (ou o eixo combinado com Lúcio) fica em **(0,0)**. Todas as coordenadas que você passar às ferramentas partem daí.
-- Lote: dimensões e área **iguais ao dossiê** (Bardi v2: 571,60 desenhado × 571,80 do dossiê — não repetir). Se o polígono não fecha a área, pergunte; não arredonde lado.
+- Lote: dimensões e área **iguais ao dossiê** (Bardi v2: 571,60 desenhado × 571,80 do dossiê — não repetir). Se o polígono não fecha a área, pergunte; não arredonde lado. **Prova (A10):** cole a conta da área pelos vértices (em metros, convertida se vier em pés — D20); diferença máxima de 0,01 m² contra o dossiê.
 
 ## 3. Ordem de modelagem
 
@@ -63,6 +65,7 @@ Siga nesta ordem; cada item com releitura (`get_walls`, `get_floors`, `get_doors
 5. **Aberturas** (`create_door`, `create_window`) — **todo pavimento tem porta**; todo ambiente de permanência tem janela; porta de entrada com lógica de acesso pelo afastamento frontal.
 6. **Escada e vão de laje:** sem ferramenta hoje (`create_floor` não faz furo; não há escada). **Não deixe o pavimento sem acesso:** marque a posição da escada e do vão com paredes baixas/ambiente rotulado "ESCADA (lacuna de ferramenta)" e declare a lacuna na entrega.
 7. **Cobertura** (`create_roof`) — hoje só plana; inclinada = lacuna declarada.
+   **Prova de acesso (A9):** cole `get_doors` filtrado por nível mostrando ao menos 1 porta em cada pavimento, `list_elements` dos eixos (ao menos 1 em cada direção) e o ambiente "ESCADA (lacuna de ferramenta)" em cada pavimento ligado. Faltou um dos três = passo não feito.
 8. **Ambientes** (`create_room`) — nome e número separados (o "8" do "SALA 8" era o Número; conferir com `get_parameter Nome`).
 9. **Etiquetas** (`annotate acao=ambientes|portas|janelas`).
 10. **Cotas** (`dimension`) — por último na modelagem, já nas vistas de apresentação (a limpeza da §5 vem depois delas). Plantas: `parede_total`/`cadeia`. Cortes e elevações: `mode=nivel` (pé-direito, piso a piso) — **sem a conferência nova**, então confira o valor pela conta dos níveis e pela imagem. Cota de nível de piso/laje: `create_spot_elevation`.
@@ -88,7 +91,7 @@ Siga nesta ordem; cada item com releitura (`get_walls`, `get_floors`, `get_doors
 ## 5. Limpeza visual (F3)
 
 - Plantas de apresentação: `view_setup ocultarMarcadores` e recorte ajustado; **nenhum marcador duplicado ou solto**, nenhuma linha de corte atravessando sem necessidade.
-- **Sem texto solto dentro do desenho** (ex.: "TESTE ...", "NORTE" do template). Texto livre vai fora do desenho ou no carimbo.
+- **Sem texto solto dentro do desenho** (ex.: "TESTE ...", "NORTE" do template). Texto livre vai fora do desenho ou no carimbo. Texto que veio do template também é limpeza sua (C2, 15/10): remova ou oculte e cole o id; não o trate como defeito de ferramenta.
 - **Cotas fora do desenho** e sem cair sobre etiqueta (D7: cota de ambiente cai sobre a etiqueta — prefira `parede_total`/`cadeia` externas; cota de ambiente só se a imagem mostrar legível).
 - Rótulos de nível sem sobreposição (0,00 × 0,30). O `niveisCotovelo` falha (D5): registre como lacuna com o PNG.
 - **Norte** em toda planta (`annotate acao=norte`); se o símbolo sair sem "N" legível, registre e acrescente texto "N" junto, fora do desenho. Norte de projeto ≠ norte verdadeiro: não afirme orientação real sem dado do caso.
@@ -100,6 +103,7 @@ Siga nesta ordem; cada item com releitura (`get_walls`, `get_floors`, `get_doors
 3. Escreva o que viu (ex.: "casa inteira visível, porta na fachada sul, níveis 0,00/0,30 sobrepostos").
 4. "Atende" **só** depois disso. "Atende" sem imagem vista = **falso** (Bardi v2 descontou −1,50 do Oscar e −2,00 de Lúcio).
 5. Sem a ferramenta ou com falha: escreva **"não verificado — sem imagem"**, nunca "atende".
+6. **Formato da linha (A1, 15/10):** toda linha "Atende" traz, na mesma linha, o caminho do PNG aberto com `Read` nesta execução e uma frase do que se vê. Linha "Atende" sem caminho é tratada por Lúcio como falsa. Lúcio abre PNGs por amostragem.
 
 ## 7. Folhas e carimbo (F5, R4)
 
@@ -139,6 +143,10 @@ Siga nesta ordem; cada item com releitura (`get_walls`, `get_floors`, `get_doors
 | D21 | escritas (`set_parameter`, `create_wall`) | `Timeout na resposta do Plugin` em série; uma parede pode ficar com base e topo no mesmo nível | Parar após o primeiro timeout; reler o elemento afetado; não repetir em lote; reportar o estado exato |
 | — | escada, vão de laje, cobertura inclinada, terreno/subregião | Não existem | Lacuna desenhada + declarada (seção 3) |
 
+### 8-bis. Recursos que a descrição promete e ninguém testou (15/10/2026)
+
+As descrições atuais das tools anunciam: `document acao=salvar` (F6), `view_setup ajustarExistente` para mover marcador de elevação (D12), `create_wall base_deslocamento` (R5/F4), `create_sheet` com nome de selo sem diferenciar espaço/maiúscula (B7), `create_elevation` com `distancia`/`alvo` (B9), `dimension` com tipo de cota pela escala (B10), `create_section` com `nivelDetalhe`/`recorte_auto` e `etapa`/`sub_etapa` (B12, B14). **Descrição não é prova.** Até a reconferência em cópia (uma escrita por vez, com releitura e PNG), o contorno das linhas acima continua valendo; se usar um desses recursos, declare "[descrição, não testado]" e confira pela releitura e pela imagem.
+
 **Quando uma ferramenta falhar:** cole o **erro exato** (texto da resposta e, se houver, a linha do log), o id do elemento e o que você fez em seguida. Nunca "deu erro" sem o texto. Nunca repita uma escrita que "travou" sem antes listar se o elemento já foi criado (risco de duplicar). Esta tabela vale até Wallenberg informar o build corrigido; build novo = reconferir cada linha antes de confiar.
 
 ## 9. Representação NBR 6492:2021 por etapa
@@ -150,6 +158,8 @@ Fonte: Skill `nbr6492-2021-memoriais-por-etapa-projeto` (Seção 5) e `nbr6492-r
 | **EP** (5.4.2) | a) implantação (norte, acessos, platôs/taludes, recuos e afastamentos, áreas cobertas, estacionamento, **permeáveis e impermeáveis**, cotas de nível); b) plantas dos pavimentos; c) cortes **com projeção da topografia natural**; d) elevações; e) detalhes se necessário | Escala 1:100 (implantação pode 1:200); norte em toda planta; cotas externas gerais; níveis de piso; corte AA e BB pelo edifício; escala junto do desenho |
 | **AP** (5.5.2) | a) implantação geral **com eixos e ponto de referência**; b) **diretrizes de terraplenagem**; c) plantas dos pavimentos; d) **planta de coberturas** (escoamento, inclinação); e) cortes; f) elevações; g) detalhes principais | 1:100 ou 1:50; cotas completas (externas e internas), níveis, eixos cotados; cortes com cotas verticais (pé-direito, laje, peitoril); lista de pranchas; carimbo completo |
 
+**EP sem programa fechado (A8, 15/10):** as peças a–d do 5.4.2 são desenhadas mesmo em esquema, com a lacuna escrita no título da vista (ex.: "IMPLANTAÇÃO — norte pendente"). Deixar uma de fora só com ordem escrita de Lúcio. Prova: id e PNG de cada uma das 4 vistas.
+
 Tipos de linha, hachura de corte, cortes em letras maiúsculas (A-A, B-B) com seta de sentido; cota de nível com +0,00 = referência (o Terreno/rua do R1).
 
 ## 10. O que um bom projetista confere antes de entregar
@@ -158,7 +168,9 @@ Tipos de linha, hachura de corte, cortes em letras maiúsculas (A-A, B-B) com se
 - [ ] **Alturas batem com o texto:** níveis, pé-direito, laje e altura total iguais no modelo, nas cotas e no memorial.
 - [ ] **Acesso a todos os pavimentos:** porta em cada pavimento; escada (ou lacuna desenhada) ligando-os.
 - [ ] **Aberturas em todos os ambientes de permanência** (sala, quartos, cozinha) — fachadas não cegas sem justificativa.
-- [ ] **Lote igual ao dossiê** (lados e área) e afastamentos iguais aos do Legal.
+- [ ] **Lote igual ao dossiê** (lados e área, ±0,01 m², conta colada) e afastamentos iguais aos do Legal.
+- [ ] **Partido justificado (A10):** uma frase por decisão (acesso social, aberturas por fachada, pé-direito diferente entre pavimentos).
+- [ ] **Acessibilidade (A11):** porta, corredor e giro da suíte acessível cotados e vistos em PNG, com a Skill `arquitetura-nbr9050-acessibilidade` lida inteira (versão e linhas declaradas).
 - [ ] Ambientes com nome e área; etiquetas visíveis.
 - [ ] Nenhuma vista vazia, duplicada ou em "???"; nenhum texto solto; cotas fora do desenho.
 - [ ] Toda folha vista em imagem, vistas dentro da moldura.
