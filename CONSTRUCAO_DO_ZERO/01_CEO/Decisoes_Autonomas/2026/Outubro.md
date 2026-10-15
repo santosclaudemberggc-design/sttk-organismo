@@ -575,3 +575,8 @@
 ---
 
 **15/10/2026 — Promoção do Limmer de Formação para Shadow (Orçamento Executivo, etapa 16):** EXAME-LIM-01 reprovado (7,90); EXAME-LIM-02, montado e corrigido pelo Bardi, nota 10,00. Ratificado por Claudemberg em 15/10/2026. A equipe do Lelé (Zanettini, Reidy, Limmer) está toda em Shadow. Como desfazer: voltar o nível para Formação em `.claude/agents/limmer.md` e no estado do Limmer.
+
+---
+
+**15/10/2026 — Gabaritos de exame protegidos (opção C, decisão de Claudemberg):** os 6 gabaritos de exame foram movidos para `_gabaritos_LACRADO_bardi/exames_agentes/` (hash conferido; pasta fora do git, como a do Ensaio). Gancho PreToolUse `_ferramentas/hooks/bloquear_gabaritos.py`, registrado em `.claude/settings.local.json`, bloqueia qualquer subagente, exceto o Bardi, que cite essa pasta. Testado com 8 casos simulados e 2 reais (Limmer bloqueado, Bardi liberado). Observação: o `.claude/settings.json` tem ganchos em formato não reconhecido pelo Claude Code (ex.: evento "PostSessionStart"), que provavelmente nunca rodaram; não alterados, decisão pendente. Como desfazer: remover a entrada PreToolUse do settings.local.json (backup em `_backups/2026-10-15/settings.local.json`).
+- Risco residual registrado: o histórico do git ainda contém os gabaritos antigos; um agente com terminal poderia vê-los com `git log -p` sem citar arquivo. Hoje nenhum examinado tem terminal (só Hely e Bardi). O gancho também bloqueia qualquer menção a `gabarito_lacrado`.

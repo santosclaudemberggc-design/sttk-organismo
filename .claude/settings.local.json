@@ -141,5 +141,20 @@
       "Bash(git commit *)",
       "Bash(git status *)"
     ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read|Grep|Glob|Edit|Write|NotebookEdit|Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -I \"D:/000_ESTRUTURA DEPARTAMENTO DE PROJETO/_ferramentas/hooks/bloquear_gabaritos.py\"",
+            "timeout": 10,
+            "onFailure": "block"
+          }
+        ]
+      }
+    ]
   }
 }

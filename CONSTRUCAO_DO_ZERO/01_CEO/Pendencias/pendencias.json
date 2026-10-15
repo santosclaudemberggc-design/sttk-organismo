@@ -12,7 +12,9 @@
                       "desde":  "2026-10-15",
                       "crit":  "alta",
                       "alc":  "humano",
-                      "status":  "aberta",
+                      "status":  "resolvida",
+                      "resolvido_em":  "2026-10-15",
+                      "decisao_claudemberg":  "Opção C. (A) Gabaritos de exame movidos para CONSTRUCAO_DO_ZERO/_gabaritos_LACRADO_bardi/exames_agentes/<exame>/ (hash conferido em cada um). (B) Gancho PreToolUse _ferramentas/hooks/bloquear_gabaritos.py em .claude/settings.local.json: bloqueia qualquer subagente, exceto o bardi, que cite a pasta em Read, Grep, Glob, Edit, Write, NotebookEdit, Bash ou PowerShell. Testado: Limmer bloqueado, Bardi liberado, sessão principal liberada.",
                       "txt":  "Os gabaritos dos exames de Agentes ficam na mesma pasta do caso (Casos_TESTE/exame_*/gabarito_lacrado.md). Os Agentes têm leitura livre, então não há como provar que só leram o caso.md. O hash prova que o gabarito não mudou, não que não foi lido. Os gabaritos do Ensaio 003 já ficam fora, em _gabaritos_LACRADO_bardi/.",
                       "res":  "Levantado na verificação completa de 15/10/2026. Nos 6 exames de hoje, as respostas indicam que os Agentes não abriram o gabarito, mas é indicação, não prova.",
                       "acao":  "Claudemberg decide: (a) mover os gabaritos de exame para _gabaritos_LACRADO_bardi/ (fora da pasta do caso; reduz o risco, mas o Agente ainda consegue ler); (b) bloquear a leitura dessa pasta para os Agentes por regra de permissão no settings.json (proteção real; mudança de configuração, decisão de Claudemberg); ou (c) as duas."

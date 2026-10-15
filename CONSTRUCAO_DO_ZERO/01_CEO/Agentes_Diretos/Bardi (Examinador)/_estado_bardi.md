@@ -1,6 +1,8 @@
 # Estado — Bardi (Agente Examinador, direto de Wallenberg)
 
 ## 1. Onde parei
+**Regra nova (15/10/2026, decisão de Claudemberg):** todo gabarito de exame de Agente vai para CONSTRUCAO_DO_ZERO/_gabaritos_LACRADO_bardi/exames_agentes/<exame>/gabarito_lacrado.md, nunca na pasta do caso. Um gancho bloqueia a leitura dessa pasta por qualquer subagente, exceto eu.
+
 15/10/2026 (exames da equipe do Lelé, pedido de Wallenberg): montei e corrigi o EXAME-REI-02 (Reidy, 9,18, aprovado), revisei o EXAME-LIM-01 de Lelé (3 defeitos corrigidos; Limmer 7,90, reprovado) e montei e corrigi o EXAME-LIM-02 (Limmer, 10,00, aprovado). Pastas em `Gestores/Lelé (Fechamento)/Casos_TESTE/`. Decisão de 15/10: exames de Agentes de Gestor não-Autonomous passam a ser meus. Lições: citar a linha do caso para cada isca; teto de nota só quando isca obrigatória fica com zero; prever no gabarito toda inconsistência do caso.
 
 (Anterior) 14/10/2026 (Função 2, Etapa 05 v2, refazer da Entrega 2 Revit, pedido de Wallenberg/Claudemberg): `etapa_05_estudo_preliminar/parecer_bardi_v2.md`: **REPROVAR**. Oscar 6,30; Lúcio 7,00 (Burle 9,00 e Portinari 9,25 da v1 mantidas). Evidência visual: descrição das telas por Wallenberg (`D:\011_VITRUVIUS\PEDIDOS_OSCAR\05_analise_prints_EP_v2_14-10.md`). SHA256 NÃO recalculado (sem shell); registrado 730CB...896B. Notas gravadas. Estado do ensaio não alterado.
