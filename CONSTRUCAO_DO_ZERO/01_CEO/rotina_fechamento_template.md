@@ -24,6 +24,26 @@ metadata:
 
 ---
 
+## [2026-10-15] -- Diaria Skills v3.5.0 (Quinta) -- PIPELINE LINEAR (lacuna Anexo XXI com Kelsen + pesquisa sem Skill nova)
+
+### RODADA ATUAL (O que foi entregue)
+- Prioridade zero: acionado Kelsen para `lacuna-kelsen-lc270-anexo-xxi-to-zona-14-10-2026`. Kelsen leu o Anexo XXI no PDF primário (AP4 pp. 275-277; AP3 pp. 274-275) e criou a proposta `Skills_Propostas/2026/Outubro/kelsen_anexo-xxi-taxa-ocupacao-por-zona-lc270-2024.md` (v1.0, `ativa-com-ressalva`). Não instalada em `.claude/skills/`. Lacuna segue `aberta` (quem fecha é Claudemberg/Wallenberg). Livro-razão: `Decisoes_Autonomas/2026/Outubro.md` (entrada 15/10). Backup: `Decisoes_Autonomas/_backups/2026-10-15/`.
+- Pesquisa (Passo 1, 6 buscas standard, 2 por Gestor): Kelsen (Mais-Valia/Mais-Valerá, LC 281/291, prazo 30/06/2026 já vencido); Lúcio (brises fachada oeste, varanda, conforto passivo, cisterna); Cardozo (fundações solo mole/lençol Barra). Fontes secundárias ou fora do foco; nenhuma viável para Skill nova. Nenhuma Skill criada.
+- `/watch:watch`: 3 buscas de vídeo (YouTube), nenhum vídeo técnico relevante encontrado. Nada assistido.
+- Feed do Painel: 1 evento `marco` gravado (Append-STTKLog). Não é sexta, sem evento `status`.
+- Passo 8 e Macetes não rodaram nesta rodada.
+
+### PENDÊNCIAS E BLOQUEIOS
+- Kelsen: conferir por texto (pdftotext, POP-LEGAL-06) os valores de TO antes de citar em parecer. Grafia "ZMR 2 U" impressa ilegível na leitura visual.
+- Kelsen: decidir se a proposta do Anexo XXI vai para `.claude/skills/` (passo 4 do Fluxo de Ativação). Não instalada por enquanto.
+- `kelsen-f1-to-zpp-anexo-xxi-subzona-13-10-2026` segue aberta: TO de ZPP = "ver Dec. 3046/81", sem lote não há subzona.
+- `lacuna-lucio-burle-disponibilidade-render-14-10-2026`: Lúcio pede teste de disponibilidade a Burle.
+- Índice `Skills_Propostas/2026/Outubro/indice.md` não foi atualizado com a proposta do Anexo XXI (Kelsen não editou; próxima rodada corrige).
+
+### O QUE TOMAR CUIDADO
+- Leitura visual de PDF sem camada de texto: valores de TO sempre conferidos por texto antes de citar.
+- Pesquisa de Passo 1 segue redundante com o acervo e com Skills existentes (Lúcio: `lucio-protecao-solar-externa-dispositivos-rj`; Cardozo: `fundacoes-solos-moles-lencol-freatico-barra-recreio`).
+
 ## [2026-10-14] -- Diaria Skills v3.5.0 (Quarta) -- PIPELINE LINEAR (lacunas com dono + pesquisa sem entrega)
 
 ### RODADA ATUAL (O que foi entregue)

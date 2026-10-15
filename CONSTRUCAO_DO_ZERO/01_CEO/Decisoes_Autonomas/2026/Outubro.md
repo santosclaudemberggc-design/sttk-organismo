@@ -1,5 +1,22 @@
 # Livro-razão de Decisões Autônomas — Outubro/2026
 
+## 15/10/2026 — Kelsen (Legal), Rotina Diária de Skills (quinta, autônoma): lacuna `lacuna-kelsen-lc270-anexo-xxi-to-zona-14-10-2026` → Skill nova `kelsen_anexo-xxi-taxa-ocupacao-por-zona-lc270-2024` v1.0 ATIVA-COM-RESSALVA
+
+**O que foi decidido:** o Anexo XXI da LC 270/2024 foi lido nas pp. 274 a 277 do PDF (`Agentes\Hely\Fontes_Legislacao\LC270_2024_PlanoDiretorLUOS.pdf`, cópia primária do acervo). A TO por zona e subzona da AP4 (pp. 275 a 277) e da AP3 (pp. 274 a 275) foi registrada na Skill nova.
+
+**Por que ativa-com-ressalva e não "ativa" pura:** a leitura foi visual (página renderizada), não por camada de texto. A conferência por texto ainda é necessária antes de citar número em parecer. Também há duas células com grafia duvidosa ("ZMR 2 U" impresso) e números de diplomas "ver" não verificados. A Skill diz isso no próprio texto.
+
+**Coerência:** Grep em `.claude\skills\` por "Anexo XXI" e "taxa de ocupação" (9 arquivos). `legal-base-legislativa-bairro` aponta o anexo como fonte e não traz tabela: relação = COMPLEMENTA. `decreto3046-81-lc270-2024-licin-barra-recreio`: relação = COMPLEMENTA (ZPP e ZE-5 continuam no decreto). Nenhuma TO de AP4 conflita com as Skills instaladas.
+
+**Caminhos:**
+- Skill nova: `CONSTRUCAO_DO_ZERO\01_CEO\Skills_Propostas\2026\Outubro\kelsen_anexo-xxi-taxa-ocupacao-por-zona-lc270-2024.md`
+- Nenhuma Skill instalada foi editada. Não houve cópia para `.claude\skills\`. Por isso não houve backup nesta rodada (backup em `_backups\2026-10-15\` só vale para edição de Skill instalada).
+- Este livro-razão: entrada nova no topo. O pedido falava em `Decisoes_Autonomas\2026\10.md`; o arquivo existente do mês é `Outubro.md`, e a entrada foi lá para manter a série.
+
+**Como desfazer:** apagar o arquivo da Skill nova e a entrada desta data no livro. Nada mais mudou.
+
+**Não feito (de propósito):** não marquei a lacuna no `pendencias.json` (é função do Wallenberg). Não preenchi TO de ZPP (linha "ver Dec. 3046/1981") sem lote e subzona confirmados.
+
 ## 08/10/2026 — Rotina Macetes v1.2, 2ª tentativa a pedido (busca estendida) — sem macete
 
 **O que foi feito:** rodada estendida nas mesmas 3 Skills da 1ª tentativa de hoje (ia-generativa-estudo-preliminar, legal-base-legislativa-bairro, nbr6118-estrutural-concreto). Não houve macete aprovado; nenhum Gestor foi acionado.
