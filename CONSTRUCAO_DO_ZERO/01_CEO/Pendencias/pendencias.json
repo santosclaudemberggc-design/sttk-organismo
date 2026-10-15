@@ -1582,7 +1582,7 @@
                       "crit":  "media",
                       "alc":  "auto",
                       "status":  "aberta",
-                      "txt":  "Ensaio 003 etapa 5 (fora do organismo): o Vitruvius nao tem ferramenta de perspectiva 3D na lista de tools do Oscar. O Oscar nao reportou a lacuna no EP; Burle e Oscar dependem dela para nao prometer 3D.",
+                      "txt":  "Ensaio 003 etapa 5 (fora do organismo): o Vitruvius nao tem ferramenta de perspectiva 3D na lista de tools do Oscar. O Oscar nao reportou a lacuna no EP; Burle e Oscar dependem dela para nao prometer 3D. ANDAMENTO 15/10/2026 (Lucio, Drenagem): anotado em .claude/agents/oscar.md (secao 'Lacunas de ferramenta conhecidas') e em Agentes/Oscar/checklist_entrega_oscar.md (linha de (f)). NAO escrito em _estado_oscar.md: regra de nao escrever no estado de agente alheio; Wallenberg decide se o canal e outro. Status segue aberta.",
                       "acao":  "Lúcio registra a lacuna de ferramenta no estado do Oscar e na lista de tools; Oscar reporta 'sem perspectiva 3D' em toda entrega com desenho. Fechar quando a ferramenta existir ou Claudemberg decidir."
                   },
                   {
@@ -1606,7 +1606,7 @@
                       "crit":  "media",
                       "alc":  "auto",
                       "status":  "aberta",
-                      "txt":  "Ensaio 003 etapa 5, isca 1 (parcial): nenhuma Skill do organismo traz o metodo de medir a altura total da edificacao (soleira ate o ponto mais alto, com laje e cobertura) nem o limite de altura do condominio ou da zona. A Skill coe-lc198 cobre so o pe-direito minimo. So fechar depois da errata do gabarito G1.",
+                      "txt":  "Ensaio 003 etapa 5, isca 1 (parcial): nenhuma Skill do organismo traz o metodo de medir a altura total da edificacao (soleira ate o ponto mais alto, com laje e cobertura) nem o limite de altura do condominio ou da zona. A Skill coe-lc198 cobre so o pe-direito minimo. So fechar depois da errata do gabarito G1. ANDAMENTO 15/10/2026 (Lucio, Drenagem): confirmacao do Kelsen NAO chegou nesta rodada (busca nos arquivos de Gestores por 'altura total' e 'pe-direito + laje' sem resultado relevante). Item segue aberta, sem fechamento.",
                       "acao":  "Kelsen confirma no texto da lei (LC 270 e Dec. 3.046, com pagina) o limite e o ponto de medicao. Lúcio inclui na Skill de Estudo Preliminar a conta pe-direito + laje + cobertura com o resultado escrito."
                   },
                   {
@@ -1630,7 +1630,7 @@
                       "crit":  "media",
                       "alc":  "auto",
                       "status":  "aberta",
-                      "txt":  "Ensaio 003 etapa 5 (parcial): Burle afirmou que generate_image e generate_video nao aparecem na lista de funcoes da sessao, sem chamada nem prova. O estado de Burle de 01/09 registra essas tools como disponiveis. Disponibilidade real nao verificada.",
+                      "txt":  "Ensaio 003 etapa 5 (parcial): Burle afirmou que generate_image e generate_video nao aparecem na lista de funcoes da sessao, sem chamada nem prova. O estado de Burle de 01/09 registra essas tools como disponiveis. Disponibilidade real nao verificada. ANDAMENTO 15/10/2026 (Lucio, Drenagem): teste pedido a Burle (sem geracao). Prova colada: Burle nao tem ToolSearch na sessao; lista literal que ele enxerga = Read, Write, Glob, Grep, SubagentHandback; generate_image e generate_video NAO aparecem nessa lista. Isso contradiz a definicao do agente (burle.md lista as duas) e nao prova ausencia no ambiente. Status segue aberta; precisa de sessao com ToolSearch ou checagem de Wallenberg.",
                       "acao":  "Lúcio pede teste de disponibilidade a Burle (ToolSearch com saida colada), sem invocar geracao, enquanto o Higgsfield estiver pausado por orcamento."
                   }
               ]

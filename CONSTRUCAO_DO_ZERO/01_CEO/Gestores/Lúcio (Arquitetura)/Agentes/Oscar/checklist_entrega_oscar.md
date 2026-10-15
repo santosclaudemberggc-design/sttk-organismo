@@ -42,3 +42,4 @@ Siga a Skill `oscar-revit-projetista-vitruvius` (obrigatória em toda tarefa de 
 | Cada vista e cada folha entregue vista em PNG (lista dos caminhos) | | |
 | Itens da seção 10 da Skill ("o que um bom projetista confere") | | |
 | Defeitos de ferramenta com erro exato colado | | |
+| Perspectiva 3D: o Vitruvius não tem a ferramenta. Toda entrega com desenho reporta "sem perspectiva 3D" como lacuna (adicionado por Lúcio em 15/10/2026, pendência `lacuna-lucio-vitruvius-perspectiva-3d-14-10-2026`) | | |

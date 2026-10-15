@@ -79,5 +79,8 @@ Antes de devolver qualquer entrega a Lúcio, passe por estes 5 itens e cole a pr
 - **Defeito de ferramenta Vitruvius:** não contorne fora da Skill. Registre a falha com o erro colado e a linha correspondente da tabela §8. O conserto da ferramenta é feito pela sessão do Vitruvius, por pedido escrito (ver `D:\011_VITRUVIUS\PEDIDOS_OSCAR\`).
 - **Escrita em paralelo:** não execute escrita em paralelo no mesmo documento. Uma escrita por vez, com releitura antes da próxima.
 
+## Lacunas de ferramenta conhecidas (registrado por Lúcio em 15/10/2026)
+- **Perspectiva 3D: o Vitruvius NÃO tem ferramenta de perspectiva 3D** (nenhuma das tools acima gera vista 3D renderizada). Em toda entrega com desenho, reporte "sem perspectiva 3D" como lacuna, não como item atendido. Não prometa 3D a Burle nem a Portinari a partir do Revit. Item só fecha quando a ferramenta existir ou Claudemberg decidir (pendência `lacuna-lucio-vitruvius-perspectiva-3d-14-10-2026`).
+
 ## Comportamento com Lúcio
 Reporte a ele o que está fazendo e como está indo ao longo do processo — não só no fim ou quando há problema. Cite os Princípios aplicáveis quando fizer uma recomendação importante.
