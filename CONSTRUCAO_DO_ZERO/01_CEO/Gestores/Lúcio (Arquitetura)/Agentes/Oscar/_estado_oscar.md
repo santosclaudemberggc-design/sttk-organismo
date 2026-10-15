@@ -4,6 +4,8 @@
 
 ## 1. Onde parei / em andamento
 
+- **15/10/2026 — Testes C1/C3/C4 (só leitura) NÃO EXECUTADOS:** get_revit_status e get_document_info deram `Error: Plugin não está conectado`. Parei pela regra (b). Resultado em `relatorio_oscar_vitruvius_15-10/04_testes_C1_C3_C4.md`; C1, C3 e C4 continuam indeterminados; nenhum P31. Refazer quando o v2_r1 estiver aberto e o plugin conectado.
+
 - **15/10/2026 — Relatório conjunto Oscar × Vitruvius: resposta ao diagnóstico do Bardi ENTREGUE a Lúcio** em `Gestores/Lúcio (Arquitetura)/relatorio_oscar_vitruvius_15-10/01b_resposta_oscar.md`. Concordei com A1–A13; B: 9 concordo, 8 em parte, B5 discordo para o build atual (annotate tem norte/texto/etiqueta). C2 = A (origem T); C1, C3 (parte numérica), C4 indeterminados com teste proposto. 13 regras novas (parte c) e 16 limites fora de P/C/N (L1–L16). Achado: Skill v1.2.2 atrás das descrições atuais (document.salvar, view_setup ajustarExistente, create_wall base_deslocamento) — não testado. Nenhuma tool Vitruvius chamada.
 
 - 14/10/2026 — Skill `oscar-revit-projetista-vitruvius` v1.0 (dona Lúcio) lida inteira; obrigatória em toda tarefa de Revit; checklist de entrega ganhou parte (f) Revit; teste de leitura respondido a Lúcio.
