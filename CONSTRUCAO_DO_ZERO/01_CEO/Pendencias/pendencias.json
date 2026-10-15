@@ -4,6 +4,20 @@
     "atualizado_em":  "2026-10-10 (Wallenberg: decisoes D4-D9)",
     "itens":  [
                   {
+                      "id":  "gabaritos-exame-acessiveis-aos-agentes-15-10-2026",
+                      "tipo":  "processo",
+                      "owner":  "Claudemberg",
+                      "agente":  "bardi",
+                      "cardId":  "sistema",
+                      "desde":  "2026-10-15",
+                      "crit":  "alta",
+                      "alc":  "humano",
+                      "status":  "aberta",
+                      "txt":  "Os gabaritos dos exames de Agentes ficam na mesma pasta do caso (Casos_TESTE/exame_*/gabarito_lacrado.md). Os Agentes têm leitura livre, então não há como provar que só leram o caso.md. O hash prova que o gabarito não mudou, não que não foi lido. Os gabaritos do Ensaio 003 já ficam fora, em _gabaritos_LACRADO_bardi/.",
+                      "res":  "Levantado na verificação completa de 15/10/2026. Nos 6 exames de hoje, as respostas indicam que os Agentes não abriram o gabarito, mas é indicação, não prova.",
+                      "acao":  "Claudemberg decide: (a) mover os gabaritos de exame para _gabaritos_LACRADO_bardi/ (fora da pasta do caso; reduz o risco, mas o Agente ainda consegue ler); (b) bloquear a leitura dessa pasta para os Agentes por regra de permissão no settings.json (proteção real; mudança de configuração, decisão de Claudemberg); ou (c) as duas."
+                  },
+                  {
                       "id":  "complementares-sem-desenho-vitruvius-15-10-2026",
                       "tipo":  "decisao_humana",
                       "owner":  "Claudemberg",
