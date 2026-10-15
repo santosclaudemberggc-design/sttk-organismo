@@ -537,3 +537,7 @@
 ---
 
 **15/10/2026 — Vigência do DL 9.760/1946 (Kelsen, com Hely; autorizado por Claudemberg):** o Art. 2º e o parágrafo único seguem sem alteração identificada. A Lei 15.437/2026 altera o art. 12-C (prazo da SPU para identificar terrenos de marinha, até 31/12/2028). Texto obtido no Planalto em 15/10/2026, salvo em `Agentes/Hely/Fontes_Legislacao/Lei15437_2026_18-06_DOU-19-06_Planalto_DL9760_art12C.htm` (25.293 bytes, md5 c5a29b16ee900dc5aeb3518ab78a883, conferido). Pendências: validar no DOU de 19/06/2026; confirmar se o parágrafo único do art. 12-C foi removido ou apenas não reproduzido (o Planalto mostra "....."). Como desfazer: apagar o arquivo salvo e esta entrada. Registro do desvio: o Hely baixou o DL 9.760 do Planalto em 14/10 antes da permissão; a partir de 15/10 a busca foi autorizada.
+
+---
+
+**15/10/2026 — Criação da equipe do Fechamento (Lelé), proposta revisão 2, aprovada por Claudemberg:** criados 3 Agentes em Formação: Zanettini (etapa 14), Reidy (etapa 15 e dossiê do Gate 16) e Limmer (etapa 16). Arquivos de definição em `.claude/agents/zanettini.md`, `reidy.md` e `limmer.md`; estados em `Gestores/Lelé (Fechamento)/Agentes/`. Limites: só leitura no Vitruvius, sem shell, sem poder de liberar gate. **Não aprovado nesta decisão:** escrita do Reidy no Vitruvius, ferramenta de detalhe 2D, skill de orçamento analítico, skill do Memorial (itens 2 a 8 da proposta). Como desfazer: apagar os três arquivos de agente e a pasta `Agentes/`.
