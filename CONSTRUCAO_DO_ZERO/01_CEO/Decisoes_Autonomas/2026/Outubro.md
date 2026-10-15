@@ -584,3 +584,7 @@
 ---
 
 **15/10/2026 — Ganchos antigos do `.claude/settings.json` removidos (decisão de Claudemberg: resolver):** os ganchos PostSessionStart e PostToolUse (sincronização do cache do Drive, Item 5) estavam num formato que o Claude Code não reconhece e, mesmo corrigidos, não fariam nada útil: o script `sync_incremental.py`, chamado sozinho, só roda autotestes e quebra no Windows. Cache do Drive parado desde 13/08/2026. Mantidas as chaves `caching` e `system`, que não são configurações do Claude Code e não têm efeito. Como desfazer: restaurar `_backups/2026-10-15/settings.json`.
+
+---
+
+**15/10/2026 — Lei 15.437/2026 conferida no DOU (autorizado por Claudemberg):** o art. 12-C não tem parágrafo único; o DOU não cita medida provisória (MP 1.334/2026 só no Planalto); o texto da cópia local é idêntico ao publicado. Registro de desvio: o Hely leu a página com curl, sem gravar arquivo, depois de o WebFetch falhar; decisão sobre a aceitação desse método com Claudemberg.
