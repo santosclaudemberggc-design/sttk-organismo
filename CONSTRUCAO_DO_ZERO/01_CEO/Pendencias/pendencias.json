@@ -4,6 +4,20 @@
     "atualizado_em":  "2026-10-10 (Wallenberg: decisoes D4-D9)",
     "itens":  [
                   {
+                      "id":  "complementares-sem-desenho-vitruvius-15-10-2026",
+                      "tipo":  "decisao_humana",
+                      "owner":  "Claudemberg",
+                      "agente":  "cardozo",
+                      "cardId":  "sistema",
+                      "desde":  "2026-10-15",
+                      "crit":  "alta",
+                      "alc":  "humano",
+                      "status":  "aberta",
+                      "txt":  "Os 6 agentes de Complementares (Baumgart, Landell, Saturnino, Glaziou, Tenreiro, Mindlin) só produzem texto e não têm acesso ao Vitruvius. Só o Oscar modela no Revit. Isso limita a compatibilização (etapa 14) a texto e PDF.",
+                      "res":  "Registrado a partir da definição de Baumgart (linha 68), do mapa de prontidão (linha 14) e da proposta de Lelé. O motivo completo não está documentado; a leitura é de conflito de escrita no modelo e falta de ferramenta de desenho para eles.",
+                      "acao":  "Claudemberg e Cardozo decidem: (a) se algum complementar ganha acesso ao Vitruvius; (b) em que ordem; (c) se a regra da proposta do Reidy (cópia própria, só documentação, nunca geometria) vale também para eles."
+                  },
+                  {
                       "id":  "estado-cardozo-enxugar-sem-blocos-datados-15-10-2026",
                       "tipo":  "processo",
                       "owner":  "Wallenberg",
