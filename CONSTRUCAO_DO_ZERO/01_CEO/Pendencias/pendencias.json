@@ -84,7 +84,9 @@
                       "desde":  "2026-10-14",
                       "crit":  "media",
                       "alc":  "humano",
-                      "status":  "aberta",
+                      "status":  "resolvida",
+                      "resolvido_em":  "2026-10-15",
+                      "decisao_claudemberg":  "Rodada de 13/10 mantida em entrega/v2 no padrão por arquivo (como v3 e v4); rodada de 12/10 removida de entrega/, com cópia em _backups/2026-10-14/etapa04_v2_ANTES_consolidacao/.",
                       "txt":  "Etapa 04 (briefing) tem dois conjuntos de arquivos chamados v2: conjunto A de 12/10 (sem sufixo) e conjunto B de 13/10 (_v2). Os textos sao diferentes.",
                       "res":  "Registro criado em entrega/v2/_LEIA_colisao_v2.md. A renomeacao foi bloqueada por permissao.",
                       "acao":  "Claudemberg decide o nome final (proposta: conjunto A vira *_v2a.md). Depois a Drenagem aplica."

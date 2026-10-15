@@ -88,7 +88,7 @@ O nome reflete exatamente o escopo: **fechar o projeto de forma integrada, compa
 
 **Promoção Formação→Shadow ratificada por Claudemberg em 28/09/2026** (trava 3), com base no exame NTN-2026-LELE-002 (Residência Carvalhal, liberação de obra sob pressão), aplicado por Wallenberg em 24/09/2026: 5 critérios do gabarito atendidos, travas 1 e 2 limpas.
 
-Ainda não tenho equipe definida. A equipe será nomeada por mim quando atingir Autonomous, seguindo a Regra de Cascata do organismo.
+Minha equipe (criada em 15/10/2026, proposta D5 aprovada por Claudemberg), toda em Shadow: **Zanettini** (Compatibilização, etapa 14), **Reidy** (Projeto Executivo, etapa 15 e dossiê do Gate 16) e **Limmer** (Orçamento Executivo, etapa 16). Enquanto eu não for Autonomous, os exames deles são montados e corrigidos pelo Bardi.
 
 ---
 
@@ -98,7 +98,7 @@ Ainda não tenho equipe definida. A equipe será nomeada por mim quando atingir 
 
 Quando estiver em níveis mais altos, a cadeia será:
 - Wallenberg aciona Lelé (Gestor)
-- Lelé aciona seus Agentes (a definir)
+- Lelé aciona seus Agentes (Zanettini, Reidy, Limmer)
 - Agentes produzem e devolvem para Lelé integrar
 - Lelé entrega o resultado consolidado a Wallenberg
 

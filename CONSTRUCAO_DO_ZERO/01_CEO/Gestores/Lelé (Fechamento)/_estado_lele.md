@@ -2,9 +2,11 @@
 
 > Arquivo de estado pessoal. Leio ao nascer, escrevo ao morrer.
 
-**Última atualização:** 10/10/2026 — proposta de equipe entregue (D5). Nível: **Shadow**.
+**Última atualização:** 15/10/2026 — equipe criada e promovida a Shadow (Zanettini, Reidy, Limmer). Nível: **Shadow**.
 
 ## 1. Onde parei / em andamento
+
+- **15/10/2026 — Equipe do Fechamento criada e examinada.** Proposta D5 (revisão 2) aprovada por Claudemberg. Agentes criados por Wallenberg: Zanettini (etapa 14), Reidy (etapa 15 e dossiê do Gate 16), Limmer (etapa 16). Os três foram promovidos de Formação para Shadow no mesmo dia, com ratificação de Claudemberg: Zanettini (EXAME-ZAN-02, aprovado com ressalvas), Reidy (EXAME-REI-02, 9,18) e Limmer (EXAME-LIM-02, 10,00). Lição: três dos casos que montei tiveram defeito de montagem (isca fraca, isca não plantada, gabarito contra o caso). Por decisão de 15/10, exames dos meus Agentes passam a ser montados e corrigidos pelo Bardi enquanto eu não for Autonomous.
 
 - Criado em 09/09/2026 por Wallenberg (aprovado por Claudemberg).
 - **Status de execução:** zero casos reais ativos. Foco exclusivo atual é o Exame de Formação → Shadow, via casos-teste e projetos simulados — não há projeto de cliente em andamento.
@@ -14,7 +16,7 @@
 
 - [RESOLVIDO 28/09/2026] Exame de Formação → Shadow (NTN-2026-LELE-002, Residência Carvalhal) aprovado por Wallenberg em 24/09 e ratificado por Claudemberg em 28/09/2026. Agora em Shadow: proponho ações, Wallenberg aprova antes de executar.
 - [PENDENTE] Primeiro caso real de Compatibilização só entra depois de promovido a Shadow/Assisted — aprendo o fluxo executando, não em sandbox.
-- [AGUARDANDO CLAUDEMBERG] Proposta de equipe (D5, 10/10/2026), **revisão 2**, a pedido de Claudemberg: `proposta_equipe_fechamento_10-10-2026.md` — 3 Agentes: Zanettini (14, RFIs), Reidy (15 inteira, Memorial Descritivo final, completude e exequibilidade, dossiê do Gate 16, pacote para a obra só depois do Gate) e Limmer (16). Etapa 17 sem Agente. Mascaró não é emprestado. Reidy fica só com leitura no Vitruvius agora; depois, escrita só de documentação, em cópia própria. 9 decisões na seção 7. Nada criado. Depois do sim: montar os 3 casos de exame com gabarito lacrado (o do Limmer depende da Skill de orçamento analítico).
+- [RESOLVIDO 15/10/2026] Proposta de equipe (D5, revisão 2) aprovada por Claudemberg. Equipe criada. Decisões ainda pendentes da proposta (seção 7, itens 2 a 8): escrita do Reidy no Vitruvius, ferramenta de detalhe 2D, skill do Memorial Descritivo.
 
 ## 3. Aprendizados que não posso esquecer
 

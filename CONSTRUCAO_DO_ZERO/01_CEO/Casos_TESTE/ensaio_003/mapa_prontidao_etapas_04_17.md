@@ -16,9 +16,9 @@ Legenda: 🟢 a equipe tem o que precisa · 🟡 entrega em texto/memorial, sem 
 | 11 | Interiores | Cardozo → Tenreiro | 🟡 | Produz especificação; imagens dependem de Burle (bloqueado). |
 | 12 | Paisagismo | Cardozo → Glaziou | 🟡 | Idem. |
 | 13 | Automação | Cardozo → Landell | 🟡 | Idem. |
-| 14 | Compatibilização | Lelé → (sem equipe) | 🔴 | Lelé em Shadow, **sem nenhum Agente**. Sem modelo BIM não há clash detection; compatibilização seria só por leitura de texto/PDF (Skill `compatibilizacao-projetos` cobre o método 2D). Destrava: Lelé nomeia a equipe + decisão de Claudemberg sobre fazer a 14 em 2D. |
-| 15 | Projeto Executivo | Lelé → (sem equipe) | 🔴 | Executivo é desenho detalhado. Depende do Vitruvius (Fases 2–3) e da equipe do Lelé. |
-| 16 | Orçamento Executivo | Lelé → (sem equipe) | 🔴 | Sem equipe. A base existe (Skill `ia-orcamento-executivo-obra`, Mascaró sabe CUB/SINAPI), mas Mascaró é do Villaça. Quantitativos automáticos (QTO) não existem no Vitruvius. |
+| 14 | Compatibilização | Lelé → Zanettini | 🟡 | **[15/10/2026]** Zanettini em Shadow (EXAME-ZAN-02). Compatibilização em texto e PDF: sem modelo BIM, sem clash detection; complementares sem acesso ao Vitruvius (pendência de Claudemberg e Cardozo). |
+| 15 | Projeto Executivo | Lelé → Reidy | 🟡 | **[15/10/2026]** Reidy em Shadow (EXAME-REI-02, 9,18). Compila e confere em texto; escrita de documentação no Vitruvius pendente de decisão de Claudemberg. |
+| 16 | Orçamento Executivo | Lelé → Limmer | 🟡 | **[15/10/2026]** Limmer em Shadow (EXAME-LIM-02, 10,00). Skill `orcamento-executivo-analitico-sinapi-rj` v1.0 (ativa-com-ressalva). Consulta SINAPI depende de Wallenberg (terminal). |
 | 17 | Liberação de Obra (Gate 16) | Lelé + Wallenberg | 🟡 | Etapa de decisão; trava se a 14–16 não existirem. |
 
 ## O que isso significa para o ensaio
