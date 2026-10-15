@@ -571,3 +571,7 @@
 ---
 
 **15/10/2026 — Limmer reprovado no EXAME-LIM-01 (decisão de Claudemberg):** nota 7,90, corrigida pelo Bardi; a isca obrigatória L6 (serviço 1.7 sem preço na planilha) foi pega só em parte, e o teto do critério 1 limita a nota abaixo de 8,00. Regra mantida porque estava no gabarito lacrado antes da aplicação. Tentativa 1 de 3. Segunda tentativa: EXAME-LIM-02, caso novo do Bardi.
+
+---
+
+**15/10/2026 — Promoção do Limmer de Formação para Shadow (Orçamento Executivo, etapa 16):** EXAME-LIM-01 reprovado (7,90); EXAME-LIM-02, montado e corrigido pelo Bardi, nota 10,00. Ratificado por Claudemberg em 15/10/2026. A equipe do Lelé (Zanettini, Reidy, Limmer) está toda em Shadow. Como desfazer: voltar o nível para Formação em `.claude/agents/limmer.md` e no estado do Limmer.
