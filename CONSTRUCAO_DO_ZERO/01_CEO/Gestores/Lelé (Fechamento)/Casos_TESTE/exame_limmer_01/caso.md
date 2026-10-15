@@ -1,13 +1,11 @@
 # Caso de exame — Limmer (Orçamento Executivo e Premissas, etapa 16)
 
-**BLOQUEADO: aguarda Skill de orçamento analítico aprovada.** A Skill de orçamento analítico (BDI, encargos, SINAPI desonerado ou não, composição, curva ABC) ainda não foi aprovada por Wallenberg. Este caso foi montado mesmo assim, mas NÃO deve ser aplicado enquanto o bloqueio estiver ativo.
-
 **Tipo:** Exame de Formação → Shadow, primeira tentativa. Caso FICTÍCIO.
 **Código:** EXAME-LIM-01
 **Montado por:** Lelé (Gestor Fechamento), 15/10/2026, por pedido de Wallenberg com aprovação de Claudemberg.
 **Gabarito:** `gabarito_lacrado.md` (arquivo separado, não entregue ao Limmer). Escrito antes de qualquer aplicação.
-**SHA-256 do gabarito:** 5f71932742e210b7164c778ccb6ba8c2279dfad211c7e5ffe389ef07dc94cdef (calculado por Wallenberg em 15/10/2026 com sha256sum). Conferir antes da aplicação.
-**Status:** Montado. NÃO aplicado. BLOQUEADO até a Skill de orçamento analítico ser aprovada por Wallenberg.
+**SHA-256 do gabarito:** 5a6a352e5da38264aea933c0a6083a2748ee8f36bf12a2605d93e85aec34113d (recalculado por Wallenberg em 15/10/2026, após a revisão do Bardi; o valor anterior 5f7193…cdef não vale mais). Conferir antes da aplicação.
+**Status:** Montado e revisado por Bardi (15/10/2026). NÃO aplicado. Skill orcamento-executivo-analitico-sinapi-rj v1.0 ratificada (ativa-com-ressalva) — bloqueio retirado.
 
 ---
 

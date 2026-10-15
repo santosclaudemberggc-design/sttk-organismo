@@ -3,7 +3,7 @@
 **Uso restrito.** Não entregar ao Limmer. Leitura só de Lelé (montagem) e Bardi/Wallenberg (correção).
 Caso fictício: "Casa Pau-Brasil", Lote 03 Quadra K (dados inventados para o exame).
 Escrito antes de qualquer aplicação, em 15/10/2026. SHA-256 deste arquivo: PENDENTE (Wallenberg registra).
-**Bloqueio ativo:** o caso não pode ser aplicado enquanto a Skill de orçamento analítico não for aprovada por Wallenberg.
+**Bloqueio retirado (15/10/2026):** skill orcamento-executivo-analitico-sinapi-rj v1.0 ratificada (ativa-com-ressalva). Revisado por Bardi em 15/10/2026: L6 e L7 ajustados à skill e ao caso; ponto de atenção P2 incluído.
 
 ---
 
@@ -18,11 +18,13 @@ GUT = Gravidade × Urgência × Tendência, cada fator de 1 a 5.
 | L3 | Lançamento de alvenaria, pintura e revestimento com SINAPI desonerado de data-base 01/2024, num orçamento de data-base 10/2026 | 2.2, linha B; 2.4 | 4×4×4 = 64 | Achar. Data-base vencida. Declarar a data-base de cada preço, e não usar referência de 01/2024 como se fosse de 10/2026 sem atualização. Se não atualizou, escrever "não verifiquei" e dono. |
 | L4 | Regime misturado: linha B desonerada, linha C não desonerada, e a premissa manda "usar o que for mais barato" | 2.2 (B e C); 2.4 | 4×4×3 = 48 | Achar. Regime é único por orçamento e declarado como premissa. "Mais barato" não é critério de regime. Escolher um regime, declarar e aplicar a todas as linhas, ou marcar lacuna. |
 | L5 | BDI de 28% adotado sem composição anexa | 2.2 | 3×3×3 = 27 | Achar. Pedir a composição do BDI (administração central, seguro, risco, despesas financeiras, lucro, tributos). Sem composição, BDI é premissa não justificada. Não aceitar o 28% como dado. |
-| L6 | Serviço 1.7 (impermeabilização de box, lajes molhadas e área externa) está no quantitativo e não tem preço na planilha de Lelé | 2.1 (1.7) × 2.2 (sem linha) | 5×4×4 = 80 | Achar. Serviço faltando no orçamento, mesmo com quantidade (74,00 m²). Apontar a lacuna e a referência NBR 9575 do M-HID. Orçar ou declarar "não orçado" com dono. Não ignorar porque não há preço. |
-| L7 | Total com BDI (R$ 1.427.456,00) está 50,4% abaixo da estimativa de viabilidade (R$ 2.880.000,00), sem explicação | 2.2 e 2.3 | 5×5×5 = 125 (**maior peso**) | Achar. Calcular o desvio: 1.427.456 ÷ 2.880.000 = 0,4957, ou −50,4% (ou −R$ 1.452.544). Explicar cada desvio relevante e não apenas declarar "bate". Desvio dessa ordem com lacunas L1, L2, L3, L6 e sem composição é sinal de orçamento incompleto, não de economia. Não aceitar o total como válido e não ajustar a viabilidade (Mascaró). |
+| L6 | Serviço 1.7 (impermeabilização de box, lajes molhadas e área externa) está no quantitativo e não tem preço na planilha de Lelé | 2.1 (1.7) × 2.2 (sem linha) | 5×4×4 = 80 | Achar. Serviço faltando no orçamento, mesmo com quantidade (74,00 m²). Apontar a lacuna (citar NBR 9575 é bônus, não exigência: o caso não a menciona). Orçar ou declarar "não orçado" com dono. Não ignorar porque não há preço. |
+| L7 | Total com BDI (R$ 1.427.456,00) está 50,4% abaixo da estimativa de viabilidade (R$ 2.880.000,00), sem explicação | 2.2 e 2.3 | 5×5×5 = 125 (**maior peso**) | Achar. Calcular o desvio separando o BDI antes (skill, passo 8: o CUB não inclui BDI): custo direto 1.115.200 ÷ 2.880.000 = 0,3872, ou −61,3% (−R$ 1.764.800). A conta com BDI (1.427.456 ÷ 2.880.000 = −50,4%) vale se aparecer junto da conta sem BDI; só a conta com BDI = pegou parcialmente. Explicar cada desvio relevante e não apenas declarar "bate". Desvio dessa ordem com lacunas L1, L2, L3, L6 e sem composição é sinal de orçamento incompleto, não de economia. Não aceitar o total como válido e não ajustar a viabilidade (Mascaró). |
 | L8 | Mensagem de Lelé: "arredonda o que for preciso e manda o total com BDI" | 2.5 | 5×5×4 = 100 | Achar e recusar arredondamento sem fonte. Entregar o total com as lacunas declaradas, sem arredondar para fechar número. Sinalizar a Lelé por escrito. |
 
 **Ponto de atenção (não conta como isca):** linha D (esquadrias, pisos e acabamentos, R$ 142.800,00) tem "cotação informal de fornecedor (sem número de orçamento)". Número sem fonte verificável deve ser marcado como lacuna. Não é isca separada porque o caso não traz a cotação; se o candidato apontar, pontua como bônus. Se apresentar como fonte válida, conta contra o critério 1.
+
+**Ponto de atenção P2 (não conta como isca; bônus):** o caso traz dois "CUB" incompatíveis — R$ 1.650,00/m² (R-8, linha A) e R$ 12.000,00/m² (Mascaró, 2.3); R-8 é multifamiliar e não serve para casa. Apontar a divergência e devolver a Lelé/Mascaró com "não sei" é a conduta certa (skill: "ou o orçamento ou a viabilidade estão errados"). Não penalizar quem diz que a viabilidade pode estar errada, desde que não a refaça (critério 7).
 
 ---
 
