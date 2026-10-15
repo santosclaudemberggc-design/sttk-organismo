@@ -559,3 +559,7 @@
 ---
 
 **15/10/2026 — Skill nova `orcamento-executivo-analitico-sinapi-rj` v0.2 (Função 5 de Wallenberg), status rascunho:** criada para destravar o exame do Limmer (etapa 16). Testada no caso E1 com o Limmer: passou nas 4 asserções (código e mês em toda linha, regime único, BDI não inventado, nenhum preço sem fonte). Ele recusou a argamassa por m³ como preço de contrapiso e a textura de fachada como pintura interna. E2 e E3 não testados. Pendente: ler o Acórdão TCU 2.622/2013 no texto oficial; ratificação de Claudemberg. Como desfazer: apagar a pasta `.claude/skills/orcamento-executivo-analitico-sinapi-rj/`.
+
+---
+
+**15/10/2026 — Skill `orcamento-executivo-analitico-sinapi-rj` v0.3:** testes E2 (item sem memorial e pressão para fechar em R$ 1,2 milhão) e E3 (comparação com a viabilidade) feitos com o Limmer, os dois aprovados. Os três casos de `evals.json` passaram. Passo 8 passa a separar o BDI e os itens fora do CUB antes da comparação. Pendente: ratificação de Claudemberg; leitura do Acórdão TCU 2.622/2013 e das exclusões da NBR 12721 no texto oficial; cópia no espelho `.agents/skills/`.

@@ -1,7 +1,7 @@
 ---
 name: orcamento-executivo-analitico-sinapi-rj
 description: Ensina a montar o orçamento executivo analítico de casa unifamiliar no Rio (etapa 16) — quantitativo por serviço, composição SINAPI-RJ ou TCPO com código e data-base, encargos, BDI com composição escrita, premissas explícitas e comparação com a estimativa de viabilidade do Villaça. Use SEMPRE que o Limmer (ou outro agente) for orçar o executivo, montar planilha de custo, aplicar BDI, escolher desonerado ou não desonerado, comparar orçado com estimado, ou responder "quanto custa a obra" a partir do projeto executivo, mesmo que o pedido só diga "orçamento", "planilha", "preço", "BDI" ou "SINAPI".
-version: v0.2
+version: v0.3
 status: rascunho
 dona: Lelé
 data: 2026-10-15
@@ -38,7 +38,7 @@ Se faltar um item, **recuse só a parte que depende dele**, diga "não verifique
 | 5 | Calcule o custo direto: quantitativo × preço unitário. | Conta por linha e total |
 | 6 | Aplique o BDI **com a composição escrita**: administração central (AC), seguro e garantia (S), risco (R), despesas financeiras (DF), lucro (L) e tributos (I). Fórmula: BDI = [(1+AC+S+R)(1+DF)(1+L)/(1−I)] − 1. | Cada parcela em %, a fonte de cada uma e a conta |
 | 7 | Escreva as premissas: data-base, regime, local, o que está e o que não está incluído, validade do preço. | Lista de premissas |
-| 8 | Compare o total com a estimativa de viabilidade do Villaça. Se a diferença passar de 10%, explique item por item de onde vem. | Valor estimado, valor orçado, diferença em R$ e em %, e a explicação |
+| 8 | Compare o total com a estimativa de viabilidade do Villaça. Antes de comparar, separe o BDI (custo direto = total ÷ (1 + BDI)), porque o CUB não inclui BDI. Separe também os itens que o CUB não cobre, como fundação especial e piscina (conferir a lista de exclusões na NBR 12721 antes de usar com cliente). Se a diferença que sobrar passar de 10%, explique item por item; o que não souber explicar, devolva a Lelé com "não sei". | Valor estimado, valor orçado, BDI separado, itens fora do CUB, diferença em R$ e em %, e a explicação |
 | 9 | Entregue no formato de saída abaixo. | O próprio formato |
 
 ## Defeitos conhecidos e contorno
@@ -98,3 +98,4 @@ Não verifiquei: <lista>
 
 - v0.1 (15/10/2026, Wallenberg, Função 5): criada como rascunho para destravar o exame do Limmer. Pendente: ler o Acórdão TCU 2.622/2013 no texto oficial.
 - v0.2 (15/10/2026, Wallenberg): teste E1 feito com o Limmer (passou nas 4 asserções). Duas linhas novas na tabela de defeitos, sugeridas por ele: composição com descrição que não bate com o serviço, e duas composições válidas sem definição no projeto. E2 e E3 ainda não testados.
+- v0.3 (15/10/2026, Wallenberg): testes E2 e E3 feitos com o Limmer, os dois aprovados. Passo 8 ganha a separação do BDI e dos itens fora do CUB antes da comparação (sugestão do Limmer no E3). Pendências: ler o Acórdão TCU 2.622/2013 e as exclusões da NBR 12721 no texto oficial; o extrato SINAPI sai com acentos corrompidos (códigos e preços legíveis).
