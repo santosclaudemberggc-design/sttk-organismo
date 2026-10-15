@@ -4,6 +4,20 @@
     "atualizado_em":  "2026-10-10 (Wallenberg: decisoes D4-D9)",
     "itens":  [
                   {
+                      "id":  "lei15437-dou-art12c-paragrafo-mp-pendente-15-10-2026",
+                      "tipo":  "lacuna_conhecimento",
+                      "owner":  "Kelsen",
+                      "agente":  "hely",
+                      "cardId":  "sistema",
+                      "desde":  "2026-10-15",
+                      "crit":  "media",
+                      "alc":  "planejado",
+                      "status":  "aberta",
+                      "txt":  "Lei 15.437/2026 (art. 12-C do DL 9.760): dois pontos não confirmados no DOU de 19/06/2026. (1) Se o art. 12-C tem parágrafo único (a cópia do Planalto mostra reticências após o caput). (2) Se a ementa cita MP 1.334/2026 ou 1.332/2025 (a cópia do Planalto diz 1.334). O prazo da SPU (31/12/2028) não depende desses pontos.",
+                      "res":  "Hash da cópia local conferido (c5a29b16ee900dc5aeb3518ab78a883, 25.293 bytes). Leitura no DOU falhou em 15/10 (socket hang up no in.gov.br, duas URLs).",
+                      "acao":  "Tentar de novo a leitura do DOU de 19/06/2026 (Seção 1, p. 1) quando o portal responder, com autorização do Claudemberg. Se confirmar, fechar este item e atualizar o livro-razão."
+                  },
+                  {
                       "id":  "ensaio003-regra-3-tentativas-etapa5-14-10-2026",
                       "tipo":  "processo",
                       "owner":  "Wallenberg",
