@@ -46,7 +46,7 @@ Regra aplicada a todas as 27 células: a célula só cita a seção que afirma a
 | Item do parecer | Status | Onde está na v6 |
 |---|---|---|
 | O que corrigir 1 (garagem com a Skill de vaga; alternativa A; propagar Matriz, P2, Anexo G/E) | **Atendido com pendência** (R1 da Skill de vaga; manobra compartilhada; XXII na subzona) | Anexo C-4 a C-9, C-13 a C-15, C-17; P2 §1, §2, §3.3, §5.3, §8; Matriz l. 4, 9, 13, 21, 22; Anexo E-5, E-8, E-12 |
-| O que corrigir 2 (regra da G às 27 células) | **Atendido** (auditoria minha feita) | Anexo G, l. 279–287; detalhe em `tabela_correcoes_oscar_v6.md` §2 |
+| O que corrigir 2 (regra da G às 27 células) | **Atendido por conferência do Oscar; não refeito por mim** (errata 16/10, ERRATUM item 7) | Anexo G, l. 279–287; detalhe em `tabela_correcoes_oscar_v6.md` §2 |
 | O que corrigir 3 (errata Etapa 01 l. 181; XXII no decreto3046) | **Atendido com pendência**: XXII já está na Skill decreto v1.5 (Kelsen, 08/10); errata da l. 181 segue com Kelsen | P2 §2; Anexo C-8; Anexo H |
 | O que corrigir 4 (espelho `.agents/skills`, Drenagem) | **Não atendido nesta v6.** Não é tarefa de Oscar nem parte da ordem de execução | — |
 | O que corrigir 5 (erro do gabarito da Isca 4, Bardi) | **Não é de Lúcio nem de Oscar.** Repassado ao Bardi. A v6 não cita "Isca 4" nem o gabarito como fonte (saiu do C-4) | Anexo C-4 |

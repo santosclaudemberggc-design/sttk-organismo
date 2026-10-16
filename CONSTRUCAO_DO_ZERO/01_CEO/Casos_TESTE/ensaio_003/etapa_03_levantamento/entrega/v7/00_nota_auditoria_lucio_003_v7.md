@@ -45,7 +45,7 @@
 ## 6. Pendências
 
 - **"a" (m² por vaga):** pendente de verificação primária. Cenário 25,00 rotulado; limite inferior (manobra compartilhada) sem fonte primária.
-- **Divergência p. 19 × p. 15:** em verificação; eu conferi p. 15 e p. 19 no PDF.
+- **Divergência p. 19 × p. 15:** resolvida em 16/10/2026 (ERRATUM item 1): Art. 29 III está na p. 15 do PDF SMU; p. 19 = Art. 34–35. Quem citou p. 19 foi o parecer v6.
 - **Kelsen:** K1 (subzona A-ENS, designação do caso); L2/L3 da Skill decreto; R1 da Skill de vaga.
 - **Villaça:** S3/H1 (339,84 a 359,84 m²) sem espaço físico.
 - **Espelho `.agents/skills/` da Skill de levantamento:** não atualizado (tarefa da Drenagem).
