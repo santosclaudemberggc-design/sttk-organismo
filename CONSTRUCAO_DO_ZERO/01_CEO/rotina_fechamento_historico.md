@@ -7,6 +7,24 @@ metadata:
   frequencia: toda vez que o template excede 2 rodadas
 ---
 
+## [2026-10-13] -- Diaria Skills v3.5.0 (Terça) -- PIPELINE LINEAR (lacunas prioritárias + pesquisa sem entrega)
+
+### RODADA ATUAL (O que foi entregue)
+- Prioridade zero (lacunas com dono): acionada Kelsen (agente kelsen) para `kelsen-k1-xxii-subzona-a-ens-08-10` (Dec. 3.046 XXII em A-ENS) e `lacuna-kelsen-lei13146-lei12651-art4-12-10` (texto oficial Lei 13.146 e Lei 12.651 art. 4º). Resultado: ver relatório da rodada.
+- Pesquisa (Passo 1, 6 buscas standard): Kelsen (LC 281/2025 e LICIN 2.0, sem texto de prazos); Lúcio (fachada poente/brise RJ, sem fonte primária nova); Cardozo (SPT/lençol raso Barra/Recreio). Nenhum achado novo: todos cobertos por Skills existentes. Nenhuma Skill criada.
+- `/watch:watch`: buscas de vídeo (2 de 6) não acharam vídeo técnico relevante ao eixo; registrado, sem vídeo assistido.
+- Lacuna `lacuna-lucio-nbr9050-edicao-09-10-2026`: não avançou. Depende de compra/autorização de Claudemberg (NBR 9050:2020 no acervo `D:\008_Normas ABNT\`).
+- Feed do Painel: último evento `status` é de 02/10 (Resumo da semana 28/09-02/10). Sem evento novo: não é sexta.
+
+### PENDÊNCIAS E BLOQUEIOS
+- Cardozo: fonte de sondagem Barra/Recreio só secundária nesta rodada; a Skill de fundações já cobre o tema.
+- Ensaio 003 etapa 4 (lacre violado) e etapa 5 (trava D4): só Claudemberg decide. Fora do escopo da Diária.
+
+### O QUE TOMAR CUIDADO
+- Pesquisa de Passo 1 volta cada vez mais redundante com o acervo. Antes de pesquisar, conferir `.claude/skills/` pelo tema (já foi feito nesta rodada).
+
+---
+
 ## [2026-10-12] -- Diaria Skills v3.5.0 (Segunda) -- PIPELINE LINEAR (pesquisa sem entrega)
 
 ### RODADA ATUAL (O que foi entregue)

@@ -24,6 +24,26 @@ metadata:
 
 ---
 
+## [2026-10-16] -- Diaria Skills v3.5.0 (Sexta) -- SEXTA (Painel + Dashboard + Análise; pipeline linear não rodou)
+
+### RODADA ATUAL (O que foi entregue)
+- Pré-rodada: dia confirmado por `(Get-Date).DayOfWeek` = Friday (09:06). Passagem de 15/10 lida. Feed do Painel: último `status` era de 09/10.
+- Painel (Passo 9): 2 eventos `marco` gravados (exames de 15/10 com Reidy, Limmer e Zanettini a Shadow; Ensaio 003 etapa 5 reprovada na v2). Evento `status` "Resumo da semana 12-16/10" gravado por último. `painel_status.json` reescrito (25 membros, 29 pendências abertas, 83 fechadas, 1 Skill na semana). HTML não editado.
+- Dashboard: Ensaio 003 lido de `_estado_ensaio_003.json` (etapa 5/17, reprovada, tentativas 2 de 3, próxima ação refazer, trava v3 fechada). Níveis contados por `**Nível atual:**` nos 25 arquivos de `.claude/agents/` (sem `_template_gestor.md`).
+- Learning Agent (Passo 7, opcional, 45 min): não rodou nesta rodada.
+- Passo 1 a 4 e Passo 8 não rodaram: sexta segue o fluxo próprio, sem pipeline de pesquisa. Nenhuma Skill criada nem instalada.
+
+### PENDÊNCIAS E BLOQUEIOS
+- **Prioridade zero da lacuna do organismo (06/10) para a próxima segunda:** há 6 lacunas `lacuna_conhecimento` com `alc: auto` abertas (Lúcio: NBR 9050, perspectiva 3D, altura desconectada, pé-direito e altura total, Burle; Kelsen: Anexo XXI TO por zona e F-1 TO de ZPP). A passagem de 15/10 manda começar pelo Anexo XXI, cuja instalação é decisão de Claudemberg.
+- Ensaio 003 etapa 5: `trava_v3_etapa_5` segue `liberada: false` (Claudemberg, 14/10). Não mexer até a decisão.
+- Pendências de decisão humana seguem com Claudemberg: compra de normas (ABNT 12721, 14653-2, 13133), conflito de paginação do COES Art. 29 III, autorização do Hely para WebFetch/WebSearch.
+- Dashboard: detalhamento por criticidade das 29 abertas não recontado. Contagem é bruta, por status no arquivo.
+- Índice `Skills_Propostas/2026/Outubro/indice.md` ainda sem a proposta do Anexo XXI (pendência de 15/10).
+
+### O QUE TOMAR CUIDADO
+- Sexta com Painel: o status vem do `feed.jsonl` via Append-STTKLog, nunca do HTML. Número de `Nível atual` sem a linha não entra na contagem.
+- Os exames de Reidy, Limmer e Zanettini (15/10) ainda não tinham evento no Painel. Foram gravados hoje como `marco`.
+
 ## [2026-10-15] -- Diaria Skills v3.5.0 (Quinta) -- PIPELINE LINEAR (lacuna Anexo XXI com Kelsen + pesquisa sem Skill nova)
 
 ### RODADA ATUAL (O que foi entregue)
@@ -64,24 +84,6 @@ metadata:
 
 ### O QUE TOMAR CUIDADO
 - Subagente que delega a outro e encerra antes do retorno deixa o trabalho órfão: exigir artefato verificável antes de marcar item como resolvido.
-
-## [2026-10-13] -- Diaria Skills v3.5.0 (Terça) -- PIPELINE LINEAR (lacunas prioritárias + pesquisa sem entrega)
-
-### RODADA ATUAL (O que foi entregue)
-- Prioridade zero (lacunas com dono): acionada Kelsen (agente kelsen) para `kelsen-k1-xxii-subzona-a-ens-08-10` (Dec. 3.046 XXII em A-ENS) e `lacuna-kelsen-lei13146-lei12651-art4-12-10` (texto oficial Lei 13.146 e Lei 12.651 art. 4º). Resultado: ver relatório da rodada.
-- Pesquisa (Passo 1, 6 buscas standard): Kelsen (LC 281/2025 e LICIN 2.0, sem texto de prazos); Lúcio (fachada poente/brise RJ, sem fonte primária nova); Cardozo (SPT/lençol raso Barra/Recreio). Nenhum achado novo: todos cobertos por Skills existentes. Nenhuma Skill criada.
-- `/watch:watch`: buscas de vídeo (2 de 6) não acharam vídeo técnico relevante ao eixo; registrado, sem vídeo assistido.
-- Lacuna `lacuna-lucio-nbr9050-edicao-09-10-2026`: não avançou. Depende de compra/autorização de Claudemberg (NBR 9050:2020 no acervo `D:\008_Normas ABNT\`).
-- Feed do Painel: último evento `status` é de 02/10 (Resumo da semana 28/09-02/10). Sem evento novo: não é sexta.
-
-### PENDÊNCIAS E BLOQUEIOS
-- Cardozo: fonte de sondagem Barra/Recreio só secundária nesta rodada; a Skill de fundações já cobre o tema.
-- Ensaio 003 etapa 4 (lacre violado) e etapa 5 (trava D4): só Claudemberg decide. Fora do escopo da Diária.
-
-### O QUE TOMAR CUIDADO
-- Pesquisa de Passo 1 volta cada vez mais redundante com o acervo. Antes de pesquisar, conferir `.claude/skills/` pelo tema (já foi feito nesta rodada).
-
----
 
 ## O QUE NÃO FAZER (acumulado)
 

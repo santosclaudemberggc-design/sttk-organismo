@@ -1,10 +1,10 @@
 {
   "_comentario": "Números dos cartões 'Onde o organismo está' do Painel. Reescrito inteiro pela Rotina Diária de sexta (Passo 9), nunca editado no HTML. Cada campo: [valor, total_ou_segundo_valor, nota]. Níveis contados pela linha '**Nível atual:**' de .claude/agents/*.md; pendências de CONSTRUCAO_DO_ZERO/01_CEO/Pendencias/pendencias.json (fechadas = resolvida + descartada + fechada-*).",
-  "data": "09/10/2026",
-  "gestores_autonomous": [3, 5, "Legal, Arquitetura e Complementares · Viabilidade (Villaça) Assisted · Fechamento (Lelé) Shadow"],
-  "membros": { "autonomous": 10, "assisted": 4, "shadow": 1, "formacao": 4, "nota": "19 membros · contagem de 09/10 pela linha Nível atual · inclui Artigas (canal do Gate) e Bardi (Examinador, criado 30/09) · Mascaró/Fiker em Formação pela regra de nascimento, sem exame" },
-  "pendencias": [18, 79, "18 abertas ou em andamento (contagem por status em 09/10) · detalhamento por criticidade não recontado nesta rodada"],
+  "data": "16/10/2026",
+  "gestores_autonomous": [3, 6, "Legal, Arquitetura e Complementares · Viabilidade (Villaça) Assisted · Fechamento (Lelé) Shadow · Comercial da Reforma (Rino) Formação"],
+  "membros": { "autonomous": 10, "assisted": 4, "shadow": 4, "formacao": 7, "nota": "25 membros · contagem de 16/10 pela linha Nível atual · 22 de Construção do Zero + 3 da Reforma (Rino, Lina, Severiano, Formação desde 11/10) · Autonomous inclui 6 provisórios (decisão D6 de 10/10) · Limmer, Reidy e Zanettini a Shadow em 15/10" },
+  "pendencias": [29, 83, "29 abertas (contagem por status no pendencias.json em 16/10) · detalhamento por criticidade não recontado nesta rodada"],
   "caso_real": [1, 0, "Interiores Daniel–OB (v3) no Gate do Maurício · nenhum aceito ponta a ponta"],
   "marcos": [7, 9, "faltam caso real aprovado no Gate · cliente aceito"],
-  "skills_semana": [8, 8, "arquivos novos ou corrigidos em Skills_Propostas/Outubro até 08/10 · contagem de ativas não recontada · 0 usadas em caso real · Ensaio 003 na etapa 3/17 aprovada"]
+  "skills_semana": [1, 1, "Proposta Kelsen do Anexo XXI v1.0 (não instalada, aguarda decisão de Claudemberg) · 0 usadas em caso real · Ensaio 003 na etapa 5/17, reprovada, refazer"]
 }
