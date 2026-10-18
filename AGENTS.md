@@ -25,6 +25,12 @@ vem definida: as rotinas `wallenberg-*` e os agentes Kelsen, Lúcio, Cardozo, Le
 Artigas e suas equipes são de **Construção do Zero**. Perguntar ali travaria a rotina, porque ninguém
 responde.
 
+**Sabatina antes de construir (decisão de Claudemberg em 18/10/2026).** Em conversa de **Construção do
+Zero** aberta por Claudemberg, se o pedido for **construir ou mudar algo** no organismo (ferramenta, MCP,
+app, Skill, Agente, rotina, estrutura), leia `.agents/skills/sabatina/SKILL.md` e conduza a sabatina
+antes de qualquer trabalho. Não faça sabatina para pergunta, análise, vídeo ou consulta rápida, nem em
+rotina agendada ou subagente (mesmo motivo acima: ninguém responde).
+
 ---
 
 Dependendo do seu papel, carregue o slice apropriado (os slices abaixo são da frente Construção do Zero):
