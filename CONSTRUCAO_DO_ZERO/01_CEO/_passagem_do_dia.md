@@ -1,32 +1,30 @@
-# Passagem do dia — 15/10/2026 (quinta-feira)
-Gerado pelo Fechamento do Dia às 20:05. Lido pela Diária de amanhã no Passo 0.
+# Passagem do dia — 16/10/2026 (sexta-feira)
+Gerado pelo Fechamento do Dia às 20:02. Lido pela próxima Diária (segunda 19/10, 09:06) no Passo 0. Sábado e domingo não há rotina.
 
 ## O que foi feito hoje
-- Ensaio 003: etapa 5/17 (Estudo Preliminar) em `reprovada`, próxima ação = refazer. Nada executado hoje: a v3 segue travada (trava_v3_etapa_5, Claudemberg 14/10). Não há parecer do Bardi de hoje.
-- Diária (Skills v3.5.0): 0 Skills instaladas. 1 proposta: `kelsen_anexo-xxi-taxa-ocupacao-por-zona-lc270-2024` v1.0 (Kelsen, ativa-com-ressalva), em Skills_Propostas/2026/Outubro/. Pesquisa do Passo 1 redundante com Skills existentes.
-- Drenagem (11:03): portão com 9 itens auto abertos; Kelsen (F-1 e P-SMD parciais) e Lúcio (3 itens). Nada fechado.
-- Exames (decisões de Claudemberg): Zanettini, Reidy e Limmer promovidos de Formação a Shadow (Reidy 9,18; Limmer 10,00). Reprovados: EXAME-ZAN-01 (isca I1), EXAME-LIM-01 (7,90). EXAME-REI-01 anulado por defeito de montagem.
-- Skill `orcamento-executivo-analitico-sinapi-rj` v1.0 ratificada por Claudemberg (ativa-com-ressalva; TCU 2.622/2013 e NBR 12721 a ler no texto oficial). Espelho copiado e conferido.
-- Lúcio + Oscar: relatório conjunto com o Bardi; skill `oscar-revit-projetista-vitruvius` v1.3.0; 19 pedidos ao Vitruvius (P12–P30); testes C1, C3 e C4 feitos no modelo do ensaio (C3 erro do Oscar; C4 não ocorre no arquivo).
-- Kelsen: Lei 15.437/2026 conferida no DOU (texto idêntico; sem MP no DOU).
-- Cardozo: estado enxugado (rodadas de 31/08 a 12/09 movidas para HISTÓRICO, sem perda). Fase 1 concluída.
-- Pendências: 4 resolvidas hoje (ganchos do settings.json, gabaritos fora do alcance dos agentes, estado do Cardozo, Lei 15.437).
-- Macetes: não rodou (pausada desde 09/10). Sem registro.
+- Ensaio 003: etapa 5/17 (Estudo Preliminar) em `reprovada` (v2, 14/10), tentativas 2 de 3, próxima ação = refazer. Rotina de 08:36 encerrou no portão: nada criado. Sem parecer do Bardi hoje. `trava_v3_etapa_5` segue `liberada: false`.
+- Diária (Skills v3.5.0, sexta): 0 Skills criadas ou instaladas. Painel: 2 marcos e o status semanal 12-16/10. Passos 1 a 4 e 8 não rodaram (sexta segue fluxo próprio).
+- Drenagem (11:03): 11 itens auto na fila. Lúcio registrou erratum do COES Art. 29 III e fechou o C3 do Gate R6. Bardi gravou errata do gabarito da etapa 4 (lacre conferido, SHA256 1CC0A6B5…). Kelsen não fechou nada. Commit local fb89613 feito pela rotina.
+- Macetes: não rodou (pausada desde 09/10). Acervo e Reunião: só segunda, não rodaram hoje.
+- Espelho das Skills: 58 pastas de cada lado. 1 copiada (`levantamento-topografico-cadastral-orientado-duli-licin-rj`, fonte de 16/10). 2 divergências não copiadas, espelho mais novo.
+
 ## Criado até hoje (não duplicar)
-- TO por zona, Anexo XXI da LC 270/2024 → proposta Kelsen v1.0, 15/10 (fora de `.claude/skills/`).
-- Orçamento executivo analítico SINAPI-RJ → Skill Limmer v1.0, ratificada 15/10.
-- Relatório conjunto Lúcio/Oscar/Bardi → Skill Oscar v1.3.0, 15/10.
-- Os temas anteriores estão no "O QUE NÃO FAZER" do template.
+- Erratum COES Art. 29 III → Lúcio, 16/10 (correção avulsa, não é Skill nova).
+- Errata do gabarito da etapa 4 → Bardi, 16/10.
+- Os temas de 15/10 (Anexo XXI, Limmer SINAPI, Oscar v1.3.0) estão na passagem anterior e no template.
+
 ## Pendente e com quem
-- Etapa 5 do Ensaio: refazer só depois da decisão da trava (recomendação: segurar até a Fase 3 do Vitruvius) — Claudemberg.
-- Lacuna Anexo XXI: decidir se a proposta v1.0 vai para `.claude/skills/`; Kelsen confere a TO por texto (pdftotext) antes de citar — Claudemberg e Kelsen.
-- Kelsen F-1 (TO de ZPP por subzona): sem lote, não fecha — Hely.
-- Lúcio: perspectiva 3D no Vitruvius, altura desconectada da unidade, altura total e pé-direito, disponibilidade de render (Burle) — Oscar e Burle.
-- Complementares sem desenho no Vitruvius (criada 15/10) e conflito COES Art. 29 III (desde 13/10) — Claudemberg.
-- Espelho divergente: `legal-base-legislativa-bairro` (o `.agents` é mais novo e tem a regra SMD Art. 352 que não está em `.claude`); `arquitetura-nbr9050-acessibilidade` (só muda o caminho do backup) — Kelsen e Lúcio decidem.
+- Trava v3 da etapa 5 do Ensaio: só Claudemberg libera (decisão de 14/10, depois do Bloco 1 do Vitruvius) — Claudemberg.
+- Gabarito da etapa 4, erros E-1 e N-1: decisão pendente — Claudemberg.
+- Pendências `etapa3-v7-c3` (pode fechar) e `erro-ensaio003-etapa3-v6` (ressalva K1): ainda abertas no `pendencias.json` — Drenagem e Claudemberg.
+- Espelho divergente, não copiado: `arquitetura-nbr9050-acessibilidade` (espelho 30 s mais novo que a fonte, 13/10) — Lúcio decide. `legal-base-legislativa-bairro` (espelho de 13/10, fonte de 11/10; traz a regra SMD Art. 352) — Kelsen decide.
 - Hely baixou DL 9.760 e CC do Planalto em 14/10 sem autorização expressa (desvio registrado) — Claudemberg revisar.
-## Por onde a Diária de amanhã deve ir
-**[LACUNA DO ORGANISMO — 06/10]** Começar por `lacuna-kelsen-lc270-anexo-xxi-to-zona-14-10-2026` (dono Kelsen; tema: TO por zona do Anexo XXI). Passo: Claudemberg decide a instalação; Kelsen confere a TO por texto.
-- Índice `Skills_Propostas/2026/Outubro/indice.md`: incluir a proposta do Anexo XXI (ficou de fora em 15/10).
-- Lacunas de Lúcio ainda abertas: perspectiva 3D, altura desconectada da unidade, altura total e pé-direito, disponibilidade de Burle. NBR 9050 (edição 2020) bloqueada por compra.
-- Ensaio 003: não mexer na etapa 5 sem decisão de Claudemberg; Drenagem refaz.
+- Compra de normas: ABNT 12721, 14653-2, 13133 e NBR 9050:2020 (acervo tem só a de 2015) — Claudemberg.
+- Conflito de paginação do COES Art. 29 III (desde 13/10): erratum registrado hoje, confirmar que fechou — Claudemberg.
+
+## Por onde a Diária da próxima segunda deve ir
+**[LACUNA DO ORGANISMO — 06/10]** Começar por `lacuna-kelsen-lc270-anexo-xxi-to-zona-14-10-2026` (dono Kelsen; TO por zona do Anexo XXI da LC 270). Passo: Claudemberg decide a instalação da proposta v1.0; Kelsen confere a TO por texto antes de citar.
+- Índice `Skills_Propostas/2026/Outubro/indice.md` ainda sem a proposta do Anexo XXI (pendência desde 15/10).
+- Lúcio: NBR 9050:2020 bloqueada por compra; perspectiva 3D, altura desconectada, altura total e pé-direito, e disponibilidade de render com Burle. A Diária de 16/10 registra 6 lacunas abertas com `alc: auto` no total (Kelsen e Lúcio).
+- Kelsen F-1 (TO de ZPP por subzona): sem lote, não fecha.
+- Ensaio 003: não mexer na etapa 5 sem decisão de Claudemberg; a Drenagem refaz quando liberado.

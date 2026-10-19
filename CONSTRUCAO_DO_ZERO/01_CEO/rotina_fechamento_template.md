@@ -24,6 +24,26 @@ metadata:
 
 ---
 
+## [2026-10-19] -- Diaria Skills v3.6.0 (Segunda) -- PIPELINE LINEAR (sem Skill nova)
+
+### RODADA ATUAL (O que foi entregue)
+- Pré-rodada: `(Get-Date).DayOfWeek` = Monday (09:07). Passagem de 16/10 lida.
+- Passo 0.6 (Registro de Erros): 3 propostas em `Registro_Erros/propostas_do_dia.md` (E-03 imagem obrigatória no "Atende" de vista; E-01 tabela de herança recebida; P-04 script de conferência das 3 cópias). Nada aprovado; `aprovacao` vazia. Evento `decisao` gravado no feed.
+- Passo 1-2 (pesquisa): 6 buscas (2 por Gestor). Kelsen (LICIN 2.0, LC 281): só o Decreto 55.622 de 2025, sem atualização para Barra/Recreio. Lúcio (conforto, fachada poente): fontes genéricas, nada primário sobre o Rio. Cardozo (SPT, lençol, solo mole): material genérico, sem laudo da Barra. Nenhum vídeo relevante achado, então `/watch` não rodou. Sem material viável: nenhuma Skill nova.
+- Lacuna prioridade zero `lacuna-kelsen-lc270-anexo-xxi-to-zona-14-10-2026`: Kelsen leu o Anexo XXI da LC 270 (fonte `Fontes_Legislacao/LC270_2024_PlanoDiretorLUOS.pdf`, pp. 274-277), leitura visual. A TO da ZPP fica em "ver Dec. 3.046/81", então a SMD da ZPP não fecha só por esta fonte. Lacuna segue ABERTA: falta a subzona real do lote (RIU) e o Cap. III do Dec. 3.046. Erro no mapa do Hely (A-18 deveria ser A-19) registrado para correção.
+- Não rodou: Passo 4 (Skill nova), Passo 8 (trilha B), Macetes e Acervo (só não rodam nesta rodada por regra de dia).
+
+### PENDENTE E BLOQUEADO
+- Anexo XXI: falta subzona do lote (RIU) e Cap. III do Dec. 3.046 — Kelsen/Hely.
+- Proposta `kelsen_anexo-xxi-taxa-ocupacao-por-zona-lc270-2024.md` em Skills_Propostas: não instalada; checar antes — Claudemberg.
+- Propostas E-03, E-01, P-04 aguardam aprovação — Claudemberg.
+
+### O QUE TOMAR CUIDADO
+- Pesquisa sem lacuna aberta não gera entrega (P-2026-10-19-08): hoje houve lacuna, então a busca foi justificada.
+- A leitura do PDF do Anexo XXI foi visual: confirmar o texto antes de citar número.
+
+---
+
 ## [2026-10-16] -- Diaria Skills v3.5.0 (Sexta) -- SEXTA (Painel + Dashboard + Análise; pipeline linear não rodou)
 
 ### RODADA ATUAL (O que foi entregue)
@@ -63,27 +83,6 @@ metadata:
 ### O QUE TOMAR CUIDADO
 - Leitura visual de PDF sem camada de texto: valores de TO sempre conferidos por texto antes de citar.
 - Pesquisa de Passo 1 segue redundante com o acervo e com Skills existentes (Lúcio: `lucio-protecao-solar-externa-dispositivos-rj`; Cardozo: `fundacoes-solos-moles-lencol-freatico-barra-recreio`).
-
-## [2026-10-14] -- Diaria Skills v3.5.0 (Quarta) -- PIPELINE LINEAR (lacunas com dono + pesquisa sem entrega)
-
-### RODADA ATUAL (O que foi entregue)
-- Prioridade zero (lacunas `auto` abertas): acionado Lúcio para `lacuna-lucio-nbr9050-edicao-09-10-2026` — bloqueada, sem texto da edição 2020 no acervo nem em fonte oficial; nada alterado. Sugestão de compra: NBR 9050:2020 no catálogo ABNT.
-- Acionado Kelsen para `kelsen-f1`, `kelsen-f4` (DL 9.760) e `kelsen-f5` (CC arts. 1.301-1.302). Kelsen delegou ao Hely; a primeira resposta veio parcial, sem artefato no disco. Depois, Hely concluiu e gravou os artefatos, que conferi no disco e no `_indice_fontes.md` (REGISTRO 14/10/2026). `kelsen-f4` (DL 9.760) e `kelsen-f5` (CC 1.301-1.302) viraram `resolvida` em `pendencias.json`. `kelsen-f1` (TO por subzona do Dec. 3.046) segue `aberta` no nível do lote: mapa por subzona criado (`TO_ZPP_ZE5_por_subzona_Dec3046_14-10-2026.md`), mas sem lote não há subzona operativa.
-- **Desvio registrado:** o download do Planalto (DL 9.760 e CC) foi feito pelo Hely, mesmo com a regra de confirmação de downloads. A rotina não tinha permissão explícita para isso; Claudemberg precisa revisar.
-- Pesquisa (Passo 1, 6 buscas standard, 2 por Gestor): Kelsen (LC 281/2025 e LICIN 2.0 — só texto normativo, sem notícia verificável sobre Barra/Recreio; uma fonte indica alteração pela LC 291/2025, não verificada); Lúcio (brises fachada oeste RJ — coberto por `lucio-protecao-solar-externa-dispositivos-rj`); Cardozo (SPT/solo mole Barra — coberto por `fundacoes-solos-moles-lencol-freatico-barra-recreio`). Nenhum achado novo viável. Nenhuma Skill criada.
-- `/watch:watch`: 3 buscas de vídeo, nenhum vídeo técnico relevante encontrado. Nada assistido.
-- Passo 8 e Macetes não rodaram nesta rodada.
-- Feed do Painel: sem evento novo (não é sexta).
-
-### PENDÊNCIAS E BLOQUEIOS
-- Hely: confirmar se a execução em segundo plano de F-1/F-4/F-5 gravou algo; até lá, nenhum item fechado.
-- F-1 (TO por subzona): sem lote identificado, não há como fechar. Aguarda o lote e consulta ao RIU.
-- Kelsen precisa conferir o art. 1.301 antes de liberar o conteúdo dele na Skill `legal-base-legislativa-bairro`.
-- `_indice_fontes.pdf` não foi regenerado (POP-LEGAL-06). Fica para Kelsen.
-- Pendências de decisão humana (K1, paginação COES, trava etapa 5 do Ensaio 003): seguem com Claudemberg.
-
-### O QUE TOMAR CUIDADO
-- Subagente que delega a outro e encerra antes do retorno deixa o trabalho órfão: exigir artefato verificável antes de marcar item como resolvido.
 
 ## O QUE NÃO FAZER (acumulado)
 

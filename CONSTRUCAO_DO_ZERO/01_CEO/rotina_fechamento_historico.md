@@ -7,6 +7,27 @@ metadata:
   frequencia: toda vez que o template excede 2 rodadas
 ---
 
+## [2026-10-14] -- Diaria Skills v3.5.0 (Quarta) -- PIPELINE LINEAR (lacunas com dono + pesquisa sem entrega)
+
+### RODADA ATUAL (O que foi entregue)
+- Prioridade zero (lacunas `auto` abertas): acionado Lúcio para `lacuna-lucio-nbr9050-edicao-09-10-2026` — bloqueada, sem texto da edição 2020 no acervo nem em fonte oficial; nada alterado. Sugestão de compra: NBR 9050:2020 no catálogo ABNT.
+- Acionado Kelsen para `kelsen-f1`, `kelsen-f4` (DL 9.760) e `kelsen-f5` (CC arts. 1.301-1.302). Kelsen delegou ao Hely; a primeira resposta veio parcial, sem artefato no disco. Depois, Hely concluiu e gravou os artefatos, que conferi no disco e no `_indice_fontes.md` (REGISTRO 14/10/2026). `kelsen-f4` (DL 9.760) e `kelsen-f5` (CC 1.301-1.302) viraram `resolvida` em `pendencias.json`. `kelsen-f1` (TO por subzona do Dec. 3.046) segue `aberta` no nível do lote: mapa por subzona criado (`TO_ZPP_ZE5_por_subzona_Dec3046_14-10-2026.md`), mas sem lote não há subzona operativa.
+- **Desvio registrado:** o download do Planalto (DL 9.760 e CC) foi feito pelo Hely, mesmo com a regra de confirmação de downloads. A rotina não tinha permissão explícita para isso; Claudemberg precisa revisar.
+- Pesquisa (Passo 1, 6 buscas standard, 2 por Gestor): Kelsen (LC 281/2025 e LICIN 2.0 — só texto normativo, sem notícia verificável sobre Barra/Recreio; uma fonte indica alteração pela LC 291/2025, não verificada); Lúcio (brises fachada oeste RJ — coberto por `lucio-protecao-solar-externa-dispositivos-rj`); Cardozo (SPT/solo mole Barra — coberto por `fundacoes-solos-moles-lencol-freatico-barra-recreio`). Nenhum achado novo viável. Nenhuma Skill criada.
+- `/watch:watch`: 3 buscas de vídeo, nenhum vídeo técnico relevante encontrado. Nada assistido.
+- Passo 8 e Macetes não rodaram nesta rodada.
+- Feed do Painel: sem evento novo (não é sexta).
+
+### PENDÊNCIAS E BLOQUEIOS
+- Hely: confirmar se a execução em segundo plano de F-1/F-4/F-5 gravou algo; até lá, nenhum item fechado.
+- F-1 (TO por subzona): sem lote identificado, não há como fechar. Aguarda o lote e consulta ao RIU.
+- Kelsen precisa conferir o art. 1.301 antes de liberar o conteúdo dele na Skill `legal-base-legislativa-bairro`.
+- `_indice_fontes.pdf` não foi regenerado (POP-LEGAL-06). Fica para Kelsen.
+- Pendências de decisão humana (K1, paginação COES, trava etapa 5 do Ensaio 003): seguem com Claudemberg.
+
+### O QUE TOMAR CUIDADO
+- Subagente que delega a outro e encerra antes do retorno deixa o trabalho órfão: exigir artefato verificável antes de marcar item como resolvido.
+
 ## [2026-10-13] -- Diaria Skills v3.5.0 (Terça) -- PIPELINE LINEAR (lacunas prioritárias + pesquisa sem entrega)
 
 ### RODADA ATUAL (O que foi entregue)
