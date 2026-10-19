@@ -598,3 +598,12 @@
 ---
 
 **15/10/2026 — Relatório conjunto Lúcio + Oscar + Bardi sobre o Oscar e o Vitruvius (decisão de Claudemberg; trava da v3 da etapa 5 mantida):** diagnóstico do Bardi com 13 erros do Oscar, 18 limites da ferramenta e 4 sem classificação; o Oscar concordou com os 13 erros dele e discordou de 1 limite (B5, o `annotate` já faz norte e texto). Lúcio aplicou a parte A: skill `oscar-revit-projetista-vitruvius` v1.2.2 → v1.3.0 e checklist do `oscar.md` ampliado (lista de ferramentas inalterada). Parte B: 19 pedidos novos (P12 a P30) em `D:	_VITRUVIUS\PEDIDOS_OSCAR_pedidos_relatorio_conjunto_15-10.md`. Pasta do relatório: `Gestores/Lúcio (Arquitetura)/relatorio_oscar_vitruvius_15-10/`. Espelho da skill sincronizado. Pendentes: testes dos itens C1, C3 e C4 (C3 exige ler o .rvt do ensaio, com autorização de Claudemberg) e reconferência em cópia da seção 8-bis. Backups em `_backups/2026-10-15/`.
+
+### 19/10/2026 — Drenagem Contínua (seg, local agendada, 11:00) — Wallenberg
+
+- **Lúcio (6 itens auto):** `erro-ensaio003-etapa3-v6-lucio-08-10` → resolvida (erratum: COES Art. 29 III está na p. 15, não p. 19; prova na Skill de vaga e no anexo v7). Os outros 5 viraram `humano` ou `tecnico`: C3/Gate R6 (decisão de Claudemberg), NBR 9050:2020 (edição paga), perspectiva 3D (ferramenta ausente no Oscar), altura total (`tecnico`, depende de texto legal), render do Burle (ferramenta ausente na sessão).
+- **Kelsen (2 itens auto):** `kelsen-f1-to-zpp-anexo-xxi-subzona-13-10-2026` e `lacuna-kelsen-lc270-anexo-xxi-to-zona-14-10-2026` → `humano` (sem lote, sem subzona; P-SMD depende da TO). Novo item auto para Hely: `hely-mapa-zpp-a18-a19-19-10-2026` (mapa TO_ZPP grava A-18 na p. 34, que é A-19).
+- **Wallenberg (2 itens auto):** não executados nesta rodada. Regra de 3 tentativas depende da trava v3 da etapa 5. Trim de estados Lúcio/Cardozo/Hely: Cardozo (~96 KB) fica para amanhã.
+- **Ensaio 003:** etapa 5 não executada. `proxima_acao` segue `refazer`, mas `trava_v3_etapa_5.liberada = false` (Claudemberg, 14/10) segura a v3 até o Bloco 1 do Vitruvius.
+- **Não acionado:** Bardi (gabarito etapa 4, item `auto`), por exigir cuidado com o lacre. Skill `bardi_ensaio-sombra-checagem-gabarito-antes-lacre.md` (proposta, sem Gestor dono, não indexada) segue sem instalação.
+- **Como desfazer:** reverter `alc`/`status` dos itens em `pendencias.json` pelo histórico do git.

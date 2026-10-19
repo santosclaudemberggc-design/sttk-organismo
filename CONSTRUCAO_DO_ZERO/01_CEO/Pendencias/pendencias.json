@@ -1,4 +1,4 @@
-﻿{
+{
     "_comentario":  "Fonte Ãºnica e estruturada da fila de pendÃªncias do organismo. A rotina wallenberg-drenagem-continua lÃª este arquivo a cada disparo: itens com alc=\u0027auto\u0027 e status=\u0027aberta\u0027 sÃ£o executados sozinhos pelo Gestor dono (via seu Agente, quando aplicÃ¡vel); os demais (humano/tecnico/planejado) sÃ³ sÃ£o reconciliados, nunca forÃ§ados. O Painel do Fundador (painel_fundador_sttk.html) espelha este arquivo â€” ao alterar aqui, regerar o array `pendencias` do painel e republicar.",
     "schema_versao":  1,
     "atualizado_em":  "2026-10-10 (Wallenberg: decisoes D4-D9)",
@@ -198,8 +198,8 @@
                       "desde":  "2026-10-08",
                       "crit":  "alta",
                       "alc":  "auto",
-                      "status":  "aberta",
-                      "resolvido_em":  null,
+                      "status":  "resolvida",
+                      "resolvido_em":  "2026-10-19",
                       "txt":  "Etapa 03 v6 (parecer_bardi_v6): COES Art. 29 III esta na p. 19, nao p. 15, e e limiar de dispensa de demarcacao, nao tamanho de garagem. Os 25 m2/vaga tem base em Art. 29 I+II. Skill de levantamento v1.6 (nota 7,40) propagou a citacao sem checar o primario. Tambem: P1 Â§1 chama 571,80 de area oficial (oficial e 600); \u0027vedada\u0027 sem qualificador (P2 Â§1, Matriz 9); C-9 le o XI pela metade; C-8 e nota 00 dao a errata da l.181 como pendente (existe desde 08/10); G marcada como auditoria feita sem refazer as 27 celulas.",
                       "acao":  "Rotina Diaria de amanha aciona LÃºcio para corrigir a citacao e as Skill de levantamento e a entrega v7 com fonte primaria. Erros de Skill vao para Kelsen (item abaixo)."
                   },
@@ -254,7 +254,7 @@
                       "cardId":  "lucio",
                       "desde":  "2026-10-08",
                       "crit":  "alta",
-                      "alc":  "auto",
+                      "alc":  "humano",
                       "status":  "aberta",
                       "resolvido_em":  null,
                       "txt":  "Etapa 03 v7 (Bardi): C3 de Claudemberg NAO atendido. A v7 nao declara que o uso real da interpretacao R6 depende de Gate do Mauricio + Claudemberg. Lucio informou que estava declarado; nao estava.",
@@ -1432,7 +1432,7 @@
                       "cardId":  "lucio",
                       "desde":  "2026-10-09",
                       "crit":  "media",
-                      "alc":  "auto",
+                      "alc":  "humano",
                       "status":  "aberta",
                       "resolvido_em":  null,
                       "txt":  "Ensaio 003 etapa 4 (parecer_bardi etapa_04): isca 1 parcial. Falta a ediÃ§Ã£o da NBR 9050:2020 (suÃ­te tÃ©rrea e banheiro acessÃ­vel). O acervo D:\\008 sÃ³ tem a NBR 9050 de 2015, desatualizada. FORA DO ORGANISMO.",
@@ -1568,6 +1568,19 @@
                       "acao":  "Rotina Diaria de amanha aciona Kelsen para obter o texto oficial (outra fonte primaria) e gravar em Fontes_Legislacao; sem texto, nao inventar artigo."
                   },
                   {
+                      "id":  "hely-mapa-zpp-a18-a19-19-10-2026",
+                      "tipo":  "erro_fonte",
+                      "owner":  "Kelsen",
+                      "agente":  "hely",
+                      "desde":  "2026-10-19",
+                      "crit":  "media",
+                      "alc":  "auto",
+                      "status":  "aberta",
+                      "resolvido_em":  null,
+                      "txt":  "Mapa TO_ZPP_ZE5_por_subzona_Dec3046_14-10-2026.md (Hely): linha 'A-18 | p34', mas o cabecalho da pagina 34 do PDF do Dec. 3.046 e Subzona A-19. Relatado por Kelsen em 19/10/2026.",
+                      "acao":  "Hely confere o Cap. III do Dec. 3.046/81 na pagina 34, corrige a linha (A-18 ou A-19, com o trecho) e registra no mapa. Nao alterar outras linhas sem prova."
+                  },
+                  {
                       "id":  "kelsen-f1-to-zpp-anexo-xxi-subzona-13-10-2026",
                       "tipo":  "lacuna_conhecimento",
                       "owner":  "Kelsen",
@@ -1575,10 +1588,10 @@
                       "cardId":  "kelsen",
                       "desde":  "2026-10-13",
                       "crit":  "media",
-                      "alc":  "auto",
+                      "alc":  "humano",
                       "status":  "aberta",
                       "resolvido_em":  null,
-                      "txt":  "Lacuna F-1 (parecer_bardi_v3, etapa 04). Taxa de Ocupacao por subzona do Anexo XXI da LC 270/2024. Verificado em 13/10/2026: Anexo XXI AP4 (p. 275 do PDF LC270_2024_PlanoDiretorLUOS.pdf), linha ZPP, subzona em branco: CAM, TO e demais parametros = 'ver Dec. n 3046/1981'. Dec. 3.046/81 Cap. II (p. 2 do PDF) nao traz TO (so disposicoes comuns a ZE-5). A TO por subzona, se existir, esta no Cap. III (subzonas A-1 a A-46), nao localizado nesta rodada. Valor da ZE-5/ZPP NAO registrado.",
+                      "txt":  "[19/10/2026 Kelsen: bloqueado, falta o lote (endereco e matricula ou RIU/CIU). Sem o lote nao ha subzona; Claudemberg precisa informar a subzona valida, Kelsen nao atribui zona por conta propria.] Lacuna F-1 (parecer_bardi_v3, etapa 04). Taxa de Ocupacao por subzona do Anexo XXI da LC 270/2024. Verificado em 13/10/2026: Anexo XXI AP4 (p. 275 do PDF LC270_2024_PlanoDiretorLUOS.pdf), linha ZPP, subzona em branco: CAM, TO e demais parametros = 'ver Dec. n 3046/1981'. Dec. 3.046/81 Cap. II (p. 2 do PDF) nao traz TO (so disposicoes comuns a ZE-5). A TO por subzona, se existir, esta no Cap. III (subzonas A-1 a A-46), nao localizado nesta rodada. Valor da ZE-5/ZPP NAO registrado.",
                       "acao":  "Kelsen com Hely: ler o Cap. III do Dec. 3.046/81 no PDF arquivado, localizar a subzona do lote pelo RIU e registrar a TO com pagina e trecho. Enquanto isso, nao citar numero de TO para ZPP/ZE-5. A subzona 'A-ENS' do Ensaio 003 nao existe no primario (ver Lacuna 1 do livro-razao de 13/10/2026, Kelsen)."
                   },
                   {
@@ -1618,7 +1631,7 @@
                       "agente":  "oscar",
                       "desde":  "2026-10-14",
                       "crit":  "media",
-                      "alc":  "auto",
+                      "alc":  "humano",
                       "status":  "aberta",
                       "txt":  "Ensaio 003 etapa 5 (fora do organismo): o Vitruvius nao tem ferramenta de perspectiva 3D na lista de tools do Oscar. O Oscar nao reportou a lacuna no EP; Burle e Oscar dependem dela para nao prometer 3D. ANDAMENTO 15/10/2026 (Lucio, Drenagem): anotado em .claude/agents/oscar.md (secao 'Lacunas de ferramenta conhecidas') e em Agentes/Oscar/checklist_entrega_oscar.md (linha de (f)). NAO escrito em _estado_oscar.md: regra de nao escrever no estado de agente alheio; Wallenberg decide se o canal e outro. Status segue aberta.",
                       "acao":  "Lúcio registra a lacuna de ferramenta no estado do Oscar e na lista de tools; Oscar reporta 'sem perspectiva 3D' em toda entrega com desenho. Fechar quando a ferramenta existir ou Claudemberg decidir."
@@ -1642,7 +1655,7 @@
                       "agente":  "oscar",
                       "desde":  "2026-10-14",
                       "crit":  "media",
-                      "alc":  "auto",
+                      "alc":  "tecnico",
                       "status":  "aberta",
                       "txt":  "Ensaio 003 etapa 5, isca 1 (parcial): nenhuma Skill do organismo traz o metodo de medir a altura total da edificacao (soleira ate o ponto mais alto, com laje e cobertura) nem o limite de altura do condominio ou da zona. A Skill coe-lc198 cobre so o pe-direito minimo. So fechar depois da errata do gabarito G1. ANDAMENTO 15/10/2026 (Lucio, Drenagem): confirmacao do Kelsen NAO chegou nesta rodada (busca nos arquivos de Gestores por 'altura total' e 'pe-direito + laje' sem resultado relevante). Item segue aberta, sem fechamento.",
                       "acao":  "Kelsen confirma no texto da lei (LC 270 e Dec. 3.046, com pagina) o limite e o ponto de medicao. Lúcio inclui na Skill de Estudo Preliminar a conta pe-direito + laje + cobertura com o resultado escrito."
@@ -1654,9 +1667,9 @@
                       "agente":  "hely",
                       "desde":  "2026-10-14",
                       "crit":  "alta",
-                      "alc":  "auto",
+                      "alc":  "humano",
                       "status":  "aberta",
-                      "txt":  "Ensaio 003 etapa 5 (fora do organismo): o Anexo XXI da LC 270 (taxa de ocupacao por zona), base da SMD pelo Art. 352, nao foi lido por ninguem. Oscar declarou a lacuna corretamente; nao e erro dele. A SMD fica em 57,18 ou 68,62 ate essa leitura.",
+                      "txt":  "[19/10/2026 Kelsen: leitura feita (p. 275 da LC 270, AP4/ZPP = 'ver Dec. 3046/1981'); P-SMD segue aberto porque depende da TO da subzona do lote (ver kelsen-f1-to-zpp-anexo-xxi-subzona-13-10-2026).] Ensaio 003 etapa 5 (fora do organismo): o Anexo XXI da LC 270 (taxa de ocupacao por zona), base da SMD pelo Art. 352, nao foi lido por ninguem. Oscar declarou a lacuna corretamente; nao e erro dele. A SMD fica em 57,18 ou 68,62 ate essa leitura.",
                       "acao":  "Hely le o Anexo XXI na copia da LC 270 com pagina e informa Kelsen; Kelsen fecha P-SMD."
                   },
                   {
@@ -1666,7 +1679,7 @@
                       "agente":  "burle",
                       "desde":  "2026-10-14",
                       "crit":  "media",
-                      "alc":  "auto",
+                      "alc":  "humano",
                       "status":  "aberta",
                       "txt":  "Ensaio 003 etapa 5 (parcial): Burle afirmou que generate_image e generate_video nao aparecem na lista de funcoes da sessao, sem chamada nem prova. O estado de Burle de 01/09 registra essas tools como disponiveis. Disponibilidade real nao verificada. ANDAMENTO 15/10/2026 (Lucio, Drenagem): teste pedido a Burle (sem geracao). Prova colada: Burle nao tem ToolSearch na sessao; lista literal que ele enxerga = Read, Write, Glob, Grep, SubagentHandback; generate_image e generate_video NAO aparecem nessa lista. Isso contradiz a definicao do agente (burle.md lista as duas) e nao prova ausencia no ambiente. Status segue aberta; precisa de sessao com ToolSearch ou checagem de Wallenberg.",
                       "acao":  "Lúcio pede teste de disponibilidade a Burle (ToolSearch com saida colada), sem invocar geracao, enquanto o Higgsfield estiver pausado por orcamento."
