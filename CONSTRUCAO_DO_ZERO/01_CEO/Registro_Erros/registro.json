@@ -1,0 +1,429 @@
+{
+  "versao": "1.0",
+  "criado_em": "2026-10-19",
+  "dono": "Wallenberg",
+  "instrucoes": "CONSTRUCAO_DO_ZERO/01_CEO/Registro_Erros/LEIA_ME.md",
+  "nota_carga_inicial": "Carga de 19/10/2026: só erros de outubro, com prova em arquivo. As soluções foram escritas por Wallenberg como proposta inicial; em erro de entrega, o Gestor dono confirma ou substitui. Nenhuma foi aprovada por Claudemberg ainda. Nenhum acerto_de_primeira carregado: não há aprovação de Claudemberg registrada com prova para outubro.",
+  "itens": [
+    {
+      "id": "E-2026-10-19-01",
+      "data_do_erro": "2026-10-13",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "legal-base-legislativa-bairro (SMD) / herança da Etapa 01",
+      "o_que_errou": "Etapa 04 v3: a SMD foi omitida (Isca 6b, reprovação automática). A herança da Etapa 01 (TO 50%) sumiu sem aparecer como erro.",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Agentes_Diretos/Bardi (Examinador)/_estado_bardi.md, linhas 16 e 112; errata_gabarito_etapa_04_16-10.md, item N-3",
+      "solucao_proposta": {
+        "texto": "Toda etapa começa com uma tabela 'herança recebida' (cada número das etapas aprovadas, com origem). O Lúcio só aceita a entrega se cada linha da tabela aparecer nas premissas. Registrar isso na Skill de critérios do Lúcio para auditoria.",
+        "proposta_por": "Wallenberg (inicial; Lúcio confirma)",
+        "data": "2026-10-19"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-19-02",
+      "data_do_erro": "2026-10-09",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "arquitetura-nbr9050-acessibilidade",
+      "o_que_errou": "A linha 15 da Skill ('obrigatório para habite-se') contradiz a linha 21 da própria Skill e o COES Art. 31 V (unifamiliar dispensada). Aberto desde 09/10 e ainda com resíduo na v1.2.",
+      "causa": "skill_errada",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Agentes_Diretos/Bardi (Examinador)/_estado_bardi.md, linhas 70, 75 e 98",
+      "solucao_proposta": {
+        "texto": "Lúcio corrige a linha 15 (e linhas 20 e 90 da v1.2) citando o COES Art. 31 V com página e nome da cópia; atualiza as 3 cópias (.claude/skills, .agents/skills, Skills_Propostas). Bardi confere com uma pergunta de teste: 'casa unifamiliar precisa de acessibilidade para habite-se?'.",
+        "proposta_por": "Wallenberg (inicial; Lúcio confirma)",
+        "data": "2026-10-19"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-19-03",
+      "data_do_erro": "2026-10-14",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "oscar-revit-projetista-vitruvius / vitruvius_export_view_image",
+      "o_que_errou": "Etapa 05 v2 (Estudo Preliminar no Revit): checklist marcou 'Atende' sem imagem; havia elevação vazia com todos os ids válidos. Nota 6,30, reprovado.",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Agentes_Diretos/Bardi (Examinador)/_estado_bardi.md, linhas 10 e 101",
+      "solucao_proposta": {
+        "texto": "O Oscar já tem a ferramenta vitruvius_export_view_image (frontmatter de .claude/agents/oscar.md). A Skill do Oscar passa a exigir: todo 'Atende' de vista (planta, corte, elevação, folha) vem com a imagem exportada anexada; sem imagem, escrever 'não verificado visualmente'.",
+        "proposta_por": "Wallenberg (inicial; Lúcio confirma)",
+        "data": "2026-10-19"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-19-04",
+      "data_do_erro": "2026-10-14",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "checklist do Oscar (exemplo de SMD)",
+      "o_que_errou": "O exemplo do item (a) do checklist calcula a SMD com a TO 40% do condomínio; a SMD (LC 270 Art. 352) usa a TO da zona (Anexo XXI). Erro herdado de correção anterior.",
+      "causa": "skill_errada",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Agentes_Diretos/Bardi (Examinador)/_estado_bardi.md, linhas 63, 103 e 107",
+      "solucao_proposta": {
+        "texto": "Lúcio corrige o exemplo para a base da zona e escreve ao lado 'de qual TO?' (zona × condomínio). Depende de P-2026-10-19-09 (Anexo XXI) para o número final; até lá, o exemplo usa a TO do RIU com a fonte.",
+        "proposta_por": "Wallenberg (inicial; Lúcio confirma)",
+        "data": "2026-10-19"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-19-05",
+      "data_do_erro": "2026-10-08",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "Skill de vaga (§2, COES Art. 31 III–IV)",
+      "o_que_errou": "O Agente leu a Skill inteira e não usou o que ela já trazia (Art. 31 III–IV). Padrão repetido: uso real de Skill baixo (Etapa 04: Oscar declarou 3 de 10 Skills; legal-oodc não lida).",
+      "causa": "instrucao_confusa",
+      "prova": "_estado_bardi.md, linha 164; CONSTRUCAO_DO_ZERO/01_CEO/Rotinas_Evolucao/diaria.md, linha 39",
+      "solucao_proposta": {
+        "texto": "Toda entrega fecha com a tabela 'Skill lida → onde foi usada na peça'. Skill lida sem uso aparece como linha vazia, e o Lúcio cobra antes de subir para o Bardi.",
+        "proposta_por": "Wallenberg (inicial; Lúcio confirma)",
+        "data": "2026-10-19"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-19-06",
+      "data_do_erro": "2026-10-08",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Lúcio",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "auditoria de Gestor",
+      "o_que_errou": "Etapa 03 v7: a nota de auditoria do Lúcio afirmou que o Gate da R6 foi 'declarado' sem a frase existir na peça.",
+      "causa": "instrucao_confusa",
+      "prova": "_estado_bardi.md, linhas 27 e 165",
+      "solucao_proposta": {
+        "texto": "Regra na Skill/slice de Gestor: toda afirmação 'declarado em X' na auditoria vem com a linha de X citada. Sem linha, a afirmação não entra.",
+        "proposta_por": "Wallenberg (inicial; Lúcio confirma)",
+        "data": "2026-10-19"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-19-07",
+      "data_do_erro": "2026-10-08",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Bardi",
+      "gestor_dono": "Wallenberg",
+      "skill_ou_ferramenta": "gabarito da Etapa 03 (Ensaio 003)",
+      "o_que_errou": "Gabarito lacrado com 3 erros: G1 (Isca 1, inciso VII→XI), G2 (Isca 4, '407 m² cabe em 520'), G4 (Isca 2, envelope). Não descontado dos executores.",
+      "causa": "instrucao_confusa",
+      "prova": "_estado_bardi.md, linhas 79, 91 e 150; checagem_gabarito_etapa3_09-10-2026.md",
+      "solucao_proposta": {
+        "texto": "Decisão de Claudemberg pendente: manter lacrado com errata ou arquivar (item criterio-erro-gabarito-vs-nota-08-10). A prevenção já existe como Skill proposta de checagem pré-lacre — ver P-2026-10-19-03.",
+        "proposta_por": "Bardi / Wallenberg",
+        "data": "2026-10-09"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-19-08",
+      "data_do_erro": "2026-10-09",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Bardi",
+      "gestor_dono": "Wallenberg",
+      "skill_ou_ferramenta": "gabarito da Etapa 04 (Ensaio 003)",
+      "o_que_errou": "Gabarito da Etapa 04 com erros GE-1 a GE-6 (páginas do COES sem a cópia, Art. 215 §2º, LC 270 × LC 281, herança 297,28, Art. 363 §2º X) e GB-1 a GB-4.",
+      "causa": "instrucao_confusa",
+      "prova": "_estado_bardi.md, linhas 18 e 97; errata_gabarito_etapa_04_16-10.md, seção 1",
+      "solucao_proposta": {
+        "texto": "Gabarito corrigido em 13/10 (GB-1 a GB-4) e checado contra fonte primária em 16/10.",
+        "proposta_por": "Bardi",
+        "data": "2026-10-13"
+      },
+      "aprovacao": null,
+      "prova_correcao": "errata_gabarito_etapa_04_16-10.md, seção 4: GE-1 a GE-6 'corrigidos com fonte confirmada', com resíduo E-1 (registrado em E-2026-10-19-09). Lacre não confirmado (sem hash).",
+      "teste_de_regressao": null,
+      "status": "corrigido"
+    },
+    {
+      "id": "E-2026-10-19-09",
+      "data_do_erro": "2026-10-16",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Bardi",
+      "gestor_dono": "Wallenberg",
+      "skill_ou_ferramenta": "enunciado e gabarito da Etapa 04",
+      "o_que_errou": "Resíduos da Etapa 04: E-1 (Iscas 1 e 2 citam 'COES p. 17' sem nomear a cópia; no acervo D:\\008 o Art. 31 está na p. 21) e N-1 (linha 45 do enunciado chama 297,28 de 'construída máxima'; é computável).",
+      "causa": "instrucao_confusa",
+      "prova": "errata_gabarito_etapa_04_16-10.md, itens E-1 e N-1",
+      "solucao_proposta": {
+        "texto": "Regra para todo gabarito e enunciado: página de COES sempre com o nome da cópia; área sempre com o regime (computável, construída, projeção). N-1: decisão de Claudemberg (corrigir em versão futura ou nota de correção).",
+        "proposta_por": "Bardi",
+        "data": "2026-10-16"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "P-2026-10-19-01",
+      "data_do_erro": "2026-10-15",
+      "apontado_por": "Wallenberg",
+      "tipo": "problema_organismo",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "Vitruvius (plugin do Revit)",
+      "o_que_errou": "Testes C1, C3 e C4 da Arquitetura não executados porque o plugin do Revit estava desconectado.",
+      "causa": "ferramenta_falhou",
+      "prova": "commit 223c229 ('testes C1, C3 e C4 não executados — plugin do Revit desconectado (registro)')",
+      "solucao_proposta": {
+        "texto": "Teste de saúde no início de toda rotina e de todo acionamento do Oscar: vitruvius_get_revit_status. Desconectado = o Oscar avisa e para (decidido na sabatina de 18/10), e a linha entra aqui como ferramenta_falhou para medir a frequência.",
+        "proposta_por": "Wallenberg",
+        "data": "2026-10-19"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "P-2026-10-19-02",
+      "data_do_erro": "2026-10-16",
+      "apontado_por": "Bardi",
+      "tipo": "problema_organismo",
+      "agente": "Bardi",
+      "gestor_dono": "Wallenberg",
+      "skill_ou_ferramenta": "ferramentas do Bardi (sem shell)",
+      "o_que_errou": "O Bardi não consegue conferir o lacre (SHA256) nem contar palavras; depende de Wallenberg, e várias correções saíram com 'não medido' ou 'lacre não confirmado'.",
+      "causa": "falta_ferramenta",
+      "prova": "_estado_bardi.md, linhas 8, 10 e 151; errata_gabarito_etapa_04_16-10.md, seção 0",
+      "solucao_proposta": {
+        "texto": "Criar um script só de leitura em _ferramentas/ (hash SHA256 + contagem de palavras) e liberar ao Bardi apenas esse comando, sem shell aberto. Passa pela sabatina antes de construir.",
+        "proposta_por": "Wallenberg",
+        "data": "2026-10-19"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "P-2026-10-19-03",
+      "data_do_erro": "2026-10-16",
+      "apontado_por": "Bardi",
+      "tipo": "problema_organismo",
+      "agente": "Bardi",
+      "gestor_dono": "Wallenberg",
+      "skill_ou_ferramenta": "Skill proposta ensaio-sombra-checagem-gabarito-antes-lacre",
+      "o_que_errou": "A Skill que evita erro de gabarito está em Skills_Propostas desde 09/10 e não foi instalada em .claude/skills; o Bardi a usa sem ela estar ativa.",
+      "causa": "falta_skill",
+      "prova": "errata_gabarito_etapa_04_16-10.md, linha 6 e item N-4; _estado_bardi.md, linha 20",
+      "solucao_proposta": {
+        "texto": "Pôr a Skill na pauta de ratificação de Claudemberg; se aprovada, instalar nas 3 cópias.",
+        "proposta_por": "Bardi",
+        "data": "2026-10-16"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "P-2026-10-19-04",
+      "data_do_erro": "2026-10-08",
+      "apontado_por": "Bardi",
+      "tipo": "problema_organismo",
+      "agente": "todos",
+      "gestor_dono": "Wallenberg",
+      "skill_ou_ferramenta": "espelhos .agents/skills (Codex)",
+      "o_que_errou": "Skills com 3 cópias (.claude/skills, .agents/skills, Skills_Propostas) dessincronizam: espelho de levantamento ficou na v1.1 e a Skill de vaga não tinha espelho.",
+      "causa": "instrucao_confusa",
+      "prova": "_estado_bardi.md, linhas 77, 88 e 138",
+      "solucao_proposta": {
+        "texto": "Script de conferência em _ferramentas/ que compara as 3 cópias de cada Skill e lista as diferentes; roda no fim de toda rotina que mexer em Skill.",
+        "proposta_por": "Wallenberg",
+        "data": "2026-10-19"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "P-2026-10-19-05",
+      "data_do_erro": "2026-10-06",
+      "apontado_por": "Bardi",
+      "tipo": "problema_organismo",
+      "agente": "todos",
+      "gestor_dono": "Wallenberg",
+      "skill_ou_ferramenta": "pasta CONSTRUCAO_DO_ZERO/_gabaritos_LACRADO_bardi",
+      "o_que_errou": "Os nomes dos gabaritos lacrados aparecem no git status e em Glob na raiz; o Oscar chegou a ver o nome.",
+      "causa": "instrucao_confusa",
+      "prova": "_estado_bardi.md, linhas 74 e 83",
+      "solucao_proposta": {
+        "texto": "Mover a pasta para fora do repositório (ex.: D:\\_gabaritos_LACRADO_bardi) e atualizar o gancho de bloqueio e o estado do Bardi.",
+        "proposta_por": "Bardi",
+        "data": "2026-10-06"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "P-2026-10-19-06",
+      "data_do_erro": "2026-10-07",
+      "apontado_por": "Wallenberg",
+      "tipo": "problema_organismo",
+      "agente": "Wallenberg (Rotina Diária)",
+      "gestor_dono": "Wallenberg",
+      "skill_ou_ferramenta": "Rotina Diária — Passo 0",
+      "o_que_errou": "Lacuna de prioridade zero (vaga, aberta em 06/10) não foi tratada pela Diária; a passagem lida estava velha (05/10). Rodada de ~5h38min sem Skill nova.",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Rotinas_Evolucao/diaria.md, linhas 30 e 42–45",
+      "solucao_proposta": {
+        "texto": "Passo 0 lê direto em pendencias.json os itens tipo lacuna_conhecimento abertos e confere a data da passagem (sugestão já escrita em diaria.md, linha 45).",
+        "proposta_por": "Wallenberg",
+        "data": "2026-10-07"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "P-2026-10-19-07",
+      "data_do_erro": "2026-10-14",
+      "apontado_por": "Wallenberg",
+      "tipo": "problema_organismo",
+      "agente": "Hely",
+      "gestor_dono": "Kelsen",
+      "skill_ou_ferramenta": "Rotina Diária — downloads",
+      "o_que_errou": "O Hely baixou o DL 9.760/1946 do Planalto sem permissão explícita.",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Rotinas_Evolucao/diaria.md, linha 46",
+      "solucao_proposta": {
+        "texto": "A Diária pesquisa e pede permissão em chat antes de qualquer download; quem baixa é o Hely, só depois de autorizado (sugestão de diaria.md, linha 46).",
+        "proposta_por": "Wallenberg",
+        "data": "2026-10-14"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "P-2026-10-19-08",
+      "data_do_erro": "2026-10-15",
+      "apontado_por": "Wallenberg",
+      "tipo": "problema_organismo",
+      "agente": "Wallenberg (Rotina Diária)",
+      "gestor_dono": "Wallenberg",
+      "skill_ou_ferramenta": "Rotina Diária — Passo 1 (pesquisa)",
+      "o_que_errou": "4 dias úteis seguidos (12 a 15/10) de pesquisa sem entrega nova: as buscas caem em Skills que já existem.",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Rotinas_Evolucao/diaria.md, linhas 47–49",
+      "solucao_proposta": {
+        "texto": "Pesquisar só quando houver lacuna aberta, Skill desatualizada ou linha aberta neste registro; rodada sem nada disso termina sem busca e usa o tempo na leitura do registro.",
+        "proposta_por": "Wallenberg",
+        "data": "2026-10-19"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "P-2026-10-19-09",
+      "data_do_erro": "2026-10-14",
+      "apontado_por": "Bardi",
+      "tipo": "problema_organismo",
+      "agente": "Hely",
+      "gestor_dono": "Kelsen",
+      "skill_ou_ferramenta": "LC 270/2024 Anexo XXI (TO por zona)",
+      "o_que_errou": "O Anexo XXI não foi lido por nenhuma Skill; bloqueia a conta da SMD e afeta o Lúcio (E-2026-10-19-04). Proposta do Kelsen de 15/10 ficou fora de .claude/skills.",
+      "causa": "falta_skill",
+      "prova": "_estado_bardi.md, linhas 64 e 71; Rotinas_Evolucao/diaria.md, linha 34",
+      "solucao_proposta": {
+        "texto": "Claudemberg decide a instalação da proposta do Kelsen (Anexo XXI, v1.0 ativa-com-ressalva); depois, Bardi testa com a pergunta 'qual a TO da ZPP para a SMD?'.",
+        "proposta_por": "Kelsen",
+        "data": "2026-10-15"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "P-2026-10-19-10",
+      "data_do_erro": "2026-10-09",
+      "apontado_por": "Bardi",
+      "tipo": "problema_organismo",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "acervo D:\\008 — NBR 9050:2020",
+      "o_que_errou": "A NBR 9050 vigente (2020) não está no acervo, só a de 2015; correções de acessibilidade ficam sem fonte primária.",
+      "causa": "falta_skill",
+      "prova": "_estado_bardi.md, linhas 65 e 72",
+      "solucao_proposta": {
+        "texto": "Pôr a NBR 9050:2020 na lista de compra da Rotina Acervo; decisão de compra é de Claudemberg.",
+        "proposta_por": "Wallenberg",
+        "data": "2026-10-19"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "P-2026-10-19-11",
+      "data_do_erro": "2026-10-07",
+      "apontado_por": "Wallenberg",
+      "tipo": "problema_organismo",
+      "agente": "Bardi",
+      "gestor_dono": "Wallenberg",
+      "skill_ou_ferramenta": "espelho .codex/agents/bardi.toml",
+      "o_que_errou": "O espelho do Bardi para o Codex está em versão antiga: 'O que corrigir (se REPROVAR)', enquanto o original manda listar 'sempre que houver erro' desde a regra da nota de 07/10. Mesmo problema de P-2026-10-19-04, agora nos agentes.",
+      "causa": "instrucao_confusa",
+      "prova": ".codex/agents/bardi.toml, linha 88 × .claude/agents/bardi.md, linha 95",
+      "solucao_proposta": {
+        "texto": "Estender o script de conferência de P-2026-10-19-04 aos pares .claude/agents/*.md × .codex/agents/*.toml e regerar os .toml desatualizados a partir dos .md.",
+        "proposta_por": "Wallenberg",
+        "data": "2026-10-19"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    }
+  ]
+}

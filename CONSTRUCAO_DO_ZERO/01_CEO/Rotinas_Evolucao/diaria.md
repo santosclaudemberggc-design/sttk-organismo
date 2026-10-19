@@ -12,7 +12,8 @@ Tarefa `wallenberg-rotina-diaria-skills-v2-7` · seg-sex 09:00 · referência `C
 | v3.3.1 | 17/09/2026 | `/watch:watch` obrigatório (pelo menos 1 busca de vídeo por Gestor) | Auditoria: 6 WebSearch e 0 vídeo numa rodada | Claudemberg |
 | v3.3.2 | 17/09/2026 | Fronteira crítica de cliente restaurada no prompt; `New-Item -Force` preventivo | A fronteira tinha sumido do operativo | Claudemberg |
 | v3.4.0 | 28-29/09/2026 | Livro-razão por Skill; checagem de coerência entre Skills; "não procede" arquiva na hora; treino fictício; acervo `D:\008`; seção "Macetes de quem faz" | Livro-razão faltava desde 10/09; havia contradições entre Skills | Claudemberg |
-| **v3.5.0** | 30/09/2026 | Horário 08:00 → 09:00; **treino fictício RETIRADO**; Passo 0 lê `_passagem_do_dia.md`; fim do commit de PDF | Operações começam 08:30; o Ensaio Sombra virou o único teste; o template de 640 linhas custava cerca de 26 mil tokens por rodada | Claudemberg |
+| **v3.6.0** | 19/10/2026 | Passo 0.6: Registro de Erros e Acertos (`Registro_Erros/registro.json`) — lê, registra problema do organismo com prova, até 3 propostas/dia para Claudemberg, acerto protegido antes de mudar Skill | Erros espalhados em vários arquivos; organismo voltava a errar o que já tinha acertado (sabatina de 18-19/10) | Claudemberg |
+| v3.5.0 | 30/09/2026 | Horário 08:00 → 09:00; **treino fictício RETIRADO**; Passo 0 lê `_passagem_do_dia.md`; fim do commit de PDF | Operações começam 08:30; o Ensaio Sombra virou o único teste; o template de 640 linhas custava cerca de 26 mil tokens por rodada | Claudemberg |
 
 **Tentado e revertido (não repetir sem evidência nova):**
 - Treino em caso fictício por Skill: entrou em 28/09 e saiu em 30/09. O motivo foi ter 3 mecanismos de teste sobrepostos; ficou só o Ensaio.

@@ -221,6 +221,8 @@ Você pode estar em níveis diferentes em frentes diferentes (ex: Assistência e
 
 **Se ficar em dúvida:** Trate como cliente e sinalize ao Gestor. A fronteira protege a responsabilidade técnica de Claudemberg, não sua velocidade.
 
+**Registro de Erros e Acertos [Claudemberg, 19/10/2026]** — antes de entregar, leia em `CONSTRUCAO_DO_ZERO/01_CEO/Registro_Erros/registro.json` as linhas com o seu nome em `agente`: erros abertos e acertos protegidos. Não repita o erro registrado e não desfaça o acerto protegido. Você não escreve no registro; quem registra é o Bardi, o seu Gestor ou Wallenberg.
+
 ---
 
 ## Teste Padrão Ao Recomendar Algo Novo

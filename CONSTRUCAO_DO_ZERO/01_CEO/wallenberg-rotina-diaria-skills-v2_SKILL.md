@@ -26,6 +26,8 @@ enhancements:
 
 **[LACUNA DO ORGANISMO — decisão de Claudemberg 06/10/2026]** Quando o Ensaio Sombra reprova um Gestor/Agente por conhecimento que o organismo ainda NÃO tinha (isca marcada pelo Bardi como "fora do organismo" — veio de norma/lei/fonte externa que nenhuma Skill ensina), a Drenagem abre em `CONSTRUCAO_DO_ZERO/01_CEO/Pendencias/pendencias.json` um item `tipo: "lacuna_conhecimento"`, `alc: "auto"`, `status: "aberta"`, owner = Gestor dono. **Na Rotina Diária do dia seguinte, esse item é PRIORIDADE ZERO, antes da pesquisa normal:** acione o próprio Gestor dono (Agent, subagent_type = gestor) para buscar a informação, aprendizado, habilidade e inteligência que faltou (fonte primária: acervo `D:\008_Normas ABNT\`, texto oficial da lei, Skills existentes) e criar ou corrigir a Skill/macete correspondente pelo Fluxo de Ativação normal (coerência + backup + livro-razão). Ao terminar, marque o item `resolvida` com a Skill criada/alterada. Se a fonte não existir no acervo, registre a norma na lista de compra (Rotina Acervo) e mantenha o item aberto com o bloqueio escrito.
 
+> **[v3.6.0 — 19/10/2026, decisão de Claudemberg]** Novo **Passo 0.6 — Registro de Erros e Acertos** (seg-sex, antes da pesquisa): ver a seção do Passo 0 abaixo.
+>
 > **[v3.5.0 — 30/09/2026, decisões de Claudemberg — PREVALECE sobre qualquer trecho abaixo]**
 > 1. **Horário: seg-sex 09:00** (operações começam 08:30). Onde este arquivo disser "08:00" ou que a Drenagem roda "10:15", leia 09:00 e 11:00. Ordem do dia: Ensaio Sombra 08:30 → Diária 09:00 → Drenagem 11:00 → Macetes 14:00 → PDF 20:00.
 > 2. **Treino em caso fictício RETIRADO** (Passo 0.5, Passo 4.7, métricas "treinadas" da sexta). Único mecanismo de teste: **Ensaio Sombra 003** — `CONSTRUCAO_DO_ZERO/01_CEO/wallenberg-rotina-ensaio-sombra_SKILL.md`, Agente Examinador `bardi`, execução pela Drenagem, aprovação de Claudemberg etapa por etapa. Notion "Treinos e Testes" fica só para exames de nível.
@@ -89,6 +91,17 @@ Você roda sem ninguém na frente da tela. Se algo te impedir de seguir — font
 1. Leia `CONSTRUCAO_DO_ZERO/01_CEO/rotina_fechamento_template.md` (fechamento da rodada anterior).
 2. Leia `_estado_{agente}.md` de cada Agente com lacuna suspeita — não suponha da rodada anterior.
 3. Confira a data da última atualização do Painel (`CONSTRUCAO_DO_ZERO/01_CEO/Painel_Fundador/painel_fundador_sttk.html`, campo `<span id="updated">`).
+
+### PASSO 0.6 — REGISTRO DE ERROS E ACERTOS (v3.6.0, 19/10/2026, decisão de Claudemberg — seg-sex, inclusive sexta)
+
+Arquivo: `CONSTRUCAO_DO_ZERO/01_CEO/Registro_Erros/registro.json` (regras completas em `LEIA_ME.md`, mesma pasta). Dono: Wallenberg. Roda depois do Passo 0 e **antes** da pesquisa.
+
+1. Leia o registro inteiro.
+2. **Problema novo do organismo:** se nas leituras do Passo 0 (passagem, estados, pareceres do Bardi, Rotinas_Evolucao) aparecer falha da estrutura, acrescente uma linha `problema_organismo` **com prova (arquivo + linha, ou commit)**. Sem prova, não entra.
+3. **Erro de entrega sem solução do Gestor dono:** acione o Gestor dono (`Agent`, subagent_type = gestor) para escrever ou confirmar a `solucao_proposta` — plausível e testável. Sem resposta, registre o bloqueio e siga (Regra de Desbloqueio).
+4. **Até 3 propostas por dia para Claudemberg**, por ordem de impacto (o que mais repete, o que trava o Ensaio, o que afeta mais de um Agente). Escreva-as em `CONSTRUCAO_DO_ZERO/01_CEO/Registro_Erros/propostas_do_dia.md` (sobrescreva: data, id, erro em 1 frase, solução, como será testada) e grave 1 evento `-Et "decisao"` via `Append-STTKLog.ps1` com `-T "Registro de erros: N propostas para aprovar"`.
+5. **Proibido nesta rotina:** preencher `aprovacao` (só Claudemberg aprova, ao vivo ou na Semanal); aplicar solução não aprovada; mudar status sem prova. Solução aprovada por Claudemberg → `em_correcao`; Bardi refez o teste e passou → `corrigido` com `prova_correcao`; Wallenberg grava o `teste_de_regressao` → `acerto_protegido`.
+6. **Acerto protegido:** antes de alterar qualquer Skill nesta rodada (Passo 3/4), procure no registro as linhas `acerto_protegido` daquela Skill e confira se a mudança não desfaz o acerto. Se desfizer, a mudança não entra.
 
 ---
 

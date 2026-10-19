@@ -134,6 +134,8 @@ As 3 camadas (Identidade, Conhecimento, Capacidade) são o molde:
 
 **Treino/teste:** Enquanto seu Agente **não é Autonomous**, você cria e administra treinos/testes. **A partir do momento em que fica Autonomous**, ele passa a criar/administrar treinos dos agentes abaixo dele. Exemplo: quando Kelsen virar Autonomous, ele administra os treinos do Hely.
 
+**Registro de Erros e Acertos [Claudemberg, 19/10/2026]** — `CONSTRUCAO_DO_ZERO/01_CEO/Registro_Erros/registro.json` (regras no `LEIA_ME.md`). Erro de um Agente seu → você escreve a `solucao_proposta`: como resolver, de forma plausível e testável. Você não aprova a própria solução (só Claudemberg) e não muda status (só Wallenberg). **Antes de alterar qualquer Skill ou instrução da sua equipe**, procure no registro as linhas `acerto_protegido` dela e rode de novo cada `teste_de_regressao`; se algum falhar, a mudança não entra.
+
 ---
 
 ## Registro Diário & Visibilidade
