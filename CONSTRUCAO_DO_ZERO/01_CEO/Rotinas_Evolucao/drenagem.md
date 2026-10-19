@@ -33,6 +33,8 @@ Tarefa `wallenberg-drenagem-continua-local` · seg-sex 11:00 · referência `CON
 | 09/10 | sim | ~47 min (11:03–11:50) | Ensaio 003 etapa 4 executada e corrigida (Lúcio 7,75; Oscar 6,25; Bardi reprovar). 5 itens de pendências resolvidos (Skills de vaga e de critérios, checagem de gabarito) | Trim dos 3 arquivos de estado não executado; fica para a próxima rodada. Sem candidata nova |
 | 13/10 | sim, em curso às 20:04 | desde 11:03 (~9 h até agora, sem encerrar) | Registro gravado: 8 itens auto (Lúcio 4, Kelsen 2, Bardi 1, Wallenberg 1) e 1 conflito humano (COES, p. 15 × p. 19) | Sessão não encerrou no horário; ver a candidata de sessão aberta |
 | 14/10 | sim | ~28 min (11:03–11:30) | Ensaio 003 etapa 5 executada e corrigida (v1: reprovar). v2 refeita e reprovada por Claudemberg (Lúcio 7,00; Oscar 6,30). Etapa 4 v2 consolidada em um arquivo; rodada de 12/10 removida de `entrega/` | Sessão encerrou no horário. Etapa 5 em 2 de 3 tentativas |
+| 15/10 | sim | ~2 h 35 min (11:03–13:38) | 9 itens auto abertos no portão. Acionados Kelsen (F-1 e P-SMD, parciais) e Lúcio (3 itens). Nada fechado | Ensaio 003 etapa 5 não executada: v3 segue travada. Sessão encerrou sem ficar aberta por horas |
+| 16/10 | sim | 7 min 34 s (11:03–11:11) | 11 itens auto na fila. Erratum COES Art. 29 III (Lúcio) e C3 do Gate R6 fechado. Errata do gabarito da etapa 4 (Bardi, lacre conferido). Commit local fb89613 | Ensaio 003 não executado: v3 da etapa 5 segue travada. E-1 e N-1 pendentes de decisão. Kelsen não fechou nada. Média das 5 anteriores puxada pela sessão de 13/10 (~9 h): sem candidata |
 
 ## 3. Candidatas a melhoria
 - (aberta) **Sessão de 28/09 ficou aberta cerca de 24 h.** Verificar se ela se repete.
@@ -41,3 +43,5 @@ Tarefa `wallenberg-drenagem-continua-local` · seg-sex 11:00 · referência `CON
 - (dados novos 07/10, para a candidata "sessão aberta 24 h") Pelo `list_task_runs`, a sessão de 05/10 ficou aberta ~8h30 (11:03–19:33) e a de 06/10 ~9h09 (11:04–20:13). Nas duas datas o livro-razão registra decisões de Claudemberg ao vivo na mesma sessão, o que provavelmente explica a duração. 07/10 voltou a ~50 min. Sugestão: separar no diário "tempo da rotina" e "sessão ao vivo com Claudemberg", para a média não se misturar.
 - (dados 09/10) Rodada de 09/10: 47 min (11:03–11:50). A de 08/10 durou 3h32 e tem decisões ao vivo de Claudemberg no livro-razão. Mais um dado para separar tempo da rotina e sessão ao vivo.
 - (dados 14/10, `list_task_runs`) Sessão de 14/10 durou ~27 min (11:03–11:30), sem ficar aberta. A de 13/10 ficou aberta até 21:46 (~10 h 43 min). Sem padrão fechado: seguir separando "tempo da rotina" de "sessão ao vivo".
+
+- (dados 15/10, `list_task_runs`) Sessão de 15/10 durou ~2 h 35 min (11:03–13:38), sem ficar aberta por horas. Com a de 13/10 (~10 h 43 min), segue sem padrão fechado: continuar separando 'tempo da rotina' de 'sessão ao vivo'.

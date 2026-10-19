@@ -107,7 +107,8 @@ Siga nesta ordem; cada item com releitura (`get_walls`, `get_floors`, `get_doors
 
 ## 7. Folhas e carimbo (F5, R4)
 
-1. `create_sheet` com o selo **por nome** ("SI_FOLHA_ ABNT : A3" ou "a3"); confira o `seloId`. Se o nome falhar, cole o erro e use o id.
+1. `create_sheet` com o selo **por nome** ("SI_FOLHA_ ABNT : A3" ou "a3"); confira o `seloId` (A3 = 449280 no teste de 17/10). Passe **sempre `requestId` novo** e **`areaUtil` explícita** (A3: xMin 0,025; xMax 0,410; yMin 0,010; yMax 0,287 m). Motivo: no build v40 a ferramenta não lê a moldura do selo e devolve "não consegui ler a moldura visível" (D16), mas cria a folha mesmo assim. Declare na entrega que a moldura é premissa, não leitura. Se o nome falhar, cole o erro e use o id.
+   - **Folha de teste não se apaga pela ferramenta:** `delete_element` e `operar_elementos` respondem "ElementId cannot be deleted" (D22, pedido P22). Se criar folha por engano, apague pela interface do Revit e não salve.
 2. Carimbo: a família não tem carimbo desenhado (R4). Grave os campos que existem (`carimbo` {cliente, obra, endereco, data, desenhado_por, ...}) e liste os `naoEncontrados`. **Não declare carimbo pronto** até a família nova (caminho a) existir.
 3. Área útil: até o carimbo existir, folha inteira menos margens — use `reservaCarimbo=nenhum` (D11).
 4. `place_view_on_sheet` → **exporte a imagem da FOLHA e abra**. A vista tem de estar **dentro da moldura e centralizada**. Hoje a ferramenta põe a vista fora da moldura A3 dizendo "conferidas" (D2/F5): se a imagem mostrar isso, escreva **"não atende — vista fora da moldura (D2)"** e reporte; não entregue a folha como pronta.
