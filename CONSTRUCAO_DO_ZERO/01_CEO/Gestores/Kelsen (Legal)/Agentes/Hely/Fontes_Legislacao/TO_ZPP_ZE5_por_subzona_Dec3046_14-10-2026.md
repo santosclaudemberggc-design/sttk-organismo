@@ -2,6 +2,8 @@
 
 **Item:** kelsen-f1-to-zpp-anexo-xxi-subzona-13-10-2026 (pedido de Kelsen, acionamento automático de 14/10/2026).
 
+> Correção 20/10/2026 (Drenagem Contínua, item hely-mapa-zpp-a18-a19-19-10-2026): linha p34 corrigida de A-18 para A-19 após conferência no PDF p.34 (cabeçalho "Subzona A-19"). Backup: _backups/2026-10-20/.
+
 ## 1. Onde a TO da ZPP está escrita (duas camadas)
 
 - **LC 270/2024, Anexo XXI, bloco AP-4, linha "ZPP"** (PDF p. 275, conferido por rasterização da página): colunas CAM, TO, lote mínimo, gabarito e afastamento frontal dizem todas **"ver Dec. nº 3046/1981"**. Não há número de TO no anexo para a ZPP. (Obs.: a extração de texto com pdftotext deu uma linha "ZPP B 2,00" que NÃO existe na imagem da página; a leitura válida é a da imagem.)
@@ -97,7 +99,7 @@ A-18|p33|a) Uso Residencial Unifamiliar|- Taxa de ocupação: 40% (quarenta por 
 A-18|p33|c) Uso Comercial|- Taxa de ocupação: 30% (trinta por cento)
 A-18|p33|c) Uso Comercial|- Taxa de ocupação: 30% (trinta por cento)
 A-18|p33|c) Uso Comercial|- Taxa de Ocupação:16% (dezesseis por cento)
-A-18|p34|a) Serão permitidas apenas edificações destinadas às seguint|- Taxa de Ocupação: 10% (dez por cento)
+A-19|p34|a) Serão permitidas apenas edificações destinadas às seguint|- Taxa de Ocupação: 10% (dez por cento)
 A-20|p35|a) Uso Residencial, Uni e Multifamiliar|- Taxa de ocupação: 50% (cinqüenta por cento)
 A-20|p36|b) Uso Multifamiliar para lotes com testada para a Avenida S|- Taxa de Ocupação: decorrente do I.A.A. e do gabarito adotados, com máximo de 50%
 A-20|p36|c) Uso Comercial|- Taxa de ocupação: 50% (cinqüenta por cento)

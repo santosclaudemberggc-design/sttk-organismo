@@ -1575,8 +1575,8 @@
                       "desde":  "2026-10-19",
                       "crit":  "media",
                       "alc":  "auto",
-                      "status":  "aberta",
-                      "resolvido_em":  null,
+                      "status":  "resolvida",
+                      "resolvido_em":  "2026-10-20",
                       "txt":  "Mapa TO_ZPP_ZE5_por_subzona_Dec3046_14-10-2026.md (Hely): linha 'A-18 | p34', mas o cabecalho da pagina 34 do PDF do Dec. 3.046 e Subzona A-19. Relatado por Kelsen em 19/10/2026.",
                       "acao":  "Hely confere o Cap. III do Dec. 3.046/81 na pagina 34, corrige a linha (A-18 ou A-19, com o trecho) e registra no mapa. Nao alterar outras linhas sem prova."
                   },
