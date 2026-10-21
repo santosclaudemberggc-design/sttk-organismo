@@ -25,6 +25,8 @@ Tarefa `wallenberg-rotina-macetes-profissionais` · seg-sex 14:00 · fila `CONST
 | 14/10 | não rodou (pausada) | — | — | Tarefa desligada (`enabled: false`) desde 09/10 |
 | 15/10 | não rodou (pausada) | — | — | Tarefa desligada (`enabled: false`) desde 09/10. Última execução: 08/10 |
 | 16/10 | não rodou (pausada) | — | — | Tarefa desligada (`enabled: false`) desde 09/10. Última execução: 08/10 |
+| 19/10 | não rodou (pausada) | — | — | Tarefa desligada (`enabled: false`) desde 09/10. Última execução: 08/10 |
+| 20/10 | não rodou (pausada) | — | — | Tarefa desligada (`enabled: false`) desde 09/10. Última execução: 08/10 |
 
 ## 3. Candidatas a melhoria
 - (confirmada 01/10) A fonte C não destravou o Kelsen: varandas falhou pela 2ª rodada seguida (tipo A e C tentados, só achada a ata do COMPUR 2007 com opinião, sem técnica nova) e foi para "Sem fonte pública", como esta candidata antecipava em 29/09.

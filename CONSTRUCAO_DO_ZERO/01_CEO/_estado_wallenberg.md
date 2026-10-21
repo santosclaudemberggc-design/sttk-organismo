@@ -57,6 +57,7 @@ Antes da pausa: **3 Gestores drenados (original):** **Kelsen:** catalogou Resolu
 ---
 
 ## 1. Onde parei / em andamento
+- **20/10/2026 — Drenagem Contínua (ter, 11:04, local agendada) — fila com 4 auto; Kelsen acionado e resolveu 1.** `hely-mapa-zpp-a18-a19-19-10-2026` resolvido (p.34 do Dec. 3.046 = A-19; mapa corrigido; backup em `_backups/2026-10-20/`). Notion "Treinos e Testes": 0 pendente. Ensaio 003 etapa 5: `refazer` no JSON, mas `trava_v3` segue `false` (Opção A, 19/10) — não executada, nenhum acionamento. Não executados (próxima rodada): `trim-estados-lucio-cardozo-hely-09-10` (arquivos > 100 KB, exige sessão própria); `ensaio003-regra-3-tentativas` (depende da trava); item do Bardi (gabarito etapa 4) fica para a Diária de amanhã. Commit local `c3028c4`.
 - **19/10/2026 — Drenagem Contínua (seg, 11:00) — fila 11 auto; Lúcio e Kelsen acionados.** Lúcio: 1 resolvido (erratum COES p. 15), 5 viraram humano/técnico. Kelsen: F-1 e P-SMD viraram humano (sem lote/subzona, Claudemberg precisa informar); item auto novo para Hely (mapa TO_ZPP A-18/A-19). Ensaio 003: etapa 5 segue parada pela trava v3 (Claudemberg 14/10), não executada. Wallenberg: 2 itens auto não executados (3 tentativas depende da trava; trim Cardozo fica para amanhã). Bardi (gabarito etapa 4) não acionado. Pendências para Claudemberg: decidir R6 na v7; comprar NBR 9050; liberar trava v3; informar lote/subzona do caso F-1. Commit local.
 
 

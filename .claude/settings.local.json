@@ -139,7 +139,24 @@
       "Bash(rm -rf /c/Users/santo/AppData/Local/Temp/*)",
       "PowerShell(Remove-Item -Recurse -Force \"C:\\\\Users\\\\santo\\\\AppData\\\\Local\\\\Temp\\\\*)",
       "Bash(git commit *)",
-      "Bash(git status *)"
+      "Bash(git status *)",
+      "Read(//c/Users/santo/.claude/plugins/cache/claude-video/watch/0.2.0/skills/watch/**)",
+      "Bash(python scripts/setup.py --json)",
+      "Bash(python scripts/watch.py \"https://www.youtube.com/watch?v=xifbRiGxt74\" --engine gemini --question \"Resuma o passo a passo mostrado no Revit \\(com tempos\\): planta de área, esquemas de área, limites, tabelas, parâmetros, fórmulas, quadro de áreas, erros comuns. Diga quem fala e qual canal.\")",
+      "Bash(python scripts/watch.py \"https://www.youtube.com/watch?v=xifbRiGxt74\" --engine local --detail transcript --out-dir \"C:/Users/santo/AppData/Local/Temp/claude/D--000-ESTRUTURA-DEPARTAMENTO-DE-PROJETO/1d4b03f1-3fa1-457f-8b5f-940671b1339f/scratchpad/videos_area\")",
+      "Bash(python scripts/watch.py \"https://www.youtube.com/watch?v=57X7zikzSXg\" --engine gemini --question \"Resuma o passo a passo mostrado no Revit \\(com tempos\\): planta de área, esquemas de área, limites, tabelas, parâmetros, fórmulas, quadro de áreas, erros comuns. Diga quem fala e qual canal.\")",
+      "Bash(python scripts/watch.py https://www.youtube.com/watch?v=57X7zikzSXg --engine local --detail transcript --whisper openai --out-dir C:/Users/santo/AppData/Local/Temp/claude/D--000-ESTRUTURA-DEPARTAMENTO-DE-PROJETO/1d4b03f1-3fa1-457f-8b5f-940671b1339f/scratchpad/videos_area)",
+      "mcp__vitruvius__vitruvius_get_revit_status",
+      "Bash(sed -i 's|            handlers\\\\[\"CheckLayout\"\\\\] = \\(uiApp, param\\) => CheckLayoutCommand.Execute\\(uiApp, param\\);|&\\\\n            handlers[\"CreateAreaTable\"] = \\(uiApp, param\\) => CreateAreaTableCommand.Execute\\(uiApp, param\\);|; s|            \"CheckLayout\",|&\\\\n            \"CreateAreaTable\",|' Services/CommandDispatcher.cs)",
+      "Bash(sed -i 's/\"2026-10-19-conferir-layout-v64\"/\"2026-10-20-quadro-areas-v65\"/' RevitPluginApp.cs)",
+      "Bash(dotnet build *)",
+      "Bash(npm run *)",
+      "PowerShell(New-Item -ItemType Directory -Force \"D:\\\\011_VITRUVIUS\\\\_parametros\")",
+      "Bash(awk '/=====PAGE 2=====/,/=====PAGE 6=====/' C:/Users/santo/AppData/Local/Temp/claude/D--000-ESTRUTURA-DEPARTAMENTO-DE-PROJETO/e36ef421-485e-4f4e-b950-451132a81f2e/scratchpad/Decreto3046_1981_PlanoPilotoBaixadaJacarepagua.txt)",
+      "Bash(mkdir -p .agents/skills/quadro-de-areas-rj)",
+      "Bash(cp .claude/skills/quadro-de-areas-rj/SKILL.md .agents/skills/quadro-de-areas-rj/SKILL.md)",
+      "Bash(sed -i 's/double fConcre = Numero\\(p, \"fatorConcregrama\"\\) ?? 0.7;/double fConcre = Numero\\(p, \"fatorConcregrama\"\\) ?? 0.0; \\\\/\\\\/ 20\\\\/10: a lei do Rio não fixa fator \\(Skill quadro-de-areas-rj\\); 0 até o Gate/; s/grama 1; concregrama 0,7; impermeável 0/grama 1; concregrama 0 \\(Rio não fixa fator\\); impermeável 0/' RevitPlugin/Commands/CreateAreaTableCommand.cs)",
+      "Bash(sed -i \"s/concregrama \\(fatorConcregrama, padrão 0,7\\)/concregrama \\(fatorConcregrama, padrão 0 — o Rio não fixa fator; Skill quadro-de-areas-rj\\)/; s/Fator do semipermeável \\(padrão 0,7\\)/Fator do semipermeável \\(padrão 0 no Rio\\)/\" MCP_Server/src/modelagem.ts)"
     ]
   },
   "hooks": {

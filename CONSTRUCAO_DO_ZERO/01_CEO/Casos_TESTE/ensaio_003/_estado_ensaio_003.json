@@ -553,6 +553,113 @@
       "data": "2026-10-14",
       "versao": "v2",
       "motivo": "Parecer Bardi v2: Oscar 6,30, Lucio 7,00 (abaixo de 8,00). \"Atende\" sem conferencia visual; superior sem porta/acesso; eixos; alturas. Opcao (b): reprovar e segurar a v3 ate o Bloco 1 do Vitruvius. Versoes reprovadas na etapa: 2 de 3 (teto)."
+    },
+    {
+      "etapa": 5,
+      "evento": "decisao_trava_opcao_a",
+      "data": "2026-10-19",
+      "obs": "decidido por Claudemberg. Etapa 5 segue reprovada (2 de 3 tentativas). Trava v3 segue false ate a Fase 3 do Vitruvius passar. Teste de fumaca da Fase 0 passou em 19/10 (Oscar acionado pelo Lucio, Projeto1)."
+    },
+    {
+      "etapa": 5,
+      "evento": "fase_diagnostico_criada",
+      "data": "2026-10-19",
+      "obs": "decidido por Claudemberg apos sabatina. Fase 2-D (Diagnostico da Etapa 5) no D:/011_VITRUVIUS/PLANO_AGENTE_GUIADO.md: Lucio aciona Oscar para tentar cada desenho do enunciado da etapa 5 numa copia do template; saida etapa_05_estudo_preliminar/diagnostico_EP/diagnostico_etapa5.md. NAO conta como tentativa (segue 2 de 3), sem gabarito, sem Bardi. Trava v3 segue false."
+    },
+    {
+      "etapa": 5,
+      "evento": "diagnostico_executado",
+      "data": "2026-10-19",
+      "obs": "Lucio+Oscar em diagnostico_EP/EP_diagnostico_19-10.rvt. 5 de 8 entregas funcionaram (implantacao, planta terreo, 2 cortes, provas), 1 parcial (superior sem escada e vao), 2 falharam (elevacoes frontal e fundos). Wallenberg conferiu lendo o modelo: 20 paredes, imagem do terreo confere, elevacao NORTE sem a casa. Resultado: diagnostico_EP/diagnostico_etapa5.md. Aguarda conferencia de Claudemberg no Revit. Trava v3 segue false."
+    },
+    {
+      "etapa": 5,
+      "evento": "decisoes_diagnostico",
+      "data": "2026-10-19",
+      "obs": "decidido por Claudemberg: (1) pe-direito 3,15 nos dois pavimentos, so paredes externas do terreo com base -laje (esclarecido 19/10: 3,15 e piso a piso, niveis 0,30 / 3,45 / 6,60); (2) tools novas no oscar.md; (3) create_elevation autorizado, mover marcador E vista da elevacao; (4) escada = dev novo no Vitruvius; (5) arquitetura usa familia padrao, familia do cliente e do Tenreiro. Registrado em diagnostico_etapa5.md, Skill oscar-revit-projetista-vitruvius, Oscar_catalogo_vitruvius.md e PLANO_ITEM2."
+    },
+    {
+      "data": "2026-10-20",
+      "evento": "quadro_areas_partido_b",
+      "ferramenta": "criar_quadro_areas (plugin v68)",
+      "modelo": "diagnostico_EP/EP_layout_partidoB.rvt",
+      "base_indices": "menor area de lote = 571,60 m2 medidos (informado 571,80)",
+      "resultado": {
+        "TO": "40,01% (limite simulado 50%) atende",
+        "CA": "0,786 (limite simulado 1,0) atende",
+        "permeabilidade": "44,99% (minimo simulado 25%) atende",
+        "na_base_571_80": "TO 40,00% / CA 0,786 / perm. 44,97%"
+      },
+      "areas_m2": {
+        "projecao": 228.72,
+        "construida_terreo": 228.72,
+        "construida_superior": 220.76,
+        "jardim_solo_natural": 257.14,
+        "concregrama_fator_0": 85.74,
+        "impermeavel": 228.72
+      },
+      "decidido_por_claudemberg": "faixa da frente (14,29 x 6,00) = concregrama, fator 0",
+      "auditoria": "Hely via Kelsen: confirma com ressalvas (contas, Art. 353 III, vao da escada); 2 areas soltas apagadas",
+      "pendente_gate": [
+        "limites reais de TO/CA dependem do RIU (caso real)"
+      ],
+      "pendente_projeto": "programa sem vaga de carro; conferir calcada encostada na casa nas faixas laterais de 2,50 m",
+      "imagens": "D:/011_VITRUVIUS/_imagens/vitruvius_20261020_170643*.png",
+      "gate_decidido_por_claudemberg_20_10": {
+        "base_indices": "571,60 m2 (medido, conservador)",
+        "vao_escada": "fora da area do superior",
+        "permeabilidade_minima": "25% no ensaio"
+      },
+      "status": "resultado final do ensaio — decidido por Claudemberg em 20/10/2026"
+    },
+    {
+      "data": "2026-10-20",
+      "evento": "volumetria_escolhida",
+      "escolha": "E (Casa JK Pampulha: pe-direito duplo integral, marquise sinuosa na entrada)",
+      "decidido_por": "Claudemberg, 20/10/2026",
+      "ajustes_exigidos_no_exame": [
+        "crescer ate o programa (~520 m2; hoje ~290 m2, CA 0,506)",
+        "suites do programa (E tinha so 2)",
+        "curva legivel na fachada da rua (sul)"
+      ],
+      "relatorio": "etapa_05_estudo_preliminar/diagnostico_EP/volumetria_estudos_v2.md",
+      "modelo_base": "diagnostico_EP/EP_volumeE.rvt"
+    },
+    {
+      "data": "2026-10-20",
+      "evento": "exame_fase3_corrigido",
+      "modelo": "etapa_05_estudo_preliminar/entrega_v3/EP_v3.rvt",
+      "quadro": "plugin v69: TO 44,71% / CA 0,837 / perm 28,33% (base 571,60)",
+      "nota_oscar_modelo": 7.6,
+      "minimo": 8,
+      "recomendacao_bardi": "reprovar (falta de prova colada; desenho bom)",
+      "lacre": "SHA256 c18910c4... conferido por Wallenberg apos a correcao: intacto",
+      "achado_grave": "TO 40% do Regramento (P2, privado): projecao 255,58 > teto 228,64 m2 — nao atende; RIU 50% atende",
+      "parecer": "etapa_05_estudo_preliminar/parecer_bardi_v3.md",
+      "decisao": "Reprovado com 7,60 — decidido por Claudemberg, 20/10/2026. Oscar corrige: provas coladas, implantacao e vagas, terreo dentro dos 40% do Regramento; Bardi corrige de novo."
+    },
+    {
+      "data": "2026-10-20",
+      "evento": "exame_fase3_recorrigido",
+      "nota_oscar_modelo": 8.75,
+      "recomendacao_bardi": "aprovar",
+      "indices": "TO RIU 38,33% / Regramento 219,11<=228,64 m2 / CA 0,720 / perm 32,76%",
+      "area_bruta": "452,41 m2 (programa ~520)",
+      "ponto_critico": "largura interna das vagas cobertas nao provada (<2,50?)",
+      "parecer": "etapa_05_estudo_preliminar/parecer_bardi_v3_correcao.md",
+      "lacre": "conferido intacto",
+      "decisao": "Aprovado com 8,75 — decidido por Claudemberg, 20/10/2026 (conferiu no Revit)."
+    },
+    {
+      "data": "2026-10-20",
+      "evento": "trava_v3_etapa_5_liberada",
+      "decidido_por": "Claudemberg, 20/10/2026",
+      "pendentes_herdados": [
+        "programa 452 x ~520 m2 (3o pavimento / cliente / Kelsen)",
+        "vagas descobertas no afastamento lateral (Kelsen)",
+        "largura interna das vagas cobertas (COES Arts. 28-29)",
+        "defeitos Vitruvius: resize falso sucesso, cota face interna mede eixo, piscina/deck fora da soma do lote, colisao de nome na exportacao"
+      ]
     }
   ],
   "versao_referencia": "v8",
@@ -564,9 +671,19 @@
     "quem_libera": "Claudemberg"
   },
   "trava_v3_etapa_5": {
-    "liberada": false,
+    "liberada": true,
     "decisao": "Claudemberg, 14/10/2026 (opcao b)",
     "motivo": "v3 da etapa 5 so depois do Bloco 1 do Vitruvius pronto e conferido (cotas, folhas, elevacoes, imagem da vista). Ver D:/011_VITRUVIUS/PEDIDOS_OSCAR/05_analise_prints_EP_v2_14-10.md",
-    "quem_libera": "Claudemberg"
+    "quem_libera": "Claudemberg",
+    "decisao_19_10": "Opcao A - segurar a Etapa 5 ate a Fase 3 do Vitruvius passar (PLANO_AGENTE_GUIADO.md). decidido por Claudemberg, 19/10/2026. liberada segue false.",
+    "teste_fumaca_fase_0_19_10": "Passou 19/10/2026: Oscar acionado pelo Lucio, 6 de 6 passos (criar, ler, apagar nivel de teste no Projeto1, nao salvo). Prova no relatorio do subagente a7d9abdba2800fbb0 e na releitura de get_levels.",
+    "gabarito_modelo_20_10": {
+      "arquivo": "_gabaritos_LACRADO_bardi/ensaio_003/etapa_05_gabarito.md (secao 7, 13 itens de modelo, total 10,00, minimo 8,00)",
+      "sha256": "c18910c4742f6e6d7896dddeba2e7c1660ee930486a966e5d0fe708ec4a5324e",
+      "registrado_por": "Wallenberg 20/10/2026",
+      "base_lote": "571,60 m2 (Gate 20/10); enunciado da v3 deve usar 571,60"
+    },
+    "fase3_iniciada_20_10": "Exame Fase 3 iniciado sobre a volumetria E (decidido por Claudemberg). liberada segue false.",
+    "liberacao_20_10": "Fase 3 aprovada com 8,75 e trava da etapa 5 liberada apos conferencia visual no Revit — decidido por Claudemberg, 20/10/2026."
   }
 }

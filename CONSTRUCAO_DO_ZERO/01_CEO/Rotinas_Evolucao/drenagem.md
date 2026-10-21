@@ -35,6 +35,8 @@ Tarefa `wallenberg-drenagem-continua-local` · seg-sex 11:00 · referência `CON
 | 14/10 | sim | ~28 min (11:03–11:30) | Ensaio 003 etapa 5 executada e corrigida (v1: reprovar). v2 refeita e reprovada por Claudemberg (Lúcio 7,00; Oscar 6,30). Etapa 4 v2 consolidada em um arquivo; rodada de 12/10 removida de `entrega/` | Sessão encerrou no horário. Etapa 5 em 2 de 3 tentativas |
 | 15/10 | sim | ~2 h 35 min (11:03–13:38) | 9 itens auto abertos no portão. Acionados Kelsen (F-1 e P-SMD, parciais) e Lúcio (3 itens). Nada fechado | Ensaio 003 etapa 5 não executada: v3 segue travada. Sessão encerrou sem ficar aberta por horas |
 | 16/10 | sim | 7 min 34 s (11:03–11:11) | 11 itens auto na fila. Erratum COES Art. 29 III (Lúcio) e C3 do Gate R6 fechado. Errata do gabarito da etapa 4 (Bardi, lacre conferido). Commit local fb89613 | Ensaio 003 não executado: v3 da etapa 5 segue travada. E-1 e N-1 pendentes de decisão. Kelsen não fechou nada. Média das 5 anteriores puxada pela sessão de 13/10 (~9 h): sem candidata |
+| 19/10 | sim | ~4 min (11:03–11:07) | 11 itens auto: Lúcio 6 (1 resolvida: erratum COES Art. 29 III, p. 15), Kelsen 2 (viraram humano), Wallenberg 2 (não executados), Bardi 1 (não acionado). Novo item auto para Hely (mapa TO_ZPP A-18/A-19) | Etapa 5 não executada: trava v3 segue `false`. Sem candidata |
+| 20/10 | sim | ~6 min 14 s (11:03–11:10) | 4 itens auto abertos (Kelsen 1, Bardi 1, Wallenberg 2). Mapa TO_ZPP A-18→A-19 corrigido (commit c3028c4). Etapa 5 não executada (trava v3 `false`) | Bardi (gabarito da etapa 4) não acionado: exige cuidado com o lacre |
 
 ## 3. Candidatas a melhoria
 - (aberta) **Sessão de 28/09 ficou aberta cerca de 24 h.** Verificar se ela se repete.

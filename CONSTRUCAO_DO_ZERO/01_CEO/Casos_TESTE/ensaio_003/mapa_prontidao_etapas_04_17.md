@@ -25,5 +25,9 @@ Legenda: 🟢 a equipe tem o que precisa · 🟡 entrega em texto/memorial, sem 
 
 1. **Etapa 4 pode seguir normalmente** (amanhã, pelo fluxo de sempre).
 2. **Antes da etapa 5 chegar**, Claudemberg decide uma de duas: (a) segurar a etapa 5 até a Fase 3 do `D:\011_VITRUVIUS\PLANO_AGENTE_GUIADO.md` (exame de ferramenta do Oscar; estimativa 7–8 sessões do Vitruvius); ou (b) rodar a 5 em texto e marcar no parecer "desenho pendente — Vitruvius", como no Ensaio 002. Recomendação de Wallenberg: **(a)**. Rodar em texto não treina o que o Oscar vai precisar fazer num cliente real. Enquanto o Vitruvius avança, a etapa 4 (Briefing) roda normalmente.
+
+**Decidido por Claudemberg em 19/10/2026: opção (a), segurar a etapa 5 até a Fase 3 passar.** Em 19/10 o teste de fumaça da Fase 0 passou (Oscar acionado pelo Lúcio: criar, ler e apagar um nível de teste no Projeto1, 6 de 6 passos). Falta a Fase 3 (exame de desenho). Lembrete: o Burle segue sem render (orçamento pausado), então a etapa 5 pode sair com a parte de imagem pendente mesmo depois da Fase 3.
+
+**Decidido por Claudemberg em 20/10/2026: Fase 3 aprovada (8,75) e trava v3 da etapa 5 liberada.** Modelo: etapa_05_estudo_preliminar/entrega_v3/EP_v3.rvt (volumetria E). Parecer: parecer_bardi_v3_correcao.md.
 3. **Antes da etapa 14**, Lelé precisa ter equipe. Pendência aberta para o Lelé propor (Regra de Cascata).
 4. **Etapas 8–13** podem rodar como estão, desde que o enunciado do Bardi deixe claro o limite: o Agente prepara, o profissional habilitado assina.

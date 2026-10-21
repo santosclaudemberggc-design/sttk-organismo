@@ -14,7 +14,7 @@ enhancements:
   - "Selo de ressalva para Skill sem fonte primária lida"
   - "Escopo Passo 1 expandido: estratégias de domínio por Gestor (não só NBRs)"
   - "Kelsen: estratégias legais reais + monitoramento de janelas excepcionais de governo"
-  - "Lúcio: estratégias de projeto arquitetônico (solar, conforto, partido, tipologias)"
+  - "Lúcio: estratégias de projeto arquitetônico (solar, conforto, partido, tipologias) + layout residencial contínuo (19/10/2026)"
   - "Cardozo: técnicas de projeto profundas por Agente (6 disciplinas)"
   - "Vitruvius: Agentes de Cardozo precisam de Skills de Trilha B (compatibilização BIM)"
   - "[v3.1] Fonte única: manual operacional v2.9 aposentado, conteúdo vivo (bloqueadores/critérios) absorvido no Apêndice deste arquivo"
@@ -196,6 +196,7 @@ Procure por:
   - **Acessibilidade integrada ao projeto:** como incorporar NBR 9050 desde o Estudo Preliminar, não como adaptação posterior (rampas escondidas, larguras mínimas de circulação, banheiro acessível compacto).
   - **Zoneamento de programa:** como organizar setores (íntimo, social, serviço) em relação à orientação solar, privacidade e circulação.
   - **Cases de escritórios RJ:** como escritórios cariocas de referência resolvem problemas clássicos (lote estreito, garagem no térreo, aproveitamento de cobertura, mezanino em pé-direito duplo).
+  - **[19/10/2026, decidido por Claudemberg] Aperfeiçoamento contínuo do projeto residencial — em toda rodada:** layout, zoneamento, fluxos (visita, morador, serviço), posição de escada, integração de ambientes e plantas de casas de escritórios reconhecidos (ArchDaily, Neufert, Ching, Alexander). Cada achado vira **proposta de nova versão** das Skills `layout-residencial-zoneamento-fluxos` ou `posicionamento-escada-residencial` (dono Lúcio), com fonte, e só vale depois do aval de Claudemberg.
 
 - **Complementares (Cardozo) — Inteligência técnica por disciplina, não ferramenta:** [FIXADO 27/08/2026, EXPANDIDO v3.0 — 10/09/2026, Claudemberg] para as 6 disciplinas complementares, busque **muito além das NBRs** — o objetivo é que cada Agente tenha o saber-fazer real do profissional da área. Pesquise por Agente:
   - **Baumgart (Estrutural):** escolha de sistema estrutural em função do programa (concreto vs. aço vs. alvenaria estrutural vs. steel frame), fundações em solo mole/argila (frequente no RJ — argilas da Baixada Fluminense, solos de aterro em Jacarepaguá), patologias estruturais comuns no Rio (corrosão por umidade, recalque diferencial, eflorescência), detalhamento de armadura em zonas críticas, critérios de durabilidade por CC1/CC2/CC3.

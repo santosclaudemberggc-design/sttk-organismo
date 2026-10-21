@@ -16,7 +16,10 @@ Tarefa `wallenberg-rotina-acervo-normas` · segunda 13:00 · acervo `D:\008_Norm
 | 13/10 | sim, fora do cron (terça 08:03; cron é só segunda 13:00). Segunda 12/10 sem execução | fora do cron | ~2 min (08:03–08:05) | Sem rastro de resultado lido nesta rodada |
 | 14/10 | não rodou | — | — | Cron só segunda 13:00. Última execução 13/10 (08:03, recuperação) |
 | 16/10 | não rodou | — | — | Cron só segunda 13:00 (hoje é sexta) |
+| 19/10 | sim (segunda, 13:08) | não identificado | Sem resumo registrado | ~5 s (13:08:28–13:08:33). Execução curta; não dá para saber o que foi feito |
+| 20/10 | não rodou | — | — | Cron só segunda 13:00 (hoje é terça) |
 
 ## 3. Candidatas a melhoria
 - (conhecida) NBR 15220-3 faltando no acervo (memória de referência).
 - (nova 13/10) **Segunda 12/10 sem execução; disparo recuperado na terça às 08:03.** Evidência: `list_task_runs` sem registro em 12/10 e execução em 13/10. Mesmo padrão do Fechamento e da Reunião naquela segunda. Sugestão: a checagem de segunda (Fechamento de sexta/segunda) deve verificar se o disparo do dia aconteceu.
+- (nova 19/10) **Execução de 5 s sem resumo, na mesma segunda em que a Reunião também durou 5 s.** Evidência: `list_task_runs` (Acervo 13:08:28–13:08:33; contra ~2 min em 13/10). Sugestão: abrir `list_events` da sessão `local_862b6081-f3d6-4382-a772-303b1467670f` para ver se a rotina rodou o portão ou abortou.

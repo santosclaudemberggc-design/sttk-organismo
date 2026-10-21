@@ -7,6 +7,26 @@ metadata:
   frequencia: toda vez que o template excede 2 rodadas
 ---
 
+## [2026-10-16] -- Diaria Skills v3.5.0 (Sexta) -- SEXTA (Painel + Dashboard + Análise; pipeline linear não rodou)
+
+### RODADA ATUAL (O que foi entregue)
+- Pré-rodada: dia confirmado por `(Get-Date).DayOfWeek` = Friday (09:06). Passagem de 15/10 lida. Feed do Painel: último `status` era de 09/10.
+- Painel (Passo 9): 2 eventos `marco` gravados (exames de 15/10 com Reidy, Limmer e Zanettini a Shadow; Ensaio 003 etapa 5 reprovada na v2). Evento `status` "Resumo da semana 12-16/10" gravado por último. `painel_status.json` reescrito (25 membros, 29 pendências abertas, 83 fechadas, 1 Skill na semana). HTML não editado.
+- Dashboard: Ensaio 003 lido de `_estado_ensaio_003.json` (etapa 5/17, reprovada, tentativas 2 de 3, próxima ação refazer, trava v3 fechada). Níveis contados por `**Nível atual:**` nos 25 arquivos de `.claude/agents/` (sem `_template_gestor.md`).
+- Learning Agent (Passo 7, opcional, 45 min): não rodou nesta rodada.
+- Passo 1 a 4 e Passo 8 não rodaram: sexta segue o fluxo próprio, sem pipeline de pesquisa. Nenhuma Skill criada nem instalada.
+
+### PENDÊNCIAS E BLOQUEIOS
+- **Prioridade zero da lacuna do organismo (06/10) para a próxima segunda:** há 6 lacunas `lacuna_conhecimento` com `alc: auto` abertas (Lúcio: NBR 9050, perspectiva 3D, altura desconectada, pé-direito e altura total, Burle; Kelsen: Anexo XXI TO por zona e F-1 TO de ZPP). A passagem de 15/10 manda começar pelo Anexo XXI, cuja instalação é decisão de Claudemberg.
+- Ensaio 003 etapa 5: `trava_v3_etapa_5` segue `liberada: false` (Claudemberg, 14/10). Não mexer até a decisão.
+- Pendências de decisão humana seguem com Claudemberg: compra de normas (ABNT 12721, 14653-2, 13133), conflito de paginação do COES Art. 29 III, autorização do Hely para WebFetch/WebSearch.
+- Dashboard: detalhamento por criticidade das 29 abertas não recontado. Contagem é bruta, por status no arquivo.
+- Índice `Skills_Propostas/2026/Outubro/indice.md` ainda sem a proposta do Anexo XXI (pendência de 15/10).
+
+### O QUE TOMAR CUIDADO
+- Sexta com Painel: o status vem do `feed.jsonl` via Append-STTKLog, nunca do HTML. Número de `Nível atual` sem a linha não entra na contagem.
+- Os exames de Reidy, Limmer e Zanettini (15/10) ainda não tinham evento no Painel. Foram gravados hoje como `marco`.
+
 ## [2026-10-15] -- Diaria Skills v3.5.0 (Quinta) -- PIPELINE LINEAR (lacuna Anexo XXI com Kelsen + pesquisa sem Skill nova)
 
 ### RODADA ATUAL (O que foi entregue)

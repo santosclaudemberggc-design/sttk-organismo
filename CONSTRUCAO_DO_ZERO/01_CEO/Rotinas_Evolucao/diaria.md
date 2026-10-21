@@ -34,6 +34,8 @@ Tarefa `wallenberg-rotina-diaria-skills-v2-7` · seg-sex 09:00 · referência `C
 | 14/10 | sim | ~6 min (09:06–09:12) | 0 Skill nova. 6 buscas (2/Gestor), nenhum achado novo. Kelsen fechou F-4 (DL 9.760) e F-5 (CC 1.301-1.302). F-1 (TO por subzona) segue aberta sem lote | Desvio: download do DL 9.760 feito pelo Hely sem permissão explícita. Lacuna NBR 9050 segue bloqueada |
 | 15/10 | sim | ~6 min (09:06–09:12) | 0 Skill instalada. 1 proposta de Kelsen: Anexo XXI (TO por zona), v1.0 ativa-com-ressalva, fora de `.claude/skills/` | Lacuna do Anexo XXI segue aberta, decisão de instalação com Claudemberg. Pesquisa do Passo 1 sem achado novo. Índice de Outubro sem a proposta |
 | 16/10 | sim (sexta) | 2 min 25 s (09:06–09:09) | 0 Skill criada. Painel: 2 marcos e status semanal 12-16/10. Passos 1 a 4 e 8 não rodaram (sexta segue fluxo próprio) | Learning (Passo 7) não rodou. Duração abaixo de 13-15/10 (~6-8 min) explicada pelo fluxo de sexta, não é anomalia |
+| 19/10 | sim | ~27 min (09:07–09:34) | 0 Skill nova (v3.6.0, segunda). Registro de Erros: 3 propostas (E-03, E-01, P-04), nada aprovado. Lacuna do Anexo XXI segue humana | Pesquisa de 6 buscas, justificada por lacuna aberta. Duração mais que o dobro das 2 rodadas anteriores (~6 min) |
+| 20/10 | sim | ~3 min 21 s (09:07–09:10) | 0 Skill nova. Registro de Erros: 3 propostas (P-05, E-02, P-02), nada aprovado. Pesquisa de 6 buscas | Sem lacuna com `alc: auto` aberta; lacuna do Anexo XXI segue com decisão humana |
 
 ## 3. Candidatas a melhoria
 - (aberta) **Uso real de Skill = 0%.** Em setembro foram cerca de 28 Skills e nenhuma usada em caso real. O Ensaio 003 é a resposta; acompanhar se as Skills aparecem nos pareceres do Bardi.
@@ -48,3 +50,4 @@ Tarefa `wallenberg-rotina-diaria-skills-v2-7` · seg-sex 09:00 · referência `C
 - (nova 15/10) **Pesquisa sem entrega nova, 4 dias úteis seguidos (12, 13, 14 e 15/10).**
   - Evidência: títulos das rodadas no template e em `rotina_fechamento_historico.md` ('pesquisa sem entrega', 'sem Skill nova'). Os 6 buscas de cada dia caem em Skills que já existem.
   - Sugestão: pesquisar só quando houver lacuna aberta ou Skill desatualizada; rodada sem lacuna termina sem busca.
+- (nova 19/10 — ver também a candidata de 07/10 sobre duração) Duração de 19/10 (~27 min) contra ~6 min em 15 e 16/10. Provável causa: o Passo 0.6 (Registro de Erros), que entrou na v3.6.0 hoje. Sugestão: medir mais uma segunda; se a duração se repetir acima de 2×, Claudemberg decide se o Passo 0.6 fica.

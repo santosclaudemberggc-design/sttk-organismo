@@ -1,4 +1,4 @@
-# Catálogo das ferramentas Vitruvius para o Oscar
+﻿# Catálogo das ferramentas Vitruvius para o Oscar
 
 **Fonte:** schemas reais das ferramentas `mcp__vitruvius__*`, carregados com ToolSearch em 17/10/2026. Build de referência: `2026-10-14-bloco1-correcao-v8`.
 **Uso:** o Oscar consulta este catálogo antes de chamar qualquer ferramenta. Quando o schema real divergir daqui, vale o schema e este arquivo deve ser corrigido.
@@ -93,7 +93,10 @@ Ver `annotate` e `dimension` na seção 2.
 
 ## 6. Lacunas (sem ferramenta hoje)
 
-- **Escada:** não existe ferramenta de escada. Usar `criar_abertura_shaft` para o vão e marcar a escada com parede baixa ou ambiente "ESCADA (lacuna de ferramenta)", declarado na entrega.
+- **Vão livre na parede (19/10/2026, plugin v62):** `criar_abertura_parede` — wallId, centro {x,y}, largura, altura e base, todos obrigatórios (medida = decisão de projeto). Recusa parede estrutural, vão cortando porta/janela e vão a menos de 0,10 m de encontro com outra parede. Integrar é o padrão; porta só com motivo escrito (Skill posicionamento-escada-residencial, seção 2-bis).
+- **Quadro de áreas (20/10/2026, plugin v68):** `criar_quadro_areas` — areaLote (obrigatória), fatores (Skill quadro-de-areas-rj, por índice TO/CA/PERM, vale a primeira regra que casar), manuais ({esquema, nome, fator, contorno}), limites {toMax, caMax, tpMin}, baseIndices (menor/informada/medida). Traz do template ARQ.Sttk - 2026 os esquemas TAXA DE OCUPACAO, COEFICIENTE DE APROVEITAMENTO e PERMEABILIDADE e as tabelas QUADRO - X; cria PLANTA DE TAXA DE OCUPACAO, PLANTA DE COEFICIENTE DE APROVEITAMENTO - <pavimento> e PLANTA DE PERMEABILIDADE, com etiqueta em cada área; apaga áreas soltas; rodar de novo refaz. Primeiro uso: partido B do Ensaio 003, auditado pelo Hely (confirma com ressalvas).
+- **Escada — limite (19/10/2026):** no máximo 10 espelhos por lance; reta com mais de 10 é recusada.
+- **Escada (atualizado 19/10/2026):** ferramenta `criar_escada` criada (plugin v59). Sobe sempre para o nível imediatamente acima; formato reta, l ou u; o Oscar dá `inicio` (centro da largura no 1º espelho), `direcao`, `espelho`, `piso`, `largura` (mínimo 0,90; o tipo "ESCADA PROJETO" exige 1,00), e no L/U `espelhosPrimeiroLance` e `virar`. O Revit calcula os degraus. Junto: vão na laje de cima, guarda-corpo do vão (menos a borda de chegada e bordas com parede) e corrimão do próprio tipo, sem o lado encostado em parede. Recusa e desfaz se bater em parede ou se o tipo não aceitar. Conferir pela imagem da planta dos dois pavimentos e de um corte pela escada. **Só aparece para os agentes numa conversa nova** (o servidor MCP é recarregado ao abrir a sessão).
 - **Cobertura inclinada:** só plana (`create_roof`).
 - **Caminho da escada e linha de corte personalizada (NBR 6492):** sem ferramenta.
 - **Tabela de revisão e nuvem de revisão:** sem ferramenta.
@@ -102,7 +105,9 @@ Ver `annotate` e `dimension` na seção 2.
 - **Sólido topográfico com corte e aterro:** sem ferramenta.
 - **Peças (divisão por camada):** sem ferramenta.
 - **Unidades do projeto:** sem ferramenta. Conferir a unidade de cada campo.
-- **Mover marcador de elevação existente:** sem ferramenta (D12).
+- **Mover marcador de elevação existente:** sem ferramenta (D12). **[19/10/2026, decidido por Claudemberg]** a elevação tem marcador **e** vista (linha tracejada com os limites); as duas precisam ir para fora da face. Enquanto o servidor não fizer isso, `create_elevation` está autorizado. Conserto pedido ao servidor Vitruvius.
+- **Elevação de fachada (19/10/2026, decidido por Claudemberg):** marcador fora do lote, depois do muro (`create_elevation alvo: "modelo"`); duas vistas por fachada, COM MURO e SEM MURO (mesma `position`, `alvo: "edificio"`, `permitirMuroNaFrente: true`, `view_setup ocultarIds` nos muros); elevação nova substitui a antiga: apagar a vista antiga e o marcador vazio.
+- **Ferramentas novas no `tools:` do Oscar (19/10/2026, autorizado por Claudemberg):** carregar_familia, editar_familia, criar_abertura_shaft, criar_elemento_linha/ponto/superficie, criar_familia_pilar, criar_pilar, criar_guarda_corpo, criar_linha_separacao_ambiente, import_image, operar_elementos.
 
 ## 7. Duplicidades e nomes antigos
 

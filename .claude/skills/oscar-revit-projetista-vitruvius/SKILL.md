@@ -44,6 +44,7 @@ changelog:
    - **Terreno = rua = 0,00.**
    - **Térreo = 0,30 a 0,50** acima da rua (o template ARQ.Sttk traz 0,30; use o valor do caso).
    - **Pavimento seguinte = nível de baixo + pé-direito + espessura da laje** (ex.: 0,30 + 2,80 + 0,15 = 3,25). Cobertura idem.
+   - **[19/10/2026, decidido por Claudemberg] Padrão Sttk: piso a piso de 3,15 m em todos os pavimentos** (pé-direito de referência mínimo 3,00 m). Níveis: térreo 0,30 → superior 3,45 → cobertura 6,60. Outro valor só com decisão escrita do cliente ou de Claudemberg.
 3. Ajuste com `set_parameter` "Elevação" no id do nível (o Vitruvius ainda não tem ação própria). Usado assim no teste de 14/10 (08_resultado, R1: 694 → 3,25 e 323714 → 6,20, relidos); se o nome do parâmetro falhar, liste os parâmetros do nível com `get_element` e cole.
 4. **Releia** com `get_levels` e cole a conta de cada nível. Só siga se todos baterem.
 5. Pé-direito e laje **iguais** aos do texto da entrega (Bardi v2: texto 6,40 × cotas 6,55/6,70 — não repetir). Divergência de pé-direito entre pavimentos só com justificativa escrita.
@@ -61,21 +62,21 @@ Siga nesta ordem; cada item com releitura (`get_walls`, `get_floors`, `get_doors
 1. **Eixos** (`create_grid`) — sempre; a ferramenta existe (Bardi v2: "eixos não criados" descontou).
 2. **Paredes externas** — pelo macete de Claudemberg (R5, abaixo).
 3. **Lajes/pisos** (`create_floor`) — ler a espessura do tipo (`get_floor_types`).
-4. **Paredes internas** — mesmo macete.
+4. **Paredes internas** — base no nível do pavimento, **sem** deslocamento; topo no nível acima (decidido por Claudemberg, 19/10/2026).
 5. **Aberturas** (`create_door`, `create_window`) — **todo pavimento tem porta**; todo ambiente de permanência tem janela; porta de entrada com lógica de acesso pelo afastamento frontal.
-6. **Escada e vão de laje:** sem ferramenta hoje (`create_floor` não faz furo; não há escada). **Não deixe o pavimento sem acesso:** marque a posição da escada e do vão com paredes baixas/ambiente rotulado "ESCADA (lacuna de ferramenta)" e declare a lacuna na entrega.
+6. **Escada e vão de laje — `criar_escada` (19/10/2026, decidido por Claudemberg em sabatina):** sempre de um nível para o imediatamente acima. Você define `espelho`, `piso` e `largura` (mínimo 0,90 m; o tipo "ESCADA PROJETO" exige 1,00 m); o Revit calcula os degraus. Formato reta, `l` ou `u` (no L/U: `espelhosPrimeiroLance` e `virar`). A ferramenta abre o vão na laje de cima, põe guarda-corpo no vão e mantém o corrimão do tipo nos lados sem parede. Antes: meça o ambiente com `list_elements` (paredes com `location`) e confira se a escada cabe sem atravessar parede **do pavimento de cima** (a ferramenta só confere as paredes entre os dois níveis). Depois: imagem da planta dos dois pavimentos e de um corte que passe pela escada. Tipo de escada sempre o padrão; escada personalizada é do Tenreiro. Exemplo testado: `EP_diagnostico_19-10.rvt`, escada 450118 em U, 18 espelhos, 9+9.
 7. **Cobertura** (`create_roof`) — hoje só plana; inclinada = lacuna declarada.
-   **Prova de acesso (A9):** cole `get_doors` filtrado por nível mostrando ao menos 1 porta em cada pavimento, `list_elements` dos eixos (ao menos 1 em cada direção) e o ambiente "ESCADA (lacuna de ferramenta)" em cada pavimento ligado. Faltou um dos três = passo não feito.
+   **Prova de acesso (A9):** cole `get_doors` filtrado por nível mostrando ao menos 1 porta em cada pavimento, `list_elements` dos eixos (ao menos 1 em cada direção) e a escada (`list_elements` category "Escadas") ligando os pavimentos. Faltou um dos três = passo não feito.
 8. **Ambientes** (`create_room`) — nome e número separados (o "8" do "SALA 8" era o Número; conferir com `get_parameter Nome`).
 9. **Etiquetas** (`annotate acao=ambientes|portas|janelas`).
 10. **Cotas** (`dimension`) — por último na modelagem, já nas vistas de apresentação (a limpeza da §5 vem depois delas). Plantas: `parede_total`/`cadeia`. Cortes e elevações: `mode=nivel` (pé-direito, piso a piso) — **sem a conferência nova**, então confira o valor pela conta dos níveis e pela imagem. Cota de nível de piso/laje: `create_spot_elevation`.
 
 ### Paredes — macete de Claudemberg (R5)
 
-- **Base** = nível do pavimento, **deslocamento da base = −(espessura do piso)** (ex.: −0,15) — o piso fica escondido na parede.
+- **Base** = nível do pavimento, **deslocamento da base = −(espessura do piso)** (ex.: −0,15) — o piso fica escondido na parede. **[19/10/2026, decidido por Claudemberg] Só nas paredes externas do térreo.** Paredes internas e todas as do superior: base no nível, deslocamento 0, topo no nível acima.
 - **Topo** = **nível acima** (restrição superior), deslocamento 0.
 - No `create_wall`: `topo {levelId: <nível acima>, deslocamento: 0}`; o deslocamento da base hoje se grava com `set_parameter` "Deslocamento da base" = −espessura (o `base_offset` direto é pedido em aberto, F4). **Nunca** `height` solto para parede de pavimento.
-- **Releitura obrigatória:** altura esperada = (nível acima − nível do pavimento) + espessura do piso. Ex.: térreo 0,30, superior 3,25, piso 0,15 → 3,10.
+- **Releitura obrigatória:** altura esperada = (nível acima − nível do pavimento) + espessura do piso. Ex.: térreo 0,30, superior 3,25, piso 0,15 → 3,10. **Padrão de 19/10/2026 (0,30 / 3,45 / 6,60, laje 0,15):** externa do térreo = 3,30; interna do térreo = 3,15; todas do superior = 3,15.
 - **Se a parede saiu com 0,30 m** (ou qualquer altura absurda), verifique, nesta ordem: (a) restrição superior caiu no nível errado (ex.: topo no "Páv. térreo" em vez do Superior); (b) a elevação dos níveis não foi ajustada (R1); (c) deslocamentos; (d) tipo de parede. Corrija com `set_parameter`, releia, cole. **Não recrie** sem antes listar se a parede já existe (risco de parede sobre parede).
 - Sem piso no nível, o macete falha (D15): informe `tipoPiso` explicitamente. Não crie a parede com `height` solto para contornar.
 - Filtro de paredes: por nível ou por tipo, não por nome (paredes herdam o nome do tipo; o `name` vai para Comentários).
@@ -84,7 +85,13 @@ Siga nesta ordem; cada item com releitura (`get_walls`, `get_floors`, `get_doors
 
 1. **Liste as vistas existentes** (`list_elements` de vistas / navegador) e cole: elevações NORTE/SUL/LESTE/OESTE (marcador Sttk), plantas "EP. Terreno/Térreo/Superior", "EP. Perspectiva", cortes.
 2. **Proibido criar elevação que o template já tem** (F1). Ajuste a existente: `view_setup recorte.ajustar=edificio`, plano distante cobrindo a casa, escala, detalhe.
+   - **[19/10/2026, decidido por Claudemberg] Elevação tem duas partes e as duas se movem:** (1) o **marcador** da elevação e (2) a **vista da elevação**, a linha tracejada com os limites que aparece ao selecionar o marcador (plano e extensão da vista, igual à de um corte). Mover só o marcador deixa a vista cortando a casa (diagnóstico 19/10, item 6: imagem da SUL saiu como corte). Ordem: mover o marcador para fora da face, depois mover a vista para fora da face, depois exportar a imagem e conferir que é fachada.
+   - **[19/10/2026, decidido por Claudemberg] `create_elevation` autorizado** quando o ajuste da elevação do template não conseguir mover marcador e vista. Registre o uso na entrega.
+   - **[19/10/2026, decidido por Claudemberg] Elevação nova substitui a antiga:** criou elevação nova com a mesma função de uma existente, **apague a existente** (`delete_element` na vista) e depois apague o marcador que ficou vazio. Confira antes, com `list_elements` (category "Vistas", className "ViewSection"), que o marcador não guarda outra vista (ex.: LESTE/OESTE). Nada de duas vistas com a mesma função.
+   - **[19/10/2026, decidido por Claudemberg] Marcador de fachada fica fora do lote**, depois do muro, nunca no quintal na frente da fachada. Como fazer: `create_elevation` com `alvo: "modelo"` (o alvo inclui os muros, então o marcador vai para fora deles), e confira a posição devolvida contra o contorno do lote.
+   - **[19/10/2026, decidido por Claudemberg] Cada fachada tem duas vistas:** `… - COM MURO` (`alvo: "modelo"`) e `… - SEM MURO` (mesma `position` da com muro, `alvo: "edificio"`, `permitirMuroNaFrente: true`, e depois `view_setup ocultarIds` com os ids dos muros). Exemplo testado em 19/10 no `EP_diagnostico_19-10.rvt`: SUL e NORTE, marcadores em y −1,59 e 41,59, lote de y −0,05 a 40,05.
 3. **Exporte a imagem e abra** (seção 6). Confira se a vista mostra a face certa: a elevação SUL tem de mostrar a fachada sul (onde está a porta/janela do sul). **Se a elevação do template mostra a face errada ou o muro tapa a casa:** não há ferramenta para mover o marcador (D12). Faça: (a) registre com o PNG; (b) **não** crie elevação nova por conta própria; (c) pergunte a Lúcio — só com autorização escrita dele use `create_elevation fachada=<lado>` e, nesse caso, oculte/registre a do template para não haver duplicata; (d) confira a nova também pela imagem (D3: o marcador da nova pode cair atrás do muro).
+- **[19/10/2026, decidido por Claudemberg] Família que o cliente ainda não escolheu** (portão, porta, janela, louça): na Arquitetura use uma família **padrão** que já exista no template ou no acervo. Não deixe o vão fechado nem espere a família definitiva. A família do jeito que o cliente quer é do **Tenreiro** (Interiores), que cria a partir de referência, caderno técnico e material.
 4. **Corte (F2):** passa **pelo meio do edifício**, atravessando ambientes, aberturas e a laje (e a escada, se houver). Defina p1/p2 você mesmo a partir das coordenadas da casa; não confie no `auto_position` (D10). Escala **do EP = 1:100**. Detalhe médio (hachura). Confira pela imagem: tem de ler como corte (parede interna cortada, laje, pé-direito).
 5. Parâmetros do navegador: "Etapa do Projeto" e **"Sub Etapa Projeto"** (não "Sub Etapa", D8) — grave com `set_parameter` se a ferramenta falhar. Nenhuma vista em "???".
 
@@ -123,7 +130,7 @@ Siga nesta ordem; cada item com releitura (`get_walls`, `get_floors`, `get_doors
 | D4 | `document.abrir` | Responde sucesso e não abre (erro "Switching active documents..."); pode derrubar o plugin | Não dependa de abrir/trocar documento; confira com `listar_abertos`; se cair, pare e reporte |
 | D2/F5 | `place_view_on_sheet` | Vista fora da moldura A3 com "conferidas" | Conferir pela imagem da folha; não entregar folha sem a imagem certa |
 | D3 | `create_elevation` | Marcador atrás do muro, casa tapada, "criada e conferida" | Só com autorização (seção 4); conferir pela imagem |
-| D12 | (falta) | Não há como mover marcador de elevação existente | Registrar com PNG; perguntar a Lúcio |
+| D12 | `view_setup ajustarExistente` | Não move marcador nem vista da elevação (`movido_m: 0` com `success:true`; ou "elevação ficou vazia", diagnóstico 19/10) | Usar `create_elevation` (autorizado por Claudemberg, 19/10/2026), com marcador e vista fora da face; conferir pela imagem. Testado em 19/10: SUL e NORTE saíram como fachada. O plano de elevação existente não se move pela API (E-27/E-29); desde a v58 o `ajustarExistente` recusa em vez de dar sucesso falso |
 | D5 | `view_setup niveisCotovelo` | Erro `pLeader` com `success:true` | Registrar lacuna com PNG |
 | D6 | `dimension parede_aberturas` | "largura não encontrada no tipo" (porta/janela do template) | Use `cadeia` com os elementos, ou `parede_total`; declare |
 | D7 | `dimension ambiente` | Texto cai sobre a etiqueta | Prefira cotas externas; conferir pela imagem |
@@ -142,7 +149,8 @@ Siga nesta ordem; cada item com releitura (`get_walls`, `get_floors`, `get_doors
 | D19 | `set_parameter` em "Elevação" de nível | Responde sucesso e a releitura mostra outro valor | Só aceitar o valor depois da releitura (`get_levels`/`get_element`); se diferir, "não atende" e reporte |
 | D20 | coordenadas, comprimentos e elevações de elementos | Vêm em pés, sem rótulo de unidade | Converter (×0,3048) antes de comparar com o EP, e declarar a conversão na entrega |
 | D21 | escritas (`set_parameter`, `create_wall`) | `Timeout na resposta do Plugin` em série; uma parede pode ficar com base e topo no mesmo nível | Parar após o primeiro timeout; reler o elemento afetado; não repetir em lote; reportar o estado exato |
-| — | escada, vão de laje, cobertura inclinada, terreno/subregião | Não existem | Lacuna desenhada + declarada (seção 3) |
+| — | cobertura inclinada, terreno/subregião | Não existem | Lacuna desenhada + declarada (seção 3). Escada e vão de laje: `criar_escada` desde 19/10/2026 |
+| — | quadro de áreas (TO, CA, permeabilidade) | Desde 20/10/2026 (plugin v68): `criar_quadro_areas` | Template ARQ.Sttk - 2026 já traz os 3 esquemas e as 3 tabelas com fórmula (a API não cria esquema nem fórmula). Informe `areaLote` do Levantamento, `fatores` da Skill `quadro-de-areas-rj` e `manuais` para o que o modelo não tem desenhado (ex.: faixa de concregrama, esquema PERM). Índices pela menor área de lote (`baseIndices` padrão `menor`); a outra base volta em `naOutraBase`. Conferir as 4 plantas de área pela imagem (etiqueta em cada área). Os números só valem depois da auditoria do Hely (via Kelsen). |
 
 ### 8-bis. Recursos que a descrição promete e ninguém testou (15/10/2026)
 
@@ -167,7 +175,7 @@ Tipos de linha, hachura de corte, cortes em letras maiúsculas (A-A, B-B) com se
 
 - [ ] **Coerência planta × corte × elevação:** a porta/janela da planta aparece na elevação do lado certo e no corte que passa por ela.
 - [ ] **Alturas batem com o texto:** níveis, pé-direito, laje e altura total iguais no modelo, nas cotas e no memorial.
-- [ ] **Acesso a todos os pavimentos:** porta em cada pavimento; escada (ou lacuna desenhada) ligando-os.
+- [ ] **Acesso a todos os pavimentos:** porta em cada pavimento; escada (`criar_escada`) ligando-os.
 - [ ] **Aberturas em todos os ambientes de permanência** (sala, quartos, cozinha) — fachadas não cegas sem justificativa.
 - [ ] **Lote igual ao dossiê** (lados e área, ±0,01 m², conta colada) e afastamentos iguais aos do Legal.
 - [ ] **Partido justificado (A10):** uma frase por decisão (acesso social, aberturas por fachada, pé-direito diferente entre pavimentos).

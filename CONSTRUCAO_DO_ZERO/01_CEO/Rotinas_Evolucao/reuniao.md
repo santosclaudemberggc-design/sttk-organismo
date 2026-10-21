@@ -22,7 +22,10 @@ Tarefa `wallenberg-reuniao-semanal` · segunda 17:00 · pautas em `CONSTRUCAO_DO
 | 13/10 | sim, fora do cron (terça 08:03; cron é segunda 17:00). Segunda 12/10 sem execução | não verificado nesta rodada | — | ~2 min (08:03–08:05); a pauta de 12/10 não aparece no registro |
 | 14/10 | não rodou | — | — | Cron só segunda 17:00 |
 | 16/10 | não rodou | — | — | Cron só segunda 17:00 (hoje é sexta) |
+| 19/10 | sim (segunda, 17:02) | não verificado nesta rodada (sem resumo registrado) | — | ~5 s (17:02:37–17:02:42). A pauta de 19/10 não aparece no registro desta rotina |
+| 20/10 | não rodou | — | — | Cron só segunda 17:00 (hoje é terça) |
 
 ## 3. Candidatas a melhoria
 - (observar) Com a linha "COMO RESPONDER" e às 17:00, as ratificações passam a ser respondidas? Se ficarem 2 semanas sem resposta, repensar o formato.
 - (nova 13/10) **Segunda 12/10 sem reunião registrada; disparo recuperado na terça às 08:03.** Evidência: `list_task_runs` sem execução em 12/10 e execução em 13/10 (2 min). A pauta de 12/10 não chegou a Claudemberg pelo registro. Mesmo padrão do Acervo e do Fechamento.
+- (nova 19/10) **Reunião de 5 s sem resumo, igual ao Acervo do mesmo dia.** Evidência: `list_task_runs` (17:02:37–17:02:42, sem summary; a de 13/10 durou 2 min). Sugestão: checar `list_events` da sessão `local_b36ced13-e28d-4c77-955a-3723e988b139` antes de a pauta de 26/10 contar como entregue.

@@ -24,6 +24,25 @@ metadata:
 
 ---
 
+## [2026-10-20] -- Diaria Skills v3.5.0 (Terça) -- PIPELINE LINEAR (sem Skill nova)
+
+### RODADA ATUAL (O que foi entregue)
+- Pré-rodada: `(Get-Date).DayOfWeek` = Tuesday (09:07). Passagem de 19/10 lida. Lacunas abertas: nenhuma com `alc: auto` (todas humano/tecnico), prioridade zero não se aplica.
+- Passo 0.6 (Registro de Erros): 3 propostas novas em `Registro_Erros/propostas_do_dia.md`: P-2026-10-19-05 (gabaritos LACRADO dentro do repositório, verificado: pasta existe e git rastreia 3 arquivos), E-2026-10-19-02 (Skill de acessibilidade contradiz habite-se; Lúcio confirmou com ajuste, sem edição) e P-2026-10-19-02 (Bardi sem hash). Evento `decisao` gravado no feed. Nada aprovado.
+- Passo 1 (pesquisa): 6 buscas (2 por Gestor). Kelsen: Mais-Valia, prazo de obras executadas (30/06/2026) venceu segundo notícias; a Skill `legal-oodc-mais-valera-mais-valia` já marca esse conflito como "em aberto". LC 301 já coberta. Lúcio e Cardozo: nada primário e novo para Barra/Recreio. Vídeo: nenhum achado relevante; nenhuma busca de Kelsen foi direcionada a vídeo (desvio da regra de 1 em 2).
+- Nenhuma Skill criada, nenhuma Skill alterada.
+
+### PENDENTE E BLOQUEADO
+- Propostas E-03, E-01, P-04 (ontem) e P-05, E-02, P-02 (hoje) aguardam Claudemberg.
+- Layout residencial (Lúcio): caso Yamada (PDF UFRGS) não lido, ECONNRESET. Repetir a leitura antes de propor nova versão da Skill de layout.
+- Caminho de `Skills_Propostas` não localizado por Glob (já ocorreu antes). Conferir com Test-Path.
+
+### O QUE TOMAR CUIDADO
+- Glob não listou a pasta `_gabaritos_LACRADO_bardi`, mas ela existe. Use Test-Path antes de concluir que algo sumiu.
+- Não editar `arquitetura-nbr9050-acessibilidade` antes da aprovação de E-02.
+
+---
+
 ## [2026-10-19] -- Diaria Skills v3.6.0 (Segunda) -- PIPELINE LINEAR (sem Skill nova)
 
 ### RODADA ATUAL (O que foi entregue)
