@@ -21,12 +21,15 @@
   - **Entregue:** `...\etapa_05_estudo_preliminar\entrega\08_burle_renders_005.md`, com 0 imagens e 0 vídeos. Pedidos (a) render para banco, (b) sala a poente com vidro a teto, (c) sala com pé-direito de 7 m: não atendidos como render, com resposta, fonte e dono no arquivo.
   - **Nada enviado; nada aprovado; contagem de palavras pendente de Wallenberg.**
   - **Reportado a Lúcio** com o caminho do arquivo, a lista de tools ausentes e as 20 lacunas com dono.
+- **21/10/2026 — Ensaio 003, etapa 5 v3 (última tentativa), imagens do EP_v3.** Agora a base existe (`entrega_v3\imagens\correcao_20-10\`, perspectiva 3D, elevações, plantas, cortes). Mas `generate_image` não estava na minha lista de funções. Tinha só Read/Write/Glob/Grep/SubagentHandback, sem `ToolSearch`. Por isso não houve chamada nem erro de chamada; a prova é a ausência na lista. 0 imagens. Prompt image-to-image preparado e não executado. Registro em `entrega_v3\burle_imagens_v3_21-10.md`.
+- **21/10/2026 (tarde) — Retomada.** Mesma ordem, agora também com a base `v3_final_21-10\`. Na lista desta sessão continuam só Read/Write/Glob/Grep/SubagentHandback. 0 chamadas, 0 créditos, 0 imagens. Registrei a seção "RETOMADO em 21/10 (tarde)" no topo do mesmo arquivo, com o histórico mantido.
 
 ## 2. Pendências abertas
 
 | Pendência | Esperando | Desde | Status |
 |---|---|---|---|
-| **Ensaio 003 Etapa 05 — perspectiva de apoio (fachada, sala, implantação):** 0 produzidas. Não há base de projeto (implantação, planta, corte, elevação) no Revit do caso. Lacunas 1 a 18 do `08_burle_renders_005.md`. | Lúcio → Oscar (base) e Topógrafo (norte, cota da rua, polígono) | 14/10/2026 | 🟡 Aguardando base |
+| **Ensaio 003 v3 — imagens do EP_v3:** 0 geradas em 2 tentativas (manhã e tarde de 21/10); base pronta, ferramenta ausente da sessão. | Lúcio → incluir `generate_image`+`media_upload` no frontmatter; Claudemberg → orçamento | 21/10/2026 | 🔴 Bloqueado por ferramenta |
+| **Ensaio 003 Etapa 05 (v1) — perspectiva de apoio:** superada pela base v3. | Lúcio | 14/10/2026 | ⚪ Substituída pela v3 |
 | **Ensaio 003 — pedido (a), render para o gerente do banco até sexta (13/10):** não atendido como render. Não envio nada. | Lúcio decide o que segue ao cliente; Claudemberg (Gate) | 14/10/2026 | 🟡 Sinalizado |
 | **Ensaio 003 — pedido (b), sala a poente com vidro a teto (corretor, 14/10):** não atendido. Orientação sem dado de campo; pedido fora da cadeia. | Lúcio; Topógrafo (T15); Oscar | 14/10/2026 | 🟡 Sinalizado |
 | **Ensaio 003 — pedido (c), sala com pé-direito de 7 m (13/10):** não atendido. Pavimento sobre a sala dá 9,50 m > 8,50 m. | Lúcio; Baumgart | 14/10/2026 | 🟡 Sinalizado |
@@ -50,6 +53,8 @@
 - **14/10/2026 — pedido de cliente que chega por terceiro (corretor via Rodrigo, gerente do banco via Rodrigo) é pedido fora da cadeia.** Sinalizo a Lúcio, não produzo. Pedido de render "para o banco" nunca sai de mim sem Gate.
 - **14/10/2026 — testar disponibilidade de `generate_*` conta como uso.** Com pausa de orçamento, não chamo para descobrir se existe. Registro "não testado" e o motivo, em vez de inventar prova.
 - **14/10/2026 — citação não é verificação.** Quando uso lei ou entrega anterior, marco que é citação do arquivo lido, não checagem minha.
+- **21/10/2026 — servidor MCP listado nas instruções do ambiente não é ferramenta na minha lista.** Se a função não está no meu `tools`, a prova da falha é a ausência registrada. Não invento uma mensagem de erro.
+- **21/10/2026 (tarde) — retomar a ordem sem mudar o frontmatter dá o mesmo resultado.** Antes de nova retomada, a mudança de ferramentas precisa estar feita no `burle.md`.
 
 ## 4. Como escrever neste arquivo
 

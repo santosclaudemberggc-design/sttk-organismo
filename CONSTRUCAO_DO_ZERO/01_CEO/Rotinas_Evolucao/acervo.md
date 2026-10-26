@@ -18,6 +18,8 @@ Tarefa `wallenberg-rotina-acervo-normas` · segunda 13:00 · acervo `D:\008_Norm
 | 16/10 | não rodou | — | — | Cron só segunda 13:00 (hoje é sexta) |
 | 19/10 | sim (segunda, 13:08) | não identificado | Sem resumo registrado | ~5 s (13:08:28–13:08:33). Execução curta; não dá para saber o que foi feito |
 | 20/10 | não rodou | — | — | Cron só segunda 13:00 (hoje é terça) |
+| 22/10 | não (quinta) | — | — | Cron só segunda 13:00 |
+| 23/10 | não rodou | — | — | Sexta; cron só segunda 13:00 |
 
 ## 3. Candidatas a melhoria
 - (conhecida) NBR 15220-3 faltando no acervo (memória de referência).

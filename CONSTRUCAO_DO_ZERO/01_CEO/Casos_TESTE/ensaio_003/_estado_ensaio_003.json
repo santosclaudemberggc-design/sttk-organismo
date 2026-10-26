@@ -3,10 +3,13 @@
   "criado_em": "2026-09-30",
   "regra": "Uma etapa por vez. Reprovada = Drenagem corrige e refaz a MESMA etapa. [14/10/2026 Claudemberg, substitui a regra de 09/10] Limite de 3 tentativas por etapa: esgotadas as 3 sem aprovacao, a etapa e encerrada como reprovada e o ensaio AVANCA para a proxima etapa. Ao fim do ensaio, revisar todas as falhas e decidir o que ajustar, recriar, criar novo ou organizar. A Drenagem grava etapa_NN/diagnostico_repeticao.md ao esgotar as 3 tentativas. Auditoria do Gestor so vale com prova colada.",
   "etapa_atual": 5,
-  "status_etapa": "reprovada",
-  "tentativas_etapa_5": 2,
+  "status_etapa": "concluido",
+  "tentativas_etapa_5": 3,
   "limite_tentativas_por_etapa": 3,
-  "proxima_acao": "refazer",
+  "proxima_acao": "aguardar_claudemberg",
+  "encerramento_21_10": "Ensaio 003 ENCERRADO na etapa 5 (aprovada). Bardi faz a revisao final das falhas das etapas 1-5 (revisao_final_ensaio_003.md). Etapas 6-17 vao para o Ensaio 004 — decidido por Claudemberg, 21/10/2026.",
+  "decisao_etapa_5_21_10": "Etapa 5 aprovada com as notas do Bardi (Lucio 8,25 / Oscar 8,50 / Burle 9,50 / Portinari 8,00; parecer_bardi_v3_final.md). Corte de >= 17,31 m2 na projecao (TO do Regramento) vira pendencia que trava a Etapa 06 — decidido por Claudemberg, 21/10/2026. Proximo: Claudemberg decide seguir ate a 17 ou encerrar o ensaio.",
+  "cabecalho_21_10": "v3 = 3a e ultima tentativa da etapa 5. O 8,75 fecha so os itens de modelo do Oscar; falta completar a v3 (auditoria do Lucio, entregas de Burle e Portinari) e o Bardi corrigir a etapa inteira. Se reprovar, a etapa fecha reprovada e o ensaio avanca — decidido por Claudemberg, 21/10/2026.",
   "valores_possiveis": {
     "status_etapa": [
       "a_criar",
@@ -660,6 +663,40 @@
         "largura interna das vagas cobertas (COES Arts. 28-29)",
         "defeitos Vitruvius: resize falso sucesso, cota face interna mede eixo, piscina/deck fora da soma do lote, colisao de nome na exportacao"
       ]
+    },
+    {
+      "data": "2026-10-21",
+      "evento": "decisoes_pendencias_etapa_5",
+      "decidido_por": "Claudemberg, 21/10/2026",
+      "jirau": "Nao vale como solucao de area (leitura conservadora no Gate): teto computavel fica 457,28 m2 (base 571,60).",
+      "programa": "Cliente aceita ~452 m2; programa fica como esta.",
+      "vagas_descobertas_afastamento_lateral": "Ficam, com 1 arvore por vaga (2 arvores); Comissao de Obras considerada de acordo no ensaio; Oscar inclui as arvores e confere permeabilidade minima de 25%.",
+      "parecer_base": "etapa_05_estudo_preliminar/parecer_kelsen_pendencias_21-10.md",
+      "registro_defeitos_vitruvius": "D:/011_VITRUVIUS/VITRUVIUS_ERROS_RAIZ.md, E-32",
+      "abertos": [
+        "largura interna das vagas cobertas (aguarda plugin conectado; conferencia_vagas_21-10.md bloqueada no passo 0)",
+        "vigencia dos atos na Busca Facil (consulta manual)",
+        "responsavel do E-2026-10-21-05 no registro.json"
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "evento": "gate_TO_marquise_vagas_21_10",
+      "decidido_por": "Claudemberg, 21/10/2026",
+      "parecer_base": "etapa_05_estudo_preliminar/parecer_kelsen_TO_manobra_21-10.md",
+      "TO_regramento": "Leitura literal: projecao bruta 245,95 > 228,64 m2 — NAO atende; projeto precisa cortar >= 17,31 m2 de projecao.",
+      "marquise_afastamento_frontal": "Pode ficar sobre o afastamento frontal (COES Art. 9); conferir pilares e escoamento para dentro do lote.",
+      "vagas_descobertas": "Vaga 2 (presa em fila) vira espaco de guarda sem status de vaga; fica 1 vaga descoberta; manobra nao conta com o afastamento frontal."
+    },
+    {
+      "data": "2026-10-21",
+      "evento": "etapa_5_aprovada",
+      "decidido_por": "Claudemberg, 21/10/2026",
+      "parecer": "etapa_05_estudo_preliminar/parecer_bardi_v3_final.md",
+      "notas": {"lucio": 8.25, "oscar": 8.5, "burle": 9.5, "portinari": 8.0},
+      "lacre": "SHA256 c18910c4... conferido intacto por Wallenberg (Get-FileHash) apos a correcao, 21/10/2026",
+      "decisao": "Aprovada com as notas do Bardi — decidido por Claudemberg, 21/10/2026.",
+      "trava_etapa_6": "Corte de >= 17,31 m2 na projecao do terreo (245,95 -> <= 228,64 m2, TO 40% do Regramento) antes de a Etapa 06 comecar."
     }
   ],
   "versao_referencia": "v8",

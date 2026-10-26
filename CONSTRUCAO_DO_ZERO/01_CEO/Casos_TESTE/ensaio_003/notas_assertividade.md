@@ -75,19 +75,41 @@ Regra de Claudemberg (07/10/2026): o Bardi dá uma nota de 0,00 a 10,00 ao Gesto
 | 14/10/2026 | 05 Estudo Preliminar | v1 | Portinari | Agente | 9,25 | Entregou roteiro em texto, não a peça de apresentação (-0,75). Status PRELIMINAR, recusas e citações conferidas |
 | 14/10/2026 | 05 Estudo Preliminar | v2 (Entrega 2) | Lúcio | Gestor | 7,00 | Passou adiante 2 "Atende" falsos (elevações; superior) sem a conferência visual pedida no 06 v2 §3.5 (-2,00); sem auditoria própria da v2 (-0,50); bloqueio do Burle sem prova, carry-over (-0,50) |
 | 14/10/2026 | 05 Estudo Preliminar | v2 (Entrega 2) | Oscar | Agente | 6,30 | "Atende" sem conferência visual em 3 itens (-1,50); superior sem portas e sem acesso (-0,50); eixos, pé-direito/laje, lote 571,60, fachadas/acesso, herança por remissão (-0,70); carry-over v1: suíte NBR 9050, P-h, SMD (-1,00). Limites de ferramenta provados não descontados |
+| 20/10/2026 | 05 Estudo Preliminar | v3 Fase 3 (itens de modelo) | Oscar | Agente | 7,60 | Falta de prova colada (get_levels, parâmetros de paredes, criar_escada, conferir_layout); afastamentos e vaga sem cota; vagas descobertas não desenhadas; nível Terreno sem justificativa. Reprovado com 7,60 — decidido por Claudemberg, 20/10/2026 |
+| 20/10/2026 | 05 Estudo Preliminar | v3 Fase 3 recorreção | Oscar | Agente | 8,75 | Largura das vagas cobertas não provada (cota 5,02 de eixo a eixo); M2 sem 3º id no superior; criar_escada e lista de vistas sem colar; 454771 apagado sem identificação. Aprovado com 8,75 — decidido por Claudemberg, 20/10/2026 |
+| 21/10/2026 | 05 Estudo Preliminar | v3 final | Lúcio | Gestor | 8,25 | ×0 da vaga 1 dado como "sem base legal" (LC 270 Art. 350 III) (-0,50); "atende" nos slides 2 e 9 (-0,50); deck auditado só por Grep (-0,25); fechou sem propor o corte da projeção (-0,50). Aprovado — decidido por Claudemberg, 21/10/2026 |
+| 21/10/2026 | 05 Estudo Preliminar | v3 final | Oscar | Agente | 8,50 | 50% modelo (8,75) + 50% fechamento (8,25): projeção 245,95 > 228,64 (-0,50); elevação SUL sem portões (-0,50); restos de desenho (-0,50); 1ª rodada do quadro sem fatores (-0,25). Aprovado — decidido por Claudemberg, 21/10/2026 |
+| 21/10/2026 | 05 Estudo Preliminar | v3 final | Burle | Agente | 9,50 | Não ofereceu alternativa sem render (esquema ou montagem sobre as vistas) (-0,50). Aprovado — decidido por Claudemberg, 21/10/2026 |
+| 21/10/2026 | 05 Estudo Preliminar | v3 final | Portinari | Agente | 8,00 | "Limite da prefeitura" 457,28 no slide 2 (-0,75); título do slide 9 (-0,50); slides 11 × 13 (-0,25); fachadas de 20/10 (-0,25); cards do slide 11 sem pedido (-0,25). Aprovado — decidido por Claudemberg, 21/10/2026 |
 
 
-## Média por membro (retroativo, Ensaio 003 até 07/10/2026)
+## Média por avaliado (atualizada em 21/10/2026 — todas as linhas 7 a 83, 77 notas)
 
-| Membro | Papel | Versões notadas | Média |
-|---|---|---|---|
-| Kelsen | Gestor | 1 | 8,50 |
-| Hely | Agente | 1 | 8,75 |
-| Villaça | Gestor | 9 | 8,14 |
-| Mascaró | Agente | 8 | 9,22 |
-| Fiker | Agente | 7 | 9,25 |
-| Lúcio | Gestor | 5 | 8,35 |
-| Oscar | Agente | 5 | 8,85 |
+| Avaliado | Papel | Versões notadas | Conta (soma / n) | Média |
+|---|---|---|---|---|
+| Kelsen | Gestor | 1 | 8,50 / 1 | 8,50 |
+| Villaça | Gestor | 9 | 73,25 / 9 | 8,14 |
+| Lúcio | Gestor | 14 | 109,35 / 14 | 7,81 |
+| Hely | Agente | 1 | 8,75 / 1 | 8,75 |
+| Mascaró | Agente | 8 | 73,75 / 8 | 9,22 |
+| Fiker | Agente | 7 | 64,75 / 7 | 9,25 |
+| Oscar | Agente | 16 | 121,10 / 16 | 7,57 |
+| Burle | Agente | 2 | 18,50 / 2 | 9,25 |
+| Portinari | Agente | 2 | 17,25 / 2 | 8,63 |
+| vaga-estacionamento (v1.0, v1.1, v1.3, v1.6 ×2) | Skill (dona Kelsen) | 5 | 41,60 / 5 | 8,32 |
+| levantamento-topografico (v1.6, v1.7, v1.8) | Skill (dono Lúcio) | 3 | 25,10 / 3 | 8,37 |
+| decreto3046-81 (v1.5 ×2, s/ versão) | Skill (dona Kelsen) | 3 | 25,60 / 3 | 8,53 |
+| viabilidade-cub v1.7 | Skill (dono Villaça) | 1 | 9,40 / 1 | 9,40 |
+| arquitetura-nbr9050 | Skill (dona Lúcio) | 1 | 7,50 / 1 | 7,50 |
+| legal-base-legislativa-bairro | Skill (dona Kelsen) | 1 | 8,00 / 1 | 8,00 |
+| legal-oodc-mais-valera-mais-valia v1.1 | Skill (dona Kelsen) | 1 | 9,00 / 1 | 9,00 |
+| nbr6492-2021-memoriais | Skill (dona Lúcio) | 1 | 9,50 / 1 | 9,50 |
+| varandas-nao-computaveis | Skill (dono a confirmar) | 1 | 9,00 / 1 | 9,00 |
+
+Conferência: 1 + 9 + 14 + 1 + 8 + 7 + 16 + 2 + 2 + 17 (Skills) = 77 linhas. Média arredondada para duas casas.
+
+Registro histórico: a tabela anterior era o retrato de 07/10/2026 (Kelsen 8,50 n1; Hely 8,75 n1; Villaça 8,14 n9; Mascaró 9,22 n8; Fiker 9,25 n7; Lúcio 8,35 n5; Oscar 8,85 n5). Substituída em 21/10/2026 por ordem de Claudemberg.
 
 Critério da nota retroativa: saída só do parecer gravado, sem reabrir mérito. Isca parcial −0,75; isca que caiu −2,00 ou mais; erro de conta/texto/rótulo −0,25 a −1,00 pela gravidade (mais quando chega ao cliente); falha de auditoria/processo −0,50 a −1,00. Erro de origem no gabarito não desconta. Membro que não executou a versão (Fiker v3/v5, Mascaró v9) não recebe linha.
+Nota de 21/10/2026: a atualização avulsa do Oscar (15 versões, média 7,51) foi incorporada à tabela de médias acima.
 Observação do examinador: o parecer v9-final aceitou parciais contra a tolerância zero então vigente — registro meu, não muda a nota.

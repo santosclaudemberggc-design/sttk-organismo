@@ -424,6 +424,237 @@
       "prova_correcao": null,
       "teste_de_regressao": null,
       "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-21-01",
+      "data_do_erro": "2026-10-20",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "oscar-revit-projetista-vitruvius (regra de prova)",
+      "o_que_errou": "Etapa 05 EP v3, Fase 3 (nota 7,60): saída bruta de get_levels, parâmetros de ≥3 paredes por grupo, criar_escada e conferir_layout não colados; respostas parafraseadas (M1, M2, M4, M5, M11).",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Casos_TESTE/ensaio_003/etapa_05_estudo_preliminar/parecer_bardi_v3.md, linhas 11, 12, 14, 15, 21 e 41",
+      "solucao_proposta": {
+        "texto": "Colar a saída bruta de get_levels, dos parâmetros de ≥3 paredes por grupo, da criar_escada e da conferir_layout. Fonte: Skill oscar-revit-projetista-vitruvius (regra de prova).",
+        "proposta_por": "Bardi (parecer v3; Lúcio confirma)",
+        "data": "2026-10-20"
+      },
+      "aprovacao": null,
+      "prova_correcao": "Parcial na recorreção (8,75): get_levels e parâmetros de paredes colados; criar_escada, lista final de vistas e 3º id de parede do superior seguem sem colar (parecer_bardi_v3_correcao.md, linhas 12, 13, 15 e 37). v3 final (21/10): fechamento com prova colada (TO, manobra), mas criar_escada, lista de vistas e 3º id não foram recolados nem reconferidos por mim; teste não refeito (parecer_bardi_v3_final.md, linha 8). Segue aberto.",
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-21-02",
+      "data_do_erro": "2026-10-20",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "nbr6492-representacao-grafica / vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj",
+      "o_que_errou": "Etapa 05 EP v3, Fase 3 (nota 7,60): implantação sem cotas dos afastamentos (só cotas de 0,09) e vaga coberta sem cota de 2,50×5,00 (M3, M13).",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Casos_TESTE/ensaio_003/etapa_05_estudo_preliminar/parecer_bardi_v3.md, linhas 13, 23 e 42",
+      "solucao_proposta": {
+        "texto": "Cotar os afastamentos na implantação e a vaga de 2,50×5,00. Fonte: NBR 6492:2021 e Skill de vaga (COES Arts. 28–29).",
+        "proposta_por": "Bardi (parecer v3; Lúcio confirma)",
+        "data": "2026-10-20"
+      },
+      "aprovacao": null,
+      "prova_correcao": "Parcial na recorreção (8,75): afastamentos cotados (M3 0,50/0,50); largura da vaga não provada, cota 5,02 é de eixo a eixo das 2 vagas (parecer_bardi_v3_correcao.md, linhas 14, 24 e 36). v3 final (21/10): largura da vaga coberta não reconferida; na imagem do térreo há cota permanente 5,22 a apagar e rótulo VAGA 1 sobreposto (parecer_bardi_v3_final.md, linhas 8 e 43). Teste não refeito. Segue aberto.",
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-21-03",
+      "data_do_erro": "2026-10-20",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "modelo EP_v3.rvt (vagas descobertas)",
+      "o_que_errou": "Etapa 05 EP v3, Fase 3 (nota 7,60): 2 vagas descobertas declaradas na faixa leste não aparecem no modelo; a implantação só mostra piso impermeável (M12).",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Casos_TESTE/ensaio_003/etapa_05_estudo_preliminar/parecer_bardi_v3.md, linhas 22 e 43",
+      "solucao_proposta": {
+        "texto": "Desenhar ou retirar as 2 vagas descobertas declaradas. Ficam no afastamento lateral: decide Kelsen.",
+        "proposta_por": "Bardi (parecer v3; Lúcio confirma)",
+        "data": "2026-10-20"
+      },
+      "aprovacao": null,
+      "prova_correcao": "Na recorreção (8,75) as vagas descobertas aparecem (parecer_bardi_v3_correcao.md, linha 23); aceitabilidade no afastamento lateral segue com Kelsen (linha 45). v3 final (21/10): Gate de 21/10 converte a vaga descoberta 2 em guarda; conversão no modelo e no quadro ainda pendente (parecer_bardi_v3_final.md, linhas 27 e 41). Teste não refeito. Segue aberto.",
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-21-04",
+      "data_do_erro": "2026-10-20",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "modelo EP_v3.rvt (níveis)",
+      "o_que_errou": "Etapa 05 EP v3, Fase 3 (nota 7,60): nível 'Terreno 0,00' a mais, sem justificativa (M1).",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Casos_TESTE/ensaio_003/etapa_05_estudo_preliminar/parecer_bardi_v3.md, linhas 11 e 44",
+      "solucao_proposta": {
+        "texto": "Justificar ou apagar o nível 'Terreno'.",
+        "proposta_por": "Bardi (parecer v3; Lúcio confirma)",
+        "data": "2026-10-20"
+      },
+      "aprovacao": null,
+      "prova_correcao": "Passou na recorreção (8,75): nível Terreno com fonte na Skill Oscar §1 item 2, não duplicado; M1 0,60/0,60 (parecer_bardi_v3_correcao.md, linha 12). v3 final (21/10): nada novo sobre níveis; o teste que passou foi o da recorreção, não refeito na v3 final. Status fica com Wallenberg/Claudemberg.",
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-21-05",
+      "data_do_erro": "2026-10-20",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Hely",
+      "gestor_dono": "Kelsen",
+      "skill_ou_ferramenta": "quadro-de-areas-rj / criar_quadro_areas (plugin v69)",
+      "o_que_errou": "Etapa 05 EP v3, Fase 3: fator 0 da marquise (TO e CA) e da vaga 2 (CA) sem artigo citado; quadro com só o 'limite 50%' do RIU, sem a linha da TO de 40% do Regramento (P2). Não desconta do Oscar.",
+      "causa": "falta_skill",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Casos_TESTE/ensaio_003/etapa_05_estudo_preliminar/parecer_bardi_v3.md, linhas 26, 34, 38 e 45",
+      "solucao_proposta": {
+        "texto": "Dar artigo ao fator 0 da marquise e da vaga 2 no CA, e pôr no quadro a linha da TO de 40% do Regramento. Fonte: LC 270 Arts. 347 e 350; Regramento Art. 5.",
+        "proposta_por": "Bardi (parecer v3; Kelsen confirma)",
+        "data": "2026-10-20"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-21-06",
+      "data_do_erro": "2026-10-21",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "modelo EP_v3.rvt / quadro-de-areas-rj",
+      "o_que_errou": "Etapa 05 EP v3 final: projeção bruta 245,95 m² > TO do Regramento 228,64 m² (Gate 21/10); Lúcio fechou a etapa sem propor o corte. Falta cortar ≥ 17,31 m². Pendência bloqueante da Etapa 06 (decisão de Claudemberg, 21/10/2026).",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Casos_TESTE/ensaio_003/etapa_05_estudo_preliminar/parecer_bardi_v3_final.md, linhas 7, 8, 13 e 40",
+      "solucao_proposta": {
+        "texto": "Cortar ≥ 17,31 m² de projeção bruta ou levar ao aceite da Comissão de Obras. Fonte: Regramento Arts. 5º e 9º; Gate de 21/10.",
+        "proposta_por": "Bardi (parecer v3 final)",
+        "data": "2026-10-21"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-21-07",
+      "data_do_erro": "2026-10-21",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "nbr6492-representacao-grafica / vaga-estacionamento-dimensao-minima-coes-lc198-lc270-unifamiliar-rj",
+      "o_que_errou": "Etapa 05 EP v3 final: elevação SUL não reexportada com portões e vão de 5,00 (o deck mostra a de 20/10); portão 455288 (x 11,64–14,19) desalinhado da faixa (11,79–14,29), passagem comum de 2,40 m em linha reta.",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Casos_TESTE/ensaio_003/etapa_05_estudo_preliminar/parecer_bardi_v3_final.md, linhas 8, 33 e 42",
+      "solucao_proposta": {
+        "texto": "Reexportar a elevação SUL com portões e vão e alinhar o portão 455288 à faixa, ou justificar o percurso. Fonte: NBR 6492:2021, 5.4; COES Art. 29 IV.",
+        "proposta_por": "Bardi (parecer v3 final)",
+        "data": "2026-10-21"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-21-08",
+      "data_do_erro": "2026-10-21",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Oscar",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "nbr6492-representacao-grafica",
+      "o_que_errou": "Etapa 05 EP v3 final: restos de desenho na implantação/térreo — cota permanente 5,22; rótulos SERVIÇO × BANHO DEPENDÊNCIA e VAGA 1 sobrepostos; cota 40,00 sobre a árvore; símbolo RPC de 4,31 m sobre o muro.",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Casos_TESTE/ensaio_003/etapa_05_estudo_preliminar/parecer_bardi_v3_final.md, linhas 8 e 43",
+      "solucao_proposta": {
+        "texto": "Apagar a cota 5,22, desfazer as sobreposições, tirar a cota 40,00 da árvore e usar símbolo de árvore de porte real. Fonte: NBR 6492:2021.",
+        "proposta_por": "Bardi (parecer v3 final)",
+        "data": "2026-10-21"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-21-09",
+      "data_do_erro": "2026-10-21",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Portinari",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "deck index.html (apresentação EP)",
+      "o_que_errou": "Etapa 05 EP v3 final: slide 2 chama 457,28 (teto do Regramento) de 'limite da prefeitura' (limite municipal é CA 1,0 = 571,60); título do slide 9 diz 'dentro do limite' contra o Gate; slides 11 × 13 contraditórios sobre a garagem; slides 2 e 4 afirmam vão/portão de 5,00 com fachadas de 20/10 no slide 7; '2 + 2' desatualizado; cards do slide 11 mexidos sem pedido.",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Casos_TESTE/ensaio_003/etapa_05_estudo_preliminar/parecer_bardi_v3_final.md, linhas 10 e 44",
+      "solucao_proposta": {
+        "texto": "Slide 2: 'limite do condomínio (Regramento Art. 5º)'; título do slide 9 conforme o Gate (não atende); '2 + 1 + guarda'; fachadas atualizadas; resolver 11 × 13. Fonte: Regramento; Gate de 21/10.",
+        "proposta_por": "Bardi (parecer v3 final)",
+        "data": "2026-10-21"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-21-10",
+      "data_do_erro": "2026-10-21",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Lúcio",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "quadro-de-areas-rj / auditoria do Gestor",
+      "o_que_errou": "Etapa 05 EP v3 final: escreveu que o ×0 só na vaga 1 está 'sem base legal escrita' (base: LC 270 Art. 350 III, 'limitado a uma vaga'); deu 'atende' aos slides 2 e 9; auditou o deck só por Grep, sem ver o render (não pegou as fachadas antigas do slide 7).",
+      "causa": "falta_skill",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Casos_TESTE/ensaio_003/etapa_05_estudo_preliminar/parecer_bardi_v3_final.md, linhas 7 e 45",
+      "solucao_proposta": {
+        "texto": "Registrar a base do ×0 da vaga 1 = LC 270 Art. 350 III, p. 125, e auditar o deck renderizado, não só por Grep. Fonte: LC 270 (cópia do Hely).",
+        "proposta_por": "Bardi (parecer v3 final)",
+        "data": "2026-10-21"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
+    },
+    {
+      "id": "E-2026-10-21-11",
+      "data_do_erro": "2026-10-21",
+      "apontado_por": "Bardi",
+      "tipo": "erro_entrega",
+      "agente": "Lúcio",
+      "gestor_dono": "Lúcio",
+      "skill_ou_ferramenta": "quadro-de-areas-rj (SMD)",
+      "o_que_errou": "Etapa 05 EP v3 final: SMD não recalculada na base de 571,60 (0,20 × 285,80 = 57,16) nem posta no quadro.",
+      "causa": "instrucao_confusa",
+      "prova": "CONSTRUCAO_DO_ZERO/01_CEO/Casos_TESTE/ensaio_003/etapa_05_estudo_preliminar/parecer_bardi_v3_final.md, linhas 17 e 46",
+      "solucao_proposta": {
+        "texto": "Recalcular a SMD na base de 571,60 (57,16 m²) e pôr no quadro. Fonte: LC 270 Art. 352, p. 125.",
+        "proposta_por": "Bardi (parecer v3 final)",
+        "data": "2026-10-21"
+      },
+      "aprovacao": null,
+      "prova_correcao": null,
+      "teste_de_regressao": null,
+      "status": "aberto"
     }
   ]
 }

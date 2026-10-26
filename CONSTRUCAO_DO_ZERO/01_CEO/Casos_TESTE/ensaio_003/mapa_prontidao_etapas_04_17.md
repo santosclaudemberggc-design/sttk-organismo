@@ -29,5 +29,7 @@ Legenda: 🟢 a equipe tem o que precisa · 🟡 entrega em texto/memorial, sem 
 **Decidido por Claudemberg em 19/10/2026: opção (a), segurar a etapa 5 até a Fase 3 passar.** Em 19/10 o teste de fumaça da Fase 0 passou (Oscar acionado pelo Lúcio: criar, ler e apagar um nível de teste no Projeto1, 6 de 6 passos). Falta a Fase 3 (exame de desenho). Lembrete: o Burle segue sem render (orçamento pausado), então a etapa 5 pode sair com a parte de imagem pendente mesmo depois da Fase 3.
 
 **Decidido por Claudemberg em 20/10/2026: Fase 3 aprovada (8,75) e trava v3 da etapa 5 liberada.** Modelo: etapa_05_estudo_preliminar/entrega_v3/EP_v3.rvt (volumetria E). Parecer: parecer_bardi_v3_correcao.md.
+
+**Decidido por Claudemberg em 21/10/2026: etapa 5 APROVADA na 3ª tentativa (v3)** — notas Lúcio 8,25; Oscar 8,50; Burle 9,50; Portinari 8,00 (parecer_bardi_v3_final.md). Trava da etapa 5 encerrada. Próxima trava: cortar ≥ 17,31 m² da projeção do térreo (245,95 → ≤ 228,64 m², TO 40% do Regramento) antes de a etapa 6 começar.
 3. **Antes da etapa 14**, Lelé precisa ter equipe. Pendência aberta para o Lelé propor (Regra de Cascata).
 4. **Etapas 8–13** podem rodar como estão, desde que o enunciado do Bardi deixe claro o limite: o Agente prepara, o profissional habilitado assina.

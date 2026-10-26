@@ -24,6 +24,8 @@ Tarefa `wallenberg-reuniao-semanal` · segunda 17:00 · pautas em `CONSTRUCAO_DO
 | 16/10 | não rodou | — | — | Cron só segunda 17:00 (hoje é sexta) |
 | 19/10 | sim (segunda, 17:02) | não verificado nesta rodada (sem resumo registrado) | — | ~5 s (17:02:37–17:02:42). A pauta de 19/10 não aparece no registro desta rotina |
 | 20/10 | não rodou | — | — | Cron só segunda 17:00 (hoje é terça) |
+| 22/10 | não (quinta) | — | — | Cron só segunda 17:00 |
+| 23/10 | não rodou | — | — | Sexta; cron só segunda 17:00 |
 
 ## 3. Candidatas a melhoria
 - (observar) Com a linha "COMO RESPONDER" e às 17:00, as ratificações passam a ser respondidas? Se ficarem 2 semanas sem resposta, repensar o formato.

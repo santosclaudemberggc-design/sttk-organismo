@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Residência Montenegro Prates — Estudo Preliminar v3 (PRELIMINAR)</title>
+<!-- Deck autocontido no padrão html-ppt-skill (tema editorial-serif reproduzido inline: tokens, .slide/.is-active, notas ocultas, navegação por teclado). Sem dependência externa. -->
+<style>
+:root{--bg:#f6f2ea;--surface:#fffdf8;--text-1:#1f1b16;--text-2:#5b5348;--accent:#8a5a2b;--warn:#a23b2a;--line:#d9cfbf;--radius:10px;--serif:Georgia,"Times New Roman",serif;--sans:"Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);color:var(--text-1);font-family:var(--sans)}
+.deck{position:relative;width:100vw;height:100vh;overflow:hidden}
+.slide{position:absolute;inset:0;padding:5vh 6vw 8vh;display:none;flex-direction:column;gap:2vh}
+.slide.is-active{display:flex;animation:fade .45s ease}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+h1{font-family:var(--serif);font-weight:400;font-size:5.2vw;margin:0;line-height:1.05}
+h2{font-family:var(--serif);font-weight:400;font-size:3vw;margin:0;color:var(--text-1)}
+.kicker{font-size:1.1vw;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+p,li{font-size:1.45vw;line-height:1.5;color:var(--text-2)}
+ul{margin:0;padding-left:1.4em}
+.two{display:grid;grid-template-columns:1.5fr 1fr;gap:3vw;flex:1;min-height:0}
+.two.even{grid-template-columns:1fr 1fr}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1vh;display:flex;flex-direction:column;min-height:0}
+.fig img{width:100%;flex:1;min-height:0;object-fit:contain}
+.fig span{font-size:.95vw;color:var(--text-2);text-align:center;padding-top:.6vh}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:2vw}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:2.5vh 1.5vw}
+.kpi b{display:block;font-family:var(--serif);font-size:3.4vw;font-weight:400;color:var(--accent)}
+.kpi small{font-size:1.1vw;color:var(--text-2)}
+.card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:var(--radius);padding:1.4vh 1.4vw}
+.card b{font-size:1.3vw}.card p{margin:.4vh 0 0;font-size:1.15vw}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5vw}
+.stamp{position:fixed;top:2vh;right:2vw;font-size:.9vw;letter-spacing:.15em;color:var(--warn);border:1px solid var(--warn);padding:.4vh .8vw;border-radius:4px;z-index:5;background:var(--bg)}
+.foot{position:fixed;bottom:2vh;left:6vw;right:6vw;display:flex;justify-content:space-between;font-size:.9vw;color:var(--text-2);z-index:5}
+.progress{position:fixed;left:0;bottom:0;height:3px;background:var(--accent);z-index:6;transition:width .3s}
+.notes{display:none}
+</style>
+</head>
+<body>
+<div class="stamp">MATERIAL PRELIMINAR — SUJEITO AO GATE DA COORDENAÇÃO</div>
+<div class="deck">
+
+<!-- 1 -->
+<section class="slide" style="justify-content:center">
+  <div class="kicker">Estudo Preliminar · versão 3 · 21/10/2026</div>
+  <h1>Residência<br>Montenegro Prates</h1>
+  <p style="max-width:55vw">A primeira forma da sua casa: como ela ocupa o terreno, como os espaços se organizam e o que ainda vamos decidir juntos.</p>
+  <p style="font-size:1.1vw">Documento de trabalho. Não é versão final nem foi validado pela coordenação técnica.</p>
+  <div class="notes">Capa. Reforçar que é estudo preliminar, para conversa.</div>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+  <div class="kicker">Sua casa em números</div>
+  <h2>Cabem cerca de 452 m² dos ~520 m² pedidos, e você aceitou esse ajuste</h2>
+  <div class="kpis">
+    <div class="kpi"><b>~452 m²</b><small>área construída da casa (o limite da prefeitura para este lote é 457,28 m²)</small></div>
+    <div class="kpi"><b>571,60 m²</b><small>área do terreno</small></div>
+    <div class="kpi"><b>2</b><small>pavimentos: térreo e superior</small></div>
+    <div class="kpi"><b>2 + 2</b><small>2 vagas cobertas com 2,61 m de largura cada (vão da garagem e portão no muro de 5,00 m); mais 2 descobertas na faixa lateral leste, com portão próprio de 2,55 m, cuja manobra no afastamento frontal ainda depende de confirmação legal</small></div>
+  </div>
+  <p>O programa foi ajustado de ~520 m² para ~452 m² para caber no limite do lote. O mezanino (jirau) não entra como área extra, por isso não foi usado para ganhar metros.</p>
+  <div class="notes">Números do relatório Oscar v3 final 21/10 e da ordem de Lúcio. Não perguntar sobre ampliar cômodos.</div>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+  <div class="kicker">Implantação</div>
+  <h2>Como a casa senta no terreno</h2>
+  <div class="two">
+    <div class="fig"><img src="../imagens/correcao_21-10_tarde/implantacao/vitruvius_20261021_142644%20-%20Planta%20de%20piso%20-%20EP-%20Terreno.png" alt="Planta do terreno"><span>Planta do terreno (modelo Revit, 21/10 tarde)</span></div>
+    <ul>
+      <li>Casa recuada da rua, com jardim e área de lazer nos fundos.</li>
+      <li>Na faixa lateral leste, as 2 vagas descobertas, uma atrás da outra, com portão próprio de 2,55 m no muro. A manobra no afastamento frontal ainda depende de confirmação da equipe legal.</li>
+      <li>Uma árvore para cada vaga descoberta, plantada no jardim logo depois das vagas, como a regra do bairro pede.</li>
+      <li>A espécie das árvores ainda será escolhida pelo paisagismo (nativas da Mata Atlântica).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+  <div class="kicker">Térreo</div>
+  <h2>O andar da convivência</h2>
+  <div class="two">
+    <div class="fig"><img src="../imagens/correcao_21-10_tarde/terreo/vitruvius_20261021_142639%20-%20Planta%20de%20piso%20-%20EP-%20T%C3%A9rreo.png" alt="Planta do térreo"><span>Planta do térreo (modelo Revit, 21/10 tarde)</span></div>
+    <ul>
+      <li>Garagem coberta para 2 carros na frente, cada vaga com 2,61 m de largura, vão de entrada de 5,00 m e portão de 5,00 m no muro.</li>
+      <li>Salas, cozinha e área de serviço integradas ao jardim.</li>
+      <li>Sala com pé-direito duplo, ligando os dois andares.</li>
+    </ul>
+  </div>
+  <div class="notes">Imagem nova do Oscar (correcao_21-10_tarde). Vagas antes: uma com 2,48 m; agora 2 x 2,61 m.</div>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+  <div class="kicker">Pavimento superior</div>
+  <h2>O andar do descanso</h2>
+  <div class="two">
+    <div class="fig"><img src="../imagens/correcao_20-10/vitruvius_20261020_205520%20-%20Planta%20de%20piso%20-%20EP-%20Superior.png" alt="Planta do superior"><span>Planta do pavimento superior (modelo Revit, 20/10)</span></div>
+    <ul>
+      <li>Quartos reunidos no andar de cima, com mais privacidade.</li>
+      <li>Vista para o vazio da sala de pé-direito duplo.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="slide">
+  <div class="kicker">Cortes</div>
+  <h2>A casa vista "por dentro"</h2>
+  <div class="two even">
+    <div class="fig"><img src="../imagens/correcao_20-10/vitruvius_20261020_205520%20-%20Corte%20-%20CORTE%20AA%20-%20LONGITUDINAL%20(ESCADA).png" alt="Corte AA"><span>Corte pela escada</span></div>
+    <div class="fig"><img src="../imagens/correcao_20-10/vitruvius_20261020_205520%20-%20Corte%20-%20CORTE%20BB%20-%20TRANSVERSAL%20(PE-DIREITO%20DUPLO).png" alt="Corte BB"><span>Corte pela sala de pé-direito duplo</span></div>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="slide">
+  <div class="kicker">Fachadas</div>
+  <h2>Como a casa aparece para a rua e para o jardim</h2>
+  <div class="two even">
+    <div class="fig"><img src="../imagens/correcao_20-10/vitruvius_20261020_205520%20-%20Eleva%C3%A7%C3%A3o%20-%20ELEVACAO%20FRONTAL%20SUL%20(RUA).png" alt="Fachada frontal"><span>Fachada da rua</span></div>
+    <div class="fig"><img src="../imagens/correcao_20-10/vitruvius_20261020_205520%20-%20Eleva%C3%A7%C3%A3o%20-%20ELEVACAO%20FUNDOS%20NORTE.png" alt="Fachada dos fundos"><span>Fachada dos fundos</span></div>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="slide">
+  <div class="kicker">Volume</div>
+  <h2>A forma da casa em 3D</h2>
+  <div class="two">
+    <div class="fig"><img src="../imagens/correcao_20-10/vitruvius_20261020_205520%20-%20Vista%203D%20-%20EP-%20Perspectiva.png" alt="Perspectiva 3D"><span>Vista 3D de estudo, tirada do modelo (20/10)</span></div>
+    <ul>
+      <li>Esta é uma vista de estudo do volume, sem materiais e sem luz real.</li>
+      <li>As imagens realistas (render) virão numa etapa seguinte, quando a ferramenta da nossa equipe de imagens estiver pronta.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 9 -->
+<section class="slide">
+  <div class="kicker">Regras da prefeitura</div>
+  <h2>Ocupação e área construída dentro do limite</h2>
+  <div class="two even">
+    <div class="fig"><img src="../imagens/correcao_20-10/vitruvius_20261020_205520%20-%20Planta%20de%20%C3%A1rea%20(TAXA%20DE%20OCUPACAO)%20-%20PLANTA%20DE%20TAXA%20DE%20OCUPACAO.png" alt="Taxa de ocupação"><span>Quanto do terreno a casa cobre</span></div>
+    <div>
+      <div class="kpis" style="grid-template-columns:1fr 1fr">
+        <div class="kpi"><b>38,21%</b><small>do terreno coberto pela casa (limite 40%), com a vaga coberta 1 e a marquise fora da conta, a confirmar com a equipe legal; projeção bruta 245,95 m²</small></div>
+        <div class="kpi"><b>0,718</b><small>área construída ÷ terreno (limite 1,0: valor informado à ferramenta, sem confirmação legal ainda)</small></div>
+        <div class="kpi"><b>32,76%</b><small>do terreno permeável</small></div>
+      </div>
+      <p>Esses números ainda serão conferidos pela nossa equipe legal antes do projeto de prefeitura.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10 -->
+<section class="slide">
+  <div class="kicker">Chuva e jardim</div>
+  <h2>Um terço do terreno continua absorvendo água</h2>
+  <div class="two">
+    <div class="fig"><img src="../imagens/v3_final_21-10/vitruvius_20261021_141825%20-%20Planta%20de%20%C3%A1rea%20(PERMEABILIDADE)%20-%20PLANTA%20DE%20PERMEABILIDADE.png" alt="Permeabilidade"><span>Em verde-claro, o jardim em solo natural (187 m²)</span></div>
+    <div>
+      <div class="kpi"><b>32,76%</b><small>do terreno fica permeável (o mínimo exigido é 25%)</small></div>
+      <p>As vagas descobertas e a calçada da frente foram contadas como piso que não absorve água, por segurança.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 11 -->
+<section class="slide">
+  <div class="kicker">Com transparência</div>
+  <h2>O que ainda falta decidir ou ajustar</h2>
+  <div class="grid3">
+    <div class="card"><b>Garagem coberta (resolvido)</b><p>As duas vagas agora têm 2,61 m de largura cada (antes uma tinha 2,48 m), com vão de 5,00 m e portão de 5,00 m no muro.</p></div>
+    <div class="card"><b>Taxa de ocupação</b><p>A vaga coberta 1 e a marquise foram deixadas fora da conta (38,21%). Isso ainda será confirmado pela equipe legal.</p></div>
+    <div class="card"><b>Limite de área construída</b><p>O limite 1,0 usado na conta foi informado à ferramenta e ainda não tem confirmação legal.</p></div>
+    <div class="card"><b>Vagas descobertas em fila</b><p>A vaga 2 só sai depois da vaga 1. O espaço de manobra ainda será confirmado pela equipe legal.</p></div>
+    <div class="card"><b>Aceite do condomínio</b><p>O projeto ainda precisa ser apresentado e aceito pelo condomínio.</p></div>
+    <div class="card"><b>Imagens realistas</b><p>Dependem da ferramenta de render da equipe de imagens. Por ora, mostramos as vistas do modelo.</p></div>
+  </div>
+</section>
+
+<!-- 12 -->
+<section class="slide">
+  <div class="kicker">Sua participação</div>
+  <h2>Queremos ouvir você sobre</h2>
+  <div class="grid3">
+    <div class="card" style="border-left-color:var(--accent)"><b>Mobiliário</b><p>Como imagina a sala, a mesa de jantar e os quartos mobiliados? Há peças que já tem e quer levar?</p></div>
+    <div class="card" style="border-left-color:var(--accent)"><b>Texturas</b><p>Madeira, pedra, concreto aparente, cerâmica: quais toques combinam com você?</p></div>
+    <div class="card" style="border-left-color:var(--accent)"><b>Cores e objetos</b><p>Paleta clara ou mais escura? Quadros, plantas e objetos que fazem parte da sua casa?</p></div>
+  </div>
+  <p>Essas respostas orientam as próximas imagens e o Anteprojeto. O que vemos hoje é uma prévia.</p>
+</section>
+
+<!-- 13 -->
+<section class="slide" style="justify-content:center">
+  <div class="kicker">Próximos passos</div>
+  <h2>Do estudo ao anteprojeto</h2>
+  <ul>
+    <li>Ajustar a garagem, o portão e a entrada de carro.</li>
+    <li>Confirmar a manobra das vagas com a equipe legal.</li>
+    <li>Validação interna da coordenação técnica (ainda não realizada).</li>
+    <li>Imagens realistas e vídeo conceitual no Anteprojeto.</li>
+  </ul>
+  <p style="font-size:1.1vw">Material preliminar. Nada aqui está aprovado.</p>
+</section>
+
+</div>
+<div class="foot"><span>Residência Montenegro Prates · Estudo Preliminar v3</span><span id="num"></span></div>
+<div class="progress" id="prog"></div>
+<script>
+(function(){var s=[].slice.call(document.querySelectorAll('.slide')),i=0;
+function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach(function(e,k){e.classList.toggle('is-active',k===i)});
+document.getElementById('num').textContent=(i+1)+' / '+s.length;document.getElementById('prog').style.width=((i+1)/s.length*100)+'%';location.hash='#/'+(i+1)}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0)go(i+1);else if(['ArrowLeft','PageUp'].indexOf(e.key)>=0)go(i-1);else if(e.key==='Home')go(0);else if(e.key==='End')go(s.length-1);else if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}});
+document.addEventListener('click',function(e){go(e.clientX>innerWidth/2?i+1:i-1)});
+var m=location.hash.match(/#\/(\d+)/);go(m?+m[1]-1:0)})();
+</script>
+</body>
+</html>

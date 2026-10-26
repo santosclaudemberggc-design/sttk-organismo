@@ -30,6 +30,8 @@ Tarefa `wallenberg-rotina-ensaio-sombra` · seg-sex 08:30 · referência `CONSTR
 | 19/10 | 5 | Fase 2-D (Diagnóstico da Etapa 5) criada após sabatina: Lúcio aciona Oscar para tentar cada desenho do enunciado numa cópia do template, com prova e proposta de solução por falha | — | decidido por Claudemberg, 19/10/2026 | Não conta como tentativa (segue 2 de 3), sem gabarito e sem Bardi. A rotina não roda o diagnóstico: é sessão ao vivo |
 | 19/10 | 5 | 11:36–11:37 (~30 s), rotina leve, encerrou no portão (etapa `reprovada`, nada a criar) | — (nenhum parecer novo) | — | 3º dia útil seguido no portão (15, 16 e 19/10). Trava v3 segue `false` |
 | 20/10 | 5 | 11:36–11:37 (24 s), rotina leve, encerrou no portão (etapa `reprovada`, nada a criar). Etapa 5 em `refazer` | — (Bardi emitiu parecer_bardi_v3 às 17:58 sobre o exame de modelo: reprovar, Oscar 7,60) | aguarda Claudemberg | 4º dia útil seguido no portão (15, 16, 19 e 20/10). Trava v3 segue `false` |
+| 22/10 | 5 | não rodou (pausada desde 21/10). Etapa 5 aprovada em 21/10, nada a fazer | — | — | Sem sessão hoje |
+| 23/10 | 5 | não rodou (pausada desde 21/10; sexta, sem sessão) | — | — | Estado segue `aguardar_claudemberg` desde 21/10 (etapa 5 aprovada). Nada a fazer |
 
 ## 3. Candidatas a melhoria
 - (observar) A 1ª etapa calibra o próprio Bardi: o caso ficou realista e difícil o bastante?
@@ -50,3 +52,4 @@ Tarefa `wallenberg-rotina-ensaio-sombra` · seg-sex 08:30 · referência `CONSTR
   - (19/10) Portão em 15, 16 e 19/10 (3 dias úteis seguidos). Etapa 5 reprovada desde 14/10 e aguardando Claudemberg há 3 dias úteis. Sugestão: Claudemberg define prazo ou condição de saída da trava; sem isso, o portão repete todo dia.
   - (20/10) Portão em 15, 16, 19 e 20/10 (4 dias úteis seguidos). Etapa 5 aguarda Claudemberg desde 19/10 (opção A). Mesmo padrão já listado acima; só a data nova.
   - **(20/10) Decidido por Claudemberg em 20/10/2026: Fase 3 aprovada com 8,75 (recorreção do Bardi, após reprovação com 7,60) e trava v3 da etapa 5 LIBERADA após conferência visual no Revit.** Portão encerrado. Pendências herdadas: programa 452 × ~520 m², vagas no afastamento lateral (Kelsen), largura interna das vagas cobertas, 4 defeitos do Vitruvius.
+  - **(26/10) Registro: decidido por Claudemberg em 21/10/2026 — etapa 5 aprovada na 3ª tentativa (Lúcio 8,25; Oscar 8,50; Burle 9,50; Portinari 8,00). Trava da etapa 5 encerrada. Próxima trava: corte de ≥ 17,31 m² na projeção do térreo antes da etapa 6.**

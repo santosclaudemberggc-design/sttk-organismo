@@ -36,6 +36,8 @@ Tarefa `wallenberg-rotina-diaria-skills-v2-7` · seg-sex 09:00 · referência `C
 | 16/10 | sim (sexta) | 2 min 25 s (09:06–09:09) | 0 Skill criada. Painel: 2 marcos e status semanal 12-16/10. Passos 1 a 4 e 8 não rodaram (sexta segue fluxo próprio) | Learning (Passo 7) não rodou. Duração abaixo de 13-15/10 (~6-8 min) explicada pelo fluxo de sexta, não é anomalia |
 | 19/10 | sim | ~27 min (09:07–09:34) | 0 Skill nova (v3.6.0, segunda). Registro de Erros: 3 propostas (E-03, E-01, P-04), nada aprovado. Lacuna do Anexo XXI segue humana | Pesquisa de 6 buscas, justificada por lacuna aberta. Duração mais que o dobro das 2 rodadas anteriores (~6 min) |
 | 20/10 | sim | ~3 min 21 s (09:07–09:10) | 0 Skill nova. Registro de Erros: 3 propostas (P-05, E-02, P-02), nada aprovado. Pesquisa de 6 buscas | Sem lacuna com `alc: auto` aberta; lacuna do Anexo XXI segue com decisão humana |
+| 22/10 | não (pausada desde 21/10) | — | — | Sem registro. Última execução 20/10 (~3 min) |
+| 23/10 | não (sexta, fora do pipeline seg-qui; pausada desde 21/10) | — | — | Sem registro. Última execução 20/10 (~3 min) |
 
 ## 3. Candidatas a melhoria
 - (aberta) **Uso real de Skill = 0%.** Em setembro foram cerca de 28 Skills e nenhuma usada em caso real. O Ensaio 003 é a resposta; acompanhar se as Skills aparecem nos pareceres do Bardi.
