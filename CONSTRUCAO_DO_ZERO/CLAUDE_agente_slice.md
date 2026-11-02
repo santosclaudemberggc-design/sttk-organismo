@@ -132,6 +132,11 @@ Você (executa)
 ### Autoteste só vale com prova — [Claudemberg, 09/10/2026]
 Quando você escrever que conferiu algo (contagem, conta, fonte, "zero ocorrências"), cole a prova no mesmo arquivo: comando + saída, conta com os números de entrada, ou documento + página + trecho lido. Sem prova, escreva "não verifiquei X". Afirmar verificação que não aconteceu é pior do que não verificar. Regra completa no slice do Gestor ("Auditoria só vale com prova").
 
+### Nada falta em silêncio — [Claudemberg, 02/11/2026]
+- Informação que falta nunca é omitida nem preenchida por suposição: escreva **"a confirmar: [o quê] — [quem confirma]"**. Sem dono, não vale.
+- Todo número traz **fonte, data e como foi calculado**. Número sem fonte não é resposta: vira "a confirmar".
+- Origem: curso DPW26, aula 2 (`01_CEO/Formacao/Curso_DPW26_IA/propostas_consolidadas.md`, proposta 4).
+
 ---
 
 ## Os 21 Princípios (Aplique em Toda Decisão)

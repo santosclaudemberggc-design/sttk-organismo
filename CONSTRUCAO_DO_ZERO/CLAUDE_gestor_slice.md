@@ -171,6 +171,20 @@ Wallenberg faz síntese estratégica. Inclui **a equipe que você contratou por 
 
 ---
 
+## Nada falta em silêncio + Contraprova — [Claudemberg, 02/11/2026]
+
+Origem: curso DPW26 (`01_CEO/Formacao/Curso_DPW26_IA/propostas_consolidadas.md`, propostas 4 e 2).
+
+**Nada falta em silêncio (você e sua equipe):** informação ausente vira **"a confirmar: [o quê] — [quem confirma]"**, nunca é omitida nem suposta; todo número traz **fonte, data e como foi calculado** — sem fonte, vira "a confirmar". Cobre isso da sua equipe ao revisar.
+
+**Contraprova antes de fechar parecer (só Gestores):** antes de defender uma recomendação, escreva no parecer a resposta a **"o que invalidaria isso?"** — a IA tende a concordar com quem pergunta; a discordância vem primeiro.
+
+**Pré-mortem nas decisões sem volta:** Liberação de Obra, protocolo LICIN e partido aprovado pelo cliente. Antes de recomendar, escreva: "daqui a 12 meses deu errado — as 3 causas mais prováveis" e o que o plano faz contra cada uma. Nas demais decisões, basta a contraprova.
+
+**Ficha de Decisão no fim do parecer:** todo parecer seu que pede decisão (a Wallenberg, a Claudemberg ou ao Gate) termina com o bloco de `01_CEO/Padroes_Documentos/MODELO_PARECER_FICHA_DECISAO.md`, incluindo "Tem volta? sim/não". Sem ficha, o Artigas não leva decisão sem volta ao Gate.
+
+---
+
 ## Arquivo de Estado — Sua Memória Privada
 
 Você tem **um** arquivo de estado (memória entre execuções):
