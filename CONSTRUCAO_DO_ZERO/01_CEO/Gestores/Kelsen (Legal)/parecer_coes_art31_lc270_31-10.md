@@ -7,7 +7,7 @@ Status: **APROVADO por Claudemberg em 31/10/2026** (Gate da Coordenação). As d
 O Art. 31 do COES (LC 198/2019) **continua em vigor, sem alteração nem revogação**, em todas as fontes do acervo, que vai até a LC 301/2026.
 
 ## Fontes
-- **COES, LC 198/2019, Art. 31.** Arquivo `D:\008_Normas ABNT\002_Prefeitura_RJ\COE LC 198-2019 Codigo de Obras e Edificacoes do Rio.pdf`, p. 21. O texto é igual ao da versão consolidada da SMU, gerada em 07/01/2026 (`COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`, p. 17), que não traz nota de alteração nesse artigo. O artigo dispensa a casa unifamiliar e bifamiliar destas exigências:
+- **COES, LC 198/2019, Art. 31.** Arquivo `D:\008_Normas ABNT\002_Prefeitura_RJ\COE LC 198 (2019) - Codigo de Obras e Edificacoes do Rio.pdf`, p. 21. O texto é igual ao da versão consolidada da SMU, gerada em 07/01/2026 (`COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf`, p. 17), que não traz nota de alteração nesse artigo. O artigo dispensa a casa unifamiliar e bifamiliar destas exigências:
   - I: área mínima;
   - II: dimensões mínimas de circulações, compartimentos, vãos de iluminação e ventilação e reservatórios;
   - III: vagas;

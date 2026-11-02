@@ -225,7 +225,7 @@ Observação: o macete 2 depende, para banheiro com exaustão mecânica sem vão
 
 ## FONTES VERIFICADAS
 
-- **NBR 15575-1:2025** (incorpora a Emenda 1 de 05/12/2025) — `D:\008_Normas ABNT\001_ABNT\ABNT_NBR_15575_1_2025_Edificações_habitacionais_Desempenho_Parte.pdf` — itens 16.1.1 e 16.2.1 (p. 76 do PDF), Anexo F informativo (p. 102), Notas 1 e 2 da Tabela F.2 (p. 105) — lidos por Hely em 31/10/2026 na edição 2024; conferidos por Kelsen na edição 2025 em 02/11/2026, texto igual (`parecer_nbr15575-1_2025_comparacao_02-11.md`) ✓
+- **NBR 15575-1:2025** (incorpora a Emenda 1 de 05/12/2025) — `D:\008_Normas ABNT\001_ABNT\07_Desempenho_NBR15575\NBR 15575-1 (2025) - Desempenho - Parte 1 Requisitos gerais.pdf` — itens 16.1.1 e 16.2.1 (p. 76 do PDF), Anexo F informativo (p. 102), Notas 1 e 2 da Tabela F.2 (p. 105) — lidos por Hely em 31/10/2026 na edição 2024; conferidos por Kelsen na edição 2025 em 02/11/2026, texto igual (`parecer_nbr15575-1_2025_comparacao_02-11.md`) ✓
 - **COES consolidado SMU** — Art. 12 (p. 7) e Art. 31 (p. 17) — lidos por Hely em 31/10/2026 ✓
 
 - **LC 198/2019 (COE RJ)** — Arts. 5º, 12º, 14º, 17º, 18º — lidos em [camara.rj.gov.br](https://e.camara.rj.gov.br/Arquivo/Documents/legislacao/html/c1982019.html) ✓ (fonte primária)

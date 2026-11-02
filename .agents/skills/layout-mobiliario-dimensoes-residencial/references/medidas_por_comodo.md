@@ -135,7 +135,7 @@ Em casa a NBR 9050 não é obrigatória (COES Art. 31 V). Ela vale aqui por esco
 ## Fontes lidas (30/10/2026)
 
 - **NBR 15575-1:2025, Anexo F**, pp. 90-93 — `D:\008_Normas ABNT`.
-- **NBR 9050:2020** (versão corrigida 2021) — `D:\008_Normas ABNT\ABNT-9050-2020-Versao-Corrigida-2021.pdf`: 6.11.2.4, 7.12.1, 10.9.3, Fig. 147. O item 10.9 foi escrito para hospedagem; em casa vale por escolha de projeto.
+- **NBR 9050:2020** (versão corrigida 2021) — `D:\008_Normas ABNT\001_ABNT\01_Arquitetura\NBR 9050 (2020) - Acessibilidade - versao corrigida 2021.pdf`: 6.11.2.4, 7.12.1, 10.9.3, Fig. 147. O item 10.9 foi escrito para hospedagem; em casa vale por escolha de projeto.
 - **Panero e Zelnik**, Gustavo Gili, 2008 — `D:\005_CONHECIMENTO\001_LIVROS\05_Arquitetura\006_Interiores\`: pp. 134-137 (estar), 150-152 (dormitórios), 157-161 (cozinha), 164-168 (banheiro). Lido como imagem.
 - **Pronk**, 7ª ed., UFPB, 2003 (brasileiro) — `D:\005_CONHECIMENTO\001_LIVROS\05_Arquitetura\002_Arquitetura e Urbanismo\`: pp. 3-8, 10-13, 15-17, 19-22. Lido como imagem. A parte de cadeirante (pp. 40-47) segue uma NBR 9050 anterior a 2004: **não usar**.
 - **Neufert**, 42ª ed. — `D:\005_CONHECIMENTO\001_LIVROS\05_Arquitetura\001_Neufert\`: p. 13 (mobília), p. 35 (DIN 18040-2), p. 319 (refeições), p. 321 (quartos).

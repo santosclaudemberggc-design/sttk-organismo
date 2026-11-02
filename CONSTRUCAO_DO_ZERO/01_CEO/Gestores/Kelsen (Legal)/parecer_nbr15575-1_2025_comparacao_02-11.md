@@ -8,8 +8,8 @@
 
 | Edição | Arquivo | Total de páginas do PDF | Como confirmei |
 |---|---|---|---|
-| 2025 | `D:\008_Normas ABNT\001_ABNT\ABNT_NBR_15575_1_2025_Edificações_habitacionais_Desempenho_Parte.pdf` | **107** | Pedi as pp. 107-108 e veio só 1 página (a 107, com "95" no rodapé, fim da Bibliografia). A capa diz "95 páginas", e as 12 primeiras são romanas: 95 + 12 = 107. |
-| 2024 | `D:\008_Normas ABNT\001_ABNT\ABNT NBR 15575-1-2024.pdf` | **107** | Pedi as pp. 102-110 e vieram só 6 (102 a 107). A p. 107 tem "95" no rodapé, fim da Bibliografia. Capa: "95 páginas". |
+| 2025 | `D:\008_Normas ABNT\001_ABNT\07_Desempenho_NBR15575\NBR 15575-1 (2025) - Desempenho - Parte 1 Requisitos gerais.pdf` | **107** | Pedi as pp. 107-108 e veio só 1 página (a 107, com "95" no rodapé, fim da Bibliografia). A capa diz "95 páginas", e as 12 primeiras são romanas: 95 + 12 = 107. |
+| 2024 | `D:\008_Normas ABNT\004_Substituidas\NBR 15575-1 (2024) - Desempenho - Parte 1 (substituida pela 2025).pdf` | **107** | Pedi as pp. 102-110 e vieram só 6 (102 a 107). A p. 107 tem "95" no rodapé, fim da Bibliografia. Capa: "95 páginas". |
 
 Nas duas, a página do PDF é a página da norma + 12.
 
@@ -62,7 +62,7 @@ Fiz um Grep em todo o projeto. Só estas 2 Skills citam a edição, cada uma em 
 - l. 52: título "### Casa unifamiliar ou bifamiliar (COES Art. 31 + NBR 15575-1:2024, item 16.1.1)"
 - l. 56: "NBR 15575-1:2024, item 16.1.1 (p. 64 da norma, p. 76 do PDF do acervo ...)"
 - l. 224 (2 ocorrências): "segue a NBR 15575-1:2024 item 16.1.1" e "NBR 15575-1:2024 pp. 76, 102 e 105 do PDF"
-- l. 228 (fontes): "NBR 15575-1:2024 — `D:\008_Normas ABNT\abnt-nbr-15575-12024-...-requisitos-gerais_compress.pdf`". Este arquivo é **uma terceira cópia** da 2024, na raiz do acervo, e não é o arquivo de 2024 que está em `001_ABNT`. Trocar para o PDF de 2025. As páginas 76, 102 e 105 continuam certas na 2025.
+- l. 228 (fontes): "NBR 15575-1:2024 — `D:\008_Normas ABNT\abnt-nbr-15575-12024-...-requisitos-gerais_compress.pdf` (desde 02/11 em `D:\008_Normas ABNT\_duplicatas\`)". Este arquivo é **uma terceira cópia** da 2024, na raiz do acervo, e não é o arquivo de 2024 que está em `001_ABNT`. Trocar para o PDF de 2025. As páginas 76, 102 e 105 continuam certas na 2025.
 
 **`layout-mobiliario-dimensoes-residencial/SKILL.md`** (dono: Lúcio)
 - l. 3 (descrição): "mínimo (NBR 15575-1:2024 Anexo F)"
