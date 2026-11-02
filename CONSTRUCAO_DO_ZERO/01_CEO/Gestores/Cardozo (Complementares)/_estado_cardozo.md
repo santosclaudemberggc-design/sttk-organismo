@@ -3,6 +3,13 @@
 > Arquivo de estado pessoal. Leio ao nascer (início de toda conversa), escrevo ao morrer (fim de toda conversa).
 > Memória privada minha — não repete o Registro Diário, que é o que sobe pra Claudemberg via Wallenberg.
 
+**Auditoria das correções do Briefing Único v2 (31/10/2026):** auditei as propostas de Baumgart, Landell, Saturnino, Glaziou e Tenreiro (Kelsen só cruzado). Arquivo: `Lúcio (Arquitetura)\Agentes\Oscar\correcoes_31-10\auditoria_cardozo.md`. Não editei Briefing, Ensaio 003 nem Drive; sem commit. Não acionei Agentes (era auditoria de texto já escrito).
+- Renumeração: C-13 Landell (Automação leva Elétrico), C-14 Baumgart, C-15 Saturnino, C-16 Glaziou (D6), C-17 Kelsen (Art. 33). TI-14 = Kelsen; tarefas de disciplina com prefixo (TI-EST, TI-ELE). EST-06 = cores (Tenreiro). MED-01 retirado.
+- HID-03: venceu a versão do Landell (sem gás, a pergunta some; "elétrico" registrado).
+- Ajustes-chave: TI-ELE-02 pergunta 1 (aparelho médico) só com CON-01 marcada; Glaziou sem "nenhuma lei obriga"; balanço ≠ CC3 automático; descarga com reuso só "opção comparada" até Kelsen confirmar.
+- **Pendente de Claudemberg:** dono do projeto de gás (opções a/b/c; recomendei (a) Saturnino, com (c) até existir Skill de gás).
+- Pendência minha: Skill `nbr9575-impermeabilizacao` diz "2024"; Hely achou 2010 confirmada em 2024. Corrigir só com autorização.
+
 **Rotina Macetes v1.2 (06/10/2026 — nbr5410):** apliquei na Skill instalada `nbr5410-eletrica-automacao`, que passou de v1.1 para v1.2. A cópia em Skills_Propostas/Agosto não foi tocada, porque é registro histórico. Não acionei o Landell. A fonte é o manual Elektro/Pirelli de 2003, com revisão técnica de Hilton Moreno (tipo A+B), e conferi tudo no PDF da 5410:2004.
 - E1: fundido no item 2 (o DR único soma as fugas).
 - E2: entrou CORRIGIDO como item 7. O exemplo da p. 63 deixa a iluminação do banheiro só com DTM, mas a 5.1.3.2.2 a) exige DR. A nota 3 vale só para a alínea d), e o 9.1.3 não abre exceção. O próprio manual se contradiz entre as p. 62 e 63.

@@ -22,13 +22,19 @@
 
 **Normas reais lidas (29/09/2026, PDFs em `D:\008_Normas ABNT`):** Skill 14565 foi para a v1.3 e a Skill 5410 para a v1.1 (instaladas + propostas). Backups em `CONSTRUCAO_DO_ZERO/01_CEO/Decisoes_Autonomas/_backups/2026-09-29/`. NBR 16415 é **2015** (não 2021): 6.1.1 veda infraestrutura compartilhada sinal/força, e nenhuma norma dá distância em cm. NBR 5410 corrigida: sem "1.500 W/TUG" nem "luz exclusiva por cômodo" (regra real 9.5.3); PEN separado na entrada é obrigatório (5.4.3.6); DR 5.1.3.2.2 inclui garagem e tomadas externas; DPS por 5.4.2.1.1/5.4.2.2.1. Macetes com fonte entraram nas 2 Skills.
 
+**Briefing Único v2, correções de 31/10/2026 (pedido de Claudemberg via Cardozo):** escrevi a proposta em `01_CEO/Gestores/Lúcio (Arquitetura)/Agentes/Oscar/correcoes_31-10/landell.md`, sem editar o Briefing (quem junta é o Oscar). Ela tem 8 correções: TI-ELE-01 (energia da Light, depois da visita) e TI-ELE-02 (o que não pode parar sem luz, perguntado pessoalmente ao morador), uma linha nova na C-2, TI-03 com mais fontes de carga, C-13 (Automação leva o Elétrico, D3) com o texto ao cliente, nova condição da HID-03 (Hidro OU Elétrico), Gate C-3 conferindo as TI-ELE, condição de contratação na TI-10 e opções novas na ELE-01. Se outro agente também usar C-13, o Oscar renumera.
+
 Nenhum caso real acionado ainda.
 
 ## 2. Pendências abertas
 
 [RESOLVIDO 12/09/2026] Exame 3 (Assisted → Autonomous) aprovado — promovido a Autonomous, confirmado por Claudemberg, auditado por Wallenberg. Dentro do próprio caso "Cobertura Urca", registrei a Cardozo (não decido sozinho): quebra de cadeia de comando do terceirizado (projeto enviado direto ao Gate/"Maurício" sem passar por mim nem por Cardozo — recomendo suspender piloto de sexta e Gate até pendências técnicas fecharem). Recomendação de Skill dedicada NBR 5419/NBR 17240 (Exame 2, Caso 2) segue registrada para Cardozo. Próximo: veredito de Cardozo sobre Exame 3; se aprovado, aguardar acionamento com Briefing real (produção).
 
+[ABERTO 31/10/2026] Briefing v2: falta o Kelsen dizer se o consentimento LGPD da MOR-02 precisa cobrir a pergunta sobre aparelho médico feita na visita (TI-ELE-02). Aguardo o Oscar juntar as correções e o Bardi conferir.
+
 ## 3. Aprendizados
+- **Em casa nova, o tipo de ligação (mono, bi ou tri) não é dado de campo.** Ele sai do meu cálculo de carga e é confirmado pela Light (consulta de viabilidade). Na visita se registra rede aérea ou subterrânea, a posição e a distância do poste, o relógio existente e o número da casa.
+- **Tarefa que aponta dono precisa da condição "se a disciplina foi contratada"**, senão fica órfã (ALTO 2 do Briefing v2; mesmo caso da TI-03 e da TI-10).
 
 - Minha função é elaborar e ajustar o projeto elétrico (NBR 5410) e de automação residencial **juntos** (disciplinas fundidas — dependência real).
 - **NBR 5410:2004 (VC 2:2008) é única com força normativa hoje.** Revisão 2026 está em consulta pública, sem publicação antes fim/2026.

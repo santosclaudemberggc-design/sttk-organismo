@@ -4,6 +4,59 @@
 
 ## 1. Onde parei / em andamento
 
+- **02/11/2026 (2) — Sabatina de Claudemberg (itens 1 a 13) APLICADA no Briefing único v2, devolvida a Lúcio.** Relatório: `correcoes_31-10\oscar_aplicacao_sabatina_02-11.md` (item, linha, antes e depois).
+  - PRV-01: Sttickler Empreendimentos, CNPJ 39.520.415/0001-21; encarregado Claudemberg (só o nome); prazo = texto do Kelsen (10 anos depois da obra; saúde apagada no fim); frase do Art. 33 em "Onde ficam"; L70 corrigida (dispensa do Art. 11 não vale, alto risco).
+  - CON-01, MOR-02, RES-01 e a pergunta 1 da TI-ELE-02 (aparelho médico): coletadas por Claudemberg, pessoalmente ou online (notas internas + campo "Quem coleta" na D-1).
+  - NBR 15575-1:2025 (Emenda 1 de 05/12/2025) nas L132 e L312; marcas tiradas. Gás no Hidrossanitário, ESC-01 "(inclui gás)", transição por terceiro. G-9 = regra interna. C-4 com a aplicação provisória (documento editável na pasta do cliente; Sistema de Gestão previsto para novembro de 2026). "Às vezes" dispara. CAS-01, ACE-01, reserva e ILU-02 registrados como mantidos.
+  - Skill layout-mobiliario: "2024" → "2025" nas linhas 3, 21, 31, 87 (SKILL.md) e 4, 137 (medidas_por_comodo.md), nas duas cópias. Sem Bash, sem `cmp`: conferi por contagem de linhas (93 = 93; 151 = 151) e Grep.
+  - Números sem mudança (63; 45/56/62; TI 24). Única pendência que impede o uso: criar o e-mail de privacidade.
+  - Para Lúcio: alcance do item 12 (só no choque ou em toda casa de 2+ andares); ato formal e publicação do encarregado não viraram pendência; consequência que tirei na TI-ELE-02 (visita de outra pessoa não faz a pergunta 1); pasta do cliente no Drive?; resumo "banheiros, corredores e despensas" omite vestíbulo e hall; arquivo de diferenças não atualizado.
+
+- (Superada pela de cima) **02/11/2026 — 6 achados médios do Bardi (reconferência 8,25) APLICADOS no Briefing único v2, devolvidos a Lúcio.** Ordem de Claudemberg ("Sim, corrigir"). Relatório: `correcoes_31-10\oscar_aplicacao_medios_02-11.md`.
+  - M1: a INT-04 usa só a INT-01 (D-2, L397).
+  - M2: a MOR-01 virou grade (parentesco sem nome, faixa 0–11/12–17/18–59/60+, sempre/às vezes); RES-01, MOR-02, C-2, C-12 e D-2 usam a faixa.
+  - M3: notas da CAS-01, ROT-02, HID-03, ELE-02 e AUT-02 foram para a Condição como "Nota interna:"; legenda e D-1 com o campo.
+  - M4: cabeçalho L3–L9 com o estado real e "NÃO USAR COM CLIENTE REAL".
+  - M5: TI-01 sem Estrutural = Oscar orienta contratar empresa de sondagem e registra o laudo; Gate (C-3) aceita o laudo.
+  - M6: nota interna [A CONFERIR] na Seção 3 (L129); números mantidos.
+  - Números sem mudança (63; 45/56/62; TI 24; C-1 a C-17), recontados por Grep. Diferenças atualizadas.
+  - Para Lúcio: "às vezes" dispara?; de acordo do Glaziou com "criança = 0 a 11" na C-12; origem dos cômodos da AUT-02/PRG-02 na D-2 (não inventei); B1–B7 não pedidos.
+
+- (Superada pela de cima) **31/10/2026 (noite, 2) — Correções da revisão final do Briefing único v2 APLICADAS, devolvidas a Lúcio.** Relatório: `correcoes_31-10\oscar_aplicacao.md`.
+  - Seguidos os 34 passos da auditoria do Cardozo e os 14 itens do Kelsen (C-17, TI-14). O passo 34 ficou em parte: o item 3 da C-16 (G-9) foi marcado [PENDENTE: Claudemberg], por ordem.
+  - Parte própria: CAS-01 (tipo de casa, puxada do "Tipo de residência" do Pré-Briefing, cujas opções não foram transcritas) e ACE-01 (elevador/plataforma).
+  - Choque C5 × C4 resolvido na C-2: a sala sobe, a suíte fica no térreo e entra elevador ou plataforma.
+  - ALTO 2 virou regra geral na Parte B. A MED-01 saiu (D1). A Skill layout-mobiliario foi para v1.1 nas duas cópias.
+  - K1: Forms e Drive saíram; a C-4 virou "sessão por cliente"; entrou a Parte D (formato de integração).
+  - Números: 63 ativos (68 − 5); até 45 / 56 / 62; TI 24; C-1 a C-17 + Parte D. Tempo estimado: reunião 46,5 / casa 34 (só Arq); completo 54 / 53.
+  - Arquivo de diferenças atualizado.
+  - Pendentes de Claudemberg: gás, G-9, e-mail e prazo de guarda, Art. 33 para a IA.
+  - Pendentes de Lúcio: CAS-01/ACE-01, a saída "espaço reservado" no choque, a ILU-02 na C-13, e a L22 da Skill layout-mobiliario (frase sem a D4).
+  - Próximo passo: reconferência do Bardi.
+
+- (Superada pela de cima) **31/10/2026 (noite) — 2ª correção do Briefing único v2 (Bardi 8,70; cortes aprovados por Claudemberg 31/10) APLICADA, devolvida a Lúcio.** PAD-01 retirado (vai ao EP; C-5 = D2 ajustada 31/10); INT-02 = escolha por cômodo; EST-04→grade EST-05; VIS-01/VIS-03→SOC-02; PET-01 porte/fica só com sim/pretendemos; MED-01 com NBR 15575; C-12 marcada "aguardando de acordo Glaziou/Cardozo". COES aberto: Art. 31 p. 21 (caput I, II, V); § único é de prismas/afastamentos 1,50 m, não de área (corrigido). Números: 53 ativos (4 retirados); só Arq até 37; completo 46; com PAI 52; TI 19. Tempo (estimativa): reunião 43 / casa 31,5 (só Arq); completo 50,5 / 49. Pendentes: Kelsen/Hely LC 270; de acordo Glaziou/Cardozo; Lúcio confirma INT-02 e VIS-03 escolha única; medir tempo na 1ª aplicação. Lição: citação de segunda mão escondia erro (§ único) — abrir a fonte.
+
+- **31/10/2026 (tarde) — Briefing único v2 CORRIGIDO após parecer Bardi 7,80 (reprovado; correção mandada por Claudemberg), devolvido a Lúcio.** Pontos 1–8 aplicados na proposta e na seção "Correção 31/10" das diferenças. Automação só pelo ESC-01; novos PET-01, ORG-01, SEG-01, NIV-01 (puxado do Pré-Briefing, C-9); TI-13 gás encanado (Saturnino); MED-01/C-7 citam COES Art. 31 e § único p. 21 via Skill layout-mobiliario seção 2 (PDF não reaberto; LC 270 pendente Kelsen/Hely). Contagem: 57 códigos; só Arq até 41 (39 fixas); completo até 50; com PAI até 56; TI 19. Tempo por item (estimativa, medir na 1ª aplicação): reunião 45–60 / 55–70; casa 35–40 / 55–60. Pendente Claudemberg: levar PAD-01 para o EP (−5 min). Lição: condição que abre seção só pelo contratado; "juntada" exige texto que peça o dado; contar o tempo item a item.
+
+- **31/10/2026 — Seção de Paisagismo do Glaziou JUNTADA ao Briefing único v2 (aprovação de Claudemberg 31/10), devolvido a Lúcio.** Seção 6-bis = PAI-01 a PAI-06 (texto/opções intactos); TI-PAI-01 a 06 na Parte B; regras do Glaziou renumeradas C-11 (obrigatórias PAI-01/02) e C-12 (disparos). Contagem conferida: 53 códigos; só Arq até 37; completo sem PAI até 46, com PAI até 52. Tempo com PAI: reunião 50–65, casa 30–40 (estimativa). Diferenças: seção "Seção de Paisagismo juntada (31/10/2026)". Falta ainda: lista de estilo/cores do FORM-INT.
+
+- **30/10/2026 (4ª) — Respostas D1–D5 de Claudemberg APLICADAS no Briefing único v2, devolvido a Lúcio.** Proposta: PAD-01 virou proposta por cômodo aprovada pelo cliente (Landell faz elétrica + automação); C-5 reescrita; C-9 Pré-Briefing no sistema (Comercial, ao fechar contrato); C-10 cortes confirmados; INT-02/INT-03 preenchidas; Seção 6-bis marcador Paisagismo (PAI-xx, Glaziou, condicionada ao ESC-01). Diferenças: tabela "Respostas aplicadas". Contagem igual: 47 / 35–37 / até 46. Falta: lista de estilo/cores do FORM-INT e a seção do Glaziou.
+
+- **30/10/2026 (3ª) — BRIEFING ÚNICO v2 ENTREGUE a Lúcio (decisão de Claudemberg 30/10: um só briefing para Arq + complementares, mínimo, condicional, reunião + casa, códigos fixos).** `briefing_modelo_v2_proposta.md` (Parte A 47 códigos; Parte B TI-01–TI-12; Parte C regras C-1–C-8, incl. C-4 uma pasta/link por cliente, não executada) e `briefing_modelo_v2_diferencas.md` (183 originais nos 8 forms → destino de cada). Cliente vê: só Arq 35–37; pacote completo até 46. Tempo estimado (não medido): reunião 45–60 min + casa 15–35 min. Dúvidas abertas p/ Claudemberg: D1 Pré-Briefing fica separado?; D2 padrões de PAD-01 não existem escritos (dono?); D3 Paisagismo como opção sem briefing próprio; opções de INT-02/INT-03 não transcritas. Lição: aplicar o filtro "só o cliente sabe? que decisão muda?" pergunta a pergunta; resposta que não muda nada (ex.: casa pronta p/ térreo, C8 já obrigatório) sai.
+- (Superada) 30/10 (2ª): v2 com 64 perguntas só de F2+F3.
+
+- **27/10/2026 — Treino das Skills v1.1 (partido + layout), caso fictício "Casa do Ipê", ENTREGUE a Lúcio, PARCIAL.** O relatório é o `Casos_TESTE\treino_skills_v1_1\relatorio_oscar_treino.md`.
+  - Arquivos: base `treino_skills_fict.rvt`, `_volumeA.rvt`, `_volumeB.rvt` e `_planta_A.rvt` (salvo 15:25:27).
+  - Recomendado o A, "L que abraça o ipê".
+  - conferir_layout: 0 graves e 3 avisos de ventilação cruzada (cozinha/jantar, estar, quarto do filho).
+  - Lições:
+    - `salvar_copia` não sobrescreve arquivo existente.
+    - `create_roof` com o tipo 338 (vidraça inclinada) gera painel vertical, não pérgola. A pérgola sai por ripas: `create_wall` com height + base_deslocamento.
+    - Parede curva em tipo cortina sai plana.
+    - Família do acervo tem origem deslocada: conferir sempre pela imagem.
+    - Vão precisa de 0,10 m até a FACE da parede (eixo ± 0,075).
+    - Ambiente com nome sem sufixo: as etiquetas saem limpas.
+
 - **21/10/2026 (tarde) — Correção da garagem do EP_v3 ENTREGUE a Lúcio, PARCIAL.** `entrega_v3\relatorio_oscar_correcao_garagem_21-10_tarde.md`. Parede 453878 → x 6,35; linha 453908 → x 9,0325; vagas 2,6075 + 2,6075 (faces 6,425 e 11,64). Vão 455286 (5,00) na 453874; portões 455287 (5,00, x 6,533–11,533) e 455288 (2,55, x 11,64–14,19) no muro 449286. Quadro com os fatores da v3: TO 38,21 (proj. 218,39), CA 0,718, perm 32,76. Projeção BRUTA 245,95 > 228,64 depende de Kelsen (vaga/marquise fora da TO). Salvo 14:26:56, isModified false. Lição: sem `fatores`, o criar_quadro_areas refaz as plantas sem exclusões; passe sempre os mesmos parâmetros da rodada anterior.
 
 - **21/10/2026 (14h) — v3 final do EP RETOMADA e ENTREGUE a Lúcio, PARCIAL.** `entrega_v3\relatorio_oscar_v3_final_21-10.md`. Árvores 455088 (13,04; 20,50) e 455089 (13,04; 23,00), no jardim 452447 atrás da vaga 2. Quadro na base 571,60 informada: TO 38,33, CA 0,72, perm 32,76; a CALCADA (454312/454843/454851) fica no IMPERMEAVEL 455248, fator 0; soma 95,71% (defeito). Vagas cobertas: face a face 5,015 (453878 x 6,55 × 453875 x 11,715, e 0,15), mas a linha de separação dá vaga 1 = 2,476 (proposta: x 9,1325). Sem vão de garagem na fachada e sem portão no muro 449286. Faixa leste = 2,50 exatos; vagas em fila (presa). Salvo 14:18:45, isModified false. Lição: a bbox RPC da árvore tem 4,31 m; mover a árvore para a copa não cair na vaga.
@@ -128,6 +181,7 @@
 
 | Pendência | Esperando | Desde |
 |---|---|---|
+| Briefing único v2: sabatina aplicada em 02/11. Uso com cliente real só depois de existir o e-mail de privacidade. Outras: de acordo do Glaziou na C-12 (0 a 11 anos, via Cardozo); tese do STJ (fonte secundária); 4 pontos de julgamento no §4 do `oscar_aplicacao_sabatina_02-11.md` | Claudemberg (e-mail); Cardozo/Glaziou; Lúcio | 02/11/2026 |
 | Ensaio 003, Etapa 04 v4 (13/10, `entrega/v4/`, com ajuste D1–D3/R1 do mesmo dia): aguarda reauditoria de Lúcio. Novos, do ajuste: (a) alt. A é "descoberta" no texto e o D2 pediu como "coberta": a pergunta a Kelsen foi escrita com as duas leituras; (b) LC 270 Art. 350 I (balanço) está na mesma lista do D2 e foi incluído na pergunta; (c) D2 incluída em 05 E-17 e 02 A10 (rodada final); (d) 02 A12 corrigido para "04 P-04" (rodada final); (e) 06 §3 e 06 §1 atribuem LC 270 Art. 215 §2º a "Etapa 03 v8" [nv]; (f) 04 P-04 reconferido: +2,05 mantido (fontes: 05 E-10 e Etapa 03 v8 C-12); (g) backups sem prova byte a byte; (h) cabeçalho dos arquivos continua "v4". Abertos: P-SMD (57,18 × 68,62, Kelsen); P-R1 (dimensão de vaga na unifamiliar, Kelsen/Gate); P-a ("a" sem valor, Hely via Kelsen); P-varanda (COES §1º × Dec. VII × LC 270 Art. 363 §2º VII, Kelsen); P-edícula (LC 270 Art. 350 IV × Dec. XV, Kelsen); P-escritório/atendimento (Kelsen); P-m (lei federal de acessibilidade e NBR 9050:2020 não lida, Kelsen e Lúcio); P-S3 (Villaça via Lúcio); P-o (520 inclui garagem?, cliente); P-M-a (nota de C-7 para Lúcio); contagem (Wallenberg); Revit sem plugin (Lúcio). Itens com dono cliente: n (vagas cobertas), área do escritório, edícula, piscina, deck e jardim, topografia completa. | Lúcio; Kelsen; Villaça; cliente; Wallenberg | 13/10/2026 |
 | Ensaio 003, Etapa 04 v2 (12/10, `entrega/v2/`): aguarda auditoria de Lúcio. Abertos: "a" sem valor (Skill vaga v1.6); P-o (520 inclui garagem?); divergência SMD 12% × "10%" da Etapa 01 (Kelsen, P-h); Viabilidade v9 340–360 m² (Villaça); NBR 9050 2020 não conferida (Lúcio); colisão de 4 arquivos sem sufixo em `v2\` (Lúcio/Wallenberg). Contagem de palavras: Wallenberg | Lúcio; Kelsen; Villaça; Wallenberg | 12/10/2026 |
 | Ensaio 003, Etapa 04 (Briefing) **v2 entregue em 12/10** (`etapa_04_briefing/entrega/v2/`, 01 a 07): aguarda auditoria de Lúcio. Abertos: P-h (SMD: TO do Art. 352, 68,62 × 57,18 m², Kelsen); P-n (CAB = CAM, leitura do Hely, Kelsen); P-m (lei federal de acessibilidade, Kelsen; NBR 9050:2020 não disponível no acervo, comprar, Lúcio); contagem (Wallenberg); arquivos `_v2` de origem desconhecida na pasta v2 (Lúcio decide). Correção 7 (nome da cópia em toda citação) PARCIAL. | Lúcio; Kelsen; Wallenberg | 12/10/2026 |
@@ -147,6 +201,10 @@
 | Daniel-OB: `STTICKLER RELATÓRIO TÉCNICO URBANÍSTICO.docx` (local, pasta 01_ESTUDO PRELIMINAR) não lido — binário, não está no Drive, sem ferramenta Bash/pandoc nesta sessão para abrir | Lúcio (definir se alguém com Bash lê, ou se sobe pro Drive) | 02/09/2026 |
 
 ## 3. Aprendizados que não posso esquecer
+
+- **[02/11/2026, Briefing, achados médios] Resposta que alimenta condição tem de ser estruturada, e nota interna não mora na coluna que o cliente lê.** Texto livre não dispara regra. Ao mudar o cabeçalho, as linhas andam: cito no relatório as linhas novas, conferidas por Grep (errei duas e corrigi).
+
+- **[31/10/2026, Briefing, correção da revisão final] Quando a ordem de Claudemberg e a auditoria do Gestor divergem, vence a ordem, e a divergência vai escrita.** O Cardozo tinha decidido a G-9 como regra interna; a ordem mandava marcá-la como pendente. Marquei como pendente e registrei por quê. Contagem só vale por Grep nas linhas da tabela, nunca de cabeça. "Já cobre?" sobre outro formulário só se responde com as opções transcritas. Sem elas, a pergunta nova vem pré-marcada quando houver dado, e não fica duplicada.
 
 - **[14/10/2026, Bloco 1] "conferida"/"success" do Vitruvius não substitui o PNG.** A elevação sul "conferida" estava tapada pelo muro; as folhas "conferidas" tinham as vistas fora da moldura; o view_setup e o abrir deram success com erro no log. Sempre: export_view_image + Read + grep de ERROR no log `%APPDATA%\VITRUVIUS\logs\revit-plugin-AAAA-MM-DD.log`. Teste de pasta proibida: fazer por último, ou numa cópia descartável, porque se o bloqueio falhar o documento ativo vai parar lá. Não fechar o último documento antes de terminar tudo: reabrir com o Revit vazio derrubou o plugin. O parâmetro do navegador se chama "Sub Etapa Projeto".
 

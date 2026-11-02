@@ -1,8 +1,8 @@
 ---
 name: coe-lc198-2019-ventilacao-iluminacao-pe-direito-residencial-rj
 description: "Parâmetros de ventilação natural, iluminação natural e pé-direito mínimo para edificações residenciais no RJ — COE (LC 198/2019), prismas, dutos e vãos."
-version: "1.2"
-changelog: "1.2 (29/09/2026, Oscar via Lúcio, aprovado por Claudemberg) — confirmação de fonte primária do Hely (28/09, COES consolidado SMU): regra dos 6 m movida para Art. 18 §1º e retirada a afirmação de que acima de 6 m a ventilação mecânica é obrigatória; banheiro com exaustão mecânica citando Art. 17 §2º II e §4º (sem vão fixado, leitura interpretativa); R6 sem a explicação sem lastro do 1/8, citando Art. 18 §7º; nova seção 'Macetes de quem faz'. 1.1 (28/09/2026, Lúcio, aprovado por Claudemberg) — correções do treino em caso fictício: §3 PV como alternativa ao duto longo; §4 regra de vão para banheiro com exaustão mecânica marcada 'a confirmar'; nota em R6."
+version: "1.5"
+changelog: "1.5 (02/11/2026, Kelsen, aprovado por Claudemberg) — rótulo NBR 15575-1:2024 trocado por NBR 15575-1:2025 (incorpora a Emenda 1 de 05/12/2025) no §1, no Registro de Erros e nas Fontes; números mantidos (2,50 m; 2,30 m; pp. 76, 102 e 105 do PDF), porque o parecer Kelsen de 02/11/2026 (`parecer_nbr15575-1_2025_comparacao_02-11.md`) achou idênticos 16.1.1, 16.2.1, Anexo F e Tabelas F.1/F.2; fonte passa a apontar o PDF 2025 em `D:\\008_Normas ABNT\\001_ABNT`. 1.4 (31/10/2026, Kelsen, revisão final do Briefing Único v2, ALTO 11) — §2 ganha o caso da casa unifamiliar/bifamiliar: prisma e afastamentos laterais, de fundos e entre edificações com mínimo de 1,50 m, sem H/4 (COES Art. 31, parágrafo único, consolidado SMU p. 17, conferido no PDF); o 3,00 m do PVI (Art. 5º §1º I, p. 4) fica para as demais edificações; PV da casa em 1,50 m é interpretação (Gate); §4 cita Art. 17 §3º (não §§3º e 4º). 1.3 (31/10/2026, Hely via Kelsen, continuação aprovada por Claudemberg) — §1 separa casa unifamiliar/bifamiliar (COES Art. 31 + NBR 15575-1:2025 item 16.1.1: 2,50 m; 2,30 m) do Art. 12 (só multifamiliar e mista); §4 nota do Art. 31 II sobre vãos na casa; Anexo F da NBR segue informativo. 1.2 (29/09/2026, Oscar via Lúcio, aprovado por Claudemberg) — confirmação de fonte primária do Hely (28/09, COES consolidado SMU): regra dos 6 m movida para Art. 18 §1º e retirada a afirmação de que acima de 6 m a ventilação mecânica é obrigatória; banheiro com exaustão mecânica citando Art. 17 §2º II e §4º (sem vão fixado, leitura interpretativa); R6 sem a explicação sem lastro do 1/8, citando Art. 18 §7º; nova seção 'Macetes de quem faz'. 1.1 (28/09/2026, Lúcio, aprovado por Claudemberg) — correções do treino em caso fictício: §3 PV como alternativa ao duto longo; §4 regra de vão para banheiro com exaustão mecânica marcada 'a confirmar'; nota em R6."
 status: ativa-com-ressalva
 created: 2026-09-21
 author: Rotina Diária Skills v3.2
@@ -45,9 +45,29 @@ Toda aprovação LICIN 2.0 no Rio de Janeiro precisa atender ao COE (LC 198/2019
 
 ---
 
-## 1. PÉ-DIREITO MÍNIMO (Art. 12º e 14º)
+## 1. PÉ-DIREITO MÍNIMO (Art. 12º e 14º; Art. 31 para casa)
 
-### Residencial (Art. 12º)
+**Primeiro, separe o tipo de edificação.** O Art. 12 do COES não vale para casa.
+
+### Casa unifamiliar ou bifamiliar (COES Art. 31 + NBR 15575-1:2025, item 16.1.1)
+
+O COES Art. 31 (consolidado SMU, p. 17) dispensa a casa unifamiliar e bifamiliar, "desde que mantidas as condições de salubridade e higiene da habitação", de: I área mínima; II "dimensões mínimas das circulações, dos compartimentos, dos vãos de iluminação e ventilação e dos reservatórios d´água"; III vagas; IV afastamento frontal para abrigo em telha vã; V acessibilidade; VI gás. O COES não fixa pé-direito para casa (o Art. 12 só fala de multifamiliar e mista: *interpretação*, Gate).
+
+Para casa, o pé-direito mínimo vem da **NBR 15575-1:2025, item 16.1.1** (edição que incorpora a Emenda 1 de 05/12/2025; p. 64 da norma, p. 76 do PDF do acervo `D:\008_Normas ABNT\001_ABNT`):
+
+| Compartimento da casa | Pé-Direito Mínimo |
+|---|---|
+| Regra geral (salas, quartos, cozinha etc.) | **2,50 m** |
+| Vestíbulos, halls, corredores, instalações sanitárias e despensas | **2,30 m** |
+| Teto com vigas, inclinado ou abobadado | 2,50 m em pelo menos 80% da superfície do teto; no restante, até 2,30 m |
+
+Texto: "A altura mínima de pé-direito não pode ser inferior a 2,50 m. Em vestíbulos, halls, corredores, instalações sanitárias e despensas, é permitido que o pé-direito seja reduzido ao mínimo de 2,30 m." A obrigação de seguir a NBR vem do COES Art. 1º §3º III e do CDC Art. 39 VIII (*interpretação*, parecer Kelsen 31/10/2026). Atenção: 2,30 m na casa é **mais alto** que os 2,20 m do Art. 12 para transitórios. Não use 2,20 m em casa.
+
+**Dimensões de cômodo na casa:** a NBR 15575-1 não as torna obrigatórias. O item 16.2.1 (p. 64 da norma, p. 76 do PDF) diz "sugere-se prever" o espaço para os móveis do Anexo F; o Anexo F se declara "(informativo)" (p. 90 da norma, p. 102 do PDF) e a Nota 1 da Tabela F.2 (p. 93 da norma, p. 105 do PDF) diz que a norma "não estabelece dimensões mínimas de cômodos". Ressalva: a Nota 2 da mesma tabela diz que, se o projeto adotar móveis opcionais, "as dimensões mínimas devem ser obedecidas" (dentro de anexo informativo; peso jurídico é *interpretação*, Gate).
+
+### Residencial multifamiliar ou misto (Art. 12º, consolidado SMU p. 7)
+
+Texto: "Os compartimentos das unidades residenciais em edificações multifamiliares ou mistas deverão atender às seguintes disposições quanto à altura útil mínima".
 
 | Tipo de Compartimento | Pé-Direito Mínimo |
 |---|---|
@@ -66,7 +86,20 @@ Toda aprovação LICIN 2.0 no Rio de Janeiro precisa atender ao COE (LC 198/2019
 
 ---
 
-## 2. PRISMAS DE VENTILAÇÃO E ILUMINAÇÃO — PVI e PV (Art. 5º)
+## 2. PRISMAS DE VENTILAÇÃO E ILUMINAÇÃO — PVI e PV (Art. 5º; Art. 31, parágrafo único, para casa)
+
+**Primeiro, separe o tipo de edificação.** O mínimo de 3,00 m do PVI não vale para casa.
+
+### Casa unifamiliar ou bifamiliar: mínimo de 1,50 m (COES Art. 31, parágrafo único)
+
+Texto da lei (COES consolidado SMU, p. 17; conferido por Kelsen no PDF em 31/10/2026): "Os prismas de ventilação e iluminação e afastamentos laterais, de fundos e entre edificações, de edificações unifamiliares ou bifamiliares, quando exigidos, serão de, no mínimo, um metro e cinquenta centímetros, independente da altura da edificação."
+
+- Casa: prisma, quando existir, com lado mínimo de **1,50 m**, sem a regra H/4 (a lei diz "independente da altura da edificação").
+- O mesmo 1,50 m vale para os afastamentos laterais, de fundos e entre edificações da casa, quando exigidos (para as demais edificações, o Art. 4º II e III, p. 3, fixa no mínimo 2,50 m).
+- A legislação da zona (Dec. 3.046/81, LC 270/2024, convenção de condomínio) pode exigir mais. Vale a mais restritiva (R2).
+- *Interpretação, Gate:* o parágrafo único fala em "prismas de ventilação e iluminação", sem separar PVI e PV. Lido de forma ampla, também o PV da casa passa a ter 1,50 m (e não 1,00 m). Até o Gate decidir, usar 1,50 m também no PV da casa, que é o lado seguro.
+
+### Demais edificações (multifamiliar, mista, não residencial): COES Art. 5º, §1º (consolidado SMU, p. 4)
 
 ### PVI — Prisma de Ventilação e Iluminação (serve luz + ar para compartimento de permanência prolongada)
 
@@ -80,7 +113,7 @@ Toda aprovação LICIN 2.0 no Rio de Janeiro precisa atender ao COE (LC 198/2019
 - Edifício de 4 pavimentos (H ≈ 10 m) → cada lado ≥ H/4 = 2,5 m → prevalece o mínimo absoluto: **lado ≥ 3,0 m**
 - Edifício de 20 pavimentos (H ≈ 50 m) → cada lado ≥ 50/4 = 12,5 m
 
-**Erro comum:** projetar prisma com lado < 3 m em edifícios baixos, achando que a relação H/4 não seria acionada. O mínimo de 3 m é incondicional.
+**Erro comum:** projetar prisma com lado < 3 m em edifícios baixos, achando que a relação H/4 não seria acionada. Fora da casa, o mínimo de 3 m é incondicional. Na casa unifamiliar ou bifamiliar, o mínimo é 1,50 m (Art. 31, parágrafo único; ver acima).
 
 ### PV — Prisma de Ventilação apenas (serve ar para compartimento de permanência transitória: banheiro, lavabo, DML)
 
@@ -127,6 +160,8 @@ Texto da lei (Art. 18 §1º, fonte primária lida — COES consolidado SMU via H
 
 **Exemplo:** quarto de 12 m² → vão mínimo = 12/8 = **1,5 m²** de janela.
 
+**Casa unifamiliar ou bifamiliar:** o COES Art. 31 II (consolidado SMU p. 17) dispensa as "dimensões mínimas ... dos vãos de iluminação e ventilação". As proporções da tabela acima não são exigência legal para casa; servem como referência de projeto. Continua valendo a condição de salubridade do caput e a exigência de ventilação e iluminação natural direta nos compartimentos de permanência prolongada (Art. 17 §3º, consolidado SMU p. 9, conforme parecer Kelsen 31/10/2026; *interpretação*, Gate). Os de permanência transitória seguem o Art. 17 §4º (só ventilação, que pode ser mecânica).
+
 **Barra da Tijuca — aplicação:** apartamentos com planta aberta e cozinha integrada à sala seguem a regra de 1/8 da área total combinada. Relevante para os layouts típicos de condomínios horizontais da região.
 
 ---
@@ -148,7 +183,7 @@ O COE aceita as seguintes formas de ventilação natural:
 
 - Tipologia dominante: condomínios horizontais (casas e sobrados) e edifícios multifamiliares até 2 pavimentos em Subzona A (Decreto 3046/81)
 - Lotes maiores: menor pressão sobre prismas, mas a regra H/4 ainda se aplica quando houver edifício com mais de 1 pavimento e fechamento lateral
-- Bairros com restrições de gabarito (Decreto 3046/81): reduz H → reduz exigência de prisma, mas o mínimo de 3 m (PVI) e 1 m (PV) é sempre o piso
+- Bairros com restrições de gabarito (Decreto 3046/81): reduz H → reduz exigência de prisma, mas o mínimo de 3 m (PVI) e 1 m (PV) é sempre o piso para multifamiliar e misto. Para casa unifamiliar ou bifamiliar (tipologia Sttickler), o piso é 1,50 m, sem H/4 (Art. 31, parágrafo único)
 
 ---
 
@@ -183,7 +218,15 @@ Observação: o macete 2 depende, para banheiro com exaustão mecânica sem vão
 
 ---
 
+## REGISTRO DE ERROS
+
+- **31/10/2026 — origem: revisão final do Briefing Único v2 (ALTO 11); corrigido por Kelsen.** Erro: o §2 dizia que o mínimo de 3,00 m do PVI era "incondicional" e o §6 o chamava de "sempre o piso", também para casa. Para casa unifamiliar ou bifamiliar, o COES Art. 31, parágrafo único, fixa 1,50 m para prismas e afastamentos laterais, de fundos e entre edificações, "independente da altura da edificação". Também corrigida a citação "Art. 17 §§3º e 4º" para "Art. 17 §3º" (o §4º trata de permanência transitória e não exige ventilação natural). Conferido no PDF consolidado SMU: Art. 4º (p. 3), Art. 5º (p. 4), Art. 17 (p. 9), Art. 31 (p. 17).
+- **31/10/2026 — origem: parecer Kelsen COES Art. 31 (`CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Kelsen (Legal)/parecer_coes_art31_lc270_31-10.md`); corrigido por Hely.** Erro: o §1 aplicava o pé-direito do Art. 12 (2,50/2,20 m) a todo residencial, sem separar a casa. O Art. 12 só vale para multifamiliar e mista; a casa unifamiliar/bifamiliar é dispensada de dimensões pelo Art. 31 e segue a NBR 15575-1:2025 item 16.1.1 (2,50 m; 2,30 m em vestíbulo, hall, corredor, sanitário e despensa). Também acrescentado ao §4 que o Art. 31 II dispensa as dimensões de vãos na casa. Conferido em fonte primária: COES consolidado SMU pp. 7 e 17; NBR 15575-1:2025 pp. 76, 102 e 105 do PDF (lidas por Hely na edição 2024; iguais na 2025, parecer Kelsen 02/11/2026). Busca on-line na Câmara (31/10/2026): nenhuma LC de 2026 (296 a 302) altera o COES.
+
 ## FONTES VERIFICADAS
+
+- **NBR 15575-1:2025** (incorpora a Emenda 1 de 05/12/2025) — `D:\008_Normas ABNT\001_ABNT\ABNT_NBR_15575_1_2025_Edificações_habitacionais_Desempenho_Parte.pdf` — itens 16.1.1 e 16.2.1 (p. 76 do PDF), Anexo F informativo (p. 102), Notas 1 e 2 da Tabela F.2 (p. 105) — lidos por Hely em 31/10/2026 na edição 2024; conferidos por Kelsen na edição 2025 em 02/11/2026, texto igual (`parecer_nbr15575-1_2025_comparacao_02-11.md`) ✓
+- **COES consolidado SMU** — Art. 12 (p. 7) e Art. 31 (p. 17) — lidos por Hely em 31/10/2026 ✓
 
 - **LC 198/2019 (COE RJ)** — Arts. 5º, 12º, 14º, 17º, 18º — lidos em [camara.rj.gov.br](https://e.camara.rj.gov.br/Arquivo/Documents/legislacao/html/c1982019.html) ✓ (fonte primária)
 - **COES (LC 198/2019) consolidado SMU/Busca Fácil** — `CONSTRUCAO_DO_ZERO/01_CEO/Gestores/Kelsen (Legal)/Agentes/Hely/Fontes_Legislacao/COES_LeiComplementar198_2019_CONSOLIDADO_SMU.pdf` — Art. 17 §2º II e §4º; Art. 18 tabela, §1º e §7º — lidos por Hely em 28/09/2026 (`confirmacoes_2026-09-28.md`, item 1) ✓ (fonte primária)

@@ -6,6 +6,18 @@
 
 ## 1. Onde parei / em andamento
 
+**31/10/2026 — Correções de Interiores no Briefing Único v2 (pedido de Cardozo, ordem de Claudemberg).**
+Escrevi a proposta (sem editar o Briefing; quem junta tudo é o Oscar) em
+`Gestores\Lúcio (Arquitetura)\Agentes\Oscar\correcoes_31-10\tenreiro.md`. Os itens são T-1 a T-15:
+- T-1 a T-3: INT-02 com as opções originais (D2).
+- T-4 e T-5: cores preferidas viram a EST-06.
+- T-6: ILU-02 com Aconchegante, Neutro e Técnico.
+- T-7: INT-04 com painel de TV, estante, bar e lareira.
+- T-8 e T-9: INT-01 com lista própria (banheiros, área gourmet, closet etc.; jardim e playground saem).
+- T-10: o NIV-01 passa a definir a faixa de folga (D1).
+- T-11 a T-15: achados médios e baixos.
+Por ser "Autonomous provisório", a entrega passa pela auditoria do Cardozo antes de ser usada.
+
 **Nível:** Autonomous (promovido 12/09/2026 após Exame 3 Assisted → Autonomous — administrado por Cardozo, confirmado por Claudemberg, auditado por Wallenberg). Histórico: promovido a Assisted em 09/09/2026 após Exame 2.
 
 **Exame 3 (Assisted → Autonomous) — aprovado, 12/09/2026.**
@@ -84,6 +96,14 @@ Trabalho residual: Lúcio fornece planta+orientação solar+restrições estrutu
 Nenhum caso real acionado ainda.
 
 ## 2. Pendências abertas
+
+Briefing v2 (31/10), decisões que deixei abertas para Claudemberg ou Oscar:
+- O padrão "econômico" deve usar a faixa mínima? Hoje vai para "conforto".
+- "Automação" entra na INT-04 ou não?
+- O código das cores preferidas fica EST-06 ou INT-05?
+- Onde fica registrado o "aceito o mínimo" depois que a MED-01 sai?
+- A PRG-01 ganha banheiro social e closet?
+- A Skill de layout-mobiliário precisa trocar "faixa pedida" por "faixa que vem do NIV-01" (o dono é Lúcio ou Oscar).
 
 Caso Daniel OB (reconstrução) — pendências no retorno a Cardozo:
 - **PATH:** mover `curadoria_tenreiro.md` do scratchpad para a pasta real do projeto, OU me passar o
@@ -174,6 +194,11 @@ Caso Daniel OB (reconstrução) — pendências no retorno a Cardozo:
 - **Amostra física aprovada há meses não cobre lote comprado agora** — variação de lote é risco real
   de mercado (sem norma ABNT específica para isso); exigir nova amostra do lote reservado antes de
   liberar aplicação, não aceitar "achamos que não vai ser perceptível".
+
+- **Briefing:** opções do formulário antigo de Interiores (FORM-INT) estão em
+  `Oscar\briefing_formularios_drive_transcricao_30-10.md`, linhas 74 a 83.
+  - "Texto livre" no original continua sendo pergunta; não vale escrever "nada a copiar".
+  - Lista de cômodos que puxa da PRG-01 perde o que a PRG-01 não tem: banheiro social e área gourmet (que fica no ESC-02).
 
 ## 4. Como escrever neste arquivo
 
