@@ -1,5 +1,6 @@
 ---
 name: remocao-arvores-smac-fpj-autorizacao-compensacao-rj
+description: Remoção de árvores em lote particular no Rio de Janeiro — quando o pedido vai à FPJ (sem obra) e quando vai à SMAC pelo SISARV (com obra no LICIN 2.0), documentos, laudo, vistoria e medida compensatória, com ressalva de fonte. Use sempre que Glaziou, Oscar ou Hely encontrarem árvore existente no lote que atrapalhe o projeto ou o plantio, mesmo que o pedido só diga "tirar a árvore", "cortar árvore", "autorização da prefeitura" ou "compensação ambiental".
 version: v1.0
 status: ativa-com-ressalva
 data: 2026-09-18

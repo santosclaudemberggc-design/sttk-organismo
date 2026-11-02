@@ -1,3 +1,8 @@
+---
+name: legal-oodc-mais-valera-mais-valia
+description: OODC (Outorga Onerosa do Direito de Construir), Mais-Valerá e Mais-Valia no Rio de Janeiro — fórmulas da LC 270/2024 (Art. 111, Anexo XXV) e da LC 281/2025 (Art. 18), isenção do Art. 110, janela com desconto até 01/12/2026 e a diferença entre os regimes. Use sempre que Kelsen, Hely ou Villaça forem calcular ou explicar quanto custa construir acima do coeficiente básico (CAB para CAM), regularizar acréscimo ou comparar cenários, mesmo que o pedido só diga "outorga", "contrapartida", "potencial construtivo" ou "construir mais".
+---
+
 # OODC, Mais-Valerá e Mais-Valia — Instrumentos de Potencial Construtivo no Rio de Janeiro
 
 **Versão:** 1.1  

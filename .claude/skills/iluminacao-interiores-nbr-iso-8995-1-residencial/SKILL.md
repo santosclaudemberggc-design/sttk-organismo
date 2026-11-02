@@ -1,5 +1,6 @@
 ---
 name: iluminacao-interiores-nbr-iso-8995-1-residencial
+description: Iluminação de interiores residenciais pela NBR ISO/CIE 8995-1 (que substituiu a NBR 5413) — lux recomendado, temperatura de cor e índice de reprodução de cor (IRC) por cômodo, com ressalva de fonte secundária. Use sempre que Tenreiro (ou Landell) for especificar luminotécnica, escolher lâmpadas ou conferir se um ambiente tem luz suficiente, mesmo que o pedido só diga "iluminação", "quantos lux", "luz quente ou fria", "home office" ou "bancada da cozinha".
 version: v1.0
 status: ativa-com-ressalva
 data: 2026-09-18

@@ -1,6 +1,11 @@
+---
+name: arquitetura-nbr9050-acessibilidade
+description: NBR 9050:2020 aplicada ao projeto residencial — circulação, portas, banheiro e box acessíveis, rampas e área de giro, e quando ela vale em casa no Rio (o COES, Art. 31 V, dispensa em casa unifamiliar; passa a valer por escolha de projeto quando há morador com mobilidade reduzida). Use sempre que Oscar, Lúcio, Tenreiro ou Baumgart forem projetar para idoso, cadeirante ou morador com dificuldade de andar, ou dimensionar porta, corredor, banheiro ou rampa acessível, mesmo que o pedido só diga "acessibilidade", "cadeira de rodas", "idoso" ou "barra de apoio".
+---
+
 # NBR 9050:2020 — Acessibilidade Integrada ao Projeto Residencial
 
-**Versão:** 1.2 (revisão 13/10/2026, refação Etapa 04 do Ensaio 003: contradição sobre habite-se resolvida pelo COES Art. 31 V; lacuna F-3 NBR 9050-2020 registrada; versão anterior em `Decisoes_Autonomas/_backups/2026-10-13/lucio_ANTES_refazer-etapa4_espelho_agents_SKILL_arquitetura-nbr9050.md`)  
+**Versão:** 1.2 (revisão 13/10/2026, refação Etapa 04 do Ensaio 003: contradição sobre habite-se resolvida pelo COES Art. 31 V; lacuna F-3 NBR 9050-2020 registrada; versão anterior em `Decisoes_Autonomas/_backups/2026-10-13/lucio_ANTES_refazer-etapa4_SKILL_arquitetura-nbr9050.md`)  
 **Status:** instalada — ratificada Claudemberg 15/09/2026  
 **Data:** 15/09/2026  
 **Tipo:** Inteligência (Trilha A)  
